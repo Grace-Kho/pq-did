@@ -1,0 +1,138 @@
+{
+  "cases": [
+    {
+      "id": "TR-01",
+      "definition": "baseline complete trace, including empty scheduled records, four challenges and legal absorb after squeeze",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-01.json",
+      "retained_sha256": "a1bd44437b55abff56a9407b621fca69a410601c25dc910c42a57256faaf0015"
+    },
+    {
+      "id": "TR-02",
+      "definition": "fresh second baseline run, counted repeat",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-02.json",
+      "retained_sha256": "a1bd44437b55abff56a9407b621fca69a410601c25dc910c42a57256faaf0015"
+    },
+    {
+      "id": "TR-03",
+      "definition": "typed public context nonce first byte XOR1, re-encode unchanged remaining fields",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-03.json",
+      "retained_sha256": "1220eb5d5c42edccbc4ac76c7954547c9ed9cb1ceafe8abf5fa7808743ec489d"
+    },
+    {
+      "id": "TR-04",
+      "definition": "root_a last byte XOR1",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-04.json",
+      "retained_sha256": "88856a1d4b688848b27633f17d0999ca692aa279dd19faec1e4866b57aca0b31"
+    },
+    {
+      "id": "TR-05",
+      "definition": "field_a last byte XOR1",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-05.json",
+      "retained_sha256": "c3271503906d82323c1697ada8ce88752ff8f65e0a36c9ab3233d8f1329419f6"
+    },
+    {
+      "id": "TR-06",
+      "definition": "submit round1 before round0",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-06.json",
+      "retained_sha256": "da0a3fc6a0922a78e9a09d0439c86180140bab92b0fcaa4cae6992595d508544"
+    },
+    {
+      "id": "TR-07",
+      "definition": "swap the two one-field R0 messages",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-07.json",
+      "retained_sha256": "36491d6ecbf31e105a907f39b67e354472c2e1bd4a4c9396b872520fe38ca42c"
+    },
+    {
+      "id": "TR-08",
+      "definition": "second trusted harness plan uses one two-field R0 message rather than two one-field messages",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-08.json",
+      "retained_sha256": "312ccef5e3570eb4011760ee806b90c8c74d782ab786a77ee37a0c991b5a68e9"
+    },
+    {
+      "id": "TR-09",
+      "definition": "empty canonical statement byte input to typed adapter",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-09.json",
+      "retained_sha256": "7f81dc56d391b45332c297cafa962abff44bf572d3e715a6a2f652625990bc25"
+    },
+    {
+      "id": "TR-10",
+      "definition": "root_a truncated to63 bytes",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-10.json",
+      "retained_sha256": "a705127b85fcc444da9ad46daa711e6ad619ea67463f699d3d00baf5f686e3fb"
+    },
+    {
+      "id": "TR-11",
+      "definition": "field_a truncated to23 bytes",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-11.json",
+      "retained_sha256": "dd0bd0afffd4930390f15019d547dde0d803f1c82ae8641182edc183fde9721f"
+    },
+    {
+      "id": "TR-12",
+      "definition": "request transcript version1",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-12.json",
+      "retained_sha256": "2f1b3105d25fee25355ce31d2720832d7e1f19cc2bbc5aae40c8d5114015f6d9"
+    },
+    {
+      "id": "TR-13",
+      "definition": "after R0 challenge0, attempt R1 before remaining two R0 challenges",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-13.json",
+      "retained_sha256": "f50e1f4a73ece0b5ea6d3c8e07e505a342f6492ec7d4dade482cb7a148b34f4c"
+    },
+    {
+      "id": "TR-14",
+      "definition": "request challenge1 before challenge0",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-14.json",
+      "retained_sha256": "f132bb35aaf155027b3a98969c87e644587d08bdf9428b5ab328829ab9bf16f2"
+    },
+    {
+      "id": "TR-15",
+      "definition": "append a fourth round after valid finish",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-15.json",
+      "retained_sha256": "7ddb9f5bad8a6ee24167b2904f16e66a6e9418ba4995925ac59c8a4ec325d681"
+    },
+    {
+      "id": "TR-16",
+      "definition": "isolated old omission equation and length-only repair for two64-byte digests",
+      "status": "not-run-build-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-16.json",
+      "retained_sha256": "f38a070fc085de533603c7f920b2265c94998ec1b7c8d4e4c19d6ae9ebb5cee1"
+    }
+  ],
+  "admitted_native_invocations": 0,
+  "cumulative": 402,
+  "ceiling": 426,
+  "build_attempts_used": 2,
+  "build_attempts_remaining": 0,
+  "expected_results_generated": false
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "Primary statement/source review; no numerical theorem evaluation",
+  "sources": [
+    {
+      "id": "Aurora",
+      "url": "https://eprint.iacr.org/2018/828.pdf",
+      "version": "8 May 2019, 64 pages",
+      "locators": ["Definitions 4.4-4.7", "Theorems 7.4,8.5,9.2", "Protocol 8.6", "Figures 4-5"],
+      "use": "IOP/masking hypotheses; not a proof that the selected implementation is identical"
+    },
+    {
+      "id": "BCS",
+      "url": "https://eprint.iacr.org/2016/116.pdf",
+      "version": "10 February 2016, 48 pages",
+      "locators": ["Sections 3,5.4,6", "Theorem 7.1"],
+      "use": "Exact classical IOP transformation and distinct soundness/knowledge/ZK prerequisites"
+    },
+    {
+      "id": "CMS",
+      "url": "https://www.iacr.org/archive/tcc2019/11891143/11891143.pdf",
+      "version": "TCC 2019 proceedings, 29 pages",
+      "locators": ["Theorem 3 (informal)", "Section 2.9"],
+      "use": "IOP-specific QROM route; no finite constants or unseen full-version lemma asserted",
+      "full_version_limitation_reused": "14 January 2020 full-version metadata known; prior PDF robots denial retained, not bypassed"
+    },
+    {
+      "id": "libiop",
+      "url": "https://github.com/scipr-lab/libiop/tree/a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "use": "21 immutable-URL source texts retained with SHA-256 and computed Git blob SHA-1; see sources*.json",
+      "limitation": "No full Git checkout, transitive submodule seal or compiled field certificate"
+    }
+  ],
+  "source_only": true,
+  "no_reviewed_code_executed": true
+}

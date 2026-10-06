@@ -1,0 +1,16 @@
+{
+  "package": "S2-REVOKE-AUDIT-1",
+  "failure": "Ruff B007 unused dirs variable in diagnose.py",
+  "failed_record": "quality.json",
+  "retained_stop": "STOP.json",
+  "resource_limit_hit": false,
+  "change": "Rename unused dirs to _dirs; diagnostic computation and inputs unchanged",
+  "diagnostic_rerun": false,
+  "focused_tests_reused": 44,
+  "full_audits_so_far": 0,
+  "continuation_namespace": "final_checks",
+  "continuation_scope": "Corrected-source lint, formatting, then at most one complete audit. No automatic retry, no limit increase. Root failed records remain unchanged; any new STOP prohibits further checks.",
+  "aggregate_budget": "Prior root command times plus final_checks times share the original 300 seconds",
+  "output_budget": "Whole s2_revoke_audit_1 directory including both namespaces shares 10 MiB",
+  "lock": "Shared root run.lock"
+}

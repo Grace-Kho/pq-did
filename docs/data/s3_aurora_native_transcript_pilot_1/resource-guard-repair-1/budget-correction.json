@@ -1,0 +1,12 @@
+{
+  "correction": "Current repair is a separately authorised package under 507338-byte cumulative headroom. Prior 393216 reservation belongs to closed compatibility-1 package, whose 224338 usage and failure are preserved, not re-opened or reset.",
+  "initial_conservative_reservation": 160000,
+  "corrected_repair_reservation": 240000,
+  "authorised_cumulative_headroom": 507338,
+  "cumulative_ceiling_unchanged": 12386485,
+  "native_evidence_ceiling_unchanged": 2097152,
+  "native_evidence_opening_unchanged": 1262780,
+  "future_completion_reservation": 60000,
+  "targeted_rerun": "RG-08 once after prospective budget correction",
+  "no_actual_resource_breach": true
+}

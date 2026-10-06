@@ -1,0 +1,21 @@
+{
+  "authorised": "one additional build (3/3), SEM-01..08 then TR-01..16 once, stop first unexpected result",
+  "contract_seal_sha256": "4c2c86e74ed7e5614861c002684257b48deffbe3247a413726e8042669ee2173",
+  "native_seconds": 264.3718736843439,
+  "implementation_seconds": 268.92925334337633,
+  "analysis_seconds_unchanged": 171.26000670727808,
+  "provisioning_seconds_unchanged": 41.843650440103374,
+  "cumulative_invocations": 402,
+  "ceiling": 426,
+  "builds_used": 2,
+  "build_ceiling": 3,
+  "cumulative_evidence_bytes": 11654809,
+  "cumulative_evidence_headroom": 731676,
+  "native_evidence_bytes": 1038442,
+  "reserved_new_evidence_bytes": 393216,
+  "reserved_finalisation_evidence_bytes": 131072,
+  "reserved_additional_artifacts_bytes": 33554432,
+  "existing_artifacts_bytes": 11228057,
+  "package_cap_seconds": 150,
+  "finalisation_reserve_seconds": 30
+}

@@ -1,0 +1,29 @@
+{
+  "phase": "setup",
+  "name": "pinned-assets",
+  "command": [
+    "/usr/bin/python3",
+    "scripts/install_tools.py"
+  ],
+  "limit_seconds": 600,
+  "memory_max": 2147483648,
+  "network": true,
+  "start_time_UTC": "2026-09-18T17:49:26Z",
+  "status": "pass",
+  "wall_seconds": 209.680810432008,
+  "exit_code": 0,
+  "stop_reason": null,
+  "effective_cgroup": {
+    "memory.max": "2147483648",
+    "memory.swap.max": "0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "sampled_process_tree_RSS_peak": 51568640,
+  "sampled_cgroup_charge_peak": 2147786752,
+  "sampled_swap_peak": 0,
+  "sampled_experiment_disk_peak": 2769389943,
+  "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+  "log": "evidence/pinned-assets.log",
+  "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+}

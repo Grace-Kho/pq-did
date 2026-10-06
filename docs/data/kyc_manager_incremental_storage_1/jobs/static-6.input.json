@@ -1,0 +1,25 @@
+{
+  "name": "static-6",
+  "phase": "tool",
+  "argv": [
+    "/home/grace/projects/pq-did/.venv/bin/python",
+    "-I",
+    "-B",
+    "/home/grace/projects/pq-did/experiments/kyc_manager_incremental_storage_1/tooling.py"
+  ],
+  "limit_seconds": 20,
+  "child_seconds": 19,
+  "status": "launched",
+  "unit": "pqdid-kyc-manager-1-static-6",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 1388408,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 32634510,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 1009254
+  },
+  "available_memory": 4058476544,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

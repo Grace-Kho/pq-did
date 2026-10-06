@@ -1,0 +1,42 @@
+{
+  "invocation_id": "KYCI1-0035",
+  "case_id": "I-03",
+  "work_event_reservation": 0,
+  "ordinal": 35,
+  "cumulative_invocations": 1080,
+  "status": "pass",
+  "details": {
+    "case": 3,
+    "state": {
+      "manager_epoch": 0,
+      "allocated_count": 1,
+      "issuer_phases": [
+        "CERTIFIED"
+      ],
+      "verifiers": {
+        "A": {
+          "audience": "baseline-audience-A",
+          "challenges": 1,
+          "consumed": 1,
+          "head": "d1368599b56b0c3757799ad5a44daae921a3d7ad4d24caaf77eb8c52ee38de75",
+          "generation": 1
+        },
+        "B": {
+          "audience": "baseline-audience-B",
+          "challenges": 1,
+          "consumed": 1,
+          "head": "cf962c937c11ca2ac1658ab60f2dd1ecc8a85ee7760ab4d6b049eea3da3ea878",
+          "generation": 1
+        }
+      },
+      "holder_epoch": 0
+    },
+    "schema": 2,
+    "crypto": "genuine bounded ML-DSA-65",
+    "private_proof": "unavailable",
+    "migration_anchor": "571cb836028aeb9dada49a669f39931e2ce648470e79f9c281d6cfc9aaf22087"
+  },
+  "seconds": 0.6049977699294686,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

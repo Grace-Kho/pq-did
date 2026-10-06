@@ -1,0 +1,69 @@
+{
+  "package": "S2-DURABLE-VERIFIER-LIFECYCLE-INTEGRATION-1",
+  "passed": true,
+  "comparison_complete": true,
+  "resource_guard_status": "pending-outer-finalisation",
+  "protected_files": 8759,
+  "unchanged_protected_files": 8756,
+  "allowed_changed_files": [
+    "docs/spec_issues.md",
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "changed_files": [],
+  "missing_files": [],
+  "bytes_hashed": 293808427,
+  "coverage_sha256": "73df29e985aad1544583a3700a7cdbf83f2c3bfbfcde6c43720fb8a2d7c772fc",
+  "supplementary_comparison": {
+    "protected_files": 1106,
+    "unchanged_protected_files": 1106,
+    "allowed_changed_files": [],
+    "changed_files": [],
+    "missing_files": [],
+    "bytes_hashed": 9766233,
+    "coverage_sha256": "fd15c52a86eb9395003a8460af576f21d4f6e198c24082d9421057982acba9c8"
+  },
+  "content_partition_union": 9865,
+  "content_partition_overlap": 0,
+  "identity_inclusive_unique_paths": 9884,
+  "name_inventory": {
+    "passed": true,
+    "count": 1568,
+    "unexpected": [],
+    "missing": []
+  },
+  "only_existing_changes": [
+    "docs/status.md",
+    "docs/traceability.md",
+    "docs/spec_issues.md"
+  ],
+  "existing_report_prefixes_preserved": true,
+  "baseline_regenerated": false,
+  "test_invocations": {
+    "focused": 7,
+    "focused-remainder": 6,
+    "boundaries": 6,
+    "boundaries-remainder": 5,
+    "final-boundaries": 3
+  },
+  "unique_new_tests": 24,
+  "total_test_invocations_including_prior_package": 172,
+  "retained_assertion_failures": 3,
+  "retained_lint_failures": 1,
+  "targeted_repeated_invocations": 3,
+  "all_distinct_cases_passed_finally": true,
+  "new_numerical_calculations": 0,
+  "scoped_existing_verifier_regressions": 0,
+  "analysis_allowance_remaining_unchanged": 270.1814811680233,
+  "isolation_allowance_remaining_unchanged": 250.22,
+  "local_links_checked": 437,
+  "package_bytes_before_report": 579952,
+  "temporary_storage_bytes": 0,
+  "charged_seconds_including_inflight_audit_reservation": 174.2529565942241,
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "estimator_runs": 0,
+  "activation": false,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1
+}

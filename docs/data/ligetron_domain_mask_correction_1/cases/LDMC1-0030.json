@@ -1,0 +1,19 @@
+{
+  "id": "R-02",
+  "invocation": {
+    "invocation_id": "LDMC1-0030",
+    "case_id": "R-02",
+    "work_event_reservation": 1000000,
+    "ordinal": 30,
+    "cumulative_invocations": 1248,
+    "status": "admitted"
+  },
+  "status": "pass",
+  "binary_sha256": "9d21ea26044ab0959379ec5bcdd8d8cd5d47794fd45518381b7b532f19d6a3fb",
+  "expected_sha256": "f4d44a3e76ae05be7b0a5b655be6a242c461e0824a4878181222109ed12be2a7",
+  "exit_code": 0,
+  "stdout": "[\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\"]\n",
+  "stderr": "",
+  "layer": "actual native public-policy mask placeholders; not acceptance",
+  "seconds": 0.0022156790364533663
+}

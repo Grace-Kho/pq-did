@@ -1,0 +1,32 @@
+[
+  {
+    "path": "manager/authority.sqlite3",
+    "bytes": 81920,
+    "secret_material": false
+  },
+  {
+    "path": "verifier-A/authority.sqlite3",
+    "bytes": 57344,
+    "secret_material": false
+  },
+  {
+    "path": "verifier-B/authority.sqlite3",
+    "bytes": 57344,
+    "secret_material": false
+  },
+  {
+    "path": "issuer/issuer.sqlite3",
+    "bytes": 36864,
+    "secret_material": false
+  },
+  {
+    "path": "holder/wallet.bin",
+    "bytes": 15432,
+    "secret_material": false
+  },
+  {
+    "path": "holder/holder.key",
+    "bytes": 6031,
+    "secret_material": true
+  }
+]

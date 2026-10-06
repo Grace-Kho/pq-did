@@ -1,0 +1,232 @@
+"""Established complete preservation workflow for the authorised continuation."""
+
+import inspect
+import json
+import subprocess
+import sys
+import types
+from pathlib import Path
+
+R = Path(__file__).resolve().parent
+P = R.parents[3]
+C = R.parent / "execution"
+X = P / "experiments/binius_embedding_correspondence_1"
+REPORT = P / "docs/stage3_binius_embedding_correspondence.md"
+sys.dont_write_bytecode = True
+sys.path.insert(0, str(P))
+from scripts import preservation_audit as audit  # noqa: E402
+
+
+def load(path):
+    module = types.ModuleType(path.stem)
+    module.__file__ = str(path)
+    exec(compile(path.read_text(), str(path), "exec"), module.__dict__)
+    return module
+
+
+prior = load(C / "checks.py")
+p = prior.p
+g = load(R / "run.py")
+read = prior.read
+write = audit.write_report
+digest = audit.digest_file
+PHASES = ("acquire", "quality", "quality-2", "prepare", "full-audit", "readback")
+MUTABLE = {
+    "run-ledger.json",
+    "run.lock",
+    "checked-inputs.json",
+    "preparation.json",
+    "validation.json",
+    "phases.json",
+    "result.json",
+    "manifest.json",
+    "final-inventory.json",
+    "resource-closure.json",
+    "validation-closure.json",
+    "STOP.json",
+    "audit-failure.json",
+}
+MUTABLE |= {
+    phase + suffix
+    for phase in PHASES
+    for suffix in (".json", ".log", ".service.json", ".fatal.json")
+}
+
+
+def name(path):
+    return path.relative_to(P).as_posix()
+
+
+def historical():
+    amendment = read(R / "amendment.json")
+    assert digest(C / "manifest.json") == amendment["prior_manifest_sha256"]
+    assert digest(C / "validation-closure.json") == amendment["prior_closure_sha256"]
+    closure = read(C / "validation-closure.json")
+    assert closure["preservation_complete"]
+    seals = read(C / "manifest.json")["sha256"]
+    seals.update(closure["finalisation_sha256"])
+    seals[name(C / "manifest.json")] = amendment["prior_manifest_sha256"]
+    seals[name(C / "validation-closure.json")] = amendment["prior_closure_sha256"]
+    return seals
+
+
+def verify_snapshot():
+    prefixes = read(R / "prefixes.json")
+    seals = historical()
+    for path, expected in seals.items():
+        if path in prefixes:
+            assert prefixes[path]["sha256"] == expected
+            actual = digest(P / path, prefix_bytes=prefixes[path]["bytes"])
+        else:
+            actual = digest(P / path)
+        assert actual == expected, path
+    return len(seals)
+
+
+def scope():
+    value = prior.scope()
+    seals = historical()
+    value["frozen_package_inputs"].update(seals)
+    for path, prefix in read(R / "prefixes.json").items():
+        assert prefix["sha256"] == seals[path]
+        value["frozen_package_inputs"].pop(path)
+        value["append_only_documentation"][path] = prefix
+    checked = read(R / "checked-inputs.json")["sha256"]
+    value["frozen_package_inputs"].update(checked)
+    value["required_names"] = sorted(set(value["required_names"]) | set(seals) | set(checked))
+    value["optional_names"] = sorted(set(value["optional_names"]) | {name(R / n) for n in MUTABLE})
+    value["new_python_files"] += [name(f) for f in (*R.glob("*.py"), *X.glob("*.py"))]
+    value["new_markdown_files"] += [name(X / "native/README.md")]
+    return value
+
+
+def quality():
+    files = sorted([*R.glob("*.py"), *X.glob("*.py")])
+    for args in (
+        ("check", "--select", "I", "--fix"),
+        ("format",),
+        ("check",),
+        ("format", "--check"),
+    ):
+        subprocess.run(
+            [str(P / ".venv/bin/ruff"), *args, "--no-cache", *map(str, files)],
+            check=True,
+            timeout=1,
+        )
+    count = verify_snapshot()
+    assert read(R / "representation-admission.json")["passed"]
+    assert (
+        digest(P / "docs/manuscript/PQ_DID__Implementation.pdf")
+        == "d17ca0a20b319b88e959467cae92d91d619973f84384710ecbf960a3b850aeca"
+    )
+    seals = {name(f): digest(f) for f in files}
+    write(R / "quality-inputs-2.json", {"sha256": seals, "historical_seals_verified": count})
+
+
+def current_outcomes():
+    rows = read(R / "run-ledger.json")
+    cases = [r for r in rows if r["name"].startswith("EC-")]
+    assert len(cases) == 25
+    for i, row in enumerate(cases, 1):
+        assert row["name"] == f"EC-{i:02}" and row["status"] == "pass"
+        assert read(R / (row["name"] + ".outcome.json"))["status"] == "pass"
+    return cases
+
+
+def prepare():
+    assert read(R / "quality-2.json")["status"] == "pass"
+    current_outcomes()
+    for path, h in read(R / "quality-inputs-2.json")["sha256"].items():
+        assert digest(P / path) == h, path
+    frozen = {
+        name(f): digest(f)
+        for f in R.rglob("*")
+        if f.is_file() and f.relative_to(R).as_posix() not in MUTABLE
+    }
+    frozen.update({name(f): digest(f) for f in X.rglob("*") if f.is_file()})
+    write(R / "checked-inputs.json", {"sha256": frozen, "historical_baselines_regenerated": False})
+    inventory = p.inventory(scope())
+    write(R / "preparation.json", {"passed": inventory["passed"], "inventory": inventory})
+    assert inventory["passed"], inventory
+
+
+def current_checks(original):
+    current_outcomes()
+    rows = read(R / "run-ledger.json")
+    original.prior.check_runs(
+        R, {"acquire", "quality", "quality-2", "prepare", *[f"EC-{i:02}" for i in range(1, 26)]}
+    )
+    assert rows[-1]["name"] == "full-audit" and rows[-1]["status"] == "launched"
+    charged = 61.68825586186722 + 45 + sum(r.get("seconds", r["limit_seconds"]) for r in rows)
+    assert charged + 10 < 200
+    assert g.package_size() < 581455
+    return 5263.382030437819 + charged
+
+
+def full_audit():
+    source = inspect.getsource(p.full_audit)
+    pairs = (
+        ('"command_seconds": 300', '"command_seconds": 60'),
+        ('"child_seconds": 295', '"child_seconds": 55'),
+        ('"aggregate_seconds": 4274', '"aggregate_seconds": 6074'),
+        ('"output_bytes": 33554432', '"output_bytes": 41943040'),
+        (
+            'package="OCT31-KYC-NATIVE-MILESTONE-1"',
+            'package="S3-BINIUS-EMBEDDING-CORRESPONDENCE-1"',
+        ),
+        ("prior_output_bytes=16665098", "prior_output_bytes=34825155"),
+        (
+            "module.current_storage = guard.storage",
+            'module.current_storage = lambda: {"new_evidence_bytes": g.package_size()}',
+        ),
+        (
+            '"implementation_remaining_including_audit_reservation": 4274 - charged',
+            '"implementation_remaining_including_audit_reservation": 6074 - charged',
+        ),
+        ("module.current_cases = current_cases", "module.current_cases = lambda: {}"),
+        (
+            (
+                "module.current_invocations = lambda: 448 + "
+                'len(guard.read(D / "ledger.json")["invocations"])'
+            ),
+            "module.current_invocations = lambda: 1165",
+        ),
+        (
+            "Approved isolated native/baseline/benchmark milestone",
+            "Approved Python embedding component; no native execution or proof",
+        ),
+    )
+    for before, after in pairs:
+        assert before in source, before
+        source = source.replace(before, after)
+    module = types.ModuleType("component_preservation")
+    module.__dict__.update(vars(p))
+    shim = types.SimpleNamespace(
+        read=read, write=write, output_role=lambda _: ("evidence", 1048576)
+    )
+    module.__dict__.update(D=R, scope=scope, current_checks=current_checks, g=g, guard=shim)
+    exec(compile(source, str(R / "checks.py"), "exec"), module.__dict__)
+    module.full_audit()
+
+
+def readback():
+    assert read(R / "result.json")["passed"]
+    inventory = p.inventory(scope())
+    assert inventory["passed"], inventory
+    write(R / "final-inventory.json", inventory)
+    verify_snapshot()
+    for path, h in read(R / "manifest.json")["sha256"].items():
+        assert digest(P / path) == h, path
+    print(
+        json.dumps({"passed": True, "inventory_count": inventory["count"], "report_readback": True})
+    )
+
+
+def run(phase):
+    {
+        "quality": quality,
+        "quality-2": quality,
+        "prepare": prepare,
+        "full-audit": full_audit,
+        "readback": readback,
+    }[phase]()

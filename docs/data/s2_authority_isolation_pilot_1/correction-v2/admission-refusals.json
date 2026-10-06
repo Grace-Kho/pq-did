@@ -1,0 +1,18 @@
+{
+  "kind": "no workload launched",
+  "reason": "guard refused to proceed while v2-lint-final was unreviewed",
+  "attempted_names": [
+    "v2-format",
+    "v2-cleanup",
+    "v2-prepare"
+  ],
+  "exit_codes": [
+    1,
+    1,
+    1
+  ],
+  "resource_workers_started": 0,
+  "test_invocations": 0,
+  "diagnostic": "unreviewed failure",
+  "accounting": "small pre-admission operator checks covered by the conservative five-second operator reserve"
+}

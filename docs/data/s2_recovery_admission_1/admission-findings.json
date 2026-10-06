@@ -1,0 +1,61 @@
+{
+  "package": "S2-RECOVERY-ADMISSION-1",
+  "pre_existing_source_changes": [],
+  "new_source": [
+    "src/pqdid/recovery.py",
+    "src/pqdid/recovery_records.py"
+  ],
+  "fixture_authority_only": true,
+  "production_restart_approved": false,
+  "roles": [
+    "manager",
+    "issuer",
+    "verifier",
+    "registry",
+    "resolver",
+    "controller",
+    "holder"
+  ],
+  "preserved_unsafe_restart_controls": [
+    "test_unsafe_restart_negative_control_signed_root_does_not_bind_allocation_counter",
+    "test_unsafe_restart_negative_control_stale_pending_snapshot_can_reaccept"
+  ],
+  "validation_stages": [
+    {
+      "command": "focused",
+      "cases": 50,
+      "scope": "Role validation/gates and restart failures, before extra strict schema check"
+    },
+    {
+      "command": "structural",
+      "cases": 8,
+      "scope": "After strict schema check: all seven current role admissions, wrong field types and aggregate byte cap; unchanged core assertions reused"
+    },
+    {
+      "command": "regression",
+      "cases": 28,
+      "scope": "Unchanged lifecycle review, including two labelled unsafe controls"
+    },
+    {
+      "command": "lease",
+      "cases": 1,
+      "scope": "Final source review: faulty authority suppresses validation exception; completion guard still rejects"
+    }
+  ],
+  "freshness": "Default unavailable; independent complete-role binding and exclusive final activation lease required",
+  "discard_pending_supported": false,
+  "interrupted_issuer_phases": "PREPARING/CLAIMED rejected, no automatic retirement",
+  "next_package": "S2-RECOVERY-AUTHORITY-DESIGN-1",
+  "open": [
+    "independent rollback-resistant authority",
+    "durable transaction/outcome records",
+    "writer fencing and leases",
+    "in-flight issuer reconciliation",
+    "real crash tests",
+    "Stages 2\u20133 proofs/security"
+  ],
+  "new_proofs": 0,
+  "new_zkvm_executions": 0,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1
+}

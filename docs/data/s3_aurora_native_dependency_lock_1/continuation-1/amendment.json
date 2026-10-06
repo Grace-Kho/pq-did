@@ -1,0 +1,27 @@
+{
+  "package": "S3-AURORA-NATIVE-DEPENDENCY-LOCK-1",
+  "previous_cumulative_limit": 10485760,
+  "amended_cumulative_limit": 12386485,
+  "prior_packages_bytes": 10289333,
+  "retained_package_bytes": 203630,
+  "retained_cumulative_bytes": 10492963,
+  "recorded_exceedance_bytes": 7203,
+  "headroom_at_authorisation_bytes": 1893522,
+  "unchanged_package_limit_bytes": 2097152,
+  "metadata_reservation_bytes": 262144,
+  "completion_reservation_bytes": 524288,
+  "resume_once": true,
+  "historical_failure_preserved": true,
+  "previous_charge_seconds": 20.53469604079146,
+  "continuation_cap_seconds": 39.465,
+  "combined_cap_seconds": 60,
+  "reserve_seconds": 10,
+  "native_seconds_unchanged": 291.7509900990408,
+  "implementation_seconds_unchanged": 296.30836975807324,
+  "new_native_builds": 0,
+  "new_native_invocations": 0,
+  "ledger": [
+    402,
+    426
+  ]
+}

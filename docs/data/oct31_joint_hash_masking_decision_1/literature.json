@@ -1,0 +1,22 @@
+{
+  "primary_lookups": [
+    {
+      "url": "https://eprint.iacr.org/2018/828.pdf",
+      "version": "8 May 2019, 64 pages",
+      "examined": "Remark5.6; Theorems7.4,8.5,9.2 and relevant protocols; no general survey",
+      "important_limit": "Theorem9.2 states binary fields; multiplicative sumcheck is not the complete adopted ZK/knowledge theorem"
+    },
+    {
+      "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf",
+      "version": "FIPS204 August2024",
+      "examined": "Algorithm8 line12, internal challenge SHAKE"
+    }
+  ],
+  "new_local_downloads": 0,
+  "retained_BCS_CMS_and_masking_contracts_reused": true,
+  "source_read_diagnostic": "A guessed signatures.py rg path was absent; actual credentials.py located; no execution/test",
+  "source_read_diagnostics_retained": [
+    "Guessed holder.py and holder_binding.py absent; actual binding.py inspected",
+    "Guessed old preservation paths absent; rg --files located retained kyc_milestone_1/preservation.py"
+  ]
+}

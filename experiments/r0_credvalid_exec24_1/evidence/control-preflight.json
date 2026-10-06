@@ -1,0 +1,35 @@
+{
+  "phase": "setup",
+  "slot": null,
+  "mem_available_at_admission": 4941824000,
+  "name": "control-preflight",
+  "command": [
+    "control-probe"
+  ],
+  "limit_seconds": 30,
+  "memory_max": 2147483648,
+  "network": false,
+  "start_time_UTC": "2026-09-19T03:33:17Z",
+  "status": "pass",
+  "wall_seconds": 0.21100458400906064,
+  "exit_code": 0,
+  "stop_reason": null,
+  "effective_cgroup": {
+    "memory.max": "2147483648",
+    "memory.swap.max": "0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "sampled_process_tree_RSS_peak": 8998912,
+  "sampled_cgroup_charge_peak": 1835008,
+  "sampled_swap_peak": 0,
+  "sampled_cgroup_kernel_peak": 1835008,
+  "sampled_temporary_bytes_peak": 0,
+  "sampled_experiment_disk_peak": 5167448067,
+  "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+  "log": "evidence/control-preflight.log",
+  "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~20 ms excluding metadata/disk polling may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently.",
+  "cgroup_memory_peak_bytes": 6565888,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+  "temporary_bytes_at_exit": 0
+}

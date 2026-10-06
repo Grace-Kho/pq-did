@@ -1,0 +1,251 @@
+{
+  "package": "KYC-MANAGER-INCREMENTAL-STORAGE-1",
+  "cases": [
+    {
+      "id": "S-01",
+      "description": "populated migration and repeated recovery",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-02",
+      "description": "migration before COMMIT exception",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-03",
+      "description": "migration after COMMIT exception",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-04",
+      "description": "actual process exit before migration COMMIT",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-05",
+      "description": "actual process exit after migration COMMIT",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-06",
+      "description": "stale migration plan",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-07",
+      "description": "old writer fenced",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-08",
+      "description": "commit before COMMIT exception",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-09",
+      "description": "commit after COMMIT lost acknowledgement",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-10",
+      "description": "actual process exit before commit",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-11",
+      "description": "actual process exit after commit",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-12",
+      "description": "concurrent/stale prepared manager commit",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-13",
+      "description": "missing history node",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-14",
+      "description": "duplicate history entry/incorrect checkpoint",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-15",
+      "description": "altered head",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-16",
+      "description": "malformed node",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-17",
+      "description": "missing operation",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-18",
+      "description": "wrong instance or missing external freshness",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-19",
+      "description": "exact committed public redelivery without signing",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-20",
+      "description": "recipient-bound issuer redelivery retained",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-21",
+      "description": "nonce replay and permanent allocations",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-22",
+      "description": "historical eight-record encoding failure preserved",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-23",
+      "description": "bounded node codec and structural limits",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-24",
+      "description": "migration preserves prior checkpoint and outcomes",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-01",
+      "description": "complete eight-record paging and atomic baseline catch-up",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-02",
+      "description": "missing last page leaves wallet unchanged",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-03",
+      "description": "duplicate page leaves wallet unchanged",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-04",
+      "description": "reordered updates rejected",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-05",
+      "description": "wrong target state rejected",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-06",
+      "description": "wrong namespace rejected",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-07",
+      "description": "oversized complete response rejected",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-08",
+      "description": "truncated response rejected",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-09",
+      "description": "changed history endpoint rejected",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-10",
+      "description": "zero progress rejected",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-11",
+      "description": "revoked holder retains old wallet",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-12",
+      "description": "private reference wallet paged catch-up",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-13",
+      "description": "stale private wallet commit blocked",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-14",
+      "description": "per-call lower bounds enforced",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-15",
+      "description": "independent verifiers after v2 catch-up",
+      "max_seconds": 40
+    },
+    {
+      "id": "R-v2-1",
+      "description": "Affected scaling; v2 manager/issuer; genuine baseline",
+      "max_seconds": 150
+    },
+    {
+      "id": "R-v2-4",
+      "description": "Affected scaling; v2 manager/issuer; genuine baseline",
+      "max_seconds": 150
+    },
+    {
+      "id": "R-1-8",
+      "description": "Affected scaling; v2 manager/issuer; genuine baseline",
+      "max_seconds": 150
+    },
+    {
+      "id": "R-2-8",
+      "description": "Affected scaling; v2 manager/issuer; genuine baseline",
+      "max_seconds": 150
+    },
+    {
+      "id": "H-16",
+      "description": "Second independent verifier after v2 paged catch-up",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-25",
+      "description": "Actual exit before signed revocation COMMIT",
+      "max_seconds": 40
+    },
+    {
+      "id": "S-26",
+      "description": "Actual exit after signed revocation COMMIT and exact redelivery",
+      "max_seconds": 40
+    },
+    {
+      "id": "H-17",
+      "description": "Alternate valid state signatures preserve logical-reference catch-up semantics",
+      "max_seconds": 40
+    }
+  ],
+  "planned_invocations": 47,
+  "available": 55,
+  "correction_allowance": 8,
+  "execution_estimate_seconds": 600,
+  "source_and_reporting_estimate_seconds": 550,
+  "completion_reserve_seconds": 300,
+  "evidence_estimate_bytes": 2000000,
+  "storage_bounds": "Unchanged DB512KiB/journal512KiB,temp8MiB,response65536,per-call16 records/178592 bytes,worker256MiB",
+  "scope": "New isolated roots; original sources unchanged; one full preservation checkpoint",
+  "stop": "First unexpected case stops its group; only diagnosed in-scope corrections and affected revalidation, no automatic retry; guard/integrity failures stop",
+  "addendum": "Add signed-revocation-specific transaction boundaries; reuse other completed evidence. One H-15 targeted rerun after explicit dependency correction."
+}

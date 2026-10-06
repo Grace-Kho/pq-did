@@ -1,0 +1,71 @@
+{
+  "date": "2026-09-26",
+  "kind": "Primary source text review; no sources executed; no dependencies installed",
+  "previous_survey": "docs/data/stage3_profile_sources.json",
+  "new_sources": [
+    {
+      "id": "A-paper",
+      "url": "https://eprint.iacr.org/2018/828.pdf",
+      "version": "May 8 2019, 64 pages",
+      "locators": [
+        "Sections 2.3, 7.1, 9 (Theorem 9.2), 10.2, 11",
+        "Theorems 1.1/1.2 informal"
+      ],
+      "use": "IOP ZK construction, asymptotic costs and published R1CS workload; not complete PQ-DID measurements"
+    },
+    {
+      "id": "CMS",
+      "url": "https://www.iacr.org/archive/tcc2019/11891143/11891143.pdf",
+      "version": "TCC 2019 proceedings, 29 pages; Theorem 3 informal, Section 2.9",
+      "use": "BCS QROM theorem conditional on round-by-round properties; no precise numerical bound from big-O",
+      "fetch_note": "ePrint2019/834 full-version fetch denied; search identifies January14 2020 revision but not treated as inspected full text"
+    },
+    {
+      "id": "A-commit",
+      "url": "https://github.com/scipr-lab/libiop/commit/a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "version": "Observed master history tip, May13 2021",
+      "use": "Identifiable proposed implementation revision; not a new local dependency pin"
+    },
+    {
+      "id": "A-code",
+      "base_url": "https://raw.githubusercontent.com/scipr-lab/libiop/master/",
+      "observed_branch_tip": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "files": [
+        "README.md",
+        "INSTALL.md",
+        "libiop/snark/aurora_snark.hpp",
+        "libiop/snark/aurora_snark.tcc",
+        "libiop/protocols/aurora_iop.tcc",
+        "libiop/bcs/bcs_common.hpp",
+        "libiop/bcs/bcs_common.tcc",
+        "libiop/bcs/common_bcs_parameters.tcc",
+        "libiop/bcs/merkle_tree.tcc"
+      ],
+      "pin_limitation": "Readable branch views only; immutable file URLs/cache misses. No byte-identical checkout/submodule verification claimed. Must verify revision/files/submodules before any future build.",
+      "mode": "Native Aurora R1CS, make_zk=true, binary field and BLAKE2b; no recursion/wrapper; field192/security_parameter128 is published comparison setting not adopted PQ-DID parameters"
+    },
+    {
+      "id": "R0-paper",
+      "url": "https://dev.risczero.com/proof-system-in-detail.pdf",
+      "version": "August11 2023 draft, 35 pages",
+      "use": "Protocol-family IOP description; predates SDK3.0.6 and does not establish selected recursion/profile theorem"
+    },
+    {
+      "id": "R0-security",
+      "url": "https://dev.risczero.com/api/security-model",
+      "version": "Displayed version3.0 accessed September26 2026",
+      "use": "Qualified ZK, recursion, security assumptions; not overall project security"
+    },
+    {
+      "id": "MITH-prior",
+      "url": "https://eprint.iacr.org/2017/279.pdf",
+      "version": "ZKB++/Picnic reference as inspected in sealed September19 survey; no new paper revision claimed",
+      "implementation_commit": "3d7739fb2e17cea60d2187a169c5e652cba34448",
+      "use": "Reused source hashes/seeded generic3party driver evidence; no new full verification",
+      "fetch_note": "Immutable gzkbpp re-fetches returned cache misses; earlier sealed evidence reused"
+    }
+  ],
+  "access_failures": "GitHub API and some pinned raw/blob files returned cache miss/internal error; exploratory encoded-Aurora guessed filenames unavailable. These are read-only retrieval failures, not test invocations. No claim to review absent files.",
+  "full_text_copied": false,
+  "new_execution": false
+}

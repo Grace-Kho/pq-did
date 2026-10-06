@@ -1,0 +1,21 @@
+{
+  "sha256": {
+    "experiments/ligetron_domain_mask_correction_1/overlay/include/params.hpp": "6e1f3480753ed7b6b4fa184b3f40778503b9bc11e8bb9ee78a323607f7303651",
+    "experiments/ligetron_domain_mask_correction_1/overlay/include/wgpu.hpp": "d53f25fc22209f2f50e9ed4833a4c18b78c10b59d4a30741564e89cbc55987ab",
+    "experiments/ligetron_domain_mask_correction_1/overlay/include/zkp/backend/witness_manager.hpp": "78f0547dfa2fb22a60ae9891a26d75f9f4c8a8a20223ed4e7a7c3413fef38d90",
+    "experiments/ligetron_domain_mask_correction_1/overlay/include/zkp/nonbatch_context.hpp": "9134343ada4f80dcfa176e6c6919570f57c97594cafa20c795787ad18717b662",
+    "experiments/ligetron_domain_mask_correction_1/overlay/include/zkp/pqdid_domain_mask_exp1.hpp": "662b77fd1aaa1920e131213e4dd51736024f20d7832f5c361233d5e4310f9b8d",
+    "experiments/ligetron_domain_mask_correction_1/overlay/include/zkp/pqdid_rng_exp1.hpp": "331dfd06617df4c2f1aace836b17fa766e6a6c1ff60fc87f04f5d6bafe8a22ed",
+    "experiments/ligetron_domain_mask_correction_1/overlay/pack/shader/bignum.wgsl": "884e29240ec72d3fa143906b7c23b08bdf5076fb9073a7c4ae7eae575dd8f122",
+    "experiments/ligetron_domain_mask_correction_1/overlay/shader/kernels.wgsl.in": "2720b7a570695f39c16b2b5e0a0b01561460e37fc340062edff8c4d7e7107710",
+    "experiments/ligetron_domain_mask_correction_1/overlay/src/webgpu/engine.cpp": "05d5571048906234573603011b9743998616ce5e260ae1a593316c36366dd0ce",
+    "experiments/ligetron_domain_mask_correction_1/overlay/src/webgpu_prover.cpp": "95e7c6a0fe0b12eb3608e2373ea165a1c3b820e6b7f82c1282fb52dc87d4229e",
+    "experiments/ligetron_domain_mask_correction_1/overlay/src/webgpu_verifier.cpp": "8e2d5eb60b24b8d8c9ea891a2b51a77aa7f36155cde6e4866e2707d1f720745f",
+    "experiments/ligetron_domain_mask_correction_1/native.cpp": "98fba48beb4315fe8343eac871e6255a80b47c82a0f8026e9c2956682675cf69",
+    "experiments/ligetron_domain_mask_correction_1/expectations.py": "5ccc7dd44ed3a0882e9b21dad1d589e95b1784a254ed67b05e64201552706588",
+    "experiments/ligetron_domain_mask_correction_1/build.py": "b883431a95835bdfa7e033a7b21ac1b44986eaff11e2e098cdaceef6b8147b53",
+    "experiments/ligetron_domain_mask_correction_1/cases.py": "ebf6391d43c8f30e5a75ca2512707575f3351f89c9f3cb68975d3d4eac18725d"
+  },
+  "patch_sha256": "31f1515e498182664f51e92d91925416c0063d5b117494948e4a52dc6fcc5723",
+  "base_overlay_sha256": "043ee96fbae51b9416b3435be7e7ad27cfc076ddb7790e14f14be6ea09c0dc3c"
+}

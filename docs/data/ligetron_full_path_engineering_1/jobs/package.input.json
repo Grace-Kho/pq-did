@@ -1,0 +1,26 @@
+{
+  "name": "package",
+  "phase": "tool",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/ligetron_full_path_engineering_1/preservation.py",
+    "readback"
+  ],
+  "limit_seconds": 25,
+  "child_seconds": 24,
+  "status": "launched",
+  "unit": "pqdid-ligetron-full-path-1-package",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 340236,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 39379788,
+    "artifact_bytes": 79520569,
+    "temporary_bytes": 0
+  },
+  "available_memory": 3898855424,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

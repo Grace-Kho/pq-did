@@ -1,0 +1,18 @@
+{
+  "id": "ENT-02",
+  "invocation": {
+    "invocation_id": "LGC1-0002",
+    "case_id": "ENT-02",
+    "work_event_reservation": 1000000,
+    "ordinal": 2,
+    "cumulative_invocations": 1185,
+    "status": "admitted"
+  },
+  "status": "pass",
+  "binary_sha256": "7f28431909d2d570d6e722abb6364f6e4b7797175d64c1ee825776557ba2fa63",
+  "expected_sha256": "7ea58f9ec9735d8bbe90f973105558af00fd0ad447c5cca93cd6f629ed826f3e",
+  "exit_code": 0,
+  "stdout": "{\"case\":\"ENT-02\",\"data\":\"entropy-error|stage-entered=0|release=0\",\"openssl\":\"OpenSSL 3.5.5 27 Jan 2026\",\"gmp\":\"6.3.0\"}\n",
+  "stderr": "",
+  "seconds": 0.0024257348850369453
+}

@@ -1,0 +1,8 @@
+{
+  "failed_audit_job": "full-audit",
+  "full_comparisons_completed": 0,
+  "error": "scope hash compared against original failed preparation.json rather than corrected preparation",
+  "failure_log_sha256": "56055d3cd2e0b58efebf52420641ab5c9eb496b1cff00f30c031fbd348337ef3",
+  "correction": "Select new versioned completed preparation and inject exact two-root-file partition wrapper at inner auditor too",
+  "baseline_hashes_or_comparisons_removed": false
+}

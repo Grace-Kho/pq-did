@@ -1,0 +1,411 @@
+{
+  "invocation_id": "KYCI1-0044",
+  "case_id": "R-1-4",
+  "work_event_reservation": 0,
+  "ordinal": 44,
+  "cumulative_invocations": 1089,
+  "status": "pass",
+  "details": {
+    "operation": "public-history-fetch-verify-and-atomic-wallet-update",
+    "session": 1,
+    "history_length": 4,
+    "issuer_sessions": 5,
+    "setup_ns": 4372834961,
+    "migration_ns": 13509861,
+    "operation_ns": 297746966,
+    "record_bytes": 44648,
+    "messages": {
+      "credential": {
+        "canonical": 11012,
+        "transport": 11012
+      },
+      "enrolment_body": {
+        "canonical": 7720,
+        "transport": 7720
+      },
+      "initial_witness_path": {
+        "canonical": 960,
+        "transport": 960
+      },
+      "initial_state": {
+        "canonical": 3427,
+        "transport": 3427
+      },
+      "enrolment_signature": {
+        "canonical": 3309,
+        "transport": 3309
+      },
+      "revocation_request_body": {
+        "canonical": 581,
+        "transport": 581
+      },
+      "revocation_request_signature": {
+        "canonical": 3309,
+        "transport": 3309
+      },
+      "published_revocation_state": {
+        "canonical": 3427,
+        "transport": 3427
+      }
+    },
+    "storage": [
+      {
+        "path": "manager/authority.sqlite3",
+        "bytes": 475136,
+        "secret_material": false
+      },
+      {
+        "path": "verifier-A/authority.sqlite3",
+        "bytes": 57344,
+        "secret_material": false
+      },
+      {
+        "path": "verifier-B/authority.sqlite3",
+        "bytes": 57344,
+        "secret_material": false
+      },
+      {
+        "path": "issuer/issuer.sqlite3",
+        "bytes": 147456,
+        "secret_material": false
+      },
+      {
+        "path": "holder/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      },
+      {
+        "path": "holder-other-0/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder-other-0/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      },
+      {
+        "path": "holder-other-1/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder-other-1/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      },
+      {
+        "path": "holder-other-2/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder-other-2/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      },
+      {
+        "path": "holder-other-3/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder-other-3/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      }
+    ],
+    "storage_growth": [
+      {
+        "revocations": 0,
+        "storage": [
+          {
+            "path": "manager/authority.sqlite3",
+            "bytes": 81920,
+            "secret_material": false
+          },
+          {
+            "path": "verifier-A/authority.sqlite3",
+            "bytes": 57344,
+            "secret_material": false
+          },
+          {
+            "path": "verifier-B/authority.sqlite3",
+            "bytes": 57344,
+            "secret_material": false
+          },
+          {
+            "path": "issuer/issuer.sqlite3",
+            "bytes": 53248,
+            "secret_material": false
+          },
+          {
+            "path": "holder/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          }
+        ]
+      },
+      {
+        "revocations": 1,
+        "storage": [
+          {
+            "path": "manager/authority.sqlite3",
+            "bytes": 143360,
+            "secret_material": false
+          },
+          {
+            "path": "verifier-A/authority.sqlite3",
+            "bytes": 57344,
+            "secret_material": false
+          },
+          {
+            "path": "verifier-B/authority.sqlite3",
+            "bytes": 57344,
+            "secret_material": false
+          },
+          {
+            "path": "issuer/issuer.sqlite3",
+            "bytes": 77824,
+            "secret_material": false
+          },
+          {
+            "path": "holder/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          },
+          {
+            "path": "holder-other-0/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder-other-0/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          }
+        ]
+      },
+      {
+        "revocations": 2,
+        "storage": [
+          {
+            "path": "manager/authority.sqlite3",
+            "bytes": 233472,
+            "secret_material": false
+          },
+          {
+            "path": "verifier-A/authority.sqlite3",
+            "bytes": 57344,
+            "secret_material": false
+          },
+          {
+            "path": "verifier-B/authority.sqlite3",
+            "bytes": 57344,
+            "secret_material": false
+          },
+          {
+            "path": "issuer/issuer.sqlite3",
+            "bytes": 98304,
+            "secret_material": false
+          },
+          {
+            "path": "holder/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          },
+          {
+            "path": "holder-other-0/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder-other-0/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          },
+          {
+            "path": "holder-other-1/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder-other-1/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          }
+        ]
+      },
+      {
+        "revocations": 3,
+        "storage": [
+          {
+            "path": "manager/authority.sqlite3",
+            "bytes": 344064,
+            "secret_material": false
+          },
+          {
+            "path": "verifier-A/authority.sqlite3",
+            "bytes": 57344,
+            "secret_material": false
+          },
+          {
+            "path": "verifier-B/authority.sqlite3",
+            "bytes": 57344,
+            "secret_material": false
+          },
+          {
+            "path": "issuer/issuer.sqlite3",
+            "bytes": 118784,
+            "secret_material": false
+          },
+          {
+            "path": "holder/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          },
+          {
+            "path": "holder-other-0/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder-other-0/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          },
+          {
+            "path": "holder-other-1/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder-other-1/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          },
+          {
+            "path": "holder-other-2/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder-other-2/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          }
+        ]
+      },
+      {
+        "revocations": 4,
+        "storage": [
+          {
+            "path": "manager/authority.sqlite3",
+            "bytes": 475136,
+            "secret_material": false
+          },
+          {
+            "path": "verifier-A/authority.sqlite3",
+            "bytes": 57344,
+            "secret_material": false
+          },
+          {
+            "path": "verifier-B/authority.sqlite3",
+            "bytes": 57344,
+            "secret_material": false
+          },
+          {
+            "path": "issuer/issuer.sqlite3",
+            "bytes": 147456,
+            "secret_material": false
+          },
+          {
+            "path": "holder/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          },
+          {
+            "path": "holder-other-0/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder-other-0/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          },
+          {
+            "path": "holder-other-1/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder-other-1/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          },
+          {
+            "path": "holder-other-2/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder-other-2/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          },
+          {
+            "path": "holder-other-3/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder-other-3/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          }
+        ]
+      }
+    ],
+    "fixture_sha256": "08c83a0391e9a93f4f06a96137070c388ed4fd29180e808ef7394c0183cd126d",
+    "schema": 2,
+    "migration_head": "03ceb4427e0bde669e6bc8df7f1bd193cc397f1c2a16aa20b17882b7e59afa3c",
+    "concurrency": 1,
+    "privacy": "fully disclosed ML-DSA baseline; no private proof",
+    "clock": "synthetic epoch plus monotonic elapsed",
+    "comparison": "new series; v1 and previous 19 observations unchanged"
+  },
+  "seconds": 4.673390181967989,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

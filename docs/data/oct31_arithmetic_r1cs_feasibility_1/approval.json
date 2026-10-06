@@ -1,0 +1,8 @@
+{
+  "package": "OCT31-ARITHMETIC-R1CS-FEASIBILITY-1",
+  "authority": "Direct user instruction in this conversation, 29 September 2026",
+  "allocation": "Existing 2995.1980095516446 implementation seconds; 79 invocations; three builds; no increases/reset",
+  "pre_implementation_stop": "If unchanged-component lower bound exceeds admission, stop before arithmetic gadgets",
+  "proof_attempts": 0,
+  "analysis_or_isolation_transfer": false
+}

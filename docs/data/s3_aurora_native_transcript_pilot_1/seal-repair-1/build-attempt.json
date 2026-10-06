@@ -1,0 +1,6 @@
+{
+  "attempt": 4,
+  "status": "failed",
+  "seconds": 4.294178368058056,
+  "error": "Command '['cmake', '--build', '/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/build', '--target', 'exp2_native', 'exp2_semantics', '--parallel', '1']' returned non-zero exit status 1."
+}

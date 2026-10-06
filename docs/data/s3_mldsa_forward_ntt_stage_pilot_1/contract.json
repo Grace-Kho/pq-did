@@ -1,0 +1,89 @@
+{
+  "package": "S3-MLDSA-FORWARD-NTT-STAGE-PILOT-1",
+  "existing_source_changed": [],
+  "expected_invocations": 16,
+  "reviewed_local_inputs": [
+    "docs/stage3_mldsa_butterfly_composition_pilot.md",
+    "docs/stage3_mldsa_modmul_lowering_pilot.md",
+    "docs/stage3_mldsa_arithmetic_lowering_review.md",
+    "docs/implementation_spec.md",
+    "src/pqdid/bounded_mldsa.py",
+    "src/pqdid/circuits/scalar_ring.py",
+    "src/pqdid/circuits/words.py",
+    "src/pqdid/circuits/division.py",
+    "src/pqdid/circuits/control.py",
+    "src/pqdid/circuits/emitter.py",
+    "tests/reference/scalar_oracle.py",
+    "tests/reference/signature_oracle.py",
+    "experiments/mldsa_modmul_lowering_1/candidate.py",
+    "experiments/mldsa_butterfly_composition_1/candidate.py",
+    "docs/data/s3_mldsa_butterfly_composition_pilot_1/pilot-result.json",
+    "configs/suite.json"
+  ],
+  "constants": [
+    4808194,
+    3765607,
+    3761513
+  ],
+  "lanes": [
+    0,
+    64,
+    128,
+    192
+  ],
+  "schedule": [
+    {
+      "node": "A",
+      "length": 128,
+      "start": 0,
+      "j": 0,
+      "m": 1,
+      "lanes": [
+        0,
+        128
+      ]
+    },
+    {
+      "node": "B",
+      "length": 128,
+      "start": 0,
+      "j": 64,
+      "m": 1,
+      "lanes": [
+        64,
+        192
+      ]
+    },
+    {
+      "node": "C",
+      "length": 64,
+      "start": 0,
+      "j": 0,
+      "m": 2,
+      "lanes": [
+        0,
+        64
+      ]
+    },
+    {
+      "node": "D",
+      "length": 64,
+      "start": 128,
+      "j": 128,
+      "m": 3,
+      "lanes": [
+        128,
+        192
+      ]
+    }
+  ],
+  "generation_probes": 4,
+  "differential_cases": 12,
+  "invalid_constant_cases": 0,
+  "input_contract": "Four signed64 NTT Scalar words at the butterfly boundary, active/prior-rejection controls. Original checked acceptance, full64 canonical masked outputs.",
+  "comparison": "One complete count-only trace with baseline, fully-guarded and representation-reuse cores. Three sequential materialised probes: complete reuse candidate; baseline A/B; baseline C/D plus final boundary. Each of twelve schedule cases spans those observations and is counted once.",
+  "canonical_reuse": "Only C/D use A/B outputs. Omit four redundant mod64 calls; preserve all other checks and original strategy.",
+  "active_profile_changed": false,
+  "new_proofs": 0,
+  "new_zkvm_executions": 0
+}

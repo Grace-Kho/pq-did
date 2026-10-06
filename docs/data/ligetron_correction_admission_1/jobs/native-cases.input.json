@@ -1,0 +1,25 @@
+{
+  "name": "native-cases",
+  "phase": "native",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/ligetron_correction_admission_1/cases.py"
+  ],
+  "limit_seconds": 85,
+  "child_seconds": 84,
+  "status": "launched",
+  "unit": "pqdid-ligetron-correction-1-native-cases",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 1122204,
+    "new_artifact_bytes": 18453092,
+    "evidence_bytes": 37264489,
+    "artifact_bytes": 77419639,
+    "temporary_bytes": 0
+  },
+  "available_memory": 3768934400,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

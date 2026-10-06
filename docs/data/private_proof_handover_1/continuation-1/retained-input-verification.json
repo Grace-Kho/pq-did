@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "prior_inventory_entries_verified": 33,
+  "all_110_packaged_inputs_verified": true,
+  "all_112_archive_members_verified": true,
+  "original_failure_unchanged": true,
+  "ledger_exception": "In-flight inventory entry superseded by trusted completed closure ledger; saved and verified before continuation; no usage reset"
+}

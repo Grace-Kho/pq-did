@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+    "10",
+    "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+  ],
+  "exit_code": 0,
+  "expected_provenance": "docs/data/s3_aurora_transcript_regression_1/TR-10.json",
+  "expected_sha256": "a705127b85fcc444da9ad46daa711e6ad619ea67463f699d3d00baf5f686e3fb",
+  "outcome": {
+    "rejected": true,
+    "atomic_state_retained": true,
+    "sticky_failure": true,
+    "native_reason_text_not_compared": true
+  }
+}

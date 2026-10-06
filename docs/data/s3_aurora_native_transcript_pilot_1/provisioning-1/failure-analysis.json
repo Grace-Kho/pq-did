@@ -1,0 +1,19 @@
+{
+  "status": "blocked-before-source-tree-verification",
+  "failure_phase": "libiop HEAD^{tree} compared with approved tree_git_sha1",
+  "expected_tree_field": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+  "actual_root_tree": "2e2588ccb085242dd2237875c3b9adf1a0fc958c",
+  "commit_checked": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+  "git_fsck_exit": 0,
+  "source_snapshot_comparisons_reached": false,
+  "remaining_repositories_acquired": false,
+  "binary_packages_acquired": false,
+  "build_attempts": 0,
+  "native_invocations": 0,
+  "inference": "Approved lock copied sha from retained commit-addressed GitHub tree response into tree_git_sha1; this value equals the commit ID. The acquired root tree differs. This supports a lock metadata interpretation problem, not a demonstrated corrupted checkout; reconciliation is deferred.",
+  "action": "No pin changed, no acquisition retry, no fallback. Partial checkout quarantined at its authorised path. Preservation finalisation only.",
+  "historical_worker_source_sha256": {
+    "run-at-attempt.py": "22f0a7be26a37ea597c6edad9791c357194ec8dd35187d2339d8850760562fd4",
+    "provision-at-attempt.py": "c8757fd13d4ab4cd255198da346464a20872a0414bf0db110751346541e5e1eb"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "sha256": {
+    "docs/data/s3_aurora_query_masking_contract_1/checks.py": "1aa9b6004075ef2ef74f6d8d5b605034da59cf3a54cdb7c9c59c1b937ae9776f",
+    "docs/data/s3_aurora_query_masking_contract_1/config.json": "2962c9b81a54592a6fe7aba357d295940c9f4248a08b68c4071039d45df50425",
+    "docs/data/s3_aurora_query_masking_contract_1/contract.json": "8042d05c01a5b5a15c7f40fdf68ce72cb8067fa2c31cb15e4263b159c6b2c22c",
+    "docs/data/s3_aurora_query_masking_contract_1/literature.json": "554b8354bfffbf2e3e4c1f6fabe13b12e73af468d9914759bf07d10bcd11682d",
+    "docs/data/s3_aurora_query_masking_contract_1/native-continuation-closure.json": "fc28bbe38fde41e05dd85da266c5db9cb4bb8b74cbf216f317231487cc11e7fe",
+    "docs/data/s3_aurora_query_masking_contract_1/opening-ledger.json": "479fc585a3d1778fb96f68c8ea8f8f6dab8b55f63e9221298544af150bc6fce5",
+    "docs/data/s3_aurora_query_masking_contract_1/prefixes.json": "613c2518d152179282c0322327267ab1a101f15ae2f6a7b3db8f651c47dcf046",
+    "docs/data/s3_aurora_query_masking_contract_1/quality.json": "35f43df41799e7a4a7ed0976c37f8ed2e3bd96ba04ad941d1a6a9ef584caa1f6",
+    "docs/data/s3_aurora_query_masking_contract_1/quality.log": "a9daba85ee14f93d5dac4234de473c5ece43666e3c7daaaca9dfaabbc901833e",
+    "docs/data/s3_aurora_query_masking_contract_1/quality.service.json": "d762b9f9a6de632942377939ee847e57d6d44949781c0cad017af7660ed69d85",
+    "docs/data/s3_aurora_query_masking_contract_1/reviewed-inputs.json": "712acf4e76dc00290f34ec7850daca2fb1f57dc952c7ed5fa8da6dc8c5f471a6",
+    "docs/data/s3_aurora_query_masking_contract_1/run.py": "c6ce48f7e4f019b440ab1aba4ece2d883888d7da34db8d5cadb1aa566eb454de",
+    "docs/data/s3_aurora_query_masking_contract_1/static-review.json": "e90d2380d28e2cb76d68462f76cba1711d6324a89014b446809299602a07ad58"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "preflight",
+  "phase": "tool",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/ligetron_domain_mask_correction_1/tooling.py",
+    "preflight"
+  ],
+  "limit_seconds": 10,
+  "child_seconds": 9,
+  "status": "launched",
+  "unit": "pqdid-ligetron-domain-mask-1-preflight",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 650009,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 38267792,
+    "artifact_bytes": 77419639,
+    "temporary_bytes": 0
+  },
+  "available_memory": 3768664064,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

@@ -1,0 +1,18 @@
+{
+  "prior": "docs/data/kyc_issuer_incremental_storage_1/coverage.json",
+  "prior_sha256": "dedf0dbbcc080327cfbc5df8540e485dd1225cb338a6cf5ca22cb9e22326e9bf",
+  "requirements": {
+    "R-012\u2013022": "Manager persistence, permanent reservations, committed signing results and genuine disclosed baseline verification",
+    "R-028\u2013031": "Bounded public updates, atomic witness catch-up and recovery evidence",
+    "R-052": "Previous experimental local mappings unchanged; standards securing/key/private-status mechanisms unresolved"
+  },
+  "categories": {
+    "working_baseline": "End-to-end issuer/manager/paged-holder/two-verifier path; eight-update maximum demonstrated",
+    "local_PQ_DID_reference": "Unchanged full relation evidence; one-update private reference wallet paged-transport integration with genuine signed fixture",
+    "synthetic_proof_scenarios": "Historical results retained; none used for baseline acceptance here",
+    "genuine_private_authentication": "Unavailable; fail-closed; no private proof metrics"
+  },
+  "full_relation_checks_unrun": 21,
+  "original_programme_complete": false,
+  "stages_2_3_open": true
+}

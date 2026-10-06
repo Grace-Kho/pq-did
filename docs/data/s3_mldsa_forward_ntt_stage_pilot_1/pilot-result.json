@@ -1,0 +1,4448 @@
+{
+  "profile": "experimental-forward-four-lane-v1",
+  "passed": true,
+  "invocations": [
+    {
+      "case": "G1-complete-count-comparison",
+      "kind": "generation-probe",
+      "status": "pass",
+      "mode": "count-comparison",
+      "components": [
+        {
+          "name": "baseline",
+          "private_input_bits": 258,
+          "complete": true,
+          "counts": {
+            "xor": 370568,
+            "and_": 246058,
+            "not_": 5242
+          },
+          "total_gates": 621868,
+          "first_gate_offset": 0,
+          "end_gate_offset": 621868,
+          "generation_and_counting_seconds": 0.6756968899862841,
+          "phases_global_gate_offsets": [
+            {
+              "node": "A",
+              "twiddle_index": 1,
+              "steps": [
+                {
+                  "phase": "original_checked_butterfly",
+                  "gates": 155270,
+                  "and_gates": 61320
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 155402,
+                  "and_gates": 61450
+                }
+              ]
+            },
+            {
+              "node": "B",
+              "twiddle_index": 1,
+              "steps": [
+                {
+                  "phase": "original_checked_butterfly",
+                  "gates": 310672,
+                  "and_gates": 122770
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 310804,
+                  "and_gates": 122900
+                }
+              ]
+            },
+            {
+              "node": "C",
+              "twiddle_index": 2,
+              "steps": [
+                {
+                  "phase": "original_checked_butterfly",
+                  "gates": 466074,
+                  "and_gates": 184220
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 466206,
+                  "and_gates": 184350
+                }
+              ]
+            },
+            {
+              "node": "D",
+              "twiddle_index": 3,
+              "steps": [
+                {
+                  "phase": "original_checked_butterfly",
+                  "gates": 621476,
+                  "and_gates": 245670
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 621608,
+                  "and_gates": 245800
+                }
+              ]
+            },
+            {
+              "phase": "all_four_final_lanes_masked_by_final_scope",
+              "gates": 621868,
+              "and_gates": 246058
+            }
+          ],
+          "final_word_wire_indices": [
+            [
+              621870,
+              621871,
+              621872,
+              621873,
+              621874,
+              621875,
+              621876,
+              621877,
+              621878,
+              621879,
+              621880,
+              621881,
+              621882,
+              621883,
+              621884,
+              621885,
+              621886,
+              621887,
+              621888,
+              621889,
+              621890,
+              621891,
+              621892,
+              621893,
+              621894,
+              621895,
+              621896,
+              621897,
+              621898,
+              621899,
+              621900,
+              621901,
+              621902,
+              621903,
+              621904,
+              621905,
+              621906,
+              621907,
+              621908,
+              621909,
+              621910,
+              621911,
+              621912,
+              621913,
+              621914,
+              621915,
+              621916,
+              621917,
+              621918,
+              621919,
+              621920,
+              621921,
+              621922,
+              621923,
+              621924,
+              621925,
+              621926,
+              621927,
+              621928,
+              621929,
+              621930,
+              621931,
+              621932,
+              621933
+            ],
+            [
+              621934,
+              621935,
+              621936,
+              621937,
+              621938,
+              621939,
+              621940,
+              621941,
+              621942,
+              621943,
+              621944,
+              621945,
+              621946,
+              621947,
+              621948,
+              621949,
+              621950,
+              621951,
+              621952,
+              621953,
+              621954,
+              621955,
+              621956,
+              621957,
+              621958,
+              621959,
+              621960,
+              621961,
+              621962,
+              621963,
+              621964,
+              621965,
+              621966,
+              621967,
+              621968,
+              621969,
+              621970,
+              621971,
+              621972,
+              621973,
+              621974,
+              621975,
+              621976,
+              621977,
+              621978,
+              621979,
+              621980,
+              621981,
+              621982,
+              621983,
+              621984,
+              621985,
+              621986,
+              621987,
+              621988,
+              621989,
+              621990,
+              621991,
+              621992,
+              621993,
+              621994,
+              621995,
+              621996,
+              621997
+            ],
+            [
+              621998,
+              621999,
+              622000,
+              622001,
+              622002,
+              622003,
+              622004,
+              622005,
+              622006,
+              622007,
+              622008,
+              622009,
+              622010,
+              622011,
+              622012,
+              622013,
+              622014,
+              622015,
+              622016,
+              622017,
+              622018,
+              622019,
+              622020,
+              622021,
+              622022,
+              622023,
+              622024,
+              622025,
+              622026,
+              622027,
+              622028,
+              622029,
+              622030,
+              622031,
+              622032,
+              622033,
+              622034,
+              622035,
+              622036,
+              622037,
+              622038,
+              622039,
+              622040,
+              622041,
+              622042,
+              622043,
+              622044,
+              622045,
+              622046,
+              622047,
+              622048,
+              622049,
+              622050,
+              622051,
+              622052,
+              622053,
+              622054,
+              622055,
+              622056,
+              622057,
+              622058,
+              622059,
+              622060,
+              622061
+            ],
+            [
+              622062,
+              622063,
+              622064,
+              622065,
+              622066,
+              622067,
+              622068,
+              622069,
+              622070,
+              622071,
+              622072,
+              622073,
+              622074,
+              622075,
+              622076,
+              622077,
+              622078,
+              622079,
+              622080,
+              622081,
+              622082,
+              622083,
+              622084,
+              622085,
+              622086,
+              622087,
+              622088,
+              622089,
+              622090,
+              622091,
+              622092,
+              622093,
+              622094,
+              622095,
+              622096,
+              622097,
+              622098,
+              622099,
+              622100,
+              622101,
+              622102,
+              622103,
+              622104,
+              622105,
+              622106,
+              622107,
+              622108,
+              622109,
+              622110,
+              622111,
+              622112,
+              622113,
+              622114,
+              622115,
+              622116,
+              622117,
+              622118,
+              622119,
+              622120,
+              622121,
+              622122,
+              622123,
+              622124,
+              622125
+            ]
+          ],
+          "final_validity_wire": 622127,
+          "python_process_high_water_RSS_bytes": 21540864,
+          "cgroup_memory_peak_so_far_bytes": 18403328
+        },
+        {
+          "name": "fully-guarded",
+          "private_input_bits": 258,
+          "complete": true,
+          "counts": {
+            "xor": 218224,
+            "and_": 135162,
+            "not_": 3630
+          },
+          "total_gates": 357016,
+          "first_gate_offset": 621868,
+          "end_gate_offset": 978884,
+          "generation_and_counting_seconds": 0.4020181179512292,
+          "phases_global_gate_offsets": [
+            {
+              "node": "A",
+              "twiddle_index": 1,
+              "steps": [
+                {
+                  "phase": "exact_original_product_overflow_condition",
+                  "gates": 622591,
+                  "and_gates": 246321
+                },
+                {
+                  "phase": "two_complete_signed64_to_canonical_conversions",
+                  "gates": 694375,
+                  "and_gates": 272983
+                },
+                {
+                  "phase": "guarded_scalar_modmul_including_its_output_boundary",
+                  "gates": 709533,
+                  "and_gates": 279144
+                },
+                {
+                  "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+                  "gates": 710275,
+                  "and_gates": 279400
+                },
+                {
+                  "phase": "checked_raw_addition_and_canonical_q_correction",
+                  "gates": 710925,
+                  "and_gates": 279654
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 711057,
+                  "and_gates": 279784
+                }
+              ]
+            },
+            {
+              "node": "B",
+              "twiddle_index": 1,
+              "steps": [
+                {
+                  "phase": "exact_original_product_overflow_condition",
+                  "gates": 711780,
+                  "and_gates": 280047
+                },
+                {
+                  "phase": "two_complete_signed64_to_canonical_conversions",
+                  "gates": 783564,
+                  "and_gates": 306709
+                },
+                {
+                  "phase": "guarded_scalar_modmul_including_its_output_boundary",
+                  "gates": 798722,
+                  "and_gates": 312870
+                },
+                {
+                  "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+                  "gates": 799464,
+                  "and_gates": 313126
+                },
+                {
+                  "phase": "checked_raw_addition_and_canonical_q_correction",
+                  "gates": 800114,
+                  "and_gates": 313380
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 800246,
+                  "and_gates": 313510
+                }
+              ]
+            },
+            {
+              "node": "C",
+              "twiddle_index": 2,
+              "steps": [
+                {
+                  "phase": "exact_original_product_overflow_condition",
+                  "gates": 800969,
+                  "and_gates": 313773
+                },
+                {
+                  "phase": "two_complete_signed64_to_canonical_conversions",
+                  "gates": 872753,
+                  "and_gates": 340435
+                },
+                {
+                  "phase": "guarded_scalar_modmul_including_its_output_boundary",
+                  "gates": 887911,
+                  "and_gates": 346596
+                },
+                {
+                  "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+                  "gates": 888653,
+                  "and_gates": 346852
+                },
+                {
+                  "phase": "checked_raw_addition_and_canonical_q_correction",
+                  "gates": 889303,
+                  "and_gates": 347106
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 889435,
+                  "and_gates": 347236
+                }
+              ]
+            },
+            {
+              "node": "D",
+              "twiddle_index": 3,
+              "steps": [
+                {
+                  "phase": "exact_original_product_overflow_condition",
+                  "gates": 890158,
+                  "and_gates": 347499
+                },
+                {
+                  "phase": "two_complete_signed64_to_canonical_conversions",
+                  "gates": 961942,
+                  "and_gates": 374161
+                },
+                {
+                  "phase": "guarded_scalar_modmul_including_its_output_boundary",
+                  "gates": 977100,
+                  "and_gates": 380322
+                },
+                {
+                  "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+                  "gates": 977842,
+                  "and_gates": 380578
+                },
+                {
+                  "phase": "checked_raw_addition_and_canonical_q_correction",
+                  "gates": 978492,
+                  "and_gates": 380832
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 978624,
+                  "and_gates": 380962
+                }
+              ]
+            },
+            {
+              "phase": "all_four_final_lanes_masked_by_final_scope",
+              "gates": 978884,
+              "and_gates": 381220
+            }
+          ],
+          "final_word_wire_indices": [
+            [
+              978886,
+              978887,
+              978888,
+              978889,
+              978890,
+              978891,
+              978892,
+              978893,
+              978894,
+              978895,
+              978896,
+              978897,
+              978898,
+              978899,
+              978900,
+              978901,
+              978902,
+              978903,
+              978904,
+              978905,
+              978906,
+              978907,
+              978908,
+              978909,
+              978910,
+              978911,
+              978912,
+              978913,
+              978914,
+              978915,
+              978916,
+              978917,
+              978918,
+              978919,
+              978920,
+              978921,
+              978922,
+              978923,
+              978924,
+              978925,
+              978926,
+              978927,
+              978928,
+              978929,
+              978930,
+              978931,
+              978932,
+              978933,
+              978934,
+              978935,
+              978936,
+              978937,
+              978938,
+              978939,
+              978940,
+              978941,
+              978942,
+              978943,
+              978944,
+              978945,
+              978946,
+              978947,
+              978948,
+              978949
+            ],
+            [
+              978950,
+              978951,
+              978952,
+              978953,
+              978954,
+              978955,
+              978956,
+              978957,
+              978958,
+              978959,
+              978960,
+              978961,
+              978962,
+              978963,
+              978964,
+              978965,
+              978966,
+              978967,
+              978968,
+              978969,
+              978970,
+              978971,
+              978972,
+              978973,
+              978974,
+              978975,
+              978976,
+              978977,
+              978978,
+              978979,
+              978980,
+              978981,
+              978982,
+              978983,
+              978984,
+              978985,
+              978986,
+              978987,
+              978988,
+              978989,
+              978990,
+              978991,
+              978992,
+              978993,
+              978994,
+              978995,
+              978996,
+              978997,
+              978998,
+              978999,
+              979000,
+              979001,
+              979002,
+              979003,
+              979004,
+              979005,
+              979006,
+              979007,
+              979008,
+              979009,
+              979010,
+              979011,
+              979012,
+              979013
+            ],
+            [
+              979014,
+              979015,
+              979016,
+              979017,
+              979018,
+              979019,
+              979020,
+              979021,
+              979022,
+              979023,
+              979024,
+              979025,
+              979026,
+              979027,
+              979028,
+              979029,
+              979030,
+              979031,
+              979032,
+              979033,
+              979034,
+              979035,
+              979036,
+              979037,
+              979038,
+              979039,
+              979040,
+              979041,
+              979042,
+              979043,
+              979044,
+              979045,
+              979046,
+              979047,
+              979048,
+              979049,
+              979050,
+              979051,
+              979052,
+              979053,
+              979054,
+              979055,
+              979056,
+              979057,
+              979058,
+              979059,
+              979060,
+              979061,
+              979062,
+              979063,
+              979064,
+              979065,
+              979066,
+              979067,
+              979068,
+              979069,
+              979070,
+              979071,
+              979072,
+              979073,
+              979074,
+              979075,
+              979076,
+              979077
+            ],
+            [
+              979078,
+              979079,
+              979080,
+              979081,
+              979082,
+              979083,
+              979084,
+              979085,
+              979086,
+              979087,
+              979088,
+              979089,
+              979090,
+              979091,
+              979092,
+              979093,
+              979094,
+              979095,
+              979096,
+              979097,
+              979098,
+              979099,
+              979100,
+              979101,
+              979102,
+              979103,
+              979104,
+              979105,
+              979106,
+              979107,
+              979108,
+              979109,
+              979110,
+              979111,
+              979112,
+              979113,
+              979114,
+              979115,
+              979116,
+              979117,
+              979118,
+              979119,
+              979120,
+              979121,
+              979122,
+              979123,
+              979124,
+              979125,
+              979126,
+              979127,
+              979128,
+              979129,
+              979130,
+              979131,
+              979132,
+              979133,
+              979134,
+              979135,
+              979136,
+              979137,
+              979138,
+              979139,
+              979140,
+              979141
+            ]
+          ],
+          "final_validity_wire": 979143,
+          "python_process_high_water_RSS_bytes": 21737472,
+          "cgroup_memory_peak_so_far_bytes": 18403328
+        },
+        {
+          "name": "candidate",
+          "private_input_bits": 258,
+          "complete": true,
+          "counts": {
+            "xor": 129288,
+            "and_": 81838,
+            "not_": 2322
+          },
+          "total_gates": 213448,
+          "first_gate_offset": 978884,
+          "end_gate_offset": 1192332,
+          "generation_and_counting_seconds": 0.24601999600417912,
+          "phases_global_gate_offsets": [
+            {
+              "node": "A",
+              "twiddle_index": 1,
+              "steps": [
+                {
+                  "phase": "exact_original_product_overflow_condition",
+                  "gates": 979607,
+                  "and_gates": 381483
+                },
+                {
+                  "phase": "two_complete_signed64_to_canonical_conversions",
+                  "gates": 1051391,
+                  "and_gates": 408145
+                },
+                {
+                  "phase": "guarded_scalar_modmul_including_its_output_boundary",
+                  "gates": 1066549,
+                  "and_gates": 414306
+                },
+                {
+                  "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+                  "gates": 1067291,
+                  "and_gates": 414562
+                },
+                {
+                  "phase": "checked_raw_addition_and_canonical_q_correction",
+                  "gates": 1067941,
+                  "and_gates": 414816
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 1068073,
+                  "and_gates": 414946
+                }
+              ]
+            },
+            {
+              "node": "B",
+              "twiddle_index": 1,
+              "steps": [
+                {
+                  "phase": "exact_original_product_overflow_condition",
+                  "gates": 1068796,
+                  "and_gates": 415209
+                },
+                {
+                  "phase": "two_complete_signed64_to_canonical_conversions",
+                  "gates": 1140580,
+                  "and_gates": 441871
+                },
+                {
+                  "phase": "guarded_scalar_modmul_including_its_output_boundary",
+                  "gates": 1155738,
+                  "and_gates": 448032
+                },
+                {
+                  "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+                  "gates": 1156480,
+                  "and_gates": 448288
+                },
+                {
+                  "phase": "checked_raw_addition_and_canonical_q_correction",
+                  "gates": 1157130,
+                  "and_gates": 448542
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 1157262,
+                  "and_gates": 448672
+                }
+              ]
+            },
+            {
+              "node": "C",
+              "twiddle_index": 2,
+              "steps": [
+                {
+                  "phase": "exact_original_product_overflow_condition",
+                  "gates": 1157985,
+                  "and_gates": 448935
+                },
+                {
+                  "phase": "producer_canonical_representation_reused_no_mod64",
+                  "gates": 1157985,
+                  "and_gates": 448935
+                },
+                {
+                  "phase": "guarded_scalar_modmul_including_its_output_boundary",
+                  "gates": 1173143,
+                  "and_gates": 455096
+                },
+                {
+                  "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+                  "gates": 1173885,
+                  "and_gates": 455352
+                },
+                {
+                  "phase": "checked_raw_addition_and_canonical_q_correction",
+                  "gates": 1174535,
+                  "and_gates": 455606
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 1174667,
+                  "and_gates": 455736
+                }
+              ]
+            },
+            {
+              "node": "D",
+              "twiddle_index": 3,
+              "steps": [
+                {
+                  "phase": "exact_original_product_overflow_condition",
+                  "gates": 1175390,
+                  "and_gates": 455999
+                },
+                {
+                  "phase": "producer_canonical_representation_reused_no_mod64",
+                  "gates": 1175390,
+                  "and_gates": 455999
+                },
+                {
+                  "phase": "guarded_scalar_modmul_including_its_output_boundary",
+                  "gates": 1190548,
+                  "and_gates": 462160
+                },
+                {
+                  "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+                  "gates": 1191290,
+                  "and_gates": 462416
+                },
+                {
+                  "phase": "checked_raw_addition_and_canonical_q_correction",
+                  "gates": 1191940,
+                  "and_gates": 462670
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 1192072,
+                  "and_gates": 462800
+                }
+              ]
+            },
+            {
+              "phase": "all_four_final_lanes_masked_by_final_scope",
+              "gates": 1192332,
+              "and_gates": 463058
+            }
+          ],
+          "final_word_wire_indices": [
+            [
+              1192334,
+              1192335,
+              1192336,
+              1192337,
+              1192338,
+              1192339,
+              1192340,
+              1192341,
+              1192342,
+              1192343,
+              1192344,
+              1192345,
+              1192346,
+              1192347,
+              1192348,
+              1192349,
+              1192350,
+              1192351,
+              1192352,
+              1192353,
+              1192354,
+              1192355,
+              1192356,
+              1192357,
+              1192358,
+              1192359,
+              1192360,
+              1192361,
+              1192362,
+              1192363,
+              1192364,
+              1192365,
+              1192366,
+              1192367,
+              1192368,
+              1192369,
+              1192370,
+              1192371,
+              1192372,
+              1192373,
+              1192374,
+              1192375,
+              1192376,
+              1192377,
+              1192378,
+              1192379,
+              1192380,
+              1192381,
+              1192382,
+              1192383,
+              1192384,
+              1192385,
+              1192386,
+              1192387,
+              1192388,
+              1192389,
+              1192390,
+              1192391,
+              1192392,
+              1192393,
+              1192394,
+              1192395,
+              1192396,
+              1192397
+            ],
+            [
+              1192398,
+              1192399,
+              1192400,
+              1192401,
+              1192402,
+              1192403,
+              1192404,
+              1192405,
+              1192406,
+              1192407,
+              1192408,
+              1192409,
+              1192410,
+              1192411,
+              1192412,
+              1192413,
+              1192414,
+              1192415,
+              1192416,
+              1192417,
+              1192418,
+              1192419,
+              1192420,
+              1192421,
+              1192422,
+              1192423,
+              1192424,
+              1192425,
+              1192426,
+              1192427,
+              1192428,
+              1192429,
+              1192430,
+              1192431,
+              1192432,
+              1192433,
+              1192434,
+              1192435,
+              1192436,
+              1192437,
+              1192438,
+              1192439,
+              1192440,
+              1192441,
+              1192442,
+              1192443,
+              1192444,
+              1192445,
+              1192446,
+              1192447,
+              1192448,
+              1192449,
+              1192450,
+              1192451,
+              1192452,
+              1192453,
+              1192454,
+              1192455,
+              1192456,
+              1192457,
+              1192458,
+              1192459,
+              1192460,
+              1192461
+            ],
+            [
+              1192462,
+              1192463,
+              1192464,
+              1192465,
+              1192466,
+              1192467,
+              1192468,
+              1192469,
+              1192470,
+              1192471,
+              1192472,
+              1192473,
+              1192474,
+              1192475,
+              1192476,
+              1192477,
+              1192478,
+              1192479,
+              1192480,
+              1192481,
+              1192482,
+              1192483,
+              1192484,
+              1192485,
+              1192486,
+              1192487,
+              1192488,
+              1192489,
+              1192490,
+              1192491,
+              1192492,
+              1192493,
+              1192494,
+              1192495,
+              1192496,
+              1192497,
+              1192498,
+              1192499,
+              1192500,
+              1192501,
+              1192502,
+              1192503,
+              1192504,
+              1192505,
+              1192506,
+              1192507,
+              1192508,
+              1192509,
+              1192510,
+              1192511,
+              1192512,
+              1192513,
+              1192514,
+              1192515,
+              1192516,
+              1192517,
+              1192518,
+              1192519,
+              1192520,
+              1192521,
+              1192522,
+              1192523,
+              1192524,
+              1192525
+            ],
+            [
+              1192526,
+              1192527,
+              1192528,
+              1192529,
+              1192530,
+              1192531,
+              1192532,
+              1192533,
+              1192534,
+              1192535,
+              1192536,
+              1192537,
+              1192538,
+              1192539,
+              1192540,
+              1192541,
+              1192542,
+              1192543,
+              1192544,
+              1192545,
+              1192546,
+              1192547,
+              1192548,
+              1192549,
+              1192550,
+              1192551,
+              1192552,
+              1192553,
+              1192554,
+              1192555,
+              1192556,
+              1192557,
+              1192558,
+              1192559,
+              1192560,
+              1192561,
+              1192562,
+              1192563,
+              1192564,
+              1192565,
+              1192566,
+              1192567,
+              1192568,
+              1192569,
+              1192570,
+              1192571,
+              1192572,
+              1192573,
+              1192574,
+              1192575,
+              1192576,
+              1192577,
+              1192578,
+              1192579,
+              1192580,
+              1192581,
+              1192582,
+              1192583,
+              1192584,
+              1192585,
+              1192586,
+              1192587,
+              1192588,
+              1192589
+            ]
+          ],
+          "final_validity_wire": 1192591,
+          "python_process_high_water_RSS_bytes": 21737472,
+          "cgroup_memory_peak_so_far_bytes": 18403328
+        }
+      ],
+      "complete": true,
+      "seconds": 1.32487116206903,
+      "counts": {
+        "xor": 718080,
+        "and_": 463060,
+        "not_": 11194,
+        "inputs": 258
+      },
+      "total_gates": 1192334,
+      "fingerprint": "35cd72faa2c46193a15ba95cbba165ad9f0712f5786d931597dde798ddc625b7",
+      "generation_seconds": 1.3248446519719437,
+      "hypothetical_serialised_bytes": 20269767,
+      "stored_bytes": 0,
+      "retained_trace_bytes": 0,
+      "extra_harness_gates": 2,
+      "extra_harness_ANDs": 2,
+      "test_equality_gates": 0,
+      "python_process_high_water_RSS_bytes": 21737472,
+      "cgroup_memory_peak_so_far_bytes": 18628608
+    },
+    {
+      "case": "G2-complete-candidate",
+      "kind": "generation-probe",
+      "status": "pass",
+      "mode": "candidate",
+      "components": [
+        {
+          "name": "candidate",
+          "private_input_bits": 258,
+          "complete": true,
+          "counts": {
+            "xor": 129288,
+            "and_": 81838,
+            "not_": 2322
+          },
+          "total_gates": 213448,
+          "first_gate_offset": 0,
+          "end_gate_offset": 213448,
+          "generation_and_counting_seconds": 0.25945352704729885,
+          "phases_global_gate_offsets": [
+            {
+              "node": "A",
+              "twiddle_index": 1,
+              "steps": [
+                {
+                  "phase": "exact_original_product_overflow_condition",
+                  "gates": 723,
+                  "and_gates": 263
+                },
+                {
+                  "phase": "two_complete_signed64_to_canonical_conversions",
+                  "gates": 72507,
+                  "and_gates": 26925
+                },
+                {
+                  "phase": "guarded_scalar_modmul_including_its_output_boundary",
+                  "gates": 87665,
+                  "and_gates": 33086
+                },
+                {
+                  "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+                  "gates": 88407,
+                  "and_gates": 33342
+                },
+                {
+                  "phase": "checked_raw_addition_and_canonical_q_correction",
+                  "gates": 89057,
+                  "and_gates": 33596
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 89189,
+                  "and_gates": 33726
+                }
+              ]
+            },
+            {
+              "node": "B",
+              "twiddle_index": 1,
+              "steps": [
+                {
+                  "phase": "exact_original_product_overflow_condition",
+                  "gates": 89912,
+                  "and_gates": 33989
+                },
+                {
+                  "phase": "two_complete_signed64_to_canonical_conversions",
+                  "gates": 161696,
+                  "and_gates": 60651
+                },
+                {
+                  "phase": "guarded_scalar_modmul_including_its_output_boundary",
+                  "gates": 176854,
+                  "and_gates": 66812
+                },
+                {
+                  "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+                  "gates": 177596,
+                  "and_gates": 67068
+                },
+                {
+                  "phase": "checked_raw_addition_and_canonical_q_correction",
+                  "gates": 178246,
+                  "and_gates": 67322
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 178378,
+                  "and_gates": 67452
+                }
+              ]
+            },
+            {
+              "node": "C",
+              "twiddle_index": 2,
+              "steps": [
+                {
+                  "phase": "exact_original_product_overflow_condition",
+                  "gates": 179101,
+                  "and_gates": 67715
+                },
+                {
+                  "phase": "producer_canonical_representation_reused_no_mod64",
+                  "gates": 179101,
+                  "and_gates": 67715
+                },
+                {
+                  "phase": "guarded_scalar_modmul_including_its_output_boundary",
+                  "gates": 194259,
+                  "and_gates": 73876
+                },
+                {
+                  "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+                  "gates": 195001,
+                  "and_gates": 74132
+                },
+                {
+                  "phase": "checked_raw_addition_and_canonical_q_correction",
+                  "gates": 195651,
+                  "and_gates": 74386
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 195783,
+                  "and_gates": 74516
+                }
+              ]
+            },
+            {
+              "node": "D",
+              "twiddle_index": 3,
+              "steps": [
+                {
+                  "phase": "exact_original_product_overflow_condition",
+                  "gates": 196506,
+                  "and_gates": 74779
+                },
+                {
+                  "phase": "producer_canonical_representation_reused_no_mod64",
+                  "gates": 196506,
+                  "and_gates": 74779
+                },
+                {
+                  "phase": "guarded_scalar_modmul_including_its_output_boundary",
+                  "gates": 211664,
+                  "and_gates": 80940
+                },
+                {
+                  "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+                  "gates": 212406,
+                  "and_gates": 81196
+                },
+                {
+                  "phase": "checked_raw_addition_and_canonical_q_correction",
+                  "gates": 213056,
+                  "and_gates": 81450
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 213188,
+                  "and_gates": 81580
+                }
+              ]
+            },
+            {
+              "phase": "all_four_final_lanes_masked_by_final_scope",
+              "gates": 213448,
+              "and_gates": 81838
+            }
+          ],
+          "final_word_wire_indices": [
+            [
+              213450,
+              213451,
+              213452,
+              213453,
+              213454,
+              213455,
+              213456,
+              213457,
+              213458,
+              213459,
+              213460,
+              213461,
+              213462,
+              213463,
+              213464,
+              213465,
+              213466,
+              213467,
+              213468,
+              213469,
+              213470,
+              213471,
+              213472,
+              213473,
+              213474,
+              213475,
+              213476,
+              213477,
+              213478,
+              213479,
+              213480,
+              213481,
+              213482,
+              213483,
+              213484,
+              213485,
+              213486,
+              213487,
+              213488,
+              213489,
+              213490,
+              213491,
+              213492,
+              213493,
+              213494,
+              213495,
+              213496,
+              213497,
+              213498,
+              213499,
+              213500,
+              213501,
+              213502,
+              213503,
+              213504,
+              213505,
+              213506,
+              213507,
+              213508,
+              213509,
+              213510,
+              213511,
+              213512,
+              213513
+            ],
+            [
+              213514,
+              213515,
+              213516,
+              213517,
+              213518,
+              213519,
+              213520,
+              213521,
+              213522,
+              213523,
+              213524,
+              213525,
+              213526,
+              213527,
+              213528,
+              213529,
+              213530,
+              213531,
+              213532,
+              213533,
+              213534,
+              213535,
+              213536,
+              213537,
+              213538,
+              213539,
+              213540,
+              213541,
+              213542,
+              213543,
+              213544,
+              213545,
+              213546,
+              213547,
+              213548,
+              213549,
+              213550,
+              213551,
+              213552,
+              213553,
+              213554,
+              213555,
+              213556,
+              213557,
+              213558,
+              213559,
+              213560,
+              213561,
+              213562,
+              213563,
+              213564,
+              213565,
+              213566,
+              213567,
+              213568,
+              213569,
+              213570,
+              213571,
+              213572,
+              213573,
+              213574,
+              213575,
+              213576,
+              213577
+            ],
+            [
+              213578,
+              213579,
+              213580,
+              213581,
+              213582,
+              213583,
+              213584,
+              213585,
+              213586,
+              213587,
+              213588,
+              213589,
+              213590,
+              213591,
+              213592,
+              213593,
+              213594,
+              213595,
+              213596,
+              213597,
+              213598,
+              213599,
+              213600,
+              213601,
+              213602,
+              213603,
+              213604,
+              213605,
+              213606,
+              213607,
+              213608,
+              213609,
+              213610,
+              213611,
+              213612,
+              213613,
+              213614,
+              213615,
+              213616,
+              213617,
+              213618,
+              213619,
+              213620,
+              213621,
+              213622,
+              213623,
+              213624,
+              213625,
+              213626,
+              213627,
+              213628,
+              213629,
+              213630,
+              213631,
+              213632,
+              213633,
+              213634,
+              213635,
+              213636,
+              213637,
+              213638,
+              213639,
+              213640,
+              213641
+            ],
+            [
+              213642,
+              213643,
+              213644,
+              213645,
+              213646,
+              213647,
+              213648,
+              213649,
+              213650,
+              213651,
+              213652,
+              213653,
+              213654,
+              213655,
+              213656,
+              213657,
+              213658,
+              213659,
+              213660,
+              213661,
+              213662,
+              213663,
+              213664,
+              213665,
+              213666,
+              213667,
+              213668,
+              213669,
+              213670,
+              213671,
+              213672,
+              213673,
+              213674,
+              213675,
+              213676,
+              213677,
+              213678,
+              213679,
+              213680,
+              213681,
+              213682,
+              213683,
+              213684,
+              213685,
+              213686,
+              213687,
+              213688,
+              213689,
+              213690,
+              213691,
+              213692,
+              213693,
+              213694,
+              213695,
+              213696,
+              213697,
+              213698,
+              213699,
+              213700,
+              213701,
+              213702,
+              213703,
+              213704,
+              213705
+            ]
+          ],
+          "final_validity_wire": 213707,
+          "python_process_high_water_RSS_bytes": 25473024,
+          "cgroup_memory_peak_so_far_bytes": 22228992,
+          "gate_segment_sha256": "8f06c242e962edef1a2b99def2b1833162ba117bbce2d10ce470faf00bd93478"
+        }
+      ],
+      "complete": true,
+      "seconds": 0.2637385630514473,
+      "counts": {
+        "xor": 129288,
+        "and_": 81838,
+        "not_": 2322,
+        "inputs": 258
+      },
+      "total_gates": 213448,
+      "fingerprint": "f74b084a74dbbc75d4573806d02d4c99fab4bd7feb08c0bbd4a4dfbb56446b6b",
+      "generation_seconds": 0.2619897860568017,
+      "hypothetical_serialised_bytes": 3628705,
+      "stored_bytes": 3628705,
+      "retained_trace_bytes": 3628738,
+      "extra_harness_gates": 0,
+      "extra_harness_ANDs": 0,
+      "test_equality_gates": 0,
+      "python_process_high_water_RSS_bytes": 29011968,
+      "cgroup_memory_peak_so_far_bytes": 25817088
+    },
+    {
+      "case": "D1-zero",
+      "kind": "differential-case",
+      "status": "pass",
+      "inputs": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected": {
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          }
+        ],
+        "first_words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_valid": 1,
+        "final_words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "final_valid": 1
+      },
+      "candidate": {
+        "words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.06520963704679161,
+        "evaluator_seconds": 0.05194034404121339,
+        "python_process_high_water_RSS_bytes": 29011968,
+        "cgroup_memory_peak_so_far_bytes": 25817088
+      },
+      "reference_first": {
+        "words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09566709189675748,
+        "evaluator_seconds": 0.07573815004434437,
+        "python_process_high_water_RSS_bytes": 32710656,
+        "cgroup_memory_peak_so_far_bytes": 29343744
+      },
+      "reference_second": {
+        "words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09461556596215814,
+        "evaluator_seconds": 0.07606386009138077,
+        "python_process_high_water_RSS_bytes": 32874496,
+        "cgroup_memory_peak_so_far_bytes": 29532160
+      },
+      "seconds": 0.25549229490570724,
+      "partial_observations": 3,
+      "complete_schedule_compared": true,
+      "usable": true
+    },
+    {
+      "case": "D2-asymmetric-lane-order",
+      "kind": "differential-case",
+      "status": "pass",
+      "inputs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected": {
+        "nodes": [
+          {
+            "words": [
+              1235971,
+              7144446
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              6044166,
+              2336253
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              7905700,
+              2946659
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              5441946,
+              466529
+            ],
+            "valid": 1
+          }
+        ],
+        "first_words": [
+          1235971,
+          6044166,
+          7144446,
+          2336253
+        ],
+        "first_valid": 1,
+        "final_words": [
+          7905700,
+          2946659,
+          5441946,
+          466529
+        ],
+        "final_valid": 1
+      },
+      "candidate": {
+        "words": [
+          7905700,
+          2946659,
+          5441946,
+          466529
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              1235971,
+              7144446
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              6044166,
+              2336253
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              7905700,
+              2946659
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              5441946,
+              466529
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.06527023599483073,
+        "evaluator_seconds": 0.05099731998052448,
+        "python_process_high_water_RSS_bytes": 29011968,
+        "cgroup_memory_peak_so_far_bytes": 25817088
+      },
+      "reference_first": {
+        "words": [
+          1235971,
+          6044166,
+          7144446,
+          2336253
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              1235971,
+              7144446
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              6044166,
+              2336253
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.0937285809777677,
+        "evaluator_seconds": 0.07476602401584387,
+        "python_process_high_water_RSS_bytes": 32710656,
+        "cgroup_memory_peak_so_far_bytes": 29450240
+      },
+      "reference_second": {
+        "words": [
+          7905700,
+          2946659,
+          5441946,
+          466529
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              7905700,
+              2946659
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              5441946,
+              466529
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09660095605067909,
+        "evaluator_seconds": 0.07727609993889928,
+        "python_process_high_water_RSS_bytes": 32874496,
+        "cgroup_memory_peak_so_far_bytes": 29532160
+      },
+      "seconds": 0.2555997730232775,
+      "partial_observations": 3,
+      "complete_schedule_compared": true,
+      "usable": true
+    },
+    {
+      "case": "D3-canonical-upper",
+      "kind": "differential-case",
+      "status": "pass",
+      "inputs": [
+        8380416,
+        8380416,
+        8380416,
+        8380416
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected": {
+        "nodes": [
+          {
+            "words": [
+              3572222,
+              4808193
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              3572222,
+              4808193
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              4425519,
+              2718925
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              5661490,
+              3954896
+            ],
+            "valid": 1
+          }
+        ],
+        "first_words": [
+          3572222,
+          3572222,
+          4808193,
+          4808193
+        ],
+        "first_valid": 1,
+        "final_words": [
+          4425519,
+          2718925,
+          5661490,
+          3954896
+        ],
+        "final_valid": 1
+      },
+      "candidate": {
+        "words": [
+          4425519,
+          2718925,
+          5661490,
+          3954896
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              3572222,
+              4808193
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              3572222,
+              4808193
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              4425519,
+              2718925
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              5661490,
+              3954896
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.06307016999926418,
+        "evaluator_seconds": 0.0502716499613598,
+        "python_process_high_water_RSS_bytes": 29011968,
+        "cgroup_memory_peak_so_far_bytes": 25817088
+      },
+      "reference_first": {
+        "words": [
+          3572222,
+          3572222,
+          4808193,
+          4808193
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              3572222,
+              4808193
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              3572222,
+              4808193
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09183541394304484,
+        "evaluator_seconds": 0.0733246790478006,
+        "python_process_high_water_RSS_bytes": 32710656,
+        "cgroup_memory_peak_so_far_bytes": 29450240
+      },
+      "reference_second": {
+        "words": [
+          4425519,
+          2718925,
+          5661490,
+          3954896
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              4425519,
+              2718925
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              5661490,
+              3954896
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09514898504130542,
+        "evaluator_seconds": 0.0761910390574485,
+        "python_process_high_water_RSS_bytes": 32874496,
+        "cgroup_memory_peak_so_far_bytes": 29597696
+      },
+      "seconds": 0.25005456898361444,
+      "partial_observations": 3,
+      "complete_schedule_compared": true,
+      "usable": true
+    },
+    {
+      "case": "D4-both-modular-corrections",
+      "kind": "differential-case",
+      "status": "pass",
+      "inputs": [
+        8380416,
+        0,
+        1,
+        8380416
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected": {
+        "nodes": [
+          {
+            "words": [
+              4808193,
+              3572222
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              3572223,
+              4808194
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              1046680,
+              189289
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              8187032,
+              7337829
+            ],
+            "valid": 1
+          }
+        ],
+        "first_words": [
+          4808193,
+          3572223,
+          3572222,
+          4808194
+        ],
+        "first_valid": 1,
+        "final_words": [
+          1046680,
+          189289,
+          8187032,
+          7337829
+        ],
+        "final_valid": 1
+      },
+      "candidate": {
+        "words": [
+          1046680,
+          189289,
+          8187032,
+          7337829
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              4808193,
+              3572222
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              3572223,
+              4808194
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              1046680,
+              189289
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              8187032,
+              7337829
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.06579816399607807,
+        "evaluator_seconds": 0.0521184119861573,
+        "python_process_high_water_RSS_bytes": 29011968,
+        "cgroup_memory_peak_so_far_bytes": 25817088
+      },
+      "reference_first": {
+        "words": [
+          4808193,
+          3572223,
+          3572222,
+          4808194
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              4808193,
+              3572222
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              3572223,
+              4808194
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09392880997620523,
+        "evaluator_seconds": 0.07445861597079784,
+        "python_process_high_water_RSS_bytes": 32710656,
+        "cgroup_memory_peak_so_far_bytes": 29450240
+      },
+      "reference_second": {
+        "words": [
+          1046680,
+          189289,
+          8187032,
+          7337829
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              1046680,
+              189289
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              8187032,
+              7337829
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09422338602598757,
+        "evaluator_seconds": 0.07532101101242006,
+        "python_process_high_water_RSS_bytes": 32874496,
+        "cgroup_memory_peak_so_far_bytes": 29597696
+      },
+      "seconds": 0.25395035999827087,
+      "partial_observations": 3,
+      "complete_schedule_compared": true,
+      "usable": true
+    },
+    {
+      "case": "D5-negative-representatives",
+      "kind": "differential-case",
+      "status": "pass",
+      "inputs": [
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected": {
+        "nodes": [
+          {
+            "words": [
+              2336251,
+              6044164
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              5908473,
+              2471940
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              4900236,
+              8152683
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              219544,
+              3488367
+            ],
+            "valid": 1
+          }
+        ],
+        "first_words": [
+          2336251,
+          5908473,
+          6044164,
+          2471940
+        ],
+        "first_valid": 1,
+        "final_words": [
+          4900236,
+          8152683,
+          219544,
+          3488367
+        ],
+        "final_valid": 1
+      },
+      "candidate": {
+        "words": [
+          4900236,
+          8152683,
+          219544,
+          3488367
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              2336251,
+              6044164
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              5908473,
+              2471940
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              4900236,
+              8152683
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              219544,
+              3488367
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.06376224907580763,
+        "evaluator_seconds": 0.05086129903793335,
+        "python_process_high_water_RSS_bytes": 29011968,
+        "cgroup_memory_peak_so_far_bytes": 25817088
+      },
+      "reference_first": {
+        "words": [
+          2336251,
+          5908473,
+          6044164,
+          2471940
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              2336251,
+              6044164
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              5908473,
+              2471940
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.0957898759515956,
+        "evaluator_seconds": 0.07704130804631859,
+        "python_process_high_water_RSS_bytes": 32710656,
+        "cgroup_memory_peak_so_far_bytes": 29466624
+      },
+      "reference_second": {
+        "words": [
+          4900236,
+          8152683,
+          219544,
+          3488367
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              4900236,
+              8152683
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              219544,
+              3488367
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09498342592269182,
+        "evaluator_seconds": 0.07476586906705052,
+        "python_process_high_water_RSS_bytes": 32874496,
+        "cgroup_memory_peak_so_far_bytes": 29597696
+      },
+      "seconds": 0.25453555095009506,
+      "partial_observations": 3,
+      "complete_schedule_compared": true,
+      "usable": true
+    },
+    {
+      "case": "D6-positive-noncanonical",
+      "kind": "differential-case",
+      "status": "pass",
+      "inputs": [
+        8380417,
+        8380418,
+        16760834,
+        16760835
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected": {
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              4808195,
+              3572224
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              7527120,
+              853297
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              7527120,
+              853297
+            ],
+            "valid": 1
+          }
+        ],
+        "first_words": [
+          0,
+          4808195,
+          0,
+          3572224
+        ],
+        "first_valid": 1,
+        "final_words": [
+          7527120,
+          853297,
+          7527120,
+          853297
+        ],
+        "final_valid": 1
+      },
+      "candidate": {
+        "words": [
+          7527120,
+          853297,
+          7527120,
+          853297
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              4808195,
+              3572224
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              7527120,
+              853297
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              7527120,
+              853297
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.06621988594997674,
+        "evaluator_seconds": 0.05146690004039556,
+        "python_process_high_water_RSS_bytes": 29011968,
+        "cgroup_memory_peak_so_far_bytes": 25817088
+      },
+      "reference_first": {
+        "words": [
+          0,
+          4808195,
+          0,
+          3572224
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              4808195,
+              3572224
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09720797894988209,
+        "evaluator_seconds": 0.077952102990821,
+        "python_process_high_water_RSS_bytes": 32710656,
+        "cgroup_memory_peak_so_far_bytes": 29466624
+      },
+      "reference_second": {
+        "words": [
+          7527120,
+          853297,
+          7527120,
+          853297
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              7527120,
+              853297
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              7527120,
+              853297
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.0932156901108101,
+        "evaluator_seconds": 0.07451090100221336,
+        "python_process_high_water_RSS_bytes": 32874496,
+        "cgroup_memory_peak_so_far_bytes": 29597696
+      },
+      "seconds": 0.25664355501066893,
+      "partial_observations": 3,
+      "complete_schedule_compared": true,
+      "usable": true
+    },
+    {
+      "case": "D7-signed-minimum-lefts",
+      "kind": "differential-case",
+      "status": "pass",
+      "inputs": [
+        -9223372036854775808,
+        -9223372036854775808,
+        0,
+        0
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected": {
+        "nodes": [
+          {
+            "words": [
+              3007233,
+              3007233
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              3007233,
+              3007233
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              5410580,
+              603886
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              4631251,
+              1383215
+            ],
+            "valid": 1
+          }
+        ],
+        "first_words": [
+          3007233,
+          3007233,
+          3007233,
+          3007233
+        ],
+        "first_valid": 1,
+        "final_words": [
+          5410580,
+          603886,
+          4631251,
+          1383215
+        ],
+        "final_valid": 1
+      },
+      "candidate": {
+        "words": [
+          5410580,
+          603886,
+          4631251,
+          1383215
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              3007233,
+              3007233
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              3007233,
+              3007233
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              5410580,
+              603886
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              4631251,
+              1383215
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.06392865802627057,
+        "evaluator_seconds": 0.050422757980413735,
+        "python_process_high_water_RSS_bytes": 29011968,
+        "cgroup_memory_peak_so_far_bytes": 25817088
+      },
+      "reference_first": {
+        "words": [
+          3007233,
+          3007233,
+          3007233,
+          3007233
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              3007233,
+              3007233
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              3007233,
+              3007233
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09642402303870767,
+        "evaluator_seconds": 0.07636562001425773,
+        "python_process_high_water_RSS_bytes": 32710656,
+        "cgroup_memory_peak_so_far_bytes": 29466624
+      },
+      "reference_second": {
+        "words": [
+          5410580,
+          603886,
+          4631251,
+          1383215
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              5410580,
+              603886
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              4631251,
+              1383215
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09566448698751628,
+        "evaluator_seconds": 0.07625191693659872,
+        "python_process_high_water_RSS_bytes": 32874496,
+        "cgroup_memory_peak_so_far_bytes": 29597696
+      },
+      "seconds": 0.2560171680524945,
+      "partial_observations": 3,
+      "complete_schedule_compared": true,
+      "usable": true
+    },
+    {
+      "case": "D8-product-upper-boundaries",
+      "kind": "differential-case",
+      "status": "pass",
+      "inputs": [
+        0,
+        0,
+        1918261209272,
+        1918261209272
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected": {
+        "nodes": [
+          {
+            "words": [
+              4972144,
+              3408273
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              4972144,
+              3408273
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              3061334,
+              6882954
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              5243726,
+              1572820
+            ],
+            "valid": 1
+          }
+        ],
+        "first_words": [
+          4972144,
+          4972144,
+          3408273,
+          3408273
+        ],
+        "first_valid": 1,
+        "final_words": [
+          3061334,
+          6882954,
+          5243726,
+          1572820
+        ],
+        "final_valid": 1
+      },
+      "candidate": {
+        "words": [
+          3061334,
+          6882954,
+          5243726,
+          1572820
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              4972144,
+              3408273
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              4972144,
+              3408273
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              3061334,
+              6882954
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              5243726,
+              1572820
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.06345559703186154,
+        "evaluator_seconds": 0.04983477899804711,
+        "python_process_high_water_RSS_bytes": 29011968,
+        "cgroup_memory_peak_so_far_bytes": 25817088
+      },
+      "reference_first": {
+        "words": [
+          4972144,
+          4972144,
+          3408273,
+          3408273
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              4972144,
+              3408273
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              4972144,
+              3408273
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09664653800427914,
+        "evaluator_seconds": 0.07835878105834126,
+        "python_process_high_water_RSS_bytes": 32710656,
+        "cgroup_memory_peak_so_far_bytes": 29483008
+      },
+      "reference_second": {
+        "words": [
+          3061334,
+          6882954,
+          5243726,
+          1572820
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              3061334,
+              6882954
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              5243726,
+              1572820
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09212865808513016,
+        "evaluator_seconds": 0.0732648839475587,
+        "python_process_high_water_RSS_bytes": 32874496,
+        "cgroup_memory_peak_so_far_bytes": 29597696
+      },
+      "seconds": 0.25223079312127084,
+      "partial_observations": 3,
+      "complete_schedule_compared": true,
+      "usable": true
+    },
+    {
+      "case": "D9-first-node-product-overflow",
+      "kind": "differential-case",
+      "status": "pass",
+      "inputs": [
+        0,
+        0,
+        1918261209273,
+        1
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected": {
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          }
+        ],
+        "first_words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_valid": 0,
+        "final_words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "final_valid": 0
+      },
+      "candidate": {
+        "words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "valid": 0,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.0640237529296428,
+        "evaluator_seconds": 0.05128275009337813,
+        "python_process_high_water_RSS_bytes": 29011968,
+        "cgroup_memory_peak_so_far_bytes": 25817088
+      },
+      "reference_first": {
+        "words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "valid": 0,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09103737701661885,
+        "evaluator_seconds": 0.07233321096282452,
+        "python_process_high_water_RSS_bytes": 32710656,
+        "cgroup_memory_peak_so_far_bytes": 29483008
+      },
+      "reference_second": {
+        "words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "valid": 0,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09542380797211081,
+        "evaluator_seconds": 0.07554905395954847,
+        "python_process_high_water_RSS_bytes": 32874496,
+        "cgroup_memory_peak_so_far_bytes": 29597696
+      },
+      "seconds": 0.25048493791837245,
+      "partial_observations": 3,
+      "complete_schedule_compared": true,
+      "usable": false
+    },
+    {
+      "case": "D10-second-node-subtraction-overflow",
+      "kind": "differential-case",
+      "status": "pass",
+      "inputs": [
+        1,
+        -9223372036854775808,
+        1,
+        1
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected": {
+        "nodes": [
+          {
+            "words": [
+              4808195,
+              3572224
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          }
+        ],
+        "first_words": [
+          4808195,
+          0,
+          3572224,
+          0
+        ],
+        "first_valid": 0,
+        "final_words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "final_valid": 0
+      },
+      "candidate": {
+        "words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "valid": 0,
+        "nodes": [
+          {
+            "words": [
+              4808195,
+              3572224
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.06519110896624625,
+        "evaluator_seconds": 0.051326322951354086,
+        "python_process_high_water_RSS_bytes": 29011968,
+        "cgroup_memory_peak_so_far_bytes": 25817088
+      },
+      "reference_first": {
+        "words": [
+          4808195,
+          0,
+          3572224,
+          0
+        ],
+        "valid": 0,
+        "nodes": [
+          {
+            "words": [
+              4808195,
+              3572224
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09242525394074619,
+        "evaluator_seconds": 0.07325898192357272,
+        "python_process_high_water_RSS_bytes": 32710656,
+        "cgroup_memory_peak_so_far_bytes": 29483008
+      },
+      "reference_second": {
+        "words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "valid": 0,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09456210001371801,
+        "evaluator_seconds": 0.07575081603135914,
+        "python_process_high_water_RSS_bytes": 32874496,
+        "cgroup_memory_peak_so_far_bytes": 29597696
+      },
+      "seconds": 0.25217846292071044,
+      "partial_observations": 3,
+      "complete_schedule_compared": true,
+      "usable": false
+    },
+    {
+      "case": "D11-inactive-invalid",
+      "kind": "differential-case",
+      "status": "pass",
+      "inputs": [
+        0,
+        0,
+        1918261209273,
+        1
+      ],
+      "active": 0,
+      "prior_rejected": 0,
+      "expected": {
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          }
+        ],
+        "first_words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_valid": 1,
+        "final_words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "final_valid": 1
+      },
+      "candidate": {
+        "words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.06467362202238292,
+        "evaluator_seconds": 0.05130303092300892,
+        "python_process_high_water_RSS_bytes": 29011968,
+        "cgroup_memory_peak_so_far_bytes": 25817088
+      },
+      "reference_first": {
+        "words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09400486398953944,
+        "evaluator_seconds": 0.07540557603351772,
+        "python_process_high_water_RSS_bytes": 32710656,
+        "cgroup_memory_peak_so_far_bytes": 29487104
+      },
+      "reference_second": {
+        "words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "valid": 1,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 1
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09836502699181437,
+        "evaluator_seconds": 0.07957706798333675,
+        "python_process_high_water_RSS_bytes": 32874496,
+        "cgroup_memory_peak_so_far_bytes": 29597696
+      },
+      "seconds": 0.25704351300373673,
+      "partial_observations": 3,
+      "complete_schedule_compared": true,
+      "usable": false
+    },
+    {
+      "case": "D12-prior-rejection",
+      "kind": "differential-case",
+      "status": "pass",
+      "inputs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "active": 1,
+      "prior_rejected": 1,
+      "expected": {
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          }
+        ],
+        "first_words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_valid": 0,
+        "final_words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "final_valid": 0
+      },
+      "candidate": {
+        "words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "valid": 0,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.06473759305663407,
+        "evaluator_seconds": 0.05080664705019444,
+        "python_process_high_water_RSS_bytes": 29011968,
+        "cgroup_memory_peak_so_far_bytes": 25817088
+      },
+      "reference_first": {
+        "words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "valid": 0,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09523610002361238,
+        "evaluator_seconds": 0.07493719400372356,
+        "python_process_high_water_RSS_bytes": 32710656,
+        "cgroup_memory_peak_so_far_bytes": 29487104
+      },
+      "reference_second": {
+        "words": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "valid": 0,
+        "nodes": [
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          },
+          {
+            "words": [
+              0,
+              0
+            ],
+            "valid": 0
+          }
+        ],
+        "all_observed_words_canonical": true,
+        "seconds": 0.09749409509822726,
+        "evaluator_seconds": 0.0761377700837329,
+        "python_process_high_water_RSS_bytes": 32874496,
+        "cgroup_memory_peak_so_far_bytes": 29597696
+      },
+      "seconds": 0.2574677881784737,
+      "partial_observations": 3,
+      "complete_schedule_compared": true,
+      "usable": false
+    },
+    {
+      "case": "G3-reference-first-stage",
+      "kind": "generation-probe",
+      "status": "pass",
+      "mode": "reference-first",
+      "components": [
+        {
+          "name": "reference-first",
+          "private_input_bits": 258,
+          "complete": true,
+          "counts": {
+            "xor": 185284,
+            "and_": 122900,
+            "not_": 2620
+          },
+          "total_gates": 310804,
+          "first_gate_offset": 0,
+          "end_gate_offset": 310804,
+          "generation_and_counting_seconds": 0.36757993104401976,
+          "phases_global_gate_offsets": [
+            {
+              "node": "A",
+              "twiddle_index": 1,
+              "steps": [
+                {
+                  "phase": "original_checked_butterfly",
+                  "gates": 155270,
+                  "and_gates": 61320
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 155402,
+                  "and_gates": 61450
+                }
+              ]
+            },
+            {
+              "node": "B",
+              "twiddle_index": 1,
+              "steps": [
+                {
+                  "phase": "original_checked_butterfly",
+                  "gates": 310672,
+                  "and_gates": 122770
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 310804,
+                  "and_gates": 122900
+                }
+              ]
+            }
+          ],
+          "final_word_wire_indices": [
+            [
+              155532,
+              155533,
+              155534,
+              155535,
+              155536,
+              155537,
+              155538,
+              155539,
+              155540,
+              155541,
+              155542,
+              155543,
+              155544,
+              155545,
+              155546,
+              155547,
+              155548,
+              155549,
+              155550,
+              155551,
+              155552,
+              155553,
+              155554,
+              155555,
+              155556,
+              155557,
+              155558,
+              155559,
+              155560,
+              155561,
+              155562,
+              155563,
+              155564,
+              155565,
+              155566,
+              155567,
+              155568,
+              155569,
+              155570,
+              155571,
+              155572,
+              155573,
+              155574,
+              155575,
+              155576,
+              155577,
+              155578,
+              155579,
+              155580,
+              155581,
+              155582,
+              155583,
+              155584,
+              155585,
+              155586,
+              155587,
+              155588,
+              155589,
+              155590,
+              155591,
+              155592,
+              155593,
+              155594,
+              155595
+            ],
+            [
+              310934,
+              310935,
+              310936,
+              310937,
+              310938,
+              310939,
+              310940,
+              310941,
+              310942,
+              310943,
+              310944,
+              310945,
+              310946,
+              310947,
+              310948,
+              310949,
+              310950,
+              310951,
+              310952,
+              310953,
+              310954,
+              310955,
+              310956,
+              310957,
+              310958,
+              310959,
+              310960,
+              310961,
+              310962,
+              310963,
+              310964,
+              310965,
+              310966,
+              310967,
+              310968,
+              310969,
+              310970,
+              310971,
+              310972,
+              310973,
+              310974,
+              310975,
+              310976,
+              310977,
+              310978,
+              310979,
+              310980,
+              310981,
+              310982,
+              310983,
+              310984,
+              310985,
+              310986,
+              310987,
+              310988,
+              310989,
+              310990,
+              310991,
+              310992,
+              310993,
+              310994,
+              310995,
+              310996,
+              310997
+            ],
+            [
+              155596,
+              155597,
+              155598,
+              155599,
+              155600,
+              155601,
+              155602,
+              155603,
+              155604,
+              155605,
+              155606,
+              155607,
+              155608,
+              155609,
+              155610,
+              155611,
+              155612,
+              155613,
+              155614,
+              155615,
+              155616,
+              155617,
+              155618,
+              155619,
+              155620,
+              155621,
+              155622,
+              155623,
+              155624,
+              155625,
+              155626,
+              155627,
+              155628,
+              155629,
+              155630,
+              155631,
+              155632,
+              155633,
+              155634,
+              155635,
+              155636,
+              155637,
+              155638,
+              155639,
+              155640,
+              155641,
+              155642,
+              155643,
+              155644,
+              155645,
+              155646,
+              155647,
+              155648,
+              155649,
+              155650,
+              155651,
+              155652,
+              155653,
+              155654,
+              155655,
+              155656,
+              155657,
+              155658,
+              155659
+            ],
+            [
+              310998,
+              310999,
+              311000,
+              311001,
+              311002,
+              311003,
+              311004,
+              311005,
+              311006,
+              311007,
+              311008,
+              311009,
+              311010,
+              311011,
+              311012,
+              311013,
+              311014,
+              311015,
+              311016,
+              311017,
+              311018,
+              311019,
+              311020,
+              311021,
+              311022,
+              311023,
+              311024,
+              311025,
+              311026,
+              311027,
+              311028,
+              311029,
+              311030,
+              311031,
+              311032,
+              311033,
+              311034,
+              311035,
+              311036,
+              311037,
+              311038,
+              311039,
+              311040,
+              311041,
+              311042,
+              311043,
+              311044,
+              311045,
+              311046,
+              311047,
+              311048,
+              311049,
+              311050,
+              311051,
+              311052,
+              311053,
+              311054,
+              311055,
+              311056,
+              311057,
+              311058,
+              311059,
+              311060,
+              311061
+            ]
+          ],
+          "final_validity_wire": 311063,
+          "python_process_high_water_RSS_bytes": 29011968,
+          "cgroup_memory_peak_so_far_bytes": 25817088,
+          "gate_segment_sha256": "23f678f718c331984a1a5197231a8c4905c157fc412cbf6d658b8db3e6eccbb4"
+        }
+      ],
+      "complete": true,
+      "seconds": 0.3727316389558837,
+      "counts": {
+        "xor": 185284,
+        "and_": 122900,
+        "not_": 2620,
+        "inputs": 258
+      },
+      "total_gates": 310804,
+      "fingerprint": "072f6bb661069f43414f2cf5522fec29d45c793c999a0a5b15b9821ed5d25148",
+      "generation_seconds": 0.3704938399605453,
+      "hypothetical_serialised_bytes": 5283757,
+      "stored_bytes": 5283757,
+      "retained_trace_bytes": 5283790,
+      "extra_harness_gates": 0,
+      "extra_harness_ANDs": 0,
+      "test_equality_gates": 0,
+      "python_process_high_water_RSS_bytes": 32710656,
+      "cgroup_memory_peak_so_far_bytes": 29343744
+    },
+    {
+      "case": "G4-reference-second-stage",
+      "kind": "generation-probe",
+      "status": "pass",
+      "mode": "reference-second",
+      "components": [
+        {
+          "name": "reference-second",
+          "private_input_bits": 258,
+          "complete": true,
+          "counts": {
+            "xor": 185284,
+            "and_": 123158,
+            "not_": 2622
+          },
+          "total_gates": 311064,
+          "first_gate_offset": 0,
+          "end_gate_offset": 311064,
+          "generation_and_counting_seconds": 0.366330508957617,
+          "phases_global_gate_offsets": [
+            {
+              "node": "C",
+              "twiddle_index": 2,
+              "steps": [
+                {
+                  "phase": "original_checked_butterfly",
+                  "gates": 155270,
+                  "and_gates": 61320
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 155402,
+                  "and_gates": 61450
+                }
+              ]
+            },
+            {
+              "node": "D",
+              "twiddle_index": 3,
+              "steps": [
+                {
+                  "phase": "original_checked_butterfly",
+                  "gates": 310672,
+                  "and_gates": 122770
+                },
+                {
+                  "phase": "full64_output_masks_and_validity",
+                  "gates": 310804,
+                  "and_gates": 122900
+                }
+              ]
+            },
+            {
+              "phase": "all_four_final_lanes_masked_by_final_scope",
+              "gates": 311064,
+              "and_gates": 123158
+            }
+          ],
+          "final_word_wire_indices": [
+            [
+              311066,
+              311067,
+              311068,
+              311069,
+              311070,
+              311071,
+              311072,
+              311073,
+              311074,
+              311075,
+              311076,
+              311077,
+              311078,
+              311079,
+              311080,
+              311081,
+              311082,
+              311083,
+              311084,
+              311085,
+              311086,
+              311087,
+              311088,
+              311089,
+              311090,
+              311091,
+              311092,
+              311093,
+              311094,
+              311095,
+              311096,
+              311097,
+              311098,
+              311099,
+              311100,
+              311101,
+              311102,
+              311103,
+              311104,
+              311105,
+              311106,
+              311107,
+              311108,
+              311109,
+              311110,
+              311111,
+              311112,
+              311113,
+              311114,
+              311115,
+              311116,
+              311117,
+              311118,
+              311119,
+              311120,
+              311121,
+              311122,
+              311123,
+              311124,
+              311125,
+              311126,
+              311127,
+              311128,
+              311129
+            ],
+            [
+              311130,
+              311131,
+              311132,
+              311133,
+              311134,
+              311135,
+              311136,
+              311137,
+              311138,
+              311139,
+              311140,
+              311141,
+              311142,
+              311143,
+              311144,
+              311145,
+              311146,
+              311147,
+              311148,
+              311149,
+              311150,
+              311151,
+              311152,
+              311153,
+              311154,
+              311155,
+              311156,
+              311157,
+              311158,
+              311159,
+              311160,
+              311161,
+              311162,
+              311163,
+              311164,
+              311165,
+              311166,
+              311167,
+              311168,
+              311169,
+              311170,
+              311171,
+              311172,
+              311173,
+              311174,
+              311175,
+              311176,
+              311177,
+              311178,
+              311179,
+              311180,
+              311181,
+              311182,
+              311183,
+              311184,
+              311185,
+              311186,
+              311187,
+              311188,
+              311189,
+              311190,
+              311191,
+              311192,
+              311193
+            ],
+            [
+              311194,
+              311195,
+              311196,
+              311197,
+              311198,
+              311199,
+              311200,
+              311201,
+              311202,
+              311203,
+              311204,
+              311205,
+              311206,
+              311207,
+              311208,
+              311209,
+              311210,
+              311211,
+              311212,
+              311213,
+              311214,
+              311215,
+              311216,
+              311217,
+              311218,
+              311219,
+              311220,
+              311221,
+              311222,
+              311223,
+              311224,
+              311225,
+              311226,
+              311227,
+              311228,
+              311229,
+              311230,
+              311231,
+              311232,
+              311233,
+              311234,
+              311235,
+              311236,
+              311237,
+              311238,
+              311239,
+              311240,
+              311241,
+              311242,
+              311243,
+              311244,
+              311245,
+              311246,
+              311247,
+              311248,
+              311249,
+              311250,
+              311251,
+              311252,
+              311253,
+              311254,
+              311255,
+              311256,
+              311257
+            ],
+            [
+              311258,
+              311259,
+              311260,
+              311261,
+              311262,
+              311263,
+              311264,
+              311265,
+              311266,
+              311267,
+              311268,
+              311269,
+              311270,
+              311271,
+              311272,
+              311273,
+              311274,
+              311275,
+              311276,
+              311277,
+              311278,
+              311279,
+              311280,
+              311281,
+              311282,
+              311283,
+              311284,
+              311285,
+              311286,
+              311287,
+              311288,
+              311289,
+              311290,
+              311291,
+              311292,
+              311293,
+              311294,
+              311295,
+              311296,
+              311297,
+              311298,
+              311299,
+              311300,
+              311301,
+              311302,
+              311303,
+              311304,
+              311305,
+              311306,
+              311307,
+              311308,
+              311309,
+              311310,
+              311311,
+              311312,
+              311313,
+              311314,
+              311315,
+              311316,
+              311317,
+              311318,
+              311319,
+              311320,
+              311321
+            ]
+          ],
+          "final_validity_wire": 311323,
+          "python_process_high_water_RSS_bytes": 32710656,
+          "cgroup_memory_peak_so_far_bytes": 29487104,
+          "gate_segment_sha256": "b005a528cb4d64ff9e7ba57e5560328397bcf788992a324921b5c87c5ba4a09f"
+        }
+      ],
+      "complete": true,
+      "seconds": 0.37093757605180144,
+      "counts": {
+        "xor": 185284,
+        "and_": 123158,
+        "not_": 2622,
+        "inputs": 258
+      },
+      "total_gates": 311064,
+      "fingerprint": "c637278540ff09a7af4c8bcfa125750b62b10e5727f4b82d651bda2c7b6ddb43",
+      "generation_seconds": 0.36864475498441607,
+      "hypothetical_serialised_bytes": 5288177,
+      "stored_bytes": 5288177,
+      "retained_trace_bytes": 5288210,
+      "extra_harness_gates": 0,
+      "extra_harness_ANDs": 0,
+      "test_equality_gates": 0,
+      "python_process_high_water_RSS_bytes": 32874496,
+      "cgroup_memory_peak_so_far_bytes": 29487104
+    }
+  ],
+  "candidate_materialised_count_identity": true,
+  "partition_count_identity": true,
+  "decision": "supports-bounded-full-forward-experiment",
+  "total_invocations": 16,
+  "generation_probes": 4,
+  "differential_cases": 12,
+  "circuit_generations": 4,
+  "partitions_complete": true,
+  "partition_nodes": [
+    [
+      "A",
+      "B"
+    ],
+    [
+      "C",
+      "D"
+    ]
+  ],
+  "partition_overlap": [],
+  "missing_nodes": [],
+  "evaluator_calls": 36,
+  "independent_trace_observer_passes": 36,
+  "peak_retained_trace_bytes": 5288210,
+  "traces_released_between_probes": true,
+  "trace_retained_on_disk": false,
+  "total_seconds": 5.491761218989268,
+  "available_cpus": [
+    0,
+    1
+  ],
+  "python_process_high_water_RSS_bytes": 32874496,
+  "cgroup_memory_peak_so_far_bytes": 29597696
+}

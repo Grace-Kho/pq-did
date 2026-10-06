@@ -1,0 +1,58 @@
+{
+  "prior_closure": "docs/data/oct31_auth_relation_integration_run_1/validation-closure.json",
+  "prior_closure_sha256": "1dc5b13f2b6415bc7282c6f80f3c0d0b147a8cd2ec68d0a8ee80207b2d8f0876",
+  "prior_manifest_sha256": "8d9d98121fd5450d0944b01ed3934207518b866a3efea15991b8fefbbbe4ede3",
+  "resource_record": {
+    "package": "OCT31-AUTH-RELATION-INTEGRATION-1",
+    "package_charged_seconds": 183.44287903010627,
+    "guarded_jobs_measured_seconds": 57.11817637621425,
+    "bookkeeping_seconds": 126.32470265389203,
+    "implementation_charged_total_seconds": 1159.5904537444912,
+    "implementation_remaining_seconds": 3114.4095462555088,
+    "package_remaining_seconds": 2366.5571209698937,
+    "analysis_remaining_seconds_unchanged": 80.91750274339225,
+    "invocations_used": 75,
+    "invocations_remaining_in_allocation": 53,
+    "cumulative_invocations": 942,
+    "cumulative_invocation_ceiling": 1050,
+    "new_builds_used": 2,
+    "new_builds_remaining_in_allocation": 1,
+    "cumulative_builds": 10,
+    "cumulative_build_ceiling": 13,
+    "work_events": 27379838,
+    "work_event_ceiling": 4294967296,
+    "work_event_charge_includes_native_conservative_row_pass_bound": true,
+    "memory_metric": "cgroup-v2 memory.peak includes each worker and descendants plus charged cache/kernel; sampled summed RSS is separate",
+    "peak_cgroup_bytes_by_phase": {
+      "native": 226758656,
+      "python": 76877824,
+      "tool": 29974528,
+      "audit": 54116352
+    },
+    "actual_resource_breaches": 0,
+    "proofs": 0,
+    "zkvm_executions": 0,
+    "historical_failures_preserved": [
+      "source-quality",
+      "build-1",
+      "shutdown retained failed-state assertion"
+    ],
+    "metadata_only_diagnostic": {
+      "operation": "inline read-only resource summary",
+      "error": "SyntaxError: closing parenthesis does not match opening brace",
+      "exit_code": 1,
+      "no_case_or_build": true,
+      "corrected_summary_succeeded": true
+    },
+    "completion_charge_limit_seconds": 6,
+    "storage": {
+      "new_evidence_bytes": 750217,
+      "new_artifact_bytes": 853888,
+      "evidence_bytes": 25991650,
+      "artifact_bytes": 58966547,
+      "temporary_bytes": 0
+    },
+    "cumulative_evidence_remaining_bytes": 7562782,
+    "package_evidence_remaining_bytes": 5541239
+  }
+}

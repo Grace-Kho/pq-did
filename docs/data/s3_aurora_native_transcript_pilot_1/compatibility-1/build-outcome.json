@@ -1,0 +1,20 @@
+{
+  "attempt": 3,
+  "ceiling": 3,
+  "complete": false,
+  "configuration": "succeeded",
+  "compile_link": "interrupted before linking",
+  "guard_exit_code": 255,
+  "guard_stop": "diagnostic/package output stop",
+  "seconds": 2.299439995083958,
+  "memory_peak_bytes": 253558784,
+  "memory_peak_source": "outer systemd MemoryPeak after worker killed; worker after-snapshot unavailable",
+  "diagnostic_bytes": 2834,
+  "compiler_diagnostics": "none in retained log",
+  "observed_temporary_storage_peak_bytes": 569344,
+  "cause": "Existing package_size includes R/tmp, so compiler temporary artifacts also counted against 393216-byte new-evidence reservation. At peak temporary bytes alone exceeded that reservation; final retained log was only 2834 bytes. Do not describe the stopped run as within this guard.",
+  "last_reported_completed_unit": "libff/common/profiling.cpp, 7/22 Ninja steps",
+  "further_builds": 0,
+  "native_case_invocations": 0,
+  "incomplete_worker_attempt_record_preserved": true
+}

@@ -1,0 +1,52 @@
+{
+  "cpu_binary_checks": {
+    "CpuHal": true,
+    "libcuda.so": false,
+    "gpu_device_namespace": "PrivateDevices=yes; no CUDA_VISIBLE_DEVICES"
+  },
+  "control_ids": {
+    "lift15": "1ca3ca03030719064ba61b3125bdd326fc57f74e799ef860bdea6f3227381e16",
+    "lift16": "c32b3627d2b3d60c64adf523a98bd16c0ff607471f3d6630d1f26d5e9406d841",
+    "join": "7a8f24092c34ed3eb81b3d0a0b796c588c615d3488ef9e61c21dbd1e4b83ea6e"
+  },
+  "control_source_sha256": "6fedf46fad3ca0ce3e537139be7873a43dd68fee5fc803d3e58604b4e9ae16cb",
+  "recursion_archive_sha256": "744b999f0a35b3c86753311c7efb2a0054be21727095cf105af6ee7d3f4d8849",
+  "workload": {
+    "enrol": {
+      "user_cycles": 196311,
+      "segment_count": 10,
+      "po2_histogram": {
+        "16": 9,
+        "15": 1
+      },
+      "padded_capacity": 622592,
+      "segment_proofs": 10,
+      "lifts": 10,
+      "joins": 9
+    },
+    "cred-valid": {
+      "user_cycles": 16313474,
+      "segment_count": 582,
+      "po2_histogram": {
+        "16": 581,
+        "15": 1
+      },
+      "padded_capacity": 38109184,
+      "other_padded_capacity": 21795710,
+      "segment_proofs": 582,
+      "lifts": 582,
+      "joins": 581
+    }
+  },
+  "workload_source": "Prior execution + SDK server/prove/mod.rs fold; no new execution",
+  "system_paging_separate": "Prior IPC lacks split; residual includes paging/reserved/padding",
+  "cycle_limit_meaning": "Executor.cycles.user; not padded segment capacity",
+  "recursion_support": "15/16 lifts + join allowed; registry pins root and parameter digest",
+  "disk_free_bytes": {
+    "wsl": 1015449649152,
+    "windows": 398437785600
+  },
+  "meminfo": "MemTotal:        7935656 kB\nMemFree:         2849496 kB\nMemAvailable:    4840748 kB\nBuffers:           37080 kB\nCached:          1987980 kB\nSwapCached:            0 kB\nActive:           758872 kB\nInactive:        3551220 kB\nActive(anon):       2720 kB\nInactive(anon):  2359572 kB\nActive(file):     756152 kB\nInactive(file):  1191648 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       2097152 kB\nSwapFree:        2097152 kB\nDirty:              5704 kB\nWriteback:             0 kB\nAnonPages:       2285148 kB\nMapped:           480408 kB\nShmem:             77348 kB\nKReclaimable:     239460 kB\nSlab:             382516 kB\nSReclaimable:     239460 kB\nSUnreclaim:       143056 kB\nKernelStack:       10352 kB\nPageTables:        52044 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     6064980 kB\nCommitted_AS:    5455888 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       39560 kB\nVmallocChunk:          0 kB\nPercpu:            12192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    124928 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       44032 kB\nDirectMap2M:     6051840 kB\nDirectMap1G:    10485760 kB\n",
+  "dependencies_unchanged": true,
+  "reference_validation": "Reuse six native tests + 35 comparisons; no rerun"
+}

@@ -1,0 +1,102 @@
+{
+  "package": "LIGETRON-FULL-PATH-ENGINEERING-1",
+  "complete": false,
+  "outcome": "stopped at approved dual-environment memory gate",
+  "preservation_complete": true,
+  "audit_launcher_attempts": 2,
+  "complete_audit_executions": 1,
+  "full_audit_exit_code": 0,
+  "historical_audit_result": {
+    "path": "docs/data/ligetron_full_path_engineering_1/result.json",
+    "sha256": "18836410ec5c215ffd75cc766972a91d459ce5c151228a6e617ca7365dcff33b",
+    "passed": true
+  },
+  "inventory_and_report_readback": {
+    "passed": true,
+    "inventory_count": 13408
+  },
+  "worker_termination": {
+    "all_units_terminated": true,
+    "units": [
+      {
+        "unit": "pqdid-ligetron-full-path-1-full-audit-2.service",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0"
+      },
+      {
+        "unit": "pqdid-ligetron-full-path-1-full-audit.service",
+        "ActiveState": "failed",
+        "SubState": "failed",
+        "MainPID": "0"
+      },
+      {
+        "unit": "pqdid-ligetron-full-path-1-package.service",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0"
+      },
+      {
+        "unit": "pqdid-ligetron-full-path-1-prepare-2.service",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0"
+      },
+      {
+        "unit": "pqdid-ligetron-full-path-1-prepare-3.service",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0"
+      },
+      {
+        "unit": "pqdid-ligetron-full-path-1-prepare.service",
+        "ActiveState": "failed",
+        "SubState": "failed",
+        "MainPID": "0"
+      },
+      {
+        "unit": "pqdid-ligetron-full-path-1-readback.service",
+        "ActiveState": "failed",
+        "SubState": "failed",
+        "MainPID": "0"
+      },
+      {
+        "unit": "pqdid-ligetron-full-path-1-static-2.service",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0"
+      },
+      {
+        "unit": "pqdid-ligetron-full-path-1-static-3.service",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0"
+      },
+      {
+        "unit": "pqdid-ligetron-full-path-1-static-4.service",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0"
+      },
+      {
+        "unit": "pqdid-ligetron-full-path-1-static.service",
+        "ActiveState": "failed",
+        "SubState": "failed",
+        "MainPID": "0"
+      }
+    ],
+    "transient_parent": "ActiveState=inactive\nSubState=dead\n",
+    "unrelated_units_touched": false,
+    "seconds": 0.05035650287754834
+  },
+  "all_40_native_cases": "unrun",
+  "synthetic_proof": "unrun",
+  "prepared_overlay": "partial, source-only; not native validated or proof admitted",
+  "source_overlay_sha256": "59f3c8e415e2899730e4d4792a980b4c0a9914036d1201d759e4c3f15b2d7654",
+  "baseline_and_historical_failures_preserved": true,
+  "private_verification": "fail-closed",
+  "Binius": "closed-unresolved",
+  "private_proving_and_isolation": "paused; approved synthetic exception unspent",
+  "no_automatic_resumption": true
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

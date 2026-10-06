@@ -1,0 +1,2061 @@
+{
+  "status": "historical development evidence, not final results",
+  "notes": "First two combined suites hit RSS; first had two post-fault state assertion failures. Final runs use sequential module isolation and corrected diagnostic assertions. Production gate schedules and profile unchanged.",
+  "runs": [
+    {
+      "name": "initial-component-probes",
+      "record": {
+        "recorded_at_utc": "2026-09-18T03:22:17.316822+00:00",
+        "host_snapshot": {
+          "memory_bytes": {
+            "MemTotal": 8126111744,
+            "MemFree": 4046757888,
+            "MemAvailable": 5022986240,
+            "Buffers": 38440960,
+            "Cached": 1049501696,
+            "SwapCached": 0,
+            "Active": 251133952,
+            "Inactive": 3121197056,
+            "Active(anon)": 2998272,
+            "Inactive(anon)": 2354597888,
+            "Active(file)": 248135680,
+            "Inactive(file)": 766599168,
+            "Unevictable": 0,
+            "Mlocked": 0,
+            "SwapTotal": 2147483648,
+            "SwapFree": 2147483648,
+            "Dirty": 921600,
+            "Writeback": 0,
+            "AnonPages": 2284539904,
+            "Mapped": 491364352,
+            "Shmem": 73261056,
+            "KReclaimable": 162205696,
+            "Slab": 298778624,
+            "SReclaimable": 162205696,
+            "SUnreclaim": 136572928,
+            "KernelStack": 10452992,
+            "PageTables": 52453376,
+            "SecPageTables": 0,
+            "NFS_Unstable": 0,
+            "Bounce": 0,
+            "WritebackTmp": 0,
+            "CommitLimit": 6210539520,
+            "Committed_AS": 5454446592,
+            "VmallocTotal": 35184372087808,
+            "VmallocUsed": 40353792,
+            "VmallocChunk": 0,
+            "Percpu": 12484608,
+            "HardwareCorrupted": 0,
+            "AnonHugePages": 0,
+            "ShmemHugePages": 0,
+            "ShmemPmdMapped": 0,
+            "FileHugePages": 132120576,
+            "FilePmdMapped": 0,
+            "Unaccepted": 0,
+            "Balloon": 0,
+            "Hugepagesize": 2097152,
+            "Hugetlb": 0,
+            "DirectMap4k": 45088768,
+            "DirectMap2M": 6197084160,
+            "DirectMap1G": 10737418240
+          },
+          "disk_bytes": {
+            "total": 1081101176832,
+            "used": 4520067072,
+            "free": 1021588754432
+          }
+        },
+        "launch_mem_available_bytes": 4986888192,
+        "profile": {
+          "authority": "User approval, 17 September 2026",
+          "max_gates": 2000000,
+          "max_output_bytes": 41943040,
+          "max_inputs": 65536,
+          "generation_seconds": 10.0,
+          "evaluation_seconds": 5.0,
+          "workers": 1,
+          "address_space_bytes": 268435456,
+          "rss_ceiling_bytes": 134217728,
+          "rss_poll_seconds": 0.01,
+          "case_wall_seconds": 30.0,
+          "case_log_bytes": 2097152,
+          "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+        },
+        "workers": 1,
+        "results": [
+          {
+            "case": "responses/materialised",
+            "profile": {
+              "authority": "User approval, 17 September 2026",
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_inputs": 65536,
+              "generation_seconds": 10.0,
+              "evaluation_seconds": 5.0,
+              "workers": 1,
+              "address_space_bytes": 268435456,
+              "rss_ceiling_bytes": 134217728,
+              "rss_poll_seconds": 0.01,
+              "case_wall_seconds": 30.0,
+              "case_log_bytes": 2097152,
+              "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+            },
+            "component": "responses",
+            "mode": "materialised",
+            "outcome": "passed",
+            "limits": {
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_seconds": 10.0,
+              "max_inputs": 65536
+            },
+            "generation_complete": true,
+            "phases_cumulative": {
+              "through_responses": {
+                "xor": 195840,
+                "and_": 112640,
+                "not_": 28161,
+                "inputs": 42632,
+                "gates": 336641,
+                "wires": 379275
+              }
+            },
+            "tracemalloc": false,
+            "additional_comparison_gates": 0,
+            "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+            "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+            "counts": {
+              "xor": 195840,
+              "and_": 112641,
+              "not_": 28162,
+              "inputs": 42632
+            },
+            "gates": 336643,
+            "serialised_bytes": 5723020,
+            "stored_trace_bytes": 5723020,
+            "fingerprint": "3321d63f80a9c6004695d6918f9e331fdb470a32a2d019bedc6379ac0d68dcb8",
+            "generation_seconds": 0.5124447429989232,
+            "folded_operations": [
+              57600,
+              57600,
+              57600
+            ],
+            "evaluation": {
+              "output": 1,
+              "seconds": 0.08721764899382833,
+              "wire_storage_bytes": 379334
+            },
+            "observed_output_counts": {
+              "words": 1280,
+              "byte_strings": 1,
+              "flags": 1
+            },
+            "observation_seconds": 0.028239171995664947,
+            "probe_seconds": 0.6342026409984101,
+            "child_seconds": 0.6583264569926541,
+            "peak_rss_bytes": 51032064,
+            "supervision": {
+              "returncode": 0,
+              "reason": null,
+              "sampled_peak_rss_bytes": 45416448,
+              "supervised_seconds": 0.6995806089980761,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 0
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "responses/materialised",
+              "--effective-profile",
+              "/tmp/pqdid-signature-9p9k9m0q/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-9p9k9m0q/0.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-9p9k9m0q/0.beat"
+            ],
+            "log": ""
+          },
+          {
+            "case": "hint-boundaries/materialised",
+            "profile": {
+              "authority": "User approval, 17 September 2026",
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_inputs": 65536,
+              "generation_seconds": 10.0,
+              "evaluation_seconds": 5.0,
+              "workers": 1,
+              "address_space_bytes": 268435456,
+              "rss_ceiling_bytes": 134217728,
+              "rss_poll_seconds": 0.01,
+              "case_wall_seconds": 30.0,
+              "case_log_bytes": 2097152,
+              "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+            },
+            "component": "hint-boundaries",
+            "mode": "materialised",
+            "outcome": "passed",
+            "limits": {
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_seconds": 10.0,
+              "max_inputs": 65536
+            },
+            "generation_complete": true,
+            "phases_cumulative": {},
+            "tracemalloc": false,
+            "additional_comparison_gates": 0,
+            "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+            "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+            "counts": {
+              "xor": 1692,
+              "and_": 906,
+              "not_": 106,
+              "inputs": 42632
+            },
+            "gates": 2704,
+            "serialised_bytes": 46057,
+            "stored_trace_bytes": 46057,
+            "fingerprint": "df95c283c2e35fe55777b88ef671326fe6887977aa7e0a05a7019aed99e56542",
+            "generation_seconds": 0.014506434003124014,
+            "folded_operations": [
+              684,
+              685,
+              693
+            ],
+            "evaluation": {
+              "output": 1,
+              "seconds": 0.005143841990502551,
+              "wire_storage_bytes": 45395
+            },
+            "observed_output_counts": {
+              "words": 1,
+              "byte_strings": 0,
+              "flags": 0
+            },
+            "observation_seconds": 0.0022472749988082796,
+            "probe_seconds": 0.026310333007131703,
+            "child_seconds": 0.04761730899917893,
+            "peak_rss_bytes": 30089216,
+            "supervision": {
+              "returncode": 0,
+              "reason": null,
+              "sampled_peak_rss_bytes": 29274112,
+              "supervised_seconds": 0.09277332499914337,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 0
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "hint-boundaries/materialised",
+              "--effective-profile",
+              "/tmp/pqdid-signature-9p9k9m0q/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-9p9k9m0q/1.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-9p9k9m0q/1.beat"
+            ],
+            "log": ""
+          },
+          {
+            "case": "hint-two-steps/materialised",
+            "profile": {
+              "authority": "User approval, 17 September 2026",
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_inputs": 65536,
+              "generation_seconds": 10.0,
+              "evaluation_seconds": 5.0,
+              "workers": 1,
+              "address_space_bytes": 268435456,
+              "rss_ceiling_bytes": 134217728,
+              "rss_poll_seconds": 0.01,
+              "case_wall_seconds": 30.0,
+              "case_log_bytes": 2097152,
+              "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+            },
+            "component": "hint-two-steps",
+            "mode": "materialised",
+            "outcome": "passed",
+            "limits": {
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_seconds": 10.0,
+              "max_inputs": 65536
+            },
+            "generation_complete": true,
+            "phases_cumulative": {},
+            "tracemalloc": false,
+            "additional_comparison_gates": 0,
+            "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+            "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+            "counts": {
+              "xor": 73936,
+              "and_": 82941,
+              "not_": 15949,
+              "inputs": 42632
+            },
+            "gates": 172826,
+            "serialised_bytes": 2938131,
+            "stored_trace_bytes": 2938131,
+            "fingerprint": "780a081afe104cf25bafc88125d2f30e6e39505127f0019c00c5553425b8dda0",
+            "generation_seconds": 0.26307334000011906,
+            "folded_operations": [
+              58182,
+              12573,
+              41049
+            ],
+            "evaluation": {
+              "output": 1,
+              "seconds": 0.04125186399323866,
+              "wire_storage_bytes": 215517
+            },
+            "observed_output_counts": {
+              "words": 257,
+              "byte_strings": 0,
+              "flags": 0
+            },
+            "observation_seconds": 0.013167954995878972,
+            "probe_seconds": 0.32199150099768303,
+            "child_seconds": 0.34093266299169045,
+            "peak_rss_bytes": 39813120,
+            "supervision": {
+              "returncode": 0,
+              "reason": null,
+              "sampled_peak_rss_bytes": 36937728,
+              "supervised_seconds": 0.37976470100693405,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 0
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "hint-two-steps/materialised",
+              "--effective-profile",
+              "/tmp/pqdid-signature-9p9k9m0q/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-9p9k9m0q/2.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-9p9k9m0q/2.beat"
+            ],
+            "log": ""
+          },
+          {
+            "case": "hint-padding/materialised",
+            "profile": {
+              "authority": "User approval, 17 September 2026",
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_inputs": 65536,
+              "generation_seconds": 10.0,
+              "evaluation_seconds": 5.0,
+              "workers": 1,
+              "address_space_bytes": 268435456,
+              "rss_ceiling_bytes": 134217728,
+              "rss_poll_seconds": 0.01,
+              "case_wall_seconds": 30.0,
+              "case_log_bytes": 2097152,
+              "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+            },
+            "component": "hint-padding",
+            "mode": "materialised",
+            "outcome": "passed",
+            "limits": {
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_seconds": 10.0,
+              "max_inputs": 65536
+            },
+            "generation_complete": true,
+            "phases_cumulative": {},
+            "tracemalloc": false,
+            "additional_comparison_gates": 0,
+            "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+            "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+            "counts": {
+              "xor": 301115,
+              "and_": 267076,
+              "not_": 212074,
+              "inputs": 42632
+            },
+            "gates": 780265,
+            "serialised_bytes": 13264594,
+            "stored_trace_bytes": 13264594,
+            "fingerprint": "c1b94b458f7246b96720589254cd82d36d73e67cb5fadfab49f7bff5e53e8b3f",
+            "generation_seconds": 0.9489006609946955,
+            "folded_operations": [
+              3530,
+              115,
+              6992
+            ],
+            "evaluation": {
+              "output": 1,
+              "seconds": 0.1751579770061653,
+              "wire_storage_bytes": 822956
+            },
+            "observed_output_counts": {
+              "words": 0,
+              "byte_strings": 0,
+              "flags": 0
+            },
+            "observation_seconds": 0.048031297003035434,
+            "probe_seconds": 1.1769421549979597,
+            "child_seconds": 1.1955367199989269,
+            "peak_rss_bytes": 57847808,
+            "supervision": {
+              "returncode": 0,
+              "reason": null,
+              "sampled_peak_rss_bytes": 51535872,
+              "supervised_seconds": 1.2325378750101663,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 0
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "hint-padding/materialised",
+              "--effective-profile",
+              "/tmp/pqdid-signature-9p9k9m0q/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-9p9k9m0q/3.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-9p9k9m0q/3.beat"
+            ],
+            "log": ""
+          },
+          {
+            "case": "response-norm/materialised",
+            "profile": {
+              "authority": "User approval, 17 September 2026",
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_inputs": 65536,
+              "generation_seconds": 10.0,
+              "evaluation_seconds": 5.0,
+              "workers": 1,
+              "address_space_bytes": 268435456,
+              "rss_ceiling_bytes": 134217728,
+              "rss_poll_seconds": 0.01,
+              "case_wall_seconds": 30.0,
+              "case_log_bytes": 2097152,
+              "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+            },
+            "component": "response-norm",
+            "mode": "materialised",
+            "outcome": "passed",
+            "limits": {
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_seconds": 10.0,
+              "max_inputs": 65536
+            },
+            "generation_complete": true,
+            "phases_cumulative": {
+              "through_responses": {
+                "xor": 195840,
+                "and_": 112640,
+                "not_": 28161,
+                "inputs": 42632,
+                "gates": 336641,
+                "wires": 379275
+              }
+            },
+            "tracemalloc": false,
+            "additional_comparison_gates": 0,
+            "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+            "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+            "counts": {
+              "xor": 867842,
+              "and_": 537603,
+              "not_": 115204,
+              "inputs": 42632
+            },
+            "gates": 1520649,
+            "serialised_bytes": 25851122,
+            "stored_trace_bytes": 25851122,
+            "fingerprint": "7b303cf1484bdb453955894fae987aa2f32690e1e92ae1480e59aed409773aff",
+            "generation_seconds": 1.9448946920019807,
+            "folded_operations": [
+              57600,
+              57600,
+              140800
+            ],
+            "evaluation": {
+              "output": 1,
+              "seconds": 0.3393753249984002,
+              "wire_storage_bytes": 1563340
+            },
+            "observed_output_counts": {
+              "words": 1280,
+              "byte_strings": 1,
+              "flags": 3
+            },
+            "observation_seconds": 0.10105844400823116,
+            "probe_seconds": 2.389946298993891,
+            "child_seconds": 2.4105642670037923,
+            "peak_rss_bytes": 91197440,
+            "supervision": {
+              "returncode": 0,
+              "reason": null,
+              "sampled_peak_rss_bytes": 85782528,
+              "supervised_seconds": 2.453755317008472,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 0
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "response-norm/materialised",
+              "--effective-profile",
+              "/tmp/pqdid-signature-9p9k9m0q/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-9p9k9m0q/4.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-9p9k9m0q/4.beat"
+            ],
+            "log": ""
+          },
+          {
+            "case": "public-key/materialised",
+            "profile": {
+              "authority": "User approval, 17 September 2026",
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_inputs": 65536,
+              "generation_seconds": 10.0,
+              "evaluation_seconds": 5.0,
+              "workers": 1,
+              "address_space_bytes": 268435456,
+              "rss_ceiling_bytes": 134217728,
+              "rss_poll_seconds": 0.01,
+              "case_wall_seconds": 30.0,
+              "case_log_bytes": 2097152,
+              "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+            },
+            "component": "public-key",
+            "mode": "materialised",
+            "outcome": "passed",
+            "limits": {
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_seconds": 10.0,
+              "max_inputs": 65536
+            },
+            "generation_complete": true,
+            "phases_cumulative": {},
+            "tracemalloc": false,
+            "additional_comparison_gates": 0,
+            "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+            "classification": "entirely public expected-pp issuer key",
+            "counts": {
+              "xor": 0,
+              "and_": 0,
+              "not_": 0,
+              "inputs": 0
+            },
+            "gates": 0,
+            "serialised_bytes": 89,
+            "stored_trace_bytes": 89,
+            "fingerprint": "59f9a484723b6f689d1387a58b54e271796c0e4600464f21d2344b67191bb571",
+            "generation_seconds": 0.005596065995632671,
+            "folded_operations": [
+              0,
+              1,
+              1
+            ],
+            "evaluation": {
+              "output": 1,
+              "seconds": 1.2638993212021887e-05,
+              "wire_storage_bytes": 59
+            },
+            "observed_output_counts": {
+              "words": 1536,
+              "byte_strings": 1,
+              "flags": 1
+            },
+            "observation_seconds": 0.004448880994459614,
+            "probe_seconds": 0.013868933994672261,
+            "child_seconds": 0.03270539699587971,
+            "peak_rss_bytes": 27222016,
+            "supervision": {
+              "returncode": 0,
+              "reason": null,
+              "sampled_peak_rss_bytes": 27369472,
+              "supervised_seconds": 0.0721215710073011,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 0
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "public-key/materialised",
+              "--effective-profile",
+              "/tmp/pqdid-signature-9p9k9m0q/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-9p9k9m0q/5.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-9p9k9m0q/5.beat"
+            ],
+            "log": ""
+          },
+          {
+            "case": "public-key-hash/materialised",
+            "profile": {
+              "authority": "User approval, 17 September 2026",
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_inputs": 65536,
+              "generation_seconds": 10.0,
+              "evaluation_seconds": 5.0,
+              "workers": 1,
+              "address_space_bytes": 268435456,
+              "rss_ceiling_bytes": 134217728,
+              "rss_poll_seconds": 0.01,
+              "case_wall_seconds": 30.0,
+              "case_log_bytes": 2097152,
+              "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+            },
+            "component": "public-key-hash",
+            "mode": "materialised",
+            "outcome": "passed",
+            "limits": {
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_seconds": 10.0,
+              "max_inputs": 65536
+            },
+            "generation_complete": true,
+            "phases_cumulative": {},
+            "tracemalloc": false,
+            "additional_comparison_gates": 0,
+            "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+            "classification": "entirely public expected-pp issuer key",
+            "counts": {
+              "xor": 0,
+              "and_": 0,
+              "not_": 0,
+              "inputs": 0
+            },
+            "gates": 0,
+            "serialised_bytes": 89,
+            "stored_trace_bytes": 89,
+            "fingerprint": "59f9a484723b6f689d1387a58b54e271796c0e4600464f21d2344b67191bb571",
+            "generation_seconds": 0.8534112880006433,
+            "folded_operations": [
+              2351040,
+              576001,
+              1
+            ],
+            "evaluation": {
+              "output": 1,
+              "seconds": 1.5133991837501526e-05,
+              "wire_storage_bytes": 59
+            },
+            "observed_output_counts": {
+              "words": 0,
+              "byte_strings": 1,
+              "flags": 0
+            },
+            "observation_seconds": 9.47820080909878e-05,
+            "probe_seconds": 0.8569975779973902,
+            "child_seconds": 0.8748801720066695,
+            "peak_rss_bytes": 25747456,
+            "supervision": {
+              "returncode": 0,
+              "reason": null,
+              "sampled_peak_rss_bytes": 25890816,
+              "supervised_seconds": 0.9129857510124566,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 0
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "public-key-hash/materialised",
+              "--effective-profile",
+              "/tmp/pqdid-signature-9p9k9m0q/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-9p9k9m0q/6.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-9p9k9m0q/6.beat"
+            ],
+            "log": ""
+          },
+          {
+            "case": "certified-message/materialised",
+            "profile": {
+              "authority": "User approval, 17 September 2026",
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_inputs": 65536,
+              "generation_seconds": 10.0,
+              "evaluation_seconds": 5.0,
+              "workers": 1,
+              "address_space_bytes": 268435456,
+              "rss_ceiling_bytes": 134217728,
+              "rss_poll_seconds": 0.01,
+              "case_wall_seconds": 30.0,
+              "case_log_bytes": 2097152,
+              "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+            },
+            "component": "certified-message",
+            "mode": "materialised",
+            "outcome": "passed",
+            "limits": {
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_seconds": 10.0,
+              "max_inputs": 65536
+            },
+            "generation_complete": true,
+            "phases_cumulative": {
+              "parsing_and_disclosure": {
+                "xor": 45920,
+                "and_": 29708,
+                "not_": 12584,
+                "inputs": 42632,
+                "gates": 88212,
+                "wires": 130846
+              },
+              "through_certified_message": {
+                "xor": 201056,
+                "and_": 68108,
+                "not_": 12585,
+                "inputs": 42632,
+                "gates": 281749,
+                "wires": 324383
+              }
+            },
+            "tracemalloc": false,
+            "additional_comparison_gates": 0,
+            "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+            "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+            "counts": {
+              "xor": 201056,
+              "and_": 68109,
+              "not_": 12586,
+              "inputs": 42632
+            },
+            "gates": 281751,
+            "serialised_bytes": 4789856,
+            "stored_trace_bytes": 4789856,
+            "fingerprint": "3c607d53cc47801760be7a0ab88a52806d68c7c983c6f6e7f80c7cb09fe2c1e1",
+            "generation_seconds": 0.5841006840055343,
+            "folded_operations": [
+              641066,
+              165834,
+              12602
+            ],
+            "evaluation": {
+              "output": 1,
+              "seconds": 0.06387138599529862,
+              "wire_storage_bytes": 324442
+            },
+            "observed_output_counts": {
+              "words": 0,
+              "byte_strings": 5,
+              "flags": 0
+            },
+            "observation_seconds": 0.02150369201262947,
+            "probe_seconds": 0.6736109469929943,
+            "child_seconds": 0.6920257759920787,
+            "peak_rss_bytes": 41164800,
+            "supervision": {
+              "returncode": 0,
+              "reason": null,
+              "sampled_peak_rss_bytes": 36466688,
+              "supervised_seconds": 0.7291178150044288,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 0
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "certified-message/materialised",
+              "--effective-profile",
+              "/tmp/pqdid-signature-9p9k9m0q/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-9p9k9m0q/7.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-9p9k9m0q/7.beat"
+            ],
+            "log": ""
+          },
+          {
+            "case": "message-preparation/materialised",
+            "profile": {
+              "authority": "User approval, 17 September 2026",
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_inputs": 65536,
+              "generation_seconds": 10.0,
+              "evaluation_seconds": 5.0,
+              "workers": 1,
+              "address_space_bytes": 268435456,
+              "rss_ceiling_bytes": 134217728,
+              "rss_poll_seconds": 0.01,
+              "case_wall_seconds": 30.0,
+              "case_log_bytes": 2097152,
+              "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+            },
+            "component": "message-preparation",
+            "mode": "materialised",
+            "outcome": "resource_limit",
+            "limits": {
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_seconds": 10.0,
+              "max_inputs": 65536
+            },
+            "generation_complete": false,
+            "phases_cumulative": {
+              "parsing_and_disclosure": {
+                "xor": 45920,
+                "and_": 29708,
+                "not_": 12584,
+                "inputs": 42632,
+                "gates": 88212,
+                "wires": 130846
+              },
+              "through_certified_message": {
+                "xor": 201056,
+                "and_": 68108,
+                "not_": 12585,
+                "inputs": 42632,
+                "gates": 281749,
+                "wires": 324383
+              }
+            },
+            "tracemalloc": false,
+            "additional_comparison_gates": 0,
+            "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+            "reason": "gate-count limit",
+            "progress": {
+              "gates": 2000000,
+              "wires": 2042634,
+              "serialised_bytes_so_far": 34000056,
+              "stored_bytes": 34000056,
+              "complete": false
+            },
+            "probe_seconds": 3.7244256240082905,
+            "child_seconds": 3.7430933189898496,
+            "peak_rss_bytes": 65703936,
+            "supervision": {
+              "returncode": 0,
+              "reason": null,
+              "sampled_peak_rss_bytes": 65814528,
+              "supervised_seconds": 3.7846409949997906,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 0
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "message-preparation/materialised",
+              "--effective-profile",
+              "/tmp/pqdid-signature-9p9k9m0q/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-9p9k9m0q/8.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-9p9k9m0q/8.beat"
+            ],
+            "log": ""
+          }
+        ],
+        "source_sha256": {
+          "src/pqdid/circuits/__init__.py": "9098a9c19787bcd155bac6d7d724d3c354c4c404fc99565cd5a72ae26a4c8d8f",
+          "src/pqdid/circuits/accounting.py": "23610bf5a75ba435f582d7e80a1d1e2118f07caabe6659b96a4ae4380b3c0690",
+          "src/pqdid/circuits/auth_parsing.py": "15bb95af9c2cb70eab3c4de8406b50cd25f67cf823163875372668989c26be2b",
+          "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+          "src/pqdid/circuits/division.py": "c530930c04f91bcdf4bceaf5d052f940cc935e87cca6562baf119ad41b8574a8",
+          "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+          "src/pqdid/circuits/enrolment.py": "d8b5134bdcb7fd9c1bd70cffc6214e96d971e3fe01bc595e5437718cd603e2f5",
+          "src/pqdid/circuits/enrolment_accounting.py": "8e479c7d3f221d86450135cf356f54b310e95794884026eeb9663985d78c4b3b",
+          "src/pqdid/circuits/keccak.py": "05dbfe9e5d8aea37471c325b7a9565b6f9f1742af5e2efca54029758b1b840a6",
+          "src/pqdid/circuits/parsing.py": "2f4b3d24d056eb9b26424ee185b1b5df9847f50fdc1db326c8d313685236cef9",
+          "src/pqdid/circuits/scalar_ring.py": "f2012a9d1202686368eb2693495bccd00af8be73ce8a00535a8ced9a190adf45",
+          "src/pqdid/circuits/signature.py": "5fb391650765018230c4f9bc54370ddf28c1c2ce7fd92b9bef93113aeb9c6133",
+          "src/pqdid/circuits/signature_inputs.py": "67f3d3ace81385a93ef9c113c6b4cbd58a00d028fb53cebfaed145055d612762",
+          "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec",
+          "scripts/validate_signature_inputs.py": "7efeac7687331acd37585c3a02cede42dbf7069991e8113f3c25aaf3ae52c519",
+          "scripts/measure_signature_inputs.py": "929f08d8b85ac791b2044bc31ea00a0f7e65c4d66b6e6fbab9566c7254db0638",
+          "configs/validation_profiles.json": "ac67e0b3fe89c8a91a55c13f8f2e75323c02c9773bfe2007771a61f8c3b623b9"
+        },
+        "scope": "signature inputs only; SPEC-004 pending; no full authentication proof/count"
+      }
+    },
+    {
+      "name": "initial-combined-focused",
+      "record": {
+        "recorded_at_utc": "2026-09-18T03:28:30.106503+00:00",
+        "host_snapshot": {
+          "memory_bytes": {
+            "MemTotal": 8126111744,
+            "MemFree": 4046757888,
+            "MemAvailable": 5022986240,
+            "Buffers": 38440960,
+            "Cached": 1049501696,
+            "SwapCached": 0,
+            "Active": 251133952,
+            "Inactive": 3121197056,
+            "Active(anon)": 2998272,
+            "Inactive(anon)": 2354597888,
+            "Active(file)": 248135680,
+            "Inactive(file)": 766599168,
+            "Unevictable": 0,
+            "Mlocked": 0,
+            "SwapTotal": 2147483648,
+            "SwapFree": 2147483648,
+            "Dirty": 921600,
+            "Writeback": 0,
+            "AnonPages": 2284539904,
+            "Mapped": 491364352,
+            "Shmem": 73261056,
+            "KReclaimable": 162205696,
+            "Slab": 298778624,
+            "SReclaimable": 162205696,
+            "SUnreclaim": 136572928,
+            "KernelStack": 10452992,
+            "PageTables": 52453376,
+            "SecPageTables": 0,
+            "NFS_Unstable": 0,
+            "Bounce": 0,
+            "WritebackTmp": 0,
+            "CommitLimit": 6210539520,
+            "Committed_AS": 5454446592,
+            "VmallocTotal": 35184372087808,
+            "VmallocUsed": 40353792,
+            "VmallocChunk": 0,
+            "Percpu": 12484608,
+            "HardwareCorrupted": 0,
+            "AnonHugePages": 0,
+            "ShmemHugePages": 0,
+            "ShmemPmdMapped": 0,
+            "FileHugePages": 132120576,
+            "FilePmdMapped": 0,
+            "Unaccepted": 0,
+            "Balloon": 0,
+            "Hugepagesize": 2097152,
+            "Hugetlb": 0,
+            "DirectMap4k": 45088768,
+            "DirectMap2M": 6197084160,
+            "DirectMap1G": 10737418240
+          },
+          "disk_bytes": {
+            "total": 1081101176832,
+            "used": 4520067072,
+            "free": 1021588754432
+          }
+        },
+        "launch_mem_available_bytes": 5013323776,
+        "profile": {
+          "authority": "User approval, 17 September 2026",
+          "max_gates": 2000000,
+          "max_output_bytes": 41943040,
+          "max_inputs": 65536,
+          "generation_seconds": 10.0,
+          "evaluation_seconds": 5.0,
+          "workers": 1,
+          "address_space_bytes": 268435456,
+          "rss_ceiling_bytes": 134217728,
+          "rss_poll_seconds": 0.01,
+          "case_wall_seconds": 30.0,
+          "case_log_bytes": 2097152,
+          "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+        },
+        "workers": 1,
+        "results": [
+          {
+            "case": "pytest",
+            "outcome": "resource_limit",
+            "reason": "RSS watchdog ceiling",
+            "supervision": {
+              "returncode": -15,
+              "reason": "RSS watchdog ceiling",
+              "sampled_peak_rss_bytes": 136368128,
+              "supervised_seconds": 50.486066918994766,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 59
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "pytest",
+              "--effective-profile",
+              "/tmp/pqdid-signature-fp1jcgsd/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-fp1jcgsd/0.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-fp1jcgsd/0.beat",
+              "--tests",
+              "tests/unit/test_signature_circuit.py",
+              "tests/unit/test_signature_inputs.py"
+            ],
+            "log": "..........................................FF..............."
+          }
+        ],
+        "source_sha256": {
+          "src/pqdid/circuits/__init__.py": "9098a9c19787bcd155bac6d7d724d3c354c4c404fc99565cd5a72ae26a4c8d8f",
+          "src/pqdid/circuits/accounting.py": "23610bf5a75ba435f582d7e80a1d1e2118f07caabe6659b96a4ae4380b3c0690",
+          "src/pqdid/circuits/auth_parsing.py": "15bb95af9c2cb70eab3c4de8406b50cd25f67cf823163875372668989c26be2b",
+          "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+          "src/pqdid/circuits/division.py": "c530930c04f91bcdf4bceaf5d052f940cc935e87cca6562baf119ad41b8574a8",
+          "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+          "src/pqdid/circuits/enrolment.py": "d8b5134bdcb7fd9c1bd70cffc6214e96d971e3fe01bc595e5437718cd603e2f5",
+          "src/pqdid/circuits/enrolment_accounting.py": "8e479c7d3f221d86450135cf356f54b310e95794884026eeb9663985d78c4b3b",
+          "src/pqdid/circuits/keccak.py": "05dbfe9e5d8aea37471c325b7a9565b6f9f1742af5e2efca54029758b1b840a6",
+          "src/pqdid/circuits/parsing.py": "2f4b3d24d056eb9b26424ee185b1b5df9847f50fdc1db326c8d313685236cef9",
+          "src/pqdid/circuits/scalar_ring.py": "f2012a9d1202686368eb2693495bccd00af8be73ce8a00535a8ced9a190adf45",
+          "src/pqdid/circuits/signature.py": "5fb391650765018230c4f9bc54370ddf28c1c2ce7fd92b9bef93113aeb9c6133",
+          "src/pqdid/circuits/signature_inputs.py": "67f3d3ace81385a93ef9c113c6b4cbd58a00d028fb53cebfaed145055d612762",
+          "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec",
+          "scripts/validate_signature_inputs.py": "7efeac7687331acd37585c3a02cede42dbf7069991e8113f3c25aaf3ae52c519",
+          "scripts/measure_signature_inputs.py": "929f08d8b85ac791b2044bc31ea00a0f7e65c4d66b6e6fbab9566c7254db0638",
+          "configs/validation_profiles.json": "ac67e0b3fe89c8a91a55c13f8f2e75323c02c9773bfe2007771a61f8c3b623b9"
+        },
+        "scope": "signature inputs only; SPEC-004 pending; no full authentication proof/count"
+      }
+    },
+    {
+      "name": "combined-after-live-storage-fix",
+      "record": {
+        "recorded_at_utc": "2026-09-18T03:31:34.821051+00:00",
+        "host_snapshot": {
+          "memory_bytes": {
+            "MemTotal": 8126111744,
+            "MemFree": 4046757888,
+            "MemAvailable": 5022986240,
+            "Buffers": 38440960,
+            "Cached": 1049501696,
+            "SwapCached": 0,
+            "Active": 251133952,
+            "Inactive": 3121197056,
+            "Active(anon)": 2998272,
+            "Inactive(anon)": 2354597888,
+            "Active(file)": 248135680,
+            "Inactive(file)": 766599168,
+            "Unevictable": 0,
+            "Mlocked": 0,
+            "SwapTotal": 2147483648,
+            "SwapFree": 2147483648,
+            "Dirty": 921600,
+            "Writeback": 0,
+            "AnonPages": 2284539904,
+            "Mapped": 491364352,
+            "Shmem": 73261056,
+            "KReclaimable": 162205696,
+            "Slab": 298778624,
+            "SReclaimable": 162205696,
+            "SUnreclaim": 136572928,
+            "KernelStack": 10452992,
+            "PageTables": 52453376,
+            "SecPageTables": 0,
+            "NFS_Unstable": 0,
+            "Bounce": 0,
+            "WritebackTmp": 0,
+            "CommitLimit": 6210539520,
+            "Committed_AS": 5454446592,
+            "VmallocTotal": 35184372087808,
+            "VmallocUsed": 40353792,
+            "VmallocChunk": 0,
+            "Percpu": 12484608,
+            "HardwareCorrupted": 0,
+            "AnonHugePages": 0,
+            "ShmemHugePages": 0,
+            "ShmemPmdMapped": 0,
+            "FileHugePages": 132120576,
+            "FilePmdMapped": 0,
+            "Unaccepted": 0,
+            "Balloon": 0,
+            "Hugepagesize": 2097152,
+            "Hugetlb": 0,
+            "DirectMap4k": 45088768,
+            "DirectMap2M": 6197084160,
+            "DirectMap1G": 10737418240
+          },
+          "disk_bytes": {
+            "total": 1081101176832,
+            "used": 4520067072,
+            "free": 1021588754432
+          }
+        },
+        "launch_mem_available_bytes": 4941107200,
+        "profile": {
+          "authority": "User approval, 17 September 2026",
+          "max_gates": 2000000,
+          "max_output_bytes": 41943040,
+          "max_inputs": 65536,
+          "generation_seconds": 10.0,
+          "evaluation_seconds": 5.0,
+          "workers": 1,
+          "address_space_bytes": 268435456,
+          "rss_ceiling_bytes": 134217728,
+          "rss_poll_seconds": 0.01,
+          "case_wall_seconds": 30.0,
+          "case_log_bytes": 2097152,
+          "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+        },
+        "workers": 1,
+        "results": [
+          {
+            "case": "pytest",
+            "outcome": "resource_limit",
+            "reason": "RSS watchdog ceiling",
+            "supervision": {
+              "returncode": -15,
+              "reason": "RSS watchdog ceiling",
+              "sampled_peak_rss_bytes": 137940992,
+              "supervised_seconds": 50.886041600999306,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 59
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "pytest",
+              "--effective-profile",
+              "/tmp/pqdid-signature-fv6__yg4/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-fv6__yg4/0.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-fv6__yg4/0.beat",
+              "--tests",
+              "tests/unit/test_signature_circuit.py",
+              "tests/unit/test_signature_inputs.py",
+              "tests/unit/test_spec004_alternatives.py"
+            ],
+            "log": "..........................................................."
+          }
+        ],
+        "source_sha256": {
+          "src/pqdid/circuits/__init__.py": "9098a9c19787bcd155bac6d7d724d3c354c4c404fc99565cd5a72ae26a4c8d8f",
+          "src/pqdid/circuits/accounting.py": "23610bf5a75ba435f582d7e80a1d1e2118f07caabe6659b96a4ae4380b3c0690",
+          "src/pqdid/circuits/auth_parsing.py": "15bb95af9c2cb70eab3c4de8406b50cd25f67cf823163875372668989c26be2b",
+          "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+          "src/pqdid/circuits/division.py": "c530930c04f91bcdf4bceaf5d052f940cc935e87cca6562baf119ad41b8574a8",
+          "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+          "src/pqdid/circuits/enrolment.py": "d8b5134bdcb7fd9c1bd70cffc6214e96d971e3fe01bc595e5437718cd603e2f5",
+          "src/pqdid/circuits/enrolment_accounting.py": "8e479c7d3f221d86450135cf356f54b310e95794884026eeb9663985d78c4b3b",
+          "src/pqdid/circuits/keccak.py": "05dbfe9e5d8aea37471c325b7a9565b6f9f1742af5e2efca54029758b1b840a6",
+          "src/pqdid/circuits/parsing.py": "2f4b3d24d056eb9b26424ee185b1b5df9847f50fdc1db326c8d313685236cef9",
+          "src/pqdid/circuits/scalar_ring.py": "f2012a9d1202686368eb2693495bccd00af8be73ce8a00535a8ced9a190adf45",
+          "src/pqdid/circuits/signature.py": "5fb391650765018230c4f9bc54370ddf28c1c2ce7fd92b9bef93113aeb9c6133",
+          "src/pqdid/circuits/signature_inputs.py": "67f3d3ace81385a93ef9c113c6b4cbd58a00d028fb53cebfaed145055d612762",
+          "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec",
+          "scripts/validate_signature_inputs.py": "7efeac7687331acd37585c3a02cede42dbf7069991e8113f3c25aaf3ae52c519",
+          "scripts/measure_signature_inputs.py": "8e14eec948e7742e33b0e876bbaac9a7c558f23b096c81aac1c75c6225704469",
+          "configs/validation_profiles.json": "ac67e0b3fe89c8a91a55c13f8f2e75323c02c9773bfe2007771a61f8c3b623b9"
+        },
+        "scope": "signature inputs only; SPEC-004 pending; no full authentication proof/count"
+      }
+    },
+    {
+      "name": "isolated-hash-chain",
+      "record": {
+        "recorded_at_utc": "2026-09-18T03:32:11.731821+00:00",
+        "host_snapshot": {
+          "memory_bytes": {
+            "MemTotal": 8126111744,
+            "MemFree": 4046757888,
+            "MemAvailable": 5022986240,
+            "Buffers": 38440960,
+            "Cached": 1049501696,
+            "SwapCached": 0,
+            "Active": 251133952,
+            "Inactive": 3121197056,
+            "Active(anon)": 2998272,
+            "Inactive(anon)": 2354597888,
+            "Active(file)": 248135680,
+            "Inactive(file)": 766599168,
+            "Unevictable": 0,
+            "Mlocked": 0,
+            "SwapTotal": 2147483648,
+            "SwapFree": 2147483648,
+            "Dirty": 921600,
+            "Writeback": 0,
+            "AnonPages": 2284539904,
+            "Mapped": 491364352,
+            "Shmem": 73261056,
+            "KReclaimable": 162205696,
+            "Slab": 298778624,
+            "SReclaimable": 162205696,
+            "SUnreclaim": 136572928,
+            "KernelStack": 10452992,
+            "PageTables": 52453376,
+            "SecPageTables": 0,
+            "NFS_Unstable": 0,
+            "Bounce": 0,
+            "WritebackTmp": 0,
+            "CommitLimit": 6210539520,
+            "Committed_AS": 5454446592,
+            "VmallocTotal": 35184372087808,
+            "VmallocUsed": 40353792,
+            "VmallocChunk": 0,
+            "Percpu": 12484608,
+            "HardwareCorrupted": 0,
+            "AnonHugePages": 0,
+            "ShmemHugePages": 0,
+            "ShmemPmdMapped": 0,
+            "FileHugePages": 132120576,
+            "FilePmdMapped": 0,
+            "Unaccepted": 0,
+            "Balloon": 0,
+            "Hugepagesize": 2097152,
+            "Hugetlb": 0,
+            "DirectMap4k": 45088768,
+            "DirectMap2M": 6197084160,
+            "DirectMap1G": 10737418240
+          },
+          "disk_bytes": {
+            "total": 1081101176832,
+            "used": 4520067072,
+            "free": 1021588754432
+          }
+        },
+        "launch_mem_available_bytes": 4990021632,
+        "profile": {
+          "authority": "User approval, 17 September 2026",
+          "max_gates": 2000000,
+          "max_output_bytes": 41943040,
+          "max_inputs": 65536,
+          "generation_seconds": 10.0,
+          "evaluation_seconds": 5.0,
+          "workers": 1,
+          "address_space_bytes": 268435456,
+          "rss_ceiling_bytes": 134217728,
+          "rss_poll_seconds": 0.01,
+          "case_wall_seconds": 30.0,
+          "case_log_bytes": 2097152,
+          "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+        },
+        "workers": 1,
+        "results": [
+          {
+            "case": "pytest",
+            "profile": {
+              "authority": "User approval, 17 September 2026",
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_inputs": 65536,
+              "generation_seconds": 10.0,
+              "evaluation_seconds": 5.0,
+              "workers": 1,
+              "address_space_bytes": 268435456,
+              "rss_ceiling_bytes": 134217728,
+              "rss_poll_seconds": 0.01,
+              "case_wall_seconds": 30.0,
+              "case_log_bytes": 2097152,
+              "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+            },
+            "outcome": "passed",
+            "pytest_returncode": 0,
+            "reports": [
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_exact_certified_bytes_and_hash_fragment_chain",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 3.445359029006795
+              }
+            ],
+            "exceptions": [],
+            "child_seconds": 3.55775779299438,
+            "peak_rss_bytes": 115044352,
+            "supervision": {
+              "returncode": 0,
+              "reason": null,
+              "sampled_peak_rss_bytes": 104783872,
+              "supervised_seconds": 3.607795347998035,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 98
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "pytest",
+              "--effective-profile",
+              "/tmp/pqdid-signature-8a_bmsho/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-8a_bmsho/0.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-8a_bmsho/0.beat",
+              "--tests",
+              "tests/unit/test_signature_inputs.py::test_exact_certified_bytes_and_hash_fragment_chain"
+            ],
+            "log": ".                                                                        [100%]\n1 passed in 3.47s\n"
+          }
+        ],
+        "source_sha256": {
+          "src/pqdid/circuits/__init__.py": "9098a9c19787bcd155bac6d7d724d3c354c4c404fc99565cd5a72ae26a4c8d8f",
+          "src/pqdid/circuits/accounting.py": "23610bf5a75ba435f582d7e80a1d1e2118f07caabe6659b96a4ae4380b3c0690",
+          "src/pqdid/circuits/auth_parsing.py": "15bb95af9c2cb70eab3c4de8406b50cd25f67cf823163875372668989c26be2b",
+          "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+          "src/pqdid/circuits/division.py": "c530930c04f91bcdf4bceaf5d052f940cc935e87cca6562baf119ad41b8574a8",
+          "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+          "src/pqdid/circuits/enrolment.py": "d8b5134bdcb7fd9c1bd70cffc6214e96d971e3fe01bc595e5437718cd603e2f5",
+          "src/pqdid/circuits/enrolment_accounting.py": "8e479c7d3f221d86450135cf356f54b310e95794884026eeb9663985d78c4b3b",
+          "src/pqdid/circuits/keccak.py": "05dbfe9e5d8aea37471c325b7a9565b6f9f1742af5e2efca54029758b1b840a6",
+          "src/pqdid/circuits/parsing.py": "2f4b3d24d056eb9b26424ee185b1b5df9847f50fdc1db326c8d313685236cef9",
+          "src/pqdid/circuits/scalar_ring.py": "f2012a9d1202686368eb2693495bccd00af8be73ce8a00535a8ced9a190adf45",
+          "src/pqdid/circuits/signature.py": "5fb391650765018230c4f9bc54370ddf28c1c2ce7fd92b9bef93113aeb9c6133",
+          "src/pqdid/circuits/signature_inputs.py": "67f3d3ace81385a93ef9c113c6b4cbd58a00d028fb53cebfaed145055d612762",
+          "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec",
+          "scripts/validate_signature_inputs.py": "7efeac7687331acd37585c3a02cede42dbf7069991e8113f3c25aaf3ae52c519",
+          "scripts/measure_signature_inputs.py": "8e14eec948e7742e33b0e876bbaac9a7c558f23b096c81aac1c75c6225704469",
+          "configs/validation_profiles.json": "ac67e0b3fe89c8a91a55c13f8f2e75323c02c9773bfe2007771a61f8c3b623b9"
+        },
+        "scope": "signature inputs only; SPEC-004 pending; no full authentication proof/count"
+      }
+    },
+    {
+      "name": "isolated-focused-before-genuine-hint-additions",
+      "record": {
+        "recorded_at_utc": "2026-09-18T03:34:20.175890+00:00",
+        "host_snapshot": {
+          "memory_bytes": {
+            "MemTotal": 8126111744,
+            "MemFree": 4046757888,
+            "MemAvailable": 5022986240,
+            "Buffers": 38440960,
+            "Cached": 1049501696,
+            "SwapCached": 0,
+            "Active": 251133952,
+            "Inactive": 3121197056,
+            "Active(anon)": 2998272,
+            "Inactive(anon)": 2354597888,
+            "Active(file)": 248135680,
+            "Inactive(file)": 766599168,
+            "Unevictable": 0,
+            "Mlocked": 0,
+            "SwapTotal": 2147483648,
+            "SwapFree": 2147483648,
+            "Dirty": 921600,
+            "Writeback": 0,
+            "AnonPages": 2284539904,
+            "Mapped": 491364352,
+            "Shmem": 73261056,
+            "KReclaimable": 162205696,
+            "Slab": 298778624,
+            "SReclaimable": 162205696,
+            "SUnreclaim": 136572928,
+            "KernelStack": 10452992,
+            "PageTables": 52453376,
+            "SecPageTables": 0,
+            "NFS_Unstable": 0,
+            "Bounce": 0,
+            "WritebackTmp": 0,
+            "CommitLimit": 6210539520,
+            "Committed_AS": 5454446592,
+            "VmallocTotal": 35184372087808,
+            "VmallocUsed": 40353792,
+            "VmallocChunk": 0,
+            "Percpu": 12484608,
+            "HardwareCorrupted": 0,
+            "AnonHugePages": 0,
+            "ShmemHugePages": 0,
+            "ShmemPmdMapped": 0,
+            "FileHugePages": 132120576,
+            "FilePmdMapped": 0,
+            "Unaccepted": 0,
+            "Balloon": 0,
+            "Hugepagesize": 2097152,
+            "Hugetlb": 0,
+            "DirectMap4k": 45088768,
+            "DirectMap2M": 6197084160,
+            "DirectMap1G": 10737418240
+          },
+          "disk_bytes": {
+            "total": 1081101176832,
+            "used": 4520067072,
+            "free": 1021588754432
+          }
+        },
+        "launch_mem_available_bytes": 4993634304,
+        "profile": {
+          "authority": "User approval, 17 September 2026",
+          "max_gates": 2000000,
+          "max_output_bytes": 41943040,
+          "max_inputs": 65536,
+          "generation_seconds": 10.0,
+          "evaluation_seconds": 5.0,
+          "workers": 1,
+          "address_space_bytes": 268435456,
+          "rss_ceiling_bytes": 134217728,
+          "rss_poll_seconds": 0.01,
+          "case_wall_seconds": 30.0,
+          "case_log_bytes": 2097152,
+          "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+        },
+        "workers": 1,
+        "sequential_process_isolation": true,
+        "results": [
+          {
+            "case": "pytest:tests/unit/test_signature_circuit.py",
+            "profile": {
+              "authority": "User approval, 17 September 2026",
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_inputs": 65536,
+              "generation_seconds": 10.0,
+              "evaluation_seconds": 5.0,
+              "workers": 1,
+              "address_space_bytes": 268435456,
+              "rss_ceiling_bytes": 134217728,
+              "rss_poll_seconds": 0.01,
+              "case_wall_seconds": 30.0,
+              "case_log_bytes": 2097152,
+              "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+            },
+            "outcome": "passed",
+            "pytest_returncode": 0,
+            "reports": [
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_genuine_relation_responses_and_fixed_witness[alpha-42-old-002c]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.7744607939966954
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_genuine_relation_responses_and_fixed_witness[alpha-43-new-0034]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.745744850995834
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_genuine_relation_responses_and_fixed_witness[beta-42-new-002c]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.7456461319961818
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.5993413859978318
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.5924659720039926
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-2]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.5944759570120368
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-3]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.5928503579925746
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-4]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.5859139030071674
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-5]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.5957647079922026
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-6]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.5973719690082362
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-7]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.594903086006525
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-8]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.5968840220011771
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[alpha-42]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.6018250819906825
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[alpha-43]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.5944428559887456
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[beta-42]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.594623558994499
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_all_encoding_endpoints_and_cross_byte_packing_are_not_norm_rejections",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.5954411270067794
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_strict_norm_is_separate_from_decode[0-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 2.405485998999211
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_strict_norm_is_separate_from_decode[524091-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 2.4111672599974554
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_strict_norm_is_separate_from_decode[-524091-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 2.3645120309956837
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_strict_norm_is_separate_from_decode[524092-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 2.3636364239937393
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_strict_norm_is_separate_from_decode[-524092-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 2.3678414760070154
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_strict_norm_is_separate_from_decode[524288-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 2.360305273992708
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_strict_norm_is_separate_from_decode[-524287-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 2.3617508400056977
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_decodable_challenge_mutation_is_not_signature_verification",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.9383176440023817
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_hint_boundaries_all_rows_and_capacity[ends0-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.00503637500514742
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_hint_boundaries_all_rows_and_capacity[ends1-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.004568632997688837
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_hint_boundaries_all_rows_and_capacity[ends2-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.0046200229990063235
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_hint_boundaries_all_rows_and_capacity[ends3-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.004924858993035741
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_hint_boundaries_all_rows_and_capacity[ends4-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.004753084998810664
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_hint_boundaries_all_rows_and_capacity[ends5-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.00455122601124458
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_hint_boundaries_all_rows_and_capacity[ends6-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.00466167600825429
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_encoding_semantics_via_independently_executed_steps[rows0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.22689031400659587
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_encoding_semantics_via_independently_executed_steps[rows1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.33452658700116444
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_encoding_semantics_via_independently_executed_steps[rows2]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 2.2338613210013136
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_encoding_semantics_via_independently_executed_steps[rows3]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 2.2187892200017814
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions0-1-0-2-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.035809548004181124
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions1-1-0-2-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.03729055399890058
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions2-1-0-2-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.037394287006463856
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions3-1-1-2-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.03622692299541086
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions4-0-0-1-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.03568057200754993
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions5-0-0-1-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.03598574500938412
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions6-1-0-1-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.035778505000052974
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions7-61-61-62-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.03616314800456166
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions8--1--1-1-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.0367126030032523
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[0-None-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 1.0783407609997084
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[55-None-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 1.0813224790035747
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[1-0-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 1.08305493700027
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[55-54-1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 1.0919506280042697
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[0-0-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 1.0824145299993688
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[0-54-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 1.0881427400017856
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[1-1-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 1.0846759830019437
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[54-54-0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 1.0836317020002753
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_first_step_true_branch_order_and_private_scans",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.09865257699857466
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_complete_decoders_stop_at_authorised_gate_limit[decode_hints-61]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 2.387400795996655
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_complete_decoders_stop_at_authorised_gate_limit[decode_signature-3309]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 2.4552031380007975
+              },
+              {
+                "nodeid": "tests/unit/test_signature_circuit.py::test_byte_width_and_foreign_wire_errors_are_api_errors",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.0001772579998942092
+              }
+            ],
+            "exceptions": [],
+            "child_seconds": 46.877725794998696,
+            "peak_rss_bytes": 123600896,
+            "supervision": {
+              "returncode": 0,
+              "reason": null,
+              "sampled_peak_rss_bytes": 115867648,
+              "supervised_seconds": 46.933747525996296,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 100
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "pytest",
+              "--effective-profile",
+              "/tmp/pqdid-signature-ggioyhtu/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-ggioyhtu/0.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-ggioyhtu/0.beat",
+              "--tests",
+              "tests/unit/test_signature_circuit.py"
+            ],
+            "log": "........................................................                 [100%]\n56 passed in 46.77s\n"
+          },
+          {
+            "case": "pytest:tests/unit/test_signature_inputs.py",
+            "profile": {
+              "authority": "User approval, 17 September 2026",
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_inputs": 65536,
+              "generation_seconds": 10.0,
+              "evaluation_seconds": 5.0,
+              "workers": 1,
+              "address_space_bytes": 268435456,
+              "rss_ceiling_bytes": 134217728,
+              "rss_poll_seconds": 0.01,
+              "case_wall_seconds": 30.0,
+              "case_log_bytes": 2097152,
+              "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+            },
+            "outcome": "passed",
+            "pytest_returncode": 0,
+            "reports": [
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_public_key_decode_uses_expected_instance_and_public_bits[alpha]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.010620410001138225
+              },
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_public_key_decode_uses_expected_instance_and_public_bits[beta]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.01051277099759318
+              },
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_public_key_full_shake_gadget_folds_to_reference_hash",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.848091388004832
+              },
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_exact_certified_bytes_and_hash_fragment_chain",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 3.4727191139973
+              },
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_message_dependency_and_context_separation[holder]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.694728757996927
+              },
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_message_dependency_and_context_separation[hidden_attributes]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.7018579549912829
+              },
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_message_dependency_and_context_separation[identifier]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.7025635440077167
+              },
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_message_dependency_and_context_separation[presentation]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 1.2130316839902662
+              },
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_composed_parser_response_boundary_message_failure_is_sticky",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 1.6522745540132746
+              },
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_message_modes_and_identity_do_not_depend_on_private_values",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 1.876586017999216
+              },
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_full_compositions_are_resource_failures_not_prepared_results[message]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 3.5026016460033134
+              },
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_full_compositions_are_resource_failures_not_prepared_results[full-preparation]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 2.67688058699423
+              },
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_composition_routes_exact_signature_to_decoder",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.5662611170118907
+              },
+              {
+                "nodeid": "tests/unit/test_signature_inputs.py::test_public_mismatch_rejects_before_full_construction",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.0016815050039440393
+              }
+            ],
+            "exceptions": [],
+            "child_seconds": 18.061444427003153,
+            "peak_rss_bytes": 116731904,
+            "supervision": {
+              "returncode": 0,
+              "reason": null,
+              "sampled_peak_rss_bytes": 115761152,
+              "supervised_seconds": 18.12092132300313,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 100
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "pytest",
+              "--effective-profile",
+              "/tmp/pqdid-signature-ggioyhtu/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-ggioyhtu/1.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-ggioyhtu/1.beat",
+              "--tests",
+              "tests/unit/test_signature_inputs.py"
+            ],
+            "log": "..............                                                           [100%]\n14 passed in 17.96s\n"
+          },
+          {
+            "case": "pytest:tests/unit/test_spec004_alternatives.py",
+            "profile": {
+              "authority": "User approval, 17 September 2026",
+              "max_gates": 2000000,
+              "max_output_bytes": 41943040,
+              "max_inputs": 65536,
+              "generation_seconds": 10.0,
+              "evaluation_seconds": 5.0,
+              "workers": 1,
+              "address_space_bytes": 268435456,
+              "rss_ceiling_bytes": 134217728,
+              "rss_poll_seconds": 0.01,
+              "case_wall_seconds": 30.0,
+              "case_log_bytes": 2097152,
+              "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+            },
+            "outcome": "passed",
+            "pytest_returncode": 0,
+            "reports": [
+              {
+                "nodeid": "tests/unit/test_spec004_alternatives.py::test_exhaustive_reduced_width_agreement_with_different_traces[2]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.0014409819996217266
+              },
+              {
+                "nodeid": "tests/unit/test_spec004_alternatives.py::test_exhaustive_reduced_width_agreement_with_different_traces[3]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.00678972399327904
+              },
+              {
+                "nodeid": "tests/unit/test_spec004_alternatives.py::test_exhaustive_reduced_width_agreement_with_different_traces[4]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.0368381779990159
+              },
+              {
+                "nodeid": "tests/unit/test_spec004_alternatives.py::test_actual_width_endpoints_and_zero_rejection[0]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.2636642430006759
+              },
+              {
+                "nodeid": "tests/unit/test_spec004_alternatives.py::test_actual_width_endpoints_and_zero_rejection[1]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.2649509220063919
+              },
+              {
+                "nodeid": "tests/unit/test_spec004_alternatives.py::test_actual_width_endpoints_and_zero_rejection[16]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.2605895479937317
+              },
+              {
+                "nodeid": "tests/unit/test_spec004_alternatives.py::test_actual_width_endpoints_and_zero_rejection[8380417]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.26201182599470485
+              },
+              {
+                "nodeid": "tests/unit/test_spec004_alternatives.py::test_actual_width_endpoints_and_zero_rejection[9223372036854775807]",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.26323311901069246
+              },
+              {
+                "nodeid": "tests/unit/test_spec004_alternatives.py::test_single_subtraction_recipe_has_exact_65_bit_round_schedule",
+                "phase": "call",
+                "outcome": "passed",
+                "seconds": 0.0402711009955965
+              }
+            ],
+            "exceptions": [],
+            "child_seconds": 1.4959972420037957,
+            "peak_rss_bytes": 45744128,
+            "supervision": {
+              "returncode": 0,
+              "reason": null,
+              "sampled_peak_rss_bytes": 45842432,
+              "supervised_seconds": 1.5492118609981844,
+              "rss_poll_seconds": 0.01,
+              "log_bytes": 98
+            },
+            "command": [
+              "/home/grace/projects/pq-did/.venv/bin/python",
+              "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+              "--child",
+              "--case",
+              "pytest",
+              "--effective-profile",
+              "/tmp/pqdid-signature-ggioyhtu/profile.json",
+              "--output",
+              "/tmp/pqdid-signature-ggioyhtu/2.json",
+              "--heartbeat",
+              "/tmp/pqdid-signature-ggioyhtu/2.beat",
+              "--tests",
+              "tests/unit/test_spec004_alternatives.py"
+            ],
+            "log": ".........                                                                [100%]\n9 passed in 1.42s\n"
+          }
+        ],
+        "source_sha256": {
+          "src/pqdid/circuits/__init__.py": "9098a9c19787bcd155bac6d7d724d3c354c4c404fc99565cd5a72ae26a4c8d8f",
+          "src/pqdid/circuits/accounting.py": "23610bf5a75ba435f582d7e80a1d1e2118f07caabe6659b96a4ae4380b3c0690",
+          "src/pqdid/circuits/auth_parsing.py": "15bb95af9c2cb70eab3c4de8406b50cd25f67cf823163875372668989c26be2b",
+          "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+          "src/pqdid/circuits/division.py": "c530930c04f91bcdf4bceaf5d052f940cc935e87cca6562baf119ad41b8574a8",
+          "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+          "src/pqdid/circuits/enrolment.py": "d8b5134bdcb7fd9c1bd70cffc6214e96d971e3fe01bc595e5437718cd603e2f5",
+          "src/pqdid/circuits/enrolment_accounting.py": "8e479c7d3f221d86450135cf356f54b310e95794884026eeb9663985d78c4b3b",
+          "src/pqdid/circuits/keccak.py": "05dbfe9e5d8aea37471c325b7a9565b6f9f1742af5e2efca54029758b1b840a6",
+          "src/pqdid/circuits/parsing.py": "2f4b3d24d056eb9b26424ee185b1b5df9847f50fdc1db326c8d313685236cef9",
+          "src/pqdid/circuits/scalar_ring.py": "f2012a9d1202686368eb2693495bccd00af8be73ce8a00535a8ced9a190adf45",
+          "src/pqdid/circuits/signature.py": "5fb391650765018230c4f9bc54370ddf28c1c2ce7fd92b9bef93113aeb9c6133",
+          "src/pqdid/circuits/signature_inputs.py": "67f3d3ace81385a93ef9c113c6b4cbd58a00d028fb53cebfaed145055d612762",
+          "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec",
+          "scripts/validate_signature_inputs.py": "15a56e36c9647b03f91933a89ebbce17e883a3e946c27361599306e7d3a3e49b",
+          "scripts/measure_signature_inputs.py": "8e14eec948e7742e33b0e876bbaac9a7c558f23b096c81aac1c75c6225704469",
+          "configs/validation_profiles.json": "ac67e0b3fe89c8a91a55c13f8f2e75323c02c9773bfe2007771a61f8c3b623b9"
+        },
+        "scope": "signature inputs only; SPEC-004 pending; no full authentication proof/count"
+      }
+    }
+  ]
+}

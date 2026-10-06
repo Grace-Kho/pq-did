@@ -1,0 +1,57 @@
+{
+  "recorded_commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+  "snapshot_files_verified": 21,
+  "copied": [
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/upstream/libiop/bcs/hashing/blake2b.tcc",
+      "upstream_path": "libiop/bcs/hashing/blake2b.tcc",
+      "sha256": "7980bfeea9551dd0b862e529d85510c68964f0496fe6a0ac248aa122118ae80d",
+      "git_blob_sha1": "4643fc896642999bdd527b0d57918b3eebeb5933"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/upstream/libiop/bcs/bcs_common.tcc",
+      "upstream_path": "libiop/bcs/bcs_common.tcc",
+      "sha256": "87415c63c7180b59cecf7fbf05b00e64d1325f2a57c107eab45bac2b0759534f",
+      "git_blob_sha1": "a17a51d5d3ca5e025012351fc31068cc6f9ba8ce"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/upstream/libiop/bcs/bcs_prover.tcc",
+      "upstream_path": "libiop/bcs/bcs_prover.tcc",
+      "sha256": "c2885abf98f2d1ced9f0a42467aed647cf024413f99861833e531e4db7405ab4",
+      "git_blob_sha1": "630f1c511ab4ac3b8f01dbeddc55d8ae7dc722b8"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/upstream/libiop/bcs/bcs_verifier.tcc",
+      "upstream_path": "libiop/bcs/bcs_verifier.tcc",
+      "sha256": "432529eda4d3d65238c2ecf8dada5bda7c9404c66963efdcb6f413c7ce36e652",
+      "git_blob_sha1": "3733b51f173f554153c8be5d25db5ce9192383d1"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/upstream/libiop/snark/aurora_snark.tcc",
+      "upstream_path": "libiop/snark/aurora_snark.tcc",
+      "sha256": "5bfdfc33e1ffedc1a7bfe4f8d9a062931b4bbd452f4ad9857fa8bc3eb0e79eab",
+      "git_blob_sha1": "b8fae46c822ca439738c8b82561991f3675b5a2b"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/upstream/libiop/bcs/hashing/blake2b.hpp",
+      "upstream_path": "libiop/bcs/hashing/blake2b.hpp",
+      "sha256": "f7de8a84ae49e5d6f53044a50256de05837567765c96c05661a1b4a6efd7af3d",
+      "git_blob_sha1": "bdf14bad2fa9114639b623a740c39ddcbf5a995a"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/upstream/LICENSE",
+      "upstream_path": "LICENSE",
+      "sha256": "8f71659370c5268d9a1dc962a46232540e8fca63462586d8efaa95aab492a208",
+      "git_blob_sha1": "72dc60d84b692387206266939bc34656bcba1e15"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/upstream/libiop/bcs/hashing/blake2b.cpp",
+      "upstream_path": "libiop/bcs/hashing/blake2b.cpp",
+      "sha256": "48dbd3a6003fa3165b00e236b8391d766245694e4755d5a6cc9203c35f457c44",
+      "git_blob_sha1": "87eb6caa16092261176586a565144994febbefdd"
+    }
+  ],
+  "patched_files": [],
+  "complete_checkout": false,
+  "provenance": "Sealed commit-addressed source snapshot and Git blob identities; no local commit/tree object or complete transitive checkout available."
+}

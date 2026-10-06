@@ -1,0 +1,40 @@
+{
+  "invocation_id": "M1-0022",
+  "case_id": "N-04",
+  "ordinal": 22,
+  "cumulative_invocations": 470,
+  "status": "pass",
+  "result": {
+    "id": "N-04",
+    "command": [
+      "/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/build/aurora_masking_native",
+      "4"
+    ],
+    "exit_code": 0,
+    "seconds": 0.018285193014889956,
+    "stdout": "(enter) Sumcheck: sample masking polynomial components\t[             ]\t(1790577234.5830s x0.00 from start)\n(leave) Sumcheck: sample masking polynomial components\t[0.0000s x0.98]\t(1790577234.5830s x0.00 from start)\n(enter) Sumcheck: compute masking polynomial codeword\t[             ]\t(1790577234.5830s x0.00 from start)\n  (enter) Call to additive_FFT_wrapper       \t[             ]\t(1790577234.5830s x0.00 from start)\n    * Vector size: 17\n    * Subspace size: 256\n  (leave) Call to additive_FFT_wrapper       \t[0.0038s x1.00]\t(1790577234.5869s x0.00 from start)\n(leave) Sumcheck: compute masking polynomial codeword\t[0.0039s x1.00]\t(1790577234.5869s x0.00 from start)\n(enter) Call to additive_IFFT_wrapper      \t[             ]\t(1790577234.5871s x0.00 from start)\n  * Vector size: 32\n  * Subspace size: 32\n(leave) Call to additive_IFFT_wrapper      \t[0.0015s x1.00]\t(1790577234.5887s x0.00 from start)\n(enter) Call to additive_FFT_wrapper       \t[             ]\t(1790577234.5891s x0.00 from start)\n  * Vector size: 9\n  * Subspace size: 256\n(leave) Call to additive_FFT_wrapper       \t[0.0036s x1.00]\t(1790577234.5926s x0.00 from start)\n(enter) Sumcheck: g evaluated contents     \t[             ]\t(1790577234.5936s x0.00 from start)\n(leave) Sumcheck: g evaluated contents     \t[0.0016s x1.00]\t(1790577234.5951s x0.00 from start)\nVALUE beta-h-g 000000000000000000000000000000000000000000003cf0 00000000000000000000000000000014131211100f0e0d0c 000000000000000000000000000000000008070605040302\nPATH batch_sumcheck_protocol::register_masking_polynomial;register_challenge;register_proof;submit_masking_polynomial;calculate_and_submit_proof;construct_verifier_state;sumcheck_g_oracle::evaluated_contents;evaluation_at_point\nPASS N-04\n",
+    "stderr": "",
+    "binary_sha256": "21342215c0397c6f2c987ad86ab921bc00ee2ecbbe3c576b04588905e2dd5bdb",
+    "expected_path": "experiments/aurora_masking_milestone_1/overlay/masking_native.cpp",
+    "expected_sha256": "1afa2ca145a3649c90c20fdd53ae71d177007e15246024a2a5b70a6829d27d6a",
+    "private_witness": false,
+    "proof_attempt": false,
+    "comparison": {
+      "independent_schoolbook_polynomial_assertions": true,
+      "oracle": "overlay/masking_native.cpp: add/mul/divrem/at/interpolate",
+      "finite_public_fixture_only": true
+    },
+    "actual_calls": [
+      "batch_sumcheck_protocol::register_masking_polynomial",
+      "register_challenge",
+      "register_proof",
+      "submit_masking_polynomial",
+      "calculate_and_submit_proof",
+      "construct_verifier_state",
+      "sumcheck_g_oracle::evaluated_contents",
+      "evaluation_at_point"
+    ],
+    "status": "pass"
+  },
+  "seconds": 0.01958015200216323
+}

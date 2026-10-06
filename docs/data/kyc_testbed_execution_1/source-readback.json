@@ -1,0 +1,6 @@
+{
+  "wallet_module_sha256": "7871bf8040adfe27d08e246db664104c6b2498b00de0eec7b39721279eef4eb8",
+  "experimental_wallet_identical": true,
+  "initial_measurement_metadata_retained": "measurements-initial.json",
+  "reason": "Regenerate derived metadata after formatting-only evidence-helper correction; no raw result changes or functional reruns"
+}

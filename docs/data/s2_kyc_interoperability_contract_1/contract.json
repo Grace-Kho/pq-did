@@ -1,0 +1,180 @@
+{
+  "package": "S2-KYC-INTEROPERABILITY-CONTRACT-1",
+  "status": "proposed-application-conventions-not-active-wire-profile",
+  "new_test_invocations": 4,
+  "existing_source_changed": [],
+  "counted_cases": [
+    "private_holder_canonical_handoff",
+    "public_projection_and_privacy[a]",
+    "public_projection_and_privacy[b]",
+    "session_expiry_equality_is_expired"
+  ],
+  "not_new_cases": "Generator only serialises preserved vectors. Audit/lint are infrastructure checks separately timed. No hidden negative-case loops, lifecycle executions or native harness.",
+  "production_parser_implemented": false,
+  "w3c_conformance_claim": false,
+  "common_required_fields": [
+    "profile",
+    "kind",
+    "synthetic",
+    "exposure",
+    "evidenceStatus",
+    "body"
+  ],
+  "profile": "pqdid-application-container-draft-1",
+  "binary": "Unpadded base64url; canonical re-encoding equality; no whitespace, +, / or =; decoded bounds checked before allocation.",
+  "integers": "All protocol integers are minimal unsigned decimal strings; no signs, floats, exponent, whitespace or leading zero except 0.",
+  "parser": {
+    "encoding": "UTF-8 strict, no BOM",
+    "ordinary_document_max_bytes": 65536,
+    "history_or_did_document_max_bytes": 524288,
+    "absolute_document_max_bytes": 1048576,
+    "max_depth": 8,
+    "max_total_members": 512,
+    "max_members_per_object": 32,
+    "max_array_items": 32,
+    "max_key_utf8_bytes": 64,
+    "metadata": "Fixed non-operative labels only; no arbitrary metadata bag.",
+    "duplicate_keys": "reject at every depth",
+    "unknown_keys": "reject at every depth",
+    "truncated_or_trailing": "reject",
+    "network_dereference": "none",
+    "proof_placeholder": "null is examples-only; always reject for submission admission",
+    "proof_max_bytes": "unset: real full authentication proof size and transport admission require a separate reviewed profile"
+  },
+  "body_required_fields": {
+    "did-resolution": [
+      "did",
+      "selector",
+      "document",
+      "version",
+      "contentType",
+      "registryReply",
+      "registrySignature"
+    ],
+    "enrolment-challenge": [
+      "parameters",
+      "approvedAttributes",
+      "identifier",
+      "nonce",
+      "state"
+    ],
+    "enrolment-submission": [
+      "statement",
+      "proof",
+      "controllerSignature"
+    ],
+    "instance": [
+      "parameters"
+    ],
+    "issuance-delivery": [
+      "credential",
+      "identifier",
+      "path",
+      "state"
+    ],
+    "issuance-request": [
+      "session",
+      "did",
+      "version",
+      "attributes",
+      "holderApproval",
+      "evidence"
+    ],
+    "presentation-submission": [
+      "statement",
+      "proof",
+      "disclosedClaims"
+    ],
+    "private-holder": [
+      "credential",
+      "authenticationWitness",
+      "state"
+    ],
+    "presentation-request": [
+      "context",
+      "state",
+      "requestSignature",
+      "sessionExpiresAtSeconds"
+    ],
+    "revocation-state": [
+      "state",
+      "currentNonce",
+      "currentSignature"
+    ],
+    "updates-request": [
+      "namespace",
+      "afterEpoch",
+      "targetEpoch"
+    ],
+    "updates-response": [
+      "status",
+      "startingState",
+      "endpointState",
+      "records",
+      "requestedEpoch",
+      "nextEpoch",
+      "complete"
+    ],
+    "verification-result": [
+      "decision",
+      "accepted",
+      "challengeConsumed",
+      "businessAction"
+    ]
+  },
+  "security": "Canonical binary is source of truth. Decode against independently configured pp, reconstruct expected X, compare every redundant claim/context field. No wrapper signature or invented VC securing mechanism.",
+  "prior_manifest_sha256": "64c34241115cfe98838e3ddafb2113fbf28d9cdadfb123b9b9288ba90f615e44",
+  "next_package": "S2-KYC-CONTAINER-ADAPTER-1",
+  "primary_sources": [
+    {
+      "title": "DID Core1.0",
+      "version": "W3C Recommendation19 July2022",
+      "url": "https://www.w3.org/TR/2022/REC-did-core-20220719/",
+      "sections": [
+        "3.1",
+        "5.1.1",
+        "5.2",
+        "5.3",
+        "6.2",
+        "7.1",
+        "8",
+        "10.2",
+        "10.3"
+      ]
+    },
+    {
+      "title": "VC Data Model2.0",
+      "version": "W3C Recommendation15 May2025",
+      "url": "https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/",
+      "sections": [
+        "1.3",
+        "4.3-4.5",
+        "4.7-4.10",
+        "4.12-4.13",
+        "5.2",
+        "5.13",
+        "6.1-6.2",
+        "7.1",
+        "8.4-8.7"
+      ]
+    },
+    {
+      "title": "Verifiable Credential Data Integrity1.0",
+      "version": "W3C Recommendation15 May2025",
+      "url": "https://www.w3.org/TR/2025/REC-vc-data-integrity-20250515/",
+      "sections": [
+        "2.1",
+        "3.1",
+        "3.2"
+      ]
+    }
+  ],
+  "future_acceptance_criteria": [
+    "Strict bounded parser negative matrix and atomic failure",
+    "Trust and exact canonical binding independent of JSON",
+    "No private data export or hidden DID lookup",
+    "No success for absent proof/request/method authentication",
+    "Inherited commit/redelivery/freshness semantics",
+    "Review required securing/issuer/vocabulary/status mappings without active profile change"
+  ]
+}

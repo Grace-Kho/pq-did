@@ -1,0 +1,30 @@
+{
+  "package": "S2-DURABLE-ISSUER-MANAGER-INTEGRATION-1",
+  "authority": "Attached task, manuscript II-VIII and agreed clarifications; existing R-018..021, R-030/R-033 and recovery contracts",
+  "existing_source_changed": [],
+  "ownership": {
+    "manager": "permanent allocation, exact issuer/issue/state reservation, current state/history, own head/generation",
+    "issuer": "approved intent, recipient, challenge/nonce, signing claim, certification and exact outcome, own head/generation",
+    "holder": "secret/intent and atomic in-memory accepted credential/witness"
+  },
+  "transaction": "Separate unchanged SQLite databases. Intent -> reservation -> attachment -> pending -> claim -> certification -> recipient publication. No distributed transaction or compensation.",
+  "freshness": "ManagerIssuancePort uses an admitted current snapshot for final registered witness, never the earlier reservation. Changes before read reject; later changes do not retroactively invalidate original issuance checkpoint.",
+  "recovery": "Explicit independently retained head for each service; retire incomplete INTENT/RESERVED/SIGNING, preserve complete PENDING/CERTIFIED per existing reconcile; unavailable/mismatched manager evidence rejects.",
+  "proof": "Normal None remains UnsupportedEnrolmentVerifier; exact synthetic statement/token verifier injected only by test helpers; not real proof or anonymous-authentication evidence.",
+  "publication": "Durable exact credential result before current-writer, exact-head, original-recipient socket enqueue. Redelivery signs/allocates zero times; HolderAcceptance checks and atomic pointer preserved.",
+  "fault_model": "22 integration cases, including simulated exceptions, plus two actual owned-process SIGKILL cases after reservation/certification commit. Coordinator retains both exact heads. No power-loss or rollback claim.",
+  "prior_implementation_seconds": 48.71412072714884,
+  "prior_test_invocations": 121,
+  "budget_amendment": {
+    "prior_ceiling": 124,
+    "additional_authorised": 24,
+    "ceiling": 148
+  },
+  "new_test_invocations": 24,
+  "expected_total_invocations": 145,
+  "native_ABI_runs": 0,
+  "new_proofs": 0,
+  "zkvm_executions": 0,
+  "activation": false,
+  "next_package": "S2-DURABLE-VERIFIER-LIFECYCLE-INTEGRATION-1"
+}

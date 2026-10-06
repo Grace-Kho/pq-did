@@ -1,0 +1,24 @@
+{
+  "kind": "source-reviewed-lint-only-correction",
+  "cause": "One E501: report-generation helper has a109-character Markdown link line. No arithmetic failure or resource breach; no generation/test yet executed.",
+  "correction": "Split the report text line; retain exact failed result and snapshots. Introduce one explicitly named correction-format and quality-corrected check; no automatic retry and no circuit rerun. Audit/closure retain the historical lint failure as a narrowly verified exception.",
+  "accounting": "All guarded commands including the failure are charged to this implementation package. Established ledger counts functional cases/probes, not static lint/format checks; no invocation reset. Five-second bookkeeping charge retained.",
+  "retained_sha256": {
+    "quality.json": "39004832c341d106e7bf5fe50f58109a5d035a19f624381f99b6318a247bb92f",
+    "quality.log": "43044efca0d815bb184e39b999920841200b6a9baa8edbce47f754c5bdb8bdb1",
+    "quality.service.json": "799aff4aeb39c0a26ee16d6d03f5e72b4bac0bc3db2aaabfeb700e3e2cc7a612",
+    "STOP.json": "2973cf50de76919f60b82073cf89d02eefb9575ef1f9ea9b567019739f39e03c",
+    "close.py.before-lint-correction.txt": "82ced127f1a308dec8db4df182f3ad985b130fa5469b69550383130a56ed0681",
+    "run_checks.py.before-lint-correction.txt": "8bef59fa9d61af5e722dc877dd19b54d2bf5ca631605b2ef5e1e7b7628381c4b",
+    "audit.py.before-lint-correction.txt": "4121ce454be491ce8d9d619c29766c64c9c3b9d1e9ae7927494d11772318a442",
+    "config.json.before-lint-correction.txt": "f2fc96a19584bb61b8d71ecd7080a9fd6051f162c59bc9422a940434a0a3161d"
+  },
+  "allowed_remaining_commands": [
+    "correction-format",
+    "quality-corrected",
+    "format",
+    "pilot",
+    "prepare",
+    "full-audit"
+  ]
+}

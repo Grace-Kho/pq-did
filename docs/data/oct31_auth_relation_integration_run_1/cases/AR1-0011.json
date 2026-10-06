@@ -1,0 +1,25 @@
+{
+  "case_id": "N-10",
+  "invocation_id": "AR1-0011",
+  "status": "pass",
+  "details": {
+    "case_id": "N-10",
+    "passed": true,
+    "complete": true,
+    "native": {
+      "status": "rejected",
+      "reason": "column-order-or-duplicate"
+    },
+    "fixture_sha256": "058480c48abf3229f998bbd5d0b848652bacf31e63297d67d3b7aa2fb54cdcdc",
+    "fixture": "docs/data/oct31_auth_relation_integration_run_1/cases/native-inputs/N-10.matrix",
+    "public_synthetic_only": true,
+    "paths": [
+      "checked native input loader before unsafe calls"
+    ],
+    "proof_generated": false,
+    "full_authentication": false,
+    "native_evaluated_rows_charge": "2*rows upper bound: Az/Bz/Cz and satisfaction"
+  },
+  "seconds": 0.000886749941855669,
+  "work_events": 27
+}

@@ -1,0 +1,818 @@
+{
+  "record_format": "pqdid-specification-manifest",
+  "record_version": 2,
+  "status": "specification_agreed_partial_implementation",
+  "manuscript": {
+    "path": "docs/manuscript/PQ_DID__Implementation.pdf",
+    "sha256": "d17ca0a20b319b88e959467cae92d91d619973f84384710ecbf960a3b850aeca",
+    "authoritative_sections": [
+      "II",
+      "III",
+      "IV",
+      "V",
+      "VI",
+      "VII",
+      "VIII"
+    ],
+    "scope_unit": "section_numbers_not_page_numbers",
+    "excluded": [
+      "abstract",
+      "I",
+      "IX_onwards"
+    ],
+    "page_numbering": "printed_PDF_pages"
+  },
+  "source_references": {
+    "encoding": "VII opening, enc/LP/I2OSP equations, p. 14",
+    "setup": "VII-A.1 Setup, parameters/schema/tree equations, p. 14",
+    "did_keygen": "VII-A.2 DID.KeyGen, DID equation, p. 14",
+    "did_publish": "VII-A.3 DID.Publish, record/version and recovery, pp. 14-15",
+    "did_resolve": "VII-A.4 DID.Resolve, selectors/read/document, p. 15",
+    "issue": "VII-A.5 Issue, binding/enrolment/credential/path, p. 15",
+    "auth": "VII-A.6 Present, X and private witness, pp. 15-16",
+    "bounded": "VII-A.6 Bounded computation, pp. 15-16",
+    "circuit": "VII-A.6 Circuit profile BC-1, p. 16",
+    "proof": "VII-A.6 Shared prover, p. 16; VII-A.7 Check, p. 16",
+    "services": "IV-A context/current-state assumption, p. 5; VII-A.7 Verification/current/request, pp. 16-17",
+    "revocation": "VII-A.8 Revoke and Local witness update, p. 17",
+    "size": "VII-A.6 circuit admission/transcript, p. 16; VII closing proof-length equation after A.8, p. 17; VIII-A correctness/capacity, p. 18"
+  },
+  "confirmed": {
+    "suite": {
+      "identifier_ascii": "PQ-DID-MITH-1",
+      "lambda": 128,
+      "circuit_profile": "BC-1",
+      "source_refs": [
+        "setup",
+        "circuit"
+      ],
+      "requirement_ids": [
+        "R-011",
+        "R-034",
+        "R-037"
+      ]
+    },
+    "codec": {
+      "integer_byte_order": "big_endian_unsigned",
+      "tag_encoding": "ASCII",
+      "length_prefix_bytes": 4,
+      "field_count_bytes": 4,
+      "length_prefixed_field_max_bytes": 4294967295,
+      "tuple_format": "LP(tag) || I2OSP(field_count,4) || LP(field_1) || ... || LP(field_k)",
+      "structured_fields": "recursive_literal_tag_and_displayed_order",
+      "list_format": "one_field_per_element",
+      "byte_strings": "insert_once",
+      "trailing_bytes_allowed": false,
+      "padding_byte": 0,
+      "source_refs": [
+        "encoding"
+      ],
+      "requirement_ids": [
+        "R-005"
+      ]
+    },
+    "signature": {
+      "algorithm": "ML-DSA-65",
+      "standard": "FIPS 204, August 2024",
+      "fresh_hedging_randomness": true,
+      "public_key_bytes": 1952,
+      "expanded_secret_key_bytes": 4032,
+      "signature_bytes": 3309,
+      "external_contexts_ascii": {
+        "credential": "PQ-DID/credential/v1",
+        "state": "PQ-DID/state/v1",
+        "update": "PQ-DID/update/v1",
+        "did_record": "PQ-DID/did-record/v1",
+        "did_read": "PQ-DID/did-read/v1",
+        "control": "PQ-DID/control/v1",
+        "request": "PQ-DID/request/v1",
+        "current": "PQ-DID/current/v1",
+        "revreq": "PQ-DID/revreq/v1"
+      },
+      "credential_message_tag_ascii": "cred",
+      "source_refs": [
+        "setup",
+        "issue",
+        "auth",
+        "services",
+        "revocation"
+      ],
+      "requirement_ids": [
+        "R-009",
+        "R-032",
+        "R-033"
+      ],
+      "dependency_records": [
+        "DEP-001",
+        "DEP-002"
+      ]
+    },
+    "hashes": {
+      "standard": "FIPS 202",
+      "H_algorithm": "SHA3-384",
+      "H_output_bytes": 48,
+      "HRO_algorithm": "SHAKE256",
+      "HRO_output_bits": 1024,
+      "HRO_output_bytes": 128,
+      "HRO_use": "outer_proof_commitments_and_challenge_only",
+      "source_refs": [
+        "setup",
+        "bounded",
+        "proof"
+      ],
+      "requirement_ids": [
+        "R-010",
+        "R-032",
+        "R-039",
+        "R-040"
+      ]
+    },
+    "instance_and_random_values": {
+      "issuer_identifier_min_bytes": 1,
+      "issuer_identifier_max_bytes": 256,
+      "key_identifier_min_bytes": 1,
+      "key_identifier_max_bytes": 256,
+      "namespace_bytes": 32,
+      "registry_identifier_bytes": 32,
+      "holder_secret_bytes": 32,
+      "did_salt_bytes": 32,
+      "issuer_nonce_bytes": 32,
+      "registry_read_nonce_bytes": 32,
+      "current_state_nonce_bytes": 32,
+      "revocation_request_nonce_bytes": 32,
+      "source_refs": [
+        "setup",
+        "did_keygen",
+        "did_resolve",
+        "issue",
+        "services",
+        "revocation"
+      ],
+      "requirement_ids": [
+        "R-001",
+        "R-010",
+        "R-012",
+        "R-015",
+        "R-017",
+        "R-018",
+        "R-030"
+      ]
+    },
+    "schema": {
+      "field_count_min": 2,
+      "field_count_max": 16,
+      "field_count_bytes": 1,
+      "field_index_bytes": 1,
+      "field_index_base": 1,
+      "name_encoding": "ASCII",
+      "name_min_bytes": 1,
+      "name_max_bytes": 64,
+      "names_distinct": true,
+      "type_tag_bytes": 1,
+      "capacity_bytes": 2,
+      "attribute_length_bytes": 2,
+      "types": {
+        "0": {
+          "meaning": "byte_string"
+        },
+        "1": {
+          "meaning": "Boolean",
+          "payload_bytes": 1,
+          "allowed_values": [
+            0,
+            1
+          ]
+        },
+        "2": {
+          "meaning": "unsigned_integer",
+          "payload_bytes": 8,
+          "byte_order": "big_endian"
+        }
+      },
+      "attribute_vector_bytes": 1024,
+      "capacity_constraint": "sum(2 + capacity_j) <= 1024",
+      "field_format": "I2OSP(payload_length,2) || payload || zero_padding_to_capacity",
+      "vector_format": "fields_in_index_order_then_zero_padding_to_1024_bytes",
+      "did_and_version_indices_distinct": true,
+      "did_and_version_type": 0,
+      "did_capacity_min_bytes": 171,
+      "version_capacity_min_bytes": 56,
+      "source_refs": [
+        "setup"
+      ],
+      "requirement_ids": [
+        "R-006"
+      ]
+    },
+    "policy_and_context": {
+      "mask_bytes": 2,
+      "field_j_mask_bit": "j-1",
+      "unused_mask_bits": 0,
+      "disclosure_order": "increasing_field_index_with_complete_padded_fields",
+      "max_clauses": 32,
+      "clause_tags_ascii": [
+        "eq",
+        "range"
+      ],
+      "clauses_distinct": true,
+      "clause_order": "lexicographic",
+      "tested_fields_must_be_disclosed": true,
+      "range_field_type": 2,
+      "range_endpoint_bytes": 8,
+      "range_order_constraint": "lower <= upper",
+      "audience_min_bytes": 1,
+      "audience_max_bytes": 256,
+      "session_min_bytes": 1,
+      "session_max_bytes": 256,
+      "challenge_nonce_bytes": 32,
+      "expiry_bytes": 8,
+      "expiry_unit": "UTC_seconds",
+      "context_field_order": [
+        "suite",
+        "aud",
+        "sid",
+        "n",
+        "policy",
+        "refI",
+        "refe",
+        "texp"
+      ],
+      "request_signature_inside_context_or_presentation": false,
+      "source_refs": [
+        "setup",
+        "services"
+      ],
+      "requirement_ids": [
+        "R-007",
+        "R-008",
+        "R-016",
+        "R-028"
+      ]
+    },
+    "did": {
+      "prefix_ascii": "did:pqdid:",
+      "registry_digest_separator_ascii": ":",
+      "hex_case": "lower",
+      "hex_prefix": "",
+      "identifier_bytes": 171,
+      "record_index_bytes": 8,
+      "record_index_exclusive_upper_bound": 65536,
+      "record_digest_bytes": 48,
+      "genesis_predecessor_digest_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "version_reference_bytes": 56,
+      "active_flag_bytes": 1,
+      "publish_active_rotate_pairs": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "current_selector_hex": "00",
+      "historical_selector_prefix_hex": "01",
+      "read_status_bytes": 1,
+      "read_status_endpoint": 0,
+      "read_status_absence": 1,
+      "document_template_utf8": "{\"id\":\"<did>\"}",
+      "document_media_type": "application/did+json",
+      "source_refs": [
+        "did_keygen",
+        "did_publish",
+        "did_resolve"
+      ],
+      "requirement_ids": [
+        "R-012",
+        "R-013",
+        "R-014",
+        "R-015"
+      ]
+    },
+    "revocation": {
+      "tree_depth": 20,
+      "identifier_bytes": 4,
+      "identifier_exclusive_upper_bound": 1048576,
+      "allocation_initial_counter": 0,
+      "identifiers_reused": false,
+      "initial_leaf_bit": 0,
+      "revoked_leaf_bit": 1,
+      "leaf_bit_encoding_bytes": 1,
+      "node_level_encoding_bytes": 1,
+      "node_level_min": 1,
+      "node_level_max": 20,
+      "sibling_bytes": 48,
+      "path_siblings": 20,
+      "private_path_bytes": 960,
+      "path_order": "leaf_to_root",
+      "direction_at_path_level_j": "numeric_bit_j_of_identifier",
+      "epoch_bytes": 8,
+      "epoch_wraparound_allowed": false,
+      "initial_epoch": 0,
+      "update_signed_body_path_format": "raw_sibling_concatenation",
+      "source_refs": [
+        "setup",
+        "issue",
+        "auth",
+        "revocation"
+      ],
+      "requirement_ids": [
+        "R-018",
+        "R-029",
+        "R-030",
+        "R-031"
+      ]
+    },
+    "relation": {
+      "enrol_statement_field_order": [
+        "pp",
+        "mu",
+        "mapp",
+        "rid",
+        "B",
+        "nI",
+        "rse"
+      ],
+      "enrol_witness_fields": [
+        {
+          "name": "xH",
+          "bytes": 32
+        }
+      ],
+      "enrol_witness_bits": 256,
+      "auth_statement_field_order": [
+        "pp",
+        "mu",
+        "ctx",
+        "rse",
+        "D",
+        "mD"
+      ],
+      "auth_witness_fields": [
+        {
+          "name": "xH",
+          "bytes": 32
+        },
+        {
+          "name": "Esch(m)",
+          "bytes": 1024
+        },
+        {
+          "name": "rid",
+          "bytes": 4
+        },
+        {
+          "name": "sigma",
+          "bytes": 3309
+        },
+        {
+          "name": "we",
+          "bytes": 960
+        }
+      ],
+      "auth_witness_bytes": 5329,
+      "auth_witness_bits": 42632,
+      "rho_bytes": 0,
+      "auxiliary_a_bytes": 0,
+      "auxiliary_eta_bytes": 0,
+      "presentation_format": "mask_D || mD || pi",
+      "source_refs": [
+        "issue",
+        "auth",
+        "proof"
+      ],
+      "requirement_ids": [
+        "R-020",
+        "R-021",
+        "R-023",
+        "R-024",
+        "R-025",
+        "R-026"
+      ]
+    },
+    "bounded_operations": {
+      "RejNTTPoly_max_bytes": 1026,
+      "RejBoundedPoly_max_bytes": 512,
+      "SampleInBall_max_total_bytes": 256,
+      "SampleInBall_sign_bytes": 8,
+      "SampleInBall_max_index_bytes": 248,
+      "ML_DSA_Sign_internal_max_attempts": 1024,
+      "consume_rejected_index_bytes": true,
+      "verify_signature_before_release": true,
+      "internal_retry_after_bounded_failure": false,
+      "source_refs": [
+        "bounded"
+      ],
+      "requirement_ids": [
+        "R-032",
+        "R-033"
+      ],
+      "dependency_records": [
+        "DEP-001",
+        "DEP-002"
+      ]
+    },
+    "circuit": {
+      "profile": "BC-1",
+      "integer_word_bits": 64,
+      "integer_signed": true,
+      "addition_subtraction_bits": 65,
+      "product_bits": 128,
+      "ring_modulus": 8380417,
+      "byte_bits": 8,
+      "Keccak_lane_bits": 64,
+      "serialised_input_bit_order": "most_significant_first",
+      "arithmetic_bit_i_weight": "2^i",
+      "gates": [
+        "XOR",
+        "AND",
+        "NOT",
+        "constant"
+      ],
+      "constant_wire_numbers": [
+        0,
+        1
+      ],
+      "single_output_required": true,
+      "optimisation": "all_public_constant_folding_only",
+      "source_refs": [
+        "circuit"
+      ],
+      "requirement_ids": [
+        "R-034",
+        "R-035",
+        "R-036",
+        "R-037"
+      ]
+    },
+    "proof": {
+      "repetitions": 480,
+      "parties": 3,
+      "opened_parties_per_repetition": 2,
+      "opened_party_order": "e_j_then_(e_j+1)_mod_3",
+      "repetition_index_bytes": 2,
+      "party_index_bytes": 1,
+      "tape_format": "independent_raw_uniform_g_bits_per_party",
+      "view_bit_length": "d + 2*g",
+      "view_bytes": "ceil((d + 2*g)/8)",
+      "view_bit_order": "most_significant_first",
+      "salt_bytes": 64,
+      "nonce_bytes": 64,
+      "output_share_bytes": 1,
+      "output_share_allowed_values": [
+        0,
+        1
+      ],
+      "commitment_bytes": 128,
+      "challenge_digest_bytes": 128,
+      "challenge_map": "floor((OS2IP(u) mod 3^480)/3^j) mod 3",
+      "challenge_OS2IP_byte_order": "big_endian_unsigned",
+      "proof_format": "nonce || A || Z",
+      "proof_length_bytes": "64 + 480*(515 + 2*ceil((d + 2*g)/8))",
+      "A_field_order_per_repetition": [
+        "y_j0",
+        "y_j1",
+        "y_j2",
+        "c_j0",
+        "c_j1",
+        "c_j2"
+      ],
+      "source_refs": [
+        "proof",
+        "size"
+      ],
+      "requirement_ids": [
+        "R-038",
+        "R-039",
+        "R-040",
+        "R-041",
+        "R-042",
+        "R-043"
+      ],
+      "view_terminal_padding_bit_value": 0
+    },
+    "admission": {
+      "statement_max_bytes": 4294967295,
+      "view_max_bytes": 4294967295,
+      "AND_gate_max_formula": "floor((8*L-d)/2)",
+      "outer_oracle_input_exclusive_bound_bytes": 8590196734,
+      "outer_oracle_input_bound_formula": "2*L + 2^18",
+      "practical_resource_guarantee": false,
+      "source_refs": [
+        "circuit",
+        "size"
+      ],
+      "requirement_ids": [
+        "R-037",
+        "R-041",
+        "R-049"
+      ]
+    }
+  },
+  "unresolved_conventions": {},
+  "deployment_inputs": {
+    "status": "required_when_constructing_applicable_instances_or_requests_no_defaults",
+    "source_refs": [
+      "setup",
+      "services"
+    ],
+    "issuer_identifier": null,
+    "issuer_key_identifier": null,
+    "immutable_schema": null,
+    "registry_identifier": null,
+    "accepted_instances_and_trust_keys": null,
+    "audience_and_session": null,
+    "request_lifetime_seconds": null,
+    "trusted_time_provider": null
+  },
+  "implementation_records": {
+    "meaning": "implementation_evidence_not_cryptographic_parameters; null_means_unimplemented_or_unvalidated",
+    "bounded_adapter_version": "pqdid-bounded-mldsa65-python-v1",
+    "bounded_adapter_source_sha256": "18b5402247086ccee88d4c4f452234f672d0db15d0324164ad1c2523f531f7f1",
+    "BC1_emitter_version": "pqdid-bc1-foundation-dev1",
+    "BC1_emitter_source_sha256": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+    "reference_relation_source_sha256": "138659b145b4453955ab0a70ce684c7f6641e93086024f0cff47bddb80c0bd4d",
+    "validated_conditional_signing_tail": null,
+    "validation_dependencies": [
+      "DEP-001",
+      "DEP-002"
+    ],
+    "codec_schema_policy_expiry": "implemented; see docs/stage2_codec.md for test evidence and limits",
+    "bounded_adapter_implementation": "Python integer reference with hashlib SHAKE; separate from unchanged ordinary liboqs; verification only",
+    "local_cred_valid": {
+      "module": "pqdid.credentials.cred_valid",
+      "source_sha256": "6398edf081d147eb07927ae528e2a8c2676ddab31b4f777fcfba5c64e86f406d",
+      "evidence": "docs/stage2_bounded_mldsa.md",
+      "scope": "complete local credential predicate, now composed in local authentication relation; proofs and services remain unimplemented"
+    },
+    "reference_relation_version": "pqdid-reference-relations-python-v1",
+    "reference_relation_source": "src/pqdid/relations.py; supporting source digests in reference_relation_modules; complete BC-1 relation lowering remains unimplemented",
+    "reference_relation_modules": {
+      "src/pqdid/relations.py": "138659b145b4453955ab0a70ce684c7f6641e93086024f0cff47bddb80c0bd4d",
+      "src/pqdid/statements.py": "f7c055eda59f070f18dc1add2202296205529ea7785d3433f466314bcaeae659",
+      "src/pqdid/witnesses.py": "317d5fa1cd2c33d450864d73d7e3c78baa9fb4415bf44ba263a2c879f96154b0",
+      "src/pqdid/public_checks.py": "11089658718831ba6b1475d5c1fe3fdf657a52127ff928f323f0107cfdc87430",
+      "src/pqdid/credentials.py": "6398edf081d147eb07927ae528e2a8c2676ddab31b4f777fcfba5c64e86f406d",
+      "src/pqdid/bounded_mldsa.py": "18b5402247086ccee88d4c4f452234f672d0db15d0324164ad1c2523f531f7f1",
+      "src/pqdid/binding.py": "94c1c5d47def45c97c58d6be723210c675bc1756ff3fc560df75909d2f98fc65",
+      "src/pqdid/merkle.py": "138de89f5b5169f988d7cecd9f8d3faadc6057345306230e22fa76867c1b7017",
+      "src/pqdid/parameters.py": "09fc1aba02094e687709359a8c4b0271f84e59317505127b796141657217f8db",
+      "src/pqdid/hash_domain.py": "a4d3c5c98b3f15e3fd221cb029883a48ca2856cb200ff09594d00e1039e2c251",
+      "src/pqdid/schema.py": "158f10d40124c1110f8d0a7f0b51a90c9557c7788b0c82e6003f3a542ef8e38e",
+      "src/pqdid/policy.py": "e160109cadeb1de7d42c9408cd729bddd0bbd18063f8ca6ebeeda6b0afe15aa1",
+      "src/pqdid/expiry.py": "00278b368b6c12391ca3cc046a7cce699a6780b4bcacf21ffce243cca56b60b0",
+      "src/pqdid/codec.py": "7f5dff4ec3aa9fd21b7ac030157fcb03446821a0baef0f6f37b7e4ff029e8633"
+    },
+    "reference_relation_evidence": "docs/stage2_relations.md",
+    "BC1_foundation": {
+      "scope": "bounded development emitter/evaluator, checked arithmetic and selectors; SPEC-003 initialisers agreed; full BC-1 conformance unverified; not complete CGen or a proof",
+      "modules": {
+        "src/pqdid/circuits/__init__.py": "9098a9c19787bcd155bac6d7d724d3c354c4c404fc99565cd5a72ae26a4c8d8f",
+        "src/pqdid/circuits/accounting.py": "23610bf5a75ba435f582d7e80a1d1e2118f07caabe6659b96a4ae4380b3c0690",
+        "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+        "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+        "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec"
+      },
+      "evidence": "docs/stage3_bc1_foundation.md",
+      "measurements": "docs/data/stage3_bc1_measurements.json",
+      "canonical_recipe_issue": "SPEC-003",
+      "complete_CGen_source_sha256": null,
+      "validated_full_BC1_equivalence": null,
+      "complete_authentication_AND_count": null,
+      "canonical_recipe_status": "SPEC-003 agreed; remaining full conformance work unverified",
+      "stability_evidence": "docs/data/stage3_hash_enrolment_validation.json"
+    },
+    "BC1_hash_enrolment": {
+      "version": "pqdid-bc1-hash-enrolment-provisional-v1",
+      "modules": {
+        "src/pqdid/circuits/__init__.py": "9098a9c19787bcd155bac6d7d724d3c354c4c404fc99565cd5a72ae26a4c8d8f",
+        "src/pqdid/circuits/accounting.py": "23610bf5a75ba435f582d7e80a1d1e2118f07caabe6659b96a4ae4380b3c0690",
+        "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+        "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+        "src/pqdid/circuits/enrolment.py": "d8b5134bdcb7fd9c1bd70cffc6214e96d971e3fe01bc595e5437718cd603e2f5",
+        "src/pqdid/circuits/enrolment_accounting.py": "8e479c7d3f221d86450135cf356f54b310e95794884026eeb9663985d78c4b3b",
+        "src/pqdid/circuits/keccak.py": "05dbfe9e5d8aea37471c325b7a9565b6f9f1742af5e2efca54029758b1b840a6",
+        "src/pqdid/circuits/parsing.py": "2f4b3d24d056eb9b26424ee185b1b5df9847f50fdc1db326c8d313685236cef9",
+        "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec"
+      },
+      "enrolment_source_sha256": "d8b5134bdcb7fd9c1bd70cffc6214e96d971e3fe01bc595e5437718cd603e2f5",
+      "scope": "full 24-round SHA3/SHAKE and complete local enrolment circuit; SPEC-003 initialisers agreed; all 17 deferred tests and nine probes completed; full BC-1 conformance and proofs unverified",
+      "canonical_recipe_issue": "SPEC-003",
+      "validated_full_BC1_equivalence": null,
+      "complete_authentication_AND_count": null,
+      "evidence": "docs/stage3_hash_enrolment.md",
+      "measurements": "docs/data/stage3_hash_enrolment_measurements.json",
+      "official_vectors": "tests/fixtures/fips202_circuit_vectors.json",
+      "extended_test_profile_approval": "User approved 17 September 2026; executed separately from routine defaults",
+      "canonical_recipe_status": "SPEC-003 agreed; full conformance unverified",
+      "operational_profile": "configs/validation_profiles.json#hash_enrolment_extended_v1",
+      "validation": "docs/data/stage3_hash_enrolment_validation.json",
+      "regression": "docs/data/stage3_hash_enrolment_regression.json",
+      "historical_version_note": "The recorded provisional-v1 source/version and measurements are unchanged; adoption changes authority, not circuit bytes"
+    },
+    "BC1_auth_parsing_arithmetic": {
+      "version": "pqdid-bc1-auth-parsing-scalar-development-v1",
+      "scope": "protocol-level fixed authentication witness parsing/disclosure; checked signed64 public-positive-constant division/residues; scalar ring, decomposition/hint/norm and one forward NTT butterfly; not full authentication or a proof",
+      "modules": {
+        "src/pqdid/circuits/auth_parsing.py": "15bb95af9c2cb70eab3c4de8406b50cd25f67cf823163875372668989c26be2b",
+        "src/pqdid/circuits/division.py": "c530930c04f91bcdf4bceaf5d052f940cc935e87cca6562baf119ad41b8574a8",
+        "src/pqdid/circuits/scalar_ring.py": "f2012a9d1202686368eb2693495bccd00af8be73ce8a00535a8ced9a190adf45"
+      },
+      "authentication_private_inputs": 42632,
+      "auxiliary_private_inputs": 0,
+      "canonical_identity": "SPEC-004 now agreed; recorded sources/counts below are pre-adoption history; see BC1_SPEC004_adoption",
+      "canonical_recipe_issue": "SPEC-004",
+      "agreed_conventions_preserved": [
+        "SPEC-001",
+        "SPEC-002",
+        "SPEC-003"
+      ],
+      "operational_profile": "configs/validation_profiles.json#hash_enrolment_extended_v1",
+      "evidence": "docs/stage3_auth_parsing_arithmetic.md",
+      "measurements": "docs/data/stage3_auth_arithmetic_measurements.json",
+      "focused_tests": "docs/data/stage3_auth_arithmetic_focused.json",
+      "regression_tests": "docs/data/stage3_auth_arithmetic_regression.json",
+      "independent_vectors": "tests/fixtures/bc1_scalar_vectors.json",
+      "full_authentication_AND_count": null,
+      "validated_full_BC1_equivalence": null,
+      "proof_generation": false
+    },
+    "BC1_signature_inputs": {
+      "version": "pqdid-bc1-signature-inputs-development-v1",
+      "modules": {
+        "src/pqdid/circuits/signature.py": "5fb391650765018230c4f9bc54370ddf28c1c2ce7fd92b9bef93113aeb9c6133",
+        "src/pqdid/circuits/signature_inputs.py": "67f3d3ace81385a93ef9c113c6b4cbd58a00d028fb53cebfaed145055d612762"
+      },
+      "test_sources": {
+        "tests/reference/signature_oracle.py": "dbc14fd88a071cad58915da7c8cef2bd6b6f800d27e5c2b7ae156f7c1cdc1ed8",
+        "tests/reference/division_alternative.py": "85a488442c6ad5c44702c865abc84e549b295d4f83af3d5b8dc8070df763d849",
+        "tests/unit/test_signature_circuit.py": "976f9e63f34bc4b2dceb2b39dada271384ba127bf84f8523fc759fc546e04602",
+        "tests/unit/test_signature_inputs.py": "c50fdaa518ea5bf465d31a25ff91fba8240680852faaf9bd85670e1de98b37cd",
+        "tests/unit/test_spec004_alternatives.py": "85333fe63f2b49a45f7b8a7d0625b46c6b0f7c6a46a7a16e5b8a9a6ddb1f2da1"
+      },
+      "evidence": "docs/stage3_signature_inputs.md",
+      "measurements": "docs/data/stage3_signature_inputs_measurements.json",
+      "validation": "docs/data/stage3_signature_inputs_focused.json",
+      "authentication_witness_bytes": 5329,
+      "authentication_witness_bits": 42632,
+      "additional_witness_fields": false,
+      "canonical_recipe_issue": "SPEC-004",
+      "canonical_recipe_status": "SPEC-004 now agreed; prior pending report preserved as historical; full BC-1 unverified",
+      "completed_scope": "response decode, hint subcomponents, norm, expected public key, same-witness holder/B/Mcred/framing, standalone message-hash test kernel",
+      "resource_limited_scope": [
+        "complete hint reconstruction",
+        "complete signature decoding",
+        "complete message hashing composition",
+        "complete verifier input preparation"
+      ],
+      "complete_signature_verification": false,
+      "complete_authentication": false,
+      "proof_implementation": false,
+      "complete_authentication_AND_count": null
+    },
+    "BC1_SPEC004_adoption": {
+      "version": "pqdid-bc1-spec004-adopted-v1",
+      "modules": {
+        "src/pqdid/circuits/division.py": "03c3c7abcaaa267450930707b9a2c9534143cc95c470635367cc4a9c66dba8ba"
+      },
+      "evidence": "docs/stage3_resource_preflight.md",
+      "focused_validation": "docs/data/stage3_spec004_focused.json",
+      "dependent_measurements": "docs/data/stage3_spec004_dependent_measurements.json",
+      "count_preflight": "docs/data/stage3_signature_count_preflight.json",
+      "evaluation_plan": "docs/data/stage3_evaluation_resource_plan.json",
+      "additional_witness_fields": false,
+      "complete_BC1_conformance": false,
+      "complete_authentication_AND_count": null,
+      "proof_generation": false,
+      "core_measurements": "docs/data/stage3_spec004_core_measurements.json",
+      "regression_validation": "docs/data/stage3_spec004_regression.json",
+      "preservation_audit": "docs/data/stage3_spec004_audit.json"
+    },
+    "BC1_feasibility_review": {
+      "version": "pqdid-bc1-feasibility-review-v1",
+      "report": "docs/stage3_feasibility_review.md",
+      "pilot": "docs/data/stage3_message_preparation_pilot.json",
+      "hint_prefix_attribution": "docs/data/stage3_hint_prefix_audit.json",
+      "conditional_accounting": "docs/data/stage3_feasibility_accounting.json",
+      "focused_validation": "docs/data/stage3_feasibility_focused.json",
+      "regression_validation": "docs/data/stage3_feasibility_regression.json",
+      "preservation_audit": "docs/data/stage3_feasibility_audit.json",
+      "pilot_cases_passed": 9,
+      "message_preparation_fingerprint": "7778652f244202f6fda785104a5113964dc4172fccc6f39ec404a137d50a15b7",
+      "hint_prefix_AND_gates": 13532448,
+      "conditional_authentication_proof_bytes": 3253150624,
+      "exact_inclusion_in_full_authentication_independently_established": false,
+      "full_authentication_count": null,
+      "production_circuit_change": false,
+      "next_recommendation": "prepare a reviewed concrete-profile change proposal; no replacement adopted",
+      "larger_64M_2GiB_profile_active": false,
+      "proof_generation": false
+    }
+  },
+  "related_records": {
+    "specification": "docs/implementation_spec.md",
+    "traceability": "docs/traceability.md",
+    "issues": "docs/spec_issues.md",
+    "encoding_examples": "configs/encoding_examples.json",
+    "environment_evidence": "docs/environment.md",
+    "engineering_choices": "docs/implementation_spec.md#representation-and-research-profile-decisions"
+  },
+  "agreed_clarifications": {
+    "SPEC-001": {
+      "authority": "User decision, 17 September 2026; clarifies missing wording, not an original manuscript quotation",
+      "source_refs": [
+        "encoding",
+        "issue",
+        "auth",
+        "revocation"
+      ],
+      "rupdate_path_payload": "s0 || s1 || ... || s19",
+      "sibling_bytes": 48,
+      "siblings": 20,
+      "payload_bytes": 960,
+      "order": "manuscript_leaf_to_root_increasing_level",
+      "per_sibling_framing": false,
+      "enclosing_record": "preserve rupdate tag, five fields and ordinary LP for the single path field",
+      "signed_message": "preserve update tag and six fields separately; no transport/signing equivalence",
+      "requirement_ids": [
+        "R-005",
+        "R-030",
+        "R-031"
+      ]
+    },
+    "SPEC-002": {
+      "authority": "User decision, 17 September 2026; clarifies missing wording, not an original manuscript quotation",
+      "source_refs": [
+        "setup",
+        "services"
+      ],
+      "epoch": "1970-01-01T00:00:00Z",
+      "time_standard": "POSIX_seconds",
+      "unsigned_bits": 64,
+      "byte_order": "big_endian",
+      "acceptance_predicate": "now < texp",
+      "at_expiry": "expired",
+      "grace_seconds": 0,
+      "default_lifetime_seconds": null,
+      "required_checks": "all manuscript expiry checks, including final atomic verifier recheck before consumption",
+      "requirement_ids": [
+        "R-008",
+        "R-016",
+        "R-026",
+        "R-028"
+      ]
+    },
+    "SPEC-003": {
+      "authority": "User decision, 17 September 2026; clarification, not an original manuscript quotation",
+      "source_refs": [
+        "circuit"
+      ],
+      "agreed_wording": "Initialise equality with public 1. Initialise magnitude multiplication with a public 128-bit zero accumulator; add all 64 shifted partial products in increasing order using full-width ripple addition, retaining terminal carry operations.",
+      "preserve": "gate order, operand order, checked arithmetic and public-only constant folding",
+      "canonical_alternatives_selectable": false,
+      "full_BC1_conformance": "unverified; approval limited to the quoted clarification",
+      "manuscript_alignment": "VII-A.6 BC-1 equality and magnitude-multiplication wording, printed p. 16; PDF unchanged",
+      "requirement_ids": [
+        "R-034",
+        "R-035",
+        "R-036",
+        "R-037"
+      ]
+    },
+    "SPEC-004": {
+      "authority": "User decision, 18 September 2026; agreed implementation clarification, not an original manuscript quotation",
+      "source_refs": [
+        "circuit"
+      ],
+      "workspace_bits": 65,
+      "magnitude_bits": 64,
+      "scan_bit_order": "63 down to 0, all 64 steps",
+      "both_outputs_for_div_and_mod": true,
+      "mux_true_arm": "third operand",
+      "sign_correction_sequence": [
+        "Q65 = zero_extend(Q)",
+        "nz = NOT equality(R, public_zero65)",
+        "negative_Q = negate65(Q65)",
+        "negative_Q_minus_one = subtract65(negative_Q, public_one65)",
+        "corrected_negative_Q = mux(nz, negative_Q, negative_Q_minus_one)",
+        "b_minus_R = subtract65(b65, R)",
+        "corrected_negative_R = mux(nz, public_zero65, b_minus_R)",
+        "output_Q = mux(input_sign, Q65, corrected_negative_Q)",
+        "output_R = mux(input_sign, R, corrected_negative_R)"
+      ],
+      "validity_order": "Q representability, R representability, then (Q_valid AND R_valid) AND (b>0)",
+      "named_intermediates_reused": true,
+      "unsigned_MIN_magnitude_valid": true,
+      "zero_divisor": "construct bounded recipe, invalidity with unusable outputs",
+      "unsupported_divisors": "negative, private, out-of-signed64: construction error",
+      "preserve": "source order, retained terminal carries, public-only folding, active-path sticky rejection; no advice",
+      "full_BC1_conformance": "unverified; agreement resolves SPEC-004 only",
+      "manuscript_alignment": "VII-A.6, printed p. 16; add explicit full lowering; PDF preserved"
+    }
+  }
+}

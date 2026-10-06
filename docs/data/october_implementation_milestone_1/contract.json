@@ -1,0 +1,12 @@
+{
+  "profile_adopted": false,
+  "milestone_approved": false,
+  "preparation_only": true,
+  "native_source_mutations": 0,
+  "functional_invocations": 0,
+  "builds": 0,
+  "proofs": 0,
+  "proposal": "docs/october_implementation_milestone.md",
+  "next_action": "one consolidated approval for direct implementation; no further general review",
+  "new_nested_preparation_quota": false
+}

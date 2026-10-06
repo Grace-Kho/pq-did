@@ -1,0 +1,6 @@
+{
+  "path": "experiments/ligetron_domain_mask_correction_1/cases.py",
+  "prior_sha256": "ebf6391d43c8f30e5a75ca2512707575f3351f89c9f3cb68975d3d4eac18725d",
+  "current_sha256": "c353d4a7fd1bcbba90a831adfbcac294c7636ad25496c7d8d340e7eb3dacd203",
+  "reason": "Select successful second and final build; first attempt failed before compilation; no case/expectation/native-source changes"
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "check": "slot-two-before-valid",
+    "returncode": 1,
+    "reason": "Traceback (most recent call last):\n  File \"/home/grace/projects/pq-did/experiments/r0_credvalid_exec24_1/scripts/run_limited.py\", line 353, in <module>\n    main()\n    ~~~~^^\n  File \"/home/grace/projects/pq-did/experiments/r0_credvalid_exec24_1/scripts/run_limited.py\", line 85, in main\n    fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)\n    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nBlockingIOError: [Errno 11] Resource temporarily unavailable"
+  },
+  {
+    "check": "proving-command",
+    "returncode": 2,
+    "reason": "usage: run_limited.py [-h] [--slot SLOT] --seconds SECONDS [--memory MEMORY]\n                      {setup,build,execute,check} name ...\nrun_limited.py: error: argument phase: invalid choice: 'prove' (choose from setup, build, execute, check)"
+  }
+]

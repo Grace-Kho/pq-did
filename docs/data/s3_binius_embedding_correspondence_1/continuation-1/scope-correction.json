@@ -1,0 +1,24 @@
+{
+  "authority": "Current user approval of routine in-scope corrections; no substantive/integrity/resource failure",
+  "failure": "KeyError scope_sha256 before historical comparison auditor invocation",
+  "before_sha256": {
+    "run.py": "5f40e445398e906e3dd923ff17f88dca41269a287f04a7262eba7153cb39bf07",
+    "checks.py": "32e964b7d8731dc1d83ff02a4f4112ba52106a262250239a4ad01c25a629766b",
+    "config.json": "670d9394a52a7c13f6f48dc5bfd9f60e90844a69e5ea7359c5c4eaea31b5aa61",
+    "preparation.json": "887cf05e27fc8e417684da495db80641c25b767d2ae3f3a1f880539174fd13e1",
+    "checked-inputs.json": "2b24b7f37996f784e48846a83b2f254d959efcab12e9757aea6e5680a7960079",
+    "full-audit.json": "ac4a3b44804db246e47c84f43c52734c8518a1e94a352a2c3efe9bc920321950",
+    "full-audit.log": "c836b693eb8f6db95349fa072e055552d7623aa5cd243ea9f7a6af17efe8eff5",
+    "full-audit.service.json": "33a107e5b6d2e3b241dc91a28657598217a5fa63301ac1278ecd34f455aeef7f",
+    "STOP.json": "47d2f9b4d9bd2b207ebb736323d61480f25d1dfde2a0df50b537d6625af01ef9"
+  },
+  "preserved_failure": "full-audit",
+  "corrected_static": "quality-3",
+  "corrected_preparation": "prepare-2",
+  "outstanding_audit": "full-audit-2",
+  "audit_launcher_attempts_planned": 2,
+  "complete_comparison_auditor_invocations_planned": 1,
+  "extra_functional_cases": 0,
+  "baseline_entries_changed": false,
+  "extra_conservative_operator_seconds": 5
+}

@@ -1,0 +1,14 @@
+{
+  "docs/status.md": {
+    "bytes": 214286,
+    "sha256": "482c1af0aeb2aef0aa6ccda767cd529a203afbcbaf256eabdf29e1af54f3406a"
+  },
+  "docs/traceability.md": {
+    "bytes": 272206,
+    "sha256": "569fc81b120d819f130a8f83f47d0840d4c343e74da0e1311d050793fb64e83e"
+  },
+  "docs/spec_issues.md": {
+    "bytes": 236030,
+    "sha256": "1793bd9899d3f192d77a8273643f3caae21c20109812dad788cadaa201fba188"
+  }
+}

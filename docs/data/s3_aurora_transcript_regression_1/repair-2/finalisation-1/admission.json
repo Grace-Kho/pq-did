@@ -1,0 +1,33 @@
+{
+  "package": "S3-AURORA-TRANSCRIPT-PRESERVATION-REPAIR-2",
+  "continuation": "inventory-finalisation-1",
+  "opening_combined_seconds": 29.117489647935145,
+  "opening_implementation_seconds": 12.705728690023534,
+  "package_seconds": 40,
+  "package_output_bytes": 1048576,
+  "bookkeeping_charge_seconds": 5,
+  "accounting": "All prior charges retained. Existing conservative five-second bookkeeping charge covers source/configuration, inventory reconciliation, documentation and final seal/readback. New guard durations charged separately. Reserve may be consumed for these completion purposes; no additional ten seconds is added.",
+  "maximum_guard_reservations_seconds": {
+    "static": 1,
+    "prepare": 1,
+    "full-audit": 3.75
+  },
+  "worst_charge_with_all_reservations_seconds": 10.75,
+  "source_reused": "repair-2/continuation-1/run.py",
+  "source_manifest_sha256": "f76de0666d5ff4cd4bf898662f189d11b91938abf1ebabfaaa54a8ea3e739289",
+  "corrected_entry": "docs/data/s3_aurora_transcript_regression_1/repair-1/prepare.json",
+  "historical_sha256": "0d4fb8f16d38fee2952f769bb541a05366fd0fa7e150f3d17d752489936227f8",
+  "protected_not_permitted": true,
+  "new_regression_invocations": 0,
+  "total_invocations": 402,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1,
+  "static_scope": "New invocation shim only; sealed E501 correction and existing lint evidence reused",
+  "reference_audit_seconds": 2.539544389,
+  "automatic_retries": 0,
+  "new_preparations": 1,
+  "new_full_audits": 1,
+  "fresh_output_root": "docs/data/s3_aurora_transcript_regression_1/repair-2/finalisation-1",
+  "original_evidence_root": "docs/data/s3_aurora_transcript_regression_1",
+  "retained_archive_sha256": "b2f3886339159a8737d3c4cc259f9dfe39577faf4826b95e4d024aa5211d45eb"
+}

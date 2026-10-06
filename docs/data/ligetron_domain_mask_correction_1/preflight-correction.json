@@ -1,0 +1,14 @@
+[
+  {
+    "path": "experiments/ligetron_domain_mask_correction_1/overlay/src/webgpu_prover.cpp",
+    "before_sha256": "f170383fb294915a59faf26d23dffd866c26b19aa6cebac28f822130b3999b39",
+    "after_sha256": "95e7c6a0fe0b12eb3608e2373ea165a1c3b820e6b7f82c1282fb52dc87d4229e",
+    "change": "Stage2 now receives Stage1 digest; initial literal edit missed multiline whitespace; caught before build/cases."
+  },
+  {
+    "path": "experiments/ligetron_domain_mask_correction_1/overlay/src/webgpu_verifier.cpp",
+    "before_sha256": "437e909a61512371e56f3ea47a4f72aa3ce4847f5f4f66bcb067fcee05034cc2",
+    "after_sha256": "8e2d5eb60b24b8d8c9ea891a2b51a77aa7f36155cde6e4866e2707d1f720745f",
+    "change": "Stage2 now receives Stage1 digest; initial literal edit missed multiline whitespace; caught before build/cases."
+  }
+]

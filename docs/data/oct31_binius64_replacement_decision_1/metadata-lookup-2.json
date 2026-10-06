@@ -1,0 +1,29 @@
+{
+  "seconds": 1.304224670981057,
+  "sources": [
+    {
+      "path": "implementation-tree.json",
+      "url": "https://api.github.com/repos/binius-zk/binius64/git/trees/544452a781fee0f9b262d4ecfdcc47326fb6974f?recursive=1",
+      "bytes": 216721,
+      "sha256": "c1d21269c495f6cd12b0a20c6f82252d807fea536dc0e3de8a2d230100f052c0"
+    },
+    {
+      "path": "blueprint-tree.json",
+      "url": "https://api.github.com/repos/binius-zk/binius.xyz/git/trees/7b8b3a3ec0bb7df9b4e00d2b2ed53027e7563e22?recursive=1",
+      "bytes": 50669,
+      "sha256": "93b9179fc2b2e008762d5f38c41137ec72286df086832133236962ab3c81a457"
+    },
+    {
+      "path": "ottersec-fix.json",
+      "url": "https://api.github.com/repos/binius-zk/binius64/commits/86a515f",
+      "bytes": 6986,
+      "sha256": "ef973567d02c37b02b9f0cf54852ac3b7e34ea80c991e848a074cadaa55875bb"
+    },
+    {
+      "path": "spec.pdf",
+      "url": "https://www.binius.xyz/spec.pdf",
+      "bytes": 679980,
+      "sha256": "0dfdfd2fb8066842e0c0914901930b6b4f276284983838ad40ff0f2e8f0d9803"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ENT-03-B",
+  "invocation": {
+    "invocation_id": "LGC1-0004",
+    "case_id": "ENT-03-B",
+    "work_event_reservation": 1000000,
+    "ordinal": 4,
+    "cumulative_invocations": 1187,
+    "status": "admitted"
+  },
+  "status": "pass",
+  "binary_sha256": "7f28431909d2d570d6e722abb6364f6e4b7797175d64c1ee825776557ba2fa63",
+  "expected_sha256": "7ea58f9ec9735d8bbe90f973105558af00fd0ad447c5cca93cd6f629ed826f3e",
+  "exit_code": 0,
+  "stdout": "{\"case\":\"ENT-03-B\",\"data\":\"f7b2478bde18a96c0344f982e8fd9e55ec2dd813ace3199c207f33cdeb4447f3,f69ff1eca62c3fb28c0529a10677346c600fbf6642e459c859645f9459e12ee3|f7b2478bde18a96c0344f982e8fd9e55ec2dd813ace3199c207f33cdeb4447f3,f69ff1eca62c3fb28c0529a10677346c600fbf6642e459c859645f9459e12ee3|f7b2478bde18a96c0344f982e8fd9e55ec2dd813ace3199c207f33cdeb4447f3,f69ff1eca62c3fb28c0529a10677346c600fbf6642e459c859645f9459e12ee3\",\"openssl\":\"OpenSSL 3.5.5 27 Jan 2026\",\"gmp\":\"6.3.0\"}\n",
+  "stderr": "",
+  "seconds": 0.002029151888564229
+}

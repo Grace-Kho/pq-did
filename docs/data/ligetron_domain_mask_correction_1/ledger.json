@@ -1,0 +1,1417 @@
+{
+  "bookkeeping": [
+    {
+      "name": "source-math-implementation-reporting",
+      "seconds": 200,
+      "kind": "conservative operator charge, not measured wall time; includes web inspection, edits, diagnosis and final bookkeeping; charged once"
+    }
+  ],
+  "jobs": [
+    {
+      "name": "source-admission",
+      "phase": "acquire",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/acquire.py"
+      ],
+      "limit_seconds": 40,
+      "child_seconds": 39,
+      "status": "failed",
+      "unit": "pqdid-ligetron-domain-mask-1-source-admission",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 116498,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 37734281,
+        "artifact_bytes": 77419639,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3758284800,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 3.6425393000245094,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12599296",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "32116736",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 2.067675129044801,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 47570944,
+      "artifact_observed_peak_bytes": 77419639
+    },
+    {
+      "name": "static",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/tooling.py",
+        "static"
+      ],
+      "limit_seconds": 10,
+      "child_seconds": 9,
+      "status": "failed",
+      "unit": "pqdid-ligetron-domain-mask-1-static",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 588638,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 38206421,
+        "artifact_bytes": 77419639,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3742666752,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.9189608641900122,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12840960",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "29646848",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.12179481401108205,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 38100992,
+      "artifact_observed_peak_bytes": 77419639
+    },
+    {
+      "name": "static-2",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/tooling.py",
+        "static"
+      ],
+      "limit_seconds": 10,
+      "child_seconds": 9,
+      "status": "pass",
+      "unit": "pqdid-ligetron-domain-mask-1-static-2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 600269,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 38218052,
+        "artifact_bytes": 77419639,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3771252736,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.4049896418582648,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10280960",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "23592960",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.06101806880906224,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 38100992,
+      "artifact_observed_peak_bytes": 77419639
+    },
+    {
+      "name": "expectations",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/expectations.py"
+      ],
+      "limit_seconds": 10,
+      "child_seconds": 9,
+      "status": "pass",
+      "unit": "pqdid-ligetron-domain-mask-1-expectations",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 605400,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 38223183,
+        "artifact_bytes": 77419639,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3768266752,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.6045390458311886,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12832768",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "23871488",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.040764732053503394,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 36835328,
+      "artifact_observed_peak_bytes": 77419639
+    },
+    {
+      "name": "preflight",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/tooling.py",
+        "preflight"
+      ],
+      "limit_seconds": 10,
+      "child_seconds": 9,
+      "status": "failed",
+      "unit": "pqdid-ligetron-domain-mask-1-preflight",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 650009,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 38267792,
+        "artifact_bytes": 77419639,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3768664064,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.44503480684943497,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10317824",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "26718208",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.10133304097689688,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 38309888,
+      "artifact_observed_peak_bytes": 77419639
+    },
+    {
+      "name": "preflight-2",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/tooling.py",
+        "preflight"
+      ],
+      "limit_seconds": 10,
+      "child_seconds": 9,
+      "status": "pass",
+      "unit": "pqdid-ligetron-domain-mask-1-preflight-2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 656427,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 38274210,
+        "artifact_bytes": 77419639,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3772768256,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.41354095400311053,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10584064",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "20951040",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.06117896502837539,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 38678528,
+      "artifact_observed_peak_bytes": 77419639
+    },
+    {
+      "name": "build-1",
+      "phase": "build",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/build.py",
+        "1"
+      ],
+      "limit_seconds": 25,
+      "child_seconds": 24,
+      "status": "failed",
+      "unit": "pqdid-ligetron-domain-mask-1-build-1",
+      "memory_limit_bytes": 1073741824,
+      "opening_storage": {
+        "new_evidence_bytes": 733552,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 38351335,
+        "artifact_bytes": 77419639,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3771289600,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": true,
+      "seconds": 0.40521708317101,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "10321920",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "20094976",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.040627445094287395,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 17780736,
+      "artifact_observed_peak_bytes": 77419639
+    },
+    {
+      "name": "build-2",
+      "phase": "build",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/build.py",
+        "2"
+      ],
+      "limit_seconds": 25,
+      "child_seconds": 24,
+      "status": "pass",
+      "unit": "pqdid-ligetron-domain-mask-1-build-2",
+      "memory_limit_bytes": 1073741824,
+      "opening_storage": {
+        "new_evidence_bytes": 739343,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 38357126,
+        "artifact_bytes": 77419639,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3780395008,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": true,
+      "seconds": 2.1067154540214688,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "10321920",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "310411264",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 1.734740441897884,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 306360320,
+      "artifact_observed_peak_bytes": 78844567
+    },
+    {
+      "name": "native-cases",
+      "phase": "native",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/cases.py"
+      ],
+      "limit_seconds": 15,
+      "child_seconds": 14,
+      "status": "pass",
+      "unit": "pqdid-ligetron-domain-mask-1-native-cases",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 760434,
+        "new_artifact_bytes": 1424928,
+        "evidence_bytes": 38378217,
+        "artifact_bytes": 78844567,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3783446528,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.4562022688332945,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10850304",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "22925312",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.1212045019492507,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 38150144,
+      "artifact_observed_peak_bytes": 78844567
+    },
+    {
+      "name": "static-final",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/tooling.py",
+        "static"
+      ],
+      "limit_seconds": 10,
+      "child_seconds": 9,
+      "status": "pass",
+      "unit": "pqdid-ligetron-domain-mask-1-static-final",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 844180,
+        "new_artifact_bytes": 1424928,
+        "evidence_bytes": 38461963,
+        "artifact_bytes": 78844567,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3758051328,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.7142455929424614,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12800000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "29577216",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.08092843694612384,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 38219776,
+      "artifact_observed_peak_bytes": 78844567
+    },
+    {
+      "name": "prepare",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/preservation.py",
+        "prepare"
+      ],
+      "limit_seconds": 15,
+      "child_seconds": 14,
+      "status": "failed",
+      "unit": "pqdid-ligetron-domain-mask-1-prepare",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 849351,
+        "new_artifact_bytes": 1424928,
+        "evidence_bytes": 38467134,
+        "artifact_bytes": 78844567,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3772375040,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.242868122877553,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10579968",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "57675776",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.8865438278298825,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 67944448,
+      "artifact_observed_peak_bytes": 78844567
+    },
+    {
+      "name": "static-inventory",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/tooling.py",
+        "static"
+      ],
+      "limit_seconds": 10,
+      "child_seconds": 9,
+      "status": "pass",
+      "unit": "pqdid-ligetron-domain-mask-1-static-inventory",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 898494,
+        "new_artifact_bytes": 1424928,
+        "evidence_bytes": 38516277,
+        "artifact_bytes": 78844567,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3782037504,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.4287250859197229,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10321920",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "23863296",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.060963637894019485,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 53665792,
+      "artifact_observed_peak_bytes": 78844567
+    },
+    {
+      "name": "prepare-2",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/preservation.py",
+        "prepare"
+      ],
+      "limit_seconds": 15,
+      "child_seconds": 14,
+      "status": "pass",
+      "unit": "pqdid-ligetron-domain-mask-1-prepare-2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 903791,
+        "new_artifact_bytes": 1424928,
+        "evidence_bytes": 38521574,
+        "artifact_bytes": 78844567,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3776671744,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.0456903940066695,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10293248",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "49655808",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.6860466138459742,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 62750720,
+      "artifact_observed_peak_bytes": 78844567
+    },
+    {
+      "name": "full-audit",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/preservation.py",
+        "full-audit"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-ligetron-domain-mask-1-full-audit",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 917486,
+        "new_artifact_bytes": 1424928,
+        "evidence_bytes": 38535269,
+        "artifact_bytes": 78844567,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3774361600,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.787770465016365,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10309632",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "49201152",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.4445380331017077,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 60866560,
+      "artifact_observed_peak_bytes": 78844567
+    },
+    {
+      "name": "static-audit",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/tooling.py",
+        "static"
+      ],
+      "limit_seconds": 10,
+      "child_seconds": 9,
+      "status": "pass",
+      "unit": "pqdid-ligetron-domain-mask-1-static-audit",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 924297,
+        "new_artifact_bytes": 1424928,
+        "evidence_bytes": 38542080,
+        "artifact_bytes": 78844567,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3764490240,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.4263673941604793,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10321920",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "23605248",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.06102751684375107,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 38211584,
+      "artifact_observed_peak_bytes": 78844567
+    },
+    {
+      "name": "prepare-3",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/preservation.py",
+        "prepare"
+      ],
+      "limit_seconds": 15,
+      "child_seconds": 14,
+      "status": "pass",
+      "unit": "pqdid-ligetron-domain-mask-1-prepare-3",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 929660,
+        "new_artifact_bytes": 1424928,
+        "evidence_bytes": 38547443,
+        "artifact_bytes": 78844567,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3768717312,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.3823654579464346,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10543104",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "59916288",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.9893801179714501,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 72925184,
+      "artifact_observed_peak_bytes": 78844567
+    },
+    {
+      "name": "static-final-wiring",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/tooling.py",
+        "static"
+      ],
+      "limit_seconds": 10,
+      "child_seconds": 9,
+      "status": "pass",
+      "unit": "pqdid-ligetron-domain-mask-1-static-final-wiring",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 944011,
+        "new_artifact_bytes": 1424928,
+        "evidence_bytes": 38561794,
+        "artifact_bytes": 78844567,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3759788032,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.4331997681874782,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10317824",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "23670784",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.08097440400160849,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 38141952,
+      "artifact_observed_peak_bytes": 78844567
+    },
+    {
+      "name": "prepare-4",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/preservation.py",
+        "prepare"
+      ],
+      "limit_seconds": 15,
+      "child_seconds": 14,
+      "status": "pass",
+      "unit": "pqdid-ligetron-domain-mask-1-prepare-4",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 949125,
+        "new_artifact_bytes": 1424928,
+        "evidence_bytes": 38566908,
+        "artifact_bytes": 78844567,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3780489216,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.3876548719126731,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10326016",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "59781120",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.9893330310005695,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 72777728,
+      "artifact_observed_peak_bytes": 78844567
+    },
+    {
+      "name": "full-audit-2",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/preservation.py",
+        "full-audit"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-ligetron-domain-mask-1-full-audit-2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 962571,
+        "new_artifact_bytes": 1424928,
+        "evidence_bytes": 38580354,
+        "artifact_bytes": 78844567,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3781361664,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 5.77780425385572,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10567680",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "60452864",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 5.436195402871817,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 72499200,
+      "artifact_observed_peak_bytes": 78844567
+    },
+    {
+      "name": "readback",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/preservation.py",
+        "readback"
+      ],
+      "limit_seconds": 10,
+      "child_seconds": 9,
+      "status": "failed",
+      "unit": "pqdid-ligetron-domain-mask-1-readback",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 998078,
+        "new_artifact_bytes": 1424928,
+        "evidence_bytes": 38615861,
+        "artifact_bytes": 78844567,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3749212160,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 2.8045701938681304,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12840960",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "65859584",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 1.1686387569643557,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 72933376,
+      "artifact_observed_peak_bytes": 78844567
+    },
+    {
+      "name": "readback-2",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_domain_mask_correction_1/preservation.py",
+        "readback"
+      ],
+      "limit_seconds": 10,
+      "child_seconds": 9,
+      "status": "pass",
+      "unit": "pqdid-ligetron-domain-mask-1-readback-2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 1036664,
+        "new_artifact_bytes": 1424928,
+        "evidence_bytes": 38654447,
+        "artifact_bytes": 78844567,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3779932160,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.3655350080225617,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10321920",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "54665216",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.9687997680157423,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 72802304,
+      "artifact_observed_peak_bytes": 78844567
+    }
+  ],
+  "invocations": [
+    {
+      "invocation_id": "LDMC1-0001",
+      "case_id": "D-01",
+      "work_event_reservation": 1000000,
+      "ordinal": 1,
+      "cumulative_invocations": 1219,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0002",
+      "case_id": "D-02",
+      "work_event_reservation": 1000000,
+      "ordinal": 2,
+      "cumulative_invocations": 1220,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0003",
+      "case_id": "D-03",
+      "work_event_reservation": 1000000,
+      "ordinal": 3,
+      "cumulative_invocations": 1221,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0004",
+      "case_id": "D-04",
+      "work_event_reservation": 1000000,
+      "ordinal": 4,
+      "cumulative_invocations": 1222,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0005",
+      "case_id": "D-05",
+      "work_event_reservation": 1000000,
+      "ordinal": 5,
+      "cumulative_invocations": 1223,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0006",
+      "case_id": "D-06",
+      "work_event_reservation": 1000000,
+      "ordinal": 6,
+      "cumulative_invocations": 1224,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0007",
+      "case_id": "M-01",
+      "work_event_reservation": 1000000,
+      "ordinal": 7,
+      "cumulative_invocations": 1225,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0008",
+      "case_id": "M-02",
+      "work_event_reservation": 1000000,
+      "ordinal": 8,
+      "cumulative_invocations": 1226,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0009",
+      "case_id": "M-03",
+      "work_event_reservation": 1000000,
+      "ordinal": 9,
+      "cumulative_invocations": 1227,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0010",
+      "case_id": "M-04",
+      "work_event_reservation": 1000000,
+      "ordinal": 10,
+      "cumulative_invocations": 1228,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0011",
+      "case_id": "M-05",
+      "work_event_reservation": 1000000,
+      "ordinal": 11,
+      "cumulative_invocations": 1229,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0012",
+      "case_id": "M-06",
+      "work_event_reservation": 1000000,
+      "ordinal": 12,
+      "cumulative_invocations": 1230,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0013",
+      "case_id": "P-01",
+      "work_event_reservation": 1000000,
+      "ordinal": 13,
+      "cumulative_invocations": 1231,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0014",
+      "case_id": "P-02",
+      "work_event_reservation": 1000000,
+      "ordinal": 14,
+      "cumulative_invocations": 1232,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0015",
+      "case_id": "P-03",
+      "work_event_reservation": 1000000,
+      "ordinal": 15,
+      "cumulative_invocations": 1233,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0016",
+      "case_id": "P-04",
+      "work_event_reservation": 1000000,
+      "ordinal": 16,
+      "cumulative_invocations": 1234,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0017",
+      "case_id": "P-05",
+      "work_event_reservation": 1000000,
+      "ordinal": 17,
+      "cumulative_invocations": 1235,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0018",
+      "case_id": "P-06",
+      "work_event_reservation": 1000000,
+      "ordinal": 18,
+      "cumulative_invocations": 1236,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0019",
+      "case_id": "P-07",
+      "work_event_reservation": 1000000,
+      "ordinal": 19,
+      "cumulative_invocations": 1237,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0020",
+      "case_id": "P-08",
+      "work_event_reservation": 1000000,
+      "ordinal": 20,
+      "cumulative_invocations": 1238,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0021",
+      "case_id": "N-01",
+      "work_event_reservation": 1000000,
+      "ordinal": 21,
+      "cumulative_invocations": 1239,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0022",
+      "case_id": "N-02",
+      "work_event_reservation": 1000000,
+      "ordinal": 22,
+      "cumulative_invocations": 1240,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0023",
+      "case_id": "N-03",
+      "work_event_reservation": 1000000,
+      "ordinal": 23,
+      "cumulative_invocations": 1241,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0024",
+      "case_id": "N-04",
+      "work_event_reservation": 1000000,
+      "ordinal": 24,
+      "cumulative_invocations": 1242,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0025",
+      "case_id": "N-05",
+      "work_event_reservation": 1000000,
+      "ordinal": 25,
+      "cumulative_invocations": 1243,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0026",
+      "case_id": "N-06",
+      "work_event_reservation": 1000000,
+      "ordinal": 26,
+      "cumulative_invocations": 1244,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0027",
+      "case_id": "N-07",
+      "work_event_reservation": 1000000,
+      "ordinal": 27,
+      "cumulative_invocations": 1245,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0028",
+      "case_id": "N-08",
+      "work_event_reservation": 1000000,
+      "ordinal": 28,
+      "cumulative_invocations": 1246,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0029",
+      "case_id": "R-01",
+      "work_event_reservation": 1000000,
+      "ordinal": 29,
+      "cumulative_invocations": 1247,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0030",
+      "case_id": "R-02",
+      "work_event_reservation": 1000000,
+      "ordinal": 30,
+      "cumulative_invocations": 1248,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0031",
+      "case_id": "R-03",
+      "work_event_reservation": 1000000,
+      "ordinal": 31,
+      "cumulative_invocations": 1249,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    },
+    {
+      "invocation_id": "LDMC1-0032",
+      "case_id": "R-04",
+      "work_event_reservation": 1000000,
+      "ordinal": 32,
+      "cumulative_invocations": 1250,
+      "status": "pass",
+      "work_events_charged_upper_bound": 1000000
+    }
+  ],
+  "builds": [
+    "build-1",
+    "build-2"
+  ],
+  "work_events": 144593603,
+  "work_events_reserved": 0
+}

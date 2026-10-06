@@ -1,0 +1,8 @@
+{
+  "cause": "GitHub compare response includes file patches despite per_page=1; response exceeded planning estimate but stayed within 1 MiB file and unchanged enclosing evidence caps",
+  "source_target_bytes": 2100000,
+  "actual_source_bytes": 2588275,
+  "action": "No further acquisitions; use retained sources and completion allocation for documentation/audit/reporting. No source deleted or reclassified.",
+  "enclosing_resource_breach": false,
+  "reservation_admission": "No further ordinary jobs; completion only; describe acquisition estimate overrun explicitly"
+}

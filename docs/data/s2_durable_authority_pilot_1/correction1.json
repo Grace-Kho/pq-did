@@ -1,0 +1,9 @@
+{
+  "failure": "focused",
+  "cause": "Two contenders were launched before either completed admission; zero-wait SQLite can legitimately reject the second before the intended transition barrier.",
+  "correction": "Admit and pause the first child before starting/admitting the second; then release both barriers to compete for the intended transition.",
+  "resource_failure": false,
+  "reuse_passed_cases": 6,
+  "retry_unchanged_passed_cases": false,
+  "authorisation": "User expressly permits correcting demonstrated implementation defects within existing budget."
+}

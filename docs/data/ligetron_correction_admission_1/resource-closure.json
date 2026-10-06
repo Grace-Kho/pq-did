@@ -1,0 +1,148 @@
+{
+  "package": "LIGETRON-CORRECTION-AND-ADMISSION-1",
+  "status": "CPU-component-complete-private-proof-not-admitted",
+  "preparation_debit_seconds": 30,
+  "preparation_debit_applied_once": true,
+  "preparation_charge_is_conservative_not_measured": true,
+  "operator_implementation_bookkeeping_seconds": 180,
+  "operator_charge_is_conservative_not_measured": true,
+  "measured_guarded_seconds": 32.789203700609505,
+  "package_charged_seconds": 212.7892037006095,
+  "package_ceiling_seconds": 600,
+  "package_unused_seconds": 387.2107962993905,
+  "implementation_aggregate_charged_seconds": 5886.686414039812,
+  "implementation_ceiling_seconds": 6674,
+  "implementation_remaining_seconds": 787.313585960188,
+  "KYC_remaining_seconds_unchanged": 383.7084432235879,
+  "KYC_protected_reserve_seconds_unchanged": 300,
+  "outside_KYC_remaining_seconds": 403.6051427366001,
+  "analysis_remaining_seconds_unchanged": 11.510943178986167,
+  "isolation_remaining_seconds_unchanged": 250.22,
+  "fixed_cases": 35,
+  "functional_reruns": 0,
+  "cumulative_invocations": 1218,
+  "invocation_ceiling": 1229,
+  "remaining_package_corrective_slots": 4,
+  "historical_reserved_slots_untouched": 7,
+  "builds": 11,
+  "build_ceiling": 13,
+  "package_builds": 1,
+  "unused_package_build_slots": 1,
+  "audit_attempts": 1,
+  "audit_exit_code": 0,
+  "audit_guarded_seconds": 7.18745246110484,
+  "audit_cgroup_peak_bytes": 59756544,
+  "compile_cgroup_peak_bytes": 264531968,
+  "native_cgroup_peak_bytes": 23314432,
+  "resource_breaches": 0,
+  "all_units_terminated": true,
+  "temporary_bytes": 0,
+  "historical_acquisition_memory_observation_unresolved": true,
+  "work_events": 112593603,
+  "work_event_ceiling": 4294967296,
+  "work_event_charge_meaning": "One-million conservative component work-event upper bound per fixed case; not a measured native instruction count",
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1
+  },
+  "job_outcomes": [
+    {
+      "name": "source-admission",
+      "status": "pass",
+      "seconds": 1.9739385731518269,
+      "exit_code": 0
+    },
+    {
+      "name": "dependency-admission",
+      "status": "failed",
+      "seconds": 11.037874126108363,
+      "exit_code": 1
+    },
+    {
+      "name": "dependency-readback",
+      "status": "pass",
+      "seconds": 0.9480579630471766,
+      "exit_code": 0
+    },
+    {
+      "name": "static",
+      "status": "failed",
+      "seconds": 1.0171974929980934,
+      "exit_code": 1
+    },
+    {
+      "name": "static-2",
+      "status": "pass",
+      "seconds": 0.4919265238568187,
+      "exit_code": 0
+    },
+    {
+      "name": "expectations",
+      "status": "pass",
+      "seconds": 1.7392791691236198,
+      "exit_code": 0
+    },
+    {
+      "name": "preflight",
+      "status": "pass",
+      "seconds": 0.5843944281805307,
+      "exit_code": 0
+    },
+    {
+      "name": "build-1",
+      "status": "pass",
+      "seconds": 1.9064837920013815,
+      "exit_code": 0
+    },
+    {
+      "name": "native-cases",
+      "status": "pass",
+      "seconds": 0.6077981011476368,
+      "exit_code": 0
+    },
+    {
+      "name": "static-final",
+      "status": "failed",
+      "seconds": 0.9140314601827413,
+      "exit_code": 1
+    },
+    {
+      "name": "static-final-2",
+      "status": "pass",
+      "seconds": 0.5193662298843265,
+      "exit_code": 0
+    },
+    {
+      "name": "prepare",
+      "status": "pass",
+      "seconds": 1.2294104669708759,
+      "exit_code": 0
+    },
+    {
+      "name": "full-audit",
+      "status": "pass",
+      "seconds": 7.18745246110484,
+      "exit_code": 0
+    },
+    {
+      "name": "readback",
+      "status": "pass",
+      "seconds": 2.631992912851274,
+      "exit_code": 0
+    }
+  ],
+  "storage": {
+    "new_evidence_bytes": 1475498,
+    "new_artifact_bytes": 18453092,
+    "evidence_bytes": 37617783,
+    "artifact_bytes": 77419639,
+    "temporary_bytes": 0,
+    "package_evidence_ceiling_bytes": 2097152,
+    "package_artifact_ceiling_bytes": 67108864,
+    "cumulative_evidence_ceiling_bytes": 41943040,
+    "cumulative_artifact_ceiling_bytes": 134217728,
+    "shared_headroom_bytes": 3876578,
+    "shared_completion_reserve_bytes": 2097152,
+    "shared_ordinary_headroom_bytes": 1779426
+  }
+}

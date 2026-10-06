@@ -1,0 +1,144 @@
+{
+  "scope": "User-approved prospective per-file amendment only; existing handover",
+  "approved_exact_paths": {
+    "docs/data/private_proof_handover_1/binius64-g0-handover-v1.tar.xz": 2097152,
+    "docs/data/private_proof_handover_1/binius64-g0-handover-v2.tar.xz": 2097152
+  },
+  "classification": "evidence unchanged",
+  "historical_stop": {
+    "name": "package",
+    "phase": "tool",
+    "argv": [
+      "/home/grace/projects/pq-did/.venv/bin/python",
+      "-I",
+      "-B",
+      "/home/grace/projects/pq-did/docs/data/private_proof_handover_1/tools/package.py"
+    ],
+    "limit_seconds": 30,
+    "child_seconds": 29,
+    "status": "failed",
+    "unit": "pqdid-proof-handover-1-package",
+    "memory_limit_bytes": 268435456,
+    "opening_storage": {
+      "new_evidence_bytes": 67796,
+      "new_artifact_bytes": 0,
+      "evidence_bytes": 32337064,
+      "artifact_bytes": 58966547,
+      "temporary_bytes": 0
+    },
+    "available_memory": 4099014656,
+    "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+    "build": false,
+    "seconds": 1.0488998908549547,
+    "exit_code": 255,
+    "stop": "per-file evidence cap: docs/data/private_proof_handover_1/binius64-g0-handover-v1.tar.xz",
+    "worker": {
+      "before": {
+        "memory.max": "268435456",
+        "memory.swap.max": "0",
+        "memory.peak": "10358784",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+        "cpu.max": "200000 100000",
+        "pids.max": "128"
+      },
+      "after": {
+        "memory.max": "268435456",
+        "memory.swap.max": "0",
+        "memory.peak": "66174976",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+        "cpu.max": "200000 100000",
+        "pids.max": "128"
+      },
+      "child_exit_code": 1,
+      "child_seconds": 0.7061324280221015,
+      "resource_breach": false,
+      "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+    },
+    "sampled_tree_rss_peak": 80056320,
+    "artifact_observed_peak_bytes": 58966547
+  },
+  "historical_stop_sha256": "252e89ff08e867286531a786f1e695df0e06ab866537726fa238dd0f5652eccb",
+  "before_sha256": {
+    "docs/data/private_proof_handover_1/continuation-1/before-policy.json": "73aa2fc29db95b72e0905fcf030945310bae0d91b301e7f26244c678efbdc865",
+    "docs/data/private_proof_handover_1/continuation-1/before-ledger.json": "6838e940a4e5f378f2c8a1a6e87bf3b05700f21e5bccb210f29a4fb9e10c7d16",
+    "docs/data/private_proof_handover_1/continuation-1/before-resource-closure.json": "cc0414b926c78248e027e3b395d22f1ce3699930b0d54897e521b81c20afc582",
+    "docs/data/private_proof_handover_1/continuation-1/before-validation-closure.json": "29fb04635ad4403fa4064e617d126b965b62d88b2c5d141548879e8bb3e53d02",
+    "docs/data/private_proof_handover_1/continuation-1/before-archive.json": "768c3b48e01b3b4a763dd5a387b500e04fce4909ecb1909d27ad1c7cee2f55e8",
+    "docs/data/private_proof_handover_1/continuation-1/before-retained-inventory.json": "d5a805c5313a31696177471eaa276f5236ef772e23cde4842de825e512f76b77",
+    "docs/data/private_proof_handover_1/continuation-1/before-shutdown.json": "00e858ccb93f3b1315643802bbee7520a8ab94515718abcf23dd05c2755bf5f9",
+    "docs/data/private_proof_handover_1/continuation-1/before-tools--run.py": "5593f00c632d2654901bfe81045ff8a23b98cfa5e1be19354dde3a8c929512d9",
+    "docs/data/private_proof_handover_1/continuation-1/before-tools--preservation.py": "057fca7072b9e547aa7ff20e650384a0d8efd0dbdbb5277c621142e90438526b"
+  },
+  "opening_resources": {
+    "package": "PRIVATE-PROOF-HANDOVER-1",
+    "status": "incomplete-resource-stop",
+    "package_charged_seconds": 191.87227747915313,
+    "implementation_aggregate_charged_seconds": 5155.269825356199,
+    "implementation_remaining_seconds": 918.7301746438006,
+    "workstream_total_charged_seconds": 2948.497439276338,
+    "workstream_remaining_seconds": 551.5025607236621,
+    "implementation_ceiling_seconds": 6074,
+    "workstream_cap_seconds": 3500,
+    "guarded_job_seconds": 1.8317242530174553,
+    "bookkeeping_seconds": 190.04055322613567,
+    "cumulative_invocations": 1140,
+    "remaining_invocations": 6,
+    "new_invocations": 0,
+    "cumulative_builds": 10,
+    "new_builds": 0,
+    "proof_ledger": {
+      "used": 2,
+      "unused": 1
+    },
+    "proofs": 0,
+    "phase_memory_peak_bytes": 66174976,
+    "memory_metric": "cgroup-v2 worker and descendants/cache/kernel; 256 MiB ceiling",
+    "per_file_breach": {
+      "status": "incomplete-resource-stop",
+      "archive": "/home/grace/projects/pq-did/docs/data/private_proof_handover_1/binius64-g0-handover-v1.tar.xz",
+      "bytes": 1065684,
+      "sha256": "17a0ac8fd32038e6530254e4cd27610c8a76e76aba53f446986e435845262f8e",
+      "per_file_limit": 1048576,
+      "exceedance_bytes": 17108,
+      "readback_passed": false,
+      "archive_completeness": "Unverified; creation stopped before the member/hash readback. Do not present as upload-ready.",
+      "automatic_retry": false,
+      "classification": "evidence; unchanged",
+      "integrity_of_prior_sources": "Pre-edit predecessor seal checks and pinned-source byte/blob checks passed; full final audit not launched",
+      "guard_job": "jobs/package.json"
+    },
+    "time_reserve_seconds": 300,
+    "evidence_reserve_bytes": 2097152,
+    "analysis_balance_unchanged_seconds": 80.91750274339225,
+    "isolation_unchanged": true,
+    "storage": {
+      "new_evidence_bytes": 1303660,
+      "evidence_bytes": 33572928,
+      "artifact_bytes": 58966547,
+      "temporary_bytes": 0
+    },
+    "shared_evidence_remaining_bytes": 7921433,
+    "cumulative_evidence_remaining_bytes": 8370112
+  },
+  "source_file_list_sha256": "6ef6c01ed06e515096524d3087fa2d4ed0c267beb59fe65bbca734c7d9e1f5ad",
+  "payload_sums_sha256": "3f37a8d161a5b23649512aa7a5300af30cf9f21c3155f5c7656999690df2742b",
+  "v1_identity": {
+    "status": "incomplete-resource-stop",
+    "archive": "/home/grace/projects/pq-did/docs/data/private_proof_handover_1/binius64-g0-handover-v1.tar.xz",
+    "bytes": 1065684,
+    "sha256": "17a0ac8fd32038e6530254e4cd27610c8a76e76aba53f446986e435845262f8e",
+    "per_file_limit": 1048576,
+    "exceedance_bytes": 17108,
+    "readback_passed": false,
+    "archive_completeness": "Unverified; creation stopped before the member/hash readback. Do not present as upload-ready.",
+    "automatic_retry": false,
+    "classification": "evidence; unchanged",
+    "integrity_of_prior_sources": "Pre-edit predecessor seal checks and pinned-source byte/blob checks passed; full final audit not launched",
+    "guard_job": "jobs/package.json"
+  },
+  "reserves": {
+    "seconds": 300,
+    "evidence_bytes": 2097152
+  },
+  "repack_only_if_interrupted": true
+}

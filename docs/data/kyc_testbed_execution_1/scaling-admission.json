@@ -1,0 +1,18 @@
+{
+  "method": "Source and exact size lower bound, not a trial",
+  "checkpoint_payload_cap_bytes": 65536,
+  "public_update_record_bytes": 11162,
+  "eight_record_bytes": 89328,
+  "source": [
+    "src/pqdid/persistence/codec.py",
+    "src/pqdid/recovery_records.py",
+    "src/pqdid/witness_updates.py"
+  ],
+  "unrun": [
+    "R-1-8",
+    "R-2-8"
+  ],
+  "reason": "Eight retained records alone exceed the current complete manager checkpoint cap, before framing/base/state. No limit or storage-design change authorised/attempted.",
+  "four_records_lower_bound_bytes": 44648,
+  "one_and_four": "Admitted bounded measurements; lower bound is not itself proof of fit"
+}

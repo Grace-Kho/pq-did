@@ -1,0 +1,74 @@
+# Project-local environments, tools and native artefacts
+.venv/
+.tools/
+.cache/
+native/.deps/
+native/build/
+build/
+dist/
+*.egg-info/
+
+# Python and editor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.vscode/*.log
+
+# Local secrets and generated research artefacts
+.env
+.env.*
+!.env.example
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+artifacts/
+tmp/
+*.tmp
+*.log
+core
+core.*
+.git.invalid-backup/
+
+# Local/server environments
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.cache/
+
+# Build artefacts
+build/
+dist/
+target/
+
+# Local/server environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.cache/
+.git.invalid-backup/
+
+# Native generated dependencies/builds
+native/build/
+native/.deps/
+
+# RISC Zero downloaded toolchains and build outputs
+experiments/r0_*/target/
+experiments/r0_*/tooling/
+
+# Aurora generated dependency/build trees
+experiments/aurora_*/build/
+experiments/aurora_*/work/
+experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/
+
+# Ligetron downloaded/installed dependencies
+experiments/ligetron_*/downloads/
+experiments/ligetron_*/prefix/

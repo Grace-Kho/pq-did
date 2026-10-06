@@ -1,0 +1,14 @@
+{
+  "first_job": "static",
+  "diagnostics": [
+    "E402 after automatic import splitting",
+    "two E501 long strings"
+  ],
+  "correction": "explicit import annotation and adjacent literal wrapping preserve runtime strings",
+  "second_job": "static-2",
+  "status": "pass",
+  "patch_changed": false,
+  "unrelated_read_only_diagnostic": "git status returned128: working directory has no Git repository metadata; patch applicability uses git apply --check without a repository",
+  "functional_invocations": 0,
+  "builds": 0
+}

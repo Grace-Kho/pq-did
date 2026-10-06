@@ -1,0 +1,32 @@
+{
+  "before": {
+    "memory.max": "2147483648",
+    "memory.swap.max": "0",
+    "memory.peak": "6586368",
+    "memory.current": "6537216",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "available_before_target": 5213204480,
+  "external_routes": 0,
+  "target_started": true,
+  "command": [
+    "/home/grace/projects/pq-did/experiments/r0_credvalid_exec24_1/target/release/pqdid-r0-host",
+    "run",
+    "negative"
+  ],
+  "after": {
+    "memory.max": "2147483648",
+    "memory.swap.max": "0",
+    "memory.peak": "48345088",
+    "memory.current": "7761920",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "exit_code": 0,
+  "largest_child_ru_maxrss_bytes": 49680384,
+  "ru_maxrss_note": "largest child high-water RSS, not aggregate tree RSS",
+  "temporary_bytes_at_exit": 0
+}

@@ -1,0 +1,8 @@
+{
+  "reason": "reference and guard initially shared an output basename; both records retained separately before slot two",
+  "reference_recovered_from": "negative-reference.log",
+  "resource_record_preserved_as": "negative-reference-resource.json",
+  "resource_SHA256": "f23acb2ff5cb6ba771a1068a37cafc63eca8a8e96b39573e4a425c194ebfa694",
+  "native_reference_rerun": false,
+  "zkvm_execution_rerun": false
+}

@@ -1,0 +1,78 @@
+**Yes—proceed with S3-OUTER-ORACLE-COMPOSITION-1**, with a clear endpoint: either a justified composition argument or precisely stated missing lemmas.
+
+The cited theorem concerns a sponge built from a random permutation. Applying it to your protocol requires checking the oracle access available to the extractor and privacy simulator. It does not directly establish security for concrete Keccak. ([arxiv.org][1])
+
+Based on your report, SHAKE256 can remain the qualified research reference. Once this bounded review records the remaining obligations, the next implementation priority should be bounded ML-DSA key generation/signing.
+
+Paste this into Codex:
+
+Proceed with **S3-OUTER-ORACLE-COMPOSITION-1** in `/home/grace/projects/pq-did`.
+
+Complete a bounded review of whether the existing extraction and privacy arguments compose with the selected outer-hash model. A precise finding that an additional theorem is required is an acceptable completed outcome. Do not manufacture a composition argument to close the issue.
+
+1. **Use the current authority and evidence.**
+
+   Only manuscript Sections II–VIII, agreed clarifications and the current implementation specification are authoritative. Reuse the concrete-security assessment and outer-hash review, including their encodings, query mappings and calculations.
+
+   Keep the manuscript BC-1 construction, implemented reference components and experimental RISC Zero evidence separate.
+
+2. **Define the exact shared-oracle games.**
+
+   Identify the real and ideal interfaces available to the adversary, honest parties, online extractor, privacy simulator and sponge simulator. Distinguish classical queries, quantum queries, permutation/inverse access, oracle programming and access to internal oracle state.
+
+   Account for commitment and challenge hashing, shared SHAKE uses, and other components using the same underlying Keccak permutation. Check whether the existing domain encodings support the independence assumptions actually needed.
+
+   For hashing inside the credential/authentication relation, state whether each game treats it as fixed executable circuitry or as oracle access. Check that this treatment fits the cited relation and extraction definitions.
+
+   Do not silently replace shared interfaces with independent random oracles.
+
+3. **Check extraction and privacy separately.**
+
+   For extraction, map the manuscript’s cited commit-and-open theorem to the proposed game. Check its quantifiers, extractor access, success guarantee, runtime and query overhead. Identify any use of compressed-oracle state or other capabilities not supplied by ordinary oracle access.
+
+   For privacy, map the actual simulation and adaptive-reprogramming argument, preserving the corruption, disclosure and session restrictions in Section VI. Check consistency with commitments, challenges and other users of the shared oracle.
+
+   Distinguish the sponge simulator from the protocol’s privacy simulator. Explain how they compose if the sources support it; otherwise state the missing compatibility lemma.
+
+4. **Justify every transition and resource bound.**
+
+   Use the actual statements and hypotheses of the cited primary sources, including Theorem 7.22 of [The Sponge is Quantum Indifferentiable, version 2](https://arxiv.org/html/2504.16887v2).
+
+   For each proposed game transition, record:
+
+   * The source theorem or explicitly stated additional assumption.
+   * The interfaces and security property it covers.
+   * The relevant query, input-length and runtime budgets, including reduction overhead.
+   * Any unresolved condition.
+
+   Do not automatically add an indifferentiability error to the existing extraction or privacy bounds. First establish that the relevant experiment and simulator/extractor fit the theorem.
+
+   Keep unknown constants and unresolved terms symbolic. Preserve the distinction between an ideal-permutation result and assumptions about concrete Keccak. Do not assign an overall classical or quantum security number.
+
+5. **Produce a finite decision.**
+
+   Create `docs/stage3_outer_oracle_composition.md` containing the game definitions, theorem-applicability table, justified argument steps and exact remaining obligations.
+
+   Classify each intended claim as:
+
+   * Supported under the stated model and cited results.
+   * Conditional on an explicitly named additional assumption.
+   * Unresolved because a specified lemma or construction is missing.
+
+   If an obligation remains unresolved, state the narrowest claim currently supportable and the exact work needed to strengthen it. Identify what reference implementation can continue while that obligation remains open.
+
+   Update status, traceability and issues. Recommend one concrete next implementation package, prioritising bounded ML-DSA key generation/signing and its existing tail-validation obligations where appropriate. Do not automatically start another review or implementation package.
+
+6. **Preserve the existing limits and state.**
+
+   Use the remaining analysis allowance, last reported as **278.04 seconds**, according to the existing accounting rules. Preserve all resource ceilings and stop conditions, including the **256 MiB preservation-audit ceiling**. Do not reset allowances or borrow from the isolation budget.
+
+   Reuse completed validation. Perform only checks needed for newly introduced calculations or documentation consistency and the required preservation audit.
+
+   Preserve production code, active parameters, dependencies, manuscript and historical evidence. This package authorises no installations, host activation, circuits, estimator runs, proofs or zkVM executions.
+
+   Isolation remains safely stopped and unactivated. Stages 2–3 remain open. The proof ledger remains **two attempts used, one unused**.
+
+Finish with the supported claims, unresolved obligations, resource consumption and the recommended next implementation package.
+
+[1]: https://arxiv.org/html/2504.16887v2?utm_source=chatgpt.com "The Sponge is Quantum Indifferentiable"

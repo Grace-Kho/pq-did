@@ -1,0 +1,19 @@
+{
+  "package": "S2-AUTHORITY-ISOLATION-PLAN-1",
+  "complete": true,
+  "scope": "Post-guard documentation/new-output finalisation only; no repeated historical content scan",
+  "full_audit_passed": true,
+  "local_links_checked": 353,
+  "exact_new_paths_authorised": true,
+  "source_or_templates_changed_after_final_validation": false,
+  "host_accounts_or_permissions_changed": false,
+  "deployment_activated": false,
+  "functional_tests_run": 0,
+  "actual_identity_tests_run": 0,
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1,
+  "CPU_proving_paused": true,
+  "stages_2_3_complete": false
+}

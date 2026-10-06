@@ -1,0 +1,33 @@
+{
+  "invocation_id": "M1-0418",
+  "case_id": "TR-16",
+  "ordinal": 418,
+  "cumulative_invocations": 866,
+  "status": "pass",
+  "result": {
+    "id": "TR-16",
+    "command": [
+      "/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/build/exp2_native",
+      "16",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+    ],
+    "exit_code": 0,
+    "seconds": 0.0007490279385820031,
+    "stdout": "L 88072d672ed11bfad76b5f998176dff32231a797b73dc4fd7b4a852db6bf12dd4db6bbf300d54b8bf171bcccf37dff11396a201a222e4547e848e9e15b72b486 d70da509e88740821f43c6f957af54e7f35f72fad45bd5f068727b37e81be4f7c4cf9b399d52995c60d43b6aa897241a34fabc67c10f67dbbc04aa2c5648bb18 1b98d7b99dadb8bb46f7615d119c90a4bdc48bec9b55bc188f4de36a8e7b96fd396aed16fc9e782f49f2682a788215f3b105400c38d8a4eb8d1c3e6ad5fc2b16\n",
+    "stderr": "",
+    "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+    "expected_path": "docs/data/s3_aurora_transcript_regression_1/TR-16.json",
+    "expected_sha256": "f38a070fc085de533603c7f920b2265c94998ec1b7c8d4e4c19d6ae9ebb5cee1",
+    "private_witness": false,
+    "proof_attempt": false,
+    "comparison": {
+      "original_omission_control": true,
+      "forgery_experiment": false
+    },
+    "actual_calls": [
+      "blake2b_hashchain::legacy absorb negative control"
+    ],
+    "status": "pass"
+  },
+  "seconds": 0.0015617129392921925
+}

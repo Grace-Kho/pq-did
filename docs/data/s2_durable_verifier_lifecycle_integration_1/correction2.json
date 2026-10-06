@@ -1,0 +1,32 @@
+{
+  "failure": "boundaries",
+  "cause": "Concurrent identical request returns one ACCEPTED and one CONSUMED through exact operation replay; test incorrectly expected generic FAILURE. Tombstone count one; implementation unchanged.",
+  "change": "Assert exact CONSUMED outcome. One justified repeat, remaining six uninvoked cases. No automatic replay of five passed cases.",
+  "evidence": {
+    "boundaries.xml": "9f445fd2b79da5fdfd521ffead034defbf776f9974678ba5bc18286ca0236b6c",
+    "boundaries.log": "2d582f21bd6a38812e3f99a73b439258df8474354b4190ce35569b22f9df878f",
+    "boundaries.json": "906b1068aa803dad14f81345c66584af6dcca814a47e58b40a9d6fcc50e0f65b",
+    "test-before-correction2.txt": "2ffa9120ca4cd9ab90444bfb60f204cd0e59c49a87f46087a5ac036b915e2a2a",
+    "config-before-correction2.json": "feab089116885153cac7037559edc25d71c7e530f2cdce8ef1d29d7735b710b7",
+    "guard-before-correction2.txt": "2d43ff572ec606b3f8b6e0ddd8fccd29a666d2b8c192d47733ac3443910aa30a"
+  },
+  "permitted_followups": [
+    "boundaries-remainder",
+    "final-source-format",
+    "quality",
+    "format",
+    "prepare",
+    "full-audit"
+  ],
+  "test_counts": {
+    "historical": 145,
+    "focused": 7,
+    "focused-remainder": 6,
+    "boundaries": 6,
+    "boundaries-remainder": 7,
+    "cumulative": 171,
+    "remaining": 1
+  },
+  "automatic_retry": false,
+  "resource_limits_changed": false
+}

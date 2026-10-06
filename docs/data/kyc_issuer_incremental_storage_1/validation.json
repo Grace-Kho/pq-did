@@ -1,0 +1,329 @@
+{
+  "package": "KYC-ISSUER-INCREMENTAL-STORAGE-1",
+  "passed": true,
+  "comparison_complete": true,
+  "resource_guard_status": "pending-outer-finalisation",
+  "protected_files": 8759,
+  "unchanged_protected_files": 8756,
+  "allowed_changed_files": [
+    "docs/spec_issues.md",
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "changed_files": [],
+  "missing_files": [],
+  "bytes_hashed": 294175066,
+  "coverage_sha256": "73df29e985aad1544583a3700a7cdbf83f2c3bfbfcde6c43720fb8a2d7c772fc",
+  "supplementary_comparison": {
+    "protected_files": 2142,
+    "unchanged_protected_files": 2142,
+    "allowed_changed_files": [],
+    "changed_files": [],
+    "missing_files": [],
+    "bytes_hashed": 18466092,
+    "coverage_sha256": "ff333fcc890013538c72a3edb234821a10aebeec68f561387dc3a2a6429fa1cf"
+  },
+  "content_partition_union": 10901,
+  "content_partition_overlap": 0,
+  "identity_inclusive_unique_paths": 10936,
+  "name_inventory": {
+    "passed": true,
+    "count": 11836,
+    "unexpected": [],
+    "missing": [],
+    "partitions": [
+      {
+        "root": "src",
+        "passed": true,
+        "count": 84,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 84
+      },
+      {
+        "root": "tests",
+        "passed": true,
+        "count": 154,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 154
+      },
+      {
+        "root": "scripts",
+        "passed": true,
+        "count": 51,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 51
+      },
+      {
+        "root": "configs",
+        "passed": true,
+        "count": 3,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 3
+      },
+      {
+        "root": "docs",
+        "passed": true,
+        "count": 5534,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 5520
+      },
+      {
+        "root": "analysis",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/private_hint_lowering_1",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/mldsa_modmul_lowering_1",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/mldsa_butterfly_composition_1",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/mldsa_forward_ntt_stage_1",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/mldsa_full_forward_ntt_1",
+        "passed": true,
+        "count": 3,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 3
+      },
+      {
+        "root": "experiments/aurora_transcript_regression_1",
+        "passed": true,
+        "count": 4,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 4
+      },
+      {
+        "root": "experiments/aurora_native_transcript_pilot_1",
+        "passed": true,
+        "count": 4884,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 4884
+      },
+      {
+        "root": "experiments/kyc_milestone_1",
+        "passed": true,
+        "count": 15,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 15
+      },
+      {
+        "root": "experiments/aurora_masking_milestone_1",
+        "passed": true,
+        "count": 975,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 975
+      },
+      {
+        "root": "benchmarks",
+        "passed": true,
+        "count": 11,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 11
+      },
+      {
+        "root": "experiments/auth_relation_integration_1",
+        "passed": true,
+        "count": 43,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 43
+      },
+      {
+        "root": "experiments/compact_auth_representation_1",
+        "passed": true,
+        "count": 10,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 10
+      },
+      {
+        "root": "experiments/arithmetic_r1cs_feasibility_1",
+        "passed": true,
+        "count": 7,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 7
+      },
+      {
+        "root": "experiments/joint_hash_masking_decision_1",
+        "passed": true,
+        "count": 7,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 7
+      },
+      {
+        "root": "experiments/implementation_consolidation_1",
+        "passed": true,
+        "count": 6,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 6
+      },
+      {
+        "root": "experiments/binius64_replacement_decision_1",
+        "passed": true,
+        "count": 6,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 6
+      },
+      {
+        "root": "experiments/binius64_g0_1",
+        "passed": true,
+        "count": 4,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 4
+      },
+      {
+        "root": "experiments/kyc_testbed_completion_1",
+        "passed": true,
+        "count": 5,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 5
+      },
+      {
+        "root": "experiments/kyc_testbed_execution_1",
+        "passed": true,
+        "count": 13,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 13
+      },
+      {
+        "root": "experiments/kyc_issuer_incremental_storage_1",
+        "passed": true,
+        "count": 7,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 7
+      }
+    ],
+    "expected_union_count": 11822,
+    "expected_total_count": 11822,
+    "partition_overlap": 0,
+    "entry_ceiling_per_partition_unchanged": 10000
+  },
+  "only_existing_changes": [
+    "docs/status.md",
+    "docs/traceability.md",
+    "docs/spec_issues.md",
+    "docs/stage3_aurora_native_dependency_lock.md",
+    "docs/stage3_aurora_native_transcript_pilot.md",
+    "docs/stage3_aurora_compiler_compatibility_contract.md",
+    "docs/stage2_mldsa_reference_baseline.md",
+    "docs/stage3_aurora_masking_native.md",
+    "docs/kyc_milestone_benchmarks.md",
+    "docs/oct31_kyc_native_milestone.md",
+    "docs/kyc_testbed_completion.md"
+  ],
+  "existing_report_prefixes_preserved": true,
+  "baseline_regenerated": false,
+  "test_invocations": {
+    "S-01": 1,
+    "S-02": 1,
+    "S-03": 1,
+    "S-04": 1,
+    "S-05": 1,
+    "S-06": 1,
+    "S-07": 1,
+    "S-08": 1,
+    "S-09": 1,
+    "S-10": 1,
+    "S-11": 1,
+    "S-12": 1,
+    "S-13": 1,
+    "S-14": 1,
+    "S-15": 1,
+    "S-16": 1,
+    "S-17": 1,
+    "S-18": 1,
+    "S-19": 1,
+    "S-20": 1,
+    "S-21": 1,
+    "S-22": 1,
+    "S-23": 1,
+    "S-24": 1,
+    "S-25": 1,
+    "S-26": 1,
+    "S-27": 1,
+    "S-28": 1,
+    "S-29": 1,
+    "S-30": 1,
+    "S-31": 1,
+    "S-32": 1,
+    "I-01": 1,
+    "I-02": 1,
+    "I-03": 1,
+    "I-04": 1,
+    "I-05": 1,
+    "I-06": 1,
+    "I-07": 1,
+    "I-08": 1,
+    "S-33": 1,
+    "S-34": 1,
+    "S-35": 1,
+    "R-1-4": 1,
+    "R-2-1": 1,
+    "R-2-4": 1
+  },
+  "unique_new_tests": 46,
+  "total_test_invocations_including_prior_package": 1091,
+  "new_execution_calculations": 0,
+  "source_review": "Approved backend-independent KYC implementation and baseline measurements; no proofs",
+  "scoped_existing_verifier_regressions": 0,
+  "implementation_remaining_including_audit_reservation": 2096.2940810407727,
+  "isolation_allowance_remaining_unchanged": 250.22,
+  "local_links_checked": 1824,
+  "package_bytes_before_report": 321263,
+  "temporary_storage_bytes": 0,
+  "charged_seconds_including_inflight_audit_reservation": 3977.7059189592273,
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "estimator_runs": 0,
+  "activation": false,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1
+}

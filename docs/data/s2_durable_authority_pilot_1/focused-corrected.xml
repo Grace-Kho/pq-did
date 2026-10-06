@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="4" time="1.773" timestamp="2026-09-19T18:50:42.623633+08:00" hostname="DTC-4CE630BQSC"><testcase classname="tests.integration.test_durable_authority" name="test_two_process_contenders[reserve]" time="0.653" /><testcase classname="tests.integration.test_durable_authority" name="test_two_process_contenders[replace]" time="0.367" /><testcase classname="tests.integration.test_durable_authority" name="test_superseded_process_commit_and_busy" time="0.486" /><testcase classname="tests.integration.test_durable_authority" name="test_verifier_consumption_crash_and_restart[rows-before-commit]" time="0.162"><failure message="AssertionError: Traceback (most recent call last):&#10;    File &quot;/home/grace/projects/pq-did/tests/integration/durable_worker.py&quot;, line 275, in &lt;module&gt;&#10;      main()&#10;      ~~~~^^&#10;    File &quot;/home/grace/projects/pq-did/tests/integration/durable_worker.py&quot;, line 244, in main&#10;      result = {&quot;decision&quot;: verify(root, role).value}&#10;                            ~~~~~~^^^^^^^^^^^^&#10;    File &quot;/home/grace/projects/pq-did/tests/integration/durable_worker.py&quot;, line 197, in verify&#10;      return owner.verify(&#10;             ~~~~~~~~~~~~^&#10;          session=context.session,&#10;          ^^^^^^^^^^^^^^^^^^^^^^^^&#10;          context=context,&#10;          ^^^^^^^^^^^^^^^^&#10;          presentation=Presentation(fixture[1], fixture[2], fixture[3]),&#10;          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&#10;      )&#10;      ^&#10;    File &quot;/home/grace/projects/pq-did/src/pqdid/persistence/lifecycle.py&quot;, line 177, in verify&#10;      verifier = ReferenceVerifier(&#10;          self._store.key.parameters,&#10;      ...&lt;7 lines&gt;...&#10;          proof_byte_limit=deps.proof_byte_limit,&#10;      )&#10;  TypeError: ReferenceVerifier.__init__() takes 1 positional argument but 4 positional arguments (and 6 keyword-only arguments) were given&#10;  &#10;assert ''">tests/integration/test_durable_authority.py:316: in test_verifier_consumption_crash_and_restart
+    case.crash("verify", "verifier0", point)
+tests/integration/test_durable_authority.py:154: in crash
+    barrier = self.line(process)
+              ^^^^^^^^^^^^^^^^^^
+tests/integration/test_durable_authority.py:116: in line
+    assert line, process.stderr.read(8192)
+E   AssertionError: Traceback (most recent call last):
+E       File "/home/grace/projects/pq-did/tests/integration/durable_worker.py", line 275, in &lt;module&gt;
+E         main()
+E         ~~~~^^
+E       File "/home/grace/projects/pq-did/tests/integration/durable_worker.py", line 244, in main
+E         result = {"decision": verify(root, role).value}
+E                               ~~~~~~^^^^^^^^^^^^
+E       File "/home/grace/projects/pq-did/tests/integration/durable_worker.py", line 197, in verify
+E         return owner.verify(
+E                ~~~~~~~~~~~~^
+E             session=context.session,
+E             ^^^^^^^^^^^^^^^^^^^^^^^^
+E             context=context,
+E             ^^^^^^^^^^^^^^^^
+E             presentation=Presentation(fixture[1], fixture[2], fixture[3]),
+E             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E         )
+E         ^
+E       File "/home/grace/projects/pq-did/src/pqdid/persistence/lifecycle.py", line 177, in verify
+E         verifier = ReferenceVerifier(
+E             self._store.key.parameters,
+E         ...&lt;7 lines&gt;...
+E             proof_byte_limit=deps.proof_byte_limit,
+E         )
+E     TypeError: ReferenceVerifier.__init__() takes 1 positional argument but 4 positional arguments (and 6 keyword-only arguments) were given
+E     
+E   assert ''</failure></testcase></testsuite></testsuites>

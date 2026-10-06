@@ -1,0 +1,39 @@
+{
+  "status": "inactive-contract-only-no-trace-hashes-computed",
+  "public_statement_fixture": "docs/data/s2_kyc_interoperability_contract_1/examples/presentation-a.json:body.statement",
+  "trusted_parameters_fixture": "docs/data/s2_kyc_interoperability_contract_1/examples/instance.json:body.parameters",
+  "fixture_identity_source": "reviewed-inputs.json",
+  "parameter_bytes_ASCII": "PUBLIC-HARNESS;F=2^192;rho=1/8;eta=1;pow=0;not-an-IOP",
+  "relation_bytes_ASCII": "PUBLIC-TRANSCRIPT-HARNESS-NOT-AUTHENTICATION",
+  "root_a": "00 repeated 64 bytes",
+  "root_b": "01 repeated 64 bytes",
+  "field_a": "02 repeated 24 bytes",
+  "field_b": "03 repeated 24 bytes",
+  "plan": [
+    {"round": 0, "root_count": 2, "message_field_counts": [1, 1], "challenges": [{"id": 0, "kind": 1, "width": 192}, {"id": 1, "kind": 2, "width": 8}, {"id": 2, "kind": 2, "width": 0}]},
+    {"round": 1, "root_count": 0, "message_field_counts": [0], "challenges": [{"id": 0, "kind": 1, "width": 192}]},
+    {"round": 2, "root_count": 0, "message_field_counts": [], "challenges": []}
+  ],
+  "independent_expected_trace": "Straight-line expansion in report, using direct integer/byte concatenation and existing hashlib BLAKE2b. No candidate framing, schedule, state or challenge helpers imported.",
+  "cases": [
+    {"id": "TR-01", "case": "baseline complete trace, including empty scheduled records, four challenges and legal absorb after squeeze", "expected": "exact independent preimages/states/blocks/mapped outputs and prover/verifier agreement", "executed": false},
+    {"id": "TR-02", "case": "fresh second baseline run, counted repeat", "expected": "byte-identical trace to TR-01; no random seed or timestamp input", "executed": false},
+    {"id": "TR-03", "case": "typed public context nonce first byte XOR1, re-encode unchanged remaining fields", "expected": "new exact oracle trace; compare complete states, not require every mapped challenge to differ", "executed": false},
+    {"id": "TR-04", "case": "root_a last byte XOR1", "expected": "first divergence at R0 frame/state, initial state unchanged, match independent trace", "executed": false},
+    {"id": "TR-05", "case": "field_a last byte XOR1", "expected": "first divergence at R0 frame/state, match independent trace", "executed": false},
+    {"id": "TR-06", "case": "submit round1 before round0", "expected": "reject before hashing/partial state update; object FAILED", "executed": false},
+    {"id": "TR-07", "case": "swap the two one-field R0 messages", "expected": "valid shape, altered ordered frame, exact independent trace", "executed": false},
+    {"id": "TR-08", "case": "second trusted harness plan uses one two-field R0 message rather than two one-field messages", "expected": "different PLAN/PID and message boundary framing despite same concatenated field bytes; independent trace", "executed": false},
+    {"id": "TR-09", "case": "empty canonical statement byte input to typed adapter", "expected": "structural rejection; no initial state or challenge", "executed": false},
+    {"id": "TR-10", "case": "root_a truncated to63 bytes", "expected": "reject before R0 update, FAILED, no challenge returned", "executed": false},
+    {"id": "TR-11", "case": "field_a truncated to23 bytes", "expected": "reject before R0 update, FAILED, no challenge returned", "executed": false},
+    {"id": "TR-12", "case": "request transcript version1", "expected": "reject before initialisation; no compatibility fallback", "executed": false},
+    {"id": "TR-13", "case": "after R0 challenge0, attempt R1 before remaining two R0 challenges", "expected": "reject atomically, no hash or counter/state advance, FAILED", "executed": false},
+    {"id": "TR-14", "case": "request challenge1 before challenge0", "expected": "reject before block generation; no returned challenge, FAILED", "executed": false},
+    {"id": "TR-15", "case": "append a fourth round after valid finish", "expected": "reject extra data and subsequent calls; no success interpretation as proof", "executed": false},
+    {"id": "TR-16", "case": "isolated old omission equation and length-only repair for two64-byte digests", "expected": "OLD(S,00^64)==OLD(S,01^64)==H(S); repaired preimages include full128 bytes and outputs equal independent H(S||u); source equation model, not native build or forgery", "executed": false}
+  ],
+  "counted_invocations_if_all_run": 16,
+  "current_invocations_consumed": 0,
+  "hash_values_evaluated_in_this_contract": false
+}

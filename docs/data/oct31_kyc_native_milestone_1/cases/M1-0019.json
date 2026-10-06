@@ -1,0 +1,38 @@
+{
+  "invocation_id": "M1-0019",
+  "case_id": "N-01",
+  "ordinal": 19,
+  "cumulative_invocations": 467,
+  "status": "pass",
+  "result": {
+    "id": "N-01",
+    "command": [
+      "/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/build/aurora_masking_native",
+      "1"
+    ],
+    "exit_code": 0,
+    "seconds": 0.0035464540123939514,
+    "stdout": "VALUE field-products 000000000000000000000000000000000000000000000087 000000000000000000000000000000000000000000000087 8877665544332211ffeeddccbbaa00990123456789abcdef\nPATH libff::gf192::operator*;to_words;from_words\nPASS N-01\n",
+    "stderr": "",
+    "binary_sha256": "21342215c0397c6f2c987ad86ab921bc00ee2ecbbe3c576b04588905e2dd5bdb",
+    "expected_path": "experiments/aurora_masking_milestone_1/overlay/masking_native.cpp",
+    "expected_sha256": "1afa2ca145a3649c90c20fdd53ae71d177007e15246024a2a5b70a6829d27d6a",
+    "private_witness": false,
+    "proof_attempt": false,
+    "comparison": {
+      "modulus": "0x1000000000000000000000000000000000000000000000087",
+      "frobenius192_equals_x": true,
+      "gcd_checks": {
+        "64": 1,
+        "96": 1
+      }
+    },
+    "actual_calls": [
+      "libff::gf192::operator*",
+      "to_words",
+      "from_words"
+    ],
+    "status": "pass"
+  },
+  "seconds": 0.011507855961099267
+}

@@ -1,0 +1,44 @@
+# STAGED: activation requires explicit user approval.
+[Unit]
+ConditionPathExists=!/run/pqiso-stop
+Description=PQ-DID proposed trusted owner %i
+ConditionPathExists=/etc/pqiso/ACTIVATION-AUTHORISED
+[Service]
+Type=exec
+User=pqiso-o-%i
+Group=pqiso-o-%i
+Slice=pqiso.slice
+CPUAffinity=0 1
+Delegate=no
+ProtectControlGroups=yes
+UMask=0077
+WorkingDirectory=/opt/pqiso/r1
+LoadCredential=auth:/etc/pqiso/credentials/owner-%i.bin
+ExecStartPre=/usr/bin/python3.14 -I -B /opt/pqiso/r1/preflight.py owner %i %d
+ExecStart=/usr/bin/env -i PATH=/usr/bin:/bin LANG=C.UTF-8 /opt/pqiso/r1/.venv/bin/python -I -B /opt/pqiso/r1/owner_entry.py --owner %i --policy /etc/pqiso/owners/%i/policy.json --credentials-directory %d
+Restart=no
+RuntimeMaxSec=20
+TimeoutStartSec=5
+TimeoutStopSec=1
+KillMode=control-group
+OOMPolicy=kill
+NoNewPrivileges=yes
+CapabilityBoundingSet=
+AmbientCapabilities=
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+PrivateNetwork=yes
+RestrictAddressFamilies=AF_UNIX
+ProtectProc=invisible
+ProcSubset=pid
+RestrictSUIDSGID=yes
+LockPersonality=yes
+LimitCORE=0
+LimitFSIZE=1048576
+FileDescriptorStoreMax=0
+StandardInput=null
+StandardOutput=journal
+StandardError=journal
+ReadWritePaths=/var/lib/pqiso/stores/%i /run/pqiso/%i

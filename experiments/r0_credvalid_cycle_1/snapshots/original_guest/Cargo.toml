@@ -1,0 +1,21 @@
+[package]
+name = "pqdid-r0-guests"
+version = "0.1.0"
+edition = "2021"
+license = "UNLICENSED"
+
+[workspace]
+
+[dependencies]
+pqdid-r0-relation = { path = "../../relation" }
+risc0-zkvm = { version = "=3.0.6", default-features = false, features = ["std", "disable-dev-mode"] }
+# Pin the transitive guest packages covering the sys_read advisory explicitly.
+risc0-zkvm-platform = { version = "=2.2.3", default-features = false }
+risc0-zkos-v1compat = { version = "=2.2.3", default-features = false }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+overflow-checks = true
+codegen-units = 1
+panic = "abort"

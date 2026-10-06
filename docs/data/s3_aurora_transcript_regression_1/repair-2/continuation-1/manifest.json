@@ -1,0 +1,30 @@
+{
+  "package": "S3-AURORA-TRANSCRIPT-PRESERVATION-REPAIR-2",
+  "continuation": "continuation-1",
+  "kind": "Additive stopped-continuation evidence; NOT a completed preservation audit",
+  "previous_archive_sha256": "b2f3886339159a8737d3c4cc259f9dfe39577faf4826b95e4d024aa5211d45eb",
+  "previous_manifest_sha256": "ac605331b5f6daf46a41318ce25481e365fa2e42736bb92dc2c76c093db593b9",
+  "self_excluded": "manifest.json",
+  "sha256": {
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/prepare.log": "e7be016f5be0278c51dc7a7eae4d70567673ad99dbaba69e93efb2d62ecf5ae0",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/STOP.json": "5436564f724bb021f2751d835cd150e28d2a5021aceb4989504c2f837bf8ab96",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/driver.py": "96adbb840dfbc30ab088eeaa4f8fd829e04d60aa9dbe180804e6a186585f5a74",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/config.json": "dd636369a5e3c954e03f04713f9fa734a8d9f9535bb2f12c5356c39cdc8a01e0",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/amendment.json": "e15617dd8004a01c4793dd2edda672ecf85b27e8254fbd6d62cbbb7aa50629da",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/checks.json": "2e9ddc8970c7ac49875bcf1493a6b395cd04965a8ea51067289bc0240808f1d6",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/prepare.service.json": "fad07a9dd98d35248f2ad996e6df76facdf6518437e9c5b23b9ec3ae334a5535",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/run.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/prepare.json": "189b5d6d4bbda47c93ae3d9b4a5118a1b443c13f572d846782b5de3b78a769b1",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/run.py": "ee8af49c67fec8f7b985f5adf679b47a38843bf4691adb7ecaaed5adfd99d4b9",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/checks.log": "34a7d6e2595ca66f0dd4cf45aad62f91ac5b4ca87638e8bdecd5742ab2c53624",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/run-ledger.json": "54fc883c24906916bc181931873ae4cd86de6240af34b27e41c7997ea7b2b6c3",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/checked-inputs.json": "f28c2e3718f012030fe18befa73ed59936cca7fdf3a2225d13c2b901e687838d",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/prefixes.json": "61e2d18603970ceef499f2bad3db6ca8ff9e58e281f585fb3adedaf45988af86",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/checks.service.json": "7a5c91d996120aa2cdece2f6ba8572024af23ea43edb953c553e1a928eef82f4",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/validation-closure.json": "2228c07606bc983739434faf0125240b3ff57f9ffe414ad56180db79d7180085",
+    "docs/stage3_aurora_transcript_regression.md": "2cdc6c15dc3eb547398059dd63d59020056b1292ec46861fb77d8e12abd45cb9",
+    "docs/status.md": "fc2e70d1fc2cf1d4c577daa0eaa726fb0a8c8db5ae46979c696bc2577c977ca8",
+    "docs/traceability.md": "19690ed76d6339461fab5de057bc290ec64a411d302e08f452cb57bc59d932cb",
+    "docs/spec_issues.md": "66778222f4be2e02eb254d158276c496ea7d2ec61f6bee2b1003c3b1a4699372"
+  }
+}

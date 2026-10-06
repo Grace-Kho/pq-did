@@ -1,0 +1,85 @@
+--- experiments/auth_relation_integration_1/admission.py
++++ experiments/auth_relation_integration_1/admission.py
+@@ -1,7 +1,6 @@
+ """Early source/evidence admission; never allocates an Aurora codeword."""
+ 
+ import hashlib
+-import json
+ from pathlib import Path
+ 
+ P = Path(__file__).resolve().parents[2]
+@@ -105,7 +104,10 @@
+         "alternative_representation_admitted": False,
+         "large_instance_allocations": 0,
+         "route_stopped": "full resident proving/backend allocation",
+-        "unaffected_work": "complete source, bounded component stream checks, native small matrices, fail-closed boundary",
++        "unaffected_work": (
++            "complete source, bounded component stream checks, "
++            "native small matrices, fail-closed boundary"
++        ),
+     }
+     guard.write(D / "resource-admission.json", result)
+     return result
+--- experiments/auth_relation_integration_1/dispatch.py
++++ experiments/auth_relation_integration_1/dispatch.py
+@@ -8,7 +8,7 @@
+ P = Path(__file__).resolve().parents[2]
+ sys.path.insert(0, str(P))
+ from experiments.auth_relation_integration_1 import admission  # noqa: E402
+-from experiments.auth_relation_integration_1 import run as guard
++from experiments.auth_relation_integration_1 import run as guard  # noqa: E402
+ from experiments.auth_relation_integration_1.work import EventMeter  # noqa: E402
+ 
+ 
+--- experiments/auth_relation_integration_1/relation_cases.py
++++ experiments/auth_relation_integration_1/relation_cases.py
+@@ -268,7 +268,8 @@
+     q = reference._Q
+     if case_id in {"M-01", "M-02", "M-03"}:
+         raise RuntimeError(
+-            "full private sampler not admitted: fixed scanned-cell cost requires separate bounded execution"
++            "full private sampler not admitted: fixed scanned-cell"
++            " cost requires separate bounded execution"
+         )
+     if case_id in {"M-04", "M-05", "M-06", "M-07"}:
+         encoded = bytearray(61)
+@@ -329,7 +330,8 @@
+             identity=case_id.encode(),
+         )
+         result["coverage"] = (
+-            "single actual forward butterfly with full entry normalisation; complete transform unexecuted"
++            "single actual forward butterfly with full entry"
++            " normalisation; complete transform unexecuted"
+         )
+         return result
+     if case_id == "M-10":
+@@ -357,7 +359,8 @@
+             identity=case_id.encode(),
+         )
+         result["coverage"] = (
+-            "single actual inverse butterfly and final factor; complete inverse transform unexecuted"
++            "single actual inverse butterfly and final factor;"
++            " complete inverse transform unexecuted"
+         )
+         return result
+     if case_id in {"M-11", "M-12"}:
+@@ -458,7 +461,8 @@
+ 
+         result = _run(encoded, build, meter, identity=case_id.encode())
+         result["coverage"] = (
+-            "complete final challenge SHAKE/equality only; mu/w1 obtained from independent reference"
++            "complete final challenge SHAKE/equality only; mu/w1"
++            " obtained from independent reference"
+         )
+         return result
+     raise ValueError("unknown arithmetic case")
+--- experiments/auth_relation_integration_1/run.py
++++ experiments/auth_relation_integration_1/run.py
+@@ -12,7 +12,6 @@
+ import resource
+ import signal
+ import subprocess
+-import sys
+ import time
+ from pathlib import Path
+ 

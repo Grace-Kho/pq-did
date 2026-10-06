@@ -1,0 +1,53 @@
+{
+  "package": "S3-OUTER-ORACLE-COMPOSITION-1",
+  "review_date": "2026-09-25",
+  "method": "Primary theorem interface review via browser; no source download, installation or cryptographic execution",
+  "previous_manifest_sha256": "28a2f7384dffeb0e4a89cdd0c8c7f164773c08455e1dd0e1930d726caeccc290",
+  "construction_authority": "Only manuscript II-VIII, SPEC-001--004 and implementation_spec.md",
+  "sources": [
+    {
+      "id": "ACMT-3.9-7.22",
+      "url": "https://arxiv.org/html/2504.16887v2",
+      "version": "arXiv:2504.16887v2, 13 May 2025",
+      "locators": ["Definition 3.9", "Definition 3.14 and Claim 3.15", "Section 7.1 and equations 21/22", "Theorem 7.22 and proof in Section 7.5"],
+      "quantifier": "exists efficient stateful simulator, for all bounded query quantum distinguishers using the ordinary interfaces",
+      "bound": "O(ell^2*sqrt(q^9*2^-min(r,c)) + ell^3*(q^5*2^-min(r,c))^(1/4))",
+      "new_interface_finding": "S owns h/k/k' state and queries f; compressed representation of f in proof does not grant arbitrary f database read/programming access",
+      "used_for": "J-BIT ordinary endpoint comparison only; full shared proof game needs a relation and simulator/extractor construction",
+      "numerical_bound_evaluated": false
+    },
+    {
+      "id": "DFMS-3.1-3.5-4.2",
+      "url": "https://arxiv.org/pdf/2202.13730v1",
+      "version": "v1, 28 February 2022; manuscript reference [32], CRYPTO 2022",
+      "locators": ["Section 3 polynomial-time R_lambda and finite H domain", "Definition 3.1", "Definition 3.5", "Remarks 3.7 and 3.8", "Lemma 4.1 proof", "Theorem 4.2 and four-step extractor, printed pp.16-17"],
+      "quantifier": "exists online E for every adaptive P*, jointly simulates inst/pi/Z/v and bounds accept with invalid extracted witness",
+      "access": "E answers outer queries using its own compressed oracle and measures database after final verifier; no external oracle-state access is granted",
+      "used_for": "J-EX fixed-relation ideal argument and elementary terminal-event restriction; not oracle-gate construction or sequential issuance extraction",
+      "prior_numeric_work_reused": true
+    },
+    {
+      "id": "GHM-1-and-manuscript-VIII-D",
+      "url": "https://eprint.iacr.org/2020/1361.pdf",
+      "version": "Primary ePrint read 25 September 2026; manuscript reference [33], ASIACRYPT 2021",
+      "locators": ["Figure 2 programming experiment", "Theorem 1, printed p.7", "Appendix A adaptive side-information extension"],
+      "quantifier": "arbitrary query-bounded distinguisher with adaptive reprogramming distributions and conditional coordinate mass",
+      "bound": "sum_r(sqrt(qhat_r*pmax_r)+qhat_r*pmax_r/2)",
+      "used_for": "Fixed-relation ideal hybrids; ordinary S^F queries can be charged inside such a distinguisher, but joint hybrid endpoint and b-independence still need proof",
+      "prior_numeric_work_reused": true
+    },
+    {
+      "id": "ZKBoo",
+      "url": "https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_giacomelli.pdf",
+      "version": "USENIX Security 2016; manuscript reference [31]",
+      "locators": ["Proposition 4.1", "prior assessment raw-tape/Boolean-circuit mapping"],
+      "used_for": "Reuse fixed Boolean two-view simulation mapping; no theorem for private random-permutation oracle gates is imported"
+    }
+  ],
+  "new_calculation_runs": 0,
+  "new_estimator_runs": 0,
+  "new_proofs": 0,
+  "new_zkvm_executions": 0,
+  "followup_is_review_only": false,
+  "next_package": "S2-BOUNDED-MLDSA-KEYGEN-SIGN-1"
+}

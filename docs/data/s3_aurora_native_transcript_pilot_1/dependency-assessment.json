@@ -1,0 +1,120 @@
+{
+  "status": "native-admission-blocked",
+  "queries": [
+    {
+      "argv": [
+        "/usr/bin/c++",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "c++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0\nCopyright (C) 2025 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/cmake",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "cmake version 4.2.3\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/ninja",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "1.13.2\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/pkg-config",
+        "--modversion",
+        "libsodium"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Package libsodium was not found in the pkg-config search path.\nPerhaps you should add the directory containing `libsodium.pc'\nto the PKG_CONFIG_PATH environment variable\nPackage 'libsodium' not found\n"
+    },
+    {
+      "argv": [
+        "/usr/bin/pkg-config",
+        "--modversion",
+        "libff"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Package libff was not found in the pkg-config search path.\nPerhaps you should add the directory containing `libff.pc'\nto the PKG_CONFIG_PATH environment variable\nPackage 'libff' not found\n"
+    },
+    {
+      "argv": [
+        "/usr/bin/dpkg-query",
+        "-W",
+        "-f=${Package} ${Version} ${Status}\n",
+        "libsodium23",
+        "libsodium-dev"
+      ],
+      "exit_code": 1,
+      "stdout": "libsodium23 1.0.18-2 install ok installed\n",
+      "stderr": "dpkg-query: no packages found matching libsodium-dev\n"
+    }
+  ],
+  "header_checkout_presence": {
+    "/usr/include/sodium/crypto_generichash_blake2b.h": false,
+    "/usr/include/sodium.h": false,
+    "/usr/local/include/sodium/crypto_generichash_blake2b.h": false,
+    "/usr/include/libff/algebra/field_utils/field_utils.hpp": false,
+    "/usr/local/include/libff/algebra/field_utils/field_utils.hpp": false,
+    "/usr/include/libiop/bcs/hashing/hashing.hpp": false,
+    "/usr/local/include/libiop/bcs/hashing/hashing.hpp": false,
+    "/home/grace/projects/pq-did/native/.deps/libiop": false,
+    "/home/grace/projects/pq-did/native/.deps/libff": false,
+    "/opt/libiop": false,
+    "/opt/libff": false
+  },
+  "bounded_source_search": {
+    "argv": [
+      "/home/grace/.vscode-server/extensions/openai.chatgpt-26.908.40401-linux-x64/bin/linux-x86_64/rg",
+      "--files",
+      "--hidden",
+      "-g",
+      "field_utils.hpp",
+      "-g",
+      "crypto_generichash_blake2b.h",
+      "-g",
+      "libsodium.pc",
+      "-g",
+      "hashing.hpp",
+      "-g",
+      "bcs_common.hpp",
+      "native",
+      ".tools",
+      ".cache",
+      "/usr/include",
+      "/usr/local/include",
+      "/opt"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  "runtime_library": {
+    "path": "/usr/lib/x86_64-linux-gnu/libsodium.so.23.3.0",
+    "exists": true,
+    "sha256": "f9fdc530581d9c0978097c3838d12e33b12d7496106699c796635e97a0407421"
+  },
+  "missing": [
+    "libsodium development headers/pkg-config metadata",
+    "libff field headers/library and transitive revision pins",
+    "complete libiop headers including bcs/hashing/hashing.hpp",
+    "complete commit checkout and pinned transitive dependency closure"
+  ],
+  "native_build_admitted": false,
+  "build_attempts": 0,
+  "native_invocations": 0,
+  "header_stubs_or_manual_ABI_substitutes": false,
+  "runtime_library_is_not_development_or_source_pin": true,
+  "dependencies_installed": false
+}

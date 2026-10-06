@@ -1,0 +1,15 @@
+{
+  "previous_manifest_sha256": "a73e4e3e4e6f5cdbe1416d87757aebaf6c4ef26f0e2644d50d81fda3e306014e",
+  "four_authorised_files": [
+    "experiments/aurora_transcript_regression_1/README.md",
+    "experiments/aurora_transcript_regression_1/cases.py",
+    "experiments/aurora_transcript_regression_1/reference_trace.py",
+    "experiments/aurora_transcript_regression_1/transcript.py"
+  ],
+  "only_added_traversal_root": "experiments/aurora_transcript_regression_1",
+  "sha256": {
+    "docs/data/s3_aurora_transcript_regression_1/repair-1/repair.py": "ed2175b8be27dff9bd6606f0244efe7f810c76453361443970a0c07c77be3535",
+    "docs/data/s3_aurora_transcript_regression_1/repair-1/run.py": "e159d2ace9fc24e3988963f1fbc80d40b2963f36852d853969c9191363d9b6f5",
+    "docs/data/s3_aurora_transcript_regression_1/repair-1/config.json": "4e4b930cdb7c96ba98f40cd0bda20de9206dd3dbe8ddd88758eb88ab784af323"
+  }
+}

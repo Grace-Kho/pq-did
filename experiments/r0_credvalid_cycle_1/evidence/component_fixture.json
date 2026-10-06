@@ -1,0 +1,13 @@
+{
+  "fixture": "fixtures/components/matrix-00.bin",
+  "SHA256": "4c5f66e89f79c09f8141f800ac5f1b04cf2cbd3b960644f18f17e3c3d7173586",
+  "source": "unchanged alpha issuer key from tests/fixtures/relations_vectors.json",
+  "reference": "unchanged bounded_mldsa._rej_ntt_poly and independent integer decoding",
+  "row": 0,
+  "column": 0,
+  "consumed": 768,
+  "budget": 1026,
+  "synthetic_private_intermediate": true,
+  "values_not_logged": true,
+  "full_relation_evidence": false
+}

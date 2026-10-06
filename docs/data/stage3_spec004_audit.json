@@ -1,0 +1,178 @@
+{
+  "recorded_at_utc": "2026-09-18T04:43:31.165611+00:00",
+  "protected_files": 6885,
+  "unchanged_protected_files": 6873,
+  "missing": [],
+  "changed_existing": {
+    "AGENTS.md": {
+      "before": "414066d97d19b347dcfa1eb9e7306b4be848155ae4e7136256084b61410ae3e3",
+      "after": "a78ddb77b5ea82b724e761b023aa97da2253bad86e0bbc3ef9c992a9bfcd216c"
+    },
+    "README.md": {
+      "before": "1513e9bfc220996dfddfb7aefc000415de4f36b283c2053055cc6d51cf4a6b9c",
+      "after": "9392d51e32018179012deffbc729ac6476fcc42e0d9b8a912b6ed8c292ef88a4"
+    },
+    "configs/suite.json": {
+      "before": "055eed721e49ff09dfd07292746b0c261dfe0b07dbf37aa0ae7402bb4200a11a",
+      "after": "52260cd7b02b89027ca941f537349610eff829f263d6e3fee76fff83e3013311"
+    },
+    "configs/validation_profiles.json": {
+      "before": "ac67e0b3fe89c8a91a55c13f8f2e75323c02c9773bfe2007771a61f8c3b623b9",
+      "after": "8609ae6cf594030319df04435a5bd264f3a99ec7d2925fbb1f1d9f89a0913f41"
+    },
+    "docs/implementation_spec.md": {
+      "before": "0f0d3b20170e9d86b73bb8b04ff51f6b696656267341ae42fe1205453cf55dfe",
+      "after": "e3d919cf22e4110e83dc822d6a7b1d72b40d0a93f79371e00f9e010b71b10003"
+    },
+    "docs/spec_issues.md": {
+      "before": "e6d06045f79c4238e252e8aadd4afdfd654d9fb4182a0baf4c053f192df7fb55",
+      "after": "b584540f75c49981eba9feb8f5e7e6959302ecd2cfe89786c899211c495496d5"
+    },
+    "docs/stage3_auth_parsing_arithmetic.md": {
+      "before": "fb2e3c0f5fb59efca936478eb5864e585f66a086519611710ccb1a0c41133f90",
+      "after": "981f2b8c27f2a6e6ce532a31dd0bd09f019081d541e57724fe6331128b0eb659"
+    },
+    "docs/stage3_signature_inputs.md": {
+      "before": "e4f4f0a2650054844b1d2e171c16fc9530ea51c37034ebe431af2a382926ede3",
+      "after": "15cb5c547dd9b8bd2879b666b4b1e15d1f95321bab91a4d94e90ec93929bc2a7"
+    },
+    "docs/status.md": {
+      "before": "5dc3c5b00f40d464c29c340352da25562162ce316cf608bfd9f90d383b6b9649",
+      "after": "4ada5fb6810c69f5ddd574bc5066497670e02011cb062f101e9140d0a51897bc"
+    },
+    "docs/traceability.md": {
+      "before": "8774fd654cd10d7125da776f699e5cf489af345f0dda646b186118db7838e04c",
+      "after": "821e47d5caabdf1c922e4c3437552b1fa1bc839f21d60569f42fd0fc9a2f524b"
+    },
+    "scripts/validate_signature_inputs.py": {
+      "before": "15a56e36c9647b03f91933a89ebbce17e883a3e946c27361599306e7d3a3e49b",
+      "after": "76115b7124d1704567c75b30b9d038ac4292af9b299648167d854944804730e9"
+    },
+    "src/pqdid/circuits/division.py": {
+      "before": "c530930c04f91bcdf4bceaf5d052f940cc935e87cca6562baf119ad41b8574a8",
+      "after": "03c3c7abcaaa267450930707b9a2c9534143cc95c470635367cc4a9c66dba8ba"
+    }
+  },
+  "new_files_sha256": {
+    "docs/data/stage3_evaluation_resource_plan.json": "6d2bc5be1c9ff418d78ebbe81cbe33b62c571130a637b0c65ef7fcef7c7bf88f",
+    "docs/data/stage3_signature_count_preflight.json": "077303c6bdcd4c0e762fe7cb2081d8365ce1a90c0642fa1ddf616cbcbceae966",
+    "docs/data/stage3_spec004_core_measurements.json": "a8e8f2ff219d802f30971b29797b0a4223943e17290fffad4af1cbd9cf45a39c",
+    "docs/data/stage3_spec004_dependent_measurements.json": "3b62755920344b7b0cf803823e1faf019dcc7d00427f9aedd9716cbf166a655c",
+    "docs/data/stage3_spec004_focused.json": "413b63d2291b1dcd70e856b941036ad95c5020fd50bcb3cd524e9c715f9aa4d1",
+    "docs/data/stage3_spec004_regression.json": "e158eda925e6d8120f8e11b6634b802ebc2c9e43316c8c0bce6e4a31f1ad66fc",
+    "docs/stage3_resource_preflight.md": "255b33da8bfab96993352aeb1b85103da6ae391da420fd2df56113c4a7249f30",
+    "scripts/preflight_signature_inputs.py": "f9ec634fcd977be1fc92d400920b5be09fbc6b121c303db241f43f5454fe8117",
+    "tests/reference/spec004_provisional.py": "256277d1ec8fd088a0fd5dbc8d783bd504e1fa808abc62e6f742a8cd4a4022a7",
+    "tests/unit/test_count_preflight.py": "39034e25c1b6a38581111db4268e2f5b817e643481388810fbfcdbe695d3eea7",
+    "tests/unit/test_spec004_adoption.py": "1acbdfc1bd3b6600099fee696d2546dba8deff845f728ea136bd9157bc26e967"
+  },
+  "all_other_manifest_fields_preserved_except_two_explicit_historical_status_labels": true,
+  "confirmed_parameters_deployment_inputs_and_SPEC001_002_003_preserved": true,
+  "ordinary_validation_profile_unchanged": true,
+  "canonical_emitter_unchanged": true,
+  "frozen_provisional_function_AST_matches_original": true,
+  "all_recorded_source_hashes_match": true,
+  "focused_and_regression_outcomes": {
+    "stage3_spec004_focused": {
+      "passed": 241
+    },
+    "stage3_spec004_regression": {
+      "passed": 1421
+    }
+  },
+  "dependent_probes_passed": 30,
+  "dependent_gate_fold_wire_trace_counts_unchanged": true,
+  "dependent_fingerprints_changed_and_three_modes_agree": true,
+  "component_trace_comparisons": [
+    {
+      "component": "divmod-q",
+      "unchanged_gates": 36280,
+      "unchanged_AND": 13462,
+      "historical_fingerprint": "d9965efe74dd8d3092e2cc542010f9550f3be1e13ae968319e1be64b237894ad",
+      "adopted_fingerprint": "ccce99a3221ed083a32c595e9f0e87bcc55e31bc564bd2254762b528d8b38fc6"
+    },
+    {
+      "component": "canonical-q",
+      "unchanged_gates": 36087,
+      "unchanged_AND": 13397,
+      "historical_fingerprint": "3ffdba366830ef41dfc576b87bce9816ae375540d76c0c20035605413f5a9637",
+      "adopted_fingerprint": "957cc7994a83308e90d2bc9c7b936dee811a17a7d3080f707b3a241c63e7c565"
+    },
+    {
+      "component": "centred-even",
+      "unchanged_gates": 37004,
+      "unchanged_AND": 13725,
+      "historical_fingerprint": "c7bb8c3928526c7350dae431f5806b8d47438767cdaea7ab6ee9e3fe942485fd",
+      "adopted_fingerprint": "90d9e8bc32111bdbdcfd98f4983a72e957cf17f5759a7b7cddf052e48755edeb"
+    },
+    {
+      "component": "ring-add",
+      "unchanged_gates": 36420,
+      "unchanged_AND": 13530,
+      "historical_fingerprint": "31d04ba04994f810f6e99c2fbb37a561f034f574c4f1015059bbb12ef55fe516",
+      "adopted_fingerprint": "8d0a8aad18052713fe3e369328688d36ecce58ebed0880f2a9964b9dcbd55672"
+    },
+    {
+      "component": "ring-subtract",
+      "unchanged_gates": 36485,
+      "unchanged_AND": 13530,
+      "historical_fingerprint": "4a7c6247d2f56c4fe0aee0bb20a8babdbe4821cfc8277bd9f9ec56b46bf491e7",
+      "adopted_fingerprint": "609e372cfff05e1a19c37a9cf6fc3cdb62b2a79a66d7c4480fd8d02e127e412f"
+    },
+    {
+      "component": "ring-multiply",
+      "unchanged_gates": 83535,
+      "unchanged_AND": 34653,
+      "historical_fingerprint": "7b5549ee576df8085acce7bb84cdabfc26501135f25e949024574adad294d9bb",
+      "adopted_fingerprint": "76113514664eb43a0e937619e7fbd5f7a5b1bc5bacdc62ad1d7cdfa8a58a4d4c"
+    },
+    {
+      "component": "ring-public-multiply",
+      "unchanged_gates": 82950,
+      "unchanged_AND": 34458,
+      "historical_fingerprint": "4889d9aee8ffc7d0de59eb02cbfeae61baeab86c94d63bf64ca0e70ae9689ec0",
+      "adopted_fingerprint": "8795b9e18db2d3361e0e16a435764e188e1be177f1f9aacb0eae659fbda9c289"
+    },
+    {
+      "component": "decompose",
+      "unchanged_gates": 110695,
+      "unchanged_AND": 41047,
+      "historical_fingerprint": "2acb3eb8de42979f73d3496ec5b0b2d6eb6b38d2669cedcf461fe67d67a6117d",
+      "adopted_fingerprint": "660b6786a76bf30286916976b85bc77db0fd77851a3fecbfcb563e0bcc6a8195"
+    },
+    {
+      "component": "use-hint",
+      "unchanged_gates": 184266,
+      "unchanged_AND": 68373,
+      "historical_fingerprint": "5b021fac3f34b0d22bdb2836803762dc208fff69e393e0586ecbcc008c8f9829",
+      "adopted_fingerprint": "1ec8f297198d18e89c43e0c7e3151c7a28fa444aab823c8af1837cbd257dbeda"
+    },
+    {
+      "component": "ntt-butterfly",
+      "unchanged_gates": 155658,
+      "unchanged_AND": 61451,
+      "historical_fingerprint": "af463499641d6f70adef5ed8cb1b55d844d22fb60a3fe7d54c68e2a0580f7fea",
+      "adopted_fingerprint": "9862c1ae3f06780c23d674e3fcbbbf028e28f0e17b20142e16a2ab4fca8fe918"
+    }
+  ],
+  "three_core_counts_refreshed_with_test_costs_preserved": true,
+  "count_outcomes": {
+    "passed": 1,
+    "resource_limit": 3
+  },
+  "count_limits_and_no_trace_storage_checked": true,
+  "evaluation_plan_storage_arithmetic_and_historical_calibration_checked": true,
+  "lint_and_format": {
+    "ruff_check": "passed",
+    "ruff_format_check": "119 files already formatted"
+  },
+  "preserved_categories": {
+    "native/": 6736,
+    ".vscode/": 3,
+    "docs/data/": 17,
+    "tests/fixtures/": 6
+  },
+  "environment_note": "Native/editor/lock/config files included in protected hashes; .venv not rehashed. No installation or environment rebuild was performed.",
+  "scope": "SPEC-004 adopted; count-only preflight. No enlarged evaluation, no full authentication count/proof, no sampler/NTT integration; full BC-1 and remaining Stage 2 work open.",
+  "local_links_in_updated_overview_and_resource_documents": "all resolved"
+}

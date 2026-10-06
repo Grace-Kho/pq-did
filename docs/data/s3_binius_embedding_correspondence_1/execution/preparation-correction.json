@@ -1,0 +1,11 @@
+{
+  "failure": "Duplicate write of newly prepared checked-inputs.json, refused by write_report; no content/inventory discrepancy reported",
+  "failed_guard_sha256": "6174207f66f03b03593135fbae782210d9d6668972891e4ac687a667b83f5291",
+  "failed_log_sha256": "bcdb217fb1c3883274b60f132438e79fc441b2bf71a8ae490d9941d5f566be2a",
+  "partial_snapshot_sha256": "1f8ffbbb59b454dfdb393e5581030f29b326e69e94cfe4a94cce58ee80853462",
+  "before_helper_sha256": "cc348c30f0ca6bb23c76df4929f816287eaff3354385d847029cba2cd23dc46f",
+  "corrected_snapshot": "checked-inputs-v2.json",
+  "action": "Remove duplicate write and include new isolated README before the single write; preserve old snapshot as evidence",
+  "original_baselines_unchanged": true,
+  "functional_invocations": 0
+}

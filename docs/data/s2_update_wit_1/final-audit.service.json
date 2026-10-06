@@ -1,0 +1,30 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "/home/grace/projects/pq-did/docs/data/s2_update_wit_1/audit.py"
+  ],
+  "before": {
+    "memory.max": "268435456",
+    "memory.swap.max": "0",
+    "memory.peak": "7192576",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "available": 5102379008,
+  "allowed_cpus": [
+    0,
+    1
+  ],
+  "network": "private-no-routes",
+  "after": {
+    "memory.max": "268435456",
+    "memory.swap.max": "0",
+    "memory.peak": "21909504",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "seconds": 0.32341165200341493,
+  "exit_code": 1
+}

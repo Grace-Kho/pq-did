@@ -1,0 +1,626 @@
+{
+  "bookkeeping": [
+    {
+      "seconds": 60,
+      "basis": "conservative opening/source review/allocation and final bookkeeping reserve charge; not measured runtime",
+      "phase": "integration"
+    },
+    {
+      "phase": "integration",
+      "seconds": 120,
+      "basis": "conservative source correction and preservation/reporting preparation; includes editing and static review, not measured native execution"
+    },
+    {
+      "seconds": 5,
+      "phase": "correction",
+      "basis": "conservative failed metadata extraction, diagnosis, exact-ID correction and record; not a functional invocation"
+    },
+    {
+      "seconds": 60,
+      "phase": "completion",
+      "basis": "conservative complete-audit integration, report/status/traceability edits and handover preparation; includes routine static corrections"
+    },
+    {
+      "seconds": 30,
+      "phase": "completion",
+      "basis": "Conservative charge for readback diagnosis, final result/manifest reconciliation, command inspection and final reporting preparation; distinct from guarded job timings"
+    },
+    {
+      "seconds": 3,
+      "phase": "completion",
+      "basis": "conservative bounded packaging/readback charge; measured time retained separately"
+    }
+  ],
+  "jobs": [
+    {
+      "name": "archive-and-memory-admission",
+      "seconds": 0.7212321138940752,
+      "phase": "acquisition",
+      "limit_seconds": 1.7212321138940752
+    },
+    {
+      "name": "source-subset-preparation",
+      "phase": "integration",
+      "seconds": 0.005569114116951823,
+      "limit_seconds": 1.0055691141169518
+    },
+    {
+      "name": "source-only-engineering-edits",
+      "phase": "integration",
+      "seconds": 0.0022100680507719517,
+      "limit_seconds": 1.002210068050772
+    },
+    {
+      "name": "static",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_full_path_engineering_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-ligetron-full-path-1-static",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 188189,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 39227741,
+        "artifact_bytes": 79520569,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3883778048,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.7849268629215658,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12865536",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "27168768",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.10142365912906826,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 38596608,
+      "artifact_observed_peak_bytes": 79520569
+    },
+    {
+      "name": "static-2",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_full_path_engineering_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-ligetron-full-path-1-static-2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 196542,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 39236094,
+        "artifact_bytes": 79520569,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3883773952,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.413069745991379,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10321920",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "21204992",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.062024179846048355,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 35979264,
+      "artifact_observed_peak_bytes": 79520569
+    },
+    {
+      "name": "prepare",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_full_path_engineering_1/preservation.py",
+        "prepare"
+      ],
+      "limit_seconds": 25,
+      "child_seconds": 24,
+      "status": "failed",
+      "unit": "pqdid-ligetron-full-path-1-prepare",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 202422,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 39241974,
+        "artifact_bytes": 79520569,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3875921920,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.6388299011159688,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10891264",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "71290880",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 1.229304218897596,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 74166272,
+      "artifact_observed_peak_bytes": 79520569
+    },
+    {
+      "name": "static-3",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_full_path_engineering_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-ligetron-full-path-1-static-3",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 231501,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 39271053,
+        "artifact_bytes": 79520569,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3877978112,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.4486370589584112,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10362880",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "21331968",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.08214400615543127,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 35835904,
+      "artifact_observed_peak_bytes": 79520569
+    },
+    {
+      "name": "prepare-2",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_full_path_engineering_1/preservation.py",
+        "prepare"
+      ],
+      "limit_seconds": 25,
+      "child_seconds": 24,
+      "status": "pass",
+      "unit": "pqdid-ligetron-full-path-1-prepare-2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 236466,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 39276018,
+        "artifact_bytes": 79520569,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3875266560,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.3742901920340955,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10629120",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "61497344",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 1.0085961979348212,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 73867264,
+      "artifact_observed_peak_bytes": 79520569
+    },
+    {
+      "name": "full-audit",
+      "phase": "audit",
+      "argv": [
+        "--completion",
+        "--",
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_full_path_engineering_1/preservation.py",
+        "full-audit"
+      ],
+      "limit_seconds": 40,
+      "child_seconds": 39,
+      "status": "failed",
+      "unit": "pqdid-ligetron-full-path-1-full-audit",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 250923,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 39290475,
+        "artifact_bytes": 79520569,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3879190528,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.3528847279958427,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {},
+      "sampled_tree_rss_peak": 17104896,
+      "artifact_observed_peak_bytes": 79520569
+    },
+    {
+      "name": "static-4",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_full_path_engineering_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-ligetron-full-path-1-static-4",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 268544,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 39308096,
+        "artifact_bytes": 79520569,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3881095168,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.4136405389290303,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10100736",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "20856832",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.060945288045331836,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 51073024,
+      "artifact_observed_peak_bytes": 79520569
+    },
+    {
+      "name": "prepare-3",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_full_path_engineering_1/preservation.py",
+        "prepare"
+      ],
+      "limit_seconds": 25,
+      "child_seconds": 24,
+      "status": "pass",
+      "unit": "pqdid-ligetron-full-path-1-prepare-3",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 273595,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 39313147,
+        "artifact_bytes": 79520569,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3877675008,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.3532918500714004,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10317824",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "61681664",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.9891015971079469,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 73740288,
+      "artifact_observed_peak_bytes": 79520569
+    },
+    {
+      "name": "full-audit-2",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_full_path_engineering_1/preservation.py",
+        "full-audit"
+      ],
+      "limit_seconds": 40,
+      "child_seconds": 39,
+      "status": "pass",
+      "unit": "pqdid-ligetron-full-path-1-full-audit-2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 288829,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 39328381,
+        "artifact_bytes": 79520569,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3875618816,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 6.015378198120743,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10362880",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "61952000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 5.654231722932309,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 73609216,
+      "artifact_observed_peak_bytes": 79520569
+    },
+    {
+      "name": "readback",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_full_path_engineering_1/preservation.py",
+        "readback"
+      ],
+      "limit_seconds": 25,
+      "child_seconds": 24,
+      "status": "failed",
+      "unit": "pqdid-ligetron-full-path-1-readback",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 324789,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 39364341,
+        "artifact_bytes": 79520569,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3833790464,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.7674422860145569,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "13144064",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "29261824",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.16167557891458273,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 43872256,
+      "artifact_observed_peak_bytes": 79520569
+    },
+    {
+      "name": "package",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/ligetron_full_path_engineering_1/preservation.py",
+        "readback"
+      ],
+      "limit_seconds": 25,
+      "child_seconds": 24,
+      "status": "pass",
+      "unit": "pqdid-ligetron-full-path-1-package",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 340236,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 39379788,
+        "artifact_bytes": 79520569,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3898855424,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.53243922512047,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10321920",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "61808640",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 1.1687881120014936,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 73879552,
+      "artifact_observed_peak_bytes": 79520569
+    },
+    {
+      "name": "worker-termination",
+      "phase": "completion",
+      "seconds": 0.05035650287754834,
+      "limit_seconds": 20,
+      "status": "pass",
+      "scope": "only package transient guard units; no workload activation"
+    }
+  ],
+  "invocations": [],
+  "builds": [],
+  "proofs": [],
+  "work_events": 144593603
+}

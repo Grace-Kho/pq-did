@@ -1,0 +1,5 @@
+{
+  "failure": "quality",
+  "cause": "Renaming loop variables exposed three additional long lines; one leftover blank in import block.",
+  "correction": "Split lines and remove import blank. Original failure evidence preserved. Zero resource events. Final formatting/lint deferred until files complete."
+}

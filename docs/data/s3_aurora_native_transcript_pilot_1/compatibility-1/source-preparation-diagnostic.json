@@ -1,0 +1,9 @@
+{
+  "phase": "unexecuted helper-writing shell heredoc",
+  "exit_code": 1,
+  "diagnostic": "SyntaxError: unexpected character after line continuation character, stdin line 15",
+  "effect": "Python parse failure before any filesystem mutation, build or native case; removed unused malformed no-op line",
+  "build_attempts": 0,
+  "test_invocations": 0,
+  "accounting": "covered by conservative five-second non-guard bookkeeping charge"
+}

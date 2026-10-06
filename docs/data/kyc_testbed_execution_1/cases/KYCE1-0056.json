@@ -1,0 +1,185 @@
+{
+  "invocation_id": "KYCE1-0056",
+  "case_id": "T-1-B-3",
+  "work_event_reservation": 0,
+  "ordinal": 56,
+  "cumulative_invocations": 1030,
+  "status": "pass",
+  "details": {
+    "operation": "request-present-verify-and-atomic-consume",
+    "audience": "B",
+    "operation_ns": 709820348,
+    "request_ns": 380450780,
+    "presentation_ns": 86239847,
+    "verification_ns": 243129721,
+    "setup_ns": 308,
+    "request_bytes": 7554,
+    "presentation_bytes": 22948,
+    "messages": {
+      "credential": {
+        "canonical": 11012,
+        "transport": 11012
+      },
+      "enrolment_body": {
+        "canonical": 7720,
+        "transport": 7720
+      },
+      "initial_witness_path": {
+        "canonical": 960,
+        "transport": 960
+      },
+      "initial_state": {
+        "canonical": 3427,
+        "transport": 3427
+      },
+      "enrolment_signature": {
+        "canonical": 3309,
+        "transport": 3309
+      },
+      "current_nonce_1": {
+        "canonical": 32,
+        "transport": 32
+      },
+      "current_reply_1": {
+        "canonical": 6792,
+        "transport": 6792
+      },
+      "request": {
+        "canonical": 7554,
+        "transport": 7554
+      },
+      "presentation": {
+        "canonical": 22948,
+        "transport": 22948
+      },
+      "current_nonce_2": {
+        "canonical": 32,
+        "transport": 32
+      },
+      "current_reply_2": {
+        "canonical": 6792,
+        "transport": 6792
+      },
+      "current_nonce_3": {
+        "canonical": 32,
+        "transport": 32
+      },
+      "current_reply_3": {
+        "canonical": 6792,
+        "transport": 6792
+      },
+      "current_nonce_4": {
+        "canonical": 32,
+        "transport": 32
+      },
+      "current_reply_4": {
+        "canonical": 6792,
+        "transport": 6792
+      },
+      "current_nonce_5": {
+        "canonical": 32,
+        "transport": 32
+      },
+      "current_reply_5": {
+        "canonical": 6792,
+        "transport": 6792
+      },
+      "current_nonce_6": {
+        "canonical": 32,
+        "transport": 32
+      },
+      "current_reply_6": {
+        "canonical": 6792,
+        "transport": 6792
+      },
+      "current_nonce_7": {
+        "canonical": 32,
+        "transport": 32
+      },
+      "current_reply_7": {
+        "canonical": 6792,
+        "transport": 6792
+      },
+      "current_nonce_8": {
+        "canonical": 32,
+        "transport": 32
+      },
+      "current_reply_8": {
+        "canonical": 6792,
+        "transport": 6792
+      },
+      "current_nonce_9": {
+        "canonical": 32,
+        "transport": 32
+      },
+      "current_reply_9": {
+        "canonical": 6792,
+        "transport": 6792
+      },
+      "current_nonce_10": {
+        "canonical": 32,
+        "transport": 32
+      },
+      "current_reply_10": {
+        "canonical": 6792,
+        "transport": 6792
+      },
+      "current_nonce_11": {
+        "canonical": 32,
+        "transport": 32
+      },
+      "current_reply_11": {
+        "canonical": 6792,
+        "transport": 6792
+      },
+      "current_nonce_12": {
+        "canonical": 32,
+        "transport": 32
+      },
+      "current_reply_12": {
+        "canonical": 6792,
+        "transport": 6792
+      }
+    },
+    "storage": [
+      {
+        "path": "manager/authority.sqlite3",
+        "bytes": 180224,
+        "secret_material": false
+      },
+      {
+        "path": "verifier-A/authority.sqlite3",
+        "bytes": 176128,
+        "secret_material": false
+      },
+      {
+        "path": "verifier-B/authority.sqlite3",
+        "bytes": 176128,
+        "secret_material": false
+      },
+      {
+        "path": "issuer/issuer.sqlite3",
+        "bytes": 36864,
+        "secret_material": false
+      },
+      {
+        "path": "holder/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      }
+    ],
+    "fixture_sha256": "26fb6670569bb14859bdcbf675fae44a8fe648c22dcb1d16323664af353e4229",
+    "epoch_base": 1800000000,
+    "timestamp_model": "synthetic epoch plus monotonic elapsed",
+    "privacy": "fully disclosed baseline; no private proof",
+    "concurrency": 1
+  },
+  "seconds": 0.7121746090706438,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions or evaluations. Host setup included in time and resource guard."
+}

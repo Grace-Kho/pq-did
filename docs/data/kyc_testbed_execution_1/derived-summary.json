@@ -1,0 +1,34 @@
+{
+  "invocations": 71,
+  "passed": 68,
+  "failed": 3,
+  "successful_measurements": 19,
+  "rates": [
+    1.771,
+    1.754,
+    1.815,
+    1.979,
+    1.728,
+    1.826
+  ],
+  "presentation_sizes": [
+    22948
+  ],
+  "request_sizes": [
+    7554
+  ],
+  "catchup_ms": [
+    108.884072
+  ],
+  "failed_store_phases": {
+    "CERTIFIED": 3,
+    "SIGNING": 1
+  },
+  "usage": {
+    "new_evidence_bytes": 504725,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 30727123,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  }
+}

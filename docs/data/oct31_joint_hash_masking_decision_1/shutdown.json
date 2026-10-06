@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "before": {
+    "pqdid-joint-hash-1-source-quality.service": {
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-joint-hash-1-source-quality-r1.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-joint-hash-1-preflight.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-joint-hash-1-decision.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-joint-hash-1-prepare.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-joint-hash-1-full-audit.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-joint-hash-1-final-readback.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    }
+  },
+  "slice_before": {
+    "LoadState": "loaded",
+    "ActiveState": "active",
+    "SubState": "active",
+    "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-joint.slice/pqdid-joint-hash.slice/pqdid-joint-hash-1.slice"
+  },
+  "slice_after": {
+    "LoadState": "loaded",
+    "ActiveState": "inactive",
+    "SubState": "dead",
+    "ControlGroup": ""
+  },
+  "exact_cgroup_paths_checked": [
+    "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-joint.slice/pqdid-joint-hash.slice/pqdid-joint-hash-1.slice"
+  ],
+  "descendants_terminated": true,
+  "failed_unit_states_preserved": true,
+  "other_units_untouched": true,
+  "seconds": 0.14541384892072529
+}

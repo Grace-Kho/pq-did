@@ -1,0 +1,48 @@
+{
+  "package": "S2-LIFECYCLE-REVIEW-1",
+  "authority": "Manuscript Sections II-VIII and SPEC-001-004 only",
+  "functional_source_changes": [],
+  "in_process_contract_defects_demonstrated": [],
+  "simulated_recovery_only": true,
+  "real_crash_or_power_loss_tests": false,
+  "production_restart_approved": false,
+  "integration_decision": "Proceed with bounded recovery-admission reference work; do not deploy restart/replica services",
+  "unsafe_restart_negative_controls": [
+    {
+      "id": "REC-001",
+      "test": "test_unsafe_restart_negative_control_signed_root_does_not_bind_allocation_counter",
+      "observation": "A stale trusted-bootstrap counter reassigns rid 42 although the authentic signed public root is unchanged",
+      "classification": "Unsupported stale bootstrap violates existing trusted-checkpoint assumption; restart-admission gap"
+    },
+    {
+      "id": "REC-002",
+      "test": "test_unsafe_restart_negative_control_stale_pending_snapshot_can_reaccept",
+      "observation": "A stale pending challenge reconstructed without its consumed tombstone accepts a second time in the deliberately unsynchronised store",
+      "classification": "Unsupported rollback violates shared atomic store assumption; restart-admission gap"
+    }
+  ],
+  "other_recovery_gaps": [
+    "Manager checkpoint constructor does not restore earlier public update history",
+    "IssuerSnapshot omits complete pending challenge/controller data and is not a restart image",
+    "ControllerSnapshot omits salt and private signer handles; pending record alone cannot restore controller ownership",
+    "Interrupted claimed issuer sessions have no supported administrative retirement/recovery API",
+    "Holder credential/witness pair can be authentic at an old root and still unusable for a fresh challenge",
+    "No checkpoint import/admission or external rollback authority is implemented"
+  ],
+  "local_invariants": "Supported live-state faults preserve permanent reservations, certification logs, whole holder pairs and at-most-once consumption",
+  "coordination": "Independent ordered DID and revocation reads are not one cross-service transaction",
+  "privacy": "Public verifier receives only context/session/D/mD/opaque proof; anonymous processing performs no holder DID/controller lookup",
+  "focused_tests": 28,
+  "regression_tests": 50,
+  "selected_tests": 78,
+  "guard": "Unchanged cgroup-v2 268435456 bytes, zero swap, one worker; config.json",
+  "next_package": "S2-RECOVERY-ADMISSION-1",
+  "next_scope": "Bounded typed recovery/checkpoint validation and fail-closed activation with an explicitly specified injected recovery authority; no storage engine/proofs",
+  "trust_decision_open": "Which independently trusted authority establishes checkpoint completeness and freshness after rollback; no policy silently adopted",
+  "new_proofs": 0,
+  "new_zkvm_executions": 0,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1,
+  "CPU_proving_paused": true,
+  "stages_2_and_3_complete": false
+}

@@ -1,0 +1,33 @@
+{
+  "package": "S2-DURABLE-VERIFIER-LIFECYCLE-INTEGRATION-1",
+  "authority": "Only manuscript II-VIII, agreed clarifications, R-016/017/027/028 and existing durable contracts",
+  "existing_source_changed": [],
+  "ownership": {
+    "manager": "committed signed nonce-bound ordered current reads, separate head and history",
+    "verifier-A/B": "distinct audiences/public request keys/service identities/stores; complete stored context, nonce tombstone, operation outcome and head"
+  },
+  "transaction": "Request registration precedes bounded request signing. Exact consume checkpoint/outcome/head transaction commits before ACCEPTED. No atomic manager/verifier transaction.",
+  "freshness": "Final manager reply retrieved at admitted current state; update before final read rejects, after retrieved read does not retroactively invalidate acceptance; final local strict expiry rechecked.",
+  "proof": "Default unsupported; tests alone inject existing ControlledProofAdapter for exact canonical X/token. No proof of credential authenticity, knowledge or private non-revocation.",
+  "recovery": "Independently retained exact HeadTicket plus writer permit; stale/corrupt/cross-audience denies, consumed survives; ordinary replay UNKNOWN.",
+  "redelivery": "Not permitted for verifier acceptance by existing SQLiteStore.publish; retained CONSUMED outcome is metadata, not a second acceptance/business action.",
+  "fault_model": "Injected exceptions, concurrent threads; earlier actual verifier pre/post-consume crashes reused without rerun. No new process crash or local private-relation evaluation.",
+  "new_test_invocations": 27,
+  "distinct_cases": 24,
+  "retained_assertion_failures": 3,
+  "targeted_repeats": 3,
+  "expected_total_invocations": 172,
+  "remaining_test_invocations": 0,
+  "prior_implementation_seconds": 85.60198247910012,
+  "prior_test_invocations": 145,
+  "budget_amendment": {
+    "prior_ceiling": 148,
+    "additional_authorised": 24,
+    "ceiling": 172
+  },
+  "native_ABI_runs": 0,
+  "new_proofs": 0,
+  "zkvm_executions": 0,
+  "activation": false,
+  "next_package": "S2-HOLDER-WITNESS-REVOCATION-INTEGRATION-1"
+}

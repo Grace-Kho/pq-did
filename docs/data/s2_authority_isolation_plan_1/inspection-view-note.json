@@ -1,0 +1,6 @@
+{
+  "guard_record": "environment-facts.json",
+  "correction": "The guard also presents remapped root/group IDs. Its view label is not sufficient evidence of host ownership. Use host-metadata.json for actual root path ownership and login supplementary groups; retain the original observed guard record.",
+  "rootcause_scope": "Namespace remapping observed, not a change to host account memberships.",
+  "host_mutations": false
+}

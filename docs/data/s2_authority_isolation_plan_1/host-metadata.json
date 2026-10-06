@@ -1,0 +1,161 @@
+{
+  "package": "S2-AUTHORITY-ISOLATION-PLAN-1",
+  "view": "Direct read-only tool command outside filesystem/UID sandbox; no sudo or service launched",
+  "uid": 1000,
+  "gid": 1000,
+  "groups": [
+    {
+      "gid": 4,
+      "name": "adm"
+    },
+    {
+      "gid": 24,
+      "name": "cdrom"
+    },
+    {
+      "gid": 27,
+      "name": "sudo"
+    },
+    {
+      "gid": 30,
+      "name": "dip"
+    },
+    {
+      "gid": 46,
+      "name": "plugdev"
+    },
+    {
+      "gid": 100,
+      "name": "users"
+    },
+    {
+      "gid": 1000,
+      "name": "grace"
+    }
+  ],
+  "uid_map": "0          0 4294967295",
+  "pid1": [
+    "Name:\tsystemd",
+    "Uid:\t0\t0\t0\t0",
+    "Gid:\t0\t0\t0\t0"
+  ],
+  "paths": [
+    {
+      "path": "/",
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false
+    },
+    {
+      "path": "/home",
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false
+    },
+    {
+      "path": "/home/grace",
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o750",
+      "symlink": false
+    },
+    {
+      "path": "/home/grace/projects",
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o755",
+      "symlink": false
+    },
+    {
+      "path": "/home/grace/projects/pq-did",
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o755",
+      "symlink": false
+    },
+    {
+      "path": "/usr/bin/python3.14",
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libsqlite3.so.0",
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o777",
+      "symlink": true
+    },
+    {
+      "path": "/opt",
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false
+    },
+    {
+      "path": "/etc",
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false
+    },
+    {
+      "path": "/var/lib",
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false
+    },
+    {
+      "path": "/run",
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "systemctl",
+        "show",
+        "--property=Version,Virtualization,ControlGroup"
+      ],
+      "exit_code": 0,
+      "stdout": "Version=259.5-0ubuntu3.4\nVirtualization=wsl\nControlGroup=\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "systemctl",
+        "show",
+        "user@1000.service",
+        "--property=User,Group,PrivateUsers,PrivateMounts"
+      ],
+      "exit_code": 0,
+      "stdout": "User=1000\nGroup=\nPrivateUsers=no\nPrivateMounts=no\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "findmnt",
+        "-T",
+        "/home/grace/projects/pq-did",
+        "-o",
+        "TARGET,SOURCE,FSTYPE,OPTIONS",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n   \"filesystems\": [\n      {\n         \"target\": \"/\",\n         \"source\": \"/dev/sdd\",\n         \"fstype\": \"ext4\",\n         \"options\": \"rw,relatime,discard,errors=remount-ro,data=ordered\"\n      }\n   ]\n}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Small metadata-only supplement; not an audit or workload measurement",
+  "host_changes": false,
+  "private_contents_read": false,
+  "seconds": 0.019080024008871987
+}

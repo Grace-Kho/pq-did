@@ -1,0 +1,15 @@
+{
+  "files": {
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/driver.py": "96adbb840dfbc30ab088eeaa4f8fd829e04d60aa9dbe180804e6a186585f5a74",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/run.py": "ee8af49c67fec8f7b985f5adf679b47a38843bf4691adb7ecaaed5adfd99d4b9",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/amendment.json": "e15617dd8004a01c4793dd2edda672ecf85b27e8254fbd6d62cbbb7aa50629da",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/config.json": "dd636369a5e3c954e03f04713f9fa734a8d9f9535bb2f12c5356c39cdc8a01e0",
+    "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/prefixes.json": "61e2d18603970ceef499f2bad3db6ca8ff9e58e281f585fb3adedaf45988af86"
+  },
+  "driver_sha256": "96adbb840dfbc30ab088eeaa4f8fd829e04d60aa9dbe180804e6a186585f5a74",
+  "retained_bootstrap_sha256": "f948a5accfb9120a1c2d6d7527f267ab91a53b214cf3894cc9e2eea4e77dfeac",
+  "reference_checks_reused": 16,
+  "reference_check_archive_sha256": "b2f3886339159a8737d3c4cc259f9dfe39577faf4826b95e4d024aa5211d45eb",
+  "formatting_AST_equal": true,
+  "new_regression_invocations": 0
+}

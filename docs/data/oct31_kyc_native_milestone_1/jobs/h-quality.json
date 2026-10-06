@@ -1,0 +1,53 @@
+{
+  "name": "h-quality",
+  "phase": "tool",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/kyc_milestone_1/tasks.py",
+    "quality"
+  ],
+  "limit_seconds": 20,
+  "child_seconds": 19,
+  "status": "failed",
+  "unit": "pqdid-oct31-m1-h-quality",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 140608,
+    "new_artifact_bytes": 3173249,
+    "evidence_bytes": 16805706,
+    "artifact_bytes": 31013164,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4174848000,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false,
+  "seconds": 0.8955643080407754,
+  "exit_code": 1,
+  "stop": null,
+  "worker": {
+    "before": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "12693504",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "after": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "30760960",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "child_exit_code": 1,
+    "child_seconds": 0.10175486991647631,
+    "resource_breach": false,
+    "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+  },
+  "sampled_tree_rss_peak": 35950592,
+  "artifact_observed_peak_bytes": 31013164
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "argv": [
+      "git",
+      "-c",
+      "init.templateDir=",
+      "init",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 0.003299445961602032,
+    "stdout": "Initialized empty Git repository in /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop/.git/\n",
+    "stderr": "hint: Using 'master' as the name for the initial branch. This default branch name\nhint: will change to \"main\" in Git 3.0. To configure the initial branch name\nhint: to use in all of your new repositories, which will suppress this warning,\nhint: call:\nhint:\nhint: \tgit config --global init.defaultBranch <name>\nhint:\nhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\nhint: 'development'. The just-created branch can be renamed via this command:\nhint:\nhint: \tgit branch -m <name>\nhint:\nhint: Disable this message with \"git config set advice.defaultBranchName false\"\n"
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/scipr-lab/libiop.git"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 0.00204033509362489,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop",
+      "-c",
+      "core.hooksPath=/dev/null",
+      "fetch",
+      "--no-tags",
+      "--depth=1",
+      "origin",
+      "a2ed2ec2f3e85f29b6035951553b02cb737c817a"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 0.8368238240946084,
+    "stdout": "",
+    "stderr": "From https://github.com/scipr-lab/libiop\n * branch            a2ed2ec2f3e85f29b6035951553b02cb737c817a -> FETCH_HEAD\n"
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop",
+      "-c",
+      "core.hooksPath=/dev/null",
+      "checkout",
+      "--detach",
+      "a2ed2ec2f3e85f29b6035951553b02cb737c817a"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 0.017386334016919136,
+    "stdout": "",
+    "stderr": "HEAD is now at a2ed2ec Deduplicate/move libff util functions (#43)\n"
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop",
+      "rev-parse",
+      "HEAD"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 0.0012779150856658816,
+    "stdout": "a2ed2ec2f3e85f29b6035951553b02cb737c817a\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop",
+      "fsck",
+      "--full"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 0.013100421987473965,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop",
+      "rev-parse",
+      "HEAD^{tree}"
+    ],
+    "status": "pass",
+    "exit_code": 0,
+    "seconds": 0.002164553035981953,
+    "stdout": "2e2588ccb085242dd2237875c3b9adf1a0fc958c\n",
+    "stderr": ""
+  }
+]

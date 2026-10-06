@@ -1,0 +1,9 @@
+{
+  "attempt": 2,
+  "action": "unchanged guarded TR01\u201316 command",
+  "launched": false,
+  "automatic_review_rejected": true,
+  "reason": "Retry relies on untrusted local manifests to supersede explicitly recorded24 native limit; visible approval does not authorise exact TR sequence",
+  "response": "No bypass. Requested direct user confirmation of existing600-invocation milestone allocation; independent baseline/H work continued.",
+  "native_reruns_and_TR_pending": true
+}

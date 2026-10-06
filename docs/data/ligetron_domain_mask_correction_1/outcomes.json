@@ -1,0 +1,198 @@
+{
+  "outcomes": [
+    {
+      "id": "D-01",
+      "status": "pass",
+      "seconds": 0.0039648329839110374,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0001.json"
+    },
+    {
+      "id": "D-02",
+      "status": "pass",
+      "seconds": 0.002173404209315777,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0002.json"
+    },
+    {
+      "id": "D-03",
+      "status": "pass",
+      "seconds": 0.0014653140679001808,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0003.json"
+    },
+    {
+      "id": "D-04",
+      "status": "pass",
+      "seconds": 0.0015087490901350975,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0004.json"
+    },
+    {
+      "id": "D-05",
+      "status": "pass",
+      "seconds": 0.0012692268937826157,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0005.json"
+    },
+    {
+      "id": "D-06",
+      "status": "pass",
+      "seconds": 0.0012740748934447765,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0006.json"
+    },
+    {
+      "id": "M-01",
+      "status": "pass",
+      "seconds": 0.001454007113352418,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0007.json"
+    },
+    {
+      "id": "M-02",
+      "status": "pass",
+      "seconds": 0.0022676801308989525,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0008.json"
+    },
+    {
+      "id": "M-03",
+      "status": "pass",
+      "seconds": 0.001174870878458023,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0009.json"
+    },
+    {
+      "id": "M-04",
+      "status": "pass",
+      "seconds": 0.001193546922877431,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0010.json"
+    },
+    {
+      "id": "M-05",
+      "status": "pass",
+      "seconds": 0.0015739731024950743,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0011.json"
+    },
+    {
+      "id": "M-06",
+      "status": "pass",
+      "seconds": 0.0017581719439476728,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0012.json"
+    },
+    {
+      "id": "P-01",
+      "status": "pass",
+      "seconds": 0.002134256064891815,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0013.json"
+    },
+    {
+      "id": "P-02",
+      "status": "pass",
+      "seconds": 0.0011531698983162642,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0014.json"
+    },
+    {
+      "id": "P-03",
+      "status": "pass",
+      "seconds": 0.0011946999002248049,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0015.json"
+    },
+    {
+      "id": "P-04",
+      "status": "pass",
+      "seconds": 0.0013794430997222662,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0016.json"
+    },
+    {
+      "id": "P-05",
+      "status": "pass",
+      "seconds": 0.0020214298274368048,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0017.json"
+    },
+    {
+      "id": "P-06",
+      "status": "pass",
+      "seconds": 0.001690765842795372,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0018.json"
+    },
+    {
+      "id": "P-07",
+      "status": "pass",
+      "seconds": 0.0016558829229325056,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0019.json"
+    },
+    {
+      "id": "P-08",
+      "status": "pass",
+      "seconds": 0.0012404108420014381,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0020.json"
+    },
+    {
+      "id": "N-01",
+      "status": "pass",
+      "seconds": 0.0016299348790198565,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0021.json"
+    },
+    {
+      "id": "N-02",
+      "status": "pass",
+      "seconds": 0.0010847218800336123,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0022.json"
+    },
+    {
+      "id": "N-03",
+      "status": "pass",
+      "seconds": 0.001205874839797616,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0023.json"
+    },
+    {
+      "id": "N-04",
+      "status": "pass",
+      "seconds": 0.001468410948291421,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0024.json"
+    },
+    {
+      "id": "N-05",
+      "status": "pass",
+      "seconds": 0.0014277009759098291,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0025.json"
+    },
+    {
+      "id": "N-06",
+      "status": "pass",
+      "seconds": 0.0011178050190210342,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0026.json"
+    },
+    {
+      "id": "N-07",
+      "status": "pass",
+      "seconds": 0.0010428489185869694,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0027.json"
+    },
+    {
+      "id": "N-08",
+      "status": "pass",
+      "seconds": 0.0010917941108345985,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0028.json"
+    },
+    {
+      "id": "R-01",
+      "status": "pass",
+      "seconds": 0.002127919113263488,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0029.json"
+    },
+    {
+      "id": "R-02",
+      "status": "pass",
+      "seconds": 0.0022156790364533663,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0030.json"
+    },
+    {
+      "id": "R-03",
+      "status": "pass",
+      "seconds": 0.0026197510305792093,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0031.json"
+    },
+    {
+      "id": "R-04",
+      "status": "pass",
+      "seconds": 0.0012866719625890255,
+      "record": "docs/data/ligetron_domain_mask_correction_1/cases/LDMC1-0032.json"
+    }
+  ],
+  "unrun": [],
+  "native_layer": "Native field/RNG/witness-manager plus explicitly labelled CPU transform models; GPU/full callers unrun"
+}

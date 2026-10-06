@@ -1,0 +1,188 @@
+{
+  "sha256": {
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/bcs_indexer.hpp": "c4548dfa90b6cf7e7087d9912b78d01eb78ec13a71a113dff96272417bd3844f",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/pow.tcc": "d1f632d48de11aca45a4d26d9dae81b875897cea82388984b7ec75864c7be0b3",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/common_bcs_parameters.hpp": "3b6df9386420e48a2deda2e4320c3d5164ae9a82d86d2cf18f9f81ba4f840827",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/bcs_indexer.tcc": "a43b055bdf61f511aa4bb28b9deca3d777a28cc020c3c820194034609c9a6ae6",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/bcs_verifier.tcc": "432529eda4d3d65238c2ecf8dada5bda7c9404c66963efdcb6f413c7ce36e652",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/common_bcs_parameters.tcc": "7a8fe9e43a3332edff820d7a528378897bdf02c29536f4796ec1acbda864a0ff",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/pow.hpp": "d1931a2182d63157cbd6332c1ea56a21e5101720f0feecfef5441dc6aa71bc7e",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/bcs_common.hpp": "d25fb296ccc03a7c50f62517d39f91f165a747fbfc4bd54712cbd7ff270402b5",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/merkle_tree.hpp": "2f94d699ed976e97d91dee8298ae2ec7801284be49f9079dd489f607480358c1",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/bcs_prover.tcc": "c2885abf98f2d1ced9f0a42467aed647cf024413f99861833e531e4db7405ab4",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/bcs_common.tcc": "5a52964cef2fe5c8118dcc48553268e57e2e62a55af8e11f71e1ffbc853c815e",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/bcs_prover.hpp": "d63b480a6d1f2977368aaef54bf63802c04ff0787702fd64daa0b93edc860e7b",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/bcs_verifier.hpp": "59889417ff6133fa2fc04641e0c6d53b26d42e200e6810ecc04053490fbc6cec",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/README.md": "e117ac0bbf57c5c5873e8bb4b3a759d14668a0a67418231d1b011c0b2fc55e90",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/merkle_tree.tcc": "bf65512380386cee52428a1434c9192900fbc79753eacdcb21969e60908ae127",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/generate_MDS.sage": "b542994437d83906326d9f62949e87154fe0f41d3dabb8ad1dcf2b31f40319ba",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/hash_enum.hpp": "dce3f88ef0cd2923f66d6fa8ffe3b54337d5d5354347672d3a21d604090fce9a",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/poseidon.md": "b9752f1890aa5627e28654a88c8c0043cac0650666f7a39ec191ac4265848cb5",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/exp2_public_pilot.hpp": "6581fc2b0971deb3d00553ce866fab3a94d87acff5f338a992e75f580ed790f3",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/dummy_algebraic_hash.tcc": "999780b3ffee3279db58f3af98f57cea1ea5244109d6d536b2885774b3d25726",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/blake2b.hpp": "6de38adb7c4a7f07fe2e6dd51c4916a059b32fd10ba0bfbab71b4f21331ed72e",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/poseidon.tcc": "436a402b159837b6bb5d6694217816bfd0fbb2574d0bcb090558f2352b4400d0",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/hash_enum.tcc": "233d3182b0ce6e75f501046d7d9f690d454038e960799dc20c1dd331a0706e4c",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/blake2b.cpp": "48dbd3a6003fa3165b00e236b8391d766245694e4755d5a6cc9203c35f457c44",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/blake2b.tcc": "f26534f6ddf1fe8af1c37c0f76e0de32ff2cb8b643ba19a6a28543f7b476695f",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/poseidon.hpp": "dc518ad6501e0837bbe0c191c5ba197ec67d66c48734aa3569ebab049a5d7987",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/rescue.tcc": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/dummy_algebraic_sponge.hpp": "afff5d27c7bac79f2cbfe602afc13d623534895eb892d78a69a11925ca895132",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/algebraic_sponge.tcc": "accbcac5a2db2ec358da232719cf7f41b456fc602d0e42ce8962a91973aa4d7f",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/rescue.hpp": "5eaaf772eb8fe8a3293df6a01c306760408dc9b032e876510f284e14ea901cbe",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/README.md": "5b4fb95bc9e3dffb9fafb5cf59bb48c551ab67f1ff072b86b86140fc6872bd8d",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/hashing.hpp": "5484d8d730e52754ca011833ca5faa78437ce82f181a9584c7a9294ba79c59c3",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/algebraic_sponge.hpp": "f9ae4843af4c9b3771130bc728b8b2e9941220250001b0694f4d380a1647be0f",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop/libiop/bcs/hashing/dummy_algebraic_hash.hpp": "76a97eec0b20f7433ed48264a4fcce7f67b7537dcb3b9944bf75f281639c7d0f",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/overlay/exp2_native.cpp": "52f847c2ac660396b76852f8de88b9b6ea68f7153b869e2350b9959df09dcedd",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/overlay/nonce-mutated.bin": "d54bd49af14b933ac82b28813b26f42b49c81306eac6a27d80668ea3e1be56aa",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/overlay/canonical.bin": "33a60e58671001d29e461ef3023f7eaf8c751547f111295111417791b4fa52a1",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/overlay/CMakeLists.txt": "fb72c9eb78bb7103f8968214e3d116f1744d6a57b54c12186cdf2cc5a7e21c3f"
+  },
+  "expected": [
+    {
+      "id": "TR-01",
+      "definition": "baseline complete trace, including empty scheduled records, four challenges and legal absorb after squeeze",
+      "expected": "exact independent preimages/states/blocks/mapped outputs and prover/verifier agreement",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-01.json",
+      "retained_sha256": "a1bd44437b55abff56a9407b621fca69a410601c25dc910c42a57256faaf0015"
+    },
+    {
+      "id": "TR-02",
+      "definition": "fresh second baseline run, counted repeat",
+      "expected": "byte-identical trace to TR-01; no random seed or timestamp input",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-02.json",
+      "retained_sha256": "a1bd44437b55abff56a9407b621fca69a410601c25dc910c42a57256faaf0015"
+    },
+    {
+      "id": "TR-03",
+      "definition": "typed public context nonce first byte XOR1, re-encode unchanged remaining fields",
+      "expected": "new exact oracle trace; compare complete states, not require every mapped challenge to differ",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-03.json",
+      "retained_sha256": "1220eb5d5c42edccbc4ac76c7954547c9ed9cb1ceafe8abf5fa7808743ec489d"
+    },
+    {
+      "id": "TR-04",
+      "definition": "root_a last byte XOR1",
+      "expected": "first divergence at R0 frame/state, initial state unchanged, match independent trace",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-04.json",
+      "retained_sha256": "88856a1d4b688848b27633f17d0999ca692aa279dd19faec1e4866b57aca0b31"
+    },
+    {
+      "id": "TR-05",
+      "definition": "field_a last byte XOR1",
+      "expected": "first divergence at R0 frame/state, match independent trace",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-05.json",
+      "retained_sha256": "c3271503906d82323c1697ada8ce88752ff8f65e0a36c9ab3233d8f1329419f6"
+    },
+    {
+      "id": "TR-06",
+      "definition": "submit round1 before round0",
+      "expected": "reject before hashing/partial state update; object FAILED",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-06.json",
+      "retained_sha256": "da0a3fc6a0922a78e9a09d0439c86180140bab92b0fcaa4cae6992595d508544"
+    },
+    {
+      "id": "TR-07",
+      "definition": "swap the two one-field R0 messages",
+      "expected": "valid shape, altered ordered frame, exact independent trace",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-07.json",
+      "retained_sha256": "36491d6ecbf31e105a907f39b67e354472c2e1bd4a4c9396b872520fe38ca42c"
+    },
+    {
+      "id": "TR-08",
+      "definition": "second trusted harness plan uses one two-field R0 message rather than two one-field messages",
+      "expected": "different PLAN/PID and message boundary framing despite same concatenated field bytes; independent trace",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-08.json",
+      "retained_sha256": "312ccef5e3570eb4011760ee806b90c8c74d782ab786a77ee37a0c991b5a68e9"
+    },
+    {
+      "id": "TR-09",
+      "definition": "empty canonical statement byte input to typed adapter",
+      "expected": "structural rejection; no initial state or challenge",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-09.json",
+      "retained_sha256": "7f81dc56d391b45332c297cafa962abff44bf572d3e715a6a2f652625990bc25"
+    },
+    {
+      "id": "TR-10",
+      "definition": "root_a truncated to63 bytes",
+      "expected": "reject before R0 update, FAILED, no challenge returned",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-10.json",
+      "retained_sha256": "a705127b85fcc444da9ad46daa711e6ad619ea67463f699d3d00baf5f686e3fb"
+    },
+    {
+      "id": "TR-11",
+      "definition": "field_a truncated to23 bytes",
+      "expected": "reject before R0 update, FAILED, no challenge returned",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-11.json",
+      "retained_sha256": "dd0bd0afffd4930390f15019d547dde0d803f1c82ae8641182edc183fde9721f"
+    },
+    {
+      "id": "TR-12",
+      "definition": "request transcript version1",
+      "expected": "reject before initialisation; no compatibility fallback",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-12.json",
+      "retained_sha256": "2f1b3105d25fee25355ce31d2720832d7e1f19cc2bbc5aae40c8d5114015f6d9"
+    },
+    {
+      "id": "TR-13",
+      "definition": "after R0 challenge0, attempt R1 before remaining two R0 challenges",
+      "expected": "reject atomically, no hash or counter/state advance, FAILED",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-13.json",
+      "retained_sha256": "f50e1f4a73ece0b5ea6d3c8e07e505a342f6492ec7d4dade482cb7a148b34f4c"
+    },
+    {
+      "id": "TR-14",
+      "definition": "request challenge1 before challenge0",
+      "expected": "reject before block generation; no returned challenge, FAILED",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-14.json",
+      "retained_sha256": "f132bb35aaf155027b3a98969c87e644587d08bdf9428b5ab328829ab9bf16f2"
+    },
+    {
+      "id": "TR-15",
+      "definition": "append a fourth round after valid finish",
+      "expected": "reject extra data and subsequent calls; no success interpretation as proof",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-15.json",
+      "retained_sha256": "7ddb9f5bad8a6ee24167b2904f16e66a6e9418ba4995925ac59c8a4ec325d681"
+    },
+    {
+      "id": "TR-16",
+      "definition": "isolated old omission equation and length-only repair for two64-byte digests",
+      "expected": "OLD(S,00^64)==OLD(S,01^64)==H(S); repaired preimages include full128 bytes and outputs equal independent H(S||u); source equation model, not native build or forgery",
+      "status": "not-run-dependency-blocked",
+      "native_invocation": null,
+      "retained_expectation": "docs/data/s3_aurora_transcript_regression_1/TR-16.json",
+      "retained_sha256": "f38a070fc085de533603c7f920b2265c94998ec1b7c8d4e4c19d6ae9ebb5cee1"
+    }
+  ]
+}

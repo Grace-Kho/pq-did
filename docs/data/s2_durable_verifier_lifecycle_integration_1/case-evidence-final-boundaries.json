@@ -1,0 +1,72 @@
+[
+  {
+    "case": "test_boundary_inconsistent_recovery",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "63a5db21be344a0ee39718ef60475cc2896a9db8aeb786fe1ae6227b4598e67b",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "f2b3f0631d549b8028b3f2d9036aa40b627429ae54523ba19fe1780dff7aaca0",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "99aa67dccedb5ea402ed02e041bb4af503c4c2332bb331132d178edef3c10207",
+      "manager_epoch": 0
+    }
+  },
+  {
+    "case": "test_boundary_request_signing_failure",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "9f5918e973a07ffbb01881e73ac2fc39914d233629366c7ca794481692045078",
+          "generation": 1,
+          "challenges": 2,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "f2b3f0631d549b8028b3f2d9036aa40b627429ae54523ba19fe1780dff7aaca0",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "74a44d39bd5e97f05d1537cdd6a21a8edc6b5a6f67fb1f888d671a5ce4025d2a",
+      "manager_epoch": 0
+    },
+    "fault_model": "test-only request entropy failure; durable reservation retained"
+  },
+  {
+    "case": "test_boundary_stale_manager",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "63a5db21be344a0ee39718ef60475cc2896a9db8aeb786fe1ae6227b4598e67b",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "f2b3f0631d549b8028b3f2d9036aa40b627429ae54523ba19fe1780dff7aaca0",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "a0714d42f9c33382fed4e1346ff9d88d9586a56f8ef14eba8ee152968647aa51",
+      "manager_epoch": 0
+    }
+  }
+]

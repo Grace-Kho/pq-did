@@ -1,0 +1,144 @@
+[
+  {
+    "case": "test_boundary_current_state[unauthenticated]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "ab864c8be680537cf367653d7e80410dd0e6036608d7376cd01aa2f64abf021d",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "b70c93b283715898083a7d3b53b474bd195aaca5f39eb27c9cf1b7216d336b86",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "76ee6cab22d7b57d13771c34453cdf8c8ddcec3c392548146109348759b2edbe",
+      "manager_epoch": 0
+    },
+    "freshness": "unauthenticated; synthetic proof only, not a private relation check"
+  },
+  {
+    "case": "test_boundary_current_state[inconsistent-state]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "ab864c8be680537cf367653d7e80410dd0e6036608d7376cd01aa2f64abf021d",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "b70c93b283715898083a7d3b53b474bd195aaca5f39eb27c9cf1b7216d336b86",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "be639344a8b25ca1fe5c2bc380583a3e353b8cceaf97d6344d92c1324db4aea9",
+      "manager_epoch": 0
+    },
+    "freshness": "inconsistent-state; synthetic proof only, not a private relation check"
+  },
+  {
+    "case": "test_boundary_current_state[before-read]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "ab864c8be680537cf367653d7e80410dd0e6036608d7376cd01aa2f64abf021d",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "b70c93b283715898083a7d3b53b474bd195aaca5f39eb27c9cf1b7216d336b86",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "2a9967a92fb84ef67acb6fa7e6bd69aeee0f58e66abbe4abc99087c87885631c",
+      "manager_epoch": 1
+    },
+    "freshness": "before-read; synthetic proof only, not a private relation check"
+  },
+  {
+    "case": "test_boundary_current_state[after-read]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "e0fb37475782da4b4da8d3b09edaf564fe31e207dbab7d0c04b79741e616f0ad",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 1
+        },
+        {
+          "audience": "audience-B",
+          "head": "b70c93b283715898083a7d3b53b474bd195aaca5f39eb27c9cf1b7216d336b86",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "27c488b253fcfd097dea69b2119eecd891de23818744249a609a0812be93b046",
+      "manager_epoch": 1
+    },
+    "freshness": "after-read; synthetic proof only, not a private relation check"
+  },
+  {
+    "case": "test_boundary_restart_replay",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "e0fb37475782da4b4da8d3b09edaf564fe31e207dbab7d0c04b79741e616f0ad",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 1
+        },
+        {
+          "audience": "audience-B",
+          "head": "36db69d691c8bd9f74fb017ec89030f05aa64da2c1c0525a34abe023e77afb01",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 1
+        }
+      ],
+      "manager_head": "f8f01900cc021bb4503bc13bfffaf4f31cc8d36ef1f3c46ecec808f7c1b3ba41",
+      "manager_epoch": 0
+    }
+  },
+  {
+    "case": "test_boundary_concurrent_submissions",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "e0fb37475782da4b4da8d3b09edaf564fe31e207dbab7d0c04b79741e616f0ad",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 1
+        },
+        {
+          "audience": "audience-B",
+          "head": "b70c93b283715898083a7d3b53b474bd195aaca5f39eb27c9cf1b7216d336b86",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "2c34339a4d6f814746069e6e598a0b1b93fda822c3f8689fcad466e57ed1e770",
+      "manager_epoch": 0
+    }
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "package": "S2-AUTHORITY-ISOLATION-PILOT-1",
+  "version": 2,
+  "approved_manifest_sha256": "994327b3b0d32d22b6ce9aa09a5125ec798d509ebbdcfa79819bf2225f1a6c32",
+  "approval": "User explicitly approved version-2 command and host-effect delta in this session, preserving original scope and stop conditions.",
+  "status": "waiting-for-operator-provisioning-command; sudo requires interactive authentication",
+  "operator_observations": [
+    {
+      "kind": "read-only namespace diagnostic",
+      "exit_code": 1,
+      "reason": "layout.PilotError: unsafe-owner in sandbox namespace",
+      "interpretation": "Not host ownership evidence. The subsequent real-host read-only preflight passed. No workload or mutation was admitted."
+    },
+    {
+      "command": "sudo -n true",
+      "exit_code": 1,
+      "output": "sudo: interactive authentication is required",
+      "interpretation": "Authentication unavailable to this tool session; no privileged workload started."
+    }
+  ],
+  "new_operator_charge_seconds": 5,
+  "new_operator_charge_basis": "Conservative supplemental charge for bounded seal/NSS/metadata observations and documentation bookkeeping; separate from the previous five-second charge. Measured real-host preflight was 1.4321555899223313 seconds. Increase accounting if later observation work exceeds this allocation; never enlarge the 300-second allowance.",
+  "starting_remaining_seconds_user": 255.22,
+  "remaining_after_supplemental_charge_seconds": 250.22,
+  "emergency_reserve_seconds": 10,
+  "remaining_before_emergency_reserve_seconds": 240.22,
+  "historical_test_invocations": 100,
+  "new_test_invocations": 0,
+  "identity_cases_pending": [
+    "ISO-RUNTIME",
+    "ISO-ROLE-m",
+    "ISO-ROLE-i",
+    "ISO-ROLE-va",
+    "ISO-ROLE-vb",
+    "ISO-CROSS-va",
+    "ISO-CROSS-vb",
+    "ISO-RECIPIENT",
+    "ISO-DAC-DENIED",
+    "ISO-ACL-DENIED",
+    "ISO-FENCING",
+    "ISO-ROTATION",
+    "ISO-HOLDER",
+    "ISO-FD",
+    "ISO-MISCONFIG-peer-identity",
+    "ISO-MISCONFIG-socket-mode",
+    "ISO-MISCONFIG-writable-parent",
+    "ISO-MISCONFIG-mutable-runtime",
+    "ISO-RESTART-m",
+    "ISO-RESTART-i",
+    "ISO-RESTART-va",
+    "ISO-RESTART-vb"
+  ],
+  "new_proofs": 0,
+  "new_zkvm_executions": 0,
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1
+  },
+  "next_package": "S2-CONCRETE-SECURITY-ASSESSMENT-1 before further lifecycle integration; await user task"
+}

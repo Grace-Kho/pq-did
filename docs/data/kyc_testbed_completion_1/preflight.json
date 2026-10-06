@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "programme_complete": false,
+  "workstream_complete": false,
+  "preparation_only": true,
+  "functional_invocations": 0,
+  "new_builds": 0,
+  "prior_seals_checked": 57,
+  "dataset_files_checked": 362,
+  "baseline_source_binary_files_checked": 21,
+  "matrix_entries": 72,
+  "ordinary_execution_admitted": false,
+  "budget_and_mapping_request_pending": true,
+  "storage": {
+    "new_evidence_bytes": 85051,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 30144036,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  }
+}

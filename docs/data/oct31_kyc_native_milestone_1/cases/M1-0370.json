@@ -1,0 +1,11 @@
+{
+  "invocation_id": "M1-0370",
+  "case_id": "REVOKE-UPDATE-s3-warm-12",
+  "ordinal": 370,
+  "cumulative_invocations": 818,
+  "status": "pass",
+  "benchmark_output": "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/revoke-update-s3",
+  "attempt_id": "REVOKE-UPDATE-s3-warm-12",
+  "operation_outcome": "accepted",
+  "duration_ns": 486624631
+}

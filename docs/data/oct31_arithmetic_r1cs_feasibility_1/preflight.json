@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "verified_retained_paths": 106,
+  "storage": {
+    "new_evidence_bytes": 59751,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 26386327,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "new_build_required": false,
+  "comparison_point_v1_reused": true,
+  "private_proof_admission": false,
+  "contract_sha256": "95dab38dedb2faf0a99e703871c7d81f45f9b5be120e89a29f8aa4d070a7c1c1"
+}

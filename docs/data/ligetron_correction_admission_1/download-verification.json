@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "packages": [
+    {
+      "path": "experiments/ligetron_correction_admission_1/downloads/libssl-dev_3.5.5-1ubuntu3.6_amd64.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-dev_3.5.5-1ubuntu3.6_amd64.deb",
+      "bytes": 2935982,
+      "sha256": "dd956039c62a404aebfdde72a07d3ae633827da3910a67f67f7f6b912c9e1d7a",
+      "control": "Version: 3.5.5-1ubuntu3.6\nArchitecture: amd64\n",
+      "maintainer_scripts_executed": false
+    },
+    {
+      "path": "experiments/ligetron_correction_admission_1/downloads/libboost1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/b/boost1.90/libboost1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "bytes": 11452296,
+      "sha256": "7b89698c907fd5d33ccd439674fa53803139923822181c87b910579827aca379",
+      "control": "Version: 1.90.0-6ubuntu1\nArchitecture: amd64\n",
+      "maintainer_scripts_executed": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "sha256": {
+    "docs/data/s3_aurora_native_transcript_pilot_1/output-guard-repair-1/run.py": "bc3285beb00b2ef593f95ae543ab87fe698a83e74963923e1516ff8dc87ff01f",
+    "docs/data/s3_aurora_native_transcript_pilot_1/output-guard-repair-1/monitor_safety.py": "3cd05c39cc361906d73ef11b41d46e9498e1d1464ada5c1e8f722ea7dea61094",
+    "docs/data/s3_aurora_native_transcript_pilot_1/output-guard-repair-1/fixtures.py": "6893420963f6f495779859cdb1ddf21477c5b4a6ff195e2faa63885cd7555a6b",
+    "docs/data/s3_aurora_native_transcript_pilot_1/output-guard-repair-1/work.py": "2281d159383975a61380d9475278adbbae8094eb109eba055b24b36e8ee3cd83",
+    "docs/data/s3_aurora_native_transcript_pilot_1/output-guard-repair-1/checks.py": "777c50cbbd98e4a938122fa7eb8c992148786724b2eda13174f0b8f488a608b7",
+    "docs/data/s3_aurora_native_transcript_pilot_1/output-guard-repair-1/seal_policy.py": "5520fc369640282cb976c2a2a16d952b489d46ffa0994c1d56d7f00c92e792d3"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "sha256": {
+    "docs/data/s3_binius_joint_opening_construction_1/acquire.py": "fc7cb8b75639dcddf389efad760124695fee7985b25737936f0acb19f10cee76",
+    "docs/data/s3_binius_joint_opening_construction_1/admission.json": "31b05ed03c9bbe6bacbe589cd88a32556137e7e8d43ebb206f3a7fbbde090a40",
+    "docs/data/s3_binius_joint_opening_construction_1/checks-before-format-correction.txt": "cd6504d112a871767e39cb044eb690bd9e1cdb85ad1aef9186e610fd2a038507",
+    "docs/data/s3_binius_joint_opening_construction_1/checks.py": "092153e2e697563c155dd841651805f4baec2f1cbff74dd4284b44b04df941f9",
+    "docs/data/s3_binius_joint_opening_construction_1/config.json": "1871af0ba20244011ac9738355d2bf684aaafedd7fb3b17070a98914f66de72d",
+    "docs/data/s3_binius_joint_opening_construction_1/formatting-correction.json": "36fddfb06156652dfc2283ca3b37c4a4dc5f3f1ec73701312c9c7d4233c5ca95",
+    "docs/data/s3_binius_joint_opening_construction_1/missing-source-index.json": "dad65f72d04b76211a70f1bdfc7364c040d78ac0423a34b8727be5724160a800",
+    "docs/data/s3_binius_joint_opening_construction_1/opening.json": "6e7cf40ee500f80c1ec3d49153bf1e1e8b9be9c37990af99718eab41edadcb17",
+    "docs/data/s3_binius_joint_opening_construction_1/prefixes.json": "37c33b71b38ca2d310de4efda9b08a26c207fe2b0ccf21597bf7280de76bf10d",
+    "docs/data/s3_binius_joint_opening_construction_1/quality.json": "f4043cd03d2366918bbc8ebfd677e7e2c366a26e07fdec8166accc0f25212107",
+    "docs/data/s3_binius_joint_opening_construction_1/quality.log": "6d68f8ca727fdc913166505505e2bc97d8220a3d6097eaecd65f562f0f11eda3",
+    "docs/data/s3_binius_joint_opening_construction_1/quality.service.json": "8f99bd637ec6e1a0ed1b0c72cd7bf0050fd89ba8dc84a73eafa5301279845106",
+    "docs/data/s3_binius_joint_opening_construction_1/review-identity.json": "f5e4ff254a6a856d31aecda7813b5f6e2d2c8a0195e5c554d58030302f9ce392",
+    "docs/data/s3_binius_joint_opening_construction_1/run.py": "904e117262f5c4814d37de2b47481218f8b2555534364f93df210c17a7be426a",
+    "docs/data/s3_binius_joint_opening_construction_1/source-acquisition.json": "bfdc6472a85dbc04a0a07baa9b84cb40fb11229b7b1a6565ffa446274d522502",
+    "docs/data/s3_binius_joint_opening_construction_1/source-memory-observation.json": "68e5f94d9ad2e1cb369cd6d04c421559803910c2a34901e6523865bfb7963d2d",
+    "docs/data/s3_binius_joint_opening_construction_1/sources/crates--math--src--bit_reverse.rs": "3707a61e94ff26e02d50be43c7fb852e4a09a85412a94b5b076e09ce80a96a02",
+    "docs/data/s3_binius_joint_opening_construction_1/sources/crates--math--src--ntt--domain_context.rs": "873f1141c768c17a12fc4031c7dc406a977854e4fe7a3a6b08e2eaebbcd7cceb",
+    "docs/data/s3_binius_joint_opening_construction_1/sources/crates--math--src--ntt--mod.rs": "c87334d0685e54fab3d06e458643151c5fc5f40bf535d47336f551e323e91850",
+    "docs/data/s3_binius_joint_opening_construction_1/sources/crates--math--src--ntt--neighbors_last.rs": "8bf569b9d0c5461cc5673554f882037dcf1b13abe7cdf90634b7822e9b693772",
+    "docs/data/s3_binius_joint_opening_construction_1/sources/crates--math--src--ntt--reference.rs": "99a2dad8ee772ec13535f5a6566248708c3a628e66716977560bda6020d9e1e9",
+    "docs/data/s3_binius_joint_opening_construction_1/sources/crates--math--src--ntt--subspace_polys.rs": "ee25ddce394349f6c8ac5743093119fd7a8f12f0d52b94ade09b41dde28ac222",
+    "docs/data/s3_binius_joint_opening_construction_1/sources/crates--prover--src--protocols--intmul--prove.rs": "ccca3b42f52061bd6934eb83f799bb2d0117cb73f3eec6fd16ec4de8d975496c",
+    "docs/data/s3_binius_joint_opening_construction_1/sources/crates--prover--src--protocols--intmul--witness.rs": "b6f3b25464e2490a8a6613dc183cfbcfa06f0b145420a7660f3f92ff2772d88d",
+    "docs/data/s3_binius_joint_opening_construction_1/sources/crates--verifier--src--protocols--intmul--common.rs": "5713fecd9b32bd0b4552f9fd1311933e2c76a5b631e26fbf2848ec1c291f4fec",
+    "docs/data/s3_binius_joint_opening_construction_1/sources/crates--verifier--src--protocols--intmul--verify.rs": "aad98e43d33cee4d53f8d039e99179f45c7e4b99affd6f733057d37feafa6d0a",
+    "docs/data/s3_binius_joint_opening_construction_1/static-review.json": "cf5ee8526d5dd18cce7e4a7dba1d706da6d2799ea83912c8a45d7d84c23419b5"
+  },
+  "historical_baselines_regenerated": false
+}

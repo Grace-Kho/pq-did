@@ -1,0 +1,37 @@
+# PROPOSAL ONLY: NOT INSTALLED. Requires approved collision-free activation.
+g pqiso-ipc-m -
+g pqiso-ipc-i -
+g pqiso-ipc-va -
+g pqiso-ipc-vb -
+u pqiso-o-m - "PQ-DID isolation pilot: trusted owner for manager" /nonexistent /usr/sbin/nologin
+m pqiso-o-m pqiso-ipc-m
+u pqiso-w-m - "PQ-DID isolation pilot: service writer client for manager" /nonexistent /usr/sbin/nologin
+m pqiso-w-m pqiso-ipc-m
+u pqiso-o-i - "PQ-DID isolation pilot: trusted owner for issuer" /nonexistent /usr/sbin/nologin
+m pqiso-o-i pqiso-ipc-i
+m pqiso-o-i pqiso-ipc-m
+u pqiso-w-i - "PQ-DID isolation pilot: service writer client for issuer" /nonexistent /usr/sbin/nologin
+m pqiso-w-i pqiso-ipc-i
+u pqiso-o-va - "PQ-DID isolation pilot: trusted owner for verifier-a" /nonexistent /usr/sbin/nologin
+m pqiso-o-va pqiso-ipc-va
+u pqiso-w-va - "PQ-DID isolation pilot: service writer client for verifier-a" /nonexistent /usr/sbin/nologin
+m pqiso-w-va pqiso-ipc-va
+u pqiso-o-vb - "PQ-DID isolation pilot: trusted owner for verifier-b" /nonexistent /usr/sbin/nologin
+m pqiso-o-vb pqiso-ipc-vb
+u pqiso-w-vb - "PQ-DID isolation pilot: service writer client for verifier-b" /nonexistent /usr/sbin/nologin
+m pqiso-w-vb pqiso-ipc-vb
+u pqiso-admin - "PQ-DID isolation pilot: application recovery administrator" /nonexistent /usr/sbin/nologin
+m pqiso-admin pqiso-ipc-m
+m pqiso-admin pqiso-ipc-i
+m pqiso-admin pqiso-ipc-va
+m pqiso-admin pqiso-ipc-vb
+u pqiso-observer - "PQ-DID isolation pilot: redacted operational status" /nonexistent /usr/sbin/nologin
+m pqiso-observer pqiso-ipc-m
+m pqiso-observer pqiso-ipc-i
+m pqiso-observer pqiso-ipc-va
+m pqiso-observer pqiso-ipc-vb
+u pqiso-rec-a - "PQ-DID isolation pilot: issuance recipient A" /nonexistent /usr/sbin/nologin
+m pqiso-rec-a pqiso-ipc-i
+u pqiso-rec-b - "PQ-DID isolation pilot: issuance recipient B" /nonexistent /usr/sbin/nologin
+m pqiso-rec-b pqiso-ipc-i
+u pqiso-denied - "PQ-DID isolation pilot: unauthorised negative-test client" /nonexistent /usr/sbin/nologin

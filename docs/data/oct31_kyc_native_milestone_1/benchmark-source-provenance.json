@@ -1,0 +1,17 @@
+{
+  "original_measured_tree_sha256": "d58a0779e8638866fd83ed2114bfa286a7bce692f56bc76e9876ab72504d9f91",
+  "snapshot_tree_sha256": "d58a0779e8638866fd83ed2114bfa286a7bce692f56bc76e9876ab72504d9f91",
+  "snapshot_path": "docs/data/oct31_kyc_native_milestone_1/benchmark-source-snapshot",
+  "files": {
+    "__init__.py": "92bb7d74e04348b9bdce2d9eae00a6cf95297a26f3a1c70e4edfa87c541d8852",
+    "backends.py": "bd9480ea45e620daabd4708567da73c0c5566e870a37ce59e323c6ef6f74d19e",
+    "cases.py": "a135f27b97fdaf86994db44da41d80001d840b67ace7d8f1238148d63441dbae",
+    "export.py": "e0b5bf05f95280a22431fbdef139eb0616f10877a1607aad703aae89cfcbc6d4",
+    "integration_cases.py": "66ab82bd256b5a4e69f46e2e6c21f0dcca0cbb6ba0705e2648c8ae12b56b19a3",
+    "measure.py": "b75a04a4fe91d0a05dbc24e047dbb999162a2a936ed44e3d2b03a333c18c1a11",
+    "run_bench.py": "b605a08e00d5594413681662512f1af306c46b8921e8cb365241bd0ff6197646",
+    "scenarios.py": "c10c5fb00bb897d201161cd74e0316e7b718cf7145185022c28d57ec4ffdcf99"
+  },
+  "reconstruction": "Only integration_cases.py removes exactly the two post-measurement output-role assertions; remaining files copied unchanged. Full tree matches independently retained original measured digest. This is not a claim of pre-run snapshot capture.",
+  "post_measurement_change": "C11 output-role revalidation only; runtime measured baseline and runner unchanged. Historical row identities preserved; generic reuse correctly rejects current changed test-inclusive tree."
+}

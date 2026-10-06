@@ -1,0 +1,27 @@
+{
+  "decision": "NO-GO-direct-resident-Aurora",
+  "count_kind": "conditional lower bound from retained complete component; not full Rauth",
+  "retained_summary_sha256": "b9774c715a394dcede315070dfacc613c56bef4171d0dfad0989b09e3055ebfe",
+  "measured_component_boolean_gates": 27044356,
+  "conditional_rows_lower": 27044356,
+  "padded_rows_lower": 33554432,
+  "minimum_mask_budget_assumed": 1,
+  "codeword_elements_lower": 1073741824,
+  "single_codeword_payload_bytes_lower": 25769803776,
+  "native_memory_limit_bytes": 1073741824,
+  "other_simultaneous_buffers_included_in_lower_bound": false,
+  "additional_buffers": [
+    "sparse matrices and copies",
+    "witness/assignment vectors",
+    "Az/Bz/Cz",
+    "interpolation/FFT",
+    "masks",
+    "other codewords",
+    "Merkle trees, salts and openings"
+  ],
+  "complete_authentication_count": null,
+  "alternative_representation_admitted": false,
+  "large_instance_allocations": 0,
+  "route_stopped": "full resident proving/backend allocation",
+  "unaffected_work": "complete source, bounded component stream checks, native small matrices, fail-closed boundary"
+}

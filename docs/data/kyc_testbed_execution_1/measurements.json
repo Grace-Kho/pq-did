@@ -1,0 +1,106 @@
+{
+  "version": "kyc-completion-observations-v1",
+  "source_case_files": [
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0051.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0052.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0053.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0054.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0055.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0056.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0057.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0058.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0059.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0060.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0061.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0062.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0063.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0064.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0065.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0066.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0067.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0068.json",
+    "docs/data/kyc_testbed_execution_1/cases/KYCE1-0069.json"
+  ],
+  "successful_observations": 19,
+  "throughput_observations": 18,
+  "catchup_observations": 1,
+  "windows": [
+    {
+      "session": 1,
+      "audience": "A",
+      "operations": 3,
+      "active_operation_ns": 1694050429,
+      "active_operation_rate_per_second": 1.7709035980533965
+    },
+    {
+      "session": 1,
+      "audience": "B",
+      "operations": 3,
+      "active_operation_ns": 1710159026,
+      "active_operation_rate_per_second": 1.7542228262928807
+    },
+    {
+      "session": 2,
+      "audience": "A",
+      "operations": 3,
+      "active_operation_ns": 1653101117,
+      "active_operation_rate_per_second": 1.8147710198419762
+    },
+    {
+      "session": 2,
+      "audience": "B",
+      "operations": 3,
+      "active_operation_ns": 1516204128,
+      "active_operation_rate_per_second": 1.9786254004975246
+    },
+    {
+      "session": 3,
+      "audience": "A",
+      "operations": 3,
+      "active_operation_ns": 1736311827,
+      "active_operation_rate_per_second": 1.7278002449498953
+    },
+    {
+      "session": 3,
+      "audience": "B",
+      "operations": 3,
+      "active_operation_ns": 1642782350,
+      "active_operation_rate_per_second": 1.826170094900277
+    }
+  ],
+  "metric": "Sequential active-operation throughput, 3/sum(request+present+verify/atomic-consume seconds). Setup, inter-case ledger/reporting and storage scans excluded; not a continuous wall-window or capacity estimate.",
+  "scaling": "One 1-record observation only; no scaling curve or percentile inference",
+  "private_proof_measurements": null,
+  "baseline_v1_unchanged": 276,
+  "environment": {
+    "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+    "sqlite": "3.46.1",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "cpu_info": [
+      "model name\t: Intel(R) Core(TM) i7-14650HX",
+      "flags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves avx_vnni vnmi umip waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize ibt flush_l1d arch_capabilities"
+    ],
+    "memory_info": [
+      "MemTotal:        7935656 kB",
+      "MemAvailable:    3980892 kB",
+      "SwapTotal:       2097152 kB"
+    ]
+  },
+  "source_sha256": {
+    "experiments/kyc_testbed_execution_1/application.py": "7d15536b146fc7a2b5a5a86f930c709607169ce90d67c47a25e996b6cf7d1659",
+    "experiments/kyc_testbed_execution_1/dispatch.py": "c1b692dbe68502658194903454bce5b47fcda5a344c561da3587e924680c146e",
+    "experiments/kyc_testbed_execution_1/fixtures.py": "265ac072690c34dfeb3be0314ec0742a7f6ae9f36e3dc6bd78a93f55e94496bc",
+    "experiments/kyc_testbed_execution_1/flow_cases.py": "73cd43967d2e9df03dae9f96de7cf8784d16ece83dff4fee2c7c41ac623fabfa",
+    "experiments/kyc_testbed_execution_1/mapping.py": "7637eb3644ce5403b9c31d5f2e6694cc498418650520b7ee1c0a9f3e834f2b70",
+    "experiments/kyc_testbed_execution_1/mapping_cases.py": "2bfeeadddda7ecad2dd0a918e41ce9b12de7289a4bbd898bb80ad6bee0bc059e",
+    "experiments/kyc_testbed_execution_1/preservation.py": "f59aec93135a4055053b1ad75a4d19c5fb8e2f8aec8828f121f7b4b9d574369b",
+    "experiments/kyc_testbed_execution_1/reporting.py": "939999027f13e2ddf4c39ac9196cce1e5e0f60a07af74894bba2b18d85032513",
+    "experiments/kyc_testbed_execution_1/retain_failure.py": "11b9d54aa8e0695a1a7a3907a4b7c0e226e3229d7316156080dcbf3e0de59910",
+    "experiments/kyc_testbed_execution_1/run.py": "aa6e54710774d5ab84994fef234f652ae48fc673d6917b502e7668536ee9feb0",
+    "experiments/kyc_testbed_execution_1/tooling.py": "ebfba586ccb88710e0ebb0f68d2b1906b1edbb5e2bbfe9135c4a5d8aaa038b90",
+    "experiments/kyc_testbed_execution_1/wallet.py": "7871bf8040adfe27d08e246db664104c6b2498b00de0eec7b39721279eef4eb8",
+    "experiments/kyc_testbed_execution_1/wallet_cases.py": "63e512a06605c1d050a78b1b0801ceb37c0a1574ee8a04701607f51c7806a114"
+  },
+  "randomness": "Fresh bounded ML-DSA key generation/signing; no seeded or reused random tapes. Recorded session fixture identities are in each case; exact random outputs are not a replay promise.",
+  "timing": "time.monotonic_ns; serial guarded Python reference implementation on two allowed CPUs; public synthetic epoch 1800000000 plus elapsed real monotonic time"
+}

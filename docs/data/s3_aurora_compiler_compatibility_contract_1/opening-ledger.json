@@ -1,0 +1,18 @@
+{
+  "prior_seal_sha256": "f3125c0cdbee596222ebf0736a8647afc94d37a02e21511fec2d5dffe3d2bd56",
+  "analysis_opening_seconds": 179.79552399821114,
+  "analysis_prior_used_seconds": 120.20447600178886,
+  "package_cap_seconds": 30,
+  "completion_reserve_seconds": 10,
+  "prior_cumulative_evidence_bytes": 11510011,
+  "headroom_bytes": 876474,
+  "package_output_reservation_bytes": 262144,
+  "finalisation_output_reservation_within_package_bytes": 131072,
+  "future_native_output_reservation_proposed_bytes": 393216,
+  "native_balance_unchanged": 264.3718736843439,
+  "implementation_balance_unchanged": 268.92925334337633,
+  "provisioning_balance_unchanged": 41.843650440103374,
+  "invocations_unchanged": "402/426",
+  "build_attempts_used_unchanged": 2,
+  "no_native_work_authorised": true
+}

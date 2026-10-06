@@ -1,0 +1,247 @@
+{
+  "package": "OCT31-COMPACT-AUTH-REPRESENTATION-1",
+  "passed": true,
+  "comparison_complete": true,
+  "resource_guard_status": "pending-outer-finalisation",
+  "protected_files": 8759,
+  "unchanged_protected_files": 8756,
+  "allowed_changed_files": [
+    "docs/spec_issues.md",
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "changed_files": [],
+  "missing_files": [],
+  "bytes_hashed": 294115267,
+  "coverage_sha256": "73df29e985aad1544583a3700a7cdbf83f2c3bfbfcde6c43720fb8a2d7c772fc",
+  "supplementary_comparison": {
+    "protected_files": 2142,
+    "unchanged_protected_files": 2142,
+    "allowed_changed_files": [],
+    "changed_files": [],
+    "missing_files": [],
+    "bytes_hashed": 18466092,
+    "coverage_sha256": "ff333fcc890013538c72a3edb234821a10aebeec68f561387dc3a2a6429fa1cf"
+  },
+  "content_partition_union": 10901,
+  "content_partition_overlap": 0,
+  "identity_inclusive_unique_paths": 10936,
+  "name_inventory": {
+    "passed": true,
+    "count": 11106,
+    "unexpected": [],
+    "missing": [],
+    "partitions": [
+      {
+        "root": "src",
+        "passed": true,
+        "count": 83,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 83
+      },
+      {
+        "root": "tests",
+        "passed": true,
+        "count": 154,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 154
+      },
+      {
+        "root": "scripts",
+        "passed": true,
+        "count": 51,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 51
+      },
+      {
+        "root": "configs",
+        "passed": true,
+        "count": 3,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 3
+      },
+      {
+        "root": "docs",
+        "passed": true,
+        "count": 4860,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 4846
+      },
+      {
+        "root": "analysis",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/private_hint_lowering_1",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/mldsa_modmul_lowering_1",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/mldsa_butterfly_composition_1",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/mldsa_forward_ntt_stage_1",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/mldsa_full_forward_ntt_1",
+        "passed": true,
+        "count": 3,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 3
+      },
+      {
+        "root": "experiments/aurora_transcript_regression_1",
+        "passed": true,
+        "count": 4,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 4
+      },
+      {
+        "root": "experiments/aurora_native_transcript_pilot_1",
+        "passed": true,
+        "count": 4884,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 4884
+      },
+      {
+        "root": "experiments/kyc_milestone_1",
+        "passed": true,
+        "count": 15,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 15
+      },
+      {
+        "root": "experiments/aurora_masking_milestone_1",
+        "passed": true,
+        "count": 975,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 975
+      },
+      {
+        "root": "benchmarks",
+        "passed": true,
+        "count": 11,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 11
+      },
+      {
+        "root": "experiments/auth_relation_integration_1",
+        "passed": true,
+        "count": 43,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 43
+      },
+      {
+        "root": "experiments/compact_auth_representation_1",
+        "passed": true,
+        "count": 10,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 10
+      }
+    ],
+    "expected_union_count": 11092,
+    "expected_total_count": 11092,
+    "partition_overlap": 0,
+    "entry_ceiling_per_partition_unchanged": 10000
+  },
+  "only_existing_changes": [
+    "docs/status.md",
+    "docs/traceability.md",
+    "docs/spec_issues.md",
+    "docs/stage3_aurora_native_dependency_lock.md",
+    "docs/stage3_aurora_native_transcript_pilot.md",
+    "docs/stage3_aurora_compiler_compatibility_contract.md",
+    "docs/stage2_mldsa_reference_baseline.md",
+    "docs/stage3_aurora_masking_native.md",
+    "docs/kyc_milestone_benchmarks.md",
+    "docs/oct31_kyc_native_milestone.md"
+  ],
+  "existing_report_prefixes_preserved": true,
+  "baseline_regenerated": false,
+  "test_invocations": {
+    "Q-01": 1,
+    "C-01": 1,
+    "C-02": 1,
+    "C-03": 1,
+    "C-04": 1,
+    "C-05": 1,
+    "C-06": 1,
+    "C-07": 1,
+    "C-08": 1,
+    "C-09": 1,
+    "C-10": 1,
+    "C-11": 1,
+    "C-12": 1,
+    "C-13": 1,
+    "C-14": 1,
+    "C-15": 1,
+    "C-16": 1,
+    "C-17": 1,
+    "C-18": 1,
+    "C-19": 1,
+    "C-20": 1,
+    "C-21": 1,
+    "C-22": 1,
+    "C-23": 1,
+    "C-24": 1,
+    "N-01": 1,
+    "N-02": 1,
+    "N-03": 1,
+    "N-04": 1
+  },
+  "unique_new_tests": 29,
+  "total_test_invocations_including_prior_package": 971,
+  "new_execution_calculations": 0,
+  "source_review": "Exact compact affine representation; whole workload no-go; no proofs",
+  "scoped_existing_verifier_regressions": 0,
+  "implementation_remaining_including_audit_reservation": 2946.6336106055205,
+  "isolation_allowance_remaining_unchanged": 250.22,
+  "local_links_checked": 1604,
+  "package_bytes_before_report": 283755,
+  "temporary_storage_bytes": 0,
+  "charged_seconds_including_inflight_audit_reservation": 1327.3663893944795,
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "estimator_runs": 0,
+  "activation": false,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1
+}

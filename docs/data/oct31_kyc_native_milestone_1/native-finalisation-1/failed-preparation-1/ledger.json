@@ -1,0 +1,5634 @@
+{
+  "jobs": [
+    {
+      "name": "coordinator-quality",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/ruff",
+        "check",
+        "--no-cache",
+        "experiments/kyc_milestone_1/run.py"
+      ],
+      "limit_seconds": 10,
+      "child_seconds": 9,
+      "status": "failed",
+      "unit": "pqdid-oct31-m1-coordinator-quality",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 92358,
+        "new_artifact_bytes": 3173249,
+        "evidence_bytes": 16757456,
+        "artifact_bytes": 31013164,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3808223232,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.18581479508429766,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "13430784",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "19509248",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.02058583404868841,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 0,
+      "artifact_observed_peak_bytes": 31013164
+    },
+    {
+      "name": "coordinator-format",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/ruff",
+        "format",
+        "--no-cache",
+        "experiments/kyc_milestone_1/run.py"
+      ],
+      "limit_seconds": 10,
+      "child_seconds": 9,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-coordinator-format",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 99429,
+        "new_artifact_bytes": 3173249,
+        "evidence_bytes": 16764527,
+        "artifact_bytes": 31013164,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4589760512,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.610468638013117,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12701696",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "18771968",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.02058177604340017,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 17666048,
+      "artifact_observed_peak_bytes": 31013164
+    },
+    {
+      "name": "coordinator-quality-2",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/ruff",
+        "check",
+        "--no-cache",
+        "experiments/kyc_milestone_1/run.py"
+      ],
+      "limit_seconds": 10,
+      "child_seconds": 9,
+      "status": "failed",
+      "unit": "pqdid-oct31-m1-coordinator-quality-2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 115889,
+        "new_artifact_bytes": 3173249,
+        "evidence_bytes": 16780987,
+        "artifact_bytes": 31013164,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4253634560,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.5882355551002547,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10145792",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12697600",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.04094254900701344,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 17608704,
+      "artifact_observed_peak_bytes": 31013164
+    },
+    {
+      "name": "h-quality",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "quality"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-oct31-m1-h-quality",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 140608,
+        "new_artifact_bytes": 3173249,
+        "evidence_bytes": 16805706,
+        "artifact_bytes": 31013164,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4174848000,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.8955643080407754,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12693504",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "30760960",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.10175486991647631,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 35950592,
+      "artifact_observed_peak_bytes": 31013164
+    },
+    {
+      "name": "harness-cases",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "H",
+        "1",
+        "16"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-harness-cases",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 151188,
+        "new_artifact_bytes": 3173249,
+        "evidence_bytes": 16816286,
+        "artifact_bytes": 31013164,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4199129088,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.48388377006631345,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10436608",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "25079808",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.08117655501700938,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 35893248,
+      "artifact_observed_peak_bytes": 31013164
+    },
+    {
+      "name": "b-quality",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "quality"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-oct31-m1-b-quality",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 260203,
+        "new_artifact_bytes": 3174053,
+        "evidence_bytes": 16925301,
+        "artifact_bytes": 31013968,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3943682048,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.101558560039848,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "16818176",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "35696640",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.10112179804127663,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 54194176,
+      "artifact_observed_peak_bytes": 31013968
+    },
+    {
+      "name": "b-quality-2",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "quality"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-oct31-m1-b-quality-2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 332575,
+        "new_artifact_bytes": 3174053,
+        "evidence_bytes": 16997673,
+        "artifact_bytes": 31013968,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4172820480,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.9275775550631806,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10702848",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "25100288",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.061158638913184404,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 35700736,
+      "artifact_observed_peak_bytes": 31013968
+    },
+    {
+      "name": "native-build-1",
+      "phase": "native",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/native_build.py",
+        "native-build-1"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "failed",
+      "unit": "pqdid-oct31-m1-native-build-1",
+      "memory_limit_bytes": 1073741824,
+      "opening_storage": {
+        "new_evidence_bytes": 339298,
+        "new_artifact_bytes": 3174053,
+        "evidence_bytes": 17004396,
+        "artifact_bytes": 31013968,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4202221568,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": true,
+      "seconds": 8.316818580031395,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "12689408",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "461168640",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 6.7762523560086265,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 375963648,
+      "artifact_observed_peak_bytes": 35978296
+    },
+    {
+      "name": "b-quality-3",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "quality"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-oct31-m1-b-quality-3",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 702539,
+        "new_artifact_bytes": 6334330,
+        "evidence_bytes": 17367637,
+        "artifact_bytes": 34174245,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4682293248,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.6368653739336878,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12656640",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "31002624",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.061410624999552965,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 51384320,
+      "artifact_observed_peak_bytes": 34174245
+    },
+    {
+      "name": "quality-4",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "quality"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-oct31-m1-quality-4",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 710449,
+        "new_artifact_bytes": 6334330,
+        "evidence_bytes": 17375547,
+        "artifact_bytes": 34174245,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4676915200,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.498397684074007,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10170368",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "26165248",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.08091478096321225,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 35516416,
+      "artifact_observed_peak_bytes": 34174245
+    },
+    {
+      "name": "baseline-cases-01",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "B",
+        "1",
+        "12"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "failed",
+      "unit": "pqdid-oct31-m1-baseline-cases-01",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 718512,
+        "new_artifact_bytes": 6334330,
+        "evidence_bytes": 17383610,
+        "artifact_bytes": 34174245,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4675956736,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.328121621045284,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10436608",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "42205184",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.9474472700385377,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 55922688,
+      "artifact_observed_peak_bytes": 34656404
+    },
+    {
+      "name": "native-build-2",
+      "phase": "native",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/native_build.py",
+        "native-build-2"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-native-build-2",
+      "memory_limit_bytes": 1073741824,
+      "opening_storage": {
+        "new_evidence_bytes": 726719,
+        "new_artifact_bytes": 6844200,
+        "evidence_bytes": 17391817,
+        "artifact_bytes": 34684115,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4679491584,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": true,
+      "seconds": 4.463340246933512,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "10432512",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "514953216",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 3.994517217972316,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 485634048,
+      "artifact_observed_peak_bytes": 44042521
+    },
+    {
+      "name": "quality-5",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "quality"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-quality-5",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 734285,
+        "new_artifact_bytes": 14117336,
+        "evidence_bytes": 17399383,
+        "artifact_bytes": 41957251,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4671229952,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.6181262308964506,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12656640",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "32034816",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.12135495606344193,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 35672064,
+      "artifact_observed_peak_bytes": 41957251
+    },
+    {
+      "name": "native-cases-01",
+      "phase": "native",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "N",
+        "1",
+        "24"
+      ],
+      "limit_seconds": 90,
+      "child_seconds": 89,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-native-cases-01",
+      "memory_limit_bytes": 1073741824,
+      "opening_storage": {
+        "new_evidence_bytes": 739557,
+        "new_artifact_bytes": 14117336,
+        "evidence_bytes": 17404655,
+        "artifact_bytes": 41957251,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4660826112,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.9319346970878541,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "10387456",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "27312128",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.4838469739770517,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 48267264,
+      "artifact_observed_peak_bytes": 41957251
+    },
+    {
+      "name": "baseline-cases-02",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "B",
+        "2",
+        "12"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-baseline-cases-02",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 839630,
+        "new_artifact_bytes": 14117336,
+        "evidence_bytes": 17504728,
+        "artifact_bytes": 41957251,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4652920832,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 6.188511478016153,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10174464",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "54308864",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 5.723150950972922,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 69062656,
+      "artifact_observed_peak_bytes": 44847552
+    },
+    {
+      "name": "baseline-cases-03",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "B",
+        "13",
+        "48"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "failed",
+      "unit": "pqdid-oct31-m1-baseline-cases-03",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 856889,
+        "new_artifact_bytes": 17007637,
+        "evidence_bytes": 17521987,
+        "artifact_bytes": 44847552,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4648542208,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 2.6506126270396635,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10182656",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "42008576",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 2.22107094200328,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 62062592,
+      "artifact_observed_peak_bytes": 46567040
+    },
+    {
+      "name": "quality-6",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "quality"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-quality-6",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 895656,
+        "new_artifact_bytes": 18727125,
+        "evidence_bytes": 17560754,
+        "artifact_bytes": 46567040,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4306460672,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.9652637779945508,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12922880",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "31916032",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.10213394404854625,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 55820288,
+      "artifact_observed_peak_bytes": 46567040
+    },
+    {
+      "name": "baseline-cases-04",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "B",
+        "20",
+        "48"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-baseline-cases-04",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 900645,
+        "new_artifact_bytes": 18727125,
+        "evidence_bytes": 17565743,
+        "artifact_bytes": 46567040,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4280393728,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 26.030760759022087,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12660736",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "77680640",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 24.461238563992083,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 79409152,
+      "artifact_observed_peak_bytes": 55050006
+    },
+    {
+      "name": "quality-7",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "quality"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-oct31-m1-quality-7",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 968676,
+        "new_artifact_bytes": 27210091,
+        "evidence_bytes": 17633774,
+        "artifact_bytes": 55050006,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4110180352,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.0216154149966314,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12689408",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "32043008",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.10109965794254094,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 35545088,
+      "artifact_observed_peak_bytes": 55050006
+    },
+    {
+      "name": "integration-cases-01",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "C",
+        "1",
+        "8"
+      ],
+      "limit_seconds": 90,
+      "child_seconds": 89,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-integration-cases-01",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 977294,
+        "new_artifact_bytes": 27210091,
+        "evidence_bytes": 17642392,
+        "artifact_bytes": 55050006,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4125024256,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 11.58029263408389,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10170368",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "65933312",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 11.131765983067453,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 77664256,
+      "artifact_observed_peak_bytes": 57857404
+    },
+    {
+      "name": "integration-cases-02",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "C",
+        "10",
+        "12"
+      ],
+      "limit_seconds": 45,
+      "child_seconds": 44,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-integration-cases-02",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 986601,
+        "new_artifact_bytes": 30017489,
+        "evidence_bytes": 17651699,
+        "artifact_bytes": 57857404,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4121407488,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.087907511042431,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10170368",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "37347328",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.6457239710725844,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 56848384,
+      "artifact_observed_peak_bytes": 58112339
+    },
+    {
+      "name": "native-build-3",
+      "phase": "native",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/native_build.py",
+        "native-build-3"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-native-build-3",
+      "memory_limit_bytes": 1073741824,
+      "opening_storage": {
+        "new_evidence_bytes": 1011217,
+        "new_artifact_bytes": 30272424,
+        "evidence_bytes": 17676315,
+        "artifact_bytes": 58112339,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4116135936,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": true,
+      "seconds": 4.109400455956347,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "10698752",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "511365120",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 3.5668595660245046,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 479907840,
+      "artifact_observed_peak_bytes": 67021139
+    },
+    {
+      "name": "quality-8",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "quality"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-oct31-m1-quality-8",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 1027280,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 17692378,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4186091520,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.6409525050548837,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10424320",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "25911296",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.10139126004651189,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 17707008,
+      "artifact_observed_peak_bytes": 58112659
+    },
+    {
+      "name": "quality-9",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "quality"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-quality-9",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 1034431,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 17699529,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4188250112,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.6771221170201898,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10424320",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "26116096",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.10146619903389364,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 17715200,
+      "artifact_observed_peak_bytes": 58112659
+    },
+    {
+      "name": "bench-issue-s1",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/issue-s1.json"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-bench-issue-s1",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 1040371,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 17705469,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4204457984,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 9.654658706043847,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10416128",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "55828480",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 9.173724327934906,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 75206656,
+      "artifact_observed_peak_bytes": 58367594
+    },
+    {
+      "name": "bench-issue-s2",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/issue-s2.json"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-bench-issue-s2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 1365572,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 18030670,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4562718720,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 9.542210757965222,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10420224",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "55623680",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 9.09555837791413,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 75317248,
+      "artifact_observed_peak_bytes": 58377307
+    },
+    {
+      "name": "bench-issue-s3",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/issue-s3.json"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-bench-issue-s3",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 1690760,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 18355858,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4566749184,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 8.906264721998014,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10391552",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "55345152",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 8.40364862093702,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 75239424,
+      "artifact_observed_peak_bytes": 58377307
+    },
+    {
+      "name": "bench-present-a-s1",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-a-s1.json"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-bench-present-a-s1",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 2015909,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 18681007,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4561977344,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 21.29611442994792,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10428416",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "57786368",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 20.847890852950513,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 78409728,
+      "artifact_observed_peak_bytes": 58412650
+    },
+    {
+      "name": "bench-present-a-s2",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-a-s2.json"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-bench-present-a-s2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 2339730,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 19004828,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4556824576,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 20.99266974395141,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10166272",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "57446400",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 20.533434408949688,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 78712832,
+      "artifact_observed_peak_bytes": 58458306
+    },
+    {
+      "name": "bench-present-a-s3",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-a-s3.json"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-bench-present-a-s3",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 2663553,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 19328651,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4626534400,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 20.82668149098754,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10432512",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "57581568",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 20.30624838802032,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 78766080,
+      "artifact_observed_peak_bytes": 58458306
+    },
+    {
+      "name": "bench-present-b-s1",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-b-s1.json"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-bench-present-b-s1",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 2987418,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 19652516,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4637552640,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 20.640245176036842,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10424320",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "57847808",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 20.041739286039956,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 78680064,
+      "artifact_observed_peak_bytes": 58429626
+    },
+    {
+      "name": "bench-present-b-s2",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-b-s2.json"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-bench-present-b-s2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 3311290,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 19976388,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4623773696,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 20.45011382002849,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10432512",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "57454592",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 19.899018952040933,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 78671872,
+      "artifact_observed_peak_bytes": 58421450
+    },
+    {
+      "name": "bench-present-b-s3",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-b-s3.json"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-bench-present-b-s3",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 3635158,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 20300256,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4608860160,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 21.245541127980687,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10752000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "58118144",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 20.72547820501495,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 78561280,
+      "artifact_observed_peak_bytes": 58429626
+    },
+    {
+      "name": "bench-revoke-update-s1",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/revoke-update-s1.json"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-bench-revoke-update-s1",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 3959047,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 20624145,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4602191872,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 27.510952138109133,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10428416",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "69349376",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 27.000860222964548,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 89972736,
+      "artifact_observed_peak_bytes": 58528937
+    },
+    {
+      "name": "bench-revoke-update-s2",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/revoke-update-s2.json"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-bench-revoke-update-s2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 4298752,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 20963850,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4584562688,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 28.327494148979895,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10432512",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "69369856",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 27.680397971067578,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 89862144,
+      "artifact_observed_peak_bytes": 58475073
+    },
+    {
+      "name": "bench-revoke-update-s3",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/revoke-update-s3.json"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-bench-revoke-update-s3",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 4638451,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 21303549,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4571570176,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 27.10706902993843,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10698752",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "69517312",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 26.440091881901026,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 89997312,
+      "artifact_observed_peak_bytes": 58475073
+    },
+    {
+      "name": "benchmark-summary",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/measurement.py",
+        "aggregate",
+        "docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-benchmark-summary",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 4977170,
+        "new_artifact_bytes": 30272744,
+        "evidence_bytes": 21642268,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4634628096,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.6213831040076911,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10428416",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "28655616",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.10216582100838423,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 8974336,
+      "artifact_observed_peak_bytes": 58112659
+    },
+    {
+      "name": "classification-revalidation",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "C",
+        "11",
+        "11"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-classification-revalidation",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 5008308,
+        "new_artifact_bytes": 30272657,
+        "evidence_bytes": 21673406,
+        "artifact_bytes": 58112572,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4593549312,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.6292967050103471,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10358784",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "27807744",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.0811308320844546,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 8974336,
+      "artifact_observed_peak_bytes": 58112572
+    },
+    {
+      "name": "quality-final",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "quality"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-quality-final",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 5115796,
+        "new_artifact_bytes": 30272657,
+        "evidence_bytes": 21780894,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4636876800,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.9173479990568012,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12869632",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "32436224",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.12133374798577279,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 8921088,
+      "artifact_observed_peak_bytes": 58112659
+    },
+    {
+      "name": "prepare",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/preservation.py",
+        "prepare"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "failed",
+      "unit": "pqdid-oct31-m1-prepare",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 5120908,
+        "new_artifact_bytes": 30272657,
+        "evidence_bytes": 21786006,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4666388480,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.5133000810164958,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10362880",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "44675072",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.865777742001228,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 59260928,
+      "artifact_observed_peak_bytes": 58112659
+    },
+    {
+      "name": "preservation-quality",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "quality"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-preservation-quality",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 6331419,
+        "new_artifact_bytes": 30272657,
+        "evidence_bytes": 22996517,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4204068864,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.6375910369679332,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10117120",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "25923584",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.10134109202772379,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 8933376,
+      "artifact_observed_peak_bytes": 58112659
+    },
+    {
+      "name": "prepare-2",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/preservation.py",
+        "prepare"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-prepare-2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 6336536,
+        "new_artifact_bytes": 30272657,
+        "evidence_bytes": 23001634,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4251951104,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.4905054779956117,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10629120",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "44867584",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.8261152419727296,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 56713216,
+      "artifact_observed_peak_bytes": 58112659
+    },
+    {
+      "name": "full-audit",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/preservation.py",
+        "full-audit"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-full-audit",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 6347139,
+        "new_artifact_bytes": 30272657,
+        "evidence_bytes": 23012237,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4249128960,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 6.05831912800204,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "13148160",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "51773440",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 4.163476577028632,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 62828544,
+      "artifact_observed_peak_bytes": 58112659
+    },
+    {
+      "name": "final-readback",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/preservation.py",
+        "readback"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-final-readback",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 6394196,
+        "new_artifact_bytes": 30272657,
+        "evidence_bytes": 23059294,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4825026560,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 2.221405657939613,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12881920",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "45998080",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.48439083504490554,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 58060800,
+      "artifact_observed_peak_bytes": 58112659
+    },
+    {
+      "name": "native-final-preflight",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "docs/data/oct31_kyc_native_milestone_1/native-finalisation-1/preflight.py"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-native-final-preflight",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 7017586,
+        "new_artifact_bytes": 30272657,
+        "evidence_bytes": 23682684,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4207878144,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.3978776030708104,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10362880",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "22097920",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.7852940040174872,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 40308736,
+      "artifact_observed_peak_bytes": 58112659
+    },
+    {
+      "name": "native-final-cases",
+      "phase": "native",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "N",
+        "1",
+        "24"
+      ],
+      "limit_seconds": 60,
+      "child_seconds": 59,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-native-final-cases",
+      "memory_limit_bytes": 1073741824,
+      "opening_storage": {
+        "new_evidence_bytes": 7024575,
+        "new_artifact_bytes": 30272657,
+        "evidence_bytes": 23689673,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4259057664,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.067411990952678,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "10375168",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "27074560",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.5448922739597037,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 48467968,
+      "artifact_observed_peak_bytes": 58112659
+    },
+    {
+      "name": "native-final-transcripts",
+      "phase": "native",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "TR",
+        "1",
+        "16"
+      ],
+      "limit_seconds": 60,
+      "child_seconds": 59,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-native-final-transcripts",
+      "memory_limit_bytes": 1073741824,
+      "opening_storage": {
+        "new_evidence_bytes": 7103701,
+        "new_artifact_bytes": 30272657,
+        "evidence_bytes": 23768799,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4237066240,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 2.08587859000545,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "12840960",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "28680192",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.14165915292687714,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 8986624,
+      "artifact_observed_peak_bytes": 58112659
+    },
+    {
+      "name": "native-final-c09",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "C",
+        "9",
+        "9"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-native-final-c09",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 7158599,
+        "new_artifact_bytes": 30272657,
+        "evidence_bytes": 23823697,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4254486528,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.6491001900285482,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10620928",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "34275328",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.10152969101909548,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 8908800,
+      "artifact_observed_peak_bytes": 58112659
+    },
+    {
+      "name": "native-final-quality",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "-c",
+        "import subprocess; paths=[\"docs/data/oct31_kyc_native_milestone_1/native-finalisation-1/checks.py\",\"docs/data/oct31_kyc_native_milestone_1/native-finalisation-1/preflight.py\"]; [subprocess.run([\".venv/bin/ruff\",*args,\"--no-cache\",*paths],check=True,timeout=10) for args in [(\"check\",\"--select\",\"I,F\",\"--fix\"),(\"format\",),(\"check\",),(\"format\",\"--check\")]]"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-oct31-m1-native-final-quality",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 7215792,
+        "new_artifact_bytes": 30272657,
+        "evidence_bytes": 23880890,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4655157248,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.8609718920197338,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "13160448",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "25776128",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.06093260901980102,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 8908800,
+      "artifact_observed_peak_bytes": 58112659
+    },
+    {
+      "name": "native-final-prepare",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "docs/data/oct31_kyc_native_milestone_1/native-finalisation-1/checks.py",
+        "prepare"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "launched",
+      "unit": "pqdid-oct31-m1-native-final-prepare",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 7221846,
+        "new_artifact_bytes": 30272657,
+        "evidence_bytes": 23886944,
+        "artifact_bytes": 58112659,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4631494656,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false
+    }
+  ],
+  "invocations": [
+    {
+      "invocation_id": "M1-0001",
+      "case_id": "H-01",
+      "ordinal": 1,
+      "cumulative_invocations": 449,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0002",
+      "case_id": "H-02",
+      "ordinal": 2,
+      "cumulative_invocations": 450,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0003",
+      "case_id": "H-03",
+      "ordinal": 3,
+      "cumulative_invocations": 451,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0004",
+      "case_id": "H-04",
+      "ordinal": 4,
+      "cumulative_invocations": 452,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0005",
+      "case_id": "H-05",
+      "ordinal": 5,
+      "cumulative_invocations": 453,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0006",
+      "case_id": "H-06",
+      "ordinal": 6,
+      "cumulative_invocations": 454,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0007",
+      "case_id": "H-07",
+      "ordinal": 7,
+      "cumulative_invocations": 455,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0008",
+      "case_id": "H-08",
+      "ordinal": 8,
+      "cumulative_invocations": 456,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0009",
+      "case_id": "H-09",
+      "ordinal": 9,
+      "cumulative_invocations": 457,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0010",
+      "case_id": "H-10",
+      "ordinal": 10,
+      "cumulative_invocations": 458,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0011",
+      "case_id": "H-11",
+      "ordinal": 11,
+      "cumulative_invocations": 459,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0012",
+      "case_id": "H-12",
+      "ordinal": 12,
+      "cumulative_invocations": 460,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0013",
+      "case_id": "H-13",
+      "ordinal": 13,
+      "cumulative_invocations": 461,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0014",
+      "case_id": "H-14",
+      "ordinal": 14,
+      "cumulative_invocations": 462,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0015",
+      "case_id": "H-15",
+      "ordinal": 15,
+      "cumulative_invocations": 463,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0016",
+      "case_id": "H-16",
+      "ordinal": 16,
+      "cumulative_invocations": 464,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0017",
+      "case_id": "B-01",
+      "ordinal": 17,
+      "cumulative_invocations": 465,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0018",
+      "case_id": "B-02",
+      "ordinal": 18,
+      "cumulative_invocations": 466,
+      "status": "failed"
+    },
+    {
+      "invocation_id": "M1-0019",
+      "case_id": "N-01",
+      "ordinal": 19,
+      "cumulative_invocations": 467,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0020",
+      "case_id": "N-02",
+      "ordinal": 20,
+      "cumulative_invocations": 468,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0021",
+      "case_id": "N-03",
+      "ordinal": 21,
+      "cumulative_invocations": 469,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0022",
+      "case_id": "N-04",
+      "ordinal": 22,
+      "cumulative_invocations": 470,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0023",
+      "case_id": "N-05",
+      "ordinal": 23,
+      "cumulative_invocations": 471,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0024",
+      "case_id": "N-06",
+      "ordinal": 24,
+      "cumulative_invocations": 472,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0025",
+      "case_id": "N-07",
+      "ordinal": 25,
+      "cumulative_invocations": 473,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0026",
+      "case_id": "N-08",
+      "ordinal": 26,
+      "cumulative_invocations": 474,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0027",
+      "case_id": "N-09",
+      "ordinal": 27,
+      "cumulative_invocations": 475,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0028",
+      "case_id": "N-10",
+      "ordinal": 28,
+      "cumulative_invocations": 476,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0029",
+      "case_id": "N-11",
+      "ordinal": 29,
+      "cumulative_invocations": 477,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0030",
+      "case_id": "N-12",
+      "ordinal": 30,
+      "cumulative_invocations": 478,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0031",
+      "case_id": "N-13",
+      "ordinal": 31,
+      "cumulative_invocations": 479,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0032",
+      "case_id": "N-14",
+      "ordinal": 32,
+      "cumulative_invocations": 480,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0033",
+      "case_id": "N-15",
+      "ordinal": 33,
+      "cumulative_invocations": 481,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0034",
+      "case_id": "N-16",
+      "ordinal": 34,
+      "cumulative_invocations": 482,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0035",
+      "case_id": "N-17",
+      "ordinal": 35,
+      "cumulative_invocations": 483,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0036",
+      "case_id": "N-18",
+      "ordinal": 36,
+      "cumulative_invocations": 484,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0037",
+      "case_id": "N-19",
+      "ordinal": 37,
+      "cumulative_invocations": 485,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0038",
+      "case_id": "N-20",
+      "ordinal": 38,
+      "cumulative_invocations": 486,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0039",
+      "case_id": "N-21",
+      "ordinal": 39,
+      "cumulative_invocations": 487,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0040",
+      "case_id": "N-22",
+      "ordinal": 40,
+      "cumulative_invocations": 488,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0041",
+      "case_id": "N-23",
+      "ordinal": 41,
+      "cumulative_invocations": 489,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0042",
+      "case_id": "N-24",
+      "ordinal": 42,
+      "cumulative_invocations": 490,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0043",
+      "case_id": "B-02",
+      "ordinal": 43,
+      "cumulative_invocations": 491,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0044",
+      "case_id": "B-03",
+      "ordinal": 44,
+      "cumulative_invocations": 492,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0045",
+      "case_id": "B-04",
+      "ordinal": 45,
+      "cumulative_invocations": 493,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0046",
+      "case_id": "B-05",
+      "ordinal": 46,
+      "cumulative_invocations": 494,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0047",
+      "case_id": "B-06",
+      "ordinal": 47,
+      "cumulative_invocations": 495,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0048",
+      "case_id": "B-07",
+      "ordinal": 48,
+      "cumulative_invocations": 496,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0049",
+      "case_id": "B-08",
+      "ordinal": 49,
+      "cumulative_invocations": 497,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0050",
+      "case_id": "B-09",
+      "ordinal": 50,
+      "cumulative_invocations": 498,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0051",
+      "case_id": "B-10",
+      "ordinal": 51,
+      "cumulative_invocations": 499,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0052",
+      "case_id": "B-11",
+      "ordinal": 52,
+      "cumulative_invocations": 500,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0053",
+      "case_id": "B-12",
+      "ordinal": 53,
+      "cumulative_invocations": 501,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0054",
+      "case_id": "B-13",
+      "ordinal": 54,
+      "cumulative_invocations": 502,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0055",
+      "case_id": "B-14",
+      "ordinal": 55,
+      "cumulative_invocations": 503,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0056",
+      "case_id": "B-15",
+      "ordinal": 56,
+      "cumulative_invocations": 504,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0057",
+      "case_id": "B-16",
+      "ordinal": 57,
+      "cumulative_invocations": 505,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0058",
+      "case_id": "B-17",
+      "ordinal": 58,
+      "cumulative_invocations": 506,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0059",
+      "case_id": "B-18",
+      "ordinal": 59,
+      "cumulative_invocations": 507,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0060",
+      "case_id": "B-19",
+      "ordinal": 60,
+      "cumulative_invocations": 508,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0061",
+      "case_id": "B-20",
+      "ordinal": 61,
+      "cumulative_invocations": 509,
+      "status": "failed"
+    },
+    {
+      "invocation_id": "M1-0062",
+      "case_id": "B-20",
+      "ordinal": 62,
+      "cumulative_invocations": 510,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0063",
+      "case_id": "B-21",
+      "ordinal": 63,
+      "cumulative_invocations": 511,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0064",
+      "case_id": "B-22",
+      "ordinal": 64,
+      "cumulative_invocations": 512,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0065",
+      "case_id": "B-23",
+      "ordinal": 65,
+      "cumulative_invocations": 513,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0066",
+      "case_id": "B-24",
+      "ordinal": 66,
+      "cumulative_invocations": 514,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0067",
+      "case_id": "B-25",
+      "ordinal": 67,
+      "cumulative_invocations": 515,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0068",
+      "case_id": "B-26",
+      "ordinal": 68,
+      "cumulative_invocations": 516,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0069",
+      "case_id": "B-27",
+      "ordinal": 69,
+      "cumulative_invocations": 517,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0070",
+      "case_id": "B-28",
+      "ordinal": 70,
+      "cumulative_invocations": 518,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0071",
+      "case_id": "B-29",
+      "ordinal": 71,
+      "cumulative_invocations": 519,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0072",
+      "case_id": "B-30",
+      "ordinal": 72,
+      "cumulative_invocations": 520,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0073",
+      "case_id": "B-31",
+      "ordinal": 73,
+      "cumulative_invocations": 521,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0074",
+      "case_id": "B-32",
+      "ordinal": 74,
+      "cumulative_invocations": 522,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0075",
+      "case_id": "B-33",
+      "ordinal": 75,
+      "cumulative_invocations": 523,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0076",
+      "case_id": "B-34",
+      "ordinal": 76,
+      "cumulative_invocations": 524,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0077",
+      "case_id": "B-35",
+      "ordinal": 77,
+      "cumulative_invocations": 525,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0078",
+      "case_id": "B-36",
+      "ordinal": 78,
+      "cumulative_invocations": 526,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0079",
+      "case_id": "B-37",
+      "ordinal": 79,
+      "cumulative_invocations": 527,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0080",
+      "case_id": "B-38",
+      "ordinal": 80,
+      "cumulative_invocations": 528,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0081",
+      "case_id": "B-39",
+      "ordinal": 81,
+      "cumulative_invocations": 529,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0082",
+      "case_id": "B-40",
+      "ordinal": 82,
+      "cumulative_invocations": 530,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0083",
+      "case_id": "B-41",
+      "ordinal": 83,
+      "cumulative_invocations": 531,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0084",
+      "case_id": "B-42",
+      "ordinal": 84,
+      "cumulative_invocations": 532,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0085",
+      "case_id": "B-43",
+      "ordinal": 85,
+      "cumulative_invocations": 533,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0086",
+      "case_id": "B-44",
+      "ordinal": 86,
+      "cumulative_invocations": 534,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0087",
+      "case_id": "B-45",
+      "ordinal": 87,
+      "cumulative_invocations": 535,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0088",
+      "case_id": "B-46",
+      "ordinal": 88,
+      "cumulative_invocations": 536,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0089",
+      "case_id": "B-47",
+      "ordinal": 89,
+      "cumulative_invocations": 537,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0090",
+      "case_id": "B-48",
+      "ordinal": 90,
+      "cumulative_invocations": 538,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0091",
+      "case_id": "C-01",
+      "ordinal": 91,
+      "cumulative_invocations": 539,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0092",
+      "case_id": "C-02",
+      "ordinal": 92,
+      "cumulative_invocations": 540,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0093",
+      "case_id": "C-03",
+      "ordinal": 93,
+      "cumulative_invocations": 541,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0094",
+      "case_id": "C-04",
+      "ordinal": 94,
+      "cumulative_invocations": 542,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0095",
+      "case_id": "C-05",
+      "ordinal": 95,
+      "cumulative_invocations": 543,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0096",
+      "case_id": "C-06",
+      "ordinal": 96,
+      "cumulative_invocations": 544,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0097",
+      "case_id": "C-07",
+      "ordinal": 97,
+      "cumulative_invocations": 545,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0098",
+      "case_id": "C-08",
+      "ordinal": 98,
+      "cumulative_invocations": 546,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0099",
+      "case_id": "C-10",
+      "ordinal": 99,
+      "cumulative_invocations": 547,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0100",
+      "case_id": "C-11",
+      "ordinal": 100,
+      "cumulative_invocations": 548,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0101",
+      "case_id": "C-12",
+      "ordinal": 101,
+      "cumulative_invocations": 549,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0102",
+      "case_id": "ISSUE-s1-cold-00",
+      "ordinal": 102,
+      "cumulative_invocations": 550,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0103",
+      "case_id": "ISSUE-s1-warmup-00",
+      "ordinal": 103,
+      "cumulative_invocations": 551,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0104",
+      "case_id": "ISSUE-s1-warmup-01",
+      "ordinal": 104,
+      "cumulative_invocations": 552,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0105",
+      "case_id": "ISSUE-s1-warm-00",
+      "ordinal": 105,
+      "cumulative_invocations": 553,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0106",
+      "case_id": "ISSUE-s1-warm-01",
+      "ordinal": 106,
+      "cumulative_invocations": 554,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0107",
+      "case_id": "ISSUE-s1-warm-02",
+      "ordinal": 107,
+      "cumulative_invocations": 555,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0108",
+      "case_id": "ISSUE-s1-warm-03",
+      "ordinal": 108,
+      "cumulative_invocations": 556,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0109",
+      "case_id": "ISSUE-s1-warm-04",
+      "ordinal": 109,
+      "cumulative_invocations": 557,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0110",
+      "case_id": "ISSUE-s1-warm-05",
+      "ordinal": 110,
+      "cumulative_invocations": 558,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0111",
+      "case_id": "ISSUE-s1-warm-06",
+      "ordinal": 111,
+      "cumulative_invocations": 559,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0112",
+      "case_id": "ISSUE-s1-warm-07",
+      "ordinal": 112,
+      "cumulative_invocations": 560,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0113",
+      "case_id": "ISSUE-s1-warm-08",
+      "ordinal": 113,
+      "cumulative_invocations": 561,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0114",
+      "case_id": "ISSUE-s1-warm-09",
+      "ordinal": 114,
+      "cumulative_invocations": 562,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0115",
+      "case_id": "ISSUE-s1-warm-10",
+      "ordinal": 115,
+      "cumulative_invocations": 563,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0116",
+      "case_id": "ISSUE-s1-warm-11",
+      "ordinal": 116,
+      "cumulative_invocations": 564,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0117",
+      "case_id": "ISSUE-s1-warm-12",
+      "ordinal": 117,
+      "cumulative_invocations": 565,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0118",
+      "case_id": "ISSUE-s1-warm-13",
+      "ordinal": 118,
+      "cumulative_invocations": 566,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0119",
+      "case_id": "ISSUE-s1-warm-14",
+      "ordinal": 119,
+      "cumulative_invocations": 567,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0120",
+      "case_id": "ISSUE-s1-warm-15",
+      "ordinal": 120,
+      "cumulative_invocations": 568,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0121",
+      "case_id": "ISSUE-s1-warm-16",
+      "ordinal": 121,
+      "cumulative_invocations": 569,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0122",
+      "case_id": "ISSUE-s1-warm-17",
+      "ordinal": 122,
+      "cumulative_invocations": 570,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0123",
+      "case_id": "ISSUE-s1-warm-18",
+      "ordinal": 123,
+      "cumulative_invocations": 571,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0124",
+      "case_id": "ISSUE-s1-warm-19",
+      "ordinal": 124,
+      "cumulative_invocations": 572,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0125",
+      "case_id": "ISSUE-s2-cold-00",
+      "ordinal": 125,
+      "cumulative_invocations": 573,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0126",
+      "case_id": "ISSUE-s2-warmup-00",
+      "ordinal": 126,
+      "cumulative_invocations": 574,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0127",
+      "case_id": "ISSUE-s2-warmup-01",
+      "ordinal": 127,
+      "cumulative_invocations": 575,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0128",
+      "case_id": "ISSUE-s2-warm-00",
+      "ordinal": 128,
+      "cumulative_invocations": 576,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0129",
+      "case_id": "ISSUE-s2-warm-01",
+      "ordinal": 129,
+      "cumulative_invocations": 577,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0130",
+      "case_id": "ISSUE-s2-warm-02",
+      "ordinal": 130,
+      "cumulative_invocations": 578,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0131",
+      "case_id": "ISSUE-s2-warm-03",
+      "ordinal": 131,
+      "cumulative_invocations": 579,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0132",
+      "case_id": "ISSUE-s2-warm-04",
+      "ordinal": 132,
+      "cumulative_invocations": 580,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0133",
+      "case_id": "ISSUE-s2-warm-05",
+      "ordinal": 133,
+      "cumulative_invocations": 581,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0134",
+      "case_id": "ISSUE-s2-warm-06",
+      "ordinal": 134,
+      "cumulative_invocations": 582,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0135",
+      "case_id": "ISSUE-s2-warm-07",
+      "ordinal": 135,
+      "cumulative_invocations": 583,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0136",
+      "case_id": "ISSUE-s2-warm-08",
+      "ordinal": 136,
+      "cumulative_invocations": 584,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0137",
+      "case_id": "ISSUE-s2-warm-09",
+      "ordinal": 137,
+      "cumulative_invocations": 585,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0138",
+      "case_id": "ISSUE-s2-warm-10",
+      "ordinal": 138,
+      "cumulative_invocations": 586,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0139",
+      "case_id": "ISSUE-s2-warm-11",
+      "ordinal": 139,
+      "cumulative_invocations": 587,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0140",
+      "case_id": "ISSUE-s2-warm-12",
+      "ordinal": 140,
+      "cumulative_invocations": 588,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0141",
+      "case_id": "ISSUE-s2-warm-13",
+      "ordinal": 141,
+      "cumulative_invocations": 589,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0142",
+      "case_id": "ISSUE-s2-warm-14",
+      "ordinal": 142,
+      "cumulative_invocations": 590,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0143",
+      "case_id": "ISSUE-s2-warm-15",
+      "ordinal": 143,
+      "cumulative_invocations": 591,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0144",
+      "case_id": "ISSUE-s2-warm-16",
+      "ordinal": 144,
+      "cumulative_invocations": 592,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0145",
+      "case_id": "ISSUE-s2-warm-17",
+      "ordinal": 145,
+      "cumulative_invocations": 593,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0146",
+      "case_id": "ISSUE-s2-warm-18",
+      "ordinal": 146,
+      "cumulative_invocations": 594,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0147",
+      "case_id": "ISSUE-s2-warm-19",
+      "ordinal": 147,
+      "cumulative_invocations": 595,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0148",
+      "case_id": "ISSUE-s3-cold-00",
+      "ordinal": 148,
+      "cumulative_invocations": 596,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0149",
+      "case_id": "ISSUE-s3-warmup-00",
+      "ordinal": 149,
+      "cumulative_invocations": 597,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0150",
+      "case_id": "ISSUE-s3-warmup-01",
+      "ordinal": 150,
+      "cumulative_invocations": 598,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0151",
+      "case_id": "ISSUE-s3-warm-00",
+      "ordinal": 151,
+      "cumulative_invocations": 599,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0152",
+      "case_id": "ISSUE-s3-warm-01",
+      "ordinal": 152,
+      "cumulative_invocations": 600,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0153",
+      "case_id": "ISSUE-s3-warm-02",
+      "ordinal": 153,
+      "cumulative_invocations": 601,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0154",
+      "case_id": "ISSUE-s3-warm-03",
+      "ordinal": 154,
+      "cumulative_invocations": 602,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0155",
+      "case_id": "ISSUE-s3-warm-04",
+      "ordinal": 155,
+      "cumulative_invocations": 603,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0156",
+      "case_id": "ISSUE-s3-warm-05",
+      "ordinal": 156,
+      "cumulative_invocations": 604,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0157",
+      "case_id": "ISSUE-s3-warm-06",
+      "ordinal": 157,
+      "cumulative_invocations": 605,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0158",
+      "case_id": "ISSUE-s3-warm-07",
+      "ordinal": 158,
+      "cumulative_invocations": 606,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0159",
+      "case_id": "ISSUE-s3-warm-08",
+      "ordinal": 159,
+      "cumulative_invocations": 607,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0160",
+      "case_id": "ISSUE-s3-warm-09",
+      "ordinal": 160,
+      "cumulative_invocations": 608,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0161",
+      "case_id": "ISSUE-s3-warm-10",
+      "ordinal": 161,
+      "cumulative_invocations": 609,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0162",
+      "case_id": "ISSUE-s3-warm-11",
+      "ordinal": 162,
+      "cumulative_invocations": 610,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0163",
+      "case_id": "ISSUE-s3-warm-12",
+      "ordinal": 163,
+      "cumulative_invocations": 611,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0164",
+      "case_id": "ISSUE-s3-warm-13",
+      "ordinal": 164,
+      "cumulative_invocations": 612,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0165",
+      "case_id": "ISSUE-s3-warm-14",
+      "ordinal": 165,
+      "cumulative_invocations": 613,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0166",
+      "case_id": "ISSUE-s3-warm-15",
+      "ordinal": 166,
+      "cumulative_invocations": 614,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0167",
+      "case_id": "ISSUE-s3-warm-16",
+      "ordinal": 167,
+      "cumulative_invocations": 615,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0168",
+      "case_id": "ISSUE-s3-warm-17",
+      "ordinal": 168,
+      "cumulative_invocations": 616,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0169",
+      "case_id": "ISSUE-s3-warm-18",
+      "ordinal": 169,
+      "cumulative_invocations": 617,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0170",
+      "case_id": "ISSUE-s3-warm-19",
+      "ordinal": 170,
+      "cumulative_invocations": 618,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0171",
+      "case_id": "PRESENT-A-s1-cold-00",
+      "ordinal": 171,
+      "cumulative_invocations": 619,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0172",
+      "case_id": "PRESENT-A-s1-warmup-00",
+      "ordinal": 172,
+      "cumulative_invocations": 620,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0173",
+      "case_id": "PRESENT-A-s1-warmup-01",
+      "ordinal": 173,
+      "cumulative_invocations": 621,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0174",
+      "case_id": "PRESENT-A-s1-warm-00",
+      "ordinal": 174,
+      "cumulative_invocations": 622,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0175",
+      "case_id": "PRESENT-A-s1-warm-01",
+      "ordinal": 175,
+      "cumulative_invocations": 623,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0176",
+      "case_id": "PRESENT-A-s1-warm-02",
+      "ordinal": 176,
+      "cumulative_invocations": 624,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0177",
+      "case_id": "PRESENT-A-s1-warm-03",
+      "ordinal": 177,
+      "cumulative_invocations": 625,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0178",
+      "case_id": "PRESENT-A-s1-warm-04",
+      "ordinal": 178,
+      "cumulative_invocations": 626,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0179",
+      "case_id": "PRESENT-A-s1-warm-05",
+      "ordinal": 179,
+      "cumulative_invocations": 627,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0180",
+      "case_id": "PRESENT-A-s1-warm-06",
+      "ordinal": 180,
+      "cumulative_invocations": 628,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0181",
+      "case_id": "PRESENT-A-s1-warm-07",
+      "ordinal": 181,
+      "cumulative_invocations": 629,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0182",
+      "case_id": "PRESENT-A-s1-warm-08",
+      "ordinal": 182,
+      "cumulative_invocations": 630,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0183",
+      "case_id": "PRESENT-A-s1-warm-09",
+      "ordinal": 183,
+      "cumulative_invocations": 631,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0184",
+      "case_id": "PRESENT-A-s1-warm-10",
+      "ordinal": 184,
+      "cumulative_invocations": 632,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0185",
+      "case_id": "PRESENT-A-s1-warm-11",
+      "ordinal": 185,
+      "cumulative_invocations": 633,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0186",
+      "case_id": "PRESENT-A-s1-warm-12",
+      "ordinal": 186,
+      "cumulative_invocations": 634,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0187",
+      "case_id": "PRESENT-A-s1-warm-13",
+      "ordinal": 187,
+      "cumulative_invocations": 635,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0188",
+      "case_id": "PRESENT-A-s1-warm-14",
+      "ordinal": 188,
+      "cumulative_invocations": 636,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0189",
+      "case_id": "PRESENT-A-s1-warm-15",
+      "ordinal": 189,
+      "cumulative_invocations": 637,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0190",
+      "case_id": "PRESENT-A-s1-warm-16",
+      "ordinal": 190,
+      "cumulative_invocations": 638,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0191",
+      "case_id": "PRESENT-A-s1-warm-17",
+      "ordinal": 191,
+      "cumulative_invocations": 639,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0192",
+      "case_id": "PRESENT-A-s1-warm-18",
+      "ordinal": 192,
+      "cumulative_invocations": 640,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0193",
+      "case_id": "PRESENT-A-s1-warm-19",
+      "ordinal": 193,
+      "cumulative_invocations": 641,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0194",
+      "case_id": "PRESENT-A-s2-cold-00",
+      "ordinal": 194,
+      "cumulative_invocations": 642,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0195",
+      "case_id": "PRESENT-A-s2-warmup-00",
+      "ordinal": 195,
+      "cumulative_invocations": 643,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0196",
+      "case_id": "PRESENT-A-s2-warmup-01",
+      "ordinal": 196,
+      "cumulative_invocations": 644,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0197",
+      "case_id": "PRESENT-A-s2-warm-00",
+      "ordinal": 197,
+      "cumulative_invocations": 645,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0198",
+      "case_id": "PRESENT-A-s2-warm-01",
+      "ordinal": 198,
+      "cumulative_invocations": 646,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0199",
+      "case_id": "PRESENT-A-s2-warm-02",
+      "ordinal": 199,
+      "cumulative_invocations": 647,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0200",
+      "case_id": "PRESENT-A-s2-warm-03",
+      "ordinal": 200,
+      "cumulative_invocations": 648,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0201",
+      "case_id": "PRESENT-A-s2-warm-04",
+      "ordinal": 201,
+      "cumulative_invocations": 649,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0202",
+      "case_id": "PRESENT-A-s2-warm-05",
+      "ordinal": 202,
+      "cumulative_invocations": 650,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0203",
+      "case_id": "PRESENT-A-s2-warm-06",
+      "ordinal": 203,
+      "cumulative_invocations": 651,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0204",
+      "case_id": "PRESENT-A-s2-warm-07",
+      "ordinal": 204,
+      "cumulative_invocations": 652,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0205",
+      "case_id": "PRESENT-A-s2-warm-08",
+      "ordinal": 205,
+      "cumulative_invocations": 653,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0206",
+      "case_id": "PRESENT-A-s2-warm-09",
+      "ordinal": 206,
+      "cumulative_invocations": 654,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0207",
+      "case_id": "PRESENT-A-s2-warm-10",
+      "ordinal": 207,
+      "cumulative_invocations": 655,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0208",
+      "case_id": "PRESENT-A-s2-warm-11",
+      "ordinal": 208,
+      "cumulative_invocations": 656,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0209",
+      "case_id": "PRESENT-A-s2-warm-12",
+      "ordinal": 209,
+      "cumulative_invocations": 657,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0210",
+      "case_id": "PRESENT-A-s2-warm-13",
+      "ordinal": 210,
+      "cumulative_invocations": 658,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0211",
+      "case_id": "PRESENT-A-s2-warm-14",
+      "ordinal": 211,
+      "cumulative_invocations": 659,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0212",
+      "case_id": "PRESENT-A-s2-warm-15",
+      "ordinal": 212,
+      "cumulative_invocations": 660,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0213",
+      "case_id": "PRESENT-A-s2-warm-16",
+      "ordinal": 213,
+      "cumulative_invocations": 661,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0214",
+      "case_id": "PRESENT-A-s2-warm-17",
+      "ordinal": 214,
+      "cumulative_invocations": 662,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0215",
+      "case_id": "PRESENT-A-s2-warm-18",
+      "ordinal": 215,
+      "cumulative_invocations": 663,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0216",
+      "case_id": "PRESENT-A-s2-warm-19",
+      "ordinal": 216,
+      "cumulative_invocations": 664,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0217",
+      "case_id": "PRESENT-A-s3-cold-00",
+      "ordinal": 217,
+      "cumulative_invocations": 665,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0218",
+      "case_id": "PRESENT-A-s3-warmup-00",
+      "ordinal": 218,
+      "cumulative_invocations": 666,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0219",
+      "case_id": "PRESENT-A-s3-warmup-01",
+      "ordinal": 219,
+      "cumulative_invocations": 667,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0220",
+      "case_id": "PRESENT-A-s3-warm-00",
+      "ordinal": 220,
+      "cumulative_invocations": 668,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0221",
+      "case_id": "PRESENT-A-s3-warm-01",
+      "ordinal": 221,
+      "cumulative_invocations": 669,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0222",
+      "case_id": "PRESENT-A-s3-warm-02",
+      "ordinal": 222,
+      "cumulative_invocations": 670,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0223",
+      "case_id": "PRESENT-A-s3-warm-03",
+      "ordinal": 223,
+      "cumulative_invocations": 671,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0224",
+      "case_id": "PRESENT-A-s3-warm-04",
+      "ordinal": 224,
+      "cumulative_invocations": 672,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0225",
+      "case_id": "PRESENT-A-s3-warm-05",
+      "ordinal": 225,
+      "cumulative_invocations": 673,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0226",
+      "case_id": "PRESENT-A-s3-warm-06",
+      "ordinal": 226,
+      "cumulative_invocations": 674,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0227",
+      "case_id": "PRESENT-A-s3-warm-07",
+      "ordinal": 227,
+      "cumulative_invocations": 675,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0228",
+      "case_id": "PRESENT-A-s3-warm-08",
+      "ordinal": 228,
+      "cumulative_invocations": 676,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0229",
+      "case_id": "PRESENT-A-s3-warm-09",
+      "ordinal": 229,
+      "cumulative_invocations": 677,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0230",
+      "case_id": "PRESENT-A-s3-warm-10",
+      "ordinal": 230,
+      "cumulative_invocations": 678,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0231",
+      "case_id": "PRESENT-A-s3-warm-11",
+      "ordinal": 231,
+      "cumulative_invocations": 679,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0232",
+      "case_id": "PRESENT-A-s3-warm-12",
+      "ordinal": 232,
+      "cumulative_invocations": 680,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0233",
+      "case_id": "PRESENT-A-s3-warm-13",
+      "ordinal": 233,
+      "cumulative_invocations": 681,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0234",
+      "case_id": "PRESENT-A-s3-warm-14",
+      "ordinal": 234,
+      "cumulative_invocations": 682,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0235",
+      "case_id": "PRESENT-A-s3-warm-15",
+      "ordinal": 235,
+      "cumulative_invocations": 683,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0236",
+      "case_id": "PRESENT-A-s3-warm-16",
+      "ordinal": 236,
+      "cumulative_invocations": 684,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0237",
+      "case_id": "PRESENT-A-s3-warm-17",
+      "ordinal": 237,
+      "cumulative_invocations": 685,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0238",
+      "case_id": "PRESENT-A-s3-warm-18",
+      "ordinal": 238,
+      "cumulative_invocations": 686,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0239",
+      "case_id": "PRESENT-A-s3-warm-19",
+      "ordinal": 239,
+      "cumulative_invocations": 687,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0240",
+      "case_id": "PRESENT-B-s1-cold-00",
+      "ordinal": 240,
+      "cumulative_invocations": 688,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0241",
+      "case_id": "PRESENT-B-s1-warmup-00",
+      "ordinal": 241,
+      "cumulative_invocations": 689,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0242",
+      "case_id": "PRESENT-B-s1-warmup-01",
+      "ordinal": 242,
+      "cumulative_invocations": 690,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0243",
+      "case_id": "PRESENT-B-s1-warm-00",
+      "ordinal": 243,
+      "cumulative_invocations": 691,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0244",
+      "case_id": "PRESENT-B-s1-warm-01",
+      "ordinal": 244,
+      "cumulative_invocations": 692,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0245",
+      "case_id": "PRESENT-B-s1-warm-02",
+      "ordinal": 245,
+      "cumulative_invocations": 693,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0246",
+      "case_id": "PRESENT-B-s1-warm-03",
+      "ordinal": 246,
+      "cumulative_invocations": 694,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0247",
+      "case_id": "PRESENT-B-s1-warm-04",
+      "ordinal": 247,
+      "cumulative_invocations": 695,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0248",
+      "case_id": "PRESENT-B-s1-warm-05",
+      "ordinal": 248,
+      "cumulative_invocations": 696,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0249",
+      "case_id": "PRESENT-B-s1-warm-06",
+      "ordinal": 249,
+      "cumulative_invocations": 697,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0250",
+      "case_id": "PRESENT-B-s1-warm-07",
+      "ordinal": 250,
+      "cumulative_invocations": 698,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0251",
+      "case_id": "PRESENT-B-s1-warm-08",
+      "ordinal": 251,
+      "cumulative_invocations": 699,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0252",
+      "case_id": "PRESENT-B-s1-warm-09",
+      "ordinal": 252,
+      "cumulative_invocations": 700,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0253",
+      "case_id": "PRESENT-B-s1-warm-10",
+      "ordinal": 253,
+      "cumulative_invocations": 701,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0254",
+      "case_id": "PRESENT-B-s1-warm-11",
+      "ordinal": 254,
+      "cumulative_invocations": 702,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0255",
+      "case_id": "PRESENT-B-s1-warm-12",
+      "ordinal": 255,
+      "cumulative_invocations": 703,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0256",
+      "case_id": "PRESENT-B-s1-warm-13",
+      "ordinal": 256,
+      "cumulative_invocations": 704,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0257",
+      "case_id": "PRESENT-B-s1-warm-14",
+      "ordinal": 257,
+      "cumulative_invocations": 705,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0258",
+      "case_id": "PRESENT-B-s1-warm-15",
+      "ordinal": 258,
+      "cumulative_invocations": 706,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0259",
+      "case_id": "PRESENT-B-s1-warm-16",
+      "ordinal": 259,
+      "cumulative_invocations": 707,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0260",
+      "case_id": "PRESENT-B-s1-warm-17",
+      "ordinal": 260,
+      "cumulative_invocations": 708,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0261",
+      "case_id": "PRESENT-B-s1-warm-18",
+      "ordinal": 261,
+      "cumulative_invocations": 709,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0262",
+      "case_id": "PRESENT-B-s1-warm-19",
+      "ordinal": 262,
+      "cumulative_invocations": 710,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0263",
+      "case_id": "PRESENT-B-s2-cold-00",
+      "ordinal": 263,
+      "cumulative_invocations": 711,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0264",
+      "case_id": "PRESENT-B-s2-warmup-00",
+      "ordinal": 264,
+      "cumulative_invocations": 712,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0265",
+      "case_id": "PRESENT-B-s2-warmup-01",
+      "ordinal": 265,
+      "cumulative_invocations": 713,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0266",
+      "case_id": "PRESENT-B-s2-warm-00",
+      "ordinal": 266,
+      "cumulative_invocations": 714,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0267",
+      "case_id": "PRESENT-B-s2-warm-01",
+      "ordinal": 267,
+      "cumulative_invocations": 715,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0268",
+      "case_id": "PRESENT-B-s2-warm-02",
+      "ordinal": 268,
+      "cumulative_invocations": 716,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0269",
+      "case_id": "PRESENT-B-s2-warm-03",
+      "ordinal": 269,
+      "cumulative_invocations": 717,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0270",
+      "case_id": "PRESENT-B-s2-warm-04",
+      "ordinal": 270,
+      "cumulative_invocations": 718,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0271",
+      "case_id": "PRESENT-B-s2-warm-05",
+      "ordinal": 271,
+      "cumulative_invocations": 719,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0272",
+      "case_id": "PRESENT-B-s2-warm-06",
+      "ordinal": 272,
+      "cumulative_invocations": 720,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0273",
+      "case_id": "PRESENT-B-s2-warm-07",
+      "ordinal": 273,
+      "cumulative_invocations": 721,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0274",
+      "case_id": "PRESENT-B-s2-warm-08",
+      "ordinal": 274,
+      "cumulative_invocations": 722,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0275",
+      "case_id": "PRESENT-B-s2-warm-09",
+      "ordinal": 275,
+      "cumulative_invocations": 723,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0276",
+      "case_id": "PRESENT-B-s2-warm-10",
+      "ordinal": 276,
+      "cumulative_invocations": 724,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0277",
+      "case_id": "PRESENT-B-s2-warm-11",
+      "ordinal": 277,
+      "cumulative_invocations": 725,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0278",
+      "case_id": "PRESENT-B-s2-warm-12",
+      "ordinal": 278,
+      "cumulative_invocations": 726,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0279",
+      "case_id": "PRESENT-B-s2-warm-13",
+      "ordinal": 279,
+      "cumulative_invocations": 727,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0280",
+      "case_id": "PRESENT-B-s2-warm-14",
+      "ordinal": 280,
+      "cumulative_invocations": 728,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0281",
+      "case_id": "PRESENT-B-s2-warm-15",
+      "ordinal": 281,
+      "cumulative_invocations": 729,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0282",
+      "case_id": "PRESENT-B-s2-warm-16",
+      "ordinal": 282,
+      "cumulative_invocations": 730,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0283",
+      "case_id": "PRESENT-B-s2-warm-17",
+      "ordinal": 283,
+      "cumulative_invocations": 731,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0284",
+      "case_id": "PRESENT-B-s2-warm-18",
+      "ordinal": 284,
+      "cumulative_invocations": 732,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0285",
+      "case_id": "PRESENT-B-s2-warm-19",
+      "ordinal": 285,
+      "cumulative_invocations": 733,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0286",
+      "case_id": "PRESENT-B-s3-cold-00",
+      "ordinal": 286,
+      "cumulative_invocations": 734,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0287",
+      "case_id": "PRESENT-B-s3-warmup-00",
+      "ordinal": 287,
+      "cumulative_invocations": 735,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0288",
+      "case_id": "PRESENT-B-s3-warmup-01",
+      "ordinal": 288,
+      "cumulative_invocations": 736,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0289",
+      "case_id": "PRESENT-B-s3-warm-00",
+      "ordinal": 289,
+      "cumulative_invocations": 737,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0290",
+      "case_id": "PRESENT-B-s3-warm-01",
+      "ordinal": 290,
+      "cumulative_invocations": 738,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0291",
+      "case_id": "PRESENT-B-s3-warm-02",
+      "ordinal": 291,
+      "cumulative_invocations": 739,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0292",
+      "case_id": "PRESENT-B-s3-warm-03",
+      "ordinal": 292,
+      "cumulative_invocations": 740,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0293",
+      "case_id": "PRESENT-B-s3-warm-04",
+      "ordinal": 293,
+      "cumulative_invocations": 741,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0294",
+      "case_id": "PRESENT-B-s3-warm-05",
+      "ordinal": 294,
+      "cumulative_invocations": 742,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0295",
+      "case_id": "PRESENT-B-s3-warm-06",
+      "ordinal": 295,
+      "cumulative_invocations": 743,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0296",
+      "case_id": "PRESENT-B-s3-warm-07",
+      "ordinal": 296,
+      "cumulative_invocations": 744,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0297",
+      "case_id": "PRESENT-B-s3-warm-08",
+      "ordinal": 297,
+      "cumulative_invocations": 745,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0298",
+      "case_id": "PRESENT-B-s3-warm-09",
+      "ordinal": 298,
+      "cumulative_invocations": 746,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0299",
+      "case_id": "PRESENT-B-s3-warm-10",
+      "ordinal": 299,
+      "cumulative_invocations": 747,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0300",
+      "case_id": "PRESENT-B-s3-warm-11",
+      "ordinal": 300,
+      "cumulative_invocations": 748,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0301",
+      "case_id": "PRESENT-B-s3-warm-12",
+      "ordinal": 301,
+      "cumulative_invocations": 749,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0302",
+      "case_id": "PRESENT-B-s3-warm-13",
+      "ordinal": 302,
+      "cumulative_invocations": 750,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0303",
+      "case_id": "PRESENT-B-s3-warm-14",
+      "ordinal": 303,
+      "cumulative_invocations": 751,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0304",
+      "case_id": "PRESENT-B-s3-warm-15",
+      "ordinal": 304,
+      "cumulative_invocations": 752,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0305",
+      "case_id": "PRESENT-B-s3-warm-16",
+      "ordinal": 305,
+      "cumulative_invocations": 753,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0306",
+      "case_id": "PRESENT-B-s3-warm-17",
+      "ordinal": 306,
+      "cumulative_invocations": 754,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0307",
+      "case_id": "PRESENT-B-s3-warm-18",
+      "ordinal": 307,
+      "cumulative_invocations": 755,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0308",
+      "case_id": "PRESENT-B-s3-warm-19",
+      "ordinal": 308,
+      "cumulative_invocations": 756,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0309",
+      "case_id": "REVOKE-UPDATE-s1-cold-00",
+      "ordinal": 309,
+      "cumulative_invocations": 757,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0310",
+      "case_id": "REVOKE-UPDATE-s1-warmup-00",
+      "ordinal": 310,
+      "cumulative_invocations": 758,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0311",
+      "case_id": "REVOKE-UPDATE-s1-warmup-01",
+      "ordinal": 311,
+      "cumulative_invocations": 759,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0312",
+      "case_id": "REVOKE-UPDATE-s1-warm-00",
+      "ordinal": 312,
+      "cumulative_invocations": 760,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0313",
+      "case_id": "REVOKE-UPDATE-s1-warm-01",
+      "ordinal": 313,
+      "cumulative_invocations": 761,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0314",
+      "case_id": "REVOKE-UPDATE-s1-warm-02",
+      "ordinal": 314,
+      "cumulative_invocations": 762,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0315",
+      "case_id": "REVOKE-UPDATE-s1-warm-03",
+      "ordinal": 315,
+      "cumulative_invocations": 763,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0316",
+      "case_id": "REVOKE-UPDATE-s1-warm-04",
+      "ordinal": 316,
+      "cumulative_invocations": 764,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0317",
+      "case_id": "REVOKE-UPDATE-s1-warm-05",
+      "ordinal": 317,
+      "cumulative_invocations": 765,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0318",
+      "case_id": "REVOKE-UPDATE-s1-warm-06",
+      "ordinal": 318,
+      "cumulative_invocations": 766,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0319",
+      "case_id": "REVOKE-UPDATE-s1-warm-07",
+      "ordinal": 319,
+      "cumulative_invocations": 767,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0320",
+      "case_id": "REVOKE-UPDATE-s1-warm-08",
+      "ordinal": 320,
+      "cumulative_invocations": 768,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0321",
+      "case_id": "REVOKE-UPDATE-s1-warm-09",
+      "ordinal": 321,
+      "cumulative_invocations": 769,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0322",
+      "case_id": "REVOKE-UPDATE-s1-warm-10",
+      "ordinal": 322,
+      "cumulative_invocations": 770,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0323",
+      "case_id": "REVOKE-UPDATE-s1-warm-11",
+      "ordinal": 323,
+      "cumulative_invocations": 771,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0324",
+      "case_id": "REVOKE-UPDATE-s1-warm-12",
+      "ordinal": 324,
+      "cumulative_invocations": 772,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0325",
+      "case_id": "REVOKE-UPDATE-s1-warm-13",
+      "ordinal": 325,
+      "cumulative_invocations": 773,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0326",
+      "case_id": "REVOKE-UPDATE-s1-warm-14",
+      "ordinal": 326,
+      "cumulative_invocations": 774,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0327",
+      "case_id": "REVOKE-UPDATE-s1-warm-15",
+      "ordinal": 327,
+      "cumulative_invocations": 775,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0328",
+      "case_id": "REVOKE-UPDATE-s1-warm-16",
+      "ordinal": 328,
+      "cumulative_invocations": 776,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0329",
+      "case_id": "REVOKE-UPDATE-s1-warm-17",
+      "ordinal": 329,
+      "cumulative_invocations": 777,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0330",
+      "case_id": "REVOKE-UPDATE-s1-warm-18",
+      "ordinal": 330,
+      "cumulative_invocations": 778,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0331",
+      "case_id": "REVOKE-UPDATE-s1-warm-19",
+      "ordinal": 331,
+      "cumulative_invocations": 779,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0332",
+      "case_id": "REVOKE-UPDATE-s2-cold-00",
+      "ordinal": 332,
+      "cumulative_invocations": 780,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0333",
+      "case_id": "REVOKE-UPDATE-s2-warmup-00",
+      "ordinal": 333,
+      "cumulative_invocations": 781,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0334",
+      "case_id": "REVOKE-UPDATE-s2-warmup-01",
+      "ordinal": 334,
+      "cumulative_invocations": 782,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0335",
+      "case_id": "REVOKE-UPDATE-s2-warm-00",
+      "ordinal": 335,
+      "cumulative_invocations": 783,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0336",
+      "case_id": "REVOKE-UPDATE-s2-warm-01",
+      "ordinal": 336,
+      "cumulative_invocations": 784,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0337",
+      "case_id": "REVOKE-UPDATE-s2-warm-02",
+      "ordinal": 337,
+      "cumulative_invocations": 785,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0338",
+      "case_id": "REVOKE-UPDATE-s2-warm-03",
+      "ordinal": 338,
+      "cumulative_invocations": 786,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0339",
+      "case_id": "REVOKE-UPDATE-s2-warm-04",
+      "ordinal": 339,
+      "cumulative_invocations": 787,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0340",
+      "case_id": "REVOKE-UPDATE-s2-warm-05",
+      "ordinal": 340,
+      "cumulative_invocations": 788,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0341",
+      "case_id": "REVOKE-UPDATE-s2-warm-06",
+      "ordinal": 341,
+      "cumulative_invocations": 789,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0342",
+      "case_id": "REVOKE-UPDATE-s2-warm-07",
+      "ordinal": 342,
+      "cumulative_invocations": 790,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0343",
+      "case_id": "REVOKE-UPDATE-s2-warm-08",
+      "ordinal": 343,
+      "cumulative_invocations": 791,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0344",
+      "case_id": "REVOKE-UPDATE-s2-warm-09",
+      "ordinal": 344,
+      "cumulative_invocations": 792,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0345",
+      "case_id": "REVOKE-UPDATE-s2-warm-10",
+      "ordinal": 345,
+      "cumulative_invocations": 793,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0346",
+      "case_id": "REVOKE-UPDATE-s2-warm-11",
+      "ordinal": 346,
+      "cumulative_invocations": 794,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0347",
+      "case_id": "REVOKE-UPDATE-s2-warm-12",
+      "ordinal": 347,
+      "cumulative_invocations": 795,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0348",
+      "case_id": "REVOKE-UPDATE-s2-warm-13",
+      "ordinal": 348,
+      "cumulative_invocations": 796,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0349",
+      "case_id": "REVOKE-UPDATE-s2-warm-14",
+      "ordinal": 349,
+      "cumulative_invocations": 797,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0350",
+      "case_id": "REVOKE-UPDATE-s2-warm-15",
+      "ordinal": 350,
+      "cumulative_invocations": 798,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0351",
+      "case_id": "REVOKE-UPDATE-s2-warm-16",
+      "ordinal": 351,
+      "cumulative_invocations": 799,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0352",
+      "case_id": "REVOKE-UPDATE-s2-warm-17",
+      "ordinal": 352,
+      "cumulative_invocations": 800,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0353",
+      "case_id": "REVOKE-UPDATE-s2-warm-18",
+      "ordinal": 353,
+      "cumulative_invocations": 801,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0354",
+      "case_id": "REVOKE-UPDATE-s2-warm-19",
+      "ordinal": 354,
+      "cumulative_invocations": 802,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0355",
+      "case_id": "REVOKE-UPDATE-s3-cold-00",
+      "ordinal": 355,
+      "cumulative_invocations": 803,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0356",
+      "case_id": "REVOKE-UPDATE-s3-warmup-00",
+      "ordinal": 356,
+      "cumulative_invocations": 804,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0357",
+      "case_id": "REVOKE-UPDATE-s3-warmup-01",
+      "ordinal": 357,
+      "cumulative_invocations": 805,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0358",
+      "case_id": "REVOKE-UPDATE-s3-warm-00",
+      "ordinal": 358,
+      "cumulative_invocations": 806,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0359",
+      "case_id": "REVOKE-UPDATE-s3-warm-01",
+      "ordinal": 359,
+      "cumulative_invocations": 807,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0360",
+      "case_id": "REVOKE-UPDATE-s3-warm-02",
+      "ordinal": 360,
+      "cumulative_invocations": 808,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0361",
+      "case_id": "REVOKE-UPDATE-s3-warm-03",
+      "ordinal": 361,
+      "cumulative_invocations": 809,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0362",
+      "case_id": "REVOKE-UPDATE-s3-warm-04",
+      "ordinal": 362,
+      "cumulative_invocations": 810,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0363",
+      "case_id": "REVOKE-UPDATE-s3-warm-05",
+      "ordinal": 363,
+      "cumulative_invocations": 811,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0364",
+      "case_id": "REVOKE-UPDATE-s3-warm-06",
+      "ordinal": 364,
+      "cumulative_invocations": 812,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0365",
+      "case_id": "REVOKE-UPDATE-s3-warm-07",
+      "ordinal": 365,
+      "cumulative_invocations": 813,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0366",
+      "case_id": "REVOKE-UPDATE-s3-warm-08",
+      "ordinal": 366,
+      "cumulative_invocations": 814,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0367",
+      "case_id": "REVOKE-UPDATE-s3-warm-09",
+      "ordinal": 367,
+      "cumulative_invocations": 815,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0368",
+      "case_id": "REVOKE-UPDATE-s3-warm-10",
+      "ordinal": 368,
+      "cumulative_invocations": 816,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0369",
+      "case_id": "REVOKE-UPDATE-s3-warm-11",
+      "ordinal": 369,
+      "cumulative_invocations": 817,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0370",
+      "case_id": "REVOKE-UPDATE-s3-warm-12",
+      "ordinal": 370,
+      "cumulative_invocations": 818,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0371",
+      "case_id": "REVOKE-UPDATE-s3-warm-13",
+      "ordinal": 371,
+      "cumulative_invocations": 819,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0372",
+      "case_id": "REVOKE-UPDATE-s3-warm-14",
+      "ordinal": 372,
+      "cumulative_invocations": 820,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0373",
+      "case_id": "REVOKE-UPDATE-s3-warm-15",
+      "ordinal": 373,
+      "cumulative_invocations": 821,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0374",
+      "case_id": "REVOKE-UPDATE-s3-warm-16",
+      "ordinal": 374,
+      "cumulative_invocations": 822,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0375",
+      "case_id": "REVOKE-UPDATE-s3-warm-17",
+      "ordinal": 375,
+      "cumulative_invocations": 823,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0376",
+      "case_id": "REVOKE-UPDATE-s3-warm-18",
+      "ordinal": 376,
+      "cumulative_invocations": 824,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0377",
+      "case_id": "REVOKE-UPDATE-s3-warm-19",
+      "ordinal": 377,
+      "cumulative_invocations": 825,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0378",
+      "case_id": "C-11",
+      "ordinal": 378,
+      "cumulative_invocations": 826,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0379",
+      "case_id": "N-01",
+      "ordinal": 379,
+      "cumulative_invocations": 827,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0380",
+      "case_id": "N-02",
+      "ordinal": 380,
+      "cumulative_invocations": 828,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0381",
+      "case_id": "N-03",
+      "ordinal": 381,
+      "cumulative_invocations": 829,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0382",
+      "case_id": "N-04",
+      "ordinal": 382,
+      "cumulative_invocations": 830,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0383",
+      "case_id": "N-05",
+      "ordinal": 383,
+      "cumulative_invocations": 831,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0384",
+      "case_id": "N-06",
+      "ordinal": 384,
+      "cumulative_invocations": 832,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0385",
+      "case_id": "N-07",
+      "ordinal": 385,
+      "cumulative_invocations": 833,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0386",
+      "case_id": "N-08",
+      "ordinal": 386,
+      "cumulative_invocations": 834,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0387",
+      "case_id": "N-09",
+      "ordinal": 387,
+      "cumulative_invocations": 835,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0388",
+      "case_id": "N-10",
+      "ordinal": 388,
+      "cumulative_invocations": 836,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0389",
+      "case_id": "N-11",
+      "ordinal": 389,
+      "cumulative_invocations": 837,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0390",
+      "case_id": "N-12",
+      "ordinal": 390,
+      "cumulative_invocations": 838,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0391",
+      "case_id": "N-13",
+      "ordinal": 391,
+      "cumulative_invocations": 839,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0392",
+      "case_id": "N-14",
+      "ordinal": 392,
+      "cumulative_invocations": 840,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0393",
+      "case_id": "N-15",
+      "ordinal": 393,
+      "cumulative_invocations": 841,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0394",
+      "case_id": "N-16",
+      "ordinal": 394,
+      "cumulative_invocations": 842,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0395",
+      "case_id": "N-17",
+      "ordinal": 395,
+      "cumulative_invocations": 843,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0396",
+      "case_id": "N-18",
+      "ordinal": 396,
+      "cumulative_invocations": 844,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0397",
+      "case_id": "N-19",
+      "ordinal": 397,
+      "cumulative_invocations": 845,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0398",
+      "case_id": "N-20",
+      "ordinal": 398,
+      "cumulative_invocations": 846,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0399",
+      "case_id": "N-21",
+      "ordinal": 399,
+      "cumulative_invocations": 847,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0400",
+      "case_id": "N-22",
+      "ordinal": 400,
+      "cumulative_invocations": 848,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0401",
+      "case_id": "N-23",
+      "ordinal": 401,
+      "cumulative_invocations": 849,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0402",
+      "case_id": "N-24",
+      "ordinal": 402,
+      "cumulative_invocations": 850,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0403",
+      "case_id": "TR-01",
+      "ordinal": 403,
+      "cumulative_invocations": 851,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0404",
+      "case_id": "TR-02",
+      "ordinal": 404,
+      "cumulative_invocations": 852,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0405",
+      "case_id": "TR-03",
+      "ordinal": 405,
+      "cumulative_invocations": 853,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0406",
+      "case_id": "TR-04",
+      "ordinal": 406,
+      "cumulative_invocations": 854,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0407",
+      "case_id": "TR-05",
+      "ordinal": 407,
+      "cumulative_invocations": 855,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0408",
+      "case_id": "TR-06",
+      "ordinal": 408,
+      "cumulative_invocations": 856,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0409",
+      "case_id": "TR-07",
+      "ordinal": 409,
+      "cumulative_invocations": 857,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0410",
+      "case_id": "TR-08",
+      "ordinal": 410,
+      "cumulative_invocations": 858,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0411",
+      "case_id": "TR-09",
+      "ordinal": 411,
+      "cumulative_invocations": 859,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0412",
+      "case_id": "TR-10",
+      "ordinal": 412,
+      "cumulative_invocations": 860,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0413",
+      "case_id": "TR-11",
+      "ordinal": 413,
+      "cumulative_invocations": 861,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0414",
+      "case_id": "TR-12",
+      "ordinal": 414,
+      "cumulative_invocations": 862,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0415",
+      "case_id": "TR-13",
+      "ordinal": 415,
+      "cumulative_invocations": 863,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0416",
+      "case_id": "TR-14",
+      "ordinal": 416,
+      "cumulative_invocations": 864,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0417",
+      "case_id": "TR-15",
+      "ordinal": 417,
+      "cumulative_invocations": 865,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0418",
+      "case_id": "TR-16",
+      "ordinal": 418,
+      "cumulative_invocations": 866,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0419",
+      "case_id": "C-09",
+      "ordinal": 419,
+      "cumulative_invocations": 867,
+      "status": "pass"
+    }
+  ],
+  "builds": [
+    "native-build-1",
+    "native-build-2",
+    "native-build-3"
+  ],
+  "bookkeeping": [
+    {
+      "scope": "coordinator and three implementation agents initial local read/write/accounting sessions",
+      "seconds": 20,
+      "basis": "four conservative five-second charges; actual guard durations charged separately"
+    },
+    {
+      "scope": "Final coordinator source/provenance corrections, report construction, documentation appendices, seal/inventory readback and user-unit cleanup coordination",
+      "seconds": 30,
+      "basis": "Conservative bounded local bookkeeping reservation; guarded preparation/audit/readback durations added separately. No analysis or isolation charge."
+    },
+    {
+      "scope": "Exact milestone unit shutdown, cgroup descendant checks and ephemeral runtime-control removal",
+      "seconds": 0.2682075180346146,
+      "basis": "Measured local controller wall time; bounded standard-library process, no native cases"
+    },
+    {
+      "scope": "Native finalisation coordinator/agent source inspection, retained input snapshots and final documentation/seal bookkeeping",
+      "seconds": 15,
+      "basis": "Conservative local read/write allowance; all guarded job durations additionally charged; no counter reset"
+    }
+  ]
+}

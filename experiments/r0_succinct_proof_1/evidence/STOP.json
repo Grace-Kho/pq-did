@@ -1,0 +1,7 @@
+{
+  "package": "R0-SUCCINCT-PROOF-1",
+  "reason": "Result=timeout\nExecMainCode=2\nExecMainStatus=15\nControlGroup=\nMemoryPeak=1521070080\nMemorySwapPeak=0\nCPUUsageNSec=1187724723000\n",
+  "failed_run": "attempt1",
+  "proof_attempts": 1,
+  "further_proving_authorised": false
+}

@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "historical_completion_attempt": {
+    "passed": false,
+    "classification": "overstrict completion assertion, not a failed stop or live workload",
+    "command": "bounded exact-unit stop/query script; required every ActiveState=inactive",
+    "error": "source-quality.service and build-1.service retain ActiveState=failed, MainPID absent from first query, ControlGroup empty; all other jobs inactive/not-found; slice inactive",
+    "tool_exit_status": 1,
+    "measured_command_seconds": 0.15825004,
+    "failure_preserved": true
+  },
+  "correction": "No repeat execution/stop; verify retained failed unit states alongside absent/empty slice and descendants. Failure states retained, not reset.",
+  "units": {
+    "pqdid-auth-relation-1-admission.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-early-capacity.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-source-quality.service": {
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-source-quality-2.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-build-1.service": {
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-build-2.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-native-cases.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-public-cases.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-witness-cases.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-arithmetic-cases.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-boundary-cases.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-resource-cases.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-complete-shape-prefix.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-source-quality-final.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-prepare.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-full-audit.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-auth-relation-1-final-readback.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    }
+  },
+  "slice": {
+    "LoadState": "loaded",
+    "ActiveState": "inactive",
+    "SubState": "dead",
+    "ControlGroup": ""
+  },
+  "user_manager_cgroup": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service",
+  "exact_slice_cgroups": {},
+  "no_matching_slice_cgroup": true,
+  "slice_properties_reverted": true,
+  "no_live_workload": true,
+  "seconds": 0.16596013796515763
+}

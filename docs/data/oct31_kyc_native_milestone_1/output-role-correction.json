@@ -1,0 +1,11 @@
+{
+  "prospective_correction": "Require the22 declared native outputs plus four exact installed CMake4.2.3 compiler-ID/ABI slots. Synthetic DB/key/wallet names explicit; unknown files stay ordinary evidence even when renamed.",
+  "case": "C-11 targeted rerun passed",
+  "guard_tests_prior_outcomes_preserved": true,
+  "retained_artifact_charge_bytes": 87,
+  "paths": [
+    "docs/data/oct31_kyc_native_milestone_1/stores/M1-0015/lock",
+    "docs/data/oct31_kyc_native_milestone_1/stores/M1-0016/claims/same"
+  ],
+  "effect": "Add these ordinary evidence bytes while conservatively retaining previous artifact charge. No historical usage refund or limit increase."
+}

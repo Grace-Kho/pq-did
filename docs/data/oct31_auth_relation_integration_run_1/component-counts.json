@@ -1,0 +1,622 @@
+{
+  "complete_components_only": [
+    {
+      "case": "W-01",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 42632,
+      "gates": 87657,
+      "rows": 130291,
+      "variables": 130290,
+      "primary": 1,
+      "output_wire": 130290,
+      "nonzero_terms": [
+        161672,
+        172913,
+        87659
+      ],
+      "matrix_sha256": "b5de4411015a0e08e95468fca2693bd9400c8e45614690f2cbaf35b42eebbfc9",
+      "public_identity": "d6263aef66c7329fc37e6905bf6e1933753e2a01deddfc15f9fb5a31feee3395",
+      "gate_counts": [
+        45734,
+        29523,
+        12400
+      ],
+      "free_input_booleanity_rows": 42632,
+      "output_rows": 2,
+      "assignment_storage_bytes": 130290,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 0.5882701860973611
+    },
+    {
+      "case": "W-02",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 42632,
+      "gates": 87899,
+      "rows": 130533,
+      "variables": 130532,
+      "primary": 1,
+      "output_wire": 130532,
+      "nonzero_terms": [
+        161984,
+        173155,
+        87901
+      ],
+      "matrix_sha256": "d354e55870af2b1d59e744c71d722a63912d6c71b1dc8cd5dcb46445a91f7a97",
+      "public_identity": "bde70d24ffcd2f5c9e7d42db4f0784f4c03e86f7c3e1bf2ec0fb026381669e12",
+      "gate_counts": [
+        45790,
+        29655,
+        12454
+      ],
+      "free_input_booleanity_rows": 42632,
+      "output_rows": 2,
+      "assignment_storage_bytes": 130532,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 0.5551975449780002
+    },
+    {
+      "case": "W-03",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 42632,
+      "gates": 87657,
+      "rows": 130291,
+      "variables": 130290,
+      "primary": 1,
+      "output_wire": 130290,
+      "nonzero_terms": [
+        161672,
+        172913,
+        87659
+      ],
+      "matrix_sha256": "b5de4411015a0e08e95468fca2693bd9400c8e45614690f2cbaf35b42eebbfc9",
+      "public_identity": "3ee986ef57cfa31376a539644ef873ae500cf38b10501add0c018b16013ffd35",
+      "gate_counts": [
+        45734,
+        29523,
+        12400
+      ],
+      "free_input_booleanity_rows": 42632,
+      "output_rows": 2,
+      "assignment_storage_bytes": 130290,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 0.5553717369912192
+    },
+    {
+      "case": "W-04",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 42632,
+      "gates": 87657,
+      "rows": 130291,
+      "variables": 130290,
+      "primary": 1,
+      "output_wire": 130290,
+      "nonzero_terms": [
+        161672,
+        172913,
+        87659
+      ],
+      "matrix_sha256": "b5de4411015a0e08e95468fca2693bd9400c8e45614690f2cbaf35b42eebbfc9",
+      "public_identity": "74b36cb2ddcd0bed287a092986fb1539db76230767cf0dcbdb77141088619a1f",
+      "gate_counts": [
+        45734,
+        29523,
+        12400
+      ],
+      "free_input_booleanity_rows": 42632,
+      "output_rows": 2,
+      "assignment_storage_bytes": 130290,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 0.5521340679842979
+    },
+    {
+      "case": "W-05",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 42632,
+      "gates": 87657,
+      "rows": 130291,
+      "variables": 130290,
+      "primary": 1,
+      "output_wire": 130290,
+      "nonzero_terms": [
+        161672,
+        172913,
+        87659
+      ],
+      "matrix_sha256": "b5de4411015a0e08e95468fca2693bd9400c8e45614690f2cbaf35b42eebbfc9",
+      "public_identity": "fdbc5f9d49f04b2f3fb4b9ac98e1c3b9407919af29763c843a79b43b0e0e6e87",
+      "gate_counts": [
+        45734,
+        29523,
+        12400
+      ],
+      "free_input_booleanity_rows": 42632,
+      "output_rows": 2,
+      "assignment_storage_bytes": 130290,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 0.5513194339582697
+    },
+    {
+      "case": "W-06",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 42632,
+      "gates": 87657,
+      "rows": 130291,
+      "variables": 130290,
+      "primary": 1,
+      "output_wire": 130290,
+      "nonzero_terms": [
+        161672,
+        172913,
+        87659
+      ],
+      "matrix_sha256": "b5de4411015a0e08e95468fca2693bd9400c8e45614690f2cbaf35b42eebbfc9",
+      "public_identity": "f16e9899e66001d0cf56a28fac2f218f7784feb7cb932df32e0d5d8b6214c0dc",
+      "gate_counts": [
+        45734,
+        29523,
+        12400
+      ],
+      "free_input_booleanity_rows": 42632,
+      "output_rows": 2,
+      "assignment_storage_bytes": 130290,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 0.5557568579679355
+    },
+    {
+      "case": "W-07",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 42632,
+      "gates": 87657,
+      "rows": 130291,
+      "variables": 130290,
+      "primary": 1,
+      "output_wire": 130290,
+      "nonzero_terms": [
+        161672,
+        172913,
+        87659
+      ],
+      "matrix_sha256": "b5de4411015a0e08e95468fca2693bd9400c8e45614690f2cbaf35b42eebbfc9",
+      "public_identity": "4d3a04e36b65d2d6ebbb767b2734aff7525d68be80871e37cf21fb236a6fdd42",
+      "gate_counts": [
+        45734,
+        29523,
+        12400
+      ],
+      "free_input_booleanity_rows": 42632,
+      "output_rows": 2,
+      "assignment_storage_bytes": 130290,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 0.5559910510201007
+    },
+    {
+      "case": "W-10",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 42632,
+      "gates": 282350,
+      "rows": 324984,
+      "variables": 324983,
+      "primary": 1,
+      "output_wire": 324983,
+      "nonzero_terms": [
+        509252,
+        367606,
+        282352
+      ],
+      "matrix_sha256": "69b39b54883a15fab6d6c46ca14bb1055b4dc313571b64d141efa181ff3a9b17",
+      "public_identity": "1d63018c165c643db8e157942af0f37323296f3821dee5c93986694b7f990f79",
+      "gate_counts": [
+        201256,
+        68309,
+        12785
+      ],
+      "free_input_booleanity_rows": 42632,
+      "output_rows": 2,
+      "assignment_storage_bytes": 324983,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 1.8243402269436046
+    },
+    {
+      "case": "W-11",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 42632,
+      "gates": 332980,
+      "rows": 375614,
+      "variables": 375613,
+      "primary": 1,
+      "output_wire": 375613,
+      "nonzero_terms": [
+        578024,
+        418236,
+        332982
+      ],
+      "matrix_sha256": "4f229dcd5a3f23b83fca3ceb26f557cc8b299a6a000723f08fe5702f0e421c26",
+      "public_identity": "0158f670c8be98967e9497a87431e55a63f93be32300c1b13c006ca54ee95945",
+      "gate_counts": [
+        218090,
+        85271,
+        29619
+      ],
+      "free_input_booleanity_rows": 42632,
+      "output_rows": 2,
+      "assignment_storage_bytes": 375613,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 2.0439193369820714
+    },
+    {
+      "case": "M-04",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 488,
+      "gates": 383420,
+      "rows": 383910,
+      "variables": 383909,
+      "primary": 1,
+      "output_wire": 383909,
+      "nonzero_terms": [
+        558556,
+        384397,
+        383422
+      ],
+      "matrix_sha256": "5a64c11db2d7210bf5fbb24a2b19a71e8eb5eb775af206414c6823e42af46347",
+      "public_identity": "50a451c6df93a980e31eb715d2fd28c10e48898fc502840da90c3e2d67313d7d",
+      "gate_counts": [
+        179223,
+        203142,
+        1055
+      ],
+      "free_input_booleanity_rows": 488,
+      "output_rows": 2,
+      "assignment_storage_bytes": 383909,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 1.9023401649901643
+    },
+    {
+      "case": "M-05",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 488,
+      "gates": 383420,
+      "rows": 383910,
+      "variables": 383909,
+      "primary": 1,
+      "output_wire": 383909,
+      "nonzero_terms": [
+        558556,
+        384397,
+        383422
+      ],
+      "matrix_sha256": "5a64c11db2d7210bf5fbb24a2b19a71e8eb5eb775af206414c6823e42af46347",
+      "public_identity": "cf29b784d0eeebbbed92072818bd4e37c88cbcd8a413a60b4abb3fb69feb7b95",
+      "gate_counts": [
+        179223,
+        203142,
+        1055
+      ],
+      "free_input_booleanity_rows": 488,
+      "output_rows": 2,
+      "assignment_storage_bytes": 383909,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 1.8475004279753193
+    },
+    {
+      "case": "M-06",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 488,
+      "gates": 383420,
+      "rows": 383910,
+      "variables": 383909,
+      "primary": 1,
+      "output_wire": 383909,
+      "nonzero_terms": [
+        558556,
+        384397,
+        383422
+      ],
+      "matrix_sha256": "5a64c11db2d7210bf5fbb24a2b19a71e8eb5eb775af206414c6823e42af46347",
+      "public_identity": "b7425ab87dacd63f595de7fa42b5d1629412dfcfbb3d8bf02ca885854a6e727b",
+      "gate_counts": [
+        179223,
+        203142,
+        1055
+      ],
+      "free_input_booleanity_rows": 488,
+      "output_rows": 2,
+      "assignment_storage_bytes": 383909,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 1.8513611250091344
+    },
+    {
+      "case": "M-07",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 488,
+      "gates": 383420,
+      "rows": 383910,
+      "variables": 383909,
+      "primary": 1,
+      "output_wire": 383909,
+      "nonzero_terms": [
+        558556,
+        384397,
+        383422
+      ],
+      "matrix_sha256": "5a64c11db2d7210bf5fbb24a2b19a71e8eb5eb775af206414c6823e42af46347",
+      "public_identity": "f403d97b8ff2afb51e0fee872b603b3658cd66f44be23855c602e97c708b01ed",
+      "gate_counts": [
+        179223,
+        203142,
+        1055
+      ],
+      "free_input_booleanity_rows": 488,
+      "output_rows": 2,
+      "assignment_storage_bytes": 383909,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 1.8643010311061516
+    },
+    {
+      "case": "M-08",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 64,
+      "gates": 931,
+      "rows": 997,
+      "variables": 996,
+      "primary": 1,
+      "output_wire": 996,
+      "nonzero_terms": [
+        1444,
+        1045,
+        933
+      ],
+      "matrix_sha256": "77268ae8b9e6c0a49768b937b007fc89e24172285732f78462f6e88971f7f483",
+      "public_identity": "07d91b35f117334cc3b0dd5c2591125a4479f2f82c6c9a718cc03725b4f860b6",
+      "gate_counts": [
+        527,
+        334,
+        70
+      ],
+      "free_input_booleanity_rows": 64,
+      "output_rows": 2,
+      "assignment_storage_bytes": 996,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 0.005125091061927378
+    },
+    {
+      "case": "M-09",
+      "coverage": "single actual forward butterfly with full entry normalisation; complete transform unexecuted",
+      "complete": true,
+      "inputs": 128,
+      "gates": 89585,
+      "rows": 89715,
+      "variables": 89714,
+      "primary": 1,
+      "output_wire": 89714,
+      "nonzero_terms": [
+        140520,
+        87223,
+        89587
+      ],
+      "matrix_sha256": "20da5881dedf209cfc502d9ef8a769c10047c53b3a5358e4569992e542b660b5",
+      "public_identity": "287c4872dce013ace0742012697a9df1c57a8597aef9f239c195bad637149179",
+      "gate_counts": [
+        54688,
+        33859,
+        1038
+      ],
+      "free_input_booleanity_rows": 128,
+      "output_rows": 2,
+      "assignment_storage_bytes": 89714,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 0.44718950300011784
+    },
+    {
+      "case": "M-10",
+      "coverage": "single actual inverse butterfly and final factor; complete inverse transform unexecuted",
+      "complete": true,
+      "inputs": 128,
+      "gates": 238618,
+      "rows": 238748,
+      "variables": 238747,
+      "primary": 1,
+      "output_wire": 238747,
+      "nonzero_terms": [
+        362666,
+        224511,
+        238620
+      ],
+      "matrix_sha256": "28b5d2e7aa34f754751d9314c10285e387a6e9a8923188169488170979f80506",
+      "public_identity": "5b9ebf78567b9c0749996ae202f54ad426b09fb70e76840f449a87eb10ab8b27",
+      "gate_counts": [
+        140618,
+        95911,
+        2089
+      ],
+      "free_input_booleanity_rows": 128,
+      "output_rows": 2,
+      "assignment_storage_bytes": 238747,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 1.1914110679645091
+    },
+    {
+      "case": "M-11",
+      "coverage": "one complete coefficient update, not six polynomial rows",
+      "complete": true,
+      "inputs": 128,
+      "gates": 51582,
+      "rows": 51712,
+      "variables": 51711,
+      "primary": 1,
+      "output_wire": 51711,
+      "nonzero_terms": [
+        80488,
+        50067,
+        51584
+      ],
+      "matrix_sha256": "a7145d658b5ba11abe5f8f53e6a34db41753bd9f8389824af4f495524c2e9031",
+      "public_identity": "7b247c72d6dc8cc636c179c9a54f78d07a8f621baea2245b6008fb54373ce32d",
+      "gate_counts": [
+        31405,
+        19692,
+        485
+      ],
+      "free_input_booleanity_rows": 128,
+      "output_rows": 2,
+      "assignment_storage_bytes": 51711,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 0.26110770006198436
+    },
+    {
+      "case": "M-12",
+      "coverage": "one complete coefficient update, not six polynomial rows",
+      "complete": true,
+      "inputs": 128,
+      "gates": 51647,
+      "rows": 51777,
+      "variables": 51776,
+      "primary": 1,
+      "output_wire": 51776,
+      "nonzero_terms": [
+        80622,
+        50133,
+        51649
+      ],
+      "matrix_sha256": "c9045a3da1efcd0c63c2716abc63f6b2a0c28d7ec7cc40492e0f97b38b878492",
+      "public_identity": "1ac12370818e8042d9add4a8e732d8dde8cba153b8cf8291ebdf6d96ab4f61fb",
+      "gate_counts": [
+        31405,
+        19692,
+        550
+      ],
+      "free_input_booleanity_rows": 128,
+      "output_rows": 2,
+      "assignment_storage_bytes": 51776,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 0.2581961239920929
+    },
+    {
+      "case": "M-13",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 64,
+      "gates": 110703,
+      "rows": 110769,
+      "variables": 110768,
+      "primary": 1,
+      "output_wire": 110768,
+      "nonzero_terms": [
+        175825,
+        108865,
+        110705
+      ],
+      "matrix_sha256": "5a2b80b40ec210d56ad3a785e03df6941f3b98aafd209c33441214dcffe9bd82",
+      "public_identity": "06eadd7b3222b59e029d6adc6545943d4dab6a007b31e0091b4c11ead6e692d3",
+      "gate_counts": [
+        68275,
+        41049,
+        1379
+      ],
+      "free_input_booleanity_rows": 64,
+      "output_rows": 2,
+      "assignment_storage_bytes": 110768,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 0.5538881350075826
+    },
+    {
+      "case": "M-14",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 64,
+      "gates": 184270,
+      "rows": 184336,
+      "variables": 184335,
+      "primary": 1,
+      "output_wire": 184335,
+      "nonzero_terms": [
+        293687,
+        182237,
+        184272
+      ],
+      "matrix_sha256": "5f3df3e22bfe3f3ea26ca8c831dd5b90a87aea9bc08465480c7b3e08306bdcf5",
+      "public_identity": "388fc814caed26b40964ac7a111367cbe2bbbc7387031e4519f7136642201739",
+      "gate_counts": [
+        113793,
+        68374,
+        2103
+      ],
+      "free_input_booleanity_rows": 64,
+      "output_rows": 2,
+      "assignment_storage_bytes": 184335,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 0.924760980065912
+    },
+    {
+      "case": "M-15",
+      "coverage": "complete named component only",
+      "complete": true,
+      "inputs": 6144,
+      "gates": 778759,
+      "rows": 784905,
+      "variables": 784904,
+      "primary": 1,
+      "output_wire": 784904,
+      "nonzero_terms": [
+        1027595,
+        791049,
+        778761
+      ],
+      "matrix_sha256": "6107ce43107cf9fd648c20542f09beb7daf736d8f32cb8b2ac3e01437d9c7a44",
+      "public_identity": "13bc03e506a525fecbceae879d47c63eb6794d9bf5e25d8ee9c7b006a96b0017",
+      "gate_counts": [
+        433154,
+        324099,
+        21506
+      ],
+      "free_input_booleanity_rows": 6144,
+      "output_rows": 2,
+      "assignment_storage_bytes": 784904,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 4.049594796961173
+    },
+    {
+      "case": "M-16",
+      "coverage": "complete final challenge SHAKE/equality only; mu/w1 obtained from independent reference",
+      "complete": true,
+      "inputs": 6144,
+      "gates": 1365895,
+      "rows": 1372041,
+      "variables": 1372040,
+      "primary": 1,
+      "output_wire": 1372040,
+      "nonzero_terms": [
+        2452344,
+        1378185,
+        1365897
+      ],
+      "matrix_sha256": "efa648a34dff2eaf4dd0750ef33444a0f0d13a669f9528af21d81e6a93f3a72c",
+      "public_identity": "14ac0d03c9456f625dbfb9fc5a25dfad569e83476b6638a8f29dc786a5f4010c",
+      "gate_counts": [
+        1096322,
+        269187,
+        386
+      ],
+      "free_input_booleanity_rows": 6144,
+      "output_rows": 2,
+      "assignment_storage_bytes": 1372040,
+      "memory_model": "bounded retained byte assignment; no last-use claim",
+      "seconds": 7.107371949008666
+    }
+  ],
+  "overlapping_counts_not_summed_as_authentication": true,
+  "joint_count": null
+}

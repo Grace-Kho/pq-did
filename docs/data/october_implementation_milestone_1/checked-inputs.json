@@ -1,0 +1,20 @@
+{
+  "sha256": {
+    "docs/data/october_implementation_milestone_1/approval-request.md": "0c964d2d7b4970591ba5d1023b07d50cc7b33659a293ade619f2d566bde2fa8a",
+    "docs/data/october_implementation_milestone_1/checks.py": "c65f50b5a25faa332d7bbe72582b4ed8dd3bf57d8316d36734730743d37353a4",
+    "docs/data/october_implementation_milestone_1/config.json": "120156168486037042ee0200acd125d3cb766bba101de7281a3a7e98593c784e",
+    "docs/data/october_implementation_milestone_1/contract.json": "7c1e191442003edbe2af6c77f8e71a39dc155083aaa902bd62c6158ca0ba00b6",
+    "docs/data/october_implementation_milestone_1/delegated-inspection.md": "93a849a414fc9712cd9d8648484d1752965973be9d11b26023ae221a72144b78",
+    "docs/data/october_implementation_milestone_1/execution-plan.json": "cbb310bee67ed9c237b0e1055b3e68d81652fffd96ccad611dc2f1c6a4fc0b27",
+    "docs/data/october_implementation_milestone_1/literature.json": "e5ef3a3c8fd1b7682ca65a9649c04afea065ab403ab93a467435b75276e98a0b",
+    "docs/data/october_implementation_milestone_1/opening-ledger.json": "f794aa809fadad27aca022e0df41d438dbbd6ee56f321a91728c54c37efe2118",
+    "docs/data/october_implementation_milestone_1/prefixes.json": "04da94b19b9d751be3f743c9fc538e8b1264f076aa24eb9b05d5de33c6f78fe5",
+    "docs/data/october_implementation_milestone_1/prior-package-closure.json": "e2e9231b62c9552596cce95a3aba703344c966d4cc74ba4bf29a7018938c3471",
+    "docs/data/october_implementation_milestone_1/quality.json": "565d93c7cb13073dba104d3141e8c67544e198474ccae4f8e403c33602d893d4",
+    "docs/data/october_implementation_milestone_1/quality.log": "b45fcdfab6fa827e1ada9b785c784a266e965991310a8a9c6f451384dc99e47f",
+    "docs/data/october_implementation_milestone_1/quality.service.json": "d3462c3b4523e5385ade76680f996bc1ed99bb27884ff235b6ec70697be74faa",
+    "docs/data/october_implementation_milestone_1/reviewed-inputs.json": "ae0439eec3d14c765ecd1fa14c6329bb483d89a95ad6c0ccc47c93c4e8fef8c6",
+    "docs/data/october_implementation_milestone_1/run.py": "3b7e26939f110cec6872891238563b94c44d7b8bb1d1e67acf144586e5bc0743",
+    "docs/data/october_implementation_milestone_1/static-review.json": "ae52e62b197d0abbd740db36678f532e57fe1f3ed6767888be51cbe2a92fd410"
+  }
+}

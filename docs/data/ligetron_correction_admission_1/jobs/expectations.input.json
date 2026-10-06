@@ -1,0 +1,25 @@
+{
+  "name": "expectations",
+  "phase": "tool",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/ligetron_correction_admission_1/vectors.py"
+  ],
+  "limit_seconds": 8,
+  "child_seconds": 7,
+  "status": "launched",
+  "unit": "pqdid-ligetron-correction-1-expectations",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 1070245,
+    "new_artifact_bytes": 17559580,
+    "evidence_bytes": 37212530,
+    "artifact_bytes": 76526127,
+    "temporary_bytes": 0
+  },
+  "available_memory": 3772694528,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

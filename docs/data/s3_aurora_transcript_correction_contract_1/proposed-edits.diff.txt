@@ -1,0 +1,59 @@
+ILLUSTRATIVE PATCH CONTRACT ONLY -- not applied and not compiled.
+Baseline: libiop a2ed2ec2f3e85f29b6035951553b02cb737c817a.
+Full byte identities: previous bridge sources.json and sources-supplement.json.
+
+--- upstream/libiop/bcs/hashing/blake2b.tcc:absorb_hash_digest
++++ isolated/minimal_length_repair (diagnostic semantics only)
+@@ input length to crypto_generichash_blake2b, NOT its output length
+-    input=&hash_input[0], input_length=this->digest_len_bytes_
++    require exact state/input digest widths and checked sum
++    input=hash_input.data(), input_length=hash_input.size()
++    compute into separate digest buffer; publish state only on success
+
+The preceding one-line span correction is NOT EXP2, not a security fix by itself,
+and will not be installed into or offered as a fallback by production PQ-DID.
+
+--- upstream/libiop/bcs/hashing/blake2b.{hpp,tcc,cpp}:state/absorb/squeeze interface
++++ isolated EXP2 transcript adapter (future Python harness, not libiop build)
+-    new_hashchain() initialises fixed spaces and retains only security_parameter
+-    unlabelled absorb(root), absorb(vector<FieldT>), native-size_t keyed extraction
++    new(trusted_descriptor,expected_pp,typed_X,version=2)
++    canonical PID/RID/XDOM and initial state per transcript-pseudocode.txt
++    commit_round(round_id,ordered_roots,ordered_direct_field_vectors)
++    challenge(round_id,challenge_id) with descriptor-selected type/width
++    finish() returns diagnostic state/count only
++    no generic raw absorb/squeeze API exported; no caller-selected hash/context
+
+--- upstream/libiop/bcs/bcs_common.tcc:constructor/run_hashchain_for_round
++++ future integration hook (NOT part of proposed minimal executable harness)
+-    hashchain = parameters.hashchain.new_hashchain()
+-    for root: absorb(root); absorb([zero_field] || concatenated_messages)
+-    squeeze_verifier_random_messages(round)
++    inject already initialised EXP2 transcript from trusted public statement adapter
++    preserve all direct-message boundaries, roots and registration order
++    EXP2.commit_round(round,roots,separate_message_vectors)
++    request scheduled challenges only; never omit a message-only or empty round
+
+--- upstream/libiop/snark/aurora_snark.tcc:prover/verifier wrapper hooks
++++ future integration hook (NOT authorised / not in regression harness)
++    choose trusted profile/relation independently of supplied proof
++    validate and canonically encode the SAME full public X on both paths
++    initialise transcript BEFORE any commitment/challenge use
++    retain primary_input algebraic verification -- hashing is not a replacement
++    forbid old transcript IDs; do not infer binding from a caller-supplied Xtag
+
+--- upstream/libiop/bcs/bcs_prover.tcc and bcs_verifier.tcc:final phase
++++ future no-PoW integration hook (NOT authorised / not in regression harness)
+-    squeeze_root_type(); solve_pow()/verify_pow(); proof_of_work_ field
++    no PoW transition, dummy squeeze, nonce or grinding credit
++    final direct coefficients commit before descriptor's query challenges
++    reparameterisation required before any actual IOP integration
+
+The future narrow executable files are ONLY:
+  experiments/aurora_transcript_regression_1/transcript.py
+  experiments/aurora_transcript_regression_1/reference_trace.py
+  experiments/aurora_transcript_regression_1/cases.py
+  experiments/aurora_transcript_regression_1/README.md
+plus bounded evidence/guard/audit files and append-only package documentation.
+No upstream fork, imported libiop/libff, proof verifier registration or active
+profile edit is required for those public transcript regressions.

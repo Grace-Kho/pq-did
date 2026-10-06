@@ -1,0 +1,13 @@
+{
+  "initial_static_exit": 1,
+  "initial_tooling_cases_executed": 0,
+  "fixture_ledger_absent_at_correction": true,
+  "correction": [
+    "remove two unused imports",
+    "bind current fixture index in synchronous callback"
+  ],
+  "native_or_protocol_changes": false,
+  "original_sources": "static-failure-inputs.json.gz",
+  "no_new_case_allowance": "five first fixture executions still pending; no repeat occurred",
+  "initial_guard_charge_preserved": 0.5955619750311598
+}

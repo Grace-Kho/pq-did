@@ -1,0 +1,16 @@
+{
+  "case_id": "B-07",
+  "invocation_id": "AR1-0061",
+  "status": "pass",
+  "details": {
+    "case_id": "B-07",
+    "passed": true,
+    "rejected": true,
+    "reason": "field encoding must be exactly 24 bytes",
+    "accepted": false,
+    "proof_generated": false,
+    "field_note": "all 24-byte encodings canonical; wrong width rejected"
+  },
+  "seconds": 2.1792016923427582e-05,
+  "work_events": 0
+}

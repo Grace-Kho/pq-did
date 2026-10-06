@@ -1,0 +1,192 @@
+{
+  "passed": true,
+  "sources": {
+    "commit": "4b1cdef1bfdf4497fb3e38170db4541fba3f6c12",
+    "root_tree": "95984ef209bf37a53624d27a36905e41886dacfc",
+    "provenance": "GitHub HTTPS Git API identity records; each source length and computed Git blob matched the recursive tree. No full clone or git fsck.",
+    "source_files": [
+      {
+        "path": "include/params.hpp",
+        "size": 1523,
+        "git_blob": "39cb5687013bd6d5cd9f20e2be658b1b184e62e9",
+        "sha256": "d7d9bf73a37509bdbabf3ea468359ee2eef110b501cc3e2c983a89fdf59b0387",
+        "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/params.hpp"
+      },
+      {
+        "path": "include/zkp/backend/witness_manager.hpp",
+        "size": 18202,
+        "git_blob": "9f4eda40ed7eb6438d4f4144facc034e76df5ad8",
+        "sha256": "ca9596ebf287ceb9ba74b21cdc94b849f32324ea93829b56f743794de673fc7e",
+        "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/zkp/backend/witness_manager.hpp"
+      },
+      {
+        "path": "include/zkp/nonbatch_context.hpp",
+        "size": 54149,
+        "git_blob": "6d45ebcc23760f170c7df7599426f4ea6006df19",
+        "sha256": "94da504b041728e8b8974284cb0ca2e10fb96e6c847b40b3775d5b1172c4f955",
+        "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/zkp/nonbatch_context.hpp"
+      },
+      {
+        "path": "include/zkp/proof_serializer.hpp",
+        "size": 8187,
+        "git_blob": "250fa09cf5da0136feb689e6210077528ce36da2",
+        "sha256": "6ab01a3e97c86587cd3de569540f47ebcb4d1b3c751c9515514f29abbd8bb6fd",
+        "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/zkp/proof_serializer.hpp"
+      },
+      {
+        "path": "include/zkp/finite_field_gmp.hpp",
+        "size": 13973,
+        "git_blob": "4258152ad3f534600d2434c0fe30120dffed08bd",
+        "sha256": "5c12605ef458963a36bae6f0cb74110ffc4cdb21feca3bc709d2c23ef5b9fd01",
+        "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/zkp/finite_field_gmp.hpp"
+      },
+      {
+        "path": "src/webgpu_prover.cpp",
+        "size": 18445,
+        "git_blob": "54eaf1442b46c4975beccea34356b3db4007802f",
+        "sha256": "f6c1d4b9271ddedb8c0666b421500b9be32a9f1f6d9bd0ce86651160d7d1705d",
+        "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/src/webgpu_prover.cpp"
+      },
+      {
+        "path": "src/webgpu_verifier.cpp",
+        "size": 17842,
+        "git_blob": "916cd14616c0add8e240cfaefdb78e96158544e1",
+        "sha256": "0fb14989eb8bb0b68b2a955039f6c7501e0c6706c3e5510d67b42cdfb715b7d8",
+        "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/src/webgpu_verifier.cpp"
+      },
+      {
+        "path": "src/bn254.cpp",
+        "size": 6613,
+        "git_blob": "6064d558b6eb7967d320b1bed58ba62e3fca1fcb",
+        "sha256": "eb5cec3bdfc266439b4c7dfd5b8c096b9285e61b1a886194f91fbd5ad21e0c79",
+        "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/src/bn254.cpp"
+      },
+      {
+        "path": "include/wgpu.hpp",
+        "size": 11975,
+        "git_blob": "99465dfbacf07611de761a81d83c464e60b4080e",
+        "sha256": "b73bfe76557f78c1c9b4f62bb7b54d61326b633bd5d5279b0b4d79352f2e9410",
+        "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/wgpu.hpp"
+      },
+      {
+        "path": "src/webgpu/engine.cpp",
+        "size": 68303,
+        "git_blob": "cde32efdf6f2d6a4074267ef666c62425746991c",
+        "sha256": "727d2898ec40d428225b48ee0986daa04cf769f2c6af78eabfd644760b49604e",
+        "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/src/webgpu/engine.cpp"
+      },
+      {
+        "path": "shader/kernels.wgsl.in",
+        "size": 18520,
+        "git_blob": "73fb16c55e31e8c8d062b42611fdac61f46af16b",
+        "sha256": "e4285b3974709086c81ed4a610267ac7a04dd2093fb6be799ce3a850568f206e",
+        "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/shader/kernels.wgsl.in"
+      },
+      {
+        "path": "pack/shader/bignum.wgsl",
+        "size": 34777,
+        "git_blob": "e54cb87acb578f38e4b2f0104a0fa6e830dc0495",
+        "sha256": "565e0fedd1408942d81ee9d0ab5afdd4ea7605cd06e81cc00e74c9a6872e400a",
+        "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/pack/shader/bignum.wgsl"
+      }
+    ]
+  },
+  "algebra_results_reused_not_executed": {
+    "status": "finite algebra calculations completed",
+    "domain": {
+      "field": 21888242871839275222246405745257275088548364400416034343698204186575808495617,
+      "k": 8192,
+      "ell": 8000,
+      "n": 32768,
+      "t": 192,
+      "root1_times_root2": 1,
+      "message_points_in_code_domain": 8000,
+      "mapping": "j = (-4*i) mod n",
+      "first_eight_indices": [
+        0,
+        32764,
+        32760,
+        32756,
+        32752,
+        32748,
+        32744,
+        32740
+      ],
+      "expected_message_point_hits_if_192_distinct_uniform_queries": 46.875,
+      "scope": "Exact pinned-constant calculation; not measured query outcomes or GPU execution."
+    },
+    "mask": {
+      "field": 97,
+      "k": 4,
+      "ell": 2,
+      "n": 16,
+      "t": 1,
+      "message_nodes": [
+        1,
+        22,
+        96,
+        75
+      ],
+      "coset_delta": 5,
+      "code_domain": [
+        5,
+        40,
+        29,
+        38,
+        13,
+        7,
+        56,
+        60,
+        92,
+        57,
+        68,
+        59,
+        84,
+        90,
+        41,
+        37
+      ],
+      "disjoint": true,
+      "strict_padding_inequality": true,
+      "query_point": 40,
+      "lagrange_weights": [
+        90,
+        22,
+        80,
+        3
+      ],
+      "public_row_weight": 7,
+      "cases": [
+        {
+          "bit": 0,
+          "opened_sample": 39,
+          "response_decoded": [
+            2,
+            6,
+            35,
+            63
+          ],
+          "zero_tail_statistic": 0,
+          "recovered_bit": 0,
+          "full_tail_mask_statistic_support": 97,
+          "full_tail_mask_count_per_value": 97
+        },
+        {
+          "bit": 1,
+          "opened_sample": 32,
+          "response_decoded": [
+            9,
+            6,
+            35,
+            63
+          ],
+          "zero_tail_statistic": 48,
+          "recovered_bit": 1,
+          "full_tail_mask_statistic_support": 97,
+          "full_tail_mask_count_per_value": 97
+        }
+      ],
+      "scope": "One linear code-test view with chosen fixed public weight; full-tail check concerns this statistic only. No commitment, full joint-view simulation, extraction or Fiat-Shamir attack is established."
+    }
+  }
+}

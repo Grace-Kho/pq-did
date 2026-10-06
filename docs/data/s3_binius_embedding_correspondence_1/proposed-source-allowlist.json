@@ -1,0 +1,85 @@
+{
+  "approved": false,
+  "commit": "441fbf51ff0bcb0bcd28f3f1b73f4954029e8577",
+  "tree": "544452a781fee0f9b262d4ecfdcc47326fb6974f",
+  "files": [
+    {
+      "path": "crates/field/src/arch/portable/arithmetic/ghash.rs",
+      "sha": "a21b0dff65a46c01114daafc2d8984fcb041a8b5",
+      "size": 9606
+    },
+    {
+      "path": "crates/field/src/fields/ghash.rs",
+      "sha": "4448c59366d6fbc02e67a19bf396c0d628cd771b",
+      "size": 16000
+    },
+    {
+      "path": "crates/field/src/lib.rs",
+      "sha": "308456bbe4077775a51b78689c6e7f8938d60d70",
+      "size": 1336
+    },
+    {
+      "path": "crates/field/src/packed_fields/ghash.rs",
+      "sha": "2bd05a9de802af10e628073c79237a4dc310688b",
+      "size": 4023
+    },
+    {
+      "path": "crates/iop-prover/src/logup_star.rs",
+      "sha": "c897fb3b6352bd0e60c758a30d373f1fd6dc417c",
+      "size": 28270
+    },
+    {
+      "path": "crates/iop/src/logup_star.rs",
+      "sha": "ac488399f4a253aa72f3d07583d7caaed4af6561",
+      "size": 9497
+    },
+    {
+      "path": "crates/ip-prover/src/logup_star/mod.rs",
+      "sha": "cb8152e6c23a30f2c30b81abe4026bb40494d784",
+      "size": 1931
+    },
+    {
+      "path": "crates/ip-prover/src/logup_star/prove.rs",
+      "sha": "87950f9fcb22d4798826ac03df990dfc24ec0547",
+      "size": 39298
+    },
+    {
+      "path": "crates/ip-prover/src/logup_star/pushforward.rs",
+      "sha": "d2e087f51ae540a4b82eda97c1bac63d93fe5064",
+      "size": 7445
+    },
+    {
+      "path": "crates/ip-prover/src/logup_star/witness.rs",
+      "sha": "06255e65f63d7a7d494a2dc8599b786e2b068ff8",
+      "size": 22476
+    },
+    {
+      "path": "crates/ip/src/logup_star/error.rs",
+      "sha": "9faacf880f817dfc9c5998a34e9af64925565171",
+      "size": 816
+    },
+    {
+      "path": "crates/ip/src/logup_star/mod.rs",
+      "sha": "f7dc4029f9e8fb5e9e8a9725ed1dee4f70bf8e6d",
+      "size": 5535
+    },
+    {
+      "path": "crates/ip/src/logup_star/output.rs",
+      "sha": "204c2751397a09da023c12acef314977276e4a92",
+      "size": 3843
+    },
+    {
+      "path": "crates/ip/src/logup_star/pushforward.rs",
+      "sha": "692d137a6b7d62c00d043b8e1e0b96b0ae07cc51",
+      "size": 8548
+    },
+    {
+      "path": "crates/ip/src/logup_star/verify.rs",
+      "sha": "4f95783feb27a15f086c6247e4a6a7f000615760",
+      "size": 18155
+    }
+  ],
+  "total_bytes": 176779,
+  "no_acquisition_in_preparation": true,
+  "stop_if_additional_source_is_needed": true
+}

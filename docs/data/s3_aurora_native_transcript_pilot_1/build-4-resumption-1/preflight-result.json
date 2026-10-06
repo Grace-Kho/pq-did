@@ -1,0 +1,366 @@
+{
+  "passed": false,
+  "scope": "Preflight stopped; post-stop static evidence reconciliation only, no retry",
+  "blocking_phase": "preflight lint E501, run.py runtime-string line",
+  "formatting_correction_ast_equal": true,
+  "sealed_inputs_verified_during_finalisation": true,
+  "retained_evidence_addition_once": 784736,
+  "retained_files": [
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/.ninja_deps",
+      "bytes": 50628,
+      "sha256": "e4e5cf235d2c081f7dedb913f13528e3ff856690f03a82abf6d5fb2dc77c41d9",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 50628
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/.ninja_log",
+      "bytes": 2092,
+      "sha256": "cd2bb4567018c2405a0ccea87dba3325c1bb33fee343a60185ed16d48b3b93fd",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 2092
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeCache.txt",
+      "bytes": 17990,
+      "sha256": "ba195642659f1983a85f1305342e19fcd9c58d5e8907c01d181dabb11e352ff3",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 17990
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeFiles/4.2.3/CMakeCCompiler.cmake",
+      "bytes": 2964,
+      "sha256": "64f1690b76656aa75879677cd7073220913c7e248ac522445b16959ba186ab78",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 2964
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake",
+      "bytes": 6639,
+      "sha256": "920cd5ff22679fb7812d239d52781a53b04f86100d499ba9c4b98cc5ad2546ad",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 6639
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeFiles/4.2.3/CMakeDetermineCompilerABI_C.bin",
+      "bytes": 16008,
+      "sha256": "c6ec47bb5780897f83030c91b1021d847bd78d9369a48bd9c85bd199a96358fb",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 16008
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeFiles/4.2.3/CMakeDetermineCompilerABI_CXX.bin",
+      "bytes": 16040,
+      "sha256": "7aad0854c05cc22f6a87cc4dd4c9ec4e191a436349fc8e3b2c7f279091f2b51f",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 16040
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeFiles/4.2.3/CMakeSystem.cmake",
+      "bytes": 466,
+      "sha256": "8f122adbf9bbe045f330399a4409313ec5d6756895a8cebeeaacd7a723e60ea0",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 466
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeFiles/4.2.3/CompilerIdC/CMakeCCompilerId.c",
+      "bytes": 28668,
+      "sha256": "fdf6ba6324e3b29e4268e3ab04f9eb181809b98fe6a52f48fbd526b331e66e02",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 28668
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeFiles/4.2.3/CompilerIdC/a.out",
+      "bytes": 16080,
+      "sha256": "7a1142938e504e0bbbc03cf866984964b6b583384428b7b88b16c7da025e57a9",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 16080
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeFiles/4.2.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+      "bytes": 29480,
+      "sha256": "15597e769f9705997844403bbbf0c2fa65eb5b46a8ad4e6db684547644239fae",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 29480
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeFiles/4.2.3/CompilerIdCXX/a.out",
+      "bytes": 16088,
+      "sha256": "a761a1ebb40e916e08c764ec7d7de0be111271fce6b08d596c7e8e16b2baf0b6",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 16088
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeFiles/CMakeConfigureLog.yaml",
+      "bytes": 82902,
+      "sha256": "ed5ddeeb97dda8b937bc90435d6c14fb80e1c2a7c2eeb8da088b9a2e00bc6e49",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 82902
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeFiles/InstallScripts.json",
+      "bytes": 456,
+      "sha256": "1a81a9d290d052978a0cf1516941b54acc0ecca5fe12fc18753c2e51853b0121",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 456
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeFiles/TargetDirectories.txt",
+      "bytes": 2894,
+      "sha256": "c55c65a95a93381c8a0eb9db2d99476ae4c460eff341359e0e3b9fa7bbee617c",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 2894
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeFiles/cmake.check_cache",
+      "bytes": 85,
+      "sha256": "a26189e394421da57f45706a07713c5720acd200a41711b0c0c590c3c63371c4",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 85
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/CMakeFiles/rules.ninja",
+      "bytes": 3518,
+      "sha256": "d4f793775091aeb8b2f3a520bf4ae83aa92fa8fdafdf4e6860c88601d542285c",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 3518
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/build.ninja",
+      "bytes": 45693,
+      "sha256": "71a7fd93cc4d99a9b6dfba2dd0fe3b67fa66078278ee93a496a2d83473f955a6",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 45693
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/cmake_install.cmake",
+      "bytes": 2550,
+      "sha256": "e5c50a247f469e75d1bc6c25a07047ff8c4b9c65e45ed8f83b35930bc1f71593",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 2550
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/libff-build/CTestTestfile.cmake",
+      "bytes": 445,
+      "sha256": "45c5f391d4f37b31c9a7241df51dff890c0a2a8095d0abfa4d0c35671e5970d2",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 445
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/libff-build/cmake_install.cmake",
+      "bytes": 1913,
+      "sha256": "e78127b6289ba97d7a2a75ba9499e7cd976f6b4c0fdaf5168f1a5f585bcace69",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 1913
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/libff-build/libff/CMakeFiles/ff.dir/algebra/curves/bls12_381/bls12_381_fields.cpp.o",
+      "bytes": 93056,
+      "sha256": "b1229b76617df9fd6b79f11a10fa704c7e0cd7c585f5177fcb82c236ecabc950",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 93056
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/libff-build/libff/CTestTestfile.cmake",
+      "bytes": 440,
+      "sha256": "84405387167cc9aa0da8c40eaf254507b74aec66c41c1e83aa4ade7f88f4a953",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 440
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/build/libff-build/libff/cmake_install.cmake",
+      "bytes": 2670,
+      "sha256": "736f37e51bbe17ea8af43145d26c2de0d18d20451d111a03485151652be4f7a9",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 2670
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/.ninja_deps",
+      "bytes": 29552,
+      "sha256": "5d8183ccc2eaad73c9ab5bfc4de2841ed8eb3b1b7dd0ef7ff3b2d7e632f2428f",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 29552
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/.ninja_lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 0
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/.ninja_log",
+      "bytes": 796,
+      "sha256": "eedf235123d8fc79e0325ebc0b4c72b419dec713bf72735dd4f5ee5c3a49d037",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 796
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeCache.txt",
+      "bytes": 18377,
+      "sha256": "06870060f352b6d279d378d1ba48ef07654124742864f8b12ecdbf297e734229",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 18377
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CMakeCCompiler.cmake",
+      "bytes": 2964,
+      "sha256": "64f1690b76656aa75879677cd7073220913c7e248ac522445b16959ba186ab78",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 2964
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake",
+      "bytes": 6639,
+      "sha256": "920cd5ff22679fb7812d239d52781a53b04f86100d499ba9c4b98cc5ad2546ad",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 6639
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CMakeDetermineCompilerABI_C.bin",
+      "bytes": 16008,
+      "sha256": "c6ec47bb5780897f83030c91b1021d847bd78d9369a48bd9c85bd199a96358fb",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 16008
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CMakeDetermineCompilerABI_CXX.bin",
+      "bytes": 16040,
+      "sha256": "7aad0854c05cc22f6a87cc4dd4c9ec4e191a436349fc8e3b2c7f279091f2b51f",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 16040
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CMakeSystem.cmake",
+      "bytes": 466,
+      "sha256": "8f122adbf9bbe045f330399a4409313ec5d6756895a8cebeeaacd7a723e60ea0",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 466
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CompilerIdC/CMakeCCompilerId.c",
+      "bytes": 28668,
+      "sha256": "fdf6ba6324e3b29e4268e3ab04f9eb181809b98fe6a52f48fbd526b331e66e02",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 28668
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CompilerIdC/a.out",
+      "bytes": 16080,
+      "sha256": "7a1142938e504e0bbbc03cf866984964b6b583384428b7b88b16c7da025e57a9",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 16080
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+      "bytes": 29480,
+      "sha256": "15597e769f9705997844403bbbf0c2fa65eb5b46a8ad4e6db684547644239fae",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 29480
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CompilerIdCXX/a.out",
+      "bytes": 16088,
+      "sha256": "a761a1ebb40e916e08c764ec7d7de0be111271fce6b08d596c7e8e16b2baf0b6",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 16088
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/CMakeConfigureLog.yaml",
+      "bytes": 83071,
+      "sha256": "efe543b3aa910ff991b957169868f1633bc081888ee521fb132905848e342568",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 83071
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/InstallScripts.json",
+      "bytes": 507,
+      "sha256": "102f4f23e59a9c52654c76c9110750dc46f26abae0ffb37eae27842f08542e62",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 507
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/TargetDirectories.txt",
+      "bytes": 3398,
+      "sha256": "5a2cd00e8590a83e6d1eb0dc42aa13f30618b8518742948cf6335967d2cbb570",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 3398
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/cmake.check_cache",
+      "bytes": 85,
+      "sha256": "a26189e394421da57f45706a07713c5720acd200a41711b0c0c590c3c63371c4",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 85
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/rules.ninja",
+      "bytes": 4238,
+      "sha256": "c545fa95afc797fe505d7389a6c77a6d23732cd7c4035cf799348bfeb35f4ce5",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 4238
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/build.ninja",
+      "bytes": 64224,
+      "sha256": "6565d612839c5ded481f647e39555547b778f05daf698205d9ea22f7d0d20de8",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 64224
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/cmake_install.cmake",
+      "bytes": 2618,
+      "sha256": "f718b238ab9bfb15b8b10b34111177118d71a41190c55e1ff6c6b04af724c9d4",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 2618
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/libff-build/CTestTestfile.cmake",
+      "bytes": 479,
+      "sha256": "1a30423521386adebcd58237e85c8b575a217c14301a2c9824d9f2461eb02a55",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 479
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/libff-build/cmake_install.cmake",
+      "bytes": 1964,
+      "sha256": "572a3adefe1d45cd40ef689e854e0cddbbb65f4fafc7bcfbc8372be5c599068d",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 1964
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/libff-build/libff/CTestTestfile.cmake",
+      "bytes": 474,
+      "sha256": "fcdbc87fcca69e3ae05334569f4ad2d7b3612b38acc6d1b7db35baa93d7d256a",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 474
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/libff-build/libff/cmake_install.cmake",
+      "bytes": 2755,
+      "sha256": "0ac7952494939d369ce7c50c93d33f851faa2911534e0dd0782f95677247fa10",
+      "previous_evidence_charge": 0,
+      "existing_artifact_charge": 2755
+    }
+  ],
+  "prior_cumulative_evidence": 12222999,
+  "reconciled_cumulative_before_new_output": 13007735,
+  "prior_native_evidence": 1606632,
+  "reconciled_native_before_new_output": 2391368,
+  "reservation": 2097152,
+  "finalisation_reserve": 524288,
+  "planned_total_including_catchup": 2058592,
+  "admission_work_ceiling": 1572864,
+  "additional_native_builds": 0,
+  "additional_cases": 0,
+  "build_ceiling": 4,
+  "builds_used": 3,
+  "classification_policy_sha256": "fe66f1f3fb2d8d5bb434aa2db12d20893ebf2a257b8d4871fdca42c5d1efced2",
+  "prior_charge_source": [
+    "reconciliation-1/run.py::package_size",
+    "compatibility-1/run.py::package_size",
+    "resource-guard-repair-1/run.py::package_size",
+    "build-4-admission-1/run.py::package_size"
+  ],
+  "previous_failures_rewritten": false
+}

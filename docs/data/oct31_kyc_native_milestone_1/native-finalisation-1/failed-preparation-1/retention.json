@@ -1,0 +1,19 @@
+{
+  "cause": "Previously sealed benchmarks/README.md expected name lay outside the inherited benchmarks/kyc_milestone_1 traversal root; content matches existing seal.",
+  "correction": "Replace that inventory root with benchmarks, preserving all expected names and digest restrictions; no new file admitted based on existence.",
+  "reused_working_files": [
+    "preparation.json",
+    "new-inventory.json",
+    "ledger.json",
+    "invocation-snapshot.json"
+  ],
+  "sha256": {
+    "docs/data/oct31_kyc_native_milestone_1/native-finalisation-1/failed-preparation-1/checks.py": "ff36915df84a68c10538b119a2c97c28341c900afa960dbc4ade00736892f19c",
+    "docs/data/oct31_kyc_native_milestone_1/native-finalisation-1/failed-preparation-1/preparation.json": "711fa4db7d03dd2b33a140c03c9e72e817abd757e2ec32ae38bb682d7067eb4b",
+    "docs/data/oct31_kyc_native_milestone_1/native-finalisation-1/failed-preparation-1/new-inventory.json": "94a8f43c827dc72b7c286b98ad981f0ae20f333231c53601d9ae5241c81d1bdb",
+    "docs/data/oct31_kyc_native_milestone_1/native-finalisation-1/failed-preparation-1/ledger.json": "5d004d73fab3940c697d74a03636501313b2182fa390a8339cadf263a98d5695",
+    "docs/data/oct31_kyc_native_milestone_1/native-finalisation-1/failed-preparation-1/invocation-snapshot.json": "35cb6dd461dd013504915fc0223e84e7e13948b97d8bb27eed1257e22734c6bf"
+  },
+  "benchmark_readme_sha256": "2d926b72011d15ad08b377cd7039e8641bc519a06961a6b98453f1cce478abf6",
+  "failed_job": "native-final-prepare"
+}

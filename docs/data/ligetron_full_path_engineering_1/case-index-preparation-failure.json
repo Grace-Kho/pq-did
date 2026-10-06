@@ -1,0 +1,6 @@
+{
+  "status": "failed metadata preparation before any case admission",
+  "diagnostic": "AssertionError: len(cases)==40; broad Markdown prefix also selected Evidence resource row",
+  "correction": "Parse only exact E plus two digits case identifiers; expected list unchanged",
+  "functional_invocations_consumed": 0
+}

@@ -1,0 +1,64 @@
+{
+  "package": "S3-AURORA-TRANSCRIPT-PRESERVATION-REPAIR-2",
+  "continuation": "continuation-1",
+  "authority": "User-approved output and package-time amendments; no overall increase",
+  "opening_combined_seconds": 23.76207388297189,
+  "opening_implementation_seconds": 18.06114445498679,
+  "package_seconds_before": 35,
+  "package_seconds": 40,
+  "package_output_bytes_before": 262144,
+  "package_output_bytes": 1048576,
+  "bookkeeping_charge_seconds": 5,
+  "bookkeeping_scope": "Existing conservative operator allowance covers source/configuration, documentation, preservation of evidence and final readback; guarded commands charged separately.",
+  "static_passes_maximum": 2,
+  "preparation_attempts": 1,
+  "audit_attempts": 1,
+  "prior_test_invocations": 402,
+  "new_test_invocations": 0,
+  "completion_reserve": "Ten seconds kept for static/preparation admission; audit and reporting may consume it. Audit retains five seconds of uncharged headroom in addition to the charged bookkeeping allowance.",
+  "expected_new_charge_seconds": 8.0,
+  "worst_first_pass_reservations_including_bookkeeping_seconds": 10.75,
+  "output_projection_bytes_upper_bound": 600000,
+  "output_scope": "All original and repair evidence under regression directory, experiment source and main regression report; no retained evidence excluded.",
+  "source_archive_sha256": "b2f3886339159a8737d3c4cc259f9dfe39577faf4826b95e4d024aa5211d45eb",
+  "original_helper_sha256": "8a0a110010e3b894801840ba4663773b885ed8fd537334af984ffa4c10c59af7",
+  "formatted_helper_sha256": "96adbb840dfbc30ab088eeaa4f8fd829e04d60aa9dbe180804e6a186585f5a74",
+  "formatting_only_AST_equal": true,
+  "runtime_string_unchanged": true,
+  "input_root": "docs/data/s3_aurora_transcript_regression_1",
+  "retained_archive": "docs/data/s3_aurora_transcript_regression_1/repair-2/evidence.json.xz",
+  "new_output_root": "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1",
+  "traversal_root": "experiments/aurora_transcript_regression_1",
+  "reused_case_reference_check": "repair-2/evidence.json.xz:closure.json verified_original_case_files_before_lint=16",
+  "original_case_ledger_sha256": "309b91153029455d5122729b05140f78028415e9e4fa03cc95417abcb8065368",
+  "opening_document_prefixes": {
+    "docs/status.md": {
+      "bytes": 162357,
+      "sha256": "f83ec61269d4aced2044d8c5b05cab5520e40d986e001583aa4b97ca6f39cf16"
+    },
+    "docs/traceability.md": {
+      "bytes": 220795,
+      "sha256": "d422b4320b5a55a2e971ec89a176c236c37ca62721d16c08ecea1139a608f30e"
+    },
+    "docs/spec_issues.md": {
+      "bytes": 181276,
+      "sha256": "b93dbe7a124aa414a5a4d59289c9c9e8dffec6a9c1989e756bd33be72537277c"
+    },
+    "docs/stage3_aurora_transcript_regression.md": {
+      "bytes": 22863,
+      "sha256": "53e4d828923aa5d5e7ff7e90f867eb2e73bf59c840a64a00239d449b6436e0d6"
+    }
+  },
+  "effective_adaptations": [
+    "New output directory; retained helpers/archives immutable",
+    "Only E501 adjacent-string formatting in driver.py",
+    "Amended output and time caps applied consistently to guard and audit",
+    "Original regression evidence root for reads; all retained output counted",
+    "Explicit finite new evidence names; original inventory and allowlists preserved",
+    "Cumulative prior charges retained, including failed attempts and storage stop",
+    "Audit admission consumes completion reserve only for audit/reporting; no regression execution"
+  ],
+  "analysis_isolation_unchanged": true,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1
+}

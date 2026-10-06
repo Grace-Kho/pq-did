@@ -1,0 +1,45 @@
+{
+  "patch_manifest_sha256": "e22fd232b2a167be0c7fda05855dd91edf2d1a063b5d20342d43fb4aad7f4738",
+  "patch_sha256": "cb88c8a4df6ee669525175be677bc166e50ff3c07def1d0302cacb2ef48e0420",
+  "commands": [
+    [
+      "cmake",
+      "-S",
+      "/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/overlay",
+      "-B",
+      "/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/build",
+      "-G",
+      "Ninja",
+      "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_CXX_FLAGS_RELEASE=-O0 -g0",
+      "-DCMAKE_C_FLAGS_RELEASE=-O0 -g0",
+      "-DPQ_SOURCE=/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/work",
+      "-DPQ_PREFIX=/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/prefix"
+    ],
+    [
+      "cmake",
+      "--build",
+      "/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/build",
+      "--target",
+      "aurora_masking_native",
+      "exp2_native",
+      "--parallel",
+      "1"
+    ]
+  ],
+  "inputs": {
+    "patch-manifest.json": "e22fd232b2a167be0c7fda05855dd91edf2d1a063b5d20342d43fb4aad7f4738",
+    "exp2_native.cpp": "52f847c2ac660396b76852f8de88b9b6ea68f7153b869e2350b9959df09dcedd",
+    "build1-masking-correction.patch": "46de19f73eaf55913ac804386d75ac04f8debcce7abd0d8868afaefe76f10800",
+    "artifact-outputs.json": "6445780581b69919428199a5c49ff52864fe66824aeccde66d15419b63072cd2",
+    "masking_native.cpp": "1afa2ca145a3649c90c20fdd53ae71d177007e15246024a2a5b70a6829d27d6a",
+    "masking-correction.patch": "cb88c8a4df6ee669525175be677bc166e50ff3c07def1d0302cacb2ef48e0420",
+    "build1-patch-manifest.json": "36acac66cc0f9532e26abaabe372df98bb7e7b3ba76133e4727a12480a10c058",
+    "CMakeLists.txt": "a35f75085837d0275538c84cd2bed81a28274ae9366003ce0e855f2fcf88f291"
+  },
+  "outcomes": [
+    0,
+    0
+  ]
+}

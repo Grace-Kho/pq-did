@@ -1,0 +1,32 @@
+{
+  "failure": "focused",
+  "cause": "Test expected MISMATCH but malformed issuer reference fails canonical input admission with PUBLIC; six pass, one assertion failure, five not invoked. No production defect or resource breach.",
+  "change": "Expected PUBLIC for malformed issuer encoding, preserving no-consumption assertion. Implementation unchanged.",
+  "evidence": {
+    "focused.xml": "ce16a5fc7e027567216475e78a84c9d38a3de32ca43d4249f51254795cd1d4be",
+    "focused.log": "c02371c90c7ac3cc90955045ef480316d9edc1f6f9ca42ce08a59063aa5eb474",
+    "focused.json": "dbd198273c03a0a10980cf7acff92c11e820ffab37569dab03b7af887dab9460",
+    "test-before-correction.txt": "e20e8dc72a12a02827713ec2dcd43635272410e8451db420a63606486764defa",
+    "config-before-correction.json": "4a82f86c8955bb639308d2a2751924317f07efd8af707b999fadc7da8f10234d",
+    "guard-before-correction.txt": "65a77af548712c121e753ede246fe9f165869f10cbc9507cd87ff07e15a3e40c"
+  },
+  "permitted_followups": [
+    "focused-remainder",
+    "boundaries",
+    "final-source-format",
+    "quality",
+    "format",
+    "prepare",
+    "full-audit"
+  ],
+  "test_counts": {
+    "historical": 145,
+    "first_run": 7,
+    "targeted_remainder": 6,
+    "boundaries": 12,
+    "cumulative": 170,
+    "remaining": 2
+  },
+  "automatic_retry": false,
+  "resource_limits_changed": false
+}

@@ -1,0 +1,29 @@
+{
+  "name": "native-final-c09",
+  "phase": "python",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/kyc_milestone_1/tasks.py",
+    "cases",
+    "C",
+    "9",
+    "9"
+  ],
+  "limit_seconds": 30,
+  "child_seconds": 29,
+  "status": "launched",
+  "unit": "pqdid-oct31-m1-native-final-c09",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 7158599,
+    "new_artifact_bytes": 30272657,
+    "evidence_bytes": 23823697,
+    "artifact_bytes": 58112659,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4254486528,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

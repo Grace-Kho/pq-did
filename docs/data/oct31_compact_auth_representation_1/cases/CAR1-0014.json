@@ -1,0 +1,42 @@
+{
+  "case_id": "C-13",
+  "invocation_id": "CAR1-0014",
+  "status": "pass",
+  "details": {
+    "case": "C-13",
+    "purpose": "equal-operand AND still emits its original constraint",
+    "full_relation": false,
+    "descriptor": {
+      "complete": true,
+      "inputs": 1,
+      "gates": 1,
+      "rows": 4,
+      "variables": 3,
+      "primary": 1,
+      "output_wire": 3,
+      "nonzero_terms": [
+        4,
+        5,
+        3
+      ],
+      "matrix_sha256": "780813d5be1b359c0a02112ca474e2f6348d305465d085b11ec4a0f61a3b7b1a",
+      "public_identity": "747482f1417df71a6516222c3063a4d17f1d774cda22fda591f4305a3d9a09d2",
+      "gate_counts": [
+        0,
+        1,
+        0
+      ],
+      "free_input_booleanity_rows": 1,
+      "and_rows": 1,
+      "spill_rows": 0,
+      "output_rows": 2,
+      "retained_wire_forms": 4,
+      "retained_term_entries": 3,
+      "maximum_stored_support": 1,
+      "assignment_storage_bytes": 3,
+      "representation": "GF192-exact-affine-XOR-NOT-elimination-v1"
+    }
+  },
+  "seconds": 7.398903835564852e-05,
+  "work_events": 10
+}

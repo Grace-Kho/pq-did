@@ -1,0 +1,348 @@
+{
+  "requirements": {
+    "R-001": {
+      "title": "Instance and trust [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-002": {
+      "title": "Owner separation and visibility [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-003": {
+      "title": "Service assumptions [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-004": {
+      "title": "Parameters and persistent state [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-005": {
+      "title": "Canonical codec [M/E/A].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-006": {
+      "title": "Schema and attribute vector [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-007": {
+      "title": "Disclosure and policy [M/E].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-008": {
+      "title": "Complete challenge context [M/A].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-009": {
+      "title": "Signatures and contexts [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-010": {
+      "title": "Hashes and randomness [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-011": {
+      "title": "Setup [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-012": {
+      "title": "DID.KeyGen [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "D-01..D-10 reproducible genuine disclosed baseline and bounded public paging",
+      "original_requirement_closed": false
+    },
+    "R-013": {
+      "title": "DID.Publish [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "D-01..D-10 reproducible genuine disclosed baseline and bounded public paging",
+      "original_requirement_closed": false
+    },
+    "R-014": {
+      "title": "Publication recovery [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-015": {
+      "title": "DID.Resolve [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "D-01..D-10 reproducible genuine disclosed baseline and bounded public paging",
+      "original_requirement_closed": false
+    },
+    "R-016": {
+      "title": "Request creation/approval [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-017": {
+      "title": "CurrentState and logical epoch [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-018": {
+      "title": "Allocation and issuer challenge [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "D-01..D-10 reproducible genuine disclosed baseline and bounded public paging",
+      "original_requirement_closed": false
+    },
+    "R-019": {
+      "title": "Issue inputs and external validation [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-020": {
+      "title": "Enrolment and input separation [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-021": {
+      "title": "Certification and release [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "D-01..D-10 reproducible genuine disclosed baseline and bounded public paging",
+      "original_requirement_closed": false
+    },
+    "R-022": {
+      "title": "Issuance abort semantics [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-023": {
+      "title": "Credential binding interfaces [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-024": {
+      "title": "Joint authentication relation [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-025": {
+      "title": "Private, public and lifecycle checks [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-026": {
+      "title": "Present/AuthDAA [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-027": {
+      "title": "VerifyDAA [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-028": {
+      "title": "Stateful Verify/atomic acceptance [M/A].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "D-01..D-10 reproducible genuine disclosed baseline and bounded public paging",
+      "original_requirement_closed": false
+    },
+    "R-029": {
+      "title": "Tree and PathRoot [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "D-01..D-10 reproducible genuine disclosed baseline and bounded public paging",
+      "original_requirement_closed": false
+    },
+    "R-030": {
+      "title": "Revoke [M/A].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "D-01..D-10 reproducible genuine disclosed baseline and bounded public paging",
+      "original_requirement_closed": false
+    },
+    "R-031": {
+      "title": "UpdateWit [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "D-01..D-10 reproducible genuine disclosed baseline and bounded public paging",
+      "original_requirement_closed": false
+    },
+    "R-032": {
+      "title": "Exact bounded computation [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-033": {
+      "title": "Caps and release policy [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-034": {
+      "title": "BC-1 arithmetic [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-035": {
+      "title": "BC-1 gates and ordering [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-036": {
+      "title": "BC-1 control flow, rejection and optimisation [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-037": {
+      "title": "Circuit identity and admission [M/E].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-038": {
+      "title": "Shares and tapes [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-039": {
+      "title": "Views and commitments [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-040": {
+      "title": "Fiat\u2013Shamir challenge [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-041": {
+      "title": "Proof serialisation and size [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-042": {
+      "title": "Proof checking [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-043": {
+      "title": "Fresh randomness and erasure [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-044": {
+      "title": "Certification, binding and non-membership [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-045": {
+      "title": "Complete-witness knowledge [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-046": {
+      "title": "Adaptive presentation privacy [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-047": {
+      "title": "Historical privacy and exclusions [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-048": {
+      "title": "Correctness scope [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-049": {
+      "title": "Cap-loss and runtime accounting [M; validation pending].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-050": {
+      "title": "Conditional QROM terms [M; not independently proved here].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-051": {
+      "title": "Lifecycle security composition [M].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "No new implementation/security claim",
+      "original_requirement_closed": false
+    },
+    "R-052": {
+      "title": "W3C architectural mapping [M/E].",
+      "evidence": "Existing consolidation and KYC/issuer-v2/manager-v2 coverage retained",
+      "delivery_delta": "Approved local mapping documentation only; no standards conformance",
+      "original_requirement_closed": false
+    }
+  },
+  "categories": {
+    "working_baseline": "D-01..D-10; real ML-DSA, v2 issuer/manager and disclosed wallet",
+    "local_PQ_DID_reference": "Completed private reference wallet/relations reused; no rerun",
+    "synthetic_proof_scenarios": "Historical fixtures only; none on baseline acceptance path",
+    "genuine_private_authentication": "Unavailable; fail-closed"
+  },
+  "full_relation_unrun": [
+    "M-01",
+    "M-02",
+    "M-03",
+    "J-01",
+    "J-02",
+    "J-03",
+    "J-04",
+    "J-05",
+    "J-06",
+    "J-07",
+    "J-08",
+    "J-09",
+    "J-10",
+    "J-11",
+    "J-12",
+    "J-13",
+    "J-14",
+    "J-15",
+    "J-16",
+    "Q-02",
+    "Q-03"
+  ],
+  "original_programme_complete": false,
+  "stages_2_3_open": true,
+  "construction_obligation": "CV-ONLINE-SAME-OBJECT-1 unresolved; attempt closed"
+}

@@ -1,0 +1,378 @@
+{
+  "proposal_only": true,
+  "activate": false,
+  "accounts": {
+    "pqiso-o-m": {
+      "purpose": "trusted owner for manager",
+      "primary_group": "pqiso-o-m",
+      "ipc_groups": [
+        "pqiso-ipc-m"
+      ],
+      "privileged_host_groups": []
+    },
+    "pqiso-w-m": {
+      "purpose": "service writer client for manager",
+      "primary_group": "pqiso-w-m",
+      "ipc_groups": [
+        "pqiso-ipc-m"
+      ],
+      "privileged_host_groups": []
+    },
+    "pqiso-o-i": {
+      "purpose": "trusted owner for issuer",
+      "primary_group": "pqiso-o-i",
+      "ipc_groups": [
+        "pqiso-ipc-i",
+        "pqiso-ipc-m"
+      ],
+      "privileged_host_groups": []
+    },
+    "pqiso-w-i": {
+      "purpose": "service writer client for issuer",
+      "primary_group": "pqiso-w-i",
+      "ipc_groups": [
+        "pqiso-ipc-i"
+      ],
+      "privileged_host_groups": []
+    },
+    "pqiso-o-va": {
+      "purpose": "trusted owner for verifier-a",
+      "primary_group": "pqiso-o-va",
+      "ipc_groups": [
+        "pqiso-ipc-va"
+      ],
+      "privileged_host_groups": []
+    },
+    "pqiso-w-va": {
+      "purpose": "service writer client for verifier-a",
+      "primary_group": "pqiso-w-va",
+      "ipc_groups": [
+        "pqiso-ipc-va"
+      ],
+      "privileged_host_groups": []
+    },
+    "pqiso-o-vb": {
+      "purpose": "trusted owner for verifier-b",
+      "primary_group": "pqiso-o-vb",
+      "ipc_groups": [
+        "pqiso-ipc-vb"
+      ],
+      "privileged_host_groups": []
+    },
+    "pqiso-w-vb": {
+      "purpose": "service writer client for verifier-b",
+      "primary_group": "pqiso-w-vb",
+      "ipc_groups": [
+        "pqiso-ipc-vb"
+      ],
+      "privileged_host_groups": []
+    },
+    "pqiso-admin": {
+      "purpose": "application recovery administrator",
+      "primary_group": "pqiso-admin",
+      "ipc_groups": [
+        "pqiso-ipc-m",
+        "pqiso-ipc-i",
+        "pqiso-ipc-va",
+        "pqiso-ipc-vb"
+      ],
+      "privileged_host_groups": []
+    },
+    "pqiso-observer": {
+      "purpose": "redacted operational status",
+      "primary_group": "pqiso-observer",
+      "ipc_groups": [
+        "pqiso-ipc-m",
+        "pqiso-ipc-i",
+        "pqiso-ipc-va",
+        "pqiso-ipc-vb"
+      ],
+      "privileged_host_groups": []
+    },
+    "pqiso-rec-a": {
+      "purpose": "issuance recipient A",
+      "primary_group": "pqiso-rec-a",
+      "ipc_groups": [
+        "pqiso-ipc-i"
+      ],
+      "privileged_host_groups": []
+    },
+    "pqiso-rec-b": {
+      "purpose": "issuance recipient B",
+      "primary_group": "pqiso-rec-b",
+      "ipc_groups": [
+        "pqiso-ipc-i"
+      ],
+      "privileged_host_groups": []
+    },
+    "pqiso-denied": {
+      "purpose": "unauthorised negative-test client",
+      "primary_group": "pqiso-denied",
+      "ipc_groups": [],
+      "privileged_host_groups": []
+    }
+  },
+  "roles": {
+    "m": {
+      "deployment_enabled": false,
+      "owner_account": "pqiso-o-m",
+      "role": "manager",
+      "service_key": "@PINNED_SERVICE_KEY_m@",
+      "scope_digest": "@PINNED_SCOPE_m@",
+      "store": "/var/lib/pqiso/stores/m/authority.sqlite3",
+      "socket": "/run/pqiso/m/owner.sock",
+      "socket_uid": "@UID_pqiso-o-m@",
+      "socket_gid": "@GID_pqiso-ipc-m@",
+      "socket_mode": "0660",
+      "socket_parent_mode": "2750",
+      "grant_limit": 8,
+      "grants": [
+        {
+          "principal": "admin",
+          "account": "pqiso-admin",
+          "permissions": [
+            "status",
+            "admit",
+            "replace"
+          ],
+          "peer_uid": "@UID_pqiso-admin@",
+          "peer_primary_gid": "@GID_pqiso-admin@",
+          "capability_ref": "@CREDENTIAL_m_admin@"
+        },
+        {
+          "principal": "writer",
+          "account": "pqiso-w-m",
+          "permissions": [
+            "status",
+            "reserve",
+            "reservation",
+            "allocation-count"
+          ],
+          "issuer_service": "@ISSUER_SERVICE_ID@",
+          "peer_uid": "@UID_pqiso-w-m@",
+          "peer_primary_gid": "@GID_pqiso-w-m@",
+          "capability_ref": "@CREDENTIAL_m_writer@"
+        },
+        {
+          "principal": "observer",
+          "account": "pqiso-observer",
+          "permissions": [
+            "status"
+          ],
+          "peer_uid": "@UID_pqiso-observer@",
+          "peer_primary_gid": "@GID_pqiso-observer@",
+          "capability_ref": "@CREDENTIAL_m_observer@"
+        },
+        {
+          "principal": "issuer-bridge",
+          "account": "pqiso-o-i",
+          "permissions": [
+            "reservation",
+            "allocation-count"
+          ],
+          "issuer_service": "@ISSUER_SERVICE_ID@",
+          "peer_uid": "@UID_pqiso-o-i@",
+          "peer_primary_gid": "@GID_pqiso-o-i@",
+          "capability_ref": "@CREDENTIAL_m_issuer-bridge@"
+        }
+      ],
+      "writer_id": "@CONFIGURED_OWNER_WRITER_m@",
+      "expected_head_source": "@INDEPENDENT_APPROVED_TICKET_SOURCE@",
+      "owner_slots": {
+        "primary": {
+          "writer_id": "@CONFIGURED_OWNER_WRITER_m@",
+          "socket": "/run/pqiso/m/owner.sock"
+        },
+        "replacement": {
+          "writer_id": "@DISTINCT_REPLACEMENT_WRITER_m@",
+          "socket": "/run/pqiso/m/replacement.sock"
+        }
+      }
+    },
+    "i": {
+      "deployment_enabled": false,
+      "owner_account": "pqiso-o-i",
+      "role": "issuer",
+      "service_key": "@PINNED_SERVICE_KEY_i@",
+      "scope_digest": "@PINNED_SCOPE_i@",
+      "store": "/var/lib/pqiso/stores/i/authority.sqlite3",
+      "socket": "/run/pqiso/i/owner.sock",
+      "socket_uid": "@UID_pqiso-o-i@",
+      "socket_gid": "@GID_pqiso-ipc-i@",
+      "socket_mode": "0660",
+      "socket_parent_mode": "2750",
+      "grant_limit": 8,
+      "grants": [
+        {
+          "principal": "admin",
+          "account": "pqiso-admin",
+          "permissions": [
+            "status",
+            "admit",
+            "replace"
+          ],
+          "peer_uid": "@UID_pqiso-admin@",
+          "peer_primary_gid": "@GID_pqiso-admin@",
+          "capability_ref": "@CREDENTIAL_i_admin@"
+        },
+        {
+          "principal": "writer",
+          "account": "pqiso-w-i",
+          "permissions": [
+            "status",
+            "intent",
+            "attach",
+            "pending",
+            "claim",
+            "certify",
+            "reconcile"
+          ],
+          "peer_uid": "@UID_pqiso-w-i@",
+          "peer_primary_gid": "@GID_pqiso-w-i@",
+          "capability_ref": "@CREDENTIAL_i_writer@"
+        },
+        {
+          "principal": "observer",
+          "account": "pqiso-observer",
+          "permissions": [
+            "status"
+          ],
+          "peer_uid": "@UID_pqiso-observer@",
+          "peer_primary_gid": "@GID_pqiso-observer@",
+          "capability_ref": "@CREDENTIAL_i_observer@"
+        },
+        {
+          "principal": "recipient-a",
+          "account": "pqiso-rec-a",
+          "permissions": [
+            "retrieve"
+          ],
+          "recipient": "@IMMUTABLE_RECIPIENT_A@",
+          "peer_uid": "@UID_pqiso-rec-a@",
+          "peer_primary_gid": "@GID_pqiso-rec-a@",
+          "capability_ref": "@CREDENTIAL_i_recipient-a@"
+        },
+        {
+          "principal": "recipient-b",
+          "account": "pqiso-rec-b",
+          "permissions": [
+            "retrieve"
+          ],
+          "recipient": "@IMMUTABLE_RECIPIENT_B@",
+          "peer_uid": "@UID_pqiso-rec-b@",
+          "peer_primary_gid": "@GID_pqiso-rec-b@",
+          "capability_ref": "@CREDENTIAL_i_recipient-b@"
+        }
+      ],
+      "writer_id": "@CONFIGURED_OWNER_WRITER_i@",
+      "expected_head_source": "@INDEPENDENT_APPROVED_TICKET_SOURCE@",
+      "approved_delivery_sessions": "@AUTHENTICATED_APPROVAL_RECORDS_WITH_IMMUTABLE_RECIPIENT@"
+    },
+    "va": {
+      "deployment_enabled": false,
+      "owner_account": "pqiso-o-va",
+      "role": "verifier-a",
+      "service_key": "@PINNED_SERVICE_KEY_va@",
+      "scope_digest": "@PINNED_SCOPE_va@",
+      "store": "/var/lib/pqiso/stores/va/authority.sqlite3",
+      "socket": "/run/pqiso/va/owner.sock",
+      "socket_uid": "@UID_pqiso-o-va@",
+      "socket_gid": "@GID_pqiso-ipc-va@",
+      "socket_mode": "0660",
+      "socket_parent_mode": "2750",
+      "grant_limit": 8,
+      "grants": [
+        {
+          "principal": "admin",
+          "account": "pqiso-admin",
+          "permissions": [
+            "status",
+            "admit",
+            "replace"
+          ],
+          "peer_uid": "@UID_pqiso-admin@",
+          "peer_primary_gid": "@GID_pqiso-admin@",
+          "capability_ref": "@CREDENTIAL_va_admin@"
+        },
+        {
+          "principal": "writer",
+          "account": "pqiso-w-va",
+          "permissions": [
+            "status",
+            "register",
+            "verify"
+          ],
+          "peer_uid": "@UID_pqiso-w-va@",
+          "peer_primary_gid": "@GID_pqiso-w-va@",
+          "capability_ref": "@CREDENTIAL_va_writer@"
+        },
+        {
+          "principal": "observer",
+          "account": "pqiso-observer",
+          "permissions": [
+            "status"
+          ],
+          "peer_uid": "@UID_pqiso-observer@",
+          "peer_primary_gid": "@GID_pqiso-observer@",
+          "capability_ref": "@CREDENTIAL_va_observer@"
+        }
+      ],
+      "writer_id": "@CONFIGURED_OWNER_WRITER_va@",
+      "expected_head_source": "@INDEPENDENT_APPROVED_TICKET_SOURCE@"
+    },
+    "vb": {
+      "deployment_enabled": false,
+      "owner_account": "pqiso-o-vb",
+      "role": "verifier-b",
+      "service_key": "@PINNED_SERVICE_KEY_vb@",
+      "scope_digest": "@PINNED_SCOPE_vb@",
+      "store": "/var/lib/pqiso/stores/vb/authority.sqlite3",
+      "socket": "/run/pqiso/vb/owner.sock",
+      "socket_uid": "@UID_pqiso-o-vb@",
+      "socket_gid": "@GID_pqiso-ipc-vb@",
+      "socket_mode": "0660",
+      "socket_parent_mode": "2750",
+      "grant_limit": 8,
+      "grants": [
+        {
+          "principal": "admin",
+          "account": "pqiso-admin",
+          "permissions": [
+            "status",
+            "admit",
+            "replace"
+          ],
+          "peer_uid": "@UID_pqiso-admin@",
+          "peer_primary_gid": "@GID_pqiso-admin@",
+          "capability_ref": "@CREDENTIAL_vb_admin@"
+        },
+        {
+          "principal": "writer",
+          "account": "pqiso-w-vb",
+          "permissions": [
+            "status",
+            "register",
+            "verify"
+          ],
+          "peer_uid": "@UID_pqiso-w-vb@",
+          "peer_primary_gid": "@GID_pqiso-w-vb@",
+          "capability_ref": "@CREDENTIAL_vb_writer@"
+        },
+        {
+          "principal": "observer",
+          "account": "pqiso-observer",
+          "permissions": [
+            "status"
+          ],
+          "peer_uid": "@UID_pqiso-observer@",
+          "peer_primary_gid": "@GID_pqiso-observer@",
+          "capability_ref": "@CREDENTIAL_vb_observer@"
+        }
+      ],
+      "writer_id": "@CONFIGURED_OWNER_WRITER_vb@",
+      "expected_head_source": "@INDEPENDENT_APPROVED_TICKET_SOURCE@"
+    }
+  },
+  "provisioner": "trusted host administrator; not the application admin client",
+  "uid_rule": "resolve fresh allocated IDs; pin actual numeric UID and primary GID; reject collisions/reuse/defaults"
+}

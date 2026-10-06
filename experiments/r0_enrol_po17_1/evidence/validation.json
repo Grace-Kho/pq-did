@@ -1,0 +1,12 @@
+{
+  "commands_passed": [
+    ".venv/bin/ruff check experiments/r0_enrol_po17_1/scripts --output-format concise",
+    ".venv/bin/ruff format --check experiments/r0_enrol_po17_1/scripts",
+    "experiments/r0_succinct_feasibility_1/tooling/guest-r0.1.97.0/bin/rustfmt --edition 2021 --check experiments/r0_enrol_po17_1/host/src/main.rs",
+    "bash -n experiments/r0_enrol_po17_1/scripts/build_host.sh"
+  ],
+  "bounded_final_audit": "evidence/final-audit.result.json",
+  "actual_receipt_verified": true,
+  "tamper_rejections": 8,
+  "reference_validation": "unchanged prior validation reused"
+}

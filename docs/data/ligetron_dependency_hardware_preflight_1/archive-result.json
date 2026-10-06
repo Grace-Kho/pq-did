@@ -1,0 +1,22 @@
+{
+  "archive": "/home/grace/projects/pq-did/handover/ligetron_full_path_preflight_v1.zip",
+  "bytes": 619909,
+  "sha256": "ca92aa31476119a00bbf876145a72445d77488171c075a812b8df1997d428425",
+  "members": 194,
+  "verification": "pass: CRC, safe unique regular paths, exact member set, every payload/source/manifest, immutable selected inputs",
+  "measured_selected_file_and_archive_seconds": 0.12311572185717523,
+  "conservative_archive_seconds_charged": 2,
+  "peak_packaging_process_RSS_bytes": 23908352,
+  "incoming_review_manifest": "5 payloads, CRC, safe names and returned handover identity verified",
+  "no_historical_audit_functional_tests_builds_or_proofs": true,
+  "resource_closure": "/home/grace/projects/pq-did/docs/data/ligetron_dependency_hardware_preflight_1/resource-closure.json",
+  "package_charge_seconds": 56,
+  "implementation_remaining_seconds": 486.11904993268945,
+  "outside_KYC_remaining_seconds": 102.41060670910156,
+  "KYC_remaining_seconds_unchanged": 383.7084432235879,
+  "new_evidence_bytes": 372449,
+  "cumulative_evidence_bytes": 39039552,
+  "shared_headroom_bytes": 2454809,
+  "cumulative_artifact_bytes": 79520569
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

@@ -1,0 +1,20 @@
+{
+  "proof_admitted": true,
+  "checks": {
+    "execution_success": true,
+    "exact_journal": true,
+    "segment_count_decreased": true,
+    "supported_sizes": true,
+    "configuration_compatible": true,
+    "execution_within_envelope": true
+  },
+  "segments": 3,
+  "segment_po2": [
+    17,
+    17,
+    17
+  ],
+  "previous_segments": 10,
+  "supported_prover_maximum": 22,
+  "note": "Execution memory is not proving memory; proof keeps 2 GiB/600 s"
+}

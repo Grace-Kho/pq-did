@@ -1,0 +1,450 @@
+{
+  "package": "S3-BINIUS-EMBEDDING-CORRESPONDENCE-1",
+  "status": "component-complete-preservation-passed",
+  "prior_package_charged_seconds": 61.68825586186722,
+  "continuation_opening_package_seconds": 138.31174413813278,
+  "continuation_operator_bookkeeping_seconds": 50,
+  "continuation_measured_guarded_seconds": 12.103785920888186,
+  "continuation_charged_seconds": 62.103785920888186,
+  "package_charged_seconds": 123.7920417827554,
+  "package_ceiling_seconds": 200,
+  "package_unused_seconds": 76.2079582172446,
+  "continuation_phase_charges_seconds": {
+    "admission": 3.4679519219789654,
+    "implementation": 35.279418061021715,
+    "validation": 3.214081835001707,
+    "corrections": 5.557201029034331,
+    "completion": 14.585133073851466
+  },
+  "prior_phase_charges_retained_in": "../execution/resource-closure.json",
+  "completion_reserve_seconds": 30,
+  "completion_reserve_within_original_package": true,
+  "implementation_aggregate_charged_seconds": 5387.174072220574,
+  "implementation_remaining_seconds": 686.8259277794259,
+  "general_implementation_outside_KYC_remaining_seconds": 243.43557213738308,
+  "KYC_remaining_seconds_unchanged": 443.3903556420428,
+  "KYC_completion_reserve_seconds_unchanged": 300,
+  "analysis_remaining_seconds_unchanged": 11.510943178986167,
+  "new_invocations": 25,
+  "cumulative_invocations": 1165,
+  "invocation_ceiling": 1168,
+  "component_targeted_reruns_used": 0,
+  "component_targeted_reruns_unused": 3,
+  "native_cases_unrun": 4,
+  "static_guard_commands": 3,
+  "preparation_attempts": 2,
+  "audit_launcher_attempts": 2,
+  "failed_audit_launches_before_comparison": 1,
+  "complete_comparison_auditor_invocations": 1,
+  "cumulative_builds_unchanged": 10,
+  "build_ceiling_unchanged": 13,
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1
+  },
+  "component_case_seconds": 0.14240379515103996,
+  "guarded_case_seconds": 3.214081835001707,
+  "max_component_cgroup_peak_bytes": 19529728,
+  "aggregate_work_events": 4348928,
+  "audit_seconds": 4.7413699249736965,
+  "audit_cgroup_peak_bytes": 49397760,
+  "worker_cgroup_peak_bytes": 49397760,
+  "memory_limit_bytes": 268435456,
+  "temporary_bytes": 0,
+  "artifact_bytes_unchanged": 58966547,
+  "new_artifact_bytes": 0,
+  "all_completion_units_terminated": true,
+  "units": [
+    {
+      "unit": "pqdid-biniusembedc1-acquire.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-quality.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-01.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-02.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-03.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-04.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-05.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-06.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-07.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-08.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-09.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-10.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-11.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-12.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-13.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-14.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-15.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-16.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-17.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-18.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-19.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-20.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-21.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-22.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-23.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-24.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-ec-25.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-quality-2.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-prepare.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-full-audit.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-quality-3.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-prepare-2.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-full-audit-2.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusembedc1-readback.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    }
+  ],
+  "prior_acquisition_memory_observation_unresolved": true,
+  "all_history_preserved": true,
+  "closing_queries_and_bookkeeping_seconds_included_in_operator_charge": 0.7296698719728738,
+  "storage": {
+    "continuation_evidence_bytes": 547567,
+    "package_evidence_bytes": 1014688,
+    "package_cap_bytes": 1048576,
+    "package_headroom_bytes": 33888,
+    "cumulative_evidence_bytes": 35372722,
+    "cumulative_ceiling_bytes": 41943040,
+    "cumulative_headroom_bytes": 6570318,
+    "shared_headroom_bytes": 6121639,
+    "shared_completion_reserve_bytes": 2097152,
+    "new_source_bytes": 24075,
+    "total_component_source_bytes": 200854,
+    "new_artifact_bytes": 0
+  }
+}

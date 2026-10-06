@@ -1,0 +1,7 @@
+{
+  "package": "R0-CREDVALID-EXEC24-1",
+  "reason": "credential_rejected",
+  "execution_runs": 2,
+  "proof_attempts": 0,
+  "further_execution_authorised": false
+}

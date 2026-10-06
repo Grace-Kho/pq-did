@@ -1,0 +1,27 @@
+{
+  "before_utc": "2026-10-03T08:44:21.979711+00:00",
+  "after_utc": "2026-10-03T08:58:58.927246+00:00",
+  "readings": {
+    "Windows_free_bytes": {
+      "before": 870797312,
+      "after": 2297962496,
+      "delta": 1427165184
+    },
+    "WSL_available_bytes": {
+      "before": 5394214912,
+      "after": 5077135360,
+      "delta": -317079552
+    },
+    "WSL_Cached_bytes": {
+      "before": 3517960192,
+      "after": 1141350400,
+      "delta": -2376609792
+    },
+    "WSL_SReclaimable_bytes": {
+      "before": 261505024,
+      "after": 192614400,
+      "delta": -68890624
+    }
+  },
+  "interpretation": "Observational difference across time and a user-reported intervention, not a controlled causal measurement. Cached memory is never added to MemAvailable. Guest cache reduction is not equated with host recovery."
+}

@@ -1,0 +1,84 @@
+{
+  "case_id": "N-03",
+  "invocation_id": "CAR1-0028",
+  "status": "pass",
+  "details": {
+    "expected": false,
+    "actual": {
+      "status": "loaded",
+      "satisfied": false,
+      "rows": 5,
+      "variables": 4,
+      "nonzero_terms": 17,
+      "field_bytes": 24,
+      "term_object_bytes": 32,
+      "constraint_object_bytes": 72,
+      "az": [
+        "000000000000000000000000000000000000000000000001",
+        "000000000000000000000000000000000000000000000001",
+        "000000000000000000000000000000000000000000000001",
+        "000000000000000000000000000000000000000000000000",
+        "000000000000000000000000000000000000000000000001"
+      ],
+      "bz": [
+        "000000000000000000000000000000000000000000000000",
+        "000000000000000000000000000000000000000000000000",
+        "000000000000000000000000000000000000000000000001",
+        "000000000000000000000000000000000000000000000001",
+        "000000000000000000000000000000000000000000000001"
+      ],
+      "cz": [
+        "000000000000000000000000000000000000000000000000",
+        "000000000000000000000000000000000000000000000000",
+        "000000000000000000000000000000000000000000000000",
+        "000000000000000000000000000000000000000000000001",
+        "000000000000000000000000000000000000000000000001"
+      ]
+    },
+    "compact_descriptor": {
+      "complete": true,
+      "inputs": 2,
+      "gates": 3,
+      "rows": 5,
+      "variables": 4,
+      "primary": 1,
+      "output_wire": 6,
+      "nonzero_terms": [
+        7,
+        7,
+        3
+      ],
+      "matrix_sha256": "29f98290db35bb53a449b785290eccb3f26049e1353195d99efb96360bede656",
+      "public_identity": "747482f1417df71a6516222c3063a4d17f1d774cda22fda591f4305a3d9a09d2",
+      "gate_counts": [
+        1,
+        1,
+        1
+      ],
+      "free_input_booleanity_rows": 2,
+      "and_rows": 1,
+      "spill_rows": 0,
+      "output_rows": 2,
+      "retained_wire_forms": 7,
+      "retained_term_entries": 9,
+      "maximum_stored_support": 3,
+      "assignment_storage_bytes": 4,
+      "representation": "GF192-exact-affine-XOR-NOT-elimination-v1"
+    },
+    "native_binary_sha256": "047c911ed719381c93708a6c6a5423cc6de66fd0c4e959ad0fb695d612cc0051",
+    "input_sha256": "0f5f137da9783d7d2f5672056e496b001be2269c2f46417ff521a2e7b24afdfb",
+    "public_synthetic": true,
+    "full_authentication": false,
+    "builds": 0,
+    "native_paths": [
+      "add_term",
+      "add_constraint",
+      "A/B/C_matrix",
+      "create_Az_Bz_Cz_from_variable_assignment",
+      "is_satisfied",
+      "gf192 operators"
+    ]
+  },
+  "seconds": 0.0013900729827582836,
+  "work_events": 31
+}

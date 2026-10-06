@@ -1,0 +1,19 @@
+{
+  "id": "M-05",
+  "invocation": {
+    "invocation_id": "LDMC1-0011",
+    "case_id": "M-05",
+    "work_event_reservation": 1000000,
+    "ordinal": 11,
+    "cumulative_invocations": 1229,
+    "status": "admitted"
+  },
+  "status": "pass",
+  "binary_sha256": "9d21ea26044ab0959379ec5bcdd8d8cd5d47794fd45518381b7b532f19d6a3fb",
+  "expected_sha256": "f4d44a3e76ae05be7b0a5b655be6a242c461e0824a4878181222109ed12be2a7",
+  "exit_code": 0,
+  "stdout": "[\"2867646563370992193039998456969046611105789734893902055316552483318675262505\"]\n",
+  "stderr": "",
+  "layer": "negative control; zero-tail disclosure equation",
+  "seconds": 0.0015739731024950743
+}

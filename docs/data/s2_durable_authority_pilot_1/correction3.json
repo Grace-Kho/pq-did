@@ -1,0 +1,8 @@
+{
+  "failure": "scoped",
+  "cause": "The synthetic socket buffer was smaller than the credential packet, so Linux returned EMSGSIZE/OSError before EAGAIN. Publication already failed closed; test expected BlockingIOError.",
+  "correction": "Use 32768-byte requested send buffer and at most 128 bounded 1024-byte filler packets to test queue saturation with an individually admissible credential packet.",
+  "resource_failure": false,
+  "reuse_passed_cases": 36,
+  "authorisation": "Explicit task permits focused correction within unchanged budget."
+}

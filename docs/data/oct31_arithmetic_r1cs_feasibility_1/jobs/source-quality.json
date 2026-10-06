@@ -1,0 +1,52 @@
+{
+  "name": "source-quality",
+  "phase": "tool",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/arithmetic_r1cs_feasibility_1/tooling.py"
+  ],
+  "limit_seconds": 20,
+  "child_seconds": 19,
+  "status": "pass",
+  "unit": "pqdid-arithmetic-r1cs-1-source-quality",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 53151,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 26379727,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4108029952,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false,
+  "seconds": 1.5892033099662513,
+  "exit_code": 0,
+  "stop": null,
+  "worker": {
+    "before": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "12791808",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "after": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "27947008",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "child_exit_code": 0,
+    "child_seconds": 0.08144607406575233,
+    "resource_breach": false,
+    "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+  },
+  "sampled_tree_rss_peak": 32583680,
+  "artifact_observed_peak_bytes": 58966547
+}

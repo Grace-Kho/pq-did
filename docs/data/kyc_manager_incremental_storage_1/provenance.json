@@ -1,0 +1,33 @@
+{
+  "source_sha256": {
+    "experiments/kyc_manager_incremental_storage_1/cases.py": "ad2d47cd8f173179c7d4558af0d9fb4efb529ba2ffe7b38253521bdc579375f1",
+    "experiments/kyc_manager_incremental_storage_1/dispatch.py": "4173a750483e3722356b3ef081fb7d08e57ab5b690ab457b5ccf8b704a551054",
+    "experiments/kyc_manager_incremental_storage_1/history.py": "8bb6bd566d70829f40ad30b513c1f040ae0dd7a490b89b52e97ed64beb8432f8",
+    "experiments/kyc_manager_incremental_storage_1/history_cases.py": "2ceeb0004fb68ffb97d5c97b14b4f1d83e7ba1a2afd80996b49f994bc01ed5b4",
+    "experiments/kyc_manager_incremental_storage_1/integration.py": "cb4f6711602ed83928369c3ad45ace0d63c73349a5e3787a4d1d9ad16b2961ee",
+    "experiments/kyc_manager_incremental_storage_1/preservation.py": "d4bbb42fd1acfb6b04f9f3cd84337e3a0cfba27b1d16131c199aa2442b3205be",
+    "experiments/kyc_manager_incremental_storage_1/retain_failure.py": "45094a72ac2778fd07c22f2266d3dfbb821051e87b4cedb1bbc2f244f63c02a2",
+    "experiments/kyc_manager_incremental_storage_1/run.py": "e5eb2d2f475f67e65f5f5e90df9edb5fce6a35c4b90aace0ef6b9449560ebca0",
+    "experiments/kyc_manager_incremental_storage_1/store.py": "7bd12093e5e9267afba833e913a980e7d7061f6e6a265276cf382c39ae2bfa46",
+    "experiments/kyc_manager_incremental_storage_1/tooling.py": "c12d2c8abeb235fd4164b7e7ff17bfe705d2411af018636c83e6217860d56ab6"
+  },
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "sqlite": "3.46.1",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "cpu": "Intel(R) Core(TM) i7-14650HX",
+  "source_contracts": [
+    "pqdid.bounded_manager.BoundedDurableManager",
+    "pqdid.persistence.sqlite_store.SQLiteStore",
+    "pqdid.recovery._manager",
+    "pqdid.witness_updates.update_witness",
+    "pqdid.holder_wallet.Wallet",
+    "experiments.kyc_milestone_1.baseline"
+  ],
+  "history_semantics": "Equal authenticated logical state references can have different valid signatures; H-17 checks this explicitly.",
+  "static_diagnostics": [
+    "Initial literal-format helper stopped before changing its failing input; static-1 E501/E731 retained, static-2 passed",
+    "Static-5 F821 missing fixture import; mistakenly dispatched H-17 before inspecting that result; failed invocation fully counted and retained",
+    "Static-6 passed after required fixture import; H-17 targeted rerun passed"
+  ],
+  "protected_state": "All original source/dependency/parameter/manuscript and prior result files unchanged, except explicitly append-only report prefixes"
+}

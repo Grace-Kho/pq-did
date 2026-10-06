@@ -1,0 +1,37 @@
+{
+  "trusted_latest_manifest_sha256": "a7dd9de797ccc19ccf5ce71e71f6890c79bcddca30d9a1c646823455acac2a4e",
+  "trusted_prefix_metadata_sha256": "448e26c28ed0703a52e5430744331ebc71d0d61cad56479aada6f14c8625323b",
+  "length_provenance": "Length of bytes first authenticated by retained full-file seal",
+  "reports": {
+    "docs/spec_issues.md": {
+      "prefix_bytes": 207056,
+      "prefix_sha256": "c41af39052d84010637fa4c081b8d6b52a72228d81c2628bac1f97bd4168d989",
+      "final_bytes": 209126,
+      "full_sha256": "c7504fb0c57c8233fa6412571f40cc6c4a5b596adef785bd555b04ba766cb140"
+    },
+    "docs/stage3_aurora_compiler_compatibility_contract.md": {
+      "prefix_bytes": 25432,
+      "prefix_sha256": "40b7c04e3cadcf12302959d8dbd3b83e8859ee42bb79dce908ad2372424363fe",
+      "final_bytes": 27502,
+      "full_sha256": "b0559fc1f29d233769c30fca7cc9eea7c935d597f2a31769cabb91aa8af79ebb"
+    },
+    "docs/stage3_aurora_native_transcript_pilot.md": {
+      "prefix_bytes": 57144,
+      "prefix_sha256": "19df89d424878c96764f589785b98ec1127459ec5ff2f85e41863c10bf65aec1",
+      "final_bytes": 68617,
+      "full_sha256": "c491e07e7fedd78cdf0e770cd4277402422cb1d49fbfe6d82e889033f1688142"
+    },
+    "docs/status.md": {
+      "prefix_bytes": 188045,
+      "prefix_sha256": "4ec1d7592844cf242af675f49239378b6db22c44ff4bb4e2efe2e99bde0b1723",
+      "final_bytes": 190115,
+      "full_sha256": "fb20ce3842043c102df48342c6b1fa95702fe67df78e415cfe854c481246c3e2"
+    },
+    "docs/traceability.md": {
+      "prefix_bytes": 246455,
+      "prefix_sha256": "a2d4546438c37004f03f12100be644cfb3f391af65755355464aaded14bf9c3b",
+      "final_bytes": 248525,
+      "full_sha256": "b79749dd74a54339f3cecd9015fa25f54df7fe9204fbddc5a266ba5538cb3c9c"
+    }
+  }
+}

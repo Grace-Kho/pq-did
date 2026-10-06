@@ -1,0 +1,167 @@
+{
+  "invocation_id": "KYCD1-0008",
+  "case_id": "D-08",
+  "work_event_reservation": 0,
+  "ordinal": 8,
+  "cumulative_invocations": 1173,
+  "status": "pass",
+  "details": {
+    "state": {
+      "manager_epoch": 7,
+      "allocated_count": 8,
+      "issuer_phases": [
+        "CERTIFIED",
+        "CERTIFIED",
+        "CERTIFIED",
+        "CERTIFIED",
+        "CERTIFIED",
+        "CERTIFIED",
+        "CERTIFIED",
+        "CERTIFIED"
+      ],
+      "verifiers": {
+        "A": {
+          "audience": "baseline-audience-A",
+          "challenges": 1,
+          "consumed": 1,
+          "head": "8a7f156b8d953240c9dcc303b0b2d2cb11fe0706c666cca7a4e2801c0ece18b3",
+          "generation": 1
+        },
+        "B": {
+          "audience": "baseline-audience-B",
+          "challenges": 1,
+          "consumed": 1,
+          "head": "235526c6e2f0a653b23bb75a004db5fc81fff6be6487b883b1b568c819a02aaa",
+          "generation": 1
+        }
+      },
+      "holder_epoch": 7
+    },
+    "pages": [
+      55041,
+      43874
+    ],
+    "public_queries": [
+      [
+        "1111111111111111111111111111111111111111111111111111111111111111",
+        0,
+        7
+      ],
+      [
+        "1111111111111111111111111111111111111111111111111111111111111111",
+        4,
+        7
+      ]
+    ],
+    "signatures": "genuine bounded ML-DSA-65",
+    "private_proofs": "unavailable",
+    "store_versions": {
+      "issuer": 2,
+      "manager": 2
+    },
+    "storage": [
+      {
+        "path": "manager/authority.sqlite3",
+        "bytes": 434176,
+        "secret_material": false
+      },
+      {
+        "path": "verifier-A/authority.sqlite3",
+        "bytes": 86016,
+        "secret_material": false
+      },
+      {
+        "path": "verifier-B/authority.sqlite3",
+        "bytes": 86016,
+        "secret_material": false
+      },
+      {
+        "path": "issuer/issuer.sqlite3",
+        "bytes": 208896,
+        "secret_material": false
+      },
+      {
+        "path": "holder/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      },
+      {
+        "path": "holder-other-0/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder-other-0/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      },
+      {
+        "path": "holder-other-1/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder-other-1/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      },
+      {
+        "path": "holder-other-2/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder-other-2/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      },
+      {
+        "path": "holder-other-3/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder-other-3/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      },
+      {
+        "path": "holder-other-4/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder-other-4/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      },
+      {
+        "path": "holder-other-5/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder-other-5/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      },
+      {
+        "path": "holder-other-6/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder-other-6/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      }
+    ]
+  },
+  "seconds": 0.6102334528695792,
+  "work_events": 0
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="48" time="1.350" timestamp="2026-09-19T16:13:06.089958+08:00" hostname="DTC-4CE630BQSC"><testcase classname="tests.unit.test_issuance" name="test_success_exact_messages_and_holder_atomic_acceptance" time="0.100" /><testcase classname="tests.unit.test_issuance" name="test_invalid_authorised_request_before_reservation[evidence]" time="0.006" /><testcase classname="tests.unit.test_issuance" name="test_invalid_authorised_request_before_reservation[approval]" time="0.006" /><testcase classname="tests.unit.test_issuance" name="test_invalid_authorised_request_before_reservation[did]" time="0.006" /><testcase classname="tests.unit.test_issuance" name="test_invalid_authorised_request_before_reservation[version]" time="0.006" /><testcase classname="tests.unit.test_issuance" name="test_invalid_authorised_request_before_reservation[resolution]" time="0.006" /><testcase classname="tests.unit.test_issuance" name="test_invalid_authorised_request_before_reservation[key]" time="0.006" /><testcase classname="tests.unit.test_issuance" name="test_invalid_authorised_request_before_reservation[current-version]" time="0.006" /><testcase classname="tests.unit.test_issuance" name="test_invalid_authorised_request_before_reservation[mutable-document]" time="0.005" /><testcase classname="tests.unit.test_issuance" name="test_substituted_statement_or_controller_signature_retires_challenge[nonce]" time="0.021" /><testcase classname="tests.unit.test_issuance" name="test_substituted_statement_or_controller_signature_retires_challenge[identifier]" time="0.020" /><testcase classname="tests.unit.test_issuance" name="test_substituted_statement_or_controller_signature_retires_challenge[attributes]" time="0.019" /><testcase classname="tests.unit.test_issuance" name="test_substituted_statement_or_controller_signature_retires_challenge[binding]" time="0.030" /><testcase classname="tests.unit.test_issuance" name="test_substituted_statement_or_controller_signature_retires_challenge[issuer]" time="0.019" /><testcase classname="tests.unit.test_issuance" name="test_substituted_statement_or_controller_signature_retires_challenge[namespace]" time="0.020" /><testcase classname="tests.unit.test_issuance" name="test_substituted_statement_or_controller_signature_retires_challenge[state]" time="0.020" /><testcase classname="tests.unit.test_issuance" name="test_substituted_statement_or_controller_signature_retires_challenge[control-context]" time="0.030" /><testcase classname="tests.unit.test_issuance" name="test_invalid_unsupported_or_truthy_proof_verdict[ProofVerdict.INVALID]" time="0.027" /><testcase classname="tests.unit.test_issuance" name="test_invalid_unsupported_or_truthy_proof_verdict[ProofVerdict.UNSUPPORTED]" time="0.027" /><testcase classname="tests.unit.test_issuance" name="test_invalid_unsupported_or_truthy_proof_verdict[True]" time="0.028" /><testcase classname="tests.unit.test_issuance" name="test_changed_binding_with_real_controller_signature_still_needs_exact_proof" time="0.029" /><testcase classname="tests.unit.test_issuance" name="test_begin_failure_boundary_preserves_completed_allocation[resolver]" time="0.006" /><testcase classname="tests.unit.test_issuance" name="test_begin_failure_boundary_preserves_completed_allocation[authorisation]" time="0.006" /><testcase classname="tests.unit.test_issuance" name="test_begin_failure_boundary_preserves_completed_allocation[reservation]" time="0.010" /><testcase classname="tests.unit.test_issuance" name="test_begin_failure_boundary_preserves_completed_allocation[nonce]" time="0.015" /><testcase classname="tests.unit.test_issuance" name="test_finish_failure_boundaries_and_log_survival[proof]" time="0.029" /><testcase classname="tests.unit.test_issuance" name="test_finish_failure_boundaries_and_log_survival[final-did]" time="0.028" /><testcase classname="tests.unit.test_issuance" name="test_finish_failure_boundaries_and_log_survival[final-state]" time="0.028" /><testcase classname="tests.unit.test_issuance" name="test_finish_failure_boundaries_and_log_survival[sign]" time="0.033" /><testcase classname="tests.unit.test_issuance" name="test_finish_failure_boundaries_and_log_survival[commit]" time="0.038" /><testcase classname="tests.unit.test_issuance" name="test_finish_failure_boundaries_and_log_survival[post-commit]" time="0.039" /><testcase classname="tests.unit.test_issuance" name="test_signing_failure_never_releases[signature]" time="0.039" /><testcase classname="tests.unit.test_issuance" name="test_signing_failure_never_releases[certified-message]" time="0.038" /><testcase classname="tests.unit.test_issuance" name="test_signing_failure_never_releases[exhausted]" time="0.034" /><testcase classname="tests.unit.test_issuance" name="test_signing_failure_never_releases[unsupported]" time="0.035" /><testcase classname="tests.unit.test_issuance" name="test_signing_failure_never_releases[memory]" time="0.035" /><testcase classname="tests.unit.test_issuance" name="test_real_verification_exhaustion_or_adapter_memory_failure[proof]" time="0.028" /><testcase classname="tests.unit.test_issuance" name="test_real_verification_exhaustion_or_adapter_memory_failure[bounded-verify]" time="0.019" /><testcase classname="tests.unit.test_issuance" name="test_invalid_initial_or_final_state_and_current_did[bad-state-signature]" time="0.010" /><testcase classname="tests.unit.test_issuance" name="test_invalid_initial_or_final_state_and_current_did[path]" time="0.016" /><testcase classname="tests.unit.test_issuance" name="test_invalid_initial_or_final_state_and_current_did[identifier]" time="0.011" /><testcase classname="tests.unit.test_issuance" name="test_invalid_initial_or_final_state_and_current_did[revoked]" time="0.045" /><testcase classname="tests.unit.test_issuance" name="test_invalid_initial_or_final_state_and_current_did[advanced-state]" time="0.044" /><testcase classname="tests.unit.test_issuance" name="test_invalid_initial_or_final_state_and_current_did[rotated-controller]" time="0.028" /><testcase classname="tests.unit.test_issuance" name="test_holder_substitution_does_not_commit_or_undo_issuer_log[signature]" time="0.043" /><testcase classname="tests.unit.test_issuance" name="test_holder_substitution_does_not_commit_or_undo_issuer_log[attributes]" time="0.039" /><testcase classname="tests.unit.test_issuance" name="test_holder_substitution_does_not_commit_or_undo_issuer_log[binding]" time="0.040" /><testcase classname="tests.unit.test_issuance" name="test_holder_substitution_does_not_commit_or_undo_issuer_log[issuer]" time="0.039"><failure message="pqdid.codec.EncodingError: truncated input or inconsistent length">h = &lt;unit.issuance_cases.IssuanceHarness object at 0x7dc42ad5e2b0&gt;
+mutation = 'issuer'
+
+    @pytest.mark.parametrize(
+        "mutation",
+        ["signature", "attributes", "binding", "issuer", "namespace", "path", "state", "identifier"],
+    )
+    def test_holder_substitution_does_not_commit_or_undo_issuer_log(h, mutation):
+        _, submission, issued = h.issue()
+        original = issued
+        credential, point = issued.credential, issued.checkpoint
+        if mutation == "signature":
+            credential = replace(
+                credential, certificate=replace(credential.certificate, signature=bytes(3309))
+            )
+        elif mutation == "attributes":
+            values = list(decode_attributes(h.pp.schema, h.attributes))
+            values[-1] += 1
+            attributes = encode_attributes(h.pp.schema, values)
+            credential = replace(
+                credential,
+                attributes=attributes,
+                certificate=replace(
+                    credential.certificate,
+                    binding=replace(credential.certificate.binding, attributes=attributes),
+                ),
+            )
+        elif mutation == "binding":
+            credential = replace(
+                credential,
+                certificate=replace(
+                    credential.certificate, binding=create_binding(h.pp.domain, b"x" * 32, h.attributes)
+                ),
+            )
+        elif mutation == "issuer":
+            credential = replace(
+&gt;               credential, metadata=replace(credential.metadata, issuer_reference=b"wrong")
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/unit/test_issuance.py:409: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.14/dataclasses.py:1770: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/lib/python3.14/dataclasses.py:1804: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:5: in __init__
+    ???
+src/pqdid/parameters.py:23: in __post_init__
+    HashDomain(SUITE, self.issuer_reference, self.namespace)
+&lt;string&gt;:6: in __init__
+    ???
+src/pqdid/hash_domain.py:29: in __post_init__
+    issuer, key_id, encoded_schema = decode_record(self.issuer_reference, "iref")
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/pqdid/codec.py:168: in decode_record
+    if reader.field() != tag_bytes:
+       ^^^^^^^^^^^^^^
+src/pqdid/codec.py:113: in field
+    return self.take(self.word())
+           ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;pqdid.codec._Reader object at 0x7dc42ad0bb30&gt;, length = 2003988334
+
+    def take(self, length: int) -&gt; memoryview:
+        # Check before slicing/copying or advancing. A declared size never drives
+        # an allocation until the complete corresponding input has been checked.
+        if length &gt; self.remaining:
+&gt;           raise EncodingError("truncated input or inconsistent length")
+E           pqdid.codec.EncodingError: truncated input or inconsistent length
+
+src/pqdid/codec.py:104: EncodingError</failure></testcase></testsuite></testsuites>

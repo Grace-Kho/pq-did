@@ -1,0 +1,37 @@
+{
+  "name": "witness-cases",
+  "phase": "python",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/auth_relation_integration_1/dispatch.py",
+    "W-01",
+    "W-02",
+    "W-03",
+    "W-04",
+    "W-05",
+    "W-06",
+    "W-07",
+    "W-08",
+    "W-09",
+    "W-10",
+    "W-11",
+    "W-12"
+  ],
+  "limit_seconds": 240,
+  "child_seconds": 239,
+  "status": "launched",
+  "unit": "pqdid-auth-relation-1-witness-cases",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 401019,
+    "new_artifact_bytes": 853888,
+    "evidence_bytes": 25642452,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4533542912,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

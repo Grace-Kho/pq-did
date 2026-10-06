@@ -1,0 +1,15 @@
+{
+  "parent_ledger": "/home/grace/projects/pq-did/docs/data/ligetron_full_path_engineering_1/ledger.json",
+  "parent_resource_closure_sha256": "11eb83b1f1978c4b663dfb7a6a48088a29efb45b002125178deb54ad30446ead",
+  "measured_diagnostic_seconds": 1.2277979289647192,
+  "conservative_completion_and_bookkeeping_seconds": 20,
+  "conservative_basis": "inspection, selected-file preservation, packaging, accounting and final reporting; not labelled measured runtime",
+  "charged_seconds": 21.22779792896472,
+  "invocations": [],
+  "builds": [],
+  "proofs": [],
+  "allocation_charged": "existing package and overall outside-KYC capacity, once",
+  "functional_revalidation": "none",
+  "memory_repolls": 0,
+  "minor_read_diagnostics": "Two case-sensitive runbook-name searches missed uppercase filenames; corrected by reading existing RUNBOOK.md; no source changes or tests."
+}

@@ -1,0 +1,18 @@
+{
+  "docs/status.md": {
+    "bytes": 250141,
+    "sha256": "271abc7b48f34524551cc081d139ddfec4d2f5a8888f3b4feb398ad189431b95"
+  },
+  "docs/traceability.md": {
+    "bytes": 308693,
+    "sha256": "9cf10512408512fc44f51844b6a28a818637c77af3decbbe1775d9bb0a34fd62"
+  },
+  "docs/spec_issues.md": {
+    "bytes": 275408,
+    "sha256": "3dd67092b6196a0cd552d0192e513cdaae0945ea6f40f24938c9fd63a0bc5ad9"
+  },
+  "docs/stage3_binius_embedding_correspondence.md": {
+    "bytes": 36166,
+    "sha256": "2fa038dc4ca1c1112f6daa01dfb799cf18cbb4cd7a6628ee23d3cf893d900a48"
+  }
+}

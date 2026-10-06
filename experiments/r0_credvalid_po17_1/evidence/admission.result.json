@@ -1,0 +1,70 @@
+{
+  "package": "R0-CREDVALID-PO17-1",
+  "actual_partition": {
+    "15": 1,
+    "17": 181
+  },
+  "segments": 182,
+  "workload": {
+    "base_segment_proofs": 182,
+    "lifts": 182,
+    "joins": 181,
+    "additional_recursion_operations": 0,
+    "additional_recursion_basis": "No guest receipt-verification assumptions, Keccak coprocessor, PoVW or Groth16; unchanged software-hash guest."
+  },
+  "rates_seconds": {
+    "base_po17": 41.574386,
+    "lift_po17": 44.326462,
+    "join": 44.748385
+  },
+  "rate_selection": "Maximum observed sample for each matching operation type, plus maximum observed recursion handoff separately on every lift/join.",
+  "all_segment_types_measured": false,
+  "unmatched_type_policy": "Smaller final segment uses po17 as conservative engineering proxy only, not an established timing bound; unsupported extrapolation cannot admit a run.",
+  "components_before_uncertainty": {
+    "base_segments_seconds": 7566.538251999999,
+    "lifts_seconds": 8067.4160839999995,
+    "joins_seconds": 8099.457684999999,
+    "guest_execution_seconds_proxy": 0.302627684,
+    "one_time_initialisation_finalisation_allowance_seconds": 10.0
+  },
+  "subtotal_seconds": 23743.714648684,
+  "uncertainty_fraction": 0.5,
+  "uncertainty_seconds": 11871.857324342,
+  "conservative_estimate_seconds": 35615.571973026,
+  "deadline_seconds": 600,
+  "estimate_interpretation": "Engineering extrapolation, not measured CredValid proving time or guaranteed upper bound. Explicit 50% allowance for host load/cache, longer repeated workload and unobserved bookkeeping. 10s initialisation/finalisation envelope is an assumption; build excluded. Useful for rejecting this budget, not proving exact runtime.",
+  "memory": {
+    "enrolment_measured_cgroup_peak_bytes": 1535385600,
+    "ceiling_bytes": 2147483648,
+    "enrolment_peak_is_CredValid_upper_bound": false,
+    "retained_storage": "Default proving run retains all serialised segment files via Session FileSegmentRefs. Counts grow to S; page cache is charged to cgroup. Preflight discards callback assets and does not measure this retained proving storage.",
+    "base_phase": "One decoded segment/preflight/witness/proof buffer set at a time plus S increasing retained segment receipts, metadata, host, executor state, allocator cache and file cache; deserialisation can overlap file bytes and decoded data.",
+    "recursion_phase": "All Composite segment receipts and Session refs remain live. Accumulated left Succinct and newly lifted right coexist with join witness/polynomial buffers/output; recursion ctrl/data/accum/global arrays coexist. Sequential operations do not mean zero retention.",
+    "unknowns": "No per-segment serialised sizes, retained-receipt sum or phase-specific concurrent working-set bound was measured for CredValid. Enrolment peak and execution RSS cannot bound these quantities.",
+    "aggregate_bound_established": false,
+    "known_hard_incompatibility": null,
+    "decision": "Unresolved memory headroom; do not assert a 2 GiB upper bound. Time independently excludes launch."
+  },
+  "memory_admitted": false,
+  "checks": {
+    "execution_success": true,
+    "exact_journal": true,
+    "execution_resources": true,
+    "supported_sizes": true,
+    "parameters_compatible": true,
+    "conservative_time_fits": false,
+    "all_segment_types_measured": false,
+    "memory_admitted": false
+  },
+  "proof_admitted": false,
+  "reason": "Forecast exceeds whole-pipeline deadline; preserve final attempt. Memory upper bound also unresolved.",
+  "proofs_launched": 0,
+  "cumulative_attempts_used": 2,
+  "remaining": 1,
+  "application_targets": {
+    "generation_p95_seconds": 30,
+    "end_to_end_p95_seconds": 45,
+    "experimental_deadline_seconds": 600,
+    "assessment": "Present two-thread CPU configuration is unlikely to meet proposed KYC targets; fragment forecast is far beyond them, not a measured p95 or complete authentication result."
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "package": "S3-BINIUS-EMBEDDING-CORRESPONDENCE-1",
+  "approved": false,
+  "preparation_only_now": true,
+  "decision": "Ready for isolated source-correspondence/reference component; native comparison blocked and unrun",
+  "commit": "441fbf51ff0bcb0bcd28f3f1b73f4954029e8577",
+  "implementation_seconds_requested_from_existing": 200,
+  "phase_caps_seconds": {
+    "admission_and_exact_source_inspection": 30,
+    "adapter_reference_and_logup_gap_map": 70,
+    "fixed_cases": 50,
+    "routine_corrections": 20,
+    "preservation_reporting_cleanup": 30
+  },
+  "completion_reserve_seconds": 30,
+  "KYC_allocation_unchanged": true,
+  "maximum_invocations": 28,
+  "initial_cases": 25,
+  "targeted_reruns_maximum": 3,
+  "current_invocations": 1140,
+  "current_ceiling": 1146,
+  "proposed_invocation_ceiling": 1168,
+  "ceiling_increase": 22,
+  "builds_requested": 0,
+  "proofs": 0,
+  "installations": false,
+  "native_build_admitted": false,
+  "native_cases_unrun": [
+    "N-01 encoder at two-lane shape, k=m=2,r=2",
+    "N-02 encoder k=m=2,r=4",
+    "N-03 encoder padded k2,m4,r2",
+    "N-04 actual native field/scalar/packed-lane comparison"
+  ],
+  "native_cases_reserved_or_authorised": false,
+  "case_wall_seconds": 1,
+  "memory_bytes": 268435456,
+  "swap_bytes": 0,
+  "workers": 1,
+  "cpu_threads": 2,
+  "evidence_subcap_bytes": 1048576,
+  "temporary_bytes": 8388608,
+  "ordinary_file_bytes": 1048576,
+  "new_artifact_cap_bytes": 8388608,
+  "dimensions": {
+    "logical_k_max": 4,
+    "embedding_m_max": 8,
+    "reciprocal_rates": [
+      2,
+      4
+    ],
+    "paired_codeword_elements_max": 128,
+    "actual_intmul_operand_variables": 16,
+    "intmul_full_oracle_allocated": false
+  },
+  "cases": [
+    {
+      "id": "EC-01",
+      "name": "k1-m1-r2",
+      "expected": "Smallest physical vector and zero codeword point",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-02",
+      "name": "k2-m2-r2",
+      "expected": "Four-coordinate addendum example, all codeword positions and both lanes",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-03",
+      "name": "k2-m2-r4",
+      "expected": "Same logical dimensions at a different reciprocal code rate",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-04",
+      "name": "k4-m4-r2",
+      "expected": "Mixed data/random coefficients and nonzero codeword positions",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-05",
+      "name": "k2-m4-r2",
+      "expected": "Logical zero padding and changed bit-reversal width",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-06",
+      "name": "k4-m8-r4",
+      "expected": "Largest admitted comparison: 64 positions, two lanes",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-07",
+      "name": "decoder",
+      "expected": "Left inverse and transported dot product for an arbitrary admitted physical vector",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-08",
+      "name": "parity",
+      "expected": "Reject a layout descriptor assigning data to even coordinates",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-09",
+      "name": "order",
+      "expected": "Reject binding-order points until explicitly converted to variable-index order",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-10",
+      "name": "dimension",
+      "expected": "Reject m=3 and do not allocate an encoder buffer",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-11",
+      "name": "randomness",
+      "expected": "Injected missing entropy/short-randomness result cannot release a physical message",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-12",
+      "name": "oracle-id",
+      "expected": "Reject descriptor/expected-oracle identifier mismatch; local identity check only",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-13",
+      "name": "odd-padding",
+      "expected": "Reject a nonzero odd padding coordinate in strict component admission",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-14",
+      "name": "operand-equal",
+      "expected": "Full vector versus succinct transported operand, m=k",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-15",
+      "name": "operand-padded",
+      "expected": "Full vector versus succinct operand including high zero selector, m>k",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-16",
+      "name": "terminal-selector",
+      "expected": "Logical selector s=1 maps to physical coordinate3 with the expected oracle ID",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-17",
+      "name": "intmul-equality",
+      "expected": "16-variable logical equality operand; two-point expansion of one non-Boolean coordinate",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-18",
+      "name": "intmul-table",
+      "expected": "16-variable power-table operand; independent two-address expansion, native generator identity pinned",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-19",
+      "name": "rank",
+      "expected": "Exact m=4 evaluation-rank example with four distinct domain points including zero",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-20",
+      "name": "repeated-query",
+      "expected": "m=2, positions0,0,1; repeated answer cached, distinct count two",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-21",
+      "name": "query-budget",
+      "expected": "m=2 and three distinct original query positions rejected",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-22",
+      "name": "aggregate",
+      "expected": "Two-oracle aggregate mask identity, fixed gamma outside0,1 and common public B",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-23",
+      "name": "individual-control",
+      "expected": "Individual-mask control exposes individual targets given whole folded vectors; expected negative control",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-24",
+      "name": "gamma-zero",
+      "expected": "Restricted simulator rejects gamma0 explicitly",
+      "status": "unrun",
+      "count": 1
+    },
+    {
+      "id": "EC-25",
+      "name": "gamma-one",
+      "expected": "Privacy identity at gamma1 passes but records that original-relation binding is absent",
+      "status": "unrun",
+      "count": 1
+    }
+  ],
+  "scope_exclusions": [
+    "native build or dependency installation",
+    "commitments or proof transcript implementation",
+    "proof generation or private verification",
+    "profile adoption",
+    "historical benchmark reruns"
+  ],
+  "future_source_allowlist": "proposed-source-allowlist.json",
+  "source_acquisition_now": false,
+  "source_acquisition_proposed_only": true,
+  "max_source_bytes": 262144,
+  "max_source_acquisition_seconds": 15,
+  "source_process_guard": "256MiB cgroup established before interpreter; exact raw pinned paths only, verified Git blob/size before use; no full archive or scripts",
+  "independent_expected_value_rule": "Reference direct polynomial/subspace evaluation and separate field algorithm; not a call to candidate, no shared permutation/schedule helper",
+  "stop_conditions": [
+    "integrity discrepancy",
+    "resource breach",
+    "missing scalar representation premise",
+    "need for unlisted dependency acquisition",
+    "substantive mathematical mismatch",
+    "native prerequisites absent -> leave native cases unrun, continue admitted independent component"
+  ]
+}

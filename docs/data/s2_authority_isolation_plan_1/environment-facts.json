@@ -1,0 +1,502 @@
+{
+  "package": "S2-AUTHORITY-ISOLATION-PLAN-1",
+  "observed_utc": "2026-09-19T12:24:03.140808+00:00",
+  "view": "Existing user-service guard outside the tool filesystem/UID remapping",
+  "guard_mount_note": "Project bind mount is read-only in this inspection service",
+  "uid": 1000,
+  "gid": 1000,
+  "groups": [
+    {
+      "gid": 65534,
+      "name": "nogroup"
+    },
+    {
+      "gid": 65534,
+      "name": "nogroup"
+    },
+    {
+      "gid": 65534,
+      "name": "nogroup"
+    },
+    {
+      "gid": 65534,
+      "name": "nogroup"
+    },
+    {
+      "gid": 65534,
+      "name": "nogroup"
+    },
+    {
+      "gid": 65534,
+      "name": "nogroup"
+    },
+    {
+      "gid": 1000,
+      "name": "grace"
+    }
+  ],
+  "process_status": [
+    "Uid:\t1000\t1000\t1000\t1000",
+    "Gid:\t1000\t1000\t1000\t1000",
+    "Groups:\t65534 65534 65534 65534 65534 65534 1000 ",
+    "NoNewPrivs:\t1"
+  ],
+  "pid1_metadata": [
+    "Name:\tsystemd",
+    "Uid:\t65534\t65534\t65534\t65534",
+    "Gid:\t65534\t65534\t65534\t65534"
+  ],
+  "uid_map": "1000       1000          1",
+  "kernel": "6.18.33.2-microsoft-standard-WSL2",
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "executable": "/home/grace/projects/pq-did/.venv/bin/python",
+  "base_prefix": "/usr",
+  "prefix": "/home/grace/projects/pq-did/.venv",
+  "sys_path": [
+    "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_plan_1",
+    "/usr/lib/python314.zip",
+    "/usr/lib/python3.14",
+    "/usr/lib/python3.14/lib-dynload",
+    "/home/grace/projects/pq-did/.venv/lib/python3.14/site-packages",
+    "/home/grace/projects/pq-did/src"
+  ],
+  "sqlite_version": "3.46.1",
+  "sqlite_extension": "/usr/lib/python3.14/lib-dynload/_sqlite3.cpython-314-x86_64-linux-gnu.so",
+  "paths": [
+    {
+      "path": "/",
+      "exists": true,
+      "uid": 65534,
+      "gid": 65534,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 4096,
+      "links": 19
+    },
+    {
+      "path": "/home",
+      "exists": true,
+      "uid": 65534,
+      "gid": 65534,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 4096,
+      "links": 3
+    },
+    {
+      "path": "/home/grace",
+      "exists": true,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o750",
+      "symlink": false,
+      "link_target": null,
+      "size": 4096,
+      "links": 9
+    },
+    {
+      "path": "/home/grace/projects",
+      "exists": true,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 4096,
+      "links": 3
+    },
+    {
+      "path": "/home/grace/projects/pq-did",
+      "exists": true,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 4096,
+      "links": 16
+    },
+    {
+      "path": "/home/grace/projects/pq-did/src",
+      "exists": true,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 4096,
+      "links": 3
+    },
+    {
+      "path": "/home/grace/projects/pq-did/.venv",
+      "exists": true,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 4096,
+      "links": 4
+    },
+    {
+      "path": "/home/grace/projects/pq-did/.venv/bin",
+      "exists": true,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 4096,
+      "links": 2
+    },
+    {
+      "path": "/home/grace/projects/pq-did/.venv/bin/python",
+      "exists": true,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o777",
+      "symlink": true,
+      "link_target": "/usr/bin/python3.14",
+      "size": 19,
+      "links": 1
+    },
+    {
+      "path": "/usr",
+      "exists": true,
+      "uid": 65534,
+      "gid": 65534,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 4096,
+      "links": 12
+    },
+    {
+      "path": "/usr/bin",
+      "exists": true,
+      "uid": 65534,
+      "gid": 65534,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 36864,
+      "links": 2
+    },
+    {
+      "path": "/usr/bin/python3.14",
+      "exists": true,
+      "uid": 65534,
+      "gid": 65534,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 7477160,
+      "links": 1
+    },
+    {
+      "path": "/usr/lib/python3.14/lib-dynload/_sqlite3.cpython-314-x86_64-linux-gnu.so",
+      "exists": true,
+      "uid": 65534,
+      "gid": 65534,
+      "mode": "0o644",
+      "symlink": false,
+      "link_target": null,
+      "size": 149216,
+      "links": 1
+    },
+    {
+      "path": "/home/grace/projects/pq-did/native/.deps/install/lib",
+      "exists": true,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 4096,
+      "links": 4
+    },
+    {
+      "path": "/home/grace/projects/pq-did/native/.deps/install/lib/liboqs.so",
+      "exists": true,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o777",
+      "symlink": true,
+      "link_target": "liboqs.so.9",
+      "size": 11,
+      "links": 1
+    },
+    {
+      "path": "/home/grace/projects/pq-did/.tools/uv",
+      "exists": true,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 49491696,
+      "links": 1
+    },
+    {
+      "path": "/opt",
+      "exists": true,
+      "uid": 65534,
+      "gid": 65534,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 4096,
+      "links": 2
+    },
+    {
+      "path": "/etc",
+      "exists": true,
+      "uid": 65534,
+      "gid": 65534,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 4096,
+      "links": 90
+    },
+    {
+      "path": "/var/lib",
+      "exists": true,
+      "uid": 65534,
+      "gid": 65534,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 4096,
+      "links": 32
+    },
+    {
+      "path": "/run",
+      "exists": true,
+      "uid": 65534,
+      "gid": 65534,
+      "mode": "0o755",
+      "symlink": false,
+      "link_target": null,
+      "size": 680,
+      "links": 24
+    },
+    {
+      "path": "/opt/pqiso",
+      "exists": false
+    },
+    {
+      "path": "/etc/pqiso",
+      "exists": false
+    },
+    {
+      "path": "/var/lib/pqiso",
+      "exists": false
+    },
+    {
+      "path": "/run/pqiso",
+      "exists": false
+    },
+    {
+      "path": "/sys/fs/cgroup/cgroup.controllers",
+      "exists": true,
+      "uid": 65534,
+      "gid": 65534,
+      "mode": "0o444",
+      "symlink": false,
+      "link_target": null,
+      "size": 0,
+      "links": 1
+    }
+  ],
+  "editable_and_environment_paths": {
+    "_pqdid.pth": {
+      "metadata": {
+        "path": "/home/grace/projects/pq-did/.venv/lib/python3.14/site-packages/_pqdid.pth",
+        "exists": true,
+        "uid": 1000,
+        "gid": 1000,
+        "mode": "0o644",
+        "symlink": false,
+        "link_target": null,
+        "size": 31,
+        "links": 2
+      },
+      "text": "/home/grace/projects/pq-did/src"
+    },
+    "_virtualenv.pth": {
+      "metadata": {
+        "path": "/home/grace/projects/pq-did/.venv/lib/python3.14/site-packages/_virtualenv.pth",
+        "exists": true,
+        "uid": 1000,
+        "gid": 1000,
+        "mode": "0o644",
+        "symlink": false,
+        "link_target": null,
+        "size": 18,
+        "links": 1
+      },
+      "text": "import _virtualenv"
+    },
+    "pqdid-0.0.1.dist-info/direct_url.json": {
+      "metadata": {
+        "path": "/home/grace/projects/pq-did/.venv/lib/python3.14/site-packages/pqdid-0.0.1.dist-info/direct_url.json",
+        "exists": true,
+        "uid": 1000,
+        "gid": 1000,
+        "mode": "0o644",
+        "symlink": false,
+        "link_target": null,
+        "size": 73,
+        "links": 1
+      },
+      "text": "{\"url\":\"file:///home/grace/projects/pq-did\",\"dir_info\":{\"editable\":true}}"
+    }
+  },
+  "liboqs_python_metadata_dependencies": [
+    "Name: liboqs-python",
+    "Version: 0.16.0",
+    "Requires-Dist: tomli>=2; python_version < '3.11'",
+    "Requires-Dist: isort==5.13.2; extra == 'dev'",
+    "Requires-Dist: nose2==0.15.1; extra == 'dev'",
+    "Requires-Dist: pre-commit==4.1.0; extra == 'dev'",
+    "Requires-Dist: pyasn1-alt-modules==0.4.6; extra == 'dev'",
+    "Requires-Dist: pyasn1==0.6.3; extra == 'dev'",
+    "Requires-Dist: ruff==0.9.4; extra == 'dev'",
+    "Requires-Dist: mypy==1.14.1; extra == 'lint'",
+    "Requires-Dist: types-pytz==2024.2.0.20241221; extra == 'lint'"
+  ],
+  "proposed_account_collisions": {
+    "pqiso-o-m": null,
+    "pqiso-o-i": null,
+    "pqiso-o-va": null,
+    "pqiso-o-vb": null,
+    "pqiso-w-m": null,
+    "pqiso-w-i": null,
+    "pqiso-w-va": null,
+    "pqiso-w-vb": null,
+    "pqiso-admin": null,
+    "pqiso-observer": null,
+    "pqiso-rec-a": null,
+    "pqiso-rec-b": null,
+    "pqiso-denied": null
+  },
+  "system_manager": {
+    "command": [
+      "systemctl",
+      "show",
+      "--no-pager",
+      "--property=Version,Virtualization,ControlGroup"
+    ],
+    "exit_code": 0,
+    "stdout": "Version=259.5-0ubuntu3.4\nVirtualization=wsl\nControlGroup=",
+    "stderr": ""
+  },
+  "user_manager": {
+    "command": [
+      "systemctl",
+      "--user",
+      "show",
+      "--no-pager",
+      "--property=Version,ControlGroup"
+    ],
+    "exit_code": 0,
+    "stdout": "Version=259.5-0ubuntu3.4\nControlGroup=/user.slice/user-1000.slice/user@1000.service",
+    "stderr": ""
+  },
+  "systemd_build": {
+    "command": [
+      "systemctl",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "systemd 259 (259.5-0ubuntu3.4)\n+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE",
+    "stderr": ""
+  },
+  "filesystem": {
+    "command": [
+      "findmnt",
+      "-T",
+      "/home/grace/projects/pq-did",
+      "-o",
+      "TARGET,SOURCE,FSTYPE,OPTIONS",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n   \"filesystems\": [\n      {\n         \"target\": \"/home/grace/projects/pq-did\",\n         \"source\": \"/dev/sdd[/home/grace/projects/pq-did]\",\n         \"fstype\": \"ext4\",\n         \"options\": \"ro,nosuid,relatime,discard,errors=remount-ro,data=ordered\"\n      }\n   ]\n}",
+    "stderr": ""
+  },
+  "filesystem_available_bytes": 1014211272704,
+  "cgroup_controllers": "cpuset cpu io memory hugetlb pids rdma",
+  "interpreter_linkage": {
+    "command": [
+      "ldd",
+      "/usr/bin/python3.14"
+    ],
+    "exit_code": 0,
+    "stdout": "linux-vdso.so.1 (0x00007f5b94af9000)\n\tlibm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x00007f5b949c5000)\n\tlibz.so.1 => /usr/lib/x86_64-linux-gnu/libz.so.1 (0x00007f5b949a7000)\n\tlibexpat.so.1 => /usr/lib/x86_64-linux-gnu/libexpat.so.1 (0x00007f5b9497a000)\n\tlibc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x00007f5b94600000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f5b94afb000)",
+    "stderr": ""
+  },
+  "sqlite_linkage": {
+    "command": [
+      "ldd",
+      "/usr/lib/python3.14/lib-dynload/_sqlite3.cpython-314-x86_64-linux-gnu.so"
+    ],
+    "exit_code": 0,
+    "stdout": "linux-vdso.so.1 (0x00007ac56b43e000)\n\tlibsqlite3.so.0 => /usr/lib/x86_64-linux-gnu/libsqlite3.so.0 (0x00007ac56b298000)\n\tlibc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x00007ac56b000000)\n\tlibm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x00007ac56aeda000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007ac56b440000)",
+    "stderr": ""
+  },
+  "native_linkage": {
+    "command": [
+      "ldd",
+      "/home/grace/projects/pq-did/native/.deps/install/lib/liboqs.so"
+    ],
+    "exit_code": 0,
+    "stdout": "linux-vdso.so.1 (0x0000711ca4def000)\n\tlibc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x0000711ca4a00000)\n\t/lib64/ld-linux-x86-64.so.2 (0x0000711ca4df1000)",
+    "stderr": ""
+  },
+  "uv_version": {
+    "command": [
+      "/home/grace/projects/pq-did/.tools/uv",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "uv 0.12.15 (x86_64-unknown-linux-gnu)",
+    "stderr": ""
+  },
+  "uv_sync_flags_locally_documented": {
+    "--offline": true,
+    "--frozen": true,
+    "--link-mode": true,
+    "--no-dev": true,
+    "--python": true,
+    "--no-python-downloads": true,
+    "--project": true
+  },
+  "approved_public_file_sha256": {
+    "docs/manuscript/PQ_DID__Implementation.pdf": "d17ca0a20b319b88e959467cae92d91d619973f84384710ecbf960a3b850aeca",
+    ".tools/uv": "5d59bc45431db192c0a49a01c517041c3bd8778adb3fbc5195aaa025eec19e23",
+    "native/.deps/install/lib/liboqs.so": "36a8ca7ac0827079ca0436dfaa69f166d691468aacffc95bb5e8d004e522c25d",
+    "uv.lock": "9f07286a47e7f2a96f78d8c9855c60b7914c62d10dbf882342089bf5c77fcb5a",
+    "pyproject.toml": "c26788eb858d19e6d9c1c1c835750a2750168de7bbbbcc5dd0dec7c5bec145c6"
+  },
+  "existing_pilot_endpoints": "Temporary fixture role-ipc/s or t; prior cleanup complete",
+  "existing_owner_tmp_empty": true,
+  "private_store_or_credential_contents_read": false,
+  "accounts_services_permissions_changed": false,
+  "persistent_databases_opened": 0,
+  "functional_tests_run": 0,
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "tool_sandbox_contrast": {
+    "uid_gid": [
+      1000,
+      1000
+    ],
+    "supplementary_groups_remapped": "65534 repeated",
+    "root_path_owner_mapped": "nobody:nogroup",
+    "not_used_for_host_DAC_design": true
+  }
+}

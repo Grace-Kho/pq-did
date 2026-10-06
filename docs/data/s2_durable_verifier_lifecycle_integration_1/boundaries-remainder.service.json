@@ -1,0 +1,50 @@
+{
+  "command": [
+    "/home/grace/projects/pq-did/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "-x",
+    "-p",
+    "no:cacheprovider",
+    "tests/integration/test_durable_verification.py::test_boundary_concurrent_submissions",
+    "tests/integration/test_durable_verification.py::test_boundary_consumption_interruption",
+    "tests/integration/test_durable_verification.py::test_boundary_writer_replaced_during_proof",
+    "tests/integration/test_durable_verification.py::test_boundary_inconsistent_recovery",
+    "tests/integration/test_durable_verification.py::test_boundary_request_signing_failure",
+    "tests/integration/test_durable_verification.py::test_boundary_stale_manager",
+    "--junitxml=/home/grace/projects/pq-did/docs/data/s2_durable_verifier_lifecycle_integration_1/boundaries-remainder.xml"
+  ],
+  "before": {
+    "memory.max": "268435456",
+    "memory.swap.max": "0",
+    "memory.peak": "9838592",
+    "memory.current": "9838592",
+    "memory.stat": "anon 6610944\nfile 2510848\nkernel 569344\nkernel_stack 0\npagetables 274432\nsec_pagetables 0\npercpu 11544\nsock 0\nvmalloc 12288\nshmem 0\nfile_mapped 0\nfile_dirty 0\nfile_writeback 0\nswapcached 0\nanon_thp 0\nfile_thp 0\nshmem_thp 0\ninactive_anon 6574080\nactive_anon 4096\ninactive_file 2482176\nactive_file 20480\nunevictable 0\nslab_reclaimable 63016\nslab_unreclaimable 200536\nslab 263552\nworkingset_refault_anon 0\nworkingset_refault_file 0\nworkingset_activate_anon 0\nworkingset_activate_file 0\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 0\npgsteal 0\npswpin 0\npswpout 0\npgscan_kswapd 0\npgscan_direct 0\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 0\npgsteal_direct 0\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 2492\npgmajfault 12\npgrefill 0\npgactivate 5\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nthp_fault_alloc 0\nthp_collapse_alloc 0\nthp_swpout 0\nthp_swpout_fallback 0",
+    "memory.swap.peak": "0",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "available": 4641148928,
+  "allowed_cpus": [
+    0,
+    1
+  ],
+  "network": "private-no-routes",
+  "after": {
+    "memory.max": "268435456",
+    "memory.swap.max": "0",
+    "memory.peak": "70217728",
+    "memory.current": "22888448",
+    "memory.stat": "anon 6619136\nfile 15400960\nkernel 540672\nkernel_stack 0\npagetables 90112\nsec_pagetables 0\npercpu 11544\nsock 0\nvmalloc 12288\nshmem 0\nfile_mapped 0\nfile_dirty 49152\nfile_writeback 0\nswapcached 0\nanon_thp 0\nfile_thp 0\nshmem_thp 0\ninactive_anon 6610944\nactive_anon 4096\ninactive_file 15097856\nactive_file 360448\nunevictable 0\nslab_reclaimable 244272\nslab_unreclaimable 180784\nslab 425056\nworkingset_refault_anon 0\nworkingset_refault_file 0\nworkingset_activate_anon 0\nworkingset_activate_file 0\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 0\npgsteal 0\npswpin 0\npswpout 0\npgscan_kswapd 0\npgscan_direct 0\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 0\npgsteal_direct 0\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 15458\npgmajfault 30\npgrefill 0\npgactivate 306\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nthp_fault_alloc 0\nthp_collapse_alloc 0\nthp_swpout 0\nthp_swpout_fallback 0",
+    "memory.swap.peak": "0",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "seconds": 4.41481245495379,
+  "exit_code": 1,
+  "resource_guard_exit_code": 1,
+  "resource_guard_passed": false
+}

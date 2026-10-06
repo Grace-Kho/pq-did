@@ -1,0 +1,87 @@
+{
+  "id": "PQDID-AURORA-AUTH-DRAFT1",
+  "version": 1,
+  "adopted": false,
+  "prototype_admitted": false,
+  "decision": "AURORA-BRIDGE-001 must be resolved first",
+  "implementation_commit_target": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+  "immutable_file_and_submodule_pin_verified": false,
+  "variant": "non-holographic Aurora R1CS; native ZK; binary additive domains; BCS-style wrapper",
+  "field": {
+    "degree": 192,
+    "polynomial": "monic irreducible degree 192 with least unsigned coefficient bitmask",
+    "polynomial_certificate_materialised": false,
+    "encoding": "24-byte little-endian coefficient bitmask"
+  },
+  "hash": {
+    "name": "BLAKE2b-512",
+    "digest_bytes": 64,
+    "key_bytes": 0,
+    "fanout": 1,
+    "depth": 1,
+    "salt_parameter": "zero",
+    "personalisation_parameter": "zero",
+    "application_tags": "Fr bytes"
+  },
+  "leaf": {
+    "field_elements": 1,
+    "random_bytes": 128,
+    "path_pruning": false,
+    "column_batching": false
+  },
+  "zero_knowledge": "Required; exact joint exposure accounting and source correspondence unresolved",
+  "rho": "1/8",
+  "grinding_bits": 0,
+  "heuristic_FRI": false,
+  "FRI_localisation_dimension": 1,
+  "unknowns": [
+    "m",
+    "n",
+    "k",
+    "s",
+    "b",
+    "a",
+    "a_prime",
+    "a_F",
+    "q_F",
+    "d",
+    "FRI_final_degree",
+    "ordered_oracle_register",
+    "query_closure",
+    "epsilon_rbr",
+    "kappa_rbr",
+    "z_IOP",
+    "Q_red",
+    "T_red",
+    "M_red"
+  ],
+  "wire": {
+    "magic": "PQDAUR01",
+    "version": 1,
+    "kind": 1,
+    "flags": 0,
+    "header_bytes": 208,
+    "proof_limit_bytes_proposed": 10485760,
+    "fixed_integer_endian": "big",
+    "field_bytes": 24,
+    "length_formula": "208+12R+64C+24M_dir+4+sum_slots(152+64h_j)",
+    "query_indices": "verifier-derived, never supplied by prover",
+    "witness_in_wire": false
+  },
+  "relation": {
+    "reference": "src/pqdid/relations.py:auth",
+    "private_reference": "auth_private",
+    "private_bytes": 5329,
+    "private_bits": 42632,
+    "external_public_checks": [
+      "PubOK",
+      "Ppub"
+    ],
+    "statement_codec": "encode_auth_statement",
+    "maximum_statement_bytes": 4294967295,
+    "changed_credential_encodings": false,
+    "changed_sampler_caps": false
+  },
+  "security_claim": null,
+  "new_measurements": false
+}

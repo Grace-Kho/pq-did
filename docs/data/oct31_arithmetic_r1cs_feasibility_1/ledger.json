@@ -1,0 +1,552 @@
+{
+  "jobs": [
+    {
+      "name": "source-quality",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/arithmetic_r1cs_feasibility_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-arithmetic-r1cs-1-source-quality",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 53151,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26379727,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4108029952,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.5892033099662513,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12791808",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "27947008",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.08144607406575233,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 32583680,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "preflight",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/arithmetic_r1cs_feasibility_1/dispatch.py",
+        "preflight"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-arithmetic-r1cs-1-preflight",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 58204,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26384780,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4096749568,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.41456426098011434,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10903552",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "29126656",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.0809810688951984,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 35880960,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "workload-decision",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/arithmetic_r1cs_feasibility_1/dispatch.py",
+        "Q-01"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-arithmetic-r1cs-1-workload-decision",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 63597,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26390173,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4106674176,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.3743863489944488,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10588160",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "20320256",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.06070755992550403,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 38682624,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "source-quality-correction",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/arithmetic_r1cs_feasibility_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-arithmetic-r1cs-1-source-quality-correction",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 84534,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26411110,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4119240704,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.42289046000223607,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10358784",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "21676032",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.061311020981520414,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 47644672,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "workload-decision-r1",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/arithmetic_r1cs_feasibility_1/dispatch.py",
+        "Q-01-R1"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-arithmetic-r1cs-1-workload-decision-r1",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 89599,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26416175,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4121010176,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.38504827790893614,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10084352",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "19275776",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.04087189503479749,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 35815424,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "source-quality-final",
+      "phase": "tool",
+      "argv": [
+        "--completion",
+        "--",
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/arithmetic_r1cs_feasibility_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-arithmetic-r1cs-1-source-quality-final",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 134887,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26461463,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4129419264,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.3481427599908784,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {},
+      "sampled_tree_rss_peak": 13144064,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "source-quality-final-r1",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/arithmetic_r1cs_feasibility_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-arithmetic-r1cs-1-source-quality-final-r1",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 141302,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26467878,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4117069824,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.3771830330369994,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10362880",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "21839872",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.062399826012551785,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 52121600,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "prepare",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/arithmetic_r1cs_feasibility_1/preservation.py",
+        "prepare"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-arithmetic-r1cs-1-prepare",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 146403,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26472979,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4104638464,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.9500021339626983,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10641408",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "52256768",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.6045337279792875,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 59301888,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "full-audit",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/arithmetic_r1cs_feasibility_1/preservation.py",
+        "full-audit"
+      ],
+      "limit_seconds": 60,
+      "child_seconds": 59,
+      "status": "pass",
+      "unit": "pqdid-arithmetic-r1cs-1-full-audit",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 168945,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26495521,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4101496832,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 4.844210579991341,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10375168",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "46997504",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 4.444964563008398,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 63692800,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "final-readback",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/arithmetic_r1cs_feasibility_1/preservation.py",
+        "readback"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-arithmetic-r1cs-1-final-readback",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 210818,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26537394,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4107591680,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.8339018169790506,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10588160",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "41795584",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.4859008960193023,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 59273216,
+      "artifact_observed_peak_bytes": 58966547
+    }
+  ],
+  "invocations": [
+    {
+      "invocation_id": "ARF1-0001",
+      "case_id": "Q-01",
+      "work_event_reservation": 50000000,
+      "ordinal": 1,
+      "cumulative_invocations": 972,
+      "status": "incomplete",
+      "work_events_charged_upper_bound": 50000000
+    },
+    {
+      "invocation_id": "ARF1-0002",
+      "case_id": "Q-01-R1",
+      "work_event_reservation": 50000000,
+      "ordinal": 2,
+      "cumulative_invocations": 973,
+      "status": "pass",
+      "work_events": 0
+    }
+  ],
+  "builds": [],
+  "bookkeeping": [
+    {
+      "purpose": "Source/ledger reconciliation, exact candidate specification and bounded bookkeeping; conservative operator charge using retained accounting convention",
+      "seconds": 100
+    },
+    {
+      "purpose": "Constraint/no-wrap and complete workload review, documented reporting correction, outcome and preservation preparation; conservative operator charge",
+      "seconds": 40
+    },
+    {
+      "purpose": "Measured exact-unit shutdown, descendant checks and temporary slice-property reversion",
+      "seconds": 0.15079187403898686
+    },
+    {
+      "purpose": "Final inventory, resource accounting, closure seal and readback; conservative six-second charge verified against elapsed finalisation",
+      "seconds": 6
+    }
+  ],
+  "work_events": 77593603,
+  "work_events_reserved": 0
+}

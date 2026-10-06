@@ -1,0 +1,19 @@
+[
+  {
+    "operation": "cred-valid",
+    "image": [
+      1199028135,
+      251653077,
+      4229369170,
+      4043213336,
+      1771174765,
+      2529911296,
+      4157584374,
+      2494469006
+    ],
+    "elf": "artifacts/cred_valid.bin",
+    "elf_sha256": "668dd886b66772593aea42e53d967d61f2e1a8c1e750add482acc0ed09963a09",
+    "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+    "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "status": "inactive; contingent on eight tooling passes and complete preservation",
+  "additional_builds_requested": 1,
+  "build_ceiling_requested": 4,
+  "new_invocations_requested": 0,
+  "reserved_semantic_then_transcript_invocations": 24,
+  "additional_implementation_time_requested": 0,
+  "memory_limits_unchanged": {
+    "native": 1073741824,
+    "audit": 268435456
+  },
+  "artifact_limits_unchanged": {
+    "aggregate": 134217728,
+    "binary_per_file": 33554432,
+    "temporary": 8388608
+  },
+  "commands": [
+    [
+      "cmake",
+      "-S",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/overlay",
+      "-B",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/build",
+      "-G",
+      "Ninja",
+      "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_CXX_FLAGS_RELEASE=-O0 -g0",
+      "-DCMAKE_C_FLAGS_RELEASE=-O0 -g0",
+      "-DPQ_SOURCE=/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/work",
+      "-DPQ_PREFIX=/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/prefix",
+      "-DPQ_HARNESS=/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/overlay/exp2_native.cpp",
+      "-DPQ_SEMANTICS=/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/overlay/semantic_cases.cpp"
+    ],
+    [
+      "cmake",
+      "--build",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/build",
+      "--target",
+      "exp2_native",
+      "exp2_semantics",
+      "--parallel",
+      "1"
+    ]
+  ],
+  "source": "Copy retained compatibility-v1/work and overlay byte-for-byte, including the exact ten-reference patch and semantic harness. No repatch or change of EXP2.",
+  "scratch": "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/scratch",
+  "environment": {
+    "unset": [
+      "CMAKE_PREFIX_PATH",
+      "PKG_CONFIG_PATH",
+      "LD_LIBRARY_PATH"
+    ],
+    "CCACHE_DISABLE": "1",
+    "TMPDIR": "fixed scratch path above"
+  },
+  "admission": "One 55-second build, final 30 seconds retained. Admit 24 native cases only after full build and if actual remaining balance supports their 48-second reservation plus finalisation. Stop first unexpected failure.",
+  "new_policy_entry_requires_build_approval": "next-native/build-4 -> (1073741824 bytes, 55 seconds); native-cases -> (1073741824 bytes, 50 seconds)",
+  "evidence_reservation": "Final measured headroom and any necessary reservation amendment will be consolidated after this audit; no limit changed here."
+}

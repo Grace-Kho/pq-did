@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "query_check": "Both exact service queries passed required-property assertions before cleanup assertion failed; no state inferred from MainPID alone.",
+  "units": [
+    "pqdid-auroranative-compat-preflight.service",
+    "pqdid-auroranative-compat-build-3.service"
+  ],
+  "observed_properties": {
+    "LoadState": "not-found",
+    "ActiveState": "inactive",
+    "SubState": "dead",
+    "MainPID": "0",
+    "ControlGroup": ""
+  },
+  "expected_cgroup_parent": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice",
+  "both_cgroups_absent": true,
+  "initial_cleanup_check": {
+    "exit_code": 1,
+    "diagnostic": "AssertionError: not any((r / tmp).iterdir())",
+    "cause": "Killed compiler left one zero-byte assembler temporary; no workload remained",
+    "native_invocations": 0
+  },
+  "cleanup": "Moved only the newly created empty compiler temporary into retained artifact inventory; no bytes or historical evidence removed",
+  "retained_temporary": {
+    "from": "docs/data/s3_aurora_native_transcript_pilot_1/compatibility-1/tmp/ccfX4fUh.s",
+    "to": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/retained-temporary/ccfX4fUh.s",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mode": 33152
+  },
+  "temporary_directory_empty": true
+}

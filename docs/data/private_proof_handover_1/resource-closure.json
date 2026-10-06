@@ -1,0 +1,64 @@
+{
+  "package": "PRIVATE-PROOF-HANDOVER-1",
+  "status": "complete-packaging-only",
+  "package_charged_seconds": 299.98448256077245,
+  "prior_failed_consumption_seconds": 191.87227747915313,
+  "continuation_charged_seconds": 108.11220508161932,
+  "implementation_aggregate_charged_seconds": 5263.382030437819,
+  "implementation_remaining_seconds": 810.6179695621813,
+  "workstream_total_charged_seconds": 3056.609644357957,
+  "workstream_remaining_seconds": 443.3903556420428,
+  "implementation_ceiling_seconds": 6074,
+  "workstream_cap_seconds": 3500,
+  "guarded_job_seconds": 9.387655026745051,
+  "bookkeeping_seconds": 290.5968275340274,
+  "cumulative_invocations": 1140,
+  "remaining_invocations": 6,
+  "new_invocations": 0,
+  "cumulative_builds": 10,
+  "new_builds": 0,
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1
+  },
+  "proofs": 0,
+  "phase_memory_peaks_bytes": {
+    "tool": 66174976,
+    "audit": 49307648
+  },
+  "memory_metric": "cgroup-v2 worker and descendants/cache/kernel; every worker capped at 256 MiB",
+  "historical_per_file_breach": {
+    "status": "incomplete-resource-stop",
+    "archive": "/home/grace/projects/pq-did/docs/data/private_proof_handover_1/binius64-g0-handover-v1.tar.xz",
+    "bytes": 1065684,
+    "sha256": "17a0ac8fd32038e6530254e4cd27610c8a76e76aba53f446986e435845262f8e",
+    "per_file_limit": 1048576,
+    "exceedance_bytes": 17108,
+    "readback_passed": false,
+    "archive_completeness": "Unverified; creation stopped before the member/hash readback. Do not present as upload-ready.",
+    "automatic_retry": false,
+    "classification": "evidence; unchanged",
+    "integrity_of_prior_sources": "Pre-edit predecessor seal checks and pinned-source byte/blob checks passed; full final audit not launched",
+    "guard_job": "jobs/package.json"
+  },
+  "prospective_archive_exceptions": {
+    "docs/data/private_proof_handover_1/binius64-g0-handover-v1.tar.xz": 2097152,
+    "docs/data/private_proof_handover_1/binius64-g0-handover-v2.tar.xz": 2097152
+  },
+  "evidence_classification_unchanged": true,
+  "consumption_refunded": 0,
+  "new_resource_breaches": 0,
+  "time_reserve_seconds": 300,
+  "evidence_reserve_bytes": 2097152,
+  "analysis_balance_unchanged_seconds": 80.91750274339225,
+  "isolation_unchanged": true,
+  "storage": {
+    "new_evidence_bytes": 1481704,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 33750972,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "shared_evidence_remaining_bytes": 7743389,
+  "cumulative_evidence_remaining_bytes": 8192068
+}

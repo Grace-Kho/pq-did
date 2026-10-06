@@ -1,0 +1,63 @@
+{
+  "diagnostics": [
+    {
+      "argv": [
+        "/usr/lib/wsl/lib/nvidia-smi",
+        "--query-gpu=name,driver_version,memory.total,memory.free",
+        "--format=csv,noheader,nounits"
+      ],
+      "exit_code": 0,
+      "stdout": "NVIDIA GeForce RTX 5060 Ti, 616.92, 8151, 6745\n",
+      "stderr": "",
+      "seconds": 0.10086965700611472
+    },
+    {
+      "argv": [
+        "/mnt/c/windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-Command",
+        "@{Memory=(Get-CimInstance Win32_OperatingSystem | Select-Object TotalVisibleMemorySize,FreePhysicalMemory);GPU=(Get-CimInstance Win32_VideoController | Select-Object Name,DriverVersion,AdapterRAM)} | ConvertTo-Json -Compress"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"Memory\":{\"TotalVisibleMemorySize\":16389632,\"FreePhysicalMemory\":2494772},\"GPU\":[{\"Name\":\"NVIDIA GeForce RTX 5060 Ti\",\"DriverVersion\":\"32.0.16.1692\",\"AdapterRAM\":4293918720},{\"Name\":\"Intel(R) UHD Graphics\",\"DriverVersion\":\"32.0.101.7079\",\"AdapterRAM\":2147479552}]}\r\n",
+      "stderr": "",
+      "seconds": 0.8912915159016848
+    }
+  ],
+  "paths": {
+    "/dev/dxg": {
+      "exists": true,
+      "entries": null
+    },
+    "/dev/dri": {
+      "exists": false,
+      "entries": null
+    },
+    "/usr/lib/wsl/lib/libdxcore.so": {
+      "exists": true,
+      "entries": null
+    },
+    "/usr/lib/wsl/lib/libd3d12.so": {
+      "exists": true,
+      "entries": null
+    },
+    "/usr/share/vulkan/icd.d": {
+      "exists": true,
+      "entries": [
+        "asahi_icd.json",
+        "gfxstream_vk_icd.json",
+        "intel_hasvk_icd.json",
+        "intel_icd.json",
+        "lvp_icd.json",
+        "nouveau_icd.json",
+        "radeon_icd.json",
+        "virtio_icd.json"
+      ]
+    }
+  },
+  "timestamp_utc": "2026-10-03T07:05:32Z",
+  "GPU_workloads": 0,
+  "Dawn_adapter_demonstrated": false,
+  "ru_maxrss_bytes": 23310336
+}

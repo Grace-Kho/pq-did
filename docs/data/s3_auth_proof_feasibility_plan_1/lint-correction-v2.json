@@ -1,0 +1,27 @@
+{
+  "kind": "source-reviewed-lint-only-correction",
+  "cause": "Initial 102-character report line; first corrected follow-up found two new long lines in failure-disclosure prose (118/132 characters). Formatting only; no resource events.",
+  "correction": "Split the three report-text sentences without changing their content; preserve both failed attempts and both source snapshots. One final named lint check. All time charged to analysis.",
+  "retained_sha256": {
+    "quality.json": "4ef4322458145b59ecd941d96ef6c4f8446af19d53505d87ff767aaf084dfa9a",
+    "quality.log": "d48ec1ca6c772c42c884585cb3638b398443e8ebbddc75a9fb2236d19f1d1bef",
+    "quality.service.json": "0c817ae77f5a1c6363466a1108f9a9a17388311521b0179f436e6a6f332aa644",
+    "STOP.json": "2973cf50de76919f60b82073cf89d02eefb9575ef1f9ea9b567019739f39e03c",
+    "close.py.before-lint-correction.txt": "fc394618696b038a1a3d915c43c8eb833ef1ec7b7ddc0544fa4bc874bad8b81c",
+    "run_checks.py.before-lint-correction.txt": "26c1c38b2b84b65d24c20e289e9522742082efa87ca33692ae15495143b8e1c8",
+    "quality-corrected.json": "78adcd6466018c0bf943725459533b870a9788a5a7b42fe52bbaf0ae66d0e5c5",
+    "quality-corrected.log": "9f397557c146121562bcc097de45e5e9b93e8e32bddfd04b520d07dca5946dc1",
+    "quality-corrected.service.json": "89da6424c976558193f617c220da8858aa33ffbb85792aff8fbbd62a037647bf",
+    "STOP-quality-corrected.json": "7792f7d37bfcf6086b4479da218692ca269225851d54daeeb4dc55c24eb5a012",
+    "lint-correction.json": "f64b7e828e3697700ea5a553269b7a21b334638e31071298b9ace79c280b90c4",
+    "close.py.before-second-lint-correction.txt": "c703567d4e87c7dacf6b6005983259a59467d283e43dcace9914be2dd192f223",
+    "run_checks.py.before-second-lint-correction.txt": "a59ccc901e7552b15cd7198c33aa5504491a1021dab06ce09826d682d8d938a3"
+  },
+  "allowed_remaining_commands": [
+    "final-correction-format",
+    "quality-final",
+    "format",
+    "prepare",
+    "full-audit"
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "operator_conservative_seconds": 40,
+  "diagnostics": [
+    {
+      "argv": [
+        "uname",
+        "-rmo"
+      ],
+      "exit_code": 0,
+      "seconds": 0.002200671937316656
+    },
+    {
+      "argv": [
+        "free",
+        "-b"
+      ],
+      "exit_code": 0,
+      "seconds": 0.0033458368852734566
+    },
+    {
+      "argv": [
+        "df",
+        "-B1",
+        "--output=size,used,avail,target",
+        "/home/grace/projects/pq-did",
+        "/tmp",
+        "/mnt/c"
+      ],
+      "exit_code": 0,
+      "seconds": 0.0033126671332865953
+    },
+    {
+      "argv": [
+        "lscpu"
+      ],
+      "exit_code": 0,
+      "seconds": 0.017594645963981748
+    },
+    {
+      "argv": [
+        "g++-15",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.004081093007698655
+    },
+    {
+      "argv": [
+        "cmake",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.03989690402522683
+    },
+    {
+      "argv": [
+        "ninja",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.0021317191421985626
+    },
+    {
+      "argv": [
+        "pkg-config",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.0020378800109028816
+    },
+    {
+      "argv": [
+        "dpkg-query",
+        "-W",
+        "-f=${Package} ${Version} ${Architecture} ${db:Status-Status}\\n",
+        "cmake",
+        "ninja-build",
+        "g++-15",
+        "libgmp*",
+        "libssl*",
+        "libboost*",
+        "zlib1g*",
+        "libprotobuf*",
+        "protobuf-compiler",
+        "wabt",
+        "libvulkan*",
+        "mesa-vulkan-drivers",
+        "vulkan-tools",
+        "*dawn*"
+      ],
+      "exit_code": 1,
+      "seconds": 0.006906663067638874
+    },
+    {
+      "argv": [
+        "/usr/lib/wsl/lib/nvidia-smi",
+        "--query-gpu=name,driver_version,memory.total,memory.free",
+        "--format=csv,noheader,nounits"
+      ],
+      "exit_code": 255,
+      "seconds": 0.01980139408260584
+    },
+    {
+      "argv": [
+        "vulkaninfo",
+        "--summary"
+      ],
+      "status": "not-installed",
+      "seconds": 0.008417411940172315
+    },
+    {
+      "argv": [
+        "/mnt/c/windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-Command",
+        "Get-CimInstance Win32_OperatingSystem | Select-Object TotalVisibleMemorySize,FreePhysicalMemory | ConvertTo-Json -Compress"
+      ],
+      "exit_code": 1,
+      "seconds": 0.007005635881796479
+    },
+    {
+      "argv": [
+        "/usr/lib/wsl/lib/nvidia-smi",
+        "--query-gpu=name,driver_version,memory.total,memory.free",
+        "--format=csv,noheader,nounits"
+      ],
+      "exit_code": 0,
+      "seconds": 0.10086965700611472
+    },
+    {
+      "argv": [
+        "/mnt/c/windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+        "-NoProfile",
+        "-NonInteractive",
+        "-Command",
+        "@{Memory=(Get-CimInstance Win32_OperatingSystem | Select-Object TotalVisibleMemorySize,FreePhysicalMemory);GPU=(Get-CimInstance Win32_VideoController | Select-Object Name,DriverVersion,AdapterRAM)} | ConvertTo-Json -Compress"
+      ],
+      "exit_code": 0,
+      "seconds": 0.8912915159016848
+    },
+    {
+      "argv": [
+        "apt-cache",
+        "show",
+        "--no-all-versions",
+        "libgmp-dev",
+        "libssl-dev",
+        "libboost-dev",
+        "libboost-log-dev",
+        "libboost-program-options-dev",
+        "libboost-iostreams-dev",
+        "libboost-random-dev",
+        "libboost-exception-dev",
+        "libprotobuf-dev",
+        "protobuf-compiler",
+        "wabt",
+        "libwabt-dev",
+        "nlohmann-json3-dev",
+        "zlib1g-dev",
+        "libvulkan-dev",
+        "python3-jinja2"
+      ],
+      "seconds": 0.18345086905173957,
+      "exit_code": 0
+    },
+    {
+      "operation": "bounded local APT dependency metadata closure, no downloads",
+      "seconds": 4.17577571189031,
+      "packages": 47
+    },
+    {
+      "operation": "static dependency mapping and retained Git blob membership checks",
+      "seconds": 0.004903015913441777
+    }
+  ],
+  "source_inspection": [
+    {
+      "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/README.md",
+      "path": "docs/data/ligetron_dependency_hardware_preflight_1/sources/upstream-README.md",
+      "cap": 49152,
+      "final_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "etag": "\"f07482c9dd97553da73b5ebdf7e06162ef34dcd0b28e45e8e38d0aa4055a575a\"",
+      "status": "retained-text-metadata",
+      "bytes": 12547,
+      "sha256": "e5d2ed70f45ec1ce1289ce753bd745eeb27ee27af4df9b3b46c2839350001201",
+      "seconds": 0.3179717590101063
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/.gitmodules",
+      "path": "docs/data/ligetron_dependency_hardware_preflight_1/sources/upstream-gitmodules.txt",
+      "cap": 2048,
+      "final_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/.gitmodules",
+      "content_type": "text/plain; charset=utf-8",
+      "etag": "\"03f66796a085ab25efac35f9ca68a14eb81d995303c839f42bfba8c9ceee3dc3\"",
+      "status": "retained-text-metadata",
+      "bytes": 74,
+      "sha256": "b013baa562984e9953c1806854d7c1205a0ce9706f8d5f5236e8f3841a4bdd2e",
+      "seconds": 0.30633826996199787
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google/dawn/cec4482eccee45696a7c0019e750c77f101ced04/CMakeLists.txt",
+      "path": "docs/data/ligetron_dependency_hardware_preflight_1/sources/dawn-CMakeLists.txt",
+      "cap": 49152,
+      "final_url": "https://raw.githubusercontent.com/google/dawn/cec4482eccee45696a7c0019e750c77f101ced04/CMakeLists.txt",
+      "content_type": "text/plain; charset=utf-8",
+      "etag": "\"91046d5fb4691bf1bd823adab4a24f36b6fda211c541c33f8ae374c507ed1415\"",
+      "status": "retained-text-metadata",
+      "bytes": 25943,
+      "sha256": "f641304c6cca04164d34c146d42f395f4b3196817867b085d45c6943d64d71db",
+      "seconds": 0.34073169715702534
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google/dawn/cec4482eccee45696a7c0019e750c77f101ced04/DEPS",
+      "path": "docs/data/ligetron_dependency_hardware_preflight_1/sources/dawn-DEPS.txt",
+      "cap": 65536,
+      "final_url": "https://raw.githubusercontent.com/google/dawn/cec4482eccee45696a7c0019e750c77f101ced04/DEPS",
+      "content_type": "text/plain; charset=utf-8",
+      "etag": "\"4c2ac565c27c30691cf47a9d67046e9fe617e65ca031224352624cdf701fb985\"",
+      "status": "retained-text-metadata",
+      "bytes": 26935,
+      "sha256": "699c8a8c7e79ab0c24d46893c203d1606681b3eb7c4f95a907c632cfc50c9387",
+      "seconds": 0.30021080398000777
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google/dawn/cec4482eccee45696a7c0019e750c77f101ced04/third_party/CMakeLists.txt",
+      "path": "docs/data/ligetron_dependency_hardware_preflight_1/sources/dawn-third-party-CMakeLists.txt",
+      "cap": 49152,
+      "final_url": "https://raw.githubusercontent.com/google/dawn/cec4482eccee45696a7c0019e750c77f101ced04/third_party/CMakeLists.txt",
+      "content_type": "text/plain; charset=utf-8",
+      "etag": "\"893cf04ea4fd39a7dafee5e920ca52d1c1e6a2bbee313d4a829e6373c52a2077\"",
+      "status": "retained-text-metadata",
+      "bytes": 18785,
+      "sha256": "75d287e89e10a0331750dbc3615a132f1eed8096275f15aa84e81fe84687079f",
+      "seconds": 0.31588853197172284
+    },
+    {
+      "url": "https://packages.ubuntu.com/resolute/amd64/wabt/filelist",
+      "path": "docs/data/ligetron_dependency_hardware_preflight_1/sources/wabt-package-filelist.html",
+      "cap": 49152,
+      "status": "failed",
+      "error": "<urlopen error [Errno 101] Network is unreachable>",
+      "seconds": 5.341931511182338
+    },
+    {
+      "url": "https://api.github.com/repos/WebAssembly/wabt/git/ref/tags/1.0.36",
+      "path": "docs/data/ligetron_dependency_hardware_preflight_1/sources/wabt-tag.json",
+      "cap": 4096,
+      "final_url": "https://api.github.com/repos/WebAssembly/wabt/git/ref/tags/1.0.36",
+      "content_type": "application/json; charset=utf-8",
+      "etag": "W/\"a0d743e854c2f19544e6ef62a09d9627a0ec92080eb14bc1a383697fac46424a\"",
+      "status": "retained-text-metadata",
+      "bytes": 341,
+      "sha256": "741facecfa8587a05b8bfd18f14367f00925c3dac1424f257d83cfcb48b4e2a7",
+      "seconds": 0.6852451509330422
+    },
+    {
+      "url": "https://raw.githubusercontent.com/WebAssembly/wabt/3e826ecde1adfba5f88d10d361131405637e65a3/CMakeLists.txt",
+      "path": "docs/data/ligetron_dependency_hardware_preflight_1/sources/wabt-CMakeLists.txt",
+      "cap": 49152,
+      "final_url": "https://raw.githubusercontent.com/WebAssembly/wabt/3e826ecde1adfba5f88d10d361131405637e65a3/CMakeLists.txt",
+      "content_type": "text/plain; charset=utf-8",
+      "etag": "\"3442b29e8d5513379c137c939c8813610c36e8cb4ffd01e9d83d145895d46df9\"",
+      "status": "retained-text-metadata",
+      "bytes": 27195,
+      "sha256": "e44cf6e9b77bd51ac0205e69e214f5da0cd7d4c4f1a60a4aae3aa899852ee3bd",
+      "seconds": 0.28354709898121655
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google/dawn/cec4482eccee45696a7c0019e750c77f101ced04/src/dawn/native/CMakeLists.txt",
+      "path": "docs/data/ligetron_dependency_hardware_preflight_1/sources/dawn-native-CMakeLists.txt",
+      "cap": 98304,
+      "final_url": "https://raw.githubusercontent.com/google/dawn/cec4482eccee45696a7c0019e750c77f101ced04/src/dawn/native/CMakeLists.txt",
+      "content_type": "text/plain; charset=utf-8",
+      "etag": "\"24e0faa074d304e4b86fd812fed8572cfed92ab18ff8b6ebe8dd76e8fc3ec1d5\"",
+      "status": "retained-text-metadata",
+      "bytes": 31746,
+      "sha256": "1a12eee30f65f574496bbcacd9be3dc355c8c9728375498a7597b268c1f62b7a",
+      "seconds": 0.308131136931479
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google/dawn/cec4482eccee45696a7c0019e750c77f101ced04/src/dawn/partition_alloc/CMakeLists.txt",
+      "path": "docs/data/ligetron_dependency_hardware_preflight_1/sources/dawn-partition-alloc-CMakeLists.txt",
+      "cap": 32768,
+      "final_url": "https://raw.githubusercontent.com/google/dawn/cec4482eccee45696a7c0019e750c77f101ced04/src/dawn/partition_alloc/CMakeLists.txt",
+      "content_type": "text/plain; charset=utf-8",
+      "etag": "\"5250f8d292764cf3bf53b9f01e29f17a3def054cad35d381d206b7f09d032811\"",
+      "status": "retained-text-metadata",
+      "bytes": 1867,
+      "sha256": "171fb0e4b9cca451a1cae844742748a95568a1c69bb5f373c5ec0b1739f66822",
+      "seconds": 0.3031223590951413
+    }
+  ],
+  "functional_invocations": 0,
+  "builds": 0,
+  "proofs": 0
+}

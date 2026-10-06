@@ -1,0 +1,33 @@
+{
+  "invocation_id": "M1-0392",
+  "case_id": "N-14",
+  "ordinal": 392,
+  "cumulative_invocations": 840,
+  "status": "pass",
+  "result": {
+    "id": "N-14",
+    "command": [
+      "/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/build/aurora_masking_native",
+      "14"
+    ],
+    "exit_code": 0,
+    "seconds": 0.001237165997736156,
+    "stdout": "OBS expected-rejection coin-count\nPASS N-14\n",
+    "stderr": "",
+    "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+    "expected_path": "experiments/aurora_masking_milestone_1/overlay/masking_native.cpp",
+    "expected_sha256": "ab3c66696547b4a221bc0b3a7922e49adb09dcfbce7d0425710e2ba698109b94",
+    "private_witness": false,
+    "proof_attempt": false,
+    "comparison": {
+      "independent_schoolbook_polynomial_assertions": true,
+      "oracle": "overlay/masking_native.cpp: add/mul/divrem/at/interpolate",
+      "finite_public_fixture_only": true
+    },
+    "actual_calls": [
+      "combined_LDT_virtual_oracle::set_random_coefficients rejection"
+    ],
+    "status": "pass"
+  },
+  "seconds": 0.002401686040684581
+}

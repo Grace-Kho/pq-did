@@ -1,0 +1,14 @@
+{
+  "invocation_id": "KYCM1-0038",
+  "case_id": "H-14",
+  "work_event_reservation": 0,
+  "ordinal": 38,
+  "cumulative_invocations": 1129,
+  "status": "pass",
+  "details": {
+    "lowered_limits_preserved": true
+  },
+  "seconds": 0.4546209089457989,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

@@ -1,0 +1,7 @@
+{
+  "outcome": {
+    "expected_rejection": "artifact per-file limit",
+    "synthetic_size_only": 33554433
+  },
+  "expected_failure_fixture": true
+}

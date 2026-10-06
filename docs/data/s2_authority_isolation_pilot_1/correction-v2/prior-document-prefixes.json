@@ -1,0 +1,18 @@
+{
+  "docs/stage2_authority_isolation_pilot.md": {
+    "bytes": 22910,
+    "sha256": "ac02bb69eebcf013595e919dcb0587a202cc8a51e8bb86ad900f6f5c900d7f9a"
+  },
+  "docs/status.md": {
+    "bytes": 88817,
+    "sha256": "848e6ecdaa1b1023f99b7d1f94ac23839bf434b1a48c70f6ce022950c8342cad"
+  },
+  "docs/traceability.md": {
+    "bytes": 137777,
+    "sha256": "f86e224ff9c84e8613e156fe3172a444a04911a4995bc3e4534d3f5ff11cad29"
+  },
+  "docs/spec_issues.md": {
+    "bytes": 96317,
+    "sha256": "a25b817dd718d0c741c9a81da917c280511910d1a986b02e532668e72d172700"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PQ-DID: verify environment",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["scripts/verify_environment.py"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "PQ-DID: smoke tests",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["-m", "pytest", "tests/smoke", "-q"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "group": {"kind": "test", "isDefault": true},
+      "problemMatcher": []
+    },
+    {
+      "label": "PQ-DID: native build (2 jobs)",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["scripts/build_native.py"],
+      "options": {"cwd": "${workspaceFolder}", "env": {"CMAKE_BUILD_PARALLEL_LEVEL": "2"}},
+      "group": {"kind": "build", "isDefault": true},
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "PQ-DID: lint",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/ruff",
+      "args": ["check", "."],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "PQ-DID: check formatting",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/ruff",
+      "args": ["format", "--check", "."],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    }
+  ]
+}

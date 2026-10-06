@@ -1,0 +1,188 @@
+{
+  "public_commit": "4b1cdef1bfdf4497fb3e38170db4541fba3f6c12",
+  "upstream_version": "v1.7.0",
+  "snapshot_is_complete_checkout": false,
+  "snapshot_is_buildable": false,
+  "source_files": [
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 9733,
+      "sha256": "054204a3489c9034236e071813c095cca3b2da5d2c396ed574fb2870049962a8",
+      "computed_git_blob_sha1": "b9bf720e5be836bc7c0c79036ecde1de4bc32895",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/CMakeLists.txt",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "RELEASE.json",
+      "bytes": 236,
+      "sha256": "e3f6f92b65ef317d8ae09cf1ae75756727a0b0e7d5d12e306ede3b560108a467",
+      "computed_git_blob_sha1": "a224aad07db262501d60d334b0324d4dfa6f018c",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/RELEASE.json",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/params.hpp",
+      "bytes": 1523,
+      "sha256": "d7d9bf73a37509bdbabf3ea468359ee2eef110b501cc3e2c983a89fdf59b0387",
+      "computed_git_blob_sha1": "39cb5687013bd6d5cd9f20e2be658b1b184e62e9",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/params.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/runtime.hpp",
+      "bytes": 21414,
+      "sha256": "c38528a4964693e05064abb0c655506d6e88f347dbb0c8516223a216e03110e7",
+      "computed_git_blob_sha1": "0ca2c5a1078375f88c43e526e4acd0b3777737be",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/runtime.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/transpiler.hpp",
+      "bytes": 34634,
+      "sha256": "698556941887c802c944e027959892f9dd874047d8b288c2f29794a4b780e162",
+      "computed_git_blob_sha1": "42e6b545999b1fb46c60be144587e3fb546af516",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/transpiler.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/util/csprng.hpp",
+      "bytes": 3685,
+      "sha256": "9aeae589e9f780a776b5a96f0c6689a4923c19c0868cde296c8e0954c09f8319",
+      "computed_git_blob_sha1": "1560fea6897ac65f275836a53a7020957ffe346f",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/util/csprng.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/util/portable_sample.hpp",
+      "bytes": 792,
+      "sha256": "d919c6144188c6a6aa51f3526a0ee3c765c17ba21c31af04724aff954a06184d",
+      "computed_git_blob_sha1": "87b6ea7dcbc6e20a10bee23095c42a13635489d1",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/util/portable_sample.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/zkp/backend/core.hpp",
+      "bytes": 26575,
+      "sha256": "609e1eea96bd2f74c4b8248359d32b09913c11f33a9d0422712645061a60e840",
+      "computed_git_blob_sha1": "0b38bc9e6000b821813b194fea44d44d0b7c13da",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/zkp/backend/core.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/zkp/backend/ligero.hpp",
+      "bytes": 34307,
+      "sha256": "e19cf5196fc0b988112d4443bb7cf93dfc81874bfbe33b715d45420ea6d2b0e3",
+      "computed_git_blob_sha1": "792e3446099368440b1a95711985f79903699091",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/zkp/backend/ligero.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/zkp/backend/witness_manager.hpp",
+      "bytes": 18202,
+      "sha256": "ca9596ebf287ceb9ba74b21cdc94b849f32324ea93829b56f743794de673fc7e",
+      "computed_git_blob_sha1": "9f4eda40ed7eb6438d4f4144facc034e76df5ad8",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/zkp/backend/witness_manager.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/zkp/common.hpp",
+      "bytes": 2303,
+      "sha256": "58fa6de11cdf0f6eded9390468100e8f170db2304faaf6170ca93c9955c9249b",
+      "computed_git_blob_sha1": "89fea1db374d0d141c043336a84612da8cfb89e5",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/zkp/common.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/zkp/finite_field_gmp.hpp",
+      "bytes": 13973,
+      "sha256": "5c12605ef458963a36bae6f0cb74110ffc4cdb21feca3bc709d2c23ef5b9fd01",
+      "computed_git_blob_sha1": "4258152ad3f534600d2434c0fe30120dffed08bd",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/zkp/finite_field_gmp.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/zkp/hash.hpp",
+      "bytes": 10301,
+      "sha256": "252aed55a7143bdfcf3a60a9257273dc5c76ce1c753ab8cab135f021f5506baf",
+      "computed_git_blob_sha1": "7940d691fe9b1f5aa1fd699f35a98861d036b9f6",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/zkp/hash.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/zkp/merkle_tree.hpp",
+      "bytes": 15326,
+      "sha256": "95c910455c4461f817959ed4c762e0c9f7e18bc7da779ddcbd527b98cd822309",
+      "computed_git_blob_sha1": "9e20a324daab837805a4f1730054dc8dd4106790",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/zkp/merkle_tree.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/zkp/nonbatch_context.hpp",
+      "bytes": 54149,
+      "sha256": "94da504b041728e8b8974284cb0ca2e10fb96e6c847b40b3775d5b1172c4f955",
+      "computed_git_blob_sha1": "6d45ebcc23760f170c7df7599426f4ea6006df19",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/zkp/nonbatch_context.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/zkp/proof_serializer.hpp",
+      "bytes": 8187,
+      "sha256": "6ab01a3e97c86587cd3de569540f47ebcb4d1b3c751c9515514f29abbd8bb6fd",
+      "computed_git_blob_sha1": "250fa09cf5da0136feb689e6210077528ce36da2",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/zkp/proof_serializer.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "include/zkp/random.hpp",
+      "bytes": 8072,
+      "sha256": "afbfcfa1440db6a667d6b78489c9dfbbf77d618b918f6b5ff4024e0b999636ba",
+      "computed_git_blob_sha1": "610febb9e0215b24b9f27277ec766cbfd2cadb29",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/include/zkp/random.hpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "src/webgpu_prover.cpp",
+      "bytes": 18445,
+      "sha256": "f6c1d4b9271ddedb8c0666b421500b9be32a9f1f6d9bd0ce86651160d7d1705d",
+      "computed_git_blob_sha1": "54eaf1442b46c4975beccea34356b3db4007802f",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/src/webgpu_prover.cpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    },
+    {
+      "path": "src/webgpu_verifier.cpp",
+      "bytes": 17842,
+      "sha256": "0fb14989eb8bb0b68b2a955039f6c7501e0c6706c3e5510d67b42cdfb715b7d8",
+      "computed_git_blob_sha1": "916cd14616c0add8e240cfaefdb78e96158544e1",
+      "source_url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/src/webgpu_verifier.cpp",
+      "provenance": "retained bytes fetched from pinned raw URL; tree membership not independently reverified in this handover"
+    }
+  ],
+  "changed_files": [
+    {
+      "path": "include/zkp/finite_field_gmp.hpp",
+      "base_sha256": "5c12605ef458963a36bae6f0cb74110ffc4cdb21feca3bc709d2c23ef5b9fd01",
+      "candidate_sha256": "342e26fc6139c1c70dcd3d168bb364dcfc22c09827eb98917edbfbafd1e0c29b"
+    },
+    {
+      "path": "include/zkp/nonbatch_context.hpp",
+      "base_sha256": "94da504b041728e8b8974284cb0ca2e10fb96e6c847b40b3775d5b1172c4f955",
+      "candidate_sha256": "02ac9da15b367844a847c9e6344b0557b83d236e5a9c7dec8d6c6fadf952adae"
+    },
+    {
+      "path": "include/zkp/random.hpp",
+      "base_sha256": "afbfcfa1440db6a667d6b78489c9dfbbf77d618b918f6b5ff4024e0b999636ba",
+      "candidate_sha256": "378850d0f12f285b4d45ae90d8272aec80ca883505a1b5ffe7cda2fe5fdf4e29"
+    },
+    {
+      "path": "src/webgpu_prover.cpp",
+      "base_sha256": "f6c1d4b9271ddedb8c0666b421500b9be32a9f1f6d9bd0ce86651160d7d1705d",
+      "candidate_sha256": "68bb9b69558bbb67f48da5bd717a988f1f078a0762ba88f33a43d89d21460a75"
+    },
+    {
+      "path": "src/webgpu_verifier.cpp",
+      "base_sha256": "0fb14989eb8bb0b68b2a955039f6c7501e0c6706c3e5510d67b42cdfb715b7d8",
+      "candidate_sha256": "ec940ffd85aef7d3b5031bc8115a9e512fe05a6280283ab2dd2e23014aaccec5"
+    }
+  ],
+  "candidate_status": "Unbuilt, untested experimental patch proposal; not an admitted ZK backend."
+}

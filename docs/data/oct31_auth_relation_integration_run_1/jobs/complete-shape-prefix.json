@@ -1,0 +1,53 @@
+{
+  "name": "complete-shape-prefix",
+  "phase": "python",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/auth_relation_integration_1/dispatch.py",
+    "Q-01"
+  ],
+  "limit_seconds": 100,
+  "child_seconds": 99,
+  "status": "pass",
+  "unit": "pqdid-auth-relation-1-complete-shape-prefix",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 490996,
+    "new_artifact_bytes": 853888,
+    "evidence_bytes": 25732429,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4238835712,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false,
+  "seconds": 10.014594158041291,
+  "exit_code": 0,
+  "stop": null,
+  "worker": {
+    "before": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "12894208",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "after": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "44150784",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "child_exit_code": 0,
+    "child_seconds": 8.505822375998832,
+    "resource_breach": false,
+    "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+  },
+  "sampled_tree_rss_peak": 59326464,
+  "artifact_observed_peak_bytes": 58966547
+}

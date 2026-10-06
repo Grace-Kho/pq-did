@@ -1,0 +1,12 @@
+{
+  "completed_segments": 582,
+  "completed_user_cycles": 16313474,
+  "last_phase": "unknown: unchanged uninstrumented guest",
+  "other_capacity": 21795710,
+  "padded_capacity": 38109184,
+  "retained_segment_records": 256,
+  "segment_po2_histogram": {
+    "15": 1,
+    "16": 581
+  }
+}

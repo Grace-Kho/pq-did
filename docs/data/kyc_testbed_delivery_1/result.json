@@ -1,0 +1,12 @@
+{
+  "package": "KYC-TESTBED-DELIVERY-1",
+  "passed": true,
+  "full_audit_exit_status": 0,
+  "complete_content_comparisons": 10901,
+  "identity_inclusive_paths": 10936,
+  "resource_guard_status": "pass",
+  "historical_failed_audit_retained": "jobs/full-audit.json",
+  "corrected_audit": "jobs/full-audit-2.json",
+  "routine_scope_correction": "audit-correction-1/correction.json",
+  "final_closure_pending_readback": true
+}

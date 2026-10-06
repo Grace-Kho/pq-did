@@ -1,0 +1,8 @@
+{
+  "failed_launch": "jobs/full-audit.json",
+  "diagnostic": "argparse REMAINDER passed --completion as executable; FileNotFoundError before the audit child started",
+  "audit_comparisons_executed": 0,
+  "correction": "place --completion before job positional arguments; retain exact failed launch and previous preparation",
+  "corrected_job": "full-audit-2",
+  "builds_or_tests_used": 0
+}

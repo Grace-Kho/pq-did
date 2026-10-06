@@ -1,0 +1,22 @@
+{
+  "docs/status.md": {
+    "bytes": 186794,
+    "sha256": "a8c70aa2c94e1aae268810c7949ea7d31bc7c9e28234e372fbb64290dfd65afc"
+  },
+  "docs/traceability.md": {
+    "bytes": 245232,
+    "sha256": "76371a796e1dd2f044b2e26d5c5a856971e83b128c4f9866475abb82e7ccc32e"
+  },
+  "docs/spec_issues.md": {
+    "bytes": 205713,
+    "sha256": "92bdce7d391501d07c5b7223c64d0b8ae0bf77279b73e18bf082b903cbdac7a8"
+  },
+  "docs/stage3_aurora_native_transcript_pilot.md": {
+    "bytes": 48978,
+    "sha256": "01305862406c68b63e6f084819a4b4c69137817316253c70ebd82813b3a1ffc8"
+  },
+  "docs/stage3_aurora_compiler_compatibility_contract.md": {
+    "bytes": 24122,
+    "sha256": "b5da4410efbfbfc170e1030fc7b80d723d6d76803740826938b0edfb0a24b61e"
+  }
+}

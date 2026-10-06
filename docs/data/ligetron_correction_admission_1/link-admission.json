@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "libcrypto": "/usr/lib/x86_64-linux-gnu/libcrypto.so.3",
+  "libcrypto_sha256": "dcce5a26377117c295c05a3c85261749e02cab31e0fb517a0f505a957ca49f4e",
+  "elf_header": "ELF Header:\n  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 \n  Class:                             ELF64\n  Data:                              2's complement, little endian\n  Version:                           1 (current)\n  OS/ABI:                            UNIX - System V\n  ABI Version:                       0\n  Type:                              DYN (Shared object file)\n  Machine:                           Advanced Micro Devices X86-64\n  Version:                           0x1\n  Entry point address:               0x0\n  Start of program headers:          64 (bytes into file)\n  Start of section headers:          6384608 (bytes into file)\n  Flags:                             0x0\n  Size of this header:               64 (bytes)\n  Size of program headers:           56 (bytes)\n  Number of program headers:         12\n  Size of section headers:           64 (bytes)\n  Number of section headers:         30\n  Section header string table index: 29\n",
+  "versions": "g++-15 15.2.0-16ubuntu1 amd64\nlibssl3t64 3.5.5-1ubuntu3.6 amd64\nlibstdc++-15-dev 15.2.0-16ubuntu1 amd64\n",
+  "retained_GMP_sha256": {
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/prefix/usr/include/gmpxx.h": "b287e1197a745582acb9c4aa0d2f2ffa16fabaeeabd0dee836553771556a00ea",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/prefix/usr/include/x86_64-linux-gnu/gmp.h": "633b1aa6d653a06ffd384296ca8ce26ca0dbad053aea834e59c4004a6c8f8a10",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/prefix/usr/lib/x86_64-linux-gnu/libgmp.a": "9248bba090ac69a4fe7861166f12eba6188d9c7055029fac7920c1800599478a",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/prefix/usr/lib/x86_64-linux-gnu/libgmpxx.a": "7d58f7354193765947c981787bc781b991ba8f2e6008a8d8c28e527f33e1721a"
+  },
+  "link_compatibility": "requires counted build; no probe run",
+  "known_missing_full_backend_dependencies": [
+    "Dawn",
+    "WABT",
+    "Protobuf",
+    "full VM include closure"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "case_id": "C-23",
+  "invocation_id": "CAR1-0024",
+  "status": "pass",
+  "details": {
+    "case": "C-23",
+    "purpose": "signed64 checked addition at valid upper boundary",
+    "full_relation": false,
+    "compact": {
+      "complete": true,
+      "inputs": 64,
+      "gates": 335,
+      "rows": 200,
+      "variables": 199,
+      "primary": 1,
+      "output_wire": 400,
+      "nonzero_terms": [
+        200,
+        270,
+        136
+      ],
+      "matrix_sha256": "a07ef1f1abb05604721d316cec9e54b0af16097898224d0abccccadc9767d387",
+      "public_identity": "747482f1417df71a6516222c3063a4d17f1d774cda22fda591f4305a3d9a09d2",
+      "gate_counts": [
+        198,
+        134,
+        3
+      ],
+      "free_input_booleanity_rows": 64,
+      "and_rows": 134,
+      "spill_rows": 0,
+      "output_rows": 2,
+      "retained_wire_forms": 401,
+      "retained_term_entries": 606,
+      "maximum_stored_support": 5,
+      "assignment_storage_bytes": 199,
+      "representation": "GF192-exact-affine-XOR-NOT-elimination-v1"
+    },
+    "uncompressed": {
+      "complete": true,
+      "inputs": 64,
+      "gates": 335,
+      "rows": 401,
+      "variables": 400,
+      "primary": 1,
+      "output_wire": 400,
+      "nonzero_terms": [
+        535,
+        400,
+        337
+      ],
+      "matrix_sha256": "4f94ba06ee27536609cb8683736ab06313ad553897fedddb1f2062951bd220d0",
+      "public_identity": "747482f1417df71a6516222c3063a4d17f1d774cda22fda591f4305a3d9a09d2",
+      "gate_counts": [
+        198,
+        134,
+        3
+      ],
+      "free_input_booleanity_rows": 64,
+      "output_rows": 2,
+      "assignment_storage_bytes": 400,
+      "memory_model": "bounded retained byte assignment; no last-use claim"
+    },
+    "same_source_fingerprint": "1d58eddf87561a05731df71684fb41ab4f9b8276ca23262e2fa1ec2a23d45119",
+    "retained_source_trace_bytes": 0,
+    "work_accounting": "each of both lowering traversals charged separately",
+    "oracle": "exact host integer addition and signed64 representability",
+    "input": 9223372036854775806,
+    "expected_word": 9223372036854775807,
+    "expected_acceptance": true,
+    "contract": "existing checked signed64 ADD and active-path rejection",
+    "rejected_output_usable": false,
+    "actual_word": 9223372036854775807,
+    "actual_acceptance": true
+  },
+  "seconds": 0.0034643340623006225,
+  "work_events": 2542
+}

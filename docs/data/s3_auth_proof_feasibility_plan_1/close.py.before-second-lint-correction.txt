@@ -1,0 +1,249 @@
+"""Bounded write-once closure; no repeated protected content audit."""
+
+# ruff: noqa: E402
+
+import json
+import os
+import re
+import resource
+import signal
+import sys
+import time
+from pathlib import Path
+from urllib.parse import unquote, urlsplit
+
+resource.setrlimit(resource.RLIMIT_AS, (268435456, 268435456))
+resource.setrlimit(resource.RLIMIT_CPU, (5, 5))
+resource.setrlimit(resource.RLIMIT_FSIZE, (1048576, 1048576))
+signal.alarm(5)
+os.sched_setaffinity(0, set(sorted(os.sched_getaffinity(0))[:2]))
+STARTED = time.monotonic()
+D = Path(__file__).resolve().parent
+P = D.parents[2]
+sys.path.insert(0, str(P))
+from scripts import preservation_audit as audit
+
+
+def read(name):
+    return json.loads((D / name).read_text())
+
+
+def main():
+    assert not (D / "manifest.json").exists()
+    assert not (D / "validation-closure.json").exists()
+    config, scope = read("config.json"), read("scope.json")
+    result, validation, runs = read("result.json"), read("validation.json"), read("run-ledger.json")
+    assert result["passed"] and result["report_generation_completed"]
+    assert result["resource_guard_passed"] and result["guard_exit_code"] == 0
+    assert sum(row["name"] == "full-audit" for row in runs) == 1
+    assert all(row["status"] == "pass" for row in runs if row["name"] != "quality")
+    assert sum(row["status"] == "failed" for row in runs) == 1
+    wall = sum(row["seconds"] for row in runs)
+    charged = config["prior_analysis_charged_seconds"] + config["operator_charge_seconds"] + wall
+    remaining = config["aggregate_seconds"] - charged
+    assert remaining > 0
+    assert validation["total_test_invocations_including_prior_package"] == 222
+    peak = max(int(row["service"]["after"]["memory.peak"]) for row in runs)
+    rss = max(row["sampled_tree_RSS_peak"] for row in runs)
+    temporary = max(row["temporary_storage_observed_peak"] for row in runs)
+    for row in runs:
+        events = dict(
+            line.split() for line in row["service"]["after"]["memory.events"].splitlines()
+        )
+        assert all(int(events[key]) == 0 for key in ["max", "oom", "oom_kill"])
+    report = P / "docs/stage3_auth_proof_feasibility_plan.md"
+    suffix = f"""
+
+## Measured validation closure
+
+Planning/evidence review is **complete with no profile admitted**. Helper lint and
+format checks pass; one documentation/evidence consistency check is included in
+the audit. No functional tests or new numerical calculations ran.
+The single [complete preservation audit](data/s3_auth_proof_feasibility_plan_1/result.json)
+passes content, exact inventory, report readback and outer guard, exit 0. Coverage:
+{validation["content_partition_union"]:,} disjoint content paths and
+{validation["identity_inclusive_unique_paths"]:,} identity-inclusive paths. All three
+existing reports retain their full prior prefixes. No source, parameter, dependency,
+fixture, manuscript or historical evidence changed; no baseline was regenerated.
+
+| Measurement | Result |
+| --- | --- |
+| Audit wall time | {result["wall_seconds"]:.9f} s |
+| Audit cgroup-v2 memory.peak | {int(result["cgroup_memory_peak_bytes"]):,} bytes |
+| Audit sampled process-tree RSS | {result["sampled_tree_RSS_peak_bytes"]:,} bytes |
+| Maximum guarded-job cgroup peak | {peak:,} bytes |
+| Maximum sampled tree RSS | {rss:,} bytes, separate metric |
+| Guarded commands | {len(runs)}, {wall:.9f} s |
+| New analysis charge including five bookkeeping seconds | {wall + 5:.9f} s |
+| Cumulative analysis charge | {charged:.9f}/300 s |
+| Remaining analysis allowance | **{remaining:.9f} s** |
+| Implementation unchanged | **104.136962883 s; 222/223 tests, one remaining** |
+| Isolation unchanged | 250.22 s, 100 historical invocations, 22 original identity cases pending |
+| Temporary storage | {temporary:,} observed peak bytes; zero retained |
+| Evidence bytes at outer audit completion | {result["package_bytes_at_guard_completion"]:,} |
+
+One initial E501 lint failure and its source-reviewed corrected follow-up are
+retained and charged; no functional-test or full-audit retry, no resource breach. The unchanged 256 MiB guard includes
+worker/descendants and charged cache/kernel memory, swap zero; external tree RSS is
+separately monitored. Final bookkeeping has the established 256 MiB address-space,
+five-second CPU/alarm, two-CPU and 1 MiB/file limits within the five-second charge;
+it does not repeat the protected content comparison.
+[Closure](data/s3_auth_proof_feasibility_plan_1/validation-closure.json) and
+[additive seal](data/s3_auth_proof_feasibility_plan_1/manifest.json) retain exact balances.
+Proof ledger: two used/one unused; no builds, proof guests, proofs or activation.
+Stages 2–3 remain open, isolation stopped/unactivated. The sole next proposal is
+S3-PRIVATE-HINT-LOWERING-PILOT-1, **not started or authorised by this review**.
+"""
+    with report.open("a") as stream:
+        stream.write(suffix)
+    short = f"""
+
+Authentication feasibility planning closure: helper lint/format and one documentation
+consistency check pass. The single
+[complete audit](data/s3_auth_proof_feasibility_plan_1/result.json)
+passes {validation["content_partition_union"]:,} disjoint content paths, exact inventory,
+report readback and unchanged 256 MiB outer guard: {result["wall_seconds"]:.9f} s,
+{int(result["cgroup_memory_peak_bytes"]):,}-byte cgroup peak. One retained lint failure, corrected in a named follow-up; no resource
+breach or full-audit retry. Analysis {charged:.9f}/300 s charged, **{remaining:.9f} s remain**.
+Implementation unchanged **104.136962883 s, 222/223 tests**; isolation unchanged
+250.22 s, safely stopped/unactivated. No cryptographic executions, new calculations,
+builds, proof guests or proofs. No route/profile admitted. Stages 2–3 remain open,
+proof ledger two used/one unused. Next proposed for authorisation only:
+**S3-PRIVATE-HINT-LOWERING-PILOT-1**; no active lowering or allowance change.
+"""
+    for name, prefix in scope["append_only_documentation"].items():
+        with (P / name).open("a") as stream:
+            stream.write(short)
+        assert audit.digest_file(P / name, prefix_bytes=prefix["bytes"]) == prefix["sha256"]
+    links = 0
+    for name in [*scope["append_only_documentation"], *scope["new_markdown_files"]]:
+        path = P / name
+        content = path.read_text()
+        assert content.count("```") % 2 == 0
+        assert all(line.rstrip() == line for line in content.splitlines())
+        for target in re.findall(r"\[[^\]\n]*\]\(([^)\s]+)\)", content):
+            parsed = urlsplit(target.strip("<>"))
+            if parsed.scheme or not parsed.path:
+                continue
+            dest = (path.parent / unquote(parsed.path)).resolve()
+            assert dest.exists() or str(dest.relative_to(P)) in scope["optional_names"]
+            links += 1
+    inventory = audit.inventory_check(
+        P,
+        scope["additional_name_inventory_roots"],
+        set(scope["required_names"]),
+        optional_names=set(scope["optional_names"]),
+    )
+    assert inventory["passed"] and not any((D / "tmp").iterdir())
+    closure = {
+        "package": config["package"],
+        "status": "complete-negative-full-authentication-feasibility-decision",
+        "full_audit_passed": True,
+        "result_sha256": audit.digest_file(D / "result.json"),
+        "scope_sha256": audit.digest_file(D / "scope.json"),
+        "run_ledger_sha256": audit.digest_file(D / "run-ledger.json"),
+        "previous_manifest_sha256": read("preflight-evidence.json")["previous_manifest_sha256"],
+        "guarded_commands": len(runs),
+        "guarded_wall_seconds": wall,
+        "prior_analysis_charged_seconds": config["prior_analysis_charged_seconds"],
+        "new_package_charged_seconds": config["operator_charge_seconds"] + wall,
+        "prior_test_invocations": config["prior_test_invocations"],
+        "prior_output_bytes": config["prior_output_bytes"],
+        "operator_and_bookkeeping_charge_seconds": config["operator_charge_seconds"],
+        "analysis_aggregate_charged_seconds": charged,
+        "analysis_aggregate_remaining_seconds": remaining,
+        "implementation_aggregate_charged_seconds_unchanged": 195.8630371170584,
+        "implementation_aggregate_remaining_seconds_unchanged": 104.13696288294159,
+        "max_cgroup_memory_peak_bytes": peak,
+        "max_sampled_tree_RSS_bytes": rss,
+        "full_audit_cgroup_peak_bytes": int(result["cgroup_memory_peak_bytes"]),
+        "full_audit_wall_seconds": result["wall_seconds"],
+        "temporary_storage_observed_peak_bytes": temporary,
+        "final_temporary_bytes": 0,
+        "test_invocations": config["test_invocations"],
+        "total_test_invocations": 222,
+        "unique_new_tests": 0,
+        "documentation_consistency_checks": 1,
+        "new_numerical_calculations": 0,
+        "remaining_test_invocations": 1,
+        "functional_test_failures": 0,
+        "retained_lint_failures": 1,
+        "source_reviewed_lint_followups": 1,
+        "prelaunch_admission_diagnostics": 0,
+        "resource_breaches": 0,
+        "native_ABI_runs": 0,
+        "targeted_repeated_invocations": 0,
+        "full_audit_attempts": 1,
+        "final_local_links_checked": links,
+        "final_name_inventory_count": inventory["count"] + 2,
+        "bookkeeping_elapsed_before_write_seconds": time.monotonic() - STARTED,
+        "bookkeeping_limits": "256MiB address space, CPU/alarm5s, two CPUs, file1MiB; "
+        "included five seconds",
+        "proofs": 0,
+        "zkvm_executions": 0,
+        "activation": False,
+        "dependencies_installed": False,
+        "circuit_generation": 0,
+        "proof_attempts_used": 2,
+        "proof_attempts_unused": 1,
+        "CPU_proving_paused": True,
+        "isolation_state": "safe-stopped-unactivated",
+        "isolation_tests_unchanged": 100,
+        "isolation_identity_cases_pending": 22,
+        "isolation_remaining_seconds_unchanged": 250.22,
+        "open_obligations": [
+            "DEP-001",
+            "DEP-002 production/release",
+            "Delta_tail",
+            "side-channel/erasure/storage/entropy",
+            "SEC-001..005",
+            "OC-REL/EXT/PRIV/BUDGET",
+            "complete private-proof knowledge/privacy",
+        ],
+        "next_recommendation": "S3-PRIVATE-HINT-LOWERING-PILOT-1",
+        "next_package_started": False,
+    }
+    audit.write_report(D / "validation-closure.json", closure)
+    files = {path for path in D.rglob("*") if path.is_file()}
+    files.update([report, *[P / name for name in scope["append_only_documentation"]]])
+    files.update(P / name for name in scope["frozen_package_inputs"])
+    manifest = {
+        "package": config["package"],
+        "kind": "Additive source/evidence planning seal; no baseline regeneration",
+        "previous_manifest_sha256": closure["previous_manifest_sha256"],
+        "scope_sha256": closure["scope_sha256"],
+        "self_excluded": "manifest.json",
+        "sha256": {str(path.relative_to(P)): audit.digest_file(path) for path in sorted(files)},
+    }
+    audit.write_report(D / "manifest.json", manifest)
+    final = audit.inventory_check(
+        P,
+        scope["additional_name_inventory_roots"],
+        set(scope["required_names"]),
+        optional_names=set(scope["optional_names"]),
+    )
+    assert final["passed"] and final["count"] == closure["final_name_inventory_count"]
+    assert read("validation-closure.json") == closure and read("manifest.json") == manifest
+    assert all(path.stat().st_size <= config["per_file_bytes"] for path in files)
+    total = sum(path.stat().st_size for path in D.rglob("*") if path.is_file())
+    assert config["prior_output_bytes"] + total < config["output_bytes"]
+    print(
+        json.dumps(
+            {
+                "closure": "complete",
+                "manifest_sha256": audit.digest_file(D / "manifest.json"),
+                "sealed_files": len(files),
+                "package_bytes": total,
+                "cumulative_package_bytes": config["prior_output_bytes"] + total,
+                "analysis_charged_seconds": charged,
+                "analysis_remaining_seconds": remaining,
+                "implementation_remaining_seconds_unchanged": 104.13696288294159,
+                "elapsed_bookkeeping_seconds": time.monotonic() - STARTED,
+            },
+            indent=2,
+        )
+    )
+
+
+if __name__ == "__main__":
+    main()

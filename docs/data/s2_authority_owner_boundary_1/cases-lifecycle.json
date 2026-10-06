@@ -1,0 +1,3407 @@
+[
+  {
+    "case": "test_lifecycle_operation_identity_and_stale_connected_client",
+    "seconds": 1.3009171219891869,
+    "temporary_bytes_observed_peak": 185655,
+    "maximum_owned_children": 4,
+    "coordinator_cumulative_maxrss_bytes": 52445184,
+    "events": [
+      {
+        "ready": true,
+        "pid": 726304,
+        "uid": 1000,
+        "gid": 1000,
+        "scope": "6a0fa4e7032997119e0d1636a724551ce48426eb811dee9aca2ab89e4dd644e3",
+        "socket_mode": "0o600"
+      },
+      {
+        "pid": 726305,
+        "response_sha256": "0ccf840817b310e44018c1d099084f110737bd658cd633535baedc5c08b049fc",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726305,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o7lqmv7k7",
+          "client",
+          "request-1"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52051968,
+        "cpu_seconds": 0.08776
+      },
+      {
+        "pid": 726306,
+        "response_sha256": "2671786c1d84346e4ac9c1c9b07af62a621f23bff6afa8b5a08ae0bc0f13db4c",
+        "response_bytes": 119
+      },
+      {
+        "pid": 726306,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o7lqmv7k7",
+          "client",
+          "request-2"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52051968,
+        "cpu_seconds": 0.082117
+      },
+      {
+        "pid": 726315,
+        "response_sha256": "521640852b6f345f2159703d50c1779bef1f05c532ef8997e8e7213c776cd950",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726315,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o7lqmv7k7",
+          "client",
+          "request-3"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52051968,
+        "cpu_seconds": 0.094571
+      },
+      {
+        "pid": 726324,
+        "response_sha256": "4179d31eb7289e3ebb2b6c3194560d8d4d618c2e29212695aec7bdb282b81201",
+        "response_bytes": 4553
+      },
+      {
+        "pid": 726324,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o7lqmv7k7",
+          "client",
+          "request-4"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52051968,
+        "cpu_seconds": 0.086281
+      },
+      {
+        "pid": 726325,
+        "response_sha256": "6c6853ea474bccc0524ed670d8cfbe6b7df2a7459562e551ba654e2da7b98e12",
+        "response_bytes": 4561
+      },
+      {
+        "pid": 726325,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o7lqmv7k7",
+          "client",
+          "request-5"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52051968,
+        "cpu_seconds": 0.083267
+      },
+      {
+        "pid": 726326,
+        "error": "operation-conflict"
+      },
+      {
+        "pid": 726326,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o7lqmv7k7",
+          "client",
+          "request-6"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52051968,
+        "cpu_seconds": 0.083326
+      },
+      {
+        "ready": true,
+        "pid": 726327,
+        "uid": 1000,
+        "gid": 1000,
+        "scope": "6a0fa4e7032997119e0d1636a724551ce48426eb811dee9aca2ab89e4dd644e3",
+        "socket_mode": "0o600"
+      },
+      {
+        "connected": true,
+        "pid": 726328
+      },
+      {
+        "pid": 726329,
+        "response_sha256": "281d8eb2ab24b07f50356aaaacfd917fe020d5b1c468faf3a5cbf38a2fa9f7e4",
+        "response_bytes": 119
+      },
+      {
+        "pid": 726329,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o7lqmv7k7",
+          "client",
+          "request-8"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52248576,
+        "cpu_seconds": 0.088004
+      },
+      {
+        "pid": 726328,
+        "error": "fenced-writer"
+      },
+      {
+        "pid": 726328,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o7lqmv7k7",
+          "client",
+          "request-7"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52051968,
+        "cpu_seconds": 0.08727199999999999
+      },
+      {
+        "pid": 726331,
+        "response_sha256": "f1a2306789ae750361f73edf980bffa8b1c838ea7ee4b49c5b87b1f2774aa9bb",
+        "response_bytes": 28
+      },
+      {
+        "pid": 726331,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o7lqmv7k7",
+          "client",
+          "request-9"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52248576,
+        "cpu_seconds": 0.083297
+      },
+      {
+        "metrics": {
+          "accepted": 7,
+          "frames": 7,
+          "denied": 0,
+          "errors": 2,
+          "timeouts": 0,
+          "peers": [
+            [
+              [
+                726305,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "status"
+            ],
+            [
+              [
+                726306,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "replace"
+            ],
+            [
+              [
+                726315,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726324,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "reserve"
+            ],
+            [
+              [
+                726325,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "reserve"
+            ],
+            [
+              [
+                726326,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "reserve"
+            ],
+            [
+              [
+                726328,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "reserve"
+            ]
+          ],
+          "responses": 5,
+          "connection_peak": 1
+        },
+        "maxrss_bytes": 52051968
+      },
+      {
+        "pid": 726304,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o7lqmv7k7",
+          "owner",
+          "manager",
+          "owner-1",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o7lqmv7k7/manager-ipc/s",
+          "none",
+          "none"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52051968,
+        "cpu_seconds": 0.27090699999999995
+      },
+      {
+        "metrics": {
+          "accepted": 2,
+          "frames": 2,
+          "denied": 0,
+          "errors": 0,
+          "timeouts": 0,
+          "peers": [
+            [
+              [
+                726329,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "replace"
+            ],
+            [
+              [
+                726331,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ]
+          ],
+          "responses": 2,
+          "connection_peak": 1
+        },
+        "maxrss_bytes": 52051968
+      },
+      {
+        "pid": 726327,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o7lqmv7k7",
+          "owner",
+          "manager",
+          "owner-2",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o7lqmv7k7/manager-ipc/t",
+          "none",
+          "none"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52051968,
+        "cpu_seconds": 0.177879
+      }
+    ]
+  },
+  {
+    "case": "test_lifecycle_concurrent_verification_and_two_audiences",
+    "seconds": 1.6075632949941792,
+    "temporary_bytes_observed_peak": 270026,
+    "maximum_owned_children": 3,
+    "coordinator_cumulative_maxrss_bytes": 53624832,
+    "events": [
+      {
+        "ready": true,
+        "pid": 726332,
+        "uid": 1000,
+        "gid": 1000,
+        "scope": "049fd000e72d7d8a67ecc70de2abebde0bcc4b89855284fb0e4ce0407ff09f46",
+        "socket_mode": "0o600"
+      },
+      {
+        "pid": 726339,
+        "response_sha256": "fdaf1ca25622db7a1960cbc77295627e48edbc753b80b6aacc815f9b46fedb9a",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726339,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "client",
+          "request-1"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52641792,
+        "cpu_seconds": 0.083282
+      },
+      {
+        "pid": 726340,
+        "response_sha256": "71e580c555bd9eccf94c73b5b788083fac25deee46c7943d3e36e7070eb4b4d7",
+        "response_bytes": 119
+      },
+      {
+        "pid": 726340,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "client",
+          "request-2"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52641792,
+        "cpu_seconds": 0.085262
+      },
+      {
+        "connected": true,
+        "pid": 726341
+      },
+      {
+        "connected": true,
+        "pid": 726342
+      },
+      {
+        "pid": 726341,
+        "response_sha256": "9936507306b610ff84eb54ec34abc2387a545097fed388d2dc64cf8e81b3528f",
+        "response_bytes": 51
+      },
+      {
+        "pid": 726342,
+        "response_sha256": "00fd5ff70d8fae2bb99b982c7afdd19792d9a764baa00d12f14e5a9c938fdc23",
+        "response_bytes": 44
+      },
+      {
+        "pid": 726341,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "client",
+          "request-3"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52641792,
+        "cpu_seconds": 0.084699
+      },
+      {
+        "pid": 726342,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "client",
+          "request-4"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52641792,
+        "cpu_seconds": 0.087596
+      },
+      {
+        "ready": true,
+        "pid": 726343,
+        "uid": 1000,
+        "gid": 1000,
+        "scope": "677e79c7f3d03b30e727316db5a1c22bb1005ae8e3dfb8b39111c7d5764299f6",
+        "socket_mode": "0o600"
+      },
+      {
+        "pid": 726344,
+        "response_sha256": "a7fead2b2ad56bdfe056e6d5e34a467c043cf8c06d2e5c628ad5e9ca5391d6a1",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726344,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "client",
+          "request-5"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52838400,
+        "cpu_seconds": 0.08355299999999999
+      },
+      {
+        "pid": 726345,
+        "response_sha256": "3731f0e127ee39abca557c785da887d1ba33ce31fa6878361c326543f3efdc28",
+        "response_bytes": 119
+      },
+      {
+        "pid": 726345,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "client",
+          "request-6"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52838400,
+        "cpu_seconds": 0.086059
+      },
+      {
+        "pid": 726346,
+        "response_sha256": "9936507306b610ff84eb54ec34abc2387a545097fed388d2dc64cf8e81b3528f",
+        "response_bytes": 51
+      },
+      {
+        "pid": 726346,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "client",
+          "request-7"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52838400,
+        "cpu_seconds": 0.085687
+      },
+      {
+        "pid": 726347,
+        "error": "denied"
+      },
+      {
+        "pid": 726347,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "client",
+          "request-8"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 53035008,
+        "cpu_seconds": 0.081914
+      },
+      {
+        "pid": 726348,
+        "response_sha256": "00fd5ff70d8fae2bb99b982c7afdd19792d9a764baa00d12f14e5a9c938fdc23",
+        "response_bytes": 44
+      },
+      {
+        "pid": 726348,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "client",
+          "request-9"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 53035008,
+        "cpu_seconds": 0.083655
+      },
+      {
+        "pid": 726349,
+        "response_sha256": "b378bef817492904b7991a33499bb3bd15f3529acafc06a5ea42e3f6bb8134ee",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726349,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "client",
+          "request-10"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 53231616,
+        "cpu_seconds": 0.08671899999999999
+      },
+      {
+        "pid": 726350,
+        "response_sha256": "543936550dfe9e4c00677c2df874f164e4ca0f0cf0ab1c185370b6438a888c37",
+        "response_bytes": 139
+      },
+      {
+        "pid": 726350,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "client",
+          "request-11"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 53231616,
+        "cpu_seconds": 0.083896
+      },
+      {
+        "pid": 726351,
+        "response_sha256": "3bf74576515edb957f0f04922b318700aa2c4ff433ac59007d286070ba9baf33",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726351,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "client",
+          "request-12"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 53428224,
+        "cpu_seconds": 0.08435899999999999
+      },
+      {
+        "pid": 726352,
+        "error": "unavailable"
+      },
+      {
+        "pid": 726352,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "client",
+          "request-13"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 53624832,
+        "cpu_seconds": 0.080894
+      },
+      {
+        "metrics": {
+          "accepted": 7,
+          "frames": 7,
+          "denied": 0,
+          "errors": 0,
+          "timeouts": 0,
+          "peers": [
+            [
+              [
+                726339,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "status"
+            ],
+            [
+              [
+                726340,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "replace"
+            ],
+            [
+              [
+                726341,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "verify"
+            ],
+            [
+              [
+                726342,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "verify"
+            ],
+            [
+              [
+                726348,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "verify"
+            ],
+            [
+              [
+                726349,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726350,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "register"
+            ]
+          ],
+          "responses": 7,
+          "connection_peak": 2
+        },
+        "maxrss_bytes": 52641792
+      },
+      {
+        "pid": 726332,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "owner",
+          "verifier0",
+          "owner-1",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7/verifier0-ipc/s",
+          "none",
+          "none"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52641792,
+        "cpu_seconds": 0.28391299999999997
+      },
+      {
+        "metrics": {
+          "accepted": 6,
+          "frames": 6,
+          "denied": 1,
+          "errors": 2,
+          "timeouts": 0,
+          "peers": [
+            [
+              [
+                726344,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "status"
+            ],
+            [
+              [
+                726345,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "replace"
+            ],
+            [
+              [
+                726346,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "verify"
+            ],
+            [
+              [
+                726351,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726352,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "register"
+            ]
+          ],
+          "responses": 4,
+          "connection_peak": 1
+        },
+        "maxrss_bytes": 52838400
+      },
+      {
+        "pid": 726343,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7",
+          "owner",
+          "verifier1",
+          "owner-1",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oj81etks7/verifier1-ipc/s",
+          "none",
+          "none"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52838400,
+        "cpu_seconds": 0.201419
+      }
+    ]
+  },
+  {
+    "case": "test_lifecycle_recipient_binding_and_redelivery",
+    "seconds": 4.821574205998331,
+    "temporary_bytes_observed_peak": 335715,
+    "maximum_owned_children": 3,
+    "coordinator_cumulative_maxrss_bytes": 54607872,
+    "events": [
+      {
+        "ready": true,
+        "pid": 726353,
+        "uid": 1000,
+        "gid": 1000,
+        "scope": "6a0fa4e7032997119e0d1636a724551ce48426eb811dee9aca2ab89e4dd644e3",
+        "socket_mode": "0o600"
+      },
+      {
+        "pid": 726354,
+        "response_sha256": "0ccf840817b310e44018c1d099084f110737bd658cd633535baedc5c08b049fc",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726354,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-1"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 53624832,
+        "cpu_seconds": 0.085973
+      },
+      {
+        "pid": 726355,
+        "response_sha256": "490bcfc43f48606e6bb2337e546254131ee3730118bea20d5e08252adfa9cd7c",
+        "response_bytes": 119
+      },
+      {
+        "pid": 726355,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-2"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 53624832,
+        "cpu_seconds": 0.083718
+      },
+      {
+        "ready": true,
+        "pid": 726356,
+        "uid": 1000,
+        "gid": 1000,
+        "scope": "2220711be5ed87ca09b7e39f2ed24add8fe662a2a2f77c2afa3eccb1f996c9ce",
+        "socket_mode": "0o600"
+      },
+      {
+        "pid": 726360,
+        "response_sha256": "6c13c4d791545b17dc1485132c8eab97a3b2a003d5d0b60b3b6e76420ab9ce87",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726360,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-3"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54018048,
+        "cpu_seconds": 0.087643
+      },
+      {
+        "pid": 726364,
+        "response_sha256": "561a91f3d7ce77859b91e3809e9d24872a88bc5970e572ae3311861223936dfd",
+        "response_bytes": 119
+      },
+      {
+        "pid": 726364,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-4"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54018048,
+        "cpu_seconds": 0.083536
+      },
+      {
+        "pid": 726365,
+        "response_sha256": "2882cd9fa9bf7eefcefaced2280a684f3f4f041865a7f5b8a47b2d9b09c6c921",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726365,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-5"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54018048,
+        "cpu_seconds": 0.085226
+      },
+      {
+        "pid": 726366,
+        "response_sha256": "b21d3de4e6495d95cf044f44dc0998d50f12e0987be87e67e87c478be31456a3",
+        "response_bytes": 135
+      },
+      {
+        "pid": 726366,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-6"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54018048,
+        "cpu_seconds": 0.084926
+      },
+      {
+        "pid": 726367,
+        "response_sha256": "2030229568e4dd59d7e83d5fc0608640968c24edb87aba8c8f52d703cbdea6a1",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726367,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-7"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54018048,
+        "cpu_seconds": 0.083664
+      },
+      {
+        "pid": 726368,
+        "response_sha256": "91206d06aba69da9899b24b4fae425d070ca7b8ffb4696fe48a3b874fe7b4dbf",
+        "response_bytes": 4553
+      },
+      {
+        "pid": 726368,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-8"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54018048,
+        "cpu_seconds": 0.08595499999999999
+      },
+      {
+        "pid": 726369,
+        "response_sha256": "dd73d835b671aced096877d1f29fff75d56077b34160b1476f9a532744125afa",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726369,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-9"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54018048,
+        "cpu_seconds": 0.080455
+      },
+      {
+        "pid": 726370,
+        "response_sha256": "58d43f449788fc17e955e0986b123f762ac82d2da857df91be8a1cda49fba2cb",
+        "response_bytes": 137
+      },
+      {
+        "pid": 726370,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-10"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54214656,
+        "cpu_seconds": 0.083769
+      },
+      {
+        "pid": 726371,
+        "response_sha256": "e4960a63f38f91133feeb102d40baab9817c2f94a4cb1b57faabed4e402eb71c",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726371,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-11"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54214656,
+        "cpu_seconds": 0.086537
+      },
+      {
+        "pid": 726372,
+        "response_sha256": "dd1e1606c7be699a0ba9bd8ac951ae60ee9d8a85b2a6a8bf43a8ad5bcc0f5e10",
+        "response_bytes": 136
+      },
+      {
+        "pid": 726372,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-12"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54214656,
+        "cpu_seconds": 0.08602699999999999
+      },
+      {
+        "pid": 726373,
+        "response_sha256": "f3b735ba543c43d20b074615f69fedc233cf39802129893f34a3101f36227312",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726373,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-13"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54214656,
+        "cpu_seconds": 0.086964
+      },
+      {
+        "pid": 726374,
+        "response_sha256": "9ca2577cd6289b732e501f3e7856693796a00e8b0869de96444ce9ba5bbc0aa8",
+        "response_bytes": 118
+      },
+      {
+        "pid": 726374,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-14"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54214656,
+        "cpu_seconds": 0.08627399999999999
+      },
+      {
+        "pid": 726381,
+        "response_sha256": "1efca11f393972b0942c169fd214349bd0737320b65ede3fb28df95a17a6a920",
+        "response_bytes": 138
+      },
+      {
+        "pid": 726381,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-15"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54214656,
+        "cpu_seconds": 0.082799
+      },
+      {
+        "pid": 726382,
+        "error": "denied"
+      },
+      {
+        "pid": 726382,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-16"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54411264,
+        "cpu_seconds": 0.086405
+      },
+      {
+        "pid": 726383,
+        "error": "denied"
+      },
+      {
+        "pid": 726383,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-17"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54411264,
+        "cpu_seconds": 0.087532
+      },
+      {
+        "pid": 726384,
+        "error": "denied"
+      },
+      {
+        "pid": 726384,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-18"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54411264,
+        "cpu_seconds": 0.085767
+      },
+      {
+        "pid": 726385,
+        "error": "wrong-recipient"
+      },
+      {
+        "pid": 726385,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-19"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54411264,
+        "cpu_seconds": 0.08505599999999999
+      },
+      {
+        "pid": 726386,
+        "error": "bad-request"
+      },
+      {
+        "pid": 726386,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-20"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54411264,
+        "cpu_seconds": 0.083933
+      },
+      {
+        "pid": 726387,
+        "response_sha256": "29dbd25625a61201562f93a7c2d806af83d994ae76c8d8aed0a011ca9d8f9afd",
+        "response_bytes": 10302
+      },
+      {
+        "pid": 726387,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-21"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54411264,
+        "cpu_seconds": 0.083631
+      },
+      {
+        "pid": 726388,
+        "response_sha256": "29dbd25625a61201562f93a7c2d806af83d994ae76c8d8aed0a011ca9d8f9afd",
+        "response_bytes": 10302
+      },
+      {
+        "pid": 726388,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-22"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54607872,
+        "cpu_seconds": 0.089808
+      },
+      {
+        "pid": 726389,
+        "error": "denied"
+      },
+      {
+        "pid": 726389,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-23"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54607872,
+        "cpu_seconds": 0.083185
+      },
+      {
+        "pid": 726390,
+        "response_sha256": "b6704a863f22e84c152dd85542f197b13dce4b475ee84dbbdd700a365e23a1fd",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726390,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-24"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54607872,
+        "cpu_seconds": 0.087019
+      },
+      {
+        "pid": 726391,
+        "response_sha256": "1bf6733b18b1d20e76ac204c69ce182f37ca2b046b97f0712cd997b80a3d6fdf",
+        "response_bytes": 138
+      },
+      {
+        "pid": 726391,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "client",
+          "request-25"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54607872,
+        "cpu_seconds": 0.085032
+      },
+      {
+        "metrics": {
+          "accepted": 45,
+          "frames": 45,
+          "denied": 0,
+          "errors": 0,
+          "timeouts": 0,
+          "peers": [
+            [
+              [
+                726354,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "status"
+            ],
+            [
+              [
+                726355,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "replace"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726367,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726368,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "reserve"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "reservation"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "reservation"
+            ],
+            [
+              [
+                726356,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ]
+          ],
+          "responses": 45,
+          "connection_peak": 1
+        },
+        "maxrss_bytes": 53624832
+      },
+      {
+        "pid": 726353,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "owner",
+          "manager",
+          "owner-1",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj/manager-ipc/s",
+          "none",
+          "none"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 53624832,
+        "cpu_seconds": 2.044085
+      },
+      {
+        "metrics": {
+          "accepted": 21,
+          "frames": 21,
+          "denied": 4,
+          "errors": 6,
+          "timeouts": 0,
+          "peers": [
+            [
+              [
+                726360,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "status"
+            ],
+            [
+              [
+                726364,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "replace"
+            ],
+            [
+              [
+                726365,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726366,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "intent"
+            ],
+            [
+              [
+                726369,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726370,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "attach"
+            ],
+            [
+              [
+                726371,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726372,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "pending"
+            ],
+            [
+              [
+                726373,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726374,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "claim"
+            ],
+            [
+              [
+                726381,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "certify"
+            ],
+            [
+              [
+                726385,
+                1000,
+                1000
+              ],
+              "726563697069656e742d62",
+              "retrieve"
+            ],
+            [
+              [
+                726387,
+                1000,
+                1000
+              ],
+              "726563697069656e742d61",
+              "retrieve"
+            ],
+            [
+              [
+                726388,
+                1000,
+                1000
+              ],
+              "726563697069656e742d61",
+              "retrieve"
+            ],
+            [
+              [
+                726390,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726391,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "reconcile"
+            ]
+          ],
+          "responses": 15,
+          "connection_peak": 1
+        },
+        "maxrss_bytes": 54018048
+      },
+      {
+        "pid": 726356,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj",
+          "owner",
+          "issuer",
+          "owner-1",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/oaq84b3oj/issuer-ipc/s",
+          "none",
+          "none"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54018048,
+        "cpu_seconds": 0.47290899999999997
+      }
+    ]
+  },
+  {
+    "case": "test_lifecycle_owner_crash_after_commit_before_ipc_reply[manager-reserve]",
+    "seconds": 1.0341455700108781,
+    "temporary_bytes_observed_peak": 177977,
+    "maximum_owned_children": 2,
+    "coordinator_cumulative_maxrss_bytes": 54804480,
+    "events": [
+      {
+        "ready": true,
+        "pid": 726398,
+        "uid": 1000,
+        "gid": 1000,
+        "scope": "6a0fa4e7032997119e0d1636a724551ce48426eb811dee9aca2ab89e4dd644e3",
+        "socket_mode": "0o600"
+      },
+      {
+        "pid": 726399,
+        "response_sha256": "0ccf840817b310e44018c1d099084f110737bd658cd633535baedc5c08b049fc",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726399,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/ouhm5ro01",
+          "client",
+          "request-1"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.086098
+      },
+      {
+        "pid": 726400,
+        "response_sha256": "d5b09b8ababea43b7a7c5aec311c1a10459529330de563220e28c5447ac2fead",
+        "response_bytes": 119
+      },
+      {
+        "pid": 726400,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/ouhm5ro01",
+          "client",
+          "request-2"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.085878
+      },
+      {
+        "pid": 726401,
+        "response_sha256": "f75bc5c871f537f48a654c4fd6edefd5381057dd91561a361b21bf6c7ea397bf",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726401,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/ouhm5ro01",
+          "client",
+          "request-3"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.08645499999999999
+      },
+      {
+        "barrier": "commit-before-ack",
+        "pid": 726398
+      },
+      {
+        "pid": 726398,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/ouhm5ro01",
+          "owner",
+          "manager",
+          "owner-1",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/ouhm5ro01/manager-ipc/s",
+          "reserve",
+          "commit-before-ack"
+        ],
+        "exit": -9,
+        "termination": "SIGKILL",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.192801
+      },
+      {
+        "pid": 726402,
+        "error": "malformed-frame"
+      },
+      {
+        "pid": 726402,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/ouhm5ro01",
+          "client",
+          "request-4"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.086708
+      },
+      {
+        "ready": true,
+        "pid": 726408,
+        "uid": 1000,
+        "gid": 1000,
+        "scope": "6a0fa4e7032997119e0d1636a724551ce48426eb811dee9aca2ab89e4dd644e3",
+        "socket_mode": "0o600"
+      },
+      {
+        "pid": 726447,
+        "response_sha256": "971befe866fee53cbb98003657e93e75c4c20686f43db86843b64516668aed14",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726447,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/ouhm5ro01",
+          "client",
+          "request-5"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.089831
+      },
+      {
+        "pid": 726448,
+        "response_sha256": "ea8c562c17700d1fdaba0cb049c87c3ad6ae8ba5fd349cd239e17c0b8163bcdd",
+        "response_bytes": 119
+      },
+      {
+        "pid": 726448,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/ouhm5ro01",
+          "client",
+          "request-6"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.086448
+      },
+      {
+        "pid": 726449,
+        "response_sha256": "2c2cd0b87f553ca540ba2435a9734f35e4d8614200dcc724739840f5f41e3106",
+        "response_bytes": 4561
+      },
+      {
+        "pid": 726449,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/ouhm5ro01",
+          "client",
+          "request-7"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.085257
+      },
+      {
+        "metrics": {
+          "accepted": 3,
+          "frames": 3,
+          "denied": 0,
+          "errors": 0,
+          "timeouts": 0,
+          "peers": [
+            [
+              [
+                726447,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726448,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "admit"
+            ],
+            [
+              [
+                726449,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "reserve"
+            ]
+          ],
+          "responses": 3,
+          "connection_peak": 1
+        },
+        "maxrss_bytes": 54804480
+      },
+      {
+        "pid": 726408,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/ouhm5ro01",
+          "owner",
+          "manager",
+          "owner-1",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/ouhm5ro01/manager-ipc/s",
+          "none",
+          "none"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.17734699999999998
+      }
+    ]
+  },
+  {
+    "case": "test_lifecycle_owner_crash_after_commit_before_ipc_reply[verifier0-verify]",
+    "seconds": 0.9013526679773349,
+    "temporary_bytes_observed_peak": 163904,
+    "maximum_owned_children": 2,
+    "coordinator_cumulative_maxrss_bytes": 54804480,
+    "events": [
+      {
+        "ready": true,
+        "pid": 726450,
+        "uid": 1000,
+        "gid": 1000,
+        "scope": "049fd000e72d7d8a67ecc70de2abebde0bcc4b89855284fb0e4ce0407ff09f46",
+        "socket_mode": "0o600"
+      },
+      {
+        "pid": 726451,
+        "response_sha256": "fdaf1ca25622db7a1960cbc77295627e48edbc753b80b6aacc815f9b46fedb9a",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726451,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o5_4brkn_",
+          "client",
+          "request-1"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.088336
+      },
+      {
+        "pid": 726452,
+        "response_sha256": "0fcd68d89502ffcf715717994cdc0f3509d61921c41094bf425fa50c30c51309",
+        "response_bytes": 119
+      },
+      {
+        "pid": 726452,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o5_4brkn_",
+          "client",
+          "request-2"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.08571599999999999
+      },
+      {
+        "barrier": "commit-before-ack",
+        "pid": 726450
+      },
+      {
+        "pid": 726450,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o5_4brkn_",
+          "owner",
+          "verifier0",
+          "owner-1",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o5_4brkn_/verifier0-ipc/s",
+          "verify",
+          "commit-before-ack"
+        ],
+        "exit": -9,
+        "termination": "SIGKILL",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.172695
+      },
+      {
+        "pid": 726454,
+        "error": "malformed-frame"
+      },
+      {
+        "pid": 726454,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o5_4brkn_",
+          "client",
+          "request-3"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.08768699999999999
+      },
+      {
+        "ready": true,
+        "pid": 726455,
+        "uid": 1000,
+        "gid": 1000,
+        "scope": "049fd000e72d7d8a67ecc70de2abebde0bcc4b89855284fb0e4ce0407ff09f46",
+        "socket_mode": "0o600"
+      },
+      {
+        "pid": 726456,
+        "response_sha256": "528c618851ef51aeb304f304f08bc94fd981a6756b63cc60fb4f2cf545a34af5",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726456,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o5_4brkn_",
+          "client",
+          "request-4"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.08440399999999999
+      },
+      {
+        "pid": 726457,
+        "response_sha256": "8840708f4219978588f5821f424af8b482d35e2b2fa3d6c24f8c812496cfb987",
+        "response_bytes": 119
+      },
+      {
+        "pid": 726457,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o5_4brkn_",
+          "client",
+          "request-5"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.087317
+      },
+      {
+        "pid": 726464,
+        "response_sha256": "00fd5ff70d8fae2bb99b982c7afdd19792d9a764baa00d12f14e5a9c938fdc23",
+        "response_bytes": 44
+      },
+      {
+        "pid": 726464,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o5_4brkn_",
+          "client",
+          "request-6"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.086432
+      },
+      {
+        "metrics": {
+          "accepted": 3,
+          "frames": 3,
+          "denied": 0,
+          "errors": 0,
+          "timeouts": 0,
+          "peers": [
+            [
+              [
+                726456,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726457,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "admit"
+            ],
+            [
+              [
+                726464,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "verify"
+            ]
+          ],
+          "responses": 3,
+          "connection_peak": 1
+        },
+        "maxrss_bytes": 54804480
+      },
+      {
+        "pid": 726455,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o5_4brkn_",
+          "owner",
+          "verifier0",
+          "owner-1",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o5_4brkn_/verifier0-ipc/s",
+          "none",
+          "none"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.15870299999999998
+      }
+    ]
+  },
+  {
+    "case": "test_lifecycle_unavailable_endpoint_has_no_fallback",
+    "seconds": 0.5432983229984529,
+    "temporary_bytes_observed_peak": 153173,
+    "maximum_owned_children": 2,
+    "coordinator_cumulative_maxrss_bytes": 54804480,
+    "events": [
+      {
+        "ready": true,
+        "pid": 726465,
+        "uid": 1000,
+        "gid": 1000,
+        "scope": "6a0fa4e7032997119e0d1636a724551ce48426eb811dee9aca2ab89e4dd644e3",
+        "socket_mode": "0o600"
+      },
+      {
+        "pid": 726466,
+        "response_sha256": "0ccf840817b310e44018c1d099084f110737bd658cd633535baedc5c08b049fc",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726466,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/opb7g9n6q",
+          "client",
+          "request-1"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.084954
+      },
+      {
+        "pid": 726467,
+        "response_sha256": "171af24be550fb9f6f2e98f8ce288c5bd07b8d55fddb7ffa023f5c6a50fd6407",
+        "response_bytes": 119
+      },
+      {
+        "pid": 726467,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/opb7g9n6q",
+          "client",
+          "request-2"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.082715
+      },
+      {
+        "pid": 726468,
+        "response_sha256": "592029fbfdbf0b05c643c10a2abd6b737e01e91875158f2c30d7779d77dc53dc",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726468,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/opb7g9n6q",
+          "client",
+          "request-3"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.08404299999999999
+      },
+      {
+        "pid": 726465,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/opb7g9n6q",
+          "owner",
+          "manager",
+          "owner-1",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/opb7g9n6q/manager-ipc/s",
+          "none",
+          "none"
+        ],
+        "exit": -9,
+        "termination": "SIGKILL",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.14637799999999998
+      },
+      {
+        "pid": 726469,
+        "error": "ipc-unavailable"
+      },
+      {
+        "pid": 726469,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/opb7g9n6q",
+          "client",
+          "request-4"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.08424
+      }
+    ]
+  },
+  {
+    "case": "test_lifecycle_recipient_lost_delivery_over_real_ipc",
+    "seconds": 3.91325156998937,
+    "temporary_bytes_observed_peak": 334127,
+    "maximum_owned_children": 3,
+    "coordinator_cumulative_maxrss_bytes": 54804480,
+    "events": [
+      {
+        "ready": true,
+        "pid": 726470,
+        "uid": 1000,
+        "gid": 1000,
+        "scope": "6a0fa4e7032997119e0d1636a724551ce48426eb811dee9aca2ab89e4dd644e3",
+        "socket_mode": "0o600"
+      },
+      {
+        "pid": 726471,
+        "response_sha256": "0ccf840817b310e44018c1d099084f110737bd658cd633535baedc5c08b049fc",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726471,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-1"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.084897
+      },
+      {
+        "pid": 726472,
+        "response_sha256": "7ec2326199c7ea76b858258507966039f33604ed1bdfa4bf84744f84ac4f6f2a",
+        "response_bytes": 119
+      },
+      {
+        "pid": 726472,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-2"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.08368099999999999
+      },
+      {
+        "ready": true,
+        "pid": 726473,
+        "uid": 1000,
+        "gid": 1000,
+        "scope": "2220711be5ed87ca09b7e39f2ed24add8fe662a2a2f77c2afa3eccb1f996c9ce",
+        "socket_mode": "0o600"
+      },
+      {
+        "pid": 726474,
+        "response_sha256": "6c13c4d791545b17dc1485132c8eab97a3b2a003d5d0b60b3b6e76420ab9ce87",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726474,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-3"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.081121
+      },
+      {
+        "pid": 726475,
+        "response_sha256": "f0b4f487b1ecc654976d1a43c32ba813f02227ef647e54aa3ad6e4167c5080e8",
+        "response_bytes": 119
+      },
+      {
+        "pid": 726475,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-4"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.08467899999999999
+      },
+      {
+        "pid": 726476,
+        "response_sha256": "8059a964064677759aa37022a27ce45a9316eeca05181b11f8aec576be14346c",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726476,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-5"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.082068
+      },
+      {
+        "pid": 726477,
+        "response_sha256": "2096884dc47f7e43dcedbad8102830dd79c21c58288e089fe2038c528bf12669",
+        "response_bytes": 135
+      },
+      {
+        "pid": 726477,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-6"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.085583
+      },
+      {
+        "pid": 726478,
+        "response_sha256": "604e5fc25144b9f5f88986c4b1accaa61ed779e4ad05240f1ad44aa3750c2d87",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726478,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-7"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.084711
+      },
+      {
+        "pid": 726479,
+        "response_sha256": "0286aabc73985e1ed213ab44981b129eb25a966cdc1367848218b2068536be12",
+        "response_bytes": 4553
+      },
+      {
+        "pid": 726479,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-8"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.08838499999999999
+      },
+      {
+        "pid": 726486,
+        "response_sha256": "c29fcdb14904deecc04197c5bb196e4d56b465ca19ab07e249096b0f360b38ac",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726486,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-9"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.078528
+      },
+      {
+        "pid": 726487,
+        "response_sha256": "a4a6b3f5ae5da3b663d29eaa03c0a767fd72a4fa2868c09b1a801416341a07a6",
+        "response_bytes": 137
+      },
+      {
+        "pid": 726487,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-10"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.08232699999999998
+      },
+      {
+        "pid": 726488,
+        "response_sha256": "a7468ab3903d72d59b6ee9fc2282f877d3535717d60832e4189a333dfa0fda05",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726488,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-11"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.08631
+      },
+      {
+        "pid": 726489,
+        "response_sha256": "1bf1444b7e244a960322aff280aacc9a4e982c682684b0898a4ad04102ce4e1d",
+        "response_bytes": 136
+      },
+      {
+        "pid": 726489,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-12"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.085086
+      },
+      {
+        "pid": 726490,
+        "response_sha256": "027c467a3c8804b5ff58af0574423b60f4b78a4986cbd89c31cbc0479df5aeed",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726490,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-13"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.084964
+      },
+      {
+        "pid": 726491,
+        "response_sha256": "b5fa65afdf6617f48c28c8e4af64d8d432cb908deb8623bf2af6f9f5cafa00a7",
+        "response_bytes": 118
+      },
+      {
+        "pid": 726491,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-14"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.08337800000000001
+      },
+      {
+        "pid": 726492,
+        "response_sha256": "33c8bcc5626097b25696c7ce261940c5a0033ecf5379820556a9cb157024a95f",
+        "response_bytes": 138
+      },
+      {
+        "pid": 726492,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-15"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.085798
+      },
+      {
+        "sent_without_reading": true,
+        "pid": 726493
+      },
+      {
+        "barrier": "enqueue-before-return",
+        "pid": 726473
+      },
+      {
+        "pid": 726493,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-16"
+        ],
+        "exit": -9,
+        "termination": "SIGKILL",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.07919899999999999
+      },
+      {
+        "pid": 726494,
+        "response_sha256": "29dbd25625a61201562f93a7c2d806af83d994ae76c8d8aed0a011ca9d8f9afd",
+        "response_bytes": 10302
+      },
+      {
+        "pid": 726494,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-17"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.087486
+      },
+      {
+        "pid": 726501,
+        "error": "not-releasable"
+      },
+      {
+        "pid": 726501,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-18"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.0851
+      },
+      {
+        "pid": 726502,
+        "response_sha256": "dfde0eb12b0b8da48774ac32a7e69618a29563bdb4f67ec53bf509f5c5556524",
+        "response_bytes": 195
+      },
+      {
+        "pid": 726502,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "client",
+          "request-19"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.083977
+      },
+      {
+        "metrics": {
+          "accepted": 39,
+          "frames": 39,
+          "denied": 0,
+          "errors": 0,
+          "timeouts": 0,
+          "peers": [
+            [
+              [
+                726471,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "status"
+            ],
+            [
+              [
+                726472,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "replace"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726478,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726479,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "reserve"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "reservation"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ],
+            [
+              [
+                726473,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "allocation-count"
+            ]
+          ],
+          "responses": 39,
+          "connection_peak": 1
+        },
+        "maxrss_bytes": 54804480
+      },
+      {
+        "pid": 726470,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "owner",
+          "manager",
+          "owner-1",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh/manager-ipc/s",
+          "none",
+          "none"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 1.764155
+      },
+      {
+        "metrics": {
+          "accepted": 15,
+          "frames": 15,
+          "denied": 0,
+          "errors": 1,
+          "timeouts": 0,
+          "peers": [
+            [
+              [
+                726474,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "status"
+            ],
+            [
+              [
+                726475,
+                1000,
+                1000
+              ],
+              "61646d696e",
+              "replace"
+            ],
+            [
+              [
+                726476,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726477,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "intent"
+            ],
+            [
+              [
+                726486,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726487,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "attach"
+            ],
+            [
+              [
+                726488,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726489,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "pending"
+            ],
+            [
+              [
+                726490,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ],
+            [
+              [
+                726491,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "claim"
+            ],
+            [
+              [
+                726492,
+                1000,
+                1000
+              ],
+              "777269746572",
+              "certify"
+            ],
+            [
+              [
+                726493,
+                1000,
+                1000
+              ],
+              "726563697069656e742d61",
+              "retrieve"
+            ],
+            [
+              [
+                726494,
+                1000,
+                1000
+              ],
+              "726563697069656e742d61",
+              "retrieve"
+            ],
+            [
+              [
+                726501,
+                1000,
+                1000
+              ],
+              "726563697069656e742d61",
+              "retrieve"
+            ],
+            [
+              [
+                726502,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ]
+          ],
+          "responses": 14,
+          "connection_peak": 1
+        },
+        "maxrss_bytes": 54804480
+      },
+      {
+        "pid": 726473,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh",
+          "owner",
+          "issuer",
+          "owner-1",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/o46xm13rh/issuer-ipc/s",
+          "retrieve",
+          "enqueue-before-return"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 54804480,
+        "cpu_seconds": 0.381341
+      }
+    ]
+  }
+]

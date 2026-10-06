@@ -1,0 +1,17 @@
+{
+  "portable_field": {
+    "modulus": "X^128+X^7+X^2+X+1",
+    "reduction_constant": "0x87",
+    "representation": "u128 bit i is coefficient of X^i; not GCM wire bit-endianness",
+    "source": "crates/field/src/arch/portable/arithmetic/ghash.rs",
+    "independent_reference_implemented": false
+  },
+  "macro_call_arguments": [
+    "0x494ef99794d5244f9152df59d87a9186",
+    "1 << 121"
+  ],
+  "macro_definition_absent": true,
+  "rank_argument_status": "Retained symbolic argument unchanged; no finite rank computation run",
+  "joint_view_status": "Restricted conditional distribution statement only; no commitment roots, online transcript simulator or extraction established",
+  "native_results": "unrun"
+}

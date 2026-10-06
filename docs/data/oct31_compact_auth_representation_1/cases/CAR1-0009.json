@@ -1,0 +1,14 @@
+{
+  "case_id": "C-08",
+  "invocation_id": "CAR1-0009",
+  "status": "pass",
+  "details": {
+    "case": "C-08",
+    "purpose": "stale statement identity rejected",
+    "full_relation": false,
+    "rejection": "circuit header identity/input limit mismatch",
+    "state": "incomplete"
+  },
+  "seconds": 3.7619960494339466e-05,
+  "work_events": 0
+}

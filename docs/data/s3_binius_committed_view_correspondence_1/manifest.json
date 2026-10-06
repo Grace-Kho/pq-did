@@ -1,0 +1,43 @@
+{
+  "package": "S3-BINIUS-COMMITTED-VIEW-CORRESPONDENCE-1",
+  "scope": "new completed argument/report snapshot; historical seals remain unchanged",
+  "sha256": {
+    "docs/data/s3_binius_committed_view_correspondence_1/argument-status.json": "e7267c5d4745418a5a4b66a7b54935cd7b58fa3a30566aeaa48ac1b0660c799f",
+    "docs/data/s3_binius_committed_view_correspondence_1/checked-inputs.json": "c03ec5ead6a0c233ad010e7fafdc9e7947a9d8155e41ca6dadfcc18e703302ae",
+    "docs/data/s3_binius_committed_view_correspondence_1/checks.py": "d4e4e2b592473262e99819967ab8ccf238383be142069167912eefe1545d40eb",
+    "docs/data/s3_binius_committed_view_correspondence_1/config.json": "db40fe855616dcd22f4c74b4f9a4b4b8a7ce13e5793b37a169a07c090c97f16f",
+    "docs/data/s3_binius_committed_view_correspondence_1/construction-contract.json": "2b589badc9e06be7e038bba294edc0271f206a084b67b0818cbfbf25d2b046d2",
+    "docs/data/s3_binius_committed_view_correspondence_1/full-audit.json": "6b1f0ea2ee5390acbb16cf3dfa2deff00917adbb3b632ff9f679ed775ff4ed7b",
+    "docs/data/s3_binius_committed_view_correspondence_1/full-audit.log": "ba194336799b5d7fb6288cec6c3984ab8dcab6d3e6ac2ce519c0dc9d5dc3d020",
+    "docs/data/s3_binius_committed_view_correspondence_1/full-audit.service.json": "1d6837d32b0eb67b87c604eeae7d7b653b3678d84120969460e426ea7e71868e",
+    "docs/data/s3_binius_committed_view_correspondence_1/opening.json": "1dca8a87220a0a60cab154d5775d24f3ce815929148fbf66e503c6a48bb4e781",
+    "docs/data/s3_binius_committed_view_correspondence_1/phases.json": "a026ae0bfd30bf0c8164a85a1e1da8540247a30e5ec021b779b8b5f9e95ecc16",
+    "docs/data/s3_binius_committed_view_correspondence_1/prefixes.json": "383e11ddf56a334f8c4a48a54736c21a12cbdd8b2b0fa4baf24ddc3dab14bd64",
+    "docs/data/s3_binius_committed_view_correspondence_1/preparation.json": "71add3161f3075442654a4d8b4dffe591ccdaa1b68ce801b5a2f91a7360c7e13",
+    "docs/data/s3_binius_committed_view_correspondence_1/prepare.json": "427338079ccfc21cfcefb1dfe3ac8519e319ebcbdeda80b92ef125623b8bd24f",
+    "docs/data/s3_binius_committed_view_correspondence_1/prepare.log": "d6ef84b62624d821ee0472c7b3e95f9dc92434b1f1debea77c5e052199a8aecb",
+    "docs/data/s3_binius_committed_view_correspondence_1/prepare.service.json": "067cf77dd65aa61bfceeee391c00206151dfeacd0e6dfc580624573d11475d1e",
+    "docs/data/s3_binius_committed_view_correspondence_1/quality-inputs.json": "ffeb7bae6432e102e54adb50b9c1d2e148f574d23fb7737d7a8148d3b4733f3d",
+    "docs/data/s3_binius_committed_view_correspondence_1/quality.json": "79b4e8a0dd0b9befe8dc1b413d46b3ce1d20a7b4bde4ddf74386c55fea8ca644",
+    "docs/data/s3_binius_committed_view_correspondence_1/quality.log": "56bf78ed8e0f806a59b4f04835c56c5b463c543ae5f19afc4871c5baae38cfcf",
+    "docs/data/s3_binius_committed_view_correspondence_1/quality.service.json": "6d295f540d1cfe823dd51d44b9c7ad66235e9a950a5bd041c0ccd732b76e49b8",
+    "docs/data/s3_binius_committed_view_correspondence_1/result.json": "06b74611d3efee8ddbe176fb482e5e2b6a7352b30832098f10b25cdbb34c5e9b",
+    "docs/data/s3_binius_committed_view_correspondence_1/retained-source-map.json": "e818c3e75c11cf67ebc921dd658d669c95051868a096bbda55137d095e2964c7",
+    "docs/data/s3_binius_committed_view_correspondence_1/run.py": "c238f75c0644821f4735998210c909000fa2f180fd1db7d133c82d5a394549f1",
+    "docs/data/s3_binius_committed_view_correspondence_1/validation.json": "5de92cf2137c94f64950bd676cf5ba49eb0690ed202808e61191e27c4bab6686",
+    "docs/spec_issues.md": "3d1e23d4f1e94c743dfa307e3bf41259b938ac183783d9c42ca317879fa6d45b",
+    "docs/stage3_binius_committed_view_correspondence.md": "653fdd0e458508388cb05854f464602ac26a14856cbcb1dc41066ebd4321d487",
+    "docs/status.md": "52b82d2b765677113171596696942b723e778cb13342d5c97a0c7951277ae51a",
+    "docs/traceability.md": "82e51fe502c1aadabb7abab48a7df61644362ff22e54fcb0dbabfe34b18061a2"
+  },
+  "deferred_finalisation_files": [
+    "final-inventory.json",
+    "readback.json",
+    "readback.log",
+    "readback.service.json",
+    "resource-closure.json",
+    "run-ledger.json",
+    "run.lock",
+    "validation-closure.json"
+  ]
+}

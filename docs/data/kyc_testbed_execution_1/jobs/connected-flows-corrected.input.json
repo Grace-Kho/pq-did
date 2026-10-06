@@ -1,0 +1,26 @@
+{
+  "name": "connected-flows-corrected",
+  "phase": "python",
+  "argv": [
+    "/home/grace/projects/pq-did/.venv/bin/python",
+    "-I",
+    "-B",
+    "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py",
+    "F"
+  ],
+  "limit_seconds": 150,
+  "child_seconds": 149,
+  "status": "launched",
+  "unit": "pqdid-kyc-execution-1-connected-flows-corrected",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 165990,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 30388388,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4107780096,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

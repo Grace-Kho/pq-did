@@ -1,0 +1,104 @@
+{
+  "package": "S3-BINIUS-JOINT-OPENING-CONSTRUCTION-1",
+  "status": "construction-decision-complete-with-retained-resource-qualification",
+  "analysis_opening_before_prior_turn_seconds": 80.91750274339225,
+  "prior_missing_review_charge_seconds": 10,
+  "continuation_operator_seconds": 35,
+  "source_acquisition_seconds": 3.0127020420040935,
+  "guarded_check_seconds": 6.652665003202856,
+  "analysis_package_charged_seconds": 54.66536704520695,
+  "analysis_aggregate_charged_seconds": 273.74786430181473,
+  "analysis_remaining_seconds": 26.2521356981853,
+  "implementation_remaining_seconds_unchanged": 810.6179695621813,
+  "KYC_remaining_seconds_unchanged": 443.3903556420428,
+  "KYC_completion_reserve_seconds_unchanged": 300,
+  "analysis_completion_reserve_seconds": 10,
+  "new_invocations": 0,
+  "cumulative_invocations_unchanged": 1140,
+  "invocation_ceiling_unchanged": 1146,
+  "cumulative_builds_unchanged": 10,
+  "build_ceiling_unchanged": 13,
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1
+  },
+  "source_acquisition_memory_compliance_certified": false,
+  "source_acquisition_ru_maxrss_bytes": 279449600,
+  "source_memory_observation": "source-memory-observation.json",
+  "all_new_workloads_memory_compliant_claimed": false,
+  "audit_cgroup_peak_bytes": 47558656,
+  "audit_memory_limit_bytes": 268435456,
+  "guarded_checks_memory_peak_bytes": 53407744,
+  "temporary_bytes": 0,
+  "artifact_bytes_unchanged": 58966547,
+  "all_completion_units_terminated": true,
+  "units": [
+    {
+      "unit": "pqdid-biniusjoint-quality.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusjoint-quality-2.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusjoint-prepare.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusjoint-full-audit.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-biniusjoint-readback.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    }
+  ],
+  "closing_queries_and_bookkeeping_seconds_included_in_operator_charge": 0.022924714954569936,
+  "resource_limits_increased": false,
+  "all_history_preserved": true,
+  "storage": {
+    "new_evidence_bytes": 409616,
+    "cumulative_evidence_bytes": 34160588,
+    "cumulative_ceiling_bytes": 41943040,
+    "shared_headroom_remaining_bytes": 7333773,
+    "cumulative_headroom_remaining_bytes": 7782452,
+    "shared_completion_reserve_bytes": 2097152,
+    "new_artifact_bytes": 0
+  }
+}

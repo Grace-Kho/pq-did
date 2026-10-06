@@ -1,0 +1,175 @@
+{
+  "prover_path": "/home/grace/projects/pq-did/experiments/r0_succinct_feasibility_1/tooling/sdk-3.0.6/r0vm",
+  "prover_sha256": "751b9b188d341e8bec5e02060086b7b1dc3f7289e90f726c38589bb6735dd6d7",
+  "source": "recursion 4.0.5 build.rs pin and include_bytes in src/prove/zkr.rs",
+  "archive_sha256": "744b999f0a35b3c86753311c7efb2a0054be21727095cf105af6ee7d3f4d8849",
+  "archive_bytes": 59768781,
+  "embedded_offset": 8945197,
+  "upstream_url": "https://risc0-artifacts.s3.us-west-2.amazonaws.com/zkr/744b999f0a35b3c86753311c7efb2a0054be21727095cf105af6ee7d3f4d8849.zip",
+  "downloaded_bytes": 0,
+  "preparation": "extracted exact embedded ZIP for provenance; runtime uses the unchanged built-in bytes",
+  "entries": [
+    {
+      "name": "identity.zkr",
+      "compressed_bytes": 1387760,
+      "uncompressed_bytes": 11942428
+    },
+    {
+      "name": "join.zkr",
+      "compressed_bytes": 2767696,
+      "uncompressed_bytes": 23884304
+    },
+    {
+      "name": "join_povw.zkr",
+      "compressed_bytes": 2776377,
+      "uncompressed_bytes": 24022304
+    },
+    {
+      "name": "join_unwrap_povw.zkr",
+      "compressed_bytes": 2773860,
+      "uncompressed_bytes": 23982560
+    },
+    {
+      "name": "lift_rv32im_v2_14.zkr",
+      "compressed_bytes": 1241133,
+      "uncompressed_bytes": 10313844
+    },
+    {
+      "name": "lift_rv32im_v2_15.zkr",
+      "compressed_bytes": 1348899,
+      "uncompressed_bytes": 11171192
+    },
+    {
+      "name": "lift_rv32im_v2_16.zkr",
+      "compressed_bytes": 1507966,
+      "uncompressed_bytes": 12343088
+    },
+    {
+      "name": "lift_rv32im_v2_17.zkr",
+      "compressed_bytes": 1480099,
+      "uncompressed_bytes": 12582012
+    },
+    {
+      "name": "lift_rv32im_v2_18.zkr",
+      "compressed_bytes": 1570417,
+      "uncompressed_bytes": 13383240
+    },
+    {
+      "name": "lift_rv32im_v2_19.zkr",
+      "compressed_bytes": 1689106,
+      "uncompressed_bytes": 14341880
+    },
+    {
+      "name": "lift_rv32im_v2_20.zkr",
+      "compressed_bytes": 1856035,
+      "uncompressed_bytes": 15615068
+    },
+    {
+      "name": "lift_rv32im_v2_21.zkr",
+      "compressed_bytes": 1836738,
+      "uncompressed_bytes": 15955008
+    },
+    {
+      "name": "lift_rv32im_v2_22.zkr",
+      "compressed_bytes": 1940890,
+      "uncompressed_bytes": 16857436
+    },
+    {
+      "name": "lift_rv32im_v2_23.zkr",
+      "compressed_bytes": 2067078,
+      "uncompressed_bytes": 17917460
+    },
+    {
+      "name": "lift_rv32im_v2_24.zkr",
+      "compressed_bytes": 2244572,
+      "uncompressed_bytes": 19291664
+    },
+    {
+      "name": "lift_rv32im_v2_povw_14.zkr",
+      "compressed_bytes": 1243825,
+      "uncompressed_bytes": 10354324
+    },
+    {
+      "name": "lift_rv32im_v2_povw_15.zkr",
+      "compressed_bytes": 1351463,
+      "uncompressed_bytes": 11211672
+    },
+    {
+      "name": "lift_rv32im_v2_povw_16.zkr",
+      "compressed_bytes": 1510364,
+      "uncompressed_bytes": 12383568
+    },
+    {
+      "name": "lift_rv32im_v2_povw_17.zkr",
+      "compressed_bytes": 1482840,
+      "uncompressed_bytes": 12622492
+    },
+    {
+      "name": "lift_rv32im_v2_povw_18.zkr",
+      "compressed_bytes": 1573045,
+      "uncompressed_bytes": 13423720
+    },
+    {
+      "name": "lift_rv32im_v2_povw_19.zkr",
+      "compressed_bytes": 1691709,
+      "uncompressed_bytes": 14382360
+    },
+    {
+      "name": "lift_rv32im_v2_povw_20.zkr",
+      "compressed_bytes": 1858763,
+      "uncompressed_bytes": 15655548
+    },
+    {
+      "name": "lift_rv32im_v2_povw_21.zkr",
+      "compressed_bytes": 1839460,
+      "uncompressed_bytes": 15995488
+    },
+    {
+      "name": "lift_rv32im_v2_povw_22.zkr",
+      "compressed_bytes": 1943628,
+      "uncompressed_bytes": 16897916
+    },
+    {
+      "name": "lift_rv32im_v2_povw_23.zkr",
+      "compressed_bytes": 2069693,
+      "uncompressed_bytes": 17957940
+    },
+    {
+      "name": "lift_rv32im_v2_povw_24.zkr",
+      "compressed_bytes": 2247162,
+      "uncompressed_bytes": 19332144
+    },
+    {
+      "name": "resolve.zkr",
+      "compressed_bytes": 2767983,
+      "uncompressed_bytes": 23889456
+    },
+    {
+      "name": "resolve_povw.zkr",
+      "compressed_bytes": 2771033,
+      "uncompressed_bytes": 23950452
+    },
+    {
+      "name": "resolve_unwrap_povw.zkr",
+      "compressed_bytes": 2770263,
+      "uncompressed_bytes": 23936468
+    },
+    {
+      "name": "test_recursion_circuit.zkr",
+      "compressed_bytes": 1872,
+      "uncompressed_bytes": 19412
+    },
+    {
+      "name": "union.zkr",
+      "compressed_bytes": 2762299,
+      "uncompressed_bytes": 23802976
+    },
+    {
+      "name": "unwrap_povw.zkr",
+      "compressed_bytes": 1390959,
+      "uncompressed_bytes": 11989532
+    }
+  ],
+  "cuda_driver_string_present": false,
+  "cpu_hal_string_present": true
+}

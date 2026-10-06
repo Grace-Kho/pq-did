@@ -1,0 +1,43 @@
+{
+  "implementation_ceiling_seconds": 6074,
+  "historical_seconds": 4963.397547877046,
+  "completion_reserve_seconds": 300,
+  "evidence_ceiling_bytes": 41943040,
+  "historical_evidence_bytes": 32269268,
+  "evidence_completion_reserve_bytes": 2097152,
+  "historical_artifact_bytes": 58966547,
+  "artifact_cap_bytes": 134217728,
+  "artifact_file_bytes": 33554432,
+  "ordinary_file_bytes": 1048576,
+  "temporary_bytes": 8388608,
+  "diagnostic_bytes": 61440,
+  "invocation_ceiling": 1146,
+  "historical_invocations": 1140,
+  "milestone_invocations": 0,
+  "build_ceiling": 13,
+  "historical_builds": 10,
+  "phase_memory": {
+    "native": 1073741824,
+    "python": 268435456,
+    "tool": 268435456,
+    "audit": 268435456
+  },
+  "aggregate_memory_bytes": 2147483648,
+  "worker_concurrency": 1,
+  "concurrency_note": "One serial bounded packaging/static/audit worker; no functional tests or builds",
+  "headroom_bytes": 2147483648,
+  "disk_stop_bytes": 9663676416,
+  "command_seconds": 300,
+  "child_seconds": 295,
+  "retained_artifact_classification_charge_bytes": 0,
+  "milestone_builds": 0,
+  "milestone_seconds": 743.3748382028152,
+  "new_evidence_cap_bytes": 9225093,
+  "new_artifact_cap_bytes": 66254976,
+  "work_event_ceiling": 4294967296,
+  "historical_work_events": 77593603,
+  "archive_evidence_exceptions": {
+    "docs/data/private_proof_handover_1/binius64-g0-handover-v1.tar.xz": 2097152,
+    "docs/data/private_proof_handover_1/binius64-g0-handover-v2.tar.xz": 2097152
+  }
+}

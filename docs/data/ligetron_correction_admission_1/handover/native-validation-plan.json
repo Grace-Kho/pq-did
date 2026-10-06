@@ -1,0 +1,133 @@
+{
+  "status": "PROPOSED_ALL_UNRUN",
+  "base_public_commit": "4b1cdef1bfdf4497fb3e38170db4541fba3f6c12",
+  "fixed_logical_cases": 20,
+  "proposed_max_targeted_corrective_reruns": 4,
+  "authorised_new_executions": 0,
+  "builds_run": 0,
+  "proofs_run": 0,
+  "counting_note": "These are proposed logical cases with declared sub-vectors, not consumed project invocations. Reconcile command, case and rerun counts with the live ledger before execution; do not hide subcases or bundle repeated runs to evade a cap.",
+  "gate_note": "Parameter/masking, commitment/compiler, public-seed expansion, full VM constraints, native source closure and quantum/security admission are separate unclosed obligations. No case passes those gates by proxy.",
+  "cases": [
+    {
+      "id": "ENT-01",
+      "name": "Checked private entropy request",
+      "required_check": "Harness injects exactly 32 fixed bytes through an isolated provider seam; confirm the complete seed reaches the encoding generator. This does not test entropy quality.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "ENT-02",
+      "name": "Entropy failure",
+      "required_check": "Provider returns failure; stage 1 is never entered and no receipt is released. Do not introduce a production deterministic fallback.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "ENT-03",
+      "name": "Encoding replay across stages",
+      "required_check": "One injected seed reproduces the same encoding stream in stages 1, 2 and 3; a second fixed seed is checked against its own independent expected stream.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "Q-01",
+      "name": "First seeded query block",
+      "required_check": "Compare the complete first 32 bytes for two declared fixed seeds with an independent implementation of the documented ASCII/seed/BE64 contract.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "Q-02",
+      "name": "Query block boundaries",
+      "required_check": "Compare complete stream slices spanning positions 0, 31, 32, 63 and 64 with independent expectations.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "Q-03",
+      "name": "Query reseeding",
+      "required_check": "After partial and full block consumption, seed(d) reproduces a newly constructed generator seeded with d; zero-seed reset is also specified.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "Q-04",
+      "name": "Discard equivalence",
+      "required_check": "For fixed counts 0, 1, 31, 32, 33, 64 and 65, discard then draw agrees with sequential reference draws.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "Q-05",
+      "name": "Counter exhaustion",
+      "required_check": "A test-only harness reaches the last permitted counter: the last block is emitted once, then refill throws without wrapping. No test control enters the production interface.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "Q-06",
+      "name": "Retained old negative control",
+      "required_check": "Show in the isolated old routine that the first block is the same for two fixed seeds; the new routines match their distinct independently calculated vectors. Do not claim an executed forgery.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "F-01",
+      "name": "Field acceptance endpoints",
+      "required_check": "Supply candidates 0 and q-1; both are returned canonically with one consumed candidate each.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "F-02",
+      "name": "Field rejection endpoints",
+      "required_check": "Supply q and 2^254-1 followed by a valid candidate; reject the first two without modular folding and return only the valid candidate.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "F-03",
+      "name": "Last permitted success",
+      "required_check": "Supply 255 rejected candidates then a valid 256th candidate; return it without premature exhaustion.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "F-04",
+      "name": "Exact exhaustion",
+      "required_check": "Supply 256 rejected candidates; exception occurs after exactly 256 draws and output retains a sentinel. No 257th draw or fallback occurs.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "F-05",
+      "name": "Stream-error propagation",
+      "required_check": "Make the candidate engine throw after one rejection; preserve the exception and prior caller output; no default field value is emitted.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "D-01",
+      "name": "Domain constants and expected streams",
+      "required_check": "Compare code, linear and quadratic AES-CTR streams with independent vectors using the specified same key and distinct ivc/ivl/ivq. Distinct outputs do not prove independence.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "D-02",
+      "name": "Prover/verifier stream agreement",
+      "required_check": "For identical public seeds, each prover role and corresponding verifier role consume the same deterministic candidate/rejection sequence.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "D-03",
+      "name": "AES engine reseeding",
+      "required_check": "Initialise, consume, then reinitialise; a fixed seed/IV matches a fresh engine including the first block. Test the active mpz_random_engine, not the unused older vector helper.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "D-04",
+      "name": "Active AES cache refill",
+      "required_check": "Compare output spanning the 16-KiB cache boundary with independent AES-CTR expectations, including candidate draws that straddle a refill.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "I-01",
+      "name": "Actual query selection caller",
+      "required_check": "Run retained portable_sample with the corrected generator for default n=32768 and t=192; check the exact independent index list, uniqueness, range and prover/verifier equality.",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "I-02",
+      "name": "Experimental stage-label agreement",
+      "required_check": "Check both entry points use identical experimental labels and compute matching seed vectors for fixed public transcript inputs. This is not full proof-format or statement-binding validation.",
+      "result": "NOT_RUN"
+    }
+  ]
+}

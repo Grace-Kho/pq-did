@@ -1,0 +1,24 @@
+{
+  "records": [
+    {
+      "url": "https://api.github.com/repos/ligeroinc/ligero-prover/git/commits/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12",
+      "bytes": 1274,
+      "sha256": "fa9fdebed6a24440dcdcaea00f7f39389de48d1b9a59af1970c747cc2ce49fd1",
+      "seconds": 0.28790033096447587
+    },
+    {
+      "url": "https://api.github.com/repos/ligeroinc/ligero-prover/git/trees/95984ef209bf37a53624d27a36905e41886dacfc?recursive=1",
+      "bytes": 97186,
+      "sha256": "813ff5b460fa695d5eb4ff920843ed56c09abc960396b551daaecbef8f7d314a",
+      "seconds": 0.3611536738462746
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ligeroinc/ligero-prover/4b1cdef1bfdf4497fb3e38170db4541fba3f6c12/src/bn254.cpp",
+      "bytes": 6613,
+      "sha256": "eb5cec3bdfc266439b4c7dfd5b8c096b9285e61b1a886194f91fbd5ad21e0c79",
+      "seconds": 0.34016708796843886
+    }
+  ],
+  "charged_metadata_bytes": 105073,
+  "cap_bytes": 1048576
+}

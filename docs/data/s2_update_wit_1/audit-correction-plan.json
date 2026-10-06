@@ -1,0 +1,27 @@
+{
+  "package": "S2-UPDATE-WIT-1",
+  "kind": "Explicit correction of audit-script lint; no implementation test repeated",
+  "prior_run": "final-audit",
+  "prior_error": "Ruff E501 audit.py:169, scope-description line 101 > 100 characters",
+  "diagnosis_command": [
+    ".venv/bin/ruff",
+    "check",
+    "--no-cache",
+    "docs/data/s2_update_wit_1/audit.py"
+  ],
+  "diagnosis_exit_code": 1,
+  "resource_stop": false,
+  "incorrect_implementation_acceptance": false,
+  "resolution": "Shortened the audit scope string; explicit audit-correction mode retains original failure/STOP and counts all six commands within the unchanged aggregate allowance.",
+  "new_run": "audit-correction",
+  "implementation_changes_after_tests": false,
+  "implementation_tests_repeated": false,
+  "limits_increased": false,
+  "new_proofs": 0,
+  "new_zkvm_executions": 0,
+  "preserved_failed_source_sha256": {
+    "run_checks.before-audit-correction.py": "d11d9ae648865f8b8dba3b91005a32ea25b18d15ed2fafac82c569e97ef94634",
+    "audit.before-audit-correction.py": "7d1f306310db4252d3f46d14df8fe1a60374fbcd7e80e866be70e7c529fe561a"
+  },
+  "guard_eligibility": "Previous final-audit exit 1, no resource stop/max/OOM event, new name only; STOP retained; only corrected code/document audit allowed."
+}

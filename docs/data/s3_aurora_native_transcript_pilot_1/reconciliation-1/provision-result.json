@@ -1,0 +1,73 @@
+{
+  "status": "provisioned-static-prerequisites-pass",
+  "source_repositories": [
+    {
+      "repository": "libiop",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "tree": "2e2588ccb085242dd2237875c3b9adf1a0fc958c",
+      "tree_entries": 252,
+      "blob_bytes": 1622845,
+      "full_tree_and_worktree_verified": true,
+      "gitlink_commits_preserved": true
+    },
+    {
+      "repository": "libff",
+      "commit": "9769030a06b7ab933d6c064db120019decd359f1",
+      "tree": "265df78b1b15fcf061a9c34bf8ce195b6bd9b9f8",
+      "tree_entries": 170,
+      "blob_bytes": 941858,
+      "full_tree_and_worktree_verified": true,
+      "gitlink_commits_preserved": true
+    },
+    {
+      "repository": "libfqfft",
+      "commit": "7d460caa27b87574fe0e8144e6a3a66b7bcfe770",
+      "tree": "6c7875366ca607a2b12caa5cbfd8b3c020bce9aa",
+      "tree_entries": 509,
+      "blob_bytes": 588716,
+      "full_tree_and_worktree_verified": true,
+      "gitlink_commits_preserved": true
+    }
+  ],
+  "packages": [
+    {
+      "package": "libsodium-dev",
+      "version": "1.0.18-2",
+      "sha256": "34e8337b30160458f44bada750c9e94ec18ec5ac087e2428043ddb04625226cc",
+      "member_count": 78,
+      "libraries": [
+        {
+          "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/prefix/usr/lib/x86_64-linux-gnu/libsodium.a",
+          "members": 106,
+          "ELFCLASS64": true,
+          "little_endian": true,
+          "machine": "EM_X86_64",
+          "sha256": "f2d799980d7fe9e9b9ca32e36ec535ad6f67c48f177e91116166116db584303d"
+        }
+      ]
+    },
+    {
+      "package": "libgmp-dev",
+      "version": "2:6.3.0+dfsg-5ubuntu2",
+      "sha256": "b43e38f2d5ae4aa38471e1b3f90ed63e96c2ce614ffe496cdcd72f9944e87a4a",
+      "member_count": 23,
+      "libraries": [
+        {
+          "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/prefix/usr/lib/x86_64-linux-gnu/libgmp.a",
+          "members": 530,
+          "ELFCLASS64": true,
+          "little_endian": true,
+          "machine": "EM_X86_64",
+          "sha256": "9248bba090ac69a4fe7861166f12eba6188d9c7055029fac7920c1800599478a"
+        }
+      ]
+    }
+  ],
+  "native_admitted": true,
+  "retained_files_matched": {
+    "snapshot": 21,
+    "historical_copies": 8
+  },
+  "compilation_compatibility_verified": false,
+  "maintainer_scripts_executed": false
+}

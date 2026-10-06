@@ -1,0 +1,63 @@
+{
+  "package": "S3-MLDSA-MODMUL-LOWERING-PILOT-1",
+  "passed": true,
+  "comparison_complete": true,
+  "resource_guard_status": "pending-outer-finalisation",
+  "protected_files": 8759,
+  "unchanged_protected_files": 8756,
+  "allowed_changed_files": [
+    "docs/spec_issues.md",
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "changed_files": [],
+  "missing_files": [],
+  "bytes_hashed": 293862946,
+  "coverage_sha256": "73df29e985aad1544583a3700a7cdbf83f2c3bfbfcde6c43720fb8a2d7c772fc",
+  "supplementary_comparison": {
+    "protected_files": 1531,
+    "unchanged_protected_files": 1531,
+    "allowed_changed_files": [],
+    "changed_files": [],
+    "missing_files": [],
+    "bytes_hashed": 13094625,
+    "coverage_sha256": "18a5ab9bbf1058cd67df35edea3edec5cb39b11efb4d0ef1a12307e59912af25"
+  },
+  "content_partition_union": 10290,
+  "content_partition_overlap": 0,
+  "identity_inclusive_unique_paths": 10316,
+  "name_inventory": {
+    "passed": true,
+    "count": 1953,
+    "unexpected": [],
+    "missing": []
+  },
+  "only_existing_changes": [
+    "docs/status.md",
+    "docs/traceability.md",
+    "docs/spec_issues.md"
+  ],
+  "existing_report_prefixes_preserved": true,
+  "baseline_regenerated": false,
+  "test_invocations": {
+    "generation": 2,
+    "differential": 10,
+    "invalid_constant": 4
+  },
+  "unique_new_tests": 14,
+  "total_test_invocations_including_prior_package": 247,
+  "new_numerical_calculations": 0,
+  "scoped_existing_verifier_regressions": 0,
+  "analysis_allowance_remaining_unchanged": 253.60648515704088,
+  "isolation_allowance_remaining_unchanged": 250.22,
+  "local_links_checked": 476,
+  "package_bytes_before_report": 346325,
+  "temporary_storage_bytes": 0,
+  "charged_seconds_including_inflight_audit_reservation": 216.98547093803063,
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "estimator_runs": 0,
+  "activation": false,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1
+}

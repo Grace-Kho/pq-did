@@ -1,0 +1,6 @@
+{
+  "correction": "Finalise the passed outer guard and audited manifest before readback. Reuse the completed content comparisons. Failed readback retained unchanged.",
+  "failed_readback": "jobs/readback.json",
+  "corrected_readback_job": "package",
+  "historical_expectations_changed": false
+}

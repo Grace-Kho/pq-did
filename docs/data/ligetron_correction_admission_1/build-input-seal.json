@@ -1,0 +1,30 @@
+{
+  "sha256": {
+    "experiments/ligetron_correction_admission_1/overlay/CMakeLists.txt": "054204a3489c9034236e071813c095cca3b2da5d2c396ed574fb2870049962a8",
+    "experiments/ligetron_correction_admission_1/overlay/RELEASE.json": "e3f6f92b65ef317d8ae09cf1ae75756727a0b0e7d5d12e306ede3b560108a467",
+    "experiments/ligetron_correction_admission_1/overlay/include/params.hpp": "d7d9bf73a37509bdbabf3ea468359ee2eef110b501cc3e2c983a89fdf59b0387",
+    "experiments/ligetron_correction_admission_1/overlay/include/runtime.hpp": "c38528a4964693e05064abb0c655506d6e88f347dbb0c8516223a216e03110e7",
+    "experiments/ligetron_correction_admission_1/overlay/include/transpiler.hpp": "698556941887c802c944e027959892f9dd874047d8b288c2f29794a4b780e162",
+    "experiments/ligetron_correction_admission_1/overlay/include/util/csprng.hpp": "9aeae589e9f780a776b5a96f0c6689a4923c19c0868cde296c8e0954c09f8319",
+    "experiments/ligetron_correction_admission_1/overlay/include/util/portable_sample.hpp": "d919c6144188c6a6aa51f3526a0ee3c765c17ba21c31af04724aff954a06184d",
+    "experiments/ligetron_correction_admission_1/overlay/include/zkp/backend/core.hpp": "609e1eea96bd2f74c4b8248359d32b09913c11f33a9d0422712645061a60e840",
+    "experiments/ligetron_correction_admission_1/overlay/include/zkp/backend/ligero.hpp": "e19cf5196fc0b988112d4443bb7cf93dfc81874bfbe33b715d45420ea6d2b0e3",
+    "experiments/ligetron_correction_admission_1/overlay/include/zkp/backend/witness_manager.hpp": "ca9596ebf287ceb9ba74b21cdc94b849f32324ea93829b56f743794de673fc7e",
+    "experiments/ligetron_correction_admission_1/overlay/include/zkp/common.hpp": "58fa6de11cdf0f6eded9390468100e8f170db2304faaf6170ca93c9955c9249b",
+    "experiments/ligetron_correction_admission_1/overlay/include/zkp/finite_field_gmp.hpp": "342e26fc6139c1c70dcd3d168bb364dcfc22c09827eb98917edbfbafd1e0c29b",
+    "experiments/ligetron_correction_admission_1/overlay/include/zkp/hash.hpp": "252aed55a7143bdfcf3a60a9257273dc5c76ce1c753ab8cab135f021f5506baf",
+    "experiments/ligetron_correction_admission_1/overlay/include/zkp/merkle_tree.hpp": "95c910455c4461f817959ed4c762e0c9f7e18bc7da779ddcbd527b98cd822309",
+    "experiments/ligetron_correction_admission_1/overlay/include/zkp/nonbatch_context.hpp": "64498f80f7eeadd453ee0f63d506ae2c1f2caa1836b3c22777508f370294687e",
+    "experiments/ligetron_correction_admission_1/overlay/include/zkp/pqdid_rng_exp1.hpp": "5093385f3e6041e03dc80bbfe53e3c554eb37d90e571ff91d1fd6bde711af4fd",
+    "experiments/ligetron_correction_admission_1/overlay/include/zkp/proof_serializer.hpp": "6ab01a3e97c86587cd3de569540f47ebcb4d1b3c751c9515514f29abbd8bb6fd",
+    "experiments/ligetron_correction_admission_1/overlay/include/zkp/random.hpp": "378850d0f12f285b4d45ae90d8272aec80ca883505a1b5ffe7cda2fe5fdf4e29",
+    "experiments/ligetron_correction_admission_1/overlay/src/bn254.cpp": "eb5cec3bdfc266439b4c7dfd5b8c096b9285e61b1a886194f91fbd5ad21e0c79",
+    "experiments/ligetron_correction_admission_1/overlay/src/webgpu_prover.cpp": "d424389f3bc7297cb21631018f05aa524a353a9abf3e2dcbc7fca8bf4ef04b3c",
+    "experiments/ligetron_correction_admission_1/overlay/src/webgpu_verifier.cpp": "5a5231aee64e395d6bf03448f5e58f060ac8029fc6860d5e81f0ea7cedbce38a",
+    "experiments/ligetron_correction_admission_1/native/cases.cpp": "d72dffda585822eee93b1393345f2b82890b8435a43ffafef5f43ad61b67becb",
+    "experiments/ligetron_correction_admission_1/native/legacy_query.hpp": "0cef0f3a1f2b10e8ba45e42524f5893a9507acea2f7928f918c07ec402e84fc6",
+    "experiments/ligetron_correction_admission_1/native/prelude.hpp": "2e7897724e2066b6c0f08dfb26af86a6d7940c863a59f3472051012fea6c406d"
+  },
+  "patch_sha256": "043ee96fbae51b9416b3435be7e7ad27cfc076ddb7790e14f14be6ea09c0dc3c",
+  "exception": "test-only linker wrapper for synthetic entropy; normal helper always invokes RAND_priv_bytes"
+}

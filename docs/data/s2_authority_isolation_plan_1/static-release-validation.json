@@ -1,0 +1,23 @@
+{
+  "package": "S2-AUTHORITY-ISOLATION-PLAN-1",
+  "passed": true,
+  "static_only": true,
+  "proposed_accounts": 13,
+  "owner_scopes": 4,
+  "case_plan_count": 22,
+  "actual_identity_cases_executed": 0,
+  "functional_tests_run": 0,
+  "units_installed_or_started": 0,
+  "host_changes": false,
+  "checks": [
+    "identity/group/permission matrix",
+    "exact store/endpoint ownership",
+    "no live secrets or resolved identity placeholders",
+    "runtime assembly plan",
+    "unchanged resource envelope",
+    "installed systemd unit syntax parser",
+    "actual host vs remapped guard interpretation",
+    "evidence Python AST"
+  ],
+  "unit_parser_scope": "Static syntax only; missing launchers and deployment remain blockers"
+}

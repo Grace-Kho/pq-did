@@ -1,0 +1,35 @@
+{
+  "package": "S3-MLDSA-BUTTERFLY-COMPOSITION-PILOT-1",
+  "existing_source_changed": [],
+  "expected_invocations": 16,
+  "reviewed_local_inputs": [
+    "docs/stage3_mldsa_arithmetic_lowering_review.md",
+    "docs/stage3_mldsa_modmul_lowering_pilot.md",
+    "docs/implementation_spec.md",
+    "src/pqdid/bounded_mldsa.py",
+    "src/pqdid/circuits/scalar_ring.py",
+    "src/pqdid/circuits/words.py",
+    "src/pqdid/circuits/division.py",
+    "src/pqdid/circuits/control.py",
+    "src/pqdid/circuits/emitter.py",
+    "tests/reference/scalar_oracle.py",
+    "tests/reference/signature_oracle.py",
+    "experiments/mldsa_modmul_lowering_1/candidate.py",
+    "docs/data/s3_mldsa_modmul_lowering_pilot_1/pilot-result.json",
+    "configs/suite.json"
+  ],
+  "constants": [
+    4808194,
+    3765607
+  ],
+  "circuit_limit": 2,
+  "generation_probes": 2,
+  "differential_cases": 12,
+  "invalid_constant_cases": 2,
+  "input_contract": "All signed64 representatives with the original checked product/subtraction/addition acceptance; no canonical-only restriction.",
+  "composition": "Two-node actual forward schedule fragment: (0,128,zeta1), then (0,64,zeta2); stage1 output at64 is an explicit third frontier input. Not a complete two-layer block.",
+  "comparison": "Separate fully checked baseline/candidate segments in each paired trace. Release single trace before composition.",
+  "active_profile_changed": false,
+  "new_proofs": 0,
+  "new_zkvm_executions": 0
+}

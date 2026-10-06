@@ -1,0 +1,11 @@
+
+BCS parameters
+* digest_len (bytes) = 64
+* digest_len (bits) = 512
+* hash_type = blake2b
+
+BCS parameters
+* digest_len (bytes) = 64
+* digest_len (bits) = 512
+* hash_type = blake2b
+X c205bcf633cced002a4e48a29dbe7c18c9cc10b690c38c01e52cf69407b0b04a1ae332fe5a257fc1d5cb0cf1765deac499473fd2589675e0e40b4d59c9b0a8b3 4 10

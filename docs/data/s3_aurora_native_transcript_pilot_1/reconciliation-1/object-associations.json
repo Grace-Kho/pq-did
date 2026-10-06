@@ -1,0 +1,50 @@
+{
+  "proofs": [
+    {
+      "repository": "libiop",
+      "origin": "https://github.com/scipr-lab/libiop.git",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "commit_type": "commit",
+      "raw_commit_sha1_verified": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "stored_tree_header": "2e2588ccb085242dd2237875c3b9adf1a0fc958c",
+      "resolved_tree": "2e2588ccb085242dd2237875c3b9adf1a0fc958c",
+      "tree_type": "tree",
+      "replacement_objects_disabled": true,
+      "optional_git_writes_disabled": true,
+      "before": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "after": "2e2588ccb085242dd2237875c3b9adf1a0fc958c",
+      "existing_fsck_reused": true
+    },
+    {
+      "repository": "libff",
+      "origin": "https://github.com/scipr-lab/libff.git",
+      "commit": "9769030a06b7ab933d6c064db120019decd359f1",
+      "commit_type": "commit",
+      "raw_commit_sha1_verified": "9769030a06b7ab933d6c064db120019decd359f1",
+      "stored_tree_header": "265df78b1b15fcf061a9c34bf8ce195b6bd9b9f8",
+      "resolved_tree": "265df78b1b15fcf061a9c34bf8ce195b6bd9b9f8",
+      "tree_type": "tree",
+      "replacement_objects_disabled": true,
+      "optional_git_writes_disabled": true,
+      "before": "9769030a06b7ab933d6c064db120019decd359f1",
+      "after": "265df78b1b15fcf061a9c34bf8ce195b6bd9b9f8",
+      "existing_fsck_reused": false
+    },
+    {
+      "repository": "libfqfft",
+      "origin": "https://github.com/scipr-lab/libfqfft.git",
+      "commit": "7d460caa27b87574fe0e8144e6a3a66b7bcfe770",
+      "commit_type": "commit",
+      "raw_commit_sha1_verified": "7d460caa27b87574fe0e8144e6a3a66b7bcfe770",
+      "stored_tree_header": "6c7875366ca607a2b12caa5cbfd8b3c020bce9aa",
+      "resolved_tree": "6c7875366ca607a2b12caa5cbfd8b3c020bce9aa",
+      "tree_type": "tree",
+      "replacement_objects_disabled": true,
+      "optional_git_writes_disabled": true,
+      "before": "7d460caa27b87574fe0e8144e6a3a66b7bcfe770",
+      "after": "6c7875366ca607a2b12caa5cbfd8b3c020bce9aa",
+      "existing_fsck_reused": false
+    }
+  ],
+  "corrections_applied": false
+}

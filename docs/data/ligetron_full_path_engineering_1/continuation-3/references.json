@@ -1,0 +1,38 @@
+{
+  "inspection_date": "2026-10-03",
+  "no_dependency_acquisition": true,
+  "sources": [
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/wsl/wsl-config",
+      "kind": "official Microsoft configuration documentation, read through web tool",
+      "document_last_updated": "2026-09-16",
+      "findings": {
+        "experimental.autoMemoryReclaim_documented_default": "dropCache",
+        "wsl2.memory_documented_default": "50% of total Windows memory",
+        "configuration_path": "%UserProfile%\\.wslconfig",
+        "settings_timing": "Configuration applied when VM launches; changed settings may require VM shutdown/restart.",
+        "pageReporting": "Not present in the inspected current configuration table; no version-specific default asserted."
+      }
+    },
+    {
+      "url": "https://github.com/microsoft/WSL/releases",
+      "kind": "official release index",
+      "finding": "Release 2.7.14 listed; this does not establish runtime reclamation."
+    }
+  ],
+  "unavailable_version_specific_source": [
+    {
+      "url": "https://raw.githubusercontent.com/microsoft/WSL/2.7.14/src/windows/service/Config.cpp",
+      "result": "404"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/microsoft/WSL/2.7.14/src/windows/service/Config.h",
+      "result": "404"
+    },
+    {
+      "url": "https://github.com/microsoft/WSL/tree/2.7.14/src/windows/service",
+      "result": "web-tool cache miss"
+    }
+  ],
+  "limits": "Documentation defaults are not an observation of effective runtime reclamation. No claim that an installed feature is functioning follows from absence of an override."
+}

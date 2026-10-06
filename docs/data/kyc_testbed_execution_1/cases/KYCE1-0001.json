@@ -1,0 +1,13 @@
+{
+  "invocation_id": "KYCE1-0001",
+  "case_id": "W-01",
+  "work_event_reservation": 0,
+  "ordinal": 1,
+  "cumulative_invocations": 975,
+  "status": "failed",
+  "error": "TypeError",
+  "diagnostic": "Traceback (most recent call last):\n  File \"/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py\", line 33, in execute\n    row[\"details\"] = operation()\n                     ~~~~~~~~~^^\n  File \"/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py\", line 71, in operation\n    cache[\"fixture\"] = WalletFixture()\n                       ~~~~~~~~~~~~~^^\n  File \"/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/fixtures.py\", line 27, in __init__\n    meta = encode_instance_metadata(self.pp.metadata)\nTypeError: encode_instance_metadata() missing 1 required positional argument: 'metadata'\n",
+  "seconds": 0.013628146145492792,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions or evaluations. Host setup included in time and resource guard."
+}

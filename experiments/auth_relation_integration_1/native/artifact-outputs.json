@@ -1,0 +1,9 @@
+{
+  "build_outputs": [
+    "experiments/auth_relation_integration_1/build/relation_adapter",
+    "experiments/auth_relation_integration_1/build/CMakeFiles/relation_adapter.dir/relation_adapter.cpp.o",
+    "experiments/auth_relation_integration_1/build/CMakeFiles/4.2.3/CMakeDetermineCompilerABI_CXX.bin",
+    "experiments/auth_relation_integration_1/build/CMakeFiles/4.2.3/CompilerIdCXX/a.out"
+  ],
+  "note": "Exact version-specific probe destinations use the retained installed CMake4.2.3 metadata. No file role is inferred from a renamed extension."
+}

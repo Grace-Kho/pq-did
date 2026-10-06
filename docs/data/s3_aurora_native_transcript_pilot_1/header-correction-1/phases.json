@@ -1,0 +1,36 @@
+{
+  "phases": [
+    {
+      "name": "static-and-preflight",
+      "status": "passed"
+    },
+    {
+      "name": "compile-and-link-both-targets",
+      "status": "passed-at-compiler-layer"
+    },
+    {
+      "name": "outer-build-resource-validation",
+      "status": "incomplete-failed"
+    },
+    {
+      "name": "SEM-01-through-SEM-08",
+      "status": "not-run"
+    },
+    {
+      "name": "TR-01-through-TR-16",
+      "status": "not-run"
+    },
+    {
+      "name": "preparation",
+      "status": "not-admitted"
+    },
+    {
+      "name": "full-audit",
+      "status": "failed-before-worker"
+    },
+    {
+      "name": "failure-reporting",
+      "status": "completed-without-audit-success-claim"
+    }
+  ]
+}

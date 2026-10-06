@@ -1,0 +1,61 @@
+[
+  {
+    "case": "test_real_process_crash[rows-before-commit]",
+    "durable_after": {
+      "sequence": 2,
+      "head": "19a5f093e0042ac8d0738a20b6af74e06388e0b885a172c6d94f6088d7ee8255",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 0
+    },
+    "crash": {
+      "point": "rows-before-commit",
+      "barrier": {
+        "barrier": "rows-before-commit",
+        "committed": false
+      },
+      "pid": 2402693,
+      "exit": -9,
+      "child_ru_maxrss_bytes": 49586176,
+      "model": "real SIGKILL at application boundary; no power-loss or SQLite-internal fault"
+    }
+  },
+  {
+    "case": "test_real_process_crash[commit-before-ack]",
+    "durable_after": {
+      "sequence": 3,
+      "head": "fa21df3f3803a7b7a1845b30fc309ef43c03836e02bf2a2b524811c82014cd76",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 1,
+      "history": 1,
+      "revoked": [
+        0
+      ],
+      "consumed_nonces": 1,
+      "entries": 0
+    },
+    "crash": {
+      "point": "commit-before-ack",
+      "barrier": {
+        "barrier": "commit-before-ack",
+        "committed": true,
+        "ticket": [
+          3,
+          "fa21df3f3803a7b7a1845b30fc309ef43c03836e02bf2a2b524811c82014cd76",
+          "6fecdffb2104458f6c830df433dfc30dd3facda7afe430fd0a2876dd2e2cce0b",
+          1
+        ],
+        "response_sha256": "f381ad330b43a54a98487373f5f87645855dd39ec58aedff8bdd8780ebe0768c"
+      },
+      "pid": 2402694,
+      "exit": -9,
+      "child_ru_maxrss_bytes": 49782784,
+      "model": "real SIGKILL at application boundary; no power-loss or SQLite-internal fault"
+    }
+  }
+]

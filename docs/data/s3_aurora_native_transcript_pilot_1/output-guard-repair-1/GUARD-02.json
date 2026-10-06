@@ -1,0 +1,7 @@
+{
+  "outcome": {
+    "expected_rejection": "ordinary per-file limit",
+    "synthetic_size_only": 1048577
+  },
+  "expected_failure_fixture": true
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "file": "sources/tiny-keccak-tag.json",
+    "url": "https://api.github.com/repos/risc0/tiny-keccak/git/ref/tags/tiny-keccak/v2.0.2-risczero.0",
+    "bytes": 415,
+    "sha256": "727c10059e1b5ca137a4bb49c5216522a30392fb1a45bec22c2a150ef6de36a4",
+    "retrieved_UTC": "2026-09-19T05:41:12.562038+00:00"
+  },
+  {
+    "file": "sources/tiny-keccak-Cargo.toml",
+    "url": "https://raw.githubusercontent.com/risc0/tiny-keccak/tiny-keccak/v2.0.2-risczero.0/Cargo.toml",
+    "bytes": 1802,
+    "sha256": "b04e18510c307c65de1f5e8a43200a3f2dbd35f8d8d1162887eb7342c3653a84",
+    "retrieved_UTC": "2026-09-19T05:41:12.860799+00:00",
+    "immutable_url": "https://raw.githubusercontent.com/risc0/tiny-keccak/8fcc866dc94dcec3e79c3b2bc8fbc51b22f2d5e1/Cargo.toml",
+    "commit": "8fcc866dc94dcec3e79c3b2bc8fbc51b22f2d5e1",
+    "immutable_source_matches": true
+  },
+  {
+    "file": "sources/tiny-keccak-shake.rs",
+    "url": "https://raw.githubusercontent.com/risc0/tiny-keccak/tiny-keccak/v2.0.2-risczero.0/src/shake.rs",
+    "bytes": 1268,
+    "sha256": "dce5e46f5fda03abd42faecaa2b6d5ccc0abfd53aff59a67d63dec828fc02e2b",
+    "retrieved_UTC": "2026-09-19T05:41:13.152174+00:00",
+    "immutable_url": "https://raw.githubusercontent.com/risc0/tiny-keccak/8fcc866dc94dcec3e79c3b2bc8fbc51b22f2d5e1/src/shake.rs",
+    "commit": "8fcc866dc94dcec3e79c3b2bc8fbc51b22f2d5e1",
+    "immutable_source_matches": true
+  },
+  {
+    "file": "sources/tiny-keccak-sha3.rs",
+    "url": "https://raw.githubusercontent.com/risc0/tiny-keccak/tiny-keccak/v2.0.2-risczero.0/src/sha3.rs",
+    "bytes": 1929,
+    "sha256": "e72aab9e536438114049f590a47c6df6250f0fffb6664dbcb85a87a151fb7e65",
+    "retrieved_UTC": "2026-09-19T05:41:13.434033+00:00",
+    "immutable_url": "https://raw.githubusercontent.com/risc0/tiny-keccak/8fcc866dc94dcec3e79c3b2bc8fbc51b22f2d5e1/src/sha3.rs",
+    "commit": "8fcc866dc94dcec3e79c3b2bc8fbc51b22f2d5e1",
+    "immutable_source_matches": true
+  },
+  {
+    "file": "sources/tiny-keccak-keccakf.rs",
+    "url": "https://raw.githubusercontent.com/risc0/tiny-keccak/tiny-keccak/v2.0.2-risczero.0/src/keccakf.rs",
+    "bytes": 1080,
+    "sha256": "4b3819eddaca86a733e9b8ff8715eda5c03aa3cfa9ac845617ac39f21b0cdc81",
+    "retrieved_UTC": "2026-09-19T05:41:13.722585+00:00",
+    "immutable_url": "https://raw.githubusercontent.com/risc0/tiny-keccak/8fcc866dc94dcec3e79c3b2bc8fbc51b22f2d5e1/src/keccakf.rs",
+    "commit": "8fcc866dc94dcec3e79c3b2bc8fbc51b22f2d5e1",
+    "immutable_source_matches": true
+  },
+  {
+    "file": "sources/tiny-keccak-lib.rs",
+    "url": "https://raw.githubusercontent.com/risc0/tiny-keccak/tiny-keccak/v2.0.2-risczero.0/src/lib.rs",
+    "bytes": 13105,
+    "sha256": "c14112176bb359d24486f141a36370fe3a894c4dc7cdb952718a7509c93e424a",
+    "retrieved_UTC": "2026-09-19T05:41:14.002130+00:00",
+    "immutable_url": "https://raw.githubusercontent.com/risc0/tiny-keccak/8fcc866dc94dcec3e79c3b2bc8fbc51b22f2d5e1/src/lib.rs",
+    "commit": "8fcc866dc94dcec3e79c3b2bc8fbc51b22f2d5e1",
+    "immutable_source_matches": true
+  },
+  {
+    "file": "sources/zkdilithium-README.md",
+    "url": "https://raw.githubusercontent.com/guruvamsi-policharla/zkdilithium/a9dfe21bf967fbc4319ae18b74e6e9cdb0a7482a/README.md",
+    "bytes": 1449,
+    "sha256": "ac2815ea0d6aef0a73e5ac9a661ae0fb9ad2d45b62950c38eb14b32c6cf605ba",
+    "retrieved_UTC": "2026-09-19T05:43:57.435121+00:00"
+  },
+  {
+    "file": "sources/zkdilithium-Cargo.toml",
+    "url": "https://raw.githubusercontent.com/guruvamsi-policharla/zkdilithium/a9dfe21bf967fbc4319ae18b74e6e9cdb0a7482a/Cargo.toml",
+    "bytes": 588,
+    "sha256": "3978d086a630a72f182280621fc215ed3445a974059839b6e21cec78cacfd1c3",
+    "retrieved_UTC": "2026-09-19T05:43:57.721812+00:00"
+  },
+  {
+    "file": "sources/zkdilithium-tree.json",
+    "url": "https://api.github.com/repos/guruvamsi-policharla/zkdilithium/git/trees/a9dfe21bf967fbc4319ae18b74e6e9cdb0a7482a?recursive=1",
+    "bytes": 4679,
+    "sha256": "526266f94815f2e9b7bccb01646e5cafa3b7704a7a1f32fcc2c3ab71d7627e58",
+    "retrieved_UTC": "2026-09-19T05:43:58.034868+00:00"
+  },
+  {
+    "file": "sources/lazer-README.md",
+    "url": "https://raw.githubusercontent.com/lazer-crypto/lazer/fc455c3b48bfe9e4b1e0607c74ae676c04020923/README.md",
+    "bytes": 6591,
+    "sha256": "163930617ff02cf593f0a382cc46fc7945011378b9f777bd6a59f5e1c7bbe137",
+    "retrieved_UTC": "2026-09-19T05:43:58.391717+00:00"
+  },
+  {
+    "file": "sources/lazer-anon_cred.py",
+    "url": "https://raw.githubusercontent.com/lazer-crypto/lazer/fc455c3b48bfe9e4b1e0607c74ae676c04020923/python/anon_cred/anon_cred.py",
+    "bytes": 8069,
+    "sha256": "57cb1d1f17fefa4a5856eba08a261b5fec4c20c59dc9089765f22716c3b7ca78",
+    "retrieved_UTC": "2026-09-19T05:43:58.721890+00:00"
+  },
+  {
+    "file": "sources/lazer-params.py",
+    "url": "https://raw.githubusercontent.com/lazer-crypto/lazer/fc455c3b48bfe9e4b1e0607c74ae676c04020923/python/anon_cred/anon_cred_p2_params.py",
+    "bytes": 911,
+    "sha256": "adea568a7f85e2f4130963ae027f7fb4df202f6414c8c89ed15680a97b411aa0",
+    "retrieved_UTC": "2026-09-19T05:43:59.016274+00:00"
+  },
+  {
+    "file": "sources/zkdilithium-src-starkpf-air.rs",
+    "url": "https://raw.githubusercontent.com/guruvamsi-policharla/zkdilithium/a9dfe21bf967fbc4319ae18b74e6e9cdb0a7482a/src/starkpf/air.rs",
+    "bytes": 31806,
+    "sha256": "8396390f01b7b0010b4356737f7ef7dacdbdfc3f3539c66154dbd5a4b8d27953",
+    "retrieved_UTC": "2026-09-19T05:45:14.107227+00:00"
+  },
+  {
+    "file": "sources/zkdilithium-src-starkpf-mod.rs",
+    "url": "https://raw.githubusercontent.com/guruvamsi-policharla/zkdilithium/a9dfe21bf967fbc4319ae18b74e6e9cdb0a7482a/src/starkpf/mod.rs",
+    "bytes": 51351,
+    "sha256": "05afd8f1608db388e7091847016d3e82edeffa4598a52f8a1731ce76e5a8fb4b",
+    "retrieved_UTC": "2026-09-19T05:45:14.400050+00:00"
+  },
+  {
+    "file": "sources/zkdilithium-src-starkpf-prover.rs",
+    "url": "https://raw.githubusercontent.com/guruvamsi-policharla/zkdilithium/a9dfe21bf967fbc4319ae18b74e6e9cdb0a7482a/src/starkpf/prover.rs",
+    "bytes": 14976,
+    "sha256": "e39c0b8c228a2fe17a9462cc83448054927a33f3597b6b5ab220b82c869ba92b",
+    "retrieved_UTC": "2026-09-19T05:45:14.693565+00:00"
+  }
+]

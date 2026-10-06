@@ -1,0 +1,14 @@
+{
+  "name": "full-audit",
+  "status": "failed-admission",
+  "exit_code": 1,
+  "worker_launched": false,
+  "cgroup_peak_bytes": null,
+  "actual_wall_seconds": null,
+  "conservative_charge_seconds": 7,
+  "reason": "Unchanged package_size classifier rejects retained oversized unregistered object before auditor launch",
+  "audit_memory_ceiling_unchanged": 268435456,
+  "outer_RLIMIT_AS": 268435456,
+  "new_content_comparisons": 0,
+  "automatic_retry": false
+}

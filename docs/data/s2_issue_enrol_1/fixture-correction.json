@@ -1,0 +1,19 @@
+{
+  "package": "S2-ISSUE-ENROL-1",
+  "initial_result": "focused.json",
+  "initial_failure": "The wrong-issuer fixture used noncanonical iref bytes and raised in InstanceMetadata construction before exercising HolderAcceptance.",
+  "initial_passed": 47,
+  "initial_failed": 1,
+  "resource_limit_hit": false,
+  "correction": "Use another canonical iref with the unchanged schema, so the expected-instance rejection is exercised.",
+  "other_pre_final_refinements": [
+    "Expose successful explicit abort as ABORTED; no cryptographic or commitment change.",
+    "Concurrency test allows the specified bounded BUSY outcome while requiring unique IDs for all completions."
+  ],
+  "retained_stop": "STOP.json",
+  "fresh_evidence_namespace": "final_checks",
+  "limits": "Same cgroup/CPU/time/disk/output limits; both ledgers count toward 300 s and one shared lock. No automatic repeat of a run name.",
+  "full_audits_so_far": 0,
+  "proofs": 0,
+  "zkvm_executions": 0
+}

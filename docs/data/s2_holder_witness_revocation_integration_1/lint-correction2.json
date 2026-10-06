@@ -1,0 +1,21 @@
+{
+  "failure": "quality-final",
+  "cause": "One E501 in generated closure prose added while documenting the first lint diagnostic.",
+  "change": "Split closure prose into two lines; no implementation/test behaviour changes. Retain both lint results; formatter and lint only.",
+  "evidence": {
+    "quality-final.log": "a278275b56fe7628a7cff418aa19a18e8d941cfaf5893ead19b73902927d3342",
+    "quality-final.json": "0aaaf3dd58be4aa3e5a88daabf1d8480d9aee4283ca74a7de8a45091dab9c13f",
+    "close.py-before-lint2.txt": "5fb08c276a0fa76de9895880f9785a5ff27e3b7c9a64815cd72451d3f5119975",
+    "run_checks.py-before-lint2.txt": "1a8f76be6d146e3001dd88046ba19293f69400f3618d02dff13671b413f8b639"
+  },
+  "permitted_followups": [
+    "correction-format",
+    "quality-complete",
+    "format",
+    "prepare",
+    "full-audit"
+  ],
+  "additional_test_invocations": 0,
+  "automatic_retry": false,
+  "resource_limits_changed": false
+}

@@ -1,0 +1,14 @@
+{
+  "case_id": "C-15",
+  "invocation_id": "CAR1-0016",
+  "status": "pass",
+  "details": {
+    "case": "C-15",
+    "purpose": "retained term-entry cap produces incomplete result",
+    "full_relation": false,
+    "rejection": "incomplete: retained term-entry capacity",
+    "state": "incomplete"
+  },
+  "seconds": 4.767905920743942e-05,
+  "work_events": 2
+}

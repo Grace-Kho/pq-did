@@ -1,0 +1,34 @@
+{
+  "package": "S2-HOLDER-WITNESS-REVOCATION-INTEGRATION-1",
+  "authority": "Only manuscript II-VIII, SPEC-001..004 and existing R-016..031/reference contracts",
+  "existing_source_changed": [],
+  "initial_witness": "Existing durable issuer obtains registered manager witness, commits credential/outcome, recipient retrieval feeds HolderAcceptance; holder revalidates initial credential and witness/state. No resync/path service introduced.",
+  "credential_invariant": "Same credential object, binding, attributes, rid and signature through all updates; only immutable witness path and corresponding state change together.",
+  "atomicity": "Single in-memory snapshot assignment after complete UpdateWit validation. REVOKED and failures retain original snapshot with no replacement. Not crash durability.",
+  "retrieval": "Public namespace/after_epoch/target_epoch only, admitted durable manager; existing PAGE/next_epoch/complete and explicit bounded continuation.",
+  "limits": {
+    "records": 16,
+    "encoded_bytes": 178592,
+    "automatic_continuation": false
+  },
+  "evidence": {
+    "A": "Actual bounded signatures, state authentication, Merkle and witness processing",
+    "B": "Complete local auth with private witness in test coordinator, never a remote proof",
+    "C": "Existing explicit test-only exact X/token adapter at separate durable verifiers; no private witness sent"
+  },
+  "scenario": "One counted test entry point: issue both credentials, unrelated revoke/update, prepare/accept A+B synthetically, own revoke/REVOKED/no mutation, new-root local auth false with no synthetic rejection invocation.",
+  "new_test_invocations": 22,
+  "expected_total_invocations": 194,
+  "prior_test_invocations": 172,
+  "prior_implementation_seconds": 116.6594756442355,
+  "budget_amendment": {
+    "prior_ceiling": 172,
+    "additional_authorised": 27,
+    "ceiling": 199
+  },
+  "native_ABI_runs": 0,
+  "new_proofs": 0,
+  "zkvm_executions": 0,
+  "activation": false,
+  "next_package": "S2-KYC-INTEROPERABILITY-CONTRACT-1"
+}

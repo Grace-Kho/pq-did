@@ -1,0 +1,1040 @@
+{
+  "meaning": "Synthetic independent exact-integer expectations; not official FIPS vectors",
+  "oracle": "Fractions/floor, centred interval and independent nearest-multiple decomposition",
+  "source_sha256": {
+    "tests/reference/generate_scalar_vectors.py": "35a52e641a4dbe17e36282b829b4a5e4f50d75334935e865ad23443a362c0d78",
+    "tests/reference/scalar_oracle.py": "3cf218d9a1476e315692404d0e6bb8adf88e18df46387d8fc5b9e9c1d589f2b4"
+  },
+  "division": [
+    {
+      "dividend": -9223372036854775808,
+      "divisor": 1,
+      "quotient": -9223372036854775808,
+      "remainder": 0
+    },
+    {
+      "dividend": -9223372036854775807,
+      "divisor": 1,
+      "quotient": -9223372036854775807,
+      "remainder": 0
+    },
+    {
+      "dividend": -8380418,
+      "divisor": 1,
+      "quotient": -8380418,
+      "remainder": 0
+    },
+    {
+      "dividend": -8380417,
+      "divisor": 1,
+      "quotient": -8380417,
+      "remainder": 0
+    },
+    {
+      "dividend": -8380416,
+      "divisor": 1,
+      "quotient": -8380416,
+      "remainder": 0
+    },
+    {
+      "dividend": -17,
+      "divisor": 1,
+      "quotient": -17,
+      "remainder": 0
+    },
+    {
+      "dividend": -2,
+      "divisor": 1,
+      "quotient": -2,
+      "remainder": 0
+    },
+    {
+      "dividend": -1,
+      "divisor": 1,
+      "quotient": -1,
+      "remainder": 0
+    },
+    {
+      "dividend": 0,
+      "divisor": 1,
+      "quotient": 0,
+      "remainder": 0
+    },
+    {
+      "dividend": 1,
+      "divisor": 1,
+      "quotient": 1,
+      "remainder": 0
+    },
+    {
+      "dividend": 2,
+      "divisor": 1,
+      "quotient": 2,
+      "remainder": 0
+    },
+    {
+      "dividend": 17,
+      "divisor": 1,
+      "quotient": 17,
+      "remainder": 0
+    },
+    {
+      "dividend": 8380416,
+      "divisor": 1,
+      "quotient": 8380416,
+      "remainder": 0
+    },
+    {
+      "dividend": 8380417,
+      "divisor": 1,
+      "quotient": 8380417,
+      "remainder": 0
+    },
+    {
+      "dividend": 8380418,
+      "divisor": 1,
+      "quotient": 8380418,
+      "remainder": 0
+    },
+    {
+      "dividend": 9223372036854775807,
+      "divisor": 1,
+      "quotient": 9223372036854775807,
+      "remainder": 0
+    },
+    {
+      "dividend": -9223372036854775808,
+      "divisor": 2,
+      "quotient": -4611686018427387904,
+      "remainder": 0
+    },
+    {
+      "dividend": -9223372036854775807,
+      "divisor": 2,
+      "quotient": -4611686018427387904,
+      "remainder": 1
+    },
+    {
+      "dividend": -8380418,
+      "divisor": 2,
+      "quotient": -4190209,
+      "remainder": 0
+    },
+    {
+      "dividend": -8380417,
+      "divisor": 2,
+      "quotient": -4190209,
+      "remainder": 1
+    },
+    {
+      "dividend": -8380416,
+      "divisor": 2,
+      "quotient": -4190208,
+      "remainder": 0
+    },
+    {
+      "dividend": -17,
+      "divisor": 2,
+      "quotient": -9,
+      "remainder": 1
+    },
+    {
+      "dividend": -2,
+      "divisor": 2,
+      "quotient": -1,
+      "remainder": 0
+    },
+    {
+      "dividend": -1,
+      "divisor": 2,
+      "quotient": -1,
+      "remainder": 1
+    },
+    {
+      "dividend": 0,
+      "divisor": 2,
+      "quotient": 0,
+      "remainder": 0
+    },
+    {
+      "dividend": 1,
+      "divisor": 2,
+      "quotient": 0,
+      "remainder": 1
+    },
+    {
+      "dividend": 2,
+      "divisor": 2,
+      "quotient": 1,
+      "remainder": 0
+    },
+    {
+      "dividend": 17,
+      "divisor": 2,
+      "quotient": 8,
+      "remainder": 1
+    },
+    {
+      "dividend": 8380416,
+      "divisor": 2,
+      "quotient": 4190208,
+      "remainder": 0
+    },
+    {
+      "dividend": 8380417,
+      "divisor": 2,
+      "quotient": 4190208,
+      "remainder": 1
+    },
+    {
+      "dividend": 8380418,
+      "divisor": 2,
+      "quotient": 4190209,
+      "remainder": 0
+    },
+    {
+      "dividend": 9223372036854775807,
+      "divisor": 2,
+      "quotient": 4611686018427387903,
+      "remainder": 1
+    },
+    {
+      "dividend": -9223372036854775808,
+      "divisor": 16,
+      "quotient": -576460752303423488,
+      "remainder": 0
+    },
+    {
+      "dividend": -9223372036854775807,
+      "divisor": 16,
+      "quotient": -576460752303423488,
+      "remainder": 1
+    },
+    {
+      "dividend": -8380418,
+      "divisor": 16,
+      "quotient": -523777,
+      "remainder": 14
+    },
+    {
+      "dividend": -8380417,
+      "divisor": 16,
+      "quotient": -523777,
+      "remainder": 15
+    },
+    {
+      "dividend": -8380416,
+      "divisor": 16,
+      "quotient": -523776,
+      "remainder": 0
+    },
+    {
+      "dividend": -17,
+      "divisor": 16,
+      "quotient": -2,
+      "remainder": 15
+    },
+    {
+      "dividend": -2,
+      "divisor": 16,
+      "quotient": -1,
+      "remainder": 14
+    },
+    {
+      "dividend": -1,
+      "divisor": 16,
+      "quotient": -1,
+      "remainder": 15
+    },
+    {
+      "dividend": 0,
+      "divisor": 16,
+      "quotient": 0,
+      "remainder": 0
+    },
+    {
+      "dividend": 1,
+      "divisor": 16,
+      "quotient": 0,
+      "remainder": 1
+    },
+    {
+      "dividend": 2,
+      "divisor": 16,
+      "quotient": 0,
+      "remainder": 2
+    },
+    {
+      "dividend": 17,
+      "divisor": 16,
+      "quotient": 1,
+      "remainder": 1
+    },
+    {
+      "dividend": 8380416,
+      "divisor": 16,
+      "quotient": 523776,
+      "remainder": 0
+    },
+    {
+      "dividend": 8380417,
+      "divisor": 16,
+      "quotient": 523776,
+      "remainder": 1
+    },
+    {
+      "dividend": 8380418,
+      "divisor": 16,
+      "quotient": 523776,
+      "remainder": 2
+    },
+    {
+      "dividend": 9223372036854775807,
+      "divisor": 16,
+      "quotient": 576460752303423487,
+      "remainder": 15
+    },
+    {
+      "dividend": -9223372036854775808,
+      "divisor": 523776,
+      "quotient": -17609382707217,
+      "remainder": 515584
+    },
+    {
+      "dividend": -9223372036854775807,
+      "divisor": 523776,
+      "quotient": -17609382707217,
+      "remainder": 515585
+    },
+    {
+      "dividend": -8380418,
+      "divisor": 523776,
+      "quotient": -17,
+      "remainder": 523774
+    },
+    {
+      "dividend": -8380417,
+      "divisor": 523776,
+      "quotient": -17,
+      "remainder": 523775
+    },
+    {
+      "dividend": -8380416,
+      "divisor": 523776,
+      "quotient": -16,
+      "remainder": 0
+    },
+    {
+      "dividend": -17,
+      "divisor": 523776,
+      "quotient": -1,
+      "remainder": 523759
+    },
+    {
+      "dividend": -2,
+      "divisor": 523776,
+      "quotient": -1,
+      "remainder": 523774
+    },
+    {
+      "dividend": -1,
+      "divisor": 523776,
+      "quotient": -1,
+      "remainder": 523775
+    },
+    {
+      "dividend": 0,
+      "divisor": 523776,
+      "quotient": 0,
+      "remainder": 0
+    },
+    {
+      "dividend": 1,
+      "divisor": 523776,
+      "quotient": 0,
+      "remainder": 1
+    },
+    {
+      "dividend": 2,
+      "divisor": 523776,
+      "quotient": 0,
+      "remainder": 2
+    },
+    {
+      "dividend": 17,
+      "divisor": 523776,
+      "quotient": 0,
+      "remainder": 17
+    },
+    {
+      "dividend": 8380416,
+      "divisor": 523776,
+      "quotient": 16,
+      "remainder": 0
+    },
+    {
+      "dividend": 8380417,
+      "divisor": 523776,
+      "quotient": 16,
+      "remainder": 1
+    },
+    {
+      "dividend": 8380418,
+      "divisor": 523776,
+      "quotient": 16,
+      "remainder": 2
+    },
+    {
+      "dividend": 9223372036854775807,
+      "divisor": 523776,
+      "quotient": 17609382707216,
+      "remainder": 8191
+    },
+    {
+      "dividend": -9223372036854775808,
+      "divisor": 8380417,
+      "quotient": -1100586287873,
+      "remainder": 3007233
+    },
+    {
+      "dividend": -9223372036854775807,
+      "divisor": 8380417,
+      "quotient": -1100586287873,
+      "remainder": 3007234
+    },
+    {
+      "dividend": -8380418,
+      "divisor": 8380417,
+      "quotient": -2,
+      "remainder": 8380416
+    },
+    {
+      "dividend": -8380417,
+      "divisor": 8380417,
+      "quotient": -1,
+      "remainder": 0
+    },
+    {
+      "dividend": -8380416,
+      "divisor": 8380417,
+      "quotient": -1,
+      "remainder": 1
+    },
+    {
+      "dividend": -17,
+      "divisor": 8380417,
+      "quotient": -1,
+      "remainder": 8380400
+    },
+    {
+      "dividend": -2,
+      "divisor": 8380417,
+      "quotient": -1,
+      "remainder": 8380415
+    },
+    {
+      "dividend": -1,
+      "divisor": 8380417,
+      "quotient": -1,
+      "remainder": 8380416
+    },
+    {
+      "dividend": 0,
+      "divisor": 8380417,
+      "quotient": 0,
+      "remainder": 0
+    },
+    {
+      "dividend": 1,
+      "divisor": 8380417,
+      "quotient": 0,
+      "remainder": 1
+    },
+    {
+      "dividend": 2,
+      "divisor": 8380417,
+      "quotient": 0,
+      "remainder": 2
+    },
+    {
+      "dividend": 17,
+      "divisor": 8380417,
+      "quotient": 0,
+      "remainder": 17
+    },
+    {
+      "dividend": 8380416,
+      "divisor": 8380417,
+      "quotient": 0,
+      "remainder": 8380416
+    },
+    {
+      "dividend": 8380417,
+      "divisor": 8380417,
+      "quotient": 1,
+      "remainder": 0
+    },
+    {
+      "dividend": 8380418,
+      "divisor": 8380417,
+      "quotient": 1,
+      "remainder": 1
+    },
+    {
+      "dividend": 9223372036854775807,
+      "divisor": 8380417,
+      "quotient": 1100586287872,
+      "remainder": 5373183
+    },
+    {
+      "dividend": -9223372036854775808,
+      "divisor": 9223372036854775807,
+      "quotient": -2,
+      "remainder": 9223372036854775806
+    },
+    {
+      "dividend": -9223372036854775807,
+      "divisor": 9223372036854775807,
+      "quotient": -1,
+      "remainder": 0
+    },
+    {
+      "dividend": -8380418,
+      "divisor": 9223372036854775807,
+      "quotient": -1,
+      "remainder": 9223372036846395389
+    },
+    {
+      "dividend": -8380417,
+      "divisor": 9223372036854775807,
+      "quotient": -1,
+      "remainder": 9223372036846395390
+    },
+    {
+      "dividend": -8380416,
+      "divisor": 9223372036854775807,
+      "quotient": -1,
+      "remainder": 9223372036846395391
+    },
+    {
+      "dividend": -17,
+      "divisor": 9223372036854775807,
+      "quotient": -1,
+      "remainder": 9223372036854775790
+    },
+    {
+      "dividend": -2,
+      "divisor": 9223372036854775807,
+      "quotient": -1,
+      "remainder": 9223372036854775805
+    },
+    {
+      "dividend": -1,
+      "divisor": 9223372036854775807,
+      "quotient": -1,
+      "remainder": 9223372036854775806
+    },
+    {
+      "dividend": 0,
+      "divisor": 9223372036854775807,
+      "quotient": 0,
+      "remainder": 0
+    },
+    {
+      "dividend": 1,
+      "divisor": 9223372036854775807,
+      "quotient": 0,
+      "remainder": 1
+    },
+    {
+      "dividend": 2,
+      "divisor": 9223372036854775807,
+      "quotient": 0,
+      "remainder": 2
+    },
+    {
+      "dividend": 17,
+      "divisor": 9223372036854775807,
+      "quotient": 0,
+      "remainder": 17
+    },
+    {
+      "dividend": 8380416,
+      "divisor": 9223372036854775807,
+      "quotient": 0,
+      "remainder": 8380416
+    },
+    {
+      "dividend": 8380417,
+      "divisor": 9223372036854775807,
+      "quotient": 0,
+      "remainder": 8380417
+    },
+    {
+      "dividend": 8380418,
+      "divisor": 9223372036854775807,
+      "quotient": 0,
+      "remainder": 8380418
+    },
+    {
+      "dividend": 9223372036854775807,
+      "divisor": 9223372036854775807,
+      "quotient": 1,
+      "remainder": 0
+    }
+  ],
+  "centred": [
+    {
+      "value": -9223372036854775808,
+      "modulus": 1,
+      "expected": 0
+    },
+    {
+      "value": -1,
+      "modulus": 1,
+      "expected": 0
+    },
+    {
+      "value": -1,
+      "modulus": 1,
+      "expected": 0
+    },
+    {
+      "value": 0,
+      "modulus": 1,
+      "expected": 0
+    },
+    {
+      "value": -1,
+      "modulus": 1,
+      "expected": 0
+    },
+    {
+      "value": 0,
+      "modulus": 1,
+      "expected": 0
+    },
+    {
+      "value": 0,
+      "modulus": 1,
+      "expected": 0
+    },
+    {
+      "value": 1,
+      "modulus": 1,
+      "expected": 0
+    },
+    {
+      "value": 0,
+      "modulus": 1,
+      "expected": 0
+    },
+    {
+      "value": 1,
+      "modulus": 1,
+      "expected": 0
+    },
+    {
+      "value": 9223372036854775807,
+      "modulus": 1,
+      "expected": 0
+    },
+    {
+      "value": -9223372036854775808,
+      "modulus": 2,
+      "expected": 0
+    },
+    {
+      "value": -2,
+      "modulus": 2,
+      "expected": 0
+    },
+    {
+      "value": -2,
+      "modulus": 2,
+      "expected": 0
+    },
+    {
+      "value": -1,
+      "modulus": 2,
+      "expected": 1
+    },
+    {
+      "value": -1,
+      "modulus": 2,
+      "expected": 1
+    },
+    {
+      "value": 0,
+      "modulus": 2,
+      "expected": 0
+    },
+    {
+      "value": 1,
+      "modulus": 2,
+      "expected": 1
+    },
+    {
+      "value": 2,
+      "modulus": 2,
+      "expected": 0
+    },
+    {
+      "value": 1,
+      "modulus": 2,
+      "expected": 1
+    },
+    {
+      "value": 2,
+      "modulus": 2,
+      "expected": 0
+    },
+    {
+      "value": 9223372036854775807,
+      "modulus": 2,
+      "expected": 1
+    },
+    {
+      "value": -9223372036854775808,
+      "modulus": 16,
+      "expected": 0
+    },
+    {
+      "value": -16,
+      "modulus": 16,
+      "expected": 0
+    },
+    {
+      "value": -9,
+      "modulus": 16,
+      "expected": 7
+    },
+    {
+      "value": -8,
+      "modulus": 16,
+      "expected": 8
+    },
+    {
+      "value": -1,
+      "modulus": 16,
+      "expected": -1
+    },
+    {
+      "value": 0,
+      "modulus": 16,
+      "expected": 0
+    },
+    {
+      "value": 8,
+      "modulus": 16,
+      "expected": 8
+    },
+    {
+      "value": 9,
+      "modulus": 16,
+      "expected": -7
+    },
+    {
+      "value": 15,
+      "modulus": 16,
+      "expected": -1
+    },
+    {
+      "value": 16,
+      "modulus": 16,
+      "expected": 0
+    },
+    {
+      "value": 9223372036854775807,
+      "modulus": 16,
+      "expected": -1
+    },
+    {
+      "value": -9223372036854775808,
+      "modulus": 523776,
+      "expected": -8192
+    },
+    {
+      "value": -523776,
+      "modulus": 523776,
+      "expected": 0
+    },
+    {
+      "value": -261889,
+      "modulus": 523776,
+      "expected": 261887
+    },
+    {
+      "value": -261888,
+      "modulus": 523776,
+      "expected": 261888
+    },
+    {
+      "value": -1,
+      "modulus": 523776,
+      "expected": -1
+    },
+    {
+      "value": 0,
+      "modulus": 523776,
+      "expected": 0
+    },
+    {
+      "value": 261888,
+      "modulus": 523776,
+      "expected": 261888
+    },
+    {
+      "value": 261889,
+      "modulus": 523776,
+      "expected": -261887
+    },
+    {
+      "value": 523775,
+      "modulus": 523776,
+      "expected": -1
+    },
+    {
+      "value": 523776,
+      "modulus": 523776,
+      "expected": 0
+    },
+    {
+      "value": 9223372036854775807,
+      "modulus": 523776,
+      "expected": 8191
+    },
+    {
+      "value": -9223372036854775808,
+      "modulus": 8380417,
+      "expected": 3007233
+    },
+    {
+      "value": -8380417,
+      "modulus": 8380417,
+      "expected": 0
+    },
+    {
+      "value": -4190209,
+      "modulus": 8380417,
+      "expected": 4190208
+    },
+    {
+      "value": -4190208,
+      "modulus": 8380417,
+      "expected": -4190208
+    },
+    {
+      "value": -1,
+      "modulus": 8380417,
+      "expected": -1
+    },
+    {
+      "value": 0,
+      "modulus": 8380417,
+      "expected": 0
+    },
+    {
+      "value": 4190208,
+      "modulus": 8380417,
+      "expected": 4190208
+    },
+    {
+      "value": 4190209,
+      "modulus": 8380417,
+      "expected": -4190208
+    },
+    {
+      "value": 8380416,
+      "modulus": 8380417,
+      "expected": -1
+    },
+    {
+      "value": 8380417,
+      "modulus": 8380417,
+      "expected": 0
+    },
+    {
+      "value": 9223372036854775807,
+      "modulus": 8380417,
+      "expected": -3007234
+    }
+  ],
+  "decompose": [
+    {
+      "value": -9223372036854775808,
+      "high": 6,
+      "low": -135423,
+      "hint0": 6,
+      "hint1": 5
+    },
+    {
+      "value": -8380417,
+      "high": 0,
+      "low": 0,
+      "hint0": 0,
+      "hint1": 15
+    },
+    {
+      "value": -1,
+      "high": 0,
+      "low": -1,
+      "hint0": 0,
+      "hint1": 15
+    },
+    {
+      "value": 0,
+      "high": 0,
+      "low": 0,
+      "hint0": 0,
+      "hint1": 15
+    },
+    {
+      "value": 1,
+      "high": 0,
+      "low": 1,
+      "hint0": 0,
+      "hint1": 1
+    },
+    {
+      "value": 261887,
+      "high": 0,
+      "low": 261887,
+      "hint0": 0,
+      "hint1": 1
+    },
+    {
+      "value": 261888,
+      "high": 0,
+      "low": 261888,
+      "hint0": 0,
+      "hint1": 1
+    },
+    {
+      "value": 261889,
+      "high": 1,
+      "low": -261887,
+      "hint0": 1,
+      "hint1": 0
+    },
+    {
+      "value": 785663,
+      "high": 1,
+      "low": 261887,
+      "hint0": 1,
+      "hint1": 2
+    },
+    {
+      "value": 785664,
+      "high": 1,
+      "low": 261888,
+      "hint0": 1,
+      "hint1": 2
+    },
+    {
+      "value": 785665,
+      "high": 2,
+      "low": -261887,
+      "hint0": 2,
+      "hint1": 1
+    },
+    {
+      "value": 3928319,
+      "high": 7,
+      "low": 261887,
+      "hint0": 7,
+      "hint1": 8
+    },
+    {
+      "value": 3928320,
+      "high": 7,
+      "low": 261888,
+      "hint0": 7,
+      "hint1": 8
+    },
+    {
+      "value": 3928321,
+      "high": 8,
+      "low": -261887,
+      "hint0": 8,
+      "hint1": 7
+    },
+    {
+      "value": 7594751,
+      "high": 14,
+      "low": 261887,
+      "hint0": 14,
+      "hint1": 15
+    },
+    {
+      "value": 7594752,
+      "high": 14,
+      "low": 261888,
+      "hint0": 14,
+      "hint1": 15
+    },
+    {
+      "value": 7594753,
+      "high": 15,
+      "low": -261887,
+      "hint0": 15,
+      "hint1": 14
+    },
+    {
+      "value": 8118527,
+      "high": 15,
+      "low": 261887,
+      "hint0": 15,
+      "hint1": 0
+    },
+    {
+      "value": 8118528,
+      "high": 15,
+      "low": 261888,
+      "hint0": 15,
+      "hint1": 0
+    },
+    {
+      "value": 8118529,
+      "high": 0,
+      "low": -261888,
+      "hint0": 0,
+      "hint1": 15
+    },
+    {
+      "value": 8380415,
+      "high": 0,
+      "low": -2,
+      "hint0": 0,
+      "hint1": 15
+    },
+    {
+      "value": 8380416,
+      "high": 0,
+      "low": -1,
+      "hint0": 0,
+      "hint1": 15
+    },
+    {
+      "value": 8380417,
+      "high": 0,
+      "low": 0,
+      "hint0": 0,
+      "hint1": 15
+    },
+    {
+      "value": 8380418,
+      "high": 0,
+      "low": 1,
+      "hint0": 0,
+      "hint1": 1
+    },
+    {
+      "value": 9223372036854775807,
+      "high": 10,
+      "low": 135423,
+      "hint0": 10,
+      "hint1": 11
+    }
+  ]
+}

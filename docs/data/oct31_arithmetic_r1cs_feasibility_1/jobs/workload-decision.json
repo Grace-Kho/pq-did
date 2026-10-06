@@ -1,0 +1,53 @@
+{
+  "name": "workload-decision",
+  "phase": "python",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/arithmetic_r1cs_feasibility_1/dispatch.py",
+    "Q-01"
+  ],
+  "limit_seconds": 20,
+  "child_seconds": 19,
+  "status": "failed",
+  "unit": "pqdid-arithmetic-r1cs-1-workload-decision",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 63597,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 26390173,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4106674176,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false,
+  "seconds": 0.3743863489944488,
+  "exit_code": 1,
+  "stop": null,
+  "worker": {
+    "before": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "10588160",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "after": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "20320256",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "child_exit_code": 1,
+    "child_seconds": 0.06070755992550403,
+    "resource_breach": false,
+    "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+  },
+  "sampled_tree_rss_peak": 38682624,
+  "artifact_observed_peak_bytes": 58966547
+}

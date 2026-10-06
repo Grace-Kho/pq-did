@@ -1,0 +1,1830 @@
+{
+  "package": "R0-SUCCINCT-PROOF-1",
+  "created_utc": "2026-09-19T04:07:18Z",
+  "config": {
+    "package": "R0-SUCCINCT-PROOF-1",
+    "sdk": "3.0.6",
+    "receipt_kind": "Succinct",
+    "hashfn": "poseidon2",
+    "dev_mode": false,
+    "prover": "local CPU",
+    "gpu": false,
+    "remote": false,
+    "groth16": false,
+    "max_proof_attempts": 3,
+    "sequence": [
+      "enrol-alpha-42",
+      "cred-alpha-42",
+      "cred-alpha-42 (optional identical repeat)"
+    ],
+    "session_limit_user_cycles": {
+      "enrol": 4194304,
+      "cred-valid": 16777216
+    },
+    "segment_limit_po2": 16,
+    "memory_bytes": 2147483648,
+    "swap_bytes": 0,
+    "workers": 1,
+    "threads": 2,
+    "proof_pipeline_wall_seconds": 600,
+    "execution_proving_aggregate_seconds": 1800,
+    "setup_build_aggregate_seconds": 1200,
+    "verify_seconds": 10,
+    "verify_memory_bytes": 1073741824,
+    "adversarial_seconds": 60,
+    "adversarial_max_cases": 100,
+    "check_aggregate_seconds": 300,
+    "disk_limit_bytes": 10737418240,
+    "disk_stop_bytes": 9663676416,
+    "output_limit_bytes": 268435456,
+    "output_stop_bytes": 251658240,
+    "diagnostic_limit_bytes": 67108864,
+    "diagnostic_stop_bytes": 62914560,
+    "diagnostic_stream_bytes": 65536,
+    "receipt_max_bytes": 10485760,
+    "presentation_max_bytes": 12582912,
+    "headroom_reserve_bytes": 2147483648,
+    "retry": false,
+    "guest_rebuild": false
+  },
+  "baseline": {
+    "package": "R0-SUCCINCT-PROOF-1",
+    "frozen_at_utc": "2026-09-19T03:58:54Z",
+    "original_manifest": {
+      "package": "R0-SUCCINCT-FEASIBILITY-1",
+      "source_revision_kind": "SHA-256 source/manifest inventory; workspace has no Git repository",
+      "source_revision": "cbd6c003b70589460c95213e23704f10bcd9ceda17460e573eb5380c518616a9",
+      "SDK_release_commit": "1cc70cf05033a79ebc90f07c679cb4bd1cd301b9",
+      "compiler": "rustc 1.97.0-dev (e638c6cfe 2026-07-15)\nbinary: rustc\ncommit-hash: e638c6cfea1eff5fbbb24a27e60538e3760d21b8\ncommit-date: 2026-07-15\nhost: x86_64-unknown-linux-gnu\nrelease: 1.97.0-dev\nLLVM version: 22.1.6",
+      "cargo": "cargo 1.97.0-dev (c980f4866 2026-06-30)",
+      "prover": "risc0-r0vm 3.0.6",
+      "cargo_risczero": "cargo-risczero 3.0.6",
+      "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+      "machine": "x86_64",
+      "rustc_target": "riscv32im-risc0-zkvm-elf",
+      "guest_RUSTFLAGS": "-C passes=lower-atomic -C link-arg=-Ttext=0x00200800 -C link-arg=--fatal-warnings -C panic=abort --cfg getrandom_backend=\"custom\"",
+      "profiles": {
+        "optimisation": 3,
+        "lto": "thin",
+        "overflow_checks": true,
+        "codegen_units": 1
+      },
+      "registry": [
+        {
+          "operation": "enrol",
+          "image": [
+            3771262054,
+            2934794436,
+            1441774498,
+            2869905324,
+            1497161362,
+            1391706344,
+            1955224464,
+            202812443
+          ],
+          "elf": "target/enrol.bin",
+          "elf_sha256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+          "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+          "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+        },
+        {
+          "operation": "cred-valid",
+          "image": [
+            3261973099,
+            2387775128,
+            3397734421,
+            2270497942,
+            482271879,
+            2162741275,
+            3976158240,
+            1905019297
+          ],
+          "elf": "target/cred_valid.bin",
+          "elf_sha256": "153cf7a5758a8097d3b192fd590301546c64fde7582dde2cfc2db3aa3261c3d3",
+          "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+          "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+        }
+      ],
+      "assets": {
+        "Cargo.toml": {
+          "SHA256": "b4f225a5eb98e2ee8cbf18c32ee1432766d323f8619acc12f5b8c8fdbfa7c0dc",
+          "bytes": 211
+        },
+        "Cargo.lock": {
+          "SHA256": "86e6f8da9f984bb1d8c4494d6841a79a89f7a370bd7ee703e6dbbb88b1d6ce37",
+          "bytes": 67846
+        },
+        "methods/guest/Cargo.lock": {
+          "SHA256": "6110756e650b8ffced46825ff3633eb4997e9def020fdef1435419ed0b1459f8",
+          "bytes": 36895
+        },
+        "rust-toolchain.toml": {
+          "SHA256": "ffec6b8c305f66f55fd84bf37537f74e4409bd56e232b0130d4a3a4fccd77d36",
+          "bytes": 30
+        },
+        "scripts/build.sh": {
+          "SHA256": "e41a129a555a9086bfc1a6cf12896166d48407cbb45db9109c0927a9f5e33cee",
+          "bytes": 771
+        },
+        "target/release/pqdid-r0-host": {
+          "SHA256": "795039c3e49e7e8d757dcddf464ecc56ef905406498e91eaedc858dfaca7426e",
+          "bytes": 5440720
+        },
+        "target/enrol.bin": {
+          "SHA256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+          "bytes": 306948
+        },
+        "target/cred_valid.bin": {
+          "SHA256": "153cf7a5758a8097d3b192fd590301546c64fde7582dde2cfc2db3aa3261c3d3",
+          "bytes": 306960
+        },
+        "tooling/sdk-3.0.6/r0vm": {
+          "SHA256": "751b9b188d341e8bec5e02060086b7b1dc3f7289e90f726c38589bb6735dd6d7",
+          "bytes": 108165720
+        },
+        "relation/src/mldsa.rs": {
+          "SHA256": "ed3b8beb935923a545a7b81c9f01765ed05b0a545a5ae1a5a50f9d7c61c9a225",
+          "bytes": 9947
+        },
+        "relation/src/lib.rs": {
+          "SHA256": "0d76b90442512512a07037f16d5a0386cd51c26ef37445f14a8cae15ac8ddfe2",
+          "bytes": 8240
+        },
+        "relation/Cargo.toml": {
+          "SHA256": "ed6910bd204fe48a5992f4fde0e8bb568004be3b22fd1e14d1c91e83bf0be916",
+          "bytes": 128
+        },
+        "host/src/main.rs": {
+          "SHA256": "b0a8b53ed005ab11a773ce33467ff2b9dca5d45418a04904385f605ea3d98832",
+          "bytes": 17817
+        },
+        "host/Cargo.toml": {
+          "SHA256": "669dc54c6c057e6b334053422132124b557f204a65f6431c46696535d70fe76b",
+          "bytes": 448
+        },
+        "methods/guest/src/lib.rs": {
+          "SHA256": "a25ce6c2ab26b8392490caa2aaec5d852e34c2ddaf6996213af0855e88df8487",
+          "bytes": 621
+        },
+        "methods/guest/src/bin/enrol.rs": {
+          "SHA256": "20a8f229ce536405686705e8d303145649c2cd6c30089012027bd0a6a3a979b3",
+          "bytes": 95
+        },
+        "methods/guest/src/bin/cred_valid.rs": {
+          "SHA256": "93f9b963e7ce6e0d9ece9fa3e21535f30caea298088d5cc6daeb892529f68d38",
+          "bytes": 100
+        },
+        "methods/guest/Cargo.toml": {
+          "SHA256": "8a997971a5e56b9186eab32f75d56893d74f00ae926635bb2a25469af603724f",
+          "bytes": 596
+        },
+        "target/guest/riscv32im-risc0-zkvm-elf/release/enrol": {
+          "SHA256": "9fbacd2f38ec5d9177cbf5dbd050261af1bd86a9cd1978407056afbab7f26449",
+          "bytes": 274524
+        },
+        "target/guest/riscv32im-risc0-zkvm-elf/release/cred_valid": {
+          "SHA256": "ed892a4aa0325dec09eb505f9cdb4e65e747bbc654c9b87c43fbdf28d577f0cb",
+          "bytes": 274536
+        },
+        "pinned_kernel_v1compat.elf": {
+          "SHA256": "7ffd942e4e8babd771094f549ad080cfea8ecb2c05c986e275c011f41979d921",
+          "bytes": 32392
+        }
+      },
+      "circuit_versions": {
+        "Cargo.lock": {
+          "risc0-binfmt": "3.0.5",
+          "risc0-build": "3.0.6",
+          "risc0-circuit-keccak": "4.0.6",
+          "risc0-circuit-recursion": "4.0.5",
+          "risc0-circuit-rv32im": "4.0.5",
+          "risc0-core": "3.0.2",
+          "risc0-groth16": "3.0.5",
+          "risc0-zkos-v1compat": "2.2.3",
+          "risc0-zkp": "3.0.5",
+          "risc0-zkvm": "3.0.6",
+          "risc0-zkvm-platform": "2.2.3"
+        },
+        "methods/guest/Cargo.lock": {
+          "risc0-binfmt": "3.0.5",
+          "risc0-circuit-keccak": "4.0.6",
+          "risc0-circuit-recursion": "4.0.5",
+          "risc0-circuit-rv32im": "4.0.5",
+          "risc0-core": "3.0.2",
+          "risc0-groth16": "3.0.5",
+          "risc0-zkos-v1compat": "2.2.3",
+          "risc0-zkp": "3.0.5",
+          "risc0-zkvm": "3.0.6",
+          "risc0-zkvm-platform": "2.2.3"
+        }
+      },
+      "proof_attempts": 0,
+      "setup_seconds": 231.0998520469875,
+      "build_seconds": 257.98127402899263,
+      "execute_seconds": 0.3101004050113261,
+      "proof_receipts": [],
+      "global_tool_homes_absent": {
+        "/home/grace/.cargo": true,
+        "/home/grace/.rustup": true,
+        "/home/grace/.risc0": true,
+        "/home/grace/.rzup": true
+      },
+      "temporary_storage_bytes_at_stop": 0
+    },
+    "corrected_registration": {
+      "label": "corrected-plain",
+      "image": "a7b77747d5ebff0e520d17fc188afef06dfb91690062cb96f6b3cff78e93ae94",
+      "program": "artifacts/corrected-plain.bin",
+      "program_sha256": "668dd886b66772593aea42e53d967d61f2e1a8c1e750add482acc0ed09963a09",
+      "elf": "artifacts/corrected-plain.elf",
+      "elf_sha256": "d5ef3682a8956ba03b710cdee14f02dbf967ec05e935c3d73fcc582aac19aaf2",
+      "features": "none",
+      "source_sha256": {
+        "Cargo.lock": "f75302dce44982f4b14a93a32533c2bfd5884743ec457d7f452a76a2855cb117",
+        "methods/guest/Cargo.lock": "eb0f82cd18d41519e335b53b97525fd78c57edfffb6be08e3d108afdfcceb950",
+        "methods/guest/Cargo.toml": "5daf738cf53bec5d9614e3ab98631e0e6227f9c251aa38404450d7c7132e04c8",
+        "methods/guest/src/lib.rs": "6df9aeaa7a1676a33b831861d35211bd5d37fa9c2be1f8ec3c801c62f9376d98",
+        "relation/Cargo.toml": "e5b877e87aa3d65b75d49e7fc0a4242beb652d15eba4a60549a1e1c4b58ddae6",
+        "relation/src/diagnostic.rs": "d5dc6b65b3a30d616ad33952fc4fb8e1c2bdfd93fc7086dd6701cd299493f230",
+        "relation/src/lib.rs": "7cf5300cd02db4cd95accabb2bbbbe3e34c803ba968930654b43ff9cedef229b",
+        "relation/src/mldsa.rs": "7d066f5d0eff97e363b8c8fbdd7bb31b0f85681cca32c9359dedacc6499a2731"
+      }
+    },
+    "exec24_baseline": {
+      "package": "R0-CREDVALID-EXEC24-1",
+      "source_package_identity": "fd5e917d158f2bf74e0825b0e5415f910e466d8cd8acd95ee5e4257da6144084",
+      "guest_registration": {
+        "label": "corrected-plain",
+        "image": "a7b77747d5ebff0e520d17fc188afef06dfb91690062cb96f6b3cff78e93ae94",
+        "program": "artifacts/corrected-plain.bin",
+        "program_sha256": "668dd886b66772593aea42e53d967d61f2e1a8c1e750add482acc0ed09963a09",
+        "elf": "artifacts/corrected-plain.elf",
+        "elf_sha256": "d5ef3682a8956ba03b710cdee14f02dbf967ec05e935c3d73fcc582aac19aaf2",
+        "features": "none",
+        "source_sha256": {
+          "Cargo.lock": "f75302dce44982f4b14a93a32533c2bfd5884743ec457d7f452a76a2855cb117",
+          "methods/guest/Cargo.lock": "eb0f82cd18d41519e335b53b97525fd78c57edfffb6be08e3d108afdfcceb950",
+          "methods/guest/Cargo.toml": "5daf738cf53bec5d9614e3ab98631e0e6227f9c251aa38404450d7c7132e04c8",
+          "methods/guest/src/lib.rs": "6df9aeaa7a1676a33b831861d35211bd5d37fa9c2be1f8ec3c801c62f9376d98",
+          "relation/Cargo.toml": "e5b877e87aa3d65b75d49e7fc0a4242beb652d15eba4a60549a1e1c4b58ddae6",
+          "relation/src/diagnostic.rs": "d5dc6b65b3a30d616ad33952fc4fb8e1c2bdfd93fc7086dd6701cd299493f230",
+          "relation/src/lib.rs": "7cf5300cd02db4cd95accabb2bbbbe3e34c803ba968930654b43ff9cedef229b",
+          "relation/src/mldsa.rs": "7d066f5d0eff97e363b8c8fbdd7bb31b0f85681cca32c9359dedacc6499a2731"
+        }
+      },
+      "guest_source_snapshot": "../r0_credvalid_cycle_1/snapshots/builds/corrected-plain",
+      "original_build": {
+        "package": "R0-SUCCINCT-FEASIBILITY-1",
+        "source_revision_kind": "SHA-256 source/manifest inventory; workspace has no Git repository",
+        "source_revision": "cbd6c003b70589460c95213e23704f10bcd9ceda17460e573eb5380c518616a9",
+        "SDK_release_commit": "1cc70cf05033a79ebc90f07c679cb4bd1cd301b9",
+        "compiler": "rustc 1.97.0-dev (e638c6cfe 2026-07-15)\nbinary: rustc\ncommit-hash: e638c6cfea1eff5fbbb24a27e60538e3760d21b8\ncommit-date: 2026-07-15\nhost: x86_64-unknown-linux-gnu\nrelease: 1.97.0-dev\nLLVM version: 22.1.6",
+        "cargo": "cargo 1.97.0-dev (c980f4866 2026-06-30)",
+        "prover": "risc0-r0vm 3.0.6",
+        "cargo_risczero": "cargo-risczero 3.0.6",
+        "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+        "machine": "x86_64",
+        "rustc_target": "riscv32im-risc0-zkvm-elf",
+        "guest_RUSTFLAGS": "-C passes=lower-atomic -C link-arg=-Ttext=0x00200800 -C link-arg=--fatal-warnings -C panic=abort --cfg getrandom_backend=\"custom\"",
+        "profiles": {
+          "optimisation": 3,
+          "lto": "thin",
+          "overflow_checks": true,
+          "codegen_units": 1
+        },
+        "registry": [
+          {
+            "operation": "enrol",
+            "image": [
+              3771262054,
+              2934794436,
+              1441774498,
+              2869905324,
+              1497161362,
+              1391706344,
+              1955224464,
+              202812443
+            ],
+            "elf": "target/enrol.bin",
+            "elf_sha256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+            "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+            "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+          },
+          {
+            "operation": "cred-valid",
+            "image": [
+              3261973099,
+              2387775128,
+              3397734421,
+              2270497942,
+              482271879,
+              2162741275,
+              3976158240,
+              1905019297
+            ],
+            "elf": "target/cred_valid.bin",
+            "elf_sha256": "153cf7a5758a8097d3b192fd590301546c64fde7582dde2cfc2db3aa3261c3d3",
+            "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+            "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+          }
+        ],
+        "assets": {
+          "Cargo.toml": {
+            "SHA256": "b4f225a5eb98e2ee8cbf18c32ee1432766d323f8619acc12f5b8c8fdbfa7c0dc",
+            "bytes": 211
+          },
+          "Cargo.lock": {
+            "SHA256": "86e6f8da9f984bb1d8c4494d6841a79a89f7a370bd7ee703e6dbbb88b1d6ce37",
+            "bytes": 67846
+          },
+          "methods/guest/Cargo.lock": {
+            "SHA256": "6110756e650b8ffced46825ff3633eb4997e9def020fdef1435419ed0b1459f8",
+            "bytes": 36895
+          },
+          "rust-toolchain.toml": {
+            "SHA256": "ffec6b8c305f66f55fd84bf37537f74e4409bd56e232b0130d4a3a4fccd77d36",
+            "bytes": 30
+          },
+          "scripts/build.sh": {
+            "SHA256": "e41a129a555a9086bfc1a6cf12896166d48407cbb45db9109c0927a9f5e33cee",
+            "bytes": 771
+          },
+          "target/release/pqdid-r0-host": {
+            "SHA256": "795039c3e49e7e8d757dcddf464ecc56ef905406498e91eaedc858dfaca7426e",
+            "bytes": 5440720
+          },
+          "target/enrol.bin": {
+            "SHA256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+            "bytes": 306948
+          },
+          "target/cred_valid.bin": {
+            "SHA256": "153cf7a5758a8097d3b192fd590301546c64fde7582dde2cfc2db3aa3261c3d3",
+            "bytes": 306960
+          },
+          "tooling/sdk-3.0.6/r0vm": {
+            "SHA256": "751b9b188d341e8bec5e02060086b7b1dc3f7289e90f726c38589bb6735dd6d7",
+            "bytes": 108165720
+          },
+          "relation/src/mldsa.rs": {
+            "SHA256": "ed3b8beb935923a545a7b81c9f01765ed05b0a545a5ae1a5a50f9d7c61c9a225",
+            "bytes": 9947
+          },
+          "relation/src/lib.rs": {
+            "SHA256": "0d76b90442512512a07037f16d5a0386cd51c26ef37445f14a8cae15ac8ddfe2",
+            "bytes": 8240
+          },
+          "relation/Cargo.toml": {
+            "SHA256": "ed6910bd204fe48a5992f4fde0e8bb568004be3b22fd1e14d1c91e83bf0be916",
+            "bytes": 128
+          },
+          "host/src/main.rs": {
+            "SHA256": "b0a8b53ed005ab11a773ce33467ff2b9dca5d45418a04904385f605ea3d98832",
+            "bytes": 17817
+          },
+          "host/Cargo.toml": {
+            "SHA256": "669dc54c6c057e6b334053422132124b557f204a65f6431c46696535d70fe76b",
+            "bytes": 448
+          },
+          "methods/guest/src/lib.rs": {
+            "SHA256": "a25ce6c2ab26b8392490caa2aaec5d852e34c2ddaf6996213af0855e88df8487",
+            "bytes": 621
+          },
+          "methods/guest/src/bin/enrol.rs": {
+            "SHA256": "20a8f229ce536405686705e8d303145649c2cd6c30089012027bd0a6a3a979b3",
+            "bytes": 95
+          },
+          "methods/guest/src/bin/cred_valid.rs": {
+            "SHA256": "93f9b963e7ce6e0d9ece9fa3e21535f30caea298088d5cc6daeb892529f68d38",
+            "bytes": 100
+          },
+          "methods/guest/Cargo.toml": {
+            "SHA256": "8a997971a5e56b9186eab32f75d56893d74f00ae926635bb2a25469af603724f",
+            "bytes": 596
+          },
+          "target/guest/riscv32im-risc0-zkvm-elf/release/enrol": {
+            "SHA256": "9fbacd2f38ec5d9177cbf5dbd050261af1bd86a9cd1978407056afbab7f26449",
+            "bytes": 274524
+          },
+          "target/guest/riscv32im-risc0-zkvm-elf/release/cred_valid": {
+            "SHA256": "ed892a4aa0325dec09eb505f9cdb4e65e747bbc654c9b87c43fbdf28d577f0cb",
+            "bytes": 274536
+          },
+          "pinned_kernel_v1compat.elf": {
+            "SHA256": "7ffd942e4e8babd771094f549ad080cfea8ecb2c05c986e275c011f41979d921",
+            "bytes": 32392
+          }
+        },
+        "circuit_versions": {
+          "Cargo.lock": {
+            "risc0-binfmt": "3.0.5",
+            "risc0-build": "3.0.6",
+            "risc0-circuit-keccak": "4.0.6",
+            "risc0-circuit-recursion": "4.0.5",
+            "risc0-circuit-rv32im": "4.0.5",
+            "risc0-core": "3.0.2",
+            "risc0-groth16": "3.0.5",
+            "risc0-zkos-v1compat": "2.2.3",
+            "risc0-zkp": "3.0.5",
+            "risc0-zkvm": "3.0.6",
+            "risc0-zkvm-platform": "2.2.3"
+          },
+          "methods/guest/Cargo.lock": {
+            "risc0-binfmt": "3.0.5",
+            "risc0-circuit-keccak": "4.0.6",
+            "risc0-circuit-recursion": "4.0.5",
+            "risc0-circuit-rv32im": "4.0.5",
+            "risc0-core": "3.0.2",
+            "risc0-groth16": "3.0.5",
+            "risc0-zkos-v1compat": "2.2.3",
+            "risc0-zkp": "3.0.5",
+            "risc0-zkvm": "3.0.6",
+            "risc0-zkvm-platform": "2.2.3"
+          }
+        },
+        "proof_attempts": 0,
+        "setup_seconds": 231.0998520469875,
+        "build_seconds": 257.98127402899263,
+        "execute_seconds": 0.3101004050113261,
+        "proof_receipts": [],
+        "global_tool_homes_absent": {
+          "/home/grace/.cargo": true,
+          "/home/grace/.rustup": true,
+          "/home/grace/.risc0": true,
+          "/home/grace/.rzup": true
+        },
+        "temporary_storage_bytes_at_stop": 0
+      },
+      "native_validation_reused": {
+        "tests": 6,
+        "comparisons": 35,
+        "code_and_inputs_unchanged": true
+      },
+      "fixture": {
+        "name": "cred-alpha-42",
+        "operation": "cred-valid",
+        "public": "fixtures/public/cred-alpha-42.bin",
+        "private": "fixtures/private/cred-alpha-42.bin",
+        "reference_expected": true,
+        "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+        "private_fixture_SHA256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+        "synthetic_only": true
+      },
+      "previous_corrected_result": {
+        "completed_segment_metadata": [
+          {
+            "index": 0,
+            "po2": 16,
+            "user_cycles": 11398
+          },
+          {
+            "index": 1,
+            "po2": 16,
+            "user_cycles": 20805
+          },
+          {
+            "index": 2,
+            "po2": 16,
+            "user_cycles": 29546
+          },
+          {
+            "index": 3,
+            "po2": 16,
+            "user_cycles": 29211
+          },
+          {
+            "index": 4,
+            "po2": 16,
+            "user_cycles": 27367
+          },
+          {
+            "index": 5,
+            "po2": 16,
+            "user_cycles": 14413
+          },
+          {
+            "index": 6,
+            "po2": 16,
+            "user_cycles": 25607
+          },
+          {
+            "index": 7,
+            "po2": 16,
+            "user_cycles": 26570
+          },
+          {
+            "index": 8,
+            "po2": 16,
+            "user_cycles": 25913
+          },
+          {
+            "index": 9,
+            "po2": 16,
+            "user_cycles": 26196
+          },
+          {
+            "index": 10,
+            "po2": 16,
+            "user_cycles": 26248
+          },
+          {
+            "index": 11,
+            "po2": 16,
+            "user_cycles": 25900
+          },
+          {
+            "index": 12,
+            "po2": 16,
+            "user_cycles": 18517
+          },
+          {
+            "index": 13,
+            "po2": 16,
+            "user_cycles": 31494
+          },
+          {
+            "index": 14,
+            "po2": 16,
+            "user_cycles": 23695
+          },
+          {
+            "index": 15,
+            "po2": 16,
+            "user_cycles": 31658
+          },
+          {
+            "index": 16,
+            "po2": 16,
+            "user_cycles": 23721
+          },
+          {
+            "index": 17,
+            "po2": 16,
+            "user_cycles": 29985
+          },
+          {
+            "index": 18,
+            "po2": 16,
+            "user_cycles": 23695
+          },
+          {
+            "index": 19,
+            "po2": 16,
+            "user_cycles": 29469
+          },
+          {
+            "index": 20,
+            "po2": 16,
+            "user_cycles": 24095
+          },
+          {
+            "index": 21,
+            "po2": 16,
+            "user_cycles": 29148
+          },
+          {
+            "index": 22,
+            "po2": 16,
+            "user_cycles": 13535
+          },
+          {
+            "index": 23,
+            "po2": 16,
+            "user_cycles": 14705
+          },
+          {
+            "index": 24,
+            "po2": 16,
+            "user_cycles": 16058
+          },
+          {
+            "index": 25,
+            "po2": 16,
+            "user_cycles": 15540
+          },
+          {
+            "index": 26,
+            "po2": 16,
+            "user_cycles": 19503
+          },
+          {
+            "index": 27,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 28,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 29,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 30,
+            "po2": 16,
+            "user_cycles": 17237
+          },
+          {
+            "index": 31,
+            "po2": 16,
+            "user_cycles": 24417
+          },
+          {
+            "index": 32,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 33,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 34,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 35,
+            "po2": 16,
+            "user_cycles": 16075
+          },
+          {
+            "index": 36,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 37,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 38,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 39,
+            "po2": 16,
+            "user_cycles": 24029
+          },
+          {
+            "index": 40,
+            "po2": 16,
+            "user_cycles": 19232
+          },
+          {
+            "index": 41,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 42,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 43,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 44,
+            "po2": 16,
+            "user_cycles": 17441
+          },
+          {
+            "index": 45,
+            "po2": 16,
+            "user_cycles": 24030
+          },
+          {
+            "index": 46,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 47,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 48,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 49,
+            "po2": 16,
+            "user_cycles": 15971
+          },
+          {
+            "index": 50,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 51,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 52,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 53,
+            "po2": 16,
+            "user_cycles": 24352
+          },
+          {
+            "index": 54,
+            "po2": 16,
+            "user_cycles": 19365
+          },
+          {
+            "index": 55,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 56,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 57,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 58,
+            "po2": 16,
+            "user_cycles": 17389
+          },
+          {
+            "index": 59,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 60,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 61,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 62,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 63,
+            "po2": 16,
+            "user_cycles": 16049
+          },
+          {
+            "index": 64,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 65,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 66,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 67,
+            "po2": 16,
+            "user_cycles": 24650
+          },
+          {
+            "index": 68,
+            "po2": 16,
+            "user_cycles": 19373
+          },
+          {
+            "index": 69,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 70,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 71,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 72,
+            "po2": 16,
+            "user_cycles": 17457
+          },
+          {
+            "index": 73,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 74,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 75,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 76,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 77,
+            "po2": 16,
+            "user_cycles": 16023
+          },
+          {
+            "index": 78,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 79,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 80,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 81,
+            "po2": 16,
+            "user_cycles": 24777
+          },
+          {
+            "index": 82,
+            "po2": 16,
+            "user_cycles": 19425
+          },
+          {
+            "index": 83,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 84,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 85,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 86,
+            "po2": 16,
+            "user_cycles": 17370
+          },
+          {
+            "index": 87,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 88,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 89,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 90,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 91,
+            "po2": 16,
+            "user_cycles": 16049
+          },
+          {
+            "index": 92,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 93,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 94,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 95,
+            "po2": 16,
+            "user_cycles": 24750
+          },
+          {
+            "index": 96,
+            "po2": 16,
+            "user_cycles": 19399
+          },
+          {
+            "index": 97,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 98,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 99,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 100,
+            "po2": 16,
+            "user_cycles": 17432
+          },
+          {
+            "index": 101,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 102,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 103,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 104,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 105,
+            "po2": 16,
+            "user_cycles": 15997
+          },
+          {
+            "index": 106,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 107,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 108,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 109,
+            "po2": 16,
+            "user_cycles": 24802
+          },
+          {
+            "index": 110,
+            "po2": 16,
+            "user_cycles": 19425
+          },
+          {
+            "index": 111,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 112,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 113,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 114,
+            "po2": 16,
+            "user_cycles": 17394
+          },
+          {
+            "index": 115,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 116,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 117,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 118,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 119,
+            "po2": 16,
+            "user_cycles": 16049
+          },
+          {
+            "index": 120,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 121,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 122,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 123,
+            "po2": 16,
+            "user_cycles": 24786
+          },
+          {
+            "index": 124,
+            "po2": 16,
+            "user_cycles": 19347
+          },
+          {
+            "index": 125,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 126,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 127,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 128,
+            "po2": 16,
+            "user_cycles": 17448
+          },
+          {
+            "index": 129,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 130,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 131,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 132,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 133,
+            "po2": 16,
+            "user_cycles": 16049
+          },
+          {
+            "index": 134,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 135,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 136,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 137,
+            "po2": 16,
+            "user_cycles": 24774
+          },
+          {
+            "index": 138,
+            "po2": 16,
+            "user_cycles": 19451
+          },
+          {
+            "index": 139,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 140,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 141,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 142,
+            "po2": 16,
+            "user_cycles": 17389
+          },
+          {
+            "index": 143,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 144,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 145,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 146,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 147,
+            "po2": 16,
+            "user_cycles": 16075
+          },
+          {
+            "index": 148,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 149,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 150,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 151,
+            "po2": 16,
+            "user_cycles": 24691
+          },
+          {
+            "index": 152,
+            "po2": 16,
+            "user_cycles": 19425
+          },
+          {
+            "index": 153,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 154,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 155,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 156,
+            "po2": 16,
+            "user_cycles": 17441
+          },
+          {
+            "index": 157,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 158,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 159,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 160,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 161,
+            "po2": 16,
+            "user_cycles": 16049
+          },
+          {
+            "index": 162,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 163,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 164,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 165,
+            "po2": 16,
+            "user_cycles": 24679
+          },
+          {
+            "index": 166,
+            "po2": 16,
+            "user_cycles": 22173
+          },
+          {
+            "index": 167,
+            "po2": 16,
+            "user_cycles": 29380
+          },
+          {
+            "index": 168,
+            "po2": 16,
+            "user_cycles": 29380
+          },
+          {
+            "index": 169,
+            "po2": 16,
+            "user_cycles": 29045
+          },
+          {
+            "index": 170,
+            "po2": 16,
+            "user_cycles": 29380
+          }
+        ],
+        "error": "Session limit exceeded: 4194304 >= 4194304",
+        "fixture": "cred-alpha-42",
+        "image": "a7b77747d5ebff0e520d17fc188afef06dfb91690062cb96f6b3cff78e93ae94",
+        "label": "corrected-plain",
+        "paging_cycles": "not separately exposed by Execute IPC",
+        "proof_attempts": 0,
+        "seconds": 0.24455283,
+        "segment_limit_po2": 16,
+        "session_limit_user_cycles": 4194304,
+        "slot": 6,
+        "status": "cycle_limit"
+      },
+      "manuscript_sha256": "d17ca0a20b319b88e959467cae92d91d619973f84384710ecbf960a3b850aeca"
+    },
+    "exec24_valid": {
+      "accepted": true,
+      "actual_public_journal_bytes": 5147,
+      "actual_public_journal_sha256": "f9fa7cce56b47699ff3ec198b2a2b1e2aa46b36f5a5f9d4d9839f4622d8579c2",
+      "completed_segment_user_cycles": 16313474,
+      "completed_segments": 582,
+      "config": {
+        "diagnostic_limit_bytes": 67108864,
+        "diagnostic_stop_bytes": 62914560,
+        "diagnostic_stream_bytes": 65536,
+        "disk_limit_bytes": 10737418240,
+        "disk_stop_bytes": 9663676416,
+        "execution_aggregate_seconds": 300,
+        "execution_wall_seconds": 60,
+        "max_executions": 2,
+        "memory_bytes": 2147483648,
+        "package": "R0-CREDVALID-EXEC24-1",
+        "proof_attempts": 0,
+        "retained_segment_records": 256,
+        "segment_limit_po2": 16,
+        "session_limit_user_cycles": 16777216,
+        "swap_bytes": 0,
+        "threads": 2,
+        "workers": 1
+      },
+      "counter_note": "SDK user cycles; separate paging/system/reserved counts unavailable through Execute IPC",
+      "elf_sha256": "d5ef3682a8956ba03b710cdee14f02dbf967ec05e935c3d73fcc582aac19aaf2",
+      "execution_seconds": 0.577716649,
+      "exit_code": "Halted(0)",
+      "expected_acceptance": true,
+      "expected_public_journal_bytes": 5147,
+      "expected_public_journal_sha256": "f9fa7cce56b47699ff3ec198b2a2b1e2aa46b36f5a5f9d4d9839f4622d8579c2",
+      "fixture": "cred-alpha-42",
+      "image": "a7b77747d5ebff0e520d17fc188afef06dfb91690062cb96f6b3cff78e93ae94",
+      "journal_matches_expected": true,
+      "margin_below_cap": 463742,
+      "other_segment_capacity": 21795710,
+      "package": "R0-CREDVALID-EXEC24-1",
+      "padded_segment_capacity": 38109184,
+      "program_sha256": "668dd886b66772593aea42e53d967d61f2e1a8c1e750add482acc0ed09963a09",
+      "proof_attempts": 0,
+      "receipt_generated": false,
+      "returned_session": true,
+      "segment_po2_histogram": {
+        "15": 1,
+        "16": 581
+      },
+      "slot": 1,
+      "status": "completed",
+      "user_cycles": 16313474
+    },
+    "fixtures": [
+      {
+        "name": "enrol-alpha-42",
+        "operation": "enrol",
+        "public": "fixtures/public/enrol-alpha-42.bin",
+        "private": "fixtures/private/enrol-alpha-42.bin",
+        "reference_expected": true,
+        "public_SHA256": "e6e505a433aed207ee2cfbb8e9cb72ab01b426739ed731e7b3e598f71cf939c8",
+        "private_fixture_SHA256": "e2bf2101764d9ed2728649b05512f6c97059f84a2d190b31677fd55435d15c7b",
+        "synthetic_only": true,
+        "public_sha256": "e6e505a433aed207ee2cfbb8e9cb72ab01b426739ed731e7b3e598f71cf939c8",
+        "private_sha256": "e2bf2101764d9ed2728649b05512f6c97059f84a2d190b31677fd55435d15c7b",
+        "expected_journal": "fixtures/public/enrol-alpha-42.journal.bin",
+        "journal_sha256": "aebac85219e0df161bda4e9d6661e4a7eccc619812eb45bb106ee46180cfa41c",
+        "journal_bytes": 15380
+      },
+      {
+        "name": "cred-alpha-42",
+        "operation": "cred-valid",
+        "public": "fixtures/public/cred-alpha-42.bin",
+        "private": "fixtures/private/cred-alpha-42.bin",
+        "reference_expected": true,
+        "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+        "private_fixture_SHA256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+        "synthetic_only": true,
+        "public_sha256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+        "private_sha256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+        "expected_journal": "fixtures/public/cred-alpha-42.journal.bin",
+        "journal_sha256": "f9fa7cce56b47699ff3ec198b2a2b1e2aa46b36f5a5f9d4d9839f4622d8579c2",
+        "journal_bytes": 5147
+      }
+    ],
+    "registry": [
+      {
+        "operation": "enrol",
+        "image": [
+          3771262054,
+          2934794436,
+          1441774498,
+          2869905324,
+          1497161362,
+          1391706344,
+          1955224464,
+          202812443
+        ],
+        "elf": "artifacts/enrol.bin",
+        "elf_sha256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+        "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+        "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+      },
+      {
+        "operation": "cred-valid",
+        "image": [
+          1199028135,
+          251653077,
+          4229369170,
+          4043213336,
+          1771174765,
+          2529911296,
+          4157584374,
+          2494469006
+        ],
+        "elf": "artifacts/cred_valid.bin",
+        "elf_sha256": "668dd886b66772593aea42e53d967d61f2e1a8c1e750add482acc0ed09963a09",
+        "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+        "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+      }
+    ],
+    "native_validation_reused": [
+      "six corrected native tests",
+      "35 native comparisons"
+    ],
+    "assets": {
+      "artifacts/cred_valid.elf": "d5ef3682a8956ba03b710cdee14f02dbf967ec05e935c3d73fcc582aac19aaf2",
+      "artifacts/enrol.elf": "9fbacd2f38ec5d9177cbf5dbd050261af1bd86a9cd1978407056afbab7f26449",
+      "artifacts/cred_valid.bin": "668dd886b66772593aea42e53d967d61f2e1a8c1e750add482acc0ed09963a09",
+      "artifacts/enrol.bin": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c"
+    }
+  },
+  "preflight": {
+    "cpu_binary_checks": {
+      "CpuHal": true,
+      "libcuda.so": false,
+      "gpu_device_namespace": "PrivateDevices=yes; no CUDA_VISIBLE_DEVICES"
+    },
+    "control_ids": {
+      "lift15": "1ca3ca03030719064ba61b3125bdd326fc57f74e799ef860bdea6f3227381e16",
+      "lift16": "c32b3627d2b3d60c64adf523a98bd16c0ff607471f3d6630d1f26d5e9406d841",
+      "join": "7a8f24092c34ed3eb81b3d0a0b796c588c615d3488ef9e61c21dbd1e4b83ea6e"
+    },
+    "control_source_sha256": "6fedf46fad3ca0ce3e537139be7873a43dd68fee5fc803d3e58604b4e9ae16cb",
+    "recursion_archive_sha256": "744b999f0a35b3c86753311c7efb2a0054be21727095cf105af6ee7d3f4d8849",
+    "workload": {
+      "enrol": {
+        "user_cycles": 196311,
+        "segment_count": 10,
+        "po2_histogram": {
+          "16": 9,
+          "15": 1
+        },
+        "padded_capacity": 622592,
+        "segment_proofs": 10,
+        "lifts": 10,
+        "joins": 9
+      },
+      "cred-valid": {
+        "user_cycles": 16313474,
+        "segment_count": 582,
+        "po2_histogram": {
+          "16": 581,
+          "15": 1
+        },
+        "padded_capacity": 38109184,
+        "other_padded_capacity": 21795710,
+        "segment_proofs": 582,
+        "lifts": 582,
+        "joins": 581
+      }
+    },
+    "workload_source": "Prior execution + SDK server/prove/mod.rs fold; no new execution",
+    "system_paging_separate": "Prior IPC lacks split; residual includes paging/reserved/padding",
+    "cycle_limit_meaning": "Executor.cycles.user; not padded segment capacity",
+    "recursion_support": "15/16 lifts + join allowed; registry pins root and parameter digest",
+    "disk_free_bytes": {
+      "wsl": 1015449649152,
+      "windows": 398437785600
+    },
+    "meminfo": "MemTotal:        7935656 kB\nMemFree:         2849496 kB\nMemAvailable:    4840748 kB\nBuffers:           37080 kB\nCached:          1987980 kB\nSwapCached:            0 kB\nActive:           758872 kB\nInactive:        3551220 kB\nActive(anon):       2720 kB\nInactive(anon):  2359572 kB\nActive(file):     756152 kB\nInactive(file):  1191648 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       2097152 kB\nSwapFree:        2097152 kB\nDirty:              5704 kB\nWriteback:             0 kB\nAnonPages:       2285148 kB\nMapped:           480408 kB\nShmem:             77348 kB\nKReclaimable:     239460 kB\nSlab:             382516 kB\nSReclaimable:     239460 kB\nSUnreclaim:       143056 kB\nKernelStack:       10352 kB\nPageTables:        52044 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     6064980 kB\nCommitted_AS:    5455888 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       39560 kB\nVmallocChunk:          0 kB\nPercpu:            12192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    124928 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       44032 kB\nDirectMap2M:     6051840 kB\nDirectMap1G:    10485760 kB\n",
+    "dependencies_unchanged": true,
+    "reference_validation": "Reuse six native tests + 35 comparisons; no rerun"
+  },
+  "recursion_artifacts": {
+    "prover_path": "/home/grace/projects/pq-did/experiments/r0_succinct_feasibility_1/tooling/sdk-3.0.6/r0vm",
+    "prover_sha256": "751b9b188d341e8bec5e02060086b7b1dc3f7289e90f726c38589bb6735dd6d7",
+    "source": "recursion 4.0.5 build.rs pin and include_bytes in src/prove/zkr.rs",
+    "archive_sha256": "744b999f0a35b3c86753311c7efb2a0054be21727095cf105af6ee7d3f4d8849",
+    "archive_bytes": 59768781,
+    "embedded_offset": 8945197,
+    "upstream_url": "https://risc0-artifacts.s3.us-west-2.amazonaws.com/zkr/744b999f0a35b3c86753311c7efb2a0054be21727095cf105af6ee7d3f4d8849.zip",
+    "downloaded_bytes": 0,
+    "preparation": "extracted exact embedded ZIP for provenance; runtime uses the unchanged built-in bytes",
+    "entries": [
+      {
+        "name": "identity.zkr",
+        "compressed_bytes": 1387760,
+        "uncompressed_bytes": 11942428
+      },
+      {
+        "name": "join.zkr",
+        "compressed_bytes": 2767696,
+        "uncompressed_bytes": 23884304
+      },
+      {
+        "name": "join_povw.zkr",
+        "compressed_bytes": 2776377,
+        "uncompressed_bytes": 24022304
+      },
+      {
+        "name": "join_unwrap_povw.zkr",
+        "compressed_bytes": 2773860,
+        "uncompressed_bytes": 23982560
+      },
+      {
+        "name": "lift_rv32im_v2_14.zkr",
+        "compressed_bytes": 1241133,
+        "uncompressed_bytes": 10313844
+      },
+      {
+        "name": "lift_rv32im_v2_15.zkr",
+        "compressed_bytes": 1348899,
+        "uncompressed_bytes": 11171192
+      },
+      {
+        "name": "lift_rv32im_v2_16.zkr",
+        "compressed_bytes": 1507966,
+        "uncompressed_bytes": 12343088
+      },
+      {
+        "name": "lift_rv32im_v2_17.zkr",
+        "compressed_bytes": 1480099,
+        "uncompressed_bytes": 12582012
+      },
+      {
+        "name": "lift_rv32im_v2_18.zkr",
+        "compressed_bytes": 1570417,
+        "uncompressed_bytes": 13383240
+      },
+      {
+        "name": "lift_rv32im_v2_19.zkr",
+        "compressed_bytes": 1689106,
+        "uncompressed_bytes": 14341880
+      },
+      {
+        "name": "lift_rv32im_v2_20.zkr",
+        "compressed_bytes": 1856035,
+        "uncompressed_bytes": 15615068
+      },
+      {
+        "name": "lift_rv32im_v2_21.zkr",
+        "compressed_bytes": 1836738,
+        "uncompressed_bytes": 15955008
+      },
+      {
+        "name": "lift_rv32im_v2_22.zkr",
+        "compressed_bytes": 1940890,
+        "uncompressed_bytes": 16857436
+      },
+      {
+        "name": "lift_rv32im_v2_23.zkr",
+        "compressed_bytes": 2067078,
+        "uncompressed_bytes": 17917460
+      },
+      {
+        "name": "lift_rv32im_v2_24.zkr",
+        "compressed_bytes": 2244572,
+        "uncompressed_bytes": 19291664
+      },
+      {
+        "name": "lift_rv32im_v2_povw_14.zkr",
+        "compressed_bytes": 1243825,
+        "uncompressed_bytes": 10354324
+      },
+      {
+        "name": "lift_rv32im_v2_povw_15.zkr",
+        "compressed_bytes": 1351463,
+        "uncompressed_bytes": 11211672
+      },
+      {
+        "name": "lift_rv32im_v2_povw_16.zkr",
+        "compressed_bytes": 1510364,
+        "uncompressed_bytes": 12383568
+      },
+      {
+        "name": "lift_rv32im_v2_povw_17.zkr",
+        "compressed_bytes": 1482840,
+        "uncompressed_bytes": 12622492
+      },
+      {
+        "name": "lift_rv32im_v2_povw_18.zkr",
+        "compressed_bytes": 1573045,
+        "uncompressed_bytes": 13423720
+      },
+      {
+        "name": "lift_rv32im_v2_povw_19.zkr",
+        "compressed_bytes": 1691709,
+        "uncompressed_bytes": 14382360
+      },
+      {
+        "name": "lift_rv32im_v2_povw_20.zkr",
+        "compressed_bytes": 1858763,
+        "uncompressed_bytes": 15655548
+      },
+      {
+        "name": "lift_rv32im_v2_povw_21.zkr",
+        "compressed_bytes": 1839460,
+        "uncompressed_bytes": 15995488
+      },
+      {
+        "name": "lift_rv32im_v2_povw_22.zkr",
+        "compressed_bytes": 1943628,
+        "uncompressed_bytes": 16897916
+      },
+      {
+        "name": "lift_rv32im_v2_povw_23.zkr",
+        "compressed_bytes": 2069693,
+        "uncompressed_bytes": 17957940
+      },
+      {
+        "name": "lift_rv32im_v2_povw_24.zkr",
+        "compressed_bytes": 2247162,
+        "uncompressed_bytes": 19332144
+      },
+      {
+        "name": "resolve.zkr",
+        "compressed_bytes": 2767983,
+        "uncompressed_bytes": 23889456
+      },
+      {
+        "name": "resolve_povw.zkr",
+        "compressed_bytes": 2771033,
+        "uncompressed_bytes": 23950452
+      },
+      {
+        "name": "resolve_unwrap_povw.zkr",
+        "compressed_bytes": 2770263,
+        "uncompressed_bytes": 23936468
+      },
+      {
+        "name": "test_recursion_circuit.zkr",
+        "compressed_bytes": 1872,
+        "uncompressed_bytes": 19412
+      },
+      {
+        "name": "union.zkr",
+        "compressed_bytes": 2762299,
+        "uncompressed_bytes": 23802976
+      },
+      {
+        "name": "unwrap_povw.zkr",
+        "compressed_bytes": 1390959,
+        "uncompressed_bytes": 11989532
+      }
+    ],
+    "cuda_driver_string_present": false,
+    "cpu_hal_string_present": true
+  },
+  "frozen_sha256": {
+    "scripts/freeze.py": "2ad52ebdd13165a65298ec9d918ec79cb3e987cad9b2b081b72c54ecb484452a",
+    "scripts/build_host.sh": "c25edb0dc1a3fb315bd434628a768f31faf5369fd24858cd30842a8577017840",
+    "scripts/service_entry.py": "5620af0238ab43a936dfd479f183566f5fa78efbcaf4783ec8d6b921ea14973a",
+    "scripts/preflight.py": "5a7877260d621a5676a75722cc9912cbfc53dc6e4cd95941abb5ae4738e0b219",
+    "scripts/isolation_probe.py": "aa957a69c4364540e46ba30e62c16ffe444fcd38575a37818cfa6e1ab31ceb42",
+    "scripts/run_limited.py": "954ef01ccbb6648abf6dafec237377a737a5cf49fe4e7ab7e784ecfe5edf1183",
+    "scripts/prepare_artifacts.py": "e0d51983875057505d290d472b2192f673b5cf0b792d9d6f49f6c80886aac52f",
+    "scripts/seed_cache.py": "24fe1a3b8ec2dc09b186c29d6b4637b2bc01a0ff75a366cf82678034bc13c32d",
+    "scripts/capture.py": "8458ab1e9e0c5c82d4c881a06da1eb52d14e7ee1ef982a5ee39a0cff6e568ca6",
+    "host/Cargo.toml": "669dc54c6c057e6b334053422132124b557f204a65f6431c46696535d70fe76b",
+    "host/src/main.rs": "d4a7556bec0989d047c4eed80e66166636e271a115b57fe1068b1d97ec8c6dc9",
+    "relation/Cargo.toml": "e5b877e87aa3d65b75d49e7fc0a4242beb652d15eba4a60549a1e1c4b58ddae6",
+    "relation/src/mldsa.rs": "7d066f5d0eff97e363b8c8fbdd7bb31b0f85681cca32c9359dedacc6499a2731",
+    "relation/src/lib.rs": "7cf5300cd02db4cd95accabb2bbbbe3e34c803ba968930654b43ff9cedef229b",
+    "relation/src/diagnostic.rs": "d5dc6b65b3a30d616ad33952fc4fb8e1c2bdfd93fc7086dd6701cd299493f230",
+    "fixtures/cases.json": "d8e77e1bebcef528dae24e237a5c01dddc674355b63de38cd1f45e704ea2c294",
+    "fixtures/public/enrol-alpha-42.journal.bin": "aebac85219e0df161bda4e9d6661e4a7eccc619812eb45bb106ee46180cfa41c",
+    "fixtures/public/enrol-alpha-42.bin": "e6e505a433aed207ee2cfbb8e9cb72ab01b426739ed731e7b3e598f71cf939c8",
+    "fixtures/public/cred-alpha-42.journal.bin": "f9fa7cce56b47699ff3ec198b2a2b1e2aa46b36f5a5f9d4d9839f4622d8579c2",
+    "fixtures/public/registry.json": "db8c4514bbbe20ec604c1aeab22f3478973a474ca8b1be65c609a811d3738dff",
+    "fixtures/public/cred-alpha-42.bin": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+    "fixtures/private/enrol-alpha-42.bin": "e2bf2101764d9ed2728649b05512f6c97059f84a2d190b31677fd55435d15c7b",
+    "fixtures/private/cred-alpha-42.bin": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+    "artifacts/cred_valid.elf": "d5ef3682a8956ba03b710cdee14f02dbf967ec05e935c3d73fcc582aac19aaf2",
+    "artifacts/enrol.elf": "9fbacd2f38ec5d9177cbf5dbd050261af1bd86a9cd1978407056afbab7f26449",
+    "artifacts/cred_valid.bin": "668dd886b66772593aea42e53d967d61f2e1a8c1e750add482acc0ed09963a09",
+    "artifacts/enrol.bin": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+    "Cargo.toml": "b4f225a5eb98e2ee8cbf18c32ee1432766d323f8619acc12f5b8c8fdbfa7c0dc",
+    "Cargo.lock": "f75302dce44982f4b14a93a32533c2bfd5884743ec457d7f452a76a2855cb117",
+    "config.json": "a906e46937c84567624cf09d29f02559e9e3b1a5843df9559d051e55110df0eb",
+    "CONTRACT.md": "03067e5eb3c1fcd476211e891d49a8e30f3f84bb06d6813b6c70428e752dd2eb",
+    "target/release/pqdid-r0-host": "3a8139d94fe07c6074580e651d2ce90a4524e44e14bb062b1c97bcd60725333f"
+  },
+  "preserved_files_checked": 8394,
+  "proof_attempts_before_launch": 0,
+  "launch_gate_probes": [
+    {
+      "args": [
+        "--seconds",
+        "600",
+        "--slot",
+        "2",
+        "prove",
+        "attempt2",
+        "--",
+        "target/release/pqdid-r0-host",
+        "prove",
+        "enrol-alpha-42",
+        "receipts/attempt1.bin"
+      ],
+      "exit": 1,
+      "reason": "proof sequence"
+    },
+    {
+      "args": [
+        "--seconds",
+        "601",
+        "--slot",
+        "1",
+        "prove",
+        "attempt1",
+        "--",
+        "target/release/pqdid-r0-host",
+        "prove",
+        "enrol-alpha-42",
+        "receipts/attempt1.bin"
+      ],
+      "exit": 1,
+      "reason": "phase budget remaining 600; requested 601"
+    },
+    {
+      "args": [
+        "--seconds",
+        "600",
+        "--slot",
+        "4",
+        "prove",
+        "attempt4",
+        "--",
+        "target/release/pqdid-r0-host",
+        "prove",
+        "enrol-alpha-42",
+        "receipts/attempt1.bin"
+      ],
+      "exit": 1,
+      "reason": "proof attempt limit"
+    },
+    {
+      "args": [
+        "--seconds",
+        "600",
+        "--slot",
+        "1",
+        "prove",
+        "attempt1",
+        "--",
+        "bad-command"
+      ],
+      "exit": 1,
+      "reason": "fixed proof command/fixture required"
+    }
+  ],
+  "setup_assets_reused": [
+    {
+      "url": "https://github.com/risc0/risc0/releases/download/v3.0.6/cargo-risczero-x86_64-unknown-linux-gnu.tgz",
+      "path": "tooling/downloads/cargo-risczero-x86_64-unknown-linux-gnu.tgz",
+      "bytes": 72347320,
+      "sha256": "615d961bfb81d318db5071d7548389c850e324ac7f421c075176daf26082a60a",
+      "upstream_digest_matched": true,
+      "seconds": 23.59581539001374
+    },
+    {
+      "url": "https://github.com/risc0/rust/releases/download/r0.1.97.0/rust-toolchain-x86_64-unknown-linux-gnu.tar.gz",
+      "path": "tooling/downloads/rust-toolchain-x86_64-unknown-linux-gnu.tar.gz",
+      "bytes": 528796425,
+      "sha256": "100b597d605b706bec94e1d32bfaaf5851df8d75173f986d4b56a3e90916be53",
+      "upstream_digest_matched": true,
+      "seconds": 168.61991711799055
+    },
+    {
+      "url": "https://static.rust-lang.org/rustup/archive/1.28.2/x86_64-unknown-linux-gnu/rustup-init",
+      "path": "tooling/downloads/rustup-init",
+      "bytes": 20889000,
+      "sha256": "20a06e644b0d9bd2fbdbfd52d42540bdde820ea7df86e92e533c073da0cdd43c",
+      "upstream_digest_matched": true,
+      "seconds": 5.94801876800193
+    }
+  ]
+}

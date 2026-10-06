@@ -1,0 +1,4 @@
+{
+  "failure": "v2-lint-fix-validation",
+  "reason": "New audit/preparation import order fixed by Ruff; two E501 documentation strings split into adjacent literals. No semantic change, test invocation or resource failure. Original failure retained."
+}

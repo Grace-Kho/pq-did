@@ -1,0 +1,246 @@
+{
+  "recorded_at_utc": "2026-09-18T13:17:05.425869+00:00",
+  "kind": "hints",
+  "workers": 1,
+  "results": [
+    {
+      "case": "hints-prefix-attribution",
+      "profile": {
+        "authority": "User approval, 18 September 2026; counting only, no larger evaluation or proofs",
+        "mode": "count",
+        "max_gates": 32000000,
+        "max_logical_trace_bytes": 1073741824,
+        "max_diagnostic_bytes": 10485760,
+        "max_inputs": 65536,
+        "generation_seconds": 300.0,
+        "case_wall_seconds": 300.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain stricter existing 256 MiB AS and sampled 128 MiB RSS; authorised upper RSS ceiling is 1 GiB. No materialised trace or wire-value array."
+      },
+      "outcome": "resource_limit",
+      "baseline_rss_bytes": 35356672,
+      "generation_complete": false,
+      "reason": "gate-count limit",
+      "prefix_progress": {
+        "gates": 32000000,
+        "wires": 32042634,
+        "serialised_bytes_so_far": 544000056,
+        "stored_bytes": 0,
+        "counts": {
+          "xor": 14529348,
+          "and_": 13532448,
+          "not_": 3938204,
+          "inputs": 42632
+        },
+        "complete": false
+      },
+      "counts": {
+        "xor": 14529348,
+        "and_": 13532448,
+        "not_": 3938204,
+        "inputs": 42632
+      },
+      "gates": 32000000,
+      "wires": 32042634,
+      "logical_trace_bytes": 544000056,
+      "stored_trace_bytes": 0,
+      "prefix_only_sha256": "269371381e8079cb1eb3438e1d88872a6f553729030ff74f4ac175d28fd97947",
+      "fingerprint": null,
+      "elapsed_seconds": 60.23177755701181,
+      "events": {
+        "iterations_started": 285,
+        "iterations_completed": 284,
+        "row": 5,
+        "started_in_row": 10
+      },
+      "stopped_category": "write/mux",
+      "emitted_by_category": {
+        "boundary": [
+          1977,
+          1190,
+          390
+        ],
+        "step-control": [
+          303912,
+          209397,
+          27574
+        ],
+        "read": [
+          105654,
+          105837,
+          852
+        ],
+        "read/mux": [
+          834480,
+          417240,
+          0
+        ],
+        "write/selectors": [
+          582896,
+          4663168,
+          582896
+        ],
+        "write": [
+          146292,
+          146292,
+          284
+        ],
+        "write/mux": [
+          9227929,
+          4663116,
+          0
+        ],
+        "read/selectors": [
+          3326208,
+          3326208,
+          3326208
+        ]
+      },
+      "public_folded_by_category": {
+        "boundary": [
+          399,
+          400,
+          408
+        ],
+        "step-control": [
+          32913,
+          16694,
+          67044
+        ],
+        "read/selectors": [
+          11712,
+          11712,
+          11712
+        ],
+        "read": [
+          366,
+          183,
+          3
+        ],
+        "write/selectors": [
+          4080272,
+          0,
+          4080272
+        ],
+        "write/mux": [
+          98304,
+          0,
+          0
+        ]
+      },
+      "additional_test_comparison_gates": 0,
+      "public_statement_sha256": "eeca5991bd3b0ac6f48819be07bd0e54fa8015ea1bbc34919a616f1e3d883db5",
+      "historical_prefix_counts_reproduced": true,
+      "child_seconds": 60.25727156898938,
+      "peak_rss_bytes": 48758784,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 49131520,
+        "supervised_seconds": 60.32188477599993,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "host_snapshot": {
+        "memory_bytes": {
+          "MemTotal": 8126111744,
+          "MemFree": 4188164096,
+          "MemAvailable": 5008392192,
+          "Buffers": 73134080,
+          "Cached": 862437376,
+          "SwapCached": 0,
+          "Active": 366354432,
+          "Inactive": 2863583232,
+          "Active(anon)": 4321280,
+          "Inactive(anon)": 2366291968,
+          "Active(file)": 362033152,
+          "Inactive(file)": 497291264,
+          "Unevictable": 0,
+          "Mlocked": 0,
+          "SwapTotal": 2147483648,
+          "SwapFree": 2147483648,
+          "Dirty": 880640,
+          "Writeback": 0,
+          "AnonPages": 2294657024,
+          "Mapped": 481103872,
+          "Shmem": 76357632,
+          "KReclaimable": 161615872,
+          "Slab": 297836544,
+          "SReclaimable": 161615872,
+          "SUnreclaim": 136220672,
+          "KernelStack": 10387456,
+          "PageTables": 53268480,
+          "SecPageTables": 0,
+          "NFS_Unstable": 0,
+          "Bounce": 0,
+          "WritebackTmp": 0,
+          "CommitLimit": 6210539520,
+          "Committed_AS": 5373480960,
+          "VmallocTotal": 35184372087808,
+          "VmallocUsed": 40095744,
+          "VmallocChunk": 0,
+          "Percpu": 12484608,
+          "HardwareCorrupted": 0,
+          "AnonHugePages": 0,
+          "ShmemHugePages": 0,
+          "ShmemPmdMapped": 0,
+          "FileHugePages": 10485760,
+          "FilePmdMapped": 0,
+          "Unaccepted": 0,
+          "Balloon": 0,
+          "Hugepagesize": 2097152,
+          "Hugetlb": 0,
+          "DirectMap4k": 45088768,
+          "DirectMap2M": 6197084160,
+          "DirectMap1G": 10737418240
+        },
+        "disk_bytes": {
+          "total": 1081101176832,
+          "used": 4531486720,
+          "free": 1021577334784
+        },
+        "wsl_kernel": "6.18.33.2-microsoft-standard-WSL2"
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/review_feasibility.py",
+        "--child",
+        "--kind",
+        "hints",
+        "--case",
+        "hints-prefix-attribution",
+        "--profile",
+        "/tmp/pqdid-review-epdar9z9/profile",
+        "--output",
+        "/tmp/pqdid-review-epdar9z9/case.json"
+      ],
+      "log": ""
+    }
+  ],
+  "source_sha256": {
+    "src/pqdid/circuits/__init__.py": "9098a9c19787bcd155bac6d7d724d3c354c4c404fc99565cd5a72ae26a4c8d8f",
+    "src/pqdid/circuits/accounting.py": "23610bf5a75ba435f582d7e80a1d1e2118f07caabe6659b96a4ae4380b3c0690",
+    "src/pqdid/circuits/auth_parsing.py": "15bb95af9c2cb70eab3c4de8406b50cd25f67cf823163875372668989c26be2b",
+    "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+    "src/pqdid/circuits/division.py": "03c3c7abcaaa267450930707b9a2c9534143cc95c470635367cc4a9c66dba8ba",
+    "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+    "src/pqdid/circuits/enrolment.py": "d8b5134bdcb7fd9c1bd70cffc6214e96d971e3fe01bc595e5437718cd603e2f5",
+    "src/pqdid/circuits/enrolment_accounting.py": "8e479c7d3f221d86450135cf356f54b310e95794884026eeb9663985d78c4b3b",
+    "src/pqdid/circuits/keccak.py": "05dbfe9e5d8aea37471c325b7a9565b6f9f1742af5e2efca54029758b1b840a6",
+    "src/pqdid/circuits/parsing.py": "2f4b3d24d056eb9b26424ee185b1b5df9847f50fdc1db326c8d313685236cef9",
+    "src/pqdid/circuits/scalar_ring.py": "f2012a9d1202686368eb2693495bccd00af8be73ce8a00535a8ced9a190adf45",
+    "src/pqdid/circuits/signature.py": "5fb391650765018230c4f9bc54370ddf28c1c2ce7fd92b9bef93113aeb9c6133",
+    "src/pqdid/circuits/signature_inputs.py": "67f3d3ace81385a93ef9c113c6b4cbd58a00d028fb53cebfaed145055d612762",
+    "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec",
+    "scripts/review_feasibility.py": "f3359ffe233df89827df21d5d79017ad2ddc5d70d315654a1ef15909ebb6a659",
+    "scripts/preflight_signature_inputs.py": "2e1f31b9c0ecd581230bab095bc2f7020e85bea8642ad0296caecf043e7124cb",
+    "tests/reference/preparation_oracle.py": "d05fa6b9f47fcaec5b90a261a4a28b90265e43523acfd4fbeb26eaeb7f556fb4",
+    "configs/validation_profiles.json": "6935af3715d8e28e47a0acaceabb82248cd9f27d1d60797faf5008037cfd917f",
+    "tests/fixtures/relations_vectors.json": "e2e5981ffa88eb5efef5ec3c6c6af424c3a5f35aa020c8cb4abf2b5f6c2661f2"
+  },
+  "scope": "bounded preparation evaluation/hint attribution; no full authentication or proof"
+}

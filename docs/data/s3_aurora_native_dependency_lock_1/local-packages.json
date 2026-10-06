@@ -1,0 +1,45 @@
+[
+  {
+    "argv": [
+      "dpkg-query",
+      "-W",
+      "-f=${Package} ${Version} ${Status}\n",
+      "libgmp-dev",
+      "libgmp10",
+      "libsodium23",
+      "libsodium-dev",
+      "libstdc++6",
+      "libc6",
+      "libgcc-s1",
+      "g++",
+      "cmake",
+      "ninja-build",
+      "pkg-config",
+      "git"
+    ],
+    "exit_code": 1,
+    "stdout": "cmake 4.2.3-2ubuntu2 install ok installed\ng++ 4:15.2.0-5ubuntu1 install ok installed\ngit 1:2.53.0-1ubuntu1 install ok installed\nlibc6 2.43-2ubuntu2.4 install ok installed\nlibgcc-s1 16-20260322-1ubuntu1 install ok installed\nlibgmp10 2:6.3.0+dfsg-5ubuntu2 install ok installed\nlibsodium23 1.0.18-2 install ok installed\nlibstdc++6 16-20260322-1ubuntu1 install ok installed\nninja-build 1.13.2-1 install ok installed\npkg-config 2.5.1-4 install ok installed\n",
+    "stderr": "dpkg-query: no packages found matching libgmp-dev\ndpkg-query: no packages found matching libsodium-dev\n"
+  },
+  {
+    "argv": [
+      "apt-cache",
+      "show",
+      "libsodium-dev",
+      "libgmp-dev"
+    ],
+    "exit_code": 0,
+    "stdout": "Package: libsodium-dev\nSource: libsodium\nPriority: optional\nSection: libdevel\nInstalled-Size: 808\nMaintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>\nArchitecture: amd64\nVersion: 1.0.18-2\nDepends: libsodium23 (= 1.0.18-2)\nFilename: pool/main/libs/libsodium/libsodium-dev_1.0.18-2_amd64.deb\nSize: 187214\nMD5sum: 6ec824ec545a4482e3c6b946e141f50a\nSHA1: 72fe808a0a316835bed8d0b6df46051fc702ba9e\nSHA256: 34e8337b30160458f44bada750c9e94ec18ec5ac087e2428043ddb04625226cc\nSHA512: 9549313fe865aba60ed4037a983ef184e843fca4b15ab4dfe5a0225274bb4af4c48c2d251317c9e8cb3274f32a72b155d56b683e73b8cc4ee68e4da7a0d628fb\nHomepage: https://www.libsodium.org/\nDescription-en: Network communication, cryptography and signaturing library - headers\n NaCl (pronounced \"salt\") is a new easy-to-use high-speed software library for\n network communication, encryption, decryption, signatures, etc.\n .\n NaCl's goal is to provide all of the core operations needed to build\n higher-level cryptographic tools.\n .\n Sodium is a portable, cross-compilable, installable, packageable fork of NaCl,\n with a compatible API.\n .\n This package provides development headers needed for applications that use\n libsodium.\nDescription-md5: cae8e20dbbff5c7b1b3bf306d7ea03fa\nOriginal-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>\nMulti-Arch: same\nOrigin: Ubuntu\nBugs: https://bugs.launchpad.net/ubuntu/+filebug\n\nPackage: libgmp-dev\nSource: gmp\nPriority: optional\nSection: libdevel\nInstalled-Size: 1600\nMaintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>\nArchitecture: amd64\nVersion: 2:6.3.0+dfsg-5ubuntu2\nReplaces: libgmp10-dev, libgmp3-dev\nSuggests: gmp-doc, libgmp10-doc, libmpfr-dev\nProvides: libgmp10-dev\nDepends: libgmp10 (= 2:6.3.0+dfsg-5ubuntu2), libgmpxx4ldbl (= 2:6.3.0+dfsg-5ubuntu2)\nConflicts: libgmp10-dev\nFilename: pool/main/g/gmp/libgmp-dev_6.3.0+dfsg-5ubuntu2_amd64.deb\nSize: 341530\nMD5sum: de954f173d0e09fd7ffad6999c805751\nSHA1: 4b640015c504ac7757bdc997469f781ed2989ff3\nSHA256: b43e38f2d5ae4aa38471e1b3f90ed63e96c2ce614ffe496cdcd72f9944e87a4a\nSHA512: eb47461e4f45c6eb21cc9c15a33f7e457cc43b6dd6ceb49bed6056913ca1b2f00ab46b97f45521616ee56a80371da1c7be6ad35cf5ce4265b2b80408c59dd4de\nHomepage: https://gmplib.org/\nDescription-en: Multiprecision arithmetic library developers tools\n This development package provides the header files and the symbolic\n links to allow compilation and linking of programs that use the libraries\n provided in the libgmp10 package.\n .\n Both C and C++ bindings are present in this package.  Package\n libstdc++-dev is required to use the C++ bindings.\n .\n The MPFR library (multiple-precision floating-point) used to be\n included, but has since been moved to package libmpfr-dev.\nDescription-md5: db56254d94fec9ce85e93ebf60b032a9\nMulti-Arch: same\nOriginal-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>\nOrigin: Ubuntu\nBugs: https://bugs.launchpad.net/ubuntu/+filebug\n\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "dpkg-query",
+      "-L",
+      "libgmp-dev"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "dpkg-query: package 'libgmp-dev' is not installed\nUse dpkg --contents (= dpkg-deb --contents) to list archive files contents.\n"
+  }
+]

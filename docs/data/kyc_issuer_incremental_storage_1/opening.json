@@ -1,0 +1,61 @@
+{
+  "prior_manifest_sha256": "27375feff35aab94151a10241dfcb74fea45c82e9614b80d9f635ebfd8f62ca0",
+  "prior_closure_sha256": "5fdca03187acc4b1c4cb6171235998d12b95f3df89923f21fc12ad613fb32808",
+  "prior_resource_closure_sha256": "c7d843ecfdb398045f748cb3b7a89e467b667d673c6ebcaf7b9d4ed8afa7e01c",
+  "resources": {
+    "package": "KYC-TESTBED-COMPLETION-1/EXECUTION",
+    "implementation_opening_seconds": 1852.3171209923712,
+    "continuation_charged_seconds": 811.976623432156,
+    "previous_workstream_consumed_seconds": 214.91049292776734,
+    "workstream_total_charged_seconds": 1026.8871163599233,
+    "workstream_cap_seconds": 1700,
+    "workstream_remaining_seconds": 673.1128836400767,
+    "implementation_aggregate_charged_seconds": 3233.659502439785,
+    "implementation_remaining_seconds": 1040.3404975602152,
+    "accounting": "Measured guarded jobs plus explicit conservative manual implementation/bookkeeping charges; historical usage preserved",
+    "guarded_job_seconds": 48.69049371313304,
+    "bookkeeping_seconds": 763.2861297190227,
+    "cumulative_invocations": 1045,
+    "new_invocations": 71,
+    "remaining_invocations": 5,
+    "cumulative_builds": 10,
+    "new_builds": 0,
+    "build_ceiling": 13,
+    "new_circuit_work_events": 0,
+    "cumulative_work_events": 77593603,
+    "work_event_ceiling": 4294967296,
+    "phase_cgroup_memory_peaks_bytes": {
+      "python": 44634112,
+      "tool": 27992064,
+      "audit": 48414720
+    },
+    "memory_metric": "cgroup-v2 worker+descendants/cache/kernel memory.peak; each worker limited to 256MiB",
+    "sampled_tree_rss_peak_bytes": 83980288,
+    "worker_resource_breaches": 0,
+    "application_storage_bound_rejections": 1,
+    "completion_time_reserve_seconds": 300,
+    "evidence_completion_reserve_bytes": 2097152,
+    "unallocated_cumulative_evidence_bytes": 448679,
+    "evidence_transfer_bytes": 1572864,
+    "transfer_active": true,
+    "analysis_balance_unchanged_seconds": 80.91750274339225,
+    "isolation_allowance_unchanged": true,
+    "proof_ledger": {
+      "used": 2,
+      "unused": 1
+    },
+    "proofs": 0,
+    "zkvm_executions": 0,
+    "installations": 0,
+    "activation": false,
+    "storage": {
+      "new_evidence_bytes": 644074,
+      "new_artifact_bytes": 0,
+      "evidence_bytes": 30866472,
+      "artifact_bytes": 58966547,
+      "temporary_bytes": 0
+    },
+    "cumulative_evidence_remaining_bytes": 2687960,
+    "shared_evidence_remaining_bytes": 2239281
+  }
+}

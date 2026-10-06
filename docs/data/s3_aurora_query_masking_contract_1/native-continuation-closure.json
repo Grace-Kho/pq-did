@@ -1,0 +1,14 @@
+{
+  "complete_for_demonstrated_public_input_scope": true,
+  "previous_manifest_sha256": "c79748b69639633dd68a237e5a512e7c15229b84648968a8f0039bf078a3cacd",
+  "native_continuation_closed": true,
+  "unused_evidence_reservation_released_bytes": 2320000,
+  "consumption_refunded": 0,
+  "native_balance_unchanged": 107.26425821718294,
+  "implementation_balance_unchanged": 111.82163787621539,
+  "historical_73345_charge_preserved_seconds": 73.34588294802234,
+  "prior_subcap_remaining_no_longer_admitted": 94.96861188916955,
+  "prior_parent_remaining_no_longer_admitted": 102.89238453283906,
+  "native_test_invocations_unused": 0,
+  "all_historical_failures_preserved": true
+}

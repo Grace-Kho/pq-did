@@ -1,0 +1,264 @@
+{
+  "cases": [
+    {
+      "id": "SEM-01",
+      "invocation": 425,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_semantics",
+        "1"
+      ],
+      "seconds": 0.0035773840500041842
+    },
+    {
+      "id": "SEM-02",
+      "invocation": 426,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_semantics",
+        "2"
+      ],
+      "seconds": 0.0009531029500067234
+    },
+    {
+      "id": "SEM-03",
+      "invocation": 427,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_semantics",
+        "3"
+      ],
+      "seconds": 0.0009393099462613463
+    },
+    {
+      "id": "SEM-04",
+      "invocation": 428,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_semantics",
+        "4"
+      ],
+      "seconds": 0.0008829069556668401
+    },
+    {
+      "id": "SEM-05",
+      "invocation": 429,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_semantics",
+        "5"
+      ],
+      "seconds": 0.0008632669923827052
+    },
+    {
+      "id": "SEM-06",
+      "invocation": 430,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_semantics",
+        "6"
+      ],
+      "seconds": 0.001008276012726128
+    },
+    {
+      "id": "SEM-07",
+      "invocation": 431,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_semantics",
+        "7"
+      ],
+      "seconds": 0.000906566041521728
+    },
+    {
+      "id": "SEM-08",
+      "invocation": 432,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_semantics",
+        "8"
+      ],
+      "seconds": 0.0008841520175337791
+    },
+    {
+      "id": "TR-01",
+      "invocation": 433,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "1",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.0021213639993220568
+    },
+    {
+      "id": "TR-02",
+      "invocation": 434,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "2",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.001783382031135261
+    },
+    {
+      "id": "TR-03",
+      "invocation": 435,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "3",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/nonce-mutated.bin"
+      ],
+      "seconds": 0.0020279979798942804
+    },
+    {
+      "id": "TR-04",
+      "invocation": 436,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "4",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.0017827909905463457
+    },
+    {
+      "id": "TR-05",
+      "invocation": 437,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "5",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.0016748219495639205
+    },
+    {
+      "id": "TR-06",
+      "invocation": 438,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "6",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.002445599064230919
+    },
+    {
+      "id": "TR-07",
+      "invocation": 439,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "7",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.0017430660082027316
+    },
+    {
+      "id": "TR-08",
+      "invocation": 440,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "8",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.0017231520032510161
+    },
+    {
+      "id": "TR-09",
+      "invocation": 441,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "9",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.001194761018268764
+    },
+    {
+      "id": "TR-10",
+      "invocation": 442,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "10",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.001351171056739986
+    },
+    {
+      "id": "TR-11",
+      "invocation": 443,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "11",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.001350336940959096
+    },
+    {
+      "id": "TR-12",
+      "invocation": 444,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "12",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.0012370289769023657
+    },
+    {
+      "id": "TR-13",
+      "invocation": 445,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "13",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.0013908989494666457
+    },
+    {
+      "id": "TR-14",
+      "invocation": 446,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "14",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.0013972690794616938
+    },
+    {
+      "id": "TR-15",
+      "invocation": 447,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "15",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.001916064997203648
+    },
+    {
+      "id": "TR-16",
+      "invocation": 448,
+      "status": "pass",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+        "16",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+      ],
+      "seconds": 0.0010084130335599184
+    }
+  ],
+  "new_invocations": 24,
+  "tooling_invocations": 5,
+  "cumulative_invocations": 448,
+  "ceiling": 450
+}

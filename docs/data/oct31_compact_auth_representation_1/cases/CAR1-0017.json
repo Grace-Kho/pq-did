@@ -1,0 +1,14 @@
+{
+  "case_id": "C-16",
+  "invocation_id": "CAR1-0017",
+  "status": "pass",
+  "details": {
+    "case": "C-16",
+    "purpose": "row cap produces incomplete result",
+    "full_relation": false,
+    "rejection": "incomplete: final-row capacity",
+    "state": "incomplete"
+  },
+  "seconds": 5.1073962822556496e-05,
+  "work_events": 3
+}

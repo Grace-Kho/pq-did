@@ -1,0 +1,8 @@
+{
+  "failure": "access",
+  "cause": "Socket was bound inside the database directory; unchanged SQLiteStore sidecar inventory correctly rejected it.",
+  "correction": "Use separate controlled role-ipc directories; retain strict database sidecar inventory.",
+  "resource_failure": false,
+  "reused_passed_cases": 0,
+  "authorisation": "Necessary routine defect correction within the user-authorised implementation and unchanged budget."
+}

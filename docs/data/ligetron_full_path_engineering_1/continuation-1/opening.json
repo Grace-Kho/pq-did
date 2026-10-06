@@ -1,0 +1,17 @@
+{
+  "package": "LIGETRON-FULL-PATH-ENGINEERING-1",
+  "continuation": "same package, failed fresh memory gate",
+  "prior_resource_closure": "/home/grace/projects/pq-did/docs/data/ligetron_full_path_engineering_1/resource-closure.json",
+  "prior_resource_sha256": "11eb83b1f1978c4b663dfb7a6a48088a29efb45b002125178deb54ad30446ead",
+  "prior_validation_sha256": "080131f31bb990825e3d22f6ba932959a06f2d5c51c7f09a1c336885d0629d94",
+  "previous_archive_sha256": "a75cc5e86185f1efabb4d9c905aa29a45037f07ee76125cbc44d339a0131e850",
+  "old_consumption_and_reservations_preserved": true,
+  "new_evidence_reservation_bytes": 65536,
+  "new_archive_artifact_reservation_bytes": 2097152,
+  "registered_artifact": "/home/grace/projects/pq-did/handover/ligetron_full_path_engineering_review_v2.zip",
+  "artifact_per_file_ceiling_bytes": 268435456,
+  "classification": "ZIP artifact; diagnostics, script, ledger and reports evidence",
+  "available_disk_bytes": 1006784368640,
+  "filesystem_device": 2096,
+  "no_limits_or_allocations_changed": true
+}

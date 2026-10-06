@@ -1,0 +1,98 @@
+{
+  "package": "R0-DESIGN-REVIEW-1",
+  "completed_UTC": "2026-09-19T06:06:57.284685+00:00",
+  "passed": true,
+  "checks": {
+    "preexisting_files_checked": 8670,
+    "preexisting_files_unchanged": 8667,
+    "allowed_document_changes": [
+      "docs/spec_issues.md",
+      "docs/status.md",
+      "docs/traceability.md"
+    ],
+    "missing_preexisting_files": [],
+    "other_preexisting_changes": [],
+    "historical_evidence_and_ledgers_unchanged": true,
+    "manuscript_identity_matches": true,
+    "arithmetic_reproducible": true,
+    "phase_UTC_intervals_and_rates_checked_against_log": true,
+    "analysis_source_hashes_checked": 33,
+    "external_source_hashes_and_sizes_checked": 15,
+    "tag_vs_immutable_source_matches_reused": 5,
+    "JSON_files_parsed_before_final_outputs": 5,
+    "local_markdown_link_paths_checked": 211,
+    "markdown_check_scope": "Local inline target paths, fence balance, trailing whitespace",
+    "analysis_and_validation_AST_parse": true,
+    "lint_and_format": [
+      {
+        "command": [
+          ".venv/bin/ruff",
+          "format",
+          "--check",
+          "--no-cache",
+          "docs/data/r0_design_review_1/analyse.py",
+          "docs/data/r0_design_review_1/validate.py"
+        ],
+        "exit_code": 0,
+        "stdout": "2 files already formatted\n"
+      },
+      {
+        "command": [
+          ".venv/bin/ruff",
+          "check",
+          "--no-cache",
+          "docs/data/r0_design_review_1/analyse.py",
+          "docs/data/r0_design_review_1/validate.py"
+        ],
+        "exit_code": 0,
+        "stdout": "All checks passed!\n"
+      }
+    ]
+  },
+  "proof_attempts": {
+    "used": 2,
+    "unused": 1,
+    "ledger_sha256": "fc64f7efbd2f20cd23fec24d828f36f1460afb0b73a76ea256d0716f309d75c5"
+  },
+  "new_guest_executions": 0,
+  "new_proof_attempts": 0,
+  "candidate_installations": 0,
+  "resource_limit_changes": 0,
+  "new_profile_adopted": false,
+  "validation_reused": [
+    "Corrected guest six native tests and 35 reference comparisons; source/inputs unchanged",
+    "Existing enrolment independent verification/eight tamper results; no new verification"
+  ],
+  "preparation_notes": [
+    "Initial analysis lint found E741/E501; corrected only the new analysis script.",
+    "External sources fetched as text for inspection only; no candidate compiled or installed.",
+    "Paper PDF screenshot retrieval returned HTTP 403; report uses retrieved text/source code.",
+    "No source/native/circuit/proof test suite rerun for this documentation-only review."
+  ],
+  "reproduction_commands": [
+    [
+      ".venv/bin/python",
+      "docs/data/r0_design_review_1/analyse.py"
+    ],
+    [
+      ".venv/bin/ruff",
+      "format",
+      "--check",
+      "--no-cache",
+      "docs/data/r0_design_review_1/analyse.py",
+      "docs/data/r0_design_review_1/validate.py"
+    ],
+    [
+      ".venv/bin/ruff",
+      "check",
+      "--no-cache",
+      "docs/data/r0_design_review_1/analyse.py",
+      "docs/data/r0_design_review_1/validate.py"
+    ],
+    [
+      ".venv/bin/python",
+      "docs/data/r0_design_review_1/validate.py"
+    ]
+  ],
+  "preservation_inventory_sha256": "7ce8cb1db1b1178c56486ad9b508fc23faf0a0771c5da0d01c1b7091d4c72ae8"
+}

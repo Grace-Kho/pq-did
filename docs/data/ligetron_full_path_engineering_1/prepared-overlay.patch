@@ -1,0 +1,270 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -6,13 +6,8 @@
+ 
+ set(CMAKE_CXX_STANDARD 20)
+ 
+-include(FetchContent)
+-
+-FetchContent_Declare(
+-  json
+-  URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz)
+-
+-FetchContent_MakeAvailable(json)
++# Use only the verified project-local JSON package; no configure-time download.
++find_package(nlohmann_json 3.11.3 CONFIG REQUIRED)
+ 
+ # Use the NEW behavior for CMP0167 (CMake ≥3.29):
+ # ensures that try_compile() respects COMPILE_OPTIONS and LINK_OPTIONS.
+@@ -265,5 +260,8 @@
+     --shell-file ${VERIFIER_SHELL_FILE})
+ endif()
+ 
+-enable_testing()
+-add_subdirectory(tests)
++include(CTest)
++if(BUILD_TESTING)
++  enable_testing()
++  add_subdirectory(tests)
++endif()
+--- /dev/null
++++ b/include/zkp/pqdid_bounded_io_exp1.hpp
+@@ -0,0 +1,83 @@
++#pragma once
++
++// Isolated, uncompiled source continuation. Does not establish proof admission.
++#include <array>
++#include <cstdint>
++#include <fstream>
++#include <limits>
++#include <stdexcept>
++#include <string>
++#include <string_view>
++#include <vector>
++
++#include <zlib.h>
++
++namespace ligero::vm::zkp::bounded_io_exp1 {
++
++inline constexpr std::size_t config_limit = 65536;
++inline constexpr std::size_t program_limit = 1048576;
++inline constexpr std::size_t compressed_limit = 8388608;
++inline constexpr std::size_t envelope_limit = 16777216;
++
++inline std::string_view config_view(const char* text) {
++    if (!text) throw std::runtime_error("Missing JSON configuration");
++    std::size_t n = 0;
++    while (n <= config_limit && text[n] != '\0') ++n;
++    if (n > config_limit) throw std::runtime_error("JSON configuration exceeds limit");
++    return {text, n};
++}
++
++inline std::vector<std::uint8_t> read_file(const std::string& path, std::size_t limit) {
++    // Read through the same open handle; a file-size check alone would race.
++    std::ifstream input(path, std::ios::binary);
++    if (!input) throw std::runtime_error("Cannot open bounded input");
++    std::vector<std::uint8_t> result;
++    std::array<char, 16384> block{};
++    while (true) {
++        input.read(block.data(), static_cast<std::streamsize>(block.size()));
++        const auto n = static_cast<std::size_t>(input.gcount());
++        if (result.size() > limit || n > limit - result.size())
++            throw std::runtime_error("Input exceeds byte limit");
++        result.insert(result.end(), block.data(), block.data() + n);
++        if (input.bad()) throw std::runtime_error("Bounded input read failed");
++        if (input.eof()) break;
++        if (input.fail()) throw std::runtime_error("Incomplete bounded input read");
++    }
++    return result;
++}
++
++inline std::string inflate_one_gzip(const std::vector<std::uint8_t>& compressed) {
++    if (compressed.empty() || compressed.size() > compressed_limit ||
++        compressed.size() > std::numeric_limits<uInt>::max())
++        throw std::runtime_error("Invalid compressed proof size");
++    z_stream stream{};
++    if (inflateInit2(&stream, 15 + 16) != Z_OK)
++        throw std::runtime_error("Cannot initialise gzip decoder");
++    struct End {
++        z_stream* stream;
++        ~End() { inflateEnd(stream); }
++    } end{&stream};
++    stream.next_in = const_cast<Bytef*>(compressed.data());
++    stream.avail_in = static_cast<uInt>(compressed.size());
++    std::array<unsigned char, 16384> block{};
++    std::string output;
++    for (;;) {
++        const auto before = stream.avail_in;
++        stream.next_out = block.data();
++        stream.avail_out = static_cast<uInt>(block.size());
++        const int status = inflate(&stream, Z_NO_FLUSH);
++        const auto produced = block.size() - stream.avail_out;
++        if (output.size() > envelope_limit || produced > envelope_limit - output.size())
++            throw std::runtime_error("Decompressed proof exceeds limit");
++        output.append(reinterpret_cast<const char*>(block.data()), produced);
++        if (status == Z_STREAM_END) {
++            if (stream.avail_in != 0)
++                throw std::runtime_error("Trailing bytes or multiple gzip members");
++            return output;
++        }
++        if (status != Z_OK || (produced == 0 && stream.avail_in == before))
++            throw std::runtime_error("Invalid or truncated gzip proof");
++    }
++}
++
++} // namespace ligero::vm::zkp::bounded_io_exp1
+--- a/src/webgpu_prover.cpp
++++ b/src/webgpu_prover.cpp
+@@ -1,3 +1,4 @@
++#include <zkp/pqdid_bounded_io_exp1.hpp>
+ /*
+  * Copyright (C) 2023-2026 Ligero, Inc.
+  *
+@@ -80,12 +81,13 @@
+         exit(EXIT_FAILURE);
+     }
+ 
+-    std::string_view jstr = argv[1];
++    std::string_view jstr;
+     json jconfig;
+ 
+     try {
++        jstr = zkp::bounded_io_exp1::config_view(argv[1]);
+         jconfig = json::parse(jstr);
+-    } catch (json::exception& e) {
++    } catch (const std::exception& e) {
+         std::cerr << e.what() << std::endl;
+         exit(EXIT_FAILURE);
+     }
+@@ -164,7 +166,7 @@
+     }
+ 
+     // Compute hash of all public inputs for Fiat-Shamir
+-    params::hasher::digest instance_hash;
++    params::hasher::digest instance_hash{};
+     for (int i = 0; i < input_args.size(); i++) {
+         if (!indices_set.contains(i)) {
+             instance_hash =
+@@ -178,14 +180,12 @@
+     std::unique_ptr<wabt::Module> wabt_module{new wabt::Module{}};
+     {
+         std::vector<uint8_t> program_data;
+-        wabt::Result read_result =
+-            wabt::ReadFile(program_name.c_str(), &program_data);
+-
+-        if (wabt::Failed(read_result)) {
+-            std::cerr << std::format("Error: Could not read from file \"{}\"",
+-                                     program_name.c_str())
+-                      << std::endl;
+-            exit(EXIT_FAILURE);
++        try {
++            program_data = zkp::bounded_io_exp1::read_file(
++                program_name.string(), zkp::bounded_io_exp1::program_limit);
++        } catch (const std::exception& error) {
++            std::cerr << error.what() << std::endl;
++            return EXIT_FAILURE;
+         }
+ 
+         wabt::Features wabt_features;
+@@ -437,6 +437,9 @@
+                                                       ctx3->host_samplings(),
+                                                       &metadata);
+ 
++        if (serialized.size() > zkp::bounded_io_exp1::envelope_limit)
++            throw std::runtime_error("Proof envelope exceeds experimental limit");
++
+         constexpr int gzip_compression_level = 6;
+         std::string compressed_proof;
+         {
+@@ -446,6 +449,9 @@
+             gzip_out.push(io::back_inserter(compressed_proof));
+             gzip_out.write(serialized.data(), serialized.size());
+         }
++
++        if (compressed_proof.size() > zkp::bounded_io_exp1::compressed_limit)
++            throw std::runtime_error("Compressed proof exceeds experimental limit");
+ 
+         std::ofstream proof_file(
+             proof_name, std::ios::out | std::ios::binary | std::ios::trunc);
+--- a/src/webgpu_verifier.cpp
++++ b/src/webgpu_verifier.cpp
+@@ -1,3 +1,4 @@
++#include <zkp/pqdid_bounded_io_exp1.hpp>
+ /*
+  * Copyright (C) 2023-2026 Ligero, Inc.
+  *
+@@ -75,12 +76,13 @@
+         exit(EXIT_FAILURE);
+     }
+ 
+-    std::string_view jstr = argv[1];
++    std::string_view jstr;
+     json jconfig;
+ 
+     try {
++        jstr = zkp::bounded_io_exp1::config_view(argv[1]);
+         jconfig = json::parse(jstr);
+-    } catch (json::exception& e) {
++    } catch (const std::exception& e) {
+         std::cerr << e.what() << std::endl;
+         exit(EXIT_FAILURE);
+     }
+@@ -158,7 +160,7 @@
+     }
+ 
+     // Compute hash of all public inputs for Fiat-Shamir
+-    params::hasher::digest instance_hash;
++    params::hasher::digest instance_hash{};
+     for (int i = 0; i < input_args.size(); i++) {
+         if (!indices_set.contains(i)) {
+             instance_hash =
+@@ -171,14 +173,12 @@
+     std::unique_ptr<wabt::Module> wabt_module{new wabt::Module{}};
+     {
+         std::vector<uint8_t> program_data;
+-        wabt::Result read_result =
+-            wabt::ReadFile(program_name.c_str(), &program_data);
+-
+-        if (wabt::Failed(read_result)) {
+-            std::cerr << std::format("Error: Could not read from file \"{}\"",
+-                                     program_name.c_str())
+-                      << std::endl;
+-            exit(EXIT_FAILURE);
++        try {
++            program_data = zkp::bounded_io_exp1::read_file(
++                program_name.string(), zkp::bounded_io_exp1::program_limit);
++        } catch (const std::exception& error) {
++            std::cerr << error.what() << std::endl;
++            return EXIT_FAILURE;
+         }
+ 
+         wabt::Features wabt_features;
+@@ -236,25 +236,9 @@
+ 
+     zkp::ProofData proof_data;
+     try {
+-        std::ifstream proof_file(proof_name, std::ios::in | std::ios::binary);
+-
+-        if (!proof_file) {
+-            std::cerr << std::format("Error: Could not read from file \"{}\"",
+-                                     proof_name)
+-                      << std::endl;
+-            exit(EXIT_FAILURE);
+-        }
+-
+-        std::stringstream compressed_proof;
+-        compressed_proof << proof_file.rdbuf();
+-        proof_file.close();
+-
+-        io::filtering_istream gzip_in;
+-        gzip_in.push(io::gzip_decompressor());
+-        gzip_in.push(compressed_proof);
+-
+-        std::string serialized((std::istreambuf_iterator<char>(gzip_in)),
+-                               std::istreambuf_iterator<char>());
++        const auto compressed = zkp::bounded_io_exp1::read_file(
++            proof_name, zkp::bounded_io_exp1::compressed_limit);
++        const auto serialized = zkp::bounded_io_exp1::inflate_one_gzip(compressed);
+ 
+         proof_data = zkp::deserialize_proof(serialized);
+     } catch (const std::exception& ex) {

@@ -1,0 +1,971 @@
+{
+  "sessions": [
+    {
+      "output": "docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/issue-s1",
+      "records": 23
+    },
+    {
+      "output": "docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/issue-s2",
+      "records": 23
+    },
+    {
+      "output": "docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/issue-s3",
+      "records": 23
+    },
+    {
+      "output": "docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/present-a-s1",
+      "records": 23
+    },
+    {
+      "output": "docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/present-a-s2",
+      "records": 23
+    },
+    {
+      "output": "docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/present-a-s3",
+      "records": 23
+    },
+    {
+      "output": "docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/present-b-s1",
+      "records": 23
+    },
+    {
+      "output": "docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/present-b-s2",
+      "records": 23
+    },
+    {
+      "output": "docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/present-b-s3",
+      "records": 23
+    },
+    {
+      "output": "docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/revoke-update-s1",
+      "records": 23
+    },
+    {
+      "output": "docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/revoke-update-s2",
+      "records": 23
+    },
+    {
+      "output": "docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/revoke-update-s3",
+      "records": 23
+    }
+  ],
+  "statistics": [
+    {
+      "scenario": "ISSUE",
+      "session": "session-1",
+      "phase": "cold",
+      "attempts": 1,
+      "planned_attempts": 1,
+      "missing_attempts": 0,
+      "successful_samples": 1,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 1
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 178781222,
+      "median_ns": 178781222,
+      "nearest_rank_p95_ns": 178781222,
+      "max_ns": 178781222
+    },
+    {
+      "scenario": "ISSUE",
+      "session": "session-1",
+      "phase": "warmup",
+      "attempts": 2,
+      "planned_attempts": 2,
+      "missing_attempts": 0,
+      "successful_samples": 2,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 2
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 181079600,
+      "median_ns": 187552248.0,
+      "nearest_rank_p95_ns": 194024896,
+      "max_ns": 194024896
+    },
+    {
+      "scenario": "ISSUE",
+      "session": "session-1",
+      "phase": "warm",
+      "attempts": 20,
+      "planned_attempts": 20,
+      "missing_attempts": 0,
+      "successful_samples": 20,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 20
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 156581487,
+      "median_ns": 209557254.5,
+      "nearest_rank_p95_ns": 276476942,
+      "max_ns": 345906095
+    },
+    {
+      "scenario": "ISSUE",
+      "session": "session-2",
+      "phase": "cold",
+      "attempts": 1,
+      "planned_attempts": 1,
+      "missing_attempts": 0,
+      "successful_samples": 1,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 1
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 201029109,
+      "median_ns": 201029109,
+      "nearest_rank_p95_ns": 201029109,
+      "max_ns": 201029109
+    },
+    {
+      "scenario": "ISSUE",
+      "session": "session-2",
+      "phase": "warmup",
+      "attempts": 2,
+      "planned_attempts": 2,
+      "missing_attempts": 0,
+      "successful_samples": 2,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 2
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 164771592,
+      "median_ns": 186350685.5,
+      "nearest_rank_p95_ns": 207929779,
+      "max_ns": 207929779
+    },
+    {
+      "scenario": "ISSUE",
+      "session": "session-2",
+      "phase": "warm",
+      "attempts": 20,
+      "planned_attempts": 20,
+      "missing_attempts": 0,
+      "successful_samples": 20,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 20
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 150993637,
+      "median_ns": 189939668.5,
+      "nearest_rank_p95_ns": 235739815,
+      "max_ns": 338471380
+    },
+    {
+      "scenario": "ISSUE",
+      "session": "session-3",
+      "phase": "cold",
+      "attempts": 1,
+      "planned_attempts": 1,
+      "missing_attempts": 0,
+      "successful_samples": 1,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 1
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 177409115,
+      "median_ns": 177409115,
+      "nearest_rank_p95_ns": 177409115,
+      "max_ns": 177409115
+    },
+    {
+      "scenario": "ISSUE",
+      "session": "session-3",
+      "phase": "warmup",
+      "attempts": 2,
+      "planned_attempts": 2,
+      "missing_attempts": 0,
+      "successful_samples": 2,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 2
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 153226079,
+      "median_ns": 155332106.5,
+      "nearest_rank_p95_ns": 157438134,
+      "max_ns": 157438134
+    },
+    {
+      "scenario": "ISSUE",
+      "session": "session-3",
+      "phase": "warm",
+      "attempts": 20,
+      "planned_attempts": 20,
+      "missing_attempts": 0,
+      "successful_samples": 20,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 20
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 148145080,
+      "median_ns": 176421911.0,
+      "nearest_rank_p95_ns": 227473818,
+      "max_ns": 268009432
+    },
+    {
+      "scenario": "ISSUE",
+      "session": "pooled",
+      "phase": "cold",
+      "attempts": 3,
+      "planned_attempts": 3,
+      "missing_attempts": 0,
+      "successful_samples": 3,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 3
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 177409115,
+      "median_ns": 178781222,
+      "nearest_rank_p95_ns": 201029109,
+      "max_ns": 201029109
+    },
+    {
+      "scenario": "ISSUE",
+      "session": "pooled",
+      "phase": "warmup",
+      "attempts": 6,
+      "planned_attempts": 6,
+      "missing_attempts": 0,
+      "successful_samples": 6,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 6
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 153226079,
+      "median_ns": 172925596.0,
+      "nearest_rank_p95_ns": 207929779,
+      "max_ns": 207929779
+    },
+    {
+      "scenario": "ISSUE",
+      "session": "pooled",
+      "phase": "warm",
+      "attempts": 60,
+      "planned_attempts": 60,
+      "missing_attempts": 0,
+      "successful_samples": 60,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 60
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 148145080,
+      "median_ns": 189174705.5,
+      "nearest_rank_p95_ns": 268009432,
+      "max_ns": 345906095
+    },
+    {
+      "scenario": "PRESENT-A",
+      "session": "session-1",
+      "phase": "cold",
+      "attempts": 1,
+      "planned_attempts": 1,
+      "missing_attempts": 0,
+      "successful_samples": 1,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 1
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 458338788,
+      "median_ns": 458338788,
+      "nearest_rank_p95_ns": 458338788,
+      "max_ns": 458338788
+    },
+    {
+      "scenario": "PRESENT-A",
+      "session": "session-1",
+      "phase": "warmup",
+      "attempts": 2,
+      "planned_attempts": 2,
+      "missing_attempts": 0,
+      "successful_samples": 2,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 2
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 475546744,
+      "median_ns": 489240321.5,
+      "nearest_rank_p95_ns": 502933899,
+      "max_ns": 502933899
+    },
+    {
+      "scenario": "PRESENT-A",
+      "session": "session-1",
+      "phase": "warm",
+      "attempts": 20,
+      "planned_attempts": 20,
+      "missing_attempts": 0,
+      "successful_samples": 20,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 20
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 405557713,
+      "median_ns": 453216126.5,
+      "nearest_rank_p95_ns": 564360219,
+      "max_ns": 565498851
+    },
+    {
+      "scenario": "PRESENT-A",
+      "session": "session-2",
+      "phase": "cold",
+      "attempts": 1,
+      "planned_attempts": 1,
+      "missing_attempts": 0,
+      "successful_samples": 1,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 1
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 615276100,
+      "median_ns": 615276100,
+      "nearest_rank_p95_ns": 615276100,
+      "max_ns": 615276100
+    },
+    {
+      "scenario": "PRESENT-A",
+      "session": "session-2",
+      "phase": "warmup",
+      "attempts": 2,
+      "planned_attempts": 2,
+      "missing_attempts": 0,
+      "successful_samples": 2,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 2
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 484537480,
+      "median_ns": 500109027.5,
+      "nearest_rank_p95_ns": 515680575,
+      "max_ns": 515680575
+    },
+    {
+      "scenario": "PRESENT-A",
+      "session": "session-2",
+      "phase": "warm",
+      "attempts": 20,
+      "planned_attempts": 20,
+      "missing_attempts": 0,
+      "successful_samples": 20,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 20
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 401309808,
+      "median_ns": 478712003.5,
+      "nearest_rank_p95_ns": 552088770,
+      "max_ns": 563558463
+    },
+    {
+      "scenario": "PRESENT-A",
+      "session": "session-3",
+      "phase": "cold",
+      "attempts": 1,
+      "planned_attempts": 1,
+      "missing_attempts": 0,
+      "successful_samples": 1,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 1
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 427148533,
+      "median_ns": 427148533,
+      "nearest_rank_p95_ns": 427148533,
+      "max_ns": 427148533
+    },
+    {
+      "scenario": "PRESENT-A",
+      "session": "session-3",
+      "phase": "warmup",
+      "attempts": 2,
+      "planned_attempts": 2,
+      "missing_attempts": 0,
+      "successful_samples": 2,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 2
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 418407802,
+      "median_ns": 471215805.0,
+      "nearest_rank_p95_ns": 524023808,
+      "max_ns": 524023808
+    },
+    {
+      "scenario": "PRESENT-A",
+      "session": "session-3",
+      "phase": "warm",
+      "attempts": 20,
+      "planned_attempts": 20,
+      "missing_attempts": 0,
+      "successful_samples": 20,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 20
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 407416668,
+      "median_ns": 475733726.0,
+      "nearest_rank_p95_ns": 587333488,
+      "max_ns": 619550089
+    },
+    {
+      "scenario": "PRESENT-A",
+      "session": "pooled",
+      "phase": "cold",
+      "attempts": 3,
+      "planned_attempts": 3,
+      "missing_attempts": 0,
+      "successful_samples": 3,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 3
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 427148533,
+      "median_ns": 458338788,
+      "nearest_rank_p95_ns": 615276100,
+      "max_ns": 615276100
+    },
+    {
+      "scenario": "PRESENT-A",
+      "session": "pooled",
+      "phase": "warmup",
+      "attempts": 6,
+      "planned_attempts": 6,
+      "missing_attempts": 0,
+      "successful_samples": 6,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 6
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 418407802,
+      "median_ns": 493735689.5,
+      "nearest_rank_p95_ns": 524023808,
+      "max_ns": 524023808
+    },
+    {
+      "scenario": "PRESENT-A",
+      "session": "pooled",
+      "phase": "warm",
+      "attempts": 60,
+      "planned_attempts": 60,
+      "missing_attempts": 0,
+      "successful_samples": 60,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 60
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 401309808,
+      "median_ns": 465898202.5,
+      "nearest_rank_p95_ns": 565498851,
+      "max_ns": 619550089
+    },
+    {
+      "scenario": "PRESENT-B",
+      "session": "session-1",
+      "phase": "cold",
+      "attempts": 1,
+      "planned_attempts": 1,
+      "missing_attempts": 0,
+      "successful_samples": 1,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 1
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 461018803,
+      "median_ns": 461018803,
+      "nearest_rank_p95_ns": 461018803,
+      "max_ns": 461018803
+    },
+    {
+      "scenario": "PRESENT-B",
+      "session": "session-1",
+      "phase": "warmup",
+      "attempts": 2,
+      "planned_attempts": 2,
+      "missing_attempts": 0,
+      "successful_samples": 2,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 2
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 424510473,
+      "median_ns": 463917766.0,
+      "nearest_rank_p95_ns": 503325059,
+      "max_ns": 503325059
+    },
+    {
+      "scenario": "PRESENT-B",
+      "session": "session-1",
+      "phase": "warm",
+      "attempts": 20,
+      "planned_attempts": 20,
+      "missing_attempts": 0,
+      "successful_samples": 20,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 20
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 426203636,
+      "median_ns": 468337361.5,
+      "nearest_rank_p95_ns": 554403077,
+      "max_ns": 571895703
+    },
+    {
+      "scenario": "PRESENT-B",
+      "session": "session-2",
+      "phase": "cold",
+      "attempts": 1,
+      "planned_attempts": 1,
+      "missing_attempts": 0,
+      "successful_samples": 1,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 1
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 562170724,
+      "median_ns": 562170724,
+      "nearest_rank_p95_ns": 562170724,
+      "max_ns": 562170724
+    },
+    {
+      "scenario": "PRESENT-B",
+      "session": "session-2",
+      "phase": "warmup",
+      "attempts": 2,
+      "planned_attempts": 2,
+      "missing_attempts": 0,
+      "successful_samples": 2,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 2
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 435238147,
+      "median_ns": 466266515.5,
+      "nearest_rank_p95_ns": 497294884,
+      "max_ns": 497294884
+    },
+    {
+      "scenario": "PRESENT-B",
+      "session": "session-2",
+      "phase": "warm",
+      "attempts": 20,
+      "planned_attempts": 20,
+      "missing_attempts": 0,
+      "successful_samples": 20,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 20
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 395307548,
+      "median_ns": 456362706.0,
+      "nearest_rank_p95_ns": 554127259,
+      "max_ns": 572228750
+    },
+    {
+      "scenario": "PRESENT-B",
+      "session": "session-3",
+      "phase": "cold",
+      "attempts": 1,
+      "planned_attempts": 1,
+      "missing_attempts": 0,
+      "successful_samples": 1,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 1
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 472167773,
+      "median_ns": 472167773,
+      "nearest_rank_p95_ns": 472167773,
+      "max_ns": 472167773
+    },
+    {
+      "scenario": "PRESENT-B",
+      "session": "session-3",
+      "phase": "warmup",
+      "attempts": 2,
+      "planned_attempts": 2,
+      "missing_attempts": 0,
+      "successful_samples": 2,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 2
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 501971280,
+      "median_ns": 504354247.0,
+      "nearest_rank_p95_ns": 506737214,
+      "max_ns": 506737214
+    },
+    {
+      "scenario": "PRESENT-B",
+      "session": "session-3",
+      "phase": "warm",
+      "attempts": 20,
+      "planned_attempts": 20,
+      "missing_attempts": 0,
+      "successful_samples": 20,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 20
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 430244600,
+      "median_ns": 498342254.5,
+      "nearest_rank_p95_ns": 577609484,
+      "max_ns": 595849748
+    },
+    {
+      "scenario": "PRESENT-B",
+      "session": "pooled",
+      "phase": "cold",
+      "attempts": 3,
+      "planned_attempts": 3,
+      "missing_attempts": 0,
+      "successful_samples": 3,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 3
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 461018803,
+      "median_ns": 472167773,
+      "nearest_rank_p95_ns": 562170724,
+      "max_ns": 562170724
+    },
+    {
+      "scenario": "PRESENT-B",
+      "session": "pooled",
+      "phase": "warmup",
+      "attempts": 6,
+      "planned_attempts": 6,
+      "missing_attempts": 0,
+      "successful_samples": 6,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 6
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 424510473,
+      "median_ns": 499633082.0,
+      "nearest_rank_p95_ns": 506737214,
+      "max_ns": 506737214
+    },
+    {
+      "scenario": "PRESENT-B",
+      "session": "pooled",
+      "phase": "warm",
+      "attempts": 60,
+      "planned_attempts": 60,
+      "missing_attempts": 0,
+      "successful_samples": 60,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 60
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 395307548,
+      "median_ns": 468337361.5,
+      "nearest_rank_p95_ns": 572228750,
+      "max_ns": 595849748
+    },
+    {
+      "scenario": "REVOKE-UPDATE",
+      "session": "session-1",
+      "phase": "cold",
+      "attempts": 1,
+      "planned_attempts": 1,
+      "missing_attempts": 0,
+      "successful_samples": 1,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 1
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 523761843,
+      "median_ns": 523761843,
+      "nearest_rank_p95_ns": 523761843,
+      "max_ns": 523761843
+    },
+    {
+      "scenario": "REVOKE-UPDATE",
+      "session": "session-1",
+      "phase": "warmup",
+      "attempts": 2,
+      "planned_attempts": 2,
+      "missing_attempts": 0,
+      "successful_samples": 2,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 2
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 520827124,
+      "median_ns": 541986292.0,
+      "nearest_rank_p95_ns": 563145460,
+      "max_ns": 563145460
+    },
+    {
+      "scenario": "REVOKE-UPDATE",
+      "session": "session-1",
+      "phase": "warm",
+      "attempts": 20,
+      "planned_attempts": 20,
+      "missing_attempts": 0,
+      "successful_samples": 20,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 20
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 471427557,
+      "median_ns": 551889476.5,
+      "nearest_rank_p95_ns": 626428078,
+      "max_ns": 720969394
+    },
+    {
+      "scenario": "REVOKE-UPDATE",
+      "session": "session-2",
+      "phase": "cold",
+      "attempts": 1,
+      "planned_attempts": 1,
+      "missing_attempts": 0,
+      "successful_samples": 1,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 1
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 488043718,
+      "median_ns": 488043718,
+      "nearest_rank_p95_ns": 488043718,
+      "max_ns": 488043718
+    },
+    {
+      "scenario": "REVOKE-UPDATE",
+      "session": "session-2",
+      "phase": "warmup",
+      "attempts": 2,
+      "planned_attempts": 2,
+      "missing_attempts": 0,
+      "successful_samples": 2,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 2
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 444430720,
+      "median_ns": 492740759.0,
+      "nearest_rank_p95_ns": 541050798,
+      "max_ns": 541050798
+    },
+    {
+      "scenario": "REVOKE-UPDATE",
+      "session": "session-2",
+      "phase": "warm",
+      "attempts": 20,
+      "planned_attempts": 20,
+      "missing_attempts": 0,
+      "successful_samples": 20,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 20
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 444055405,
+      "median_ns": 546118567.5,
+      "nearest_rank_p95_ns": 620660578,
+      "max_ns": 738121060
+    },
+    {
+      "scenario": "REVOKE-UPDATE",
+      "session": "session-3",
+      "phase": "cold",
+      "attempts": 1,
+      "planned_attempts": 1,
+      "missing_attempts": 0,
+      "successful_samples": 1,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 1
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 564367170,
+      "median_ns": 564367170,
+      "nearest_rank_p95_ns": 564367170,
+      "max_ns": 564367170
+    },
+    {
+      "scenario": "REVOKE-UPDATE",
+      "session": "session-3",
+      "phase": "warmup",
+      "attempts": 2,
+      "planned_attempts": 2,
+      "missing_attempts": 0,
+      "successful_samples": 2,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 2
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 527765168,
+      "median_ns": 535362079.0,
+      "nearest_rank_p95_ns": 542958990,
+      "max_ns": 542958990
+    },
+    {
+      "scenario": "REVOKE-UPDATE",
+      "session": "session-3",
+      "phase": "warm",
+      "attempts": 20,
+      "planned_attempts": 20,
+      "missing_attempts": 0,
+      "successful_samples": 20,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 20
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 467393302,
+      "median_ns": 525277845.0,
+      "nearest_rank_p95_ns": 577651938,
+      "max_ns": 607727983
+    },
+    {
+      "scenario": "REVOKE-UPDATE",
+      "session": "pooled",
+      "phase": "cold",
+      "attempts": 3,
+      "planned_attempts": 3,
+      "missing_attempts": 0,
+      "successful_samples": 3,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 3
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 488043718,
+      "median_ns": 523761843,
+      "nearest_rank_p95_ns": 564367170,
+      "max_ns": 564367170
+    },
+    {
+      "scenario": "REVOKE-UPDATE",
+      "session": "pooled",
+      "phase": "warmup",
+      "attempts": 6,
+      "planned_attempts": 6,
+      "missing_attempts": 0,
+      "successful_samples": 6,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 6
+      },
+      "censored": 0,
+      "included_in_warm_statistics": false,
+      "min_ns": 444430720,
+      "median_ns": 534407983.0,
+      "nearest_rank_p95_ns": 563145460,
+      "max_ns": 563145460
+    },
+    {
+      "scenario": "REVOKE-UPDATE",
+      "session": "pooled",
+      "phase": "warm",
+      "attempts": 60,
+      "planned_attempts": 60,
+      "missing_attempts": 0,
+      "successful_samples": 60,
+      "failures": 0,
+      "outcomes": {
+        "accepted": 60
+      },
+      "censored": 0,
+      "included_in_warm_statistics": true,
+      "min_ns": 444055405,
+      "median_ns": 534212818.0,
+      "nearest_rank_p95_ns": 620660578,
+      "max_ns": 738121060
+    }
+  ],
+  "actual_counted_trials": 276,
+  "warm_samples_per_scenario": 60,
+  "cold_process_samples_per_scenario": 3,
+  "private_authentication": "unavailable",
+  "raw_records": "Retained session JSONL/CSV; pooled summary does not duplicate raw outputs"
+}

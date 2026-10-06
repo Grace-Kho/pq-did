@@ -1,0 +1,16 @@
+{
+  "package": "LIGETRON-FULL-PATH-ENGINEERING-1",
+  "continuation": 3,
+  "previous_closure": "/home/grace/projects/pq-did/docs/data/ligetron_full_path_engineering_1/continuation-2/resource-closure.json",
+  "previous_resource_sha256": "69fdd7aacffef31fea11e6b51219ef9648508ad1af364879a4029e664161447c",
+  "previous_validation_sha256": "b6df468cd7999bf734070040be434b7429cbd67b5114ce181bf4d99662899649",
+  "previous_archive_sha256": "8d5f66f0151435152c95ed7accc32839364413fa112eb3d0c6a00f5c21382301",
+  "new_evidence_reservation_bytes": 65536,
+  "new_artifact_reservation_bytes": 2097152,
+  "registered_artifact": "/home/grace/projects/pq-did/handover/ligetron_full_path_engineering_review_v4.zip",
+  "registered_artifact_per_file_limit_bytes": 268435456,
+  "classification": "ZIP artifact; diagnostics, script, documentation and ledgers evidence",
+  "available_disk_bytes": 1013020872704,
+  "no_limits_reset_or_increased": true,
+  "KYC_and_older_reservations_preserved": true
+}

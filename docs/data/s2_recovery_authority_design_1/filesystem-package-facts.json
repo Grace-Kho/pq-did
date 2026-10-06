@@ -1,0 +1,23 @@
+{
+  "package": "S2-RECOVERY-AUTHORITY-DESIGN-1",
+  "command": "findmnt --target /home/grace/projects/pq-did --output TARGET,SOURCE,FSTYPE,OPTIONS --json",
+  "scope": "read-only inspection outside systemd guard; guard creates its own read-only bind mount",
+  "filesystems": [
+    {
+      "target": "/home/grace/projects/pq-did",
+      "source": "/dev/sdd[/home/grace/projects/pq-did]",
+      "fstype": "ext4",
+      "options": "rw,nosuid,nodev,relatime,discard,errors=remount-ro,data=ordered"
+    }
+  ],
+  "package_query": "dpkg-query -W libsqlite3-0",
+  "package_version": "3.46.1-9ubuntu0.3",
+  "installed_changelog": "/usr/share/doc/libsqlite3-0/changelog.Debian.gz",
+  "changelog_bytes_scanned": 7091,
+  "changelog_scan_max_bytes": 131072,
+  "wal_checkpoint_reset_changelog_matches": 0,
+  "wal_backport_established": false,
+  "caveat": "Version/source ID and changelog inspection do not prove absence of distribution patches; WAL not qualified or selected.",
+  "power_loss_storage_stack_verified": false,
+  "environment_mutations": 0
+}

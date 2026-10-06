@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="1.911" timestamp="2026-09-19T19:45:19.140816+08:00" hostname="DTC-4CE630BQSC"><testcase classname="tests.integration.test_owner_boundary" name="test_access_permissions_and_read_redaction" time="1.788"><failure message="AssertionError: assert (b'ERROR', b'...ion-conflict') == (b'OUTCOME', b'ALLOCATED')&#10;  &#10;  At index 0 diff: b'ERROR' != b'OUTCOME'&#10;  Use -v to get more diff">tests/integration/test_owner_boundary.py:299: in test_access_permissions_and_read_redaction
+    assert result[0:2] == (b"OUTCOME", b"ALLOCATED")
+E   AssertionError: assert (b'ERROR', b'...ion-conflict') == (b'OUTCOME', b'ALLOCATED')
+E     
+E     At index 0 diff: b'ERROR' != b'OUTCOME'
+E     Use -v to get more diff</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,78 @@
+[
+  {
+    "case": "test_access_permissions_and_read_redaction",
+    "seconds": 0.23930097700213082,
+    "temporary_bytes_observed_peak": 148806,
+    "maximum_owned_children": 2,
+    "coordinator_cumulative_maxrss_bytes": 53436416,
+    "events": [
+      {
+        "ready": true,
+        "pid": 723462,
+        "uid": 1000,
+        "gid": 1000,
+        "scope": "d29f294a198f2d7874b33c8241ce595bd1b15d7e620ac1ff824a7fd9c1964b69",
+        "socket_mode": "0o600"
+      },
+      {
+        "pid": 723463,
+        "error": "unavailable"
+      },
+      {
+        "pid": 723463,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/odsok_ti8",
+          "client",
+          "request-1"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52060160,
+        "cpu_seconds": 0.092553
+      },
+      {
+        "metrics": {
+          "accepted": 1,
+          "frames": 1,
+          "denied": 0,
+          "errors": 1,
+          "timeouts": 0,
+          "peers": [
+            [
+              [
+                723463,
+                1000,
+                1000
+              ],
+              "6f62736572766572",
+              "status"
+            ]
+          ],
+          "responses": 0,
+          "connection_peak": 1
+        },
+        "maxrss_bytes": 52060160
+      },
+      {
+        "pid": 723462,
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/owner_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/odsok_ti8",
+          "owner",
+          "manager",
+          "owner-1",
+          "/home/grace/projects/pq-did/docs/data/s2_authority_owner_boundary_1/tmp/odsok_ti8/manager/s",
+          "none",
+          "none"
+        ],
+        "exit": 0,
+        "termination": "normal",
+        "maxrss_bytes": 52060160,
+        "cpu_seconds": 0.091959
+      }
+    ]
+  }
+]

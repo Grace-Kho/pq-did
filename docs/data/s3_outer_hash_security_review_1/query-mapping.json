@@ -1,0 +1,110 @@
+{
+  "package": "S3-OUTER-HASH-SECURITY-REVIEW-1",
+  "kind": "analysis only; no hash, circuit, proof or zkVM execution",
+  "L_bytes": 4294967295,
+  "Bmax_exclusive_bytes": 8590196734,
+  "A_bytes": 185760,
+  "view_bytes": "S + ceil((d+2*g)/8) + 120 + len(kind)",
+  "challenge_bytes": "S + 185760 + 114 + len(kind)",
+  "maximum_canonical_view_bytes": 8589934715,
+  "maximum_canonical_challenge_bytes": 4295153174,
+  "maximum_canonical_absorb_blocks": 63161285,
+  "Bmax_minus_one_absorb_blocks": 63163212,
+  "maximum_challenge_absorb_blocks": 31582009,
+  "auth_g_zero_view_bytes_minus_S": 5453,
+  "honest_outer_calls": {
+    "prove": 1441,
+    "check": 961,
+    "one_each": 2402
+  },
+  "canonical_length_power_of_two_envelope": 26,
+  "extra_squeeze_permutations_1024_output_bits": 0,
+  "formal_theorem": "ACMT arXiv:2504.16887v2 Theorem 7.22",
+  "monomials": [
+    "ell^2*q^(9/2)*2^(-min(r,c)/2)",
+    "ell^3*q^(5/4)*2^(-min(r,c)/4)"
+  ],
+  "scaling_only": [
+    {
+      "min_rate_capacity": 512,
+      "log2_q": 64,
+      "log2_ell": 0,
+      "log2_monomials": [
+        "32",
+        "-48"
+      ]
+    },
+    {
+      "min_rate_capacity": 512,
+      "log2_q": 80,
+      "log2_ell": 0,
+      "log2_monomials": [
+        "104",
+        "-28"
+      ]
+    },
+    {
+      "min_rate_capacity": 512,
+      "log2_q": 64,
+      "log2_ell": 26,
+      "log2_monomials": [
+        "84",
+        "30"
+      ]
+    },
+    {
+      "min_rate_capacity": 512,
+      "log2_q": 80,
+      "log2_ell": 26,
+      "log2_monomials": [
+        "156",
+        "50"
+      ]
+    },
+    {
+      "min_rate_capacity": 800,
+      "log2_q": 64,
+      "log2_ell": 27,
+      "log2_monomials": [
+        "-58",
+        "-39"
+      ]
+    },
+    {
+      "min_rate_capacity": 800,
+      "log2_q": 80,
+      "log2_ell": 27,
+      "log2_monomials": [
+        "14",
+        "-19"
+      ]
+    }
+  ],
+  "scaling_is_probability_bound": false,
+  "numerical_instantiation_advantage": null,
+  "assumptions_for_scaling": "optimistically q=Q; ell=1 or stated envelope; constants omitted",
+  "balanced_option": {
+    "adopted": false,
+    "rate_bits": 800,
+    "capacity_bits": 800,
+    "maximum_absorb_blocks": 85901968,
+    "squeeze_blocks": 2,
+    "extra_squeeze_permutations": 1,
+    "large_message_permutation_ratio": "136/100 = 1.36"
+  },
+  "unknowns": {
+    "full_auth_AND_gates": null,
+    "full_auth_circuit_size": null,
+    "actual_auth_statement_bytes": null,
+    "adversarial_max_message_blocks": null,
+    "direct_permutation_queries": null,
+    "internal_permutation_queries": null,
+    "simulator_F_queries": null,
+    "simulator_runtime": null,
+    "primitive_correlated_advice": null,
+    "concrete_Keccak_instantiation_loss": null,
+    "knowledge_composition_loss": null,
+    "privacy_composition_loss": null
+  },
+  "previous_bounds": "docs/data/s2_concrete_security_assessment_1/bounds.json; reused unchanged"
+}

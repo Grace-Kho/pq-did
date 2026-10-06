@@ -1,0 +1,321 @@
+{
+  "package": "S2-REVOKE-AUDIT-1",
+  "diagnostic_only": true,
+  "full_preservation_pass": false,
+  "baseline_entries": 8759,
+  "baseline_bytes": 1581536,
+  "baseline_sha256": "ca7230bf0529444da2da75d10b7925baac5dd98f5b33b2170cdff0c4a38f8a31",
+  "baseline_identities": {
+    "docs/data/s2_revoke_state_1/preservation-before.json": "ca7230bf0529444da2da75d10b7925baac5dd98f5b33b2170cdff0c4a38f8a31",
+    "docs/data/s2_revoke_state_1/manifest.json": "518a614ad09c26c61f197f284385d570aa1d68c1e7339deae310014c71e272fc"
+  },
+  "top_level_counts": {
+    ".cache": 757,
+    ".gitignore": 1,
+    ".python-version": 1,
+    ".vscode": 3,
+    "AGENTS.md": 1,
+    "PQ_DID_Implementation_Plan_v1.md": 1,
+    "README.md": 1,
+    "benchmarks": 1,
+    "configs": 3,
+    "docs": 144,
+    "experiments": 837,
+    "native": 6893,
+    "pyproject.toml": 1,
+    "scripts": 14,
+    "src": 32,
+    "tests": 68,
+    "uv.lock": 1
+  },
+  "total_protected_file_bytes_metadata_only": 293614566,
+  "largest_files": [
+    [
+      108165720,
+      "experiments/r0_succinct_feasibility_1/tooling/sdk-3.0.6/r0vm"
+    ],
+    [
+      23967968,
+      ".cache/uv/archive-v0/eK08Jqbz6tYeEGgC/ruff-0.16.8.data/scripts/ruff"
+    ],
+    [
+      9429917,
+      "native/.deps/liboqs-5a1a854b0dc9f2141bdc771c555ee60c37950183.tar.gz"
+    ],
+    [
+      7725817,
+      "docs/manuscript/PQ_DID__Implementation.pdf"
+    ],
+    [
+      5440720,
+      "experiments/r0_succinct_feasibility_1/target/release/pqdid-r0-host"
+    ],
+    [
+      5436544,
+      "experiments/r0_credvalid_po17_1/target/release/pqdid-r0-host"
+    ],
+    [
+      5428232,
+      "experiments/r0_enrol_po17_1/target/release/pqdid-r0-host"
+    ],
+    [
+      5242568,
+      "experiments/r0_succinct_proof_1/target/release/pqdid-r0-host"
+    ]
+  ],
+  "probe_path": ".cache/uv/archive-v0/eK08Jqbz6tYeEGgC/ruff-0.16.8.data/scripts/ruff",
+  "probe_bytes": 23967968,
+  "phases": {
+    "start": {
+      "current": 15933440,
+      "peak": 15933440,
+      "categories": {
+        "anon": 12591104,
+        "file": 2428928,
+        "kernel": 704512,
+        "slab": 300472,
+        "file_mapped": 0
+      },
+      "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+    },
+    "one_baseline_text_and_dictionary": {
+      "current": 21950464,
+      "peak": 21950464,
+      "categories": {
+        "anon": 18644992,
+        "file": 2428928,
+        "kernel": 520192,
+        "slab": 275064,
+        "file_mapped": 0
+      },
+      "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+    },
+    "two_baseline_dictionaries": {
+      "current": 24309760,
+      "peak": 24309760,
+      "categories": {
+        "anon": 21000192,
+        "file": 2428928,
+        "kernel": 524288,
+        "slab": 275064,
+        "file_mapped": 0
+      },
+      "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+    },
+    "after_duplicate_release": {
+      "current": 22724608,
+      "peak": 24309760,
+      "categories": {
+        "anon": 21000192,
+        "file": 2428928,
+        "kernel": 524288,
+        "slab": 275064,
+        "file_mapped": 0
+      },
+      "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+    },
+    "metadata_only_scan": {
+      "current": 22724608,
+      "peak": 24309760,
+      "categories": {
+        "anon": 21000192,
+        "file": 2428928,
+        "kernel": 524288,
+        "slab": 275064,
+        "file_mapped": 0
+      },
+      "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+    }
+  },
+  "probe_modes": [
+    {
+      "mode": "retain-buffered-pages",
+      "bytes": 23967968,
+      "sha256": "f3eb080f0173e1a5884fabcc2c836f5a0ebea35fccf252e718fc71b17f821ef7",
+      "before": {
+        "current": 22724608,
+        "peak": 24309760,
+        "categories": {
+          "anon": 21000192,
+          "file": 2428928,
+          "kernel": 524288,
+          "slab": 275064,
+          "file_mapped": 0
+        },
+        "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+      },
+      "at_highest_sampled_current": {
+        "current": 30064640,
+        "peak": 30064640,
+        "categories": {
+          "anon": 19451904,
+          "file": 9007104,
+          "kernel": 507904,
+          "slab": 270016,
+          "file_mapped": 0
+        },
+        "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+      },
+      "after": {
+        "current": 30064640,
+        "peak": 30064640,
+        "categories": {
+          "anon": 19451904,
+          "file": 9007104,
+          "kernel": 507904,
+          "slab": 270016,
+          "file_mapped": 0
+        },
+        "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+      }
+    },
+    {
+      "mode": "release-consumed-pages",
+      "bytes": 23967968,
+      "sha256": "f3eb080f0173e1a5884fabcc2c836f5a0ebea35fccf252e718fc71b17f821ef7",
+      "before": {
+        "current": 22749184,
+        "peak": 30064640,
+        "categories": {
+          "anon": 19451904,
+          "file": 2428928,
+          "kernel": 512000,
+          "slab": 270016,
+          "file_mapped": 0
+        },
+        "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+      },
+      "at_highest_sampled_current": {
+        "current": 22872064,
+        "peak": 30064640,
+        "categories": {
+          "anon": 19451904,
+          "file": 2428928,
+          "kernel": 512000,
+          "slab": 270016,
+          "file_mapped": 0
+        },
+        "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+      },
+      "after": {
+        "current": 22773760,
+        "peak": 30064640,
+        "categories": {
+          "anon": 19451904,
+          "file": 2428928,
+          "kernel": 516096,
+          "slab": 278304,
+          "file_mapped": 0
+        },
+        "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+      }
+    }
+  ],
+  "historical_end_manifest_entries": 33,
+  "historical_end_manifest_overlap": 3,
+  "source_directory_additions_not_in_historical_manifests": {
+    "src": [
+      "src/pqdid/__pycache__/__init__.cpython-314.pyc",
+      "src/pqdid/__pycache__/backend.cpython-314.pyc",
+      "src/pqdid/__pycache__/binding.cpython-314.pyc",
+      "src/pqdid/__pycache__/bounded_mldsa.cpython-314.pyc",
+      "src/pqdid/__pycache__/codec.cpython-314.pyc",
+      "src/pqdid/__pycache__/credentials.cpython-314.pyc",
+      "src/pqdid/__pycache__/expiry.cpython-314.pyc",
+      "src/pqdid/__pycache__/hash_domain.cpython-314.pyc",
+      "src/pqdid/__pycache__/merkle.cpython-314.pyc",
+      "src/pqdid/__pycache__/parameters.cpython-314.pyc",
+      "src/pqdid/__pycache__/policy.cpython-314.pyc",
+      "src/pqdid/__pycache__/public_checks.cpython-314.pyc",
+      "src/pqdid/__pycache__/relations.cpython-314.pyc",
+      "src/pqdid/__pycache__/schema.cpython-314.pyc",
+      "src/pqdid/__pycache__/statements.cpython-314.pyc",
+      "src/pqdid/__pycache__/witnesses.cpython-314.pyc",
+      "src/pqdid/circuits/__pycache__/__init__.cpython-314.pyc",
+      "src/pqdid/circuits/__pycache__/accounting.cpython-314.pyc",
+      "src/pqdid/circuits/__pycache__/auth_parsing.cpython-314.pyc",
+      "src/pqdid/circuits/__pycache__/control.cpython-314.pyc",
+      "src/pqdid/circuits/__pycache__/division.cpython-314.pyc",
+      "src/pqdid/circuits/__pycache__/emitter.cpython-314.pyc",
+      "src/pqdid/circuits/__pycache__/enrolment.cpython-314.pyc",
+      "src/pqdid/circuits/__pycache__/enrolment_accounting.cpython-314.pyc",
+      "src/pqdid/circuits/__pycache__/keccak.cpython-314.pyc",
+      "src/pqdid/circuits/__pycache__/parsing.cpython-314.pyc",
+      "src/pqdid/circuits/__pycache__/scalar_ring.cpython-314.pyc",
+      "src/pqdid/circuits/__pycache__/signature.cpython-314.pyc",
+      "src/pqdid/circuits/__pycache__/signature_inputs.cpython-314.pyc",
+      "src/pqdid/circuits/__pycache__/words.cpython-314.pyc"
+    ],
+    "tests": [
+      "tests/integration/__pycache__/test_bounded_mldsa_native.cpython-314-pytest-9.1.1.pyc",
+      "tests/integration/__pycache__/test_credentials_uncapped.cpython-314-pytest-9.1.1.pyc",
+      "tests/reference/__pycache__/division_alternative.cpython-314.pyc",
+      "tests/reference/__pycache__/keccak_reference.cpython-314.pyc",
+      "tests/reference/__pycache__/preparation_oracle.cpython-314.pyc",
+      "tests/reference/__pycache__/scalar_oracle.cpython-314.pyc",
+      "tests/reference/__pycache__/signature_oracle.cpython-314.pyc",
+      "tests/reference/__pycache__/spec004_provisional.cpython-314.pyc",
+      "tests/smoke/__pycache__/test_backend_loading.cpython-314-pytest-9.1.1.pyc",
+      "tests/smoke/__pycache__/test_hashes.cpython-314-pytest-9.1.1.pyc",
+      "tests/smoke/__pycache__/test_mldsa.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/__init__.cpython-314.pyc",
+      "tests/unit/__pycache__/auth_arithmetic_cases.cpython-314.pyc",
+      "tests/unit/__pycache__/bc1_cases.cpython-314.pyc",
+      "tests/unit/__pycache__/binding_merkle_cases.cpython-314.pyc",
+      "tests/unit/__pycache__/binding_merkle_reference.cpython-314.pyc",
+      "tests/unit/__pycache__/conftest.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/credentials_reference.cpython-314.pyc",
+      "tests/unit/__pycache__/hash_circuit_cases.cpython-314.pyc",
+      "tests/unit/__pycache__/mldsa_cases.cpython-314.pyc",
+      "tests/unit/__pycache__/relation_cases.cpython-314.pyc",
+      "tests/unit/__pycache__/sampler_streams.cpython-314.pyc",
+      "tests/unit/__pycache__/test_auth_parsing_circuit.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_bc1_accounting.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_bc1_control.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_bc1_division.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_bc1_emitter.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_bc1_words.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_binding.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_bounded_mldsa.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_bounded_samplers.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_codec.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_confirmed_bc1.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_count_preflight.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_cred_valid.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_credentials.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_enrolment_circuit.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_expiry.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_feasibility_review.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_hash_domain.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_keccak_circuit.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_merkle.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_policy.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_relation_encodings.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_relations.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_scalar_ring_circuit.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_schema.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_signature_circuit.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_signature_inputs.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_spec003_alternatives.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_spec003_alternatives.cpython-314.pyc",
+      "tests/unit/__pycache__/test_spec004_adoption.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_spec004_alternatives.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_validation_support.cpython-314-pytest-9.1.1.pyc",
+      "tests/unit/__pycache__/test_vectors.cpython-314-pytest-9.1.1.pyc"
+    ],
+    "scripts": [
+      "scripts/__pycache__/measure_auth_parsing_arithmetic.cpython-314.pyc",
+      "scripts/__pycache__/measure_bc1_foundation.cpython-314.pyc",
+      "scripts/__pycache__/measure_hash_enrolment.cpython-314.pyc",
+      "scripts/__pycache__/measure_signature_inputs.cpython-314.pyc",
+      "scripts/__pycache__/preflight_signature_inputs.cpython-314.pyc",
+      "scripts/__pycache__/review_feasibility.cpython-314.pyc",
+      "scripts/__pycache__/validate_hash_enrolment.cpython-314.pyc",
+      "scripts/__pycache__/validation_support.cpython-314.pyc"
+    ],
+    "configs": [],
+    "docs": []
+  },
+  "prior_report_bytes": 25818,
+  "seconds": 0.14150621902081184
+}

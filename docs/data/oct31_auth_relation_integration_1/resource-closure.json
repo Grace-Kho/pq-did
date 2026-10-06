@@ -1,0 +1,66 @@
+{
+  "units": [
+    {
+      "unit": "pqdid-authrelationproposal-quality.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-authrelationproposal-prepare.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-authrelationproposal-full-audit.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    },
+    {
+      "unit": "pqdid-authrelationproposal-readback.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      }
+    }
+  ],
+  "only_new_analysis_units_queried": true,
+  "all_workload_terminated": true,
+  "temporary_bytes": 0,
+  "analysis_package_charged_seconds": 26.137134755961597,
+  "analysis_aggregate_used_seconds": 219.08249725660775,
+  "analysis_remaining_seconds": 80.91750274339225,
+  "operator_seconds": 20,
+  "operator_basis": "Conservative local source/metadata/bookkeeping/finalisation charge including the two read-only delegates; guarded elapsed wall time added separately.",
+  "guarded_seconds": 6.137134755961597,
+  "memory_metric": "cgroup-v2 memory.peak covers worker and descendants plus charged cache/kernel; external RLIMIT_AS-capped monitor outside; separately sampled summed tree RSS",
+  "peak_any_cgroup_bytes": 47783936,
+  "audit_memory_bytes": 43925504,
+  "implementation_remaining_seconds_unchanged": 3297.852425285615,
+  "cumulative_invocations_unchanged": 867,
+  "builds_used_unchanged": 8,
+  "isolation_remaining_seconds_unchanged": 250.22,
+  "proofs_used_unchanged": 2,
+  "proofs_unused_unchanged": 1
+}

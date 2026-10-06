@@ -1,0 +1,26 @@
+{
+  "name": "early-capacity",
+  "phase": "python",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/auth_relation_integration_1/dispatch.py",
+    "Q-04"
+  ],
+  "limit_seconds": 10,
+  "child_seconds": 9,
+  "status": "launched",
+  "unit": "pqdid-auth-relation-1-early-capacity",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 65406,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 25306839,
+    "artifact_bytes": 58112659,
+    "temporary_bytes": 0
+  },
+  "available_memory": 3678908416,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

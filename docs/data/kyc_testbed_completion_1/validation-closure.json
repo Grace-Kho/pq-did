@@ -1,0 +1,66 @@
+{
+  "package": "KYC-TESTBED-COMPLETION-1/PREPARATION",
+  "complete": true,
+  "completion_scope": "Preparation/preservation only; authorised implementation workstream incomplete pending prospective resource decision",
+  "workstream_complete": false,
+  "application_implementation_validated": false,
+  "wallet_candidate": "isolated and unvalidated",
+  "G0_decision": "NO-GO accepted; Binius64 paused; G1-G3 inactive",
+  "new_functional_results": 0,
+  "new_benchmark_observations": 0,
+  "v1_measurements_unchanged": 276,
+  "full_relation_checks_unrun": 21,
+  "full_audit_attempts": 1,
+  "full_audit_exit_status": 0,
+  "preservation_complete": true,
+  "historical_content_comparisons": 10901,
+  "historical_identity_inclusive_paths": 10936,
+  "audit_guard_seconds": 4.647643513046205,
+  "audit_worker_seconds": 4.32427525613457,
+  "audit_cgroup_memory_peak_bytes": 47980544,
+  "audit_memory_ceiling_bytes": 268435456,
+  "final_inventory_complete": true,
+  "report_readback_complete": true,
+  "outer_guard_passed_for_full_audit_and_readback": true,
+  "workload_terminated": true,
+  "historical_evidence_preserved": true,
+  "manifest_sha256": "62912460bb92cc50863a571e6670e738ef06d3f38c90169cbabbc923ff4a7b6c",
+  "original_programme_complete": false,
+  "scope_reduction_approved": false,
+  "stages_2_3_open": true,
+  "ordinary_private_proof_acceptance": "fail-closed",
+  "isolation_stopped_unactivated": true,
+  "cpu_proving_paused": true,
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1
+  },
+  "decisions_pending": [
+    "nested evidence reallocation without raising cumulative ceiling",
+    "explicitly local issuer/vocabulary/DID-key projection conventions"
+  ],
+  "final_inventory_count": 11496,
+  "resource_summary": {
+    "package_charged_seconds": 214.91049292776734,
+    "implementation_remaining_seconds": 1852.3171209923712,
+    "cumulative_invocations": 974,
+    "cumulative_builds": 10,
+    "storage": {
+      "new_evidence_bytes": 163413,
+      "new_artifact_bytes": 0,
+      "evidence_bytes": 30222398,
+      "artifact_bytes": 58966547,
+      "temporary_bytes": 0
+    }
+  },
+  "finalisation_sha256": {
+    "docs/data/kyc_testbed_completion_1/ledger.json": "730a3ff2d7ccc6f2e8d0fb89f65ca57bf0eb34ee32ca38549a96c7769ed71ae7",
+    "docs/data/kyc_testbed_completion_1/resource-closure.json": "75f54ce76131d96056e16d71d70e1dec519f74d97be4415061232309c954071c",
+    "docs/data/kyc_testbed_completion_1/final-inventory.json": "5845940dbaee044008181cfa84d0ff6161f4957a3c7c9026ad769dcd0c02154a",
+    "docs/data/kyc_testbed_completion_1/shutdown.json": "c99a774336a579722feb69378d1fa8cc8aea500ba4263efefff4fac46b25a3b0",
+    "docs/data/kyc_testbed_completion_1/jobs/final-readback.input.json": "7f26d58060091f5c874ef238898d1483825afdfbf7926c9793833c47c7a4016f",
+    "docs/data/kyc_testbed_completion_1/jobs/final-readback.json": "236620bd9c93895f0d4349a01077804af88d2e408f464fe9547a4a33a7912732",
+    "docs/data/kyc_testbed_completion_1/jobs/final-readback.worker.json": "9cc99dea0498e9ca188ba83a87ef0fdf4016443f047cfb8b38ff2806363bdddd",
+    "docs/data/kyc_testbed_completion_1/jobs/final-readback.log": "627a7f6eda05cc31ab70f150a2dcdb88fd2c0158b9f4c159bf24d6cbe5ef0839"
+  }
+}

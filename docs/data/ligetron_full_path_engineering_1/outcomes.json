@@ -1,0 +1,288 @@
+{
+  "fixed_cases": [
+    {
+      "case_id": "E01",
+      "expected": "Enumerate/select real Dawn adapter; record backend/type/limits or stop device work",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E02",
+      "expected": "Exact generated/loaded shader identity and actual shader/pipeline compilation",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E03",
+      "expected": "Full-sized forward coset transform of one boundary vector matches independent CPU oracle",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E04",
+      "expected": "Inverse scaling/folding and coefficient-tail readback match oracle",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E05",
+      "expected": "Code-degree violation at coefficient k rejected",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E06",
+      "expected": "Linear-degree violation at coefficient 2k-1 rejected",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E07",
+      "expected": "Quadratic-degree violation at coefficient 2k-1 rejected",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E08",
+      "expected": "Public-coefficient row encoding matches canonical coefficient oracle",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E09",
+      "expected": "Actual batch initialisation uses 256 padding coordinates, 192 queries",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E10",
+      "expected": "Ordinary linear callback/output matches reference constraint",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E11",
+      "expected": "Batched linear callback/output matches reference constraint",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E12",
+      "expected": "Ordinary quadratic callback/output matches reference constraint",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E13",
+      "expected": "Batched quadratic alias/derived-row relation matches actual shared inputs",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E14",
+      "expected": "Full-sized code mask, retained actual seeded draw schedule and encoder agree",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E15",
+      "expected": "Full-sized linear mask satisfies sum and degree constraints",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E16",
+      "expected": "Full-sized quadratic mask satisfies required zeros and degree constraint",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E17",
+      "expected": "Actual three-stage row/mask replay yields identical committed/query symbols",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E18",
+      "expected": "Injected entropy failure aborts before commitment/publication",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E19",
+      "expected": "Injected backend-sampler exhaustion aborts; frozen ML-DSA caps untouched",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E20",
+      "expected": "Changed program identity cannot reuse an expected statement",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E21",
+      "expected": "Changed public argument changes the independent expected statement digest",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E22",
+      "expected": "Changed private/public layout rejects against trusted expected layout",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E23",
+      "expected": "Chosen index/type/length ambiguity has distinct canonical framing or rejects",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E24",
+      "expected": "Profile/dimension override rejects",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E25",
+      "expected": "Fixed canonical statement framing matches independent digest expectation",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E26",
+      "expected": "Compressed-input ceiling enforced before oversized allocation",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E27",
+      "expected": "Decompression-output ceiling enforced while streaming",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E28",
+      "expected": "Malformed metadata/tree dimensions rejected before allocation",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E29",
+      "expected": "Noncanonical field limb value p rejected",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E30",
+      "expected": "Duplicate/reordered query declaration rejected",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E31",
+      "expected": "Missing sibling/incorrect authentication structure rejected",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E32",
+      "expected": "Truncated envelope rejected",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E33",
+      "expected": "Extra gzip member/trailing-data fixture rejected",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E34",
+      "expected": "Unknown/duplicate-field ambiguity fixture rejected by wire scan",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E35",
+      "expected": "Incorrect response-vector length rejected",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E36",
+      "expected": "Gated single synthetic proof generation completes within bounds",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E37",
+      "expected": "Fresh-process verification of E36 succeeds with expected public statement",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E38",
+      "expected": "E36 with changed expected public statement rejects",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E39",
+      "expected": "E36 with altered response rejects",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    },
+    {
+      "case_id": "E40",
+      "expected": "E36 with altered authenticated path rejects",
+      "status": "unrun",
+      "invocation_consumed": false,
+      "reason": "Build/device memory admission failed; native binary/harness not built. No Python model substituted."
+    }
+  ],
+  "correction_invocations": [],
+  "native_invocations_used": 0,
+  "builds_used": 0,
+  "synthetic_proof_attempts_used": 0
+}

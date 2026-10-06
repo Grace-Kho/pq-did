@@ -1,0 +1,29 @@
+{
+  "decision": "specific construction corrections required",
+  "new_functional_tests": 0,
+  "new_native_executions": 0,
+  "new_builds": 0,
+  "new_proofs": 0,
+  "profile_adopted": false,
+  "TB05_refinement": "common-position RS query count distinguished from scalar disclosure total",
+  "source_view": {
+    "base_columns": 4,
+    "sumcheck_mask_columns": "a",
+    "sumcheck_quotient_columns": "a",
+    "LDT_mask_columns": "P",
+    "fold_columns_per_layer": "I*P",
+    "positions_per_layer": "u_j <= min(2q,|L_j|)",
+    "scalar_openings": "(4+2a+P)u_0 + I*P*sum(u_j,j=1..r-1)",
+    "direct_fields": "I*P*D_f",
+    "RS_projection": "B_RS=|S_0| only under proved joint simulator closure",
+    "Q_H": "separate adversarial hash-query budget"
+  },
+  "next_package": "S3-AURORA-MASKING-CORRECTION-CONTRACT-1",
+  "next_package_authorised": false,
+  "stages_2_3_open": true,
+  "bridge_open": true,
+  "proof_attempts": [
+    2,
+    1
+  ]
+}

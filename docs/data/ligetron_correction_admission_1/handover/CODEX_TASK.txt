@@ -1,0 +1,65 @@
+Work in /home/grace/projects/pq-did.
+
+Read PQ_DID_Ligetron_Correction_Handover.zip from that directory. It is a
+source-and-patch handover, not an executable package and not an approved proof
+backend. Inspect its manifest and safe relative paths before any extraction.
+The base is ligeroinc/ligero-prover v1.7.0 public commit
+4b1cdef1bfdf4497fb3e38170db4541fba3f6c12.
+
+Prepare one execution-ready milestone: LIGETRON-CORRECTION-AND-ADMISSION-1.
+The attached draft already provides concrete edits; do not repeat a general
+backend survey or produce a review that merely recommends another review.
+
+Read current AGENTS.md, status, security issues and the live resource ledger.
+Preserve manuscript Sections II–VIII and agreed clarifications, the genuine
+ML-DSA KYC baseline, its 302 historical and four smoke observations, and all
+historical evidence. The edited historical Binius approvals authorise no new
+Ligetron work. Binius correspondence remains closed with its unresolved outcome.
+
+1. Verify the included source identities against retained trusted provenance
+where available. Inspect the five-file patch and active call paths. Its hashes
+are checksums, not proof of upstream authenticity. Record any mismatch; do not
+regenerate a historical seal or silently substitute another revision.
+
+2. Confirm or refute the weak encoding seed, first unseeded query block, biased
+field sampling and coincident challenge streams. Review the proposed secure
+seed, explicit query-byte contract, bounded rejection and domain separation.
+The field sampler's 256-draw cap is a proposed backend choice; it must not
+change any frozen ML-DSA cap. Keep public-seed PRG/ROM correspondence explicit.
+
+3. Resolve the precise parameter/masking and commitment/compiler questions in
+correction-proposal.txt against the selected theorem. In particular, do not
+assume k=ell+t satisfies a theorem requiring k>ell+t, or that adding one pad
+element settles all hiding requirements. Preserve the complete joint relation.
+Separate concrete implementation corrections, existing-theorem applications
+and genuinely unproved construction obligations. Tests cannot close the last.
+
+4. Return the reviewed minimal patch scope, the fixed CPU-native validation
+matrix (the supplied 20 cases may be refined with reasons), required dependency
+closure, and one consolidated prospective resource/authorisation amendment.
+Include time, all build attempts, cases/corrective reruns, memory, scratch and
+evidence storage, finalisation reserve and exactly which earlier limits change.
+Use the exact live balances; do not repurpose reserved corrective slots.
+
+5. Define a single completion checkpoint and the decision for admitting a later
+hidden-message ML-DSA-65 pilot. Any construction gap requiring a new simulator,
+masking scheme or extractor must lead to a precise stop/decision, not speculative
+repairs. A small RNG correction harness need not wait for a full private-proof
+security claim, but requires its own explicit execution allocation.
+
+For this preparation, use available files, static inspection and patch
+preparation; reuse earlier findings. Missing source/dependencies belong in the
+single proposed acquisition list. Return the result directly in chat, with a
+concrete reviewed patch file only if it can be prepared within existing rules.
+Do not install dependencies, compile, execute native/functional tests, run
+WebGPU, generate proofs, edit the active suite/manuscript, change limits or
+repeat a whole-project preservation audit in this preparation-only task.
+
+Explain a true blocker once with the exact rule. Do not request several tiny
+amendments or stop merely at an internal subtask boundary. After approval of
+the consolidated milestone, the proposed scope must permit routine corrections
+and necessary revalidation continuously through its completion checkpoint.
+
+Private verification remains fail-closed. Private proving and isolation stay
+paused; the proof ledger remains two used, one unused. No subsequent package
+or full backend adoption is authorised by this message.

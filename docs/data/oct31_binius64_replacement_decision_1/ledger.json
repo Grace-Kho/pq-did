@@ -1,0 +1,313 @@
+{
+  "jobs": [
+    {
+      "name": "source-quality",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/binius64_replacement_decision_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-binius-decision-1-source-quality",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 2711715,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 29679670,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4145971200,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.6297055500326678,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10366976",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "25399296",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.08104110497515649,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 48029696,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "preflight",
+      "phase": "audit",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/binius64_replacement_decision_1/checks.py"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-binius-decision-1-preflight",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 2716982,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 29684937,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4104204288,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.4763245480135083,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10321920",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "36818944",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.12133484391961247,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 37523456,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "prepare",
+      "phase": "audit",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/binius64_replacement_decision_1/preservation.py",
+        "prepare"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-binius-decision-1-prepare",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 2732334,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 29700289,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4124114944,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 2.206442459952086,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12890112",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "55783424",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.6651753899641335,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 59944960,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "full-audit",
+      "phase": "audit",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/binius64_replacement_decision_1/preservation.py",
+        "full-audit"
+      ],
+      "limit_seconds": 60,
+      "child_seconds": 59,
+      "status": "pass",
+      "unit": "pqdid-binius-decision-1-full-audit",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 2762789,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 29730744,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4104634368,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 4.539333967957646,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10362880",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "47255552",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 4.203199451905675,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 63913984,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "final-readback",
+      "phase": "audit",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/binius64_replacement_decision_1/preservation.py",
+        "readback"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-binius-decision-1-final-readback",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 2811036,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 29778991,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4117061632,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.908780763973482,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10362880",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "42565632",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.5444551770342514,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 60141568,
+      "artifact_observed_peak_bytes": 58966547
+    }
+  ],
+  "invocations": [],
+  "builds": [],
+  "bookkeeping": [
+    {
+      "purpose": "Initial source/ledger review and browser lookups; conservative operator accounting",
+      "seconds": 20
+    },
+    {
+      "purpose": "Measured bounded upstream metadata/HEAD lookup, no downloaded code execution",
+      "seconds": 1.537513003917411
+    },
+    {
+      "purpose": "Measured bounded pinned trees, fix metadata and Blueprint acquisition",
+      "seconds": 1.304224670981057
+    },
+    {
+      "purpose": "PDF source text extraction and bounded source selection",
+      "seconds": 0.2696850310312584
+    },
+    {
+      "purpose": "Measured pinned native source inspection acquisition with Git blob checks",
+      "seconds": 7.327267576009035
+    },
+    {
+      "purpose": "Measured selected ZK/field/gadget/dependency source and fix ancestry inspection",
+      "seconds": 4.273482284974307
+    },
+    {
+      "purpose": "Conservative operator/source analysis, reading primary evidence, relation/security/resource mapping and proposal/report preparation; no experimental execution",
+      "seconds": 115
+    },
+    {
+      "purpose": "Conservative completion documentation, targeted documentary helper and issue/traceability reconciliation",
+      "seconds": 20
+    },
+    {
+      "purpose": "Measured exact guard-slice cleanup",
+      "seconds": 0.1767102120211348
+    },
+    {
+      "purpose": "Final reporting, closure/seal readback and resource bookkeeping; conservative 6-second charge, actual local work bounded below",
+      "seconds": 6
+    }
+  ],
+  "work_events": 77593603,
+  "work_events_reserved": 0
+}

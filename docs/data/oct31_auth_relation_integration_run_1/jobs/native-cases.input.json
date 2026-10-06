@@ -1,0 +1,41 @@
+{
+  "name": "native-cases",
+  "phase": "native",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/auth_relation_integration_1/dispatch.py",
+    "N-01",
+    "N-02",
+    "N-03",
+    "N-04",
+    "N-05",
+    "N-06",
+    "N-07",
+    "N-08",
+    "N-09",
+    "N-10",
+    "N-11",
+    "N-12",
+    "N-13",
+    "N-14",
+    "N-15",
+    "N-16"
+  ],
+  "limit_seconds": 90,
+  "child_seconds": 89,
+  "status": "launched",
+  "unit": "pqdid-auth-relation-1-native-cases",
+  "memory_limit_bytes": 1073741824,
+  "opening_storage": {
+    "new_evidence_bytes": 310249,
+    "new_artifact_bytes": 853888,
+    "evidence_bytes": 25551682,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4525883392,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

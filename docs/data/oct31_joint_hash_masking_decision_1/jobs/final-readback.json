@@ -1,0 +1,53 @@
+{
+  "name": "final-readback",
+  "phase": "audit",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/joint_hash_masking_decision_1/preservation.py",
+    "readback"
+  ],
+  "limit_seconds": 30,
+  "child_seconds": 29,
+  "status": "pass",
+  "unit": "pqdid-joint-hash-1-final-readback",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 204901,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 26758962,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4143505408,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false,
+  "seconds": 2.227680425043218,
+  "exit_code": 0,
+  "stop": null,
+  "worker": {
+    "before": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "12578816",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "after": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "49881088",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "child_exit_code": 0,
+    "child_seconds": 0.6451066869776696,
+    "resource_breach": false,
+    "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+  },
+  "sampled_tree_rss_peak": 59609088,
+  "artifact_observed_peak_bytes": 58966547
+}

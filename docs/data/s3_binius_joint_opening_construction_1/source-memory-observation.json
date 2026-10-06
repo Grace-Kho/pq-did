@@ -1,0 +1,11 @@
+{
+  "source_record": "source-acquisition.json",
+  "observed_ru_maxrss_bytes": 279449600,
+  "authorised_memory_bytes": 268435456,
+  "excess_of_reported_metric_bytes": 11014144,
+  "address_space_enforcement": "RLIMIT_AS set to256MiB inside source-only process",
+  "cgroup_peak_available": false,
+  "status": "unresolved-resource-observation; do not certify acquisition as memory-compliant",
+  "qualification": "ru_maxrss is a lifetime high-water metric, potentially including pre-exec launch state; no before/after baseline or cgroup trace was collected. Retain the value unchanged; do not assert its excess was harmless or that post-limit resident usage exceeded the cap. No further acquisition or execution experiment. Only completion documentation and bounded preservation follow.",
+  "retry": false
+}

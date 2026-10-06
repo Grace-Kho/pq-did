@@ -1,0 +1,13 @@
+{
+  "temporary_directory_empty": true,
+  "scratch_bytes": 0,
+  "no_new_builds": true,
+  "worker_guard_records": [
+    "tooling",
+    "tooling-corrected",
+    "prepare-pre",
+    "pre-audit",
+    "cases",
+    "quality"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "H-15": {
+    "authorised_reruns": 1,
+    "prior_invocation": "KYCM1-0039",
+    "cause": "MeasuredProvider retains original manager in _manager; migration upgraded scenario owner but not verifier/store provider",
+    "change": "Reconstruct both trusted providers using the new manager and same pinned consumer; preserve policies/keys",
+    "affected": "H-15,H-16 only; H-01\u2013H-14 and storage unaffected",
+    "expected_unchanged": true
+  },
+  "state-reference-correspondence": {
+    "cause": "Source inspection: old witness-update contract permits different valid signatures on equal state references",
+    "change": "Compare signed logical references for chain links; authenticate every transported state; retain exact requested-target frame binding",
+    "validation": "H-17 plus upcoming four scaling cases use final code",
+    "existing_negative_cases": "Different epochs/roots, wrong namespace/target, malformed/truncated/oversized frames still reject at unchanged guards"
+  },
+  "H-17": {
+    "authorised_reruns": 1,
+    "cause": "Missing dataclasses.replace import in the new fixture branch; static-5 reported F821; dispatch occurred before that static result was inspected",
+    "prior_invocation": "KYCM1-0044",
+    "change": "Restore required fixture import only; production/page semantics unchanged",
+    "before_sha256": "c75718ebe2fe62f47413625689fd6be31a3d55cdc00d7363d3fd934bca018825",
+    "after_sha256": "2ceeb0004fb68ffb97d5c97b14b4f1d83e7ba1a2afd80996b49f994bc01ed5b4",
+    "retention": "Retain failed case and fresh fixture losslessly; explicit targeted rerun after successful static checks"
+  }
+}

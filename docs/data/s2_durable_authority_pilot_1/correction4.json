@@ -1,0 +1,8 @@
+{
+  "failure": "lint-edit",
+  "cause": "Four overlong lines in the newly written audit driver; Ruff fixed one import ordering issue and reported E501 before the driver was formatted.",
+  "correction": "Wrap the report scope string and format the new driver before final read-only lint/format checks.",
+  "resource_failure": false,
+  "functional_change": false,
+  "authorisation": "Routine source formatting within the authorised package and unchanged resource envelope."
+}

@@ -1,0 +1,25 @@
+{
+  "protected_existing_files_checked": 7827,
+  "existing_files_changed_only": [
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "production_validation_reused": "119 focused / 1432 regression, no skips; no production tests rerun",
+  "binary_source_manifest_matches": true,
+  "lock_audit_matches": true,
+  "JSON_files_parsed": 31,
+  "TOML_files_parsed": 7,
+  "local_links_checked": 155,
+  "native_comparisons": 35,
+  "completed_guest_comparisons": 1,
+  "guest_resource_stops": 1,
+  "remaining_guest_cases_unrun": 27,
+  "proof_attempts": 0,
+  "stop_guard_replay_rejected": true,
+  "disk_bytes": 3972915007,
+  "output_bytes": 2867883,
+  "worker_swap_used": false,
+  "functional_public_output_checks": 9,
+  "actual_receipt_checks": "not reached",
+  "all_checks_passed": true
+}

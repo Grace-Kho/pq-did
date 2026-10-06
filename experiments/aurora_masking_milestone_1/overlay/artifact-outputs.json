@@ -1,0 +1,32 @@
+{
+  "build_outputs": [
+    "experiments/aurora_masking_milestone_1/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/work/libiop/libiop/common/common.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/work/libiop/libiop/bcs/hashing/blake2b.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/work/libiop/libiop/protocols/ldt/ldt_reducer.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/work/libiop/libiop/protocols/ldt/fri/fri_ldt.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/work/libiop/libiop/protocols/ldt/fri/fri_aux.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/work/libiop/libiop/relations/sparse_matrix.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/work/libiop/libiop/iop/utilities/batching.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/work/libiop/libiop/algebra/utils.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/libiop_native.a",
+    "experiments/aurora_masking_milestone_1/build/CMakeFiles/exp2_native.dir/exp2_native.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/exp2_native",
+    "experiments/aurora_masking_milestone_1/build/CMakeFiles/aurora_masking_native.dir/masking_native.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/aurora_masking_native",
+    "experiments/aurora_masking_milestone_1/build/libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf32.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf64.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf128.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf192.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf256.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/libff-build/libff/CMakeFiles/ff.dir/common/double.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/libff-build/libff/CMakeFiles/ff.dir/common/profiling.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/libff-build/libff/CMakeFiles/ff.dir/common/utils.cpp.o",
+    "experiments/aurora_masking_milestone_1/build/libff-build/libff/libff.a"
+  ],
+  "scratch_root": "experiments/aurora_masking_milestone_1/scratch",
+  "temporary_role": "compiler temporaries only, diagnostics redirected to coordinator evidence",
+  "build_metadata_role": "evidence",
+  "source_copy_bytes": 3163710,
+  "aggregate_existing_artifact_ceiling": 134217728,
+  "registered_artifact_per_file": 33554432
+}

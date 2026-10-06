@@ -1,0 +1,79 @@
+{
+  "package": "KYC-TESTBED-COMPLETION-1/EXECUTION",
+  "complete": true,
+  "completion_scope": "Authorised implementation/evidence checkpoint with explicit larger-scale blocker; not complete testbed scaling, private authentication, original programme or Stages 2-3",
+  "workstream_complete": false,
+  "implementation_and_preservation_checkpoint_complete": true,
+  "wallet_distinct_cases_passed": 24,
+  "application_distinct_cases_passed": 14,
+  "mapping_distinct_cases_passed": 10,
+  "promoted_wallet_revalidation_passed": true,
+  "passing_invocations": 68,
+  "retained_failed_invocations": 3,
+  "total_invocations": 71,
+  "distinct_cases_attempted": 68,
+  "unrun": [
+    "R-1-8",
+    "R-2-1",
+    "R-2-4",
+    "R-2-8"
+  ],
+  "successful_baseline_observations": 19,
+  "v1_observations_unchanged": 276,
+  "full_relation_checks_unrun": 21,
+  "preservation_complete": true,
+  "full_audit_attempts": 1,
+  "full_audit_exit_status": 0,
+  "historical_content_comparisons": 10901,
+  "historical_identity_inclusive_paths": 10936,
+  "audit_guard_seconds": 4.750348061090335,
+  "audit_worker_seconds": 4.40488783409819,
+  "audit_cgroup_memory_peak_bytes": 48279552,
+  "audit_memory_ceiling_bytes": 268435456,
+  "final_inventory_complete": true,
+  "report_readback_complete": true,
+  "outer_guard_passed": true,
+  "workload_terminated": true,
+  "historical_evidence_preserved": true,
+  "manifest_sha256": "27375feff35aab94151a10241dfcb74fea45c82e9614b80d9f635ebfd8f62ca0",
+  "original_programme_complete": false,
+  "scope_reduction_approved": false,
+  "stages_2_3_open": true,
+  "Binius64": "G0 NO-GO; paused; G1-G3 not admitted",
+  "Aurora": "Assessed route closed, not overall PQ-DID impossibility",
+  "private_proof_acceptance": "fail-closed",
+  "isolation_stopped_unactivated": true,
+  "cpu_proving_paused": true,
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1
+  },
+  "remaining_requirements": [
+    "Larger-scale issuer/manager storage representation and measurements",
+    "Externally standard securing/key/private-status mechanisms",
+    "Complete private authentication and original security obligations"
+  ],
+  "final_inventory_count": 11719,
+  "resource_summary": {
+    "implementation_remaining_seconds": 1040.3404975602152,
+    "workstream_remaining_seconds": 673.1128836400767,
+    "cumulative_invocations": 1045,
+    "storage": {
+      "new_evidence_bytes": 644074,
+      "new_artifact_bytes": 0,
+      "evidence_bytes": 30866472,
+      "artifact_bytes": 58966547,
+      "temporary_bytes": 0
+    }
+  },
+  "finalisation_sha256": {
+    "docs/data/kyc_testbed_execution_1/ledger.json": "269a018bc05735fbf7ae2643230693bf6caa8bed9981170a1e94a4438e538099",
+    "docs/data/kyc_testbed_execution_1/resource-closure.json": "c7d843ecfdb398045f748cb3b7a89e467b667d673c6ebcaf7b9d4ed8afa7e01c",
+    "docs/data/kyc_testbed_execution_1/final-inventory.json": "f83ed40d2728b07b06858bf85b069a2d95c297c758b7413b7b567b84a7f9b42c",
+    "docs/data/kyc_testbed_execution_1/shutdown.json": "368b142ad7675133146fcced9ae72fd9d0ec8fa073b51d5f4becda171e4b6956",
+    "docs/data/kyc_testbed_execution_1/jobs/final-readback.input.json": "c885420ec2f8f5448828b128f5b7353a85cd830ef725dfa5bca8e68ee0254647",
+    "docs/data/kyc_testbed_execution_1/jobs/final-readback.json": "0ba49f40ee5108d680e5711c363c04af1c8506e257bd4eb39d9a14a53270196a",
+    "docs/data/kyc_testbed_execution_1/jobs/final-readback.worker.json": "0433ee94d23c58f8c46f7844e2b1e6437ea6b1d40847ba3eb831ab0d4038f2ac",
+    "docs/data/kyc_testbed_execution_1/jobs/final-readback.log": "153dd5d8b646b6c89bc7a2f1d03234ce4bdc38e891b67a72909f11008bf862fd"
+  }
+}

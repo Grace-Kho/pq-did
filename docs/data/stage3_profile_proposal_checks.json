@@ -1,0 +1,69 @@
+{
+  "record_kind": "documentation_data_validation_not_implementation_test",
+  "date": "2026-09-19",
+  "result": "pass",
+  "checks": {
+    "local_links_and_anchors_checked": 170,
+    "external_link_occurrences_syntax_only": 27,
+    "markdown_tables_checked": 32,
+    "JSON_documents_parsed": 34,
+    "inspected_source_files_hash_verified": 42,
+    "formula_equivalence_integer_points": 30000,
+    "target_boundary_ANDs": [
+      21344,
+      21345
+    ],
+    "exact_network_and_encoding_arithmetic": "passed using integers and Decimal",
+    "candidate_builds_or_proofs_run": false,
+    "implementation_tests_rerun": false
+  },
+  "preservation": {
+    "baseline_file_count": 7821,
+    "unchanged_file_count": 7818,
+    "changed_preexisting_files": [
+      "docs/spec_issues.md",
+      "docs/status.md",
+      "docs/traceability.md"
+    ],
+    "new_files": [
+      "docs/benchmark_targets.md",
+      "docs/data/stage3_benchmark_target_calculations.json",
+      "docs/data/stage3_profile_proposal_checks.json",
+      "docs/data/stage3_profile_sources.json",
+      "docs/stage3_profile_change_proposal.md",
+      "docs/stage3_profile_spec_draft.md"
+    ],
+    "missing_files": [],
+    "excluded_directories": [
+      ".git",
+      ".pytest_cache",
+      ".ruff_cache",
+      ".tools",
+      ".venv",
+      "__pycache__"
+    ],
+    "exclusion_note": "Dependency environments/caches were not hashed in this snapshot; no install, build or environment-mutating command was performed. Project dependency/configuration files and prior evidence within the snapshot are unchanged.",
+    "manuscript_SHA256": "d17ca0a20b319b88e959467cae92d91d619973f84384710ecbf960a3b850aeca",
+    "suite_SHA256": "f0ffeb88005bfe46a83701f3c906a2cba004afafbfd1b93d3ed7ac6c78d8e942",
+    "git_repository_present": true
+  },
+  "reuse": {
+    "source": "docs/stage3_feasibility_review.md",
+    "focused_tests_passed": 119,
+    "regression_tests_passed": 1432,
+    "skips": 0,
+    "ruff": "previous lint/format passed; 123 files; not rerun for docs-only changes"
+  },
+  "new_or_updated_document_SHA256": {
+    "docs/stage3_profile_change_proposal.md": "32dba65f7f824e070053f4fc79b5fa5a31775aef9afbf953d399207ebf51dadd",
+    "docs/benchmark_targets.md": "2de084f9457512f8d114e7a99eebfb6b2f871ef9a67174fca356cc7b8c932fe0",
+    "docs/stage3_profile_spec_draft.md": "0db23ac45515631dabe966b4ef18bdd768104991066279cdc28db3d95173f9a5",
+    "docs/status.md": "4c9fa9e8539394c7848e825d4a31425091bbcfa827ca442bd29cc95165fb3249",
+    "docs/traceability.md": "7c8b35c4e7f4ee2be8d214afba0b09d79b5170c2102ca43622d4c2f116e0cc95",
+    "docs/spec_issues.md": "d597ed792b6de49a20ed5dac36b70865a9fabf284e3766af995df7e07aa2e1f1",
+    "docs/data/stage3_profile_sources.json": "748bca61c72504e12974b8e153175c958c0f37489fd09c6cfef6f2b96101e144",
+    "docs/data/stage3_benchmark_target_calculations.json": "574b8d54b25efc68d90655433c8a1aebe3a00f42f9b518d18494a5d4f3f0f0dc"
+  },
+  "validation_script_SHA256": "ae66b224404360bfe2d9d2906863be2cc79774fb015c0f1ace2c8f0a3faaa864",
+  "validation_method": "Standard-library filesystem/Markdown link-anchor-table checks, JSON parsing, source SHA-256 comparison, exact arithmetic and preservation snapshot. No candidate code execution. The audit file does not self-hash."
+}

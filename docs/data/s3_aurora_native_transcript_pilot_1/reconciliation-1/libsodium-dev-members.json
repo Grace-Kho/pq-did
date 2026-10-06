@@ -1,0 +1,551 @@
+{
+  "archive_sha256": "34e8337b30160458f44bada750c9e94ec18ec5ac087e2428043ddb04625226cc",
+  "members": [
+    {
+      "path": ".",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/include",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/core.h",
+      "size": 391,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_aead_aes256gcm.h",
+      "size": 7980,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_aead_chacha20poly1305.h",
+      "size": 8782,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_aead_xchacha20poly1305.h",
+      "size": 4848,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_auth.h",
+      "size": 1143,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_auth_hmacsha256.h",
+      "size": 2136,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_auth_hmacsha512.h",
+      "size": 2123,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_auth_hmacsha512256.h",
+      "size": 2133,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_box.h",
+      "size": 6838,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_box_curve25519xchacha20poly1305.h",
+      "size": 7957,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_box_curve25519xsalsa20poly1305.h",
+      "size": 4697,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_core_ed25519.h",
+      "size": 2898,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_core_hchacha20.h",
+      "size": 816,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_core_hsalsa20.h",
+      "size": 804,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_core_ristretto255.h",
+      "size": 3140,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_core_salsa20.h",
+      "size": 792,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_core_salsa2012.h",
+      "size": 816,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_core_salsa208.h",
+      "size": 968,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_generichash.h",
+      "size": 2495,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_generichash_blake2b.h",
+      "size": 3963,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_hash.h",
+      "size": 901,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_hash_sha256.h",
+      "size": 1492,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_hash_sha512.h",
+      "size": 1496,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_kdf.h",
+      "size": 1308,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_kdf_blake2b.h",
+      "size": 1071,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_kx.h",
+      "size": 2201,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_onetimeauth.h",
+      "size": 1912,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_onetimeauth_poly1305.h",
+      "size": 2198,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_pwhash.h",
+      "size": 4966,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_pwhash_argon2i.h",
+      "size": 3919,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_pwhash_argon2id.h",
+      "size": 3981,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_pwhash_scryptsalsa208sha256.h",
+      "size": 4688,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_scalarmult.h",
+      "size": 1184,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_scalarmult_curve25519.h",
+      "size": 1098,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_scalarmult_ed25519.h",
+      "size": 1406,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_scalarmult_ristretto255.h",
+      "size": 1119,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_secretbox.h",
+      "size": 3316,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_secretbox_xchacha20poly1305.h",
+      "size": 2853,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_secretbox_xsalsa20poly1305.h",
+      "size": 2419,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_secretstream_xchacha20poly1305.h",
+      "size": 3832,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_shorthash.h",
+      "size": 960,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_shorthash_siphash24.h",
+      "size": 1236,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_sign.h",
+      "size": 3353,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_sign_ed25519.h",
+      "size": 4341,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_sign_edwards25519sha512batch.h",
+      "size": 2053,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_stream.h",
+      "size": 1606,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_stream_chacha20.h",
+      "size": 3672,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_stream_salsa20.h",
+      "size": 1836,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_stream_salsa2012.h",
+      "size": 1532,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_stream_salsa208.h",
+      "size": 1731,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_stream_xchacha20.h",
+      "size": 1875,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_stream_xsalsa20.h",
+      "size": 1856,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_verify_16.h",
+      "size": 419,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_verify_32.h",
+      "size": 419,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/crypto_verify_64.h",
+      "size": 419,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/export.h",
+      "size": 1347,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/randombytes.h",
+      "size": 1847,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/randombytes_internal_random.h",
+      "size": 427,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/randombytes_sysrandom.h",
+      "size": 282,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/runtime.h",
+      "size": 889,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/utils.h",
+      "size": 6149,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium/version.h",
+      "size": 509,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/sodium.h",
+      "size": 2529,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/lib",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libsodium.a",
+      "size": 617796,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/pkgconfig",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/pkgconfig/libsodium.pc",
+      "size": 264,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/share",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/share/doc",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/share/doc/libsodium-dev",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/share/doc/libsodium-dev/copyright",
+      "size": 7898,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libsodium.so",
+      "size": 0,
+      "type": "2",
+      "mode": 511,
+      "link": "libsodium.so.23.3.0"
+    },
+    {
+      "path": "usr/share/doc/libsodium-dev/changelog.Debian.gz",
+      "size": 0,
+      "type": "2",
+      "mode": 511,
+      "link": "../libsodium23/changelog.Debian.gz"
+    }
+  ]
+}

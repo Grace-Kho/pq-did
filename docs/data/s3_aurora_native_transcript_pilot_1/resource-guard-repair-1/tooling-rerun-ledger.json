@@ -1,0 +1,16 @@
+[
+  {
+    "id": "RG-08",
+    "invocation": 411,
+    "status": "pass",
+    "rerun": true,
+    "seconds": 0.02821124193724245,
+    "command": [
+      "/home/grace/projects/pq-did/.venv/bin/python",
+      "-I",
+      "-B",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_native_transcript_pilot_1/resource-guard-repair-1/fixtures.py",
+      "8"
+    ]
+  }
+]

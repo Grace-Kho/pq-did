@@ -1,0 +1,14 @@
+{
+  "case_id": "C-20",
+  "invocation_id": "CAR1-0021",
+  "status": "pass",
+  "details": {
+    "case": "C-20",
+    "purpose": "malformed NOT second operand rejected",
+    "full_relation": false,
+    "rejection": "noncanonical NOT operand",
+    "state": "incomplete"
+  },
+  "seconds": 2.7309986762702465e-05,
+  "work_events": 1
+}

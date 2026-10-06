@@ -1,0 +1,13 @@
+{
+  "invocation_id": "KYCD1-0012",
+  "case_id": "E-02",
+  "work_event_reservation": 0,
+  "ordinal": 12,
+  "cumulative_invocations": 1177,
+  "status": "pass",
+  "details": {
+    "expected_rejection": "duplicate dataset/observation identity"
+  },
+  "seconds": 0.00017850077711045742,
+  "work_events": 0
+}

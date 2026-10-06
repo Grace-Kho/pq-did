@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "protected_files": 8583,
+  "allowed_modified_files": [
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "frozen_files_checked": 27,
+  "native_validation_reused": true,
+  "actual_partition": {
+    "17": 181,
+    "15": 1
+  },
+  "checks": "identity, config/envelope, source controls, journal framing, all segment sums, typed phase arithmetic, explicit uncertainty, no proof, ledger, STOP, lint/format/syntax, links",
+  "stop_probes": [
+    {
+      "arguments": [
+        "--seconds",
+        "60",
+        "--slot",
+        "1",
+        "execute",
+        "execution",
+        "--",
+        "target/release/pqdid-r0-host",
+        "execute"
+      ],
+      "exit": 1,
+      "reason": "package resource stop recorded; no further build/execution/proving authorised by this package"
+    },
+    {
+      "arguments": [
+        "--seconds",
+        "600",
+        "--slot",
+        "3",
+        "prove",
+        "attempt3",
+        "--",
+        "target/release/pqdid-r0-host",
+        "prove",
+        "cred-alpha-42",
+        "receipts/attempt3.bin"
+      ],
+      "exit": 1,
+      "reason": "package resource stop recorded; no further build/execution/proving authorised by this package"
+    }
+  ],
+  "report_links_checked": 19,
+  "additional_source_sha256": {
+    "experiments/r0_credvalid_cycle_1/tooling/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/risc0-circuit-rv32im-4.0.5/src/execute/executor.rs": "c4eeb2406fca1909a088fdd65615d5b460522a336f6d8ad58a5760af4ab1eb66",
+    "experiments/r0_credvalid_cycle_1/snapshots/builds/corrected-plain/methods/guest/src/lib.rs": "6df9aeaa7a1676a33b831861d35211bd5d37fa9c2be1f8ec3c801c62f9376d98",
+    "experiments/r0_credvalid_cycle_1/snapshots/builds/corrected-plain/relation/src/lib.rs": "7cf5300cd02db4cd95accabb2bbbbe3e34c803ba968930654b43ff9cedef229b"
+  },
+  "sensitivity_seconds": 15844.473930000002,
+  "sensitivity_description": "181 po17 lifts and 181 ordinary joins at their respective minimum observed times, excluding all base proofs, unmatched terminal po15 lift and other overhead; illustrative optimistic projection, not a rigorous lower bound",
+  "reference_enrolment_receipt_sha256": "2c711beaa6144968aac66421eba10dff1f883133f4d5ec3e1256e3b68e529cc5",
+  "proof_attempts_this_package": 0,
+  "cumulative_attempts_used": 2,
+  "remaining": 1
+}

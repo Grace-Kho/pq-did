@@ -1,0 +1,141 @@
+{
+  "scope": "Actual retained handover outputs at resource stop; not a baseline or successful audit",
+  "files": {
+    "docs/data/private_proof_handover_1/formatting-record.json": {
+      "bytes": 280,
+      "sha256": "aad0fa23b79452b6c0924c965d851416bdebff3e42fa2544d947315c9e8589dd"
+    },
+    "docs/data/private_proof_handover_1/policy.json": {
+      "bytes": 1279,
+      "sha256": "73aa2fc29db95b72e0905fcf030945310bae0d91b301e7f26244c678efbdc865"
+    },
+    "docs/data/private_proof_handover_1/ledger.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/data/private_proof_handover_1/execution.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/data/private_proof_handover_1/report-before-stop.md": {
+      "bytes": 2529,
+      "sha256": "b107a25327589420d42ba78132dc72d27030b3d04121c2e801e78d652039ad1c"
+    },
+    "docs/data/private_proof_handover_1/binius64-g0-handover-v1.tar.xz": {
+      "bytes": 1065684,
+      "sha256": "17a0ac8fd32038e6530254e4cd27610c8a76e76aba53f446986e435845262f8e"
+    },
+    "docs/data/private_proof_handover_1/SHA256SUMS": {
+      "bytes": 14992,
+      "sha256": "3f37a8d161a5b23649512aa7a5300af30cf9f21c3155f5c7656999690df2742b"
+    },
+    "docs/data/private_proof_handover_1/shutdown.json": {
+      "bytes": 877,
+      "sha256": "00e858ccb93f3b1315643802bbee7520a8ab94515718abcf23dd05c2755bf5f9"
+    },
+    "docs/data/private_proof_handover_1/opening.json": {
+      "bytes": 2722,
+      "sha256": "fd83fad635da55137189918b3e2c0110147060a8a9c5393d8baa7ce50ee4deb8"
+    },
+    "docs/data/private_proof_handover_1/missing-native-files.tsv": {
+      "bytes": 58069,
+      "sha256": "07b6a37e92c7c6c377c96b19d092bac42325c62a632611bd511b711127262373"
+    },
+    "docs/data/private_proof_handover_1/source-map.json": {
+      "bytes": 25925,
+      "sha256": "5e18a6e727851e334e41fffde3ef7de7af6d64281fc9f38d80adbc3e2f2d71e3"
+    },
+    "docs/data/private_proof_handover_1/archive.json": {
+      "bytes": 710,
+      "sha256": "768c3b48e01b3b4a763dd5a387b500e04fce4909ecb1909d27ad1c7cee2f55e8"
+    },
+    "docs/data/private_proof_handover_1/file-list.json": {
+      "bytes": 40468,
+      "sha256": "6ef6c01ed06e515096524d3087fa2d4ed0c267beb59fe65bbca734c7d9e1f5ad"
+    },
+    "docs/data/private_proof_handover_1/comparison-point.json": {
+      "bytes": 5930,
+      "sha256": "23034825684c6112e2295e00ff9c59348b6c05802a3335b586b7e7116796f31c"
+    },
+    "docs/data/private_proof_handover_1/ledger.json": {
+      "bytes": 6323,
+      "sha256": "56a23403ef50d00f03e4cc26b7be20c3940b7fb101e2e7afb290a8836a4dec2c"
+    },
+    "docs/data/private_proof_handover_1/missing-evidence.json": {
+      "bytes": 1315,
+      "sha256": "177b562b5265a2f3b5dd91aa185cb976f5cfae4f34feb8c9835a9843d7501f8f"
+    },
+    "docs/data/private_proof_handover_1/README.md": {
+      "bytes": 8143,
+      "sha256": "6ff1c878754964954754e6d2bcd924eb49dac60ffee73265d500353a611762a1"
+    },
+    "docs/data/private_proof_handover_1/archive.sha256": {
+      "bytes": 97,
+      "sha256": "c7247aea1df3085627694959532ed73621996b81eff3bad21b2f6aa34b13ca42"
+    },
+    "docs/data/private_proof_handover_1/prefixes.json": {
+      "bytes": 401,
+      "sha256": "7ac3f7d68878d4d5aa63ea4b25735404e94fe51494ca55702c79fd3fa450e5dc"
+    },
+    "docs/data/private_proof_handover_1/jobs/package.json": {
+      "bytes": 1661,
+      "sha256": "252e89ff08e867286531a786f1e695df0e06ab866537726fa238dd0f5652eccb"
+    },
+    "docs/data/private_proof_handover_1/jobs/static-no-cache.worker.json": {
+      "bytes": 675,
+      "sha256": "f3c4d2356cac038328c0532400c8eb99b995a8532e91c600e5f66aee68fe68bc"
+    },
+    "docs/data/private_proof_handover_1/jobs/static.worker.json": {
+      "bytes": 676,
+      "sha256": "3639367d812573b2706fac305ce069efd19e1dd6234381422ed354053bf5f32d"
+    },
+    "docs/data/private_proof_handover_1/jobs/package.worker.json": {
+      "bytes": 675,
+      "sha256": "19535fff11adf57d7249304e1c3293b45a238af0534a1fd1583e22eab677b083"
+    },
+    "docs/data/private_proof_handover_1/jobs/static-no-cache.json": {
+      "bytes": 1787,
+      "sha256": "a478e99ab36dbb6ec9b18d4f793067efe462864c14c2118bfde70519454ca973"
+    },
+    "docs/data/private_proof_handover_1/jobs/static-no-cache.log": {
+      "bytes": 384,
+      "sha256": "abbcc8c5e043a70bc64b269b768c8f60925b4f01eb9f78ebae1f10abd89cd75b"
+    },
+    "docs/data/private_proof_handover_1/jobs/static.log": {
+      "bytes": 1239,
+      "sha256": "45300c2f43373bc457450b8c9305b7ce128621f897c2051bd650519bacf0dc24"
+    },
+    "docs/data/private_proof_handover_1/jobs/static.input.json": {
+      "bytes": 864,
+      "sha256": "96695013628dd480d17db9070b26e9a0d917a3f9599deb805f965a957aefa06f"
+    },
+    "docs/data/private_proof_handover_1/jobs/static-no-cache.input.json": {
+      "bytes": 912,
+      "sha256": "4c6060a89b4d4181a4feb44830359d92ced2596b7001b9b3dd6c3ca9f6bca856"
+    },
+    "docs/data/private_proof_handover_1/jobs/package.input.json": {
+      "bytes": 697,
+      "sha256": "aafbf700eb2295310b31aafc92ac7a733682321a657964ed0122bccbe26e733c"
+    },
+    "docs/data/private_proof_handover_1/jobs/static.json": {
+      "bytes": 1741,
+      "sha256": "69aa8a25b47cdd519b32cbaefb70cedb865d7abcc1e8052ee7b86e5f4a9b95c3"
+    },
+    "docs/data/private_proof_handover_1/jobs/package.log": {
+      "bytes": 766,
+      "sha256": "542ed6f072029e4f55ba4fe48a077afcc5993a0a7117b14e8da8450c7b43b003"
+    },
+    "docs/data/private_proof_handover_1/tools/preservation.py": {
+      "bytes": 8528,
+      "sha256": "057fca7072b9e547aa7ff20e650384a0d8efd0dbdbb5277c621142e90438526b"
+    },
+    "docs/data/private_proof_handover_1/tools/run.py": {
+      "bytes": 17334,
+      "sha256": "5593f00c632d2654901bfe81045ff8a23b98cfa5e1be19354dde3a8c929512d9"
+    },
+    "docs/data/private_proof_handover_1/tools/package.py": {
+      "bytes": 13849,
+      "sha256": "1150aa97df5835b7ab3cb47f55f6995c2e1e6457a3ddeea72b7b223beb3b7ffc"
+    }
+  }
+}

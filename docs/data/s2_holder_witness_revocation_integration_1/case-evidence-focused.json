@@ -1,0 +1,199 @@
+[
+  {
+    "case": "test_integrated_reference_scenario",
+    "after": {
+      "manager_head": "cf1a8e02acfb7aa5be8ccd9b10e7f400f819f59c94e840e73ee20d4a657ecff2",
+      "issuer_head": "314bc6bba31f23b3cb2f28c96915ebe63295e539ab6e2886fdd1b6dce2fa1622",
+      "allocated": 3,
+      "epoch": 2,
+      "reservations": 2,
+      "phase": "CERTIFIED",
+      "issuer_floor": 3,
+      "certifications": 2,
+      "nonces": 2,
+      "issuer_generation": 1,
+      "holder_epoch": 1,
+      "holder_credential_unchanged": true,
+      "verifier_consumed": [
+        1,
+        1
+      ]
+    },
+    "scenario": {
+      "A": "bounded issuance/state/update authentication; unrelated update succeeds, own REVOKED",
+      "B": "complete local auth valid initially/after unrelated update, false at own revoked root",
+      "C": "two test-only exact X/token acceptances at epoch1; no revoked synthetic verdict invoked",
+      "holder_epoch_retained": 1,
+      "manager_epoch": 2,
+      "public_page_calls": 2
+    }
+  },
+  {
+    "case": "test_initial_binding_rejects[secret]",
+    "after": {
+      "manager_head": "a08275f8671bcfa05c2c0829e41717fced359b53a792c1c20f415de9b92fc701",
+      "issuer_head": "4ec3ea8519d5826b0c5b98c0d077d0edba82bded115c7e0e7a8f9764f5ef7339",
+      "allocated": 2,
+      "epoch": 0,
+      "reservations": 1,
+      "phase": "CERTIFIED",
+      "issuer_floor": 2,
+      "certifications": 1,
+      "nonces": 1,
+      "issuer_generation": 1,
+      "holder_epoch": 0,
+      "holder_credential_unchanged": true,
+      "verifier_consumed": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "case": "test_initial_binding_rejects[identifier]",
+    "after": {
+      "manager_head": "045318e373f4a225416d629c9ad96e3fd478e56397499878584b1492d467334e",
+      "issuer_head": "8083180578f14524b37900d07600534b732506c7393749abc9139b6e1d11bea5",
+      "allocated": 2,
+      "epoch": 0,
+      "reservations": 1,
+      "phase": "CERTIFIED",
+      "issuer_floor": 2,
+      "certifications": 1,
+      "nonces": 1,
+      "issuer_generation": 1,
+      "holder_epoch": 0,
+      "holder_credential_unchanged": true,
+      "verifier_consumed": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "case": "test_initial_binding_rejects[path]",
+    "after": {
+      "manager_head": "e9f44b84ae9ea64049e437e69bb2eccb726a6d92176848eb6d3778c84f61b066",
+      "issuer_head": "4b41fb4bad8c0480bfb9ff142cd3bd18809a89b26fe74f51d6e30d5d8fdcca80",
+      "allocated": 2,
+      "epoch": 0,
+      "reservations": 1,
+      "phase": "CERTIFIED",
+      "issuer_floor": 2,
+      "certifications": 1,
+      "nonces": 1,
+      "issuer_generation": 1,
+      "holder_epoch": 0,
+      "holder_credential_unchanged": true,
+      "verifier_consumed": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "case": "test_initial_binding_rejects[credential]",
+    "after": {
+      "manager_head": "7a2413c832c9ad51479cf3996dc76ef1f031e0f9743f66447ce84cf0d3816916",
+      "issuer_head": "80d80d64e745990d19e50581e8e71d368644fa6c2397ce9374429e2c1cf174f3",
+      "allocated": 2,
+      "epoch": 0,
+      "reservations": 1,
+      "phase": "CERTIFIED",
+      "issuer_floor": 2,
+      "certifications": 1,
+      "nonces": 1,
+      "issuer_generation": 1,
+      "holder_epoch": 0,
+      "holder_credential_unchanged": true,
+      "verifier_consumed": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "case": "test_presentation_context_preparation[audience]",
+    "after": {
+      "manager_head": "ec9fa8c5fc45352e32c1595315a59dccee35faae11e9e44b61c36c644070a394",
+      "issuer_head": "49115ed7e7b777e485070396072753e9e83917a3079ba51adf71fa1ef02bbdb7",
+      "allocated": 2,
+      "epoch": 0,
+      "reservations": 1,
+      "phase": "CERTIFIED",
+      "issuer_floor": 2,
+      "certifications": 1,
+      "nonces": 1,
+      "issuer_generation": 1,
+      "holder_epoch": 0,
+      "holder_credential_unchanged": true,
+      "verifier_consumed": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "case": "test_presentation_context_preparation[signature]",
+    "after": {
+      "manager_head": "2c85b330806f6ab4c35083cfeba9d1fc59275eac1bec839e208b24bad0efcb9c",
+      "issuer_head": "82d968c817b21e9c274199f95262e195aad908386c26d89dd716ea46a932e0fc",
+      "allocated": 2,
+      "epoch": 0,
+      "reservations": 1,
+      "phase": "CERTIFIED",
+      "issuer_floor": 2,
+      "certifications": 1,
+      "nonces": 1,
+      "issuer_generation": 1,
+      "holder_epoch": 0,
+      "holder_credential_unchanged": true,
+      "verifier_consumed": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "case": "test_presentation_context_preparation[policy]",
+    "after": {
+      "manager_head": "0c69466dceb75c599d063e52438cba8908e6de6224bc642e53302e7c548c51f8",
+      "issuer_head": "ba9cfccb32de10cca9db59e576f268b2f1cbd01d1441079693f0edb180581dad",
+      "allocated": 2,
+      "epoch": 0,
+      "reservations": 1,
+      "phase": "CERTIFIED",
+      "issuer_floor": 2,
+      "certifications": 1,
+      "nonces": 1,
+      "issuer_generation": 1,
+      "holder_epoch": 0,
+      "holder_credential_unchanged": true,
+      "verifier_consumed": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "case": "test_presentation_context_preparation[state]",
+    "after": {
+      "manager_head": "372b0e40ce57d88c96195574392d82fe1bb0d0a64da179cde7585eb05b4ac94f",
+      "issuer_head": "84e48f503f6dcca9fa29ba4ebc0884e4a1559913eeaf6cbfcea6f91ab21ac41a",
+      "allocated": 3,
+      "epoch": 1,
+      "reservations": 2,
+      "phase": "CERTIFIED",
+      "issuer_floor": 3,
+      "certifications": 2,
+      "nonces": 2,
+      "issuer_generation": 1,
+      "holder_epoch": 0,
+      "holder_credential_unchanged": true,
+      "verifier_consumed": [
+        0,
+        0
+      ]
+    }
+  }
+]

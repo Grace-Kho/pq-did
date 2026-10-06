@@ -1,0 +1,133 @@
+{
+  "cases": [
+    {
+      "id": "SEM-01",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "SEM-02",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "SEM-03",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "SEM-04",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "SEM-05",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "SEM-06",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "SEM-07",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "SEM-08",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-01",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-02",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-03",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-04",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-05",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-06",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-07",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-08",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-09",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-10",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-11",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-12",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-13",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-14",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-15",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    },
+    {
+      "id": "TR-16",
+      "status": "not-run",
+      "reason": "Fifth-build outer resource accounting failed; native execution stopped"
+    }
+  ],
+  "new_invocations": 0,
+  "tooling_invocations": 0,
+  "cumulative_invocations": 419,
+  "ceiling": 448,
+  "reserved_native_invocations": 24,
+  "separate_tooling_reruns_unused": {
+    "seal": 2,
+    "earlier": 3
+  }
+}

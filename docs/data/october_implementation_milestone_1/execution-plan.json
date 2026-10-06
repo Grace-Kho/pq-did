@@ -1,0 +1,570 @@
+{
+  "milestone": "OCT31-KYC-NATIVE-MILESTONE-1",
+  "schema_version": 1,
+  "approval_required": true,
+  "approved": false,
+  "authority": "Manuscript II-VIII and SPEC001-004; alternative isolated baseline/branch only",
+  "source_contract": "docs/stage3_aurora_masking_correction_contract.md",
+  "source_commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+  "frozen_contract_manifest_sha256": "b841e6675bae216e9e0080b1861fd29e90b19df62335ad1338c72ed4759eb28b",
+  "source_roots": {
+    "native": "experiments/aurora_masking_milestone_1",
+    "baseline_and_coordinator": "experiments/kyc_milestone_1",
+    "benchmarks": "benchmarks/kyc_milestone_1",
+    "evidence": "docs/data/oct31_kyc_native_milestone_1"
+  },
+  "proposed_amendments": {
+    "implementation_ceiling_seconds": {
+      "before": 674,
+      "after": 4274,
+      "consumed": 562.1783621237846,
+      "additional": 3600,
+      "remaining_if_approved": 3711.8216378762154
+    },
+    "completion_reserve_inside_implementation_seconds": 300,
+    "invocation_ceiling": {
+      "before": 450,
+      "after": 1050,
+      "consumed": 448,
+      "additional_milestone_slots": 600,
+      "separate_prior_tooling_slots": 2
+    },
+    "build_ceiling": {
+      "before": 5,
+      "after": 13,
+      "consumed": 5,
+      "additional": 8
+    },
+    "evidence_ceiling_bytes": {
+      "before": 18874368,
+      "after": 33554432,
+      "consumption_before_preparation": 16499024,
+      "use_latest_closure_on_admission": true
+    },
+    "evidence_completion_reserve_inside_bytes": 2097152,
+    "command_seconds": {
+      "before": [
+        60,
+        55
+      ],
+      "after": [
+        300,
+        295
+      ]
+    },
+    "aggregate_cgroup_memory_bytes": 2147483648,
+    "native_child_memory_bytes": 1073741824,
+    "python_audit_coordinator_memory_bytes": 268435456,
+    "swap_bytes": 0,
+    "max_work_jobs": 2,
+    "max_native_compiler_jobs": 1,
+    "aggregate_cpu_threads": 2,
+    "aggregate_tasks_max": 128,
+    "artifact_aggregate_bytes_unchanged": 134217728,
+    "registered_binary_build_git_database_per_file_bytes": 33554432,
+    "ordinary_file_bytes_unchanged": 1048576,
+    "ordinary_temporary_bytes_unchanged": 8388608,
+    "diagnostic_per_command_bytes_unchanged": 61440
+  },
+  "retired_admission_caps_after_approval": [
+    "completed native package and provisioning sub-limits (no transfer/refund)",
+    "completed fourth/fifth-build continuation caps",
+    "completed per-package evidence reservations",
+    "inactive separate sumcheck-pilot proposal"
+  ],
+  "preserve_separate_budgets": [
+    "analysis",
+    "isolation",
+    "proof attempts"
+  ],
+  "phase_plan": [
+    "C0 approval/freeze",
+    "C1 parallel implementation",
+    "C2 focused validation",
+    "C3 exclusive benchmarks",
+    "C4 complete preservation/reporting/readback"
+  ],
+  "native_new_cases": [
+    {
+      "id": "N-01",
+      "case": "independent-field-modulus-basis-certificate"
+    },
+    {
+      "id": "N-02",
+      "case": "unrestricted-mask-coefficient-map"
+    },
+    {
+      "id": "N-03",
+      "case": "nonunit-xi-sum"
+    },
+    {
+      "id": "N-04",
+      "case": "zero-lincheck-triple"
+    },
+    {
+      "id": "N-05",
+      "case": "nonzero-quotient-remainder"
+    },
+    {
+      "id": "N-06",
+      "case": "prover-verifier-point-agreement"
+    },
+    {
+      "id": "N-07",
+      "case": "shifted-vector-point-agreement"
+    },
+    {
+      "id": "N-08",
+      "case": "tampered-beta-degree-condition"
+    },
+    {
+      "id": "N-09",
+      "case": "wrong-beta-message-length"
+    },
+    {
+      "id": "N-10",
+      "case": "zero-reducer-coins-retain-pad"
+    },
+    {
+      "id": "N-11",
+      "case": "mixed-reducer-degrees"
+    },
+    {
+      "id": "N-12",
+      "case": "bump-coefficient-index"
+    },
+    {
+      "id": "N-13",
+      "case": "shifted-reducer-vector-point"
+    },
+    {
+      "id": "N-14",
+      "case": "wrong-reducer-coin-count"
+    },
+    {
+      "id": "N-15",
+      "case": "missing-reducer-pad"
+    },
+    {
+      "id": "N-16",
+      "case": "two-fold-degree-registration"
+    },
+    {
+      "id": "N-17",
+      "case": "longer-fold-degree-sequence"
+    },
+    {
+      "id": "N-18",
+      "case": "independent-fold-terminal-coefficients"
+    },
+    {
+      "id": "N-19",
+      "case": "nondivisible-bound-rejection"
+    },
+    {
+      "id": "N-20",
+      "case": "actual-lincheck-paths"
+    },
+    {
+      "id": "N-21",
+      "case": "aurora-early-mask-beta-registration"
+    },
+    {
+      "id": "N-22",
+      "case": "dependent-challenge-order"
+    },
+    {
+      "id": "N-23",
+      "case": "unsupported-branch"
+    },
+    {
+      "id": "N-24",
+      "case": "invalid-attached-claim"
+    }
+  ],
+  "native_exp2_cases": [
+    "TR-01",
+    "TR-02",
+    "TR-03",
+    "TR-04",
+    "TR-05",
+    "TR-06",
+    "TR-07",
+    "TR-08",
+    "TR-09",
+    "TR-10",
+    "TR-11",
+    "TR-12",
+    "TR-13",
+    "TR-14",
+    "TR-15",
+    "TR-16"
+  ],
+  "baseline_cases": [
+    {
+      "id": "B-01",
+      "case": "credential-canonical-roundtrip"
+    },
+    {
+      "id": "B-02",
+      "case": "presentation-canonical-roundtrip"
+    },
+    {
+      "id": "B-03",
+      "case": "malformed-binary-width"
+    },
+    {
+      "id": "B-04",
+      "case": "trailing-data-rejected"
+    },
+    {
+      "id": "B-05",
+      "case": "wrong-tag-arity"
+    },
+    {
+      "id": "B-06",
+      "case": "boolean-not-integer"
+    },
+    {
+      "id": "B-07",
+      "case": "foreign-instance"
+    },
+    {
+      "id": "B-08",
+      "case": "foreign-issuer-key"
+    },
+    {
+      "id": "B-09",
+      "case": "holder-key-substitution"
+    },
+    {
+      "id": "B-10",
+      "case": "attribute-substitution"
+    },
+    {
+      "id": "B-11",
+      "case": "rid-out-of-range"
+    },
+    {
+      "id": "B-12",
+      "case": "private-key-excluded-from-export"
+    },
+    {
+      "id": "B-13",
+      "case": "role-override"
+    },
+    {
+      "id": "B-14",
+      "case": "context-override"
+    },
+    {
+      "id": "B-15",
+      "case": "public-secret-key-mismatch"
+    },
+    {
+      "id": "B-16",
+      "case": "keygen-entropy-failure"
+    },
+    {
+      "id": "B-17",
+      "case": "signing-entropy-failure"
+    },
+    {
+      "id": "B-18",
+      "case": "sign-attempt-exhaustion"
+    },
+    {
+      "id": "B-19",
+      "case": "sampler-exhaustion"
+    },
+    {
+      "id": "B-20",
+      "case": "post-sign-verification-failure"
+    },
+    {
+      "id": "B-21",
+      "case": "allocation-retained-after-failure"
+    },
+    {
+      "id": "B-22",
+      "case": "wrong-enrolment-possession"
+    },
+    {
+      "id": "B-23",
+      "case": "unapproved-attributes"
+    },
+    {
+      "id": "B-24",
+      "case": "signing-claim-commit-failure"
+    },
+    {
+      "id": "B-25",
+      "case": "fenced-issuer-before-certification"
+    },
+    {
+      "id": "B-26",
+      "case": "certification-commit-failure"
+    },
+    {
+      "id": "B-27",
+      "case": "interrupted-delivery-exact-redelivery"
+    },
+    {
+      "id": "B-28",
+      "case": "wrong-delivery-recipient"
+    },
+    {
+      "id": "B-29",
+      "case": "fresh-verifier-A"
+    },
+    {
+      "id": "B-30",
+      "case": "fresh-verifier-B"
+    },
+    {
+      "id": "B-31",
+      "case": "wrong-nonce"
+    },
+    {
+      "id": "B-32",
+      "case": "cross-audience-request"
+    },
+    {
+      "id": "B-33",
+      "case": "context-substitution"
+    },
+    {
+      "id": "B-34",
+      "case": "policy-failure"
+    },
+    {
+      "id": "B-35",
+      "case": "initial-session-expiry"
+    },
+    {
+      "id": "B-36",
+      "case": "final-atomic-expiry"
+    },
+    {
+      "id": "B-37",
+      "case": "live-replay"
+    },
+    {
+      "id": "B-38",
+      "case": "restart-replay"
+    },
+    {
+      "id": "B-39",
+      "case": "persistent-holder-key-reopen"
+    },
+    {
+      "id": "B-40",
+      "case": "stale-verifier-writer"
+    },
+    {
+      "id": "B-41",
+      "case": "authenticated-current-state"
+    },
+    {
+      "id": "B-42",
+      "case": "wrong-manager-signature"
+    },
+    {
+      "id": "B-43",
+      "case": "stale-state-reference"
+    },
+    {
+      "id": "B-44",
+      "case": "mutated-merkle-path"
+    },
+    {
+      "id": "B-45",
+      "case": "own-revocation"
+    },
+    {
+      "id": "B-46",
+      "case": "other-revocation-witness-update"
+    },
+    {
+      "id": "B-47",
+      "case": "out-of-order-update-chain"
+    },
+    {
+      "id": "B-48",
+      "case": "history-gap-unavailable"
+    }
+  ],
+  "harness_cases": [
+    {
+      "id": "H-01",
+      "case": "required-record-schema"
+    },
+    {
+      "id": "H-02",
+      "case": "unknown-record-category"
+    },
+    {
+      "id": "H-03",
+      "case": "negative-or-missing-duration"
+    },
+    {
+      "id": "H-04",
+      "case": "nested-timing-not-double-counted"
+    },
+    {
+      "id": "H-05",
+      "case": "canonical-versus-transport-bytes"
+    },
+    {
+      "id": "H-06",
+      "case": "warmup-excluded-from-statistics-not-ledger"
+    },
+    {
+      "id": "H-07",
+      "case": "failure-denominator-retained"
+    },
+    {
+      "id": "H-08",
+      "case": "timeout-censoring"
+    },
+    {
+      "id": "H-09",
+      "case": "unavailable-proof-null-fields"
+    },
+    {
+      "id": "H-10",
+      "case": "environment-and-input-identities"
+    },
+    {
+      "id": "H-11",
+      "case": "output-run-id-no-overwrite"
+    },
+    {
+      "id": "H-12",
+      "case": "output-chunk-byte-cap"
+    },
+    {
+      "id": "H-13",
+      "case": "measured-versus-synthetic-category"
+    },
+    {
+      "id": "H-14",
+      "case": "nearest-rank-percentile"
+    },
+    {
+      "id": "H-15",
+      "case": "exclusive-measurement-lock"
+    },
+    {
+      "id": "H-16",
+      "case": "counter-reservation-race"
+    }
+  ],
+  "integration_cases": [
+    {
+      "id": "C-01",
+      "case": "issued-key-bound-to-presentation"
+    },
+    {
+      "id": "C-02",
+      "case": "same-credential-independent-A-B"
+    },
+    {
+      "id": "C-03",
+      "case": "reopen-holder-and-both-verifiers"
+    },
+    {
+      "id": "C-04",
+      "case": "manager-update-between-challenge-and-verify"
+    },
+    {
+      "id": "C-05",
+      "case": "revoke-one-holder-retain-other"
+    },
+    {
+      "id": "C-06",
+      "case": "no-partial-credential-or-acceptance"
+    },
+    {
+      "id": "C-07",
+      "case": "normal-PQ-DID-proof-path-fail-closed"
+    },
+    {
+      "id": "C-08",
+      "case": "no-baseline-signature-as-proof-object"
+    },
+    {
+      "id": "C-09",
+      "case": "native-caller-coverage-export"
+    },
+    {
+      "id": "C-10",
+      "case": "changed-input-invalidates-reuse"
+    },
+    {
+      "id": "C-11",
+      "case": "shared-resource-accounting-and-output-roles"
+    },
+    {
+      "id": "C-12",
+      "case": "end-to-end-export-readback-with-proof-unavailable"
+    }
+  ],
+  "benchmark": {
+    "scenario_ids": [
+      "ISSUE",
+      "PRESENT-A",
+      "PRESENT-B",
+      "REVOKE-UPDATE"
+    ],
+    "sessions": 3,
+    "cold_process_trials_per_session": 1,
+    "warmup_trials_per_session": 2,
+    "warm_measured_trials_per_session": 20,
+    "counted_trials": 276,
+    "warm_samples_per_scenario": 60,
+    "cold_samples_per_scenario": 3,
+    "network": "local only; any WAN cost is separately labelled arithmetic estimate",
+    "session_lifetime_seconds": 120,
+    "required_did_resolution": false,
+    "backend": "pqdid-mldsa-reference-1",
+    "private_auth_capability": "unavailable",
+    "outcome_categories": [
+      "accepted",
+      "expected-rejection",
+      "unexpected-rejection",
+      "unexpected-acceptance",
+      "expired",
+      "stale-state",
+      "resource-abort",
+      "unavailable",
+      "incomplete"
+    ],
+    "semantic_fixture": "tests/fixtures/relations_vectors.json:alpha-42-old-002c",
+    "valid_until": "recorded_session_epoch_base+86400",
+    "clock": "recorded synthetic epoch base plus monotonic elapsed; validation injections separately labelled",
+    "instance": "new synthetic keys; regenerated instance and fixture digests; production/original fixtures unchanged"
+  },
+  "initial_invocations": 392,
+  "shared_correction_invocations": 208,
+  "execution_commands": {
+    "admit": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py admit --plan docs/data/october_implementation_milestone_1/execution-plan.json",
+    "validate": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py validate --plan docs/data/october_implementation_milestone_1/execution-plan.json",
+    "benchmark": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py benchmark --plan docs/data/october_implementation_milestone_1/execution-plan.json --run-id oct31-reference-01 --output docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01",
+    "finalise": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py finalise --plan docs/data/october_implementation_milestone_1/execution-plan.json"
+  },
+  "implementation_status": "commands/interfaces to be implemented after approval; no runner invoked during preparation",
+  "ephemeral_user_resource_unit_prefix": "pqdid-oct31-m1-",
+  "ephemeral_parent_slice": "pqdid-oct31-m1.slice",
+  "benchmark_exclusive": true,
+  "new_dependency_installations": false,
+  "host_deployment": false,
+  "private_witnesses": false,
+  "full_proofs": false,
+  "zkvm": false,
+  "proof_attempts": [
+    2,
+    1
+  ],
+  "stages_2_3_open": true
+}

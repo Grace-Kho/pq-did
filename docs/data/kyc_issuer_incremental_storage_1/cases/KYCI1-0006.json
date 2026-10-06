@@ -1,0 +1,17 @@
+{
+  "invocation_id": "KYCI1-0006",
+  "case_id": "S-06",
+  "work_event_reservation": 0,
+  "ordinal": 6,
+  "cumulative_invocations": 1051,
+  "status": "pass",
+  "details": {
+    "interruption": "migration-before-commit",
+    "actual_process_exit": true,
+    "expected_recovery_version": 1,
+    "rows": 1
+  },
+  "seconds": 0.016820000018924475,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

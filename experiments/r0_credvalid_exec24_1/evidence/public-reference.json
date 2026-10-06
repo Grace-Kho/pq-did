@@ -1,0 +1,6 @@
+{
+  "expected_acceptance": true,
+  "validation": "reuse immutable six native tests and 35 comparisons; no native rerun",
+  "public_journal_SHA256": "f9fa7cce56b47699ff3ec198b2a2b1e2aa46b36f5a5f9d4d9839f4622d8579c2",
+  "public_journal_bytes": 5147
+}

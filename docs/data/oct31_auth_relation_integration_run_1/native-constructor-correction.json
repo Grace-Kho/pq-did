@@ -1,0 +1,6 @@
+{
+  "reason": "Pinned vector constructor references nonexistent index/coeff. Use existing native default constructor and add_term API after unchanged strict canonical input validation; no sort/merge needed or accepted. Empty sum remains zero. Frozen dependency unchanged.",
+  "old_sha256": "0c2776c959fa31786c94ea73678aa30c109c49dd77da89ca885d6302cbaf6c07",
+  "new_sha256": "355fa535e53faf5730df7c14bae7081095188b66767a4c73085d1e00beead5ad",
+  "historical_failure": "jobs/build-1.log"
+}

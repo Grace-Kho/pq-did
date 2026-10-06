@@ -1,0 +1,476 @@
+{
+  "configuration_compatible": true,
+  "known_configuration_incompatibilities": [],
+  "supported_segment_po2": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "supported_lift_ids": {
+    "14": "411fa636f2d364648f035174d3778d6340d9ae1dd648fc35657c173f01e27e5f",
+    "15": "1ca3ca03030719064ba61b3125bdd326fc57f74e799ef860bdea6f3227381e16",
+    "16": "c32b3627d2b3d60c64adf523a98bd16c0ff607471f3d6630d1f26d5e9406d841",
+    "17": "c9b08054994f542a6310b00d9b6fc6528ed7bb6f4ca5476a686847127cdfdc5b",
+    "18": "e7934a23ddce1423b425cf32aa23be29f48cd40e0b6ff9376dce6f3bf9d0bc35",
+    "19": "8c2fdd36ede09a4b9d316a43c51f1160cbd8876659c5f35810c3a119c60d3843",
+    "20": "34530b42028fb631c90e1226bb0e750d4b9b593840d45216f75dca449dac7734",
+    "21": "fd84d83092a1e1244d423a26d89c892ab098b467c6d82229912deb26e37d2562",
+    "22": "9d9dbf33535ab11f52a93839dfd23b352b7626009e81d9459fd04e488898ec6a"
+  },
+  "control_source_sha256": "6fedf46fad3ca0ce3e537139be7873a43dd68fee5fc803d3e58604b4e9ae16cb",
+  "registry": [
+    {
+      "operation": "enrol",
+      "image": [
+        3771262054,
+        2934794436,
+        1441774498,
+        2869905324,
+        1497161362,
+        1391706344,
+        1955224464,
+        202812443
+      ],
+      "elf": "artifacts/enrol.bin",
+      "elf_sha256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+      "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+      "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+    }
+  ],
+  "host_inspection": {
+    "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56",
+    "executor_segment_limit_po2": 17,
+    "host_debug_assertions": false,
+    "identities_and_expected_journals": true,
+    "proofs": 0,
+    "prover_options": {
+      "control_ids": [
+        [
+          867989773,
+          1191933620,
+          1874447235,
+          1282574300,
+          1044778110,
+          656128688,
+          1134547717,
+          767400134
+        ],
+        [
+          153390970,
+          1055732780,
+          171776952,
+          1483503883,
+          878535052,
+          1637805960,
+          515710402,
+          1860862795
+        ],
+        [
+          100060566,
+          1978750455,
+          303589029,
+          1227689857,
+          1606420245,
+          1051239470,
+          1772960844,
+          509945405
+        ],
+        [
+          1334397687,
+          1331205109,
+          813073509,
+          983749098,
+          1600097527,
+          157363181,
+          534799880,
+          310343333
+        ],
+        [
+          916856641,
+          1684329458,
+          1951466383,
+          1670215635,
+          497998144,
+          905726166,
+          1058503781,
+          1602150913
+        ],
+        [
+          63611676,
+          102303491,
+          823895627,
+          651410725,
+          1324832764,
+          1626906233,
+          846195389,
+          371079207
+        ],
+        [
+          657861571,
+          215397330,
+          603303268,
+          1825672105,
+          1191704079,
+          812006687,
+          1584263889,
+          1104676500
+        ],
+        [
+          1417720009,
+          710168473,
+          229642339,
+          1388736411,
+          1874581390,
+          1783080268,
+          306669672,
+          1541201788
+        ],
+        [
+          592090087,
+          588566237,
+          852436404,
+          700326826,
+          248810740,
+          939093771,
+          997183085,
+          901566713
+        ],
+        [
+          920465292,
+          1268441325,
+          1131032989,
+          1611734981,
+          1720178891,
+          1492370777,
+          430031632,
+          1127747014
+        ],
+        [
+          1108038452,
+          834047746,
+          638717641,
+          225775291,
+          945396555,
+          374527040,
+          1154113015,
+          880258205
+        ],
+        [
+          819496189,
+          618766738,
+          641352269,
+          713661656,
+          1739888816,
+          690149574,
+          652946833,
+          1646624227
+        ],
+        [
+          868195741,
+          531716691,
+          960014674,
+          893113055,
+          2520619,
+          1171882398,
+          1213124767,
+          1793890440
+        ],
+        [
+          35952582,
+          1824293324,
+          1525031441,
+          1061605287,
+          2012529466,
+          92724679,
+          544524930,
+          42695676
+        ],
+        [
+          279014959,
+          1431952715,
+          1630904826,
+          1048612638,
+          1885422715,
+          1887343419,
+          1426696013,
+          1733562860
+        ],
+        [
+          1414968743,
+          1143177506,
+          1081923212,
+          200841997,
+          971723854,
+          278064791,
+          50958398,
+          1653102518
+        ],
+        [
+          1152571946,
+          1526960467,
+          1616245281,
+          1621105514,
+          1302779303,
+          1039257013,
+          578804383,
+          1882359202
+        ],
+        [
+          578073176,
+          884477220,
+          1821281216,
+          151781394,
+          1642658878,
+          1492149042,
+          8438565,
+          1222263196
+        ],
+        [
+          927254566,
+          1969808083,
+          227039666,
+          1205479695,
+          1772641517,
+          1882666515,
+          368784157,
+          1271807400
+        ],
+        [
+          350125847,
+          1567874113,
+          609774269,
+          62030429,
+          1101800294,
+          1170439508,
+          1216151025,
+          1645528426
+        ],
+        [
+          1224459242,
+          782663792,
+          861796463,
+          1193989917,
+          1427039494,
+          763677641,
+          517425386,
+          77205822
+        ],
+        [
+          1422738435,
+          455749078,
+          1958099045,
+          303344341,
+          1531772752,
+          1030655200,
+          492751638,
+          757412582
+        ],
+        [
+          1035118419,
+          1570699527,
+          1491633494,
+          504952180,
+          648709764,
+          132516474,
+          1203431935,
+          1255849416
+        ],
+        [
+          695118880,
+          342524081,
+          344215611,
+          355339796,
+          1056530916,
+          176415492,
+          919248115,
+          1560317739
+        ],
+        [
+          1970412986,
+          1326351573,
+          1361874585,
+          235700512,
+          48863153,
+          711878937,
+          1724374628,
+          114008874
+        ],
+        [
+          1531015543,
+          434802551,
+          772686883,
+          508177586,
+          769292829,
+          1038142274,
+          1126645779,
+          831166656
+        ],
+        [
+          1290831894,
+          949373130,
+          1169829254,
+          1448877404,
+          1979257621,
+          1235453384,
+          769724191,
+          1204314615
+        ]
+      ],
+      "dev_mode": false,
+      "hashfn": "poseidon2",
+      "max_segment_po2": 22,
+      "prove_guest_errors": false,
+      "receipt_kind": "Succinct"
+    },
+    "session_limit_user_cycles": 4194304,
+    "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013"
+  },
+  "host_build_profile": {
+    "cargo_command": "cargo build --locked --offline --release -p pqdid-r0-host",
+    "opt_level": 3,
+    "lto": "thin",
+    "codegen_units": 1,
+    "overflow_checks": true,
+    "debug_assertions": false,
+    "fingerprint": {
+      "rustc": 3998333243054706977,
+      "features": "[]",
+      "declared_features": "[]",
+      "target": 18082660742810029427,
+      "profile": 2154336957897440151,
+      "path": 11325990362339547646,
+      "deps": [
+        [
+          65234016722529558,
+          "bincode",
+          false,
+          15320875500941192078
+        ],
+        [
+          4076764238121008316,
+          "risc0_binfmt",
+          false,
+          10657574058174582719
+        ],
+        [
+          6213337740264322350,
+          "risc0_zkvm",
+          false,
+          10351565955833496467
+        ],
+        [
+          6311694053450212830,
+          "risc0_zkos_v1compat",
+          false,
+          4634969998276594204
+        ],
+        [
+          9857275760291862238,
+          "sha2",
+          false,
+          1054154253354250103
+        ],
+        [
+          10364619138950789809,
+          "anyhow",
+          false,
+          10813815737629762341
+        ],
+        [
+          12832915883349295919,
+          "serde_json",
+          false,
+          4702807735462505817
+        ],
+        [
+          13548984313718623784,
+          "serde",
+          false,
+          7001399522825392534
+        ],
+        [
+          14164674875177029701,
+          "pqdid_r0_relation",
+          false,
+          16059727244326573626
+        ]
+      ],
+      "local": [
+        {
+          "CheckDepInfo": {
+            "dep_info": "release/.fingerprint/pqdid-r0-host-cdc54429c0cee1c7/dep-bin-pqdid-r0-host",
+            "checksum": false
+          }
+        }
+      ],
+      "rustflags": [],
+      "config": 9396254390672932401,
+      "compile_kind": 0
+    }
+  },
+  "prover_build_metadata": {
+    "sha256": "751b9b188d341e8bec5e02060086b7b1dc3f7289e90f726c38589bb6735dd6d7",
+    "version": "risc0-r0vm 3.0.6",
+    "ELF_comment": "\nString dump of section '.comment':\n  [     0]  Linker: LLD 22.1.6 (/checkout/src/llvm-project/llvm dcc3606807c989700e0ac1cac18c31741bcd40d9)\n  [    5f]  GCC: (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0\n  [    8a]  rustc version 1.97.1 (8bab26f4f 2026-07-14)\n\n",
+    "distribution": "unchanged pinned SDK 3.0.6 release binary; not rebuilt here",
+    "optimisation_flags": "Exact vendor opt-level/LTO flags not attested"
+  },
+  "host_compiler_comment": "\nString dump of section '.comment':\n  [     1]  GCC: (Ubuntu 15.2.0-16ubuntu1) 15.2.0\n  [    27]  rustc version 1.97.0-dev (e638c6cfe 2026-07-15)\n  [    57]  Linker: LLD 22.1.6 (https://github.com/rust-lang/llvm-project.git 08c84e69a84d95936296dfcab0e38b34100725d5)\n\n",
+  "CPU_settings": {
+    "quota_percent": 200,
+    "rayon_threads": 2,
+    "OMP_threads": 2,
+    "workers": 1,
+    "available_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "cpu_description": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           39 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  24\nOn-line CPU(s) list:                     0-23\nVendor ID:                               GenuineIntel\nModel name:                              Intel(R) Core(TM) i7-14650HX\nCPU family:                              6\nModel:                                   183\nThread(s) per core:                      2\nCore(s) per socket:                      12\nSocket(s):                               1\nStepping:                                1\nBogoMIPS:                                4838.39\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves avx_vnni vnmi umip waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize ibt flush_l1d arch_capabilities\nVirtualization:                          VT-x\nHypervisor vendor:                       Microsoft\nVirtualization type:                     full\nL1d cache:                               576 KiB (12 instances)\nL1i cache:                               384 KiB (12 instances)\nL2 cache:                                24 MiB (12 instances)\nL3 cache:                                30 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-23\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Mitigation; Clear Register File\nVulnerability Retbleed:                  Mitigation; Enhanced IBRS\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected\n"
+  },
+  "cache_state": {
+    "host_cache": "copied prior release target; offline host rebuild",
+    "prover_process": "fresh process for each execution/proof, no receipt reuse",
+    "recursion_archive": "same embedded bytes; existing extracted copy verified read-only",
+    "OS_page_cache": "not flushed or controlled",
+    "downloads": 0
+  },
+  "comparison_limits": [
+    "Previous proof timed out, so no exact overall speedup is defined",
+    "OS cache and host load are observational; no repeated benchmark"
+  ],
+  "memory_available": 4869226496,
+  "disk_free": {
+    "WSL": 1014860476416,
+    "Windows": 397817499648
+  },
+  "prover_maximum_unchanged": 22,
+  "executor_segment_setting": 17
+}

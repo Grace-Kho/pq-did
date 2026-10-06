@@ -1,0 +1,18 @@
+{
+  "id": "D-04",
+  "invocation": {
+    "invocation_id": "LGC1-0033",
+    "case_id": "D-04",
+    "work_event_reservation": 1000000,
+    "ordinal": 33,
+    "cumulative_invocations": 1216,
+    "status": "admitted"
+  },
+  "status": "pass",
+  "binary_sha256": "7f28431909d2d570d6e722abb6364f6e4b7797175d64c1ee825776557ba2fa63",
+  "expected_sha256": "7ea58f9ec9735d8bbe90f973105558af00fd0ad447c5cca93cd6f629ed826f3e",
+  "exit_code": 0,
+  "stdout": "{\"case\":\"D-04\",\"data\":\"f3d5bf3ed7b33f6d60e9d44426c31c4d12c577adf56819daaff47ec457004f91,16ee7b02e7cbce0761ceb569667a633b88b1b041a393223c33c2952815cc3c00\",\"openssl\":\"OpenSSL 3.5.5 27 Jan 2026\",\"gmp\":\"6.3.0\"}\n",
+  "stderr": "",
+  "seconds": 0.00210584606975317
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "N-06",
+  "invocation_id": "AR1-0007",
+  "status": "pass",
+  "details": {
+    "case_id": "N-06",
+    "passed": true,
+    "complete": true,
+    "native": {
+      "status": "rejected",
+      "reason": "primary-length"
+    },
+    "fixture_sha256": "5c93aab9facd3404379057cd9572fb29af94e4bfe19bde90ea574118f5ef956e",
+    "fixture": "docs/data/oct31_auth_relation_integration_run_1/cases/native-inputs/N-06.matrix",
+    "public_synthetic_only": true,
+    "paths": [
+      "checked native input loader before unsafe calls"
+    ],
+    "proof_generated": false,
+    "full_authentication": false,
+    "native_evaluated_rows_charge": "2*rows upper bound: Az/Bz/Cz and satisfaction"
+  },
+  "seconds": 0.0011988020269200206,
+  "work_events": 24
+}

@@ -1,0 +1,24 @@
+{
+  "status": "pass",
+  "protected_files_checked": 8315,
+  "authorised_existing_files_changed": [
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "all_other_protected_files_unchanged": true,
+  "guest_rebuilt": false,
+  "guest_code_and_inputs_unchanged": true,
+  "dependency_changes": false,
+  "execution_runs": 2,
+  "proof_attempts": 0,
+  "unused_proof_attempts": 3,
+  "valid_complete_user_cycles": 16313474,
+  "valid_margin_cycles": 463742,
+  "negative_rejected_without_acceptance_journal": true,
+  "negative_total_cycles_unavailable": true,
+  "diagnostic_bytes_at_audit": 2383963,
+  "all_experiment_disk_bytes_at_audit": 6031437130,
+  "build_setup_seconds": 153.47051871498115,
+  "guarded_execution_seconds": 1.317693136021262,
+  "closed_package_replay_refused": true
+}

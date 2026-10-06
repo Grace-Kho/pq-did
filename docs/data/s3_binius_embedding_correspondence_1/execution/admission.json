@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "proposal_verified": true,
+  "exact_tree_entries": 15,
+  "new_evidence_reservation": 1048576,
+  "shared_opening_headroom": 7136327,
+  "shared_completion_reserve": 2097152,
+  "implementation_opening_seconds": 810.6179695621813,
+  "outside_KYC_seconds": 367.2276139201385,
+  "implementation_allocation_seconds": 200,
+  "invocations_opening": 1140,
+  "ceiling_prospectively_amended": 1168,
+  "builds": "10/13 unchanged",
+  "EC-08": "declared parity mismatch; not arbitrary raw-vector recognisability"
+}

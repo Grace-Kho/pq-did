@@ -1,0 +1,4 @@
+{
+  "passed": false,
+  "error": "primary comparison: {\"protected_files\": 8759, \"unchanged_protected_files\": 8755, \"allowed_changed_files\": [\"docs/spec_issues.md\", \"docs/status.md\", \"docs/traceability.md\"], \"changed_files\": [\"benchmarks/README.md\"], \"missing_files\": [], \"bytes_hashed\": 294250338, \"coverage_sha256\": \"73df29e985aad1544583a3700a7cdbf83f2c3bfbfcde6c43720fb8a2d7c772fc\"}"
+}

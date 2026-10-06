@@ -1,0 +1,51 @@
+{
+  "records": [
+    {
+      "url": "https://api.github.com/repos/binius-zk/binius64/commits/main",
+      "path": "sources/implementation-commit.json",
+      "bytes": 22329,
+      "sha256": "a769495bc798ba798565752a19d97d70fd22e64ea8cc270ddad356dacedfad76",
+      "commit": "441fbf51ff0bcb0bcd28f3f1b73f4954029e8577",
+      "tree": "544452a781fee0f9b262d4ecfdcc47326fb6974f",
+      "date": "2026-09-27T09:49:45Z"
+    },
+    {
+      "url": "https://api.github.com/repos/binius-zk/binius.xyz/commits/main",
+      "path": "sources/blueprint-commit.json",
+      "bytes": 64807,
+      "sha256": "699e2a184d14d05613841634d2f96c6ca5f4b39ccd70234b9fedad5bcce8e337",
+      "commit": "37270884e8b7d6cab9e9297c70d7d9901c56f709",
+      "tree": "7b8b3a3ec0bb7df9b4e00d2b2ed53027e7563e22",
+      "date": "2026-08-15T12:37:37Z"
+    },
+    {
+      "url": "https://www.binius.xyz/spec.pdf",
+      "method": "HEAD",
+      "headers": {
+        "Connection": "close",
+        "Content-Length": "679980",
+        "Server": "GitHub.com",
+        "Content-Type": "application/pdf",
+        "Last-Modified": "Sat, 15 Aug 2026 12:40:39 GMT",
+        "Access-Control-Allow-Origin": "*",
+        "ETag": "\"6a805e47-a602c\"",
+        "expires": "Tue, 29 Sep 2026 07:27:05 GMT",
+        "Cache-Control": "max-age=600",
+        "x-proxy-cache": "MISS",
+        "X-GitHub-Request-Id": "FF9A:3ACF1C:24F204:265C96:6ABB65EF",
+        "x-github-edge-region": "southeastasia",
+        "Accept-Ranges": "bytes",
+        "Age": "0",
+        "Date": "Tue, 29 Sep 2026 07:17:06 GMT",
+        "Via": "1.1 varnish",
+        "X-Served-By": "cache-qpg1226-QPG",
+        "X-Cache": "MISS",
+        "X-Cache-Hits": "0",
+        "X-Timer": "S1790666226.748110,VS0,VE265",
+        "Vary": "Accept-Encoding",
+        "X-Fastly-Request-ID": "f5127199de848cc64d66bd0bf5ff05f1b33d6a6a"
+      }
+    }
+  ],
+  "seconds": 1.536906554014422
+}

@@ -1,0 +1,38 @@
+{
+  "phase": "execute",
+  "slot": 1,
+  "mem_available_at_admission": 5232209920,
+  "name": "valid",
+  "command": [
+    "/home/grace/projects/pq-did/experiments/r0_credvalid_exec24_1/target/release/pqdid-r0-host",
+    "run",
+    "valid"
+  ],
+  "limit_seconds": 60,
+  "memory_max": 2147483648,
+  "network": false,
+  "start_time_UTC": "2026-09-19T03:37:32Z",
+  "status": "pass",
+  "wall_seconds": 0.6496659370022826,
+  "exit_code": 0,
+  "stop_reason": null,
+  "effective_cgroup": {
+    "memory.max": "2147483648",
+    "memory.swap.max": "0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "sampled_process_tree_RSS_peak": 68956160,
+  "sampled_cgroup_charge_peak": 48369664,
+  "sampled_swap_peak": 0,
+  "sampled_cgroup_kernel_peak": 48402432,
+  "sampled_temporary_bytes_peak": 0,
+  "sampled_experiment_disk_peak": 5759820771,
+  "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+  "log": "evidence/valid.log",
+  "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~20 ms excluding metadata/disk polling can double-count shared pages and miss peaks; inspect cgroup memory.peak independently.",
+  "cgroup_memory_peak_bytes": 48459776,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+  "temporary_bytes_at_exit": 0,
+  "execution_outcome": "completed"
+}

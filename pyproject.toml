@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling==1.32.0", "editables==0.5"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pqdid"
+version = "0.0.1"
+description = "Environment and primitive smoke checks for PQ-DID research"
+readme = "README.md"
+requires-python = ">=3.14,<3.15"
+dependencies = ["liboqs-python==0.16.0"]
+
+[dependency-groups]
+dev = ["pytest==9.1.1", "ruff==0.16.8"]
+build = ["hatchling==1.32.0", "editables==0.5"]
+
+[tool.uv]
+required-version = "==0.12.15"
+cache-dir = ".cache/uv"
+python-downloads = "never"
+
+[tool.uv.sources]
+liboqs-python = { url = "https://github.com/open-quantum-safe/liboqs-python/archive/c6378cd5c8db74c0adf34ddcfbb96ee9c99f8061.tar.gz" }
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pqdid"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/smoke"]
+addopts = "-ra --strict-markers"
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100
+extend-exclude = ["native/.deps", "native/build", ".tools", ".cache"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

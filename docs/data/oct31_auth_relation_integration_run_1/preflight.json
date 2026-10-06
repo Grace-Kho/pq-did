@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "proposal_and_v1_preserved": true,
+  "no_codewords_allocated": true,
+  "storage": {
+    "new_evidence_bytes": 41594,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 25283027,
+    "artifact_bytes": 58112659,
+    "temporary_bytes": 0
+  }
+}

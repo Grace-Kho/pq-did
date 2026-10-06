@@ -1,0 +1,164 @@
+{
+  "status": "SPEC-003 pending, not user-approved",
+  "current": "equality initial 1; magnitude accumulator initial zero",
+  "alternative": "first XNOR; first partial product",
+  "cases": [
+    {
+      "kind": "equality",
+      "width": 1,
+      "current": {
+        "counts": {
+          "xor": 1,
+          "and_": 1,
+          "not_": 1,
+          "inputs": 2
+        },
+        "gates": 3,
+        "fingerprint": "f6a4bd2c5c80f8164edb68bc752c196ac6624d977cb22b44b452e4e02e7c5625",
+        "serialised_bytes": 140
+      },
+      "alternative": {
+        "counts": {
+          "xor": 1,
+          "and_": 0,
+          "not_": 1,
+          "inputs": 2
+        },
+        "gates": 2,
+        "fingerprint": "890ae067f2d288e03a34ca432162f22b348ed72beaea2575d1fcece27c7f47b1",
+        "serialised_bytes": 123
+      }
+    },
+    {
+      "kind": "equality",
+      "width": 2,
+      "current": {
+        "counts": {
+          "xor": 2,
+          "and_": 2,
+          "not_": 2,
+          "inputs": 4
+        },
+        "gates": 6,
+        "fingerprint": "6d2975ea29ecfcda8c70a9441cac8c1bf3814675fd9ab14565bde8eb5e470214",
+        "serialised_bytes": 191
+      },
+      "alternative": {
+        "counts": {
+          "xor": 2,
+          "and_": 1,
+          "not_": 2,
+          "inputs": 4
+        },
+        "gates": 5,
+        "fingerprint": "f87e9dd9ae7fc280b5719afaf14539de2925265d891c30537449f204c7dd3fac",
+        "serialised_bytes": 174
+      }
+    },
+    {
+      "kind": "equality",
+      "width": 4,
+      "current": {
+        "counts": {
+          "xor": 4,
+          "and_": 4,
+          "not_": 4,
+          "inputs": 8
+        },
+        "gates": 12,
+        "fingerprint": "00488fa97dae5d1bcd13692314f48d6e5864b6a97de4ebb596c61ceb3b558c45",
+        "serialised_bytes": 293
+      },
+      "alternative": {
+        "counts": {
+          "xor": 4,
+          "and_": 3,
+          "not_": 4,
+          "inputs": 8
+        },
+        "gates": 11,
+        "fingerprint": "813eacb176f0e852bb1a0cf7c553d79e54f8bfce503f65b475aa68d8d2c9a7c8",
+        "serialised_bytes": 276
+      }
+    },
+    {
+      "kind": "multiply",
+      "width": 2,
+      "current": {
+        "counts": {
+          "xor": 78,
+          "and_": 53,
+          "not_": 15,
+          "inputs": 7
+        },
+        "gates": 146,
+        "fingerprint": "d77d6f5d800c46d84afb4672749f7a699283099cdcde1424d460b9a2cdbd9fab",
+        "serialised_bytes": 2571
+      },
+      "alternative": {
+        "counts": {
+          "xor": 67,
+          "and_": 46,
+          "not_": 15,
+          "inputs": 7
+        },
+        "gates": 128,
+        "fingerprint": "2d1bec0008b14ed10ca2426b3b299afcac379e96cb728dc1f2f8f82f337b9a62",
+        "serialised_bytes": 2265
+      }
+    },
+    {
+      "kind": "multiply",
+      "width": 3,
+      "current": {
+        "counts": {
+          "xor": 129,
+          "and_": 91,
+          "not_": 21,
+          "inputs": 10
+        },
+        "gates": 241,
+        "fingerprint": "fa542c742808c15effd383c234f034775d612d6add23d0376596113b2ba37526",
+        "serialised_bytes": 4186
+      },
+      "alternative": {
+        "counts": {
+          "xor": 112,
+          "and_": 80,
+          "not_": 21,
+          "inputs": 10
+        },
+        "gates": 213,
+        "fingerprint": "6805c3fae92fe943b525f854421be4bcc918d9bf8fb3c1923c839e2d591345e9",
+        "serialised_bytes": 3710
+      }
+    },
+    {
+      "kind": "multiply",
+      "width": 64,
+      "current": {
+        "counts": {
+          "xor": 25932,
+          "and_": 21319,
+          "not_": 387,
+          "inputs": 193
+        },
+        "gates": 47638,
+        "fingerprint": "49981cf76acdfa81ebc1999ff366f2290807449d91553ba19b108fe67ff88b3c",
+        "serialised_bytes": 809935
+      },
+      "alternative": {
+        "counts": {
+          "xor": 25549,
+          "and_": 21064,
+          "not_": 387,
+          "inputs": 193
+        },
+        "gates": 47000,
+        "fingerprint": "ac7bcf80ad5f0193be930b36c2dfd84914ac086537c218d6debad091a415368e",
+        "serialised_bytes": 799089
+      }
+    }
+  ],
+  "test_source_sha256": "9d14fcce3de660fce00319b457c225defa6d6e07eaf2230f9d0364f433a05d45"
+}

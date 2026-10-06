@@ -1,0 +1,11 @@
+{
+  "failure_sha256": "8b7a070098e74ffc60febb480333f40d7f28829527c1136ddc979d18e84d4219",
+  "failure_record": "preparation.json",
+  "missing_report": [
+    "AGENTS.md"
+  ],
+  "correction": "include this exact root file in existing sealed-root partition; reuse its approved archive checksum",
+  "expected_names_removed": [],
+  "historical_hashes_changed": false,
+  "corrected_output": "preparation-corrected.json"
+}

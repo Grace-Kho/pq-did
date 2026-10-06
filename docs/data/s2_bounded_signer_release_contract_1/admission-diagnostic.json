@@ -1,0 +1,14 @@
+{
+  "package": "S2-BOUNDED-SIGNER-RELEASE-CONTRACT-1",
+  "command": ".venv/bin/python -I -B docs/data/s2_bounded_signer_release_contract_1/run_checks.py quality-final",
+  "phase": "pre-launch correction-record admission",
+  "exit_status": 1,
+  "failure": "KeyError: 'failure' at run_checks.py main correction*.json scan",
+  "cause": "The newly named correction-format.json job measurement matched the inherited correction*.json review-record glob",
+  "correction": "Replace the broad glob with the exact correction-quality.json reviewed record; no arbitrary records or failures can grant continuation",
+  "worker_launched": false,
+  "tests_executed": 0,
+  "resource_breach": false,
+  "accounting": "Pre-launch bookkeeping within the fixed five-second charge; measured workers remain charged in run-ledger.json",
+  "continuation": "Same unlaunched quality-final worker admitted once after source review; no execution retry, limit change or failed evidence removed"
+}

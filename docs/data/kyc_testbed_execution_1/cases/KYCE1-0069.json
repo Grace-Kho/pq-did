@@ -1,0 +1,97 @@
+{
+  "invocation_id": "KYCE1-0069",
+  "case_id": "R-1-1",
+  "work_event_reservation": 0,
+  "ordinal": 69,
+  "cumulative_invocations": 1043,
+  "status": "pass",
+  "details": {
+    "operation": "public-history-fetch-verify-and-atomic-wallet-update",
+    "history_length": 1,
+    "operation_ns": 108884072,
+    "setup_ns": 1316948916,
+    "record_bytes": 11162,
+    "messages": {
+      "credential": {
+        "canonical": 11012,
+        "transport": 11012
+      },
+      "enrolment_body": {
+        "canonical": 7720,
+        "transport": 7720
+      },
+      "initial_witness_path": {
+        "canonical": 960,
+        "transport": 960
+      },
+      "initial_state": {
+        "canonical": 3427,
+        "transport": 3427
+      },
+      "enrolment_signature": {
+        "canonical": 3309,
+        "transport": 3309
+      },
+      "revocation_request_body": {
+        "canonical": 581,
+        "transport": 581
+      },
+      "revocation_request_signature": {
+        "canonical": 3309,
+        "transport": 3309
+      },
+      "published_revocation_state": {
+        "canonical": 3427,
+        "transport": 3427
+      }
+    },
+    "storage": [
+      {
+        "path": "manager/authority.sqlite3",
+        "bytes": 143360,
+        "secret_material": false
+      },
+      {
+        "path": "verifier-A/authority.sqlite3",
+        "bytes": 57344,
+        "secret_material": false
+      },
+      {
+        "path": "verifier-B/authority.sqlite3",
+        "bytes": 57344,
+        "secret_material": false
+      },
+      {
+        "path": "issuer/issuer.sqlite3",
+        "bytes": 61440,
+        "secret_material": false
+      },
+      {
+        "path": "holder/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      },
+      {
+        "path": "holder-other-0/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder-other-0/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      }
+    ],
+    "fixture_sha256": "c32614417533c73098a70e0bcf209b990b105bb0a6531be655ddc2a091214d65",
+    "privacy": "fully disclosed baseline; no private proof",
+    "concurrency": 1
+  },
+  "seconds": 1.4270474589429796,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions or evaluations. Host setup included in time and resource guard."
+}

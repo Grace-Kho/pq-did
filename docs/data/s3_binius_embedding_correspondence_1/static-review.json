@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "commands": [
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "check",
+      "--select",
+      "I",
+      "--fix",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/run.py",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/checks.py"
+    ],
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "format",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/run.py",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/checks.py"
+    ],
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "check",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/run.py",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/checks.py"
+    ],
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "format",
+      "--check",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/run.py",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/checks.py"
+    ]
+  ],
+  "sealed_predecessor_paths": 56,
+  "retained_source_blobs_rechecked": 10,
+  "review_identity_verified": true,
+  "tests": 0,
+  "builds": 0,
+  "proofs": 0,
+  "invocations_unchanged": 1140,
+  "source_acquisition_memory_compliance_certified": false,
+  "resource_observation": "Inherited unchanged from predecessor; no acquisition now"
+}

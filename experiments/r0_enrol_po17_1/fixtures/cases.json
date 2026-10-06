@@ -1,0 +1,19 @@
+{
+  "cases": [
+    {
+      "name": "enrol-alpha-42",
+      "operation": "enrol",
+      "public": "fixtures/public/enrol-alpha-42.bin",
+      "private": "fixtures/private/enrol-alpha-42.bin",
+      "reference_expected": true,
+      "public_SHA256": "e6e505a433aed207ee2cfbb8e9cb72ab01b426739ed731e7b3e598f71cf939c8",
+      "private_fixture_SHA256": "e2bf2101764d9ed2728649b05512f6c97059f84a2d190b31677fd55435d15c7b",
+      "synthetic_only": true,
+      "public_sha256": "e6e505a433aed207ee2cfbb8e9cb72ab01b426739ed731e7b3e598f71cf939c8",
+      "private_sha256": "e2bf2101764d9ed2728649b05512f6c97059f84a2d190b31677fd55435d15c7b",
+      "expected_journal": "fixtures/public/enrol-alpha-42.journal.bin",
+      "journal_sha256": "aebac85219e0df161bda4e9d6661e4a7eccc619812eb45bb106ee46180cfa41c",
+      "journal_bytes": 15380
+    }
+  ]
+}

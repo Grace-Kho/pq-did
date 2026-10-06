@@ -1,0 +1,13 @@
+{
+  "kind": "Second explicit source-reviewed lint correction; no automatic retry",
+  "diagnosis": "Two long Markdown lines in closure helper added while documenting the first failure",
+  "correction": "Wrap the prose; preserve both failed runs; source-format-final and quality-final each run once. All wall times charged to analysis.",
+  "failure_sha256": {
+    "quality-corrected.log": "68f6538658afba10336c1a47c2c0584fd44c395fdeb78e3d44f6abcf456e31aa",
+    "quality-corrected.json": "c1bc462aec0a1a30816717a29e9ec20d815aaad258c3b10f667083ca75ba4002",
+    "quality-corrected.service.json": "0c8fcea8b257a4b391813487912060cbb2f88b4eee7bc52a01afb4a6255d1259",
+    "STOP-quality-corrected.json": "7792f7d37bfcf6086b4479da218692ca269225851d54daeeb4dc55c24eb5a012"
+  },
+  "limits_changed": false,
+  "full_audits_already_run": 0
+}

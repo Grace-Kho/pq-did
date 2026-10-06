@@ -1,0 +1,40 @@
+{
+  "version": "kyc-delivery-export/1",
+  "counts": {
+    "delivery-v2-smoke": 4
+  },
+  "pooled_statistics": null,
+  "failures": [],
+  "component_measurements": {
+    "category": "component-only",
+    "source": "docs/implementation_consolidation.md",
+    "included_in_baseline_rows": false
+  },
+  "private_proof_metrics": {
+    "prove_seconds": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "verify_seconds": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "proof_bytes": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "peak_memory": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "throughput": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "privacy_overhead": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    }
+  },
+  "interpretation": "Separate datasets; four smoke trials do not establish distributions or capacity."
+}

@@ -1,0 +1,305 @@
+{
+  "jobs": [
+    {
+      "name": "source-quality",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_completion_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-kyc-completion-1-source-quality",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 77949,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30136934,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4106301440,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.43425292894244194,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10633216",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "25608192",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.08116463595069945,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 32612352,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "preflight",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_completion_1/checks.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-kyc-completion-1-preflight",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 83500,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30142485,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4101316608,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.4690491589717567,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10330112",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "27295744",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.1011481371242553,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 37847040,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "prepare",
+      "phase": "audit",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_completion_1/preservation.py",
+        "prepare"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-kyc-completion-1-prepare",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 91843,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30150828,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4101693440,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.8824170609004796,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10346496",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "46034944",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.5449324338696897,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 61128704,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "full-audit",
+      "phase": "audit",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_completion_1/preservation.py",
+        "full-audit"
+      ],
+      "limit_seconds": 25,
+      "child_seconds": 24,
+      "status": "pass",
+      "unit": "pqdid-kyc-completion-1-full-audit",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 108077,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30167062,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4107923456,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 4.647643513046205,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10633216",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "47980544",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 4.32427525613457,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 64446464,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "final-readback",
+      "phase": "audit",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_completion_1/preservation.py",
+        "readback"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-kyc-completion-1-final-readback",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 146928,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30205913,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4084281344,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 2.3469215310178697,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12890112",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "51265536",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.6860622698441148,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 60174336,
+      "artifact_observed_peak_bytes": 58966547
+    }
+  ],
+  "invocations": [],
+  "builds": [],
+  "bookkeeping": [
+    {
+      "purpose": "Opening contract, ledger and official W3C source review; conservative manual charge",
+      "seconds": 50
+    },
+    {
+      "purpose": "Measured opening seal/prefix and manuscript identity recording",
+      "seconds": 0.016011371975764632
+    },
+    {
+      "purpose": "Concrete execution/mapping proposal and isolated unvalidated wallet preparation; conservative manual-work charge",
+      "seconds": 130
+    },
+    {
+      "purpose": "Measured matrix and inherited completion-workflow preparation",
+      "seconds": 0.000895713921636343
+    },
+    {
+      "purpose": "Final preparation evidence and required-check coordination; conservative manual charge",
+      "seconds": 10.00030791386962
+    },
+    {
+      "purpose": "Preparation checkpoint report/manifest finalisation; conservative manual charge",
+      "seconds": 10
+    },
+    {
+      "purpose": "Measured exact completion-unit shutdown",
+      "seconds": 0.11299373512156308
+    },
+    {
+      "purpose": "Final preparation inventory/resource/seal readback; conservative bounded completion charge",
+      "seconds": 6
+    }
+  ],
+  "work_events": 77593603,
+  "work_events_reserved": 0
+}

@@ -1,0 +1,81 @@
+{
+  "recorded_at_utc": "2026-09-18T03:47:15.262906+00:00",
+  "protected_files": 6870,
+  "unchanged_protected_files": 6864,
+  "missing": [],
+  "changed_existing": {
+    "README.md": {
+      "before": "dd6060c340cf92e06c0eb90a922609c7e28560d9c787e344d75fa0a2d5034417",
+      "after": "1513e9bfc220996dfddfb7aefc000415de4f36b283c2053055cc6d51cf4a6b9c"
+    },
+    "configs/suite.json": {
+      "before": "ce3f1d381537552e3db36a91586e18b7b42b42c0c36929abb637701b6816b2a9",
+      "after": "055eed721e49ff09dfd07292746b0c261dfe0b07dbf37aa0ae7402bb4200a11a"
+    },
+    "docs/implementation_spec.md": {
+      "before": "2a2bf71b6b06764cbd7d0d9b2d8f78c4eea5f3b61c0fb9e2b0bbe1d263256e47",
+      "after": "0f0d3b20170e9d86b73bb8b04ff51f6b696656267341ae42fe1205453cf55dfe"
+    },
+    "docs/spec_issues.md": {
+      "before": "c8a81864d6299f308441a9e73c309547ad33bec60f964ec5c9a1b623c04bac84",
+      "after": "e6d06045f79c4238e252e8aadd4afdfd654d9fb4182a0baf4c053f192df7fb55"
+    },
+    "docs/status.md": {
+      "before": "217a9449f7c2648fbdc91edd01ffee7c3272e941d1b1acf01efce6bb3bb8902b",
+      "after": "5dc3c5b00f40d464c29c340352da25562162ce316cf608bfd9f90d383b6b9649"
+    },
+    "docs/traceability.md": {
+      "before": "28e821afea203e364d63bb45e35989a0d0621e929cc819850f21c87555a99660",
+      "after": "8774fd654cd10d7125da776f699e5cf489af345f0dda646b186118db7838e04c"
+    }
+  },
+  "new_files_sha256": {
+    "docs/data/stage3_signature_inputs_development.json": "3d324516c1f022bee259364b83de9fc9be415c38a73de36e7994a31c14bc19a7",
+    "docs/data/stage3_signature_inputs_focused.json": "f3c52d1bec1d03f82271d1336454849db758d8d8723d4b199bf8027049987bd0",
+    "docs/data/stage3_signature_inputs_measurements.json": "dc97d887f194576198c7f0d58c6044acc01ebced27cc06c94fe83df07bee1590",
+    "docs/data/stage3_signature_inputs_regression.json": "8199a55d5903e7e015d83e8dab3e4930d64888c35f10e6d5363fd6e8decfd6a1",
+    "docs/stage3_signature_inputs.md": "e4f4f0a2650054844b1d2e171c16fc9530ea51c37034ebe431af2a382926ede3",
+    "scripts/measure_signature_inputs.py": "8e14eec948e7742e33b0e876bbaac9a7c558f23b096c81aac1c75c6225704469",
+    "scripts/validate_signature_inputs.py": "15a56e36c9647b03f91933a89ebbce17e883a3e946c27361599306e7d3a3e49b",
+    "src/pqdid/circuits/signature.py": "5fb391650765018230c4f9bc54370ddf28c1c2ce7fd92b9bef93113aeb9c6133",
+    "src/pqdid/circuits/signature_inputs.py": "67f3d3ace81385a93ef9c113c6b4cbd58a00d028fb53cebfaed145055d612762",
+    "tests/reference/division_alternative.py": "85a488442c6ad5c44702c865abc84e549b295d4f83af3d5b8dc8070df763d849",
+    "tests/reference/signature_oracle.py": "dbc14fd88a071cad58915da7c8cef2bd6b6f800d27e5c2b7ae156f7c1cdc1ed8",
+    "tests/unit/test_signature_circuit.py": "976f9e63f34bc4b2dceb2b39dada271384ba127bf84f8523fc759fc546e04602",
+    "tests/unit/test_signature_inputs.py": "c50fdaa518ea5bf465d31a25ff91fba8240680852faaf9bd85670e1de98b37cd",
+    "tests/unit/test_spec004_alternatives.py": "85333fe63f2b49a45f7b8a7d0625b46c6b0f7c6a46a7a16e5b8a9a6ddb1f2da1"
+  },
+  "confirmed_manifest_and_all_previous_fields_unchanged": true,
+  "agreed_clarifications": [
+    "SPEC-001",
+    "SPEC-002",
+    "SPEC-003"
+  ],
+  "pending_clarification": "SPEC-004",
+  "all_recorded_source_hashes_match": true,
+  "focus_test_outcomes": {
+    "passed": 81
+  },
+  "regression_test_outcomes": {
+    "passed": 1404
+  },
+  "probe_outcomes": {
+    "passed": 39,
+    "resource_limit": 12
+  },
+  "completed_modes_identical": true,
+  "historical_predicate_fingerprints_reproduced": true,
+  "resource_profile_sha256": "ac67e0b3fe89c8a91a55c13f8f2e75323c02c9773bfe2007771a61f8c3b623b9",
+  "checks": [
+    {
+      "command": ".venv/bin/ruff check .",
+      "outcome": "passed"
+    },
+    {
+      "command": ".venv/bin/ruff format --check .",
+      "outcome": "passed",
+      "files": 115
+    }
+  ],
+  "scope": "No complete authentication count/proof claim. Environment, native/editor files, manuscript, old source/tests/vectors/data and agreed conventions preserved."
+}

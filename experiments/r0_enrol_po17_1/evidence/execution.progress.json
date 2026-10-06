@@ -1,0 +1,20 @@
+[
+  {
+    "index": 0,
+    "padded_capacity": 131072,
+    "po2": 17,
+    "user_cycles": 71057
+  },
+  {
+    "index": 1,
+    "padded_capacity": 131072,
+    "po2": 17,
+    "user_cycles": 85969
+  },
+  {
+    "index": 2,
+    "padded_capacity": 131072,
+    "po2": 17,
+    "user_cycles": 39285
+  }
+]

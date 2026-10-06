@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "before": {
+    "pqdid-kyc-completion-1-source-quality.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    "pqdid-kyc-completion-1-preflight.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    "pqdid-kyc-completion-1-prepare.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    "pqdid-kyc-completion-1-full-audit.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    "pqdid-kyc-completion-1-final-readback.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    }
+  },
+  "slice_before": {
+    "LoadState": "loaded",
+    "ActiveState": "active",
+    "SubState": "active",
+    "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-kyc.slice/pqdid-kyc-completion.slice/pqdid-kyc-completion-1.slice"
+  },
+  "slice_after": {
+    "LoadState": "loaded",
+    "ActiveState": "inactive",
+    "SubState": "dead",
+    "ControlGroup": ""
+  },
+  "exact_cgroup_paths_checked": [
+    "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-kyc.slice/pqdid-kyc-completion.slice/pqdid-kyc-completion-1.slice"
+  ],
+  "descendants_terminated": true,
+  "other_units_untouched": true,
+  "seconds": 0.11299373512156308
+}

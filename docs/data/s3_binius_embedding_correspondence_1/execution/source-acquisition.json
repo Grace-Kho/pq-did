@@ -1,0 +1,129 @@
+{
+  "commit": "441fbf51ff0bcb0bcd28f3f1b73f4954029e8577",
+  "sources": [
+    {
+      "upstream_path": "crates/field/src/arch/portable/arithmetic/ghash.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--field--src--arch--portable--arithmetic--ghash.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/field/src/arch/portable/arithmetic/ghash.rs",
+      "bytes": 9606,
+      "git_blob": "a21b0dff65a46c01114daafc2d8984fcb041a8b5",
+      "sha256": "3e77c58258a5ae980e1c2618b111bb09bc356c88f9253d86f6bb10a55245276f"
+    },
+    {
+      "upstream_path": "crates/field/src/fields/ghash.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--field--src--fields--ghash.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/field/src/fields/ghash.rs",
+      "bytes": 16000,
+      "git_blob": "4448c59366d6fbc02e67a19bf396c0d628cd771b",
+      "sha256": "0c5dd0235ae6a05acb91faab2003cb40e03eb995981086befbdce1205efbba0a"
+    },
+    {
+      "upstream_path": "crates/field/src/lib.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--field--src--lib.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/field/src/lib.rs",
+      "bytes": 1336,
+      "git_blob": "308456bbe4077775a51b78689c6e7f8938d60d70",
+      "sha256": "9d6e34a44c5b87a07b0ad39dfbd29b83e5772af3619dd3de2d71223ba578bf2a"
+    },
+    {
+      "upstream_path": "crates/field/src/packed_fields/ghash.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--field--src--packed_fields--ghash.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/field/src/packed_fields/ghash.rs",
+      "bytes": 4023,
+      "git_blob": "2bd05a9de802af10e628073c79237a4dc310688b",
+      "sha256": "68d07e57b1c029525204f944a4a9d8d8af2e090979a777e0fe847f83c04030d9"
+    },
+    {
+      "upstream_path": "crates/iop-prover/src/logup_star.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--iop-prover--src--logup_star.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/iop-prover/src/logup_star.rs",
+      "bytes": 28270,
+      "git_blob": "c897fb3b6352bd0e60c758a30d373f1fd6dc417c",
+      "sha256": "aba28b3834c813a93d8799a7eeafde62a0e42bd1d1ae178586a2ee8fd1ea2ed6"
+    },
+    {
+      "upstream_path": "crates/iop/src/logup_star.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--iop--src--logup_star.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/iop/src/logup_star.rs",
+      "bytes": 9497,
+      "git_blob": "ac488399f4a253aa72f3d07583d7caaed4af6561",
+      "sha256": "2c96d14b83da86b2614032e3b46a224842bae3cc1c330a3a16a94993c08227f5"
+    },
+    {
+      "upstream_path": "crates/ip-prover/src/logup_star/mod.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--ip-prover--src--logup_star--mod.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/ip-prover/src/logup_star/mod.rs",
+      "bytes": 1931,
+      "git_blob": "cb8152e6c23a30f2c30b81abe4026bb40494d784",
+      "sha256": "cc12430fe41f4d57e3d30f2388c27b74c1f965f63fa7e3aabef517532a3f71a5"
+    },
+    {
+      "upstream_path": "crates/ip-prover/src/logup_star/prove.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--ip-prover--src--logup_star--prove.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/ip-prover/src/logup_star/prove.rs",
+      "bytes": 39298,
+      "git_blob": "87950f9fcb22d4798826ac03df990dfc24ec0547",
+      "sha256": "4eda9751654424fb8d50a06eb7faebd39ec78380963cc1f38014aeda070dd120"
+    },
+    {
+      "upstream_path": "crates/ip-prover/src/logup_star/pushforward.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--ip-prover--src--logup_star--pushforward.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/ip-prover/src/logup_star/pushforward.rs",
+      "bytes": 7445,
+      "git_blob": "d2e087f51ae540a4b82eda97c1bac63d93fe5064",
+      "sha256": "3421ada882b6b52cdb0ad68665cb81f94c45ada7885d0142a9f56eef3a11096b"
+    },
+    {
+      "upstream_path": "crates/ip-prover/src/logup_star/witness.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--ip-prover--src--logup_star--witness.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/ip-prover/src/logup_star/witness.rs",
+      "bytes": 22476,
+      "git_blob": "06255e65f63d7a7d494a2dc8599b786e2b068ff8",
+      "sha256": "2480323b2cc1c0bc2b6d5d069265b88d972840e25facd690db362e72a92d8eb1"
+    },
+    {
+      "upstream_path": "crates/ip/src/logup_star/error.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--ip--src--logup_star--error.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/ip/src/logup_star/error.rs",
+      "bytes": 816,
+      "git_blob": "9faacf880f817dfc9c5998a34e9af64925565171",
+      "sha256": "2e66e362a78ad5b8805e7988943f4d662460e73569584a332870ec41f442fcd4"
+    },
+    {
+      "upstream_path": "crates/ip/src/logup_star/mod.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--ip--src--logup_star--mod.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/ip/src/logup_star/mod.rs",
+      "bytes": 5535,
+      "git_blob": "f7dc4029f9e8fb5e9e8a9725ed1dee4f70bf8e6d",
+      "sha256": "18b515ca5b4e3c0d026438c96efb4982c10dd1ed2d2ab94c31bf40e8c2022a04"
+    },
+    {
+      "upstream_path": "crates/ip/src/logup_star/output.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--ip--src--logup_star--output.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/ip/src/logup_star/output.rs",
+      "bytes": 3843,
+      "git_blob": "204c2751397a09da023c12acef314977276e4a92",
+      "sha256": "0f6e096fae9e77a4748039def8e1d81f76f9fba55710b19f8de5b8d4b2a363bd"
+    },
+    {
+      "upstream_path": "crates/ip/src/logup_star/pushforward.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--ip--src--logup_star--pushforward.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/ip/src/logup_star/pushforward.rs",
+      "bytes": 8548,
+      "git_blob": "692d137a6b7d62c00d043b8e1e0b96b0ae07cc51",
+      "sha256": "9d7b50f9d7fc525d68b3b97791cd543e8562cbfd0571365f6cf561e930beb08d"
+    },
+    {
+      "upstream_path": "crates/ip/src/logup_star/verify.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/execution/sources/crates--ip--src--logup_star--verify.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/ip/src/logup_star/verify.rs",
+      "bytes": 18155,
+      "git_blob": "4f95783feb27a15f086c6247e4a6a7f000615760",
+      "sha256": "13ff337f831e41fef0dab40f2ef7f06888b881704e71466df700b53142b427be"
+    }
+  ],
+  "passed": true,
+  "downloaded_code_executed": false,
+  "memory_scope": "256 MiB cgroup established before interpreter; measured in acquire.service.json",
+  "seconds": 4.549913078080863
+}

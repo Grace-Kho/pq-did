@@ -1,0 +1,12 @@
+{
+  "method": "reuse completed audit, selected-file and archive-only continuation",
+  "previous_archive_identity_verified": true,
+  "previous_payloads_match_sources": true,
+  "historical_audit_reused": "/home/grace/projects/pq-did/docs/data/ligetron_full_path_engineering_1/result.json",
+  "historical_audit_sha256": "18836410ec5c215ffd75cc766972a91d459ce5c151228a6e617ca7365dcff33b",
+  "historical_comparisons_reused": 10901,
+  "historical_audit_rerun": false,
+  "historical_files_modified": [],
+  "no_background_workers_started": true,
+  "diagnostic_children_exited": true
+}

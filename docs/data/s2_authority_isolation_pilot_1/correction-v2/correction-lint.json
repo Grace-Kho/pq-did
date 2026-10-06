@@ -1,0 +1,4 @@
+{
+  "failure": "v2-lint-fix",
+  "reason": "One import ordering issue fixed by Ruff; remaining E501 in a diagnostic metric label split into adjacent string literals. No semantic/runtime change, resource failure or test invocation. Original failure retained."
+}

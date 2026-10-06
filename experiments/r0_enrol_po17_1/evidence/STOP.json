@@ -1,0 +1,8 @@
+{
+  "package": "R0-ENROL-PO17-1",
+  "reason": "authorised execution and conditional proof completed; independent verification and eight tamper checks passed",
+  "proof_attempts_this_package": 1,
+  "proof_attempts_cumulative": 2,
+  "remaining": 1,
+  "further_execution_or_proving_authorised": false
+}

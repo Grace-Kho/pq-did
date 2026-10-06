@@ -1,0 +1,17 @@
+{
+  "sqlite": "3.46.1",
+  "source_id": "2024-08-13 09:16:08 c9c2ab54ba1f5f46360f1b4f35d849cd3f080e6fc2b6c60e91b16c63f69aalt1",
+  "settings": {
+    "journal_mode": "delete",
+    "synchronous": 3,
+    "locking_mode": "normal",
+    "foreign_keys": 1,
+    "read_uncommitted": 0,
+    "busy_timeout": 0,
+    "temp_store": 2,
+    "mmap_size": 0,
+    "cache_size": -2048,
+    "page_size": 4096,
+    "max_page_count": 128
+  }
+}

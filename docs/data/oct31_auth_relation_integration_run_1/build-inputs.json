@@ -1,0 +1,31 @@
+{
+  "sha256": {
+    "experiments/auth_relation_integration_1/native/artifact-outputs.json": "93ac9ff2710027b632f3929d71e2331a0cbd881a4df82edc687f62dd13668705",
+    "experiments/auth_relation_integration_1/native/relation_adapter.cpp": "0c2776c959fa31786c94ea73678aa30c109c49dd77da89ca885d6302cbaf6c07",
+    "experiments/auth_relation_integration_1/native/CMakeLists.txt": "285e7cd3c2575bfa88b73a96baf458c167b280d1f5bee215b16e322e36a516df",
+    "experiments/aurora_masking_milestone_1/build/libiop_native.a": "89a665529dcf5df0a9bb47dacce2ee46f59bcfc5770e85d1621b413463ef725b",
+    "experiments/aurora_masking_milestone_1/build/libff-build/libff/libff.a": "285fe3655540f703eb78b0829e11d6d2b70b22ce2f9c057d3a023f3d6613d3b2"
+  },
+  "commands": [
+    [
+      "/usr/bin/cmake",
+      "-S",
+      "/home/grace/projects/pq-did/experiments/auth_relation_integration_1/native",
+      "-B",
+      "/home/grace/projects/pq-did/experiments/auth_relation_integration_1/build",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_CXX_FLAGS_RELEASE=-O0 -g0"
+    ],
+    [
+      "/usr/bin/cmake",
+      "--build",
+      "/home/grace/projects/pq-did/experiments/auth_relation_integration_1/build",
+      "--target",
+      "relation_adapter",
+      "--parallel",
+      "1"
+    ]
+  ]
+}

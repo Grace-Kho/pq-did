@@ -1,0 +1,53 @@
+{
+  "name": "full-audit",
+  "phase": "audit",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/compact_auth_representation_1/preservation.py",
+    "full-audit"
+  ],
+  "limit_seconds": 60,
+  "child_seconds": 59,
+  "status": "pass",
+  "unit": "pqdid-compact-auth-1-full-audit",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 270281,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 26261931,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4068847616,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false,
+  "seconds": 4.400144165963866,
+  "exit_code": 0,
+  "stop": null,
+  "worker": {
+    "before": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "10375168",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "after": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "46227456",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "child_exit_code": 0,
+    "child_seconds": 4.061071393080056,
+    "resource_breach": false,
+    "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+  },
+  "sampled_tree_rss_peak": 62783488,
+  "artifact_observed_peak_bytes": 58966547
+}

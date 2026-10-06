@@ -1,0 +1,18 @@
+{
+  "prior_coverage_file": "docs/data/kyc_testbed_execution_1/coverage.json",
+  "prior_coverage_sha256": "69d2ab6e066a80e459ea2e1275adea7786bdbabbbed5cde41fc0ab8ca98f3ac4",
+  "delta": {
+    "working_baseline": "Issuer v2 migration, atomic outcome/head persistence, bounded history and actual ML-DSA connected release validated",
+    "local_PQ_DID_relations": "Prior relation/holder/durable authority evidence reused; no new complete relation execution",
+    "synthetic_proof": "Historical scenarios preserved; not used to claim acceptance in this package",
+    "genuine_private_authentication": "Unavailable and fail-closed"
+  },
+  "requirements": [
+    "R-012\u2013022: affected reference issuer and independent baseline verifiers",
+    "R-028\u2013031: permanent allocation, recipient outcome/recovery, scaling evidence",
+    "R-052: previous experimental local mappings unchanged; standard interoperability unresolved"
+  ],
+  "old_21_full_relation_checks": "unrun",
+  "workstream_complete": false,
+  "stages_2_3_complete": false
+}

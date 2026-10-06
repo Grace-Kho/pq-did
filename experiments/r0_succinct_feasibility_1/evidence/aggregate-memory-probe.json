@@ -1,0 +1,29 @@
+{
+  "phase": "control",
+  "name": "aggregate-memory-probe",
+  "command": [
+    "/usr/bin/python3",
+    "scripts/control_probe.py"
+  ],
+  "limit_seconds": 15,
+  "memory_max": 67108864,
+  "network": false,
+  "start_time_UTC": "2026-09-18T17:48:34Z",
+  "status": "failed",
+  "wall_seconds": 0.11463298699527513,
+  "exit_code": 1,
+  "stop_reason": null,
+  "effective_cgroup": {
+    "memory.max": "67108864",
+    "memory.swap.max": "0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "sampled_process_tree_RSS_peak": 29929472,
+  "sampled_cgroup_charge_peak": 7618560,
+  "sampled_swap_peak": 0,
+  "sampled_experiment_disk_peak": 2213916,
+  "systemd_final_properties": "Result=oom-kill\nExecMainCode=2\nExecMainStatus=9\nControlGroup=\nMemoryPeak=67108864\nMemorySwapPeak=0\nCPUUsageNSec=86079000\n",
+  "log": "evidence/aggregate-memory-probe.log",
+  "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+}

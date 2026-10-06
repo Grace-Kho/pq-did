@@ -1,0 +1,47 @@
+{
+  "package": "S3-AURORA-NATIVE-TRANSCRIPT-PILOT-1",
+  "previous_finalisation_manifest_sha256": "8cb67c8fc6228d7cfde6e785bb60efa6acf6e9c0a7dd81f9eea44ed9a38f5565",
+  "previous_implementation_remaining_seconds": 4.557379659032449,
+  "new_implementation_seconds": 300,
+  "opening_implementation_remaining_seconds": 304.55737965903245,
+  "implementation_aggregate_ceiling_seconds": 674,
+  "implementation_opening_charged_seconds": 369.44262034096755,
+  "package_seconds": 300,
+  "completion_reserve_seconds": 30,
+  "bookkeeping_charge_seconds": 5,
+  "native_invocations_opening": 402,
+  "native_invocations_ceiling": 426,
+  "native_invocations_authorised": 24,
+  "build_attempts_maximum": 2,
+  "native_memory_bytes": 1073741824,
+  "audit_memory_bytes": 268435456,
+  "build_artifacts_bytes": 134217728,
+  "new_evidence_bytes": 2097152,
+  "legacy_cumulative_output_bytes": 10071395,
+  "legacy_cumulative_output_cap_bytes": 10485760,
+  "legacy_aggregate_output_cap_retained": true,
+  "opening_analysis_remaining_unchanged": 211.51345554180443,
+  "opening_isolation_remaining_unchanged": 250.22,
+  "opening_proof_ledger": {
+    "used": 2,
+    "unused": 1
+  },
+  "command_reservations_seconds": {
+    "native-preflight": 5,
+    "quality": 2,
+    "prepare": 2,
+    "full-audit": 6
+  },
+  "native_admission": "Require installed pinned header/library closure first. No build or case admitted if missing. At most two <=55-second builds and sixteen <=2-second cases would fit the 270-second work window if prerequisites were available. No build-time estimate asserted without dependency closure.",
+  "bookkeeping_scope": "Existing five-second conservative source/configuration/evidence allowance, plus actual guarded command durations; no analysis/isolation transfer",
+  "selected_sources": [
+    "LICENSE",
+    "libiop/bcs/hashing/blake2b.hpp",
+    "libiop/bcs/hashing/blake2b.tcc",
+    "libiop/bcs/hashing/blake2b.cpp",
+    "libiop/bcs/bcs_common.tcc",
+    "libiop/bcs/bcs_prover.tcc",
+    "libiop/bcs/bcs_verifier.tcc",
+    "libiop/snark/aurora_snark.tcc"
+  ]
+}

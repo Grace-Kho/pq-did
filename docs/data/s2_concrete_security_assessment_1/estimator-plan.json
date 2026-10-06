@@ -1,0 +1,48 @@
+{
+  "status": "not-executed",
+  "runs": 0,
+  "reason": "Unchanged standard ML-DSA-65; published component evidence is applicable. No installed Sage, pinned local estimator or separate estimator allowance was found. Installation and cryptanalytic campaigns are not authorised.",
+  "local_estimator_commit": null,
+  "sage_version": null,
+  "reviewed_upstream_commit_not_installed": "53da5982597709ba0fdf94ea37a84d822310fd84",
+  "reviewed_sources": [
+    "https://github.com/malb/lattice-estimator/commit/53da5982597709ba0fdf94ea37a84d822310fd84",
+    "https://raw.githubusercontent.com/malb/lattice-estimator/53da5982597709ba0fdf94ea37a84d822310fd84/estimator/conf.py",
+    "https://raw.githubusercontent.com/malb/lattice-estimator/53da5982597709ba0fdf94ea37a84d822310fd84/estimator/lwe.py",
+    "https://raw.githubusercontent.com/malb/lattice-estimator/53da5982597709ba0fdf94ea37a84d822310fd84/estimator/sis.py"
+  ],
+  "retrieval_limits": ["GitHub commits API returned an internal retrieval error; the commit was resolved from the primary commit page.", "Pinned schemes.py raw retrieval failed; mutable main was inspected only as a preset warning, not a verified execution input."],
+  "instances": [
+    {
+      "id": "enhanced-key-recovery-MLWE",
+      "n": 1280, "m": 1536, "q": 8380417,
+      "Xs": {"type": "uniform_integer", "lower": -4, "upper": 4},
+      "Xe": {"type": "uniform_integer", "lower": -4, "upper": 4},
+      "mapping": "ring degree 256, secret module rank 5, equation rank 6; flatten negacyclic coefficient equations. Grant the attacker full t=A*s1+s2. Actual public key contains t1=Power2Round(t,13).",
+      "caveats": "Enhanced-information surrogate: not a direct attack on the actual rounded key. For actual t1, effective error s2-t0 is correlated and not simply uniform [-4,4]. Structured-matrix, leakage, signing-transcript and structural attacks are not covered by a generic LWE estimate."
+    },
+    {
+      "id": "forgery-relaxation-SIS",
+      "n": 1536, "m": 3072, "q": 8380417, "norm": "infinity", "length_bound": 724481,
+      "bound_derivation": "max(gamma1-beta, 2*gamma2+1+2^(d-1)*tau) = max(524092,724481). Dilithium v3.1 Eq.(7), Section 6.1 and Appendix C.3; same scalar ML-DSA-65 bounds.",
+      "mapping": "Homogeneous scalar relaxation of module relation with 6 equation polynomials and 5+6+1 unknown polynomials, including identity and target/challenge block; m=256*(k+l+1).",
+      "caveats": "SIS is only a relaxation of SelfTargetMSIS. A generic solution need not meet sparse-challenge/hash fixed-point constraints or produce a valid forgery. No complete QROM forgery estimate results."
+    },
+    {
+      "id": "strong-forgery-relaxation-SIS",
+      "n": 1536, "m": 2816, "q": 8380417, "norm": "infinity", "length_bound": 1048184,
+      "bound_derivation": "max(2*(gamma1-beta),4*gamma2+2)=max(1048184,1047554), Eq.(8); m=256*(k+l).",
+      "caveats": "Separate strong-unforgeability surrogate. The observed Dilithium3 preset instead uses m=3072 and bound=1048576. Do not silently substitute it or combine weak/strong objectives. PQ-DID's stated component requirement is EUF-CMA."
+    }
+  ],
+  "models": {
+    "classical_core_svp": "estimator.reduction.ADPS16(mode='classical') with an explicitly fixed shape model; leading asymptotic sieve-operation cost, not gates or a lower bound",
+    "quantum_core_svp": "estimator.reduction.ADPS16(mode='quantum') only for modelled reduction; surrounding guessing/search/memory costs need a separate quantum analysis",
+    "full_defaults_reviewed": "RC.MATZOV and GSA",
+    "LWE_rough_reviewed": "ADPS16 and GSA; principally primal usvp and dual_hybrid",
+    "SIS_rough_reviewed": "ADPS16 and LGSA for infinity-norm lattice attack; large_norm conditional Euclidean path not applicable here",
+    "comparison_rule": "Compare cheapest supported attacks only within the same problem, success criterion, units and resource model. Save every unsupported/failed/resource-limited output; no minimum over missing results."
+  },
+  "future_admission_required": "A justified request, approved isolated Sage/estimator environment at the reviewed commit, an explicit separate numerical execution budget, and review of all dependency versions; no installation/launch authorised by this plan.",
+  "prepared_commands": "See estimator-not-executed.md; they are input recipes, never executed in this package."
+}

@@ -1,0 +1,9 @@
+{
+  "original_command": "environment",
+  "original_guard_result": "pass",
+  "cause": "Inspector and guard used environment.json; outer command record replaced the inspector metadata output.",
+  "correction": "Write metadata to distinct environment-facts.json; run the same bounded read-only inspection once under the inspection command name.",
+  "historical_records_preserved": true,
+  "resource_failure": false,
+  "functional_tests_repeated": false
+}

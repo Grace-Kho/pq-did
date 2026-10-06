@@ -1,0 +1,17 @@
+{
+  "stage": "outer build monitor",
+  "exit_code": 1,
+  "exception": "ValueError: ordinary per-file limit",
+  "call_chain": [
+    "run_checks.py:main storage check",
+    "run.py:package_size",
+    "run.py:live_totals",
+    "policy.py:account",
+    "policy.py:need"
+  ],
+  "original_run_ledger_entry": "Preserved unchanged with status launched; this record completes the failure explanation without changing it to success",
+  "compiler_body_completed": true,
+  "outer_guard_completed": false,
+  "classification_unchanged": true,
+  "no_policy_correction": true
+}

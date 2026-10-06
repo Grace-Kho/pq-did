@@ -1,0 +1,38 @@
+{
+  "case_id": "M-16",
+  "invocation_id": "AR1-0054",
+  "status": "pass",
+  "details": {
+    "coverage": "complete final challenge SHAKE/equality only; mu/w1 obtained from independent reference",
+    "expected": true,
+    "actual": true,
+    "descriptor": {
+      "complete": true,
+      "inputs": 6144,
+      "gates": 1365895,
+      "rows": 1372041,
+      "variables": 1372040,
+      "primary": 1,
+      "output_wire": 1372040,
+      "nonzero_terms": [
+        2452344,
+        1378185,
+        1365897
+      ],
+      "matrix_sha256": "efa648a34dff2eaf4dd0750ef33444a0f0d13a669f9528af21d81e6a93f3a72c",
+      "public_identity": "14ac0d03c9456f625dbfb9fc5a25dfad569e83476b6638a8f29dc786a5f4010c",
+      "gate_counts": [
+        1096322,
+        269187,
+        386
+      ],
+      "free_input_booleanity_rows": 6144,
+      "output_rows": 2,
+      "assignment_storage_bytes": 1372040,
+      "memory_model": "bounded retained byte assignment; no last-use claim"
+    },
+    "generation_and_stream_check_seconds": 7.100509606068954
+  },
+  "seconds": 7.107371949008666,
+  "work_events": 5475872
+}

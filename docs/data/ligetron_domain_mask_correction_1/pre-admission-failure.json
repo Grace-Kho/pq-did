@@ -1,0 +1,10 @@
+{
+  "phase": "before-source-job-admission",
+  "command": ".venv/bin/python -I -B experiments/ligetron_domain_mask_correction_1/run.py job source-admission acquire 40 -- .venv/bin/python -I -B experiments/ligetron_domain_mask_correction_1/acquire.py",
+  "failure": "systemctl --user: Failed to connect to user scope bus via local transport: Operation not permitted",
+  "job_started": false,
+  "cases": 0,
+  "builds": 0,
+  "charge": "covered by the upfront conservative operator charge",
+  "action": "Submit identical bounded command to normal escalation review; no guard bypass"
+}

@@ -1,0 +1,21 @@
+{
+  "outcome": {
+    "status": "failed",
+    "exit_code": 1,
+    "original_error": {
+      "type": "RuntimeError",
+      "message": "synthetic monitor exception 4"
+    },
+    "traceback": "Traceback (most recent call last):\n  File \"/home/grace/projects/pq-did/docs/data/s3_aurora_native_transcript_pilot_1/output-guard-repair-1/fixtures.py\", line 47, in run\n    raise RuntimeError(\"synthetic monitor exception \" + str(n))\nRuntimeError: synthetic monitor exception 4\n",
+    "secondary_errors": [],
+    "seconds": 0.002119867946021259,
+    "conservative_charge_seconds": 0.002119867946021259,
+    "sampled_tree_RSS_peak": null,
+    "cgroup_memory_peak": null,
+    "contained": true,
+    "reaped": true,
+    "resource_guard_passed": false,
+    "child_exit_code": -9
+  },
+  "expected_failure_fixture": true
+}

@@ -1,0 +1,60 @@
+{
+  "package": "S3-AURORA-AUTH-CONSTRUCTION-CONTRACT-1",
+  "passed": true,
+  "comparison_complete": true,
+  "resource_guard_status": "pending-outer-finalisation",
+  "protected_files": 8759,
+  "unchanged_protected_files": 8756,
+  "allowed_changed_files": [
+    "docs/spec_issues.md",
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "changed_files": [],
+  "missing_files": [],
+  "bytes_hashed": 293909834,
+  "coverage_sha256": "73df29e985aad1544583a3700a7cdbf83f2c3bfbfcde6c43720fb8a2d7c772fc",
+  "supplementary_comparison": {
+    "protected_files": 1980,
+    "unchanged_protected_files": 1980,
+    "allowed_changed_files": [],
+    "changed_files": [],
+    "missing_files": [],
+    "bytes_hashed": 16866411,
+    "coverage_sha256": "11f3f8fe9ea3a6757bb4d69af3f91d1ef2f6ac5fa13a46ba10f40162a9c787f6"
+  },
+  "content_partition_union": 10739,
+  "content_partition_overlap": 0,
+  "identity_inclusive_unique_paths": 10771,
+  "name_inventory": {
+    "passed": true,
+    "count": 2411,
+    "unexpected": [],
+    "missing": []
+  },
+  "only_existing_changes": [
+    "docs/status.md",
+    "docs/traceability.md",
+    "docs/spec_issues.md"
+  ],
+  "existing_report_prefixes_preserved": true,
+  "baseline_regenerated": false,
+  "test_invocations": {},
+  "unique_new_tests": 0,
+  "total_test_invocations_including_prior_package": 386,
+  "new_execution_calculations": 0,
+  "resource_estimates": "Symbolic construction accounting only; no generation or evaluation",
+  "scoped_existing_verifier_regressions": 0,
+  "implementation_allowance_remaining_unchanged": 41.82321833795868,
+  "isolation_allowance_remaining_unchanged": 250.22,
+  "local_links_checked": 528,
+  "package_bytes_before_report": 373000,
+  "temporary_storage_bytes": 0,
+  "charged_seconds_including_inflight_audit_reservation": 77.2005102490075,
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "estimator_runs": 0,
+  "activation": false,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1
+}

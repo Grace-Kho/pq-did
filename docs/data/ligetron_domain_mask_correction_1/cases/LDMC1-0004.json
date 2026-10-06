@@ -1,0 +1,19 @@
+{
+  "id": "D-04",
+  "invocation": {
+    "invocation_id": "LDMC1-0004",
+    "case_id": "D-04",
+    "work_event_reservation": 1000000,
+    "ordinal": 4,
+    "cumulative_invocations": 1222,
+    "status": "admitted"
+  },
+  "status": "pass",
+  "binary_sha256": "9d21ea26044ab0959379ec5bcdd8d8cd5d47794fd45518381b7b532f19d6a3fb",
+  "expected_sha256": "f4d44a3e76ae05be7b0a5b655be6a242c461e0824a4878181222109ed12be2a7",
+  "exit_code": 0,
+  "stdout": "[\"0\",\"1\",\"21888242871839275222246405745257275088548364400416034343698204186575808495616\",\"3\",\"4\",\"5\",\"6\",\"7\"]\n",
+  "stderr": "",
+  "layer": "CPU transform model using native field",
+  "seconds": 0.0015087490901350975
+}

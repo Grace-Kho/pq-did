@@ -1,0 +1,8 @@
+{
+  "sha256": {
+    "docs/data/s3_aurora_native_transcript_pilot_1/header-correction-1/run.py": "7116882148cb8137271be7682e479fc9337b30dce0948afecaf862ee544c5333",
+    "docs/data/s3_aurora_native_transcript_pilot_1/header-correction-1/work.py": "1f2a90c957bd3078d2f9a6c6a3cece119e9afcf3b189f05032512bfb774c9c91",
+    "docs/data/s3_aurora_native_transcript_pilot_1/header-correction-1/seal_policy.py": "9d2c93431cec4e99a6598787f857d35c6c79d6f0c51f5c367d2fd80063da3095",
+    "docs/data/s3_aurora_native_transcript_pilot_1/header-correction-1/checks.py": "e7e5bb77b762fffb70dadabfb7160a043801576171d429c9e0764d191c9ed1b6"
+  }
+}

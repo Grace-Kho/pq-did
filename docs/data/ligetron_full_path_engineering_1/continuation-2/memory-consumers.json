@@ -1,0 +1,287 @@
+{
+  "utc": "2026-10-03T08:44:58.769806+00:00",
+  "Windows_command": [
+    "/mnt/c/windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+    "-NoProfile",
+    "-NonInteractive",
+    "-Command",
+    "& { $top = Get-Process | Sort-Object WorkingSet64 -Descending | Select-Object -First 12 ProcessName,Id,WorkingSet64,PrivateMemorySize64; $filter = ($top | ForEach-Object { 'ProcessId = ' + $_.Id }) -join ' OR '; $detail = Get-CimInstance Win32_Process -Filter $filter | Select-Object ProcessId,ParentProcessId,Name,ExecutablePath; @{Largest=$top;Identity=$detail} | ConvertTo-Json -Depth 4 -Compress }"
+  ],
+  "Windows_exit_code": 0,
+  "Windows_stderr": "",
+  "Windows_columns": [
+    "name",
+    "pid",
+    "working_set_bytes",
+    "private_memory_bytes",
+    "parent_pid",
+    "executable_path"
+  ],
+  "Windows_largest": [
+    [
+      "vmmemWSL",
+      5500,
+      5579513856,
+      6858383360,
+      20112,
+      null
+    ],
+    [
+      "chrome",
+      11656,
+      648663040,
+      813842432,
+      26992,
+      "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    ],
+    [
+      "Code",
+      34028,
+      451051520,
+      383873024,
+      2236,
+      "C:\\Users\\Grace\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+    ],
+    [
+      "chrome",
+      29944,
+      426946560,
+      586481664,
+      26992,
+      "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    ],
+    [
+      "chrome",
+      15996,
+      383041536,
+      496762880,
+      26992,
+      "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    ],
+    [
+      "Code",
+      3560,
+      342933504,
+      288043008,
+      2236,
+      "C:\\Users\\Grace\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+    ],
+    [
+      "mc-fw-host",
+      6744,
+      292511744,
+      786542592,
+      1776,
+      null
+    ],
+    [
+      "explorer",
+      15820,
+      244674560,
+      560619520,
+      15704,
+      "C:\\windows\\Explorer.EXE"
+    ],
+    [
+      "Code",
+      2236,
+      218669056,
+      157388800,
+      15820,
+      "C:\\Users\\Grace\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+    ],
+    [
+      "Code",
+      17244,
+      208297984,
+      205668352,
+      2236,
+      "C:\\Users\\Grace\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+    ],
+    [
+      "chrome",
+      26992,
+      184868864,
+      179978240,
+      15820,
+      "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    ],
+    [
+      "msedgewebview2",
+      22888,
+      184643584,
+      780996608,
+      25224,
+      "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\153.0.4234.32\\msedgewebview2.exe"
+    ]
+  ],
+  "Windows_encoding_note": "Paths decoded to their conventional backslash form; no command-line data read.",
+  "WSL_method": "Read /proc/PID/status; order VmRSS; read /proc/PID/exe links and up to three parent identities for twelve largest processes. No /proc/PID/cmdline reads.",
+  "WSL_columns": [
+    "pid",
+    "name",
+    "parent_pid",
+    "rss_bytes",
+    "executable_path"
+  ],
+  "WSL_largest": [
+    [
+      612,
+      "MainThread",
+      542,
+      685195264,
+      "/home/grace/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node"
+    ],
+    [
+      1193,
+      "MainThread",
+      612,
+      667725824,
+      "/home/grace/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node"
+    ],
+    [
+      542,
+      "MainThread",
+      538,
+      388898816,
+      "/home/grace/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node"
+    ],
+    [
+      712,
+      "codex",
+      612,
+      271593472,
+      "/home/grace/.vscode-server/extensions/openai.chatgpt-26.930.21537-linux-x64/bin/linux-x86_64/codex"
+    ],
+    [
+      613,
+      "MainThread",
+      542,
+      144814080,
+      "/home/grace/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node"
+    ],
+    [
+      594,
+      "MainThread",
+      542,
+      99332096,
+      "/home/grace/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node"
+    ],
+    [
+      577,
+      "MainThread",
+      571,
+      82812928,
+      "/home/grace/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node"
+    ],
+    [
+      701,
+      "MainThread",
+      542,
+      69738496,
+      "/home/grace/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node"
+    ],
+    [
+      557,
+      "MainThread",
+      555,
+      66883584,
+      "/home/grace/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node"
+    ],
+    [
+      636,
+      "copilot-runtime",
+      613,
+      50438144,
+      "/home/grace/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node_modules/@github/copilot-sdk-linux-x64/prebuilds/linux-x64/copilot-runtime"
+    ],
+    [
+      227,
+      "unattended-upgr",
+      1,
+      33488896,
+      null
+    ],
+    [
+      110,
+      "networkd-dispat",
+      1,
+      30457856,
+      null
+    ]
+  ],
+  "additional_parent_columns": [
+    "pid",
+    "name",
+    "parent_pid",
+    "executable_path"
+  ],
+  "additional_parents": [
+    [
+      538,
+      "sh",
+      431,
+      "/usr/bin/dash"
+    ],
+    [
+      431,
+      "sh",
+      323,
+      "/usr/bin/dash"
+    ],
+    [
+      323,
+      "sh",
+      319,
+      "/usr/bin/dash"
+    ],
+    [
+      571,
+      "Relay(577)",
+      569,
+      null
+    ],
+    [
+      569,
+      "SessionLeader",
+      2,
+      null
+    ],
+    [
+      555,
+      "Relay(557)",
+      554,
+      null
+    ],
+    [
+      554,
+      "SessionLeader",
+      2,
+      null
+    ],
+    [
+      2,
+      "init-systemd(Ub",
+      1,
+      null
+    ],
+    [
+      1,
+      "systemd",
+      0,
+      null
+    ]
+  ],
+  "inaccessible_executables": "Linux null paths were PermissionError errno13; Windows null paths unavailable. No privilege escalation to obtain them.",
+  "MainThread_finding": "The listed MainThread executables are VS Code Server-distributed Node, established from /proc/exe. Specific extension/task roles not established without command lines.",
+  "elapsed_seconds": 0.5368488789999901,
+  "self_peak_RSS_bytes": 13279232,
+  "command_lines_read": false,
+  "processes_or_configuration_changed": false,
+  "limitations": [
+    "Working sets/RSS include shared pages and are not exclusive totals.",
+    "Host vmmemWSL working set and guest MemAvailable are not equivalent.",
+    "One snapshot does not establish automatic host reclaim policy or exact reclaimable host bytes.",
+    "Diagnostic Python RSS excludes Windows-side process-tree accounting."
+  ]
+}

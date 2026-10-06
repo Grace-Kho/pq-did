@@ -1,0 +1,16 @@
+{
+  "failure": "Hard-coded /usr/bin/rg was unavailable; no native build or case executed",
+  "failed_record": "native-preflight.json",
+  "source_copy": "run-at-preflight.py",
+  "source_sha256": "7e53b6a37bebb3d83785b74f4f9f7a1d883c2066abb4da6ca9eede5346476ba7",
+  "resolved_rg": "/home/grace/.vscode-server/extensions/openai.chatgpt-26.908.40401-linux-x64/bin/linux-x86_64/rg",
+  "resolved_rg_sha256": "e62198eb19b136b88c330af83647b5a962cb99b6b1f066758568f12de1974849",
+  "handling": "Preserve failed preflight and eight unchanged source copies; no preflight retry. Complete metadata observation and independent preservation stages in fresh completion outputs. Charge failed time.",
+  "counts": {
+    "native_builds": 0,
+    "native_cases": 0,
+    "native_preflight_retries": 0
+  },
+  "failed_guard_seconds": 0.21542084903921932,
+  "bookkeeping_measured_seconds": 0.02219194604549557
+}

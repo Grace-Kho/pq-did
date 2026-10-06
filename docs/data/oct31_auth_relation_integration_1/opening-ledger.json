@@ -1,0 +1,21 @@
+{
+  "analysis_ceiling_seconds": 300,
+  "analysis_used_seconds": 192.94536250064616,
+  "analysis_remaining_seconds": 107.05463749935384,
+  "implementation_remaining_seconds_unchanged": 3297.852425285615,
+  "implementation_used_seconds_unchanged": 976.147574714385,
+  "cumulative_invocations": 867,
+  "invocation_ceiling": 1050,
+  "available_completed_milestone_slots_not_reallocated": 181,
+  "separate_historical_tooling_slots": 2,
+  "builds_used": 8,
+  "build_ceiling": 13,
+  "evidence_bytes": 24789361,
+  "evidence_ceiling_bytes": 33554432,
+  "artifact_bytes": 58112659,
+  "artifact_ceiling_bytes": 134217728,
+  "proofs_used": 2,
+  "proofs_unused": 1,
+  "analysis_operator_charge_seconds": 20,
+  "operator_basis": "Conservative root10 plus two read-only delegates5 each; measured guard durations added; no implementation charge."
+}

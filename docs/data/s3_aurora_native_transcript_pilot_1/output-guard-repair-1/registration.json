@@ -1,0 +1,147 @@
+{
+  "prior_manifest_sha256": "b5e486eaf5b869fbe0ad682568805fd6a80cf1d5c3257ed9c297e4d0b5b545d7",
+  "ninja_sha256": "ff0d78001a2ca014fd75fafaa043723c76416e25ee482ded3c717f23380e81b6",
+  "ninja_path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/build.ninja",
+  "build_log": "docs/data/s3_aurora_native_transcript_pilot_1/header-correction-1/build-5.log",
+  "build_log_sha256": "d3b9ef92719fea641642173d7416da7ac30cea44a54725c342bc2aa591805cb2",
+  "exact_new_slots": [
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/CMakeFiles/exp2_native.dir/exp2_native.cpp.o",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/CMakeFiles/exp2_semantics.dir/semantic_cases.cpp.o"
+  ],
+  "all_compiler_linker_outputs": [
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/common/common.cpp.o",
+      "bytes": 3704,
+      "sha256": "77d549533b015ab4c49175f93aba5e9019fb6349e096868778b4c35d523f8ea8",
+      "ninja_rule": "build CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/common/common.cpp.o: CXX_COMPILER__iop_native_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/common/common.cpp || cmake_object_order_depends_target_iop_native"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/bcs/hashing/blake2b.cpp.o",
+      "bytes": 36728,
+      "sha256": "fe035e9740c5c49e1925476a550ba025775b7005e0f775726540c229ad0f82cd",
+      "ninja_rule": "build CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/bcs/hashing/blake2b.cpp.o: CXX_COMPILER__iop_native_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/bcs/hashing/blake2b.cpp || cmake_object_order_depends_target_iop_native"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/protocols/ldt/ldt_reducer.cpp.o",
+      "bytes": 2280,
+      "sha256": "a2bfbaac45210025d406713693b66b59a7fe642504ca50849cfed5d6cc6e7fea",
+      "ninja_rule": "build CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/protocols/ldt/ldt_reducer.cpp.o: CXX_COMPILER__iop_native_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/protocols/ldt/ldt_reducer.cpp || cmake_object_order_depends_target_iop_native"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/protocols/ldt/fri/fri_ldt.cpp.o",
+      "bytes": 2264,
+      "sha256": "c17d7f8ef0bae7432a654703268acca3c133fc61899c1708f709a5762ffcc391",
+      "ninja_rule": "build CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/protocols/ldt/fri/fri_ldt.cpp.o: CXX_COMPILER__iop_native_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/protocols/ldt/fri/fri_ldt.cpp || cmake_object_order_depends_target_iop_native"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/protocols/ldt/fri/fri_aux.cpp.o",
+      "bytes": 102776,
+      "sha256": "4fdcaefa9b2b15b700d958ab3c70ed124c89f45c8df3e5f022baea492a3bc399",
+      "ninja_rule": "build CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/protocols/ldt/fri/fri_aux.cpp.o: CXX_COMPILER__iop_native_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/protocols/ldt/fri/fri_aux.cpp || cmake_object_order_depends_target_iop_native"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/relations/sparse_matrix.cpp.o",
+      "bytes": 18536,
+      "sha256": "fb89f81b619aa8b650910cedc08e64d781893ddb8aca16685d289c9396377614",
+      "ninja_rule": "build CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/relations/sparse_matrix.cpp.o: CXX_COMPILER__iop_native_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/relations/sparse_matrix.cpp || cmake_object_order_depends_target_iop_native"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/iop/utilities/batching.cpp.o",
+      "bytes": 88704,
+      "sha256": "e4879949835113e9222b105ddfa32257b555109c3fc90e4a2acb06363212ed27",
+      "ninja_rule": "build CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/iop/utilities/batching.cpp.o: CXX_COMPILER__iop_native_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/iop/utilities/batching.cpp || cmake_object_order_depends_target_iop_native"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/algebra/utils.cpp.o",
+      "bytes": 1592,
+      "sha256": "8250579c2d32ee1225fbe87c9997450465f24d694ec60de18c41520ae965b9ae",
+      "ninja_rule": "build CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/algebra/utils.cpp.o: CXX_COMPILER__iop_native_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/algebra/utils.cpp || cmake_object_order_depends_target_iop_native"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/libiop_native.a",
+      "bytes": 290658,
+      "sha256": "89a665529dcf5df0a9bb47dacce2ee46f59bcfc5770e85d1621b413463ef725b",
+      "ninja_rule": "build libiop_native.a: CXX_STATIC_LIBRARY_LINKER__iop_native_Release CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/common/common.cpp.o CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/bcs/hashing/blake2b.cpp.o CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/protocols/ldt/ldt_reducer.cpp.o CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/protocols/ldt/fri/fri_ldt.cpp.o CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/protocols/ldt/fri/fri_aux.cpp.o CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/relations/sparse_matrix.cpp.o CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/iop/utilities/batching.cpp.o CMakeFiles/iop_native.dir/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libiop/libiop/algebra/utils.cpp.o || libff-build/libff/libff.a"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/CMakeFiles/exp2_native.dir/exp2_native.cpp.o",
+      "bytes": 1387120,
+      "sha256": "f9c32a633e6f569caa2c4c094d407288e9413458fc1a49fa089e669e4d3bf55b",
+      "ninja_rule": "build CMakeFiles/exp2_native.dir/exp2_native.cpp.o: CXX_COMPILER__exp2_native_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/exp2_native.cpp || cmake_object_order_depends_target_exp2_native"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+      "bytes": 1094568,
+      "sha256": "255a0f9f9cc91aaf6c18f0962eae75f668f1572456d2fdbebc2f809ad9598d63",
+      "ninja_rule": "build exp2_native: CXX_EXECUTABLE_LINKER__exp2_native_Release CMakeFiles/exp2_native.dir/exp2_native.cpp.o | libiop_native.a libff-build/libff/libff.a /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/prefix/usr/lib/x86_64-linux-gnu/libgmp.a /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/prefix/usr/lib/x86_64-linux-gnu/libsodium.a || libff-build/libff/libff.a libiop_native.a"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/CMakeFiles/exp2_semantics.dir/semantic_cases.cpp.o",
+      "bytes": 69072,
+      "sha256": "17417660bf588685eafe69fcaec31d2ed07d23b90448a52bb5d476401e5c17c2",
+      "ninja_rule": "build CMakeFiles/exp2_semantics.dir/semantic_cases.cpp.o: CXX_COMPILER__exp2_semantics_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/semantic_cases.cpp || cmake_object_order_depends_target_exp2_semantics"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_semantics",
+      "bytes": 410368,
+      "sha256": "9520f962ac0551877e72eacf57d19803a02d86606e025a46c2ca1249cc2c02b4",
+      "ninja_rule": "build exp2_semantics: CXX_EXECUTABLE_LINKER__exp2_semantics_Release CMakeFiles/exp2_semantics.dir/semantic_cases.cpp.o | libiop_native.a libff-build/libff/libff.a /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/prefix/usr/lib/x86_64-linux-gnu/libgmp.a /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/prefix/usr/lib/x86_64-linux-gnu/libsodium.a || libff-build/libff/libff.a libiop_native.a"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf32.cpp.o",
+      "bytes": 27128,
+      "sha256": "bc8fd5767b3e08051326e58d92e11507ce33cf656ce88bd1d6e7741f414871f5",
+      "ninja_rule": "build libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf32.cpp.o: CXX_COMPILER__ff_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libff/libff/algebra/fields/binary/gf32.cpp || cmake_object_order_depends_target_ff"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf64.cpp.o",
+      "bytes": 28592,
+      "sha256": "ae3b93b2d6d6d32944de4ed22fce3bf4ecabde7f225ec428d65ee2557b8d9088",
+      "ninja_rule": "build libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf64.cpp.o: CXX_COMPILER__ff_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libff/libff/algebra/fields/binary/gf64.cpp || cmake_object_order_depends_target_ff"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf128.cpp.o",
+      "bytes": 29712,
+      "sha256": "49114535f91f0b0211a38201f8c98bdb68cc8c1ffcb1848a6d41c2e56332020e",
+      "ninja_rule": "build libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf128.cpp.o: CXX_COMPILER__ff_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libff/libff/algebra/fields/binary/gf128.cpp || cmake_object_order_depends_target_ff"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf192.cpp.o",
+      "bytes": 30864,
+      "sha256": "cd39364459fe8810bc582e832561c81f79d221346037d4e6645e7c00a0e6404d",
+      "ninja_rule": "build libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf192.cpp.o: CXX_COMPILER__ff_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libff/libff/algebra/fields/binary/gf192.cpp || cmake_object_order_depends_target_ff"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf256.cpp.o",
+      "bytes": 31072,
+      "sha256": "3784eac97f730c25de78c79a41833e574cfd0b8fb227233e700887a314e8d5d2",
+      "ninja_rule": "build libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf256.cpp.o: CXX_COMPILER__ff_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libff/libff/algebra/fields/binary/gf256.cpp || cmake_object_order_depends_target_ff"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/libff-build/libff/CMakeFiles/ff.dir/common/double.cpp.o",
+      "bytes": 22848,
+      "sha256": "a56a6c2079784414b669e3450396847d06f1368b4ea8af8e1e6d07daf31a5ca5",
+      "ninja_rule": "build libff-build/libff/CMakeFiles/ff.dir/common/double.cpp.o: CXX_COMPILER__ff_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libff/libff/common/double.cpp || cmake_object_order_depends_target_ff"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/libff-build/libff/CMakeFiles/ff.dir/common/profiling.cpp.o",
+      "bytes": 285904,
+      "sha256": "8acc94f8aaaee3b4da571361e11c996f2c891c08d503808f1e904bd609ccd23e",
+      "ninja_rule": "build libff-build/libff/CMakeFiles/ff.dir/common/profiling.cpp.o: CXX_COMPILER__ff_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libff/libff/common/profiling.cpp || cmake_object_order_depends_target_ff"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/libff-build/libff/CMakeFiles/ff.dir/common/utils.cpp.o",
+      "bytes": 84888,
+      "sha256": "8cbf6ff9049e9107231855993549fcfd88cc001c891f81835afeb07f4de46d95",
+      "ninja_rule": "build libff-build/libff/CMakeFiles/ff.dir/common/utils.cpp.o: CXX_COMPILER__ff_unscanned_Release /home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work/libff/libff/common/utils.cpp || cmake_object_order_depends_target_ff"
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/libff-build/libff/libff.a",
+      "bytes": 621828,
+      "sha256": "08e0984e0392ba444f65ad5657aeacaf147afa36bb8a3feb414cbe0fc4212f0d",
+      "ninja_rule": "build libff-build/libff/libff.a: CXX_STATIC_LIBRARY_LINKER__ff_Release libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf32.cpp.o libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf64.cpp.o libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf128.cpp.o libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf192.cpp.o libff-build/libff/CMakeFiles/ff.dir/algebra/fields/binary/gf256.cpp.o libff-build/libff/CMakeFiles/ff.dir/common/double.cpp.o libff-build/libff/CMakeFiles/ff.dir/common/profiling.cpp.o libff-build/libff/CMakeFiles/ff.dir/common/utils.cpp.o"
+    }
+  ],
+  "historical_evidence_bytes_not_refunded": 1844237,
+  "registration_effect": "Prospective exact-path artifact role; retain original fallback classification and all its historical charges. No wildcard exemptions."
+}

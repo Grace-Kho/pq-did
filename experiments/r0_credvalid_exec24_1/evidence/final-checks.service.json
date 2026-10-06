@@ -1,0 +1,31 @@
+{
+  "before": {
+    "memory.max": "268435456",
+    "memory.swap.max": "0",
+    "memory.peak": "6615040",
+    "memory.current": "6615040",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "available_before_target": 5022187520,
+  "external_routes": 0,
+  "target_started": true,
+  "command": [
+    "/bin/bash",
+    "scripts/final_checks.sh"
+  ],
+  "after": {
+    "memory.max": "268435456",
+    "memory.swap.max": "0",
+    "memory.peak": "28479488",
+    "memory.current": "7835648",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "exit_code": 0,
+  "largest_child_ru_maxrss_bytes": 70619136,
+  "ru_maxrss_note": "largest child high-water RSS, not aggregate tree RSS",
+  "temporary_bytes_at_exit": 0
+}

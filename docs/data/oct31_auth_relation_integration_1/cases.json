@@ -1,0 +1,680 @@
+{
+  "authorised": false,
+  "profile_adopted": false,
+  "cases": [
+    {
+      "id": "P-01",
+      "scope": "canonical X/public policy pass",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "reference PubOK/Ppub and canonical validators"
+    },
+    {
+      "id": "P-02",
+      "scope": "wrong expected parameter instance",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "reference PubOK/Ppub and canonical validators"
+    },
+    {
+      "id": "P-03",
+      "scope": "wrong issuer key reference",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "reference PubOK/Ppub and canonical validators"
+    },
+    {
+      "id": "P-04",
+      "scope": "wrong revocation state key/signature",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "reference PubOK/Ppub and canonical validators"
+    },
+    {
+      "id": "P-05",
+      "scope": "context state reference mismatch",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "reference PubOK/Ppub and canonical validators"
+    },
+    {
+      "id": "P-06",
+      "scope": "context issuer reference mismatch",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "reference PubOK/Ppub and canonical validators"
+    },
+    {
+      "id": "P-07",
+      "scope": "wrong schema reference",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "reference PubOK/Ppub and canonical validators"
+    },
+    {
+      "id": "P-08",
+      "scope": "noncanonical/duplicate disclosure indices",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "reference PubOK/Ppub and canonical validators"
+    },
+    {
+      "id": "P-09",
+      "scope": "disclosed values contradict public policy",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "reference PubOK/Ppub and canonical validators"
+    },
+    {
+      "id": "P-10",
+      "scope": "wrong suite/namespace repetition",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "reference PubOK/Ppub and canonical validators"
+    },
+    {
+      "id": "P-11",
+      "scope": "malformed public state framing",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "reference PubOK/Ppub and canonical validators"
+    },
+    {
+      "id": "P-12",
+      "scope": "oversized public transport refused as capacity",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "reference PubOK/Ppub and canonical validators"
+    },
+    {
+      "id": "W-01",
+      "scope": "canonical 5329-byte private layout",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "independent byte layout plus unchanged canonical encoders/hash functions"
+    },
+    {
+      "id": "W-02",
+      "scope": "MSB-byte to LSB-word/FIPS rewiring",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "independent byte layout plus unchanged canonical encoders/hash functions"
+    },
+    {
+      "id": "W-03",
+      "scope": "BYTES capacity/zero padding",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "independent byte layout plus unchanged canonical encoders/hash functions"
+    },
+    {
+      "id": "W-04",
+      "scope": "BOOLEAN malformed value",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "independent byte layout plus unchanged canonical encoders/hash functions"
+    },
+    {
+      "id": "W-05",
+      "scope": "UINT64 malformed width",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "independent byte layout plus unchanged canonical encoders/hash functions"
+    },
+    {
+      "id": "W-06",
+      "scope": "nonzero final attribute padding",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "independent byte layout plus unchanged canonical encoders/hash functions"
+    },
+    {
+      "id": "W-07",
+      "scope": "rid high bits rejected",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "independent byte layout plus unchanged canonical encoders/hash functions"
+    },
+    {
+      "id": "W-08",
+      "scope": "short private witness",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "independent byte layout plus unchanged canonical encoders/hash functions"
+    },
+    {
+      "id": "W-09",
+      "scope": "trailing private witness bytes",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "independent byte layout plus unchanged canonical encoders/hash functions"
+    },
+    {
+      "id": "W-10",
+      "scope": "holder binding matches independent SHA3 preimage",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "independent byte layout plus unchanged canonical encoders/hash functions"
+    },
+    {
+      "id": "W-11",
+      "scope": "exact certified body and credential role context",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "independent byte layout plus unchanged canonical encoders/hash functions"
+    },
+    {
+      "id": "W-12",
+      "scope": "caller-supplied Y/B/mu cannot replace derived values",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "independent byte layout plus unchanged canonical encoders/hash functions"
+    },
+    {
+      "id": "M-01",
+      "scope": "SampleInBall valid fixed synthetic stream",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-02",
+      "scope": "SampleInBall consumed-byte exhaustion",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-03",
+      "scope": "SampleInBall rejected-index consumption",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-04",
+      "scope": "backwards hint endpoints",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-05",
+      "scope": "hint endpoint greater than55",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-06",
+      "scope": "duplicate hint index",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-07",
+      "scope": "nonzero unused hint padding",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-08",
+      "scope": "z strict norm boundary",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-09",
+      "scope": "forward transform boundary polynomial",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-10",
+      "scope": "inverse transform signed/twiddle/factor boundary",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-11",
+      "scope": "matrix vector multiply and accumulation boundary",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-12",
+      "scope": "challenge/t1 subtraction representative",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-13",
+      "scope": "decomposition boundary",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-14",
+      "scope": "UseHint wraparound",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-15",
+      "scope": "w1 encoding byte order",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "M-16",
+      "scope": "challenge rehash equality against bounded verifier",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "exact host integers/FIPS schedule/bounded verifier; injected sampler fixture is not a SHAKE preimage"
+    },
+    {
+      "id": "J-01",
+      "scope": "complete valid credential A",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-02",
+      "scope": "complete valid credential B",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-03",
+      "scope": "new presentation context changes statement identity only",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-04",
+      "scope": "valid alternate disclosure/policy",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-05",
+      "scope": "wrong holder secret",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-06",
+      "scope": "changed certified attributes",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-07",
+      "scope": "changed issuer signature",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-08",
+      "scope": "changed certified rid",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-09",
+      "scope": "credential B signature spliced into A",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-10",
+      "scope": "B revocation path spliced into A",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-11",
+      "scope": "changed path sibling",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-12",
+      "scope": "path level ordering error",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-13",
+      "scope": "authenticated but mismatched root",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-14",
+      "scope": "revoked-leaf witness",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-15",
+      "scope": "mD inconsistent with same certified m",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "J-16",
+      "scope": "malformed private hint propagated to final false",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "unchanged relations.auth; every generated constraint checked independently"
+    },
+    {
+      "id": "N-01",
+      "scope": "nonzero A/B/C satisfaction with primary1",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-02",
+      "scope": "nonzero row unsatisfied independent oracle",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-03",
+      "scope": "non-Boolean free field input",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-04",
+      "scope": "tampered derived wire",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-05",
+      "scope": "acceptance variable0",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-06",
+      "scope": "wrong primary length",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-07",
+      "scope": "wrong auxiliary length",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-08",
+      "scope": "last legal variable index accepted",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-09",
+      "scope": "out of range variable index",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-10",
+      "scope": "duplicate loaded columns rejected",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-11",
+      "scope": "unsorted loaded columns rejected",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-12",
+      "scope": "zero noncanonical coefficient rejected",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-13",
+      "scope": "empty sum treated as zero without unsafe is_valid",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-14",
+      "scope": "truncated matrix stream rejected",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-15",
+      "scope": "cross-partition wire splice rejected",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "N-16",
+      "scope": "matrix/public-X identity mismatch",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit nonzero native field equations and expected matrices"
+    },
+    {
+      "id": "B-01",
+      "scope": "bounded canonical inactive envelope parsed but not accepted",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "construction wire contract and fail-closed lifecycle"
+    },
+    {
+      "id": "B-02",
+      "scope": "wrong magic/version/flags",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "construction wire contract and fail-closed lifecycle"
+    },
+    {
+      "id": "B-03",
+      "scope": "wrong configured PID",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "construction wire contract and fail-closed lifecycle"
+    },
+    {
+      "id": "B-04",
+      "scope": "wrong RID for current X",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "construction wire contract and fail-closed lifecycle"
+    },
+    {
+      "id": "B-05",
+      "scope": "wrong Xtag",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "construction wire contract and fail-closed lifecycle"
+    },
+    {
+      "id": "B-06",
+      "scope": "declared body overflow/oversize without allocation",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "construction wire contract and fail-closed lifecycle"
+    },
+    {
+      "id": "B-07",
+      "scope": "noncanonical field encoding",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "construction wire contract and fail-closed lifecycle"
+    },
+    {
+      "id": "B-08",
+      "scope": "duplicate opening conflict",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "construction wire contract and fail-closed lifecycle"
+    },
+    {
+      "id": "B-09",
+      "scope": "missing required terminal/direct message",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "construction wire contract and fail-closed lifecycle"
+    },
+    {
+      "id": "B-10",
+      "scope": "trailing bytes",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "construction wire contract and fail-closed lifecycle"
+    },
+    {
+      "id": "B-11",
+      "scope": "synthetic proof placeholder leaves challenge unconsumed",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "construction wire contract and fail-closed lifecycle"
+    },
+    {
+      "id": "B-12",
+      "scope": "freshness/replay checks retained with unsupported proof adapter",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "construction wire contract and fail-closed lifecycle"
+    },
+    {
+      "id": "G-01",
+      "scope": "disjoint row/variable coverage accepted",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit synthetic resource/coverage contract"
+    },
+    {
+      "id": "G-02",
+      "scope": "missing partition boundary rejected",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit synthetic resource/coverage contract"
+    },
+    {
+      "id": "G-03",
+      "scope": "duplicate partition rejected",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit synthetic resource/coverage contract"
+    },
+    {
+      "id": "G-04",
+      "scope": "absent completion footer cannot complete",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit synthetic resource/coverage contract"
+    },
+    {
+      "id": "G-05",
+      "scope": "synthetic count cap returns incomplete",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit synthetic resource/coverage contract"
+    },
+    {
+      "id": "G-06",
+      "scope": "synthetic frontier cap returns incomplete",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit synthetic resource/coverage contract"
+    },
+    {
+      "id": "G-07",
+      "scope": "evidence and registered artifact roles charged separately",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit synthetic resource/coverage contract"
+    },
+    {
+      "id": "G-08",
+      "scope": "interrupted assignment cannot report satisfaction",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "explicit synthetic resource/coverage contract"
+    },
+    {
+      "id": "Q-01",
+      "scope": "streamed complete public-shape count or labelled prefix",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "complete count and disjoint coverage; incomplete remains incomplete"
+    },
+    {
+      "id": "Q-02",
+      "scope": "complete descriptor count/row digest readback",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "complete count and disjoint coverage; incomplete remains incomplete"
+    },
+    {
+      "id": "Q-03",
+      "scope": "maximum frontier and assignment-storage accounting",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "complete count and disjoint coverage; incomplete remains incomplete"
+    },
+    {
+      "id": "Q-04",
+      "scope": "native allocation admission from actual descriptor or explicit no-go",
+      "executed": false,
+      "counted_invocations": 1,
+      "oracle": "complete count and disjoint coverage; incomplete remains incomplete"
+    }
+  ],
+  "extra_partition_or_affected_correction_slots": 32,
+  "native_proof_acceptance": false
+}

@@ -1,0 +1,1 @@
+{"id": "RG-04", "passed": true, "synthetic": true, "outcome": {"related_policy_assertions": ["unknown phase", "unauthorised memory ceiling", "recorded resource breach"], "separate_parameterised_invocations": 0}}

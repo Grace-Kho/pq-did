@@ -1,0 +1,45 @@
+{
+  "candidates": [
+    {
+      "name": "gzkbpp ZKB++ generic Fiat-Shamir mode",
+      "revision": "3d7739fb2e17cea60d2187a169c5e652cba34448",
+      "decision": "Reject next experiment: residual gate communication and no full relation/byte contract; seeded tapes not BC-1",
+      "cost_class": "Published unrelated LowMC; project auth unknown",
+      "security": "Different PRG/transform; no inherited SectionVIII theorem"
+    },
+    {
+      "name": "RISC Zero3.0.6 native Succinct Poseidon2",
+      "revision": "1cc70cf05033a79ebc90f07c679cb4bd1cd301b9",
+      "decision": "No renewed CPU attempt under unchanged mode/resources",
+      "cost_class": "Measured enrol proof and CredValid execution; conditional9.89h CPU forecast; fullauth unknown",
+      "security": "Qualified ZK, exact recursion/knowledge/history simulation unresolved; no Groth16"
+    },
+    {
+      "name": "Aurora-BCS native ZK R1CS",
+      "revision": "a2ed2ec2f3e85f29b6035951553b02cb737c817a (history tip; branch source observations)",
+      "decision": "One proposed construction research direction, not an admitted experiment/profile",
+      "cost_class": "Published arbitraryR1CS; no complete project constraints/wire/runtime/RSS",
+      "security": "Relevant CMS QROM conditional theorem; implemented parameter/premise matching, concrete hash and adaptive history composition unresolved"
+    }
+  ],
+  "project_evidence": {
+    "partitioned_forward_NTT": "97 complete partitions,1024butterflies; no monolithic circuit/proof",
+    "logical_total_gates": 27044356,
+    "logical_AND_gates": 10679298,
+    "conditional_raw_auth_bytes": 2568395104,
+    "projection_is_universal_lower_bound": false
+  },
+  "open": [
+    "CompleteR1CSsame-witnessrelation",
+    "ZKboundedbytewire",
+    "QROMparameterandimplementationmapping",
+    "Adaptivehistoryextractorandsimulator",
+    "Concretehashinstantiation",
+    "Delta_tail",
+    "Componentadvantagesatactualreductionbudgets",
+    "Productionsecurity"
+  ],
+  "new_calculations_executed": 0,
+  "new_tests": 0,
+  "new_proofs": 0
+}

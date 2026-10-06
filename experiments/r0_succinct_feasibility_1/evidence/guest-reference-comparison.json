@@ -1,0 +1,29 @@
+{
+  "phase": "execute",
+  "name": "guest-reference-comparison",
+  "command": [
+    "/home/grace/projects/pq-did/experiments/r0_succinct_feasibility_1/target/release/pqdid-r0-host",
+    "execute-check"
+  ],
+  "limit_seconds": 60,
+  "memory_max": 2147483648,
+  "network": false,
+  "start_time_UTC": "2026-09-18T18:16:16Z",
+  "status": "failed",
+  "wall_seconds": 0.3101004050113261,
+  "exit_code": 1,
+  "stop_reason": null,
+  "effective_cgroup": {
+    "memory.max": "2147483648",
+    "memory.swap.max": "0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "sampled_process_tree_RSS_peak": 56348672,
+  "sampled_cgroup_charge_peak": 99545088,
+  "sampled_swap_peak": 0,
+  "sampled_experiment_disk_peak": 3972787710,
+  "systemd_final_properties": "Result=exit-code\nExecMainCode=1\nExecMainStatus=1\nControlGroup=\nMemoryPeak=100249600\nMemorySwapPeak=0\nCPUUsageNSec=377085000\n",
+  "log": "evidence/guest-reference-comparison.log",
+  "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+}

@@ -1,0 +1,17 @@
+{
+  "package": "OCT31-AUTH-RELATION-INTEGRATION-1",
+  "approved": true,
+  "source": "Current direct user approval; explicit existing allocation reallocation and early capacity stop",
+  "proposal_manifest_sha256": "e4b38b5490ea6b75235ea6fb42eceda9db9a58e1a44cc1057ba40392e0dfd7b3",
+  "proposal_closure_sha256": "457843b4f9fad8b286f7f7ab3e65d3250afcbeb05c18e53616f0937acadd00bb",
+  "plan_sha256": "23cb25c423a8a5575549de6ec0a15f0567c6a37ed72a9c59a19596bb82923cae",
+  "implementation_seconds": 2550,
+  "invocations": 128,
+  "additional_builds": 3,
+  "work_events": 4294967296,
+  "proof_attempts": 0,
+  "no_installation_activation_or_zkvm": true,
+  "parallel_source_owners_max": 2,
+  "heavy_workers": 1,
+  "condition": "Known oversized direct native allocation forbidden; finish independent authorised work; private acceptance stays fail-closed."
+}

@@ -1,0 +1,36 @@
+{
+  "authorisation": "Latest user message: standard size type declaration correction, fifth build, prospective evidence limits only",
+  "source_commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+  "source_tree": "2e2588ccb085242dd2237875c3b9adf1a0fc958c",
+  "previous_complete_manifest_sha256": "b654553f67533c37c4906c6d73e8fe891677048fb978ac52e03dfa909ed805ee",
+  "source_overlay": "guarded-build-v1",
+  "new_overlay": "guarded-build-v2",
+  "patch_sha256": "919c57370aa9005f9bcabe683e7e528954903a802e65e4a160a5ed24e8d3e0a5",
+  "files": {
+    "work/libiop/libiop/algebra/utils.hpp": {
+      "before_sha256": "8d895b390710b31f1a5c6e196daa6d6b47cffa3b5bfe10f952f88ae62c9749e2",
+      "after_sha256": "b119dffafe381dce01922d2efb0e3a9df5a99f68d16b18512970aab94ec92401",
+      "before_bytes": 1391,
+      "after_bytes": 1425,
+      "qualifications": 3
+    },
+    "work/libiop/libiop/algebra/utils.cpp": {
+      "before_sha256": "c873d3f17bb4a08450453092e737b0796e053b1ce652242f57d0760fa09c57c7",
+      "after_sha256": "76715081c7f5432869d7b6271a65bf3cdf5fd500bad2e4a02c249371e7933868",
+      "before_bytes": 146,
+      "after_bytes": 161,
+      "qualifications": 3
+    },
+    "work/libiop/libiop/algebra/utils.tcc": {
+      "before_sha256": "26dd98e78b4acac47577721e368cf84d98bb89c3b160eb7af8c6bc5c3a193dc5",
+      "after_sha256": "9bc900496d223880e4564989e80b77da5d0072ea61e28ff5f3aa6c7375eabf28",
+      "before_bytes": 4730,
+      "after_bytes": 4795,
+      "qualifications": 13
+    }
+  },
+  "rationale": "utils.hpp lacks the standard size declaration despite existing std::size_t use. Installed GCC15 cstddef includes stddef.h and c++config.h defines std::size_t as __SIZE_TYPE__. Associated definitions use sizes/indices only. Add cstddef and qualify the same standard type; preserve function types, recursive gcd arithmetic and template algorithms. No replacement typedef, namespace import, signature-type change or new algorithm. Direct tcc definitions are qualified consistently.",
+  "prior_patch_unchanged_sha256": "8a28d44432c4dfd2ff41a07bb4affd1a154b52ae781289210410586b43e4c357",
+  "libff_workaround": "Retained minimal binary/common source target, unchanged; no new libff edits",
+  "limits": "Declaration compatibility only; unrelated latent R1CS defects remain limitations. SEM avoids those paths; not full Aurora correctness."
+}

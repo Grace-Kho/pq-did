@@ -1,0 +1,51 @@
+{
+  "utc": "2026-10-03T09:00:00.807362+00:00",
+  "command": [
+    "/mnt/c/windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+    "-NoProfile",
+    "-NonInteractive",
+    "-Command",
+    "& { $p = Join-Path $env:USERPROFILE '.wslconfig'; $c = if (Test-Path -LiteralPath $p) { $f = Get-Item -LiteralPath $p; if ($f.Length -gt 16384) { throw 'Config exceeds bounded read limit' }; $section=''; $rows=@(); foreach ($line in Get-Content -LiteralPath $p) { if ($line -match '^\\s*\\[([^]]+)\\]') { $section=$Matches[1] }; if ($line -match '^\\s*(memory|swap|pageReporting|autoMemoryReclaim|vmIdleTimeout|processors)\\s*=\\s*([^#;]*)') { $rows += @{Section=$section;Key=$Matches[1];Value=$Matches[2].Trim()} } }; @{Exists=$true;Path=$p;Bytes=$f.Length;SelectedSettings=$rows} } else { @{Exists=$false;Path=$p;SelectedSettings=@()} }; $v = & \"$env:WINDIR\\System32\\wsl.exe\" --version 2>&1 | Out-String; $ve=$LASTEXITCODE; $l = & \"$env:WINDIR\\System32\\wsl.exe\" --list --verbose 2>&1 | Out-String; $le=$LASTEXITCODE; @{Version=$v;VersionExit=$ve;Distributions=$l;ListExit=$le;Config=$c} | ConvertTo-Json -Depth 6 -Compress }"
+  ],
+  "exit_code": 0,
+  "stderr": "",
+  "version_exit_code": 0,
+  "list_exit_code": 0,
+  "decoded_versions": {
+    "WSL": "2.7.14.0",
+    "kernel": "6.18.33.2-2",
+    "WSLg": "1.0.73.2",
+    "MSRDC": "1.2.7214",
+    "Direct3D": "1.611.1-81528511",
+    "DXCore": "10.0.26100.1-240331-1435.ge-release",
+    "Windows": "10.0.26200.9457"
+  },
+  "text_normalisation": "WSL output forwarded through PowerShell contained interleaved NUL characters; decoded fields above remove those NULs and empty CRLF lines only.",
+  "distributions": [
+    {
+      "name": "Ubuntu",
+      "default": true,
+      "state": "Running",
+      "version": 2
+    }
+  ],
+  "global_configuration": {
+    "path": "C:\\Users\\Grace\\.wslconfig",
+    "exists": false,
+    "explicit_settings": []
+  },
+  "distribution_configuration": {
+    "path": "/etc/wsl.conf",
+    "exists": true,
+    "bytes": 42,
+    "selected_lines": [
+      "[boot]",
+      "systemd=true",
+      "[user]"
+    ]
+  },
+  "elapsed_seconds": 0.3469498989998101,
+  "self_peak_RSS_bytes": 13422592,
+  "settings_modified": false,
+  "runtime_reclaim_activity_verified": false
+}

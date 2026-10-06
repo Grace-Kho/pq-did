@@ -1,0 +1,31 @@
+{
+  "total_budget": 3,
+  "attempts_used": 2,
+  "remaining": 1,
+  "previous_ledger": "../r0_enrol_po17_1/evidence/cumulative_attempt_ledger.json",
+  "previous_ledger_sha256": "5a3d3adf6f44e2086b41060a73f249ad44265ad9c6e70cbfa14cd71b0c718860",
+  "attempts": [
+    {
+      "number": 1,
+      "package": "R0-SUCCINCT-PROOF-1",
+      "outcome": "timeout_during_sixth_lift",
+      "final_receipt": false
+    },
+    {
+      "number": 2,
+      "package": "R0-ENROL-PO17-1",
+      "outcome": "succinct_generated_and_independently_verified",
+      "resource_record": "../r0_enrol_po17_1/evidence/attempt2.json",
+      "final_receipt": true,
+      "receipt": "../r0_enrol_po17_1/receipts/attempt2.bin",
+      "receipt_sha256": "2c711beaa6144968aac66421eba10dff1f883133f4d5ec3e1256e3b68e529cc5",
+      "tamper_rejections": 8
+    }
+  ],
+  "this_package_max_additional_attempts": 1,
+  "package_closed": true,
+  "package": "R0-CREDVALID-PO17-1",
+  "outcome": "execution_preflight_only_proof_not_admitted",
+  "admission_record": "evidence/admission.result.json",
+  "admission_sha256": "17cc0fc7014e6c14dc5affbf91ff27b58abdcf09a0a5484c2e9c5c1be9fe48f2"
+}

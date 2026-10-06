@@ -1,0 +1,58 @@
+{
+  "guest": {
+    "label": "corrected-plain",
+    "image": "a7b77747d5ebff0e520d17fc188afef06dfb91690062cb96f6b3cff78e93ae94",
+    "program": "artifacts/corrected-plain.bin",
+    "program_sha256": "668dd886b66772593aea42e53d967d61f2e1a8c1e750add482acc0ed09963a09",
+    "elf": "artifacts/corrected-plain.elf",
+    "elf_sha256": "d5ef3682a8956ba03b710cdee14f02dbf967ec05e935c3d73fcc582aac19aaf2",
+    "features": "none",
+    "source_sha256": {
+      "Cargo.lock": "f75302dce44982f4b14a93a32533c2bfd5884743ec457d7f452a76a2855cb117",
+      "methods/guest/Cargo.lock": "eb0f82cd18d41519e335b53b97525fd78c57edfffb6be08e3d108afdfcceb950",
+      "methods/guest/Cargo.toml": "5daf738cf53bec5d9614e3ab98631e0e6227f9c251aa38404450d7c7132e04c8",
+      "methods/guest/src/lib.rs": "6df9aeaa7a1676a33b831861d35211bd5d37fa9c2be1f8ec3c801c62f9376d98",
+      "relation/Cargo.toml": "e5b877e87aa3d65b75d49e7fc0a4242beb652d15eba4a60549a1e1c4b58ddae6",
+      "relation/src/diagnostic.rs": "d5dc6b65b3a30d616ad33952fc4fb8e1c2bdfd93fc7086dd6701cd299493f230",
+      "relation/src/lib.rs": "7cf5300cd02db4cd95accabb2bbbbe3e34c803ba968930654b43ff9cedef229b",
+      "relation/src/mldsa.rs": "7d066f5d0eff97e363b8c8fbdd7bb31b0f85681cca32c9359dedacc6499a2731"
+    }
+  },
+  "guest_rebuilt": false,
+  "host_binary_SHA256": "e7a0b938db70778bae48eec901f507a7da9e3cfc9994ea25f82bd0b1e63c65c5",
+  "host_source_SHA256": "b9e4f0167366a3b43bcd77d470d1fe21cd42cf9aa459dbdb8c7cdd1a433c72ea",
+  "host_lock_SHA256": "f75302dce44982f4b14a93a32533c2bfd5884743ec457d7f452a76a2855cb117",
+  "config": {
+    "package": "R0-CREDVALID-EXEC24-1",
+    "session_limit_user_cycles": 16777216,
+    "segment_limit_po2": 16,
+    "memory_bytes": 2147483648,
+    "swap_bytes": 0,
+    "workers": 1,
+    "threads": 2,
+    "execution_wall_seconds": 60,
+    "execution_aggregate_seconds": 300,
+    "max_executions": 2,
+    "disk_limit_bytes": 10737418240,
+    "disk_stop_bytes": 9663676416,
+    "diagnostic_limit_bytes": 67108864,
+    "diagnostic_stop_bytes": 62914560,
+    "retained_segment_records": 256,
+    "diagnostic_stream_bytes": 65536,
+    "proof_attempts": 0
+  },
+  "source_inputs": {
+    "host/Cargo.toml": "669dc54c6c057e6b334053422132124b557f204a65f6431c46696535d70fe76b",
+    "host/src/main.rs": "b9e4f0167366a3b43bcd77d470d1fe21cd42cf9aa459dbdb8c7cdd1a433c72ea",
+    "relation/Cargo.toml": "e5b877e87aa3d65b75d49e7fc0a4242beb652d15eba4a60549a1e1c4b58ddae6",
+    "relation/src/mldsa.rs": "7d066f5d0eff97e363b8c8fbdd7bb31b0f85681cca32c9359dedacc6499a2731",
+    "relation/src/lib.rs": "7cf5300cd02db4cd95accabb2bbbbe3e34c803ba968930654b43ff9cedef229b",
+    "relation/src/diagnostic.rs": "d5dc6b65b3a30d616ad33952fc4fb8e1c2bdfd93fc7086dd6701cd299493f230",
+    "scripts/build_host.sh": "c25edb0dc1a3fb315bd434628a768f31faf5369fd24858cd30842a8577017840",
+    "scripts/service_entry.py": "5620af0238ab43a936dfd479f183566f5fa78efbcaf4783ec8d6b921ea14973a",
+    "scripts/reference.py": "1b638c2b6ef30e01185a2c9bc8233bfe685f3eab0950aa54a8eff0dbe0ad9a4d",
+    "scripts/run_limited.py": "690887eea4e4b90ff0920c5d9e9d1bc97881425fa8b7f2f84141f1b4abac71b5",
+    "scripts/seed_cache.py": "307e0c55ddfd1305683f059acfc42530e6812b33de15288d03dfbc69c432b35a"
+  },
+  "dependency_changes": false
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "compiler_body_exit": 0,
+  "historical_outer_guard_passed": false,
+  "binary_sha256": {
+    "exp2_native": "255a0f9f9cc91aaf6c18f0962eae75f668f1572456d2fdbebc2f809ad9598d63",
+    "exp2_semantics": "9520f962ac0551877e72eacf57d19803a02d86606e025a46c2ca1249cc2c02b4"
+  },
+  "retained_manifest": "b5e486eaf5b869fbe0ad682568805fd6a80cf1d5c3257ed9c297e4d0b5b545d7",
+  "verified_outputs": 22,
+  "verified_current_tree_files": 969,
+  "builds_this_package": 0,
+  "pins_and_overlays_verified": true,
+  "no_binary_executed_during_admission": true
+}

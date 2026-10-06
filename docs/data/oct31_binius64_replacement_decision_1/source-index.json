@@ -1,0 +1,484 @@
+{
+  "implementation_commit": "441fbf51ff0bcb0bcd28f3f1b73f4954029e8577",
+  "implementation_tree": "544452a781fee0f9b262d4ecfdcc47326fb6974f",
+  "blueprint_date": "2026-08-15",
+  "blueprint_sha256": "0dfdfd2fb8066842e0c0914901930b6b4f276284983838ad40ff0f2e8f0d9803",
+  "website_source_commit": "37270884e8b7d6cab9e9297c70d7d9901c56f709",
+  "pdf_byte_rebuild_correspondence_verified": false,
+  "native_correspondence_to_blueprint": "incomplete: explicit discrepancies in report",
+  "sources": [
+    {
+      "path": "implementation-tree.json",
+      "url": "https://api.github.com/repos/binius-zk/binius64/git/trees/544452a781fee0f9b262d4ecfdcc47326fb6974f?recursive=1",
+      "bytes": 216721,
+      "sha256": "c1d21269c495f6cd12b0a20c6f82252d807fea536dc0e3de8a2d230100f052c0"
+    },
+    {
+      "path": "blueprint-tree.json",
+      "url": "https://api.github.com/repos/binius-zk/binius.xyz/git/trees/7b8b3a3ec0bb7df9b4e00d2b2ed53027e7563e22?recursive=1",
+      "bytes": 50669,
+      "sha256": "93b9179fc2b2e008762d5f38c41137ec72286df086832133236962ab3c81a457"
+    },
+    {
+      "path": "ottersec-fix.json",
+      "url": "https://api.github.com/repos/binius-zk/binius64/commits/86a515f",
+      "bytes": 6986,
+      "sha256": "ef973567d02c37b02b9f0cf54852ac3b7e34ea80c991e848a074cadaa55875bb"
+    },
+    {
+      "path": "spec.pdf",
+      "url": "https://www.binius.xyz/spec.pdf",
+      "bytes": 679980,
+      "sha256": "0dfdfd2fb8066842e0c0914901930b6b4f276284983838ad40ff0f2e8f0d9803"
+    },
+    {
+      "path": "native--Cargo.toml",
+      "upstream_path": "Cargo.toml",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/Cargo.toml",
+      "bytes": 3396,
+      "git_blob": "ac0550baccfae0c0d048a0d3b392072e4a0427d6",
+      "sha256": "83fc774d5e8fbd87b6d1525e7e3ffb6d1fbe34862bcc80f6bc58ab648c9a5489"
+    },
+    {
+      "path": "native--rust-toolchain.toml",
+      "upstream_path": "rust-toolchain.toml",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/rust-toolchain.toml",
+      "bytes": 31,
+      "git_blob": "642220914d8a76aeeea19648fb26ce7bb12e33b6",
+      "sha256": "0bf007546885bfdc84484863a3b2dd936a89627191998d987cd798759e3935f1"
+    },
+    {
+      "path": "native--ARCHITECTURE.md",
+      "upstream_path": "ARCHITECTURE.md",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/ARCHITECTURE.md",
+      "bytes": 5005,
+      "git_blob": "f1c85549a418519801724dcb8fffd44380ef30ca",
+      "sha256": "93b548a23bc3dd7099c3ec108b323eb81cfe3d72ae51ba8900e15c5b54016785"
+    },
+    {
+      "path": "native--crates--prover--src--zk_config.rs",
+      "upstream_path": "crates/prover/src/zk_config.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/prover/src/zk_config.rs",
+      "bytes": 10196,
+      "git_blob": "4b379eb0583e26c76a23c898cfac47f6ce8797a3",
+      "sha256": "06242f2e7ed1563c8346786ab12d01c6f03dc6b659559438f6405c624449ce11"
+    },
+    {
+      "path": "native--crates--verifier--src--zk_config.rs",
+      "upstream_path": "crates/verifier/src/zk_config.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/verifier/src/zk_config.rs",
+      "bytes": 11029,
+      "git_blob": "d09e28032feb7474835897ecc97ba56ea7360a57",
+      "sha256": "bd96910b4f4dbdf1ed06a15f4ba0b2746a156626e19cda4260a97fc5a1df0a0d"
+    },
+    {
+      "path": "native--crates--prover--src--prove.rs",
+      "upstream_path": "crates/prover/src/prove.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/prover/src/prove.rs",
+      "bytes": 26594,
+      "git_blob": "5863dd4474ff1ce1af82dba5b0cb70540db4a08c",
+      "sha256": "19e12619225edcb73556d8bfda0661ff6403e9dbff340971e9c2061fe9d30e7b"
+    },
+    {
+      "path": "native--crates--verifier--src--verify.rs",
+      "upstream_path": "crates/verifier/src/verify.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/verifier/src/verify.rs",
+      "bytes": 15726,
+      "git_blob": "a6b1b438d610ff1a57939cc585e6935410bf4f1e",
+      "sha256": "65d683a721288c0fee652b66e8535713726470b0554c28afa65eafad837283db"
+    },
+    {
+      "path": "native--crates--verifier--src--config.rs",
+      "upstream_path": "crates/verifier/src/config.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/verifier/src/config.rs",
+      "bytes": 1176,
+      "git_blob": "ccf27d501d4fbeaa8c7b166a08df874bdbe10a02",
+      "sha256": "0f41a8b27efd4a842016be275e54c9d9984cd4491a87568dbf0cfc08c0b936f1"
+    },
+    {
+      "path": "native--crates--prover--tests--prove_verify.rs",
+      "upstream_path": "crates/prover/tests/prove_verify.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/prover/tests/prove_verify.rs",
+      "bytes": 26755,
+      "git_blob": "0764ceaaff64ef2ec8892d4915ada4645bc75493",
+      "sha256": "ffc68bd831dbd724e4ea185506e86fc87d02b4a2d21631b63041b9e588e4e4a8"
+    },
+    {
+      "path": "native--crates--spartan-prover--src--lib.rs",
+      "upstream_path": "crates/spartan-prover/src/lib.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/spartan-prover/src/lib.rs",
+      "bytes": 18281,
+      "git_blob": "2d99d6aef6e980eac70d32eee87dfac7ad019344",
+      "sha256": "f55fe3b2b7c776339fe3fff8622c25d1d01b617fda46e15f6357047452eaa065"
+    },
+    {
+      "path": "native--crates--spartan-verifier--src--lib.rs",
+      "upstream_path": "crates/spartan-verifier/src/lib.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/spartan-verifier/src/lib.rs",
+      "bytes": 13758,
+      "git_blob": "7149469ae56a76ddd07186a9057e71fdb8886fc5",
+      "sha256": "7d7d0e057e7b4318141281c211abff3bce35bf9e3673f5e4e7c29026a1d59b61"
+    },
+    {
+      "path": "native--crates--spartan-prover--src--wrapper--mod.rs",
+      "upstream_path": "crates/spartan-prover/src/wrapper/mod.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/spartan-prover/src/wrapper/mod.rs",
+      "bytes": 864,
+      "git_blob": "7787cfd6a7531f8fcfddd201fa52e842ceeccbdd",
+      "sha256": "d0e02afa14f5c8d691a19fc61bd179ab13ed99e9213b5ba99f8bf5ace586aa4c"
+    },
+    {
+      "path": "native--crates--spartan-verifier--src--wrapper--mod.rs",
+      "upstream_path": "crates/spartan-verifier/src/wrapper/mod.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/spartan-verifier/src/wrapper/mod.rs",
+      "bytes": 10489,
+      "git_blob": "8632702a8086fedc493bc8c73376a885d8e20d13",
+      "sha256": "5b0d51ba07001617dcc1c658acf2162fc2d38d653a689fa224a1b691329c90a1"
+    },
+    {
+      "path": "native--crates--iop-prover--src--basefold--compiler.rs",
+      "upstream_path": "crates/iop-prover/src/basefold/compiler.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/iop-prover/src/basefold/compiler.rs",
+      "bytes": 7675,
+      "git_blob": "c6254de7dbd1e3b397df922816eded788d3879ca",
+      "sha256": "3a84b34682c045b9288b8bbbc661ab068d9b354c970d02bd12cd6b87bb664f15"
+    },
+    {
+      "path": "native--crates--iop--src--basefold--compiler.rs",
+      "upstream_path": "crates/iop/src/basefold/compiler.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/iop/src/basefold/compiler.rs",
+      "bytes": 4398,
+      "git_blob": "78af629c86cd34545e6a2601d260df229f9787d5",
+      "sha256": "2d07fa7ec176e0cc2415ab7604bd851d12cfe928d4b9cbebdf9361884ee49a25"
+    },
+    {
+      "path": "native--crates--circuits--src--sha3--fixed_length.rs",
+      "upstream_path": "crates/circuits/src/sha3/fixed_length.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/circuits/src/sha3/fixed_length.rs",
+      "bytes": 10604,
+      "git_blob": "6323d057072c906970193f68f70f944a20f691d2",
+      "sha256": "c03dd10b656df6435d3c30177cabd19680dadb7bc47788bce8df18d5883b280f"
+    },
+    {
+      "path": "native--crates--circuits--src--sha3--varlen.rs",
+      "upstream_path": "crates/circuits/src/sha3/varlen.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/circuits/src/sha3/varlen.rs",
+      "bytes": 12130,
+      "git_blob": "81a9792acb870c54c31f0bda527e7b99002b157f",
+      "sha256": "dd83da7fa5caaba579e267fac5aed6be5febc626e756acbf89b92da3ec9c34d1"
+    },
+    {
+      "path": "native--crates--circuits--src--keccak--permutation.rs",
+      "upstream_path": "crates/circuits/src/keccak/permutation.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/circuits/src/keccak/permutation.rs",
+      "bytes": 10910,
+      "git_blob": "fde3475c5ec47fcbcd95f5754812efb73c365814",
+      "sha256": "3d6b8600af03db6cffc4623028e81069e02bdf42fa3e3d4bb5e85a8155b324dd"
+    },
+    {
+      "path": "native--crates--iop-prover--src--merkle_channel.rs",
+      "upstream_path": "crates/iop-prover/src/merkle_channel.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/iop-prover/src/merkle_channel.rs",
+      "bytes": 21268,
+      "git_blob": "848f8fb1a9de2eb23cb77b215c8cc4fb33269d1f",
+      "sha256": "35e62bbf54d841f9c4d2c954af93cfbe79b2830c43207d7bca714cacd43f7193"
+    },
+    {
+      "path": "native--crates--field--Cargo.toml",
+      "upstream_path": "crates/field/Cargo.toml",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/field/Cargo.toml",
+      "bytes": 1622,
+      "git_blob": "7525853540fa093b36a6a5d59d0d317b52886dbb",
+      "sha256": "87a61961ee12b85e2e8549e6a9668c4d96586930ba948680d7f48fb82be701f1"
+    },
+    {
+      "path": "native--crates--prover--Cargo.toml",
+      "upstream_path": "crates/prover/Cargo.toml",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/prover/Cargo.toml",
+      "bytes": 1990,
+      "git_blob": "501789c8cc0fabc9f5d854724170fbc3f39a2ace",
+      "sha256": "abff5876d7bac6177981b801df0a64f6e8188bb3c986f1a38f93517c177b7d82"
+    },
+    {
+      "path": "native--crates--hash--Cargo.toml",
+      "upstream_path": "crates/hash/Cargo.toml",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/hash/Cargo.toml",
+      "bytes": 448,
+      "git_blob": "410b82ee6bbf4f4a13ccb580dbad8d4afdd0d697",
+      "sha256": "2f5859377e706596ef0323f0a76a5098481ca4d2b94d3d5c6e617827c5654caa"
+    },
+    {
+      "path": "native--crates--hash-prover--Cargo.toml",
+      "upstream_path": "crates/hash-prover/Cargo.toml",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/hash-prover/Cargo.toml",
+      "bytes": 850,
+      "git_blob": "5afe119d06cea2af94d919ffa686b790669574e3",
+      "sha256": "be4c3b26a4acfad3aedc50fdd3a9bbf948682fc23c1d0c721f77c62e1932ac4e"
+    },
+    {
+      "path": "native--crates--transcript--src--fiat_shamir--hasher_challenger.rs",
+      "upstream_path": "crates/transcript/src/fiat_shamir/hasher_challenger.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/transcript/src/fiat_shamir/hasher_challenger.rs",
+      "bytes": 7082,
+      "git_blob": "dad36520275de42c6c94901c56b35b8f9ddec02d",
+      "sha256": "1eacc6c2565d40c7f8dedddf103967e4793d22fb60248f3ec483e50c8013cc34"
+    },
+    {
+      "path": "native--crates--iop-prover--src--basefold--channel.rs",
+      "upstream_path": "crates/iop-prover/src/basefold/channel.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/iop-prover/src/basefold/channel.rs",
+      "bytes": 45643,
+      "git_blob": "9983701962ea6cb4aa43bf284ca0616593f92a97",
+      "sha256": "df0eb72010c700b9a8f169a7863f5fe1b735b96ff69a32331951cb0ecdf373b2"
+    },
+    {
+      "path": "native--crates--iop-prover--src--basefold--opening.rs",
+      "upstream_path": "crates/iop-prover/src/basefold/opening.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/iop-prover/src/basefold/opening.rs",
+      "bytes": 10723,
+      "git_blob": "e3a4970425bdb32849c0be4ef577bfde9ce10565",
+      "sha256": "1924966386daad0bba081d9068647b0448694077b9102c13c42554b1bfc3d05b"
+    },
+    {
+      "path": "native--crates--iop--src--fri--mod.rs",
+      "upstream_path": "crates/iop/src/fri/mod.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/iop/src/fri/mod.rs",
+      "bytes": 1867,
+      "git_blob": "3e1bc1fc5e1bd64427c1b986245827ee0144c288",
+      "sha256": "dc20486eb0325bdd0671dbff910cb78380a508b7fbee003e67811772fb895055"
+    },
+    {
+      "path": "native--crates--spartan-frontend--src--constraint_system.rs",
+      "upstream_path": "crates/spartan-frontend/src/constraint_system.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/spartan-frontend/src/constraint_system.rs",
+      "bytes": 19290,
+      "git_blob": "11770646dc840fa3592df3d1ad91802f2330f050",
+      "sha256": "053eb55678b6e8e4486fc766cf9e41ec01603ec633a1521bf144c46e723bfbfd"
+    },
+    {
+      "path": "native--crates--spartan-verifier--src--constraint_system.rs",
+      "upstream_path": "crates/spartan-verifier/src/constraint_system.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/spartan-verifier/src/constraint_system.rs",
+      "bytes": 9169,
+      "git_blob": "762372676c4ac46923cc31e8b79634345d17207b",
+      "sha256": "f0ed4954f5889710e6223acc05b229a41928323bd0b40393f454e57f71629772"
+    },
+    {
+      "path": "native--crates--spartan-prover--tests--integration_test.rs",
+      "upstream_path": "crates/spartan-prover/tests/integration_test.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/spartan-prover/tests/integration_test.rs",
+      "bytes": 6251,
+      "git_blob": "51d942686d11512c4af0f5da8a2750917a254386",
+      "sha256": "9bd5deef78c44d5dc85766f56355a52acf2575e1f3003d89c98523b13cc9a29f"
+    },
+    {
+      "path": "native--crates--spartan-prover--tests--wrapper_integration_test.rs",
+      "upstream_path": "crates/spartan-prover/tests/wrapper_integration_test.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/spartan-prover/tests/wrapper_integration_test.rs",
+      "bytes": 7809,
+      "git_blob": "40fa9113df1030f247b4e5ac98bec46dae02d78b",
+      "sha256": "7fd068727075259e745fe9cc733f6100573672e5efeefd738015d0a861ded449"
+    },
+    {
+      "path": "native--crates--hash--src--lib.rs",
+      "upstream_path": "crates/hash/src/lib.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/hash/src/lib.rs",
+      "bytes": 1324,
+      "git_blob": "892ff6d4c2870cb55f4275e8b5f5fa421b9770d4",
+      "sha256": "0bf773b8fd23012745d8bc6fb93a321f374019eb4e1cde98c989b9b6d20f9463"
+    },
+    {
+      "path": "native--crates--circuits--src--sha3--mod.rs",
+      "upstream_path": "crates/circuits/src/sha3/mod.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/circuits/src/sha3/mod.rs",
+      "bytes": 2559,
+      "git_blob": "9b717c8ba7477e1d041fc6a6fc1876085b2069ed",
+      "sha256": "a2f006ff37594381980c0b0f792719ef3265dca9c116d4a2f6f4a30b6092ceaa"
+    },
+    {
+      "path": "native--crates--spartan-prover--src--wrapper--zk_wrapped_prover_channel.rs",
+      "upstream_path": "crates/spartan-prover/src/wrapper/zk_wrapped_prover_channel.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/spartan-prover/src/wrapper/zk_wrapped_prover_channel.rs",
+      "bytes": 11897,
+      "git_blob": "c5b28e82bf7c28636f4f146b4a669f9024a1a278",
+      "sha256": "62bca7a4f5212f75c0bfcdf9260a107460e31873af7b4727d681693ec03133bd"
+    },
+    {
+      "path": "fix-ancestry.json",
+      "url": "https://api.github.com/repos/binius-zk/binius64/compare/86a515f0632d2acdf547ed82780dfe7f9f39358f...441fbf51ff0bcb0bcd28f3f1b73f4954029e8577?per_page=1",
+      "bytes": 958752,
+      "sha256": "f889b218368becc842d3373542c7e8b06956f97c95292a78a9f75469eec0b169"
+    }
+  ],
+  "retained_files": {
+    "native--crates--iop-prover--src--basefold--opening.rs": {
+      "bytes": 10723,
+      "sha256": "1924966386daad0bba081d9068647b0448694077b9102c13c42554b1bfc3d05b"
+    },
+    "native--crates--iop-prover--src--basefold--compiler.rs": {
+      "bytes": 7675,
+      "sha256": "3a84b34682c045b9288b8bbbc661ab068d9b354c970d02bd12cd6b87bb664f15"
+    },
+    "native--ARCHITECTURE.md": {
+      "bytes": 5005,
+      "sha256": "93b548a23bc3dd7099c3ec108b323eb81cfe3d72ae51ba8900e15c5b54016785"
+    },
+    "native--crates--spartan-verifier--src--constraint_system.rs": {
+      "bytes": 9169,
+      "sha256": "f0ed4954f5889710e6223acc05b229a41928323bd0b40393f454e57f71629772"
+    },
+    "native--crates--circuits--src--sha3--mod.rs": {
+      "bytes": 2559,
+      "sha256": "a2f006ff37594381980c0b0f792719ef3265dca9c116d4a2f6f4a30b6092ceaa"
+    },
+    "native--crates--spartan-prover--src--lib.rs": {
+      "bytes": 18281,
+      "sha256": "f55fe3b2b7c776339fe3fff8622c25d1d01b617fda46e15f6357047452eaa065"
+    },
+    "native--crates--spartan-verifier--src--wrapper--mod.rs": {
+      "bytes": 10489,
+      "sha256": "5b0d51ba07001617dcc1c658acf2162fc2d38d653a689fa224a1b691329c90a1"
+    },
+    "native--crates--hash--Cargo.toml": {
+      "bytes": 448,
+      "sha256": "2f5859377e706596ef0323f0a76a5098481ca4d2b94d3d5c6e617827c5654caa"
+    },
+    "native--crates--verifier--src--verify.rs": {
+      "bytes": 15726,
+      "sha256": "65d683a721288c0fee652b66e8535713726470b0554c28afa65eafad837283db"
+    },
+    "fix-ancestry.json": {
+      "bytes": 958752,
+      "sha256": "f889b218368becc842d3373542c7e8b06956f97c95292a78a9f75469eec0b169"
+    },
+    "implementation-tree.json": {
+      "bytes": 216721,
+      "sha256": "c1d21269c495f6cd12b0a20c6f82252d807fea536dc0e3de8a2d230100f052c0"
+    },
+    "native--crates--prover--src--zk_config.rs": {
+      "bytes": 10196,
+      "sha256": "06242f2e7ed1563c8346786ab12d01c6f03dc6b659559438f6405c624449ce11"
+    },
+    "native--crates--verifier--src--config.rs": {
+      "bytes": 1176,
+      "sha256": "0f41a8b27efd4a842016be275e54c9d9984cd4491a87568dbf0cfc08c0b936f1"
+    },
+    "native--crates--field--Cargo.toml": {
+      "bytes": 1622,
+      "sha256": "87a61961ee12b85e2e8549e6a9668c4d96586930ba948680d7f48fb82be701f1"
+    },
+    "native--Cargo.toml": {
+      "bytes": 3396,
+      "sha256": "83fc774d5e8fbd87b6d1525e7e3ffb6d1fbe34862bcc80f6bc58ab648c9a5489"
+    },
+    "native--crates--iop-prover--src--basefold--channel.rs": {
+      "bytes": 45643,
+      "sha256": "df0eb72010c700b9a8f169a7863f5fe1b735b96ff69a32331951cb0ecdf373b2"
+    },
+    "blueprint-commit.json": {
+      "bytes": 64807,
+      "sha256": "699e2a184d14d05613841634d2f96c6ca5f4b39ccd70234b9fedad5bcce8e337"
+    },
+    "native--crates--spartan-frontend--src--constraint_system.rs": {
+      "bytes": 19290,
+      "sha256": "053eb55678b6e8e4486fc766cf9e41ec01603ec633a1521bf144c46e723bfbfd"
+    },
+    "native--crates--circuits--src--sha3--fixed_length.rs": {
+      "bytes": 10604,
+      "sha256": "c03dd10b656df6435d3c30177cabd19680dadb7bc47788bce8df18d5883b280f"
+    },
+    "native--crates--iop-prover--src--merkle_channel.rs": {
+      "bytes": 21268,
+      "sha256": "35e62bbf54d841f9c4d2c954af93cfbe79b2830c43207d7bca714cacd43f7193"
+    },
+    "native--crates--circuits--src--keccak--permutation.rs": {
+      "bytes": 10910,
+      "sha256": "3d6b8600af03db6cffc4623028e81069e02bdf42fa3e3d4bb5e85a8155b324dd"
+    },
+    "native--crates--hash--src--lib.rs": {
+      "bytes": 1324,
+      "sha256": "0bf773b8fd23012745d8bc6fb93a321f374019eb4e1cde98c989b9b6d20f9463"
+    },
+    "native--crates--verifier--src--zk_config.rs": {
+      "bytes": 11029,
+      "sha256": "bd96910b4f4dbdf1ed06a15f4ba0b2746a156626e19cda4260a97fc5a1df0a0d"
+    },
+    "native--crates--spartan-prover--src--wrapper--zk_wrapped_prover_channel.rs": {
+      "bytes": 11897,
+      "sha256": "62bca7a4f5212f75c0bfcdf9260a107460e31873af7b4727d681693ec03133bd"
+    },
+    "spec.txt": {
+      "bytes": 249222,
+      "sha256": "5003bd89023a69d87618e009737cc5293422a6a4988b9527f3a459126184943d"
+    },
+    "native--crates--prover--tests--prove_verify.rs": {
+      "bytes": 26755,
+      "sha256": "ffc68bd831dbd724e4ea185506e86fc87d02b4a2d21631b63041b9e588e4e4a8"
+    },
+    "blueprint-tree.json": {
+      "bytes": 50669,
+      "sha256": "93b9179fc2b2e008762d5f38c41137ec72286df086832133236962ab3c81a457"
+    },
+    "native--crates--spartan-verifier--src--lib.rs": {
+      "bytes": 13758,
+      "sha256": "7d7d0e057e7b4318141281c211abff3bce35bf9e3673f5e4e7c29026a1d59b61"
+    },
+    "native--crates--spartan-prover--src--wrapper--mod.rs": {
+      "bytes": 864,
+      "sha256": "d0e02afa14f5c8d691a19fc61bd179ab13ed99e9213b5ba99f8bf5ace586aa4c"
+    },
+    "native--crates--circuits--src--sha3--varlen.rs": {
+      "bytes": 12130,
+      "sha256": "dd83da7fa5caaba579e267fac5aed6be5febc626e756acbf89b92da3ec9c34d1"
+    },
+    "native--crates--prover--Cargo.toml": {
+      "bytes": 1990,
+      "sha256": "abff5876d7bac6177981b801df0a64f6e8188bb3c986f1a38f93517c177b7d82"
+    },
+    "native--crates--hash-prover--Cargo.toml": {
+      "bytes": 850,
+      "sha256": "be4c3b26a4acfad3aedc50fdd3a9bbf948682fc23c1d0c721f77c62e1932ac4e"
+    },
+    "native--crates--spartan-prover--tests--integration_test.rs": {
+      "bytes": 6251,
+      "sha256": "9bd5deef78c44d5dc85766f56355a52acf2575e1f3003d89c98523b13cc9a29f"
+    },
+    "native--crates--iop--src--fri--mod.rs": {
+      "bytes": 1867,
+      "sha256": "dc20486eb0325bdd0671dbff910cb78380a508b7fbee003e67811772fb895055"
+    },
+    "native--crates--transcript--src--fiat_shamir--hasher_challenger.rs": {
+      "bytes": 7082,
+      "sha256": "1eacc6c2565d40c7f8dedddf103967e4793d22fb60248f3ec483e50c8013cc34"
+    },
+    "native--crates--prover--src--prove.rs": {
+      "bytes": 26594,
+      "sha256": "19e12619225edcb73556d8bfda0661ff6403e9dbff340971e9c2061fe9d30e7b"
+    },
+    "native--rust-toolchain.toml": {
+      "bytes": 31,
+      "sha256": "0bf007546885bfdc84484863a3b2dd936a89627191998d987cd798759e3935f1"
+    },
+    "implementation-commit.json": {
+      "bytes": 22329,
+      "sha256": "a769495bc798ba798565752a19d97d70fd22e64ea8cc270ddad356dacedfad76"
+    },
+    "native--crates--spartan-prover--tests--wrapper_integration_test.rs": {
+      "bytes": 7809,
+      "sha256": "7fd068727075259e745fe9cc733f6100573672e5efeefd738015d0a861ded449"
+    },
+    "ottersec-fix.json": {
+      "bytes": 6986,
+      "sha256": "ef973567d02c37b02b9f0cf54852ac3b7e34ea80c991e848a074cadaa55875bb"
+    },
+    "native--crates--iop--src--basefold--compiler.rs": {
+      "bytes": 4398,
+      "sha256": "2d07fa7ec176e0cc2415ab7604bd851d12cfe928d4b9cbebdf9361884ee49a25"
+    },
+    "spec.pdf": {
+      "bytes": 679980,
+      "sha256": "0dfdfd2fb8066842e0c0914901930b6b4f276284983838ad40ff0f2e8f0d9803"
+    }
+  },
+  "executed_downloaded_code": false
+}

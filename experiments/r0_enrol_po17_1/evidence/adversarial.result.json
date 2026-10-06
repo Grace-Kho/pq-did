@@ -1,0 +1,16 @@
+{
+  "operation": "enrol",
+  "private_input_available": false,
+  "rejection_tests": [
+    "journal",
+    "public statement",
+    "public context",
+    "expected image",
+    "operation",
+    "seal",
+    "hash suite",
+    "trailing bytes"
+  ],
+  "seconds": 0.026887186,
+  "verified": true
+}

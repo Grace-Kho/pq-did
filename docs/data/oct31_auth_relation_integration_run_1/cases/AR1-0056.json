@@ -1,0 +1,16 @@
+{
+  "case_id": "B-02",
+  "invocation_id": "AR1-0056",
+  "status": "pass",
+  "details": {
+    "case_id": "B-02",
+    "passed": true,
+    "rejected": true,
+    "reason": "magic/version/kind/flags",
+    "accepted": false,
+    "proof_generated": false,
+    "field_note": "all 24-byte encodings canonical; wrong width rejected"
+  },
+  "seconds": 4.209193866699934e-05,
+  "work_events": 0
+}

@@ -1,0 +1,44 @@
+{
+  "package": "S3-BINIUS-COMMITTED-VIEW-CORRESPONDENCE-1",
+  "authorised": true,
+  "allocation_seconds": 180,
+  "completion_reserve_seconds": 30,
+  "evidence_bytes": 1048576,
+  "prior_manifest_sha256": "6f8250b8bb9da46407b6d1a38af1b6000b4252f91873c173aa1cf54cb7354915",
+  "prior_closure_sha256": "85456a95a7198734b96e0b133117e67d25b68117884bd9047b1bd1ca2c69b1f3",
+  "prior_resource_sha256": "7202ced7720bba0647a815a290c74739bb4520a22ee93a720132a3f0f3e3ab19",
+  "implementation_remaining_seconds": 686.8259277794259,
+  "outside_KYC_remaining_seconds": 243.43557213738308,
+  "KYC_remaining_seconds_unchanged": 443.3903556420428,
+  "analysis_remaining_seconds_unchanged": 11.510943178986167,
+  "prior_aggregate_charged_seconds": 5387.174072220574,
+  "storage_opening": {
+    "continuation_evidence_bytes": 547567,
+    "package_evidence_bytes": 1014688,
+    "package_cap_bytes": 1048576,
+    "package_headroom_bytes": 33888,
+    "cumulative_evidence_bytes": 35372722,
+    "cumulative_ceiling_bytes": 41943040,
+    "cumulative_headroom_bytes": 6570318,
+    "shared_headroom_bytes": 6121639,
+    "shared_completion_reserve_bytes": 2097152,
+    "new_source_bytes": 24075,
+    "total_component_source_bytes": 200854,
+    "new_artifact_bytes": 0
+  },
+  "test_invocations_unchanged": 1165,
+  "test_ceiling_unchanged": 1168,
+  "new_functional_invocations": 0,
+  "builds_unchanged": 10,
+  "build_ceiling_unchanged": 13,
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1
+  },
+  "user_review": {
+    "path": "PQ_DID_Binius64_Joint_Opening_Construction_Review.md",
+    "bytes": 21961,
+    "sha256": "b1d95f7f66db415e1cdce2ea80cb5700e97562427e9324e9ff6fc46507cc43a3"
+  },
+  "accounting": "Established convention: 90 conservative source/mathematical/authoring/bookkeeping operator seconds including direct reads/edits; measured guarded checks charged additionally, once. No KYC, analysis or retired component allocation charged."
+}

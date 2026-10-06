@@ -1,0 +1,55 @@
+{
+  "examples": 15,
+  "generation_only": true,
+  "new_signatures": 0,
+  "proofs": 0,
+  "lifecycle_executions": 0,
+  "fixture": "tests/fixtures/relations_vectors.json",
+  "auth_vector": "alpha-42-old-002c",
+  "enrol_vector": "alpha-42",
+  "schema": [
+    {
+      "index": 1,
+      "name": "did",
+      "type_code": 0,
+      "capacity": 171
+    },
+    {
+      "index": 2,
+      "name": "didVersion",
+      "type_code": 0,
+      "capacity": 56
+    },
+    {
+      "index": 3,
+      "name": "kycPassed",
+      "type_code": 1,
+      "capacity": 1
+    },
+    {
+      "index": 4,
+      "name": "assuranceLevel",
+      "type_code": 2,
+      "capacity": 8
+    },
+    {
+      "index": 5,
+      "name": "countryOfResidence",
+      "type_code": 0,
+      "capacity": 2
+    },
+    {
+      "index": 6,
+      "name": "validUntil",
+      "type_code": 2,
+      "capacity": 8
+    }
+  ],
+  "disclosed_indices": [
+    3,
+    4,
+    6
+  ],
+  "disclosure_mask": "ACw",
+  "session_expiry": "1900000000"
+}

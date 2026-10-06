@@ -1,0 +1,16 @@
+{
+  "invocation_id": "KYCM1-0022",
+  "case_id": "S-22",
+  "work_event_reservation": 0,
+  "ordinal": 22,
+  "cumulative_invocations": 1113,
+  "status": "pass",
+  "details": {
+    "old_failure": "payload-cap",
+    "storage_roundtrip": true,
+    "invalid_duplicated_history_rejected": true
+  },
+  "seconds": 0.1849314859136939,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

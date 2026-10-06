@@ -1,0 +1,18 @@
+{
+  "id": "D-02-1",
+  "invocation": {
+    "invocation_id": "LGC1-0030",
+    "case_id": "D-02-1",
+    "work_event_reservation": 1000000,
+    "ordinal": 30,
+    "cumulative_invocations": 1213,
+    "status": "admitted"
+  },
+  "status": "pass",
+  "binary_sha256": "7f28431909d2d570d6e722abb6364f6e4b7797175d64c1ee825776557ba2fa63",
+  "expected_sha256": "7ea58f9ec9735d8bbe90f973105558af00fd0ad447c5cca93cd6f629ed826f3e",
+  "exit_code": 0,
+  "stdout": "{\"case\":\"D-02-1\",\"data\":\"9030b773ec884ae4b5fc60f475ea15d9ef2be9bbdbe9ff0d4d2757ae2ee3d13,4de605a0e861d9284e03ef5b01a031440bde1a3051baf6b6f5a297e983adbb9,d6a1652f63b806bb4e722123bd11a8a63aac39f7fda54a812c6d39af192fd05,212645df8ca551f5139bdb657fb869d3e1aa200be884d4e4326c947e8a4b9ae0|9030b773ec884ae4b5fc60f475ea15d9ef2be9bbdbe9ff0d4d2757ae2ee3d13,4de605a0e861d9284e03ef5b01a031440bde1a3051baf6b6f5a297e983adbb9,d6a1652f63b806bb4e722123bd11a8a63aac39f7fda54a812c6d39af192fd05,212645df8ca551f5139bdb657fb869d3e1aa200be884d4e4326c947e8a4b9ae0\",\"openssl\":\"OpenSSL 3.5.5 27 Jan 2026\",\"gmp\":\"6.3.0\"}\n",
+  "stderr": "",
+  "seconds": 0.0021176699083298445
+}

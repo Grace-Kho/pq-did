@@ -1,0 +1,25 @@
+[
+  {
+    "symbol": "_RNvNtCsaPlV9PxSZnR_17pqdid_r0_relation5mldsa3ntt",
+    "static_helper_call_annotations": [
+      "20d14c: c04080e7     \tjalr\t-0x3fc(ra) <__moddi3>",
+      "20d18c: fd4080e7     \tjalr\t-0x2c(ra) <memcpy>",
+      "20d2f4: a5c080e7     \tjalr\t-0x5a4(ra) <__moddi3>",
+      "20d340: a10080e7     \tjalr\t-0x5f0(ra) <__moddi3>",
+      "20d394: 9bc080e7     \tjalr\t-0x644(ra) <__moddi3>"
+    ],
+    "note": "Static selected-function inspection only; no execution trace or cost attribution."
+  },
+  {
+    "symbol": "_RNvNtCsaPlV9PxSZnR_17pqdid_r0_relation5mldsa7inv_ntt",
+    "static_helper_call_annotations": [
+      "2100d4: 08c080e7     \tjalr\t0x8c(ra) <memcpy>",
+      "210244: b0c080e7     \tjalr\t-0x4f4(ra) <__moddi3>",
+      "2102b4: a9c080e7     \tjalr\t-0x564(ra) <__moddi3>",
+      "21034c: a04080e7     \tjalr\t-0x5fc(ra) <__moddi3>",
+      "21040c: 944080e7     \tjalr\t-0x6bc(ra) <__moddi3>",
+      "210450: d10080e7     \tjalr\t-0x2f0(ra) <memcpy>"
+    ],
+    "note": "Static selected-function inspection only; no execution trace or cost attribution."
+  }
+]

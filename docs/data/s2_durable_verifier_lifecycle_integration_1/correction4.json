@@ -1,0 +1,21 @@
+{
+  "failure": "quality",
+  "cause": "E501, 102-character Markdown-link line in close.py doc output. No implementation/test change.",
+  "change": "Split prose at newline; one reviewed lint rerun only, no new test invocation.",
+  "evidence": {
+    "quality.log": "038d2dfa0b40aa1b2b4729649c0e9cc7626718af0ec60c3fff1c87b7abe8363d",
+    "quality.json": "0edc8e725ea489d435b40f090a0b24434c80ee948954941efdca83b67231a08a",
+    "close.py-before-correction4.txt": "38bf73559a7ece4a0f0340b6c974be4f27e9ade0114ca7deed6974154c171e7a",
+    "audit.py-before-correction4.txt": "45ea39a19a2311fc3bd9223802061ba1d3d51e5a5457008380e785eff5b24efc",
+    "run_checks.py-before-correction4.txt": "18607304e63c93a50c5aefd65a27c9cf7486f4a3c8b4fc7d8ff75ac9dae5474d"
+  },
+  "permitted_followups": [
+    "quality-final",
+    "format",
+    "prepare",
+    "full-audit"
+  ],
+  "automatic_retry": false,
+  "resource_limits_changed": false,
+  "additional_test_invocations": 0
+}

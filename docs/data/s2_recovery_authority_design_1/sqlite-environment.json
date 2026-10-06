@@ -1,0 +1,158 @@
+{
+  "package": "S2-RECOVERY-AUTHORITY-DESIGN-1",
+  "observed_utc": "2026-09-19T10:01:52.485334+00:00",
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "executable": "/home/grace/projects/pq-did/.venv/bin/python",
+  "sqlite_version": "3.46.1",
+  "sqlite_version_info": [
+    3,
+    46,
+    1
+  ],
+  "sqlite_source_id": "2024-08-13 09:16:08 c9c2ab54ba1f5f46360f1b4f35d849cd3f080e6fc2b6c60e91b16c63f69aalt1",
+  "sqlite_threadsafety": 3,
+  "sqlite_extension": "/usr/lib/python3.14/lib-dynload/_sqlite3.cpython-314-x86_64-linux-gnu.so",
+  "compile_options": [
+    "ALLOW_ROWID_IN_VIEW",
+    "ATOMIC_INTRINSICS=1",
+    "COMPILER=gcc-15.2.0",
+    "DEFAULT_AUTOVACUUM",
+    "DEFAULT_CACHE_SIZE=-2000",
+    "DEFAULT_FILE_FORMAT=4",
+    "DEFAULT_JOURNAL_SIZE_LIMIT=-1",
+    "DEFAULT_MMAP_SIZE=0",
+    "DEFAULT_PAGE_SIZE=4096",
+    "DEFAULT_PCACHE_INITSZ=20",
+    "DEFAULT_RECURSIVE_TRIGGERS",
+    "DEFAULT_SECTOR_SIZE=4096",
+    "DEFAULT_SYNCHRONOUS=2",
+    "DEFAULT_WAL_AUTOCHECKPOINT=1000",
+    "DEFAULT_WAL_SYNCHRONOUS=2",
+    "DEFAULT_WORKER_THREADS=0",
+    "DIRECT_OVERFLOW_READ",
+    "ENABLE_COLUMN_METADATA",
+    "ENABLE_DBPAGE_VTAB",
+    "ENABLE_DBSTAT_VTAB",
+    "ENABLE_FTS3",
+    "ENABLE_FTS3_PARENTHESIS",
+    "ENABLE_FTS4",
+    "ENABLE_FTS5",
+    "ENABLE_LOAD_EXTENSION",
+    "ENABLE_MATH_FUNCTIONS",
+    "ENABLE_PREUPDATE_HOOK",
+    "ENABLE_RTREE",
+    "ENABLE_SESSION",
+    "ENABLE_STMTVTAB",
+    "ENABLE_UNLOCK_NOTIFY",
+    "ENABLE_UPDATE_DELETE_LIMIT",
+    "HAVE_ISNAN",
+    "LIKE_DOESNT_MATCH_BLOBS",
+    "MALLOC_SOFT_LIMIT=1024",
+    "MAX_ATTACHED=10",
+    "MAX_COLUMN=2000",
+    "MAX_COMPOUND_SELECT=500",
+    "MAX_DEFAULT_PAGE_SIZE=32768",
+    "MAX_EXPR_DEPTH=1000",
+    "MAX_FUNCTION_ARG=127",
+    "MAX_LENGTH=1000000000",
+    "MAX_LIKE_PATTERN_LENGTH=50000",
+    "MAX_MMAP_SIZE=0x7fff0000",
+    "MAX_PAGE_COUNT=0xfffffffe",
+    "MAX_PAGE_SIZE=65536",
+    "MAX_SCHEMA_RETRY=25",
+    "MAX_SQL_LENGTH=1000000000",
+    "MAX_TRIGGER_DEPTH=1000",
+    "MAX_VARIABLE_NUMBER=250000",
+    "MAX_VDBE_OP=250000000",
+    "MAX_WORKER_THREADS=8",
+    "MUTEX_PTHREADS",
+    "SECURE_DELETE",
+    "SOUNDEX",
+    "SYSTEM_MALLOC",
+    "TEMP_STORE=1",
+    "THREADSAFE=1",
+    "USE_URI"
+  ],
+  "memory_database_query_defaults_only": {
+    "journal_mode": [
+      [
+        "memory"
+      ]
+    ],
+    "synchronous": [
+      [
+        2
+      ]
+    ],
+    "locking_mode": [
+      [
+        "normal"
+      ]
+    ],
+    "temp_store": [
+      [
+        0
+      ]
+    ],
+    "foreign_keys": [
+      [
+        0
+      ]
+    ],
+    "busy_timeout": [
+      [
+        0
+      ]
+    ],
+    "page_size": [
+      [
+        4096
+      ]
+    ],
+    "cache_size": [
+      [
+        -2000
+      ]
+    ]
+  },
+  "connection_limits_observed_only": {
+    "SQLITE_LIMIT_LENGTH": 1000000000,
+    "SQLITE_LIMIT_SQL_LENGTH": 1000000000,
+    "SQLITE_LIMIT_VARIABLE_NUMBER": 250000,
+    "SQLITE_LIMIT_ATTACHED": 10
+  },
+  "kernel": "6.18.33.2-microsoft-standard-WSL2",
+  "project_path": "/home/grace/projects/pq-did",
+  "project_mode": "0o755",
+  "project_is_symlink": false,
+  "filesystem": {
+    "command": [
+      "findmnt",
+      "--target",
+      "/home/grace/projects/pq-did",
+      "--output",
+      "TARGET,SOURCE,FSTYPE,OPTIONS",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n   \"filesystems\": [\n      {\n         \"target\": \"/home/grace/projects/pq-did\",\n         \"source\": \"/dev/sdd[/home/grace/projects/pq-did]\",\n         \"fstype\": \"ext4\",\n         \"options\": \"ro,nosuid,relatime,discard,errors=remount-ro,data=ordered\"\n      }\n   ]\n}"
+  },
+  "sqlite_linkage": {
+    "command": [
+      "ldd",
+      "/usr/lib/python3.14/lib-dynload/_sqlite3.cpython-314-x86_64-linux-gnu.so"
+    ],
+    "exit_code": 0,
+    "stdout": "linux-vdso.so.1 (0x00007b707ff1d000)\n\tlibsqlite3.so.0 => /usr/lib/x86_64-linux-gnu/libsqlite3.so.0 (0x00007b707fd77000)\n\tlibc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x00007b707fa00000)\n\tlibm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x00007b707fc51000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007b707ff1f000)"
+  },
+  "filesystem_block_bytes": 4096,
+  "filesystem_available_bytes": 1014231744512,
+  "persistent_databases_opened": 0,
+  "persistent_databases_created": 0,
+  "settings_changed": false,
+  "dependencies_installed": 0,
+  "wal_enabled": false,
+  "crash_experiments": 0,
+  "power_loss_guarantee_tested": false,
+  "hardware_flush_and_VHD_durability_verified": false
+}

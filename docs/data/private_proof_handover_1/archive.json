@@ -1,0 +1,14 @@
+{
+  "status": "incomplete-resource-stop",
+  "archive": "/home/grace/projects/pq-did/docs/data/private_proof_handover_1/binius64-g0-handover-v1.tar.xz",
+  "bytes": 1065684,
+  "sha256": "17a0ac8fd32038e6530254e4cd27610c8a76e76aba53f446986e435845262f8e",
+  "per_file_limit": 1048576,
+  "exceedance_bytes": 17108,
+  "readback_passed": false,
+  "archive_completeness": "Unverified; creation stopped before the member/hash readback. Do not present as upload-ready.",
+  "automatic_retry": false,
+  "classification": "evidence; unchanged",
+  "integrity_of_prior_sources": "Pre-edit predecessor seal checks and pinned-source byte/blob checks passed; full final audit not launched",
+  "guard_job": "jobs/package.json"
+}

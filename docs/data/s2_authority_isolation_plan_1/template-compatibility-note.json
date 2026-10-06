@@ -1,0 +1,7 @@
+{
+  "observation": "Installed systemd 259 static parser reports CPUAccounting has been removed and is ignored.",
+  "record": "static-release-unit-syntax.json",
+  "correction": "Remove obsolete CPUAccounting from proposed slice; retain CPUQuota=200%, AllowedCPUs=0-1, MemoryMax and all other controls. Recheck exact final templates.",
+  "activation": false,
+  "resource_limits_changed": false
+}

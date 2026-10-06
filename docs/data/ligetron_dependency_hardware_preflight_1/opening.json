@@ -1,0 +1,97 @@
+{
+  "package": "LIGETRON-DEPENDENCY-HARDWARE-PREFLIGHT-1",
+  "scope": "Installed bounded read-only diagnostics, public pinned source/metadata inspection, execution proposal and review ZIP; no compilation/GPU workloads/proofs",
+  "prior_accounting": "handover/ligetron_domain_mask_review_v1.accounting.json",
+  "prior_accounting_sha256": "e2bd9a1ce1446fe08912f7ec2e53ae90ef0cb9718058877697000224306de435",
+  "prior": {
+    "operation": "archive packaging and selected-file verification only",
+    "status": "verified",
+    "archive": "/home/grace/projects/pq-did/handover/ligetron_domain_mask_review_v1.zip",
+    "archive_role": "registered handover artifact",
+    "opening_resource_record": "/home/grace/projects/pq-did/docs/data/ligetron_domain_mask_correction_1/resource-closure.json",
+    "opening_resource_sha256": "d1047741df740aa3fa64faf5e71aab7fbfd0a8892590603ed357e5c33b730f1b",
+    "allocation": {
+      "outside_KYC_seconds": 30,
+      "completion_reserve_inside_seconds": 10,
+      "artifact_bytes": 524288,
+      "shared_evidence_bytes": 16384,
+      "memory_bytes": 268435456,
+      "temporary_disk_bytes": 0
+    },
+    "closed_component_allowance_charged": false,
+    "KYC_unchanged": true,
+    "archive_bytes": 56093,
+    "archive_sha256": "cbdf039e61556e945da980f9cb1f210da933ff1f3185203528f43279edb7493b",
+    "archive_reused": false,
+    "requested_payloads": 15,
+    "metadata_members": [
+      "README.txt",
+      "MANIFEST.json"
+    ],
+    "verification": {
+      "CRC": true,
+      "safe_relative_regular_files": true,
+      "unique_members": true,
+      "exact_requested_member_set": true,
+      "all_payload_sources_and_manifest": true,
+      "both_recorded_patch_hashes": true,
+      "archive_readback": true
+    },
+    "measured_packaging_and_readback_seconds": 0.013209410943090916,
+    "execution_charge_rounded_up_seconds": 1,
+    "conservative_preparation_finalisation_seconds": 15,
+    "total_charged_seconds": 16,
+    "charge_basis": "15 conservative operator seconds cover preparation/bookkeeping; measured packaging/readback rounded up to whole seconds; no closed-package or KYC debit",
+    "implementation_aggregate_charged_seconds": 6131.880950067311,
+    "implementation_remaining_seconds": 542.1190499326894,
+    "outside_KYC_remaining_seconds": 158.41060670910156,
+    "KYC_remaining_seconds_unchanged": 383.7084432235879,
+    "KYC_protected_reserve_seconds_unchanged": 300,
+    "cumulative_invocations_unchanged": 1250,
+    "invocation_ceiling_unchanged": 1265,
+    "builds_unchanged": 13,
+    "build_ceiling_unchanged": 13,
+    "proof_ledger": {
+      "used": 2,
+      "unused": 1
+    },
+    "peak_process_RSS_bytes": 20598784,
+    "no_functional_tests_builds_or_proofs": true,
+    "historical_sources_unchanged": true,
+    "temporary_disk_bytes": 0,
+    "cumulative_artifact_bytes": 78900660,
+    "cumulative_artifact_ceiling_bytes": 134217728,
+    "accounting_evidence_bytes": 2576,
+    "cumulative_evidence_bytes": 38667103,
+    "cumulative_evidence_ceiling_bytes": 41943040,
+    "shared_completion_reserve_bytes": 2097152,
+    "shared_evidence_headroom_bytes": 2827258
+  },
+  "allocation": {
+    "seconds_outside_KYC": 90,
+    "completion_reserve_seconds": 30,
+    "conservative_operator_seconds": 40,
+    "evidence_including_incoming_bytes": 524288,
+    "review_zip_artifact_bytes": 1048576,
+    "memory_bytes": 268435456,
+    "temporary_disk_bytes": 0,
+    "functional_tests": 0,
+    "builds": 0,
+    "proofs": 0
+  },
+  "incoming_reconciliation": {
+    "path": "PQ_DID_Ligetron_Review_and_Next_Task_v1.zip",
+    "bytes": 63229,
+    "sha256": "e13b2a917cb8f5a3e27b5c736c0af31afa2d08acc6c821902c37a7da69268e31",
+    "charged_once_as_evidence_in_this_package": true,
+    "previously_charged": false
+  },
+  "protected": {
+    "docs/data/ligetron_domain_mask_correction_1/validation-closure.json": "fb762d6cdb6b6031b8d392bf5e14e5792b87c973c46bb17f6149d46af632c785",
+    "docs/data/ligetron_domain_mask_correction_1/resource-closure.json": "d1047741df740aa3fa64faf5e71aab7fbfd0a8892590603ed357e5c33b730f1b",
+    "docs/data/ligetron_domain_mask_correction_1/reviewed-overlay.patch": "31f1515e498182664f51e92d91925416c0063d5b117494948e4a52dc6fcc5723",
+    "docs/data/ligetron_correction_admission_1/reviewed-overlay.patch": "043ee96fbae51b9416b3435be7e7ad27cfc076ddb7790e14f14be6ea09c0dc3c",
+    "docs/ligetron_domain_mask_correction.md": "720fc580c8d6fe715d852f07289cc54ced8ed591b1117a0fee5738f8c623e1fb",
+    "docs/kyc_testbed_delivery.md": "eaca98b99ba00ff67bf3c1fd63459352a69c33faaeeda9e39e4ac95e30ea6d02"
+  }
+}

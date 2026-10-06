@@ -1,0 +1,1973 @@
+II. R ELATED W ORK
+We review decentralised identity, post-quantum selfsovereign identity (SSI), anonymous credentials and revocation, focusing on their relationship to PQ-DID’s credential
+lifecycle and privacy model.
+A. Decentralised Identity and Privacy-Preserving Credentials
+The W3C DID and Verifiable Credentials specifications
+define identifier and credential data models; security depends
+on the selected cryptographic mechanisms [13], [14]. AnonCreds v1.0 combines Camenisch–Lysyanskaya signatures over
+RSA groups with pairing-based revocation, while the BBS
+cryptosuite uses pairing-based signatures. Both support selective disclosure and unlinkable presentations under classical
+assumptions [15], [16].
+DISC supports multi-authority credential aggregation, unlinkable authentication and batch verification [17]. DP-DID
+addresses dynamic and proactive identity management [18],
+while FRAC expresses access-control rules and addresses credential theft and revoked-credential reuse [19]. PQ-DID studies quantum-resistant credential presentation and revocationrelated privacy. Aggregation, proactive key protection and a
+general-purpose access-control language are outside its scope.
+B. Post-Quantum Decentralised Identity and SSI
+Pino et al. studied hybrid post-quantum and classical credentials and presentations for IoT [20]. Solavagione and Vesco
+implemented pure post-quantum and hybrid SSI in IOTA
+Identity, covering DID, VC and VP workflows [21]. Zeydan et
+al. developed post-quantum blockchain-based identity management for resource sharing in open radio access networks [22].
+Presentation privacy has also been addressed directly. Margaria et al. adapted Bootle et al.’s lattice anonymous-credential
+framework to SSI and implemented selective disclosure in
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+C++ [23], [24]. Boi et al. investigated ZK-STARKs for postquantum SSI and attribute-based authentication on edge devices [25]. The W3C Quantum-Resistant Cryptosuites draft
+specifies Data Integrity mechanisms based on post-quantum
+signatures [26]. These works cover both signature migration
+and privacy-preserving presentation, providing direct comparators for PQ-DID.
+C. Post-Quantum Anonymous Credentials and Attestation
+Bootle et al.’s BLNS framework supports selective disclosure and unlinkable presentations under specialised lattice assumptions, with privacy against coalitions including malicious
+issuers, holders and verifiers [24]. Argo et al. instantiated
+anonymous credentials with explicit proof encodings and a
+C implementation [27]. Both works also discuss revocation
+extensions and provide comparators for PQ-DAA’s credentialproof layer.
+Chen et al. constructed lattice-based direct anonymous attestation using collaborative, segregated non-interactive zero
+knowledge [28]. A trusted platform module and its host jointly
+generate attestations, with basename-controlled linkability and
+key-based revocation. Their hardware trust and collaborative proving architecture differ from PQ-DID’s issuer–holder–
+verifier model.
+D. Revocation and Lifecycle Privacy
+Margaria et al. use validity epochs and issuer-provided
+credential updates [23]. PQ-DID proves that a hidden, issuercertified identifier corresponds to an unrevoked leaf in a
+Merkle revocation tree; public updates support local witness
+maintenance. The mechanisms differ in status representation
+and update procedures, whose costs require empirical comparison. The IRAC preprint combines issuer hiding, flexible
+credentials and decentralised revocation with a classical implementation [29]; PQ-DID retains a public issuer.
+PQ-DID binds selective disclosure and non-revocation to the
+same credential and presentation context. Its post-revocation
+unlinkability model includes historical presentations and subsequent public revocation information. The baseline permits
+colluding verifiers but assumes honest issuers and revocation
+managers whose private records remain undisclosed. Challenge holders remain uncorrupted throughout; issuer, schema,
+policy, epoch and disclosed attributes are public. These restrictions distinguish its guarantees from malicious-issuer privacy
+and security after holder compromise.
+Table I summarises the comparisons. The reference construction in Section VII uses ML-DSA certification, hashbased holder binding, a Merkle revocation tree and an MPCin-the-head argument for the complete authentication relation.
+Section VIII analyses its security under the stated component,
+quantum random-oracle model (QROM) and service assumptions.
+III. BACKGROUND AND B UILDING B LOCKS
+A. Architecture and Object Mapping
+DID Core specifies identifiers, documents and method operations; the Verifiable Credentials (VC) data model specifies
+
+3
+
+credentials and presentations [13], [14]. PQ-DID follows the
+issuer–holder–verifier workflow: publication and resolution
+manage DID records, issuance produces a private credential record vc, presentation produces disclosed claims and a
+PQ-DAA proof vp, and revocation updates credential status
+through rse . This mapping is architectural: the protocol encodings alone do not establish VC/VP data-model conformance
+or standardisation of the reference DID method. Conforming
+representations require the corresponding data-model properties and proof/status extensions.
+The reference method retains controller public keys in
+signed method records outside the minimal DID document.
+Credential authentication uses a separate holder secret xH .
+Although a holder DID may be publicly registered, presentations neither disclose nor resolve it unless the holder-approved
+policy requires disclosure.
+B. Roles and Trust Assumptions
+The issuer validates evidence and approves the exact attribute vector, including the issuance-time DID and version
+reference (did, vD ). The holder proves knowledge of its
+binding secret. The issuer checks controller authorisation and
+certifies the approved vector, holder binding and allocated revocation identifier. Issuance uses an authenticated confidential
+channel; the holder retains its secret, credential and revocation
+witness locally. Certification establishes issuer approval, the
+validity of external evidence depends on the issuer.
+Application configuration fixes accepted issuer/key/schema
+instances, revocation namespaces and trusted authority, registry and audience-request keys. Resolution validates method
+state and controller authorisation, issuer trust remains an application decision. The revocation manager processes authorised
+requests and publishes authenticated states and updates, from
+which holders update witnesses locally.
+The model assumes correctly generated parameters, consistent registry operations and an authenticated current-state
+service. The verifier’s final ordered state read fixes the verification epoch, unavailable or inconsistent state causes rejection.
+Authenticity of an old signed state does not establish freshness.
+Holders approve authenticated requests, verifiers enforce the
+expected audience, session, policy and expiry, with trusted
+time and atomic challenge consumption. These service assumptions remain explicit in the lifecycle proofs.
+C. Adversaries and Public Information
+Adversaries are quantum polynomial-time (QPT), with classical protocol queries and quantum access to the proof random oracle. Enrolments are sequential, presentations may
+be repeated across colluding verifiers under changing supported policies. Corrupted holders may collude with verifiers.
+Setup, the targeted issuer, revocation manager and currentstate service remain honest, and DID-method integrity is
+assumed. Privacy protects holders uncorrupted throughout the
+experiment, including after revocation, and excludes authority–
+verifier collusion and disclosure of private authority records.
+Acceptance attacks target an honest verifier.
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+4
+
+TABLE I
+R ELATED W ORK AND S COPE OF PQ-DID
+
+Work
+
+Focus and relationship to PQ-DID
+
+AnonCreds and BBS [15],
+[16]
+
+Classical selective disclosure and unlinkable presentations; PQ-DID targets these functions under
+post-quantum assumptions.
+
+DISC [17]
+
+Multi-authority aggregation, unlinkable authentication and batch verification; aggregation and batching are
+outside PQ-DID’s scope.
+
+DP-DID [18]
+
+Dynamic and proactive identity management; PQ-DID concerns credential presentation and
+revocation-related privacy.
+
+FRAC [19]
+
+Declarative access control and credential-misuse protection; PQ-DID focuses on quantum security and
+credential-lifecycle privacy.
+
+Pino et al.; Solavagione and
+Vesco [20], [21]
+
+Hybrid and pure post-quantum DID/VC/VP workflows; PQ-DID uses proofs of hidden credential witnesses.
+
+Margaria et al. [23]
+
+Lattice anonymous credentials for SSI, selective disclosure and epoch updates; PQ-DID uses a Merkle tree
+with hidden-identifier non-revocation proofs.
+
+Boi et al. [25]
+
+STARK-based SSI and attribute authentication on edge devices; an alternative proving architecture.
+
+Bootle et al. [24]
+
+Lattice anonymous credentials with malicious-issuer privacy; PQ-DID’s baseline assumes honest issuers.
+
+Argo et al. [27]
+
+Concrete anonymous credentials with explicit proof encodings and implementation; a close comparator for
+the credential-proof layer.
+
+Chen et al. [28]
+
+TPM–host attestation with basename-controlled linkability and key-based revocation; a different trust and
+proving architecture.
+
+IRAC [29]
+
+Issuer-hiding credentials and decentralised revocation with a classical instantiation; PQ-DID keeps the
+issuer public.
+
+PQ-DID (this work)
+
+Reference construction using ML-DSA certification, hash-based holder binding, a Merkle revocation tree
+and an MPC-in-the-head argument for context-bound authentication, under stated component, QROM and
+service assumptions.
+
+Entries compare scope, not measured performance or guarantees under identical adversarial models. Omitted capabilities are not assumed absent; FRAC
+and Boi are limited to their reported scope. PQ-DID links issuer certification, holder-binding consistency and non-revocation for the same credential. Its
+specification and security analysis are distinct from implementation validation.
+
+Issuers observe approved attributes, DID references, certified bindings and revocation identifiers, managers observe registrations and revocation requests. Public observations include
+method records, resolution queries, instance keys and schema,
+namespace, session context, policy, epoch, revocation root,
+disclosed positions and values, and complete proof bytes and
+lengths. Revocation updates additionally reveal the revoked
+identifier and its old sibling path. Section VI distinguishes
+authorised leakage from proof data and tests the joint view,
+including later revocation publications, under matching cumulative disclosures. Network addresses, traffic timing and
+availability are outside the credential-level model.
+D. Cryptographic Interfaces
+Signatures. KeyGen, Sign and Verify require correctness
+and post-quantum EUF-CMA security with classical signing
+queries. Section VII uses ML-DSA-65 with separate signing contexts for credentials and lifecycle messages [30], its
+bounded-operation losses are accounted for in Section VIII.
+Holder binding and certification. BindRep recovers
+the certified representation B, BindOpen checks its secret/message opening, and CredValid additionally checks issuer certification and identifier consistency. The selected B
+contains a SHA3-384 holder-secret digest and the canonical
+approved attribute vector. Binding requires quantum collision
+
+resistance; secrecy of the uniformly sampled secret given
+its digest additionally requires quantum preimage resistance.
+Attributes are visible to the issuer, presentation privacy is
+supplied by the proof.
+Revocation. The status mechanism supplies state updates,
+witness generation, NRVerify and UpdateWit, requiring correctness and adaptive non-membership soundness. The selected mechanism is a SHA3-384 Merkle tree of revoked bits:
+an unrevoked credential has a path authenticating a zero leaf.
+State authentication and freshness are enforced by the lifecycle
+interfaces.
+Arguments of knowledge. Prove and Check operate on
+the complete relation Rauth of Section V-B, jointly checking
+valid encodings, holder binding, issuer certification, authorised
+disclosure and non-revocation for the same certified identifier, with the presentation context bound to the statement.
+The selected Boolean MPC-in-the-head protocol uses raw
+random tapes, salted view commitments and Fiat–Shamir
+challenges [31]. Its requirements are completeness, adaptive
+quantum zero knowledge and history-preserving completewitness extraction. Sections VII and VIII specify the circuits
+and derive the resource-dependent QROM bounds [32], [33].
+The baseline supports disclosure and public checks on disclosed values, hidden-attribute predicates require an additional
+relation.
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+IV. G ENERIC P OST-Q UANTUM D ECENTRALISED I DENTITY
+F RAMEWORK
+PQ-DID specifies a credential lifecycle comprising identifier management, issuance, privacy-preserving presentation,
+verification and revocation. The DID method supplies authenticated identifier management, while PQ-DAA supplies
+credential authentication. This section defines their interfaces
+and composition, Section VII specifies the construction against
+these interfaces.
+A. Protocol State and Presentation Context
+We adopt the roles and trust assumptions of Section III.
+Each instance fixes one issuer verification-key version, one
+credential schema and one revocation namespace, including
+its authorised state-verification key. An application may accept
+several such instances, but cross-instance credential aggregation and authority-key rotation are outside the baseline
+model. The reference ref I identifies the issuer, key version
+and immutable schema encoding; a schema reference cannot
+subsequently be reassigned to a different encoding.
+Public system parameters params contain the cryptographic
+parameters pp and the DID-method configuration. Holder state
+is stH = (xH , stctl ), where xH is the credential-binding secret
+and stctl supports method-specific controller authorisation.
+The domain and sampling distribution of xH are specified
+by pp. Any credential-specific opening material is retained
+in the holder-local record vc, separately from its epochdependent revocation witness, that material may be empty
+in a particular instantiation. The supported message domains,
+canonical encodings, policy family and capacity limits are also
+fixed by pp.
+Let Re be the revoked set in namespace ns at epoch e. Its
+authenticated state and reference are
+rse = (ns, e, Ae , τe ),
+
+ref e = (ns, e, Ae ),
+
+where Ae represents Re and τe authenticates the namespace,
+epoch and state value. Write µ = (ref I , ns) for the certified
+public metadata of the instance.
+An honest verifier issues an authenticated request containing
+ctx = tag, aud, sid, n, policy,
+
+ref I , ref e , texp .
+The fields identify the protocol version, intended audience,
+application session, nonce, disclosure policy, issuer reference,
+revocation state and expiry time. The verifier samples n
+uniformly from {0, 1}2λ , resampling a nonce already used
+by that audience. It records the complete context as pending
+in trusted verifier state stV . Replicas sharing an audience
+maintain consistent nonce and session state. The holder authenticates the request, checks the audience and approves the
+policy before responding. The baseline policies are defined in
+Section V.
+The presentation proof binds the complete context and
+all other public statement fields. Verification uses the locally registered expected context. A Fiat–Shamir realisation
+includes their canonical encodings in its challenge transcript
+
+5
+
+and must establish the corresponding context-bound argumentof-knowledge property.
+Current-state assumption. The authenticated service
+CurrentState(ns) returns the latest authorised state at a welldefined read point in a consistent ordering of revocation
+updates. The verifier reads this service when creating a request
+and again immediately before its final acceptance check. The
+latter read defines the logical verification epoch. An update
+ordered after that read does not retrospectively invalidate the
+decision. Verification fails if the service is unavailable, its
+response cannot be authenticated, or the request references
+a different state. A changed state requires an updated witness
+and a new request. A signature on an old state alone does not
+establish freshness.
+B. Generic PQ-DID Framework
+The eight core lifecycle interfaces are
+ΠPQ-DID = Setup, DID.KeyGen, DID.Publish,
+DID.Resolve, Issue, Present,
+
+Verify, Revoke .
+Issuance is interactive and verification is stateful. Request
+creation, current-state retrieval and witness updating are supporting procedures.
+• System setup.
+(params, stI , stR , rs0 )
+← Setup(1λ ).
+Setup generates the public parameters, separate issuer
+and revocation authority states, and the initial authenticated state for an empty revoked set. Secret outputs
+are delivered only to their owners. Application trust
+configuration determines which instances and DID methods are accepted. Application configuration, including
+the schema, issuer reference, registry and audience trust
+anchors, is fixed before setup and treated as an implicit
+input to the setup algorithms. The parameter λ indexes
+the prescribed parameter family; a concrete profile must
+specify its parameters and their security justification.
+Setup may return ⊥ on failure. Unsupported inputs and
+operations exceeding the configured capacity are rejected;
+correctness is evaluated on admissible executions.
+• Identifier and holder-state generation.
+(did, stH ) ← DID.KeyGen(params).
+The selected DID-method adapter generates the identifier and controller-authorisation state, together with the
+credential-binding secret. Omitting a persistent holder
+authentication key from a DID document does not remove
+method-specific controller authorisation.
+• DID publication.
+(st′ctl , vD )
+← DID.Publish(params, did, meta, stctl ).
+The method adapter authorises publication or update and
+returns the authenticated document/state reference vD
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+and updated controller state. The holder updates stH
+accordingly. Invalid or unauthorised requests return ⊥.
+• DID resolution.
+(doc, vD ) ← DID.Resolve(params, did, ν).
+The selector ν requests the current document or a supported historical state. The adapter validates the result
+under the selected DID method. Unavailable, unauthenticated or unsupported results produce ⊥.
+• Interactive
+credential issuance. Let qiss
+=
+(params, µ, rse ). With party-specific inputs, write
+(st′I , st′R ; outH )
+
+I : (stI , ev);
+
+← Issue R : stR ;
+
+
+
+ (qiss ).
+
+H : (stH , did, vD , attr)
+Here ev is the evidence used by the issuer to validate
+attributes. The authority states remain with their owners,
+and outH = (vc, we ) or ⊥ is the holder’s output.
+Distinct authorities communicate through their authorised
+interfaces; the issuer does not receive the manager’s secret
+state.
+In an authenticated and confidential issuance session,
+the issuer validates the attributes, resolves the current
+DID state, checks its agreement with vD , and verifies
+controller authorisation for that state. These checks determine the complete approved message vector mapp ,
+including (did, vD ). The parties then execute EnrollDAA ,
+which binds this vector, the holder secret, the instance
+metadata and a fresh registered revocation identifier rid.
+The holder secret and any non-empty private bindingopening material are not supplied to the issuer. The
+manager provides an initial non-membership witness, and
+the holder validates the resulting credential and witness
+before accepting.
+Identifiers are never reused, including identifiers allocated in aborted sessions. Every certification response is
+recorded before release. An abort stops further processing
+but does not undo a released certificate, an identifier
+allocation or a committed public-state update. Consequently, updated authority states are returned even when
+the holder’s output is ⊥.
+The issuer observes the submitted evidence, approved
+vector, binding representation and its protocol transcript.
+The manager observes its registration inputs. These private records are not disclosed to verifiers under the
+baseline trust model.
+• Presentation.
+vp ← Present(params, vc, stH ,
+we , ctx, rse ).
+The holder validates the authenticated request, policy
+approval, instance and state references, credential and
+witness. It invokes AuthDAA to prove the complete
+relation defined in Section V-B, returning ⊥ on failure.
+The presentation binds the disclosed values to the same
+
+6
+
+certified messages and holder secret, and proves nonrevocation of the same certified rid. The DID is disclosed
+only if required by the approved policy.
+• Stateful verification.
+(b, st′V ) ← Verify(params, vp, ctx,
+rse , stV ).
+The verifier checks that the expected context is registered, pending, unexpired, intended for its audience and
+associated with the invoking session. It checks issuer
+trust, the pinned key version, schema and policy, state
+authentication and VerifyDAA . Any required credentialvalidity fields must be certified and disclosed. If the
+policy requires a disclosed DID-document check, the
+verifier resolves the specified state and enforces that
+check.
+After these checks, it reads CurrentState(ns) and requires
+agreement with ref e . It then atomically rechecks the
+pending context and its expiry and consumes the challenge before returning b = 1. All other outcomes return
+b = 0. Trusted time supports expiry checks. A challenge
+is accepted at most once, including across concurrent
+requests. The revocation epoch is the final read point
+defined in Section IV-A.
+• Revocation.
+(st′R , rse+1 , ue+1 )
+← Revoke(params, stR , rse , rid, req).
+The manager checks the request’s authorisation, the identifier’s registration and namespace, and consistency with
+its current state. For an authorised request concerning
+an unrevoked identifier, it sets Re+1 = Re ∪ {rid}
+and publishes the new authenticated state and public
+update information ue+1 . The update authenticates the
+namespace, consecutive epochs and old and new state
+values. Invalid, unauthorised or duplicate requests return
+⊥ without changing the state. All information actually
+published by this procedure is included in the privacy
+experiments.
+C. Witness Updates and Correctness
+The holder updates its witness locally using the auxiliary
+interface
+we′ ← UpdateWit pp, rid, we , rse , rse′ ,
+
+Ue→e′ ,
+where e′ ≥ e and Ue→e′ = (ue+1 , . . . , ue′ ) contains the
+ordered public updates. Neither the holder’s private identifier
+and witness nor a manager secret key is published or supplied
+to a remote service by this local procedure. It checks the
+authenticated update chain, its endpoints and the input and
+resulting witnesses. Missing or inconsistent updates, or invalid
+witnesses, yield ⊥. For e′ = e, the empty update preserves a
+valid witness.
+Let NRVerify(pp, rse , rid, we ) be the domain-checked nonmembership predicate specified in Section V-B. For a valid
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+initial witness, honestly generated updates and rid ∈
+/ Re′ ,
+correctness requires
+
+7
+
+A. Credential State and Disclosure Policies
+The holder-local credential record is
+
+Pr[NRVerify(pp, rse′ , rid, we′ ) = 1] ≥ 1 − negl(λ).
+
+cred = (cert, m, rid, ρ, µ).
+
+For a revoked identifier, honest updating returns ⊥. Resistance
+to a maliciously constructed non-membership witness is a
+separate security property.
+Lifecycle correctness. Consider an honest execution with
+successful issuance, an accepted issuer instance, a satisfied
+supported policy, an eligible unrevoked credential and a valid
+updated witness. The state must match the context and the
+final current-state read. The context must remain pending and
+unexpired, with no competing acceptance consuming it, and
+any required DID and application checks must succeed. For vp
+generated by Present on these inputs and (b, st′V ) generated
+by Verify, correctness requires
+
+Here cert is the issuer-certification material, m =
+(m1 , . . . , mℓ ) is the complete certified vector, rid is its revocation identifier, and ρ is any additional private binding-opening
+material, possibly ϵ. Setting ρ = ϵ does not remove the
+requirement to know xH . The vector includes the application
+attributes and designated fields for (did, vD ). The instance
+metadata µ and secret xH are as defined in Section IV-A.
+The controller state stctl supports DID operations and issuance
+validation; it is not an authentication-proof input.
+The baseline retains the certified credential record between
+presentations. Fresh presentation randomness does not modify
+that record. The epoch-dependent witness we is stored separately, giving the authentication witness
+
+Pr[b = 1] ≥ 1 − negl(λ).
+The probability is over honest setup and protocol randomness.
+Acceptance of stale states, revoked credentials or unsatisfied
+policies is not a correctness requirement.
+D. DID Binding and Security Objectives
+DID binding gives a credential issuance-time controllerauthorisation semantics. The issuer validates control of
+(did, vD ) in the same session in which that reference and
+the approved attributes are bound to the holder secret. Later
+presentations prove consistency with that certified statement
+while concealing the DID. This links issuance to the selected
+method’s identifier-management rules [13]; it does not establish current control of a hidden DID after a controller change.
+Such changes require an application policy for revocation
+or reissuance. Current hidden-DID control would require an
+additional authenticated current-state relation.
+Section VI formalises authorised certification, preservation
+of the certified holder binding, knowledge-based authentication soundness, adaptive presentation privacy, revocation
+soundness and post-revocation unlinkability. Session binding and one-time challenge consumption supply replay resistance at the lifecycle layer. Privacy is relative to authorised public disclosures and the permitted corruption model.
+Post-revocation unlinkability protects historical presentations
+against later public revocation information while holder secrets
+remain uncompromised; it is distinct from forward security
+after secret-key exposure.
+V. PQ-DAA: A P RIVACY-P RESERVING AUTHENTICATION
+L AYER FOR PQ-DID
+PQ-DAA supplies the authentication interfaces used by
+PresentDID and VerifyDID . Its setup, enrolment and presentation syntax follows the anonymous-credential setting, including lattice-based constructions [24], [27]. The four interface
+names do not themselves define a new cryptographic primitive.
+Here the layer specifies the joint requirements linking issuerapproved messages, a holder secret, issuance-time DID binding, context-bound selective disclosure and hidden-identifier
+non-revocation within the PQ-DID lifecycle.
+
+ωe = (cert, xH , m, rid, ρ, we ).
+These are private holder records, not public credential or
+presentation encodings.
+A baseline policy is policy = (D, Ppub ), where D ⊆
+{1, . . . , ℓ} is the canonically ordered set of disclosed fields
+and Ppub checks their values mD and public context. Policies
+belong to the family fixed by pp; Section VII selects disclosures and public equality or range checks on disclosed fields.
+DID-field disclosure requires holder approval. Any validity
+fields used by a public check must be certified and disclosed.
+Disclosing an issuer-certified eligibility flag is supported; proving a range condition on a hidden value requires an explicit
+additional relation, encoding and proof. Arbitrary hiddenattribute predicates are not implied by selective disclosure.
+B. Complete Authentication Relation
+The following deterministic, domain-checking interfaces
+specify the credential and revocation relations. Each instantiation must provide their algorithms and valid encodings.
+• BindRep(pp, µ, cert, ρ) returns the original certified binding representation B, or ⊥. The issuer observes B during
+enrolment, but B need not appear in a presentation.
+This interface does not require B to hide the approved
+attributes from the issuer.
+• BindOpen(pp, B, xH , m, ρ) checks that B binds the
+stated secret and complete message vector using ρ,
+including their domains, encodings and any required
+witness bounds.
+• CredValid(pp, µ, cert, xH , m, rid, ρ) checks issuer certification of the protocol suite, metadata, binding
+representation B and identifier rid, together with
+BindOpen(pp, B, xH , m, ρ) = 1 for that same B. It
+checks all credential domains but does not access the
+issuer’s private authorisation records. Whether the messages were actually approved is addressed by certification
+security.
+• NRVerify(pp, rse , rid, we ) checks the revocation identifier and witness domains and non-membership against
+Ae . The interface accommodates an accumulator or an
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+authenticated revocation tree; it does not require constantsize witnesses. State authentication is checked separately
+below; state freshness is enforced by the PQ-DID wrapper.
+The base public statement is
+X = (pp, µ, ctx, rse , D, mD ).
+Define PubOK(X) = 1 exactly when parsing and
+public-domain checks succeed; the suite, protocol tag, issuer/key/schema reference and namespace match the configured instance; (D, Ppub ) is the supported policy in ctx; disclosures have the prescribed ordering and encodings; the context’s
+state reference matches rse ; and StateAuth(pp, rse ) = 1 under the configured revocation key. Application trust decisions,
+trusted time, current-state reads, pending-session checks and
+holder approval remain wrapper operations.
+The complete relation Rauth (X, ωe ) = 1 holds if and only
+if
+PubOK(X) = 1,
+CredValid(pp, µ, cert, xH , m, rid, ρ) = 1,
+NRVerify(pp, rse , rid, we ) = 1,
+projD (m) = mD ,
+Ppub (mD , ctx) = 1.
+The identical rid and certified message vector occur throughout. Separate proofs about unrelated certification and revocation witnesses do not satisfy this relation.
+An instantiation may introduce additional public proof data
+a and private randomness η, with a refined relation satisfying
+
+Rinst (X, a), (ωe , η) =⇒ Rauth (X, ωe ).
+It must give an efficient honest procedure lifting a valid
+base witness to this relation, together with the applicable
+completeness, privacy and extraction guarantees. Auxiliary
+public data are covered by the privacy experiment and bound
+into the statement with ctx. Section VII requires no auxiliary
+relation data: a = η = ϵ. Its proof nonce, view commitments
+and opened views are part of π, and its random shares and
+tapes are prover randomness rather than additional credential
+witnesses.
+C. Generic PQ-DAA Syntax
+The four core interfaces are
+ΠPQ-DAA = (Setup, Enroll, Auth, Verify).
+Subscripts distinguish the DID and DAA layers when necessary.
+• Setup.
+(pp, stI , stR , rs0 ) ← Setup(1λ ).
+This generates the cryptographic parameters, separate
+authority states and initial authenticated revocation state,
+or returns ⊥ on setup failure. PQ-DID incorporates these
+same outputs into its setup; it does not generate a second,
+independent credential instance.
+
+8
+
+•
+
+Interactive enrolment. For qen = (pp, µ, rse ) and the
+issuer’s approved vector mapp , write
+(st′I , st′R ; outH )
+
+
+I : (stI , mapp );
+
+
+← Enroll R : stR ;
+ (qen ).
+app
+H : (xH , m )
+The holder constructs B and any private opening material
+ρ, and the manager allocates a fresh registered rid. The
+holder proves knowledge of (xH , ρ) satisfying
+BindOpen(pp, B, xH , mapp , ρ) = 1
+
+in
+an
+enrolment
+statement
+binding
+(pp, µ, mapp , rid, B, nI , rse ). Here nI is a fresh,
+one-use issuer challenge. The issuer verifies its own
+approved vector, the instance and state references, the
+identifier’s registration, the active challenge and the
+proof before releasing certification of the suite, µ, B and
+rid.
+The issuer records the certification before release and
+consumes the issuance challenge. The protocol does not
+transmit xH or non-empty private opening material to
+the issuer; the selected enrolment argument must provide its specified witness-privacy guarantee. The holder
+checks the certificate and initial witness and returns
+outH = (cred, we ) on success or ⊥ otherwise. The
+allocation, logging and abort semantics are those of Section IV-B. PQ-DID supplies mapp after external attribute
+and controller validation; enrolment proves binding to
+that vector. Certification security follows either a direct
+reduction or the compatible issuance-extraction route of
+Section VI-B3. The construction in Section VII uses
+direct certification of the issuer-approved encoded vector.
+• Authentication.
+auth ← Auth(pp, cred, xH , we , ctx, rse ).
+After holder approval and input validation, the algorithm
+constructs X, checks the complete relation and generates
+a fresh proof π, or returns ⊥. Its output is
+auth = (D, mD , π).
+If auxiliary public data are required, π = (a, πinst ).
+Authentication leaves the certified record unchanged and
+does not write to issuer or revocation-manager records.
+Reusability means that the same credential can support
+new contexts using fresh proof randomness and appropriately updated witnesses.
+• Cryptographic verification.
+b ← Verify(pp, auth, ctx, rse ).
+The verifier derives µ from the expected context and state,
+constructs X, checks PubOK(X) and Ppub (mD , ctx),
+and verifies the complete-relation proof. Malformed encodings, unsupported policies, mismatched disclosures
+and invalid proofs cause rejection.
+This algorithm is stateless: it checks cryptographic validity for the supplied statement. PQ-DID supplies issuer
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+trust, current-state freshness, trusted-time and session
+checks, and one-time challenge consumption.
+D. Revocation and Composition with PQ-DID
+Revocation uses Section IV-B, and local witness updating
+uses Section IV-C. An authentication for rse′ uses a valid
+we′ and a context referencing that state. Updating the witness
+does not change the certified messages, binding representation
+or identifier. Honest authentication fails when no valid witness
+is available.
+IssueDID validates the external evidence and DID control
+before invoking EnrollDAA . Its local record vc contains cred
+and any additional lifecycle metadata. PresentDID validates
+the request and holder approval and invokes AuthDAA with
+the appropriate witness. VerifyDID invokes VerifyDAA within
+its stateful procedure. Challenge consumption occurs only in
+the DID layer.
+E. Correctness and Security Requirements
+For an honest accepted enrolment, a valid witness in the
+authenticated state, a satisfied supported policy and matching
+context references, let auth be the output of Auth. Correctness
+requires
+Pr[Verify(pp, auth, ctx, rse ) = 1] ≥ 1 − negl(λ).
+Lifecycle acceptance additionally requires the conditions in
+Section IV-C.
+Section VI separates the following requirements. Authorised
+certification prevents a valid credential opening outside the
+issuer’s recorded approvals. Binding preservation prevents
+different holder-secret/message pairs from opening the same
+certified representation. Knowledge soundness requires an
+applicable quantum extractor for fresh-context proofs of the
+complete relation; it does not posit extraction from a single
+transcript. Adaptive presentation privacy covers anonymity,
+unlinkability and selective-disclosure privacy under repeated
+presentations and permitted verifier collusion. Revocation
+soundness excludes valid non-membership witnesses for revoked identifiers. Post-revocation unlinkability additionally
+covers the joint view of historical tokens and subsequent
+public revocation information. These guarantees do not prevent
+voluntary sharing of a complete credential and its holder
+secret.
+VI. G ENERIC S ECURITY M ODEL OF THE PQ-DAA AND
+PQ-DID F RAMEWORKS
+We define security for the interfaces of Sections IV and V.
+The model separates authorised certification, preservation of
+the holder binding, complete-witness knowledge, adaptive
+presentation privacy and revocation security. Here Π denotes
+a PQ-DAA instance with its enrolment, certification and revocation interfaces. PQ-DID experiments additionally execute
+the lifecycle wrapper.
+The asymptotic definitions concern the parameter family
+indexed by λ. A fixed profile, such as Section VII, must give
+concrete bounds for its specified parameters and adversarial
+resources. Choosing λ = 128 for a nonce convention does not
+establish an overall 128-bit security claim.
+
+9
+
+A. Execution Model, Oracles and Leakage
+Adversaries are quantum polynomial-time (QPT). Protocol
+messages and protocol-oracle queries are classical. For a Fiat–
+Shamir realisation, the adversary additionally has quantum superposition access to the random oracle. Probabilities include
+setup, protocol, adversarial and measurement randomness.
+All experiments allow polynomially many adaptive queries.
+Message, metadata and binding comparisons use the canonical
+encodings fixed by pp. Unsupported or capacity-exceeding
+operations follow the specified rejection or failure behaviour.
+The baseline uses sequential protocol-oracle scheduling:
+an interactive enrolment completes or aborts before another
+protocol-oracle call begins. Quantum random-oracle queries
+remain available during that interaction. Thus the model does
+not assert security for interleaved malicious enrolments. Several verifier contexts may nevertheless remain pending, and
+the lifecycle interface retains atomic challenge consumption.
+The challenger maintains holder handles h, credential or
+registration handles i, the private issuer-authorisation table
+Tauth , authenticated revocation history {rse , ue }e , and an ordered execution history J . Handles name experiment records
+and are not embedded in anonymous tokens. Records distinguish allocated identifiers, released certification responses and
+successfully accepted holder credentials. Every allocation and
+certification response remains recorded after an abort.
+Corruption model. Setup, the targeted issuer instance,
+its revocation manager and the current-state service remain
+honest. Their private records are not revealed to the adversary. DID-method integrity and authenticated resolution are
+assumed. Verifiers may collude with each other and with
+corrupted holders; a designated target verifier remains honest
+in the PQ-DID acceptance experiment. Every holder may
+be corrupted in certification, binding and non-membership
+experiments.
+Privacy protects only holders that remain uncorrupted
+throughout the experiment, including after revocation. Corrupting a holder exposes all its credentials and retained
+state. Authority–verifier collusion, authority compromise and
+challenge-holder secret compromise are not covered by these
+privacy claims.
+The experiment provides the following oracles. Malformed
+queries, unknown handles and inadmissible operations return
+⊥ without using the hidden challenge bit.
+•
+
+OEnroll (h, m, µ) executes the prescribed issuance procedure. A new holder is designated honest or adversarially
+controlled before the session. The issuer applies the configured evidence and authorisation checks; the requested
+vector m is not automatically approved. For an honest
+holder, the challenger retains its private inputs and executes the protocol. For a controlled holder, the adversary
+supplies its inputs and interacts with the honest issuer.
+The oracle returns the handles, outcome, public outputs
+and the adversary’s own view where applicable. It does
+not otherwise release honest-holder issuance transcripts
+or private evidence. Every released certification response
+is entered in Tauth before release, whether or not the
+holder subsequently accepts it.
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+OShow (i, ctx) requests a presentation from a named,
+honestly issued credential. The challenger checks holder
+approval, the supported policy, current state, credential
+eligibility and a fresh presentation context. It updates the
+private witness when necessary and runs Auth with fresh
+randomness. It returns the token and public inputs, or
+⊥ on failure. Repeated use of a credential under new
+contexts is allowed. Every returned base statement X is
+recorded in Qshow , together with the token. A context is
+fresh here if its audience/session/nonce combination has
+not already been used by a presentation oracle.
+• ORevoke (i) requests revocation of a named registered
+identifier. The experiment authorises the request unless a
+challenge restriction forbids it, including for an identifier
+allocated in an aborted session. It returns the actual
+published state and update records, including any identifier or metadata published by the selected construction.
+This experimental capability does not confer revocation
+authority on an arbitrary application user.
+′
+• OUpdate (i, e ) executes local witness updating through a
+valid ordered chain from the retained witness epoch to
+an available later epoch. For an honest holder, it retains
+the witness privately and returns only the public outcome.
+For a controlled or corrupted holder, the resulting witness
+is available to the adversary. All public update records
+remain available independently of this oracle.
+• OCorrupt (h) releases the holder’s retained secrets, credentials, witnesses, controller state and local records.
+A protected challenge holder cannot be corrupted; a
+previously corrupted holder cannot become a challenge
+holder.
+• In PQ-DID experiments, ORequest creates an honest verifier’s pending context using the configured trust policy
+and current-state service. OVerify executes stateful verification and updates verifier state. Authenticated public
+resolution queries and their outputs are included in the
+execution history. PQ-DAA verification is public and
+stateless.
+Public leakage. The authorised presentation leakage is
+•
+
+L = (µ, ctx, rse , D, mD ),
+together with public parameters and the public directory and
+issuance metadata explicitly fixed by the selected deployment
+profile. The adversarial view contains every permitted oracle
+reply, all observed proof bytes and lengths, and the adversary’s
+residual quantum state. Additional proof data are not automatically classified as authorised leakage; their joint distribution
+must satisfy the privacy experiment. A deployment cannot
+silently add credential-dependent public fields to this leakage
+specification. In Section VII, the complete proof bytes remain
+observable, while the certified binding and revocation witness
+remain private. Updates publish the revoked identifier and its
+old sibling path; these publications belong to the adaptive and
+historical privacy views.
+Supported policies may change adaptively between sessions,
+subject to holder approval and the challenge restrictions.
+Privacy is relative to the cumulative authorised disclosures,
+which can themselves identify a holder. A hidden-predicate
+
+10
+
+extension must specify the relation and add its public outcome
+to the leakage. Network addresses, traffic timing and service
+availability are outside these credential-level experiments.
+B. Certification, Binding and Knowledge Requirements
+1) Unforgeability of Authorised Credentials: For every
+released certification response, the issuer records
+t = (µ, mapp , rid, B)
+in Tauth . The complete approved vector includes the certified
+DID reference. The issuer need not know the holder secret to
+maintain this table. Let
+z = (µ, cert, xH , m, rid, ρ)
+be a credential opening. For t = (µt , mt , ridt , Bt ), define
+Match(t, z) = 1 if and only if
+µ = µt ,
+
+m = mt ,
+
+rid = ridt ,
+
+BindRep(pp, µ, cert, ρ) = Bt .
+Thus matching is defined through the original certified binding,
+not a freshly generated presentation commitment. Set
+_
+Authorised(z, Tauth ) =
+Match(t, z).
+t∈Tauth
+
+In Expcert
+Π (A), the adversary has the applicable oracles with
+⋆
+⋆
+
+arbitrary holder corruptions and outputs z . It wins when µ
+identifies the targeted instance and
+CredValid(pp, µ⋆ , cert⋆ , x⋆H , m⋆ , rid⋆ , ρ⋆ ) = 1,
+Authorised(z ⋆ , Tauth ) = 0.
+
+Define Advcert
+Π (A) as the probability of winning. Authorised
+certification requires this advantage to be negligible. Fresh
+presentation randomness for an authorised record is not a
+forgery.
+This definition links certification to the values actually
+approved by the issuer. Signing an unchecked holder-supplied
+binding does not establish that its contents match those
+approvals. The reduction must use either a direct encoding
+linkage or an adequate issuance proof. The truth of external
+evidence remains an issuer-validation assumption.
+2) Preservation of the Holder Binding: The authorisation
+table records approved messages and a representation B,
+but does not record the holder’s secret. We therefore state
+binding preservation separately. In Expbind
+Π (A), honest setup
+is followed by the applicable oracles with arbitrary holder
+corruptions. The adversary outputs B and two opening tuples
+(x0 , m0 , ρ0 ) and (x1 , m1 , ρ1 ). It wins if
+BindOpen(pp, B, x0 , m0 , ρ0 ) = 1,
+BindOpen(pp, B, x1 , m1 , ρ1 ) = 1,
+(x0 , m0 ) ̸= (x1 , m1 ).
+The winning probability Advbind
+Π (A) must be negligible. The
+property covers every accepted message domain and opening,
+including maliciously selected values; it does not assume a
+particular commitment construction. It remains meaningful
+when ρ0 = ρ1 = ϵ.
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+Together with validated enrolment, this requirement prevents an efficiently produced alternative secret/message opening for the same certified representation. It does not prevent a
+holder from voluntarily sharing its original secret and complete
+credential.
+3) Certification Reduction and Optional Issuance Extraction: The certification analysis must account for accepted
+malicious enrolments. A direct reduction is sufficient when
+the certified representation and its canonical encoding enforce
+the exact approved vector. Section VII follows this route: the
+issuer builds the message component of B from mapp , records
+it, and signs it with the instance and identifier. Certification
+security then concerns a previously unsigned credential message; it does not require extracting every enrolment witness.
+This does not remove the enrolment proof from the protocol.
+For a different reduction that compares a later opening
+with an opening extracted during issuance, the following is
+a sufficient extraction contract.
+There is an efficient quantum emulation of the permitted
+sequential issuance execution which retains an analysis-only
+table Text . For every released record t = (µ, mapp , rid, B),
+this table contains (xH , ρ) satisfying
+BindOpen(pp, B, xH , mapp , ρ) = 1.
+The joint distribution of the observable execution, authorisation history and adversary’s residual quantum state is computationally indistinguishable from the real execution. Missing
+or invalid extracted entries occur with negligible probability.
+These openings are neither delivered to the issuer nor revealed
+to the adversary in the real protocol.
+Let ϵiss (λ, q) bound the relevant distinguishing loss, extraction failures and any running-time truncation for the polynomial query budget q. It must be negligible. The emulation
+must preserve the external signing, registration and revocation
+interactions used by the component reduction; it cannot undo
+a released certificate or assume access to the inverse of an
+external classical oracle.
+A compatible quantum witness-extended emulation can
+establish this contract. Sequential scheduling and ordinary
+knowledge soundness alone do not imply it. An alternative
+certification proof may avoid this contract if it directly establishes the certification experiment under its stated component
+assumptions. In either case the precise reduction, permitted
+oracle access and loss must be supplied.
+4) Complete-Witness Knowledge and Context Binding:
+Knowledge soundness concerns the complete relation Rauth
+of Section V-B. A refined proof relation must extract a witness
+that projects to
+ωe = (cert, xH , m, rid, ρ, we )
+satisfying that relation, including all domains and the identical
+certified identifier in non-membership verification.
+For extraction, a base statement X is fresh when it has not
+previously been answered by an honest presentation oracle,
+including the challenge oracle below. Changing only auxiliary
+proof data a does not make a previously answered base
+statement fresh. Previously obtained proofs for other contexts
+remain available as auxiliary information.
+
+11
+
+We require an applicable quantum argument-of-knowledge
+theorem for this oracle environment. To state the quantitative
+contract, let S be a specified efficient target predicate on
+the recorded history and public statement. Write ϵS for the
+probability that the adversary outputs an accepting proof for
+a fresh X satisfying S. An extractor with the stated access to
+that adversary and its oracles must output a consistent history
+and (X, ωe ) with probability at least
+Fauth (ϵS ; λ, q),
+such that X is fresh, S holds and Rauth (X, ωe ) = 1.
+The target predicate and the corresponding adaptive-statement
+guarantee must be justified by the applicable theorem; they
+are not inferred from unrestricted extraction. The case S ≡ 1
+gives the ordinary fresh-statement requirement.
+The selected profile must specify the knowledge error κ,
+the function Fauth , the query dependence and the extractor’s
+running time. The bound must be non-negligible whenever
+ϵS − κ is non-negligible, within the permitted running-time
+model. Any expected-time extraction used in a polynomialtime component reduction must include truncation and its loss.
+Extraction used below must be compatible with the actual
+authorisation and revocation history and the external component oracles. It cannot create an unrelated issuance history or
+assume the ability to rewind or invert an external classical
+signing or revocation oracle. If honest proofs are simulated in
+a reduction, the extraction theorem must cover that simulatedproof access or the proof must justify another route.
+The construction analysis must decode its circuit witness ξ
+into ωe and derive Fauth from its component extraction bound,
+preserving the same target event and authorised history.
+The expected context and all proof-associated public data
+are bound to the statement. Fiat–Shamir hashing of a context
+is not, by itself, an extraction theorem. QROM transformation results require an appropriate underlying quantum proof
+of knowledge and their other hypotheses [34]; they do not
+automatically establish the issuance-emulation contract above.
+No claim is made that a witness can generally be recovered
+from one accepted transcript alone.
+C. Adaptive Presentation Privacy
+The challenger samples one bit b ← {0, 1} and provides the
+preceding oracles together with
+OLR (i0 , i1 , ctx).
+An admissible query satisfies all the following conditions:
+1) Both records are accepted honest credentials whose
+holders have never been corrupted. Both holders become
+protected for the remainder of the experiment. The
+indices may coincide.
+2) Both credentials are eligible and unrevoked in the same
+current authenticated state, have valid updated witnesses,
+and satisfy the same supported policy approved by both
+holders.
+3) Their instance metadata, disclosed positions and disclosed values agree. The context and every authorised
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+public outcome are identical for the two candidates, and
+the context is fresh for the presentation oracles.
+The challenger checks both candidates and performs any
+required local witness maintenance without depending on b.
+An inadmissible query returns ⊥. For an admissible query, it
+returns the public inputs and
+auth ← Auth pp, credib , xH(ib ) ,
+
+wib ,e , ctx, rse
+using fresh randomness, and records the base statement in
+Qshow . The selected index is not returned, passed to an
+authority or used to modify credential or revocation records.
+The adversary may request polynomially many adaptive
+presentations across colluding verifiers, change supported policies and interleave background revocations and witness updates. Named presentations from challenge credentials through
+OShow remain available under other fresh contexts. Candidate
+credentials cannot be revoked while this challenge oracle remains available. Background holders may be corrupted before
+or after challenge queries.
+Finally, the adversary outputs b′ . Define
+′
+Advpriv
+Π (A) = Pr[b = b] −
+
+1
+.
+2
+
+Adaptive presentation privacy requires negligible advantage
+for every admissible QPT adversary.
+Anonymity restricts the candidates to different protected
+holders. Unlinkability compares repeated use of one credential
+with use of different eligible credentials; successive pairs
+(i0 , i0 ) and (i0 , i1 ) give the usual two-presentation comparison. Selective-disclosure privacy compares different hidden
+certified values with identical authorised disclosures. These are
+restrictions of the adaptive experiment, not consequences of
+a single-token test. All restrictions apply across the complete
+query history. Revealing a distinguishing DID or other attribute
+makes that comparison inadmissible; other identifying disclosures can defeat anonymity even when the DID is hidden.
+D. Revocation Security and Historical Privacy
+1) Adaptive Non-Membership Soundness: In Expnm
+Π (A),
+the adversary has the applicable enrolment, presentation,
+corruption, revocation and update oracles with no protected
+holders. It may retain all old states and witnesses. It outputs
+(e⋆ , rid⋆ , w⋆ ) and wins if rse⋆ belongs to the generated
+authenticated history and
+rid⋆ ∈ Re⋆ ,
+NRVerify(pp, rse⋆ , rid⋆ , w⋆ ) = 1.
+The winning probability Advnm
+Π (A) must be negligible. A
+valid witness for an epoch before revocation does not violate
+this definition.
+For authentication, the relevant identifier is the one in the
+extracted certified witness. An adversary’s unauthenticated
+claim that a token belongs to a named credential does not
+determine its hidden rid. Successful authentication with a
+different, genuinely unrevoked credential is not a revocation
+forgery. PQ-DID fixes the applicable epoch through its final
+current-state read.
+
+12
+
+2) Post-Revocation
+Unlinkability:
+The
+experiment
+Exppru
+Π (A) extends adaptive presentation privacy in two
+phases.
+1) Historical presentations. The adversary uses the same
+global challenge bit and oracles, obtaining challenge tokens across supported policies, verifiers and epochs. All
+candidate credentials remain unrevoked while challenge
+queries are available.
+2) Subsequent revocation. At an adaptively chosen cutoff, the challenge oracle closes permanently. The adversary may revoke candidate credentials and receives every
+actual published state, update and revocation metadata
+item. At least one credential used in a challenge must
+be revoked before the final guess. Ordinary enrolment,
+named presentation, update and permitted corruption
+queries remain available. Challenge-holder corruption
+remains forbidden.
+Revocation identifies a named handle, with the same service
+rule in both worlds. Its choice may depend on observations
+but is not selected by the challenger using b. After the cut-off,
+no oracle presents again using the hidden challenge-selected
+index; that would disclose revoked-versus-unrevoked status
+directly.
+The final adversarial view is the joint distribution
+Viewb = (Histb , RevPub>cut , Auxb ),
+including all historical tokens, subsequent public revocation
+information, other permitted replies, corrupted background
+holders’ witnesses and the adversary’s residual quantum state.
+Define
+1
+′
+.
+Advpru
+Π (A) = Pr[b = b] −
+2
+Post-revocation unlinkability requires negligible advantage for
+all admissible adversaries. It protects the association of historical presentations with later revocation records; it does
+not conceal revocation facts deliberately published by the
+mechanism.
+Sufficient joint-view simulation condition. One sufficient
+proof route is an online simulator for the complete challenge
+token, including auxiliary public proof data. The simulator
+receives its public statement and authorised leakage, and any
+simulation setup permitted by the proof system, but neither
+the selected witness nor the hidden candidate index. It has no
+advance knowledge of future revocation requests. For each b,
+require
+Viewreal
+≈q Viewsim
+b
+b ,
+where the entire subsequent service execution retains its prescribed joint distribution with the honestly generated records.
+The condition includes the shared random oracle, where applicable. A direct joint-view hybrid proof is an alternative way to
+establish the experiment; this simulation condition is sufficient,
+not necessary. Absence of a literally repeated identifier in a
+later update is insufficient to establish either route.
+Theorem 1 (Conditional post-revocation unlinkability). Suppose the joint-view simulation condition holds, challenge-token
+generation has no selection-dependent persistent-state effects,
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+and all remaining services operate on named records and
+public requests without receiving the hidden selection. If δb
+bounds the distinguishing gap between the complete real and
+simulated views in world b, then
+δ0 + δ 1
+Advpru
+.
+Π (A) ≤
+2
+Proof. Replace challenge tokens online by their simulations
+in each world. The respective changes in any final binary test
+are at most δ0 and δ1 , including after later revocations. Both
+simulated worlds provide identical inputs to the simulator,
+initialise all named records by the same rule, and execute the
+same service algorithms without access to b. Induction over
+the adversary’s adaptive queries gives identical simulated-view
+distributions. The triangle inequality bounds the difference
+between the two real-world guess probabilities by δ0 + δ1 .
+Guessing advantage is half that difference.
+E. Conditional Security of PQ-DID
+The following results assume the configured instance and
+trust model, authenticated resolution and state references,
+correct external issuance validation, the current-state service,
+trusted time and atomic challenge management. These are
+explicit system assumptions; signature unforgeability alone
+does not supply currentness or external validation.
+Theorem 2 (Authentication and revocation soundness). Suppose the complete-relation extraction contract applies to the
+PQ-DID acceptance event with success probability ϵ on a
+previously unanswered base statement. Let pgood be the probability that this extraction returns a valid witness whose
+credential opening is issuer-authorised and whose certified
+identifier is unrevoked at the recorded final verification epoch.
+There are compatible component adversaries Bcert and Bnm
+such that
+pgood ≥ Fauth (ϵ; λ, q)
+− Advcert
+Π (Bcert )
+− Advnm
+Π (Bnm ).
+All extraction, emulation and running-time losses must be
+included in the invoked contract or component bounds.
+Proof. PQ-DID acceptance implies verification of the complete relation under the expected context and the authoritative
+state at the final read. Apply the compatible extraction theorem
+for this target event. It produces a relation witness with
+probability at least Fauth (ϵ; λ, q).
+If the extracted opening does not match Tauth , output it
+in the certification experiment. If the extracted rid belongs
+to the revoked set at the recorded epoch, output that epoch,
+identifier and witness in the non-membership experiment. Both
+reductions preserve the authorisation and revocation history
+required by their games. By the union bound, subtracting these
+two bad-event probabilities leaves the stated lower bound on
+authorised, unrevoked extraction.
+The bound concerns successful knowledge extraction, not
+an algorithm which extracts from each individual accepted
+transcript. Binding preservation separately excludes two efficiently produced distinct secret/message openings for the same
+
+13
+
+certified representation. A reduction that relies on extracting a
+malicious enrolment opening must include the corresponding
+issuance-emulation and extraction losses in Section VI-B3.
+The direct-certification route does not incur those particular losses; authentication extraction and all other component
+losses remain. The external validation assumption gives the
+resulting certified DID reference its issuance-time controllerauthorisation meaning.
+The stateful verifier rejects expired, consumed or inappropriate contexts and stale revocation references. Atomic
+challenge consumption and the non-reuse of nonces prevent
+a second acceptance of the same request. These checks do not
+establish resistance to voluntary secret sharing or live relay of
+an authorised response within its intended session.
+Theorem 3 (Privacy under lifecycle composition). Let g ∈
+{priv, pru} denote the corresponding PQ-DAA privacy experiment. Suppose Π satisfies that experiment, and all additional
+PQ-DID fields and observable service effects admit online
+simulation from its authorised leakage and permitted public
+history. Let ∆wrap,b bound the change in the complete worldb view due to this wrapper simulation. Then an admissible
+PQ-DID adversary A yields a PQ-DAA adversary B with
+AdvgPQ-DID (A) ≤ AdvgΠ (B)
+∆wrap,0 + ∆wrap,1
+.
++
+2
+For g = pru, the simulation requirement covers the complete
+future revocation and auxiliary-information view.
+Proof. The reduction forwards admissible candidate pairs and
+contexts to the underlying PQ-DAA experiment and simulates
+the additional lifecycle observations. These include public
+DID and issuer-key resolution, metadata, request handling and
+observable state-service effects. The simulation receives no
+hidden candidate index. Replacing the wrapper in each world
+changes the corresponding final test probability by at most
+∆wrap,b . The remaining distinguishing advantage is that of B
+in the underlying experiment. The triangle inequality and the
+definition of guessing advantage give the bound. For historical
+privacy, the same reduction continues through all permitted
+subsequent revocations.
+Thus the lifecycle result retains the separate dependencies
+on authorised certification, binding preservation, completerelation quantum extraction, non-membership soundness, presentation privacy and the system services. These definitions fix
+the guarantees to be established for the selected construction;
+they do not replace the component algorithms or their security
+reductions.
+VII. C ONCRETE I NSTANTIATION OF THE PQ-DID
+L IFECYCLE
+We realise Sections IV-B and V-C using ML-DSA-65,
+SHA3-384 binding, a revocation tree and a Boolean MPCin-the-head argument. The reference DID method retains the
+registry, confidential issuance, current-state, trusted-time and
+atomic verifier-state assumptions of Section IV-A; it does not
+specify consensus or a standardised DID method.
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+Write H = SHA3-384, [a]k = I2OSP(a, k) (unsigned bigendian), LP(s) = [|s|]4 ∥ s, and
+k
+
+enca (s1 , . . . , sk ) = LP(a) ∥ [k]4 ∥ ∥ LP(si ).
+i=1
+
+E recursively encodes tuples using their literal ASCII tags and
+displayed field order; lists contain one field per element. Byte
+strings are inserted once. Reject incorrect tags, counts, types,
+domains, lengths, padding or trailing bytes; every lengthprefixed field must contain at most L = 232 − 1 bytes. MLDSA retains its standard internal byte order.
+A. Eight Concrete Lifecycle Algorithms
+1) Setup: Setup(1λ ). Accept λ = 128 only, with suite
+PQ-DID-MITH-1. Use August 2024 FIPS 204 MLDSA-65 with fresh hedging randomness [30] and
+FIPS 202 SHA3/SHAKE [35]. Public keys, secret
+keys and signatures occupy 1952, 4032 and 3309
+bytes. Signa , Vfya use external context PQ-DID/a/v1,
+for credential, state, update, did-record,
+did-read, control, request, current and
+revreq; subscript cred abbreviates credential.
+Generate independent issuer/revocation key pairs and a
+uniform 32-byte namespace. Set
+pp = (suite, ref I , ns, pkI , pkR , sch),
+µ = (ref I , ns),
+
+cfgD = (γ, pkG ),
+
+params = (pp, cfgD , trust).
+The registry has a 32-byte identifier γ, independent
+ML-DSA keys, a versioned map, atomic append-ifcurrent and ordered reads; it retains skG . Trust configuration authorises the issuer/key/schema instance
+and pins audience request keys. Define ref I =
+enciref (didI , kid, E(sch)), with non-empty issuer/key
+identifiers of at most 256 bytes. Tags for pp, µ, rse , ref e
+are parameters, meta, rstate, rref; repeated
+instance fields must agree.
+The immutable schema comprises 2 ≤ ℓ ≤ 16 descriptors (namej , typej , Mj ): distinct non-empty ASCII
+names of at most 64 bytes, one-byte types and twobyte capacities. Types 0, 1 and 2 denote byte strings,
+one Boolean byte in {0, 1} and eight-byte unsigned
+integers. Tag schema contains the one-byte count, two
+distinct one-byte indices for (did, vD ), then descriptors
+tagged field. These designated fields have type 0 and
+capacities at least 171 andP56 bytes. Require sufficient
+fixed-type capacity and
+j (2 + Mj ) ≤ 1024. For
+canonical bj with |bj | ≤ Mj , set
+Ej (mj ) = [|bj |]2 ∥ bj ∥ 08(Mj −|bj |) .
+Concatenating fields and zero-padding gives the 1024byte Esch (m). A two-byte mask represents D by bit
+j−1; unused bits are zero, and mD concatenates selected
+Ej in ascending order. Tag policy contains this mask
+followed by at most 32 distinct, lexicographically sorted
+clauses enceq ([j]1 , Ej (c)) or encrange ([j]1 , [a]8 , [b]8 ).
+All tested fields are disclosed; ranges require type 2
+
+14
+
+and a ≤ b. Ppub evaluates their conjunction. Encode
+Section IV-A’s ctx under context, with tag = suite,
+non-empty aud, sid of at most 256 bytes, a 32-byte
+nonce and eight-byte UTC expiry in seconds.
+Use a depth-20 tree:
+Lb = H(encleaf (suite, µ, b)),
+Fj (u, v) = H(encnode (suite, µ, j, u, v)),
+Te [0, i] = L1[i∈Re ] ,
+Te [j, k] = Fj (Te [j − 1, 2k], Te [j − 1, 2k + 1]),
+Ae = Te [20, 0].
+b, j occupy one byte; hashes occupy 48 bytes. Initially,
+R0 = ∅, Z0 = L0 , Zj = Fj (Zj−1 , Zj−1 ) and A0 =
+Z20 . For eight-byte epochs without wraparound, set
+τe ← Signstate (skR , encstate (suite, µ, e, Ae )),
+rse = (ns, e, Ae , τe ).
+StateAuth checks domains, instance and signature. Each
+authority retains its secret key and initially empty tables: issuer approvals/sessions and manager registrations/requests. The manager retains the tree and allocation counter zero. Validate keys and bounded expansions, sign rs0 and initialise its current-state register.
+Return (params, stI , stR , rs0 ), or ⊥ without activating
+a partial instance. SetupDAA supplies the cryptographic
+outputs once; PQ-DID adds method/trust configuration.
+2) Holder generation: DID.KeyGen(params). Generate
+and validate controller keys (pkC , skC ); independently
+sample xH , ζ ← {0, 1}256 . Set
+d = H(encdid-id (suite, γ, pkC , ζ)),
+did = did:pqdid: ∥ hex(γ) ∥ : ∥ hex(d),
+using lower-case hexadecimal without prefixes (171
+ASCII bytes). Return (did, stH ), where stH =
+(xH , stctl ) and controller state stores the DID, keys, salt,
+reference ϵ and no pending operation; failure returns ⊥.
+Nothing is published or registered.
+3) Publication:
+DID.Publish(params, did, meta, stctl ).
+Define
+qk = (γ, did, k, δk−1 , pkC,k , ak , ζ),
+Rk = (qk , αk ),
+
+δk = H(E(Rk )),
+
+vD = [k]8 ∥ δk .
+
+Tags are did-body and did-record; ak ∈ {0, 1}
+occupies one byte, and 0 ≤ k < 216 eight bytes.
+Metadata (a, r) ∈ {(1, 0), (1, 1), (0, 0)} comprises onebyte active/rotation flags. Genesis requires (1, 0), authenticated absence, k = 0, δ−1 = 0384 and recomputation of the DID; sign E(q0 ) with skC,0 under
+did-record. Updates require a fresh current read
+matching the retained reference and controller key, an
+active predecessor, next index, unchanged DID and
+salt, and the predecessor digest. Sign with the previous
+controller key; r = 1 installs newly generated, validated
+keys, otherwise retain the key. Deactivation (0, 0) is
+terminal.
+Validate and retain the pending record/keys. The registry checks the record/transition and atomically appends
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+against its predecessor or absence, preserving history.
+A confirming authenticated read returns (st′ctl , vD ),
+changing only controller state. Resolve pending attempts
+before new operations: retry identical records while their
+predecessor is current, accept confirmed occurrence even
+after deactivation, or retire an attempt upon a conflicting successor. Timeouts retain possibly active keys.
+Unsupported metadata and invalid operations return ⊥;
+committed records survive delivery failure.
+4) Resolution: DID.Resolve(params, did, ν). Validate the
+DID/method/registry. Selector ν is byte 0 for current state or byte 1 followed by vD for history.
+Send a fresh 32-byte nG ; the pinned registry signs
+(γ, did, ν, nG , status, (R0 , . . . , Rk )) under tag/context
+did-read, with chain tag did-chain. One-byte
+status 0 denotes an endpoint; 1 denotes absence and
+an empty chain. Validate the response signature, nonce,
+selector, complete chain, embedded keys/expansions and
+endpoint. Ordered current reads select the latest endpoint; signatures alone do not establish freshness.
+An active endpoint returns (doc, vD ) with exact
+whitespace-free UTF-8 doc = {"id":"did"} and
+media type application/did+json; all other outcomes return ⊥. Historical resolution does not assert
+current control. Controller keys come from validated
+method records, outside the DID document [13], and
+are absent from anonymous presentations. Do not follow
+untrusted redirects.
+5) Issuance: Issue. Use Section IV-B’s party-specific inputs and qiss = (params, µ, rse ). The issuer validates
+ev, attr, resolves the current DID matching vD , and
+obtains holder approval of the exact mapp , including
+canonical (did, vD ), over the confidential authenticated
+channel. The manager permanently allocates the next
+four-byte rid < 220 , advancing its counter without
+changing the root; exhaustion fails. Supply its zero-leaf
+witness and current state matching rse ; register a fresh
+instance-unused 32-byte issuer nonce nI as pending.
+Define
+Y = H(encholder (suite, µ, xH )),
+B = (Y, Esch (mapp )),
+Mcred = enccred (suite, µ, B, rid),
+Xen = (pp, µ, mapp , rid, B, nI , rse ).
+B, Xen use binding, enrol-statement; mapp
+uses Esch . The holder sends B, Prove(enrol, Xen , xH )
+and Signcontrol (skC , E(Xen )). The enrolment circuit
+checks BindOpen with a 256-bit witness; public checks
+enforce domains, state and equality with the approved
+message encoding. Verify registration, pending nonce,
+proof and controller signature against the resolved key.
+Freshly recheck the DID reference and revocation state
+before certification; mismatch aborts. These reads fix the
+issuance-time references.
+Set σ ← Signcred (skI , Mcred ), cert = (B, σ)
+and vc = cred = (cert, mapp , rid, ϵ, µ). Tags are
+certificate, credential; m uses Esch , and
+
+15
+
+ρ is a zero-length field. BindRep validates the instance/certificate and ρ = ϵ, returning B; BindOpen
+checks these domains and the displayed binding equations for candidate (xH , m). CredValid additionally validates rid and Vfycred (pkI , Mcred , σ) = 1. Boundedverify the signature; log (µ, mapp , rid, B) before release, serialising logging, nonce consumption and release. The holder checks the approved vector, credential,
+state and witness, returning outH = (vc, we ) with
+we stored separately. Return updated authority states
+even on holder failure. Abort retires the nonce, retaining allocations and released certificates; never reuse
+rid. The binding/certification exchange is EnrollDAA ;
+evidence/controller validation is the PQ-DID wrapper.
+Direct certification follows Section VI-B3; xH stays
+private.
+For r < 220 , a witness w = (s0 , . . . , s19 ) comprises
+twenty 48-byte siblings, sj = Te [j, (⌊r/2j ⌋) xor 1].
+Define PathRoot(r, b, w) = v20 by v0 = Lb and
+(
+Fj+1 (vj , sj ), bitj (r) = 0,
+vj+1 =
+Fj+1 (sj , vj ), bitj (r) = 1.
+NRVerify checks all domains and PathRoot(r, 0, w) =
+Ae .
+6) Presentation: Present(params, vc, stH , we , ctx, rse ).
+Authenticate the request, obtain holder approval, and
+check the instance, expiry, policy, state references,
+credential and witness. Update outdated witnesses
+locally using item 8; a changed request state requires a
+new request. Set
+X = (pp, µ, ctx, rse , D, mD ),
+
+mD = projD (m),
+
+ξ = (xH , Esch (m), rid, σ, we ).
+Tag X as auth-statement; private fields occupy 32,
+1024, 4, 3309 and 960 bytes. The circuit validates all
+private domains, reconstructs Y, B, Mcred , and checks
+Vfycred (pkI , Mcred , σ) = 1,
+PathRoot(rid, 0, we ) = Ae ,
+
+projD (m) = mD .
+
+Check PubOK(X), Ppub (mD , ctx) publicly as in Section V-B. The same hidden rid binds certification and
+revocation; extraction yields ((B, σ), xH , m, rid, ϵ, we ).
+Bounded computation. Execute FIPS 204 Algorithms 3
+and 8 and every invoked subroutine, including context/hash processing, key expansion, signature/hint decoding, polynomial arithmetic, norm tests and challenge comparison. SHA3/SHAKE execute all FIPS 202
+blocks, rounds, suffixes and padding. Caps are 1026
+bytes per RejNTTPoly, 512 per RejBoundedPoly, 256
+total per SampleInBall (eight sign bytes and at most
+248 index bytes), and 1024 ML-DSA.Sign internal
+iterations. Sampling preserves the standard coefficientassignment order and consumes rejected index bytes.
+Exhaustion rejects verification or aborts setup/signing;
+bounded-verify every signature before release, without
+an internal retry on failure. These caps exceed the
+minima in FIPS 204, Appendix C [30]; accumulated
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+honest-operation failure remains a separate budget in
+Section VIII-A.
+Circuit profile BC-1. The suite fixes CGen(kind, X).
+Inline the selected relation’s bounded computations in
+source order: evaluate operands left to right, expand
+matrix/vector operations componentwise, left-fold sums
+and traverse arrays by increasing indices. Serialised
+bytes enter most-significant-bit first; arithmetic bit i has
+weight 2i , with FIPS bit-order conversions implemented
+by rewiring. Use signed 64-bit integer words, signextended 65-bit addition/subtraction and 128-bit products; check representability before narrowing. Reduce
+each ring operation modulo q = 8380417; preserve
+FIPS centred representatives where specified. Bytes and
+Keccak lanes remain 8- and 64-bit bitstrings. Attribute
+integers remain eight-byte strings inside the circuit;
+disclosed range checks use unsigned arithmetic outside
+it.
+Use XOR, AND, NOT and constants, expanding a∨b =
+a ⊕ b ⊕ (a ∧ b). Ripple addition emits, low bit first, ti =
+ai ⊕ bi , si = ti ⊕ ci and ci+1 = (ai ∧ bi ) ⊕ (ti ∧ ci ), with
+c0 = 0; subtraction complements the second operand
+and sets c0 = 1. Equality left-folds bitwise XNORs;
+signed comparison uses the sign of the extended difference. Multiply magnitudes by summing shifted partial
+products in increasing bit order, then apply the sign.
+Division/reduction by a positive constant scans magnitude bits high to low with conditional subtraction,
+followed by the signed floor/remainder correction. Bitstring shifts/permutations rewire bits; integer shifts use
+checked multiplication/floor division by powers of two.
+Use mux(s, a, b) = a ⊕ (s ∧ (a ⊕ b)). Private reads
+scan all cells with equality selectors; writes multiplex
+all cells from a snapshot, preserving sequential source
+assignments.
+Compile both branches, true before false, merging with
+multiplexers. Unroll array loops to their fixed capacities
+and sampling loops to their byte caps, retaining source
+initialisation, tests and increments. Share each sampler’s
+byte counter across its invocation; termination masks
+later iterations. Invalid parsing, indexing or overflow
+sets a sticky rejection bit only on active paths; invalid
+reads supply zero and writes do nothing. Parallel FIPS
+state updates read the preceding state. Reserve wires
+0 and 1 for constants, then number input bits in serialised order and gate outputs in emission order; copies
+reuse wires. Fold only operations with entirely public
+operands; retain all other gates without reassociation,
+common-subexpression elimination or partial constant
+simplification. Number AND gates in emission order;
+the single output is the conjunction of the required
+checks and absence of rejection.
+The derived circuit fX has d = 256 (enrol) or d =
+42632 (auth) private bits and g AND gates. Before
+proving or checking, require all public domains and
+|E(X)| ≤ L,
+
+V = ⌈(d + 2g)/8⌉ ≤ L.
+
+The generator rejects on exceeding these bounds; no
+
+16
+
+prover-selected circuit is accepted. Thus g ≤ ⌊(8L −
+d)/2⌋. Every outer-oracle input below is shorter than
+Bmax = 2L+218 bytes. Admission establishes encoding
+capacity, not practical execution cost.
+Shared prover. Prove(kind, X, ξ) first derives fX and
+rejects a wrong-length witness or fX (ξ) ̸= 1. Use 480
+independent ZKBoo-style three-view repetitions [31],
+j = 0, . . . , 479, with parties i = 0, 1, 2 modulo three.
+Sample uniform ξ0 , ξ1 and set ξ2 = ξ ⊕ ξ0 ⊕ ξ1 ; each
+party receives an independent raw uniform g-bit tape.
+Constants share as (a, 0, 0), XOR is local and NOT flips
+party 0. At AND gate k,
+zi = (ai ∧ bi ) ⊕ (ai+1 ∧ bi ) ⊕ (ai ∧ bi+1 )
+⊕ ri,k ⊕ ri+1,k .
+View vj,i contains its input share, tape and AND outputs
+in gate order: d + 2g bits, packed most-significant-bit
+first with zero terminal padding. Reconstruct other wires
+locally. For output shares yj,i , independent 64-byte salts
+sj,i and HRO = SHAKE256(·, 1024) (128-byte output),
+set
+cj,i = HRO encview (suite, kind, E(X),
+
+[j]2 , [i]1 , sj,i , vj,i ) .
+A concatenates (yj,0 , yj,1 , yj,2 , cj,0 , cj,1 , cj,2 ) in repetition order; output shares use bytes 0 or 1. After committing, sample an independent 64-byte ν and compute
+u = HRO (encchallenge (suite, kind, E(X), ν, A)),
+
+
+ej = (OS2IP(u) mod 3480 )/3j mod 3,
+with unsigned big-endian OS2IP. Return π = ν ∥ A ∥
+Z, where Z lists the salt/view of ej , then ej + 1, for
+each repetition. AuthDAA returns auth = (D, mD , π)
+and vp = auth, encoded as mask, selected fields and
+proof. Auxiliary relation data are a = η = ϵ. Refresh all
+proof randomness, erase transient state and never reopen
+views under another challenge. No additional holder
+identifier, binding, certificate or witness is disclosed;
+authority/credential records remain unchanged. Failure
+returns ⊥.
+7) Verification:
+Verify(params, vp, ctx, rse , stV ).
+Check(kind, X, π) derives the admitted fX , d, g,
+checks exact proof length and recomputes challenges.
+In each repetition, require advertised outputs to XOR to
+1, both opened commitments and padding to validate,
+reconstructed outputs to match their advertised shares,
+and every AND equation of the first opened party
+to hold using both views/tapes. Accept only if all
+repetitions pass. VerifyDAA (pp, vp, ctx, rse ) parses
+(D, mD , π), constructs X, checks PubOK, Ppub , and
+invokes Check(auth, X, π).
+The DID verifier also checks exact agreement with
+its registered pending context, audience/session, expiry,
+trusted issuer/key/schema, policy and state reference.
+Configured DID-state checks require both did, vD disclosed and validated resolution; hidden-DID lookups
+are unsupported. Finally read CurrentState(ns) and
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+match the context reference; atomically recheck the
+complete pending context, session and expiry, consume
+the challenge and return (1, st′V ). Failure returns (0, stV )
+without this call consuming the challenge; concurrent
+calls may update shared state. Replicas share atomic
+state. The final read fixes the logical revocation epoch;
+subsequent updates do not invalidate past acceptance.
+DAA verification remains stateless.
+For CurrentState, send a fresh 32-byte nS . The
+manager signs enccurrent (suite, E(µ), nS , E(rse )) under
+current for an ordered snapshot. Check nonce, instance, response signature and StateAuth; failure returns ⊥. Request creation obtains this state, samples
+an audience-unused 32-byte nonce, registers ctx and
+signs E(ctx) under request. The holder checks the
+pinned audience key and retains the signature outside
+ctx, vp. Lifetime follows application policy and trusted
+time. These are supporting procedures.
+8) Revocation: Revoke(params, stR , rse , rid, req). The issuer may revoke any allocated identifier, including
+aborted issuance. For fresh 32-byte nR , form req =
+(nR , β) with
+
+17
+
+profile does not itself establish overall 128-bit security. Dependencies include ML-DSA post-quantum EUF-CMA, quantum
+collision/preimage resistance as used, the ideal outer QROM
+and the stated services. Sections VIII-C and VIII-D analyse
+extraction [32] and joint-view privacy [33]; Section VIII-E
+treats lifecycle composition. Internal SHA3/SHAKE computations remain actual circuit computations.
+The exact proof-length rule, used by both prover and
+checker, is
+|π| = 64 + 480 (515 + 2 ⌈(d + 2g)/8⌉)
+
+bytes.
+
+For authentication, the gate-independent term is 5,363,104
+bytes; each million AND gates adds 240,000,000 bytes. These
+are calculated sizes. Generated gate counts and measured costs
+require circuit synthesis and execution.
+VIII. S ECURITY OF THE C ONCRETE C ONSTRUCTION
+We analyse the Section VII construction in Section VI’s
+experiments, separating certification, binding, extraction, presentation privacy and lifecycle composition. Historical privacy
+includes the complete subsequent revocation view.
+
+MR = encrevreq (suite, E(µ), [rid]4 , E(ref e ), nR ),
+β ← Signrevreq (skI , MR ).
+Check the signature, unused nonce, registration, namespace, current-state agreement and non-revocation. For
+r⋆ = rid, obtain its old path w⋆ , set its leaf to L1 , and
+recompute ancestors a0 = L1 , . . . , a20 = Ae+1 . Sign
+rse+1 and set ue+1 = (rse , rse+1 , r⋆ , w⋆ , υ), tagged
+rupdate, where
+Mu = encupdate suite, E(µ), E(ref e ),
+
+E(ref e+1 ), [r⋆ ]4 , s⋆0 ∥ · · · ∥ s⋆19 ,
+υ ← Signupdate (skR , Mu ).
+Validate both new signatures; atomically commit the
+tree, epoch, nonce consumption and public records.
+Return (st′R , rse+1 , ue+1 ). Invalid or failed pre-commit
+operations return ⊥ without state change; committed
+updates remain retrievable. Revocation and DID deactivation are independent.
+Local
+witness
+update.
+Validate
+both
+state
+signatures, υ, namespace, consecutive epochs, and
+PathRoot(r⋆ , b, w⋆ ) = Ae+b for b ∈ {0, 1}. Validate
+the old witness; return ⊥ if r = r⋆ . Otherwise
+recompute aj from (r⋆ , 1, w⋆ ) and set
+(
+aj , (⌊r/2j ⌋) xor 1 = ⌊r⋆ /2j ⌋,
+′
+sj =
+sj , otherwise.
+Verify the new path. UpdateWit iterates over the ordered
+authenticated chain with matching endpoints; missing/inconsistent updates fail, while an empty chain preserves a valid same-state witness. Identifiers/witnesses
+remain local during updating; the published r⋆ , w⋆ belong to the historical privacy view.
+Correctness holds for admissible executions in Section IV-C,
+subject to bounded-operation failures. The fixed λ = 128
+
+A. Model and Quantitative Conventions
+Let H = SHA3-384. Only the outer, domain-separated
+proof hash HRO is modelled as a quantum-accessible random
+oracle with 1024-bit outputs. Internal SHA3/SHAKE computations remain the specified algorithms. Assume ML-DSA65 post-quantum EUF-CMA security with classical signing
+queries and quantum collision resistance of H. Hiding a
+uniform xH from its binding Y additionally requires preimage resistance on its 256-bit domain. This is separate from
+binding preservation. Retain Section VI-A’s honest-authority,
+sequential-oracle, corruption and leakage restrictions, and Section IV-A’s service assumptions.
+Let TA be adversarial running time, Q ≥ 1 bound all
+outer-oracle queries, and N bound the proofs replaced in a
+privacy experiment. Q includes honest proof/checker queries,
+the hybrids’ ordinary oracle queries and the complete postchallenge continuation. Probabilities include setup aborts,
+which contribute no advantage. Bounds are clipped at one;
+[a]+ = max{a, 0}.
+Bounded-operation loss. Compare bounded execution E
+with the standard ML-DSA execution using the same randomness, stopping the comparison at the first exceeded cap.
+Budgets nK , nS , nV count honest key generations, signing
+invocations and verifications of honestly generated signatures;
+nA counts additional matrix expansions. Include pre-release
+verification in nV , and all setup, controller and service operations. Reused deterministic expansions can be counted once
+when cached. Before the first failure, the capped subroutine
+counts satisfy
+cT ≤ 30(nK + nS + nV + nA ),
+cB ≤ 11nK ,
+
+cC ≤ 1024nS + nV ,
+
+cS = nS .
+
+These follow from ML-DSA-65’s 6 × 5 matrix, eleven short
+polynomials and at most 1024 challenge samplings per signing
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+call. Set C = cT + cB + cC + cS ; thus C ≤ 41nK + 1055nS +
+31nV + 30nA .
+Under the XOF-output and geometric-rejection model
+used
+204, Appendix C [30], define F (n, p, k) =
+Pk innFIPS
+i
+n−i
+. For Section VII’s limits, the per-call
+i=0 i p (1 − p)
+estimates are
+βT = F (342, 8380417/223 , 255) < 2−594 ,
+βB = F (1024, 9/16, 255) < 2−304 ,
+βC = F (248, 13/16, 48) < 2−325 ,
+βS = (41/51)1024 < 2−322 .
+Indeed, 1026 bytes give 342 candidate field elements, and
+512 bytes give 1024 candidate nibbles. After eight sign bytes,
+SampleInBall needs 49 accepted indices from 248 bytes;
+each acceptance probability is at least 208/256 = 13/16. The
+signing estimate uses the model’s conditional rejection bound
+41/51, rather than inferring a tail from the mean alone.
+Let ∆tail (E) bound the increase in the first-failure probability when these conditional tail estimates are transferred to
+the actual adaptive execution. The union bound gives
+X
+δcap (E) ≤ ∆tail (E) +
+cj βj
+j∈{T,B,C,S}
+−304
+
+≤ ∆tail (E) + C 2
+
+.
+
+No independence between calls is required if the corresponding conditional bounds hold. In that model ∆tail = 0;
+this equality is not asserted for arbitrary adaptively selected
+SHAKE inputs. Malformed adversarial signatures are rejected,
+not charged as honest failures. Standard correctness makes prerelease failure on an honest signature a covered cap event. For
+a signature reduction, abbreviate
+-CMA
+εΣ (B) = AdvqEUF
+ML-DSA-65 (B) + δcap (B).
+The cap term covers key generation and the relevant signing
+simulation; it prevents an internally signed but unreleased
+message from being silently classified as fresh.
+Correctness, capacity and reduction cost. Use Section VII’s admitted BC-1 circuits and Bmax = 2(232 −1)+218
+bytes. Checked arithmetic preserves valid values: ring products
+are below 246 and even a 256-term sum is below 254 . Attribute
+integers remain byte strings in the circuit. For a true admitted
+statement, proof completeness is perfect: XORing the three
+AND equations cancels the tape bits and recovers the AND of
+the reconstructed inputs. Path-update induction gives the new
+root for every unrevoked credential. Operational correctness
+additionally requires the eligibility, state and service conditions
+of Section IV-C, with cryptographic cap aborts charged to δcap .
+Component advantages include signing-query budgets and
+reduction runtime. With Thon the cost of simulating the other
+roles and Tgen that of circuit generation, an extraction-based
+reduction takes
+Tred ≤ TA + Thon + Tgen
+2
+
++ O(Q ) poly(1024, 8Bmax ) + O(480 |fX |),
+where |fX | counts all circuit gates. Direct reductions omit the
+extraction terms. The factor eight converts bytes to bits.
+
+18
+
+B. Certification, Binding and Non-Revocation
+Theorem 4 (Authorised certification and holder binding). For
+the Section VI-B experiments, there are component reductions
+such that
+Advcert
+Π (A) ≤ εΣ (Bcert ),
+qCR
+Advbind
+Π (A) ≤ AdvH (Bbind ).
+
+Proof. Embed the challenge key as pkI , forward its signing
+queries with their contexts, and simulate the other roles. Compare this standard-oracle simulation with bounded signing,
+losing at most δcap ; the simulation aborts on a failed prerelease check. No access to the oracle’s secret internal counters
+is assumed.
+Outside the coupling failure, every released credential signs
+M = enccred (suite, µ, B, rid) with B = (Y, Esch (mapp )), and
+the issuer logs (µ, mapp , rid, B) before release. If a winning
+opening’s message was already signed, injective encodings and
+BindOpen = 1 make it match that retained record, contradicting Authorised = 0. Otherwise it gives a fresh credentialcontext EUF-CMA forgery; other contexts cannot supply it.
+This directly certifies the approved vector without extracting
+every enrolment witness. External evidence validation remains
+trusted.
+Two valid openings of one B have identical canonical
+attributes and ρ = ϵ. A binding win therefore has x0 ̸= x1
+but equal hashes of their distinct encholder (suite, µ, xi ) inputs.
+Output this collision. Voluntary sharing of the original opening
+is outside that experiment.
+Theorem 5 (Sound non-revocation paths). In Section VI-D’s
+authenticated history,
+qCR
+Advnm
+Π (A) ≤ AdvH (Btree ).
+
+Proof. Maintain the actual tree at every epoch. A winning
+(e, r, w) reconstructs Ae from L0 , although r ∈ Re and
+its genuine path starts at L1 . If the leaves coincide, their
+distinct encodings collide. Otherwise the first level at which
+the two running hashes coincide gives distinct ordered child
+inputs with an equal level-tagged hash. This works for the
+adversarially chosen epoch and all permitted updates and
+corrupted-holder paths.
+C. Complete-Witness Knowledge in the QROM
+Theorem 6 (Extraction preserving the target event and history). For Section VI-B4’s target predicate S and success
+probability ϵS , set
+p⋆ = (2/3)480 + 2−544 ,
+εex (Q) = min{1, 31740Q3 2−1024 + 20Q2 p⋆ },
+Fauth (ϵS ; 128, Q) = [ϵS − εex (Q)]+ .
+The profile satisfies that extraction contract with knowledge
+error κ(Q) = εex (Q) and the running time above.
+Proof. Fix the statement, 1440 committed messages and advertised outputs. The canonical commitment inputs bind the
+suite, proof kind, statement, repetition, party, salt and view; the
+outputs and nonce are additional first-message data. If all three
+pair checks accept in one repetition, all three parties’ AND
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+equations hold. Gatewise XOR reconstructs ξ with fX (ξ) = 1.
+Testing three pairs in each repetition finds such a witness in
+polynomial time.
+This verifies S-soundness∗ in [32, Definition 3.5], where a
+challenge set belongs to S if some repetition’s projection contains all three choices. Otherwise at most 2480 challenge vectors accept. Each vector has probability at most 3−480 +2−1024
+under the specified modulo map, giving p⋆ . The ordinary
+commit-and-open theorem [32, Theorem 4.2] therefore gives
+the displayed error, since 22 · 1440 + 60 = 31740.
+For the oracle environment, execute the adversary and real
+honest algorithms together, using actual witnesses for honest
+proofs. Count their queries in Q, retain the classical authorisation, revocation and presentation histories, and forward external classical component-oracle calls without rewinding. Apply
+the theorem to the adaptively selected terminal statement,
+retaining those histories as auxiliary output. Its compressedoracle simulation has zero simulation error, and acceptance
+with invalid extraction has probability at most εex . Restricting
+this event to fresh statements satisfying S gives the claimed
+lower bound without changing the target history.
+Decode ξ = (xH , Esch (m), rid, σ, we ), reconstruct Y, B,
+and output
+ωe = ((B, σ), xH , m, rid, ϵ, we ).
+The circuit enforces domains, signature validity, disclosures
+and non-revocation for the same certified rid; public verification enforces PubOK, Ppub . Thus Rauth (X, ωe ) = 1.
+Extraction uses the execution and simulated oracle, rather
+than a transcript alone. The same reconstruction applies to
+enrolment; certification does not require simultaneous issuance
+extraction.
+D. Adaptive Simulation of Presentations
+For the 512-bit salts and proof nonce, define
+p
+α(Q) = Q 2−512 + 12 Q 2−512 ,
+δZK (N, Q) = min{1, N (481α(Q) + 960Q 2−256 )}.
+Theorem 7 (Online simulation of the complete proof view).
+At most N adaptively requested proofs of true admitted statements can be simulated online from their public statements
+and proof kinds, with distinguishing loss at most δZK (N, Q)
+over the entire permitted continuation. No witness, hidden
+candidate index or future revocation data are required.
+Proof. Retain real persistent records throughout these games.
+G0 : real proofs. Run the prescribed prover and subsequent
+oracle operations.
+G1 : programmed challenges. After committing the views,
+sample uniform u ∈ {0, 1}1024 , derive the specified modulo
+challenges, and program their hash point using the fresh 512bit ν. Its conditional maximum point probability is 2−512 , so
+adaptive reprogramming [33, Theorem 1] gives | Pr[G0 = 1]−
+Pr[G1 = 1]| ≤ N α(Q), including subsequent oracle access.
+Since view generation does not use u, it can equivalently be
+sampled first.
+G2 : uniform unopened commitments. Replace each repetition’s unopened commitment by an independent 1024-bit
+
+19
+
+string. To justify one replacement, first program that value
+when its independent salt is sampled, costing at most α(Q).
+Then remove this programming while retaining the random
+commitment. In the unprogrammed comparison no operation
+uses the hidden salt; even given later credential/view information, its query-point probability remains at most 2−512 .
+A telescoping quantum-query hybrid bounds the change by
+2Q 2−256 . Consequently,
+
+| Pr[G1 = 1] − Pr[G2 = 1]| ≤ 480N α(Q) + 2Q 2−256 .
+This uses erasure and the prohibition on reopening views;
+challenge programming is in a separate domain.
+G3 : witness-free views. For each selected pair, sample input
+shares and raw tapes uniformly; sample the second party’s
+AND outputs uniformly and compute the first party’s outputs
+from its checked equations. Reconstruct the other gates and
+choose the third output share to make XOR one. The missing
+input share is one-time masked, and every unchecked AND
+output has a fresh unknown tape bit. This is exactly the
+valid two-view distribution [31, Proposition 4.1]. Hash the
+opened views with fresh salts, choose unopened commitments
+uniformly, form A, sample ν, and program the challenge
+point to the previously sampled u. Sampling u preserves the
+exact modulo distribution; canonical packing preserves proof
+lengths. Thus G3 equals G2 and uses only public inputs.
+Adding the losses proves the claim, including the residual
+quantum state.
+Theorem 8 (Adaptive presentation privacy). In Section VI-C’s
+experiment,
+Advpriv
+Π (A) ≤ δZK (N, Q).
+This includes its anonymity, unlinkability and selectivedisclosure specialisations.
+Proof. In each world b, simulate the left–right responses using
+Theorem 7. Admissibility supplies identical public statements
+and outcomes; eligibility and witness maintenance check both
+candidates before selection. Presentation changes no persistent
+credential/authority record. Every remaining named oracle
+therefore runs without b, including under verifier collusion,
+changing supported policies and background revocations. Induction makes the simulated worlds identical. Section VI’s
+guessing advantage is half their real-world probability difference, so averaging the two simulation losses gives the
+bound.
+Theorem
+9
+(Post-revocation
+unlinkability).
+Section VI-D2’s two-phase experiment,
+
+For
+
+Advpru
+Π (A) ≤ δZK (N, Q),
+where N counts historical challenge proofs and Q includes
+the entire post-cut-off continuation.
+Proof. Simulate historical challenge proofs while retaining
+both actual candidate records. After the cut-off, execute real
+named revocations, publishing the signed states, revoked
+identifiers and old sibling paths, together with all permitted
+updates, named presentations and background corruptions.
+These operations may depend on earlier observations but never
+
+JOURNAL OF LATEX CLASS FILES, VOL. 14, NO. 8, AUGUST 2021
+
+receive the historical selection bit. Hence the joint simulated
+history, subsequent revocation publications and auxiliary information are independent of b. Theorem 7 bounds each complete
+real-world distance, supplying the two terms of Theorem 1.
+Their average gives the result. Protected-holder corruption and
+hidden-index presentations after the cut-off remain forbidden;
+no claim of post-compromise privacy follows.
+E. Composition with the Concrete DID Lifecycle
+Let εsys bound cryptographic authenticity failure in the
+signed-service realisation, retaining honest ordering, lateststate, time and atomic-consumption services. A conservative
+multi-key bound is
+X
+εΣ (Bk ) + AdvqCR
+εsys ≤
+H (Brecord )
+k∈Ksys
+
++ qn (qn − 1)2−257 .
+Ksys comprises relevant honest issuer, revocation, registry,
+controller and request keys; each reduction includes every
+signing purpose under its key and aborts if that key is corrupted
+before the target violation. The nonce term covers at most
+qn independent 256-bit read nonces; retained used-set checks
+exclude successful repeats for other nonce types.
+At the first accepted unauthorised service message, its
+context and canonical contents give a fresh signature forgery,
+unless distinct hash-referenced records share a digest, giving
+a collision. Genesis, successor, endpoint, selector and nonce
+checks exclude other substitutions and replays outside these
+events. Signatures do not establish ordering or freshness. In
+Section VI’s ideal authentic-service experiments, εsys = 0.
+Theorem 10 (Lifecycle authentication and revocation soundness). For target acceptance probability ϵ on a fresh base
+statement at an honest verifier, compatible reductions give
+
+pgood ≥ ϵ − εsys − εex (Q)
+
+− εΣ (Bcert ) − AdvqCR
+H (Btree ) + ,
+where pgood is the probability of extracting an authorised
+complete witness unrevoked at the final state read. The bound
+also holds for the permitted efficient terminal predicates of
+Section VI-B4.
+Proof. Outside system-authenticity failure, acceptance uses
+the expected context, trusted instance and root at the final
+current-state read. Theorem 6 preserves this event and history.
+An extracted opening absent from the authorisation table wins
+Theorem 4; an extracted certified rid revoked at that read wins
+Theorem 5. Subtracting these events instantiates Theorem 2.
+The approved vector retains the validated issuance-time
+(did, vD ) binding, without asserting later control of a hidden
+DID. Atomic challenge consumption prevents repeated acceptance; fresh contexts require the corresponding statementbound proof. Voluntary sharing and live relay remain outside
+this knowledge claim.
+Theorem 11 (Privacy under the DID lifecycle). For g ∈
+{priv, pru} under the corresponding Section VI restrictions,
+AdvgPQ-DID (A) ≤ δZK (N, Q) + εsys .
+
+20
+
+Proof. Couple the signed-service execution to authentic services, then simulate its challenge proofs. Maintain actual
+DID histories, registry/controller records, current-state replies,
+pending contexts and revocation publications. Named services
+require no hidden candidate index. A hidden DID triggers
+no lookup; any disclosed (did, vD ) and resolution outcome
+must belong to the common authorised leakage. Thus the
+authentic wrapper contributes ∆wrap,b = 0 in Theorem 3. Apply the corresponding presentation or historical-privacy result
+and add the coupling loss. The model’s excluded authority
+collusion, holder compromise and network correlation remain
+excluded.
+Illustrative resource evaluation. Consider ceilings TA ≤
+280 , N ≤ 232 , |Ksys | + 1 ≤ 220 and qn ≤ 232 . Let the
+sum of the capped-call budgets across all cap terms in the
+chosen bound be at most 264 . This counts their reduction
+simulations, rather than multiplying one execution’s budget
+silently. Conservative upper bounds for the ideal-oracle proof
+terms are
+εex (Q) δZK (232 , Q)
+Q
+264
+
+< 2−148
+
+< 2−150
+
+280
+
+< 2−116
+
+< 2−134
+
+P
+The aggregate cap term is at most 2−240 + ∆tail , and the
+read-nonce term is below 2−193 . The table evaluates idealoracle bounds. An overall security claim must additionally
+justify the component advantages at reduction runtime, the
+sampling-model discrepancy and the service assumptions.

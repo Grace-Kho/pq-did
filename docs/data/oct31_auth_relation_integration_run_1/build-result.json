@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "binary_sha256": "047c911ed719381c93708a6c6a5423cc6de66fd0c4e959ad0fb695d612cc0051",
+  "commands": [
+    [
+      "/usr/bin/cmake",
+      "-S",
+      "/home/grace/projects/pq-did/experiments/auth_relation_integration_1/native",
+      "-B",
+      "/home/grace/projects/pq-did/experiments/auth_relation_integration_1/build",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_CXX_FLAGS_RELEASE=-O0 -g0"
+    ],
+    [
+      "/usr/bin/cmake",
+      "--build",
+      "/home/grace/projects/pq-did/experiments/auth_relation_integration_1/build",
+      "--target",
+      "relation_adapter",
+      "--parallel",
+      "1"
+    ]
+  ],
+  "full_relation": false,
+  "proof": false
+}

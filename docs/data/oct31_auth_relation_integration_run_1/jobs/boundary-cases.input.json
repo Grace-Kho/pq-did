@@ -1,0 +1,37 @@
+{
+  "name": "boundary-cases",
+  "phase": "python",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/auth_relation_integration_1/dispatch.py",
+    "B-01",
+    "B-02",
+    "B-03",
+    "B-04",
+    "B-05",
+    "B-06",
+    "B-07",
+    "B-08",
+    "B-09",
+    "B-10",
+    "B-11",
+    "B-12"
+  ],
+  "limit_seconds": 30,
+  "child_seconds": 29,
+  "status": "launched",
+  "unit": "pqdid-auth-relation-1-boundary-cases",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 460015,
+    "new_artifact_bytes": 853888,
+    "evidence_bytes": 25701448,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4533104640,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

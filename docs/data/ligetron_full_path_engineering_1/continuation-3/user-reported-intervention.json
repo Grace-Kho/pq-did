@@ -1,0 +1,11 @@
+{
+  "intervention": "one-off WSL page-cache release",
+  "command_reported_by_user": "sudo sh -c 'sync && echo 1 > /proc/sys/vm/drop_caches'",
+  "provenance": "user message preceding this continuation",
+  "performed_by_Codex": false,
+  "execution_independently_verified": false,
+  "execution_timestamp": null,
+  "automatically_repeated": false,
+  "causal_effect_quantified": false,
+  "timing_annotation": "Any subsequent engineering timings must retain this reported environment intervention and its uncertainty; no results merged into historical benchmark datasets."
+}

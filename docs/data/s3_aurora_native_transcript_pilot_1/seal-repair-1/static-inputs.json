@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "docs/data/s3_aurora_native_transcript_pilot_1/seal-repair-1/run.py": "6c7372eae9b5796dc812737aa7e6f697ab9db8667678e101fb9a676f6bccf58b",
+    "docs/data/s3_aurora_native_transcript_pilot_1/seal-repair-1/work.py": "3384903515a8b57c6ff84de7ecdac3d6b36a333a66d841dfa05169f21cc04543",
+    "docs/data/s3_aurora_native_transcript_pilot_1/seal-repair-1/seal_policy.py": "e8443562ef47d7c4874128eefc3abc5f7a08b9091ff4bb94e0d2e759b38d25d2",
+    "docs/data/s3_aurora_native_transcript_pilot_1/seal-repair-1/fixtures.py": "05aa504c98d4a43bdb602103fae350f24427b0678cb45165623111a57f60cd3e",
+    "docs/data/s3_aurora_native_transcript_pilot_1/seal-repair-1/checks.py": "6a75f08ccc5f2d999b823d559ef6dbb1ce40f1432d0be9db16422170ef18f20a"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "package": "OCT31-KYC-NATIVE-MILESTONE-1",
+  "continuation": "native-finalisation-1",
+  "prior_manifest_sha256": "c0475e4cbbcae25e3bfa1d2c08dedd338c99549f77726450f934e18fb15d4b1c",
+  "prior_closure_sha256": "540e8bd3443cf4423f78a3bf691b841e7751775a7efa052cd55bd34c0ea3f758",
+  "report_prefixes": {
+    "docs/status.md": {
+      "bytes": 205829,
+      "sha256": "59047c3437e5b1b435765867b3befe6544fdc3fe5ae80f8d6b79b51200dff636"
+    },
+    "docs/traceability.md": {
+      "bytes": 263749,
+      "sha256": "28d0e79841d1888967e24ffa330f2471fe2d2d967f2a31a2dcce42cf60193a5b"
+    },
+    "docs/spec_issues.md": {
+      "bytes": 227573,
+      "sha256": "e9d7ce6e47655f7a21d4a6e09428a9d4ea15331e7301842ae555a30466b365aa"
+    },
+    "docs/stage2_mldsa_reference_baseline.md": {
+      "bytes": 11176,
+      "sha256": "b25765797cda26398cbd30cee6508155a89c07ef17cac3c8829a78e295ad4302"
+    },
+    "docs/stage3_aurora_masking_native.md": {
+      "bytes": 11104,
+      "sha256": "b06524ec6ed75ea1e9cf01cec0391667a426d20da6f0dbdb22f16dbcfedbc90d"
+    },
+    "docs/kyc_milestone_benchmarks.md": {
+      "bytes": 9564,
+      "sha256": "47e1d8d8af1839f12ce2f42141d9198154d30b7529f56485354f07e4c92ef38c"
+    },
+    "docs/oct31_kyc_native_milestone.md": {
+      "bytes": 8959,
+      "sha256": "1817bba3cc367252ac2788fecc7973e6b970c72d7343495c7bb0631819f4b9be"
+    }
+  },
+  "opening_implementation_remaining_seconds": 3330.42511898058,
+  "opening_cumulative_invocations": 826,
+  "opening_builds_used": 8,
+  "storage": {
+    "new_evidence_bytes": 7010387,
+    "new_artifact_bytes": 30272657,
+    "evidence_bytes": 23675485,
+    "artifact_bytes": 58112659,
+    "temporary_bytes": 0
+  },
+  "requested_cases": [
+    "N-01",
+    "N-02",
+    "N-03",
+    "N-04",
+    "N-05",
+    "N-06",
+    "N-07",
+    "N-08",
+    "N-09",
+    "N-10",
+    "N-11",
+    "N-12",
+    "N-13",
+    "N-14",
+    "N-15",
+    "N-16",
+    "N-17",
+    "N-18",
+    "N-19",
+    "N-20",
+    "N-21",
+    "N-22",
+    "N-23",
+    "N-24",
+    "TR-01",
+    "TR-02",
+    "TR-03",
+    "TR-04",
+    "TR-05",
+    "TR-06",
+    "TR-07",
+    "TR-08",
+    "TR-09",
+    "TR-10",
+    "TR-11",
+    "TR-12",
+    "TR-13",
+    "TR-14",
+    "TR-15",
+    "TR-16",
+    "C-09"
+  ],
+  "no_new_allowances": true
+}

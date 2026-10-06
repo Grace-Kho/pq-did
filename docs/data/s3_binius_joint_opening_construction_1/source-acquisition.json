@@ -1,0 +1,90 @@
+{
+  "pin": "441fbf51ff0bcb0bcd28f3f1b73f4954029e8577",
+  "sources": [
+    {
+      "upstream_path": "crates/math/src/bit_reverse.rs",
+      "retained_path": "docs/data/s3_binius_joint_opening_construction_1/sources/crates--math--src--bit_reverse.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/math/src/bit_reverse.rs",
+      "bytes": 21300,
+      "git_blob": "3e2e3dad43484c876ba66c7d51407bd79c72c082",
+      "sha256": "3707a61e94ff26e02d50be43c7fb852e4a09a85412a94b5b076e09ce80a96a02"
+    },
+    {
+      "upstream_path": "crates/math/src/ntt/mod.rs",
+      "retained_path": "docs/data/s3_binius_joint_opening_construction_1/sources/crates--math--src--ntt--mod.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/math/src/ntt/mod.rs",
+      "bytes": 7623,
+      "git_blob": "964977acd16378100129c7f51c1964405493182c",
+      "sha256": "c87334d0685e54fab3d06e458643151c5fc5f40bf535d47336f551e323e91850"
+    },
+    {
+      "upstream_path": "crates/math/src/ntt/domain_context.rs",
+      "retained_path": "docs/data/s3_binius_joint_opening_construction_1/sources/crates--math--src--ntt--domain_context.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/math/src/ntt/domain_context.rs",
+      "bytes": 15014,
+      "git_blob": "9df297caebda5a66f9acdf1a6d7f890b2f9984f9",
+      "sha256": "873f1141c768c17a12fc4031c7dc406a977854e4fe7a3a6b08e2eaebbcd7cceb"
+    },
+    {
+      "upstream_path": "crates/math/src/ntt/neighbors_last.rs",
+      "retained_path": "docs/data/s3_binius_joint_opening_construction_1/sources/crates--math--src--ntt--neighbors_last.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/math/src/ntt/neighbors_last.rs",
+      "bytes": 32021,
+      "git_blob": "783c4098bd07b615892dd8b280220083bc6bec50",
+      "sha256": "8bf569b9d0c5461cc5673554f882037dcf1b13abe7cdf90634b7822e9b693772"
+    },
+    {
+      "upstream_path": "crates/math/src/ntt/reference.rs",
+      "retained_path": "docs/data/s3_binius_joint_opening_construction_1/sources/crates--math--src--ntt--reference.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/math/src/ntt/reference.rs",
+      "bytes": 2669,
+      "git_blob": "d714e47ea34a20b7c857da90f3e7c856b60773c1",
+      "sha256": "99a2dad8ee772ec13535f5a6566248708c3a628e66716977560bda6020d9e1e9"
+    },
+    {
+      "upstream_path": "crates/math/src/ntt/subspace_polys.rs",
+      "retained_path": "docs/data/s3_binius_joint_opening_construction_1/sources/crates--math--src--ntt--subspace_polys.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/math/src/ntt/subspace_polys.rs",
+      "bytes": 16355,
+      "git_blob": "99171a2ab95125e93db44f321aa0f32560f0156b",
+      "sha256": "ee25ddce394349f6c8ac5743093119fd7a8f12f0d52b94ade09b41dde28ac222"
+    },
+    {
+      "upstream_path": "crates/prover/src/protocols/intmul/prove.rs",
+      "retained_path": "docs/data/s3_binius_joint_opening_construction_1/sources/crates--prover--src--protocols--intmul--prove.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/prover/src/protocols/intmul/prove.rs",
+      "bytes": 24549,
+      "git_blob": "3c5d2a8484306921e5b75a75515c5dd4807ea724",
+      "sha256": "ccca3b42f52061bd6934eb83f799bb2d0117cb73f3eec6fd16ec4de8d975496c"
+    },
+    {
+      "upstream_path": "crates/prover/src/protocols/intmul/witness.rs",
+      "retained_path": "docs/data/s3_binius_joint_opening_construction_1/sources/crates--prover--src--protocols--intmul--witness.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/prover/src/protocols/intmul/witness.rs",
+      "bytes": 23778,
+      "git_blob": "9d95fa2c402037c215fd54164dd88c9edf92c5e1",
+      "sha256": "b6f3b25464e2490a8a6613dc183cfbcfa06f0b145420a7660f3f92ff2772d88d"
+    },
+    {
+      "upstream_path": "crates/verifier/src/protocols/intmul/common.rs",
+      "retained_path": "docs/data/s3_binius_joint_opening_construction_1/sources/crates--verifier--src--protocols--intmul--common.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/verifier/src/protocols/intmul/common.rs",
+      "bytes": 8372,
+      "git_blob": "4ff906ed8f838e3cb03c2280d3449993f6425b2d",
+      "sha256": "5713fecd9b32bd0b4552f9fd1311933e2c76a5b631e26fbf2848ec1c291f4fec"
+    },
+    {
+      "upstream_path": "crates/verifier/src/protocols/intmul/verify.rs",
+      "retained_path": "docs/data/s3_binius_joint_opening_construction_1/sources/crates--verifier--src--protocols--intmul--verify.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/verifier/src/protocols/intmul/verify.rs",
+      "bytes": 23289,
+      "git_blob": "c1ecd04bad22b27f6eccdc057a4d8f29ee91e856",
+      "sha256": "aad98e43d33cee4d53f8d039e99179f45c7e4b99affd6f733057d37feafa6d0a"
+    }
+  ],
+  "passed": true,
+  "code_executed": false,
+  "seconds": 3.0127020420040935,
+  "peak_process_RSS_bytes": 279449600,
+  "memory_enforcement": "256 MiB RLIMIT_AS; single process, no child; no cgroup measurement"
+}

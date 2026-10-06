@@ -1,0 +1,317 @@
+{
+  "requirements_source": "docs/implementation_spec.md",
+  "source_sha256": "e3d919cf22e4110e83dc822d6a7b1d72b40d0a93f79371e00f9e010b71b10003",
+  "titles": {
+    "R-001": "Instance and trust [M].",
+    "R-002": "Owner separation and visibility [M].",
+    "R-003": "Service assumptions [M].",
+    "R-004": "Parameters and persistent state [M].",
+    "R-005": "Canonical codec [M/E/A].",
+    "R-006": "Schema and attribute vector [M].",
+    "R-007": "Disclosure and policy [M/E].",
+    "R-008": "Complete challenge context [M/A].",
+    "R-009": "Signatures and contexts [M].",
+    "R-010": "Hashes and randomness [M].",
+    "R-011": "Setup [M].",
+    "R-012": "DID.KeyGen [M].",
+    "R-013": "DID.Publish [M].",
+    "R-014": "Publication recovery [M].",
+    "R-015": "DID.Resolve [M].",
+    "R-016": "Request creation/approval [M].",
+    "R-017": "CurrentState and logical epoch [M].",
+    "R-018": "Allocation and issuer challenge [M].",
+    "R-019": "Issue inputs and external validation [M].",
+    "R-020": "Enrolment and input separation [M].",
+    "R-021": "Certification and release [M].",
+    "R-022": "Issuance abort semantics [M].",
+    "R-023": "Credential binding interfaces [M].",
+    "R-024": "Joint authentication relation [M].",
+    "R-025": "Private, public and lifecycle checks [M].",
+    "R-026": "Present/AuthDAA [M].",
+    "R-027": "VerifyDAA [M].",
+    "R-028": "Stateful Verify/atomic acceptance [M/A].",
+    "R-029": "Tree and PathRoot [M].",
+    "R-030": "Revoke [M/A].",
+    "R-031": "UpdateWit [M].",
+    "R-032": "Exact bounded computation [M].",
+    "R-033": "Caps and release policy [M].",
+    "R-034": "BC-1 arithmetic [M].",
+    "R-035": "BC-1 gates and ordering [M].",
+    "R-036": "BC-1 control flow, rejection and optimisation [M].",
+    "R-037": "Circuit identity and admission [M/E].",
+    "R-038": "Shares and tapes [M].",
+    "R-039": "Views and commitments [M].",
+    "R-040": "Fiat\u2013Shamir challenge [M].",
+    "R-041": "Proof serialisation and size [M].",
+    "R-042": "Proof checking [M].",
+    "R-043": "Fresh randomness and erasure [M].",
+    "R-044": "Certification, binding and non-membership [M].",
+    "R-045": "Complete-witness knowledge [M].",
+    "R-046": "Adaptive presentation privacy [M].",
+    "R-047": "Historical privacy and exclusions [M].",
+    "R-048": "Correctness scope [M].",
+    "R-049": "Cap-loss and runtime accounting [M; validation pending].",
+    "R-050": "Conditional QROM terms [M; not independently proved here].",
+    "R-051": "Lifecycle security composition [M].",
+    "R-052": "W3C architectural mapping [M/E]."
+  },
+  "groups": [
+    {
+      "requirements": [
+        "R-001",
+        "R-002",
+        "R-003",
+        "R-004"
+      ],
+      "area": "Trust, roles and service state",
+      "evidence_status": "Reference contracts and owner/store boundaries tested; real-identity isolation not validated",
+      "evidence": [
+        "docs/stage2_authority_owner_boundary.md",
+        "docs/stage2_authority_isolation_pilot.md"
+      ],
+      "remaining": "Production custody/service deployment and 22 identity cases remain open",
+      "complete_scheme_requirement_closed": false
+    },
+    {
+      "requirements": [
+        "R-005",
+        "R-006",
+        "R-007",
+        "R-008"
+      ],
+      "area": "Canonical data, disclosure, policy and context",
+      "evidence_status": "Executable typed encoders, validators and public checks",
+      "evidence": [
+        "docs/stage2_codec.md",
+        "docs/stage2_credentials.md",
+        "docs/stage2_relations.md"
+      ],
+      "remaining": "No wrapper or public predicate establishes a private proof",
+      "complete_scheme_requirement_closed": false
+    },
+    {
+      "requirements": [
+        "R-009",
+        "R-010",
+        "R-032",
+        "R-033"
+      ],
+      "area": "ML-DSA, hashes, caps and release",
+      "evidence_status": "Bounded reference keygen/sign/verify and fixed-role adapters; primitive/native evidence retained",
+      "evidence": [
+        "docs/stage2_bounded_mldsa_keygen_sign.md",
+        "docs/stage2_bounded_signer_release_contract.md"
+      ],
+      "remaining": "Production custody/entropy/side channels/erasure and adaptive cap-tail security remain open",
+      "complete_scheme_requirement_closed": false
+    },
+    {
+      "requirements": [
+        "R-011"
+      ],
+      "area": "Setup",
+      "evidence_status": "Public parameter/configuration and synthetic setup available",
+      "evidence": [
+        "docs/stage2_credentials.md",
+        "docs/stage2_durable_authority_pilot.md"
+      ],
+      "remaining": "Operational trust provisioning and production setup not established",
+      "complete_scheme_requirement_closed": false
+    },
+    {
+      "requirements": [
+        "R-012",
+        "R-013",
+        "R-014",
+        "R-015"
+      ],
+      "area": "DID lifecycle",
+      "evidence_status": "Reference publication/resolution/controller recovery and signing contracts",
+      "evidence": [
+        "docs/stage2_did_state.md",
+        "docs/stage2_recovery_admission.md"
+      ],
+      "remaining": "No deployed registry, W3C method/key conformance or universal crash/rollback defence",
+      "complete_scheme_requirement_closed": false
+    },
+    {
+      "requirements": [
+        "R-016",
+        "R-017"
+      ],
+      "area": "Requests and current state",
+      "evidence_status": "Bounded signed requests, fresh nonce current replies and final ordered read",
+      "evidence": [
+        "docs/stage2_bounded_signer_release_contract.md",
+        "docs/stage2_durable_verifier_lifecycle_integration.md"
+      ],
+      "remaining": "Trusted clock/channel/state authority assumptions remain; not cross-store atomic freshness",
+      "complete_scheme_requirement_closed": false
+    },
+    {
+      "requirements": [
+        "R-018",
+        "R-019",
+        "R-020",
+        "R-021",
+        "R-022"
+      ],
+      "area": "Issuance and release",
+      "evidence_status": "Reference durable issuer/manager integration, permanent reservation and recipient-bound redelivery",
+      "evidence": [
+        "docs/stage2_durable_issuer_manager_integration.md"
+      ],
+      "remaining": "Enrolment proof acceptance is synthetic in these lifecycle scenarios; no full private issuance demonstration",
+      "complete_scheme_requirement_closed": false
+    },
+    {
+      "requirements": [
+        "R-023",
+        "R-024",
+        "R-025"
+      ],
+      "area": "Credential and joint relation",
+      "evidence_status": "Complete local private-witness reference evaluator; isolated full relation source and bounded components",
+      "evidence": [
+        "docs/stage2_relations.md",
+        "docs/oct31_auth_relation_integration_result.md"
+      ],
+      "remaining": "No complete authentication constraint run/proof; hidden-witness local evaluation is not remote knowledge",
+      "complete_scheme_requirement_closed": false
+    },
+    {
+      "requirements": [
+        "R-026",
+        "R-027"
+      ],
+      "area": "Present and VerifyDAA",
+      "evidence_status": "Holder input preparation and fail-closed ordinary proof interfaces",
+      "evidence": [
+        "docs/stage2_holder_witness_revocation_integration.md",
+        "docs/oct31_auth_relation_integration_result.md"
+      ],
+      "remaining": "Complete private prover/checker unavailable; all 21 outstanding full-relation checks unrun",
+      "complete_scheme_requirement_closed": false
+    },
+    {
+      "requirements": [
+        "R-028"
+      ],
+      "area": "Atomic verification lifecycle",
+      "evidence_status": "Two independent durable verifier stores, fencing/admission, strict final expiry/consume",
+      "evidence": [
+        "docs/stage2_durable_verifier_lifecycle_integration.md"
+      ],
+      "remaining": "Synthetic proof gate in lifecycle tests; no repeated acceptance redelivery; business-action atomicity unresolved",
+      "complete_scheme_requirement_closed": false
+    },
+    {
+      "requirements": [
+        "R-029",
+        "R-030",
+        "R-031"
+      ],
+      "area": "Revocation and witness maintenance",
+      "evidence_status": "Real bounded signed manager publication, public history and local same-rid path updates",
+      "evidence": [
+        "docs/stage2_bounded_manager_durable_release.md",
+        "docs/stage2_holder_witness_revocation_integration.md"
+      ],
+      "remaining": "Production holder wallet durability and deployment isolation remain open",
+      "complete_scheme_requirement_closed": false
+    },
+    {
+      "requirements": [
+        "R-034",
+        "R-035",
+        "R-036",
+        "R-037"
+      ],
+      "area": "Compiler and relation admission",
+      "evidence_status": "BC-1 foundations and isolated experimental lowerings; component and forward-NTT evidence",
+      "evidence": [
+        "docs/stage3_mldsa_full_forward_ntt_pilot.md",
+        "docs/oct31_auth_relation_integration_result.md"
+      ],
+      "remaining": "Experimental lowerings are not canonical BC-1; no complete admitted authentication circuit identity",
+      "complete_scheme_requirement_closed": false
+    },
+    {
+      "requirements": [
+        "R-038",
+        "R-039",
+        "R-040",
+        "R-041",
+        "R-042",
+        "R-043"
+      ],
+      "area": "Proof construction, encoding, checking and randomness",
+      "evidence_status": "Raw-view construction remains specified/paused; native EXP2/masking components validated separately",
+      "evidence": [
+        "docs/stage3_aurora_masking_native.md",
+        "docs/stage3_feasibility_review.md"
+      ],
+      "remaining": "No complete raw-view/private-auth backend; salt/mask/transcript privacy and secure erasure not established",
+      "complete_scheme_requirement_closed": false
+    },
+    {
+      "requirements": [
+        "R-044",
+        "R-045",
+        "R-046",
+        "R-047",
+        "R-048",
+        "R-049",
+        "R-050",
+        "R-051"
+      ],
+      "area": "Security and correctness composition",
+      "evidence_status": "Reference binding/rejection tests plus reproduced conditional security calculations and obligation registers",
+      "evidence": [
+        "docs/stage2_concrete_security_assessment.md",
+        "docs/stage3_outer_oracle_composition.md"
+      ],
+      "remaining": "Complete knowledge/adaptive/historical privacy, component advantages, Delta_tail and concrete-hash/application arguments open",
+      "complete_scheme_requirement_closed": false
+    },
+    {
+      "requirements": [
+        "R-052"
+      ],
+      "area": "W3C interoperability",
+      "evidence_status": "Dated mapping contract, 15 synthetic examples and 24 passing local-container decoder cases",
+      "evidence": [
+        "docs/stage2_kyc_interoperability_contract.md",
+        "docs/stage2_kyc_container_adapter.md"
+      ],
+      "remaining": "No W3C securing mechanism, issuer/vocabulary binding, DID method/key representation, private status mapping or conformance claim",
+      "complete_scheme_requirement_closed": false
+    }
+  ],
+  "coverage_means": "All requirements indexed; not all requirements implemented or proved",
+  "original_programme_complete": false,
+  "private_proof_measurements": null,
+  "unrun_relation_cases": [
+    "M-01",
+    "M-02",
+    "M-03",
+    "J-01",
+    "J-02",
+    "J-03",
+    "J-04",
+    "J-05",
+    "J-06",
+    "J-07",
+    "J-08",
+    "J-09",
+    "J-10",
+    "J-11",
+    "J-12",
+    "J-13",
+    "J-14",
+    "J-15",
+    "J-16",
+    "Q-02",
+    "Q-03"
+  ]
+}

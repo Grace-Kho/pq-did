@@ -1,0 +1,13 @@
+{
+  "source_review": "Full mldsa/private composition inspected against existing reference without rerunning native ABI or prior tests. No accepted-set difference found by inspection; not universal equivalence evidence.",
+  "sampler_diagnostic": "Renamed unconsumed SamplerResult.accepted_count to next_index to describe returned 207..256 index; no algorithm/acceptance change. Full sampler not executed.",
+  "phase_accounting": "The unguarded source/doc preparation is conservatively charged in ledger bookkeeping, in addition to measured guarded command wall time. Agent source work included; analysis/isolation unchanged.",
+  "resource_stop": "Q04 ends oversized resident route; Q01 is one explicitly incomplete two-million-gate prefix. Components may pass without full-joint verification.",
+  "plan_scope_limitations": [
+    "M09 only actual forward butterfly, M10 inverse butterfly plus scale",
+    "M11/M12 one coefficient each",
+    "G06 retained bounded byte assignment, not last-use frontier",
+    "B12 expiry branch tested, existing replay evidence reused",
+    "M01..03,J01..16,Q02..03 unexecuted; no substitution of host reference success"
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "package": "KYC-TESTBED-DELIVERY-1",
+  "approved": true,
+  "prior_resources": {
+    "package": "S3-BINIUS-COMMITTED-VIEW-CORRESPONDENCE-1",
+    "status": "analysis-complete-unresolved-construction",
+    "operator_source_math_authoring_bookkeeping_seconds": 90,
+    "operator_charge_is_conservative_not_measured_wall_time": true,
+    "measured_guarded_seconds": 7.041225700173527,
+    "package_charged_seconds": 97.04122570017353,
+    "package_ceiling_seconds": 180,
+    "package_unused_seconds": 82.95877429982647,
+    "completion_reserve_seconds": 30,
+    "completion_reserve_within_package": true,
+    "implementation_aggregate_charged_seconds": 5484.215297920748,
+    "implementation_remaining_seconds": 589.7847020792524,
+    "general_implementation_outside_KYC_remaining_seconds": 146.39434643720955,
+    "KYC_remaining_seconds_unchanged": 443.3903556420428,
+    "KYC_completion_reserve_seconds_unchanged": 300,
+    "analysis_remaining_seconds_unchanged": 11.510943178986167,
+    "new_functional_invocations": 0,
+    "cumulative_invocations_unchanged": 1165,
+    "invocation_ceiling_unchanged": 1168,
+    "prior_component_corrective_slots_not_repurposed": 3,
+    "new_builds": 0,
+    "builds_unchanged": 10,
+    "build_ceiling_unchanged": 13,
+    "new_acquisitions": 0,
+    "proof_ledger": {
+      "used": 2,
+      "unused": 1
+    },
+    "guarded_documentation_preservation_commands": [
+      {
+        "name": "quality",
+        "status": "pass",
+        "seconds": 0.3273152899928391,
+        "exit_code": 0,
+        "sampled_tree_RSS_peak": 48427008
+      },
+      {
+        "name": "prepare",
+        "status": "pass",
+        "seconds": 0.8106287191621959,
+        "exit_code": 0,
+        "sampled_tree_RSS_peak": 59289600
+      },
+      {
+        "name": "full-audit",
+        "status": "pass",
+        "seconds": 5.025703212944791,
+        "exit_code": 0,
+        "sampled_tree_RSS_peak": 63836160
+      },
+      {
+        "name": "readback",
+        "status": "pass",
+        "seconds": 0.8775784780737013,
+        "exit_code": 0,
+        "sampled_tree_RSS_peak": 59379712
+      }
+    ],
+    "complete_audit_attempts": 1,
+    "audit_seconds": 5.025703212944791,
+    "audit_cgroup_peak_bytes": 48558080,
+    "worker_cgroup_peak_bytes": 52178944,
+    "sampled_tree_RSS_peak_bytes": 63836160,
+    "memory_limit_bytes": 268435456,
+    "memory_metric": "cgroup-v2 memory.peak; entire worker cgroup and descendants, including charged anonymous/file-cache/kernel memory; monitor outside cgroup",
+    "new_artifact_bytes": 0,
+    "artifact_bytes_unchanged": 58966547,
+    "temporary_bytes": 0,
+    "all_completion_units_terminated": true,
+    "units": [
+      {
+        "unit": "pqdid-biniusview-quality.service",
+        "exit_code": 0,
+        "properties": {
+          "LoadState": "not-found",
+          "ActiveState": "inactive",
+          "SubState": "dead",
+          "MainPID": "0",
+          "ControlGroup": ""
+        }
+      },
+      {
+        "unit": "pqdid-biniusview-prepare.service",
+        "exit_code": 0,
+        "properties": {
+          "LoadState": "not-found",
+          "ActiveState": "inactive",
+          "SubState": "dead",
+          "MainPID": "0",
+          "ControlGroup": ""
+        }
+      },
+      {
+        "unit": "pqdid-biniusview-full-audit.service",
+        "exit_code": 0,
+        "properties": {
+          "LoadState": "not-found",
+          "ActiveState": "inactive",
+          "SubState": "dead",
+          "MainPID": "0",
+          "ControlGroup": ""
+        }
+      },
+      {
+        "unit": "pqdid-biniusview-readback.service",
+        "exit_code": 0,
+        "properties": {
+          "LoadState": "not-found",
+          "ActiveState": "inactive",
+          "SubState": "dead",
+          "MainPID": "0",
+          "ControlGroup": ""
+        }
+      }
+    ],
+    "closure_bookkeeping_seconds_included_in_operator_charge": 0.6242527300491929,
+    "prior_acquisition_memory_observation_unresolved": true,
+    "storage": {
+      "package_evidence_bytes": 181143,
+      "package_cap_bytes": 1048576,
+      "package_headroom_bytes": 867433,
+      "cumulative_evidence_bytes": 35553865,
+      "cumulative_ceiling_bytes": 41943040,
+      "cumulative_headroom_bytes": 6389175,
+      "shared_headroom_bytes": 5940496,
+      "shared_completion_reserve_bytes": 2097152,
+      "new_artifact_bytes": 0
+    }
+  },
+  "prior_manifest_sha256": "9d8aae6fe61b643417f2476796465051d6f735469831430555b716ef83877f23",
+  "prior_closure_sha256": "f0ef35797b0370693a65c5ee5201d5eb0e26fd2c56b410f44abfa6b2fcedf43e",
+  "prior_resource_sha256": "977a1f4560268690055cc7eeb62dfbbec6b3ef3194652a7190b4cb2cccc30d77",
+  "preparation_charge_seconds": 20,
+  "preparation_charge_kind": "Conservative read-only preparation, once; not measured execution",
+  "transfer_outside_KYC_to_KYC_seconds": 80,
+  "overall_after_preparation": 569.7847020792524,
+  "outside_KYC_after_preparation_and_transfer": 46.39434643720955,
+  "KYC_after_transfer": 523.3903556420428,
+  "package_seconds": 220,
+  "KYC_protected_seconds": 300,
+  "package_completion_seconds": 30,
+  "new_invocations_max": 22,
+  "embedding_corrective_slots_preserved": 3,
+  "evidence_allocation_bytes": 2097152,
+  "shared_completion_reserve_bytes": 2097152,
+  "allocation_not_overall_increase": true
+}

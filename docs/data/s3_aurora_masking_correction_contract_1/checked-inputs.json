@@ -1,0 +1,25 @@
+{
+  "sha256": {
+    "docs/data/s3_aurora_masking_correction_contract_1/STOP.json": "2973cf50de76919f60b82073cf89d02eefb9575ef1f9ea9b567019739f39e03c",
+    "docs/data/s3_aurora_masking_correction_contract_1/checks.py": "9e8d81ae2376c3d75abe016cb4153d01bb533371cd2f1d66a4315756f88979d1",
+    "docs/data/s3_aurora_masking_correction_contract_1/config.json": "bef073f043b4d7f0063f43407a153de45a97d35c6e7d243c3f0655bbc36048b8",
+    "docs/data/s3_aurora_masking_correction_contract_1/contract.json": "0cf262cd344266fb4c56ff096a789f1b89ec63706e062d479b61dc2059df2a6a",
+    "docs/data/s3_aurora_masking_correction_contract_1/format-correction.json": "c0d6731471e7619e7455b48a1c411bd56e90870dd0a7ffe6b277c3ff5ccce02a",
+    "docs/data/s3_aurora_masking_correction_contract_1/literature.json": "5d35feaada08abd4d4b2435340ff5159aaa6fc7c6f0a94f3387d328cbbd8cf4c",
+    "docs/data/s3_aurora_masking_correction_contract_1/opening-ledger.json": "0d23eb03c9ba081862644e891e15f11e6571343cc3b25bf14fcfdfb9a23e38e9",
+    "docs/data/s3_aurora_masking_correction_contract_1/pre-format-checks.py": "24183883abf8604568497a8b933d951e750be1924c6e44141c1811f80d4ed2bc",
+    "docs/data/s3_aurora_masking_correction_contract_1/pre-format-config.json": "a6f9e1d3e24d917db4662c9ad71fa77118aa302eecfaaf1f91a652f1524bc8cf",
+    "docs/data/s3_aurora_masking_correction_contract_1/pre-format-run.py": "8b00d9c12299acea6992f56cb3a7ddbaedb2f148dc54af72a4f390eaacbc882f",
+    "docs/data/s3_aurora_masking_correction_contract_1/prefixes.json": "96ce1ebe81ef8d449424b2ca0e69f28943328ac0bf1816f937505fa7275c48e1",
+    "docs/data/s3_aurora_masking_correction_contract_1/prior-package-closure.json": "c0ae7b75108f53e554cc146881de7838ff7e74fa42ac5f714c8a0c52dd0f9ac5",
+    "docs/data/s3_aurora_masking_correction_contract_1/quality-2.json": "a79ff731a2f9510f3cc98f0015a19aeda72a24c31f42df7e6b906515cf599087",
+    "docs/data/s3_aurora_masking_correction_contract_1/quality-2.log": "b744b4f3008735b96e55fefac8b1aa60b366e352b0fdaa439f5f03bec1d94694",
+    "docs/data/s3_aurora_masking_correction_contract_1/quality-2.service.json": "737b300a1634d5ad7fd8df3a7500dedf69bcd334f58a733264252f92f3cf0a8c",
+    "docs/data/s3_aurora_masking_correction_contract_1/quality.json": "8988eff98efa6051979846f4f89acea77e79a17a2a4385bc6ffbb2e012b03b45",
+    "docs/data/s3_aurora_masking_correction_contract_1/quality.log": "21d624bf7ac8895671cab56bd844a821058934e6eec93294567976ee292bc6a3",
+    "docs/data/s3_aurora_masking_correction_contract_1/quality.service.json": "1b3d9f70b9daa1b8d331aa97d86ff7b16ff9debde1c1352f941e07a8a67283c5",
+    "docs/data/s3_aurora_masking_correction_contract_1/reviewed-inputs.json": "6e1b454861f7759ebc2107e8ddd0cbed2dddb9e9e428df16a58e489a247f5521",
+    "docs/data/s3_aurora_masking_correction_contract_1/run.py": "35638930f670c86337d86d7cc98b15b703123d50aaa34ba7bbc81731649ba3b4",
+    "docs/data/s3_aurora_masking_correction_contract_1/static-review.json": "5f937bb3574a9ef58e8d3800fcc7529dcff9a935dbfc6ddd6152cf6fa4ffb413"
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "case": "test_blocked_publication_preserves_committed_result",
+    "wall_seconds": 0.6902337080100551,
+    "temporary_bytes_observed_peak": 86778,
+    "parent_cumulative_maxrss_bytes": 53923840,
+    "events": [],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_strict_counters_and_operation_limit_preflight",
+    "wall_seconds": 0.05963363798218779,
+    "temporary_bytes_observed_peak": 86778,
+    "parent_cumulative_maxrss_bytes": 53923840,
+    "events": [],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  }
+]

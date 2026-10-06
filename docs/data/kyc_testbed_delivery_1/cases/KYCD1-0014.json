@@ -1,0 +1,14 @@
+{
+  "invocation_id": "KYCD1-0014",
+  "case_id": "E-04",
+  "work_event_reservation": 0,
+  "ordinal": 14,
+  "cumulative_invocations": 1179,
+  "status": "pass",
+  "details": {
+    "existing_output_refused": true,
+    "manifest_unchanged": true
+  },
+  "seconds": 0.00023569888435304165,
+  "work_events": 0
+}

@@ -1,0 +1,17 @@
+{
+  "authorised": false,
+  "decision": "construction-research-decision",
+  "selected_research_direction": "Replace only the proof layer by Aurora-BCS native ZK R1CS; preserve exact credential domains, FIPS ML-DSA and same witness. Not profile adoption.",
+  "next_package": "S3-AURORA-AUTH-CONSTRUCTION-CONTRACT-1",
+  "new_execution_allowance": 0,
+  "scope": "Source-only exact relation, ZK wire contract, finite parameter/theorem-premise contract; no broad survey, installation, circuits, proofs or host action.",
+  "inactive_analysis_package_seconds": 30,
+  "cleanup_and_evidence_reserve_seconds": 10,
+  "requires_user_research_direction_decision": true,
+  "stopping_criteria": [
+    "Any change to required witness/privacy/ML-DSA semantics: stop",
+    "No bounded ZK wire encoding or admissible parameter/game contract: explicit no-go",
+    "No unconditional global security number or unsupported complete-cost forecast"
+  ],
+  "execution_admission": "Not requested in this review; future tests/builds/proofs require separately costed authorisation after contract."
+}

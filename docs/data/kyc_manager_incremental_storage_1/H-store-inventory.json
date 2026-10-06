@@ -1,0 +1,112 @@
+[
+  {
+    "path": "manager/authority.sqlite3",
+    "bytes": 450560,
+    "secret_material": false
+  },
+  {
+    "path": "verifier-A/authority.sqlite3",
+    "bytes": 57344,
+    "secret_material": false
+  },
+  {
+    "path": "verifier-B/authority.sqlite3",
+    "bytes": 57344,
+    "secret_material": false
+  },
+  {
+    "path": "issuer/issuer.sqlite3",
+    "bytes": 229376,
+    "secret_material": false
+  },
+  {
+    "path": "holder/wallet.bin",
+    "bytes": 15432,
+    "secret_material": false
+  },
+  {
+    "path": "holder/holder.key",
+    "bytes": 6031,
+    "secret_material": true
+  },
+  {
+    "path": "holder-other-0/wallet.bin",
+    "bytes": 15432,
+    "secret_material": false
+  },
+  {
+    "path": "holder-other-0/holder.key",
+    "bytes": 6031,
+    "secret_material": true
+  },
+  {
+    "path": "holder-other-1/wallet.bin",
+    "bytes": 15432,
+    "secret_material": false
+  },
+  {
+    "path": "holder-other-1/holder.key",
+    "bytes": 6031,
+    "secret_material": true
+  },
+  {
+    "path": "holder-other-2/wallet.bin",
+    "bytes": 15432,
+    "secret_material": false
+  },
+  {
+    "path": "holder-other-2/holder.key",
+    "bytes": 6031,
+    "secret_material": true
+  },
+  {
+    "path": "holder-other-3/wallet.bin",
+    "bytes": 15432,
+    "secret_material": false
+  },
+  {
+    "path": "holder-other-3/holder.key",
+    "bytes": 6031,
+    "secret_material": true
+  },
+  {
+    "path": "holder-other-4/wallet.bin",
+    "bytes": 15432,
+    "secret_material": false
+  },
+  {
+    "path": "holder-other-4/holder.key",
+    "bytes": 6031,
+    "secret_material": true
+  },
+  {
+    "path": "holder-other-5/wallet.bin",
+    "bytes": 15432,
+    "secret_material": false
+  },
+  {
+    "path": "holder-other-5/holder.key",
+    "bytes": 6031,
+    "secret_material": true
+  },
+  {
+    "path": "holder-other-6/wallet.bin",
+    "bytes": 15432,
+    "secret_material": false
+  },
+  {
+    "path": "holder-other-6/holder.key",
+    "bytes": 6031,
+    "secret_material": true
+  },
+  {
+    "path": "holder-other-7/wallet.bin",
+    "bytes": 15432,
+    "secret_material": false
+  },
+  {
+    "path": "holder-other-7/holder.key",
+    "bytes": 6031,
+    "secret_material": true
+  }
+]

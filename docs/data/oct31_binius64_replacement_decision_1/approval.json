@@ -1,0 +1,14 @@
+{
+  "package": "OCT31-BINIUS64-REPLACEMENT-DECISION-1",
+  "scope": "Named candidate source inspection and execution-ready proposal only",
+  "new_tests_builds_proofs_installations": false,
+  "proof_attempt_transfer": false,
+  "source_acquisition_allowance_bytes": 1500000,
+  "reserve_bytes": 2097152,
+  "original_scope_and_31_October_target_unchanged": true,
+  "source_budget_prospective_revision": {
+    "previous_bytes": 1500000,
+    "new_bytes": 2100000,
+    "reason": "Known 679980-byte Blueprint plus pinned source excerpts; inside unchanged shared 4564934 cap with 2MiB completion reserve"
+  }
+}

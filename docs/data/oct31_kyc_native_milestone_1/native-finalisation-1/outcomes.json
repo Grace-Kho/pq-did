@@ -1,0 +1,599 @@
+{
+  "all_passed": true,
+  "new_invocations": 41,
+  "new_builds": 0,
+  "baseline_harness_measurements_reused": true,
+  "earlier_binary_results_retained": true,
+  "rows": [
+    {
+      "case_id": "N-01",
+      "invocation_id": "M1-0379",
+      "status": "pass",
+      "case": "independent-field-modulus-basis-certificate",
+      "seconds": 0.011600036057643592,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "libff::gf192::operator*",
+        "to_words",
+        "from_words"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0379.json"
+    },
+    {
+      "case_id": "N-02",
+      "invocation_id": "M1-0380",
+      "status": "pass",
+      "case": "unrestricted-mask-coefficient-map",
+      "seconds": 0.0216404179809615,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "batch_sumcheck_protocol::register_masking_polynomial",
+        "register_challenge",
+        "register_proof",
+        "submit_masking_polynomial",
+        "calculate_and_submit_proof",
+        "construct_verifier_state",
+        "sumcheck_g_oracle::evaluated_contents",
+        "evaluation_at_point"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0380.json"
+    },
+    {
+      "case_id": "N-03",
+      "invocation_id": "M1-0381",
+      "status": "pass",
+      "case": "nonunit-xi-sum",
+      "seconds": 0.02067634300328791,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "batch_sumcheck_protocol::register_masking_polynomial",
+        "register_challenge",
+        "register_proof",
+        "submit_masking_polynomial",
+        "calculate_and_submit_proof",
+        "construct_verifier_state",
+        "sumcheck_g_oracle::evaluated_contents",
+        "evaluation_at_point"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0381.json"
+    },
+    {
+      "case_id": "N-04",
+      "invocation_id": "M1-0382",
+      "status": "pass",
+      "case": "zero-lincheck-triple",
+      "seconds": 0.0434739850461483,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "batch_sumcheck_protocol::register_masking_polynomial",
+        "register_challenge",
+        "register_proof",
+        "submit_masking_polynomial",
+        "calculate_and_submit_proof",
+        "construct_verifier_state",
+        "sumcheck_g_oracle::evaluated_contents",
+        "evaluation_at_point",
+        "multi_lincheck::register_challenge",
+        "register_proof",
+        "submit_sumcheck_masking_polynomials",
+        "calculate_and_submit_proof",
+        "construct_verifier_state",
+        "multi_lincheck_virtual_oracle::set_challenge",
+        "evaluated_contents"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0382.json"
+    },
+    {
+      "case_id": "N-05",
+      "invocation_id": "M1-0383",
+      "status": "pass",
+      "case": "nonzero-quotient-remainder",
+      "seconds": 0.020415257080458105,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "batch_sumcheck_protocol::register_masking_polynomial",
+        "register_challenge",
+        "register_proof",
+        "submit_masking_polynomial",
+        "calculate_and_submit_proof",
+        "construct_verifier_state",
+        "sumcheck_g_oracle::evaluated_contents",
+        "evaluation_at_point"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0383.json"
+    },
+    {
+      "case_id": "N-06",
+      "invocation_id": "M1-0384",
+      "status": "pass",
+      "case": "prover-verifier-point-agreement",
+      "seconds": 0.020035384921357036,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "batch_sumcheck_protocol::register_masking_polynomial",
+        "register_challenge",
+        "register_proof",
+        "submit_masking_polynomial",
+        "calculate_and_submit_proof",
+        "construct_verifier_state",
+        "sumcheck_g_oracle::evaluated_contents",
+        "evaluation_at_point"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0384.json"
+    },
+    {
+      "case_id": "N-07",
+      "invocation_id": "M1-0385",
+      "status": "pass",
+      "case": "shifted-vector-point-agreement",
+      "seconds": 0.02049587306100875,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "batch_sumcheck_protocol::register_masking_polynomial",
+        "register_challenge",
+        "register_proof",
+        "submit_masking_polynomial",
+        "calculate_and_submit_proof",
+        "construct_verifier_state",
+        "sumcheck_g_oracle::evaluated_contents",
+        "evaluation_at_point"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0385.json"
+    },
+    {
+      "case_id": "N-08",
+      "invocation_id": "M1-0386",
+      "status": "pass",
+      "case": "tampered-beta-degree-condition",
+      "seconds": 0.018324929056689143,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "batch_sumcheck_protocol::register_masking_polynomial",
+        "register_challenge",
+        "register_proof",
+        "submit_masking_polynomial",
+        "calculate_and_submit_proof",
+        "construct_verifier_state",
+        "sumcheck_g_oracle::evaluated_contents",
+        "evaluation_at_point"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0386.json"
+    },
+    {
+      "case_id": "N-09",
+      "invocation_id": "M1-0387",
+      "status": "pass",
+      "case": "wrong-beta-message-length",
+      "seconds": 0.003808775916695595,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "iop_protocol::submit_prover_message length rejection"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0387.json"
+    },
+    {
+      "case_id": "N-10",
+      "invocation_id": "M1-0388",
+      "status": "pass",
+      "case": "zero-reducer-coins-retain-pad",
+      "seconds": 0.03676291205920279,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "combined_LDT_virtual_oracle::set_random_coefficients",
+        "evaluated_contents",
+        "evaluation_at_point",
+        "LDT_instance_reducer::register_interactions",
+        "submit_masking_polynomial"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0388.json"
+    },
+    {
+      "case_id": "N-11",
+      "invocation_id": "M1-0389",
+      "status": "pass",
+      "case": "mixed-reducer-degrees",
+      "seconds": 0.02285267796833068,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "combined_LDT_virtual_oracle::set_random_coefficients",
+        "evaluated_contents",
+        "evaluation_at_point"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0389.json"
+    },
+    {
+      "case_id": "N-12",
+      "invocation_id": "M1-0390",
+      "status": "pass",
+      "case": "bump-coefficient-index",
+      "seconds": 0.022072918014600873,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "combined_LDT_virtual_oracle::set_random_coefficients",
+        "evaluated_contents",
+        "evaluation_at_point"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0390.json"
+    },
+    {
+      "case_id": "N-13",
+      "invocation_id": "M1-0391",
+      "status": "pass",
+      "case": "shifted-reducer-vector-point",
+      "seconds": 0.022328782943077385,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "combined_LDT_virtual_oracle::set_random_coefficients",
+        "evaluated_contents",
+        "evaluation_at_point"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0391.json"
+    },
+    {
+      "case_id": "N-14",
+      "invocation_id": "M1-0392",
+      "status": "pass",
+      "case": "wrong-reducer-coin-count",
+      "seconds": 0.002401686040684581,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "combined_LDT_virtual_oracle::set_random_coefficients rejection"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0392.json"
+    },
+    {
+      "case_id": "N-15",
+      "invocation_id": "M1-0393",
+      "status": "pass",
+      "case": "missing-reducer-pad",
+      "seconds": 0.0019389271037653089,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "combined_LDT_virtual_oracle::evaluation_at_point rejection"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0393.json"
+    },
+    {
+      "case_id": "N-16",
+      "invocation_id": "M1-0394",
+      "status": "pass",
+      "case": "two-fold-degree-registration",
+      "seconds": 0.0020182610023766756,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "FRI_protocol::register_interactions",
+        "get_oracle_degree"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0394.json"
+    },
+    {
+      "case_id": "N-17",
+      "invocation_id": "M1-0395",
+      "status": "pass",
+      "case": "longer-fold-degree-sequence",
+      "seconds": 0.002002395922318101,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "FRI_protocol::register_interactions",
+        "get_oracle_degree"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0395.json"
+    },
+    {
+      "case_id": "N-18",
+      "invocation_id": "M1-0396",
+      "status": "pass",
+      "case": "independent-fold-terminal-coefficients",
+      "seconds": 0.08325196895748377,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "FRI_protocol::register_interactions",
+        "get_oracle_degree",
+        "calculate_and_submit_proof",
+        "evaluate_next_f_i_over_entire_domain",
+        "receive_prover_message"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0396.json"
+    },
+    {
+      "case_id": "N-19",
+      "invocation_id": "M1-0397",
+      "status": "pass",
+      "case": "nondivisible-bound-rejection",
+      "seconds": 0.0022139539942145348,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "FRI_protocol_parameters degree-divisibility rejection"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0397.json"
+    },
+    {
+      "case_id": "N-20",
+      "invocation_id": "M1-0398",
+      "status": "pass",
+      "case": "actual-lincheck-paths",
+      "seconds": 0.02741631504613906,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "multi_lincheck::register_challenge",
+        "register_proof",
+        "submit_sumcheck_masking_polynomials",
+        "calculate_and_submit_proof",
+        "construct_verifier_state",
+        "multi_lincheck_virtual_oracle::set_challenge",
+        "evaluated_contents"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0398.json"
+    },
+    {
+      "case_id": "N-21",
+      "invocation_id": "M1-0399",
+      "status": "pass",
+      "case": "aurora-early-mask-beta-registration",
+      "seconds": 0.002840452012605965,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "aurora_iop::constructor",
+        "register_interactions",
+        "encoded_aurora_protocol::constructor",
+        "multi_lincheck::constructor",
+        "LDT_instance_reducer::constructor",
+        "FRI_protocol::register_interactions"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0399.json"
+    },
+    {
+      "case_id": "N-22",
+      "invocation_id": "M1-0400",
+      "status": "pass",
+      "case": "dependent-challenge-order",
+      "seconds": 0.0060966110322624445,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "batch_sumcheck_protocol::calculate_and_submit_proof and iop_protocol::signal_prover_round_done ordering rejection"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0400.json"
+    },
+    {
+      "case_id": "N-23",
+      "invocation_id": "M1-0401",
+      "status": "pass",
+      "case": "unsupported-branch",
+      "seconds": 0.0021556849824264646,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "batch_sumcheck_protocol constructor unsupported mode rejection"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0401.json"
+    },
+    {
+      "case_id": "N-24",
+      "invocation_id": "M1-0402",
+      "status": "pass",
+      "case": "invalid-attached-claim",
+      "seconds": 0.0026519460370764136,
+      "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+      "actual_calls": [
+        "batch_sumcheck_protocol::attach_oracle_for_summing rejection"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0402.json"
+    },
+    {
+      "case_id": "TR-01",
+      "invocation_id": "M1-0403",
+      "status": "pass",
+      "case": "baseline complete trace, including empty scheduled records, four challenges and legal absorb after squeeze",
+      "seconds": 0.011899518081918359,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0403.json"
+    },
+    {
+      "case_id": "TR-02",
+      "invocation_id": "M1-0404",
+      "status": "pass",
+      "case": "fresh second baseline run, counted repeat",
+      "seconds": 0.003805882064625621,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0404.json"
+    },
+    {
+      "case_id": "TR-03",
+      "invocation_id": "M1-0405",
+      "status": "pass",
+      "case": "typed public context nonce first byte XOR1, re-encode unchanged remaining fields",
+      "seconds": 0.0026364109944552183,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0405.json"
+    },
+    {
+      "case_id": "TR-04",
+      "invocation_id": "M1-0406",
+      "status": "pass",
+      "case": "root_a last byte XOR1",
+      "seconds": 0.003677189932204783,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0406.json"
+    },
+    {
+      "case_id": "TR-05",
+      "invocation_id": "M1-0407",
+      "status": "pass",
+      "case": "field_a last byte XOR1",
+      "seconds": 0.0034010870149359107,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0407.json"
+    },
+    {
+      "case_id": "TR-06",
+      "invocation_id": "M1-0408",
+      "status": "pass",
+      "case": "submit round1 before round0",
+      "seconds": 0.0031873449916020036,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0408.json"
+    },
+    {
+      "case_id": "TR-07",
+      "invocation_id": "M1-0409",
+      "status": "pass",
+      "case": "swap the two one-field R0 messages",
+      "seconds": 0.003636545967310667,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0409.json"
+    },
+    {
+      "case_id": "TR-08",
+      "invocation_id": "M1-0410",
+      "status": "pass",
+      "case": "second trusted harness plan uses one two-field R0 message rather than two one-field messages",
+      "seconds": 0.0035194309893995523,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0410.json"
+    },
+    {
+      "case_id": "TR-09",
+      "invocation_id": "M1-0411",
+      "status": "pass",
+      "case": "empty canonical statement byte input to typed adapter",
+      "seconds": 0.00318743207026273,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0411.json"
+    },
+    {
+      "case_id": "TR-10",
+      "invocation_id": "M1-0412",
+      "status": "pass",
+      "case": "root_a truncated to63 bytes",
+      "seconds": 0.002133687026798725,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0412.json"
+    },
+    {
+      "case_id": "TR-11",
+      "invocation_id": "M1-0413",
+      "status": "pass",
+      "case": "field_a truncated to23 bytes",
+      "seconds": 0.00213314697612077,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0413.json"
+    },
+    {
+      "case_id": "TR-12",
+      "invocation_id": "M1-0414",
+      "status": "pass",
+      "case": "request transcript version1",
+      "seconds": 0.0018803980201482773,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0414.json"
+    },
+    {
+      "case_id": "TR-13",
+      "invocation_id": "M1-0415",
+      "status": "pass",
+      "case": "after R0 challenge0, attempt R1 before remaining two R0 challenges",
+      "seconds": 0.002465564990416169,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0415.json"
+    },
+    {
+      "case_id": "TR-14",
+      "invocation_id": "M1-0416",
+      "status": "pass",
+      "case": "request challenge1 before challenge0",
+      "seconds": 0.0022071540588513017,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0416.json"
+    },
+    {
+      "case_id": "TR-15",
+      "invocation_id": "M1-0417",
+      "status": "pass",
+      "case": "append a fourth round after valid finish",
+      "seconds": 0.0025017400039359927,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "bcs_protocol::EXP2 public common caller",
+        "blake2b_hashchain::EXP2"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0417.json"
+    },
+    {
+      "case_id": "TR-16",
+      "invocation_id": "M1-0418",
+      "status": "pass",
+      "case": "isolated old omission equation and length-only repair for two64-byte digests",
+      "seconds": 0.0015617129392921925,
+      "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+      "actual_calls": [
+        "blake2b_hashchain::legacy absorb negative control"
+      ],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0418.json"
+    },
+    {
+      "case_id": "C-09",
+      "invocation_id": "M1-0419",
+      "status": "pass",
+      "case": "native-caller-coverage-export",
+      "seconds": 0.0550965890288353,
+      "binary_sha256": null,
+      "actual_calls": [],
+      "record": "docs/data/oct31_kyc_native_milestone_1/cases/M1-0419.json"
+    }
+  ]
+}

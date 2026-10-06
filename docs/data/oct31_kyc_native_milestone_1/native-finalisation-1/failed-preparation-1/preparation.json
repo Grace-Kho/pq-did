@@ -1,0 +1,148 @@
+{
+  "passed": false,
+  "inventory": {
+    "passed": false,
+    "count": 10711,
+    "unexpected": [],
+    "missing": [
+      "benchmarks/README.md"
+    ],
+    "partitions": [
+      {
+        "root": "src",
+        "passed": true,
+        "count": 83,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 83
+      },
+      {
+        "root": "tests",
+        "passed": true,
+        "count": 154,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 154
+      },
+      {
+        "root": "scripts",
+        "passed": true,
+        "count": 51,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 51
+      },
+      {
+        "root": "configs",
+        "passed": true,
+        "count": 3,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 3
+      },
+      {
+        "root": "docs",
+        "passed": true,
+        "count": 4519,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 4507
+      },
+      {
+        "root": "analysis",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/private_hint_lowering_1",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/mldsa_modmul_lowering_1",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/mldsa_butterfly_composition_1",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/mldsa_forward_ntt_stage_1",
+        "passed": true,
+        "count": 2,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 2
+      },
+      {
+        "root": "experiments/mldsa_full_forward_ntt_1",
+        "passed": true,
+        "count": 3,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 3
+      },
+      {
+        "root": "experiments/aurora_transcript_regression_1",
+        "passed": true,
+        "count": 4,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 4
+      },
+      {
+        "root": "experiments/aurora_native_transcript_pilot_1",
+        "passed": true,
+        "count": 4884,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 4884
+      },
+      {
+        "root": "experiments/kyc_milestone_1",
+        "passed": true,
+        "count": 15,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 15
+      },
+      {
+        "root": "experiments/aurora_masking_milestone_1",
+        "passed": true,
+        "count": 975,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 975
+      },
+      {
+        "root": "benchmarks/kyc_milestone_1",
+        "passed": true,
+        "count": 10,
+        "unexpected": [],
+        "missing": [],
+        "expected_count": 10
+      }
+    ],
+    "expected_union_count": 10699,
+    "expected_total_count": 10700,
+    "partition_overlap": 0,
+    "entry_ceiling_per_partition_unchanged": 10000
+  },
+  "historical_baselines_regenerated": false,
+  "scope_sha256": "3f75dd7b46cac56689cf6e016ba5415e40ea3e0c2122e10a43d61080abb5d9fa",
+  "prior_manifest_sha256": "c0475e4cbbcae25e3bfa1d2c08dedd338c99549f77726450f934e18fb15d4b1c"
+}

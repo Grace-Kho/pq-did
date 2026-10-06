@@ -1,0 +1,26 @@
+{
+  "name": "source-quality-final",
+  "phase": "tool",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/auth_relation_integration_1/tooling.py",
+    "quality"
+  ],
+  "limit_seconds": 20,
+  "child_seconds": 19,
+  "status": "launched",
+  "unit": "pqdid-auth-relation-1-source-quality-final",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 594886,
+    "new_artifact_bytes": 853888,
+    "evidence_bytes": 25836319,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4170670080,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

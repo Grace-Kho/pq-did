@@ -1,0 +1,42 @@
+{
+  "case_id": "C-11",
+  "invocation_id": "CAR1-0012",
+  "status": "pass",
+  "details": {
+    "case": "C-11",
+    "purpose": "65-term affine support emits exact bounded spill",
+    "full_relation": false,
+    "descriptor": {
+      "complete": true,
+      "inputs": 65,
+      "gates": 64,
+      "rows": 68,
+      "variables": 67,
+      "primary": 1,
+      "output_wire": 130,
+      "nonzero_terms": [
+        132,
+        133,
+        3
+      ],
+      "matrix_sha256": "72ab7435fb3ced1b817be269db7ac335ae1913bddd44d5a4f857e92de46595f2",
+      "public_identity": "747482f1417df71a6516222c3063a4d17f1d774cda22fda591f4305a3d9a09d2",
+      "gate_counts": [
+        64,
+        0,
+        0
+      ],
+      "free_input_booleanity_rows": 65,
+      "and_rows": 0,
+      "spill_rows": 1,
+      "output_rows": 2,
+      "retained_wire_forms": 131,
+      "retained_term_entries": 2146,
+      "maximum_stored_support": 64,
+      "assignment_storage_bytes": 67,
+      "representation": "GF192-exact-affine-XOR-NOT-elimination-v1"
+    }
+  },
+  "seconds": 0.0006127639207988977,
+  "work_events": 264
+}

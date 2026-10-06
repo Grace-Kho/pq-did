@@ -1,0 +1,17 @@
+{
+  "sha256": {
+    "docs/data/s3_binius_embedding_correspondence_1/checks.py": "5f1afac887f9aa73899331dfa438f944809efe85469ac990f0dd8e8527ab45b5",
+    "docs/data/s3_binius_embedding_correspondence_1/config.json": "0f8dd03f84595e5a60a8c2d4b75b3ef38f2c64b6d1a3d57de4c5f1a27d557150",
+    "docs/data/s3_binius_embedding_correspondence_1/execution-plan.json": "717d157e456a13b467978c44b0e84c2e87f674b21205fca1c05b8aea3286f64c",
+    "docs/data/s3_binius_embedding_correspondence_1/opening.json": "bb0cb501add2ed082b71ef9dfad6e6598d144eef93adcb32df7ecfb265728e6e",
+    "docs/data/s3_binius_embedding_correspondence_1/prefixes.json": "f3563452c21044bff132e73230079ab9e7b8ddd665a8616c63c1564604b98939",
+    "docs/data/s3_binius_embedding_correspondence_1/proposed-source-allowlist.json": "2f497e6e98b57dc04f96dde42e2f5ffb94efaa94c48f5b45a84e0117ba8829f5",
+    "docs/data/s3_binius_embedding_correspondence_1/quality.json": "7a6139afa632a29d7912ea4a2a6377cbc6bef8ff3306bbef10fbd78dfa78e218",
+    "docs/data/s3_binius_embedding_correspondence_1/quality.log": "4917b30b5aa08ef07682c342cee4635af5494275909022802de10b26c04acb79",
+    "docs/data/s3_binius_embedding_correspondence_1/quality.service.json": "43c44aaccbd24fecf1f3f85aa672269530025578784ffb928aa6dc17c7603744",
+    "docs/data/s3_binius_embedding_correspondence_1/review-identity.json": "39bd38a70e72e9693f429fbbefcbf29af4fb95acc0dbb10965a729246e2c273d",
+    "docs/data/s3_binius_embedding_correspondence_1/run.py": "d4378bb4bd49980e1dd2313475af28b47fe010a7c38a1a372a5332121ca02733",
+    "docs/data/s3_binius_embedding_correspondence_1/static-review.json": "e1d84817fa5e8a3e99edfb0993f7d31b34351fa21ee4ae0b424036e13b752af5"
+  },
+  "historical_baselines_regenerated": false
+}

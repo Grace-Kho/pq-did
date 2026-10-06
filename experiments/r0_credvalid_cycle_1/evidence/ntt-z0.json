@@ -1,0 +1,34 @@
+{
+  "phase": "execute",
+  "slot": 4,
+  "mem_available_at_admission": 5273739264,
+  "name": "ntt-z0",
+  "command": [
+    "/home/grace/projects/pq-did/experiments/r0_credvalid_cycle_1/target/release/pqdid-r0-host",
+    "run",
+    "component-ntt",
+    "ntt-z0",
+    "ntt-z0"
+  ],
+  "limit_seconds": 60,
+  "memory_max": 2147483648,
+  "network": false,
+  "start_time_UTC": "2026-09-18T19:04:50Z",
+  "status": "pass",
+  "wall_seconds": 0.5007072769803926,
+  "exit_code": 0,
+  "stop_reason": null,
+  "effective_cgroup": {
+    "memory.max": "2147483648",
+    "memory.swap.max": "0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "sampled_process_tree_RSS_peak": 8998912,
+  "sampled_cgroup_charge_peak": 1835008,
+  "sampled_swap_peak": 0,
+  "sampled_experiment_disk_peak": 5163109220,
+  "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+  "log": "evidence/ntt-z0.log",
+  "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+}

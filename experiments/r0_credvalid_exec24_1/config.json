@@ -1,0 +1,19 @@
+{
+  "package": "R0-CREDVALID-EXEC24-1",
+  "session_limit_user_cycles": 16777216,
+  "segment_limit_po2": 16,
+  "memory_bytes": 2147483648,
+  "swap_bytes": 0,
+  "workers": 1,
+  "threads": 2,
+  "execution_wall_seconds": 60,
+  "execution_aggregate_seconds": 300,
+  "max_executions": 2,
+  "disk_limit_bytes": 10737418240,
+  "disk_stop_bytes": 9663676416,
+  "diagnostic_limit_bytes": 67108864,
+  "diagnostic_stop_bytes": 62914560,
+  "retained_segment_records": 256,
+  "diagnostic_stream_bytes": 65536,
+  "proof_attempts": 0
+}

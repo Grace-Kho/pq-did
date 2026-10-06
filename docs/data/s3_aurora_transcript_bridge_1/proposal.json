@@ -1,0 +1,20 @@
+{
+  "name": "S3-AURORA-TRANSCRIPT-CORRECTION-CONTRACT-1",
+  "authorised": false,
+  "profile_adopted": false,
+  "scope": "One source-only corrected transcript contract and pseudo-diff, not a private prover",
+  "required_result": "Freeze an inactive revision that includes every absorbed byte, trusted statement/relation identifiers, no PoW path/credit, paper-aligned mask distributions and an explicit simulator-query obligation",
+  "minimal_necessary_corrections": [
+    "Use full framed input length when absorbing commitments/messages",
+    "Bind trusted PID/RID and full canonical E(X) before challenges",
+    "Omit PoW solve/verify/squeeze path and set parameter credit to zero",
+    "Specify paper-aligned sumcheck sums and unit mask coefficients, or prove exact replacement lemmas",
+    "Freeze scalar opening manifest, final messages and packed-leaf/port mapping"
+  ],
+  "proposed_analysis_seconds_maximum": 20,
+  "cleanup_evidence_reserve_seconds": 10,
+  "proposed_new_test_invocations": 0,
+  "implementation_seconds": 0,
+  "stopping_rule": "Do not admit implementation if the corrected byte transcript or joint simulator correspondence remains unspecified",
+  "new_package_started": false
+}

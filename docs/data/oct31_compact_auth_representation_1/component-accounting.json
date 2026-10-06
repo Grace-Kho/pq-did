@@ -1,0 +1,81 @@
+{
+  "source": "C-21 matched full guarded kernel",
+  "native_object_payload_formula": "72*rows+32*sum(nnz)",
+  "calculated_payload_bytes": {
+    "compact": 4784760,
+    "uncompressed": 2756544
+  },
+  "actual_native_full_kernel_allocation_measured": false,
+  "measured_component_counts": {
+    "case": "C-21",
+    "purpose": "fully guarded public modmul valid upper residue",
+    "full_relation": false,
+    "compact": {
+      "complete": true,
+      "inputs": 64,
+      "gates": 15158,
+      "rows": 6367,
+      "variables": 6366,
+      "primary": 1,
+      "output_wire": 15223,
+      "nonzero_terms": [
+        116325,
+        12570,
+        6303
+      ],
+      "matrix_sha256": "8ceb1c0e4492ad069bc85bea75f64a0926ce5db0f00b0b2936422a77ce399be9",
+      "public_identity": "747482f1417df71a6516222c3063a4d17f1d774cda22fda591f4305a3d9a09d2",
+      "gate_counts": [
+        8907,
+        6161,
+        90
+      ],
+      "free_input_booleanity_rows": 64,
+      "and_rows": 6161,
+      "spill_rows": 140,
+      "output_rows": 2,
+      "retained_wire_forms": 15224,
+      "retained_term_entries": 144732,
+      "maximum_stored_support": 64,
+      "assignment_storage_bytes": 6366,
+      "representation": "GF192-exact-affine-XOR-NOT-elimination-v1"
+    },
+    "uncompressed": {
+      "complete": true,
+      "inputs": 64,
+      "gates": 15158,
+      "rows": 15224,
+      "variables": 15223,
+      "primary": 1,
+      "output_wire": 15223,
+      "nonzero_terms": [
+        22517,
+        14211,
+        15160
+      ],
+      "matrix_sha256": "2bd18c8b7445e9071130f4f46d81247e5231f00c6dddd3668ce884076c47ebf4",
+      "public_identity": "747482f1417df71a6516222c3063a4d17f1d774cda22fda591f4305a3d9a09d2",
+      "gate_counts": [
+        8907,
+        6161,
+        90
+      ],
+      "free_input_booleanity_rows": 64,
+      "output_rows": 2,
+      "assignment_storage_bytes": 15223,
+      "memory_model": "bounded retained byte assignment; no last-use claim"
+    },
+    "same_source_fingerprint": "ede2370f4e31d2908d6fc5049e2d7f3a0500e7e9b26904bf02bd8981b7002648",
+    "retained_source_trace_bytes": 0,
+    "work_accounting": "each of both lowering traversals charged separately",
+    "oracle": "exact host integer (input * 4808194) % 8380417 plus canonical range",
+    "input": 8380416,
+    "factor": 4808194,
+    "expected_word": 3572223,
+    "expected_acceptance": true,
+    "contract": "fully guarded canonical signed64 entry and masked64 output",
+    "actual_word": 3572223,
+    "actual_acceptance": true
+  },
+  "whole_authentication_projection": false
+}

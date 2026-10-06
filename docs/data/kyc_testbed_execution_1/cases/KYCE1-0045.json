@@ -1,0 +1,15 @@
+{
+  "invocation_id": "KYCE1-0045",
+  "case_id": "M-05",
+  "work_event_reservation": 0,
+  "ordinal": 45,
+  "cumulative_invocations": 1019,
+  "status": "pass",
+  "details": {
+    "result": "local canonical projection assertions passed",
+    "external_interoperability": false
+  },
+  "seconds": 0.0009923719335347414,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions or evaluations. Host setup included in time and resource guard."
+}

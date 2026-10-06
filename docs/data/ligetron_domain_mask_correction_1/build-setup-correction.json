@@ -1,0 +1,7 @@
+{
+  "first_build_consumed": true,
+  "compiler_started": false,
+  "failure": "missing build parent before attempt-1 mkdir",
+  "correction": "created designated experimental build parent; no source/expectation change",
+  "next_build": "attempt-2, final available build"
+}

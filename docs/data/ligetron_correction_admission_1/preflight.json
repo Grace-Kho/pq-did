@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "storage": {
+    "new_evidence_bytes": 1100624,
+    "new_artifact_bytes": 17559580,
+    "evidence_bytes": 37242909,
+    "artifact_bytes": 76526127,
+    "temporary_bytes": 0
+  },
+  "build_slots": "0/2 package, historical 10/13",
+  "case_slots": "0/39 package; historical seven reserved slots untouched",
+  "CPU_include_link_closure": "source/header closure inspected; native compilation remains untested",
+  "stage_callers": [
+    "webgpu_prover.cpp: private_encoding_seed/stage1_seed/stage2_seed",
+    "webgpu_verifier.cpp: stage1_seed/stage2_seed",
+    "nonbatch_context_base::init_witness_random: init_challenge_engines"
+  ],
+  "full_backend_execution": "UNRUN"
+}

@@ -1,0 +1,9 @@
+{
+  "fixture": "fixtures/components/ntt-z0.bin",
+  "SHA256": "98cebb7c206611e2566220d1aedb81b8f7445819e08bd01d546583563390beda",
+  "source": "unchanged alpha-42 credential response polynomial zero",
+  "reference": "unchanged Python bounded_mldsa._unpack_poly and _ntt",
+  "synthetic_private_intermediate": true,
+  "values_not_logged": true,
+  "full_relation_evidence": false
+}

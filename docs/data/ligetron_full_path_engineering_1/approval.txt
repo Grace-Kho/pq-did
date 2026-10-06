@@ -1,0 +1,68 @@
+I approve **LIGETRON-FULL-PATH-ENGINEERING-1** as an isolated, conditional engineering experiment, under the proposal and runbook contained in:
+
+`/home/grace/projects/pq-did/handover/ligetron_full_path_preflight_v1.zip`
+
+Approved archive SHA-256:
+
+`ca92aa31476119a00bbf876145a72445d77488171c075a812b8df1997d428425`
+
+This approval authorises the following prospective amendments. Preserve all historical consumption, failures and existing reservations; do not reset accounting.
+
+| Resource | Approved amendment |
+|---|---|
+| Implementation | Add **7,200 seconds outside KYC**, including the **300-second completion reserve**. Preserve the existing KYC allocation and reserve. |
+| Invocations | Increase **1,265 → 1,313**: E01–E40 plus eight targeted correction/revalidation slots. Preserve all older reserved slots. |
+| Builds | Increase **13 → 17**: Dawn, WABT, application/harness and one corrective rebuild. |
+| Memory | Serial build/native workers capped at **2 GiB**; application-owned live device buffers capped at **512 MiB**. Preparation/audit workers remain capped at **256 MiB**. |
+| Artifacts | Cumulative ceiling **4 GiB**, including acquisition, source trees, build outputs and scratch. Apply the proposed **256 MiB registered-artifact per-file exception** and **512 MiB temporary-storage limit** within that ceiling. |
+| Evidence | Cumulative ceiling **44 MiB**; shared allowance increases by **4 MiB**. Package allocation **3 MiB**, including its **512 KiB completion/failure reserve**. Preserve the existing shared reserve. |
+| Proof experiment | Authorise **one new synthetic-only proof attempt**. Increase the aggregate attempt ceiling **3 → 4**, keeping the original unused attempt reserved. |
+| Other controls | Apply the proposal’s exact phase allocations, timeout amendments, work-event accounting, proof-output bounds and stopping conditions. |
+
+**1. Verify and enforce admission before execution.**
+
+Verify the approved archive, retained source identities and patch chain. Use the pinned dependency closure and project-local provisioning commands.
+
+Refresh Windows and WSL memory readings. Require **at least 4 GiB free/available in each environment before build or device-workload admission**. If either fails, stop affected execution and report the readings without consuming a build or proof attempt. Do not lower this gate.
+
+Do not kill unrelated processes, install system packages, change drivers or Windows/WSL configuration, use sudo, or activate isolation. Those actions are outside this approval. Once the existing gate passes, do not request the same approval again.
+
+**2. Complete the approved engineering scope continuously.**
+
+Proceed through local provisioning, the isolated overlay, actual-engine validation, statement binding, bounded parsing and E01–E40 as admitted.
+
+Reuse retained sources and applicable validation. Implement routine in-scope corrections within the aggregate budgets without stopping at every subtask boundary. Register expected generated artifacts before launch; keep logs and metadata under evidence accounting.
+
+A detected NVIDIA GPU does not establish a usable Dawn adapter. Record the adapter actually selected. Label software Vulkan results explicitly as **software execution**, and keep them separate from NVIDIA hardware or performance claims.
+
+If a device-dependent path is blocked, complete independent authorised CPU work where feasible.
+
+**3. Gate the synthetic proof explicitly.**
+
+E36 is authorised only after the applicable E01–E35 checks pass and complete workload, allocation and output bounds satisfy the runbook.
+
+Use the specified tiny synthetic program and publicly disclosed test witness. Verify the resulting proof independently in a fresh verifier process. Reuse that proof for the specified tamper cases; corrective slots do not authorise another proof-generation attempt.
+
+Record this new allocation separately from the historical proof ledger. If consumed, report the aggregate as **three attempts used, with the original one remaining reserved**.
+
+The experiment may establish functional correspondence and resource measurements. It does not establish zero knowledge, knowledge extraction, quantum security or complete PQ-DAA authentication.
+
+**4. Preserve the cryptographic boundary.**
+
+Keep degree/masking correspondence, joint committed-view simulation, public challenge expansion, compiler binding, same-assignment extraction and quantum/Fiat–Shamir obligations explicitly open.
+
+Do not present them as prerequisites already satisfied. Stop an affected path if completing it requires an additional cryptographic construction change outside the approved overlays and engineering corrections.
+
+Production private verification remains fail-closed. Only this newly authorised synthetic experiment is excepted from the proving pause.
+
+**5. Preserve the existing project and deliver one review ZIP.**
+
+Preserve the genuine ML-DSA KYC baseline, 302 historical observations, four smoke observations and all previous evidence. Only manuscript Sections II–VIII and agreed clarifications remain authoritative; do not edit the manuscript or adopt a production profile.
+
+Complete the authorised preservation, reporting, readback and worker-termination checkpoint.
+
+Return **one verified ZIP** containing everything needed for review: reader guide, report, exact commands, dependency/source provenance, complete patch chain, generated-and-loaded shader identities, relevant harnesses and independent expectations, individual outcomes, resource records, preservation closure, manifest and checksums.
+
+Verify the archive’s paths, unique members, integrity and payload checksums. Provide its absolute path, size and SHA-256. Do not ask me to locate individual files.
+
+Report concisely: working functionality, actual adapter, validation results, resource consumption, remaining engineering/security blockers and the next substantive decision.

@@ -1,0 +1,94 @@
+{
+  "recorded_at_utc": "2026-09-17T14:03:49.006053+00:00",
+  "protected_preexisting_files": 6836,
+  "unchanged_preexisting_files": 6827,
+  "authorised_changed_records": [
+    "AGENTS.md",
+    "README.md",
+    "configs/suite.json",
+    "docs/implementation_spec.md",
+    "docs/spec_issues.md",
+    "docs/stage3_bc1_foundation.md",
+    "docs/stage3_hash_enrolment.md",
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "preserved": "all previous production code, tests, vectors, historical measurements, dependency/native/editor files, PDF, confirmed cryptographic parameters and SPEC-001/002",
+  "historical_record_sha256": {
+    "docs/data/spec003_comparison.json": "e68f371d461eb9cc63645310d32d05d7c73186c0e81c8d032b38202510ad659c",
+    "docs/data/stage3_bc1_measurements.json": "34c08ff9b21c60d670fff5dcfdf579d29269ec74773db5569295d58bf2826b40",
+    "docs/data/stage3_hash_enrolment_measurements.json": "bf13a527bda9f8ad8f24a841e7bc9c654750bf1b6275a5b7a7e9f0e75afb0294"
+  },
+  "new_evidence_sha256": {
+    "docs/data/stage3_hash_enrolment_validation.json": "4d648340ffe1ce16eb7e60527ce49ffb5cff2eaeb889b58706fdb85e7eb90c00",
+    "docs/data/stage3_hash_enrolment_regression.json": "5d33de84960f8ce15a1d0597ed0a8e39925678d836544116e8695709c88034e2"
+  },
+  "validation_totals": {
+    "test": 17,
+    "probe": 9,
+    "stability": 2
+  },
+  "validation_outcomes": {
+    "passed": 28,
+    "assertion_failure": 0,
+    "resource_limit": 0,
+    "other": 0
+  },
+  "test_vs_probe_meaning": "17 tests; nine probes (three predicate evaluations, six generation/digest checks); two separate stability checks",
+  "regression": {
+    "passed": 1106,
+    "skipped": 0,
+    "categories": {
+      "unit": 1083,
+      "integration": 19,
+      "fixed_hash": 4
+    },
+    "pytest_seconds": 31.91,
+    "peak_rss_bytes": 115273728
+  },
+  "stability": "historical count/length/fold/fingerprint equality; literal fresh budget/stream equality asserted by runner",
+  "probe_modes": "counts/length/folds/fingerprints equal within each of three extended components",
+  "small_trace_tests": "three independent initialiser/carry/full-width-schedule checks passed",
+  "supervision_tests": "three deliberately small RSS/time/log stops and one successful exit passed",
+  "lint": {
+    "command": ".venv/bin/ruff check .",
+    "result": "All checks passed!"
+  },
+  "format": {
+    "command": ".venv/bin/ruff format --check .",
+    "result": "93 files already formatted"
+  },
+  "documentation_checks": {
+    "main_requirement_rows": 52,
+    "local_links": 173,
+    "tables": 42
+  },
+  "source_sha256": {
+    "configs/validation_profiles.json": "ac67e0b3fe89c8a91a55c13f8f2e75323c02c9773bfe2007771a61f8c3b623b9",
+    "scripts/measure_bc1_foundation.py": "b67b94a69d85f164522db1704eeff0b186af2269c6c19b60c2c4432160caf9c4",
+    "scripts/measure_hash_enrolment.py": "9a222ec30079dc2e67bde41392516a18143408db7de8c7239868442c8b09fdca",
+    "scripts/validate_hash_enrolment.py": "693b5bbfd9400bb80a7d0a17cfd239b4905ec61d99a58e31596a9c8cca745f0f",
+    "scripts/validation_support.py": "99fe8f22f5ee8128e72c22e23fa988a8dce0a8a2a30a3b04fd7cf83d99b8d381",
+    "src/pqdid/circuits/__init__.py": "9098a9c19787bcd155bac6d7d724d3c354c4c404fc99565cd5a72ae26a4c8d8f",
+    "src/pqdid/circuits/accounting.py": "23610bf5a75ba435f582d7e80a1d1e2118f07caabe6659b96a4ae4380b3c0690",
+    "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+    "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+    "src/pqdid/circuits/enrolment.py": "d8b5134bdcb7fd9c1bd70cffc6214e96d971e3fe01bc595e5437718cd603e2f5",
+    "src/pqdid/circuits/enrolment_accounting.py": "8e479c7d3f221d86450135cf356f54b310e95794884026eeb9663985d78c4b3b",
+    "src/pqdid/circuits/keccak.py": "05dbfe9e5d8aea37471c325b7a9565b6f9f1742af5e2efca54029758b1b840a6",
+    "src/pqdid/circuits/parsing.py": "2f4b3d24d056eb9b26424ee185b1b5df9847f50fdc1db326c8d313685236cef9",
+    "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec",
+    "tests/unit/test_confirmed_bc1.py": "e008e849d455a49ec989dbd4674bcde13d2c5bffeb6327df8a0e759c70541db4",
+    "tests/unit/test_enrolment_circuit.py": "f6e011126c17d6c2792045a88d0270b1d7b14554cd50f3637fa1356dfa6b3821",
+    "tests/unit/test_keccak_circuit.py": "d7d9b370cb89ad04758762fdb5aac54627917d93f7a82563a324d15558700e64",
+    "tests/unit/test_spec003_alternatives.py": "9d14fcce3de660fce00319b457c225defa6d6e07eaf2230f9d0364f433a05d45",
+    "tests/unit/test_validation_support.py": "cfa0daf641a8ebe77b2e88c873dfea76baadcabf08258def972989ba02cefe5b"
+  },
+  "limitations": [
+    "full canonical BC-1 conformance unverified",
+    "finite public-length hashing cases",
+    "historical raw traces unavailable; historical comparison uses digests",
+    "no proof generated/verified; enrolment 9587104 bytes calculated only",
+    "Stage 2 obligations and Stage 3 proof feasibility remain open"
+  ]
+}

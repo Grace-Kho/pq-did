@@ -1,0 +1,4 @@
+{
+  "failure": "v2-lint-final",
+  "reason": "One E501 preparation-scope label remained: the earlier edit did not match its formatter-wrapped assignment. Split the literal explicitly; no semantic/runtime change or test invocation. Failure retained."
+}

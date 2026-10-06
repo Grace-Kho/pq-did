@@ -1,0 +1,479 @@
+{
+  "comparison_point_path": "docs/data/oct31_auth_relation_integration_1/comparison-point.json",
+  "comparison_point_sha256": "d65fda5f2c8c67da2e6120a7d202a6786999c5c64f7f74d81260cecffa885383",
+  "commands": [
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/baseline-cases-01.json",
+      "record_sha256": "5436836d11828b436f1c082ddd6cdc7d457a36bd5d90eb54388bfa1748f81e7d",
+      "historical_name": "baseline-cases-01",
+      "status": "failed",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "B",
+        "1",
+        "12"
+      ],
+      "worker_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases B 1 12",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job baseline-cases-01 python 120 -- .venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases B 1 12",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/baseline-cases-02.json",
+      "record_sha256": "882548afbdfad5d7eec1aca91c01014e00c7e021148061eb51e5927172aa8cdb",
+      "historical_name": "baseline-cases-02",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "B",
+        "2",
+        "12"
+      ],
+      "worker_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases B 2 12",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job baseline-cases-02 python 120 -- .venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases B 2 12",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/baseline-cases-03.json",
+      "record_sha256": "56cc7b0209c419f2df68878724ce01249b8da33fd96a9e9bc518d7ccc14bee4d",
+      "historical_name": "baseline-cases-03",
+      "status": "failed",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "B",
+        "13",
+        "48"
+      ],
+      "worker_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases B 13 48",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job baseline-cases-03 python 120 -- .venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases B 13 48",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/baseline-cases-04.json",
+      "record_sha256": "17e1450cfc8028713ae32039cc43bac184f5a0e6366dcf631fc2b7c14f6a4db7",
+      "historical_name": "baseline-cases-04",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "B",
+        "20",
+        "48"
+      ],
+      "worker_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases B 20 48",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job baseline-cases-04 python 120 -- .venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases B 20 48",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/bench-issue-s1.json",
+      "record_sha256": "5222d6ba09816cb5f930a74266fecbde17ecf0e248009c1b28db13270a746053",
+      "historical_name": "bench-issue-s1",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/issue-s1.json"
+      ],
+      "worker_shell_display": "/home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/issue-s1.json",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job bench-issue-s1 python 120 -- /home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/issue-s1.json",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/bench-issue-s2.json",
+      "record_sha256": "91a1e893be13d28250c520c1063629cb033684ff8dab2beeaafa9e511a25d97d",
+      "historical_name": "bench-issue-s2",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/issue-s2.json"
+      ],
+      "worker_shell_display": "/home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/issue-s2.json",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job bench-issue-s2 python 120 -- /home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/issue-s2.json",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/bench-issue-s3.json",
+      "record_sha256": "e72c55eea49364b974cd56b3b1046a3f8caa64e3ec51bbe6437ee2b43ba1baaa",
+      "historical_name": "bench-issue-s3",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/issue-s3.json"
+      ],
+      "worker_shell_display": "/home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/issue-s3.json",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job bench-issue-s3 python 120 -- /home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/issue-s3.json",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/bench-present-a-s1.json",
+      "record_sha256": "73c5bc8b6d9db6bea68b03f6051c7589f83f2dc3eaaafddbd0d031300f67bab4",
+      "historical_name": "bench-present-a-s1",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-a-s1.json"
+      ],
+      "worker_shell_display": "/home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-a-s1.json",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job bench-present-a-s1 python 120 -- /home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-a-s1.json",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/bench-present-a-s2.json",
+      "record_sha256": "417dce1992d4fef43408db2a1f46eb0daa9a6b420a581059108eeb681c7ccf33",
+      "historical_name": "bench-present-a-s2",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-a-s2.json"
+      ],
+      "worker_shell_display": "/home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-a-s2.json",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job bench-present-a-s2 python 120 -- /home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-a-s2.json",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/bench-present-a-s3.json",
+      "record_sha256": "261b8a1710a1a3c90ae806298cf1b62b5149f36dc46d35ebacd5cfd299f4b436",
+      "historical_name": "bench-present-a-s3",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-a-s3.json"
+      ],
+      "worker_shell_display": "/home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-a-s3.json",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job bench-present-a-s3 python 120 -- /home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-a-s3.json",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/bench-present-b-s1.json",
+      "record_sha256": "dddda357b57e8ec0103f3d73facc42493e20aaeb61c0ed1f020a229318547197",
+      "historical_name": "bench-present-b-s1",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-b-s1.json"
+      ],
+      "worker_shell_display": "/home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-b-s1.json",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job bench-present-b-s1 python 120 -- /home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-b-s1.json",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/bench-present-b-s2.json",
+      "record_sha256": "8e7dbf09b4b1bd195979129db04b8bff6438ac67fcb4f9dd0f321af4dd8c2767",
+      "historical_name": "bench-present-b-s2",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-b-s2.json"
+      ],
+      "worker_shell_display": "/home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-b-s2.json",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job bench-present-b-s2 python 120 -- /home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-b-s2.json",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/bench-present-b-s3.json",
+      "record_sha256": "da171c43aa2e4a7ed048f00c57b12d7619a9eda86ca9ea529f8d65bd42ebbf27",
+      "historical_name": "bench-present-b-s3",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-b-s3.json"
+      ],
+      "worker_shell_display": "/home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-b-s3.json",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job bench-present-b-s3 python 120 -- /home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/present-b-s3.json",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/bench-revoke-update-s1.json",
+      "record_sha256": "de7deb5cc4d81e826f7f7296cd49efd5d5dda4842b9e078dd74496bdacd462eb",
+      "historical_name": "bench-revoke-update-s1",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/revoke-update-s1.json"
+      ],
+      "worker_shell_display": "/home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/revoke-update-s1.json",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job bench-revoke-update-s1 python 120 -- /home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/revoke-update-s1.json",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/bench-revoke-update-s2.json",
+      "record_sha256": "2ec359a0ee8a623eb1df91106f1ef76d93d3f2908c15cc1a589cc6dc213106c2",
+      "historical_name": "bench-revoke-update-s2",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/revoke-update-s2.json"
+      ],
+      "worker_shell_display": "/home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/revoke-update-s2.json",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job bench-revoke-update-s2 python 120 -- /home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/revoke-update-s2.json",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/bench-revoke-update-s3.json",
+      "record_sha256": "5785d2e7963b2f77a0a583f4b4af7de4e45aac230be504cc88da62bc0686da7a",
+      "historical_name": "bench-revoke-update-s3",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 120,
+      "worker_argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+        "session",
+        "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/revoke-update-s3.json"
+      ],
+      "worker_shell_display": "/home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/revoke-update-s3.json",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job bench-revoke-update-s3 python 120 -- /home/grace/projects/pq-did/.venv/bin/python -I -B /home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py session /home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/revoke-update-s3.json",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/native-build-1.json",
+      "record_sha256": "55e163a02f6defe27e418789f11baffddfd4361808afc8d7b4698d4bd17aaa0e",
+      "historical_name": "native-build-1",
+      "status": "failed",
+      "phase": "native",
+      "limit_seconds": 120,
+      "worker_argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/native_build.py",
+        "native-build-1"
+      ],
+      "worker_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/native_build.py native-build-1",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job --build native-build-1 native 120 -- .venv/bin/python -I -B experiments/kyc_milestone_1/native_build.py native-build-1",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/native-build-2.json",
+      "record_sha256": "e42326367246dd6b52cbfe19318e3c80467b63204d1673f396546c24dc2200f2",
+      "historical_name": "native-build-2",
+      "status": "pass",
+      "phase": "native",
+      "limit_seconds": 120,
+      "worker_argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/native_build.py",
+        "native-build-2"
+      ],
+      "worker_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/native_build.py native-build-2",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job --build native-build-2 native 120 -- .venv/bin/python -I -B experiments/kyc_milestone_1/native_build.py native-build-2",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/native-build-3.json",
+      "record_sha256": "e76e43fb5f572c54ce813c955c3d4803ad5b2ddaf648390258f8d65529b55788",
+      "historical_name": "native-build-3",
+      "status": "pass",
+      "phase": "native",
+      "limit_seconds": 120,
+      "worker_argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/native_build.py",
+        "native-build-3"
+      ],
+      "worker_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/native_build.py native-build-3",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job --build native-build-3 native 120 -- .venv/bin/python -I -B experiments/kyc_milestone_1/native_build.py native-build-3",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/native-cases-01.json",
+      "record_sha256": "40f694225b2eabf6afa874b12e11a335be47bef3acdfebda1d250a02d3ac6490",
+      "historical_name": "native-cases-01",
+      "status": "pass",
+      "phase": "native",
+      "limit_seconds": 90,
+      "worker_argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "N",
+        "1",
+        "24"
+      ],
+      "worker_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases N 1 24",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job native-cases-01 native 90 -- .venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases N 1 24",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/native-final-c09.json",
+      "record_sha256": "5100d76415dc5e6fb908151409abac80c7b07f30eb903cc679478a27230d44d1",
+      "historical_name": "native-final-c09",
+      "status": "pass",
+      "phase": "python",
+      "limit_seconds": 30,
+      "worker_argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "C",
+        "9",
+        "9"
+      ],
+      "worker_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases C 9 9",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job native-final-c09 python 30 -- .venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases C 9 9",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/native-final-cases.json",
+      "record_sha256": "2d865782a049116d84649e94f221f4ad3fe3954f7fe7433405da47d2d16e994b",
+      "historical_name": "native-final-cases",
+      "status": "pass",
+      "phase": "native",
+      "limit_seconds": 60,
+      "worker_argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "N",
+        "1",
+        "24"
+      ],
+      "worker_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases N 1 24",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job native-final-cases native 60 -- .venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases N 1 24",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/native-final-transcripts.json",
+      "record_sha256": "1890c065a51257f1492cb08cc10e1c45717431ac0768515a2814da689babd356",
+      "historical_name": "native-final-transcripts",
+      "status": "pass",
+      "phase": "native",
+      "limit_seconds": 60,
+      "worker_argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/tasks.py",
+        "cases",
+        "TR",
+        "1",
+        "16"
+      ],
+      "worker_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases TR 1 16",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job native-final-transcripts native 60 -- .venv/bin/python -I -B experiments/kyc_milestone_1/tasks.py cases TR 1 16",
+      "execution_now_authorised": false
+    },
+    {
+      "record": "docs/data/oct31_kyc_native_milestone_1/jobs/benchmark-summary.json",
+      "record_sha256": "50cf2b102d404dfd18d41438326d2ea357f08b4762b2b3d981fd6c70c4b2b304",
+      "historical_name": "benchmark-summary",
+      "status": "pass",
+      "phase": "tool",
+      "limit_seconds": 30,
+      "worker_argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/kyc_milestone_1/measurement.py",
+        "aggregate",
+        "docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01"
+      ],
+      "worker_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/measurement.py aggregate docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01",
+      "historical_guard_shell_display": ".venv/bin/python -I -B experiments/kyc_milestone_1/run.py job benchmark-summary tool 30 -- .venv/bin/python -I -B experiments/kyc_milestone_1/measurement.py aggregate docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01",
+      "execution_now_authorised": false
+    }
+  ],
+  "reruns_performed": 0,
+  "warning": "Historical commands/configs are immutable provenance, not permission to overwrite closed stores/ledgers or rerun measurements. Future runs require fresh approved output/config and aggregate admission.",
+  "environment_record": "docs/environment.md",
+  "measured_source_provenance": "docs/data/oct31_kyc_native_milestone_1/benchmark-source-provenance.json"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "bench-revoke-update-s3",
+  "phase": "python",
+  "argv": [
+    "/home/grace/projects/pq-did/.venv/bin/python",
+    "-I",
+    "-B",
+    "/home/grace/projects/pq-did/experiments/kyc_milestone_1/measurement.py",
+    "session",
+    "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/configs/revoke-update-s3.json"
+  ],
+  "limit_seconds": 120,
+  "child_seconds": 119,
+  "status": "launched",
+  "unit": "pqdid-oct31-m1-bench-revoke-update-s3",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 4638451,
+    "new_artifact_bytes": 30272744,
+    "evidence_bytes": 21303549,
+    "artifact_bytes": 58112659,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4571570176,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

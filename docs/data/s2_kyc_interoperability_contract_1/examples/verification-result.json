@@ -1,0 +1,13 @@
+{
+  "profile": "pqdid-application-container-draft-1",
+  "kind": "verification-result",
+  "synthetic": true,
+  "exposure": "private-verifier-application-channel",
+  "evidenceStatus": "Illustrative result mapping, not a service response or cryptographic receipt",
+  "body": {
+    "decision": "unsupported-proof-backend",
+    "accepted": false,
+    "challengeConsumed": false,
+    "businessAction": "not-authorised"
+  }
+}

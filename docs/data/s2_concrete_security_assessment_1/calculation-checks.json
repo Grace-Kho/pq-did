@@ -1,0 +1,34 @@
+[
+  {
+    "name": "profile",
+    "passed": true
+  },
+  {
+    "name": "tails",
+    "passed": true
+  },
+  {
+    "name": "square_roots",
+    "passed": true
+  },
+  {
+    "name": "independent_rows",
+    "passed": true
+  },
+  {
+    "name": "modulo_mapping",
+    "passed": true
+  },
+  {
+    "name": "aggregation",
+    "passed": true
+  },
+  {
+    "name": "domains",
+    "passed": true
+  },
+  {
+    "name": "displays",
+    "passed": true
+  }
+]

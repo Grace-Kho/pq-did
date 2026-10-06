@@ -1,0 +1,53 @@
+{
+  "name": "prepare-2",
+  "phase": "tool",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/kyc_milestone_1/preservation.py",
+    "prepare"
+  ],
+  "limit_seconds": 30,
+  "child_seconds": 29,
+  "status": "pass",
+  "unit": "pqdid-oct31-m1-prepare-2",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 6336536,
+    "new_artifact_bytes": 30272657,
+    "evidence_bytes": 23001634,
+    "artifact_bytes": 58112659,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4251951104,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false,
+  "seconds": 1.4905054779956117,
+  "exit_code": 0,
+  "stop": null,
+  "worker": {
+    "before": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "10629120",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "after": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "44867584",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "child_exit_code": 0,
+    "child_seconds": 0.8261152419727296,
+    "resource_breach": false,
+    "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+  },
+  "sampled_tree_rss_peak": 56713216,
+  "artifact_observed_peak_bytes": 58112659
+}

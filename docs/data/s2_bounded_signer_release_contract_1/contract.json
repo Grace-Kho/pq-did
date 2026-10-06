@@ -1,0 +1,92 @@
+{
+  "package": "S2-BOUNDED-SIGNER-RELEASE-CONTRACT-1",
+  "operations": [
+    {
+      "operation": "credential",
+      "authority": "issuer",
+      "key_identity": "pp.issuer_public_key",
+      "constructor": "build_mcred",
+      "context": "PQ-DID/credential/v1",
+      "release": "permanent reservation, approved original binding and certification log before delivery"
+    },
+    {
+      "operation": "revreq",
+      "authority": "issuer",
+      "key_identity": "pp.issuer_public_key",
+      "constructor": "build_revocation_request_message",
+      "context": "PQ-DID/revreq/v1",
+      "release": "authorised rid/current reference/nonce request; manager verifies before mutation"
+    },
+    {
+      "operation": "state",
+      "authority": "manager",
+      "key_identity": "pp.revocation_public_key",
+      "constructor": "build_state_message",
+      "context": "PQ-DID/state/v1",
+      "release": "no publication before both state and update signatures and atomic snapshot commit"
+    },
+    {
+      "operation": "update",
+      "authority": "manager",
+      "key_identity": "pp.revocation_public_key",
+      "constructor": "build_update_message",
+      "context": "PQ-DID/update/v1",
+      "release": "same atomic snapshot/history/nonce/revoked-set commit"
+    },
+    {
+      "operation": "current",
+      "authority": "manager",
+      "key_identity": "pp.revocation_public_key",
+      "constructor": "build_current_message",
+      "context": "PQ-DID/current/v1",
+      "release": "final locked current snapshot comparison"
+    },
+    {
+      "operation": "did-record",
+      "authority": "controller",
+      "key_identity": "trusted current predecessor controller or genesis key",
+      "constructor": "encode_body",
+      "context": "PQ-DID/did-record/v1",
+      "release": "pending exact bytes and confirmed registry append; successor signed by old key"
+    },
+    {
+      "operation": "did-read",
+      "authority": "registry",
+      "key_identity": "trusted DIDConfiguration.registry_public_key",
+      "constructor": "existing did-read/did-chain encode_record framing",
+      "context": "PQ-DID/did-read/v1",
+      "release": "ordered registry snapshot; no falsely inferred latest-at-delivery claim"
+    },
+    {
+      "operation": "control",
+      "authority": "controller",
+      "key_identity": "trusted active controller for certified did/version",
+      "constructor": "encode_enrol_statement",
+      "context": "PQ-DID/control/v1",
+      "release": "existing current-controller recheck and exact enrolment statement"
+    },
+    {
+      "operation": "request",
+      "authority": "verifier",
+      "key_identity": "trusted audience request key",
+      "constructor": "encode_context",
+      "context": "PQ-DID/request/v1",
+      "release": "challenge reservation before signing; failure keeps nonce reserved"
+    }
+  ],
+  "source_existing_files_changed": [],
+  "new_source": [
+    "src/pqdid/signing_adapters.py"
+  ],
+  "new_tests": [
+    "tests/unit/test_signing_adapters.py"
+  ],
+  "trust_boundary": "Owner configuration and existing lifecycle authorisation. In-memory grants are synthetic. Durable issuance uses unchanged store policy, admission, exact head and generation fencing. Private grammar bridge is not a remotely exposed endpoint.",
+  "new_proofs": 0,
+  "native_ABI_runs": 0,
+  "model": "reference only; application faults plus real temporary SQLite transactions; no crash/power-loss or actual-UID isolation claim",
+  "prior_implementation_seconds": 11.616396492929198,
+  "prior_test_invocations": 79,
+  "new_test_invocations": 18,
+  "next_package": "S2-BOUNDED-MANAGER-DURABLE-RELEASE-1"
+}

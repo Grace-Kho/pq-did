@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "preserved_files": 8485,
+  "allowed_changes": [
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "frozen_files_unchanged": 27,
+  "execution_only_runs": 1,
+  "new_proof_attempts": 1,
+  "cumulative_proof_attempts": 2,
+  "remaining_proof_attempts": 1,
+  "actual_succinct_receipts": 1,
+  "independent_verification": true,
+  "tamper_rejections": 8,
+  "closed_package_probe": "package resource stop recorded; no further build/execution/proving authorised by this package",
+  "experiment_disk_bytes": 7019213059,
+  "output_bytes": 2920447,
+  "diagnostic_bytes": 2680431,
+  "temporary_bytes_at_audit": 0
+}

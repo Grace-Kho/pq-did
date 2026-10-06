@@ -1,0 +1,16 @@
+{
+  "case_id": "B-08",
+  "invocation_id": "AR1-0062",
+  "status": "pass",
+  "details": {
+    "case_id": "B-08",
+    "passed": true,
+    "rejected": true,
+    "reason": "conflicting duplicate opening",
+    "accepted": false,
+    "proof_generated": false,
+    "field_note": "all 24-byte encodings canonical; wrong width rejected"
+  },
+  "seconds": 3.651599399745464e-05,
+  "work_events": 0
+}

@@ -1,0 +1,12 @@
+{
+  "kind": "Source-reviewed FFI harness correction; no algorithm failure or resource breach",
+  "finding": "common.h MLD_CONTEXT_PARAMETERS_3/9 remove optional integration-context when MLD_CONFIG_CONTEXT_PARAMETER is absent. Initial ctypes declarations/calls supplied one redundant final NULL argument; successful tests are retained as preliminary, superseded by exact 3/9-argument calls.",
+  "retained_source": "interop-before-abi.py.txt",
+  "retained_source_sha256": "d09df0d1c4c8a351dc9dda1099378fbdf4f78f7169ea72a56c698ff309501a6f",
+  "tests_before_correction": 70,
+  "targeted_repeated_test_invocations": 9,
+  "total_planned_invocations": 79,
+  "ceiling": 100,
+  "native_library_or_global_rng_changed": false,
+  "next_command": "run_checks.py interop-final"
+}

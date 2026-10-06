@@ -1,0 +1,239 @@
+{
+  "package": "OCT31-COMPACT-AUTH-REPRESENTATION-1",
+  "individual_outcomes": [
+    {
+      "case": "Q-01",
+      "status": "pass",
+      "seconds": 0.00058297801297158,
+      "work_events": 0,
+      "evidence": "cases/CAR1-0001.json"
+    },
+    {
+      "case": "C-01",
+      "status": "pass",
+      "seconds": 0.018378493026830256,
+      "work_events": 21,
+      "evidence": "cases/CAR1-0002.json"
+    },
+    {
+      "case": "C-02",
+      "status": "pass",
+      "seconds": 0.00021388905588537455,
+      "work_events": 36,
+      "evidence": "cases/CAR1-0003.json"
+    },
+    {
+      "case": "C-03",
+      "status": "pass",
+      "seconds": 0.00014571798965334892,
+      "work_events": 21,
+      "evidence": "cases/CAR1-0004.json"
+    },
+    {
+      "case": "C-04",
+      "status": "pass",
+      "seconds": 0.00017994910012930632,
+      "work_events": 21,
+      "evidence": "cases/CAR1-0005.json"
+    },
+    {
+      "case": "C-05",
+      "status": "pass",
+      "seconds": 0.00015838502440601587,
+      "work_events": 21,
+      "evidence": "cases/CAR1-0006.json"
+    },
+    {
+      "case": "C-06",
+      "status": "pass",
+      "seconds": 9.116099681705236e-05,
+      "work_events": 16,
+      "evidence": "cases/CAR1-0007.json"
+    },
+    {
+      "case": "C-07",
+      "status": "pass",
+      "seconds": 3.2686046324670315e-05,
+      "work_events": 1,
+      "evidence": "cases/CAR1-0008.json"
+    },
+    {
+      "case": "C-08",
+      "status": "pass",
+      "seconds": 3.7619960494339466e-05,
+      "work_events": 0,
+      "evidence": "cases/CAR1-0009.json"
+    },
+    {
+      "case": "C-09",
+      "status": "pass",
+      "seconds": 3.943301271647215e-05,
+      "work_events": 1,
+      "evidence": "cases/CAR1-0010.json"
+    },
+    {
+      "case": "C-10",
+      "status": "pass",
+      "seconds": 2.7540023438632488e-05,
+      "work_events": 1,
+      "evidence": "cases/CAR1-0011.json"
+    },
+    {
+      "case": "C-11",
+      "status": "pass",
+      "seconds": 0.0006127639207988977,
+      "work_events": 264,
+      "evidence": "cases/CAR1-0012.json"
+    },
+    {
+      "case": "C-12",
+      "status": "pass",
+      "seconds": 0.0001858819741755724,
+      "work_events": 21,
+      "evidence": "cases/CAR1-0013.json"
+    },
+    {
+      "case": "C-13",
+      "status": "pass",
+      "seconds": 7.398903835564852e-05,
+      "work_events": 10,
+      "evidence": "cases/CAR1-0014.json"
+    },
+    {
+      "case": "C-14",
+      "status": "pass",
+      "seconds": 4.470499698072672e-05,
+      "work_events": 2,
+      "evidence": "cases/CAR1-0015.json"
+    },
+    {
+      "case": "C-15",
+      "status": "pass",
+      "seconds": 4.767905920743942e-05,
+      "work_events": 2,
+      "evidence": "cases/CAR1-0016.json"
+    },
+    {
+      "case": "C-16",
+      "status": "pass",
+      "seconds": 5.1073962822556496e-05,
+      "work_events": 3,
+      "evidence": "cases/CAR1-0017.json"
+    },
+    {
+      "case": "C-17",
+      "status": "pass",
+      "seconds": 8.794199675321579e-05,
+      "work_events": 16,
+      "evidence": "cases/CAR1-0018.json"
+    },
+    {
+      "case": "C-18",
+      "status": "pass",
+      "seconds": 0.00011785503011196852,
+      "work_events": 18,
+      "evidence": "cases/CAR1-0019.json"
+    },
+    {
+      "case": "C-19",
+      "status": "pass",
+      "seconds": 7.135001942515373e-05,
+      "work_events": 16,
+      "evidence": "cases/CAR1-0020.json"
+    },
+    {
+      "case": "C-20",
+      "status": "pass",
+      "seconds": 2.7309986762702465e-05,
+      "work_events": 1,
+      "evidence": "cases/CAR1-0021.json"
+    },
+    {
+      "case": "C-21",
+      "status": "pass",
+      "seconds": 0.18125449202489108,
+      "work_events": 103814,
+      "evidence": "cases/CAR1-0022.json"
+    },
+    {
+      "case": "C-22",
+      "status": "pass",
+      "seconds": 0.17656899197027087,
+      "work_events": 103814,
+      "evidence": "cases/CAR1-0023.json"
+    },
+    {
+      "case": "C-23",
+      "status": "pass",
+      "seconds": 0.0034643340623006225,
+      "work_events": 2542,
+      "evidence": "cases/CAR1-0024.json"
+    },
+    {
+      "case": "C-24",
+      "status": "pass",
+      "seconds": 0.0031724669970571995,
+      "work_events": 2542,
+      "evidence": "cases/CAR1-0025.json"
+    },
+    {
+      "case": "N-01",
+      "status": "pass",
+      "seconds": 0.020899145049043,
+      "work_events": 31,
+      "evidence": "cases/CAR1-0026.json"
+    },
+    {
+      "case": "N-02",
+      "status": "pass",
+      "seconds": 0.0013735179090872407,
+      "work_events": 31,
+      "evidence": "cases/CAR1-0027.json"
+    },
+    {
+      "case": "N-03",
+      "status": "pass",
+      "seconds": 0.0013900729827582836,
+      "work_events": 31,
+      "evidence": "cases/CAR1-0028.json"
+    },
+    {
+      "case": "N-04",
+      "status": "pass",
+      "seconds": 0.003537931013852358,
+      "work_events": 468,
+      "evidence": "cases/CAR1-0029.json"
+    }
+  ],
+  "new_invocations": 29,
+  "new_builds": 0,
+  "cumulative_invocations": 971,
+  "cumulative_builds": 10,
+  "decision": "NO-GO full resident affine representation",
+  "full_relation_complete": false,
+  "previous_unrun_checks": [
+    "M-01",
+    "M-02",
+    "M-03",
+    "J-01",
+    "J-02",
+    "J-03",
+    "J-04",
+    "J-05",
+    "J-06",
+    "J-07",
+    "J-08",
+    "J-09",
+    "J-10",
+    "J-11",
+    "J-12",
+    "J-13",
+    "J-14",
+    "J-15",
+    "J-16",
+    "Q-02",
+    "Q-03"
+  ],
+  "retained_checks_not_reexecuted": true,
+  "baseline_measurements_reused": 276
+}

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "programme_complete": false,
+  "historical_seals_verified": 133,
+  "storage": {
+    "new_evidence_bytes": 105029,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 31351131,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "memory_available": 4047347712,
+  "manuscript_authority": "II\u2013VIII and SPEC001\u2013004",
+  "previous_8_record_encoding_bound": 89296,
+  "unchanged_object_and_response_cap": 65536,
+  "unchanged_per_call_records": 16,
+  "complete_path_admission": "Bounded DAG, <=4 update records per encoded page, <=16 collected records; actual DB cap enforced, no capacity claim before measurement"
+}

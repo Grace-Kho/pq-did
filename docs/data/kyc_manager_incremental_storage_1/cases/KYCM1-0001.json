@@ -1,0 +1,19 @@
+{
+  "invocation_id": "KYCM1-0001",
+  "case_id": "S-01",
+  "work_event_reservation": 0,
+  "ordinal": 1,
+  "cumulative_invocations": 1092,
+  "status": "pass",
+  "details": {
+    "check": 1,
+    "preserved_allocations": 2,
+    "preserved_nonces": 1,
+    "history_records": 1,
+    "schema": 2,
+    "expected_state_asserted": true
+  },
+  "seconds": 1.9539457471109927,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

@@ -1,0 +1,14 @@
+{
+  "sha256": {
+    "docs/data/s3_binius_committed_view_correspondence_1/construction-contract.json": "2b589badc9e06be7e038bba294edc0271f206a084b67b0818cbfbf25d2b046d2",
+    "docs/data/s3_binius_committed_view_correspondence_1/config.json": "db40fe855616dcd22f4c74b4f9a4b4b8a7ce13e5793b37a169a07c090c97f16f",
+    "docs/data/s3_binius_committed_view_correspondence_1/retained-source-map.json": "e818c3e75c11cf67ebc921dd658d669c95051868a096bbda55137d095e2964c7",
+    "docs/data/s3_binius_committed_view_correspondence_1/opening.json": "1dca8a87220a0a60cab154d5775d24f3ce815929148fbf66e503c6a48bb4e781",
+    "docs/data/s3_binius_committed_view_correspondence_1/run.py": "c238f75c0644821f4735998210c909000fa2f180fd1db7d133c82d5a394549f1",
+    "docs/data/s3_binius_committed_view_correspondence_1/checks.py": "d4e4e2b592473262e99819967ab8ccf238383be142069167912eefe1545d40eb",
+    "docs/data/s3_binius_committed_view_correspondence_1/argument-status.json": "e7267c5d4745418a5a4b66a7b54935cd7b58fa3a30566aeaa48ac1b0660c799f",
+    "docs/data/s3_binius_committed_view_correspondence_1/quality-inputs.json": "ffeb7bae6432e102e54adb50b9c1d2e148f574d23fb7737d7a8148d3b4733f3d",
+    "docs/data/s3_binius_committed_view_correspondence_1/prefixes.json": "383e11ddf56a334f8c4a48a54736c21a12cbdd8b2b0fa4baf24ddc3dab14bd64"
+  },
+  "historical_baselines_regenerated": false
+}

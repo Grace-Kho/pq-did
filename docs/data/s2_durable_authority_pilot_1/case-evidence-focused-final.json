@@ -1,0 +1,2686 @@
+[
+  {
+    "case": "test_verifier_consumption_crash_and_restart[rows-before-commit]",
+    "wall_seconds": 0.730478336015949,
+    "temporary_bytes_observed_peak": 259418,
+    "parent_cumulative_maxrss_bytes": 50536448,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-bs16r13m",
+          "verify",
+          "verifier0",
+          "rows-before-commit"
+        ],
+        "pid": 711861,
+        "exit": -9,
+        "termination": "SIGKILL",
+        "child_ru_maxrss_bytes": 50536448,
+        "child_user_seconds": 0.134202,
+        "child_system_seconds": 0.008778,
+        "remaining_stdout": "",
+        "stderr": "",
+        "barrier": {
+          "barrier": "rows-before-commit",
+          "pid": 711861,
+          "self_maxrss_bytes": 50536448
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-bs16r13m",
+          "inspect",
+          "verifier0",
+          "none"
+        ],
+        "pid": 711862,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 50536448,
+        "child_user_seconds": 0.102667,
+        "child_system_seconds": 0.0,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 2,
+            "head": "8dd880e8bd02055de8a603a0a97ee7c6f44c06802669f8c85dd1030f5eb0b8d9",
+            "checkpoint": "396ae4dbfd1e61236a5cf7c0aacc3810b039a10868aaaec9bbdc607aa5b2a520",
+            "generation": 1,
+            "allocated": null,
+            "phases": [],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 0
+          },
+          "pid": 711862,
+          "self_maxrss_bytes": 50536448
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-bs16r13m",
+          "verify",
+          "verifier0",
+          "none"
+        ],
+        "pid": 711863,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 50536448,
+        "child_user_seconds": 0.13535,
+        "child_system_seconds": 0.011601,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "reference-model-accepted"
+          },
+          "pid": 711863,
+          "self_maxrss_bytes": 50536448
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-bs16r13m",
+          "verify",
+          "verifier0",
+          "none"
+        ],
+        "pid": 711864,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 50536448,
+        "child_user_seconds": 0.112832,
+        "child_system_seconds": 0.012088999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "unknown-challenge"
+          },
+          "pid": 711864,
+          "self_maxrss_bytes": 50536448
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-bs16r13m",
+          "verify",
+          "verifier1",
+          "none"
+        ],
+        "pid": 711865,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 50536448,
+        "child_user_seconds": 0.129352,
+        "child_system_seconds": 0.020211,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "reference-model-accepted"
+          },
+          "pid": 711865,
+          "self_maxrss_bytes": 50536448
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_verifier_consumption_crash_and_restart[commit-before-ack]",
+    "wall_seconds": 0.6836079400090966,
+    "temporary_bytes_observed_peak": 234234,
+    "parent_cumulative_maxrss_bytes": 50733056,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-zmew908f",
+          "verify",
+          "verifier0",
+          "commit-before-ack"
+        ],
+        "pid": 711866,
+        "exit": -9,
+        "termination": "SIGKILL",
+        "child_ru_maxrss_bytes": 50733056,
+        "child_user_seconds": 0.127335,
+        "child_system_seconds": 0.012787999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "barrier": {
+          "barrier": "commit-before-ack",
+          "pid": 711866,
+          "self_maxrss_bytes": 50733056
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-zmew908f",
+          "inspect",
+          "verifier0",
+          "none"
+        ],
+        "pid": 711867,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 50733056,
+        "child_user_seconds": 0.096467,
+        "child_system_seconds": 0.0,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 3,
+            "head": "01054c49480b886eeea906118c555c49f238aeff14bac3f81361bb9fc78939b7",
+            "checkpoint": "13b5b25d31ae868f7be73d2583fe34f557c686ef5a4afe09a62602bb2358d32e",
+            "generation": 1,
+            "allocated": null,
+            "phases": [],
+            "certifications": 0,
+            "consumed": 1,
+            "entries": 0
+          },
+          "pid": 711867,
+          "self_maxrss_bytes": 50733056
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-zmew908f",
+          "verify",
+          "verifier0",
+          "none"
+        ],
+        "pid": 711868,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 50733056,
+        "child_user_seconds": 0.106962,
+        "child_system_seconds": 0.016302999999999998,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "unknown-challenge"
+          },
+          "pid": 711868,
+          "self_maxrss_bytes": 50733056
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-zmew908f",
+          "verify",
+          "verifier0",
+          "none"
+        ],
+        "pid": 711869,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 50733056,
+        "child_user_seconds": 0.12171799999999999,
+        "child_system_seconds": 0.0,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "unknown-challenge"
+          },
+          "pid": 711869,
+          "self_maxrss_bytes": 50733056
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-zmew908f",
+          "verify",
+          "verifier1",
+          "none"
+        ],
+        "pid": 711870,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 50733056,
+        "child_user_seconds": 0.129281,
+        "child_system_seconds": 0.01567,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "reference-model-accepted"
+          },
+          "pid": 711870,
+          "self_maxrss_bytes": 50733056
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_verifier_registration_audience_expiry_and_fence",
+    "wall_seconds": 0.28094665199751034,
+    "temporary_bytes_observed_peak": 230138,
+    "parent_cumulative_maxrss_bytes": 51519488,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-5e6evvc6",
+          "register",
+          "verifier0",
+          "none"
+        ],
+        "pid": 711871,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 50929664,
+        "child_user_seconds": 0.104986,
+        "child_system_seconds": 0.012112999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "REGISTERED"
+          },
+          "pid": 711871,
+          "self_maxrss_bytes": 50929664
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_issuer_crash_reconciliation[intent-commit-before-ack]",
+    "wall_seconds": 0.8702087390120141,
+    "temporary_bytes_observed_peak": 213754,
+    "parent_cumulative_maxrss_bytes": 51912704,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-2cdnwic8",
+          "issue-intent",
+          "issuer",
+          "commit-before-ack"
+        ],
+        "pid": 711872,
+        "exit": -9,
+        "termination": "SIGKILL",
+        "child_ru_maxrss_bytes": 51912704,
+        "child_user_seconds": 0.135126,
+        "child_system_seconds": 0.007948,
+        "remaining_stdout": "",
+        "stderr": "",
+        "barrier": {
+          "barrier": "commit-before-ack",
+          "pid": 711872,
+          "self_maxrss_bytes": 51912704
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-2cdnwic8",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711874,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 51912704,
+        "child_user_seconds": 0.09591799999999999,
+        "child_system_seconds": 0.007993,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 3,
+            "head": "74e6bb7ecf00a1984c40a3e93cf5fa264b5ebb736356895da054346f392c47b3",
+            "checkpoint": "2140120036ec75e5a299be9d64b20372db9a3cdbf3ed71cfee40655823fe353b",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "INTENT"
+            ],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711874,
+          "self_maxrss_bytes": 51912704
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-2cdnwic8",
+          "issue-reconcile",
+          "issuer",
+          "none"
+        ],
+        "pid": 711880,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 51912704,
+        "child_user_seconds": 0.193138,
+        "child_system_seconds": 0.004109,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "RETIRED"
+          },
+          "pid": 711880,
+          "self_maxrss_bytes": 51912704
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-2cdnwic8",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711881,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 51912704,
+        "child_user_seconds": 0.095983,
+        "child_system_seconds": 0.007998,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 4,
+            "head": "db756cf5b45fecc6e00b1d7ecb7c9a5bc63d9b1379e91c91adaf469b3835dc62",
+            "checkpoint": "2da5d98a463ce4d05248af9370bf97e2e80963602e19f566b3585ec91d43ac4e",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "RETIRED"
+            ],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711881,
+          "self_maxrss_bytes": 51912704
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-2cdnwic8",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 711882,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 51912704,
+        "child_user_seconds": 0.09308799999999999,
+        "child_system_seconds": 0.00813,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 2,
+            "head": "0fdee3baeff7670ad3a0b0b4492568215ceb5fc310a57cfee9fdd91ddd49352d",
+            "checkpoint": "3bae235d0f8c9c5b6735aee1f649d5fbd11e25c3871dfcc914757bc2d29b277c",
+            "generation": 1,
+            "allocated": 42,
+            "phases": [],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 0
+          },
+          "pid": 711882,
+          "self_maxrss_bytes": 51912704
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-2cdnwic8",
+          "issue-sign",
+          "issuer",
+          "none"
+        ],
+        "pid": 711883,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 51912704,
+        "child_user_seconds": 0.121997,
+        "child_system_seconds": 0.015740999999999998,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "unavailable": "not-pending"
+          },
+          "pid": 711883,
+          "self_maxrss_bytes": 51912704
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_issuer_crash_reconciliation[reserve-commit-before-ack]",
+    "wall_seconds": 0.9394079519843217,
+    "temporary_bytes_observed_peak": 238330,
+    "parent_cumulative_maxrss_bytes": 52502528,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-39wcxbqa",
+          "issue-reserve",
+          "manager",
+          "commit-before-ack"
+        ],
+        "pid": 711884,
+        "exit": -9,
+        "termination": "SIGKILL",
+        "child_ru_maxrss_bytes": 52502528,
+        "child_user_seconds": 0.14082999999999998,
+        "child_system_seconds": 0.008047,
+        "remaining_stdout": "",
+        "stderr": "",
+        "barrier": {
+          "barrier": "commit-before-ack",
+          "pid": 711884,
+          "self_maxrss_bytes": 52502528
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-39wcxbqa",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711885,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 52502528,
+        "child_user_seconds": 0.097648,
+        "child_system_seconds": 0.004068,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 3,
+            "head": "74e6bb7ecf00a1984c40a3e93cf5fa264b5ebb736356895da054346f392c47b3",
+            "checkpoint": "2140120036ec75e5a299be9d64b20372db9a3cdbf3ed71cfee40655823fe353b",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "INTENT"
+            ],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711885,
+          "self_maxrss_bytes": 52502528
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-39wcxbqa",
+          "issue-reconcile",
+          "issuer",
+          "none"
+        ],
+        "pid": 711886,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 52502528,
+        "child_user_seconds": 0.180362,
+        "child_system_seconds": 0.015349999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "RETIRED"
+          },
+          "pid": 711886,
+          "self_maxrss_bytes": 52502528
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-39wcxbqa",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711887,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 52502528,
+        "child_user_seconds": 0.08362,
+        "child_system_seconds": 0.019909,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 4,
+            "head": "0a7151784b92c7e8e4cb1a9a3844f288525c32f8b6cae07c75bdb66715481629",
+            "checkpoint": "ec68735da07f884349d959012d12378d391448a86d84badc843e6e13c43009fb",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "RETIRED"
+            ],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711887,
+          "self_maxrss_bytes": 52502528
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-39wcxbqa",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 711888,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 52502528,
+        "child_user_seconds": 0.103388,
+        "child_system_seconds": 0.0,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 3,
+            "head": "ee9abaea53554f8a4d1ea5e1e5bfbb28f2c38c424df618545ab77045fe9ba2be",
+            "checkpoint": "37ebb9de43a59dc401ae31eb7f58fdf4e2f2999629d22e12ff1ea0b779ba041e",
+            "generation": 1,
+            "allocated": 43,
+            "phases": [],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711888,
+          "self_maxrss_bytes": 52502528
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-39wcxbqa",
+          "issue-sign",
+          "issuer",
+          "none"
+        ],
+        "pid": 711889,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 52502528,
+        "child_user_seconds": 0.12253,
+        "child_system_seconds": 0.011904999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "unavailable": "not-pending"
+          },
+          "pid": 711889,
+          "self_maxrss_bytes": 52502528
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_issuer_crash_reconciliation[attach-commit-before-ack]",
+    "wall_seconds": 1.0712021920189727,
+    "temporary_bytes_observed_peak": 242426,
+    "parent_cumulative_maxrss_bytes": 53288960,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-4x5quako",
+          "issue-attach",
+          "issuer",
+          "commit-before-ack"
+        ],
+        "pid": 711890,
+        "exit": -9,
+        "termination": "SIGKILL",
+        "child_ru_maxrss_bytes": 53288960,
+        "child_user_seconds": 0.17901799999999998,
+        "child_system_seconds": 0.012204999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "barrier": {
+          "barrier": "commit-before-ack",
+          "pid": 711890,
+          "self_maxrss_bytes": 53288960
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-4x5quako",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711891,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 53288960,
+        "child_user_seconds": 0.09799999999999999,
+        "child_system_seconds": 0.007859999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 4,
+            "head": "ba0979bffb9d0900b73383044faa7db33a915d8311bc57ff2067e336a11d8457",
+            "checkpoint": "2140120036ec75e5a299be9d64b20372db9a3cdbf3ed71cfee40655823fe353b",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "RESERVED"
+            ],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711891,
+          "self_maxrss_bytes": 53288960
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-4x5quako",
+          "issue-reconcile",
+          "issuer",
+          "none"
+        ],
+        "pid": 711898,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 53288960,
+        "child_user_seconds": 0.197797,
+        "child_system_seconds": 0.003955,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "RETIRED"
+          },
+          "pid": 711898,
+          "self_maxrss_bytes": 53288960
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-4x5quako",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711899,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 53288960,
+        "child_user_seconds": 0.095825,
+        "child_system_seconds": 0.007984999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 5,
+            "head": "4da34a135fe24f473fdaa491f280abadcfc5da5fe5eae0835cfb8a955724f718",
+            "checkpoint": "ec68735da07f884349d959012d12378d391448a86d84badc843e6e13c43009fb",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "RETIRED"
+            ],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711899,
+          "self_maxrss_bytes": 53288960
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-4x5quako",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 711900,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 53288960,
+        "child_user_seconds": 0.09317199999999999,
+        "child_system_seconds": 0.008100999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 3,
+            "head": "ee9abaea53554f8a4d1ea5e1e5bfbb28f2c38c424df618545ab77045fe9ba2be",
+            "checkpoint": "37ebb9de43a59dc401ae31eb7f58fdf4e2f2999629d22e12ff1ea0b779ba041e",
+            "generation": 1,
+            "allocated": 43,
+            "phases": [],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711900,
+          "self_maxrss_bytes": 53288960
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-4x5quako",
+          "issue-sign",
+          "issuer",
+          "none"
+        ],
+        "pid": 711901,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 53288960,
+        "child_user_seconds": 0.128974,
+        "child_system_seconds": 0.007816,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "unavailable": "not-pending"
+          },
+          "pid": 711901,
+          "self_maxrss_bytes": 53288960
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_issuer_crash_reconciliation[pending-commit-before-ack]",
+    "wall_seconds": 1.039768829010427,
+    "temporary_bytes_observed_peak": 254714,
+    "parent_cumulative_maxrss_bytes": 54075392,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-58wql9j0",
+          "issue-pending",
+          "issuer",
+          "commit-before-ack"
+        ],
+        "pid": 711906,
+        "exit": -9,
+        "termination": "SIGKILL",
+        "child_ru_maxrss_bytes": 54075392,
+        "child_user_seconds": 0.133675,
+        "child_system_seconds": 0.012152,
+        "remaining_stdout": "",
+        "stderr": "",
+        "barrier": {
+          "barrier": "commit-before-ack",
+          "pid": 711906,
+          "self_maxrss_bytes": 54075392
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-58wql9j0",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711907,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 54075392,
+        "child_user_seconds": 0.10023499999999999,
+        "child_system_seconds": 0.00788,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 5,
+            "head": "72b4fe393ca09f3feb53222151be0681e2c130ac6fbe8d8c70e6022db9333d26",
+            "checkpoint": "28009d6e8be1125b09c74d12795c193f00b8d98abe459d3f0c2fda2e0c0cf1ad",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "PENDING"
+            ],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711907,
+          "self_maxrss_bytes": 54075392
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-58wql9j0",
+          "issue-reconcile",
+          "issuer",
+          "none"
+        ],
+        "pid": 711908,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 54075392,
+        "child_user_seconds": 0.21895299999999998,
+        "child_system_seconds": 0.011942,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "PENDING"
+          },
+          "pid": 711908,
+          "self_maxrss_bytes": 54075392
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-58wql9j0",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711909,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 54075392,
+        "child_user_seconds": 0.10529,
+        "child_system_seconds": 0.0038989999999999997,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 6,
+            "head": "fb73f0cda3b03dcafb8adedb91388140e1fb3d20142a8fa0176cbf9b13b1a5e0",
+            "checkpoint": "28009d6e8be1125b09c74d12795c193f00b8d98abe459d3f0c2fda2e0c0cf1ad",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "PENDING"
+            ],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711909,
+          "self_maxrss_bytes": 54075392
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-58wql9j0",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 711910,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 54075392,
+        "child_user_seconds": 0.09843299999999999,
+        "child_system_seconds": 0.003994999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 3,
+            "head": "ee9abaea53554f8a4d1ea5e1e5bfbb28f2c38c424df618545ab77045fe9ba2be",
+            "checkpoint": "37ebb9de43a59dc401ae31eb7f58fdf4e2f2999629d22e12ff1ea0b779ba041e",
+            "generation": 1,
+            "allocated": 43,
+            "phases": [],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711910,
+          "self_maxrss_bytes": 54075392
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_issuer_crash_reconciliation[sign-commit-before-ack]",
+    "wall_seconds": 1.3234938549867366,
+    "temporary_bytes_observed_peak": 271098,
+    "parent_cumulative_maxrss_bytes": 54075392,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-jtiit4ss",
+          "issue-sign",
+          "issuer",
+          "commit-before-ack"
+        ],
+        "pid": 711915,
+        "exit": -9,
+        "termination": "SIGKILL",
+        "child_ru_maxrss_bytes": 54075392,
+        "child_user_seconds": 0.156173,
+        "child_system_seconds": 0.004004,
+        "remaining_stdout": "",
+        "stderr": "",
+        "barrier": {
+          "barrier": "commit-before-ack",
+          "pid": 711915,
+          "self_maxrss_bytes": 54075392
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-jtiit4ss",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711918,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 54075392,
+        "child_user_seconds": 0.12437799999999999,
+        "child_system_seconds": 0.012036,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 6,
+            "head": "75ea9fcb12847e6b603292bcf02f580ea2422890f734987481d733b847d6dbdb",
+            "checkpoint": "28009d6e8be1125b09c74d12795c193f00b8d98abe459d3f0c2fda2e0c0cf1ad",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "SIGNING"
+            ],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711918,
+          "self_maxrss_bytes": 54075392
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-jtiit4ss",
+          "issue-reconcile",
+          "issuer",
+          "none"
+        ],
+        "pid": 711919,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 54075392,
+        "child_user_seconds": 0.229951,
+        "child_system_seconds": 0.024204999999999997,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "RETIRED"
+          },
+          "pid": 711919,
+          "self_maxrss_bytes": 54075392
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-jtiit4ss",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711920,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 54075392,
+        "child_user_seconds": 0.102116,
+        "child_system_seconds": 0.008169,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 7,
+            "head": "89f1cadb5fb5177e3c19f603d7eebab901b7177d01ecb776f9e590a966a6858f",
+            "checkpoint": "5df9189415026eef6d2e7bdf23016b38464cb50e409680da357a247ee7b3d072",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "RETIRED"
+            ],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711920,
+          "self_maxrss_bytes": 54075392
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-jtiit4ss",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 711921,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 54075392,
+        "child_user_seconds": 0.09117199999999999,
+        "child_system_seconds": 0.012431999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 3,
+            "head": "ee9abaea53554f8a4d1ea5e1e5bfbb28f2c38c424df618545ab77045fe9ba2be",
+            "checkpoint": "37ebb9de43a59dc401ae31eb7f58fdf4e2f2999629d22e12ff1ea0b779ba041e",
+            "generation": 1,
+            "allocated": 43,
+            "phases": [],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711921,
+          "self_maxrss_bytes": 54075392
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-jtiit4ss",
+          "issue-sign",
+          "issuer",
+          "none"
+        ],
+        "pid": 711922,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 54075392,
+        "child_user_seconds": 0.12353199999999999,
+        "child_system_seconds": 0.024141,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "unavailable": "operation-conflict"
+          },
+          "pid": 711922,
+          "self_maxrss_bytes": 54075392
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_issuer_crash_reconciliation[log-rows-before-commit]",
+    "wall_seconds": 1.3720894239959307,
+    "temporary_bytes_observed_peak": 308578,
+    "parent_cumulative_maxrss_bytes": 57417728,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-mhcf_k19",
+          "issue-log",
+          "issuer",
+          "rows-before-commit"
+        ],
+        "pid": 711923,
+        "exit": -9,
+        "termination": "SIGKILL",
+        "child_ru_maxrss_bytes": 57221120,
+        "child_user_seconds": 0.162383,
+        "child_system_seconds": 0.012178,
+        "remaining_stdout": "",
+        "stderr": "",
+        "barrier": {
+          "barrier": "rows-before-commit",
+          "pid": 711923,
+          "self_maxrss_bytes": 57221120
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-mhcf_k19",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711924,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 57221120,
+        "child_user_seconds": 0.10189899999999999,
+        "child_system_seconds": 0.007838,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 6,
+            "head": "75ea9fcb12847e6b603292bcf02f580ea2422890f734987481d733b847d6dbdb",
+            "checkpoint": "28009d6e8be1125b09c74d12795c193f00b8d98abe459d3f0c2fda2e0c0cf1ad",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "SIGNING"
+            ],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711924,
+          "self_maxrss_bytes": 57221120
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-mhcf_k19",
+          "issue-reconcile",
+          "issuer",
+          "none"
+        ],
+        "pid": 711925,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 57221120,
+        "child_user_seconds": 0.22333499999999998,
+        "child_system_seconds": 0.008121,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "RETIRED"
+          },
+          "pid": 711925,
+          "self_maxrss_bytes": 57221120
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-mhcf_k19",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711926,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 57417728,
+        "child_user_seconds": 0.092332,
+        "child_system_seconds": 0.020072,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 7,
+            "head": "89f1cadb5fb5177e3c19f603d7eebab901b7177d01ecb776f9e590a966a6858f",
+            "checkpoint": "5df9189415026eef6d2e7bdf23016b38464cb50e409680da357a247ee7b3d072",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "RETIRED"
+            ],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711926,
+          "self_maxrss_bytes": 57417728
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-mhcf_k19",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 711933,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 57417728,
+        "child_user_seconds": 0.09447,
+        "child_system_seconds": 0.007871999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 3,
+            "head": "ee9abaea53554f8a4d1ea5e1e5bfbb28f2c38c424df618545ab77045fe9ba2be",
+            "checkpoint": "37ebb9de43a59dc401ae31eb7f58fdf4e2f2999629d22e12ff1ea0b779ba041e",
+            "generation": 1,
+            "allocated": 43,
+            "phases": [],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711933,
+          "self_maxrss_bytes": 57417728
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-mhcf_k19",
+          "issue-sign",
+          "issuer",
+          "none"
+        ],
+        "pid": 711934,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 57417728,
+        "child_user_seconds": 0.143094,
+        "child_system_seconds": 0.008177,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "unavailable": "operation-conflict"
+          },
+          "pid": 711934,
+          "self_maxrss_bytes": 57417728
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_issuer_crash_reconciliation[log-commit-before-ack]",
+    "wall_seconds": 1.6457013789913617,
+    "temporary_bytes_observed_peak": 303866,
+    "parent_cumulative_maxrss_bytes": 60366848,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-9_v7q3rc",
+          "issue-log",
+          "issuer",
+          "commit-before-ack"
+        ],
+        "pid": 711935,
+        "exit": -9,
+        "termination": "SIGKILL",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.16407,
+        "child_system_seconds": 0.008003,
+        "remaining_stdout": "",
+        "stderr": "",
+        "barrier": {
+          "barrier": "commit-before-ack",
+          "pid": 711935,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-9_v7q3rc",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711936,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.106613,
+        "child_system_seconds": 0.007897,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 7,
+            "head": "52fc9cc67bd24284e839016254ff094acc06d327a8bec5f26f43a6e00e5e50a8",
+            "checkpoint": "58e5f1e38bd75967cb91ddcb6ce827eb63ca808d4c3d121d2317e24e03bd3bba",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "CERTIFIED"
+            ],
+            "certifications": 1,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711936,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-9_v7q3rc",
+          "issue-reconcile",
+          "issuer",
+          "none"
+        ],
+        "pid": 711937,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.265412,
+        "child_system_seconds": 0.020107,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "CERTIFIED"
+          },
+          "pid": 711937,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-9_v7q3rc",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711938,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.112327,
+        "child_system_seconds": 0.008022999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 8,
+            "head": "0586578d663d754995351174e20cf8416d4dcc3f7123cbf17b9f2274a9507dde",
+            "checkpoint": "58e5f1e38bd75967cb91ddcb6ce827eb63ca808d4c3d121d2317e24e03bd3bba",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "CERTIFIED"
+            ],
+            "certifications": 1,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711938,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-9_v7q3rc",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 711939,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.094717,
+        "child_system_seconds": 0.004057,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 3,
+            "head": "ee9abaea53554f8a4d1ea5e1e5bfbb28f2c38c424df618545ab77045fe9ba2be",
+            "checkpoint": "37ebb9de43a59dc401ae31eb7f58fdf4e2f2999629d22e12ff1ea0b779ba041e",
+            "generation": 1,
+            "allocated": 43,
+            "phases": [],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711939,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-9_v7q3rc",
+          "issue-release",
+          "issuer",
+          "none"
+        ],
+        "pid": 711940,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.15770499999999998,
+        "child_system_seconds": 0.01577,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "REDELIVERY"
+          },
+          "pid": 711940,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-9_v7q3rc",
+          "issue-log",
+          "issuer",
+          "none"
+        ],
+        "pid": 711941,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.174803,
+        "child_system_seconds": 0.0,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "unavailable": "operation-conflict"
+          },
+          "pid": 711941,
+          "self_maxrss_bytes": 60366848
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_issuer_crash_reconciliation[release-release-before-publication]",
+    "wall_seconds": 1.7191930440021679,
+    "temporary_bytes_observed_peak": 303866,
+    "parent_cumulative_maxrss_bytes": 60366848,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-hxs_asq_",
+          "issue-release",
+          "issuer",
+          "release-before-publication"
+        ],
+        "pid": 711948,
+        "exit": -9,
+        "termination": "SIGKILL",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.166232,
+        "child_system_seconds": 0.0,
+        "remaining_stdout": "",
+        "stderr": "",
+        "barrier": {
+          "barrier": "release-before-publication",
+          "pid": 711948,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-hxs_asq_",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711949,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.108857,
+        "child_system_seconds": 0.012095,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 7,
+            "head": "52fc9cc67bd24284e839016254ff094acc06d327a8bec5f26f43a6e00e5e50a8",
+            "checkpoint": "58e5f1e38bd75967cb91ddcb6ce827eb63ca808d4c3d121d2317e24e03bd3bba",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "CERTIFIED"
+            ],
+            "certifications": 1,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711949,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-hxs_asq_",
+          "issue-reconcile",
+          "issuer",
+          "none"
+        ],
+        "pid": 711950,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.263269,
+        "child_system_seconds": 0.016201,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "CERTIFIED"
+          },
+          "pid": 711950,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-hxs_asq_",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711951,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.109027,
+        "child_system_seconds": 0.012114,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 8,
+            "head": "0586578d663d754995351174e20cf8416d4dcc3f7123cbf17b9f2274a9507dde",
+            "checkpoint": "58e5f1e38bd75967cb91ddcb6ce827eb63ca808d4c3d121d2317e24e03bd3bba",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "CERTIFIED"
+            ],
+            "certifications": 1,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711951,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-hxs_asq_",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 711952,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.09831,
+        "child_system_seconds": 0.004103,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 3,
+            "head": "ee9abaea53554f8a4d1ea5e1e5bfbb28f2c38c424df618545ab77045fe9ba2be",
+            "checkpoint": "37ebb9de43a59dc401ae31eb7f58fdf4e2f2999629d22e12ff1ea0b779ba041e",
+            "generation": 1,
+            "allocated": 43,
+            "phases": [],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711952,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-hxs_asq_",
+          "issue-release",
+          "issuer",
+          "none"
+        ],
+        "pid": 711953,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.166265,
+        "child_system_seconds": 0.008043999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "REDELIVERY"
+          },
+          "pid": 711953,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-hxs_asq_",
+          "issue-log",
+          "issuer",
+          "none"
+        ],
+        "pid": 711954,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.162162,
+        "child_system_seconds": 0.008048999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "unavailable": "operation-conflict"
+          },
+          "pid": 711954,
+          "self_maxrss_bytes": 60366848
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_issuer_crash_reconciliation[release-enqueue-before-return]",
+    "wall_seconds": 1.7504775249981321,
+    "temporary_bytes_observed_peak": 303866,
+    "parent_cumulative_maxrss_bytes": 60366848,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-7zyhygg4",
+          "issue-release",
+          "issuer",
+          "enqueue-before-return"
+        ],
+        "pid": 711961,
+        "exit": -9,
+        "termination": "SIGKILL",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.14956,
+        "child_system_seconds": 0.016940999999999998,
+        "remaining_stdout": "",
+        "stderr": "",
+        "barrier": {
+          "barrier": "enqueue-before-return",
+          "pid": 711961,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-7zyhygg4",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711962,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.111117,
+        "child_system_seconds": 0.008091,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 7,
+            "head": "52fc9cc67bd24284e839016254ff094acc06d327a8bec5f26f43a6e00e5e50a8",
+            "checkpoint": "58e5f1e38bd75967cb91ddcb6ce827eb63ca808d4c3d121d2317e24e03bd3bba",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "CERTIFIED"
+            ],
+            "certifications": 1,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711962,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-7zyhygg4",
+          "issue-reconcile",
+          "issuer",
+          "none"
+        ],
+        "pid": 711963,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.26972399999999996,
+        "child_system_seconds": 0.012136,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "CERTIFIED"
+          },
+          "pid": 711963,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-7zyhygg4",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 711964,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.11331,
+        "child_system_seconds": 0.007814,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 8,
+            "head": "0586578d663d754995351174e20cf8416d4dcc3f7123cbf17b9f2274a9507dde",
+            "checkpoint": "58e5f1e38bd75967cb91ddcb6ce827eb63ca808d4c3d121d2317e24e03bd3bba",
+            "generation": 1,
+            "allocated": null,
+            "phases": [
+              "CERTIFIED"
+            ],
+            "certifications": 1,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711964,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-7zyhygg4",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 711965,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.097203,
+        "child_system_seconds": 0.00405,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 3,
+            "head": "ee9abaea53554f8a4d1ea5e1e5bfbb28f2c38c424df618545ab77045fe9ba2be",
+            "checkpoint": "37ebb9de43a59dc401ae31eb7f58fdf4e2f2999629d22e12ff1ea0b779ba041e",
+            "generation": 1,
+            "allocated": 43,
+            "phases": [],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 711965,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-7zyhygg4",
+          "issue-release",
+          "issuer",
+          "none"
+        ],
+        "pid": 711966,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.167067,
+        "child_system_seconds": 0.003977,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "REDELIVERY"
+          },
+          "pid": 711966,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-7zyhygg4",
+          "issue-log",
+          "issuer",
+          "none"
+        ],
+        "pid": 711967,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.154031,
+        "child_system_seconds": 0.015964,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "unavailable": "operation-conflict"
+          },
+          "pid": 711967,
+          "self_maxrss_bytes": 60366848
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_issuer_delayed_signature_publication_and_conflicts",
+    "wall_seconds": 0.6914765849942341,
+    "temporary_bytes_observed_peak": 86778,
+    "parent_cumulative_maxrss_bytes": 60366848,
+    "events": [],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_publication_current_generation_and_exact_recipient",
+    "wall_seconds": 0.7511832900054287,
+    "temporary_bytes_observed_peak": 86778,
+    "parent_cumulative_maxrss_bytes": 60366848,
+    "events": [],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_recovery_storage_failures_never_bootstrap[missing]",
+    "wall_seconds": 0.25982217700220644,
+    "temporary_bytes_observed_peak": 168698,
+    "parent_cumulative_maxrss_bytes": 60366848,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-nsmr5gaz",
+          "reserve",
+          "manager",
+          "none"
+        ],
+        "pid": 712002,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.125048,
+        "child_system_seconds": 0.012100999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "ALLOCATED",
+            "rid": 42
+          },
+          "pid": 712002,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-nsmr5gaz",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 712004,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.068284,
+        "child_system_seconds": 0.01205,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "unavailable": "storage-FileNotFoundError"
+          },
+          "pid": 712004,
+          "self_maxrss_bytes": 60366848
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_recovery_storage_failures_never_bootstrap[malformed]",
+    "wall_seconds": 0.2652894339989871,
+    "temporary_bytes_observed_peak": 168698,
+    "parent_cumulative_maxrss_bytes": 60366848,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-l1ze7xe1",
+          "reserve",
+          "manager",
+          "none"
+        ],
+        "pid": 712005,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.12210499999999999,
+        "child_system_seconds": 0.011816,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "ALLOCATED",
+            "rid": 42
+          },
+          "pid": 712005,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-l1ze7xe1",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 712006,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.08508,
+        "child_system_seconds": 0.004065,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "unavailable": "storage-DatabaseError"
+          },
+          "pid": 712006,
+          "self_maxrss_bytes": 60366848
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_recovery_storage_failures_never_bootstrap[checkpoint]",
+    "wall_seconds": 0.26903184998081997,
+    "temporary_bytes_observed_peak": 168698,
+    "parent_cumulative_maxrss_bytes": 60366848,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-ns_nky3t",
+          "reserve",
+          "manager",
+          "none"
+        ],
+        "pid": 712007,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.12870199999999998,
+        "child_system_seconds": 0.008043,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "ALLOCATED",
+            "rid": 42
+          },
+          "pid": 712007,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-ns_nky3t",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 712008,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.081634,
+        "child_system_seconds": 0.007774,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "unavailable": "missing-reference"
+          },
+          "pid": 712008,
+          "self_maxrss_bytes": 60366848
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_recovery_storage_failures_never_bootstrap[outcome]",
+    "wall_seconds": 0.2722014559840318,
+    "temporary_bytes_observed_peak": 168698,
+    "parent_cumulative_maxrss_bytes": 60366848,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-g9c5deet",
+          "reserve",
+          "manager",
+          "none"
+        ],
+        "pid": 712009,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.127576,
+        "child_system_seconds": 0.00823,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "ALLOCATED",
+            "rid": 42
+          },
+          "pid": 712009,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-g9c5deet",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 712010,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.083949,
+        "child_system_seconds": 0.007995,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "unavailable": "missing-reference"
+          },
+          "pid": 712010,
+          "self_maxrss_bytes": 60366848
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_recovery_storage_failures_never_bootstrap[schema]",
+    "wall_seconds": 0.2738560420111753,
+    "temporary_bytes_observed_peak": 168698,
+    "parent_cumulative_maxrss_bytes": 60366848,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-lqnn6lk1",
+          "reserve",
+          "manager",
+          "none"
+        ],
+        "pid": 712011,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.11845199999999999,
+        "child_system_seconds": 0.015792999999999998,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "ALLOCATED",
+            "rid": 42
+          },
+          "pid": 712011,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-lqnn6lk1",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 712012,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.093279,
+        "child_system_seconds": 0.0,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "unavailable": "schema"
+          },
+          "pid": 712012,
+          "self_maxrss_bytes": 60366848
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_recovery_storage_failures_never_bootstrap[symlink]",
+    "wall_seconds": 0.25522581400582567,
+    "temporary_bytes_observed_peak": 250618,
+    "parent_cumulative_maxrss_bytes": 60366848,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-5_nld21c",
+          "reserve",
+          "manager",
+          "none"
+        ],
+        "pid": 712019,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.13101,
+        "child_system_seconds": 0.004024,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "decision": "ALLOCATED",
+            "rid": 42
+          },
+          "pid": 712019,
+          "self_maxrss_bytes": 60366848
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-5_nld21c",
+          "inspect",
+          "manager",
+          "none"
+        ],
+        "pid": 712020,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 60366848,
+        "child_user_seconds": 0.07020699999999999,
+        "child_system_seconds": 0.007918999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "unavailable": "non-canonical-path"
+          },
+          "pid": 712020,
+          "self_maxrss_bytes": 60366848
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_work_storage_and_row_budgets",
+    "wall_seconds": 2.168523917993298,
+    "temporary_bytes_observed_peak": 86778,
+    "parent_cumulative_maxrss_bytes": 77733888,
+    "events": [],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_delayed_old_process_at_effect_boundary[issue-log-issuer-signature-ready]",
+    "wall_seconds": 0.8959159810037818,
+    "temporary_bytes_observed_peak": 258810,
+    "parent_cumulative_maxrss_bytes": 77733888,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-na6oy1d5",
+          "replace",
+          "issuer",
+          "none"
+        ],
+        "pid": 712028,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 77733888,
+        "child_user_seconds": 0.12149399999999999,
+        "child_system_seconds": 0.011757,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "generation": 2,
+            "head": "369839a8b97307adcf23afad90353f51bb7d88ee177c0dcc7d35d1d76523704b"
+          },
+          "pid": 712028,
+          "self_maxrss_bytes": 77733888
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-na6oy1d5",
+          "issue-log",
+          "issuer",
+          "signature-ready"
+        ],
+        "pid": 712027,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 77733888,
+        "child_user_seconds": 0.148336,
+        "child_system_seconds": 0.0,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "unavailable": "fenced-writer"
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-na6oy1d5",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 712029,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 77733888,
+        "child_user_seconds": 0.09737599999999999,
+        "child_system_seconds": 0.01558,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 7,
+            "head": "369839a8b97307adcf23afad90353f51bb7d88ee177c0dcc7d35d1d76523704b",
+            "checkpoint": "28009d6e8be1125b09c74d12795c193f00b8d98abe459d3f0c2fda2e0c0cf1ad",
+            "generation": 2,
+            "allocated": null,
+            "phases": [
+              "SIGNING"
+            ],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 712029,
+          "self_maxrss_bytes": 77733888
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_delayed_old_process_at_effect_boundary[issue-release-issuer-release-before-publication]",
+    "wall_seconds": 1.0415033430035692,
+    "temporary_bytes_observed_peak": 307962,
+    "parent_cumulative_maxrss_bytes": 77733888,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-qscbyp0x",
+          "replace",
+          "issuer",
+          "none"
+        ],
+        "pid": 712037,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 77733888,
+        "child_user_seconds": 0.134382,
+        "child_system_seconds": 0.015809,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "generation": 2,
+            "head": "d22070661d81cad43d83c684fc07860697e8c13c2d378ca17c0fef12df772ba5"
+          },
+          "pid": 712037,
+          "self_maxrss_bytes": 77733888
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-qscbyp0x",
+          "issue-release",
+          "issuer",
+          "release-before-publication"
+        ],
+        "pid": 712030,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 77733888,
+        "child_user_seconds": 0.16127999999999998,
+        "child_system_seconds": 0.016301,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "unavailable": "fenced-writer"
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-qscbyp0x",
+          "inspect",
+          "issuer",
+          "none"
+        ],
+        "pid": 712038,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 77733888,
+        "child_user_seconds": 0.11309,
+        "child_system_seconds": 0.008076999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 8,
+            "head": "d22070661d81cad43d83c684fc07860697e8c13c2d378ca17c0fef12df772ba5",
+            "checkpoint": "58e5f1e38bd75967cb91ddcb6ce827eb63ca808d4c3d121d2317e24e03bd3bba",
+            "generation": 2,
+            "allocated": null,
+            "phases": [
+              "CERTIFIED"
+            ],
+            "certifications": 1,
+            "consumed": 0,
+            "entries": 1
+          },
+          "pid": 712038,
+          "self_maxrss_bytes": 77733888
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  },
+  {
+    "case": "test_delayed_old_process_at_effect_boundary[verify-verifier0-proof-ready]",
+    "wall_seconds": 0.37067384700640105,
+    "temporary_bytes_observed_peak": 148218,
+    "parent_cumulative_maxrss_bytes": 77733888,
+    "events": [
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-6s88adya",
+          "replace",
+          "verifier0",
+          "none"
+        ],
+        "pid": 712040,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 77733888,
+        "child_user_seconds": 0.09226899999999999,
+        "child_system_seconds": 0.012034999999999999,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "generation": 2,
+            "head": "35759ee74d05096a8e93691e87e1ab69b9a48a7d42d121162fde685e2f807505"
+          },
+          "pid": 712040,
+          "self_maxrss_bytes": 77733888
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-6s88adya",
+          "verify",
+          "verifier0",
+          "proof-ready"
+        ],
+        "pid": 712039,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 77733888,
+        "child_user_seconds": 0.134686,
+        "child_system_seconds": 0.0040809999999999996,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "decision": "provider-or-adapter-failure"
+        }
+      },
+      {
+        "command": [
+          "/home/grace/projects/pq-did/.venv/bin/python",
+          "/home/grace/projects/pq-did/tests/integration/durable_worker.py",
+          "/home/grace/projects/pq-did/docs/data/s2_durable_authority_pilot_1/tmp/durable-6s88adya",
+          "inspect",
+          "verifier0",
+          "none"
+        ],
+        "pid": 712041,
+        "exit": 0,
+        "termination": "normal",
+        "child_ru_maxrss_bytes": 77733888,
+        "child_user_seconds": 0.078433,
+        "child_system_seconds": 0.019608,
+        "remaining_stdout": "",
+        "stderr": "",
+        "observed": {
+          "result": {
+            "sequence": 3,
+            "head": "35759ee74d05096a8e93691e87e1ab69b9a48a7d42d121162fde685e2f807505",
+            "checkpoint": "396ae4dbfd1e61236a5cf7c0aacc3810b039a10868aaaec9bbdc607aa5b2a520",
+            "generation": 2,
+            "allocated": null,
+            "phases": [],
+            "certifications": 0,
+            "consumed": 0,
+            "entries": 0
+          },
+          "pid": 712041,
+          "self_maxrss_bytes": 77733888
+        }
+      }
+    ],
+    "fault_model": "application-process-only; no host/power-loss/SQLite-internal interruption"
+  }
+]

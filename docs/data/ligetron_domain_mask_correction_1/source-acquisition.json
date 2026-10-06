@@ -1,0 +1,42 @@
+{
+  "commit": "4b1cdef1bfdf4497fb3e38170db4541fba3f6c12",
+  "payload_bytes": 34297,
+  "records": [
+    {
+      "path": "include/util/mpz_vector.hpp",
+      "bytes": 5302,
+      "git_blob": "f88b80a2f27fbb8caf9488c29da28e4b16937775",
+      "sha256": "802448b4271c2fc6cd85e34fbb4e758f83b64e928e8d08a23f6abf270eb222af"
+    },
+    {
+      "path": "include/util/recycle_pool.hpp",
+      "bytes": 2775,
+      "git_blob": "ae6dbc61ff17a35a549a164feac170fd09c3f7a9",
+      "sha256": "9ae1cab5d4c17ed64596953232f968f2ee6afa6d1ac4270806dcd661a8577c29"
+    },
+    {
+      "path": "include/zkp/backend/lazy_witness.hpp",
+      "bytes": 3600,
+      "git_blob": "58851f502993f6741d92d533601f7c2fe58792e7",
+      "sha256": "cdbd43e979c144d69f1e07587f962160dbdb7b5055a0a5ccbdac8e7317bc2b74"
+    },
+    {
+      "path": "include/util/mpz_assign.hpp",
+      "bytes": 1762,
+      "git_blob": "29aaf5b6a2123245f5d8e73cba3a184e9c1eddc7",
+      "sha256": "c6bc2d0f15e4b3e973dd8fdbc62612f69db9f1f692dbc1189b8dbad32b01c1e8"
+    },
+    {
+      "path": "shader/bigint.wgsl.in",
+      "bytes": 15124,
+      "git_blob": "63c9befb0edc00c5aaa8e581245762d722818da3",
+      "sha256": "aeef14648cb53c717c72860d368a7c8521e0dfa7233f6a9ce0547bc947b7b226"
+    },
+    {
+      "path": "shader/bn254fr.wgsl.in",
+      "bytes": 5734,
+      "git_blob": "26aabe1b847548e44e643996af6174feb5ddd0bc",
+      "sha256": "37cbd6fdfeae717e6a97de738eddfd50264889010dc1428fb425149d6a39b493"
+    }
+  ]
+}

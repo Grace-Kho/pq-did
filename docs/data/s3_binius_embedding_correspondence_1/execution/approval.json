@@ -1,0 +1,28 @@
+{
+  "package": "S3-BINIUS-EMBEDDING-CORRESPONDENCE-1",
+  "approved": true,
+  "proposal_manifest_sha256": "d1a3138dce601773ecac346b966856e25e7469376039e338def3aab79bfa5be6",
+  "proposal_closure_sha256": "216c0f4ecc40e0c44f07f25492f16d16d59044bd46bebad5d8741878ce1c422d",
+  "proposal_resource_sha256": "ae735dc0cee9df2bb3b8bfa132b9c08009fc21f3ff01b0517bcebce4d42940a1",
+  "plan_sha256": "717d157e456a13b467978c44b0e84c2e87f674b21205fca1c05b8aea3286f64c",
+  "allowlist_sha256": "2f497e6e98b57dc04f96dde42e2f5ffb94efaa94c48f5b45a84e0117ba8829f5",
+  "report_sha256": "dc988de7a726d26809ec513a70854eb5641a6fe82b240b37673a8eaf7185c039",
+  "precheck_passed": true,
+  "precheck_seconds": 0.004502819152548909,
+  "tree_entries_verified": 15,
+  "EC-08_clarification": "Declared layout/parity mismatch only; arbitrary raw parity-swapped vector is not necessarily malformed. Local descriptor checking is not cryptographic binding.",
+  "phase_caps_seconds": {
+    "admission": 30,
+    "implementation": 70,
+    "validation": 50,
+    "corrections": 20,
+    "completion": 30
+  },
+  "implementation_allocation_seconds": 200,
+  "outside_KYC_only": true,
+  "invocation_ceiling_before": 1146,
+  "invocation_ceiling_after": 1168,
+  "fixed_cases": 25,
+  "reruns_maximum": 3,
+  "historical_approvals_unchanged": true
+}

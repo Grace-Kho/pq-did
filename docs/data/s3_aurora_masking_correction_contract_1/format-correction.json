@@ -1,0 +1,19 @@
+{
+  "kind": "manual documentation-format correction after diagnosed E501; no functional retry",
+  "runtime_string_before": "Masking correction source contract; no source patch/test/build/proof; prior evidence reused",
+  "runtime_string_after": "Masking correction source contract; no source patch/test/build/proof; prior evidence reused",
+  "retained_stop_sha256": "2973cf50de76919f60b82073cf89d02eefb9575ef1f9ea9b567019739f39e03c",
+  "retained_diagnostic_sha256": "21d624bf7ac8895671cab56bd844a821058934e6eec93294567976ee292bc6a3",
+  "retained_failed_resource_record_sha256": "8988eff98efa6051979846f4f89acea77e79a17a2a4385bc6ffbb2e012b03b45",
+  "retained_source_sha256": {
+    "pre-format-checks.py": "24183883abf8604568497a8b933d951e750be1924c6e44141c1811f80d4ed2bc",
+    "pre-format-run.py": "8b00d9c12299acea6992f56cb3a7ddbaedb2f148dc54af72a4f390eaacbc882f",
+    "pre-format-config.json": "a6f9e1d3e24d917db4662c9ad71fa77118aa302eecfaaf1f91a652f1524bc8cf"
+  },
+  "prospective_static_phase": "quality-2",
+  "limits_changed": false,
+  "functional_invocations": 0,
+  "resource_breach": false,
+  "failed_phase_seconds": 0.3036964500788599,
+  "audit_attempts_used": 0
+}

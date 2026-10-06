@@ -1,0 +1,10 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -42,3 +42,7 @@
+   "${PQ_SOURCE}/libff/libff/common/double.cpp"
+   "${PQ_SOURCE}/libff/libff/common/profiling.cpp"
+   "${PQ_SOURCE}/libff/libff/common/utils.cpp")
++
++# Proposed native semantic validation; no test is run by the build target.
++add_executable(exp2_semantics "${PQ_SEMANTICS}")
++target_link_libraries(exp2_semantics PRIVATE iop_native)

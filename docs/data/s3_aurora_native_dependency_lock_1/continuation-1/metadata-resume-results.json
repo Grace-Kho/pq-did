@@ -1,0 +1,74 @@
+[
+  {
+    "id": "libgmp-dev-filelist",
+    "url": "https://packages.ubuntu.com/resolute/amd64/libgmp-dev/filelist",
+    "display": false,
+    "maximum_bytes": 24576,
+    "status": 200,
+    "final_url": "https://packages.ubuntu.com/resolute/amd64/libgmp-dev/filelist",
+    "bytes": 4872,
+    "sha256": "f46e300a3be3d344c7462b60b33ed3c7e3eaad025515942dbaee6a8c416eb675",
+    "retained": "docs/data/s3_aurora_native_dependency_lock_1/continuation-1/metadata/libgmp-dev-filelist.gz",
+    "seconds": 0.7254737550392747
+  },
+  {
+    "id": "ff-libff__algebra__field_utils__bigint.hpp",
+    "url": "https://raw.githubusercontent.com/scipr-lab/libff/9769030a06b7ab933d6c064db120019decd359f1/libff/algebra/field_utils/bigint.hpp",
+    "display": false,
+    "maximum_bytes": 24576,
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/scipr-lab/libff/9769030a06b7ab933d6c064db120019decd359f1/libff/algebra/field_utils/bigint.hpp",
+    "bytes": 2535,
+    "sha256": "ec6b4423b32f522b9280a74c08f792554df92345c55cda4ffb6f4b65226b00eb",
+    "retained": "docs/data/s3_aurora_native_dependency_lock_1/continuation-1/metadata/ff-libff__algebra__field_utils__bigint.hpp.gz",
+    "seconds": 0.2942412740085274
+  },
+  {
+    "id": "ff-libff__algebra__field_utils__bigint.tcc",
+    "url": "https://raw.githubusercontent.com/scipr-lab/libff/9769030a06b7ab933d6c064db120019decd359f1/libff/algebra/field_utils/bigint.tcc",
+    "display": false,
+    "maximum_bytes": 24576,
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/scipr-lab/libff/9769030a06b7ab933d6c064db120019decd359f1/libff/algebra/field_utils/bigint.tcc",
+    "bytes": 5264,
+    "sha256": "5e9a95f3c646b030d5c946112345c5649efe7eaa4930a902d648b775758f31e2",
+    "retained": "docs/data/s3_aurora_native_dependency_lock_1/continuation-1/metadata/ff-libff__algebra__field_utils__bigint.tcc.gz",
+    "seconds": 0.32317589898593724
+  },
+  {
+    "id": "ff-libff__common__default_types__ec_pp.hpp",
+    "url": "https://raw.githubusercontent.com/scipr-lab/libff/9769030a06b7ab933d6c064db120019decd359f1/libff/common/default_types/ec_pp.hpp",
+    "display": false,
+    "maximum_bytes": 24576,
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/scipr-lab/libff/9769030a06b7ab933d6c064db120019decd359f1/libff/common/default_types/ec_pp.hpp",
+    "bytes": 1977,
+    "sha256": "5e4397500903c4277d5f7f7995c2369b2d2c726121f1dab84c9da55eebea9a4a",
+    "retained": "docs/data/s3_aurora_native_dependency_lock_1/continuation-1/metadata/ff-libff__common__default_types__ec_pp.hpp.gz",
+    "seconds": 0.2822346780449152
+  },
+  {
+    "id": "fq-nested-ff-tree",
+    "url": "https://api.github.com/repos/scipr-lab/libff/git/trees/accdf9e761979ac8c95dced219cac0b4ad4a4799?recursive=1",
+    "display": false,
+    "maximum_bytes": 131072,
+    "status": 200,
+    "final_url": "https://api.github.com/repos/scipr-lab/libff/git/trees/accdf9e761979ac8c95dced219cac0b4ad4a4799?recursive=1",
+    "bytes": 46651,
+    "sha256": "11919e03c0c664691f378d5a3fba000a547430f92968d5e37d08f0a7e05bb054",
+    "retained": "docs/data/s3_aurora_native_dependency_lock_1/continuation-1/metadata/fq-nested-ff-tree.gz",
+    "seconds": 0.3112827860750258
+  },
+  {
+    "id": "cmake-policy",
+    "url": "https://cmake.org/cmake/help/v4.2/variable/CMAKE_POLICY_VERSION_MINIMUM.html",
+    "display": false,
+    "maximum_bytes": 24576,
+    "status": 200,
+    "final_url": "https://cmake.org/cmake/help/v4.2/variable/CMAKE_POLICY_VERSION_MINIMUM.html",
+    "bytes": 10652,
+    "sha256": "d7beb144247f548cf8893f0af033c6bfb5ba5a7da10d038d9dc6a54670ab1878",
+    "retained": "docs/data/s3_aurora_native_dependency_lock_1/continuation-1/metadata/cmake-policy.gz",
+    "seconds": 0.9978786089923233
+  }
+]

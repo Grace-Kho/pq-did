@@ -1,0 +1,43 @@
+{
+  "case_id": "C-17",
+  "invocation_id": "CAR1-0018",
+  "status": "pass",
+  "details": {
+    "case": "C-17",
+    "purpose": "unconstrained trailing assignment column rejected",
+    "full_relation": false,
+    "rejection": "exact assignment dimension required",
+    "descriptor": {
+      "complete": true,
+      "inputs": 2,
+      "gates": 3,
+      "rows": 5,
+      "variables": 4,
+      "primary": 1,
+      "output_wire": 6,
+      "nonzero_terms": [
+        7,
+        7,
+        3
+      ],
+      "matrix_sha256": "29f98290db35bb53a449b785290eccb3f26049e1353195d99efb96360bede656",
+      "public_identity": "747482f1417df71a6516222c3063a4d17f1d774cda22fda591f4305a3d9a09d2",
+      "gate_counts": [
+        1,
+        1,
+        1
+      ],
+      "free_input_booleanity_rows": 2,
+      "and_rows": 1,
+      "spill_rows": 0,
+      "output_rows": 2,
+      "retained_wire_forms": 7,
+      "retained_term_entries": 9,
+      "maximum_stored_support": 3,
+      "assignment_storage_bytes": 4,
+      "representation": "GF192-exact-affine-XOR-NOT-elimination-v1"
+    }
+  },
+  "seconds": 8.794199675321579e-05,
+  "work_events": 16
+}

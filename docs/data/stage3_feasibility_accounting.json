@@ -1,0 +1,44 @@
+{
+  "status": "conditional projection for authentication; not an unconditional measured full-circuit lower bound",
+  "count_source": "docs/data/stage3_signature_count_preflight.json: hints-complete",
+  "AND_gates_in_measured_hint_prefix": 13532448,
+  "private_authentication_input_bits": 42632,
+  "formula": "5363104 + 960 * ((g + 3) // 4)",
+  "proof_bytes": 3253150624,
+  "view_bytes": 3388441,
+  "proof_decimal_GB": 3.253150624,
+  "proof_binary_GiB": 3.0297326147556305,
+  "payload_only_seconds_at_illustrative_rates": {
+    "100_Mbit_per_second": 260.25204992,
+    "1_Gbit_per_second": 26.025204992
+  },
+  "illustrative_all_1440_raw_views_bytes": 4879355040,
+  "illustrative_all_views_plus_copied_proof_bytes": 8132505664,
+  "not_measured": [
+    "proof generation",
+    "proof verification",
+    "proving latency",
+    "network transfer",
+    "complete authentication count",
+    "full hint evaluation"
+  ],
+  "mandatory_semantic_call_chain": [
+    "VII-A.6 private credential signature verification",
+    "FIPS 204 Algorithm 3",
+    "Algorithm 8 line 2",
+    "Algorithm 27 line 5",
+    "Algorithm 21"
+  ],
+  "inclusion_supported_for_current_source_continuation": true,
+  "conditions_for_numerical_lower_bound": [
+    "Complete authentication retains the current audited decoder, Scope helpers, signed64 hint cells and 6*55 bounded lowering.",
+    "Signature bytes remain original private witness wires; no advice, public disclosure or different specialisation.",
+    "Only entirely public operations fold; no pruning, private CSE, width reduction, alternative selectors or proof encoding change.",
+    "An independently audited full compiler/source mapping confirms this prefix survives integration, up to wire renumbering and extra guards."
+  ],
+  "missing_for_unconditional_claim": "Complete CGen(auth) and independent whole-program lowering/conformance audit are absent; local context checks are not a complete embedded-prefix identity proof.",
+  "overlapping_prefix_counts_added": false,
+  "generation_time_multiplied_by_repetitions": false,
+  "next_decision": "Prepare a reviewed concrete-profile change proposal and numerical application acceptance targets before larger integration. Do not automatically run 64M counts/evaluations.",
+  "authority": "Manuscript Sections II\u2013VIII only; no construction or parameter changes made."
+}

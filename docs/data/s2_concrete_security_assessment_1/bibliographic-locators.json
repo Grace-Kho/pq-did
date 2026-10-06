@@ -1,0 +1,18 @@
+[
+  {
+    "number": 30,
+    "locator": " National Institute of Standards and Technology, \u201cModule-Lattice-Based\nDigital Signature Standard,\u201d National Institute of Standards and\nTechnology, Federal Information Processing Standards Publication 204,\nAug. 2024. [Online]. Available: https://csrc.nist.gov/pubs/fips/204/final\n"
+  },
+  {
+    "number": 31,
+    "locator": " I. Giacomelli, J. Madsen, and C. Orlandi, \u201cZKBoo: Faster\nzero-knowledge for boolean circuits,\u201d in 25th USENIX Security\nSymposium (USENIX Security 16). USENIX Association, 2016,\npp. 1069\u20131083. [Online]. Available: https://www.usenix.org/conference/\nusenixsecurity16/technical-sessions/presentation/giacomelli\n"
+  },
+  {
+    "number": 32,
+    "locator": " J. Don, S. Fehr, C. Majenz, and C. Schaffner, \u201cEfficient nizks and\nsignatures from commit-and-open protocols in the qrom,\u201d in Annual\nInternational Cryptology Conference. Springer, 2022, pp. 729\u2013757.\n"
+  },
+  {
+    "number": 33,
+    "locator": " A. B. Grilo, K. Ho\u0308velmanns, A. Hu\u0308lsing, and C. Majenz, \u201cTight adaptive\nreprogramming in the qrom,\u201d in International Conference on the Theory\nand Application of Cryptology and Information Security. Springer,\n2021, pp. 637\u2013667.\n\n23\n\n"
+  }
+]

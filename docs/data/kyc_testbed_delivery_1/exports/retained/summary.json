@@ -1,0 +1,100 @@
+{
+  "version": "kyc-delivery-export/1",
+  "counts": {
+    "baseline-v1": 276,
+    "testbed-v1": 19,
+    "issuer-v2": 3,
+    "manager-v2": 4
+  },
+  "pooled_statistics": null,
+  "failures": [
+    {
+      "dataset": "testbed-v1",
+      "id": "KYCE1-0001",
+      "case": "W-01",
+      "status": "failed",
+      "source": "docs/data/kyc_testbed_execution_1/cases/KYCE1-0001.json",
+      "sha256": "741862ed9d94d025a97bd3ad671e14b582c8cf56b9780058297f46d7d849f094"
+    },
+    {
+      "dataset": "testbed-v1",
+      "id": "KYCE1-0026",
+      "case": "F-01",
+      "status": "failed",
+      "source": "docs/data/kyc_testbed_execution_1/cases/KYCE1-0026.json",
+      "sha256": "f682feb78875a884e58db52b7c7cd0d912425f931007e2c582379883d34c26cc"
+    },
+    {
+      "dataset": "testbed-v1",
+      "id": "KYCE1-0070",
+      "case": "R-1-4",
+      "status": "failed",
+      "source": "docs/data/kyc_testbed_execution_1/cases/KYCE1-0070.json",
+      "sha256": "6f0435b7d682ff9340618788dcc413e7411a2431e870382341d78b2e40bca982"
+    },
+    {
+      "dataset": "manager-v2",
+      "id": "KYCM1-0039",
+      "case": "H-15",
+      "status": "failed",
+      "source": "docs/data/kyc_manager_incremental_storage_1/cases/KYCM1-0039.json",
+      "sha256": "64382a4200c6c4774b8007acc4e0f2f9217dee6fafd0f77246e21dd36f346f15"
+    },
+    {
+      "dataset": "manager-v2",
+      "id": "KYCM1-0044",
+      "case": "H-17",
+      "status": "failed",
+      "source": "docs/data/kyc_manager_incremental_storage_1/cases/KYCM1-0044.json",
+      "sha256": "b65b3efbd5ae9db296a5f4568de046299c5050946380a847d7b0659593f6feed"
+    },
+    {
+      "dataset": "baseline-v1-validation-history",
+      "id": "M1-0018",
+      "case": "B-02",
+      "status": "failed",
+      "source": "docs/data/oct31_kyc_native_milestone_1/ledger.json",
+      "sha256": "93b982eec7f7de811442484799f95b89e83f2d67252df5af43550fe58df8f4ce"
+    },
+    {
+      "dataset": "baseline-v1-validation-history",
+      "id": "M1-0061",
+      "case": "B-20",
+      "status": "failed",
+      "source": "docs/data/oct31_kyc_native_milestone_1/ledger.json",
+      "sha256": "93b982eec7f7de811442484799f95b89e83f2d67252df5af43550fe58df8f4ce"
+    }
+  ],
+  "component_measurements": {
+    "category": "component-only",
+    "source": "docs/implementation_consolidation.md",
+    "included_in_baseline_rows": false
+  },
+  "private_proof_metrics": {
+    "prove_seconds": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "verify_seconds": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "proof_bytes": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "peak_memory": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "throughput": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "privacy_overhead": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    }
+  },
+  "interpretation": "Separate datasets; four smoke trials do not establish distributions or capacity."
+}

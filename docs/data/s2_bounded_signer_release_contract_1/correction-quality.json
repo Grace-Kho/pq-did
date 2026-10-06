@@ -1,0 +1,15 @@
+{
+  "package": "S2-BOUNDED-SIGNER-RELEASE-CONTRACT-1",
+  "failure": "quality",
+  "evidence": "quality.log",
+  "classification": "Changed-file lint only; no functional or resource failure",
+  "findings": [
+    "I001: separate aliased did_state._key import as required by repository formatter",
+    "F841: remove unused local pp assignment; _Adapter.parameters is a side-effect-free property"
+  ],
+  "correction_scope": "Only import formatting and removal of an unused local in the new adapter; existing code and focused inputs unchanged",
+  "reviewed_continuation": "correction-format, then one separately named quality-final check followed by format check; no automated retry and no test re-execution",
+  "additional_test_invocations": 0,
+  "accounting": "Retain failed quality invocation and wall time in the same cumulative implementation budget",
+  "limits_changed": false
+}

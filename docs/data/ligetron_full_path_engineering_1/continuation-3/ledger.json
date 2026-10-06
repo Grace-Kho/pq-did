@@ -1,0 +1,13 @@
+{
+  "parent_ledger": "/home/grace/projects/pq-did/docs/data/ligetron_full_path_engineering_1/continuation-2/ledger.json",
+  "parent_resource_sha256": "69fdd7aacffef31fea11e6b51219ef9648508ad1af364879a4029e664161447c",
+  "measured_diagnostic_seconds": 1.0516635120000046,
+  "conservative_preparation_and_completion_seconds": 30,
+  "basis": "Read-only configuration/documentation inspection (including unsuccessful source lookups), comparison, selected-file preservation, ZIP, accounting and final reporting; separate from measured diagnostic runtime.",
+  "charge_seconds": 31.051663512000005,
+  "charged_to": "same package and overall outside-KYC capacity, once",
+  "invocations": [],
+  "builds": [],
+  "proofs": [],
+  "memory_repolls": 0
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "source-reviewed-lint-only-correction",
+  "cause": "E501: one 102-character line in new close.py report text",
+  "correction": "Split report sentence; preserve original failure and charge. No resource breach or cryptographic test. One named corrected lint check after formatter. No automatic retries or full audit retries.",
+  "retained_sha256": {
+    "quality.json": "4ef4322458145b59ecd941d96ef6c4f8446af19d53505d87ff767aaf084dfa9a",
+    "quality.log": "d48ec1ca6c772c42c884585cb3638b398443e8ebbddc75a9fb2236d19f1d1bef",
+    "quality.service.json": "0c817ae77f5a1c6363466a1108f9a9a17388311521b0179f436e6a6f332aa644",
+    "STOP.json": "2973cf50de76919f60b82073cf89d02eefb9575ef1f9ea9b567019739f39e03c",
+    "close.py.before-lint-correction.txt": "fc394618696b038a1a3d915c43c8eb833ef1ec7b7ddc0544fa4bc874bad8b81c",
+    "run_checks.py.before-lint-correction.txt": "26c1c38b2b84b65d24c20e289e9522742082efa87ca33692ae15495143b8e1c8"
+  },
+  "allowed_remaining_commands": [
+    "correction-format",
+    "quality-corrected",
+    "format",
+    "prepare",
+    "full-audit"
+  ]
+}

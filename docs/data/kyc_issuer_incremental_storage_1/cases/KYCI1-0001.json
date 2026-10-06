@@ -1,0 +1,23 @@
+{
+  "invocation_id": "KYCI1-0001",
+  "case_id": "S-01",
+  "work_event_reservation": 0,
+  "ordinal": 1,
+  "cumulative_invocations": 1046,
+  "status": "pass",
+  "details": {
+    "expected_rejection": "payload-cap",
+    "rows": 4,
+    "individual_bytes": [
+      18517,
+      18517,
+      7498,
+      18517
+    ],
+    "phase": "SIGNING retained; synthetic attempted outcome never delivered",
+    "archive_verified": true
+  },
+  "seconds": 0.01777917006984353,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

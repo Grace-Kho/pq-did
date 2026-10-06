@@ -1,0 +1,5 @@
+{
+  "failure": "static-system",
+  "cause": "systemd 259: RuntimeMaxSec has no effect with Type=oneshot; parser exit 0 but strict no-warning check failed.",
+  "correction": "Remove ignored directive from new bootstrap-only unit. Effective TimeoutStartSec=5 still bounds bootstrap; all owner/client/slice and guard limits unchanged. Original warning retained."
+}

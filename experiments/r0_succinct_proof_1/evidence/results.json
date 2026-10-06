@@ -1,0 +1,216 @@
+{
+  "package": "R0-SUCCINCT-PROOF-1",
+  "attempts": [
+    {
+      "attempt": 1,
+      "fixture": "enrol-alpha-42",
+      "outcome": "timed_out",
+      "last_observed_phase": "lift_start",
+      "phase_event_counts": {
+        "execution_complete": 1,
+        "segment_preflight_start": 10,
+        "segment_proof_start": 10,
+        "lift_start": 6,
+        "lift_complete": 5,
+        "join_start": 4,
+        "join_complete": 4
+      },
+      "phase_event_times": {
+        "execution_complete": {
+          "count": 1,
+          "first_seconds": 0.11307054199278355,
+          "last_seconds": 0.11307054199278355
+        },
+        "segment_preflight_start": {
+          "count": 10,
+          "first_seconds": 0.11332680998020805,
+          "last_seconds": 194.12588126197807
+        },
+        "segment_proof_start": {
+          "count": 10,
+          "first_seconds": 0.1345487009966746,
+          "last_seconds": 194.13212545297574
+        },
+        "lift_start": {
+          "count": 6,
+          "first_seconds": 204.7442771359929,
+          "last_seconds": 593.6848586519773
+        },
+        "lift_complete": {
+          "count": 5,
+          "first_seconds": 248.52959121199092,
+          "last_seconds": 550.1940534389869
+        },
+        "join_start": {
+          "count": 4,
+          "first_seconds": 291.74934893500176,
+          "last_seconds": 550.2043145769858
+        },
+        "join_complete": {
+          "count": 4,
+          "first_seconds": 335.7662672129809,
+          "last_seconds": 593.6719022629841
+        }
+      },
+      "execution_from_log": {
+        "exit_code": "Halted(0)",
+        "segments": 10,
+        "journal_bytes": 15380,
+        "journal_sha256": "aebac85219e0df161bda4e9d6661e4a7eccc619812eb45bb106ee46180cfa41c",
+        "journal_matches_expected": true,
+        "source": "retained SDK prove_session log; not a receipt or returned ProveInfo.stats"
+      },
+      "prior_execution_workload": {
+        "user_cycles": 196311,
+        "segment_count": 10,
+        "po2_histogram": {
+          "16": 9,
+          "15": 1
+        },
+        "padded_capacity": 622592,
+        "segment_proofs": 10,
+        "lifts": 10,
+        "joins": 9
+      },
+      "completed_segment_proofs": 10,
+      "complete_pipeline_wall_seconds": 600.1284312639909,
+      "SDK_complete_combined_seconds": null,
+      "actual_returned_session_stats": null,
+      "seal_bytes": null,
+      "receipt_journal_bytes": null,
+      "serialized_receipt_bytes": null,
+      "fresh_verification": null,
+      "tamper_verification": null,
+      "resources": {
+        "phase": "prove",
+        "slot": 1,
+        "mem_available_at_admission": 4947980288,
+        "name": "attempt1",
+        "command": [
+          "/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/target/release/pqdid-r0-host",
+          "prove",
+          "enrol-alpha-42",
+          "receipts/attempt1.bin"
+        ],
+        "limit_seconds": 600,
+        "memory_max": 2147483648,
+        "network": false,
+        "start_time_UTC": "2026-09-19T04:07:37Z",
+        "status": "failed",
+        "systemd_command": [
+          "systemd-run",
+          "--user",
+          "--wait",
+          "--pipe",
+          "--unit=pqdid-r0proof1-attempt1",
+          "--working-directory=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1",
+          "-p",
+          "MemoryMax=2147483648",
+          "-p",
+          "ReadOnlyPaths=/home/grace/projects/pq-did/experiments/r0_succinct_feasibility_1 /home/grace/projects/pq-did/experiments/r0_credvalid_cycle_1 /home/grace/projects/pq-did/experiments/r0_credvalid_exec24_1",
+          "-p",
+          "MemorySwapMax=0",
+          "-p",
+          "CPUQuota=200%",
+          "-p",
+          "TasksMax=128",
+          "-p",
+          "RuntimeMaxSec=600",
+          "-p",
+          "TimeoutStopSec=2",
+          "-p",
+          "KillMode=control-group",
+          "-p",
+          "OOMPolicy=kill",
+          "-p",
+          "NoNewPrivileges=yes",
+          "-p",
+          "PrivateDevices=yes",
+          "-p",
+          "UMask=0077",
+          "-p",
+          "LimitCORE=0",
+          "-p",
+          "LimitFSIZE=2147483648",
+          "-p",
+          "PrivateNetwork=yes",
+          "--setenv=CARGO_HOME=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/tooling/cargo",
+          "--setenv=RUSTUP_HOME=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/tooling/rustup",
+          "--setenv=RUSTC=/home/grace/projects/pq-did/experiments/r0_succinct_feasibility_1/tooling/guest-r0.1.97.0/bin/rustc",
+          "--setenv=RZUP_HOME=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/tooling/rzup",
+          "--setenv=RISC0_HOME=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/tooling/risc0",
+          "--setenv=XDG_CACHE_HOME=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/tooling/cache",
+          "--setenv=CARGO_TARGET_DIR=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/target",
+          "--setenv=TMPDIR=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/tmp",
+          "--setenv=CARGO_BUILD_JOBS=1",
+          "--setenv=CMAKE_BUILD_PARALLEL_LEVEL=1",
+          "--setenv=MAKEFLAGS=-j1",
+          "--setenv=RAYON_NUM_THREADS=2",
+          "--setenv=OMP_NUM_THREADS=2",
+          "--setenv=RISC0_DEV_MODE=0",
+          "--setenv=RISC0_PROVER=local",
+          "--setenv=RISC0_EXECUTOR=local",
+          "--setenv=R0_PROOF_SLOT=1",
+          "--setenv=CUDA_VISIBLE_DEVICES=",
+          "--setenv=RUST_LOG=warn,risc0_zkvm::host::server::prove::prover_impl=debug,risc0_zkvm::host::recursion=debug",
+          "--setenv=PATH=/home/grace/projects/pq-did/experiments/r0_succinct_feasibility_1/tooling/guest-r0.1.97.0/bin:/usr/local/bin:/usr/bin:/bin",
+          "-p",
+          "UnsetEnvironment=BONSAI_API_KEY BONSAI_API_URL RISC0_CUDA RISC0_DEV_MODE_FORCE RISC0_PPROF_OUT",
+          "/usr/bin/python3",
+          "/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/scripts/service_entry.py",
+          "attempt1",
+          "2147483648",
+          "/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/target/release/pqdid-r0-host",
+          "prove",
+          "enrol-alpha-42",
+          "receipts/attempt1.bin"
+        ],
+        "wall_seconds": 600.1284312639909,
+        "exit_code": 1,
+        "stop_reason": null,
+        "effective_cgroup": {
+          "memory.max": "2147483648",
+          "memory.swap.max": "0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "sampled_process_tree_RSS_peak": 1557245952,
+        "sampled_cgroup_charge_peak": 1521070080,
+        "sampled_swap_peak": 0,
+        "sampled_cgroup_kernel_peak": 1521070080,
+        "last_sampled_memory_events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        },
+        "sampled_temporary_bytes_peak": 436542,
+        "sampled_experiment_disk_peak": 6419555718,
+        "systemd_final_properties": "Result=timeout\nExecMainCode=2\nExecMainStatus=15\nControlGroup=\nMemoryPeak=1521070080\nMemorySwapPeak=0\nCPUUsageNSec=1187724723000\n",
+        "log": "evidence/attempt1.log",
+        "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~20 ms excluding metadata/disk polling can double-count shared pages and miss peaks; inspect cgroup memory.peak independently."
+      },
+      "timing_note": "Observed log boundaries; incomplete total costs stay unmeasured",
+      "observed_segment_phase_seconds": 204.63095032601268,
+      "observed_recursion_before_return_or_stop_seconds": 395.38415412799804,
+      "kernel_memory_peak_bytes": 1521070080,
+      "stopping_phase": "Sixth ordinary recursion lift, after all 10 segment proofs, five completed lifts and four completed joins",
+      "unfinished_recursion_operations": {
+        "lift_in_progress": 1,
+        "lifts_not_started": 4,
+        "joins_not_started": 5
+      }
+    }
+  ],
+  "proof_attempts_used": 1,
+  "proof_attempts_unused": 2,
+  "actual_succinct_receipts": [],
+  "setup_build_service_seconds": 160.1174990219879,
+  "complete_cold_subprocess_seconds": 760.9571075279382,
+  "cold_cost_definition": "Service sum; excludes authoring and reused installation",
+  "not_run": [
+    "CredValid and optional repeat: prerequisite enrolment failed"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "package": "S3-BINIUS-EMBEDDING-CORRESPONDENCE-1-PREPARATION",
+  "prior_manifest_sha256": "f59f6fd151306e86a7bc62d48eb93fda2901a3502cd7c074a9e307914d1ab499",
+  "prior_closure_sha256": "802818efcb3a654480b4d6965017a7e452bad411606c28a30f82f1f1d08349b6",
+  "prior_resource_sha256": "5849d50d14378e795ae78a5c1be024bba9d4ae278800ba5f5361a24f5031c147",
+  "analysis_opening_seconds": 26.2521356981853,
+  "implementation_unchanged_seconds": 810.6179695621813,
+  "KYC_unchanged_seconds": 443.3903556420428,
+  "general_implementation_outside_KYC_seconds": 367.22761392013854,
+  "invocations": 1140,
+  "invocation_ceiling": 1146,
+  "builds": 10,
+  "build_ceiling": 13,
+  "proofs_used": 2,
+  "proofs_unused": 1,
+  "preparation_only": true
+}

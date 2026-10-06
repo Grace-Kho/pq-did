@@ -1,0 +1,53 @@
+{
+  "completed_segment_metadata": [
+    {
+      "index": 0,
+      "po2": 16,
+      "user_cycles": 18973
+    },
+    {
+      "index": 1,
+      "po2": 16,
+      "user_cycles": 28811
+    },
+    {
+      "index": 2,
+      "po2": 16,
+      "user_cycles": 29507
+    },
+    {
+      "index": 3,
+      "po2": 16,
+      "user_cycles": 29507
+    },
+    {
+      "index": 4,
+      "po2": 16,
+      "user_cycles": 29185
+    },
+    {
+      "index": 5,
+      "po2": 16,
+      "user_cycles": 17189
+    },
+    {
+      "index": 6,
+      "po2": 14,
+      "user_cycles": 1279
+    }
+  ],
+  "fixture": "matrix-00",
+  "image": "cc65b50cfe857e2c35ee03d30a4f30ac6367ee2e1dadb9d1215f74a794dcb738",
+  "journal_matches_expected": true,
+  "label": "component-before",
+  "padded_cycles": 409600,
+  "paging_cycles": "not separately exposed by Execute IPC",
+  "proof_attempts": 0,
+  "seconds": 0.033253463,
+  "segment_limit_po2": 16,
+  "segments": 7,
+  "session_limit_user_cycles": 4194304,
+  "slot": 2,
+  "status": "completed",
+  "user_cycles": 154451
+}

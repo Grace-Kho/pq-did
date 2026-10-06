@@ -1,0 +1,74 @@
+{
+  "all_units_terminated": true,
+  "units": [
+    {
+      "unit": "pqdid-ligetron-full-path-1-full-audit-2.service",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0"
+    },
+    {
+      "unit": "pqdid-ligetron-full-path-1-full-audit.service",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0"
+    },
+    {
+      "unit": "pqdid-ligetron-full-path-1-package.service",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0"
+    },
+    {
+      "unit": "pqdid-ligetron-full-path-1-prepare-2.service",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0"
+    },
+    {
+      "unit": "pqdid-ligetron-full-path-1-prepare-3.service",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0"
+    },
+    {
+      "unit": "pqdid-ligetron-full-path-1-prepare.service",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0"
+    },
+    {
+      "unit": "pqdid-ligetron-full-path-1-readback.service",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0"
+    },
+    {
+      "unit": "pqdid-ligetron-full-path-1-static-2.service",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0"
+    },
+    {
+      "unit": "pqdid-ligetron-full-path-1-static-3.service",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0"
+    },
+    {
+      "unit": "pqdid-ligetron-full-path-1-static-4.service",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0"
+    },
+    {
+      "unit": "pqdid-ligetron-full-path-1-static.service",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0"
+    }
+  ],
+  "transient_parent": "ActiveState=inactive\nSubState=dead\n",
+  "unrelated_units_touched": false,
+  "seconds": 0.05035650287754834
+}

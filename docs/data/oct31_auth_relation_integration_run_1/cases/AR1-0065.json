@@ -1,0 +1,17 @@
+{
+  "case_id": "B-11",
+  "invocation_id": "AR1-0065",
+  "status": "pass",
+  "details": {
+    "case_id": "B-11",
+    "passed": true,
+    "decision": "unsupported-proof-backend",
+    "challenge_pending_unchanged": true,
+    "accepted": false,
+    "fixture_registration": "synthetic preload of retained signed public fixture",
+    "crash_durability_claimed": false,
+    "replay_evidence": "unaffected existing reference store evidence reused; no replay rerun"
+  },
+  "seconds": 0.009590114001184702,
+  "work_events": 0
+}

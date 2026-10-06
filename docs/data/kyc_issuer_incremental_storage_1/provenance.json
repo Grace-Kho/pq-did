@@ -1,0 +1,28 @@
+{
+  "source_sha256": {
+    "experiments/kyc_issuer_incremental_storage_1/cases.py": "5e34e6a1695d84e963c74a44ba9be42265b179b0103009af0e92bf312ddfc2bd",
+    "experiments/kyc_issuer_incremental_storage_1/dispatch.py": "317b1b503b730f1af7b722cb05614c3bb7d7611a9a4dcd4c0becc85301f62740",
+    "experiments/kyc_issuer_incremental_storage_1/integration.py": "99fd711a90a67d5b4ac6f676cf62cea069a1c48e67bdcd46b91fb9061eb80f0a",
+    "experiments/kyc_issuer_incremental_storage_1/journal.py": "cd49dd5aa209761b068664f40bf9a5333bd01466214ec79a254a161fa345d1ba",
+    "experiments/kyc_issuer_incremental_storage_1/preservation.py": "6ae409ef79433467f9651b6e7f1e987447ba318ccf00e13c45f7233bf4b00d61",
+    "experiments/kyc_issuer_incremental_storage_1/run.py": "f5e5b201a5b9bcc8b856eaa2f8c9c976198dd7b9834b6bb640d0c6aab047266e",
+    "experiments/kyc_issuer_incremental_storage_1/tooling.py": "e4219af9accdbd196d2ff6fb0e235532b2fb4fddd9e5fb210f70a36f7d0759be"
+  },
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "sqlite": "3.46.1",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "machine": "x86_64",
+  "cpu_model": "Intel(R) Core(TM) i7-14650HX",
+  "execution": "Actual command lines, CPU affinity, memory ceilings, clocks, source inputs and synthetic instance hashes are retained in jobs/cases.",
+  "temporary_cleanup": "Every passing isolated store removed after outcome assertions; no failed functional case or surviving store; original sealed failure archive unchanged.",
+  "unchanged_inputs": [
+    "ML-DSA caps",
+    "PQL1/transport cap 65536",
+    "canonical signed messages",
+    "production source",
+    "dependencies",
+    "active profile",
+    "comparison point v1",
+    "276 original and 19 subsequent observations"
+  ]
+}

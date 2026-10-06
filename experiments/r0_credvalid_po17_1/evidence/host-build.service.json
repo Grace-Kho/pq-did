@@ -1,0 +1,17 @@
+{
+  "before": {
+    "memory.max": "2147483648",
+    "memory.swap.max": "0",
+    "memory.peak": "7008256",
+    "memory.current": "6983680",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "available_before_target": 4874690560,
+  "external_routes": 0,
+  "target_started": true,
+  "command": [
+    "/home/grace/projects/pq-did/experiments/r0_credvalid_po17_1/scripts/build_host.sh"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "authorised static manifest-to-inventory reconciliation, not preparation or audit",
+  "exact_added_entry": "docs/data/s3_aurora_transcript_regression_1/repair-1/prepare.json",
+  "historical_expected_sha256": "0d4fb8f16d38fee2952f769bb541a05366fd0fa7e150f3d17d752489936227f8",
+  "actual_sha256": "0d4fb8f16d38fee2952f769bb541a05366fd0fa7e150f3d17d752489936227f8",
+  "treated_as_protected": true,
+  "manifest_checks": [
+    {
+      "seal": "docs/data/s3_aurora_transcript_regression_1/manifest.json",
+      "sha256": "a73e4e3e4e6f5cdbe1416d87757aebaf6c4ef26f0e2644d50d81fda3e306014e",
+      "entries_under_evidence_root_including_seal": 48,
+      "omitted": []
+    },
+    {
+      "seal": "docs/data/s3_aurora_transcript_regression_1/repair-1/manifest.json",
+      "sha256": "ac605331b5f6daf46a41318ce25481e365fa2e42736bb92dc2c76c093db593b9",
+      "entries_under_evidence_root_including_seal": 23,
+      "omitted": [
+        "docs/data/s3_aurora_transcript_regression_1/repair-1/prepare.json"
+      ]
+    },
+    {
+      "seal": "docs/data/s3_aurora_transcript_regression_1/repair-2/continuation-1/manifest.json",
+      "sha256": "f76de0666d5ff4cd4bf898662f189d11b91938abf1ebabfaaa54a8ea3e739289",
+      "entries_under_evidence_root_including_seal": 17,
+      "omitted": []
+    }
+  ],
+  "unique_retained_evidence_manifest_names": 88,
+  "further_inventory_omissions": [],
+  "integrity_discrepancies": [],
+  "passed": true,
+  "seconds": 0.022726231953129172,
+  "process_RSS_peak_bytes": 22020096
+}

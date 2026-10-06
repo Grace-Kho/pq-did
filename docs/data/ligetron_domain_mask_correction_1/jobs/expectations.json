@@ -1,0 +1,52 @@
+{
+  "name": "expectations",
+  "phase": "tool",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/ligetron_domain_mask_correction_1/expectations.py"
+  ],
+  "limit_seconds": 10,
+  "child_seconds": 9,
+  "status": "pass",
+  "unit": "pqdid-ligetron-domain-mask-1-expectations",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 605400,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 38223183,
+    "artifact_bytes": 77419639,
+    "temporary_bytes": 0
+  },
+  "available_memory": 3768266752,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false,
+  "seconds": 1.6045390458311886,
+  "exit_code": 0,
+  "stop": null,
+  "worker": {
+    "before": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "12832768",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "after": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "23871488",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "child_exit_code": 0,
+    "child_seconds": 0.040764732053503394,
+    "resource_breach": false,
+    "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+  },
+  "sampled_tree_rss_peak": 36835328,
+  "artifact_observed_peak_bytes": 77419639
+}

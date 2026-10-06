@@ -1,0 +1,519 @@
+{
+  "package": "S2-CONCRETE-SECURITY-ASSESSMENT-1",
+  "status": "safe-stopped-unactivated",
+  "workload_terminated": true,
+  "pilot_validation_complete": false,
+  "source": "Existing authentication-pending report corroborated by strict live read-only host query; no activation evidence or resources present. No stop or activation command executed.",
+  "uid": 1000,
+  "uid_map": "         0          0 4294967295\n",
+  "units": {
+    "pqiso-owner@m.service": {
+      "Id": "pqiso-owner@m.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-owner@i.service": {
+      "Id": "pqiso-owner@i.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-owner@va.service": {
+      "Id": "pqiso-owner@va.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-owner@vb.service": {
+      "Id": "pqiso-owner@vb.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-bootstrap@m.service": {
+      "Id": "pqiso-bootstrap@m.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-bootstrap@i.service": {
+      "Id": "pqiso-bootstrap@i.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-bootstrap@va.service": {
+      "Id": "pqiso-bootstrap@va.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-bootstrap@vb.service": {
+      "Id": "pqiso-bootstrap@vb.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-client@pqiso-o-m.service": {
+      "Id": "pqiso-client@pqiso-o-m.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-client@pqiso-w-m.service": {
+      "Id": "pqiso-client@pqiso-w-m.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-client@pqiso-o-i.service": {
+      "Id": "pqiso-client@pqiso-o-i.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-client@pqiso-w-i.service": {
+      "Id": "pqiso-client@pqiso-w-i.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-client@pqiso-o-va.service": {
+      "Id": "pqiso-client@pqiso-o-va.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-client@pqiso-w-va.service": {
+      "Id": "pqiso-client@pqiso-w-va.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-client@pqiso-o-vb.service": {
+      "Id": "pqiso-client@pqiso-o-vb.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-client@pqiso-w-vb.service": {
+      "Id": "pqiso-client@pqiso-w-vb.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-client@pqiso-admin.service": {
+      "Id": "pqiso-client@pqiso-admin.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-client@pqiso-observer.service": {
+      "Id": "pqiso-client@pqiso-observer.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-client@pqiso-rec-a.service": {
+      "Id": "pqiso-client@pqiso-rec-a.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-client@pqiso-rec-b.service": {
+      "Id": "pqiso-client@pqiso-rec-b.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-client@pqiso-denied.service": {
+      "Id": "pqiso-client@pqiso-denied.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-replacement-m.service": {
+      "Id": "pqiso-replacement-m.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-provision.service": {
+      "Id": "pqiso-guard-provision.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-verify.service": {
+      "Id": "pqiso-guard-verify.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-runtime.service": {
+      "Id": "pqiso-guard-iso-runtime.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-role-m.service": {
+      "Id": "pqiso-guard-iso-role-m.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-role-i.service": {
+      "Id": "pqiso-guard-iso-role-i.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-role-va.service": {
+      "Id": "pqiso-guard-iso-role-va.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-role-vb.service": {
+      "Id": "pqiso-guard-iso-role-vb.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-cross-va.service": {
+      "Id": "pqiso-guard-iso-cross-va.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-cross-vb.service": {
+      "Id": "pqiso-guard-iso-cross-vb.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-recipient.service": {
+      "Id": "pqiso-guard-iso-recipient.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-dac-denied.service": {
+      "Id": "pqiso-guard-iso-dac-denied.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-acl-denied.service": {
+      "Id": "pqiso-guard-iso-acl-denied.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-fencing.service": {
+      "Id": "pqiso-guard-iso-fencing.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-rotation.service": {
+      "Id": "pqiso-guard-iso-rotation.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-holder.service": {
+      "Id": "pqiso-guard-iso-holder.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-fd.service": {
+      "Id": "pqiso-guard-iso-fd.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-misconfig-peer-identity.service": {
+      "Id": "pqiso-guard-iso-misconfig-peer-identity.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-misconfig-socket-mode.service": {
+      "Id": "pqiso-guard-iso-misconfig-socket-mode.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-misconfig-writable-parent.service": {
+      "Id": "pqiso-guard-iso-misconfig-writable-parent.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-misconfig-mutable-runtime.service": {
+      "Id": "pqiso-guard-iso-misconfig-mutable-runtime.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-restart-m.service": {
+      "Id": "pqiso-guard-iso-restart-m.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-restart-i.service": {
+      "Id": "pqiso-guard-iso-restart-i.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-restart-va.service": {
+      "Id": "pqiso-guard-iso-restart-va.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-iso-restart-vb.service": {
+      "Id": "pqiso-guard-iso-restart-vb.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-shutdown.service": {
+      "Id": "pqiso-guard-shutdown.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso-guard-rollback.service": {
+      "Id": "pqiso-guard-rollback.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "ControlGroup": ""
+    },
+    "pqiso.slice": {
+      "Id": "pqiso.slice",
+      "LoadState": "loaded",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Job": "",
+      "ControlGroup": ""
+    }
+  },
+  "paths": {
+    "/etc/pqiso": false,
+    "/var/lib/pqiso": false,
+    "/run/pqiso": false,
+    "/opt/pqiso": false,
+    "/run/pqiso-stop": false,
+    "/run/pqiso-launch.lock": false,
+    "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_pilot_1/activation": false
+  },
+  "collisions": [],
+  "isolation_test_invocations_unchanged": 100,
+  "identity_cases_pending": 22,
+  "isolation_remaining_seconds_unchanged": 250.22,
+  "task_path": "PQ_DID_Security_Assessment_Codex_Task.md",
+  "task_sha256": "ffc641501306a2e05d80b287baa199b8826c9c5401da697fe5c5f9d75295364a",
+  "task_filename_note": "User refers to (2); the attached and available repository file has no (2) suffix and contains the execution schedule and Sections 1-10. This exact file is the assessed task specification.",
+  "seconds": 0.06359310098923743,
+  "observer_peak_RSS_bytes": 20074496,
+  "new_proofs": 0,
+  "new_zkvm_executions": 0
+}

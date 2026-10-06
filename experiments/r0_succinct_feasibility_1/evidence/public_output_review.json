@@ -1,0 +1,66 @@
+{
+  "scope": "functional envelope/native-journal checks only; no receipt or ZK proof",
+  "rows": [
+    {
+      "fixture": "enrol-alpha-42",
+      "public_record_fields": 5,
+      "journal_is_exact_public_envelope": true
+    },
+    {
+      "fixture": "cred-alpha-42",
+      "public_record_fields": 5,
+      "journal_is_exact_public_envelope": true,
+      "private_long_values_absent": true,
+      "rid_absent_as_field": true,
+      "receipt_metadata_inspected": false
+    },
+    {
+      "fixture": "enrol-alpha-43",
+      "public_record_fields": 5,
+      "journal_is_exact_public_envelope": true
+    },
+    {
+      "fixture": "cred-alpha-43",
+      "public_record_fields": 5,
+      "journal_is_exact_public_envelope": true,
+      "private_long_values_absent": true,
+      "rid_absent_as_field": true,
+      "receipt_metadata_inspected": false
+    },
+    {
+      "fixture": "enrol-beta-42",
+      "public_record_fields": 5,
+      "journal_is_exact_public_envelope": true
+    },
+    {
+      "fixture": "cred-beta-42",
+      "public_record_fields": 5,
+      "journal_is_exact_public_envelope": true,
+      "private_long_values_absent": true,
+      "rid_absent_as_field": true,
+      "receipt_metadata_inspected": false
+    },
+    {
+      "fixture": "cred-changed-context-valid",
+      "public_record_fields": 5,
+      "journal_is_exact_public_envelope": true,
+      "private_long_values_absent": true,
+      "rid_absent_as_field": true,
+      "receipt_metadata_inspected": false
+    },
+    {
+      "fixture": "enrol-invalid-state-signature-outside-relation",
+      "public_record_fields": 5,
+      "journal_is_exact_public_envelope": true
+    },
+    {
+      "fixture": "cred-proper-signing-context",
+      "public_record_fields": 5,
+      "journal_is_exact_public_envelope": true,
+      "private_long_values_absent": true,
+      "rid_absent_as_field": true,
+      "receipt_metadata_inspected": false
+    }
+  ],
+  "diagnostic_fixture_names_are_not_public_presentation_metadata": true
+}

@@ -1,0 +1,18 @@
+{
+  "docs/status.md": {
+    "bytes": 232240,
+    "sha256": "41a2cf0ac4fe93d8b9a623a43d2938ce6aee4f0c908716e2e7776e7ec5c71f24"
+  },
+  "docs/traceability.md": {
+    "bytes": 290983,
+    "sha256": "e02f5f75d5a2bf2790037009d27a34189fa491efaf7d535a2c9d340cf686e66c"
+  },
+  "docs/spec_issues.md": {
+    "bytes": 256305,
+    "sha256": "885ca45fb933638ea69403909a842c87cb3b6c0a36029d1bd7f8da8de69b7cde"
+  },
+  "docs/kyc_testbed_completion.md": {
+    "bytes": 15057,
+    "sha256": "bca132eb519f02a6fb65ef9ab6193112a455f3c56b98a93705ecf284d8c3241e"
+  }
+}

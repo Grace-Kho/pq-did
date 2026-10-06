@@ -1,0 +1,14 @@
+{
+  "sha256": {
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-time-admission-1/admission-result.json": "ce1ab7e79d85474982a667186eb41190122896060767580cfcec38d588dd51aa",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-time-admission-1/checks.py": "c2014e65c5bda180285e94f4c5f6c851f441670d0c095e17926610d296b9bff3",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-time-admission-1/config.json": "59ede909d2cbefc1d8f79f652c6ec0fda59c759102b35e631d92dc90adedfe85",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-time-admission-1/native-case-outcomes.json": "159ec80afe441a402bdb991e87a26e4dc70a670e65a585152c02e3762b13f6cb",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-time-admission-1/opening-ledger.json": "3c85339fd4a0133777936a72d5ec65fbd2534343a05d0152ba05f135acf62722",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-time-admission-1/prefixes.json": "5299c5c31d50c8dc2572acd5fbd16efb71a0a903f55df1a364ea1cad7fece5fc",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-time-admission-1/quality.json": "b1fee8c9d0f6370af5037667c7fa2dffde751fc92723858ca73fd15977025a41",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-time-admission-1/quality.log": "cccb4709c07bdafbd4e974c3179966dd1498edc4c5cf473141f0f2a775167a5a",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-time-admission-1/quality.service.json": "26db7c4c20890a9ab5f85eff0f42cf6e20873901bd4068cb4eb4b4ed051bb757",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-time-admission-1/run.py": "571bc09cbaea9f35819c3751c9b8699dadea6929bf067d2738b36ab0cb936563"
+  }
+}

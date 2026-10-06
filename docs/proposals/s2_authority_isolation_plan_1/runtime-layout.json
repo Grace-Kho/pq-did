@@ -1,0 +1,52 @@
+{
+  "proposal_only": true,
+  "installed": false,
+  "prefix": "/opt/pqiso/r1",
+  "base_interpreter": "/usr/bin/python3.14",
+  "base_version": "3.14.4",
+  "venv_creation": [
+    "/usr/bin/python3.14",
+    "-I",
+    "-m",
+    "venv",
+    "--without-pip",
+    "/opt/pqiso/r1/.venv"
+  ],
+  "old_venv_copied": false,
+  "downloads_or_dependency_upgrades": false,
+  "source": "reviewed exact src/pqdid tree copied to /opt/pqiso/r1/src/pqdid",
+  "python_runtime_dependency": "exact oqs package plus liboqs_python-0.16.0.dist-info from the preserved environment; metadata conditional dependencies inactive on Python 3.14 without extras",
+  "pth": {
+    "path": "/opt/pqiso/r1/.venv/lib/python3.14/site-packages/_pqdid.pth",
+    "exact_content": "/opt/pqiso/r1/src\n"
+  },
+  "native_destination": "/opt/pqiso/r1/native/.deps/install/lib",
+  "native_source": "native/.deps/install/lib",
+  "ownership": "root:root; directories 0755, ordinary files 0644, executables 0755; no client/owner writable release path",
+  "allowed_symlinks": "only venv interpreter links resolving to root-protected /usr/bin/python3.14 and internal liboqs version links; preflight walks every ancestor and resolved target",
+  "import_mode": [
+    "-I",
+    "-B"
+  ],
+  "loader_environment": "env -i PATH=/usr/bin:/bin LANG=C.UTF-8; no PYTHONPATH, LD_PRELOAD, LD_LIBRARY_PATH or OQS_INSTALL_PATH inherited",
+  "dynamic_dependencies": "root-managed /usr and /lib libraries from environment-facts.json; exact deployed /proc/self/maps and library versions must be checked; host change requires requalification",
+  "required_future_files": [
+    "preflight.py",
+    "owner_entry.py",
+    "client_entry.py",
+    "isolation_coordinator.py"
+  ],
+  "current_blockers": [
+    "cross-UID endpoint policy adapter absent",
+    "trusted root-owned startup/provisioning/preflight launchers absent",
+    "actual UID/GID mappings and approved ServiceKey/head/recipient mapping not provisioned",
+    "actual-identity runtime validation not run"
+  ],
+  "source_public_identities": {
+    "docs/manuscript/PQ_DID__Implementation.pdf": "d17ca0a20b319b88e959467cae92d91d619973f84384710ecbf960a3b850aeca",
+    ".tools/uv": "5d59bc45431db192c0a49a01c517041c3bd8778adb3fbc5195aaa025eec19e23",
+    "native/.deps/install/lib/liboqs.so": "36a8ca7ac0827079ca0436dfaa69f166d691468aacffc95bb5e8d004e522c25d",
+    "uv.lock": "9f07286a47e7f2a96f78d8c9855c60b7914c62d10dbf882342089bf5c77fcb5a",
+    "pyproject.toml": "c26788eb858d19e6d9c1c1c835750a2750168de7bbbbcc5dd0dec7c5bec145c6"
+  }
+}

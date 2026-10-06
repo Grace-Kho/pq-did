@@ -1,0 +1,18 @@
+{
+  "docs/status.md": {
+    "bytes": 155845,
+    "sha256": "adbeaebf1e73a7c0fcd55e56d0e634c8c912879186e3f0357b10d79cc5b9cfbd"
+  },
+  "docs/traceability.md": {
+    "bytes": 217920,
+    "sha256": "4713f0b7aaa1b89b2989fef30c0e814f87a2a80f17be762b6a15137a232e8e10"
+  },
+  "docs/spec_issues.md": {
+    "bytes": 178401,
+    "sha256": "9cce79c8f466765765dc728593c1a2d05706131ee27e1f8f625eff8200cdb805"
+  },
+  "docs/stage3_aurora_transcript_regression.md": {
+    "bytes": 17432,
+    "sha256": "177040958f92b3ae60a2ae839d44102d2f25c94030ecddcfe8207677c7564ec1"
+  }
+}

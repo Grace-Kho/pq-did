@@ -1,0 +1,62 @@
+{
+  "package": "S3-AURORA-COMPILER-COMPATIBILITY-CONTRACT-1",
+  "passed": true,
+  "comparison_complete": true,
+  "resource_guard_status": "pending-outer-finalisation",
+  "protected_files": 8759,
+  "unchanged_protected_files": 8756,
+  "allowed_changed_files": [
+    "docs/spec_issues.md",
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "changed_files": [],
+  "missing_files": [],
+  "bytes_hashed": 294004807,
+  "coverage_sha256": "73df29e985aad1544583a3700a7cdbf83f2c3bfbfcde6c43720fb8a2d7c772fc",
+  "supplementary_comparison": {
+    "protected_files": 2142,
+    "unchanged_protected_files": 2142,
+    "allowed_changed_files": [],
+    "changed_files": [],
+    "missing_files": [],
+    "bytes_hashed": 18466092,
+    "coverage_sha256": "ff333fcc890013538c72a3edb234821a10aebeec68f561387dc3a2a6429fa1cf"
+  },
+  "content_partition_union": 10901,
+  "content_partition_overlap": 0,
+  "identity_inclusive_unique_paths": 10936,
+  "name_inventory": {
+    "passed": true,
+    "count": 4915,
+    "unexpected": [],
+    "missing": []
+  },
+  "only_existing_changes": [
+    "docs/status.md",
+    "docs/traceability.md",
+    "docs/spec_issues.md",
+    "docs/stage3_aurora_native_dependency_lock.md",
+    "docs/stage3_aurora_native_transcript_pilot.md"
+  ],
+  "existing_report_prefixes_preserved": true,
+  "baseline_regenerated": false,
+  "test_invocations": {},
+  "unique_new_tests": 0,
+  "total_test_invocations_including_prior_package": 402,
+  "new_execution_calculations": 0,
+  "source_review": "Source-only compatibility contract; no configuration/build/native case",
+  "scoped_existing_verifier_regressions": 0,
+  "implementation_allowance_remaining_unchanged": 268.92925334337633,
+  "isolation_allowance_remaining_unchanged": 250.22,
+  "local_links_checked": 755,
+  "package_bytes_before_report": 110127,
+  "temporary_storage_bytes": 0,
+  "charged_seconds_including_inflight_audit_reservation": 132.7195272857789,
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "estimator_runs": 0,
+  "activation": false,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1
+}

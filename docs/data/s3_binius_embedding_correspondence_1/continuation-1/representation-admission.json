@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "resolved_issue": "B64-EMBED-REP-001",
+  "new_blob": {
+    "upstream_path": "crates/field/src/binary_field.rs",
+    "retained_path": "docs/data/s3_binius_embedding_correspondence_1/continuation-1/sources/crates--field--src--binary_field.rs",
+    "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/field/src/binary_field.rs",
+    "bytes": 24075,
+    "git_blob": "d073d856abf2d1a2ad58b9a0dbe6b7a49460f1df",
+    "sha256": "4907b827c90b585f110186524cdb5442e37e6b5f0ded79544a1c5f343c189390"
+  },
+  "macro_lines": [
+    42,
+    44,
+    206,
+    314
+  ],
+  "generator": "0x494ef99794d5244f9152df59d87a9186",
+  "trace_one": "1 << 121",
+  "scalar_one": "raw polynomial 1; macro Underlier::ONE agrees with retained scalar test contracts",
+  "modulus": "X^128+X^7+X^2+X+1",
+  "representation": "raw bit i is coefficient of X^i; portable low-bit field convention, not GCM wire bit order",
+  "arithmetic_bridge": "binary_field default derives arithmetic through width-one packed representation; portable GHASH defines schoolbook/reduction and mul_x. The model implements this scalar field contract; no compiled architecture/SIMD correspondence claimed.",
+  "native_comparison": "unrun",
+  "new_sources": 1,
+  "old_sources_reused": 15,
+  "historical_blocker_record_unchanged": true
+}

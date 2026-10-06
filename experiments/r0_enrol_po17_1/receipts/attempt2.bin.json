@@ -1,0 +1,45 @@
+{
+  "control_id": "7a8f24092c34ed3eb81b3d0a0b796c588c615d3488ef9e61c21dbd1e4b83ea6e",
+  "control_path": {
+    "digests": [
+      "0d79bc33b4760b4783cbb96fdc87724c7e0c463eb0ba1b2705d39f43c698bd2d",
+      "c179ca3a39f26310b4f4ea0a7c3c9307e036fc3728d86c0a43b22d3605e2893f",
+      "191a654c175b0d5eabfd4670cf0df42ac810d769edfd29025c6417144bd8d72c",
+      "9b98b73af20fba33f5ae2204d2fecb16bf1b3618572b652103ac9c722ef47e5b",
+      "977f9e2868d664458077ac35fa9050290c7db016c2750620c362da3c275cab67",
+      "f765ab6e0cf5dc55c11d65688af0fe1428afc359c08b1656bbc4ba6b54c9746c",
+      "c6b87a237165c549ef7ac614d762ec1ce4b97441c9bfef6fd8ac90378170d816",
+      "2be97040fd0b390959c33114712a436382b2cd419665ee2fe801c158a9bbb155"
+    ],
+    "index": 1
+  },
+  "fixture": "enrol-alpha-42",
+  "hash_suite": "poseidon2",
+  "image": [
+    3771262054,
+    2934794436,
+    1441774498,
+    2869905324,
+    1497161362,
+    1391706344,
+    1955224464,
+    202812443
+  ],
+  "journal_bytes": 15380,
+  "mode": "Succinct",
+  "operation": "enrol",
+  "pipeline_including_recursion_seconds": 343.792883226,
+  "receipt": "receipts/attempt2.bin",
+  "seal_bytes": 222668,
+  "self_verify_seconds": 0.011631573,
+  "separate_proving_recursion_times": "not exposed by this local IPC call",
+  "serialized_receipt_bytes": 238485,
+  "stats": {
+    "paging_cycles": 78207,
+    "reserved_cycles": 118698,
+    "segments": 3,
+    "total_cycles": 393216,
+    "user_cycles": 196311
+  },
+  "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013"
+}

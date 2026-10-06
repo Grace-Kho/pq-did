@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "seconds": 0.9193893239134923,
+  "commands": [
+    [
+      "cp",
+      "-a",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/work",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work"
+    ],
+    [
+      "cp",
+      "-a",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/overlay",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay"
+    ]
+  ],
+  "byte_identical_copy_before_registered_patch": true,
+  "registered_patch_sha256": "919c57370aa9005f9bcabe683e7e528954903a802e65e4a160a5ed24e8d3e0a5",
+  "budget": {
+    "retained_charge": 1619972,
+    "new_metadata_estimate": 800000,
+    "diagnostics": 61440,
+    "case_records": 100000,
+    "source_admission_guard_records": 220000,
+    "completion": 524288,
+    "sum": 3325700
+  },
+  "retained_metadata_addition": 784736,
+  "previous_failures_unchanged": true,
+  "new_builds": 0,
+  "new_cases": 0
+}

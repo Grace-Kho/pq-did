@@ -1,0 +1,1 @@
+{"id": "RG-07", "passed": true, "synthetic": true, "outcome": "aggregate artifact limit"}

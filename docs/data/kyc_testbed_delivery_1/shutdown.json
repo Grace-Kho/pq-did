@@ -1,0 +1,163 @@
+{
+  "workload_terminated": true,
+  "unit_queries": [
+    {
+      "unit": "pqdid-kyc-delivery-1-static.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "loaded",
+        "ActiveState": "failed",
+        "SubState": "failed",
+        "MainPID": "0",
+        "ControlGroup": ""
+      },
+      "workload_terminated": true
+    },
+    {
+      "unit": "pqdid-kyc-delivery-1-static-2.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      },
+      "workload_terminated": true
+    },
+    {
+      "unit": "pqdid-kyc-delivery-1-preflight.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      },
+      "workload_terminated": true
+    },
+    {
+      "unit": "pqdid-kyc-delivery-1-demo.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      },
+      "workload_terminated": true
+    },
+    {
+      "unit": "pqdid-kyc-delivery-1-export.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      },
+      "workload_terminated": true
+    },
+    {
+      "unit": "pqdid-kyc-delivery-1-benchmark.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      },
+      "workload_terminated": true
+    },
+    {
+      "unit": "pqdid-kyc-delivery-1-prepare.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      },
+      "workload_terminated": true
+    },
+    {
+      "unit": "pqdid-kyc-delivery-1-full-audit.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "loaded",
+        "ActiveState": "failed",
+        "SubState": "failed",
+        "MainPID": "0",
+        "ControlGroup": ""
+      },
+      "workload_terminated": true
+    },
+    {
+      "unit": "pqdid-kyc-delivery-1-static-audit-fix.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      },
+      "workload_terminated": true
+    },
+    {
+      "unit": "pqdid-kyc-delivery-1-prepare-2.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      },
+      "workload_terminated": true
+    },
+    {
+      "unit": "pqdid-kyc-delivery-1-full-audit-2.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      },
+      "workload_terminated": true
+    },
+    {
+      "unit": "pqdid-kyc-delivery-1-readback.service",
+      "exit_code": 0,
+      "properties": {
+        "LoadState": "not-found",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "MainPID": "0",
+        "ControlGroup": ""
+      },
+      "workload_terminated": true
+    }
+  ],
+  "scope": "Only fixed package units; query failure, missing properties or populated cgroup rejects completion",
+  "retained_failed_units_not_reset": true,
+  "initial_bookkeeping_diagnostic": {
+    "unit": "pqdid-kyc-delivery-1-static.service",
+    "exit_code": 0,
+    "LoadState": "loaded",
+    "ActiveState": "failed",
+    "SubState": "failed",
+    "MainPID": "0",
+    "ControlGroup": "",
+    "error": "Initial closure assertion allowed inactive/dead only and stopped before recording completion",
+    "correction": "Documented failed/failed with matching retained failed job, zero PID and absent/unpopulated cgroup also establishes termination; failure remains a failure"
+  },
+  "no_host_pilot_activation": true
+}

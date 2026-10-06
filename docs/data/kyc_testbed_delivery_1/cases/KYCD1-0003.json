@@ -1,0 +1,76 @@
+{
+  "invocation_id": "KYCD1-0003",
+  "case_id": "D-03",
+  "work_event_reservation": 0,
+  "ordinal": 3,
+  "cumulative_invocations": 1168,
+  "status": "pass",
+  "details": {
+    "state": {
+      "manager_epoch": 0,
+      "allocated_count": 1,
+      "issuer_phases": [
+        "CERTIFIED"
+      ],
+      "verifiers": {
+        "A": {
+          "audience": "baseline-audience-A",
+          "challenges": 1,
+          "consumed": 1,
+          "head": "8a7f156b8d953240c9dcc303b0b2d2cb11fe0706c666cca7a4e2801c0ece18b3",
+          "generation": 1
+        },
+        "B": {
+          "audience": "baseline-audience-B",
+          "challenges": 0,
+          "consumed": 0,
+          "head": "027c817ad9a4999b9ecc9d7450fa55d89dada90ba97cec909d1e9e5911b84e8a",
+          "generation": 1
+        }
+      },
+      "holder_epoch": 0
+    },
+    "pages": [],
+    "public_queries": [],
+    "signatures": "genuine bounded ML-DSA-65",
+    "private_proofs": "unavailable",
+    "store_versions": {
+      "issuer": 2,
+      "manager": 2
+    },
+    "storage": [
+      {
+        "path": "manager/authority.sqlite3",
+        "bytes": 94208,
+        "secret_material": false
+      },
+      {
+        "path": "verifier-A/authority.sqlite3",
+        "bytes": 86016,
+        "secret_material": false
+      },
+      {
+        "path": "verifier-B/authority.sqlite3",
+        "bytes": 57344,
+        "secret_material": false
+      },
+      {
+        "path": "issuer/issuer.sqlite3",
+        "bytes": 53248,
+        "secret_material": false
+      },
+      {
+        "path": "holder/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      }
+    ]
+  },
+  "seconds": 0.5606885608285666,
+  "work_events": 0
+}

@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-03T08:44:21.979711+00:00",
+  "command": [
+    "/mnt/c/windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+    "-NoProfile",
+    "-NonInteractive",
+    "-Command",
+    "Get-CimInstance Win32_OperatingSystem | Select-Object TotalVisibleMemorySize,FreePhysicalMemory | ConvertTo-Json -Compress"
+  ],
+  "exit_code": 0,
+  "stdout": "{\"TotalVisibleMemorySize\":16389632,\"FreePhysicalMemory\":850388}\n",
+  "stderr": "",
+  "WSL_available_bytes": 5394214912,
+  "Windows_free_bytes": 870797312,
+  "required_each_bytes": 4294967296,
+  "passed": false,
+  "shortfalls_bytes": {
+    "Windows": 3424169984,
+    "WSL": 0
+  },
+  "WSL_memory_bytes": {
+    "MemTotal": 8126136320,
+    "MemFree": 1642336256,
+    "MemAvailable": 5394214912,
+    "Buffers": 176680960,
+    "Cached": 3517960192,
+    "SReclaimable": 261505024,
+    "Shmem": 3686400,
+    "SwapTotal": 2147483648,
+    "SwapFree": 2147483648
+  },
+  "elapsed_seconds": 0.8900809929999696,
+  "self_peak_RSS_bytes": 13164544,
+  "read_count": 1,
+  "memory_repolls": 0,
+  "scope": "One fresh post-manual-restart admission, before implementation/reporting. Failed host gate stopped execution."
+}

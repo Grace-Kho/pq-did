@@ -1,0 +1,16 @@
+{
+  "case_id": "B-09",
+  "invocation_id": "AR1-0063",
+  "status": "pass",
+  "details": {
+    "case_id": "B-09",
+    "passed": true,
+    "rejected": true,
+    "reason": "scheduled round/root/direct-message mismatch",
+    "accepted": false,
+    "proof_generated": false,
+    "field_note": "all 24-byte encodings canonical; wrong width rejected"
+  },
+  "seconds": 3.291992470622063e-05,
+  "work_events": 0
+}

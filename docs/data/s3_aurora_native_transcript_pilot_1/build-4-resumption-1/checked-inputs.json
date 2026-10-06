@@ -1,0 +1,24 @@
+{
+  "sha256": {
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/STOP.json": "546a112e2dd22b8f9bd6318a845e6b17a81cfb0a3e90d939de7d93074bc28ec6",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/artifact-inventory.json.gz": "e3f5e6ac07df173af9d7bb0cb577a6bc7fe9bf71e3806de7fdf0f00fe312ac4d",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/checks.py": "e8ef3b55a8d8bb98e58ec970d1f3a504a4767aa8e04b51080bafe276ec569e97",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/config.json": "05ffe7b2a26006eaf14d58adff4bc0bd76fc261601ac9b95e6daf28015b86988",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/native-case-outcomes.json": "159ec80afe441a402bdb991e87a26e4dc70a670e65a585152c02e3762b13f6cb",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/opening-ledger.json": "31651a84de506915d1f857559d282818667d27ee55aa5f743d47733f1e356185",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/prefixes.json": "448e26c28ed0703a52e5430744331ebc71d0d61cad56479aada6f14c8625323b",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/preflight-inputs.json.gz": "b5f2cdddff5b194ce3eb139e6a8489d8a81a92dfd9feda63cf962377a9551171",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/preflight-result.json": "2c35045638de8417ee441831193420fb297e5dbf30ecb48446d92bd99f01f320",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/preflight.json": "41457d589e460d4a89f5bc0fd7193bb5deddb883d75cfee65c6dd2692af640b4",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/preflight.log": "37563aebbee711f0cc4bc22b511eba1f56a660467cd6e1f860f85f5d31005b32",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/preflight.service.json": "c63c3be90622479fd86eb5e7876d376a140d56e912e019fc7e74ce242d9a5238",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/quality.json": "aa0d22f8b5016f0c81ec0e33a88f19ed9aeb4d948079530b632a494c4528eae4",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/quality.log": "89551e85e6eaf13619d058df4af2d4bef8a0d394c855efd6340f439d0bcd0d93",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/quality.service.json": "5ef759f6ba550100085b23ec1b4ad7aa46182a7ee6d77ea37f48f7acf3bbb56f",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/run.py": "62af14287a13602eadcb61083636d1fe74e00b908262106f2b86c952244013fb",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/termination.json": "141c19218e818ae59bff5cb6e27214af8a119c83d5184e6f7e42e33d100b2a39",
+    "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/work.py": "0c9efcb9982762aef05b2b15cc172bd6ffe5c48f5b2a560da3aa0715cdf2a6a4"
+  },
+  "new_builds": 0,
+  "new_native_invocations": 0
+}

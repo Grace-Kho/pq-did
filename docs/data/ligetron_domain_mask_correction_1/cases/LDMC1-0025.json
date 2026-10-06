@@ -1,0 +1,19 @@
+{
+  "id": "N-05",
+  "invocation": {
+    "invocation_id": "LDMC1-0025",
+    "case_id": "N-05",
+    "work_event_reservation": 1000000,
+    "ordinal": 25,
+    "cumulative_invocations": 1243,
+    "status": "admitted"
+  },
+  "status": "pass",
+  "binary_sha256": "9d21ea26044ab0959379ec5bcdd8d8cd5d47794fd45518381b7b532f19d6a3fb",
+  "expected_sha256": "f4d44a3e76ae05be7b0a5b655be6a242c461e0824a4878181222109ed12be2a7",
+  "exit_code": 0,
+  "stdout": "[\"rejected\"]\n",
+  "stderr": "",
+  "layer": "CPU transform model using native field",
+  "seconds": 0.0014277009759098291
+}

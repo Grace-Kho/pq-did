@@ -1,0 +1,29 @@
+{
+  "liboqs": {
+    "version": "0.16.0",
+    "repository": "https://github.com/open-quantum-safe/liboqs",
+    "commit": "5a1a854b0dc9f2141bdc771c555ee60c37950183",
+    "url": "https://codeload.github.com/open-quantum-safe/liboqs/tar.gz/5a1a854b0dc9f2141bdc771c555ee60c37950183",
+    "sha256": "83c6e6cff490638312e1e20ed5de593fb5d7bfab162235f6238f519d6a1feafb",
+    "mldsa_native_commit": "9b0ee84f4cf399043eca59eca4e5f8531ca1d61b"
+  },
+  "liboqs-python": {
+    "version": "0.16.0",
+    "repository": "https://github.com/open-quantum-safe/liboqs-python",
+    "commit": "c6378cd5c8db74c0adf34ddcfbb96ee9c99f8061",
+    "url": "https://github.com/open-quantum-safe/liboqs-python/archive/c6378cd5c8db74c0adf34ddcfbb96ee9c99f8061.tar.gz",
+    "sha256": "3de72cde836a72e4584dad6415a41610f980f924cae95a3848011fcb4f3a3b05"
+  },
+  "cmake_flags": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DCMAKE_C_COMPILER=/usr/bin/gcc",
+    "-DCMAKE_INSTALL_LIBDIR=lib",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DOQS_BUILD_ONLY_LIB=ON",
+    "-DOQS_MINIMAL_BUILD=SIG_ml_dsa_65",
+    "-DOQS_DIST_BUILD=ON",
+    "-DOQS_USE_OPENSSL=OFF"
+  ],
+  "build_jobs": 2
+}

@@ -1,0 +1,88 @@
+{
+  "package": "KYC-MANAGER-INCREMENTAL-STORAGE-1",
+  "complete": true,
+  "completion_scope": "Manager v2 persistence, bounded public paging and atomic catch-up; migration/recovery validation and four admitted baseline measurements",
+  "workstream_complete": false,
+  "implementation_and_preservation_checkpoint_complete": true,
+  "storage_cases_passed": 26,
+  "paging_and_wallet_cases_passed": 17,
+  "new_baseline_observations": 4,
+  "passing_invocations": 47,
+  "failed_functional_invocations": 2,
+  "new_invocations": 49,
+  "distinct_cases": 47,
+  "largest_validated_history": 8,
+  "retained_static_failures": [
+    "static-1: E501/E731; corrected static-2 passed",
+    "static-5: fixture import F821; corrected static-6 passed"
+  ],
+  "cumulative_invocations": 1140,
+  "unrun": [],
+  "previous_issuer_observations_unchanged": 3,
+  "v1_observations_unchanged": 276,
+  "previous_observations_unchanged": 19,
+  "full_relation_checks_unrun": 21,
+  "preservation_complete": true,
+  "full_audit_attempts": 1,
+  "full_audit_exit_status": 0,
+  "historical_content_comparisons": 10901,
+  "historical_identity_inclusive_paths": 10936,
+  "audit_guard_seconds": 4.87845781003125,
+  "audit_worker_seconds": 4.525754918111488,
+  "audit_cgroup_memory_peak_bytes": 49483776,
+  "audit_memory_ceiling_bytes": 268435456,
+  "final_inventory_complete": true,
+  "final_inventory_count": 12038,
+  "report_readback_complete": true,
+  "report_readback_job": "final-readback-final",
+  "retained_readback_failures": [
+    "final-readback: literal wording split across a newline",
+    "final-readback-corrected: dependent new-inventory seal stale after authorised inventory amendment"
+  ],
+  "outer_guard_passed": true,
+  "workload_terminated": true,
+  "historical_evidence_preserved": true,
+  "manifest_sha256": "62bf918c1112029e55bd1d5944b607d95d9ba0f8817f01ae4d147c95b0da7919",
+  "original_programme_complete": false,
+  "scope_reduction_approved": false,
+  "stages_2_3_open": true,
+  "Binius64": "G0 NO-GO; paused; G1-G3 not admitted",
+  "Aurora": "Assessed route closed; not overall PQ-DID impossibility",
+  "private_proof_acceptance": "fail-closed",
+  "isolation_stopped_unactivated": true,
+  "cpu_proving_paused": true,
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1
+  },
+  "remaining_requirements": [
+    "Capacity beyond eight updates unmeasured; production external freshness custody, power-loss durability and whole-store rollback protection unestablished",
+    "Standards-level securing/key/private-status mechanisms",
+    "Complete private authentication and original security obligations"
+  ],
+  "resource_summary": {
+    "implementation_remaining_seconds": 1110.6024521229538,
+    "workstream_remaining_seconds": 743.3748382028152,
+    "cumulative_invocations": 1140,
+    "remaining_invocations": 6,
+    "storage": {
+      "new_evidence_bytes": 1023166,
+      "new_artifact_bytes": 0,
+      "evidence_bytes": 32269268,
+      "artifact_bytes": 58966547,
+      "temporary_bytes": 0
+    }
+  },
+  "finalisation_sha256": {
+    "docs/data/kyc_manager_incremental_storage_1/ledger.json": "fe843f15ded02ec01be1d15df0aa8b02dbbe7d79b15f4deaeb6619a46c376176",
+    "docs/data/kyc_manager_incremental_storage_1/ledger.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/data/kyc_manager_incremental_storage_1/execution.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/data/kyc_manager_incremental_storage_1/resource-closure.json": "9748c387c561304267d16aa55b21b55d204c8d62ecc0103a2d3dbf7245388637",
+    "docs/data/kyc_manager_incremental_storage_1/final-inventory.json": "3453af4bd52194e2aaeb87129ae999b4dac5cbb8683b7259eaa51260701dcdc4",
+    "docs/data/kyc_manager_incremental_storage_1/shutdown.json": "265814ff57085474ce2c76c865dc60d126be8880c0b1165bf4b7f5cfc28b113f",
+    "docs/data/kyc_manager_incremental_storage_1/jobs/final-readback-final.json": "1e4352a341c479af33a92df816666f9fe797e3b47aa85062ad9a6c59878df84e",
+    "docs/data/kyc_manager_incremental_storage_1/jobs/final-readback-final.input.json": "f1a1087a5fe7a5d427f8d1cd026bade3ecc396b8e9866bead90cd0f5c9def4fd",
+    "docs/data/kyc_manager_incremental_storage_1/jobs/final-readback-final.worker.json": "25c9ea54a683a3909bbd6ad82576b4604768d601cb8f528b21fca15b5c6b07ac",
+    "docs/data/kyc_manager_incremental_storage_1/jobs/final-readback-final.log": "2c7800f67e16f751503b6f389e9e6dfbe481ef7ce83967e675020f22bc70138e"
+  }
+}

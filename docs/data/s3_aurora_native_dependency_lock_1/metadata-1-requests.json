@@ -1,0 +1,27 @@
+[
+  {
+    "id": "libiop-tree",
+    "url": "https://api.github.com/repos/scipr-lab/libiop/git/trees/a2ed2ec2f3e85f29b6035951553b02cb737c817a?recursive=1",
+    "display": false
+  },
+  {
+    "id": "libiop-modules",
+    "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/.gitmodules"
+  },
+  {
+    "id": "libiop-cmake",
+    "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/CMakeLists.txt"
+  },
+  {
+    "id": "libiop-depends",
+    "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/depends/CMakeLists.txt"
+  },
+  {
+    "id": "libiop-library",
+    "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/CMakeLists.txt"
+  },
+  {
+    "id": "libiop-readme",
+    "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/README.md"
+  }
+]

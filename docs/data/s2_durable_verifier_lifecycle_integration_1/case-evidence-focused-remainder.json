@@ -1,0 +1,140 @@
+[
+  {
+    "case": "test_stored_context_mismatch[issuer]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "c33dffc02edbcbbe02e5d63e5d65881f148b64fca9c30343177d1e41680d28c6",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "abd243771f658d87e7e01330de576bff0d7fac41983c9898c104c8e3c69afac9",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "4584bb7567dec663054c5ced6a3ed9ac90cb2fae016f6168f24d84804c5d2223",
+      "manager_epoch": 0
+    }
+  },
+  {
+    "case": "test_strict_expiry[initial]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "c33dffc02edbcbbe02e5d63e5d65881f148b64fca9c30343177d1e41680d28c6",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "abd243771f658d87e7e01330de576bff0d7fac41983c9898c104c8e3c69afac9",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "008022945490fe72a276da816a0b3fe1b21c072d6c9ab2cb5a7fdf3e06ff3b61",
+      "manager_epoch": 0
+    }
+  },
+  {
+    "case": "test_strict_expiry[final]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "c33dffc02edbcbbe02e5d63e5d65881f148b64fca9c30343177d1e41680d28c6",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "abd243771f658d87e7e01330de576bff0d7fac41983c9898c104c8e3c69afac9",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "b9141fae45188ed145959f82249db2798ad9f4e16cd7f4c915d21b530f315f37",
+      "manager_epoch": 0
+    }
+  },
+  {
+    "case": "test_public_disclosure_rejected",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "c33dffc02edbcbbe02e5d63e5d65881f148b64fca9c30343177d1e41680d28c6",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "abd243771f658d87e7e01330de576bff0d7fac41983c9898c104c8e3c69afac9",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "444b7179627b34946b734374dd09fb669fa956f0a7202bcb257897f3f3a5740e",
+      "manager_epoch": 0
+    }
+  },
+  {
+    "case": "test_proof_boundary[normal-missing]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "c33dffc02edbcbbe02e5d63e5d65881f148b64fca9c30343177d1e41680d28c6",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "abd243771f658d87e7e01330de576bff0d7fac41983c9898c104c8e3c69afac9",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "4824de0fcad3fe0606c258ebd2c4295c8bc77a7298e58a0166d7f0f589458eb2",
+      "manager_epoch": 0
+    }
+  },
+  {
+    "case": "test_proof_boundary[invalid]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "c33dffc02edbcbbe02e5d63e5d65881f148b64fca9c30343177d1e41680d28c6",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "abd243771f658d87e7e01330de576bff0d7fac41983c9898c104c8e3c69afac9",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "6d55c7d313c788976465e8a1d40fcb4adb12c2cac335badd1a11fae50c989429",
+      "manager_epoch": 0
+    }
+  }
+]

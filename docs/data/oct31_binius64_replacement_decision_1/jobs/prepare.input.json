@@ -1,0 +1,26 @@
+{
+  "name": "prepare",
+  "phase": "audit",
+  "argv": [
+    "/home/grace/projects/pq-did/.venv/bin/python",
+    "-I",
+    "-B",
+    "/home/grace/projects/pq-did/experiments/binius64_replacement_decision_1/preservation.py",
+    "prepare"
+  ],
+  "limit_seconds": 30,
+  "child_seconds": 29,
+  "status": "launched",
+  "unit": "pqdid-binius-decision-1-prepare",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 2732334,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 29700289,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4124114944,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

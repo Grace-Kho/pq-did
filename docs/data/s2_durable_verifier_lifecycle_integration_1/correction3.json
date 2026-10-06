@@ -1,0 +1,33 @@
+{
+  "failure": "boundaries-remainder",
+  "cause": "Wrong trusted audience changes ServiceKey: recovery rejects at earlier service-binding check, not checkpoint-admission. State unchanged; implementation unchanged.",
+  "change": "Assert exact service-binding refusal. One reviewed repeat plus two uninvoked cases; no passed-case repeats.",
+  "evidence": {
+    "boundaries-remainder.xml": "f3e388599163ae1a9b6e8a983df168cb338e8495e3bc8b82aa0b90790bbf7ab6",
+    "boundaries-remainder.log": "ba3e7576ad91a1389a4cb10d5ef2dfd1eba345e911c595ab2ab8a18332c5f05b",
+    "boundaries-remainder.json": "753c4d9018de95e52d6d5a9de038c16a2482d93d4264d9d65473d066616e10f1",
+    "test-before-correction3.txt": "c816480ad55dcc02b165f21b45ff803260f19cf05acb9d3bb3ea5393b95d4564",
+    "config-before-correction3.json": "5f33a3d139ddfb0631b97de9a4047d08ba46ba0f06d44853272a63238e52ac11",
+    "guard-before-correction3.txt": "72802e5048e0de2cfa9fe256db047771e102a85cc48873602e07cceef3d7407f"
+  },
+  "permitted_followups": [
+    "final-boundaries",
+    "final-source-format",
+    "quality",
+    "format",
+    "prepare",
+    "full-audit"
+  ],
+  "test_counts": {
+    "historical": 145,
+    "focused": 7,
+    "focused-remainder": 6,
+    "boundaries": 6,
+    "boundaries-remainder": 5,
+    "final-boundaries": 3,
+    "cumulative": 172,
+    "remaining": 0
+  },
+  "automatic_retry": false,
+  "resource_limits_changed": false
+}

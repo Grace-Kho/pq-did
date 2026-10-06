@@ -1,0 +1,13 @@
+{
+  "package": "LIGETRON-FULL-PATH-ENGINEERING-1",
+  "passed": true,
+  "comparison_complete": true,
+  "full_audit_exit_status": 0,
+  "audit_launcher_attempts": 2,
+  "complete_comparison_runs": 1,
+  "historical_content_comparisons": 10901,
+  "identity_inclusive_paths": 10936,
+  "resource_guard_passed": true,
+  "finalisation": "content and outer resource guard passed; final readback and packaging recorded separately",
+  "readback_failure": "jobs/readback.log: called before creating result and manifest; no content discrepancy; no audit rerun"
+}

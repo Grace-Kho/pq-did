@@ -1,0 +1,172 @@
+{
+  "source": "NIST CAVP CAVS 19.0, January 2016; informal checks, not CAVP validation",
+  "selection": "Short 0/1/rate-1/rate/(rate+1 where present); first SHA3-384 long record",
+  "extractor_sha256": "23e2720fc2e92958f21ca838adced25a5ca53770eda5382a1dad50ae3e2a41cb",
+  "sources": [
+    {
+      "archive_url": "https://csrc.nist.gov/CSRC/media/Projects/Cryptographic-Algorithm-Validation-Program/documents/sha3/sha-3bytetestvectors.zip",
+      "archive_sha256": "cd07701af2e47f5cc889d642528b4bf11f8b6eb55797c7307a96828ed8d8fc8c",
+      "member": "SHA3_384ShortMsg.rsp",
+      "member_sha256": "0e15aa35474c85084a0a1682c28ae9d4ebde61daa130ea0b408f51a1e9ec3150",
+      "header": "#  CAVS 19.0\r\n#  \"SHA3-384 ShortMsg\" information for \"SHA3AllBytes1-28-16\"\r\n#  Length values represented in bits\r\n#  Generated on Thu Jan 28 13:32:46 2016"
+    },
+    {
+      "archive_url": "https://csrc.nist.gov/CSRC/media/Projects/Cryptographic-Algorithm-Validation-Program/documents/sha3/sha-3bytetestvectors.zip",
+      "archive_sha256": "cd07701af2e47f5cc889d642528b4bf11f8b6eb55797c7307a96828ed8d8fc8c",
+      "member": "SHA3_384LongMsg.rsp",
+      "member_sha256": "d7e1e35d90c46617869b7819a8c1ebc113f583dd4de63f6ee2f97f0d98f80531",
+      "header": "#  CAVS 19.0\r\n#  \"SHA3-384 LongMsg\" information for \"SHA3AllBytes1-28-16\"\r\n#  SHA3-384 tests are configured for BYTE oriented implementations\r\n#  Length values represented in bits\r\n#  Generated on Thu Jan 28 13:32:46 2016"
+    },
+    {
+      "archive_url": "https://csrc.nist.gov/CSRC/media/Projects/Cryptographic-Algorithm-Validation-Program/documents/sha3/shakebytetestvectors.zip",
+      "archive_sha256": "debfebc3157b3ceea002b84ca38476420389a3bf7e97dc5f53ea4689a16de4c7",
+      "member": "SHAKE128ShortMsg.rsp",
+      "member_sha256": "c7384e3f84247d90e6b0af9ac618a968bb65f5dcbe9c2ee7e8a66475c551764b",
+      "header": "#  CAVS 19.0\r\n#  \"SHAKE128 ShortMsg\" information for \"SHAKE3AllBytesGT\"\r\n#  SHAKE128 tests are configured for BYTE oriented implementations\r\n#  Length values represented in bits\r\n#  Generated on Thu Jan 28 14:46:45 2016"
+    },
+    {
+      "archive_url": "https://csrc.nist.gov/CSRC/media/Projects/Cryptographic-Algorithm-Validation-Program/documents/sha3/shakebytetestvectors.zip",
+      "archive_sha256": "debfebc3157b3ceea002b84ca38476420389a3bf7e97dc5f53ea4689a16de4c7",
+      "member": "SHAKE256ShortMsg.rsp",
+      "member_sha256": "a21dd9180a0f0139fa8d4056919f8194ddaca2f36dc5aafa70723682099d64f5",
+      "header": "#  CAVS 19.0\r\n#  \"SHAKE256 ShortMsg\" information for \"SHAKE3AllBytesGT\"\r\n#  SHAKE256 tests are configured for BYTE oriented implementations\r\n#  Length values represented in bits\r\n#  Generated on Thu Jan 28 14:46:47 2016"
+    }
+  ],
+  "cases": [
+    {
+      "algorithm": "SHA3_384",
+      "source": "SHA3_384ShortMsg.rsp",
+      "length_bits": 0,
+      "message": "",
+      "source_msg": "00",
+      "output_bits": 384,
+      "output": "0c63a75b845e4f7d01107d852e4c2485c51a50aaaa94fc61995e71bbee983a2ac3713831264adb47fb6bd1e058d5f004"
+    },
+    {
+      "algorithm": "SHA3_384",
+      "source": "SHA3_384ShortMsg.rsp",
+      "length_bits": 8,
+      "message": "80",
+      "source_msg": "80",
+      "output_bits": 384,
+      "output": "7541384852e10ff10d5fb6a7213a4a6c15ccc86d8bc1068ac04f69277142944f4ee50d91fdc56553db06b2f5039c8ab7"
+    },
+    {
+      "algorithm": "SHA3_384",
+      "source": "SHA3_384ShortMsg.rsp",
+      "length_bits": 824,
+      "message": "6c36147652e71b560becbca1e7656c81b4f70bece26321d5e55e67a3db9d89e26f2f2a38fd0f289bf7fa22c2877e38d9755412794cef24d7b855303c332e0cb5e01aa50bb74844f5e345108d6811d5010978038b699ffaa370de8473f0cda38b89a28ed6cabaf6",
+      "source_msg": "6c36147652e71b560becbca1e7656c81b4f70bece26321d5e55e67a3db9d89e26f2f2a38fd0f289bf7fa22c2877e38d9755412794cef24d7b855303c332e0cb5e01aa50bb74844f5e345108d6811d5010978038b699ffaa370de8473f0cda38b89a28ed6cabaf6",
+      "output_bits": 384,
+      "output": "b1319192df11faa00d3c4b068becc8f1ba3b00e0d1ff1f93c11a3663522fdb92ab3cca389634687c632e0a4b5a26ce92"
+    },
+    {
+      "algorithm": "SHA3_384",
+      "source": "SHA3_384ShortMsg.rsp",
+      "length_bits": 832,
+      "message": "92c41d34bd249c182ad4e18e3b856770766f1757209675020d4c1cf7b6f7686c8c1472678c7c412514e63eb9f5aee9f5c9d5cb8d8748ab7a5465059d9cbbb8a56211ff32d4aaa23a23c86ead916fe254cc6b2bff7a9553df1551b531f95bb41cbbc4acddbd372921",
+      "source_msg": "92c41d34bd249c182ad4e18e3b856770766f1757209675020d4c1cf7b6f7686c8c1472678c7c412514e63eb9f5aee9f5c9d5cb8d8748ab7a5465059d9cbbb8a56211ff32d4aaa23a23c86ead916fe254cc6b2bff7a9553df1551b531f95bb41cbbc4acddbd372921",
+      "output_bits": 384,
+      "output": "71307eec1355f73e5b726ed9efa1129086af81364e30a291f684dfade693cc4bc3d6ffcb7f3b4012a21976ff9edcab61"
+    },
+    {
+      "algorithm": "SHA3_384",
+      "source": "SHA3_384LongMsg.rsp",
+      "length_bits": 1672,
+      "message": "5fe35923b4e0af7dd24971812a58425519850a506dfa9b0d254795be785786c319a2567cbaa5e35bcf8fe83d943e23fa5169b73adc1fcf8b607084b15e6a013df147e46256e4e803ab75c110f77848136be7d806e8b2f868c16c3a90c14463407038cb7d9285079ef162c6a45cedf9c9f066375c969b5fcbcda37f02aacff4f31cded3767570885426bebd9eca877e44674e9ae2f0c24cdd0e7e1aaf1ff2fe7f80a1c4f5078eb34cd4f06fa94a2d1eab5806ca43fd0f06c60b63d5402b95c70c21ea65a151c5cfaf8262a46be3c722264b",
+      "source_msg": "5fe35923b4e0af7dd24971812a58425519850a506dfa9b0d254795be785786c319a2567cbaa5e35bcf8fe83d943e23fa5169b73adc1fcf8b607084b15e6a013df147e46256e4e803ab75c110f77848136be7d806e8b2f868c16c3a90c14463407038cb7d9285079ef162c6a45cedf9c9f066375c969b5fcbcda37f02aacff4f31cded3767570885426bebd9eca877e44674e9ae2f0c24cdd0e7e1aaf1ff2fe7f80a1c4f5078eb34cd4f06fa94a2d1eab5806ca43fd0f06c60b63d5402b95c70c21ea65a151c5cfaf8262a46be3c722264b",
+      "output_bits": 384,
+      "output": "3054d249f916a6039b2a9c3ebec1418791a0608a170e6d36486035e5f92635eaba98072a85373cb54e2ae3f982ce132b"
+    },
+    {
+      "algorithm": "SHAKE128",
+      "source": "SHAKE128ShortMsg.rsp",
+      "length_bits": 0,
+      "message": "",
+      "source_msg": "00",
+      "output_bits": 128,
+      "output": "7f9c2ba4e88f827d616045507605853e"
+    },
+    {
+      "algorithm": "SHAKE128",
+      "source": "SHAKE128ShortMsg.rsp",
+      "length_bits": 8,
+      "message": "0e",
+      "source_msg": "0e",
+      "output_bits": 128,
+      "output": "fa996dafaa208d72287c23bc4ed4bfd5"
+    },
+    {
+      "algorithm": "SHAKE128",
+      "source": "SHAKE128ShortMsg.rsp",
+      "length_bits": 1336,
+      "message": "18636f702f216b1b9302e59d82192f4e002f82d526c3f04cbd4f9b9f0bcd2535ed7a67d326da66bdf7fc821ef0fff1a905d56c81e4472856863908d104301133ad111e39552cd542ef78d9b35f20419b893f4a93aee848e9f86ae3fd53d27fea7fb1fc69631fa0f3a5ff51267785086ab4f682d42baf394b3b6992e9a0bb58a38ce0692df9bbaf183e18523ee1352c5fad817e0c04a3e1c476be7f5e92f482a6fb29cd4bbf09ea",
+      "source_msg": "18636f702f216b1b9302e59d82192f4e002f82d526c3f04cbd4f9b9f0bcd2535ed7a67d326da66bdf7fc821ef0fff1a905d56c81e4472856863908d104301133ad111e39552cd542ef78d9b35f20419b893f4a93aee848e9f86ae3fd53d27fea7fb1fc69631fa0f3a5ff51267785086ab4f682d42baf394b3b6992e9a0bb58a38ce0692df9bbaf183e18523ee1352c5fad817e0c04a3e1c476be7f5e92f482a6fb29cd4bbf09ea",
+      "output_bits": 128,
+      "output": "b7b9db481898f888e5ee4ed629859844"
+    },
+    {
+      "algorithm": "SHAKE128",
+      "source": "SHAKE128ShortMsg.rsp",
+      "length_bits": 1344,
+      "message": "5d9ff9fe63c328ddbe0c865ac6ba605c52a14ee8e4870ba320ce849283532f2551959e74cf1a54c8b30ed75dd92e076637e4ad5213b3574e73d6640bd6245bc121378174dccdaa769e6e4f2dc650e1166c775d0a982021c0b160fe9438098e86b6cdc786f2a6d1ef68751551f7e99773daa28598d9961002c0b47ab511c8707df69f9b32796b723bf7685251d2c0d08567ad4e8540ddcc1b8a1a01f6c92aaaadcaf42301d9e53463",
+      "source_msg": "5d9ff9fe63c328ddbe0c865ac6ba605c52a14ee8e4870ba320ce849283532f2551959e74cf1a54c8b30ed75dd92e076637e4ad5213b3574e73d6640bd6245bc121378174dccdaa769e6e4f2dc650e1166c775d0a982021c0b160fe9438098e86b6cdc786f2a6d1ef68751551f7e99773daa28598d9961002c0b47ab511c8707df69f9b32796b723bf7685251d2c0d08567ad4e8540ddcc1b8a1a01f6c92aaaadcaf42301d9e53463",
+      "output_bits": 128,
+      "output": "f50af2684408915871948779a14c147c"
+    },
+    {
+      "algorithm": "SHAKE128",
+      "source": "SHAKE128ShortMsg.rsp",
+      "length_bits": 1352,
+      "message": "38c0be76e7b60f262f1499e328e0519f864bbb9d134d00345d8942d0ab762c3936c0cd1896eca6b77b3c01089dd285e9f61708a62e5ea4bf57c50decda5c215fb18ac149d7ace09ffdfed91e7fbf068d96908e42cf1e7ee7bc001c7ee9e378a311e44311923de4681f24c92eb5f0fb13d07ef679ded3b733f402168dc050568dbf97fb79afe8db994874783e27ad8d040ba8e75343c6762c6793a42247eee5a6216b908817f5edbbdf",
+      "source_msg": "38c0be76e7b60f262f1499e328e0519f864bbb9d134d00345d8942d0ab762c3936c0cd1896eca6b77b3c01089dd285e9f61708a62e5ea4bf57c50decda5c215fb18ac149d7ace09ffdfed91e7fbf068d96908e42cf1e7ee7bc001c7ee9e378a311e44311923de4681f24c92eb5f0fb13d07ef679ded3b733f402168dc050568dbf97fb79afe8db994874783e27ad8d040ba8e75343c6762c6793a42247eee5a6216b908817f5edbbdf",
+      "output_bits": 128,
+      "output": "e4786ad8f2ea9c8e420a6f50b5feec9a"
+    },
+    {
+      "algorithm": "SHAKE256",
+      "source": "SHAKE256ShortMsg.rsp",
+      "length_bits": 0,
+      "message": "",
+      "source_msg": "00",
+      "output_bits": 256,
+      "output": "46b9dd2b0ba88d13233b3feb743eeb243fcd52ea62b81b82b50c27646ed5762f"
+    },
+    {
+      "algorithm": "SHAKE256",
+      "source": "SHAKE256ShortMsg.rsp",
+      "length_bits": 8,
+      "message": "0f",
+      "source_msg": "0f",
+      "output_bits": 256,
+      "output": "aabb07488ff9edd05d6a603b7791b60a16d45093608f1badc0c9cc9a9154f215"
+    },
+    {
+      "algorithm": "SHAKE256",
+      "source": "SHAKE256ShortMsg.rsp",
+      "length_bits": 1080,
+      "message": "362f1eb00b37a9613b1ae82b90452579d42f8b1f9ede95f86badc6cdf04c9b79af08be4bc94d7cac136979026b92a2d44d2b642ea1431b47d75fce61367919f171486a007cc271d19de0d1c4c6a11c7a2251fe3aee0bb8938a7dd043d0eb0758a4768c95cc9f6f1703075839487879b47c29c10b2c3e5326ac8f363c65aa4ef76f1b8bd363eb60",
+      "source_msg": "362f1eb00b37a9613b1ae82b90452579d42f8b1f9ede95f86badc6cdf04c9b79af08be4bc94d7cac136979026b92a2d44d2b642ea1431b47d75fce61367919f171486a007cc271d19de0d1c4c6a11c7a2251fe3aee0bb8938a7dd043d0eb0758a4768c95cc9f6f1703075839487879b47c29c10b2c3e5326ac8f363c65aa4ef76f1b8bd363eb60",
+      "output_bits": 256,
+      "output": "c6ce60c1852ea780ed845aac4ca6a30e09f5c0064c9675865178717cfeb1dc97"
+    },
+    {
+      "algorithm": "SHAKE256",
+      "source": "SHAKE256ShortMsg.rsp",
+      "length_bits": 1088,
+      "message": "d8f12b97f81d47aebbfb7314ff04172cf2be71c3778e238bcccdeecb691fbd542b00e5b7b1a0abb507f107f781fea700ea7e375fdea9e029754a0ea62216774bda3c59e8783d022360fe9625621c0d93e27f7bc03632942150716f019d048a752ccc0f93139c55df0f4aaa066a0550cf22e8c54e47d0475ba56b9842a392ffbc6bd98f1e4b64abd1",
+      "source_msg": "d8f12b97f81d47aebbfb7314ff04172cf2be71c3778e238bcccdeecb691fbd542b00e5b7b1a0abb507f107f781fea700ea7e375fdea9e029754a0ea62216774bda3c59e8783d022360fe9625621c0d93e27f7bc03632942150716f019d048a752ccc0f93139c55df0f4aaa066a0550cf22e8c54e47d0475ba56b9842a392ffbc6bd98f1e4b64abd1",
+      "output_bits": 256,
+      "output": "e2e1c432dd07c2ee89a78f31211c92eeb5306c4fa4db93c4e5cd43080d6079e4"
+    },
+    {
+      "algorithm": "SHAKE256",
+      "source": "SHAKE256ShortMsg.rsp",
+      "length_bits": 1096,
+      "message": "a10d05d7e51e75dc150f640ec4722837220b86df2a3580ca1c826ec22ea250977e8663634cc4f212663e6f22e3ffc2a81465e194b885a1356fcbcc0072e1738d80d285e21c70a1f4f5f3296ba6e298a69f3715ff63be4850f5be6cb68cdba5948e3b94dbbce82989aa75b97073e55139aac849a894a71c2294a2776ce6588fb59007b8d796f434da6e",
+      "source_msg": "a10d05d7e51e75dc150f640ec4722837220b86df2a3580ca1c826ec22ea250977e8663634cc4f212663e6f22e3ffc2a81465e194b885a1356fcbcc0072e1738d80d285e21c70a1f4f5f3296ba6e298a69f3715ff63be4850f5be6cb68cdba5948e3b94dbbce82989aa75b97073e55139aac849a894a71c2294a2776ce6588fb59007b8d796f434da6e",
+      "output_bits": 256,
+      "output": "02f17bf86dc7b7f9c3fb96e4b3a10ca574cd0f8dedda50f3dda8008ce9e8fec9"
+    }
+  ]
+}

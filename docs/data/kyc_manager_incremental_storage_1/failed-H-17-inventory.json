@@ -1,0 +1,130 @@
+{
+  "files": {
+    "17/holder.key": {
+      "bytes": 6031,
+      "sha256": "513f997ce59016e6ef3489f5ef77de37b74a3878527ae4577543945d4c952a71",
+      "mode": 384
+    },
+    "17/wallet.bin": {
+      "bytes": 15432,
+      "sha256": "60f3d7ab4b8b78a0cd920e99ce989a5a3b5c3a4b65e46227ed0604219ff33911",
+      "mode": 384
+    },
+    "base/holder/holder.key": {
+      "bytes": 6031,
+      "sha256": "513f997ce59016e6ef3489f5ef77de37b74a3878527ae4577543945d4c952a71",
+      "mode": 384
+    },
+    "base/holder/wallet.bin": {
+      "bytes": 15432,
+      "sha256": "60f3d7ab4b8b78a0cd920e99ce989a5a3b5c3a4b65e46227ed0604219ff33911",
+      "mode": 384
+    },
+    "base/holder-other-0/holder.key": {
+      "bytes": 6031,
+      "sha256": "464e0d9c0d0b5bf68019beaed5719d06a0b9ae36a8bf412d06035e3474407bf2",
+      "mode": 384
+    },
+    "base/holder-other-0/wallet.bin": {
+      "bytes": 15432,
+      "sha256": "b9500e41f107d22de92477fa083e4931f0485d00a3f238256a8e4e4145dc04f1",
+      "mode": 384
+    },
+    "base/holder-other-1/holder.key": {
+      "bytes": 6031,
+      "sha256": "464e0d9c0d0b5bf68019beaed5719d06a0b9ae36a8bf412d06035e3474407bf2",
+      "mode": 384
+    },
+    "base/holder-other-1/wallet.bin": {
+      "bytes": 15432,
+      "sha256": "ea86298b2073a4667bab326ca6990ebc6683fa4ba40bbb9214bcca23a9e2d2dd",
+      "mode": 384
+    },
+    "base/holder-other-2/holder.key": {
+      "bytes": 6031,
+      "sha256": "464e0d9c0d0b5bf68019beaed5719d06a0b9ae36a8bf412d06035e3474407bf2",
+      "mode": 384
+    },
+    "base/holder-other-2/wallet.bin": {
+      "bytes": 15432,
+      "sha256": "c8d29d3716ef96430d44c05c2c25df3856b2929d0c650da16d1bc3d817598d26",
+      "mode": 384
+    },
+    "base/holder-other-3/holder.key": {
+      "bytes": 6031,
+      "sha256": "464e0d9c0d0b5bf68019beaed5719d06a0b9ae36a8bf412d06035e3474407bf2",
+      "mode": 384
+    },
+    "base/holder-other-3/wallet.bin": {
+      "bytes": 15432,
+      "sha256": "230186819112e3cc62af09a59a53633d537a4bee4405056511c44c2c400f2aa2",
+      "mode": 384
+    },
+    "base/holder-other-4/holder.key": {
+      "bytes": 6031,
+      "sha256": "464e0d9c0d0b5bf68019beaed5719d06a0b9ae36a8bf412d06035e3474407bf2",
+      "mode": 384
+    },
+    "base/holder-other-4/wallet.bin": {
+      "bytes": 15432,
+      "sha256": "20d802698c68a4783a5c3363bf24813938f1f8cc4df6191c5b0c109fffb3db79",
+      "mode": 384
+    },
+    "base/holder-other-5/holder.key": {
+      "bytes": 6031,
+      "sha256": "464e0d9c0d0b5bf68019beaed5719d06a0b9ae36a8bf412d06035e3474407bf2",
+      "mode": 384
+    },
+    "base/holder-other-5/wallet.bin": {
+      "bytes": 15432,
+      "sha256": "3dd61191073d15129706bec063477f944ac7f97f2a2cb980f68ba28bf517bdf9",
+      "mode": 384
+    },
+    "base/holder-other-6/holder.key": {
+      "bytes": 6031,
+      "sha256": "464e0d9c0d0b5bf68019beaed5719d06a0b9ae36a8bf412d06035e3474407bf2",
+      "mode": 384
+    },
+    "base/holder-other-6/wallet.bin": {
+      "bytes": 15432,
+      "sha256": "44adcf26221271f391b527379055ff35c07ec686c3cf2d237da9b19ebd5d502b",
+      "mode": 384
+    },
+    "base/holder-other-7/holder.key": {
+      "bytes": 6031,
+      "sha256": "464e0d9c0d0b5bf68019beaed5719d06a0b9ae36a8bf412d06035e3474407bf2",
+      "mode": 384
+    },
+    "base/holder-other-7/wallet.bin": {
+      "bytes": 15432,
+      "sha256": "7f8da93261e383dfb37a29a1e5ace2682a8ef1fba01ecf1c8a90a509a45457ca",
+      "mode": 384
+    },
+    "base/issuer/issuer.sqlite3": {
+      "bytes": 229376,
+      "sha256": "94da29c9597c39781dd5377fe6e125b303fe06c082924fc3d56ffe453b28adf7",
+      "mode": 384
+    },
+    "base/manager/authority.sqlite3": {
+      "bytes": 450560,
+      "sha256": "3e5f8bd57f2bb199e37792f8a5f2572f849af157718411173c925ad1b8e79a48",
+      "mode": 384
+    },
+    "base/verifier-A/authority.sqlite3": {
+      "bytes": 57344,
+      "sha256": "1289c2848da5ad0b218ee39fdfbcd3e7261006e1cb477bd17fe1e974626a58f1",
+      "mode": 384
+    },
+    "base/verifier-B/authority.sqlite3": {
+      "bytes": 57344,
+      "sha256": "7336b3669f26c8c914897526444320441a574bd11da0f62472a504220c533e64",
+      "mode": 384
+    }
+  },
+  "raw_bytes": 1009254,
+  "archive_bytes": 162488,
+  "archive_sha256": "a1499afb00c23fc00ede4543f0cbd2ae8a089d3a1db35c9ccc285dbf00e13b1a",
+  "readback_complete": true,
+  "historical_artifacts_changed": false,
+  "scope": "Only this package's newly created failed H fixture; synthetic keys included"
+}

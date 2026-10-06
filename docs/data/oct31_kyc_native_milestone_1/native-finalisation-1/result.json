@@ -1,0 +1,12 @@
+{
+  "package": "OCT31-KYC-NATIVE-MILESTONE-1",
+  "checkpoint": "native-finalisation-1",
+  "complete": true,
+  "preservation_passed": true,
+  "native_final_binary_validated": true,
+  "new_case_passes": 41,
+  "new_builds": 0,
+  "manifest_sha256": "b81bacf5bddb6d371f0ad50120291d039194f2f490718a9179b3a7d6708a3ba7",
+  "closure": "validation-closure.json",
+  "security_scope": "Approved public native component/reference baseline/benchmark milestone only; Stages 2-3 and AURORA-BRIDGE-001 remain open"
+}

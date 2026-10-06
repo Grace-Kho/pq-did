@@ -1,0 +1,393 @@
+{
+  "proof_attempts": 0,
+  "execution_runs": 5,
+  "runs": [
+    {
+      "phase": "setup",
+      "slot": null,
+      "mem_available_at_admission": 5283139584,
+      "name": "copy-offline-cache",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/seed_cache.py"
+      ],
+      "limit_seconds": 120,
+      "memory_max": 2147483648,
+      "network": false,
+      "start_time_UTC": "2026-09-18T18:46:44Z",
+      "status": "pass",
+      "wall_seconds": 2.6610494679771364,
+      "exit_code": 0,
+      "stop_reason": null,
+      "effective_cgroup": {
+        "memory.max": "2147483648",
+        "memory.swap.max": "0",
+        "cpu.max": "200000 100000",
+        "pids.max": "128"
+      },
+      "sampled_process_tree_RSS_peak": 14295040,
+      "sampled_cgroup_charge_peak": 462196736,
+      "sampled_swap_peak": 0,
+      "sampled_experiment_disk_peak": 4196760273,
+      "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+      "log": "evidence/copy-offline-cache.log",
+      "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+    },
+    {
+      "phase": "build",
+      "slot": null,
+      "mem_available_at_admission": 5256400896,
+      "name": "initial-diagnostic-build",
+      "command": [
+        "/bin/bash",
+        "scripts/build_initial.sh"
+      ],
+      "limit_seconds": 800,
+      "memory_max": 2147483648,
+      "network": false,
+      "start_time_UTC": "2026-09-18T18:50:23Z",
+      "status": "pass",
+      "wall_seconds": 215.9781526409788,
+      "exit_code": 0,
+      "stop_reason": null,
+      "effective_cgroup": {
+        "memory.max": "2147483648",
+        "memory.swap.max": "0",
+        "cpu.max": "200000 100000",
+        "pids.max": "128"
+      },
+      "sampled_process_tree_RSS_peak": 779964416,
+      "sampled_cgroup_charge_peak": 1598500864,
+      "sampled_swap_peak": 0,
+      "sampled_experiment_disk_peak": 5154223125,
+      "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+      "log": "evidence/initial-diagnostic-build.log",
+      "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+    },
+    {
+      "phase": "execute",
+      "slot": 1,
+      "mem_available_at_admission": 5259268096,
+      "name": "baseline-prefix",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/r0_credvalid_cycle_1/target/release/pqdid-r0-host",
+        "run",
+        "baseline-diag",
+        "cred-alpha-42",
+        "baseline-prefix"
+      ],
+      "limit_seconds": 60,
+      "memory_max": 2147483648,
+      "network": false,
+      "start_time_UTC": "2026-09-18T18:57:30Z",
+      "status": "pass",
+      "wall_seconds": 0.5190608889970463,
+      "exit_code": 0,
+      "stop_reason": null,
+      "effective_cgroup": {
+        "memory.max": "2147483648",
+        "memory.swap.max": "0",
+        "cpu.max": "200000 100000",
+        "pids.max": "128"
+      },
+      "sampled_process_tree_RSS_peak": 8937472,
+      "sampled_cgroup_charge_peak": 1835008,
+      "sampled_swap_peak": 0,
+      "sampled_experiment_disk_peak": 5154638151,
+      "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+      "log": "evidence/baseline-prefix.log",
+      "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+    },
+    {
+      "phase": "build",
+      "slot": null,
+      "mem_available_at_admission": 5243404288,
+      "name": "component-before-build",
+      "command": [
+        "/bin/bash",
+        "scripts/build_component_before.sh"
+      ],
+      "limit_seconds": 180,
+      "memory_max": 2147483648,
+      "network": false,
+      "start_time_UTC": "2026-09-18T19:00:08Z",
+      "status": "pass",
+      "wall_seconds": 2.9724384369910695,
+      "exit_code": 0,
+      "stop_reason": null,
+      "effective_cgroup": {
+        "memory.max": "2147483648",
+        "memory.swap.max": "0",
+        "cpu.max": "200000 100000",
+        "pids.max": "128"
+      },
+      "sampled_process_tree_RSS_peak": 235528192,
+      "sampled_cgroup_charge_peak": 71200768,
+      "sampled_swap_peak": 0,
+      "sampled_experiment_disk_peak": 5155935443,
+      "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+      "log": "evidence/component-before-build.log",
+      "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+    },
+    {
+      "phase": "execute",
+      "slot": 2,
+      "mem_available_at_admission": 5247606784,
+      "name": "matrix-before",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/r0_credvalid_cycle_1/target/release/pqdid-r0-host",
+        "run",
+        "component-before",
+        "matrix-00",
+        "matrix-before"
+      ],
+      "limit_seconds": 60,
+      "memory_max": 2147483648,
+      "network": false,
+      "start_time_UTC": "2026-09-18T19:00:31Z",
+      "status": "pass",
+      "wall_seconds": 0.5001012140128296,
+      "exit_code": 0,
+      "stop_reason": null,
+      "effective_cgroup": {
+        "memory.max": "2147483648",
+        "memory.swap.max": "0",
+        "cpu.max": "200000 100000",
+        "pids.max": "128"
+      },
+      "sampled_process_tree_RSS_peak": 8925184,
+      "sampled_cgroup_charge_peak": 1835008,
+      "sampled_swap_peak": 0,
+      "sampled_experiment_disk_peak": 5155941743,
+      "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+      "log": "evidence/matrix-before.log",
+      "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+    },
+    {
+      "phase": "build",
+      "slot": null,
+      "mem_available_at_admission": 5226291200,
+      "name": "correction-validation",
+      "command": [
+        "/bin/bash",
+        "scripts/build_correction.sh"
+      ],
+      "limit_seconds": 180,
+      "memory_max": 2147483648,
+      "network": false,
+      "start_time_UTC": "2026-09-18T19:02:09Z",
+      "status": "pass",
+      "wall_seconds": 24.959248158003902,
+      "exit_code": 0,
+      "stop_reason": null,
+      "effective_cgroup": {
+        "memory.max": "2147483648",
+        "memory.swap.max": "0",
+        "cpu.max": "200000 100000",
+        "pids.max": "128"
+      },
+      "sampled_process_tree_RSS_peak": 477130752,
+      "sampled_cgroup_charge_peak": 258981888,
+      "sampled_swap_peak": 0,
+      "sampled_experiment_disk_peak": 5164970312,
+      "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+      "log": "evidence/correction-validation.log",
+      "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+    },
+    {
+      "phase": "execute",
+      "slot": 3,
+      "mem_available_at_admission": 5252706304,
+      "name": "matrix-after",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/r0_credvalid_cycle_1/target/release/pqdid-r0-host",
+        "run",
+        "component-after",
+        "matrix-00",
+        "matrix-after"
+      ],
+      "limit_seconds": 60,
+      "memory_max": 2147483648,
+      "network": false,
+      "start_time_UTC": "2026-09-18T19:03:12Z",
+      "status": "pass",
+      "wall_seconds": 0.5015095970011316,
+      "exit_code": 0,
+      "stop_reason": null,
+      "effective_cgroup": {
+        "memory.max": "2147483648",
+        "memory.swap.max": "0",
+        "cpu.max": "200000 100000",
+        "pids.max": "128"
+      },
+      "sampled_process_tree_RSS_peak": 8986624,
+      "sampled_cgroup_charge_peak": 1835008,
+      "sampled_swap_peak": 0,
+      "sampled_experiment_disk_peak": 5162092431,
+      "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+      "log": "evidence/matrix-after.log",
+      "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+    },
+    {
+      "phase": "build",
+      "slot": null,
+      "mem_available_at_admission": 5224677376,
+      "name": "ntt-component-build",
+      "command": [
+        "/bin/bash",
+        "scripts/build_ntt.sh"
+      ],
+      "limit_seconds": 180,
+      "memory_max": 2147483648,
+      "network": false,
+      "start_time_UTC": "2026-09-18T19:04:10Z",
+      "status": "pass",
+      "wall_seconds": 3.0908485719992314,
+      "exit_code": 0,
+      "stop_reason": null,
+      "effective_cgroup": {
+        "memory.max": "2147483648",
+        "memory.swap.max": "0",
+        "cpu.max": "200000 100000",
+        "pids.max": "128"
+      },
+      "sampled_process_tree_RSS_peak": 280666112,
+      "sampled_cgroup_charge_peak": 466849792,
+      "sampled_swap_peak": 0,
+      "sampled_experiment_disk_peak": 5162885503,
+      "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+      "log": "evidence/ntt-component-build.log",
+      "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+    },
+    {
+      "phase": "execute",
+      "slot": 4,
+      "mem_available_at_admission": 5273739264,
+      "name": "ntt-z0",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/r0_credvalid_cycle_1/target/release/pqdid-r0-host",
+        "run",
+        "component-ntt",
+        "ntt-z0",
+        "ntt-z0"
+      ],
+      "limit_seconds": 60,
+      "memory_max": 2147483648,
+      "network": false,
+      "start_time_UTC": "2026-09-18T19:04:50Z",
+      "status": "pass",
+      "wall_seconds": 0.5007072769803926,
+      "exit_code": 0,
+      "stop_reason": null,
+      "effective_cgroup": {
+        "memory.max": "2147483648",
+        "memory.swap.max": "0",
+        "cpu.max": "200000 100000",
+        "pids.max": "128"
+      },
+      "sampled_process_tree_RSS_peak": 8998912,
+      "sampled_cgroup_charge_peak": 1835008,
+      "sampled_swap_peak": 0,
+      "sampled_experiment_disk_peak": 5163109220,
+      "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+      "log": "evidence/ntt-z0.log",
+      "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+    },
+    {
+      "phase": "build",
+      "slot": null,
+      "mem_available_at_admission": 5243748352,
+      "name": "corrected-plain-build",
+      "command": [
+        "/bin/bash",
+        "scripts/build_corrected_plain.sh"
+      ],
+      "limit_seconds": 180,
+      "memory_max": 2147483648,
+      "network": false,
+      "start_time_UTC": "2026-09-18T19:04:55Z",
+      "status": "pass",
+      "wall_seconds": 3.027788446022896,
+      "exit_code": 0,
+      "stop_reason": null,
+      "effective_cgroup": {
+        "memory.max": "2147483648",
+        "memory.swap.max": "0",
+        "cpu.max": "200000 100000",
+        "pids.max": "128"
+      },
+      "sampled_process_tree_RSS_peak": 256151552,
+      "sampled_cgroup_charge_peak": 75751424,
+      "sampled_swap_peak": 0,
+      "sampled_experiment_disk_peak": 5164243508,
+      "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+      "log": "evidence/corrected-plain-build.log",
+      "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+    },
+    {
+      "phase": "execute",
+      "slot": 6,
+      "mem_available_at_admission": 5256966144,
+      "name": "corrected-full",
+      "command": [
+        "/home/grace/projects/pq-did/experiments/r0_credvalid_cycle_1/target/release/pqdid-r0-host",
+        "run",
+        "corrected-plain",
+        "cred-alpha-42",
+        "corrected-full"
+      ],
+      "limit_seconds": 60,
+      "memory_max": 2147483648,
+      "network": false,
+      "start_time_UTC": "2026-09-18T19:05:47Z",
+      "status": "pass",
+      "wall_seconds": 0.5426567879912909,
+      "exit_code": 0,
+      "stop_reason": null,
+      "effective_cgroup": {
+        "memory.max": "2147483648",
+        "memory.swap.max": "0",
+        "cpu.max": "200000 100000",
+        "pids.max": "128"
+      },
+      "sampled_process_tree_RSS_peak": 8933376,
+      "sampled_cgroup_charge_peak": 2342912,
+      "sampled_swap_peak": 0,
+      "sampled_experiment_disk_peak": 5164312620,
+      "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+      "log": "evidence/corrected-full.log",
+      "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+    },
+    {
+      "phase": "check",
+      "slot": null,
+      "mem_available_at_admission": 5267152896,
+      "name": "final-checks",
+      "command": [
+        "/bin/bash",
+        "scripts/final_checks.sh"
+      ],
+      "limit_seconds": 60,
+      "memory_max": 268435456,
+      "network": false,
+      "start_time_UTC": "2026-09-18T19:13:46Z",
+      "status": "pass",
+      "wall_seconds": 2.0630299129989,
+      "exit_code": 0,
+      "stop_reason": null,
+      "effective_cgroup": {
+        "memory.max": "268435456",
+        "memory.swap.max": "0",
+        "cpu.max": "200000 100000",
+        "pids.max": "128"
+      },
+      "sampled_process_tree_RSS_peak": 26775552,
+      "sampled_cgroup_charge_peak": 207245312,
+      "sampled_swap_peak": 0,
+      "sampled_experiment_disk_peak": 5165091069,
+      "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+      "log": "evidence/final-checks.log",
+      "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+    }
+  ]
+}

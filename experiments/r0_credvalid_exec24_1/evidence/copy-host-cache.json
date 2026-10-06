@@ -1,0 +1,36 @@
+{
+  "phase": "setup",
+  "slot": null,
+  "mem_available_at_admission": 4748566528,
+  "name": "copy-host-cache",
+  "command": [
+    "/usr/bin/python3",
+    "scripts/seed_cache.py"
+  ],
+  "limit_seconds": 120,
+  "memory_max": 2147483648,
+  "network": false,
+  "start_time_UTC": "2026-09-19T03:33:32Z",
+  "status": "pass",
+  "wall_seconds": 1.1405401259835344,
+  "exit_code": 0,
+  "stop_reason": null,
+  "effective_cgroup": {
+    "memory.max": "2147483648",
+    "memory.swap.max": "0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "sampled_process_tree_RSS_peak": 28188672,
+  "sampled_cgroup_charge_peak": 1210494976,
+  "sampled_swap_peak": 0,
+  "sampled_cgroup_kernel_peak": 1210499072,
+  "sampled_temporary_bytes_peak": 0,
+  "sampled_experiment_disk_peak": 5721981744,
+  "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+  "log": "evidence/copy-host-cache.log",
+  "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~20 ms excluding metadata/disk polling may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently.",
+  "cgroup_memory_peak_bytes": 1210884096,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+  "temporary_bytes_at_exit": 0
+}

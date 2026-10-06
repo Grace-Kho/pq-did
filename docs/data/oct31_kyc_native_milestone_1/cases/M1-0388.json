@@ -1,0 +1,37 @@
+{
+  "invocation_id": "M1-0388",
+  "case_id": "N-10",
+  "ordinal": 388,
+  "cumulative_invocations": 836,
+  "status": "pass",
+  "result": {
+    "id": "N-10",
+    "command": [
+      "/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/build/aurora_masking_native",
+      "10"
+    ],
+    "exit_code": 0,
+    "seconds": 0.035523060942068696,
+    "stdout": "(enter) LDT Reducer: Submit masking polynomial\t[             ]\t(1790650820.0065s x0.00 from start)\n  (enter) Call to additive_FFT_wrapper       \t[             ]\t(1790650820.0065s x0.00 from start)\n    * Vector size: 20\n    * Subspace size: 256\n  (leave) Call to additive_FFT_wrapper       \t[0.0035s x1.00]\t(1790650820.0100s x0.00 from start)\n(leave) LDT Reducer: Submit masking polynomial\t[0.0036s x1.00]\t(1790650820.0101s x0.00 from start)\nVALUE reducer 000000003231302f2e2d2c2b2a292827262524232221201f 0000000029b3fc1fc5253fd84084dc17c12d3bd0448cf19c\nPATH combined_LDT_virtual_oracle::set_random_coefficients;evaluated_contents;evaluation_at_point;LDT_instance_reducer::register_interactions;submit_masking_polynomial[N-10]\nPASS N-10\n",
+    "stderr": "",
+    "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+    "expected_path": "experiments/aurora_masking_milestone_1/overlay/masking_native.cpp",
+    "expected_sha256": "ab3c66696547b4a221bc0b3a7922e49adb09dcfbce7d0425710e2ba698109b94",
+    "private_witness": false,
+    "proof_attempt": false,
+    "comparison": {
+      "independent_schoolbook_polynomial_assertions": true,
+      "oracle": "overlay/masking_native.cpp: add/mul/divrem/at/interpolate",
+      "finite_public_fixture_only": true
+    },
+    "actual_calls": [
+      "combined_LDT_virtual_oracle::set_random_coefficients",
+      "evaluated_contents",
+      "evaluation_at_point",
+      "LDT_instance_reducer::register_interactions",
+      "submit_masking_polynomial"
+    ],
+    "status": "pass"
+  },
+  "seconds": 0.03676291205920279
+}

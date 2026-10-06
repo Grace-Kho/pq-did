@@ -1,0 +1,8 @@
+{
+  "failure": "access-corrected",
+  "cause": "Permission test reused the same global operation ID for writer replacement and allocation. The existing store correctly returned operation-conflict.",
+  "correction": "Use distinct administration and allocation operation IDs; keep store conflict semantics unchanged. Decode kernel uid/gid with unsigned native fields.",
+  "resource_failure": false,
+  "reused_passed_cases": 0,
+  "authorisation": "Routine fixture correction within the user-authorised package and unchanged budget."
+}

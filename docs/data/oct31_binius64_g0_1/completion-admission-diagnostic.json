@@ -1,0 +1,9 @@
+{
+  "command": "run.py job source-quality tool 20 --completion -- python tooling.py",
+  "exit_status": 1,
+  "error": "package completion evidence reserve",
+  "cause": "argparse REMAINDER captures options after positionals; --completion was not parsed as an option",
+  "worker_started": false,
+  "resource_breach": false,
+  "correction": "Place authorised completion flag before positional job arguments; same lint/format worker, unchanged guard policy. No functional test reclassified."
+}

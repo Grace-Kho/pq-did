@@ -1,0 +1,14 @@
+{
+  "sha256": {
+    "docs/data/s3_aurora_transcript_regression_1/audit.py": "de910762cd8f94359775d4c10a2037e7a489f7c01c3791d4b7b8c6423726965c",
+    "docs/data/s3_aurora_transcript_regression_1/checks.py": "5ef0b32a49692ea47b4b5902dcd90e60ef1bc2691b14ee4c018237e9d94a6172",
+    "docs/data/s3_aurora_transcript_regression_1/close.py": "ee3792bc08cc99b001cc790239f95f4ff7771105fd1eebe67a7d4f930315037b",
+    "docs/data/s3_aurora_transcript_regression_1/preflight.py": "1b9b0141bcaee3aa48f28dc0739bad5778f77a2b4936d1e238d5064e7fc7e5ea",
+    "docs/data/s3_aurora_transcript_regression_1/prepare.py": "7b9df869ff003b8e4e6c51714edf13fbb26080ca88cfc339b01d414f552c70a0",
+    "docs/data/s3_aurora_transcript_regression_1/run_checks.py": "70a991c59943d1aeaf7f133a1f37fe9e21f9a790a4520ec24f0f35899d5bd651",
+    "docs/data/s3_aurora_transcript_regression_1/scope_loader.py": "892eab767c388a59c6de1c8c6c7dc2d7702a123e0db1b510c1b40d4eb3758250",
+    "experiments/aurora_transcript_regression_1/cases.py": "069dfa2af7d9acaa0a87abc13a4ad06f25d06507e75a2b06e4cf5fd5fdbe8ba1",
+    "experiments/aurora_transcript_regression_1/reference_trace.py": "aa6928894dedb32ccd9119c74b5a8722837eff71d6020bb7e97e23daf5500ab8",
+    "experiments/aurora_transcript_regression_1/transcript.py": "847eec1ba6bdb4a9ebec85313bf8f5ff0eb74617a4bfa73287c734ec00d88adf"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "failure": "focused-corrected",
+  "cause": "Durable verifier passed three positional arguments to the existing keyword-only ReferenceVerifier constructor.",
+  "correction": "Use exact keyword-only interface; preserve final EXPIRED decision; pin signing generation/sequence in journal against relabelling after replacement, add targeted old-worker delayed signing/publication/consume cases.",
+  "resource_failure": false,
+  "reuse_passed_cases": 9,
+  "authorisation": "Explicit task permits fixing demonstrated defects within unchanged budget."
+}

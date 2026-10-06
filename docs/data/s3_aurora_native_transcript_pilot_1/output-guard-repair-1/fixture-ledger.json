@@ -1,0 +1,32 @@
+[
+  {
+    "id": "GUARD-01",
+    "invocation": 420,
+    "status": "pass",
+    "seconds": 0.0003255419433116913
+  },
+  {
+    "id": "GUARD-02",
+    "invocation": 421,
+    "status": "pass",
+    "seconds": 0.00031348399352282286
+  },
+  {
+    "id": "GUARD-03",
+    "invocation": 422,
+    "status": "pass",
+    "seconds": 0.0003093980485573411
+  },
+  {
+    "id": "GUARD-04",
+    "invocation": 423,
+    "status": "pass",
+    "seconds": 0.0023037090431898832
+  },
+  {
+    "id": "GUARD-05",
+    "invocation": 424,
+    "status": "pass",
+    "seconds": 0.0024534740950912237
+  }
+]

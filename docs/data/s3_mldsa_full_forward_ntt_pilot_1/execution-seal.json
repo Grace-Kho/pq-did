@@ -1,0 +1,31 @@
+{
+  "kind": "Execution input seal, not a historical baseline",
+  "sha256": {
+    "docs/data/s3_mldsa_full_forward_ntt_pilot_1/audit.py": "1d39eafdd450a5f2d0b69b0d038eda9f60bf3096000f076ffb217749827cdcd4",
+    "docs/data/s3_mldsa_full_forward_ntt_pilot_1/close.py": "278fc6370c82e6db1117f8b2e2088675047ddec8b1d7799de600fc9384f0c742",
+    "docs/data/s3_mldsa_full_forward_ntt_pilot_1/config.json": "59ba00789cc3a1a0613e5ec73df1bfd00a96c9b0d4b1e874e114b00b6c129ce6",
+    "docs/data/s3_mldsa_full_forward_ntt_pilot_1/contract.json": "044427f6b50e54d1b2b2eb7141ac2bda321f4381f85c793c2d5e0e6ee66932c0",
+    "docs/data/s3_mldsa_full_forward_ntt_pilot_1/preflight.py": "2780d8ea47c18a951f82606eaa363a1a26cc99ff0141e5044d7318743f6d3ad0",
+    "docs/data/s3_mldsa_full_forward_ntt_pilot_1/prepare.py": "b699a9caa67654bdfa02e49ab878242de14d67305d77dcd3cee0c42568fbc3b4",
+    "docs/data/s3_mldsa_full_forward_ntt_pilot_1/run_checks.py": "8c44939488b924c024b8208e20d16b8b3a97380a62b0fd3b6ab698351df61bff",
+    "docs/data/s3_mldsa_full_forward_ntt_pilot_1/seal.py": "818fa78926366707c2c6265ed4b2cc2535bd98f30e7c7181f76d92b496f42b07",
+    "docs/data/s3_mldsa_full_forward_ntt_pilot_1/summarise.py": "7e37ef808d0ac30ee5be1dd889b1b3901eb0e1c89ce366ee800772ed01e5be5f",
+    "experiments/mldsa_butterfly_composition_1/candidate.py": "ef6ad00eb3c7bbbb4f6f8553e510e0adce687c6ec5a969661cf723a08f04da8a",
+    "experiments/mldsa_forward_ntt_stage_1/candidate.py": "6656a0bb3be323b747ef26ceb615ab0cd7c0be21e58f1a85273d9799e9c7ee43",
+    "experiments/mldsa_forward_ntt_stage_1/run_pilot.py": "1703959a54506f084ee6a23d4be8817905872cd845c577d10a8bdda5ab5f3ee8",
+    "experiments/mldsa_full_forward_ntt_1/candidate.py": "f299595e8c427f65f603804019d27163199a5614e71b2e899f59f225c964abb4",
+    "experiments/mldsa_full_forward_ntt_1/oracle.py": "59728598362ae0725b28b8681fe75ed0502caca751eea1c7ebcacc1b1d1f3dc0",
+    "experiments/mldsa_full_forward_ntt_1/run_pilot.py": "7f8e6cfdc7c72bf1cea81f240e239047238712e056d1b04e4bfe656b5aa4e82a",
+    "experiments/mldsa_modmul_lowering_1/candidate.py": "70ea9bc68d2a36b36e0d6c84371b30844b2392816ebbc22e5b94618f3fa9e90a",
+    "src/pqdid/bounded_mldsa.py": "18b5402247086ccee88d4c4f452234f672d0db15d0324164ad1c2523f531f7f1",
+    "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+    "src/pqdid/circuits/division.py": "03c3c7abcaaa267450930707b9a2c9534143cc95c470635367cc4a9c66dba8ba",
+    "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+    "src/pqdid/circuits/scalar_ring.py": "f2012a9d1202686368eb2693495bccd00af8be73ce8a00535a8ced9a190adf45",
+    "src/pqdid/circuits/signature.py": "5fb391650765018230c4f9bc54370ddf28c1c2ce7fd92b9bef93113aeb9c6133",
+    "src/pqdid/circuits/signature_inputs.py": "67f3d3ace81385a93ef9c113c6b4cbd58a00d028fb53cebfaed145055d612762",
+    "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec",
+    "tests/reference/scalar_oracle.py": "3cf218d9a1476e315692404d0e6bb8adf88e18df46387d8fc5b9e9c1d589f2b4",
+    "tests/reference/signature_oracle.py": "dbc14fd88a071cad58915da7c8cef2bd6b6f800d27e5c2b7ae156f7c1cdc1ed8"
+  }
+}

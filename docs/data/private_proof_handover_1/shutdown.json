@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "only_slice": "pqdid-proof-handover-1.slice",
+  "before": {
+    "LoadState": "loaded",
+    "ActiveState": "active",
+    "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-proof.slice/pqdid-proof-handover.slice/pqdid-proof-handover-1.slice"
+  },
+  "after": {
+    "LoadState": "loaded",
+    "ActiveState": "inactive",
+    "ControlGroup": ""
+  },
+  "units": {
+    "pqdid-proof-handover-1-static": {
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "ControlGroup": ""
+    },
+    "pqdid-proof-handover-1-static-no-cache": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "pqdid-proof-handover-1-package": {
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "ControlGroup": ""
+    },
+    "pqdid-proof-handover-1-continuation-static": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "pqdid-proof-handover-1-archive-readback": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "pqdid-proof-handover-1-prepare": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "pqdid-proof-handover-1-full-audit": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "pqdid-proof-handover-1-final-readback": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    }
+  },
+  "surviving_descendants": [],
+  "temporary_files": 0,
+  "pilot_activation": false
+}

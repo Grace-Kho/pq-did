@@ -1,0 +1,13 @@
+{
+  "case_id": "G-05",
+  "invocation_id": "AR1-0071",
+  "status": "pass",
+  "details": {
+    "coverage": "small isolated resource/stream metadata fixture",
+    "expected": "pass",
+    "actual_resource_exhaustion": false,
+    "full_relation": false
+  },
+  "seconds": 8.589797653257847e-05,
+  "work_events": 6
+}

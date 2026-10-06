@@ -1,0 +1,25 @@
+{
+  "name": "retain-scaling-failure",
+  "phase": "tool",
+  "argv": [
+    "/home/grace/projects/pq-did/.venv/bin/python",
+    "-I",
+    "-B",
+    "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/retain_failure.py"
+  ],
+  "limit_seconds": 20,
+  "child_seconds": 19,
+  "status": "launched",
+  "unit": "pqdid-kyc-execution-1-retain-scaling-failure",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 878476,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 31100874,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 553757
+  },
+  "available_memory": 4086554624,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

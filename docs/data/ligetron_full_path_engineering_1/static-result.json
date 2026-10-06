@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "ruff": true,
+  "patch_applicability": true,
+  "overlay_seal": true,
+  "native_compilation": "unrun",
+  "functional_invocations": 0
+}

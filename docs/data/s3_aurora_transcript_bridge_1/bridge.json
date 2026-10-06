@@ -1,0 +1,51 @@
+{
+  "package": "S3-AURORA-TRANSCRIPT-BRIDGE-1",
+  "decision": 2,
+  "issue": "AURORA-BRIDGE-001",
+  "issue_closed": false,
+  "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+  "pinned_source_text_files": 21,
+  "complete_checkout_or_dependency_closure_verified": false,
+  "variant": "non-holographic Aurora, native ZK, additive binary field, proven FRI/reducer",
+  "draft_profile": "PQDID-AURORA-AUTH-DRAFT1, inactive",
+  "source_demonstrated_blockers": [
+    "blake2b absorb_hash_digest hashes D bytes of state||new_digest, ignoring new_digest",
+    "Aurora wrapper does not absorb the public statement or relation in hash-chain initialisation",
+    "PoW is unconditionally registered/verified and its answer is not absorbed before queries",
+    "zero-sum sumcheck mask and additional random coefficients differ from Figure 5",
+    "randomised LDT mask coefficient differs from Protocol 8.6 unit coefficient"
+  ],
+  "query_symbols": {
+    "a": "lincheck repetitions",
+    "P": "LDT combinations a_prime",
+    "I": "FRI interaction repetitions a_F",
+    "q": "FRI random seed positions q_F",
+    "r": "fold count, localisation dimension one throughout",
+    "L_j": "2^(d-j)",
+    "U_j": "distinct scalar positions in union of full two-element cosets at layer j",
+    "D_f": "explicit terminal coefficient count D/2^r"
+  },
+  "source_query_handles_with_repeats": "2*q*I*P*r",
+  "distinct_positions_per_layer_upper": "min(2*q,L_j)",
+  "initial_real_columns": "4+a+P",
+  "second_real_columns": "a",
+  "folded_real_columns_per_layer": "I*P",
+  "opened_field_elements": "(4+2*a+P)*U_0 + I*P*sum(U_j,j=1..r-1)",
+  "source_direct_fields": "I*P*D_f",
+  "paper_aligned_direct_fields": "a+I*P*D_f",
+  "source_mask_setting": "2*q+1, position-bound setting; not established as joint theorem budget",
+  "conservative_inventory_bound": "B_view=(4+2*a+P)*min(2*q,L_0)+I*P*sum(min(2*q,L_j),j=1..r-1)+M_dir",
+  "budget_warning": "B_view inventories scalar disclosure. It is not a proved simulator-query bound for the modified library protocol.",
+  "unresolved": [
+    "joint simulator and masking budget, including terminal polynomial and all repetitions",
+    "sumcheck masking/repetition equivalence and exceptional challenges",
+    "FRI degree metadata and full field/domain dependency identities",
+    "packed-field salted commitment and labelled hash-port/challenge mapping",
+    "restricted state-restoration and round-by-round knowledge extraction",
+    "quantum/adaptive multi-presentation composition and concrete BLAKE2b instantiation",
+    "finite authentication relation dimensions and parameters"
+  ],
+  "new_tests": 0,
+  "new_proofs": 0,
+  "numerical_security_claim": null
+}

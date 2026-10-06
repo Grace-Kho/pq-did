@@ -1,0 +1,39 @@
+{
+  "sha256": {
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop/libiop/relations/variable.tcc": "f32541359199c2dfbb34feede04276eacc533c93a3d7175cba995dc04742ce99",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop/libiop/relations/variable.hpp": "02727e0f1fa8d7e81f2e83d9edc0dce42782791e6677cd449a4caac16043e99e",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop/libiop/relations/r1cs.tcc": "b3817752127983eba7fcc1d110fc44daeae6c34f8d43c4672ead34f31f9f2658",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop/libiop/relations/sparse_matrix.cpp": "d2f3f476f64bf6a08d47fdc49e9d9e7b676fe71d4a61e875af11417f4c5a4a3c",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop/libiop/relations/sparse_matrix.hpp": "62d73ff59b5e98770f7e4ba2cce276334347bdd9d9eb0f4caf579199705996bf",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop/libiop/relations/sparse_matrix.tcc": "3305225b4fe55288c9d256be6b707e9775402c267098f837a40347b98ad84970",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libff/libff/algebra/fields/prime_base/fp.hpp": "ede89c31825e8605032821129e467aeb1df69ca72a49ad7945fdb86716db9298",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libff/libff/algebra/fields/prime_base/fp.tcc": "926890d4c6403621a54adeb40212bb83d92bffb69e585856db533b4cffadc943",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libff/libff/CMakeLists.txt": "25bc96fcc85f1c327e7a44d7014112b2fffccb077fcdaefce6d58a4cd57de2e9",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libff/CMakeLists.txt": "93195c5df7cf32c8bfc9b647b1acc673dbc0ac5eae465845e6f6b3f6edd4368c",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/overlay/CMakeLists.txt": "fb72c9eb78bb7103f8968214e3d116f1744d6a57b54c12186cdf2cc5a7e21c3f",
+    "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/overlay/exp2_native.cpp": "52f847c2ac660396b76852f8de88b9b6ea68f7153b869e2350b9959df09dcedd",
+    "docs/data/s3_aurora_native_transcript_pilot_1/reconciliation-1/build-1.log": "042e23772b9cbcb7fd9188153244481ffce55846cbd880a5e4522c90de2008db",
+    "docs/data/s3_aurora_native_transcript_pilot_1/reconciliation-1/build-2.log": "886347618a9119a8164f1c478d8405db87803a68d6a8e3b288bc5d56f4364b6a",
+    "docs/data/s3_aurora_native_transcript_pilot_1/reconciliation-1/build-only-correction.json": "db78f0dc260e0b4ce974644e80abd5cba2589b03a945b432c9a541aebb53b0f0",
+    "docs/data/s3_aurora_native_transcript_pilot_1/reconciliation-1/native-exp2.patch": "ce19828ad03be9a869514933e80e8dd9f76246b42ed1888855fff73941ce1ae7",
+    "docs/data/s3_aurora_native_transcript_pilot_1/reconciliation-1/native_sources.py": "91bfa53637f99d41ac184772e0f80294cd2268fcbae071df9de981c3033415ef",
+    "docs/data/s3_aurora_native_transcript_pilot_1/reconciliation-1/native-inputs-v2.json": "118190cb4f68c40b17cfd635ecce8d75bc29d7d0aa66a5d4abbd4d16352bf28c",
+    "docs/data/s3_aurora_native_transcript_pilot_1/reconciliation-1/validation-closure.json": "d59610d1b645f2124dd22ac004752b383bf6e373bf5e6a3dccb5a1ef54b90bf5",
+    "docs/data/s3_aurora_native_transcript_pilot_1/reconciliation-1/manifest.json": "f3125c0cdbee596222ebf0736a8647afc94d37a02e21511fec2d5dffe3d2bd56",
+    "docs/manuscript/PQ_DID__Implementation.pdf": "d17ca0a20b319b88e959467cae92d91d619973f84384710ecbf960a3b850aeca",
+    "docs/data/s3_aurora_native_dependency_lock_1/continuation-1/validation-closure.json": "c8205747b55e97680ba6b94002580521a223c1b6cf711fa6b5774e376277c4d6"
+  },
+  "target_path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop/libiop/relations/variable.tcc",
+  "target_sha256": "f32541359199c2dfbb34feede04276eacc533c93a3d7175cba995dc04742ce99",
+  "proposed_target_sha256": "74ae2e8f6c7caed735be225dc63f25a84bb5b790579f0afe124aafcb0d7bc3bd",
+  "patch_sha256": "8a28d44432c4dfd2ff41a07bb4affd1a154b52ae781289210410586b43e4c357",
+  "replacements": {
+    "return (this->index == other.index);": "return (this->index_ == other.index_);",
+    "return linear_term<FieldT>(this->index, field_coeff * this->coeff);": "return linear_term<FieldT>(this->index_, field_coeff * this->coeff_);",
+    "return linear_term<FieldT>(this->index, -this->coeff);": "return linear_term<FieldT>(this->index_, -this->coeff_);",
+    "return (this->index == other.index &&\n            this->coeff == other.coeff);": "return (this->index_ == other.index_ &&\n            this->coeff_ == other.coeff_);"
+  },
+  "changed_functions": 4,
+  "changed_identifier_tokens": 10,
+  "source_not_modified": true
+}

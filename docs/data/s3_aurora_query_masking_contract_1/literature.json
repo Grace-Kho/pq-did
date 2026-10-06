@@ -1,0 +1,57 @@
+{
+  "Aurora": {
+    "url": "https://eprint.iacr.org/2018/828.pdf",
+    "version": "8 May 2019,64 pages",
+    "full_cached_text_read": [
+      "4.6",
+      "4.7",
+      "5.8",
+      "7.4/7.5",
+      "8.5/8.6",
+      "9.2",
+      "Figure5"
+    ],
+    "important_refinement": "RS model counts distinct common-domain positions, not scalar sum across columns",
+    "screenshot_attempts": [
+      {
+        "page_zero_based": 19,
+        "outcome": "403 Forbidden"
+      },
+      {
+        "page_zero_based": 38,
+        "outcome": "403 Forbidden"
+      },
+      {
+        "page_zero_based": 41,
+        "outcome": "403 Forbidden"
+      }
+    ],
+    "screenshots_verified": false
+  },
+  "BCS": {
+    "url": "https://eprint.iacr.org/2016/116.pdf",
+    "version": "10 February 2016,48 pages",
+    "full_cached_text_read": [
+      "3.3/Lemma3.4",
+      "6",
+      "Theorem7.1",
+      "7.4"
+    ]
+  },
+  "CMS": {
+    "url": "https://www.iacr.org/archive/tcc2019/11891143/11891143.pdf",
+    "version": "TCC2019 proceedings,29 pages",
+    "full_cached_text_read": [
+      "informal Theorem3",
+      "2.9",
+      "3.3"
+    ],
+    "formal_full_version_url": "https://eprint.iacr.org/2019/834.pdf",
+    "full_version_lookup": "Internal Error; unavailable, no formal IOP theorem asserted"
+  },
+  "local_full_source_downloads": 0,
+  "precise_quantum_constants_verified": false,
+  "directly_timed_wall_seconds": 14.198,
+  "first_find_call_rounded_charge_seconds": 3,
+  "total_lookup_charge_seconds": 17.198
+}

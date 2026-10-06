@@ -1,0 +1,12 @@
+{
+  "Cargo.lock": {
+    "identical_registry_pins": true,
+    "added": [],
+    "removed": []
+  },
+  "methods/guest/Cargo.lock": {
+    "identical_registry_pins": true,
+    "added": [],
+    "removed": []
+  }
+}

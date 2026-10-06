@@ -1,0 +1,14 @@
+{
+  "invocation_id": "KYCM1-0006",
+  "case_id": "S-06",
+  "work_event_reservation": 0,
+  "ordinal": 6,
+  "cumulative_invocations": 1097,
+  "status": "pass",
+  "details": {
+    "stale_migration_rejected": true
+  },
+  "seconds": 0.12146231113001704,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

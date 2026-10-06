@@ -1,0 +1,72 @@
+{
+  "package": "S2-UPDATE-WIT-1",
+  "passed": true,
+  "test_counts": {
+    "focused": 70,
+    "regression": 25
+  },
+  "tests_total": 95,
+  "failures": 0,
+  "skips": 0,
+  "protected_files": 8723,
+  "unchanged_protected_files": 8720,
+  "allowed_changed_files": [
+    "docs/spec_issues.md",
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "missing_files": [],
+  "manuscript_identity_matches": true,
+  "original_source_encodings_vectors_dependencies_preserved": true,
+  "historical_evidence_and_ledgers_preserved": true,
+  "proof_attempt_ledger_sha256": "fc64f7efbd2f20cd23fec24d828f36f1460afb0b73a76ea256d0716f309d75c5",
+  "proof_attempts_used": 2,
+  "unused": 1,
+  "new_proofs": 0,
+  "new_zkvm_executions": 0,
+  "dependencies_installed": 0,
+  "proof_parameters_changed": false,
+  "CPU_proving_paused": true,
+  "local_markdown_link_paths_checked": 229,
+  "JSON_files_parsed": 16,
+  "final_lint_and_format": [
+    {
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/ruff",
+        "check",
+        "--no-cache",
+        "src/pqdid/witness_updates.py",
+        "tests/unit/witness_update_cases.py",
+        "tests/unit/test_witness_updates.py",
+        "docs/data/s2_update_wit_1/run_checks.py",
+        "docs/data/s2_update_wit_1/audit.py"
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/ruff",
+        "format",
+        "--check",
+        "--no-cache",
+        "src/pqdid/witness_updates.py",
+        "tests/unit/witness_update_cases.py",
+        "tests/unit/test_witness_updates.py",
+        "docs/data/s2_update_wit_1/run_checks.py",
+        "docs/data/s2_update_wit_1/audit.py"
+      ],
+      "exit_code": 0,
+      "output": "5 files already formatted\n"
+    }
+  ],
+  "initial_four_check_wall_seconds": 3.2829290369991213,
+  "audit_lint_correction": true,
+  "failed_audit_and_stop_preserved": true,
+  "implementation_tests_repeated": false,
+  "validation_reused": [
+    "Earlier reference/circuit validation; only relevant regressions rerun",
+    "Original R0 six native tests/35 comparisons and enrolment proof evidence"
+  ],
+  "scope": "Local witness-update reference results only; no knowledge/ZK/proof claim"
+}

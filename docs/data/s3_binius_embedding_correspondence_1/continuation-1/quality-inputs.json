@@ -1,0 +1,14 @@
+{
+  "sha256": {
+    "docs/data/s3_binius_embedding_correspondence_1/continuation-1/admission.py": "4405e9c6394bfbb955a281620c692214c06d31f49658589b8d9d0c3bfbcfac3a",
+    "docs/data/s3_binius_embedding_correspondence_1/continuation-1/checks.py": "5a36c4d438863cf33be85d13b24441f5551cfa119b260666df80549ab490ccb8",
+    "docs/data/s3_binius_embedding_correspondence_1/continuation-1/run.py": "939a8ee10e6646321a0d5a2b7d3a0ccdbf897ab9cfb084df78ee3f55f8ef3539",
+    "experiments/binius_embedding_correspondence_1/cases.py": "ee192c78e3cd23d0001a315f4bf0c56009a06921701d8945a0b816873db1ed76",
+    "experiments/binius_embedding_correspondence_1/encoder_model.py": "f60da9af70077640dd8a4e6ba496320e5667d29540a80d00f3dd30a72aa28067",
+    "experiments/binius_embedding_correspondence_1/field_model.py": "41e6f24a185e6d3e3f282df97f87efb14390def6dba4396ac36ae29951233122",
+    "experiments/binius_embedding_correspondence_1/layout.py": "e01d1fe6e40d4f7e6e9b76ecd9d78bd15efa3194e03389e0d8d7c7aa475c0395",
+    "experiments/binius_embedding_correspondence_1/polynomial_reference.py": "75e091f985e22c55f60a5b76b9bc24a852ce207580e2a50b06f2c36564499c24",
+    "experiments/binius_embedding_correspondence_1/relations.py": "80b21506d058d765a34306d386aa926bbcec37366758787aa04c22a0a188c4f5"
+  },
+  "historical_seals_verified": 82
+}

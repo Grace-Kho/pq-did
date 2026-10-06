@@ -1,0 +1,51 @@
+{
+  "case_id": "Q-01",
+  "invocation_id": "AR1-0075",
+  "status": "pass",
+  "details": {
+    "complete_relation": false,
+    "outcome": "labelled-prefix-only",
+    "reason": "gate-count limit",
+    "progress": {
+      "gates": 2000000,
+      "wires": 2042634,
+      "serialised_bytes_so_far": 34000056,
+      "stored_bytes": 0,
+      "complete": false
+    },
+    "completed_components": {
+      "completed_components": [
+        [
+          "private-layout-and-same-attributes-disclosure",
+          0,
+          88212
+        ],
+        [
+          "same-holder-secret-and-certified-body",
+          88212,
+          281749
+        ]
+      ],
+      "gates": 281749
+    },
+    "gate_counts_xor_and_not": [
+      1377516,
+      580684,
+      41800
+    ],
+    "partial_rows": 2042632,
+    "partial_nonzero_terms": [
+      3309203,
+      2085095,
+      2000000
+    ],
+    "partial_matrix_sha256": "3f0fd8203d17310a87289e2617fb10fb912895c061788038c6e3182d6ce561c3",
+    "counting_seconds": 8.396078797988594,
+    "witness_evaluation_performed": false,
+    "stored_trace_or_matrix_bytes": 0,
+    "codewords_allocated": 0,
+    "repeated_generation_authorised": false
+  },
+  "seconds": 8.456853482988663,
+  "work_events": 4042632
+}

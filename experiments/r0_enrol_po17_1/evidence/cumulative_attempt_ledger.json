@@ -1,0 +1,27 @@
+{
+  "total_budget": 3,
+  "attempts_used": 2,
+  "remaining": 1,
+  "previous_ledger": "../r0_succinct_proof_1/evidence/run_ledger.json",
+  "previous_ledger_sha256": "b02de78262502297d31a07971b2a10cb356dcbc74e6ab98cd56daa72d5b101a3",
+  "attempts": [
+    {
+      "number": 1,
+      "package": "R0-SUCCINCT-PROOF-1",
+      "outcome": "timeout_during_sixth_lift",
+      "final_receipt": false
+    },
+    {
+      "number": 2,
+      "package": "R0-ENROL-PO17-1",
+      "outcome": "succinct_generated_and_independently_verified",
+      "resource_record": "evidence/attempt2.json",
+      "final_receipt": true,
+      "receipt": "receipts/attempt2.bin",
+      "receipt_sha256": "2c711beaa6144968aac66421eba10dff1f883133f4d5ec3e1256e3b68e529cc5",
+      "tamper_rejections": 8
+    }
+  ],
+  "this_package_max_additional_attempts": 1,
+  "package_closed": true
+}

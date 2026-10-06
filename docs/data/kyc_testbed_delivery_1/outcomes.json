@@ -1,0 +1,120 @@
+{
+  "fixed_cases": [
+    {
+      "id": "D-01",
+      "invocation": "KYCD1-0001",
+      "status": "pass",
+      "seconds": 0.9325576659757644
+    },
+    {
+      "id": "D-02",
+      "invocation": "KYCD1-0002",
+      "status": "pass",
+      "seconds": 0.07938949600793421
+    },
+    {
+      "id": "D-03",
+      "invocation": "KYCD1-0003",
+      "status": "pass",
+      "seconds": 0.5606885608285666
+    },
+    {
+      "id": "D-04",
+      "invocation": "KYCD1-0004",
+      "status": "pass",
+      "seconds": 0.5768758689519018
+    },
+    {
+      "id": "D-05",
+      "invocation": "KYCD1-0005",
+      "status": "pass",
+      "seconds": 0.12200850411318243
+    },
+    {
+      "id": "D-06",
+      "invocation": "KYCD1-0006",
+      "status": "pass",
+      "seconds": 0.11074047000147402
+    },
+    {
+      "id": "D-07",
+      "invocation": "KYCD1-0007",
+      "status": "pass",
+      "seconds": 9.364089780952781
+    },
+    {
+      "id": "D-08",
+      "invocation": "KYCD1-0008",
+      "status": "pass",
+      "seconds": 0.6102334528695792
+    },
+    {
+      "id": "D-09",
+      "invocation": "KYCD1-0009",
+      "status": "pass",
+      "seconds": 1.7741604649927467
+    },
+    {
+      "id": "D-10",
+      "invocation": "KYCD1-0010",
+      "status": "pass",
+      "seconds": 0.49579949397593737
+    },
+    {
+      "id": "E-01",
+      "invocation": "KYCD1-0011",
+      "status": "pass",
+      "seconds": 0.005738269072026014
+    },
+    {
+      "id": "E-02",
+      "invocation": "KYCD1-0012",
+      "status": "pass",
+      "seconds": 0.00017850077711045742
+    },
+    {
+      "id": "E-03",
+      "invocation": "KYCD1-0013",
+      "status": "pass",
+      "seconds": 1.1211028322577477e-05
+    },
+    {
+      "id": "E-04",
+      "invocation": "KYCD1-0014",
+      "status": "pass",
+      "seconds": 0.00023569888435304165
+    },
+    {
+      "id": "B-01",
+      "invocation": "KYCD1-0015",
+      "status": "pass",
+      "seconds": 0.8682020511478186
+    },
+    {
+      "id": "B-02",
+      "invocation": "KYCD1-0016",
+      "status": "pass",
+      "seconds": 1.2473947000689805
+    },
+    {
+      "id": "B-03",
+      "invocation": "KYCD1-0017",
+      "status": "pass",
+      "seconds": 1.463649900862947
+    },
+    {
+      "id": "B-04",
+      "invocation": "KYCD1-0018",
+      "status": "pass",
+      "seconds": 1.7624275560956448
+    }
+  ],
+  "fixed_passed": 18,
+  "functional_failures": 0,
+  "corrective_reruns": 0,
+  "unrun": [],
+  "cumulative_invocations": 1183,
+  "ceiling": 1190,
+  "embedding_slots_reserved": 3,
+  "delivery_reruns_unused": 4
+}

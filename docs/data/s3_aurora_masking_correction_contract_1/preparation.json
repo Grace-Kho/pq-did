@@ -1,0 +1,10 @@
+{
+  "inventory": {
+    "passed": true,
+    "count": 8249,
+    "unexpected": [],
+    "missing": []
+  },
+  "scope_sha256": "5c1fed778e85ca49de3475736996189075a0d8983fcd081a8800d25a6db76642",
+  "retained_repair_entries_preserved": true
+}

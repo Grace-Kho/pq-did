@@ -1,0 +1,14 @@
+{
+  "case_id": "C-14",
+  "invocation_id": "CAR1-0015",
+  "status": "pass",
+  "details": {
+    "case": "C-14",
+    "purpose": "retained wire-form cap produces incomplete result",
+    "full_relation": false,
+    "rejection": "incomplete: retained wire-form capacity",
+    "state": "incomplete"
+  },
+  "seconds": 4.470499698072672e-05,
+  "work_events": 2
+}

@@ -1,0 +1,523 @@
+{
+  "package": "KYC-TESTBED-COMPLETION-1",
+  "state": "prepared; execution blocked on nested evidence reserve amendment",
+  "opening_invocations": 974,
+  "invocation_ceiling": 1050,
+  "planned_distinct_invocations": 72,
+  "affected_reruns_max": 4,
+  "builds_authorised": 0,
+  "workstream_cap_seconds": 1700,
+  "completion_reserve_seconds": 300,
+  "evidence_reallocation_requested_bytes": 1572864,
+  "evidence_cumulative_ceiling_unchanged": 33554432,
+  "evidence_completion_reserve_bytes": 2097152,
+  "proposed_mapping_approved": false,
+  "ordinary_execution_admitted": false,
+  "cases": [
+    {
+      "id": "W-01",
+      "description": "fresh acceptance and coherent committed snapshot",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-02",
+      "description": "restart with independent head and current state",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-03",
+      "description": "exact committed retrieval without resigning",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-04",
+      "description": "valid witness/state update atomically committed",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-05",
+      "description": "stale expected ticket rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-06",
+      "description": "wrong owner rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-07",
+      "description": "wrong instance rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-08",
+      "description": "recovery fences prior writer",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-09",
+      "description": "stale state without history rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-10",
+      "description": "wrong root rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-11",
+      "description": "credential/witness attribute conflict rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-12",
+      "description": "certified identifier conflict rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-13",
+      "description": "holder secret conflict rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-14",
+      "description": "signature conflict rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-15",
+      "description": "malformed payload rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-16",
+      "description": "truncated database/payload rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-17",
+      "description": "before-commit failure leaves prior head",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-18",
+      "description": "after-commit lost reply retrieved using prepared ticket",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-19",
+      "description": "actual controlled child interruption before commit",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-20",
+      "description": "actual controlled child interruption after commit",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-21",
+      "description": "rolled-back store versus independent head rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-22",
+      "description": "partial or incomplete state rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-23",
+      "description": "unsafe file/sidecar rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "W-24",
+      "description": "private proof remains unavailable without state change",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "F-01",
+      "description": "A genuine baseline acceptance",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "F-02",
+      "description": "B independent genuine baseline acceptance",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "F-03",
+      "description": "baseline replay rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "F-04",
+      "description": "cross-audience replay rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "F-05",
+      "description": "issuer original-recipient retrieval",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "F-06",
+      "description": "issuer restart under independent ticket",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "F-07",
+      "description": "authenticated DID create and resolve bound before issue",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "F-08",
+      "description": "DID rotation admission",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "F-09",
+      "description": "DID deactivation prevents new issue",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "F-10",
+      "description": "wrong controller evidence denied",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "F-11",
+      "description": "revocation and holder catch-up",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "F-12",
+      "description": "holder restart and exact baseline retrieval",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "F-13",
+      "description": "expired request rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "F-14",
+      "description": "ordinary private proof endpoint fail-closed",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "M-01",
+      "description": "trusted issuer/key/schema match",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "M-02",
+      "description": "exact canonical byte/projection binding",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "M-03",
+      "description": "conflicting metadata denied",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "M-04",
+      "description": "unknown fields denied",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "M-05",
+      "description": "unsupported key representation denied",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "M-06",
+      "description": "resolver error metadata separated",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "M-07",
+      "description": "credential time range checked",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "M-08",
+      "description": "session expiry not credential validity",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "M-09",
+      "description": "private fields forbidden in verifier view",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "M-10",
+      "description": "securing mechanism and proof placeholder rejected",
+      "status": "unrun",
+      "category": "focused-check",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-1-A-1",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-1-A-2",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-1-A-3",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-1-B-1",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-1-B-2",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-1-B-3",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-2-A-1",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-2-A-2",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-2-A-3",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-2-B-1",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-2-B-2",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-2-B-3",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-3-A-1",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-3-A-2",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-3-A-3",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-3-B-1",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-3-B-2",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "T-3-B-3",
+      "description": "One genuine disclosed-baseline presentation operation; three-operation sequential window",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 20
+    },
+    {
+      "id": "R-1-1",
+      "description": "One witness catch-up measurement over 1 valid revocation records; setup separately charged",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 30
+    },
+    {
+      "id": "R-1-4",
+      "description": "One witness catch-up measurement over 4 valid revocation records; setup separately charged",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 30
+    },
+    {
+      "id": "R-1-8",
+      "description": "One witness catch-up measurement over 8 valid revocation records; setup separately charged",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 30
+    },
+    {
+      "id": "R-2-1",
+      "description": "One witness catch-up measurement over 1 valid revocation records; setup separately charged",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 30
+    },
+    {
+      "id": "R-2-4",
+      "description": "One witness catch-up measurement over 4 valid revocation records; setup separately charged",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 30
+    },
+    {
+      "id": "R-2-8",
+      "description": "One witness catch-up measurement over 8 valid revocation records; setup separately charged",
+      "status": "unrun",
+      "category": "measurement",
+      "max_seconds": 30
+    }
+  ],
+  "measurement_policy": "Each measured operation counts; setup time/work retained; raw new dataset, no baseline overwrite or private-proof inference"
+}

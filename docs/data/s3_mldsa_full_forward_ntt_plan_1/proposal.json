@@ -1,0 +1,145 @@
+{
+  "package": "S3-MLDSA-FULL-FORWARD-NTT-PILOT-1",
+  "authorised": false,
+  "current_decision": "not-admitted; no execution begun",
+  "proposed_location": "experiments/mldsa_full_forward_ntt_1",
+  "profile": "isolated proposed lowering; not active BC-1",
+  "q": 8380417,
+  "n": 256,
+  "root": 1753,
+  "stages": 8,
+  "butterflies": 1024,
+  "schedule": "s=0..7; L=128>>s; t=0..127; g=t//L; u=t%L; j=2*L*g+u; m=2**s+g; (j,j+L); z=1753**BitRev8(m) mod q",
+  "entry": "256 exact signed64 coefficient words; private active and prior rejection; full SPEC-004 mod64 before first butterfly",
+  "output": "256 canonical64 NTT words in source order, final valid=not R; zero unusable words when inactive or rejected",
+  "partitions": {
+    "entry": {
+      "count": 32,
+      "ids": "E00..E31",
+      "lanes": "8*b..8*b+7"
+    },
+    "nodes": {
+      "count": 64,
+      "ids": "N00..N63",
+      "stage": "s=(id//8)",
+      "ordinals": "t=16*(id%8)..16*(id%8)+15"
+    },
+    "final": {
+      "count": 1,
+      "id": "F",
+      "purpose": "one complete final mask/validity"
+    },
+    "total": 97,
+    "batch_count": 13,
+    "batches": "global IDs 0..96, consecutive blocks of at most eight; no counter resets",
+    "private_input_bits_each": 16386,
+    "transfer": "256 ordered64-bit words plus original active and raw sticky R; bit-preserving aliases, never public witness specialisation",
+    "reference_full_circuit_generation": false,
+    "whole_monolithic_serialisation": false
+  },
+  "proposed_invocations": {
+    "generation": 97,
+    "full_transform_cases": 6,
+    "malformed_entries": 2,
+    "checkpoint_refusals": 2,
+    "total_added": 107,
+    "prior_consumed": 279,
+    "proposed_cumulative_ceiling": 386,
+    "evaluator_calls_within_six_cases": 582,
+    "independent_trace_passes_within_six_cases": 582,
+    "automatic_retries": 0
+  },
+  "cases": [
+    {
+      "id": "V0",
+      "input": "256 zeros",
+      "active": 1,
+      "prior_R": 0
+    },
+    {
+      "id": "V1",
+      "input": "coefficient1=1, all others zero",
+      "active": 1,
+      "prior_R": 0
+    },
+    {
+      "id": "V2",
+      "input": "repeat [MIN,MAX,-q,q,-1,0,1,q-1] 32 times",
+      "active": 1,
+      "prior_R": 0
+    },
+    {
+      "id": "V3",
+      "input": "x_i=(-1)**(i%2)*(((i+1)**3+17*i+11)%q)",
+      "active": 1,
+      "prior_R": 0
+    },
+    {
+      "id": "V4",
+      "input": "V3",
+      "active": 0,
+      "prior_R": 0
+    },
+    {
+      "id": "V5",
+      "input": "V3",
+      "active": 1,
+      "prior_R": 1
+    },
+    {
+      "id": "M0",
+      "input": "255 coefficients; typed refusal before circuit allocation"
+    },
+    {
+      "id": "M1",
+      "input": "coefficient0=2**63; remaining255 zero; typed refusal"
+    },
+    {
+      "id": "T0",
+      "input": "copy of V0 post-entry checkpoint, replace coefficient0 by q; refuse before consumer"
+    },
+    {
+      "id": "T1",
+      "input": "copy of V5 post-entry checkpoint, clear R; refuse before consumer"
+    }
+  ],
+  "oracle": "exact Horner at root_i=1753**(2*BitRev8(i)+1) mod q; separate bit reversal; no schedule/table helper shared with candidate; also pinned bounded_mldsa._ntt",
+  "inactive_resource_delta": {
+    "implementation_seconds_added": 74,
+    "implementation_cumulative_ceiling_proposed": 374,
+    "implementation_opening_remaining_seconds": 61.264731091912836,
+    "implementation_remaining_if_approved": 135.26473109191284,
+    "package_seconds_max": 135,
+    "cleanup_evidence_reserve_seconds": 10,
+    "logical_and_total_emitted_gates_max": 30000000,
+    "per_trace_existing_gate_ceiling_unchanged": 2000000,
+    "stricter_partition_admission_stop_gates": 450000,
+    "memory_bytes": 268435456,
+    "swap_bytes": 0,
+    "process_RSS_stop_bytes": 134217728,
+    "retained_trace_bytes": 8388608,
+    "temporary_bytes": 8388608,
+    "per_file_bytes": 1048576,
+    "command_seconds": 60,
+    "child_seconds": 55,
+    "generation_seconds_per_partition": 10,
+    "evaluation_seconds_per_pass": 2,
+    "workers": 1,
+    "cpu_threads": 2,
+    "controlled_children": 4,
+    "package_evidence_target_bytes": 1258291,
+    "activation": false,
+    "proofs": false,
+    "zkvm_executions": false,
+    "evaluator_wires_max_unchanged": 2000260,
+    "independent_observer_deadline": "enclosing bounded work batch; no unmonitored helper"
+  },
+  "success": "all 97 completed once; all ten cases pass; exact stage coverage and alias map complete; all guards/checks/audit/report pass; otherwise incomplete and stop",
+  "limitations": [
+    "no complete measured BC-1 reference cost",
+    "no inverse NTT",
+    "no full verifier or authentication",
+    "no proof knowledge/privacy conclusion",
+    "no RISC Zero forecast change"
+  ]
+}

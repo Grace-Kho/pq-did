@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "programme_complete": false,
+  "retained_observations_verified": 302,
+  "storage": {
+    "new_evidence_bytes": 87711,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 35641576,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "plan": {
+    "cap": 2097152,
+    "simultaneous_synthetic_stores_and_SQLite_journals": 1150000,
+    "source_case_export_logs_before_finalisation": 380000,
+    "reserved_completion": 524288,
+    "planned_peak_total": 2054288,
+    "historical_evidence_removed": false
+  },
+  "versioned_comparison_points_unchanged": true,
+  "memory_available": 3692105728
+}

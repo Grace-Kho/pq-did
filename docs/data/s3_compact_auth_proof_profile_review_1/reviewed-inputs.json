@@ -1,0 +1,29 @@
+{
+  "sha256": {
+    "docs/implementation_spec.md": "e3d919cf22e4110e83dc822d6a7b1d72b40d0a93f79371e00f9e010b71b10003",
+    "configs/suite.json": "f0ffeb88005bfe46a83701f3c906a2cba004afafbfd1b93d3ed7ac6c78d8e942",
+    "docs/manuscript/PQ_DID__Implementation.pdf": "d17ca0a20b319b88e959467cae92d91d619973f84384710ecbf960a3b850aeca",
+    "docs/data/s2_concrete_security_assessment_1/sections-II-VIII.txt": "e1f98c287253a9e3ab5d11db527c2184517ac341e91445081f9f9ed6312d222f",
+    "analysis/concrete_security/security_profile.json": "472c28478020d3508cd7370057e38f6c97c0f97888911260f0005266a0dd403c",
+    "docs/stage2_concrete_security_assessment.md": "17b2e59c930161398d6983053e2690a640758d1a39793ea11e409904ed54d670",
+    "docs/stage3_outer_hash_security_review.md": "f82b9ce12982946de650625be797435680f222ceb093902234fb5ae144a39568",
+    "docs/stage3_outer_oracle_composition.md": "8998c1673f3aace8360970f747d6c6a6d0aa40c2c40690ef1b9c32e19c360f0b",
+    "docs/stage3_profile_change_proposal.md": "32dba65f7f824e070053f4fc79b5fa5a31775aef9afbf953d399207ebf51dadd",
+    "docs/stage3_profile_spec_draft.md": "0db23ac45515631dabe966b4ef18bdd768104991066279cdc28db3d95173f9a5",
+    "docs/data/stage3_profile_sources.json": "748bca61c72504e12974b8e153175c958c0f37489fd09c6cfef6f2b96101e144",
+    "docs/stage3_auth_proof_feasibility_plan.md": "ca00cbc765241ab6fca0b4cc5a198ab2aab6e9bdefc40aafb6795228de2de040",
+    "docs/benchmark_targets.md": "2de084f9457512f8d114e7a99eebfb6b2f871ef9a67174fca356cc7b8c932fe0",
+    "docs/stage3_feasibility_review.md": "d31510c2e17a66506ea4d9f98f6202d5bdd4a212f3676b43bfdadfe7594c2a40",
+    "docs/stage3_r0_design_review.md": "052aabadefbb1ece1cb042924e0c7b3d6d737a4047f4d6b1a4cd22175524f97a",
+    "docs/stage3_mldsa_full_forward_ntt_pilot.md": "915a322e4529bb1099861a5d4fc21d85e2238d6f5c4a9c3ce6126f8e739f017d",
+    "docs/data/s3_mldsa_full_forward_ntt_pilot_1/validation-closure.json": "0103f6eb773df70a530aee40730e09fc20195e5b26d10c8172ae77d0a2b1c4de",
+    "src/pqdid/relations.py": "138659b145b4453955ab0a70ce684c7f6641e93086024f0cff47bddb80c0bd4d",
+    "src/pqdid/statements.py": "f7c055eda59f070f18dc1add2202296205529ea7785d3433f466314bcaeae659",
+    "src/pqdid/witnesses.py": "317d5fa1cd2c33d450864d73d7e3c78baa9fb4415bf44ba263a2c879f96154b0",
+    "src/pqdid/bounded_mldsa.py": "18b5402247086ccee88d4c4f452234f672d0db15d0324164ad1c2523f531f7f1",
+    "src/pqdid/binding.py": "94c1c5d47def45c97c58d6be723210c675bc1756ff3fc560df75909d2f98fc65",
+    "src/pqdid/merkle.py": "138de89f5b5169f988d7cecd9f8d3faadc6057345306230e22fa76867c1b7017",
+    "src/pqdid/backend.py": "d7fb879c147b06571c31aee6ba7b1628048fae7667873c3f671f4f8128b1e5f9"
+  },
+  "kind": "Review input identity only; no historical baseline replacement"
+}

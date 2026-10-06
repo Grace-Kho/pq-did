@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "seconds": 0.2661836879560724,
+  "commands": [
+    [
+      "cp",
+      "-a",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/work"
+    ],
+    [
+      "cp",
+      "-a",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/overlay",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/overlay"
+    ],
+    [
+      "git",
+      "--no-replace-objects",
+      "-C",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/work/libiop",
+      "apply",
+      "--check",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_compiler_compatibility_contract_1/variable-members.patch"
+    ],
+    [
+      "git",
+      "--no-replace-objects",
+      "-C",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/work/libiop",
+      "apply",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_compiler_compatibility_contract_1/variable-members.patch"
+    ],
+    [
+      "git",
+      "--no-replace-objects",
+      "-C",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/overlay",
+      "apply",
+      "--check",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_compiler_compatibility_contract_1/semantic-target.patch"
+    ],
+    [
+      "git",
+      "--no-replace-objects",
+      "-C",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/overlay",
+      "apply",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_compiler_compatibility_contract_1/semantic-target.patch"
+    ]
+  ],
+  "contract_sha256": "4c2c86e74ed7e5614861c002684257b48deffbe3247a413726e8042669ee2173",
+  "patch_sha256": "8a28d44432c4dfd2ff41a07bb4affd1a154b52ae781289210410586b43e4c357",
+  "postimage_sha256": "74ae2e8f6c7caed735be225dc63f25a84bb5b790579f0afe124aafcb0d7bc3bd",
+  "native_sources_original_and_prior_work_preserved": true,
+  "libff_workaround": "Unchanged binary/common target; no libff source correction",
+  "latent_defects_review": {
+    "free_field_times_term": "Not called: SEM uses term * field member",
+    "merge_sort_coalesce": "Not called: C(term) copies one term via add_term",
+    "empty_is_valid": "Not called by SEM or public Driver",
+    "evaluation": "SEM index 3 has three assignments; index 0 needs none",
+    "native_driver": "BCS rounds/hashchain; no R1CS construction or validation"
+  },
+  "expectations": "Literal GF(2^192) polynomial arithmetic; sealed TR golden JSON",
+  "new_builds": 0,
+  "new_cases": 0
+}

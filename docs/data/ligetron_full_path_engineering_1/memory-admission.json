@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-03T07:46:06Z",
+  "command": [
+    "/mnt/c/windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+    "-NoProfile",
+    "-NonInteractive",
+    "-Command",
+    "Get-CimInstance Win32_OperatingSystem | Select-Object TotalVisibleMemorySize,FreePhysicalMemory | ConvertTo-Json -Compress"
+  ],
+  "exit_code": 0,
+  "stdout": "{\"TotalVisibleMemorySize\":16389632,\"FreePhysicalMemory\":2307816}\n",
+  "stderr": "",
+  "WSL_available_bytes": 3926478848,
+  "Windows_free_bytes": 2363203584,
+  "required_each_bytes": 4294967296,
+  "passed": false,
+  "builds_consumed": 0,
+  "proofs_consumed": 0,
+  "invocations_consumed": 0,
+  "elapsed_seconds": 0.7212321138940752,
+  "self_peak_RSS_bytes": 21057536
+}

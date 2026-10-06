@@ -1,0 +1,16 @@
+{
+  "sha256": {
+    "docs/data/s3_aurora_native_transcript_pilot_1/run.py": "fc05d8d53d45141725f08bee38b35ea7d7bba747200808ec5f6d03f81eb86e0a",
+    "docs/data/s3_aurora_native_transcript_pilot_1/run-at-preflight.py": "7e53b6a37bebb3d83785b74f4f9f7a1d883c2066abb4da6ca9eede5346476ba7",
+    "docs/data/s3_aurora_native_transcript_pilot_1/preflight-diagnostic.json": "03cbc2ba6b5bcfe001fbf8d39773bbf2ce9210e8cf32c7e36e3831f1e3d8210f",
+    "docs/data/s3_aurora_native_transcript_pilot_1/admission.json": "abba7f542e22e6f24b8e18cacabafb37a3493de409461d7b952d42ded6ad0725",
+    "docs/data/s3_aurora_native_transcript_pilot_1/config.json": "128e5044011c70688e8db1cd7a6829ba3c5e7edc3c15ffc21a5419f461d316bf",
+    "docs/data/s3_aurora_native_transcript_pilot_1/prefixes.json": "ed21c22513791997550fc48420af3afec183a1170aeb3b6f6e7c824455ec5880",
+    "docs/data/s3_aurora_native_transcript_pilot_1/STOP.json": "2cce4dc1884e96288fbad69ad82a65c4d6b54190e73ba628e88fee642c2c8432",
+    "docs/data/s3_aurora_native_transcript_pilot_1/native-preflight.json": "7c527b77b4630379dfb47a9bcf4b9d8cbed02d56231fc04a03496f9b508dc923",
+    "docs/data/s3_aurora_native_transcript_pilot_1/native-preflight.log": "840f12738c1c10acf9fa5eb87a5448c5107aa3493c83c151dfe4a0d49ba5d0c1",
+    "docs/data/s3_aurora_native_transcript_pilot_1/source-copy.json": "bdd1f89c626aa75f8bb3287777cea3220a6dc671c880df2c052306e3be732323",
+    "docs/data/s3_aurora_native_transcript_pilot_1/dependency-assessment.json": "b7e8b39d7bac5c8fa601096fdce1f0c6f9fe9b0d87b58a0fa1be5bff9b2c1638",
+    "docs/data/s3_aurora_native_transcript_pilot_1/case-plan.json": "f358b231b16f2f5e99c28ee5f0caf431120818444e3ec4b97336780963eaad6b"
+  }
+}

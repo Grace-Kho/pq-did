@@ -1,0 +1,10 @@
+{
+  "failure": "non-executable shell script invoked directly; subprocess creation returned EACCES",
+  "correction": "invoke the existing script with /bin/bash",
+  "compiler_started": false,
+  "guest_executions": 0,
+  "proof_attempts": 0,
+  "resource_limit_reached": false,
+  "resource_envelope_unchanged": true,
+  "historical_STOPs_unchanged": true
+}

@@ -1,0 +1,37 @@
+{
+  "invocation_id": "M1-0396",
+  "case_id": "N-18",
+  "ordinal": 396,
+  "cumulative_invocations": 844,
+  "status": "pass",
+  "result": {
+    "id": "N-18",
+    "command": [
+      "/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/build/aurora_masking_native",
+      "18"
+    ],
+    "exit_code": 0,
+    "seconds": 0.08171768207103014,
+    "stdout": "VALUE fold-bounds 00000000000000000000000000000000000000000000000a 000000000000000000000000000000000000000000000005\n(enter) evaluating next FRI codeword       \t[             ]\t(1790650820.1189s x0.00 from start)\n(leave) evaluating next FRI codeword       \t[0.0345s x1.00]\t(1790650820.1534s x0.00 from start)\n(enter) LDT signal prover round done       \t[             ]\t(1790650820.1534s x0.00 from start)\n(leave) LDT signal prover round done       \t[0.0000s x1.07]\t(1790650820.1534s x0.00 from start)\n(enter) evaluating next FRI codeword       \t[             ]\t(1790650820.1534s x0.00 from start)\n(leave) evaluating next FRI codeword       \t[0.0177s x1.00]\t(1790650820.1711s x0.00 from start)\n(enter) Call to additive_IFFT_wrapper      \t[             ]\t(1790650820.1711s x0.00 from start)\n  * Vector size: 64\n  * Subspace size: 64\n(leave) Call to additive_IFFT_wrapper      \t[0.0022s x1.00]\t(1790650820.1733s x0.00 from start)\n(enter) LDT signal prover round done       \t[             ]\t(1790650820.1733s x0.00 from start)\n(leave) LDT signal prover round done       \t[0.0000s x1.09]\t(1790650820.1733s x0.00 from start)\nVALUE terminal 000000000000000000000000000000000000000000eeefa7 00000000000000000000000000000000000000000007a99c 00000000000000000000000000000000000000000000f897 000000000000000000000000000000000000000000000042 0000000000000000000000000000000000000000000000f7\nPATH FRI_protocol::register_interactions;get_oracle_degree;calculate_and_submit_proof[N-18];evaluate_next_f_i_over_entire_domain[N-18];receive_prover_message[N-18]\nPASS N-18\n",
+    "stderr": "",
+    "binary_sha256": "52e210b488f7ccf0df4aa477aa7f66c65764f511b5532403a02ef322df94e827",
+    "expected_path": "experiments/aurora_masking_milestone_1/overlay/masking_native.cpp",
+    "expected_sha256": "ab3c66696547b4a221bc0b3a7922e49adb09dcfbce7d0425710e2ba698109b94",
+    "private_witness": false,
+    "proof_attempt": false,
+    "comparison": {
+      "independent_schoolbook_polynomial_assertions": true,
+      "oracle": "overlay/masking_native.cpp: add/mul/divrem/at/interpolate",
+      "finite_public_fixture_only": true
+    },
+    "actual_calls": [
+      "FRI_protocol::register_interactions",
+      "get_oracle_degree",
+      "calculate_and_submit_proof",
+      "evaluate_next_f_i_over_entire_domain",
+      "receive_prover_message"
+    ],
+    "status": "pass"
+  },
+  "seconds": 0.08325196895748377
+}

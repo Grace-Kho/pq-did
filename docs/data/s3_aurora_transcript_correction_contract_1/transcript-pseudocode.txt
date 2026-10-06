@@ -1,0 +1,92 @@
+S3-AURORA-TRANSCRIPT-CORRECTION-CONTRACT-1
+Proposed pseudocode only. Not executable, not an adopted profile.
+
+VARIANT = ASCII("PQDID-AURORA-TRANSCRIPT-EXP2")
+PROTO = ASCII("PQDID-AURORA-AUTH")
+VERSION = 2
+H = unkeyed sequential BLAKE2b with 64-byte output, fanout=depth=1,
+    zero salt and personalisation parameters; no truncation of the input.
+U_k(n) = exactly k bytes, unsigned big-endian; reject bool/noninteger/overflow.
+F(label; parts) = U_2(len(tag)) || tag || U_4(len(parts)) ||
+                 concat(U_8(len(p)) || p for p in parts),
+                 tag = VARIANT || ASCII("/") || ASCII(label).
+No NUL terminator, Unicode normalisation, optional fields or coercions.
+All outer components are immutable byte strings. All lengths are checked.
+
+encode_plan(plan):
+  U_4(R) || concat for r=0..R-1:
+    U_4(r) || U_4(C_r) || U_4(J_r) || concat U_4(n_rj) || U_4(K_r) ||
+    concat for c=0..K_r-1: U_4(c) || U_1(kind_rc) || U_2(width_rc)
+  kind=1,width=192 -> field bitstring; kind=2,width=h in [0,63] -> index in 2^h.
+  R>=1. Counts/IDs exactly match trusted descriptor. Check all aggregate limits.
+
+roots and messages are immutable tuples of immutable bytes, no coercions.
+Each message is a packed byte vector of exactly 24*n_j bytes.
+encode_roots(roots): U_4(C) || concat root64 in oracle-registration order.
+encode_messages(messages): U_4(J) || concat (U_4(n_j) || fields24*n_j).
+Messages are separate field vectors. A zero-length vector is not an absent vector.
+round_record(r, roots, messages) =
+  F("round"; [U_4(r), encode_roots(roots), encode_messages(messages)]).
+
+new(trusted_descriptor, expected_pp, typed_X, supplied_version):
+  Require supplied_version==2 and trusted_descriptor.variant==VARIANT.
+  Require descriptor loaded from fixed trusted harness configuration, never proof metadata.
+  Validate descriptor/schedule and aggregate limits before building any large frames.
+  E = encode_auth_statement(expected_pp, typed_X) using unchanged canonical module.
+  Require supported capacity before/while obtaining E; E cannot be empty.
+  P = trusted_descriptor.parameter_bytes  # nonempty, byte-exact, pinned externally
+  A = trusted_descriptor.relation_bytes   # nonempty, trusted, NOT caller matrices
+  PLAN = encode_plan(trusted_descriptor.plan)
+  PID = H(F("profile"; [U_2(2), PROTO, P, PLAN]))
+  RID = H(F("relation"; [A]))
+  XDOM = F("statement"; [U_2(2), PROTO, PID, RID, E])
+  S = H(F("init"; [XDOM]))
+  next_round=0; pending=none; next_challenge=0; global_counter=0; state=LIVE.
+  Return no verification/acceptance result. XDOM is public, no witness inputs accepted.
+
+commit_round(r, roots, messages):
+  Require LIVE, r==next_round<R and all challenges of previous round consumed.
+  Require C,J,n_j and 64/24-byte widths exactly as plan[r]; no extra values.
+  RR = round_record(r, roots, messages).
+  T = H(F("absorb"; [S, U_4(r), U_8(global_counter), RR]))
+  Atomically set S=T; pending=r; next_challenge=0; next_round=r+1.
+  Do not skip an empty scheduled round. No challenge before this commit.
+
+challenge(r, c):
+  Require LIVE, pending==r, c==next_challenge<K_r.
+  (kind,width) = trusted plan[r].challenge[c]; caller cannot override it.
+  Require global_counter < 2^64-1 before increment and remaining work allowance.
+  B = H(F("challenge"; [XDOM, S, U_4(r), U_4(c), U_8(global_counter),
+                        U_1(kind), U_2(width)]))
+  If kind==1: value=B[0:24], interpreted as polynomial-basis LE bits, not a native object.
+  If kind==2: value=LE_integer(B) mod 2^width; width=0 gives value=0.
+  Atomically next_challenge+=1; global_counter+=1; leave S unchanged.
+  Return value; full B is accessible only to public-synthetic harness trace collection.
+  No unused bytes pooled. No rejection sampler, mutable RNG or PoW call.
+
+finish():
+  Require LIVE, next_round==R and final round's K challenges consumed.
+  Atomically set state=FINISHED. Return (S,global_counter), a diagnostic transcript
+  result, NEVER a proof/receipt/credential acceptance. No further operation allowed.
+
+On failure: do not return a value or partially update a round/challenge. Preserve
+prior S/counters only in the public-synthetic diagnostic trace, mark object FAILED,
+and reject all further calls. No rollback/retry, compatibility fallback or reset.
+I/O/hash/limit errors are incomplete processing, not successful verification.
+
+Verifier reconstruction:
+  replay_public_rounds(trusted,expected_pp,X,version,records) takes a tuple of RR bytes.
+  independently select same trusted descriptor and expected_pp; validate/re-encode X.
+  Decode each supplied public round against fixed schedule/lengths; call commit_round.
+  Derive every scheduled challenge in exact order. Synthetic index ports are not
+  Aurora queries. A future IOP adapter must schedule query positions only after
+  its final direct message round. Reject missing/extra records/trailing bytes/old versions.
+  Compare reconstructed states/blocks with expected synthetic trace in harness only.
+  No real proof verification interface is created by this contract.
+
+Minimal legacy omission model (test-only diagnostic, NOT a compatibility path):
+  D=64; S_legacy=0x20 repeated 64 times.
+  OLD(S,u)=H((S||u)[0:64])=H(S).
+  LENGTH_ONLY_REPAIR(S,u)=H(S||u), with len(S)==len(u)==64.
+  This repair restores the intended input span only; EXP2 supplies the separately
+  versioned framing/initialisation contract above. Do not conflate the two variants.

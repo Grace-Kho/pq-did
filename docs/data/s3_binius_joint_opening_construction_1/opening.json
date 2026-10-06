@@ -1,0 +1,14 @@
+{
+  "package": "S3-BINIUS-JOINT-OPENING-CONSTRUCTION-1",
+  "scope": "Source/mathematical decision only",
+  "prior_manifest_sha256": "aceaf46228a231ab4f8321391c4dd38b20eb6d1f3c0746cdf83a1b908a5ac378",
+  "prior_closure_sha256": "3402ea7742b9479ac600e5912fcec6c54aaf1abbf7be3a1fdc00f2ec60d34b74",
+  "historical_input_manifest_unchanged": true,
+  "prior_pending_admission_sha256": "31b05ed03c9bbe6bacbe589cd88a32556137e7e8d43ebb206f3a7fbbde090a40",
+  "no_new_invocations": true,
+  "no_builds": true,
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1
+  }
+}

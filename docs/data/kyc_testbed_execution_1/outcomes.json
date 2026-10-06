@@ -1,0 +1,517 @@
+{
+  "cases": [
+    {
+      "id": "W-01",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0001",
+        "KYCE1-0002"
+      ]
+    },
+    {
+      "id": "W-02",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0003",
+        "KYCE1-0071"
+      ]
+    },
+    {
+      "id": "W-03",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0004"
+      ]
+    },
+    {
+      "id": "W-04",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0005"
+      ]
+    },
+    {
+      "id": "W-05",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0006"
+      ]
+    },
+    {
+      "id": "W-06",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0007"
+      ]
+    },
+    {
+      "id": "W-07",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0008"
+      ]
+    },
+    {
+      "id": "W-08",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0009"
+      ]
+    },
+    {
+      "id": "W-09",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0010"
+      ]
+    },
+    {
+      "id": "W-10",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0011"
+      ]
+    },
+    {
+      "id": "W-11",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0012"
+      ]
+    },
+    {
+      "id": "W-12",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0013"
+      ]
+    },
+    {
+      "id": "W-13",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0014"
+      ]
+    },
+    {
+      "id": "W-14",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0015"
+      ]
+    },
+    {
+      "id": "W-15",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0016"
+      ]
+    },
+    {
+      "id": "W-16",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0017"
+      ]
+    },
+    {
+      "id": "W-17",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0018"
+      ]
+    },
+    {
+      "id": "W-18",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0019"
+      ]
+    },
+    {
+      "id": "W-19",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0020"
+      ]
+    },
+    {
+      "id": "W-20",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0021"
+      ]
+    },
+    {
+      "id": "W-21",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0022"
+      ]
+    },
+    {
+      "id": "W-22",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0023"
+      ]
+    },
+    {
+      "id": "W-23",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0024"
+      ]
+    },
+    {
+      "id": "W-24",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0025"
+      ]
+    },
+    {
+      "id": "F-01",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0026",
+        "KYCE1-0027"
+      ]
+    },
+    {
+      "id": "F-02",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0028"
+      ]
+    },
+    {
+      "id": "F-03",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0029"
+      ]
+    },
+    {
+      "id": "F-04",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0030"
+      ]
+    },
+    {
+      "id": "F-05",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0031"
+      ]
+    },
+    {
+      "id": "F-06",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0032"
+      ]
+    },
+    {
+      "id": "F-07",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0033"
+      ]
+    },
+    {
+      "id": "F-08",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0034"
+      ]
+    },
+    {
+      "id": "F-09",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0035"
+      ]
+    },
+    {
+      "id": "F-10",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0036"
+      ]
+    },
+    {
+      "id": "F-11",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0037"
+      ]
+    },
+    {
+      "id": "F-12",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0038"
+      ]
+    },
+    {
+      "id": "F-13",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0039"
+      ]
+    },
+    {
+      "id": "F-14",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0040"
+      ]
+    },
+    {
+      "id": "M-01",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0041"
+      ]
+    },
+    {
+      "id": "M-02",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0042"
+      ]
+    },
+    {
+      "id": "M-03",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0043"
+      ]
+    },
+    {
+      "id": "M-04",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0044"
+      ]
+    },
+    {
+      "id": "M-05",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0045"
+      ]
+    },
+    {
+      "id": "M-06",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0046"
+      ]
+    },
+    {
+      "id": "M-07",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0047"
+      ]
+    },
+    {
+      "id": "M-08",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0048"
+      ]
+    },
+    {
+      "id": "M-09",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0049"
+      ]
+    },
+    {
+      "id": "M-10",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0050"
+      ]
+    },
+    {
+      "id": "T-1-A-1",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0051"
+      ]
+    },
+    {
+      "id": "T-1-A-2",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0052"
+      ]
+    },
+    {
+      "id": "T-1-A-3",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0053"
+      ]
+    },
+    {
+      "id": "T-1-B-1",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0054"
+      ]
+    },
+    {
+      "id": "T-1-B-2",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0055"
+      ]
+    },
+    {
+      "id": "T-1-B-3",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0056"
+      ]
+    },
+    {
+      "id": "T-2-A-1",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0057"
+      ]
+    },
+    {
+      "id": "T-2-A-2",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0058"
+      ]
+    },
+    {
+      "id": "T-2-A-3",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0059"
+      ]
+    },
+    {
+      "id": "T-2-B-1",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0060"
+      ]
+    },
+    {
+      "id": "T-2-B-2",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0061"
+      ]
+    },
+    {
+      "id": "T-2-B-3",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0062"
+      ]
+    },
+    {
+      "id": "T-3-A-1",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0063"
+      ]
+    },
+    {
+      "id": "T-3-A-2",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0064"
+      ]
+    },
+    {
+      "id": "T-3-A-3",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0065"
+      ]
+    },
+    {
+      "id": "T-3-B-1",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0066"
+      ]
+    },
+    {
+      "id": "T-3-B-2",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0067"
+      ]
+    },
+    {
+      "id": "T-3-B-3",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0068"
+      ]
+    },
+    {
+      "id": "R-1-1",
+      "outcome": "pass",
+      "invocations": [
+        "KYCE1-0069"
+      ]
+    },
+    {
+      "id": "R-1-4",
+      "outcome": "failed",
+      "invocations": [
+        "KYCE1-0070"
+      ]
+    },
+    {
+      "id": "R-1-8",
+      "outcome": "unrun",
+      "invocations": []
+    },
+    {
+      "id": "R-2-1",
+      "outcome": "unrun",
+      "invocations": []
+    },
+    {
+      "id": "R-2-4",
+      "outcome": "unrun",
+      "invocations": []
+    },
+    {
+      "id": "R-2-8",
+      "outcome": "unrun",
+      "invocations": []
+    }
+  ],
+  "invocation_statuses": {
+    "failed": 3,
+    "pass": 68
+  },
+  "total_invocations": 71,
+  "cumulative_invocations": 1045,
+  "counts_include_failures_and_repeats": true,
+  "unrun_reasons": {
+    "R-1-8": "Eight records exceed manager checkpoint lower bound",
+    "R-2-1": "Further scaling stopped after R-1-4 bounded issuer storage rejection",
+    "R-2-4": "Same setup route blocked; not repeated",
+    "R-2-8": "Eight records exceed manager checkpoint lower bound"
+  },
+  "builds": 0
+}

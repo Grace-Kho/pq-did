@@ -1,0 +1,72 @@
+[
+  {
+    "registry_source": "risc0-zkvm-3.0.6/src/guest/env/mod.rs",
+    "snapshot": "sources/risc0-zkvm-3.0.6_src_guest_env_mod.rs",
+    "SHA256": "78c4fbe1e2636ab25c16b933c29cdaf4515c49e561a38c4511d9f8bc00e8ca25"
+  },
+  {
+    "registry_source": "risc0-zkvm-3.0.6/src/host/api/client.rs",
+    "snapshot": "sources/risc0-zkvm-3.0.6_src_host_api_client.rs",
+    "SHA256": "f69c1e4b95e1f6c896b9f5dfe6c71e7a8abd6792ba921effd6d3e2db8961823a"
+  },
+  {
+    "registry_source": "risc0-zkvm-3.0.6/src/host/api/mod.rs",
+    "snapshot": "sources/risc0-zkvm-3.0.6_src_host_api_mod.rs",
+    "SHA256": "0d2359fc75873dadc8ce18458764f1c6b55252e2e40fd60be97c36a8e292a026"
+  },
+  {
+    "registry_source": "risc0-zkvm-3.0.6/src/host/client/env.rs",
+    "snapshot": "sources/risc0-zkvm-3.0.6_src_host_client_env.rs",
+    "SHA256": "7e0678028670089ba3ef8d34956cf1f58a42f8ba7635bb5a0bc7f13a843bf2c6"
+  },
+  {
+    "registry_source": "risc0-zkvm-3.0.6/src/host/server/exec/executor.rs",
+    "snapshot": "sources/risc0-zkvm-3.0.6_src_host_server_exec_executor.rs",
+    "SHA256": "505b831c3a3a17b33290b732ee150b3b48a25c1876320f7e9e91743045b30794"
+  },
+  {
+    "registry_source": "risc0-zkvm-3.0.6/src/host/server/exec/syscall/cycle_count.rs",
+    "snapshot": "sources/risc0-zkvm-3.0.6_src_host_server_exec_syscall_cycle_count.rs",
+    "SHA256": "d9cced1357b4bac4fcb4dbac743101d0194ea1f4a0a4f2e152df6bfb565794ed"
+  },
+  {
+    "registry_source": "risc0-circuit-rv32im-4.0.5/src/execute/executor.rs",
+    "snapshot": "sources/risc0-circuit-rv32im-4.0.5_src_execute_executor.rs",
+    "SHA256": "c4eeb2406fca1909a088fdd65615d5b460522a336f6d8ad58a5760af4ab1eb66"
+  },
+  {
+    "registry_source": "risc0-circuit-rv32im-4.0.5/src/execute/pager.rs",
+    "snapshot": "sources/risc0-circuit-rv32im-4.0.5_src_execute_pager.rs",
+    "SHA256": "b1d9bb287ee1cc4eae52123c2f2b9be5baffa4e278c1dcb231af6601ee19a096"
+  },
+  {
+    "registry_source": "risc0-circuit-rv32im-4.0.5/src/execute/segment.rs",
+    "snapshot": "sources/risc0-circuit-rv32im-4.0.5_src_execute_segment.rs",
+    "SHA256": "29d954be43323536865cee362e5ed0619191a10f225fb4602d55c3b0432a436f"
+  },
+  {
+    "registry_source": "sha3-0.10.8/src/macros.rs",
+    "snapshot": "sources/sha3-0.10.8_src_macros.rs",
+    "SHA256": "f2eee02312aaeb4bede40666459d6d46a4c685c53bc3bfa69a9fb1ebfb934643"
+  },
+  {
+    "registry_source": "keccak-0.1.6/src/lib.rs",
+    "snapshot": "sources/keccak-0.1.6_src_lib.rs",
+    "SHA256": "e5505bb2572ce30ad2e43e355c1f9a867c17024cbf4fa5dc50541655c8699bf4"
+  },
+  {
+    "registry_source": "digest-0.10.7/src/core_api/xof_reader.rs",
+    "snapshot": "sources/digest-0.10.7_src_core_api_xof_reader.rs",
+    "SHA256": "f33ca7b2c17eb99d84ea460d5567af68690e4fa6c2d94069a5d6748f8c8620eb"
+  },
+  {
+    "registry_source": "sha3-0.10.8/src/state.rs",
+    "snapshot": "sources/sha3-0.10.8_src_state.rs",
+    "SHA256": "7c3f074c7f707312d0e5952fae65006ad7cd029b42237f974ad80a2656b862cf"
+  },
+  {
+    "registry_source": "block-buffer-0.10.4/src/lib.rs",
+    "snapshot": "sources/block-buffer-0.10.4_src_lib.rs",
+    "SHA256": "b437252d389042d894b1ef17859b043e827d2bd2a1bca4b5311c67dff565274d"
+  }
+]

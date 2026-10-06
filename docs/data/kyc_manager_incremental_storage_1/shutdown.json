@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "only_slice": "pqdid-kyc-manager-1.slice",
+  "before": "LoadState=loaded\nActiveState=active\nControlGroup=/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-kyc.slice/pqdid-kyc-manager.slice/pqdid-kyc-manager-1.slice\n",
+  "after": "LoadState=loaded\nActiveState=inactive\nControlGroup=\n",
+  "units": {
+    "static-1": {
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "ControlGroup": ""
+    },
+    "static-2": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "preflight": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "manager-cases": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "history-cases": {
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "ControlGroup": ""
+    },
+    "static-3": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "static-4": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "retain-H-15": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "verifier-revalidation": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "revocation-crash-cases": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "static-5": {
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "ControlGroup": ""
+    },
+    "state-reference-case": {
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "ControlGroup": ""
+    },
+    "static-6": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "retain-H-17": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "state-reference-corrected": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "scaling-v2-1": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "scaling-v2-4": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "scaling-R-1-8": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "scaling-R-2-8": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "prepare": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "full-audit": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "final-readback": {
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "ControlGroup": ""
+    },
+    "final-readback-corrected": {
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "ControlGroup": ""
+    },
+    "final-readback-final": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    }
+  },
+  "surviving_descendants": [],
+  "temporary_files": 0,
+  "pilot_activation": false
+}

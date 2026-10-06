@@ -1,0 +1,64 @@
+{
+  "kind": "Additional source text only; never compiled/imported/executed",
+  "rows": [
+    {
+      "path": "libiop/protocols/encoded/lincheck/basic_lincheck.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/protocols/encoded/lincheck/basic_lincheck.tcc",
+      "status": "read",
+      "bytes": 13342,
+      "local": "sources/libiop__protocols__encoded__lincheck__basic_lincheck.tcc.txt",
+      "sha256": "972c1ed5b87261cb60363e4a36235de8943121d71d8b788321528365fd31430c",
+      "git_blob_sha1": "26940036d90324a20f5d65694ef67a55b8e81fe5",
+      "seconds": 0.29443573497701436
+    },
+    {
+      "path": "libiop/protocols/encoded/sumcheck/sumcheck.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/protocols/encoded/sumcheck/sumcheck.tcc",
+      "status": "read",
+      "bytes": 18283,
+      "local": "sources/libiop__protocols__encoded__sumcheck__sumcheck.tcc.txt",
+      "sha256": "e6e64dd6f3a9a078cf982384614b4cbbeeaa13620a1ffb0b0edc75da460f2374",
+      "git_blob_sha1": "dab155cc20cb2f8290277159a7ef1398835b90f4",
+      "seconds": 0.3180259159998968
+    },
+    {
+      "path": "libiop/bcs/common_bcs_parameters.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/bcs/common_bcs_parameters.tcc",
+      "status": "read",
+      "bytes": 1307,
+      "local": "sources/libiop__bcs__common_bcs_parameters.tcc.txt",
+      "sha256": "7a8fe9e43a3332edff820d7a528378897bdf02c29536f4796ec1acbda864a0ff",
+      "git_blob_sha1": "077219cbec04551a2df2f64600ba684ee9ca3bb1",
+      "seconds": 0.30405694898217916
+    },
+    {
+      "path": "libiop/bcs/hashing/blake2b.cpp",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/bcs/hashing/blake2b.cpp",
+      "status": "read",
+      "bytes": 3075,
+      "local": "sources/libiop__bcs__hashing__blake2b.cpp.txt",
+      "sha256": "48dbd3a6003fa3165b00e236b8391d766245694e4755d5a6cc9203c35f457c44",
+      "git_blob_sha1": "87eb6caa16092261176586a565144994febbefdd",
+      "seconds": 0.28351997293066233
+    },
+    {
+      "path": "libiop/protocols/ldt/fri/fri_aux.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/protocols/ldt/fri/fri_aux.tcc",
+      "status": "read",
+      "bytes": 17260,
+      "local": "sources/libiop__protocols__ldt__fri__fri_aux.tcc.txt",
+      "sha256": "1ffc5c57a2cacf73b04b25b80c288861f411eeabb6b2e3cc8dcff3646b1ac0d9",
+      "git_blob_sha1": "e04c36e57c060ff2277331a9905e4c591256bd2c",
+      "seconds": 0.29918075806926936
+    }
+  ],
+  "wall_seconds": 0.8998957059811801,
+  "peak_self_RSS_KiB": 110632,
+  "limits": "256MiB AS,2s CPU/alarm,two threads,100000B/read,1MiB/file",
+  "accounting": "Included in five-second analysis bookkeeping charge"
+}

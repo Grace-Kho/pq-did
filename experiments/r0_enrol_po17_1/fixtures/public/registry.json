@@ -1,0 +1,19 @@
+[
+  {
+    "operation": "enrol",
+    "image": [
+      3771262054,
+      2934794436,
+      1441774498,
+      2869905324,
+      1497161362,
+      1391706344,
+      1955224464,
+      202812443
+    ],
+    "elf": "artifacts/enrol.bin",
+    "elf_sha256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+    "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+    "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+  }
+]

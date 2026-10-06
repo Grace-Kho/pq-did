@@ -1,0 +1,25 @@
+{
+  "name": "evidence-preflight",
+  "phase": "audit",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/implementation_consolidation_1/checks.py"
+  ],
+  "limit_seconds": 30,
+  "child_seconds": 29,
+  "status": "launched",
+  "unit": "pqdid-consolidation-1-evidence-preflight",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 106636,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 26881544,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4134019072,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

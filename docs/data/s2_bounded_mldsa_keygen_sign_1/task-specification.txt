@@ -1,0 +1,75 @@
+Proceed with **S2-BOUNDED-MLDSA-KEYGEN-SIGN-1** in `/home/grace/projects/pq-did`.
+
+Implement a bounded ML-DSA-65 reference key-generation/signing core with explicit exhaustion handling and focused interoperability tests.
+
+**1. Establish the implementation contract.**
+
+Read the current specification, parameter manifest, bounded verifier, bounded-ML-DSA plan, DEP-001/DEP-002 obligations and concrete-security assessment. Only manuscript Sections II–VIII and agreed clarifications are authoritative.
+
+Reuse existing validated arithmetic, encoding and sampler components where appropriate. Preserve existing verifier behaviour and historical vectors.
+
+Confirm the frozen limits against the specification before implementation:
+
+* RejNTTPoly: 1,026 XOF bytes per call.
+* RejBoundedPoly: 512 XOF bytes per call.
+* SampleInBall: 256 XOF bytes per call, including the initial eight sign bytes.
+* Signing: at most 1,024 candidate attempts.
+
+These are project-profile limits. Do not describe them as the exact limits prescribed by FIPS 204. If the authoritative local specification differs, report the discrepancy before changing it.
+
+**2. Implement the complete bounded reference core.**
+
+Implement the applicable FIPS 204 key-generation and signing processing, including exact key/signature encodings, message preparation, role contexts, nonce progression, rejection conditions and hint generation.
+
+Preserve the selected pure ML-DSA mode and the existing message/context conventions. Do not introduce prehash signing or change credential/state/update signing encodings.
+
+Distinguish ordinary signature-candidate rejection, which may advance within the 1,024-attempt allowance, from sampler exhaustion, which must propagate according to the frozen profile.
+
+Count all consumed XOF bytes, including rejected samples. Permit successful completion at the exact boundary. Do not read beyond a cap, restart with a new seed, retry a failed operation automatically, or fall back to an uncapped backend.
+
+Return explicit failure without releasing a partial key or signature. Follow applicable intermediate-state disposal requirements as far as the implementation language permits; document limitations on reliable memory erasure.
+
+**3. Separate reproducibility from operational randomness.**
+
+Provide the explicit seed/randomness inputs needed for deterministic test vectors through clearly identified reference/test interfaces.
+
+For any operational wrapper, follow the selected randomness policy and propagate entropy-source failures. Do not silently replace missing randomness with zeroes.
+
+Avoid recording private keys, signing randomness or secret-dependent intermediate values in ordinary diagnostics. Any retained reproducibility inputs must be clearly labelled synthetic test material.
+
+**4. Validate correctness and exhaustion handling.**
+
+Use a small, meaningful set of independent known-answer or differential checks. Cover:
+
+* Key and signature encoding compatibility.
+* Reference-generated signatures accepted by the existing bounded verifier and the pinned native verifier.
+* Exact message/context agreement and rejection after relevant mutations.
+* Each sampler’s boundary and exhaustion propagation.
+* Signing-attempt boundary behaviour and absence of uncapped fallback.
+* Invalid inputs and entropy failures where applicable.
+
+For byte-for-byte comparisons, ensure both implementations use identical seed/randomness and message/context processing. Otherwise compare verification outcomes and document the limitation.
+
+Use controlled test-only injection for rare exhaustion paths. Demonstrate that these hooks are unavailable through ordinary operational interfaces. Do not estimate rare-event probabilities from a small passing test sample.
+
+Do not modify the native backend’s global randomness machinery or install another implementation merely to obtain deterministic comparisons.
+
+**5. Keep this package at reference-core scope.**
+
+Do not connect the new signer to live issuer, revocation, DID or persistence services. Existing fail-closed production adapters remain in place.
+
+Passing tests must not close adaptive Delta_tail, production-signing readiness, side-channel resistance, secure key storage, DEP-001/DEP-002 release obligations or complete proof knowledge/privacy unless a particular obligation is independently satisfied and documented.
+
+**6. Record evidence and stop at the package boundary.**
+
+Create `docs/stage2_bounded_mldsa_keygen_sign.md`. Record the implemented interfaces, reused components, FIPS/profile mapping, cap semantics, test provenance, results, limitations and remaining integration obligations.
+
+Update status, traceability and issues. Reuse completed validation; run focused tests and only the regressions needed for changed dependencies.
+
+Follow the existing bounded implementation workflow and resource limits. Keep the remaining **270.181-second analysis allowance** and the paused isolation budget separate from this implementation package; do not reset or silently repurpose either. Preserve the **256 MiB preservation-audit ceiling**.
+
+Preserve the manuscript, active parameters, dependencies and historical evidence. No host activation, installations, circuits, proofs or zkVM executions are authorised by this package.
+
+Isolation remains safely stopped and unactivated. Stages 2–3 remain open. The proof ledger remains **two attempts used, one unused**.
+
+Finish with the completed functionality, validation evidence, resource consumption, unresolved obligations and one recommended next package.

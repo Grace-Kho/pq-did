@@ -1,0 +1,20 @@
+{
+  "before": {
+    "memory.max": "2147483648",
+    "memory.swap.max": "0",
+    "memory.peak": "6615040",
+    "memory.current": "6615040",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "available_before_target": 4940480512,
+  "external_routes": 0,
+  "target_started": true,
+  "command": [
+    "/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/target/release/pqdid-r0-host",
+    "prove",
+    "enrol-alpha-42",
+    "receipts/attempt1.bin"
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "file": "sources/sdk_release.json",
+    "url": "https://api.github.com/repos/risc0/risc0/releases/tags/v3.0.6",
+    "sha256": "53bc6ba3a70369b4fb2e065f4338220a0706a2e97775a4ce4e3bb84b0a797f9a",
+    "bytes": 5117
+  },
+  {
+    "file": "sources/sdk_commit.json",
+    "url": "https://api.github.com/repos/risc0/risc0/commits/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9",
+    "sha256": "510d527fdce15dce3bbe0e0485b6694ea44fabf146ccbfdefb90aaa8f0653e3a",
+    "bytes": 268562
+  },
+  {
+    "file": "sources/sdk_advisories.json",
+    "url": "https://api.github.com/repos/risc0/risc0/security-advisories",
+    "sha256": "7134f03c6e7a1200b9f85e2b06bf412ffe965d615e3fbf6ed56f4ede17fcabe2",
+    "bytes": 23204
+  },
+  {
+    "file": "sources/rust_release.json",
+    "url": "https://api.github.com/repos/risc0/rust/releases/latest",
+    "sha256": "3d166de3331f8ad881b6629342397f1b281013b0305e11aef77e8363e833f13a",
+    "bytes": 5094
+  },
+  {
+    "file": "sources/ci.yml",
+    "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/.github/workflows/main.yml",
+    "sha256": "ec1ef114d51fd7cc757c47a4406c863894a5ec449b0b9158604c4b525068374b",
+    "bytes": 26717
+  },
+  {
+    "file": "sources/rzup_Cargo.toml",
+    "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/rzup/Cargo.toml",
+    "sha256": "92b2fdba3efb3b1d814378a49f8f7cf573ca848965789f2fc9adad772ccd3a05",
+    "bytes": 2626
+  },
+  {
+    "file": "sources/rzup_lib.rs",
+    "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/rzup/src/lib.rs",
+    "sha256": "c0c8b0c940b512cc771c284d19326e517ef94c86d1dab63bc82b1892abe184b7",
+    "bytes": 130437
+  },
+  {
+    "file": "sources/sdk_Cargo.lock",
+    "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/Cargo.lock",
+    "sha256": "17e8756b0d0baa36080f2079174311e873ade5ce1d510aae935bbeba5d349037",
+    "bytes": 242831
+  },
+  {
+    "file": "sources/sdk_Cargo.toml",
+    "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/Cargo.toml",
+    "sha256": "e27e5acafbabf1ed2682b38251e89b8394f45830ddf32ac5a7a039180e631932",
+    "bytes": 3149
+  },
+  {
+    "file": "sources/zkvm_Cargo.toml",
+    "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/Cargo.toml",
+    "sha256": "fee7a620a49be5a5664f6a59fe6e0ee7c2cf5a273b75a6cec8ec89a70b31a4ed",
+    "bytes": 6896
+  },
+  {
+    "file": "sources/security_model.md",
+    "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/website/api/security-model.md",
+    "sha256": "e4d7a8196b84c8fad0b41b95732d43924cbb16d778f68f597b4562169ad1576d",
+    "bytes": 11108
+  }
+]

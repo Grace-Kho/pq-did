@@ -1,0 +1,1182 @@
+{
+  "recorded_at_utc": "2026-09-17T12:52:47.102954+00:00",
+  "workers": 1,
+  "child_wall_timeout_seconds": 30,
+  "host": {
+    "recorded_at_utc": "2026-09-17T12:52:47.103054+00:00",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.14.4",
+    "memory_bytes": {
+      "MemTotal": 8126111744,
+      "MemAvailable": 5279113216,
+      "SwapTotal": 2147483648,
+      "SwapFree": 2147483648
+    },
+    "storage": {
+      "/home/grace/projects/pq-did": {
+        "available_bytes": 1021607583744,
+        "total_bytes": 1081101176832
+      },
+      "/tmp": {
+        "available_bytes": 3997671424,
+        "total_bytes": 4063055872
+      }
+    }
+  },
+  "initial_host": {
+    "recorded_at_utc": "2026-09-17T12:37:56.017058+00:00",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.14.4",
+    "memory_bytes": {
+      "MemTotal": 8126111744,
+      "MemAvailable": 5469507584,
+      "SwapTotal": 2147483648,
+      "SwapFree": 2147483648
+    },
+    "storage": {
+      "/home/grace/projects/pq-did": {
+        "available_bytes": 1021613772800,
+        "total_bytes": 1081101176832
+      },
+      "/tmp": {
+        "available_bytes": 4002656256,
+        "total_bytes": 4063055872
+      }
+    }
+  },
+  "source_sha256": {
+    "src/pqdid/circuits/__init__.py": "9098a9c19787bcd155bac6d7d724d3c354c4c404fc99565cd5a72ae26a4c8d8f",
+    "src/pqdid/circuits/accounting.py": "23610bf5a75ba435f582d7e80a1d1e2118f07caabe6659b96a4ae4380b3c0690",
+    "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+    "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+    "src/pqdid/circuits/enrolment.py": "d8b5134bdcb7fd9c1bd70cffc6214e96d971e3fe01bc595e5437718cd603e2f5",
+    "src/pqdid/circuits/enrolment_accounting.py": "8e479c7d3f221d86450135cf356f54b310e95794884026eeb9663985d78c4b3b",
+    "src/pqdid/circuits/keccak.py": "05dbfe9e5d8aea37471c325b7a9565b6f9f1742af5e2efca54029758b1b840a6",
+    "src/pqdid/circuits/parsing.py": "2f4b3d24d056eb9b26424ee185b1b5df9847f50fdc1db326c8d313685236cef9",
+    "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec",
+    "scripts/measure_hash_enrolment.py": "9a222ec30079dc2e67bde41392516a18143408db7de8c7239868442c8b09fdca",
+    "tests/reference/keccak_reference.py": "5c7b49ead7ecb902f05ea41fa4d6e1ef351cc7601412958207b015d22925ef4a"
+  },
+  "extended_profile": false,
+  "runs": [
+    {
+      "component": "permutation",
+      "mode": "materialised",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 200,
+      "public_expected_output_bytes": 200,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 156736,
+        "and_": 40000,
+        "not_": 1600,
+        "inputs": 1600
+      },
+      "gates": 198336,
+      "wires": 199938,
+      "serialised_bytes": 3371801,
+      "stored_trace_bytes": 3371801,
+      "fingerprint": "26b722610844831b8eb7c3f34cfa76856ea398c0eb6ab8a1ad164321034227ab",
+      "generation_seconds": 0.6747159570004442,
+      "fresh_construction_seconds": 0.6751700720014924,
+      "retained_trace_bytes": 3371834,
+      "generation_traced_retained_bytes": 3380924,
+      "generation_traced_peak_bytes": 7230974,
+      "folded_operations": [
+        0,
+        0,
+        0
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.6440747140004532,
+        "wire_storage_bytes": 199995
+      },
+      "probe_seconds": 1.3193312710027385,
+      "peak_rss_bytes": 33562624,
+      "probe_traced_peak_bytes": 7230974
+    },
+    {
+      "component": "permutation",
+      "mode": "count",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 200,
+      "public_expected_output_bytes": 200,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 156736,
+        "and_": 40000,
+        "not_": 1600,
+        "inputs": 1600
+      },
+      "gates": 198336,
+      "wires": 199938,
+      "serialised_bytes": 3371801,
+      "stored_trace_bytes": 0,
+      "fingerprint": "26b722610844831b8eb7c3f34cfa76856ea398c0eb6ab8a1ad164321034227ab",
+      "generation_seconds": 0.6444489329987846,
+      "fresh_construction_seconds": 0.6448760210005275,
+      "retained_trace_bytes": 0,
+      "generation_traced_retained_bytes": 9314,
+      "generation_traced_peak_bytes": 709721,
+      "folded_operations": [
+        0,
+        0,
+        0
+      ],
+      "probe_seconds": 0.6448934609979915,
+      "peak_rss_bytes": 26894336,
+      "probe_traced_peak_bytes": 709721
+    },
+    {
+      "component": "permutation",
+      "mode": "stream",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 200,
+      "public_expected_output_bytes": 200,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 156736,
+        "and_": 40000,
+        "not_": 1600,
+        "inputs": 1600
+      },
+      "gates": 198336,
+      "wires": 199938,
+      "serialised_bytes": 3371801,
+      "stored_trace_bytes": 3371801,
+      "fingerprint": "26b722610844831b8eb7c3f34cfa76856ea398c0eb6ab8a1ad164321034227ab",
+      "generation_seconds": 0.7033777609976823,
+      "fresh_construction_seconds": 0.7037883140001213,
+      "retained_trace_bytes": 0,
+      "generation_traced_retained_bytes": 9346,
+      "generation_traced_peak_bytes": 709753,
+      "folded_operations": [
+        0,
+        0,
+        0
+      ],
+      "file_bytes": 3371801,
+      "probe_seconds": 0.7056279620010173,
+      "peak_rss_bytes": 26968064,
+      "probe_traced_peak_bytes": 709753
+    },
+    {
+      "component": "sha3-short",
+      "mode": "materialised",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 48,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 155520,
+        "and_": 38784,
+        "not_": 384,
+        "inputs": 256
+      },
+      "gates": 194688,
+      "wires": 194946,
+      "serialised_bytes": 3309785,
+      "stored_trace_bytes": 3309785,
+      "fingerprint": "e4393a6f053bdc2a55c8138ec20ca94e952ab276cb56cb06f5fb723a36d920f9",
+      "generation_seconds": 0.7234261829980824,
+      "fresh_construction_seconds": 0.7235894670011476,
+      "retained_trace_bytes": 3309818,
+      "generation_traced_retained_bytes": 3318828,
+      "generation_traced_peak_bytes": 6926190,
+      "folded_operations": [
+        1600,
+        0,
+        0
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.7850118019996444,
+        "wire_storage_bytes": 195003
+      },
+      "probe_seconds": 1.5086905630014371,
+      "peak_rss_bytes": 32886784,
+      "probe_traced_peak_bytes": 6926190
+    },
+    {
+      "component": "sha3-short",
+      "mode": "count",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 48,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 155520,
+        "and_": 38784,
+        "not_": 384,
+        "inputs": 256
+      },
+      "gates": 194688,
+      "wires": 194946,
+      "serialised_bytes": 3309785,
+      "stored_trace_bytes": 0,
+      "fingerprint": "e4393a6f053bdc2a55c8138ec20ca94e952ab276cb56cb06f5fb723a36d920f9",
+      "generation_seconds": 0.6573550120010623,
+      "fresh_construction_seconds": 0.6574517720000586,
+      "retained_trace_bytes": 0,
+      "generation_traced_retained_bytes": 8978,
+      "generation_traced_peak_bytes": 623402,
+      "folded_operations": [
+        1600,
+        0,
+        0
+      ],
+      "probe_seconds": 0.6574684340012027,
+      "peak_rss_bytes": 26546176,
+      "probe_traced_peak_bytes": 623402
+    },
+    {
+      "component": "sha3-short",
+      "mode": "stream",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 48,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 155520,
+        "and_": 38784,
+        "not_": 384,
+        "inputs": 256
+      },
+      "gates": 194688,
+      "wires": 194946,
+      "serialised_bytes": 3309785,
+      "stored_trace_bytes": 3309785,
+      "fingerprint": "e4393a6f053bdc2a55c8138ec20ca94e952ab276cb56cb06f5fb723a36d920f9",
+      "generation_seconds": 0.7220735689988942,
+      "fresh_construction_seconds": 0.7221544469975925,
+      "retained_trace_bytes": 0,
+      "generation_traced_retained_bytes": 9010,
+      "generation_traced_peak_bytes": 623434,
+      "folded_operations": [
+        1600,
+        0,
+        0
+      ],
+      "file_bytes": 3309785,
+      "probe_seconds": 0.7241056169987132,
+      "peak_rss_bytes": 26677248,
+      "probe_traced_peak_bytes": 623434
+    },
+    {
+      "component": "shake128-short",
+      "mode": "materialised",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 32,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 155392,
+        "and_": 38656,
+        "not_": 256,
+        "inputs": 256
+      },
+      "gates": 194304,
+      "wires": 194562,
+      "serialised_bytes": 3303257,
+      "stored_trace_bytes": 3303257,
+      "fingerprint": "5b6933e10239fe48095110e9d161432fbb771b1c158102f9fecaf01659450560",
+      "generation_seconds": 0.7229778989967599,
+      "fresh_construction_seconds": 0.7231322680017911,
+      "retained_trace_bytes": 3303290,
+      "generation_traced_retained_bytes": 3312268,
+      "generation_traced_peak_bytes": 6907374,
+      "folded_operations": [
+        1600,
+        0,
+        0
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.7743398029997479,
+        "wire_storage_bytes": 194619
+      },
+      "probe_seconds": 1.4975574810014223,
+      "peak_rss_bytes": 33116160,
+      "probe_traced_peak_bytes": 6907374
+    },
+    {
+      "component": "shake128-short",
+      "mode": "count",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 32,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 155392,
+        "and_": 38656,
+        "not_": 256,
+        "inputs": 256
+      },
+      "gates": 194304,
+      "wires": 194562,
+      "serialised_bytes": 3303257,
+      "stored_trace_bytes": 0,
+      "fingerprint": "5b6933e10239fe48095110e9d161432fbb771b1c158102f9fecaf01659450560",
+      "generation_seconds": 0.661122591001913,
+      "fresh_construction_seconds": 0.6612041340013093,
+      "retained_trace_bytes": 0,
+      "generation_traced_retained_bytes": 8946,
+      "generation_traced_peak_bytes": 627562,
+      "folded_operations": [
+        1600,
+        0,
+        0
+      ],
+      "probe_seconds": 0.6612203740005498,
+      "peak_rss_bytes": 26742784,
+      "probe_traced_peak_bytes": 627562
+    },
+    {
+      "component": "shake128-short",
+      "mode": "stream",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 32,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 155392,
+        "and_": 38656,
+        "not_": 256,
+        "inputs": 256
+      },
+      "gates": 194304,
+      "wires": 194562,
+      "serialised_bytes": 3303257,
+      "stored_trace_bytes": 3303257,
+      "fingerprint": "5b6933e10239fe48095110e9d161432fbb771b1c158102f9fecaf01659450560",
+      "generation_seconds": 0.7148005110029771,
+      "fresh_construction_seconds": 0.7148833880019083,
+      "retained_trace_bytes": 0,
+      "generation_traced_retained_bytes": 8978,
+      "generation_traced_peak_bytes": 627594,
+      "folded_operations": [
+        1600,
+        0,
+        0
+      ],
+      "file_bytes": 3303257,
+      "probe_seconds": 0.7168416540007456,
+      "peak_rss_bytes": 26697728,
+      "probe_traced_peak_bytes": 627594
+    },
+    {
+      "component": "shake256-128",
+      "mode": "materialised",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 128,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 156160,
+        "and_": 39424,
+        "not_": 1024,
+        "inputs": 256
+      },
+      "gates": 196608,
+      "wires": 196866,
+      "serialised_bytes": 3342425,
+      "stored_trace_bytes": 3342425,
+      "fingerprint": "ef66e817581d0f51d5cad5b62aa3c610d4ea72c17245063ef3896137412bb9b6",
+      "generation_seconds": 0.7258525020006346,
+      "fresh_construction_seconds": 0.7262119319966587,
+      "retained_trace_bytes": 3342458,
+      "generation_traced_retained_bytes": 3351468,
+      "generation_traced_peak_bytes": 7020270,
+      "folded_operations": [
+        1600,
+        0,
+        0
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.8076185030004126,
+        "wire_storage_bytes": 196923
+      },
+      "probe_seconds": 1.533922980997886,
+      "peak_rss_bytes": 33169408,
+      "probe_traced_peak_bytes": 7020270
+    },
+    {
+      "component": "shake256-128",
+      "mode": "count",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 128,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 156160,
+        "and_": 39424,
+        "not_": 1024,
+        "inputs": 256
+      },
+      "gates": 196608,
+      "wires": 196866,
+      "serialised_bytes": 3342425,
+      "stored_trace_bytes": 0,
+      "fingerprint": "ef66e817581d0f51d5cad5b62aa3c610d4ea72c17245063ef3896137412bb9b6",
+      "generation_seconds": 0.658780473000661,
+      "fresh_construction_seconds": 0.6589576719998149,
+      "retained_trace_bytes": 0,
+      "generation_traced_retained_bytes": 8978,
+      "generation_traced_peak_bytes": 625482,
+      "folded_operations": [
+        1600,
+        0,
+        0
+      ],
+      "probe_seconds": 0.6589754870001343,
+      "peak_rss_bytes": 26796032,
+      "probe_traced_peak_bytes": 625482
+    },
+    {
+      "component": "shake256-128",
+      "mode": "stream",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 128,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 156160,
+        "and_": 39424,
+        "not_": 1024,
+        "inputs": 256
+      },
+      "gates": 196608,
+      "wires": 196866,
+      "serialised_bytes": 3342425,
+      "stored_trace_bytes": 3342425,
+      "fingerprint": "ef66e817581d0f51d5cad5b62aa3c610d4ea72c17245063ef3896137412bb9b6",
+      "generation_seconds": 0.7237918339997123,
+      "fresh_construction_seconds": 0.7239922449989535,
+      "retained_trace_bytes": 0,
+      "generation_traced_retained_bytes": 9010,
+      "generation_traced_peak_bytes": 625514,
+      "folded_operations": [
+        1600,
+        0,
+        0
+      ],
+      "file_bytes": 3342425,
+      "probe_seconds": 0.7259688679987448,
+      "peak_rss_bytes": 26673152,
+      "probe_traced_peak_bytes": 625514
+    },
+    {
+      "component": "parsing",
+      "mode": "materialised",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 457,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 256,
+        "and_": 256,
+        "not_": 256,
+        "inputs": 256
+      },
+      "gates": 768,
+      "wires": 1026,
+      "serialised_bytes": 13145,
+      "stored_trace_bytes": 13145,
+      "fingerprint": "69145196113402cb905c559dc5ee860228934ede3ba08cbfb0e7fc20a97745d5",
+      "generation_seconds": 0.012355364000541158,
+      "fresh_construction_seconds": 0.012405399000272155,
+      "retained_trace_bytes": 13178,
+      "generation_traced_retained_bytes": 13876,
+      "generation_traced_peak_bytes": 105170,
+      "folded_operations": [
+        3400,
+        3400,
+        3400
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.00033855500078061596,
+        "wire_storage_bytes": 1083
+      },
+      "probe_seconds": 0.01278091700078221,
+      "peak_rss_bytes": 26316800,
+      "probe_traced_peak_bytes": 105170
+    },
+    {
+      "component": "parsing",
+      "mode": "count",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 457,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 256,
+        "and_": 256,
+        "not_": 256,
+        "inputs": 256
+      },
+      "gates": 768,
+      "wires": 1026,
+      "serialised_bytes": 13145,
+      "stored_trace_bytes": 0,
+      "fingerprint": "69145196113402cb905c559dc5ee860228934ede3ba08cbfb0e7fc20a97745d5",
+      "generation_seconds": 0.012154930001997855,
+      "fresh_construction_seconds": 0.012229223000758793,
+      "retained_trace_bytes": 0,
+      "generation_traced_retained_bytes": 698,
+      "generation_traced_peak_bytes": 105057,
+      "folded_operations": [
+        3400,
+        3400,
+        3400
+      ],
+      "probe_seconds": 0.012245447000168497,
+      "peak_rss_bytes": 26324992,
+      "probe_traced_peak_bytes": 105057
+    },
+    {
+      "component": "parsing",
+      "mode": "stream",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 457,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 256,
+        "and_": 256,
+        "not_": 256,
+        "inputs": 256
+      },
+      "gates": 768,
+      "wires": 1026,
+      "serialised_bytes": 13145,
+      "stored_trace_bytes": 13145,
+      "fingerprint": "69145196113402cb905c559dc5ee860228934ede3ba08cbfb0e7fc20a97745d5",
+      "generation_seconds": 0.011469459001091309,
+      "fresh_construction_seconds": 0.011520525000378257,
+      "retained_trace_bytes": 0,
+      "generation_traced_retained_bytes": 698,
+      "generation_traced_peak_bytes": 105057,
+      "folded_operations": [
+        3400,
+        3400,
+        3400
+      ],
+      "file_bytes": 13145,
+      "probe_seconds": 0.01161413000227185,
+      "peak_rss_bytes": 26361856,
+      "probe_traced_peak_bytes": 264411
+    },
+    {
+      "component": "enrolment",
+      "mode": "materialised",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 48,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 155520,
+        "and_": 38787,
+        "not_": 384,
+        "inputs": 256
+      },
+      "gates": 194691,
+      "wires": 194949,
+      "serialised_bytes": 3309836,
+      "stored_trace_bytes": 3309836,
+      "fingerprint": "57712c0fdb2e6ace69c7cc2ddda40028eef8b97b192766aee30efcb624b1c0e2",
+      "generation_seconds": 1.0385075180020067,
+      "fresh_construction_seconds": 1.0407520900007512,
+      "retained_trace_bytes": 3309869,
+      "generation_traced_retained_bytes": 3319015,
+      "generation_traced_peak_bytes": 6937391,
+      "folded_operations": [
+        636736,
+        161792,
+        8193
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.61725784599912,
+        "wire_storage_bytes": 195006
+      },
+      "reuse_wrong_opening": {
+        "output": 0,
+        "seconds": 0.6207660090003628,
+        "wire_storage_bytes": 195006
+      },
+      "calculated_enrolment_view_bytes": 9729,
+      "projected_enrolment_proof_bytes": 9587104,
+      "proof_status": "calculated for provisional circuit, d=256; no proof generated",
+      "probe_seconds": 2.278946952003025,
+      "peak_rss_bytes": 34222080,
+      "probe_traced_peak_bytes": 6937391
+    },
+    {
+      "component": "enrolment",
+      "mode": "count",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 48,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 155520,
+        "and_": 38787,
+        "not_": 384,
+        "inputs": 256
+      },
+      "gates": 194691,
+      "wires": 194949,
+      "serialised_bytes": 3309836,
+      "stored_trace_bytes": 0,
+      "fingerprint": "57712c0fdb2e6ace69c7cc2ddda40028eef8b97b192766aee30efcb624b1c0e2",
+      "generation_seconds": 0.9699483090007561,
+      "fresh_construction_seconds": 0.971814471999096,
+      "retained_trace_bytes": 0,
+      "generation_traced_retained_bytes": 9114,
+      "generation_traced_peak_bytes": 690471,
+      "folded_operations": [
+        636736,
+        161792,
+        8193
+      ],
+      "calculated_enrolment_view_bytes": 9729,
+      "projected_enrolment_proof_bytes": 9587104,
+      "proof_status": "calculated for provisional circuit, d=256; no proof generated",
+      "probe_seconds": 0.9718416159994376,
+      "peak_rss_bytes": 26746880,
+      "probe_traced_peak_bytes": 690471
+    },
+    {
+      "component": "enrolment",
+      "mode": "stream",
+      "complete": true,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 48,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "counts": {
+        "xor": 155520,
+        "and_": 38787,
+        "not_": 384,
+        "inputs": 256
+      },
+      "gates": 194691,
+      "wires": 194949,
+      "serialised_bytes": 3309836,
+      "stored_trace_bytes": 3309836,
+      "fingerprint": "57712c0fdb2e6ace69c7cc2ddda40028eef8b97b192766aee30efcb624b1c0e2",
+      "generation_seconds": 1.0389633529994171,
+      "fresh_construction_seconds": 1.0408133640012238,
+      "retained_trace_bytes": 0,
+      "generation_traced_retained_bytes": 9146,
+      "generation_traced_peak_bytes": 690503,
+      "folded_operations": [
+        636736,
+        161792,
+        8193
+      ],
+      "file_bytes": 3309836,
+      "calculated_enrolment_view_bytes": 9729,
+      "projected_enrolment_proof_bytes": 9587104,
+      "proof_status": "calculated for provisional circuit, d=256; no proof generated",
+      "probe_seconds": 1.0429857349990925,
+      "peak_rss_bytes": 26533888,
+      "probe_traced_peak_bytes": 690503
+    },
+    {
+      "component": "sha3-multiple",
+      "mode": "materialised",
+      "complete": false,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 209,
+      "public_expected_output_bytes": 48,
+      "tracemalloc_enabled": true,
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 200000,
+        "wires": 201674,
+        "serialised_bytes_so_far": 3400056,
+        "stored_bytes": 3400056,
+        "complete": false
+      },
+      "probe_seconds": 0.7475051430010353,
+      "peak_rss_bytes": 30535680,
+      "probe_traced_peak_bytes": 4376715
+    },
+    {
+      "component": "sha3-multiple",
+      "mode": "count",
+      "complete": false,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 209,
+      "public_expected_output_bytes": 48,
+      "tracemalloc_enabled": true,
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 200000,
+        "wires": 201674,
+        "serialised_bytes_so_far": 3400056,
+        "stored_bytes": 0,
+        "complete": false
+      },
+      "probe_seconds": 0.6784689300002356,
+      "peak_rss_bytes": 27168768,
+      "probe_traced_peak_bytes": 823401
+    },
+    {
+      "component": "sha3-multiple",
+      "mode": "stream",
+      "complete": false,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 209,
+      "public_expected_output_bytes": 48,
+      "tracemalloc_enabled": true,
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 200000,
+        "wires": 201674,
+        "serialised_bytes_so_far": 3400056,
+        "stored_bytes": 3400056,
+        "complete": false
+      },
+      "probe_seconds": 0.7357698270025139,
+      "peak_rss_bytes": 27213824,
+      "probe_traced_peak_bytes": 823433
+    },
+    {
+      "component": "shake128-1026",
+      "mode": "materialised",
+      "complete": false,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 1026,
+      "tracemalloc_enabled": true,
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 200000,
+        "wires": 200258,
+        "serialised_bytes_so_far": 3400056,
+        "stored_bytes": 3400056,
+        "complete": false
+      },
+      "probe_seconds": 0.7377102450009261,
+      "peak_rss_bytes": 30158848,
+      "probe_traced_peak_bytes": 4180940
+    },
+    {
+      "component": "shake128-1026",
+      "mode": "count",
+      "complete": false,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 1026,
+      "tracemalloc_enabled": true,
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 200000,
+        "wires": 200258,
+        "serialised_bytes_so_far": 3400056,
+        "stored_bytes": 0,
+        "complete": false
+      },
+      "probe_seconds": 0.6838205759995617,
+      "peak_rss_bytes": 26730496,
+      "probe_traced_peak_bytes": 627626
+    },
+    {
+      "component": "shake128-1026",
+      "mode": "stream",
+      "complete": false,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 1026,
+      "tracemalloc_enabled": true,
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 200000,
+        "wires": 200258,
+        "serialised_bytes_so_far": 3400056,
+        "stored_bytes": 3400056,
+        "complete": false
+      },
+      "probe_seconds": 0.7353354529986973,
+      "peak_rss_bytes": 26636288,
+      "probe_traced_peak_bytes": 627658
+    },
+    {
+      "component": "shake256-512",
+      "mode": "materialised",
+      "complete": false,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 512,
+      "tracemalloc_enabled": true,
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 200000,
+        "wires": 200258,
+        "serialised_bytes_so_far": 3400056,
+        "stored_bytes": 3400056,
+        "complete": false
+      },
+      "probe_seconds": 0.7344104779986083,
+      "peak_rss_bytes": 29966336,
+      "probe_traced_peak_bytes": 4178860
+    },
+    {
+      "component": "shake256-512",
+      "mode": "count",
+      "complete": false,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 512,
+      "tracemalloc_enabled": true,
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 200000,
+        "wires": 200258,
+        "serialised_bytes_so_far": 3400056,
+        "stored_bytes": 0,
+        "complete": false
+      },
+      "probe_seconds": 0.6826099890022306,
+      "peak_rss_bytes": 26447872,
+      "probe_traced_peak_bytes": 625546
+    },
+    {
+      "component": "shake256-512",
+      "mode": "stream",
+      "complete": false,
+      "canonical_identity": "provisional; SPEC-003 pending",
+      "construction": "fresh",
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_seconds_limit": 5,
+      "evaluation_wire_limit": 265538,
+      "address_space_limit_bytes": 268435456,
+      "private_input_bytes": 32,
+      "public_expected_output_bytes": 512,
+      "tracemalloc_enabled": true,
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 200000,
+        "wires": 200258,
+        "serialised_bytes_so_far": 3400056,
+        "stored_bytes": 3400056,
+        "complete": false
+      },
+      "probe_seconds": 0.7360586220020195,
+      "peak_rss_bytes": 26759168,
+      "probe_traced_peak_bytes": 625578
+    }
+  ],
+  "limitations": [
+    "Instrumented single runs; RSS includes interpreter/native allocations.",
+    "Retained traced memory excludes pre-trace allocations; no whole-compiler bound.",
+    "Full hash rounds retained on success; aborted output is never a completed circuit.",
+    "Enrolment fresh generation and evaluation reuse are distinct; no cache.",
+    "SPEC-003 pending; counts/identity/proof-size calculations are provisional."
+  ]
+}

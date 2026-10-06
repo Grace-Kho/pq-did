@@ -1,0 +1,158 @@
+--- a/libiop/bcs/hashing/blake2b.hpp
++++ b/libiop/bcs/hashing/blake2b.hpp
+@@ -8,6 +8,7 @@
+ #ifndef LIBIOP_SNARK_COMMON_HASHING_BLAKE2B_HPP_
+ #define LIBIOP_SNARK_COMMON_HASHING_BLAKE2B_HPP_
+ 
++#include "exp2_public_pilot.hpp"
+ #include <functional>
+ #include <memory>
+ #include <string>
+@@ -22,6 +23,48 @@
+ template<typename FieldT, typename MT_root_type>
+ class blake2b_hashchain : public hashchain<FieldT, MT_root_type>
+ {
++
++    private:
++        std::unique_ptr<exp2_public_state> exp2_;
++        bool exp2_attempted_ = false;
++    public:
++        bool exp2_active() const { return exp2_attempted_; }
++        const exp2_public_state& exp2_trace() const {
++            if(!exp2_) throw std::invalid_argument("no usable EXP2 object");
++            return *exp2_;
++        }
++        void exp2_forbid_legacy() {
++            if(exp2_active()) exp2_fail("legacy method unavailable in EXP2");
++        }
++        void exp2_fail(const std::string& reason) {
++            if(exp2_) exp2_->mode="FAILED";
++            throw std::invalid_argument(reason);
++        }
++        void exp2_initialise(const std::string& canonical, bool grouped, unsigned version) {
++            if(exp2_attempted_) exp2_fail("no EXP2 reset");
++            exp2_attempted_=true;
++            if(security_parameter_!=256) exp2_fail("EXP2 digest profile");
++            exp2_.reset(new exp2_public_state(canonical,grouped,version));
++        }
++        void exp2_commit(size_t r,const std::vector<std::string>& roots,
++                         const std::vector<std::string>& messages) {
++            try {
++                auto trial=exp2_trace(); trial.commit_body(r,roots,messages);
++                *exp2_=std::move(trial);
++            } catch(...) { if(exp2_) exp2_->mode="FAILED"; throw; }
++        }
++        std::string exp2_challenge(size_t r,size_t c) {
++            try {
++                auto trial=exp2_trace(); auto result=trial.challenge_body(r,c);
++                *exp2_=std::move(trial); return result;
++            } catch(...) { if(exp2_) exp2_->mode="FAILED"; throw; }
++        }
++        void exp2_finish() {
++            try {
++                auto trial=exp2_trace(); trial.finish_body(); *exp2_=std::move(trial);
++            } catch(...) { if(exp2_) exp2_->mode="FAILED"; throw; }
++        }
++
+     protected:
+         binary_hash_digest internal_state_;
+         const size_t security_parameter_;
+--- a/libiop/bcs/hashing/blake2b.tcc
++++ b/libiop/bcs/hashing/blake2b.tcc
+@@ -21,6 +21,7 @@
+ std::shared_ptr<hashchain<FieldT, hash_data_type>>
+     blake2b_hashchain<FieldT, hash_data_type>::new_hashchain()
+ {
++    this->exp2_forbid_legacy();
+     return std::make_shared<blake2b_hashchain<FieldT, hash_data_type>>
+         (this->security_parameter_);
+ }
+@@ -28,6 +29,7 @@
+ template<typename FieldT, typename hash_data_type>
+ void blake2b_hashchain<FieldT, hash_data_type>::absorb(const hash_data_type new_input)
+ {
++    this->exp2_forbid_legacy();
+     this->absorb_internal(new_input);
+ }
+ 
+@@ -68,6 +70,7 @@
+ template<typename FieldT, typename hash_data_type>
+ void blake2b_hashchain<FieldT, hash_data_type>::absorb(const std::vector<FieldT> &new_input)
+ {
++    this->exp2_forbid_legacy();
+     const binary_hash_digest new_input_hash =
+         blake2b_field_element_hash<FieldT>(new_input, this->digest_len_bytes_);
+     this->absorb_hash_digest(new_input_hash);
+@@ -77,6 +80,7 @@
+ std::vector<FieldT> blake2b_hashchain<FieldT, hash_data_type>::squeeze(
+     const size_t num_elements)
+ {
++    this->exp2_forbid_legacy();
+     this->squeeze_index_++;
+     return blake2b_FieldT_randomness_extractor<FieldT>(
+         this->internal_state_,
+@@ -88,6 +92,7 @@
+ std::vector<size_t> blake2b_hashchain<FieldT, hash_data_type>::squeeze_query_positions(
+         const size_t num_positions, const size_t range_of_positions)
+ {
++    this->exp2_forbid_legacy();
+     std::vector<size_t> query_pos;
+     for (size_t i = 0; i < num_positions; i++)
+     {
+--- a/libiop/bcs/bcs_common.hpp
++++ b/libiop/bcs/bcs_common.hpp
+@@ -127,6 +127,19 @@
+ 
+ template<typename FieldT, typename MT_hash_type>
+ class bcs_protocol : public iop_protocol<FieldT> {
++
++    public:
++        blake2b_hashchain<FieldT,MT_hash_type>& exp2_chain() {
++            auto* value=dynamic_cast<blake2b_hashchain<FieldT,MT_hash_type>*>(hashchain_.get());
++            if(!value) throw std::invalid_argument("EXP2 requires BLAKE2b hashchain");
++            return *value;
++        }
++        void exp2_initialise(const std::string& canonical,bool grouped,unsigned version) {
++            exp2_chain().exp2_initialise(canonical,grouped,version);
++        }
++        std::string exp2_challenge(size_t r,size_t c) { return exp2_chain().exp2_challenge(r,c); }
++        void exp2_finish() { exp2_chain().exp2_finish(); }
++
+ protected:
+     size_t num_index_trees = 0;
+     /* We use one Merkle Tree to compress each prover response oracle. */
+--- a/libiop/bcs/bcs_common.tcc
++++ b/libiop/bcs/bcs_common.tcc
+@@ -553,6 +553,32 @@
+     const std::vector<MT_root_hash> round_MT_roots,
+     const std::vector<std::vector<FieldT> > prover_messages)
+ {
++
++    auto* exp2=dynamic_cast<blake2b_hashchain<FieldT,MT_root_hash>*>(this->hashchain_.get());
++    if(exp2 && exp2->exp2_active()) {
++        try {
++            if(round>=this->num_prover_messages_at_end_of_round_.size())
++                exp2->exp2_fail("round outside registered plan");
++            const size_t lo=round ? this->num_prover_messages_at_end_of_round_[round-1] : 0;
++            const size_t hi=this->num_prover_messages_at_end_of_round_[round];
++            if(hi<lo || hi>prover_messages.size()) exp2->exp2_fail("incomplete messages");
++            std::vector<std::string> messages;
++            for(size_t i=lo;i<hi;++i) {
++                if(prover_messages[i].size()>2) exp2->exp2_fail("message capacity");
++                std::string packed;
++                for(const auto& value:prover_messages[i]) {
++                    auto words=value.to_words();
++                    if(FieldT::ceil_size_in_bits()!=192 || words.size()!=3)
++                        exp2->exp2_fail("unsupported field representation");
++                    for(auto word:words) for(size_t b=0;b<8;++b) packed+=char(word>>(8*b));
++                }
++                messages.push_back(packed);
++            }
++            exp2->exp2_commit(round,round_MT_roots,messages);
++            return; // Explicit EXP2 ports, never the unreviewed Aurora query scheduler.
++        } catch(...) { exp2->exp2_fail("EXP2 BCS round failed"); }
++    }
++
+     /* Assume the Merkle tree is already created. */
+     for (auto MT_root : round_MT_roots)
+     {

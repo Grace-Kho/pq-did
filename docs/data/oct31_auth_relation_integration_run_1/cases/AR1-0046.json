@@ -1,0 +1,38 @@
+{
+  "case_id": "M-08",
+  "invocation_id": "AR1-0046",
+  "status": "pass",
+  "details": {
+    "coverage": "complete named component only",
+    "expected": false,
+    "actual": false,
+    "descriptor": {
+      "complete": true,
+      "inputs": 64,
+      "gates": 931,
+      "rows": 997,
+      "variables": 996,
+      "primary": 1,
+      "output_wire": 996,
+      "nonzero_terms": [
+        1444,
+        1045,
+        933
+      ],
+      "matrix_sha256": "77268ae8b9e6c0a49768b937b007fc89e24172285732f78462f6e88971f7f483",
+      "public_identity": "07d91b35f117334cc3b0dd5c2591125a4479f2f82c6c9a718cc03725b4f860b6",
+      "gate_counts": [
+        527,
+        334,
+        70
+      ],
+      "free_input_booleanity_rows": 64,
+      "output_rows": 2,
+      "assignment_storage_bytes": 996,
+      "memory_model": "bounded retained byte assignment; no last-use claim"
+    },
+    "generation_and_stream_check_seconds": 0.005076343892142177
+  },
+  "seconds": 0.005125091061927378,
+  "work_events": 3856
+}

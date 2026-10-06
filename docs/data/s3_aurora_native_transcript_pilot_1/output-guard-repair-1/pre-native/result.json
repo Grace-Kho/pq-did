@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "audit_exit": 0,
+  "content_partition_union": 10901,
+  "resource_guard_record": "../pre-audit.json",
+  "report_readback_complete": true
+}

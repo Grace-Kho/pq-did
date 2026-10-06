@@ -1,0 +1,19 @@
+{
+  "sha256": {
+    "docs/stage3_mldsa_arithmetic_lowering_review.md": "796c88a8e74380df4040a98360ef7f0a2c1fd070fc5abded386fd06c1b49f01d",
+    "docs/stage3_mldsa_modmul_lowering_pilot.md": "84b955c32100b94f47be760081cec33c05cd8792c5ce4d56bea841668d0623aa",
+    "docs/implementation_spec.md": "e3d919cf22e4110e83dc822d6a7b1d72b40d0a93f79371e00f9e010b71b10003",
+    "src/pqdid/bounded_mldsa.py": "18b5402247086ccee88d4c4f452234f672d0db15d0324164ad1c2523f531f7f1",
+    "src/pqdid/circuits/scalar_ring.py": "f2012a9d1202686368eb2693495bccd00af8be73ce8a00535a8ced9a190adf45",
+    "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec",
+    "src/pqdid/circuits/division.py": "03c3c7abcaaa267450930707b9a2c9534143cc95c470635367cc4a9c66dba8ba",
+    "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+    "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+    "tests/reference/scalar_oracle.py": "3cf218d9a1476e315692404d0e6bb8adf88e18df46387d8fc5b9e9c1d589f2b4",
+    "tests/reference/signature_oracle.py": "dbc14fd88a071cad58915da7c8cef2bd6b6f800d27e5c2b7ae156f7c1cdc1ed8",
+    "experiments/mldsa_modmul_lowering_1/candidate.py": "70ea9bc68d2a36b36e0d6c84371b30844b2392816ebbc22e5b94618f3fa9e90a",
+    "docs/data/s3_mldsa_modmul_lowering_pilot_1/pilot-result.json": "33ed07161e4f4a0208ffd668d1d47e1bfd72b407878b6210de3ad520c390c16f",
+    "configs/suite.json": "f0ffeb88005bfe46a83701f3c906a2cba004afafbfd1b93d3ed7ac6c78d8e942"
+  },
+  "kind": "Review input identity only; no historical baseline replacement"
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "command": [
+      "systemd-analyze",
+      "verify",
+      "--man=no",
+      "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_plan_1/tmp/unit-static-kjtxsi5o/pqiso.slice",
+      "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_plan_1/tmp/unit-static-kjtxsi5o/pqiso-owner@.service",
+      "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_plan_1/tmp/unit-static-kjtxsi5o/pqiso-client@.service",
+      "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_plan_1/tmp/unit-static-kjtxsi5o/pqiso-replacement-m.service"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_plan_1/tmp/unit-static-kjtxsi5o/pqiso.slice:8: Support for option CPUAccounting= has been removed and it is ignored\n",
+    "units_started": 0,
+    "files_installed": 0
+  }
+]

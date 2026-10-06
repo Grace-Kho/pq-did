@@ -1,0 +1,90 @@
+{
+  "record_kind": "draft_project_targets_and_independent_integer_checks",
+  "date": "2026-09-19",
+  "active": false,
+  "benchmark_executed": false,
+  "units": {
+    "MiB_bytes": 1048576,
+    "GiB_bytes": 1073741824,
+    "Mbit_per_second_bits_per_second": 1000000
+  },
+  "proposed_targets": {
+    "raw_authentication_proof_bytes": 10485760,
+    "complete_encoded_presentation_bytes": 12582912,
+    "prover_p95_seconds": 30,
+    "verifier_p95_seconds": 2,
+    "end_to_end_p95_seconds": 45,
+    "prover_peak_RSS_bytes": 4294967296,
+    "verifier_peak_RSS_bytes": 1073741824,
+    "exploratory_raw_proof_bytes": 1048576,
+    "exploratory_end_to_end_p95_seconds": 10
+  },
+  "frozen_formula": {
+    "witness_bits": 42632,
+    "repetitions": 480,
+    "original": "64+480*(515+2*ceil((42632+2*g)/8))",
+    "equivalent": "5363104+960*ceil(g/4)",
+    "zero_AND_floor_bytes": 5363104,
+    "largest_AND_count_under_10_MiB": 21344,
+    "proof_bytes_at_21344_ANDs": 10485664,
+    "proof_bytes_at_21345_ANDs": 10486624,
+    "one_MiB_possible_even_at_zero_ANDs": false,
+    "evaluated_points": [
+      {
+        "ANDs": 0,
+        "bytes": 5363104
+      },
+      {
+        "ANDs": 1,
+        "bytes": 5364064
+      },
+      {
+        "ANDs": 3,
+        "bytes": 5364064
+      },
+      {
+        "ANDs": 4,
+        "bytes": 5364064
+      },
+      {
+        "ANDs": 5,
+        "bytes": 5365024
+      },
+      {
+        "ANDs": 21344,
+        "bytes": 10485664
+      },
+      {
+        "ANDs": 21345,
+        "bytes": 10486624
+      },
+      {
+        "ANDs": 413709,
+        "bytes": 104653984
+      },
+      {
+        "ANDs": 13532448,
+        "bytes": 3253150624
+      }
+    ],
+    "projection_caveat": "Fragment AND counts are conditional authentication projections; exact inclusion in complete CGen(auth) is unproved."
+  },
+  "encoding": {
+    "padded_base64_formula": "4*ceil(n/3)",
+    "base64_10_MiB_bytes": 13981016,
+    "base64_1_MiB_bytes": 1398104,
+    "max_binary_under_12_MiB_base64_zero_other_overhead_bytes": 9437184
+  },
+  "network": {
+    "payload_bits_per_second": 10000000,
+    "RTT_milliseconds": 50,
+    "illustrative_RTT_count": 2,
+    "12_MiB_upload_seconds": 10.0663296,
+    "1_MiB_upload_seconds": 0.8388608,
+    "1_MiB_base64_upload_seconds": 1.1184832,
+    "serial_30_plus_2_plus_upload_plus_two_RTT_seconds": 42.1663296,
+    "remaining_45_second_budget": 2.8336704,
+    "remaining_10_second_budget_after_1_MiB_binary_upload_and_two_RTT": 9.0611392,
+    "caveat": "Arithmetic budget, not measured latency; sums of component p95s do not establish end-to-end p95."
+  }
+}

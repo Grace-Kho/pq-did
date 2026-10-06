@@ -1,0 +1,38 @@
+{
+  "invocation_id": "M1-0061",
+  "case_id": "B-20",
+  "ordinal": 61,
+  "cumulative_invocations": 509,
+  "status": "failed",
+  "result": {
+    "passed": false,
+    "error": "EncodingError",
+    "message": "enrolment-possession",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/tasks.py\", line 60, in cases\n    notes = module.case(case, scenario)\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/cases.py\", line 221, in case\n    rejected(\n    ~~~~~~~~^\n        lambda: s.issuer.complete(challenge.session, signature), core.BoundedMLDSAError\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/cases.py\", line 48, in rejected\n    operation()\n    ~~~~~~~~~^^\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/cases.py\", line 222, in <lambda>\n    lambda: s.issuer.complete(challenge.session, signature), core.BoundedMLDSAError\n            ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/issuance.py\", line 107, in complete\n    require(\n    ~~~~~~~^\n        verify(\"enrol\", row[3], body, octets(enrolment_signature, 3309)), \"enrolment-possession\"\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/records.py\", line 26, in require\n    raise EncodingError(reason)\npqdid.codec.EncodingError: enrolment-possession\n",
+    "state": {
+      "manager_epoch": 0,
+      "allocated_count": 1,
+      "issuer_phases": [
+        "RESERVED"
+      ],
+      "verifiers": {
+        "A": {
+          "audience": "baseline-audience-A",
+          "challenges": 0,
+          "consumed": 0,
+          "head": "f0795a696a1b0414061a39486c7d518f00981c84dbbea973f7cf0279a685730f",
+          "generation": 1
+        },
+        "B": {
+          "audience": "baseline-audience-B",
+          "challenges": 0,
+          "consumed": 0,
+          "head": "4fa3e48990e67310c0d7a051cfb8484bf9baaa8695192b7fd7739b706ffd544e",
+          "generation": 1
+        }
+      },
+      "holder_epoch": null
+    }
+  },
+  "seconds": 0.2627388589316979
+}

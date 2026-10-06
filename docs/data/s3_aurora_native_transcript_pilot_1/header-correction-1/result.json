@@ -1,0 +1,15 @@
+{
+  "package": "S3-AURORA-NATIVE-TRANSCRIPT-PILOT-1-header-correction-and-fifth-build",
+  "passed": false,
+  "status": "blocked",
+  "blocker": "AURORA-NATIVE-ARTIFACT-001",
+  "full_audit_admission_attempts": 1,
+  "full_audit_worker_attempts": 0,
+  "content_comparison_passed": false,
+  "native_pilot_complete": false,
+  "build_compilation_and_linking_complete": true,
+  "outer_build_validation_complete": false,
+  "native_invocations": 0,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1
+}

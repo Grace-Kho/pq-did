@@ -1,0 +1,31 @@
+{
+  "phase": "build",
+  "slot": null,
+  "mem_available_at_admission": 5224677376,
+  "name": "ntt-component-build",
+  "command": [
+    "/bin/bash",
+    "scripts/build_ntt.sh"
+  ],
+  "limit_seconds": 180,
+  "memory_max": 2147483648,
+  "network": false,
+  "start_time_UTC": "2026-09-18T19:04:10Z",
+  "status": "pass",
+  "wall_seconds": 3.0908485719992314,
+  "exit_code": 0,
+  "stop_reason": null,
+  "effective_cgroup": {
+    "memory.max": "2147483648",
+    "memory.swap.max": "0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "sampled_process_tree_RSS_peak": 280666112,
+  "sampled_cgroup_charge_peak": 466849792,
+  "sampled_swap_peak": 0,
+  "sampled_experiment_disk_peak": 5162885503,
+  "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+  "log": "evidence/ntt-component-build.log",
+  "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+}

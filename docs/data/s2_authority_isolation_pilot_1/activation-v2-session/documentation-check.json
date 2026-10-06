@@ -1,0 +1,11 @@
+{
+  "kind": "targeted documentation/preservation bookkeeping; not a test invocation or full historical audit",
+  "passed": true,
+  "report_prefixes_preserved": 4,
+  "sealed_inputs_still_matching": 116,
+  "approved_manifest_unchanged": true,
+  "markdown_newline_and_whitespace_checks": "passed for all appended text",
+  "session_json_validation": "passed",
+  "python_lint_and_format": "not applicable; no Python source changed",
+  "seconds": 0.0033516569528728724
+}

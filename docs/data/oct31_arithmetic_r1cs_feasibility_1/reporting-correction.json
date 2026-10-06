@@ -1,0 +1,11 @@
+{
+  "failure": "Missing cases directory caused final case-record FileNotFoundError after calculation output completed",
+  "original_outcome": "incomplete, one invocation and full 50000000 work-event reservation retained; not a successful complete run",
+  "correction": "Create the designated cases directory before reserving a case; one explicitly authorised routine correction rerun Q-01-R1 with separate output",
+  "semantics_or_expected_bounds_changed": false,
+  "preserved_sha256": {
+    "docs/data/oct31_arithmetic_r1cs_feasibility_1/jobs/workload-decision.log": "55fd439afc0a324244a9180ee5e6828d5c5660c4c323c0b62f89599c070eabe6",
+    "docs/data/oct31_arithmetic_r1cs_feasibility_1/jobs/workload-decision.json": "858fd857891f819dbb9d4c226c81222dfc19899dbc398245d8edbbd43897e548",
+    "docs/data/oct31_arithmetic_r1cs_feasibility_1/whole-workload-model.json": "481ef2e09b69badd127e70087ac24122f5318e9339482b35d823c8ae9160ecdd"
+  }
+}

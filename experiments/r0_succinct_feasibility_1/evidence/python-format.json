@@ -1,0 +1,24 @@
+{
+  "phase": "check",
+  "name": "python-format",
+  "command": [
+    "/bin/bash",
+    "scripts/format_python.sh"
+  ],
+  "limit_seconds": 60,
+  "memory_max": 268435456,
+  "network": false,
+  "start_time_UTC": "2026-09-18T18:17:14Z",
+  "status": "failed",
+  "wall_seconds": 0.14715031700325198,
+  "exit_code": 1,
+  "stop_reason": null,
+  "effective_cgroup": {},
+  "sampled_process_tree_RSS_peak": 0,
+  "sampled_cgroup_charge_peak": 0,
+  "sampled_swap_peak": 0,
+  "sampled_experiment_disk_peak": 3972798388,
+  "systemd_final_properties": "Result=exit-code\nExecMainCode=1\nExecMainStatus=1\nControlGroup=\nMemoryPeak=5976064\nMemorySwapPeak=0\nCPUUsageNSec=31193000\n",
+  "log": "evidence/python-format.log",
+  "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+}

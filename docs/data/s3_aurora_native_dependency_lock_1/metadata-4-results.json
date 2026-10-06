@@ -1,0 +1,13 @@
+[
+  {
+    "id": "libsodium-dev-filelist",
+    "url": "https://packages.ubuntu.com/resolute/amd64/libsodium-dev/filelist",
+    "display": false,
+    "status": 200,
+    "final_url": "https://packages.ubuntu.com/resolute/amd64/libsodium-dev/filelist",
+    "bytes": 7376,
+    "sha256": "f35ddff5e8ab7b9e4b9bbb3fc0829d71dbf62e641a0ca0ee540757ef1a5e545d",
+    "retained": "docs/data/s3_aurora_native_dependency_lock_1/metadata/libsodium-dev-filelist.gz",
+    "seconds": 0.9002515169559047
+  }
+]

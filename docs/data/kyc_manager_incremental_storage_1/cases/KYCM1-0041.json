@@ -1,0 +1,33 @@
+{
+  "invocation_id": "KYCM1-0041",
+  "case_id": "H-16",
+  "work_event_reservation": 0,
+  "ordinal": 41,
+  "cumulative_invocations": 1132,
+  "status": "pass",
+  "details": {
+    "status": "updated-at-target-state",
+    "page_bytes": [
+      55041,
+      55041
+    ],
+    "records": 8,
+    "public_requests": [
+      [
+        "1111111111111111111111111111111111111111111111111111111111111111",
+        0,
+        8
+      ],
+      [
+        "1111111111111111111111111111111111111111111111111111111111111111",
+        4,
+        8
+      ]
+    ],
+    "holder_identifier_transmitted": false,
+    "atomic_wallet": true
+  },
+  "seconds": 3.0380558280739933,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

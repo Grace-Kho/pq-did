@@ -1,0 +1,121 @@
+Work in `/home/grace/projects/pq-did`.
+
+Complete `R0-ENROL-PO17-1`: an enrolment segmentation check at po2 17, followed conditionally by one bounded Succinct proof attempt.
+
+This authorises one execution-only check and, if its conditions pass, at most one of the two remaining proof attempts. Keep CredValid proving outside this package.
+
+1. Establish the comparison.
+
+Read AGENTS.md, docs/stage3_r0_succinct_proof_1.md and the relevant experimental configuration and evidence.
+
+Use only manuscript Sections II–VIII. Preserve the manuscript, active suite, reference code, dependencies, vectors and historical evidence.
+
+Record the failed attempt accurately:
+
+* Enrolment timed out during its sixth recursion lift.
+* Elapsed time: 600.128 seconds.
+* Peak memory: 1.416 GiB.
+* No final Succinct receipt.
+* One proof attempt used; two remain.
+
+Inspect existing logs for completed segment proofs, completed lifts, joins and phase timings. Distinguish completed operations from the operation underway at termination.
+
+Record the actual host/prover build profile, CPU settings and cache state. Identify any configuration issue that would confound the segmentation comparison.
+
+2. Change the segmentation setting only.
+
+Use the same enrolment guest ELF, image ID, fixture and expected public journal.
+
+Configure the executor’s actual segment setting to po2 17 using the pinned SDK’s supported interface. Distinguish the executor setting from the prover’s maximum supported segment size.
+
+Confirm that the existing prover and registered verifier parameters support the resulting segment sizes. Do not broaden accepted verifier parameters merely to force acceptance.
+
+Preserve guest code, cryptographic parameters, total execution-cycle limit and receipt mode.
+
+Do not assume that dividing user cycles by 2¹⁷ gives the actual segment count. Measure the resulting partition, including available system/paging overhead and padding.
+
+3. Perform one execution-only check.
+
+Retain existing execution time, memory and storage limits.
+
+Require successful enrolment execution and an exact expected-journal match. Record:
+
+* Actual segment count and sizes.
+* User cycles and available total/padded-cycle measurements.
+* Execution time and process-tree memory.
+* Comparison with the previous segmentation.
+
+Reuse historical baseline evidence rather than rerunning the failed configuration.
+
+Proceed to the proof attempt only if:
+
+* Execution and journal checks pass.
+* The actual segment count decreases.
+* The selected segment sizes are supported.
+* There is no known configuration or resource incompatibility.
+
+Execution memory does not establish proving memory. The proof attempt must enforce its own resource limits.
+
+If these conditions fail, preserve the evidence and finish without consuming a proof attempt.
+
+4. Make one conditional enrolment proof attempt.
+
+Use local CPU proving and the intended Succinct STARK receipt mode.
+
+Enforce:
+
+* One proving worker.
+* 2 GiB aggregate memory for the complete process tree, including recursion.
+* A 600-second deadline for the complete proving pipeline.
+* Existing disk limits.
+* No automatic retries or limit increases.
+
+Keep fake-proof modes, remote proving and Groth16 compression disabled.
+
+Include all segment proving, lifts, joins and final receipt construction. Do not reset the deadline for individual stages.
+
+Launching this pipeline consumes one remaining attempt, including if it times out or fails. Do not use the final remaining attempt in this package.
+
+5. Verify any completed receipt independently.
+
+If a final Succinct receipt is produced, verify it in a fresh process using only the receipt, expected public inputs and registered guest/verifier identities.
+
+Require the intended receipt variant, expected image ID, successful complete execution, no unresolved assumptions and exact expected journal.
+
+Run focused rejection checks for modified receipt data, modified journal, wrong image ID and mismatched public statement.
+
+Intermediate segment proofs or partial recursion artefacts do not count as a completed Succinct receipt.
+
+6. Record the measured outcome.
+
+Report execution, segment proving, recursion and verification timings where observable, together with:
+
+* Total proving-pipeline time.
+* Peak process-tree memory and temporary storage.
+* Segment/lift/join counts.
+* Seal, journal and complete receipt sizes, if available.
+* Exact stopping phase if incomplete.
+* Build, cache and configuration differences from the first attempt.
+
+The previous 600-second result was a timeout, not a completed proving time. Do not calculate an exact overall speedup against it.
+
+Distinguish a measured reduction in segment count from a measured reduction in total proving cost.
+
+7. Update the evidence and next decision.
+
+Create:
+
+`/home/grace/projects/pq-did/docs/stage3_r0_enrol_po17.md`
+
+Save machine-readable results and update status, traceability and the cumulative attempt ledger:
+
+* If only execution ran: one proof attempt used, two remain.
+* If proving launched: two attempts used, one remains.
+
+Keep the active profile unchanged. Full authentication, CredValid proving, privacy/security justification and outstanding Stage 2 obligations remain open.
+
+If enrolment succeeds, assess whether its measured costs justify spending the final attempt on CredValid under a concrete resource plan. Do not infer CredValid proving time solely from the ratio of user-cycle counts.
+
+If enrolment fails again, identify what the result establishes and recommend a specific feasibility decision. Do not automatically increase po2, memory or deadlines.
+
+Run checks relevant to changed configuration, harness and documentation; reuse unchanged reference validation. Stop after this package.

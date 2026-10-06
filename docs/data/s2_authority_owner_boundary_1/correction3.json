@@ -1,0 +1,7 @@
+{
+  "failure": "lint-edit",
+  "cause": "Ruff reported three long comments and deliberate pytest fixture-name shadowing after fixing two unused imports.",
+  "correction": "Wrap comments and mark the single intentional fixture-injection shadowing diagnostic; retain final independent lint and formatting checks.",
+  "resource_failure": false,
+  "authorisation": "Routine style correction within the authorised package, with unchanged execution limits."
+}

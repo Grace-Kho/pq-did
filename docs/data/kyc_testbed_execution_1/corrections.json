@@ -1,0 +1,21 @@
+{
+  "W-01": {
+    "cause": "fixture encode_instance_metadata omitted expected parameters; failed before wallet execution",
+    "correction": "Pass the unchanged expected self.pp and metadata to the existing encoder",
+    "authorised_reruns": 1,
+    "scope": "routine fixture correction; expected results unchanged"
+  },
+  "F-01": {
+    "cause": "New coordinator omitted required expected-parameters argument of existing resolver API; failure before any authority store/issuance",
+    "correction": "Bind every resolver call to trusted scenario/configuration parameters; no reference changes",
+    "authorised_reruns": 1
+  },
+  "W-02": {
+    "cause": "API path changes on byte-identical validated module promotion",
+    "correction": "Check fresh creation/recovery through pqdid.holder_wallet; all unaffected same-source checks reused",
+    "authorised_reruns": 1,
+    "prior_statuses": [
+      "pass"
+    ]
+  }
+}

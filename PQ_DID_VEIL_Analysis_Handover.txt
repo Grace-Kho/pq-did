@@ -1,0 +1,47 @@
+PQ-DID VEIL construction analysis - handover
+1 October 2026
+
+Read PQ_DID_VEIL_Construction_Analysis.pdf or its accompanying .tex source.
+This is new research analysis, not an adopted profile or approval to execute.
+
+What is new
+-----------
+1. A total bounded-distance decoder for a paired Reed-Solomon pad oracle,
+   with a separate near/far tag and no global nearest-word search.
+2. Explicit round-by-round state arguments for linear and product openings
+   and an adaptive-statement outer evaluator, under the stated code/sampler
+   and public-input premises.
+3. A fixed-pad wrapper knowledge lemma. Its conclusion is still conditional
+   on object-consistent round-by-round knowledge of the COMPLETE base IOP.
+4. A joint ideal-view simulation argument. This requires full disclosure
+   coverage and pad-independent base scheduling; it is not an online simulator
+   for already-fixed concrete Merkle roots.
+5. An algebraic counterexample to restricting a product-check's queries to a
+   message-length prefix of the codeword. The retrieved VEIL Figure 4 query
+   range and its distance argument require explicit reconciliation. This is
+   not a native attack or an assertion about an implementation using all rows.
+6. An explicit auxiliary-message amendment so future verifier multiplication
+   wires are not falsely treated as committed before they were known.
+
+What is NOT complete
+--------------------
+- Exact native BASE-RBR: the same decoded authentication witness across the
+  base reductions, both same-Y IntMul openings and trace opening.
+- CE-EXACT: concrete code/reduction maps, full query domains, public constant
+  enforcement, auxiliary layout, and finite proximity/bias bounds.
+- VIEW-ALL: every native disclosure and its joint distribution.
+- The complete salted commitment/Fiat-Shamir/QROM theorem application.
+- Numerical overall security and complete proving resources.
+
+The next substantive mathematical deliverable is BASE-RBR, not a fresh backend
+survey. It must give state predicates, the efficient extractor, fixed decoded
+objects, per-challenge error bounds and the behaviour on malformed commitments.
+Treat the new lemmas as derivations to check, not unquestionable authority.
+
+Keep the original CV-ONLINE-SAME-OBJECT-1 outcome closed and unresolved for its
+old construction. The baseline, manuscript II-VIII, all measurements and live
+WSL ledgers remain unchanged. This handover authorises no source changes,
+acquisitions, installations, tests, builds, proof attempts or resource amendments.
+Any later synthetic experiment must remain distinct from a private-authentication
+security claim. Private verification stays fail-closed and the existing proof
+and isolation pauses remain in force.

@@ -1,0 +1,12 @@
+{
+  "profile": "pqdid-application-container-draft-1",
+  "kind": "updates-request",
+  "synthetic": true,
+  "exposure": "public-namespace-epochs",
+  "evidenceStatus": "Public same-epoch history request; no private rid or path argument",
+  "body": {
+    "namespace": "ERERERERERERERERERERERERERERERERERERERERERE",
+    "afterEpoch": "7",
+    "targetEpoch": "7"
+  }
+}

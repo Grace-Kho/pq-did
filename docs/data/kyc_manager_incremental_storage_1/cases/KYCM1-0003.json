@@ -1,0 +1,16 @@
+{
+  "invocation_id": "KYCM1-0003",
+  "case_id": "S-03",
+  "work_event_reservation": 0,
+  "ordinal": 3,
+  "cumulative_invocations": 1094,
+  "status": "pass",
+  "details": {
+    "interruption": "commit-before-ack",
+    "actual_exit": false,
+    "preserved": true
+  },
+  "seconds": 0.1983822169713676,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

@@ -1,0 +1,300 @@
+{
+  "cases": [
+    {
+      "id": "S-01",
+      "status": "pass",
+      "seconds": 0.01777917006984353,
+      "evidence": "cases/KYCI1-0001.json"
+    },
+    {
+      "id": "S-02",
+      "status": "pass",
+      "seconds": 0.020204999018460512,
+      "evidence": "cases/KYCI1-0002.json"
+    },
+    {
+      "id": "S-03",
+      "status": "pass",
+      "seconds": 0.009773463010787964,
+      "evidence": "cases/KYCI1-0003.json"
+    },
+    {
+      "id": "S-04",
+      "status": "pass",
+      "seconds": 0.011142219882458448,
+      "evidence": "cases/KYCI1-0004.json"
+    },
+    {
+      "id": "S-05",
+      "status": "pass",
+      "seconds": 0.01370079885236919,
+      "evidence": "cases/KYCI1-0005.json"
+    },
+    {
+      "id": "S-06",
+      "status": "pass",
+      "seconds": 0.016820000018924475,
+      "evidence": "cases/KYCI1-0006.json"
+    },
+    {
+      "id": "S-07",
+      "status": "pass",
+      "seconds": 0.016524227103218436,
+      "evidence": "cases/KYCI1-0007.json"
+    },
+    {
+      "id": "S-08",
+      "status": "pass",
+      "seconds": 0.013001608895137906,
+      "evidence": "cases/KYCI1-0008.json"
+    },
+    {
+      "id": "S-09",
+      "status": "pass",
+      "seconds": 0.014864734839648008,
+      "evidence": "cases/KYCI1-0009.json"
+    },
+    {
+      "id": "S-10",
+      "status": "pass",
+      "seconds": 0.014353396138176322,
+      "evidence": "cases/KYCI1-0010.json"
+    },
+    {
+      "id": "S-11",
+      "status": "pass",
+      "seconds": 0.017699188087135553,
+      "evidence": "cases/KYCI1-0011.json"
+    },
+    {
+      "id": "S-12",
+      "status": "pass",
+      "seconds": 0.01613875012844801,
+      "evidence": "cases/KYCI1-0012.json"
+    },
+    {
+      "id": "S-13",
+      "status": "pass",
+      "seconds": 0.017592760967090726,
+      "evidence": "cases/KYCI1-0013.json"
+    },
+    {
+      "id": "S-14",
+      "status": "pass",
+      "seconds": 0.017842928180471063,
+      "evidence": "cases/KYCI1-0014.json"
+    },
+    {
+      "id": "S-15",
+      "status": "pass",
+      "seconds": 0.021670350106433034,
+      "evidence": "cases/KYCI1-0015.json"
+    },
+    {
+      "id": "S-16",
+      "status": "pass",
+      "seconds": 0.020341732073575258,
+      "evidence": "cases/KYCI1-0016.json"
+    },
+    {
+      "id": "S-17",
+      "status": "pass",
+      "seconds": 0.017926225904375315,
+      "evidence": "cases/KYCI1-0017.json"
+    },
+    {
+      "id": "S-18",
+      "status": "pass",
+      "seconds": 0.013830333948135376,
+      "evidence": "cases/KYCI1-0018.json"
+    },
+    {
+      "id": "S-19",
+      "status": "pass",
+      "seconds": 0.015638608019798994,
+      "evidence": "cases/KYCI1-0019.json"
+    },
+    {
+      "id": "S-20",
+      "status": "pass",
+      "seconds": 0.012390705058351159,
+      "evidence": "cases/KYCI1-0020.json"
+    },
+    {
+      "id": "S-21",
+      "status": "pass",
+      "seconds": 0.016170536866411567,
+      "evidence": "cases/KYCI1-0021.json"
+    },
+    {
+      "id": "S-22",
+      "status": "pass",
+      "seconds": 0.014813472982496023,
+      "evidence": "cases/KYCI1-0022.json"
+    },
+    {
+      "id": "S-23",
+      "status": "pass",
+      "seconds": 0.015351763926446438,
+      "evidence": "cases/KYCI1-0023.json"
+    },
+    {
+      "id": "S-24",
+      "status": "pass",
+      "seconds": 0.015785278053954244,
+      "evidence": "cases/KYCI1-0024.json"
+    },
+    {
+      "id": "S-25",
+      "status": "pass",
+      "seconds": 0.015142515068873763,
+      "evidence": "cases/KYCI1-0025.json"
+    },
+    {
+      "id": "S-26",
+      "status": "pass",
+      "seconds": 0.019280025037005544,
+      "evidence": "cases/KYCI1-0026.json"
+    },
+    {
+      "id": "S-27",
+      "status": "pass",
+      "seconds": 0.03287978400476277,
+      "evidence": "cases/KYCI1-0027.json"
+    },
+    {
+      "id": "S-28",
+      "status": "pass",
+      "seconds": 0.02210415806621313,
+      "evidence": "cases/KYCI1-0028.json"
+    },
+    {
+      "id": "S-29",
+      "status": "pass",
+      "seconds": 0.11225323681719601,
+      "evidence": "cases/KYCI1-0029.json"
+    },
+    {
+      "id": "S-30",
+      "status": "pass",
+      "seconds": 0.01582957012578845,
+      "evidence": "cases/KYCI1-0030.json"
+    },
+    {
+      "id": "S-31",
+      "status": "pass",
+      "seconds": 0.013325124979019165,
+      "evidence": "cases/KYCI1-0031.json"
+    },
+    {
+      "id": "S-32",
+      "status": "pass",
+      "seconds": 0.013613009825348854,
+      "evidence": "cases/KYCI1-0032.json"
+    },
+    {
+      "id": "I-01",
+      "status": "pass",
+      "seconds": 0.7093528790865093,
+      "evidence": "cases/KYCI1-0033.json"
+    },
+    {
+      "id": "I-02",
+      "status": "pass",
+      "seconds": 0.5544566249009222,
+      "evidence": "cases/KYCI1-0034.json"
+    },
+    {
+      "id": "I-03",
+      "status": "pass",
+      "seconds": 0.6049977699294686,
+      "evidence": "cases/KYCI1-0035.json"
+    },
+    {
+      "id": "I-04",
+      "status": "pass",
+      "seconds": 0.19355345703661442,
+      "evidence": "cases/KYCI1-0036.json"
+    },
+    {
+      "id": "I-05",
+      "status": "pass",
+      "seconds": 0.25938047911040485,
+      "evidence": "cases/KYCI1-0037.json"
+    },
+    {
+      "id": "I-06",
+      "status": "pass",
+      "seconds": 0.16585356299765408,
+      "evidence": "cases/KYCI1-0038.json"
+    },
+    {
+      "id": "I-07",
+      "status": "pass",
+      "seconds": 0.27146378089673817,
+      "evidence": "cases/KYCI1-0039.json"
+    },
+    {
+      "id": "I-08",
+      "status": "pass",
+      "seconds": 0.11195957683958113,
+      "evidence": "cases/KYCI1-0040.json"
+    },
+    {
+      "id": "S-33",
+      "status": "pass",
+      "seconds": 0.05901626590639353,
+      "evidence": "cases/KYCI1-0041.json"
+    },
+    {
+      "id": "S-34",
+      "status": "pass",
+      "seconds": 0.03686617105267942,
+      "evidence": "cases/KYCI1-0042.json"
+    },
+    {
+      "id": "S-35",
+      "status": "pass",
+      "seconds": 0.01497995899990201,
+      "evidence": "cases/KYCI1-0043.json"
+    },
+    {
+      "id": "R-1-4",
+      "status": "pass",
+      "seconds": 4.673390181967989,
+      "evidence": "cases/KYCI1-0044.json"
+    },
+    {
+      "id": "R-2-1",
+      "status": "pass",
+      "seconds": 1.3869618570897728,
+      "evidence": "cases/KYCI1-0045.json"
+    },
+    {
+      "id": "R-2-4",
+      "status": "pass",
+      "seconds": 4.837578224018216,
+      "evidence": "cases/KYCI1-0046.json"
+    }
+  ],
+  "unrun": [
+    {
+      "id": "R-1-8",
+      "status": "unrun-unadmitted",
+      "reason": "Unchanged manager checkpoint: update payload lower bound 8*11162=89296 >65536; no attempt, timing or acceptance result."
+    },
+    {
+      "id": "R-2-8",
+      "status": "unrun-unadmitted",
+      "reason": "Unchanged manager checkpoint: update payload lower bound 8*11162=89296 >65536; no attempt, timing or acceptance result."
+    }
+  ],
+  "new_invocations": 46,
+  "cumulative_invocations": 1091,
+  "invocation_ceiling": 1146,
+  "builds": 10,
+  "proofs": {
+    "used": 2,
+    "unused": 1
+  }
+}

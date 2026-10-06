@@ -1,0 +1,62 @@
+{
+  "package": "OCT31-AUTH-RELATION-INTEGRATION-1",
+  "complete": true,
+  "completion_scope": "Bounded authorised execution/preservation endpoint closed with explicit resident-route no-go; not full relation delivery",
+  "complete_private_authentication": false,
+  "complete_joint_constraint_count": false,
+  "full_joint_witness_evaluation": false,
+  "private_native_route_admitted": false,
+  "preservation_complete": true,
+  "full_audit_attempts": 1,
+  "full_audit_exit_status": 0,
+  "historical_content_comparisons": 10901,
+  "historical_identity_inclusive_paths": 10936,
+  "audit_inventory_count": 10999,
+  "audit_guard_seconds": 5.59565419703722,
+  "audit_cgroup_memory_peak_bytes": 54116352,
+  "audit_ceiling_bytes": 268435456,
+  "report_readback_complete": true,
+  "outer_guard_passed": true,
+  "workload_terminated": true,
+  "historical_failed_units_retained": true,
+  "cases_passed_bounded_scope": 75,
+  "planned_cases_not_run": 21,
+  "manifest_sha256": "8d9d98121fd5450d0944b01ed3934207518b866a3efea15991b8fefbbbe4ede3",
+  "comparison_version": "OCT31-KYC-NATIVE-MILESTONE-1/v1",
+  "benchmark_measurements_unchanged": 276,
+  "stages_2_3_open": true,
+  "aurora_bridge_001_open": true,
+  "isolation_stopped_unactivated": true,
+  "cpu_proving_paused": true,
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1
+  },
+  "resource_summary": {
+    "package_charged_seconds": 183.44287903010627,
+    "implementation_remaining_seconds": 3114.4095462555088,
+    "package_remaining_seconds": 2366.5571209698937,
+    "cumulative_invocations": 942,
+    "cumulative_builds": 10,
+    "work_events": 27379838,
+    "storage": {
+      "new_evidence_bytes": 750217,
+      "new_artifact_bytes": 853888,
+      "evidence_bytes": 25991650,
+      "artifact_bytes": 58966547,
+      "temporary_bytes": 0
+    }
+  },
+  "finalisation_sha256": {
+    "docs/data/oct31_auth_relation_integration_run_1/ledger.json": "178d4b57c83eb188a9b20f82ddadfc68026e04824858b0c550b7d889c1b3455f",
+    "docs/data/oct31_auth_relation_integration_run_1/resource-closure.json": "16b9845bfacb3782ffdf17ed28b27b4ab9c55c0d874d1ab8322c0764fd88fa08",
+    "docs/data/oct31_auth_relation_integration_run_1/final-inventory.json": "88c8972953893ea4752018423b66443651208298b8ab6eb5ae3a86615d01749c",
+    "docs/data/oct31_auth_relation_integration_run_1/shutdown.json": "ead9fbba19fdf508325324229a802c0f4622697afcc1657624eb81b1e6908c55",
+    "docs/data/oct31_auth_relation_integration_run_1/jobs/final-readback.input.json": "a847b87654bfa426115fbf32e9ffbb09994ee92b9cac752fd65b9fe07142a06b",
+    "docs/data/oct31_auth_relation_integration_run_1/jobs/final-readback.json": "531a0fc62b23d4f886d2c0e8ae560e6bb85c7347749f85f2413fa05b304fe75a",
+    "docs/data/oct31_auth_relation_integration_run_1/jobs/final-readback.log": "91cfb6234cf5de136e625ad30ebda68a2e5afbb0372e4d58746a0d94c7bb5224",
+    "docs/data/oct31_auth_relation_integration_run_1/jobs/final-readback.worker.json": "489f51cf689c79a1dac987e8c285072353cdf6772f464e5ced6f19a907a22a41"
+  },
+  "final_inventory_complete": true,
+  "final_inventory_count": 11011
+}

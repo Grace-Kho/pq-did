@@ -1,0 +1,82 @@
+{
+  "package": "S3-OUTER-HASH-SECURITY-REVIEW-1",
+  "review_date": "2026-09-24",
+  "authority": "Only pinned manuscript Sections II-VIII and SPEC-001--004. Literature is evidence, not authority to change the profile.",
+  "method": "Read-only primary browser sources and local source inspection. No external code, dependency installation, estimator, circuit, proof, zkVM or host execution.",
+  "source_revision": "b2d0b57afe4b10c1ee6f41fc32ac031da96e332f79a98c6040aaebe1fd07c3a3",
+  "previous_manifest_sha256": "6cf03dd4495521e2027961303ab0e7d9033445a005f0f8a640fc73d0e52c1be2",
+  "sources": [
+    {
+      "id": "FIPS202",
+      "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf",
+      "version": "August 2015",
+      "locations": "Sections 5.1/5.2, Algorithm 9, Sections 6.1/6.2/6.3 and Appendix B",
+      "verified": "Keccak-p[1600,24], SHAKE256 r1088/c512, 1111 suffix, pad10*1; SHAKE128 r1344/c256; SHA3-384 r832/c768, 01 suffix",
+      "limits": "Standard algorithm definition; no quantum indifferentiability or protocol composition bound. Full PDF accessible now; prior failed retrieval remains historical."
+    },
+    {
+      "id": "FIPS202-status",
+      "url": "https://csrc.nist.gov/pubs/fips/202/final",
+      "version": "Revision planning note 13 March 2025; non-normative Appendix B Algorithm 10 typo",
+      "limits": "No update installed or profile changed"
+    },
+    {
+      "id": "ACMT",
+      "title": "The Sponge is Quantum Indifferentiable",
+      "authors": "Alagic, Carolan, Majenz, Tokat",
+      "url": "https://arxiv.org/html/2504.16887v2",
+      "pdf": "https://arxiv.org/pdf/2504.16887v2",
+      "version_page": "https://arxiv.org/abs/2504.16887",
+      "version": "v2, 13 May 2025; v1 23 April 2025; latest listed version on review date",
+      "licence": "CC BY 4.0 as displayed by arXiv",
+      "locations": "Definition 3.9; Lemmas 3.7, 3.12, 3.13, 5.4; Definition 3.14/Claim 3.15; Corollaries 6.13/6.14; Theorem 7.22 and proof (printed p.71)",
+      "formal_bound": "O(ell^2*sqrt(q^9*2^-min(r,c)) + ell^3*(q^5*2^-min(r,c))^(1/4))",
+      "informal_bound": "Theorem 1.2 separately displays O(ell^3*(q^9*2^-min(r,c))^(1/4)); not substituted for the formal display",
+      "hypotheses": "Random permutation/inverse, quantum construction and primitive interfaces, bounded maximum supported block length, stateful simulator; valid injective padding with nonzero final block",
+      "query_accounting": "All external oracle calls of the wrapped distinguisher; direct/internal permutation queries and simulator F queries require explicit mapping",
+      "numerical_bound_used": false,
+      "limits": "No explicit numerical constants extracted; no fixed Keccak assumption established; no automatic DFMS extractor or GHM programming composition. Direct property corollaries cover full-r outputs, not automatically 1024-bit prefix collisions. HTML and PDF text compared."
+    },
+    {
+      "id": "DFMS",
+      "url": "https://arxiv.org/pdf/2202.13730v1",
+      "version": "v1, 28 February 2022; manuscript reference [32], CRYPTO 2022",
+      "locations": "Definitions 3.1, 3.5; Remarks 3.7, 3.8; Lemma 4.1 proof; Theorem 4.2, printed p.16",
+      "bound": "(22*l_com+60)*q^3*2^-n +20*q^2*p_triv; perfect simulation",
+      "hypotheses": "n-bit random function, S-sound* commit-and-open protocol, deterministic full-message extractor, adaptive statements/auxiliary quantum output",
+      "limits": "Compressed-oracle internal access; shared-permutation and oracle-relative relation compatibility unproved. Reuse prior weighted p_star mapping and numerical rows."
+    },
+    {
+      "id": "GHM",
+      "url": "https://eprint.iacr.org/2020/1361.pdf",
+      "version": "Primary ePrint inspected 24 September 2026; manuscript reference [33], ASIACRYPT 2021",
+      "locations": "Theorem 1, printed p.7, coordinate distribution and cumulative preceding-query definition",
+      "bound": "sum_r(sqrt(qhat_r*pmax_r) + qhat_r*pmax_r/2)",
+      "hypotheses": "Quantum random function with adaptive reprogramming and conditional coordinate-mass bounds",
+      "limits": "Does not supply a concrete-hash programming interface or state consistency lemma for the ACMT simulator"
+    },
+    {
+      "id": "RSS",
+      "url": "https://eprint.iacr.org/2011/339.pdf",
+      "version": "22 June 2011; Careful with Composition: Limitations of Indifferentiability and Universal Composability",
+      "locations": "Theorem 3.1, Sections 3 and 8",
+      "bound": "Compatible single-stage classical game probability transfer with indifferentiability loss; t_B<=t_A+q_A*t_S, q_B<=q_A*q_S",
+      "limits": "Classical composition diagnostic only; continuous adaptive phases are not automatically disjoint stages; no quantum knowledge theorem claimed"
+    },
+    {
+      "id": "CPZ",
+      "url": "https://eprint.iacr.org/2024/1727.pdf",
+      "version": "ePrint 2024/1727, report page dated 25 October 2024, inspected 24 September 2026",
+      "authors": "Carolan, Poremba, Zhandry",
+      "locations": "Theorem 7 (printed p.17), Corollaries 2/3 (printed p.19)",
+      "bound": "O(2^-r/2), one-round r-bit sponge with r<=c; strong shared-randomness or weak statistical precomputation variants",
+      "limits": "Inapplicable to current r>c and multi-block domain; balanced option still multi-block. No advice/time-space numerical guarantee imported."
+    }
+  ],
+  "screened_but_not_applied": [
+    "Random-function sponge results are not random-permutation results; no uninspected bound used",
+    "No Merkle-Damgard replacement recommended; no old citation assumed to resolve this construction"
+  ],
+  "open_obligations": ["Gap_KeccakModel", "Gap_jointGame", "Gap_knowledgeExtractor", "Gap_privacySimulation", "SEC-001--005", "DEP-001--002"],
+  "next_package": "S3-OUTER-ORACLE-COMPOSITION-1"
+}

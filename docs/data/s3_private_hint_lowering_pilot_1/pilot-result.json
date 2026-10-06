@@ -1,0 +1,192 @@
+{
+  "profile": "experimental-private-hints-v1",
+  "passed": true,
+  "invocations": [
+    {
+      "case": "complete-candidate-generation",
+      "kind": "generation-probe",
+      "status": "pass",
+      "complete": true,
+      "seconds": 0.4517356409924105,
+      "counts": {
+        "xor": 179223,
+        "and_": 203142,
+        "not_": 1055,
+        "inputs": 42632
+      },
+      "total_gates": 383420,
+      "wires": 426054,
+      "fingerprint": "4b26216c3a0d760848a03b08823392a4d9d5b7688c61de31443dbb47bb39ac9a",
+      "generation_seconds": 0.45158448501024395,
+      "trace_bytes": 6518229,
+      "folded_operations": [
+        1,
+        0,
+        0
+      ],
+      "python_process_high_water_RSS_bytes": 42758144,
+      "cgroup_memory_peak_at_generation_bytes": 40382464,
+      "phases": [
+        {
+          "phase": "endpoint_bounds_and_order",
+          "gates": 407,
+          "and_gates": 108
+        },
+        {
+          "phase": "membership_and_active_order_checks",
+          "gates": 15244,
+          "and_gates": 4482
+        },
+        {
+          "phase": "shared_byte_decoding_and_unused_padding",
+          "gates": 43954,
+          "and_gates": 32642
+        },
+        {
+          "phase": "complete_six_row_bitmap",
+          "gates": 381874,
+          "and_gates": 201602
+        },
+        {
+          "phase": "sticky_rejection_output_mask_and_signed64_rewiring",
+          "gates": 383417,
+          "and_gates": 203141
+        }
+      ],
+      "output_signed64_rewiring_extra_gates": 0,
+      "test_comparison_gates": 0
+    },
+    {
+      "case": "original-valid",
+      "kind": "differential-case",
+      "status": "pass",
+      "reference_valid": true,
+      "candidate_valid": true,
+      "decoded_values_compared": 1536,
+      "unusable_outputs_zeroed": false,
+      "input_hint_sha256": "371c1d8d72d2567d6ae36d3338c0a3991b5e6a506afef2b400d27aeabde56e5f",
+      "output_values_sha256": "008ff47119b05f2cd476545c712482534ab8da82a89e8864500f8c55e6be2453",
+      "seconds": 0.12785197899211198,
+      "evaluator_seconds": 0.09841029695235193,
+      "wire_storage_bytes": 426111
+    },
+    {
+      "case": "all-zero-valid",
+      "kind": "differential-case",
+      "status": "pass",
+      "reference_valid": true,
+      "candidate_valid": true,
+      "decoded_values_compared": 1536,
+      "unusable_outputs_zeroed": false,
+      "input_hint_sha256": "c6e26c3e31bac75ea556356cbbd12190e29f277ea5f9010f8f88d5ab3363a2cf",
+      "output_values_sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "seconds": 0.12709685403387994,
+      "evaluator_seconds": 0.09823739796411246,
+      "wire_storage_bytes": 426111
+    },
+    {
+      "case": "decreasing-endpoints",
+      "kind": "differential-case",
+      "status": "pass",
+      "reference_valid": false,
+      "candidate_valid": false,
+      "decoded_values_compared": 0,
+      "unusable_outputs_zeroed": true,
+      "input_hint_sha256": "22e1c1bc3814b11b7356dbe2c05b6b819d645d107c844c52d3a03a8679ca4025",
+      "output_values_sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "seconds": 0.1272750130156055,
+      "evaluator_seconds": 0.09791543998289853,
+      "wire_storage_bytes": 426111
+    },
+    {
+      "case": "endpoint-over-55",
+      "kind": "differential-case",
+      "status": "pass",
+      "reference_valid": false,
+      "candidate_valid": false,
+      "decoded_values_compared": 0,
+      "unusable_outputs_zeroed": true,
+      "input_hint_sha256": "b7bbe87be2c6b6e87795bb6699ecd0f90d67303824644545a8f77287493062da",
+      "output_values_sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "seconds": 0.12481333198957145,
+      "evaluator_seconds": 0.09611129108816385,
+      "wire_storage_bytes": 426111
+    },
+    {
+      "case": "duplicate-within-row",
+      "kind": "differential-case",
+      "status": "pass",
+      "reference_valid": false,
+      "candidate_valid": false,
+      "decoded_values_compared": 0,
+      "unusable_outputs_zeroed": true,
+      "input_hint_sha256": "0c03609a8cb4664ba4d3cbe8142242f4bf1a501bdb8fd5e01f374e4f1ecd4e9e",
+      "output_values_sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "seconds": 0.12833252106793225,
+      "evaluator_seconds": 0.09840328397694975,
+      "wire_storage_bytes": 426111
+    },
+    {
+      "case": "descending-within-row",
+      "kind": "differential-case",
+      "status": "pass",
+      "reference_valid": false,
+      "candidate_valid": false,
+      "decoded_values_compared": 0,
+      "unusable_outputs_zeroed": true,
+      "input_hint_sha256": "0158f7a00dfddc3d423dbcc41495bf4778f4e775907044537349738fa7366526",
+      "output_values_sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "seconds": 0.12496483698487282,
+      "evaluator_seconds": 0.09588309505488724,
+      "wire_storage_bytes": 426111
+    },
+    {
+      "case": "nonzero-unused-padding",
+      "kind": "differential-case",
+      "status": "pass",
+      "reference_valid": false,
+      "candidate_valid": false,
+      "decoded_values_compared": 0,
+      "unusable_outputs_zeroed": true,
+      "input_hint_sha256": "d4b5493ae4acf6cddd60faa01f9719424a318148f4bd46c56cefb26d141bedff",
+      "output_values_sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "seconds": 0.12441669404506683,
+      "evaluator_seconds": 0.09528682101517916,
+      "wire_storage_bytes": 426111
+    },
+    {
+      "case": "capacity55-position255-cross-row-repeat",
+      "kind": "differential-case",
+      "status": "pass",
+      "reference_valid": true,
+      "candidate_valid": true,
+      "decoded_values_compared": 1536,
+      "unusable_outputs_zeroed": false,
+      "input_hint_sha256": "db6340059576484e7f3b708ebe787819521458cb9e65e55d7d5dfbdc4e763c56",
+      "output_values_sha256": "b69158da9a10e20bcdd72aae4b86178ac894db1e48cd4d6c2169bda2fadb80ff",
+      "seconds": 0.13348366890568286,
+      "evaluator_seconds": 0.09759478596970439,
+      "wire_storage_bytes": 426111
+    }
+  ],
+  "comparison": {
+    "baseline_complete": false,
+    "baseline_gates": 32000000,
+    "baseline_and_gates": 13532448,
+    "candidate_complete": true,
+    "prefix_and_minus_complete_candidate": 13329306,
+    "scope": "Exact original source continuation has at least its recorded prefix cost; this difference is not a matched full-baseline measurement or auth reduction."
+  },
+  "fixture": "alpha-42-old-002c",
+  "total_invocations": 9,
+  "probe_invocations": 1,
+  "differential_invocations": 8,
+  "total_seconds": 1.486640844028443,
+  "trace_retained_on_disk": false,
+  "available_cpus": [
+    0,
+    1
+  ],
+  "proof": false,
+  "zkvm_execution": false
+}

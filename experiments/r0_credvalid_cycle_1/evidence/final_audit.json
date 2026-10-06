@@ -1,0 +1,105 @@
+{
+  "status": "pass",
+  "protected_files_checked": 7998,
+  "authorised_existing_files_changed": [
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "all_other_protected_files_unchanged": true,
+  "original_manifest_assets_unchanged": true,
+  "original_proof_attempts": 0,
+  "new_proof_attempts": 0,
+  "unused_prior_proof_attempts": 3,
+  "new_execution_runs": 5,
+  "unused_execution_slots": [
+    5
+  ],
+  "closed_package_replay_rejected_before_launch": true,
+  "native_comparisons_before_and_after": [
+    35,
+    35
+  ],
+  "corrected_native_unit_tests": 6,
+  "diagnostic_bytes_at_audit": 6153726,
+  "all_experiment_disk_bytes_at_audit": 5165091069,
+  "setup_build_seconds": 252.68952572197304,
+  "guarded_execution_seconds": 2.564035764982691,
+  "run_summary": [
+    {
+      "name": "baseline-prefix",
+      "slot": 1,
+      "status": "cycle_limit",
+      "user_cycles": null,
+      "host_execute_seconds": 0.218497978,
+      "reported_systemd_memory_peak": "39.7M (swap: 0B)",
+      "marker_bytes": 1520,
+      "segment_prefix": {
+        "completed_segment_count": 168,
+        "completed_segment_user_cycles": 4170359,
+        "completed_segment_padded_capacity": 11010048,
+        "completed_segment_other_capacity": 6839689
+      }
+    },
+    {
+      "name": "matrix-before",
+      "slot": 2,
+      "status": "completed",
+      "user_cycles": 154451,
+      "host_execute_seconds": 0.033253463,
+      "reported_systemd_memory_peak": "39.2M (swap: 0B)",
+      "marker_bytes": 112,
+      "segment_prefix": {
+        "completed_segment_count": 7,
+        "completed_segment_user_cycles": 154451,
+        "completed_segment_padded_capacity": 409600,
+        "completed_segment_other_capacity": 255149
+      }
+    },
+    {
+      "name": "matrix-after",
+      "slot": 3,
+      "status": "completed",
+      "user_cycles": 125641,
+      "host_execute_seconds": 0.032393932,
+      "reported_systemd_memory_peak": "39.3M (swap: 0B)",
+      "marker_bytes": 112,
+      "segment_prefix": {
+        "completed_segment_count": 6,
+        "completed_segment_user_cycles": 125641,
+        "completed_segment_padded_capacity": 360448,
+        "completed_segment_other_capacity": 234807
+      }
+    },
+    {
+      "name": "ntt-z0",
+      "slot": 4,
+      "status": "completed",
+      "user_cycles": 991483,
+      "host_execute_seconds": 0.084886876,
+      "reported_systemd_memory_peak": "95.4M (swap: 0B)",
+      "marker_bytes": 112,
+      "segment_prefix": {
+        "completed_segment_count": 34,
+        "completed_segment_user_cycles": 991483,
+        "completed_segment_padded_capacity": 2195456,
+        "completed_segment_other_capacity": 1203973
+      }
+    },
+    {
+      "name": "corrected-full",
+      "slot": 6,
+      "status": "cycle_limit",
+      "user_cycles": null,
+      "host_execute_seconds": 0.24455283,
+      "reported_systemd_memory_peak": "101.2M (swap: 0B)",
+      "marker_bytes": 0,
+      "segment_prefix": {
+        "completed_segment_count": 171,
+        "completed_segment_user_cycles": 4171733,
+        "completed_segment_padded_capacity": 11206656,
+        "completed_segment_other_capacity": 7034923
+      }
+    }
+  ],
+  "note": "Manifest excludes final-check log/ledger and itself to avoid circular hashes."
+}

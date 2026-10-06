@@ -1,0 +1,328 @@
+{
+  "synthetic_only": true,
+  "cases": [
+    {
+      "name": "enrol-alpha-42",
+      "operation": "enrol",
+      "public": "fixtures/public/enrol-alpha-42.bin",
+      "private": "fixtures/private/enrol-alpha-42.bin",
+      "reference_expected": true,
+      "public_SHA256": "e6e505a433aed207ee2cfbb8e9cb72ab01b426739ed731e7b3e598f71cf939c8",
+      "private_fixture_SHA256": "e2bf2101764d9ed2728649b05512f6c97059f84a2d190b31677fd55435d15c7b",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-alpha-42",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-alpha-42.bin",
+      "private": "fixtures/private/cred-alpha-42.bin",
+      "reference_expected": true,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+      "synthetic_only": true
+    },
+    {
+      "name": "enrol-alpha-43",
+      "operation": "enrol",
+      "public": "fixtures/public/enrol-alpha-43.bin",
+      "private": "fixtures/private/enrol-alpha-43.bin",
+      "reference_expected": true,
+      "public_SHA256": "07219a4c1f1fc47cdc17a20e1bda1efc9c2b496f6260ebc2f891c53227cef97e",
+      "private_fixture_SHA256": "a7fab007535cd0dc53d88a75d0eab9edca2be41a8c7693e3963886d33ea3a7fb",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-alpha-43",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-alpha-43.bin",
+      "private": "fixtures/private/cred-alpha-43.bin",
+      "reference_expected": true,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "af87b56531d2ff407a6bc9bf9b2496f39adf3ad426057b131f27bacd833b59fb",
+      "synthetic_only": true
+    },
+    {
+      "name": "enrol-beta-42",
+      "operation": "enrol",
+      "public": "fixtures/public/enrol-beta-42.bin",
+      "private": "fixtures/private/enrol-beta-42.bin",
+      "reference_expected": true,
+      "public_SHA256": "9dd027cec1f6e37fa620fea22633096121ef8e87f2f9dbc052f28159a90df1ce",
+      "private_fixture_SHA256": "0180d5f4681a5f68815341cb4cc06731435e0a0353a382a26787b0471e3a9308",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-beta-42",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-beta-42.bin",
+      "private": "fixtures/private/cred-beta-42.bin",
+      "reference_expected": true,
+      "public_SHA256": "9c0af10a7df9227d3c1ff525b4ce574cbca1ef8b274b4db1c4f0b54a9e5f7fff",
+      "private_fixture_SHA256": "54b3a094559e4f97a619a3663cd535ed0593f0b84adc92a25d93b4b1795ea721",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-wrong-secret",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-wrong-secret.bin",
+      "private": "fixtures/private/cred-wrong-secret.bin",
+      "reference_expected": false,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "6aff83157d2e8906f2a495c812b51d4a14b0edec381e7e5e63a5442804df7eef",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-trailing",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-trailing.bin",
+      "private": "fixtures/private/cred-trailing.bin",
+      "reference_expected": false,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "af491155c33916802df83b79814dc3e63a47d5e65ffbc306cd2495a36d334e72",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-truncated",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-truncated.bin",
+      "private": "fixtures/private/cred-truncated.bin",
+      "reference_expected": false,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "34c2ec039a1854bc6d714cc3527bcf142fb7fd73df4e533b63fc4286b12bd629",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-wrong-instance",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-wrong-instance.bin",
+      "private": "fixtures/private/cred-wrong-instance.bin",
+      "reference_expected": false,
+      "public_SHA256": "9c0af10a7df9227d3c1ff525b4ce574cbca1ef8b274b4db1c4f0b54a9e5f7fff",
+      "private_fixture_SHA256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-wrong-operation",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-wrong-operation.bin",
+      "private": "fixtures/private/cred-wrong-operation.bin",
+      "reference_expected": false,
+      "public_SHA256": "3651dbab6a6072a32e0d26f6eb794ca4426842f177f98fbc74dea956ecd6e6e0",
+      "private_fixture_SHA256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-context-width",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-context-width.bin",
+      "private": "fixtures/private/cred-context-width.bin",
+      "reference_expected": false,
+      "public_SHA256": "c9d5415c536d005925b323e9d3e28d5e0f14c5d3a5382e4387477defd05fc07d",
+      "private_fixture_SHA256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-changed-context-valid",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-changed-context-valid.bin",
+      "private": "fixtures/private/cred-changed-context-valid.bin",
+      "reference_expected": true,
+      "public_SHA256": "d52faaf9f7b43128dfdd174bfafc2e092f078fad03c12bf570272379aa95da41",
+      "private_fixture_SHA256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-rid-changed",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-rid-changed.bin",
+      "private": "fixtures/private/cred-rid-changed.bin",
+      "reference_expected": false,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "ebdef01dc6a4387cc7ee81fc8cb589ed9b9e70e54a8df2ed6c85c349e8430601",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-rid-overflow",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-rid-overflow.bin",
+      "private": "fixtures/private/cred-rid-overflow.bin",
+      "reference_expected": false,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "02681e4ba5cb6c47ce108d9963c0e2cc3c4248f04e0dbe98abc47b3e82ea37c5",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-auxiliary",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-auxiliary.bin",
+      "private": "fixtures/private/cred-auxiliary.bin",
+      "reference_expected": false,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "86d4d13f15641f06260ff137c06529fcd3711bb9cb0dbe0ba2e95d1d5d00bd5d",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-metadata",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-metadata.bin",
+      "private": "fixtures/private/cred-metadata.bin",
+      "reference_expected": false,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "14beb13c5d513f3d484f5fcd0e5bd413a77e9eedd50861809d3a5783864be4e8",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-attribute-tail",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-attribute-tail.bin",
+      "private": "fixtures/private/cred-attribute-tail.bin",
+      "reference_expected": false,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "4c31b5ead7e3c55bec7d31720a55bf87b8971ed7989e362cf81560160e986800",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-binding",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-binding.bin",
+      "private": "fixtures/private/cred-binding.bin",
+      "reference_expected": false,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "d29c58273a2dc1f89ce2f0e6c69ee269a3ce024b275ff827432a67fe6311fe6c",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-signature",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-signature.bin",
+      "private": "fixtures/private/cred-signature.bin",
+      "reference_expected": false,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "6cf7d0c2e74a9d8e851d09ce6d1131418c80b64535a53fed3f6eea21723ad590",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-signature-length",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-signature-length.bin",
+      "private": "fixtures/private/cred-signature-length.bin",
+      "reference_expected": false,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "9d9b81281a4baf1c1251674da79e60e62c7d900796577ae6fa3a84fc7aa12515",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-coherent-changed-attributes",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-coherent-changed-attributes.bin",
+      "private": "fixtures/private/cred-coherent-changed-attributes.bin",
+      "reference_expected": false,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "8d9798163f100c1cdf5d0ce8a62e88ef3c75a27b5479c2197422529887a96059",
+      "synthetic_only": true
+    },
+    {
+      "name": "enrol-wrong-secret",
+      "operation": "enrol",
+      "public": "fixtures/public/enrol-wrong-secret.bin",
+      "private": "fixtures/private/enrol-wrong-secret.bin",
+      "reference_expected": false,
+      "public_SHA256": "e6e505a433aed207ee2cfbb8e9cb72ab01b426739ed731e7b3e598f71cf939c8",
+      "private_fixture_SHA256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "synthetic_only": true
+    },
+    {
+      "name": "enrol-wrong-instance",
+      "operation": "enrol",
+      "public": "fixtures/public/enrol-wrong-instance.bin",
+      "private": "fixtures/private/enrol-wrong-instance.bin",
+      "reference_expected": false,
+      "public_SHA256": "11efebf3596b52d186c0dd6b45a8a837ba5964f416155b8a227355feacad9e8d",
+      "private_fixture_SHA256": "e2bf2101764d9ed2728649b05512f6c97059f84a2d190b31677fd55435d15c7b",
+      "synthetic_only": true
+    },
+    {
+      "name": "enrol-trailing",
+      "operation": "enrol",
+      "public": "fixtures/public/enrol-trailing.bin",
+      "private": "fixtures/private/enrol-trailing.bin",
+      "reference_expected": false,
+      "public_SHA256": "ed1c1913c87d66b27e9fd8369fec1068f4672991b35ae5271f1579e92accb224",
+      "private_fixture_SHA256": "e2bf2101764d9ed2728649b05512f6c97059f84a2d190b31677fd55435d15c7b",
+      "synthetic_only": true
+    },
+    {
+      "name": "enrol-changed-approved",
+      "operation": "enrol",
+      "public": "fixtures/public/enrol-changed-approved.bin",
+      "private": "fixtures/private/enrol-changed-approved.bin",
+      "reference_expected": false,
+      "public_SHA256": "b0310a1ca419e13a363a997d0924122daa856452b84e3af42659998e060365ac",
+      "private_fixture_SHA256": "e2bf2101764d9ed2728649b05512f6c97059f84a2d190b31677fd55435d15c7b",
+      "synthetic_only": true
+    },
+    {
+      "name": "enrol-invalid-state-signature-outside-relation",
+      "operation": "enrol",
+      "public": "fixtures/public/enrol-invalid-state-signature-outside-relation.bin",
+      "private": "fixtures/private/enrol-invalid-state-signature-outside-relation.bin",
+      "reference_expected": true,
+      "public_SHA256": "452da5ed761b659aa70d99b1d3c0d2569d75d068e6b691c8ffcc228740a94744",
+      "private_fixture_SHA256": "e2bf2101764d9ed2728649b05512f6c97059f84a2d190b31677fd55435d15c7b",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-proper-signing-context",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-proper-signing-context.bin",
+      "private": "fixtures/private/cred-proper-signing-context.bin",
+      "reference_expected": true,
+      "public_SHA256": "63bc680e22d4a9b1eb99582c2e9925397aa4d138b881dd76cfa1fd22c856599a",
+      "private_fixture_SHA256": "9bd4a39e98167b3cd1dec1e1902f70a541af904a3aace38ce0eb1ea9c1b097df",
+      "synthetic_only": true
+    },
+    {
+      "name": "cred-wrong-signing-context",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-wrong-signing-context.bin",
+      "private": "fixtures/private/cred-wrong-signing-context.bin",
+      "reference_expected": false,
+      "public_SHA256": "63bc680e22d4a9b1eb99582c2e9925397aa4d138b881dd76cfa1fd22c856599a",
+      "private_fixture_SHA256": "ec88887108b317bb37e16474beb01b994fdc22531d2719da33c7941e5dccc657",
+      "synthetic_only": true
+    }
+  ],
+  "mldsa_tests": [
+    {
+      "name": "native-0-valid",
+      "path": "fixtures/private/native-0-valid.mldsa",
+      "expected": true
+    },
+    {
+      "name": "native-0-wrong-context",
+      "path": "fixtures/private/native-0-wrong-context.mldsa",
+      "expected": false
+    },
+    {
+      "name": "native-1-valid",
+      "path": "fixtures/private/native-1-valid.mldsa",
+      "expected": true
+    },
+    {
+      "name": "native-1-wrong-context",
+      "path": "fixtures/private/native-1-wrong-context.mldsa",
+      "expected": false
+    },
+    {
+      "name": "native-2-valid",
+      "path": "fixtures/private/native-2-valid.mldsa",
+      "expected": true
+    },
+    {
+      "name": "native-2-wrong-context",
+      "path": "fixtures/private/native-2-wrong-context.mldsa",
+      "expected": false
+    }
+  ],
+  "source_SHA256": "e2e5981ffa88eb5efef5ec3c6c6af424c3a5f35aa020c8cb4abf2b5f6c2661f2"
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "SEAL-01",
+    "invocation": 412,
+    "status": "pass",
+    "label": "unchanged immutable",
+    "accepted": true,
+    "rejection": null,
+    "seconds": 0.0005946540040895343
+  },
+  {
+    "id": "SEAL-02",
+    "invocation": 413,
+    "status": "pass",
+    "label": "sealed report",
+    "accepted": true,
+    "rejection": null,
+    "seconds": 0.000377622083760798
+  },
+  {
+    "id": "SEAL-03",
+    "invocation": 414,
+    "status": "pass",
+    "label": "modified immutable",
+    "accepted": false,
+    "rejection": "immutable hash mismatch",
+    "seconds": 0.00031428702641278505
+  },
+  {
+    "id": "SEAL-04",
+    "invocation": 415,
+    "status": "pass",
+    "label": "modified historical prefix",
+    "accepted": false,
+    "rejection": "historical prefix mismatch",
+    "seconds": 0.00033657008316367865
+  },
+  {
+    "id": "SEAL-05",
+    "invocation": 416,
+    "status": "pass",
+    "label": "modified sealed appendix",
+    "accepted": false,
+    "rejection": "complete report mismatch",
+    "seconds": 0.0005546830361708999
+  },
+  {
+    "id": "SEAL-06",
+    "invocation": 417,
+    "status": "pass",
+    "label": "unsealed tail",
+    "accepted": false,
+    "rejection": "final length mismatch",
+    "seconds": 0.0004482830408960581
+  },
+  {
+    "id": "SEAL-07",
+    "invocation": 418,
+    "status": "pass",
+    "label": "truncated coverage",
+    "accepted": false,
+    "rejection": "final length mismatch",
+    "seconds": 0.0003082150360569358
+  },
+  {
+    "id": "SEAL-08",
+    "invocation": 419,
+    "status": "pass",
+    "label": "stale untrusted seal missing report entry",
+    "accepted": false,
+    "rejection": "untrusted/stale seal",
+    "seconds": 0.00023577804677188396
+  }
+]

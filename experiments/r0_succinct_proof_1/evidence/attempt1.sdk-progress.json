@@ -1,0 +1,45 @@
+{
+  "events": {
+    "execution_complete": {
+      "count": 1,
+      "first_seconds": 0.11307054199278355,
+      "last_seconds": 0.11307054199278355
+    },
+    "segment_preflight_start": {
+      "count": 10,
+      "first_seconds": 0.11332680998020805,
+      "last_seconds": 194.12588126197807
+    },
+    "segment_proof_start": {
+      "count": 10,
+      "first_seconds": 0.1345487009966746,
+      "last_seconds": 194.13212545297574
+    },
+    "lift_start": {
+      "count": 6,
+      "first_seconds": 204.7442771359929,
+      "last_seconds": 593.6848586519773
+    },
+    "lift_complete": {
+      "count": 5,
+      "first_seconds": 248.52959121199092,
+      "last_seconds": 550.1940534389869
+    },
+    "join_start": {
+      "count": 4,
+      "first_seconds": 291.74934893500176,
+      "last_seconds": 550.2043145769858
+    },
+    "join_complete": {
+      "count": 4,
+      "first_seconds": 335.7662672129809,
+      "last_seconds": 593.6719022629841
+    }
+  },
+  "bytes_seen": 72869,
+  "last_event": "lift_start",
+  "last_event_seconds": 593.6848586519773,
+  "note": "SDK log observations; seconds since capture start",
+  "retained_bytes": 65536,
+  "middle_omitted_bytes": 7333
+}

@@ -1,0 +1,198 @@
+{
+  "kind": "Primary-source text retrieval, not execution of reviewed code",
+  "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+  "rows": [
+    {
+      "path": "libiop/bcs/hashing/blake2b.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/bcs/hashing/blake2b.tcc",
+      "status": "read",
+      "bytes": 9633,
+      "local": "sources/libiop__bcs__hashing__blake2b.tcc.txt",
+      "sha256": "7980bfeea9551dd0b862e529d85510c68964f0496fe6a0ac248aa122118ae80d",
+      "git_blob_sha1": "4643fc896642999bdd527b0d57918b3eebeb5933",
+      "seconds": 0.025246629025787115
+    },
+    {
+      "path": "libiop/bcs/bcs_common.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/bcs/bcs_common.tcc",
+      "status": "read",
+      "bytes": 31874,
+      "local": "sources/libiop__bcs__bcs_common.tcc.txt",
+      "sha256": "87415c63c7180b59cecf7fbf05b00e64d1325f2a57c107eab45bac2b0759534f",
+      "git_blob_sha1": "a17a51d5d3ca5e025012351fc31068cc6f9ba8ce",
+      "seconds": 0.3140944489277899
+    },
+    {
+      "path": "libiop/bcs/bcs_prover.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/bcs/bcs_prover.tcc",
+      "status": "read",
+      "bytes": 10143,
+      "local": "sources/libiop__bcs__bcs_prover.tcc.txt",
+      "sha256": "c2885abf98f2d1ced9f0a42467aed647cf024413f99861833e531e4db7405ab4",
+      "git_blob_sha1": "630f1c511ab4ac3b8f01dbeddc55d8ae7dc722b8",
+      "seconds": 0.29471506690606475
+    },
+    {
+      "path": "libiop/bcs/bcs_verifier.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/bcs/bcs_verifier.tcc",
+      "status": "read",
+      "bytes": 8962,
+      "local": "sources/libiop__bcs__bcs_verifier.tcc.txt",
+      "sha256": "432529eda4d3d65238c2ecf8dada5bda7c9404c66963efdcb6f413c7ce36e652",
+      "git_blob_sha1": "3733b51f173f554153c8be5d25db5ce9192383d1",
+      "seconds": 0.28870215895585716
+    },
+    {
+      "path": "libiop/bcs/merkle_tree.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/bcs/merkle_tree.tcc",
+      "status": "read",
+      "bytes": 19890,
+      "local": "sources/libiop__bcs__merkle_tree.tcc.txt",
+      "sha256": "bf65512380386cee52428a1434c9192900fbc79753eacdcb21969e60908ae127",
+      "git_blob_sha1": "a86cf68dfb5f661fad1045d4e8c924c93d902e63",
+      "seconds": 0.29342609003651887
+    },
+    {
+      "path": "libiop/bcs/pow.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/bcs/pow.tcc",
+      "status": "read",
+      "bytes": 5341,
+      "local": "sources/libiop__bcs__pow.tcc.txt",
+      "sha256": "d1f632d48de11aca45a4d26d9dae81b875897cea82388984b7ec75864c7be0b3",
+      "git_blob_sha1": "184eb873e42413c4e68c0071714cd792a12d8f9c",
+      "seconds": 0.2874085840303451
+    },
+    {
+      "path": "libiop/snark/aurora_snark.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/snark/aurora_snark.tcc",
+      "status": "read",
+      "bytes": 7667,
+      "local": "sources/libiop__snark__aurora_snark.tcc.txt",
+      "sha256": "5bfdfc33e1ffedc1a7bfe4f8d9a062931b4bbd452f4ad9857fa8bc3eb0e79eab",
+      "git_blob_sha1": "b8fae46c822ca439738c8b82561991f3675b5a2b",
+      "seconds": 0.2829292619135231
+    },
+    {
+      "path": "libiop/protocols/aurora_iop.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/protocols/aurora_iop.tcc",
+      "status": "read",
+      "bytes": 18447,
+      "local": "sources/libiop__protocols__aurora_iop.tcc.txt",
+      "sha256": "10d5113d82a88ed315538f7a24c048775c43a32d91a394eca18ea282350aa19c",
+      "git_blob_sha1": "bb7f843b7a27cf3f02c8d6c9149e7c6d1b7df2c8",
+      "seconds": 0.29126835404895246
+    },
+    {
+      "path": "libiop/protocols/encoded/r1cs_rs_iop/r1cs_rs_iop.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/protocols/encoded/r1cs_rs_iop/r1cs_rs_iop.tcc",
+      "status": "read",
+      "bytes": 28693,
+      "local": "sources/libiop__protocols__encoded__r1cs_rs_iop__r1cs_rs_iop.tcc.txt",
+      "sha256": "4a0687c95b02e1a7bb2327dbaaf395908455c68da31864552d544925b3828808",
+      "git_blob_sha1": "217bbd27af4e3d7ce760813740057ee7124e5850",
+      "seconds": 0.2771403060760349
+    },
+    {
+      "path": "libiop/protocols/encoded/lincheck/basic_lincheck.hpp",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/protocols/encoded/lincheck/basic_lincheck.hpp",
+      "status": "read",
+      "bytes": 4128,
+      "local": "sources/libiop__protocols__encoded__lincheck__basic_lincheck.hpp.txt",
+      "sha256": "8a4e3986e34bb2436d61475ad09d508aab40dac8ba01a8ba63bb3c30b9b28edf",
+      "git_blob_sha1": "73a2548450f84d5d70a9287f475d3932750ff5e8",
+      "seconds": 0.3225498660467565
+    },
+    {
+      "path": "libiop/protocols/ldt/ldt_reducer.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/protocols/ldt/ldt_reducer.tcc",
+      "status": "read",
+      "bytes": 13722,
+      "local": "sources/libiop__protocols__ldt__ldt_reducer.tcc.txt",
+      "sha256": "ae6dafc801ba280a3311de05d90a25763dd721257b79e56d9e38d7704bf8fc42",
+      "git_blob_sha1": "980fc1d3c96e9d3811f8ac6d984f61944d2681b1",
+      "seconds": 0.31242614705115557
+    },
+    {
+      "path": "libiop/protocols/ldt/fri/fri_ldt.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/protocols/ldt/fri/fri_ldt.tcc",
+      "status": "read",
+      "bytes": 31729,
+      "local": "sources/libiop__protocols__ldt__fri__fri_ldt.tcc.txt",
+      "sha256": "fb7ccdb20e3ae02e1e15d0bad0b6e39981c5abb4cd3fe0095b2c45f7468d61d6",
+      "git_blob_sha1": "a082911b4bdabc42daaebb3858a5aaff88e8d7ad",
+      "seconds": 0.3209533509798348
+    },
+    {
+      "path": "libiop/protocols/ldt/fri/fri_ldt.hpp",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/protocols/ldt/fri/fri_ldt.hpp",
+      "status": "read",
+      "bytes": 8479,
+      "local": "sources/libiop__protocols__ldt__fri__fri_ldt.hpp.txt",
+      "sha256": "7b2829963c7f38a2f890e96ca66d2b0940bb42384e8e0ce82a27a2ae141cdefa",
+      "git_blob_sha1": "2225b5075bd4671040662bca8002e8d2cf8eeb22",
+      "seconds": 0.2957588159479201
+    },
+    {
+      "path": "libiop/bcs/hashing/blake2b.hpp",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/bcs/hashing/blake2b.hpp",
+      "status": "read",
+      "bytes": 3638,
+      "local": "sources/libiop__bcs__hashing__blake2b.hpp.txt",
+      "sha256": "f7de8a84ae49e5d6f53044a50256de05837567765c96c05661a1b4a6efd7af3d",
+      "git_blob_sha1": "bdf14bad2fa9114639b623a740c39ddcbf5a995a",
+      "seconds": 0.2877815190004185
+    },
+    {
+      "path": "libiop/iop/iop.tcc",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/iop/iop.tcc",
+      "status": "read",
+      "bytes": 31013,
+      "local": "sources/libiop__iop__iop.tcc.txt",
+      "sha256": "0c137e5c068669184f0f48ede50ec88b9487c0b713c2527dd46df771bc8e54a5",
+      "git_blob_sha1": "d5cab762c5cf9eb62ece4c2040aa31bb1ca21a02",
+      "seconds": 0.2745753600029275
+    },
+    {
+      "path": "LICENSE",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/LICENSE",
+      "status": "read",
+      "bytes": 1046,
+      "local": "sources/LICENSE.txt",
+      "sha256": "8f71659370c5268d9a1dc962a46232540e8fca63462586d8efaa95aab492a208",
+      "git_blob_sha1": "72dc60d84b692387206266939bc34656bcba1e15",
+      "seconds": 0.27815547003410757
+    }
+  ],
+  "wall_seconds": 2.3605713529977947,
+  "peak_self_RSS_KiB": 111072,
+  "limits": "256MiB address space,3s CPU/alarm,two threads/CPUs,100000B/read,1MiB/file",
+  "accounting": "Included in five-second analysis operator/bookkeeping charge",
+  "preceding_source_read_diagnostics": [
+    {
+      "status": "sandbox DNS failure",
+      "seconds": 0.007994811050593853
+    },
+    {
+      "status": "bounded exact-pin blake2b source read",
+      "seconds": 0.32082743605133146
+    }
+  ],
+  "code_executed": false,
+  "new_test_invocations": 0
+}

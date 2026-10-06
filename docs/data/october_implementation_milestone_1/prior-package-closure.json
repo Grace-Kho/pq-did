@@ -1,0 +1,10 @@
+{
+  "package_closed": "S3-AURORA-MASKING-CORRECTION-CONTRACT-1",
+  "completed_evidence": "docs/data/s3_aurora_masking_correction_contract_1/validation-closure.json",
+  "evidence_sha256": "063a5b8a3c745604806de939a9738b0d23399dc723f835a3487894e60f33a444",
+  "unused_evidence_reservation_released_bytes": 873382,
+  "consumption_refunded": 0,
+  "prior_query_and_native_packages_already_closed": true,
+  "preparation_uses_existing_analysis_and_cumulative_evidence_headroom": true,
+  "future_proposed_amendments_approved": false
+}

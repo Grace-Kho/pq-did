@@ -1,0 +1,27 @@
+{
+  "command": [
+    "systemctl",
+    "--user",
+    "show",
+    "pqdid-arithmetic-r1cs-1-source-quality-final.service",
+    "--property=LoadState,ActiveState,SubState,MainPID,ControlGroup,MemoryMax,MemoryPeak,MemorySwapMax,Result,ExecMainCode,ExecMainStatus"
+  ],
+  "exit_status": 0,
+  "properties": {
+    "LoadState": "loaded",
+    "ActiveState": "failed",
+    "SubState": "failed",
+    "MainPID": "0",
+    "Result": "exit-code",
+    "ExecMainCode": "1",
+    "ExecMainStatus": "1",
+    "ControlGroup": "",
+    "MemoryPeak": "10891264",
+    "MemoryMax": "268435456",
+    "MemorySwapMax": "0"
+  },
+  "cause": "--completion placed after positional arguments was consumed as child argv by REMAINDER; child never launched",
+  "worker_record_missing": true,
+  "status": "failed, not retroactively passed",
+  "next_action": "Repeat only static checks with correctly placed coordinator option; unchanged sources/expectations"
+}

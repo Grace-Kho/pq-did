@@ -1,0 +1,128 @@
+{
+  "status": "proposed source/build closure; acquisition and native compatibility gates outstanding",
+  "root": {
+    "path": "ligero",
+    "origin": "https://github.com/ligeroinc/ligero-prover.git",
+    "commit": "4b1cdef1bfdf4497fb3e38170db4541fba3f6c12",
+    "tree": "95984ef209bf37a53624d27a36905e41886dacfc",
+    "retained_tree": "docs/data/ligetron_correction_admission_1/upstream-tree.json"
+  },
+  "source_dependencies": [
+    {
+      "path": "dawn",
+      "origin": "https://dawn.googlesource.com/dawn",
+      "commit": "cec4482eccee45696a7c0019e750c77f101ced04",
+      "selection": "exact pinned Ligetron README recommendation; .gitmodules declares dawn, but retained tree contains no gitlink",
+      "metadata_mirror": "https://github.com/google/dawn",
+      "dependencies": [
+        "dawn/third_party/abseil-cpp",
+        "dawn/third_party/jinja2",
+        "dawn/third_party/markupsafe",
+        "dawn/third_party/spirv-headers/src",
+        "dawn/third_party/spirv-tools/src",
+        "dawn/third_party/vulkan-headers/src",
+        "dawn/third_party/vulkan-utility-libraries/src"
+      ]
+    },
+    {
+      "path": "wabt",
+      "origin": "https://github.com/WebAssembly/wabt.git",
+      "commit": "3e826ecde1adfba5f88d10d361131405637e65a3",
+      "version": "1.0.36",
+      "selection": "new explicit prospective dependency choice; Ligetron README does not pin WABT; official tag metadata retained",
+      "dependencies": [
+        "OpenSSL from exact local-prefix package records; standard toolchain only with tests/libwasm/WASI disabled"
+      ]
+    },
+    {
+      "path": "dawn/third_party/abseil-cpp",
+      "origin": "https://chromium.googlesource.com/chromium/src/third_party/abseil-cpp",
+      "commit": "cae4b6a3990e1431caa09c7b2ed1c76d0dfeab17",
+      "identity_status": "pin read in Dawn DEPS at README-recommended revision; objects not acquired",
+      "dependencies": []
+    },
+    {
+      "path": "dawn/third_party/jinja2",
+      "origin": "https://chromium.googlesource.com/chromium/src/third_party/jinja2",
+      "commit": "e2d024354e11cc6b041b0cff032d73f0c7e43a07",
+      "identity_status": "pin read in Dawn DEPS at README-recommended revision; objects not acquired",
+      "dependencies": [
+        "dawn/third_party/markupsafe"
+      ]
+    },
+    {
+      "path": "dawn/third_party/markupsafe",
+      "origin": "https://chromium.googlesource.com/chromium/src/third_party/markupsafe",
+      "commit": "0bad08bb207bbfc1d6f3bbc82b9242b0c50e5794",
+      "identity_status": "pin read in Dawn DEPS at README-recommended revision; objects not acquired",
+      "dependencies": []
+    },
+    {
+      "path": "dawn/third_party/spirv-headers/src",
+      "origin": "https://chromium.googlesource.com/external/github.com/KhronosGroup/SPIRV-Headers",
+      "commit": "a7361efd139bf65de0e86d43b01b01e0b34d387f",
+      "identity_status": "pin read in Dawn DEPS at README-recommended revision; objects not acquired",
+      "dependencies": []
+    },
+    {
+      "path": "dawn/third_party/spirv-tools/src",
+      "origin": "https://chromium.googlesource.com/external/github.com/KhronosGroup/SPIRV-Tools",
+      "commit": "5e7108e11015b1e2c7d944f766524d19fb599b9d",
+      "identity_status": "pin read in Dawn DEPS at README-recommended revision; objects not acquired",
+      "dependencies": [
+        "dawn/third_party/spirv-headers/src"
+      ]
+    },
+    {
+      "path": "dawn/third_party/vulkan-headers/src",
+      "origin": "https://chromium.googlesource.com/external/github.com/KhronosGroup/Vulkan-Headers",
+      "commit": "2e0a6e699e35c9609bde2ca4abb0d380c0378639",
+      "identity_status": "pin read in Dawn DEPS at README-recommended revision; objects not acquired",
+      "dependencies": []
+    },
+    {
+      "path": "dawn/third_party/vulkan-utility-libraries/src",
+      "origin": "https://chromium.googlesource.com/external/github.com/KhronosGroup/Vulkan-Utility-Libraries",
+      "commit": "4f4c0b6c61223b703f1c753a404578d7d63932ad",
+      "identity_status": "pin read in Dawn DEPS at README-recommended revision; objects not acquired",
+      "dependencies": [
+        "dawn/third_party/vulkan-headers/src"
+      ]
+    }
+  ],
+  "system_and_local_prefix_packages": "package-closure.json",
+  "verified_ligetron_metadata": [
+    {
+      "upstream_path": "README.md",
+      "local_path": "docs/data/ligetron_dependency_hardware_preflight_1/sources/upstream-README.md",
+      "bytes": 12547,
+      "git_blob": "f0fb31e6006b0d5d43a500e152e933fe30029212",
+      "sha256": "e5d2ed70f45ec1ce1289ce753bd745eeb27ee27af4df9b3b46c2839350001201",
+      "retained_tree_membership_verified": true
+    },
+    {
+      "upstream_path": ".gitmodules",
+      "local_path": "docs/data/ligetron_dependency_hardware_preflight_1/sources/upstream-gitmodules.txt",
+      "bytes": 74,
+      "git_blob": "1e50d5b9da25b246b4f5f269ed10d8b9865b8ddc",
+      "sha256": "b013baa562984e9953c1806854d7c1205a0ce9706f8d5f5236e8f3841a4bdd2e",
+      "retained_tree_membership_verified": true
+    }
+  ],
+  "excluded": {
+    "PartitionAlloc": "Dawn CMake target is its in-tree header-only shim, not external Chromium allocator",
+    "GN/CIPD/depot_tools/Chromium sysroots": "CMake and installed compiler used",
+    "GoogleTest/benchmarks/GLFW/ANGLE/SwiftShader/DXC/protobuf-for-Tint": "features disabled; Ligetron own protobuf remains required",
+    "WABT gtest/wasm-c-api/uvwasi": "tests/libwasm/WASI off",
+    "Vulkan loader source": "reuse installed libvulkan1; headers/utility headers supplied by pinned Dawn DEPS",
+    "VMA/glslang/SPIRV-Cross": "not required by selected CMake Vulkan target and disabled GLSL tools"
+  },
+  "remaining_checks": [
+    "Acquire exact commit objects with replacement substitution disabled; verify commit/tree/content and complete local source closure; do not use recursive unpinned updates.",
+    "WABT 1.0.36 API compatibility with Ligetron is not established by its tag; compile actual targets and stop or perform supported in-scope API corrections without changing pins.",
+    "APT payload hashes, archive paths, actual headers/CMake exports/libraries, version/architecture and dependency constraints require verification after acquisition.",
+    "No Dawn configuration/build or Vulkan/Dawn adapter execution has occurred.",
+    "If an unexpected required transitive source is discovered, stop affected acquisition unless it is already exactly pinned by these retained DEPS and within explicit future acquisition policy; no guessed versions."
+  ],
+  "bytes_of_new_text_sources": 145433
+}

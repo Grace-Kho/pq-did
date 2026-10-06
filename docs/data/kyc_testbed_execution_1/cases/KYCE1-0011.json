@@ -1,0 +1,17 @@
+{
+  "invocation_id": "KYCE1-0011",
+  "case_id": "W-10",
+  "work_event_reservation": 0,
+  "ordinal": 11,
+  "cumulative_invocations": 985,
+  "status": "pass",
+  "details": {
+    "contract": "holder-private; independent owner ticket",
+    "failure_mode": null,
+    "store_bytes": 20480,
+    "result": "specified state and acceptance/rejection assertions passed"
+  },
+  "seconds": 0.13219106197357178,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions or evaluations. Host setup included in time and resource guard."
+}

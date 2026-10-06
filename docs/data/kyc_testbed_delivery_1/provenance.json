@@ -1,0 +1,31 @@
+{
+  "package": "KYC-TESTBED-DELIVERY-1",
+  "new_measured_runner_sha256": {
+    "benchmarks/kyc_testbed_delivery_1/__init__.py": "6c79811c94efdd7a6ef9abaae6077851ac4ea2698cb0cb4c10f04497adff96be",
+    "benchmarks/kyc_testbed_delivery_1/export.py": "cce0078ba700e6f1b401088c575e2ac58a785e2a0da4b3329348bb7ae4c0504e",
+    "benchmarks/kyc_testbed_delivery_1/runner.py": "84aa8ace091ccff380db438c44dfcb4795d29538c118f745a2f0d045134077ed",
+    "experiments/kyc_testbed_delivery_1/__init__.py": "6c79811c94efdd7a6ef9abaae6077851ac4ea2698cb0cb4c10f04497adff96be",
+    "experiments/kyc_testbed_delivery_1/cases.py": "6e04db14713adba5c9445d76bd454ec032b172fbbe0ebaf31fcba685a341dccd",
+    "experiments/kyc_testbed_delivery_1/demo.py": "f939be6b8f7c2fcb2b0b08a825919dd584baedc247489aba6e372b505f940e2b",
+    "experiments/kyc_testbed_delivery_1/preservation.py": "e7b547f15c16ea2cc7f2850a383522fe5a1a274608250fa5c6352020f3d5f357",
+    "experiments/kyc_testbed_delivery_1/run.py": "1594d10aad1ad185d554db87b3c03ddf559ac95ad52197dac48a75d8db5f088c",
+    "experiments/kyc_testbed_delivery_1/tooling.py": "3c9c7ecc899eede85dcd523edb3b7828abbfb5668f62639186d4ac05354f1162"
+  },
+  "source_snapshot_timing": "After successful cases; unchanged since static-2 and all case execution",
+  "runtime_sources_reused": [
+    "experiments/kyc_testbed_execution_1/application.py",
+    "experiments/kyc_manager_incremental_storage_1/integration.py",
+    "experiments/kyc_manager_incremental_storage_1/history.py",
+    "experiments/kyc_manager_incremental_storage_1/store.py",
+    "experiments/kyc_issuer_incremental_storage_1/journal.py",
+    "experiments/kyc_milestone_1/baseline",
+    "src/pqdid"
+  ],
+  "retained_identity_chain": "opening.json -> predecessor manifest/closure -> original baselines; verified at preflight and final audit",
+  "dataset_record_identities": "retained-observations.json",
+  "no_source_change_after_measurement": true,
+  "comparison_points_preserved": [
+    "OCT31-KYC-NATIVE-MILESTONE-1/v1",
+    "KYC-BASELINE-ISSUER2-MANAGER2-WALLET-PAGED-1"
+  ]
+}

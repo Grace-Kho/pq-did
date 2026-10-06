@@ -1,0 +1,91 @@
+{
+  "source_commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+  "source_tree": "2e2588ccb085242dd2237875c3b9adf1a0fc958c",
+  "source_origin": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/work",
+  "source_files": 919,
+  "source_bytes_before": 3163710,
+  "patch_sha256": "46de19f73eaf55913ac804386d75ac04f8debcce7abd0d8868afaefe76f10800",
+  "changes": {
+    "work/libiop/libiop/protocols/aurora_iop.hpp": {
+      "before_sha256": "1f33af612aec1f1fe443d1581fd789f2140b32ebd683189743fd131e4d38e385",
+      "after_sha256": "b07ec710befea0f1b0f06c7d2de417b0c27c8244c4f23574b4e9c29d11800122",
+      "bytes": 3864
+    },
+    "work/libiop/libiop/protocols/aurora_iop.tcc": {
+      "before_sha256": "10d5113d82a88ed315538f7a24c048775c43a32d91a394eca18ea282350aa19c",
+      "after_sha256": "5fb8faf85358c8606be7de4c81a10df4efea673e2ad0c27e16b86e4409c09ff5",
+      "bytes": 18901
+    },
+    "work/libiop/libiop/protocols/encoded/lincheck/basic_lincheck.hpp": {
+      "before_sha256": "8a4e3986e34bb2436d61475ad09d508aab40dac8ba01a8ba63bb3c30b9b28edf",
+      "after_sha256": "e950c2988d7ed77e0ba08fb00cdbe460b721f2f62452f75ac5bfeebcfc6a8daf",
+      "bytes": 4289
+    },
+    "work/libiop/libiop/protocols/encoded/lincheck/basic_lincheck.tcc": {
+      "before_sha256": "972c1ed5b87261cb60363e4a36235de8943121d71d8b788321528365fd31430c",
+      "after_sha256": "66252b560481b6ea7ee4ea32b5a6b82a480c609e526128df4ca06e279e95a1fb",
+      "bytes": 13438
+    },
+    "work/libiop/libiop/protocols/encoded/r1cs_rs_iop/r1cs_rs_iop.hpp": {
+      "before_sha256": "a067a3128bad7a09831068616dbef51bf8811bd14271d53a6ab336fbb20d267d",
+      "after_sha256": "e862587c84f8822a8dc61940466c3e4ec18e370644dc18d86c295741224a6431",
+      "bytes": 6869
+    },
+    "work/libiop/libiop/protocols/encoded/r1cs_rs_iop/r1cs_rs_iop.tcc": {
+      "before_sha256": "4a0687c95b02e1a7bb2327dbaaf395908455c68da31864552d544925b3828808",
+      "after_sha256": "8de792f3f3e8b68d08728b8dedd0f137a9e41ac28d263efe38ac7b8a1a142351",
+      "bytes": 28920
+    },
+    "work/libiop/libiop/protocols/encoded/sumcheck/sumcheck.hpp": {
+      "before_sha256": "0db43954c2f5c452d3a8f103906b7b28a4523688653532ceb6fffbdf05acb48d",
+      "after_sha256": "ecea9fca246eb2173ec7a61989d19cc98488605bf05b337b64130f7cfbfcdcbb",
+      "bytes": 4852
+    },
+    "work/libiop/libiop/protocols/encoded/sumcheck/sumcheck.tcc": {
+      "before_sha256": "e6e64dd6f3a9a078cf982384614b4cbbeeaa13620a1ffb0b0edc75da460f2374",
+      "after_sha256": "a0dc7593440b9555af2337d89126181e0019485f96480806ec0d9ed7b0af6e47",
+      "bytes": 21671
+    },
+    "work/libiop/libiop/protocols/ldt/fri/fri_ldt.hpp": {
+      "before_sha256": "7b2829963c7f38a2f890e96ca66d2b0940bb42384e8e0ce82a27a2ae141cdefa",
+      "after_sha256": "16e2626f6990f85a40a7d1629bade1cd939ef236c56ea292c25ba1ad581cf9cb",
+      "bytes": 9251
+    },
+    "work/libiop/libiop/protocols/ldt/fri/fri_ldt.tcc": {
+      "before_sha256": "fb7ccdb20e3ae02e1e15d0bad0b6e39981c5abb4cd3fe0095b2c45f7468d61d6",
+      "after_sha256": "9cb720f577fc31ef99ae9c4a551f7459c09008d031f08d3691173e13a874d9ee",
+      "bytes": 31863
+    },
+    "work/libiop/libiop/protocols/ldt/ldt_reducer.hpp": {
+      "before_sha256": "ce3cc9f03208e788f97280b65cb698bdc2b88a44c9c307f52e8460b83656394e",
+      "after_sha256": "7a6bacda0b0f22c70f0373fef7b73515c2994dcf147f914edc82ae59ce4d4bb7",
+      "bytes": 5165
+    },
+    "work/libiop/libiop/protocols/ldt/ldt_reducer.tcc": {
+      "before_sha256": "ae6dafc801ba280a3311de05d90a25763dd721257b79e56d9e38d7704bf8fc42",
+      "after_sha256": "13787d4edbdfde65e9cbe3f85cf43afabbc8d3102b853d99d92977c76bfa574d",
+      "bytes": 15110
+    },
+    "work/libiop/libiop/protocols/ldt/ldt_reducer_aux.hpp": {
+      "before_sha256": "f6da8038dc1441d381c6fa980526bdf5099165e37e050286c2bd9a0030aed27a",
+      "after_sha256": "f4071ecd9a5e67de9e1d6b8ed10b88314791ec1db134610a06850dd87875f36e",
+      "bytes": 2286
+    },
+    "work/libiop/libiop/protocols/ldt/ldt_reducer_aux.tcc": {
+      "before_sha256": "183e5b0104bfd2bfc472ce172059ccadc414f14a35d0878c496afcaece97ffb8",
+      "after_sha256": "1b215475806120960f8c0447f86724691e7f339b35f6e46c36639d38e89fc07e",
+      "bytes": 9243
+    }
+  },
+  "immutable_libff_libfqfft": true,
+  "friend_test_expansion": "Replaced gtest test-only include and two FRIEND_TEST macros with literal identical friend class declarations; no gtest stub.",
+  "fixture_visibility": "PQ_MASKING_PUBLIC_FIXTURES only on aurora_masking_native; ordinary interfaces omit fixture injection",
+  "overlay_inputs": {
+    "overlay/CMakeLists.txt": "a35f75085837d0275538c84cd2bed81a28274ae9366003ce0e855f2fcf88f291",
+    "overlay/artifact-outputs.json": "6445780581b69919428199a5c49ff52864fe66824aeccde66d15419b63072cd2",
+    "overlay/exp2_native.cpp": "52f847c2ac660396b76852f8de88b9b6ea68f7153b869e2350b9959df09dcedd",
+    "overlay/masking-correction.patch": "46de19f73eaf55913ac804386d75ac04f8debcce7abd0d8868afaefe76f10800",
+    "overlay/masking_native.cpp": "1afa2ca145a3649c90c20fdd53ae71d177007e15246024a2a5b70a6829d27d6a"
+  },
+  "dispatcher_sha256": "591b00bfcb96a100bc71c8f6ae79875937a9cbe88442db21ffdc0e6b88cf2ccd"
+}

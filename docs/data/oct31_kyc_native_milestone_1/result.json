@@ -1,0 +1,8 @@
+{
+  "package": "OCT31-KYC-NATIVE-MILESTONE-1",
+  "preservation_passed": true,
+  "overall_complete": false,
+  "outcome": "baseline-and-benchmarks-complete; native-final-validation-admission-blocked",
+  "closure": "validation-closure.json",
+  "manifest_sha256": "c0475e4cbbcae25e3bfa1d2c08dedd338c99549f77726450f934e18fb15d4b1c"
+}

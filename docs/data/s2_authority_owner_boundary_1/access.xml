@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.664" timestamp="2026-09-19T19:43:38.339644+08:00" hostname="DTC-4CE630BQSC"><testcase classname="tests.integration.test_owner_boundary" name="test_access_permissions_and_read_redaction" time="0.519"><failure message="AssertionError: (b'ERROR', b'unavailable')&#10;assert b'ERROR' == b'STATUS'&#10;  &#10;  At index 0 diff: b'E' != b'S'&#10;  Use -v to get more diff">tests/integration/test_owner_boundary.py:285: in test_access_permissions_and_read_redaction
+    assert case.rpc("manager", b"reserve", case.reserve_args())[1] == b"not-admitted"
+                                           ^^^^^^^^^^^^^^^^^^^
+tests/integration/test_owner_boundary.py:206: in reserve_args
+    return OP, prior or self.head("manager"), ISSUE, cp.state.state
+                        ^^^^^^^^^^^^^^^^^^^^
+tests/integration/test_owner_boundary.py:201: in head
+    assert response[0] == b"STATUS", response
+E   AssertionError: (b'ERROR', b'unavailable')
+E   assert b'ERROR' == b'STATUS'
+E     
+E     At index 0 diff: b'E' != b'S'
+E     Use -v to get more diff</failure></testcase></testsuite></testsuites>

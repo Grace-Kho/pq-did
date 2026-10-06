@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://github.com/risc0/risc0/releases/download/v3.0.6/cargo-risczero-x86_64-unknown-linux-gnu.tgz",
+    "path": "tooling/downloads/cargo-risczero-x86_64-unknown-linux-gnu.tgz",
+    "bytes": 72347320,
+    "sha256": "615d961bfb81d318db5071d7548389c850e324ac7f421c075176daf26082a60a",
+    "upstream_digest_matched": true,
+    "seconds": 23.59581539001374
+  },
+  {
+    "url": "https://github.com/risc0/rust/releases/download/r0.1.97.0/rust-toolchain-x86_64-unknown-linux-gnu.tar.gz",
+    "path": "tooling/downloads/rust-toolchain-x86_64-unknown-linux-gnu.tar.gz",
+    "bytes": 528796425,
+    "sha256": "100b597d605b706bec94e1d32bfaaf5851df8d75173f986d4b56a3e90916be53",
+    "upstream_digest_matched": true,
+    "seconds": 168.61991711799055
+  },
+  {
+    "url": "https://static.rust-lang.org/rustup/archive/1.28.2/x86_64-unknown-linux-gnu/rustup-init",
+    "path": "tooling/downloads/rustup-init",
+    "bytes": 20889000,
+    "sha256": "20a06e644b0d9bd2fbdbfd52d42540bdde820ea7df86e92e533c073da0cdd43c",
+    "upstream_digest_matched": true,
+    "seconds": 5.94801876800193
+  }
+]

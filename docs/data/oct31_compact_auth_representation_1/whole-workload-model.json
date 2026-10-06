@@ -1,0 +1,156 @@
+{
+  "passed": true,
+  "decision": "NO-GO-full-resident-AFFINE-GF192-1",
+  "field": "GF(2^192), x^192+x^7+x^2+x+1",
+  "field_changed": false,
+  "all_original_emitted_AND_rows_preserved": true,
+  "codewords_allocated": 0,
+  "complete_authentication_count": null,
+  "candidate_whole_constraints_measured": false,
+  "rows_formula": "42632 + original_ANDs + exact_linear_spills + 2",
+  "variables_formula_excluding_constant": "42632 + original_ANDs + exact_linear_spills + 1",
+  "spill_bound": "0 <= S <= original_XORs+original_NOTs; at most one spill per affine gate",
+  "unknown_residual_terms_are_nonnegative_not_zero": true,
+  "whole_workload": [
+    {
+      "component": "private parsing/disclosure/final sticky scope",
+      "cardinality": "one canonical witness, 42632 bits",
+      "evidence_status": "unmeasured full cost; previous prefix completed parsing/disclosure"
+    },
+    {
+      "component": "holder SHA3-384",
+      "cardinality": "1 hash; canonical framed private secret",
+      "evidence_status": "complete retained component, not repeated"
+    },
+    {
+      "component": "signature response decode/norm",
+      "cardinality": "5*256 coefficients; strict abs(z)<524092",
+      "evidence_status": "full source; norm boundary retained"
+    },
+    {
+      "component": "hints",
+      "cardinality": "61 bytes; 6*256 outputs; <=55 ordered nonzero indices",
+      "evidence_status": "retained experimental decoding checks"
+    },
+    {
+      "component": "mu SHAKE256",
+      "cardinality": "one hash of tr||formatted_message, output64",
+      "evidence_status": "full framed length shape-dependent; unmeasured complete relation"
+    },
+    {
+      "component": "challenge sampling",
+      "cardinality": "SHAKE256(48B,256B),2 permutations; 248 private candidate iterations",
+      "evidence_status": "full private scan unexecuted; exhaustion stays constrained"
+    },
+    {
+      "component": "forward transforms",
+      "cardinality": "6*(256 entry conversions+1024 butterflies+output masks)",
+      "evidence_status": "internal cores only:6*7233536 measured-subgraph AND lower; wrappers residual"
+    },
+    {
+      "component": "A*z",
+      "cardinality": "7680 public-constant products plus accumulation",
+      "evidence_status": "one coefficient retained; total cost symbolic"
+    },
+    {
+      "component": "challenge*t1 subtraction",
+      "cardinality": "1536 public-constant products plus subtraction",
+      "evidence_status": "one coefficient retained; total cost symbolic"
+    },
+    {
+      "component": "inverse transforms",
+      "cardinality": "6*(256 entry conversions+1024 inverse butterflies+256 factor products)",
+      "evidence_status": "full source; single inverse pair retained, total symbolic"
+    },
+    {
+      "component": "decomposition/UseHint/w1",
+      "cardinality": "1536 coefficients,768-byte output",
+      "evidence_status": "component evidence retained, full combined cost symbolic"
+    },
+    {
+      "component": "challenge equality",
+      "cardinality": "SHAKE256(mu64||w1[768],48),7 permutations and exact equality",
+      "evidence_status": "complete final-hash component retained, no full-verifier claim"
+    },
+    {
+      "component": "same certified identifier non-revocation",
+      "cardinality": "20 SHA3-384 nodes,private siblings,direction/level/root checks",
+      "evidence_status": "full source, no complete circuit measurement"
+    },
+    {
+      "component": "public preprocessing and lifecycle",
+      "cardinality": "trusted PubOK/Ppub, A public sampler30*1026B, t1/tr, canonical X; separate freshness/consumption",
+      "evidence_status": "outside hidden relation only because public and independently bound; retained validation"
+    }
+  ],
+  "bounds": [
+    {
+      "source_core_copies": 1,
+      "and_row_subset_lower": 7233536,
+      "complete_relation_row_lower": 7276170,
+      "variable_lower_excluding_constant": 7276169,
+      "padded_M_lower": 8388608,
+      "padded_N_lower": 8388608,
+      "minimum_b": 1,
+      "Dconstraint_lower": 16777217,
+      "codeword_elements_lower": 268435456,
+      "single_codeword_payload_lower_bytes": 6442450944,
+      "four_simultaneous_codewords_lower_bytes": 25769803776,
+      "padded_assignment_payload_lower_bytes": 201326592,
+      "three_Az_Bz_Cz_vectors_lower_bytes": 603979776,
+      "unpadded_constraint_objects_lower_bytes": 523884240,
+      "nonzero_C_terms_for_AND_only_lower_bytes": 231473152,
+      "native_worker_bytes": 1073741824,
+      "aggregate_bytes": 2147483648,
+      "fits_even_one_codeword": false
+    },
+    {
+      "source_core_copies": 6,
+      "and_row_subset_lower": 43401216,
+      "complete_relation_row_lower": 43443850,
+      "variable_lower_excluding_constant": 43443849,
+      "padded_M_lower": 67108864,
+      "padded_N_lower": 67108864,
+      "minimum_b": 1,
+      "Dconstraint_lower": 134217729,
+      "codeword_elements_lower": 2147483648,
+      "single_codeword_payload_lower_bytes": 51539607552,
+      "four_simultaneous_codewords_lower_bytes": 206158430208,
+      "padded_assignment_payload_lower_bytes": 1610612736,
+      "three_Az_Bz_Cz_vectors_lower_bytes": 4831838208,
+      "unpadded_constraint_objects_lower_bytes": 3127957200,
+      "nonzero_C_terms_for_AND_only_lower_bytes": 1388838912,
+      "native_worker_bytes": 1073741824,
+      "aggregate_bytes": 2147483648,
+      "fits_even_one_codeword": false
+    }
+  ],
+  "bounds_exclude": [
+    "extra masks and polynomial coefficients",
+    "FFT/interpolation temporaries",
+    "matrix copies and sparse-map allocation overhead",
+    "commitment trees/salts/openings",
+    "other retained oracles"
+  ],
+  "prior_24GiB": {
+    "premise": "old gate-per-row,27044356 gates,paddedM2^25,minb1,L2^30,24B/element",
+    "valid_as_conditional_bound": true,
+    "not_full_relation_measurement": true
+  },
+  "prior_2M_stop": {
+    "governing_call": "experiments/auth_relation_integration_1/count_case.py: Limits(max_gates=2000000,max_seconds=90)",
+    "mode": "count,stored_bytes0",
+    "declared_local_limit_honoured": true,
+    "materialised_trace_ceiling": 2000000,
+    "count_only_partition_ceiling_unchanged": 32000000,
+    "aggregate_work_event_ceiling_not_per_trace": 4294967296
+  },
+  "full_remaining_21_checks": "not admitted; no complete matrix/assignment fit; no reruns",
+  "provenance_sha256": {
+    "docs/data/s3_mldsa_full_forward_ntt_pilot_1/pilot-summary.json": "b9774c715a394dcede315070dfacc613c56bef4171d0dfad0989b09e3055ebfe",
+    "experiments/mldsa_full_forward_ntt_1/candidate.py": "f299595e8c427f65f603804019d27163199a5614e71b2e899f59f225c964abb4",
+    "experiments/mldsa_forward_ntt_stage_1/candidate.py": "6656a0bb3be323b747ef26ceb615ab0cd7c0be21e58f1a85273d9799e9c7ee43",
+    "experiments/auth_relation_integration_1/mldsa_verify.py": "fce610802e3401f7ac941e093f838f6e915b70717c2473eae46fcd34a27acba7",
+    "docs/data/oct31_auth_relation_integration_run_1/cases/AR1-0002.json": "d3181f6a9a1516f1d61640162cbdf342aeeaffa237f27510b77a1f73e0c4ed43"
+  }
+}

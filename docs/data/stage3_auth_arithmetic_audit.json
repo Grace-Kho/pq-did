@@ -1,0 +1,88 @@
+{
+  "recorded_at_utc": "2026-09-17T15:06:32.075215+00:00",
+  "protected_preexisting_files": 6851,
+  "unchanged_preexisting_files": 6845,
+  "authorised_changed_records": [
+    "README.md",
+    "configs/suite.json",
+    "docs/implementation_spec.md",
+    "docs/spec_issues.md",
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "preserved": "all prior production sources, tests, vectors, measurements, manuscript, dependency/native/editor environment, confirmed suite parameters and SPEC-001/002/003",
+  "historical_measurements_sha256": {
+    "docs/data/spec003_comparison.json": "e68f371d461eb9cc63645310d32d05d7c73186c0e81c8d032b38202510ad659c",
+    "docs/data/stage3_bc1_measurements.json": "34c08ff9b21c60d670fff5dcfdf579d29269ec74773db5569295d58bf2826b40",
+    "docs/data/stage3_hash_enrolment_measurements.json": "bf13a527bda9f8ad8f24a841e7bc9c654750bf1b6275a5b7a7e9f0e75afb0294",
+    "docs/data/stage3_hash_enrolment_regression.json": "5d33de84960f8ce15a1d0597ed0a8e39925678d836544116e8695709c88034e2",
+    "docs/data/stage3_hash_enrolment_validation.json": "4d648340ffe1ce16eb7e60527ce49ffb5cff2eaeb889b58706fdb85e7eb90c00",
+    "docs/data/stage3_validation_audit.json": "8de25c9a69bd5c6f725be8b04f647720d7aada39dff7264eb31284abcba439d0"
+  },
+  "new_evidence_sha256": {
+    "docs/data/stage3_auth_arithmetic_focused.json": "0029a8fb8396aa97a6154cf0246d2158842be18d4144477502735c9ea7921c19",
+    "docs/data/stage3_auth_arithmetic_measurements.json": "eb9bd4ec33d3faa77ac36338861322dddcf0424373b1641083a403a3322002a6",
+    "docs/data/stage3_auth_arithmetic_regression.json": "5ed594918db2d18b89a8f0f946c9feb20e7fdcf971ea226e144eba714ad998fb",
+    "tests/fixtures/bc1_scalar_vectors.json": "ecebcecc91fe3c649b7027ab70cd56368a1582b6aed69d1df095642c7d10dccd"
+  },
+  "source_sha256": {
+    "src/pqdid/circuits/auth_parsing.py": "15bb95af9c2cb70eab3c4de8406b50cd25f67cf823163875372668989c26be2b",
+    "src/pqdid/circuits/division.py": "c530930c04f91bcdf4bceaf5d052f940cc935e87cca6562baf119ad41b8574a8",
+    "src/pqdid/circuits/scalar_ring.py": "f2012a9d1202686368eb2693495bccd00af8be73ce8a00535a8ced9a190adf45",
+    "scripts/validate_auth_arithmetic.py": "bcac16289cc39eff319bc62576873875f44e8be2202c82a7bfd62618b708ad85",
+    "scripts/measure_auth_parsing_arithmetic.py": "e2c2a906d29b145874578eda19a3956599b40a038dd0642c7f4bd2c90f82e33a",
+    "tests/reference/scalar_oracle.py": "3cf218d9a1476e315692404d0e6bb8adf88e18df46387d8fc5b9e9c1d589f2b4",
+    "tests/reference/generate_scalar_vectors.py": "35a52e641a4dbe17e36282b829b4a5e4f50d75334935e865ad23443a362c0d78",
+    "tests/unit/auth_arithmetic_cases.py": "2f52f64f35acd32b8c97156ea8654e698e15b49b1ae54649003679bf9d3a675c",
+    "tests/unit/test_auth_parsing_circuit.py": "4c964b3d9ce1fd0ab33875e58879cea6a4ed43f0dc29242a87450657c80b3301",
+    "tests/unit/test_bc1_division.py": "e49bdf53a8a9449053c7c2f0f00e53fa4f584e7b21dc2edc1947ccaa3d7ce772",
+    "tests/unit/test_scalar_ring_circuit.py": "78466761c507f8a25d2e804ea10942108ca45750ebd553201369a81ff7e69776"
+  },
+  "focused": {
+    "passed": 217,
+    "skipped": 0,
+    "seconds": 15.69
+  },
+  "regression": {
+    "passed": 1323,
+    "skipped": 0,
+    "seconds": 47.65,
+    "categories": {
+      "unit": 1300,
+      "integration": 19,
+      "smoke": 4
+    },
+    "peak_rss_bytes": 124612608
+  },
+  "probes": {
+    "components": 12,
+    "completed": 36,
+    "materialised_predicate_evaluations": 12,
+    "construction_only": 24,
+    "resource_limits": 0,
+    "assertion_failures": 0,
+    "mode_identities": "counts, length, folds and fingerprint agree for every component"
+  },
+  "extended_case": {
+    "component": "attribute-capacity",
+    "gates": 280729,
+    "routine_cap": 200000,
+    "approved_cap": 2000000,
+    "outcome": "completed in all three modes"
+  },
+  "copy_review": "initial centred-result low-word mux duplicated its selected wide wires; final narrowing aliases them; affected centred/decompose/hint predicate deltas exactly 128 XOR + 64 AND fewer; initial data preserved separately",
+  "profile_sha256": "ac67e0b3fe89c8a91a55c13f8f2e75323c02c9773bfe2007771a61f8c3b623b9",
+  "ruff": {
+    "lint_command": ".venv/bin/ruff check .",
+    "lint": "All checks passed!",
+    "format_command": ".venv/bin/ruff format --check .",
+    "format": "105 files already formatted"
+  },
+  "documentation": {
+    "main_requirements": 52,
+    "local_links": 158,
+    "tables": 31
+  },
+  "conformance": "SPEC-004 proposed; functional and deterministic development checks pass, full BC-1 conformance unverified",
+  "limits": "no full authentication count/size, proof or complete feasibility result; no additional private inputs"
+}

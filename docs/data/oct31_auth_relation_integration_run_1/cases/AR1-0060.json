@@ -1,0 +1,16 @@
+{
+  "case_id": "B-06",
+  "invocation_id": "AR1-0060",
+  "status": "pass",
+  "details": {
+    "case_id": "B-06",
+    "passed": true,
+    "rejected": true,
+    "reason": "body size/truncation/trailing data",
+    "accepted": false,
+    "proof_generated": false,
+    "field_note": "all 24-byte encodings canonical; wrong width rejected"
+  },
+  "seconds": 3.392889630049467e-05,
+  "work_events": 0
+}

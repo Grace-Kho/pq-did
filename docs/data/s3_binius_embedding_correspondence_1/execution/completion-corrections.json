@@ -1,0 +1,23 @@
+{
+  "scope": "Only retained E501, duplicate new-report write and consequent missing explicit STOP allowlist handling; no resource or protected-content failure",
+  "sha256": {
+    "STOP.json": "830a6e2884029ef0e583378497bbbe0c75d8e7f3bb44a7d0d5701e1a2166de7e",
+    "quality.json": "e9ec3d7a4d514a516579b47bc75762a29c673c796a537d9b3fbc19332f983298",
+    "quality.log": "b2d69119aa2db11eae7c1af2e6a0ba7ce7bd239406222a5721b4f7b1f81511bb",
+    "STOP-prepare.json": "5436564f724bb021f2751d835cd150e28d2a5021aceb4989504c2f837bf8ab96",
+    "prepare.json": "6174207f66f03b03593135fbae782210d9d6668972891e4ac687a667b83f5291",
+    "prepare.log": "bcdb217fb1c3883274b60f132438e79fc441b2bf71a8ae490d9941d5f566be2a",
+    "checked-inputs.json": "1f8ffbbb59b454dfdb393e5581030f29b326e69e94cfe4a94cce58ee80853462",
+    "STOP-quality-3.json": "553711e6c6ff3d8707956878416070cf1c3a7d7b046682757a5dff7e9edac354",
+    "quality-3.json": "52b549d4e4fee3d0b6969499bfc2cdfad885f26436b96874a9f09fa62ca1b72c",
+    "quality-3.fatal.json": "9bf4431639b4a39a9ab6fbbe34b5c0c7226f5613bf4aa0ee44d33779bbc7be73"
+  },
+  "permitted_failed_phases": [
+    "quality",
+    "prepare",
+    "quality-3"
+  ],
+  "quality_3_worker_started": false,
+  "no_stop_records_removed": true,
+  "functional_invocations": 0
+}

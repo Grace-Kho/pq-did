@@ -1,0 +1,25 @@
+--- experiments/compact_auth_representation_1/admission.py
++++ experiments/compact_auth_representation_1/admission.py
+@@ -170,8 +170,10 @@
+         ),
+         (
+             "public preprocessing and lifecycle",
+-            "trusted PubOK/Ppub, A public sampler30*1026B, t1/tr, canonical X; separate freshness/consumption",
+-            "outside hidden relation only because public and independently bound; retained validation",
++            ("trusted PubOK/Ppub, A public sampler30*1026B, t1/tr, canonical X; "
++             "separate freshness/consumption"),
++            ("outside hidden relation only because public and independently bound; "
++             "retained validation"),
+         ),
+     ]
+     result = {
+@@ -204,7 +206,8 @@
+             "not_full_relation_measurement": True,
+         },
+         "prior_2M_stop": {
+-            "governing_call": "experiments/auth_relation_integration_1/count_case.py: Limits(max_gates=2000000,max_seconds=90)",
++            "governing_call": ("experiments/auth_relation_integration_1/count_case.py: "
++                               "Limits(max_gates=2000000,max_seconds=90)"),
+             "mode": "count,stored_bytes0",
+             "declared_local_limit_honoured": True,
+             "materialised_trace_ceiling": 2000000,

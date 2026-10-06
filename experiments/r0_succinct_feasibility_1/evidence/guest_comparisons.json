@@ -1,0 +1,30 @@
+[
+  {
+    "accepted": true,
+    "cycles": 196311,
+    "exit_code": "Halted(0)",
+    "matched": true,
+    "name": "enrol-alpha-42",
+    "seconds": 0.063151058,
+    "segment_po2": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      15
+    ],
+    "segments": 10
+  },
+  {
+    "accepted": false,
+    "error": "Session limit exceeded: 4194304 >= 4194304",
+    "matched": false,
+    "name": "cred-alpha-42",
+    "seconds": 0.178673899
+  }
+]

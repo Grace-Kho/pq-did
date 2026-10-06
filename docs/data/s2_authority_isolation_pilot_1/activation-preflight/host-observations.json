@@ -1,0 +1,134 @@
+{
+  "kind": "read-only-host-metadata-not-an-actual-identity-case",
+  "uid": 1000,
+  "gid": 1000,
+  "groups": [
+    4,
+    24,
+    27,
+    30,
+    46,
+    100,
+    1000
+  ],
+  "uid_map": "         0          0 4294967295\n",
+  "collisions": [],
+  "accounts": {
+    "pqiso-o-m": null,
+    "pqiso-w-m": null,
+    "pqiso-o-i": null,
+    "pqiso-w-i": null,
+    "pqiso-o-va": null,
+    "pqiso-w-va": null,
+    "pqiso-o-vb": null,
+    "pqiso-w-vb": null,
+    "pqiso-admin": null,
+    "pqiso-observer": null,
+    "pqiso-rec-a": null,
+    "pqiso-rec-b": null,
+    "pqiso-denied": null
+  },
+  "proposed_groups": {
+    "pqiso-o-m": null,
+    "pqiso-w-m": null,
+    "pqiso-o-i": null,
+    "pqiso-w-i": null,
+    "pqiso-o-va": null,
+    "pqiso-w-va": null,
+    "pqiso-o-vb": null,
+    "pqiso-w-vb": null,
+    "pqiso-admin": null,
+    "pqiso-observer": null,
+    "pqiso-rec-a": null,
+    "pqiso-rec-b": null,
+    "pqiso-denied": null,
+    "pqiso-ipc-m": null,
+    "pqiso-ipc-i": null,
+    "pqiso-ipc-va": null,
+    "pqiso-ipc-vb": null
+  },
+  "metadata": {
+    "/etc": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false
+    },
+    "/opt": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false
+    },
+    "/var/lib": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false
+    },
+    "/run": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false
+    },
+    "/etc/systemd/system": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false
+    },
+    "/etc/sysusers.d": {
+      "error_type": "FileNotFoundError",
+      "errno": 2
+    },
+    "/etc/tmpfiles.d": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false
+    },
+    "/home/grace/projects/pq-did": {
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o755",
+      "symlink": false
+    },
+    "/home/grace/projects/pq-did/src": {
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o755",
+      "symlink": false
+    },
+    "/home/grace/projects/pq-did/docs": {
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o755",
+      "symlink": false
+    },
+    "/home/grace/projects/pq-did/.venv": {
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0o755",
+      "symlink": false
+    }
+  },
+  "host_file_sha256": {
+    "/etc/passwd": "a131fab5f28ac90445da2ac6b1aa64d07660ce405063bc160c05407d3e081d03",
+    "/etc/group": "c0cf3b8de245264db35c6bdd3fe948d94d412344a35a6e7462abfef81d4e1a51"
+  },
+  "required_executables": {
+    "python3.14": true,
+    "systemctl": true,
+    "systemd-run": true,
+    "systemd-sysusers": true,
+    "systemd-tmpfiles": true,
+    "systemd-analyze": true,
+    "env": true
+  },
+  "cgroup_controllers": "cpuset cpu io memory hugetlb pids rdma",
+  "system_slice_cgroup_kill_exists": true,
+  "privileged_mutations": [],
+  "activation_preflight_passed": false,
+  "observation_wall_seconds": 0.007367813988821581
+}

@@ -1,0 +1,59 @@
+I approve **LIGETRON-DOMAIN-MASK-CORRECTION-1** within the proposed isolated component scope, with the following conditions and clarifications.
+
+**Allocation**
+
+- Allocate up to **360 seconds from existing outside-KYC implementation capacity**, including **60 seconds reserved for finalisation**. Use the exact live ledger; preserve historical consumption and the KYC allocation and reserve.
+- Add **36 invocation slots**: 32 fixed cases and up to four targeted corrective reruns. Raise the cumulative ceiling from **1,229 to 1,265**, preserving all 11 earlier reserved slots.
+- Reallocate the **two remaining build slots** to this package. The cumulative build ceiling remains **13**.
+- Allocate **1 MiB evidence** and **8 MiB artifacts** within existing cumulative ceilings and protected reserves.
+- Retain serial execution, **1 GiB compiler memory** and **256 MiB component/tooling/audit memory**, together with existing command and temporary-storage limits.
+- Permit redistribution of unused time between non-finalisation phases while retaining the 60-second completion reserve. No consumption is reset.
+
+**Resolve prerequisites before compiling**
+
+Reuse the verified overlay, retained source, compiler and dependency closure. Acquire only the necessary transitive source closure at the unchanged pinned commit:
+
+`4b1cdef1bfdf4497fb3e38170db4541fba3f6c12`
+
+Verify source membership, lengths and hashes before use. Resolve the complete CPU include/link closure before consuming a build attempt.
+
+Authorise reading the full reference texts:
+
+- `https://eprint.iacr.org/2022/1608.pdf`
+- `https://eprint.iacr.org/2024/2010.pdf`
+
+Record the exact inspected versions and theorem locations. Online inspection is sufficient. If retaining PDFs is necessary, register them as reference artifacts; permit up to **4 MiB per reference PDF within the existing 8 MiB aggregate artifact allocation**. This exception does not apply to source, logs or other evidence.
+
+**Construction gate**
+
+Before editing protocol code, establish an exact component contract covering:
+
+1. Disjoint message/interpolation and codeword evaluation domains, including transform ordering and inverse scaling before coefficient folding.
+2. Full-support code-test masking, commitment order and consistent randomness consumption across all three prover stages.
+3. Separate query and padding counts, preserving 192 queries and explicitly selecting the resulting dimensions and degree bounds.
+4. Ordinary and batched paths, public coefficient encodings, linear and quadratic masks, decoding, sampling and parameter/profile binding.
+
+Map these contracts to the applicable existing protocol arguments. Preserve the linear-mask sum constraint and quadratic-mask zero constraints.
+
+Keep two decisions separate:
+
+- **Component implementation admission:** the specified corrections have justified algebraic contracts and can be meaningfully compared with the actual native components.
+- **Complete private-proof admission:** the joint committed transcript, compiler, same-assignment extraction, public challenge expansion and quantum/Fiat–Shamir obligations are established.
+
+The second decision remains closed to adoption. Its recorded unresolved obligations do not require another general review before carrying out component work that passes the first gate. However, if the component contract itself requires a new, unavailable masking or simulation construction, stop before builds and identify that exact missing result.
+
+**Execution and validation**
+
+Once the component gate passes, continue through the isolated implementation, 32 fixed cases, permitted corrections and one final preservation/reporting checkpoint.
+
+Freeze the individual case matrix and independent expectations before execution. Include both original defects as labelled negative controls. Reuse the completed 35-case randomness evidence; rerun only the four affected replay checks already included in this package.
+
+Exercise actual native field, RNG and witness-manager components where available. Label CPU transform models explicitly. Do not describe a source edit or CPU model as executed GPU, VM or complete prover/verifier correspondence.
+
+Proceed continuously through routine in-scope corrections. Stop for integrity failure, resource breach, insufficient completion headroom, an essential missing dependency or substantive construction mismatch. Preserve every failure and actual charge.
+
+Finish with the component outcome, individual case results, exact source/patch identities, resource accounting and the remaining complete-backend admission conditions. Do not automatically start another package.
+
+Only manuscript Sections II–VIII and agreed clarifications remain authoritative. Preserve the completed KYC baseline, 302 historical observations, four smoke observations and all earlier evidence.
+
+No GPU execution, complete prover/verifier run, hidden-message ML-DSA proof or proof attempt is authorised. Private verification remains fail-closed; proving and isolation remain paused. The proof ledger remains **two used, one unused**.

@@ -1,0 +1,38 @@
+import hashlib,json,shutil,time
+from pathlib import Path
+P=Path('/home/grace/projects/pq-did'); R=P/'experiments/r0_succinct_proof_1'; B=R.parent/'r0_succinct_feasibility_1'; C=R.parent/'r0_credvalid_cycle_1'; E=R.parent/'r0_credvalid_exec24_1'
+def sha(p): return hashlib.file_digest(p.open('rb'),'sha256').hexdigest()
+def save(p,v): p.write_text(json.dumps(v,indent=2)+'\n')
+old=json.loads((E/'evidence/protected_before.json').read_text()); protected={k:sha(P/k) for k in old}
+for prior in [B,C,E]:
+ for p in prior.rglob('*'):
+  rel=p.relative_to(prior)
+  if p.is_file() and not any(x in rel.parts for x in ['target','tooling','tmp']): protected[str(p.relative_to(P))]=sha(p)
+for p in [B/'tooling/sdk-3.0.6/r0vm',B/'target/enrol.bin',B/'target/guest/riscv32im-risc0-zkvm-elf/release/enrol',E/'target/release/pqdid-r0-host']:
+ protected[str(p.relative_to(P))]=sha(p)
+save(R/'evidence/protected_before.json',protected)
+assert sha(P/'docs/manuscript/PQ_DID__Implementation.pdf')=='d17ca0a20b319b88e959467cae92d91d619973f84384710ecbf960a3b850aeca'
+for n in ['Cargo.toml','Cargo.lock','host/Cargo.toml']: shutil.copyfile(E/n,R/n)
+shutil.copytree(C/'relation',R/'relation')
+for n in ['run_limited.py','service_entry.py','build_host.sh','seed_cache.py']: shutil.copyfile(E/'scripts'/n,R/'scripts'/n)
+shutil.copyfile(B/'scripts/isolation_probe.py',R/'scripts/isolation_probe.py')
+shutil.copyfile(B/'host/src/main.rs',R/'host/src/main.rs')
+for src,dst in [(B/'target/enrol.bin','enrol.bin'),(B/'target/guest/riscv32im-risc0-zkvm-elf/release/enrol','enrol.elf'),(C/'artifacts/corrected-plain.bin','cred_valid.bin'),(C/'artifacts/corrected-plain.elf','cred_valid.elf')]: shutil.copyfile(src,R/'artifacts'/dst)
+cs=json.loads((B/'fixtures/cases.json').read_text()); cases=[x for x in cs['cases'] if x['name'] in ['enrol-alpha-42','cred-alpha-42']]
+def enc(tag,fields):
+ lp=lambda b:len(b).to_bytes(4,'big')+b
+ return lp(tag)+len(fields).to_bytes(4,'big')+b''.join(map(lp,fields))
+for c in cases:
+ for kind in ['public','private']: shutil.copyfile(B/c[kind],R/c[kind])
+ p=(R/c['public']).read_bytes(); j=enc(b'r0-result',[b'PQDID-R0S-DIAG1',c['operation'].encode(),p]); jp=R/'fixtures/public'/f"{c['name']}.journal.bin"; jp.write_bytes(j)
+ c.update(public_sha256=sha(R/c['public']),private_sha256=sha(R/c['private']),expected_journal=str(jp.relative_to(R)),journal_sha256=sha(jp),journal_bytes=len(j))
+save(R/'fixtures/cases.json',{'cases':cases})
+regs=json.loads((B/'fixtures/public/registry.json').read_text()); corrected=json.loads((C/'artifacts/corrected-plain.json').read_text())
+for r in regs:
+ name='enrol' if r['operation']=='enrol' else 'cred_valid'; r['elf']=f'artifacts/{name}.bin';r['elf_sha256']=sha(R/r['elf'])
+ if name=='cred_valid': r['image']=[int.from_bytes(bytes.fromhex(corrected['image'])[i:i+4],'little') for i in range(0,32,4)]
+save(R/'fixtures/public/registry.json',regs)
+save(R/'evidence/baseline.json',{'package':'R0-SUCCINCT-PROOF-1','frozen_at_utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'original_manifest':json.loads((B/'evidence/manifest.json').read_text()),'corrected_registration':corrected,'exec24_baseline':json.loads((E/'evidence/baseline.json').read_text()),'exec24_valid':json.loads((E/'evidence/valid.result.json').read_text()),'fixtures':cases,'registry':regs,'native_validation_reused':['six corrected native tests','35 native comparisons'],'assets':{str(p.relative_to(R)):sha(p) for p in (R/'artifacts').iterdir()}})
+config={'package':'R0-SUCCINCT-PROOF-1','sdk':'3.0.6','receipt_kind':'Succinct','hashfn':'poseidon2','dev_mode':False,'prover':'local CPU','gpu':False,'remote':False,'groth16':False,'max_proof_attempts':3,'sequence':['enrol-alpha-42','cred-alpha-42','cred-alpha-42 (optional identical repeat)'],'session_limit_user_cycles':{'enrol':2**22,'cred-valid':2**24},'segment_limit_po2':16,'memory_bytes':2**31,'swap_bytes':0,'workers':1,'threads':2,'proof_pipeline_wall_seconds':600,'execution_proving_aggregate_seconds':1800,'setup_build_aggregate_seconds':1200,'verify_seconds':10,'verify_memory_bytes':2**30,'adversarial_seconds':60,'adversarial_max_cases':100,'check_aggregate_seconds':300,'disk_limit_bytes':10*2**30,'disk_stop_bytes':9*2**30,'output_limit_bytes':256*2**20,'output_stop_bytes':240*2**20,'diagnostic_limit_bytes':64*2**20,'diagnostic_stop_bytes':60*2**20,'diagnostic_stream_bytes':65536,'receipt_max_bytes':10*2**20,'presentation_max_bytes':12*2**20,'headroom_reserve_bytes':2**31,'retry':False,'guest_rebuild':False}
+save(R/'config.json',config)
+print('Created isolated source, baseline and configuration; preserved files',len(protected))

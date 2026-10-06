@@ -1,0 +1,24 @@
+{
+  "package": "S3-AURORA-TRANSCRIPT-REGRESSION-1",
+  "passed": false,
+  "status": "incomplete-scope-preparation-failure",
+  "regression_cases_passed": 16,
+  "regression_cases_admitted": 16,
+  "full_audit_attempts": 0,
+  "full_audit_started": false,
+  "content_comparison_complete": false,
+  "scope_preparation_exit_code": 1,
+  "scope_preparation_wall_seconds": 0.2145343089941889,
+  "failure": "Expected new experiment files absent from inherited traversal roots; files exist, but scope inventory reports missing names",
+  "affected_paths": [
+    "experiments/aurora_transcript_regression_1/README.md",
+    "experiments/aurora_transcript_regression_1/cases.py",
+    "experiments/aurora_transcript_regression_1/reference_trace.py",
+    "experiments/aurora_transcript_regression_1/transcript.py"
+  ],
+  "failure_evidence": "prepare.log",
+  "resource_limit_reached": false,
+  "automatic_retries": 0,
+  "next_recommendation": "S3-AURORA-TRANSCRIPT-PRESERVATION-REPAIR-1",
+  "next_package_started": false
+}

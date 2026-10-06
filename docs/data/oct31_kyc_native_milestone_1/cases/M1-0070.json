@@ -1,0 +1,36 @@
+{
+  "invocation_id": "M1-0070",
+  "case_id": "B-28",
+  "ordinal": 70,
+  "cumulative_invocations": 518,
+  "status": "pass",
+  "result": {
+    "passed": true,
+    "notes": {},
+    "state": {
+      "manager_epoch": 0,
+      "allocated_count": 1,
+      "issuer_phases": [
+        "CERTIFIED"
+      ],
+      "verifiers": {
+        "A": {
+          "audience": "baseline-audience-A",
+          "challenges": 0,
+          "consumed": 0,
+          "head": "7da1966a2ef9cf0f8e12fef98024dbc094b5d536be0240b34a9377a170776eae",
+          "generation": 1
+        },
+        "B": {
+          "audience": "baseline-audience-B",
+          "challenges": 0,
+          "consumed": 0,
+          "head": "8a5f0bda178e5819be93f2657798fe331a5d0223c939ee4172dacc4dba8a6788",
+          "generation": 1
+        }
+      },
+      "holder_epoch": null
+    }
+  },
+  "seconds": 0.3389757720287889
+}

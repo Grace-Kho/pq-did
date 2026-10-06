@@ -1,0 +1,26 @@
+{
+  "name": "full-audit",
+  "phase": "audit",
+  "argv": [
+    "/home/grace/projects/pq-did/.venv/bin/python",
+    "-I",
+    "-B",
+    "/home/grace/projects/pq-did/docs/data/private_proof_handover_1/tools/preservation.py",
+    "full-audit"
+  ],
+  "limit_seconds": 30,
+  "child_seconds": 29,
+  "status": "launched",
+  "unit": "pqdid-proof-handover-1-full-audit",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 1422638,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 33691906,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4086620160,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

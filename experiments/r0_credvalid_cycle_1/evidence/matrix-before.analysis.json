@@ -1,0 +1,96 @@
+{
+  "name": "matrix-before",
+  "status": "completed",
+  "marker_count": 7,
+  "markers": [
+    {
+      "phase": "calibration_0",
+      "id": 0,
+      "user_cycle": 287
+    },
+    {
+      "phase": "calibration_1",
+      "id": 1,
+      "user_cycle": 440
+    },
+    {
+      "phase": "calibration_2",
+      "id": 2,
+      "user_cycle": 593
+    },
+    {
+      "phase": "component_matrix_start",
+      "id": 3000,
+      "user_cycle": 1604
+    },
+    {
+      "phase": "component_sampler_start",
+      "id": 3001,
+      "user_cycle": 136198
+    },
+    {
+      "phase": "component_matrix_done",
+      "id": 3002,
+      "user_cycle": 143803
+    },
+    {
+      "phase": "component_comparison_done",
+      "id": 3003,
+      "user_cycle": 151650
+    }
+  ],
+  "intervals": [
+    {
+      "start": "calibration_0",
+      "end": "calibration_1",
+      "start_cycle": 287,
+      "end_cycle": 440,
+      "raw_user_cycles": 153
+    },
+    {
+      "start": "calibration_1",
+      "end": "calibration_2",
+      "start_cycle": 440,
+      "end_cycle": 593,
+      "raw_user_cycles": 153
+    },
+    {
+      "start": "calibration_2",
+      "end": "component_matrix_start",
+      "start_cycle": 593,
+      "end_cycle": 1604,
+      "raw_user_cycles": 1011
+    },
+    {
+      "start": "component_matrix_start",
+      "end": "component_sampler_start",
+      "start_cycle": 1604,
+      "end_cycle": 136198,
+      "raw_user_cycles": 134594
+    },
+    {
+      "start": "component_sampler_start",
+      "end": "component_matrix_done",
+      "start_cycle": 136198,
+      "end_cycle": 143803,
+      "raw_user_cycles": 7605
+    },
+    {
+      "start": "component_matrix_done",
+      "end": "component_comparison_done",
+      "start_cycle": 143803,
+      "end_cycle": 151650,
+      "raw_user_cycles": 7847
+    }
+  ],
+  "empty_marker_intervals": [
+    153,
+    153
+  ],
+  "completed_segment_count": 7,
+  "completed_segment_user_cycles": 154451,
+  "completed_segment_padded_capacity": 409600,
+  "completed_segment_other_capacity": 255149,
+  "active_phase_at_cap": null,
+  "measurement_note": "Raw intervals include one marker and any intervening glue. Paging/reserved/padding are not individually exposed by Execute IPC. Capped prefix and isolated components are not full relation totals."
+}

@@ -1,0 +1,11 @@
+{
+  "invocation_id": "M1-0269",
+  "case_id": "PRESENT-B-s2-warm-03",
+  "ordinal": 269,
+  "cumulative_invocations": 717,
+  "status": "pass",
+  "benchmark_output": "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/present-b-s2",
+  "attempt_id": "PRESENT-B-s2-warm-03",
+  "operation_outcome": "accepted",
+  "duration_ns": 572228750
+}

@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "commands": [
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "check",
+      "--select",
+      "I",
+      "--fix",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/execution/run.py",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/execution/admission.py",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/execution/checks.py"
+    ],
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "format",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/execution/run.py",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/execution/admission.py",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/execution/checks.py"
+    ],
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "check",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/execution/run.py",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/execution/admission.py",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/execution/checks.py"
+    ],
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "format",
+      "--check",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/execution/run.py",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/execution/admission.py",
+      "/home/grace/projects/pq-did/docs/data/s3_binius_embedding_correspondence_1/execution/checks.py"
+    ]
+  ],
+  "sealed_predecessor_paths": 37,
+  "retained_source_blobs_rechecked": 15,
+  "approved_proposal_identity_verified": true,
+  "tests": 0,
+  "builds": 0,
+  "proofs": 0,
+  "invocations_unchanged": 1140,
+  "source_acquisition_memory_compliance_certified": false,
+  "resource_observation": "Prior acquisition qualification unchanged; new acquisition cgroup metrics separate"
+}

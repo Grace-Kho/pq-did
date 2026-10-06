@@ -1,0 +1,11 @@
+{
+  "package_closed": "S3-AURORA-QUERY-MASKING-CONTRACT-1",
+  "completed_evidence": "docs/data/s3_aurora_query_masking_contract_1/validation-closure.json",
+  "evidence_sha256": "49b56c1cb01e3786e6efeda4c62be3fa100e84b08b4a6d23be39174329bbb5d9",
+  "unused_evidence_reservation_released_bytes": 919201,
+  "consumption_refunded": 0,
+  "prior_native_continuation_already_closed": true,
+  "new_reservation_bytes": 1048576,
+  "completion_reservation_inside_new_bytes": 262144,
+  "enclosing_available_bytes": 2550538
+}

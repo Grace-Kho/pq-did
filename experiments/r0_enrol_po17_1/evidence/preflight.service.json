@@ -1,0 +1,31 @@
+{
+  "before": {
+    "memory.max": "268435456",
+    "memory.swap.max": "0",
+    "memory.peak": "6991872",
+    "memory.current": "6991872",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "available_before_target": 4875235328,
+  "external_routes": 0,
+  "target_started": true,
+  "command": [
+    "/usr/bin/python3",
+    "scripts/preflight.py"
+  ],
+  "after": {
+    "memory.max": "268435456",
+    "memory.swap.max": "0",
+    "memory.peak": "77025280",
+    "memory.current": "68681728",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "exit_code": 0,
+  "largest_child_ru_maxrss_bytes": 20443136,
+  "ru_maxrss_note": "largest child high-water RSS, not aggregate tree RSS",
+  "temporary_bytes_at_exit": 0
+}

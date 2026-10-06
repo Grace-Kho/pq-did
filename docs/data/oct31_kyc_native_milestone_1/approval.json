@@ -1,0 +1,15 @@
+{
+  "milestone": "OCT31-KYC-NATIVE-MILESTONE-1",
+  "approved": true,
+  "attachment_sha256": "a6062eec50d3b90fb83bb8c0f70651780cddffbc0fe2ddfd88dc7b577f3922ab",
+  "plan_sha256": "cbb310bee67ed9c237b0e1055b3e68d81652fffd96ccad611dc2f1c6a4fc0b27",
+  "manifest_sha256": "158539d9c54fd5a33ae49b794b9f9716f620911a61e78bd973536e0aa3a28d8e",
+  "verified_inputs": 34,
+  "retired_subcaps": [
+    "completed native package and provisioning sub-limits (no transfer/refund)",
+    "completed fourth/fifth-build continuation caps",
+    "completed per-package evidence reservations",
+    "inactive separate sumcheck-pilot proposal"
+  ],
+  "historical_consumption_refunded": 0
+}

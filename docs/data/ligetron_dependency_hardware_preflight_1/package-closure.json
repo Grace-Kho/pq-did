@@ -1,0 +1,1018 @@
+{
+  "roots": [
+    "libgmp-dev",
+    "libssl-dev",
+    "zlib1g-dev",
+    "libboost1.90-dev",
+    "libboost-log1.90-dev",
+    "libboost-random1.90-dev",
+    "libboost-exception1.90-dev",
+    "libboost-program-options1.90-dev",
+    "libboost-iostreams1.90-dev",
+    "libprotobuf-dev",
+    "protobuf-compiler",
+    "nlohmann-json3-dev"
+  ],
+  "packages": [
+    {
+      "Package": "libgmp-dev",
+      "Version": "2:6.3.0+dfsg-5ubuntu2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/gmp/libgmp-dev_6.3.0+dfsg-5ubuntu2_amd64.deb",
+      "Size": "341530",
+      "Installed-Size": "1600",
+      "SHA256": "b43e38f2d5ae4aa38471e1b3f90ed63e96c2ce614ffe496cdcd72f9944e87a4a",
+      "Depends": "libgmp10 (= 2:6.3.0+dfsg-5ubuntu2), libgmpxx4ldbl (= 2:6.3.0+dfsg-5ubuntu2)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libgmp10 (= 2:6.3.0+dfsg-5ubuntu2)",
+          "selected": "libgmp10"
+        },
+        {
+          "constraint": "libgmpxx4ldbl (= 2:6.3.0+dfsg-5ubuntu2)",
+          "selected": "libgmpxx4ldbl"
+        }
+      ]
+    },
+    {
+      "Package": "libssl-dev",
+      "Version": "3.5.5-1ubuntu3.7",
+      "Architecture": "amd64",
+      "Filename": "pool/main/o/openssl/libssl-dev_3.5.5-1ubuntu3.7_amd64.deb",
+      "Size": "2936724",
+      "Installed-Size": "16042",
+      "SHA256": "d1cf6cafb141490b7020e392964b1f901835d60cb88c3a68ef0f95ef5e930de4",
+      "Depends": "libssl3t64 (= 3.5.5-1ubuntu3.7)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libssl3t64 (= 3.5.5-1ubuntu3.7)",
+          "selected": "libssl3t64"
+        }
+      ]
+    },
+    {
+      "Package": "zlib1g-dev",
+      "Version": "1:1.3.dfsg+really1.3.1-1ubuntu3.1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/z/zlib/zlib1g-dev_1.3.dfsg+really1.3.1-1ubuntu3.1_amd64.deb",
+      "Size": "895404",
+      "Installed-Size": "1324",
+      "SHA256": "3c38ab54eebd22b7f67697c81c96dca078e43efc1695afddb2df71ddcb82e717",
+      "Depends": "zlib1g (= 1:1.3.dfsg+really1.3.1-1ubuntu3.1), libc6-dev | libc-dev",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "zlib1g (= 1:1.3.dfsg+really1.3.1-1ubuntu3.1)",
+          "selected": "zlib1g"
+        },
+        {
+          "constraint": "libc6-dev | libc-dev",
+          "selected": "libc6-dev"
+        }
+      ]
+    },
+    {
+      "Package": "libboost1.90-dev",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/boost1.90/libboost1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "11452296",
+      "Installed-Size": "158590",
+      "SHA256": "7b89698c907fd5d33ccd439674fa53803139923822181c87b910579827aca379",
+      "Depends": "libstdc++-15-dev",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libstdc++-15-dev",
+          "selected": "libstdc++-15-dev"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-log1.90-dev",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-log1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "913540",
+      "Installed-Size": "7822",
+      "SHA256": "8109265878c26d752a97af6a0873a826138e12f6b41339f5e7d1a2093420b90d",
+      "Depends": "libboost-log1.90.0 (= 1.90.0-6ubuntu1), libboost1.90-dev (= 1.90.0-6ubuntu1), libboost-atomic1.90-dev (= 1.90.0-6ubuntu1), libboost-chrono1.90-dev (= 1.90.0-6ubuntu1), libboost-container1.90-dev (= 1.90.0-6ubuntu1), libboost-date-time1.90-dev (= 1.90.0-6ubuntu1), libboost-exception1.90-dev (= 1.90.0-6ubuntu1), libboost-filesystem1.90-dev (= 1.90.0-6ubuntu1), libboost-regex1.90-dev (= 1.90.0-6ubuntu1), libboost-thread1.90-dev (= 1.90.0-6ubuntu1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libboost-log1.90.0 (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-log1.90.0"
+        },
+        {
+          "constraint": "libboost1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost1.90-dev"
+        },
+        {
+          "constraint": "libboost-atomic1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-atomic1.90-dev"
+        },
+        {
+          "constraint": "libboost-chrono1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-chrono1.90-dev"
+        },
+        {
+          "constraint": "libboost-container1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-container1.90-dev"
+        },
+        {
+          "constraint": "libboost-date-time1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-date-time1.90-dev"
+        },
+        {
+          "constraint": "libboost-exception1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-exception1.90-dev"
+        },
+        {
+          "constraint": "libboost-filesystem1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-filesystem1.90-dev"
+        },
+        {
+          "constraint": "libboost-regex1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-regex1.90-dev"
+        },
+        {
+          "constraint": "libboost-thread1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-thread1.90-dev"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-random1.90-dev",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-random1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "235388",
+      "Installed-Size": "2137",
+      "SHA256": "0acb6839e36940db6924739ebbddd82d256a30ce3b68d9bce5fbba280f90d40c",
+      "Depends": "libboost1.90-dev (= 1.90.0-6ubuntu1), libboost-random1.90.0 (= 1.90.0-6ubuntu1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libboost1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost1.90-dev"
+        },
+        {
+          "constraint": "libboost-random1.90.0 (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-random1.90.0"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-exception1.90-dev",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-exception1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "223568",
+      "Installed-Size": "2077",
+      "SHA256": "c348be1487f793a51a9f7824bcd5377fae7ebe004c158457c7b98970bfd5ace6",
+      "Depends": "libboost1.90-dev (= 1.90.0-6ubuntu1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libboost1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost1.90-dev"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-program-options1.90-dev",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/boost1.90/libboost-program-options1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "382392",
+      "Installed-Size": "3207",
+      "SHA256": "a0ab262d574ae0e23be9d9f638f91d2cd945216f1310175a6e1eaad13d2ce29b",
+      "Depends": "libboost1.90-dev (= 1.90.0-6ubuntu1), libboost-container1.90-dev (= 1.90.0-6ubuntu1), libboost-program-options1.90.0 (= 1.90.0-6ubuntu1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libboost1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost1.90-dev"
+        },
+        {
+          "constraint": "libboost-container1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-container1.90-dev"
+        },
+        {
+          "constraint": "libboost-program-options1.90.0 (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-program-options1.90.0"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-iostreams1.90-dev",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-iostreams1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "258790",
+      "Installed-Size": "2362",
+      "SHA256": "d6b44817e6164d5cce95db724936fe7f3cd5d277b242276ee62bc3e15f7050b2",
+      "Depends": "libboost1.90-dev (= 1.90.0-6ubuntu1), libboost-random1.90-dev (= 1.90.0-6ubuntu1), libboost-regex1.90-dev (= 1.90.0-6ubuntu1), libboost-iostreams1.90.0 (= 1.90.0-6ubuntu1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libboost1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost1.90-dev"
+        },
+        {
+          "constraint": "libboost-random1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-random1.90-dev"
+        },
+        {
+          "constraint": "libboost-regex1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-regex1.90-dev"
+        },
+        {
+          "constraint": "libboost-iostreams1.90.0 (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-iostreams1.90.0"
+        }
+      ]
+    },
+    {
+      "Package": "libprotobuf-dev",
+      "Version": "3.21.12-15ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/protobuf/libprotobuf-dev_3.21.12-15ubuntu1_amd64.deb",
+      "Size": "1442848",
+      "Installed-Size": "12067",
+      "SHA256": "259c9f383dee92f18da256ba31f6709a2eca835f50f7b5befdcbc1ea02fb05b1",
+      "Depends": "zlib1g-dev, libprotobuf32t64 (= 3.21.12-15ubuntu1), libprotobuf-lite32t64 (= 3.21.12-15ubuntu1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "zlib1g-dev",
+          "selected": "zlib1g-dev"
+        },
+        {
+          "constraint": "libprotobuf32t64 (= 3.21.12-15ubuntu1)",
+          "selected": "libprotobuf32t64"
+        },
+        {
+          "constraint": "libprotobuf-lite32t64 (= 3.21.12-15ubuntu1)",
+          "selected": "libprotobuf-lite32t64"
+        }
+      ]
+    },
+    {
+      "Package": "protobuf-compiler",
+      "Version": "3.21.12-15ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/p/protobuf/protobuf-compiler_3.21.12-15ubuntu1_amd64.deb",
+      "Size": "29112",
+      "Installed-Size": "113",
+      "SHA256": "2501bf552ae297d415eb31d40da8768c53d9810fc082fe5e7c93271e24d37f7a",
+      "Depends": "libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libprotoc32t64 (= 3.21.12-15ubuntu1), libstdc++6 (>= 13.1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libc6 (>= 2.34)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "libprotoc32t64 (= 3.21.12-15ubuntu1)",
+          "selected": "libprotoc32t64"
+        },
+        {
+          "constraint": "libstdc++6 (>= 13.1)",
+          "selected": "libstdc++6"
+        }
+      ]
+    },
+    {
+      "Package": "nlohmann-json3-dev",
+      "Version": "3.12.0.really.3.12.0.really.3.11.3-3build1",
+      "Architecture": "all",
+      "Filename": "pool/main/n/nlohmann-json3/nlohmann-json3-dev_3.12.0.really.3.12.0.really.3.11.3-3build1_all.deb",
+      "Size": "191288",
+      "Installed-Size": "1474",
+      "SHA256": "d074e6107bef659ccfa169cb1d9e2e0daa9bcecfea84ce13c45812ff9cd58e9d",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": []
+    },
+    {
+      "package": "libgmp10",
+      "version": "2:6.3.0+dfsg-5ubuntu2",
+      "status": "installed-system-runtime-or-development-input; reuse only after same-version readback"
+    },
+    {
+      "Package": "libgmpxx4ldbl",
+      "Version": "2:6.3.0+dfsg-5ubuntu2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/gmp/libgmpxx4ldbl_6.3.0+dfsg-5ubuntu2_amd64.deb",
+      "Size": "9956",
+      "Installed-Size": "54",
+      "SHA256": "07bd53c587140613b3d551bdbd4a15a37002c1fe971962ab49e2c2c896cf7dda",
+      "Depends": "libc6 (>= 2.4), libgcc-s1 (>= 3.3.1), libgmp10 (>= 2:6.3.0+dfsg), libstdc++6 (>= 13.1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libc6 (>= 2.4)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "libgmp10 (>= 2:6.3.0+dfsg)",
+          "selected": "libgmp10"
+        },
+        {
+          "constraint": "libstdc++6 (>= 13.1)",
+          "selected": "libstdc++6"
+        }
+      ]
+    },
+    {
+      "package": "libssl3t64",
+      "version": "3.5.5-1ubuntu3.7",
+      "status": "installed-system-runtime-or-development-input; reuse only after same-version readback"
+    },
+    {
+      "package": "zlib1g",
+      "version": "1:1.3.dfsg+really1.3.1-1ubuntu3.1",
+      "status": "installed-system-runtime-or-development-input; reuse only after same-version readback"
+    },
+    {
+      "package": "libc6-dev",
+      "version": "2.43-2ubuntu2.4",
+      "status": "installed-system-runtime-or-development-input; reuse only after same-version readback"
+    },
+    {
+      "package": "libstdc++-15-dev",
+      "version": "15.2.0-16ubuntu1",
+      "status": "installed-system-runtime-or-development-input; reuse only after same-version readback"
+    },
+    {
+      "Package": "libboost-log1.90.0",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/boost1.90/libboost-log1.90.0_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "689164",
+      "Installed-Size": "3666",
+      "SHA256": "ca31b8dddf471f737a344e2f99170e666a1b7d6d736a08bac1186c010c45f06f",
+      "Depends": "libboost-filesystem1.90.0 (>= 1.90.0), libboost-thread1.90.0 (>= 1.90.0), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 14)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libboost-filesystem1.90.0 (>= 1.90.0)",
+          "selected": "libboost-filesystem1.90.0"
+        },
+        {
+          "constraint": "libboost-thread1.90.0 (>= 1.90.0)",
+          "selected": "libboost-thread1.90.0"
+        },
+        {
+          "constraint": "libc6 (>= 2.38)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "libstdc++6 (>= 14)",
+          "selected": "libstdc++6"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-atomic1.90-dev",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-atomic1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "230732",
+      "Installed-Size": "2101",
+      "SHA256": "abaf2dce5d16a38fa39e4a6a4a4a4876b44a221583d21d591533967e634be617",
+      "Depends": "libboost1.90-dev (= 1.90.0-6ubuntu1), libboost-atomic1.90.0 (= 1.90.0-6ubuntu1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libboost1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost1.90-dev"
+        },
+        {
+          "constraint": "libboost-atomic1.90.0 (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-atomic1.90.0"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-chrono1.90-dev",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-chrono1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "241208",
+      "Installed-Size": "2237",
+      "SHA256": "2fa9dddd482e3a1bc685c882d89c89c63c84e0b99a6e46e9d421823c7aaa911e",
+      "Depends": "libboost1.90-dev (= 1.90.0-6ubuntu1), libboost-chrono1.90.0 (= 1.90.0-6ubuntu1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libboost1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost1.90-dev"
+        },
+        {
+          "constraint": "libboost-chrono1.90.0 (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-chrono1.90.0"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-container1.90-dev",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/boost1.90/libboost-container1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "262872",
+      "Installed-Size": "2247",
+      "SHA256": "0ee31d54c869053a9a3d42d4fdd4281246ed48d4123b262fbbfd0446052bee34",
+      "Depends": "libboost1.90-dev (= 1.90.0-6ubuntu1), libboost-container1.90.0 (= 1.90.0-6ubuntu1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libboost1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost1.90-dev"
+        },
+        {
+          "constraint": "libboost-container1.90.0 (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-container1.90.0"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-date-time1.90-dev",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-date-time1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "232522",
+      "Installed-Size": "2095",
+      "SHA256": "e7a23549e4c401013d51f039971a21b9b3a05c2a965a014671d4752a3164a193",
+      "Depends": "libboost1.90-dev (= 1.90.0-6ubuntu1), libboost-date-time1.90.0 (= 1.90.0-6ubuntu1), libboost-serialization1.90-dev (= 1.90.0-6ubuntu1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libboost1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost1.90-dev"
+        },
+        {
+          "constraint": "libboost-date-time1.90.0 (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-date-time1.90.0"
+        },
+        {
+          "constraint": "libboost-serialization1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-serialization1.90-dev"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-filesystem1.90-dev",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-filesystem1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "300644",
+      "Installed-Size": "2521",
+      "SHA256": "d00a3479e52c3abaea103cfafe9149a1b17af7acfce0c0f01b9761d8429f2126",
+      "Depends": "libboost1.90-dev (= 1.90.0-6ubuntu1), libboost-atomic1.90-dev (= 1.90.0-6ubuntu1), libboost-filesystem1.90.0 (= 1.90.0-6ubuntu1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libboost1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost1.90-dev"
+        },
+        {
+          "constraint": "libboost-atomic1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-atomic1.90-dev"
+        },
+        {
+          "constraint": "libboost-filesystem1.90.0 (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-filesystem1.90.0"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-regex1.90-dev",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/boost1.90/libboost-regex1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "355310",
+      "Installed-Size": "2825",
+      "SHA256": "ba2c8d844faf986c038333c8c5eb9dc8f5cdc15e0fb9a8e751891f9900a1aadf",
+      "Depends": "libboost1.90-dev (= 1.90.0-6ubuntu1), libboost-regex1.90.0 (= 1.90.0-6ubuntu1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libboost1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost1.90-dev"
+        },
+        {
+          "constraint": "libboost-regex1.90.0 (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-regex1.90.0"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-thread1.90-dev",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-thread1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "269476",
+      "Installed-Size": "2379",
+      "SHA256": "cd5b5c4b1668c867e2bc5a6f638ba4279d7409d2ff50bce536ea8fb718987044",
+      "Depends": "libboost1.90-dev (= 1.90.0-6ubuntu1), libboost-atomic1.90-dev (= 1.90.0-6ubuntu1), libboost-chrono1.90-dev (= 1.90.0-6ubuntu1), libboost-container1.90-dev (= 1.90.0-6ubuntu1), libboost-date-time1.90-dev (= 1.90.0-6ubuntu1), libboost-exception1.90-dev (= 1.90.0-6ubuntu1), libboost-thread1.90.0 (= 1.90.0-6ubuntu1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libboost1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost1.90-dev"
+        },
+        {
+          "constraint": "libboost-atomic1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-atomic1.90-dev"
+        },
+        {
+          "constraint": "libboost-chrono1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-chrono1.90-dev"
+        },
+        {
+          "constraint": "libboost-container1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-container1.90-dev"
+        },
+        {
+          "constraint": "libboost-date-time1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-date-time1.90-dev"
+        },
+        {
+          "constraint": "libboost-exception1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-exception1.90-dev"
+        },
+        {
+          "constraint": "libboost-thread1.90.0 (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-thread1.90.0"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-random1.90.0",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-random1.90.0_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "235920",
+      "Installed-Size": "2106",
+      "SHA256": "4eee0992199ba5f72c52808c1877fee68ffa807e509309370394034e1d7ee1b3",
+      "Depends": "libc6 (>= 2.14), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5.2)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libc6 (>= 2.14)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "libstdc++6 (>= 5.2)",
+          "selected": "libstdc++6"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-program-options1.90.0",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/boost1.90/libboost-program-options1.90.0_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "315412",
+      "Installed-Size": "2342",
+      "SHA256": "552699d9211d5e9bc6c2ff97c412a901b431ba61eb7d93c8c139c3d20f45104e",
+      "Depends": "libc6 (>= 2.14), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libc6 (>= 2.14)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "libstdc++6 (>= 13.1)",
+          "selected": "libstdc++6"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-iostreams1.90.0",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/boost1.90/libboost-iostreams1.90.0_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "252674",
+      "Installed-Size": "2166",
+      "SHA256": "f2b4576e6b61d636874c09e6e84bcc3632fdde9eef808ca9eff5d5904dee2948",
+      "Depends": "libbz2-1.0, libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), liblzma5 (>= 5.2.2), libstdc++6 (>= 5.2), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libbz2-1.0",
+          "selected": "libbz2-1.0"
+        },
+        {
+          "constraint": "libc6 (>= 2.34)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "liblzma5 (>= 5.2.2)",
+          "selected": "liblzma5"
+        },
+        {
+          "constraint": "libstdc++6 (>= 5.2)",
+          "selected": "libstdc++6"
+        },
+        {
+          "constraint": "libzstd1 (>= 1.5.5)",
+          "selected": "libzstd1"
+        },
+        {
+          "constraint": "zlib1g (>= 1:1.1.4)",
+          "selected": "zlib1g"
+        }
+      ]
+    },
+    {
+      "Package": "libprotobuf32t64",
+      "Version": "3.21.12-15ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/protobuf/libprotobuf32t64_3.21.12-15ubuntu1_amd64.deb",
+      "Size": "955360",
+      "Installed-Size": "3107",
+      "SHA256": "adab0eb28161aea2101e33d8b4c8a336ad62c34c70e01bd3d7c1026279ca5757",
+      "Depends": "libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 14), zlib1g (>= 1:1.1.4)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libc6 (>= 2.38)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "libstdc++6 (>= 14)",
+          "selected": "libstdc++6"
+        },
+        {
+          "constraint": "zlib1g (>= 1:1.1.4)",
+          "selected": "zlib1g"
+        }
+      ]
+    },
+    {
+      "Package": "libprotobuf-lite32t64",
+      "Version": "3.21.12-15ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/protobuf/libprotobuf-lite32t64_3.21.12-15ubuntu1_amd64.deb",
+      "Size": "250612",
+      "Installed-Size": "890",
+      "SHA256": "7894b4fbb505bda24b1537494327ac0642f0f0cd36d77165f625456205cee395",
+      "Depends": "libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 14)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libc6 (>= 2.38)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "libstdc++6 (>= 14)",
+          "selected": "libstdc++6"
+        }
+      ]
+    },
+    {
+      "package": "libc6",
+      "version": "2.43-2ubuntu2.4",
+      "status": "installed-system-runtime-or-development-input; reuse only after same-version readback"
+    },
+    {
+      "package": "libgcc-s1",
+      "version": "16-20260322-1ubuntu1",
+      "status": "installed-system-runtime-or-development-input; reuse only after same-version readback"
+    },
+    {
+      "Package": "libprotoc32t64",
+      "Version": "3.21.12-15ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/protobuf/libprotoc32t64_3.21.12-15ubuntu1_amd64.deb",
+      "Size": "701842",
+      "Installed-Size": "2352",
+      "SHA256": "878419d40eaae00845382d79896d20b446aa12b0550a9e12db381895b05d86c0",
+      "Depends": "libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libprotobuf32t64 (>= 3.21.12), libstdc++6 (>= 14)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libc6 (>= 2.34)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "libprotobuf32t64 (>= 3.21.12)",
+          "selected": "libprotobuf32t64"
+        },
+        {
+          "constraint": "libstdc++6 (>= 14)",
+          "selected": "libstdc++6"
+        }
+      ]
+    },
+    {
+      "package": "libstdc++6",
+      "version": "16-20260322-1ubuntu1",
+      "status": "installed-system-runtime-or-development-input; reuse only after same-version readback"
+    },
+    {
+      "Package": "libboost-filesystem1.90.0",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/boost1.90/libboost-filesystem1.90.0_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "282578",
+      "Installed-Size": "2230",
+      "SHA256": "3f78b71bf3bcaf465ee3010a7fd09e0374a1e3be040b4520a71466788f1fa93b",
+      "Depends": "libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5.2)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libc6 (>= 2.38)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "libstdc++6 (>= 5.2)",
+          "selected": "libstdc++6"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-thread1.90.0",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/boost1.90/libboost-thread1.90.0_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "263920",
+      "Installed-Size": "2190",
+      "SHA256": "355d25d261edce40b4284417d511600d1c7f4805a5062230d53c2477975ae5f4",
+      "Depends": "libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 14)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libc6 (>= 2.34)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "libstdc++6 (>= 14)",
+          "selected": "libstdc++6"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-atomic1.90.0",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-atomic1.90.0_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "234590",
+      "Installed-Size": "2094",
+      "SHA256": "07eed67d64072a349ab080f088d2224669fb2cbbf9779d2cb1ce20909d6e16a3",
+      "Depends": "libc6 (>= 2.17), libstdc++6 (>= 5)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libc6 (>= 2.17)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libstdc++6 (>= 5)",
+          "selected": "libstdc++6"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-chrono1.90.0",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-chrono1.90.0_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "237914",
+      "Installed-Size": "2110",
+      "SHA256": "0082cac25c5d21b01a1e1e6e0a5039db62b51e85567f16a6e5160d0a0ac1a4b0",
+      "Depends": "libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5.2)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libc6 (>= 2.34)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "libstdc++6 (>= 5.2)",
+          "selected": "libstdc++6"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-container1.90.0",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/boost1.90/libboost-container1.90.0_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "255160",
+      "Installed-Size": "2142",
+      "SHA256": "fc427a77f500d3bfa38c0e3995ac7a391a1a23959b31bf3c9dfa73d9d401690a",
+      "Depends": "libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libc6 (>= 2.34)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "libstdc++6 (>= 5)",
+          "selected": "libstdc++6"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-date-time1.90.0",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-date-time1.90.0_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "229492",
+      "Installed-Size": "2089",
+      "SHA256": "79b09e02822479ae491e0b1338dcf0e72c51a683d930e752a320cd537ad9c6b2",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": []
+    },
+    {
+      "Package": "libboost-serialization1.90-dev",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-serialization1.90-dev_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "380384",
+      "Installed-Size": "4048",
+      "SHA256": "dcb900124b1f5d7f68bdca24f89928f64bfd60bfd4b0c3ae68de42d7ab9095c9",
+      "Depends": "libboost1.90-dev (= 1.90.0-6ubuntu1), libboost-serialization1.90.0 (= 1.90.0-6ubuntu1)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libboost1.90-dev (= 1.90.0-6ubuntu1)",
+          "selected": "libboost1.90-dev"
+        },
+        {
+          "constraint": "libboost-serialization1.90.0 (= 1.90.0-6ubuntu1)",
+          "selected": "libboost-serialization1.90.0"
+        }
+      ]
+    },
+    {
+      "Package": "libboost-regex1.90.0",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/boost1.90/libboost-regex1.90.0_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "339648",
+      "Installed-Size": "2430",
+      "SHA256": "e9bb8c2d6c2866b71a7191fb4a2dc370c30eb69fe05e72e97b563811ca722e5b",
+      "Depends": "libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5.2)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libc6 (>= 2.38)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "libstdc++6 (>= 5.2)",
+          "selected": "libstdc++6"
+        }
+      ]
+    },
+    {
+      "package": "libbz2-1.0",
+      "version": "1.0.8-6ubuntu0.1",
+      "status": "installed-system-runtime-or-development-input; reuse only after same-version readback"
+    },
+    {
+      "package": "liblzma5",
+      "version": "5.8.3-1",
+      "status": "installed-system-runtime-or-development-input; reuse only after same-version readback"
+    },
+    {
+      "package": "libzstd1",
+      "version": "1.5.7+dfsg-3",
+      "status": "installed-system-runtime-or-development-input; reuse only after same-version readback"
+    },
+    {
+      "Package": "libboost-serialization1.90.0",
+      "Version": "1.90.0-6ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/b/boost1.90/libboost-serialization1.90.0_1.90.0-6ubuntu1_amd64.deb",
+      "Size": "336820",
+      "Installed-Size": "2525",
+      "SHA256": "5eba064a31c821abf2d367c7149d12e42f9f0a910a4739c71ae378e3f3cb34d7",
+      "Depends": "libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 14)",
+      "Origin": "Ubuntu",
+      "status": "local APT metadata, payload not acquired",
+      "relationships": [
+        {
+          "constraint": "libc6 (>= 2.32)",
+          "selected": "libc6"
+        },
+        {
+          "constraint": "libgcc-s1 (>= 3.3.1)",
+          "selected": "libgcc-s1"
+        },
+        {
+          "constraint": "libstdc++6 (>= 14)",
+          "selected": "libstdc++6"
+        }
+      ]
+    }
+  ],
+  "unresolved": [],
+  "selection": "exact local candidate versions; dependencies already installed reused; no recommends/suggests; constraints must be revalidated before acquisition",
+  "apt_sources": [
+    {
+      "path": "/etc/apt/sources.list.d/ubuntu.sources",
+      "text": "# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to\n# newer versions of the distribution.\n\n## Ubuntu distribution repository\n##\n## The following settings can be adjusted to configure which packages to use from Ubuntu.\n## Mirror your choices (except for URIs and Suites) in the security section below to\n## ensure timely security updates.\n##\n## Types: Append deb-src to enable the fetching of source package.\n## URIs: A URL to the repository (you may add multiple URLs)\n## Suites: The following additional suites can be configured\n##   <name>-updates   - Major bug fix updates produced after the final release of the\n##                      distribution.\n##   <name>-backports - software from this repository may not have been tested as\n##                      extensively as that contained in the main release, although it includes\n##                      newer versions of some applications which may provide useful features.\n##                      Also, please note that software in backports WILL NOT receive any review\n##                      or updates from the Ubuntu security team.\n## Components: Aside from main, the following components can be added to the list\n##   restricted  - Software that may not be under a free license, or protected by patents.\n##   universe    - Community maintained packages. Software in this repository receives maintenance\n##                 from volunteers in the Ubuntu community, or a 10 year security maintenance\n##                 commitment from Canonical when an Ubuntu Pro subscription is attached.\n##   multiverse  - Community maintained of restricted. Software from this repository is\n##                 ENTIRELY UNSUPPORTED by the Ubuntu team, and may not be under a free\n##                 licence. Please satisfy yourself as to your rights to use the software.\n##                 Also, please note that software in multiverse WILL NOT receive any\n##                 review or updates from the Ubuntu security team.\n##\n## See the sources.list(5) manual page for further settings.\nTypes: deb\nURIs: http://archive.ubuntu.com/ubuntu/\nSuites: resolute resolute-updates resolute-backports\nComponents: main universe restricted multiverse\nSigned-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg\n\n## Ubuntu security updates. Aside from URIs and Suites,\n## this should mirror your choices in the previous section.\nTypes: deb\nURIs: http://security.ubuntu.com/ubuntu/\nSuites: resolute-security\nComponents: main universe restricted multiverse\nSigned-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg\n"
+    }
+  ],
+  "seconds": 4.17577571189031
+}

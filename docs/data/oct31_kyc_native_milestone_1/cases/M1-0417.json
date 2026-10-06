@@ -1,0 +1,35 @@
+{
+  "invocation_id": "M1-0417",
+  "case_id": "TR-15",
+  "ordinal": 417,
+  "cumulative_invocations": 865,
+  "status": "pass",
+  "result": {
+    "id": "TR-15",
+    "command": [
+      "/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/build/exp2_native",
+      "15",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+    ],
+    "exit_code": 0,
+    "seconds": 0.0016254730289801955,
+    "stdout": "\nBCS parameters\n* digest_len (bytes) = 64\n* digest_len (bits) = 512\n* hash_type = blake2b\n\nBCS parameters\n* digest_len (bytes) = 64\n* digest_len (bits) = 512\n* hash_type = blake2b\nX c205bcf633cced002a4e48a29dbe7c18c9cc10b690c38c01e52cf69407b0b04a1ae332fe5a257fc1d5cb0cf1765deac499473fd2589675e0e40b4d59c9b0a8b3 4 10\n",
+    "stderr": "",
+    "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+    "expected_path": "docs/data/s3_aurora_transcript_regression_1/TR-15.json",
+    "expected_sha256": "7ddb9f5bad8a6ee24167b2904f16e66a6e9418ba4995925ac59c8a4ec325d681",
+    "private_witness": false,
+    "proof_attempt": false,
+    "comparison": {
+      "rejected": true,
+      "atomic_state_retained": true,
+      "sticky_failure": true
+    },
+    "actual_calls": [
+      "bcs_protocol::EXP2 public common caller",
+      "blake2b_hashchain::EXP2"
+    ],
+    "status": "pass"
+  },
+  "seconds": 0.0025017400039359927
+}

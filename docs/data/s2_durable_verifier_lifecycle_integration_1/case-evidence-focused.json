@@ -1,0 +1,163 @@
+[
+  {
+    "case": "test_success_independent_verifiers[0]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "d3892a1d7a1260f8facc549427c0a3f8b7cf5d18cb81913d02667421de314a0a",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 1
+        },
+        {
+          "audience": "audience-B",
+          "head": "6a59e8b76c76688eccd4354001ba14166f74f6ff220c81fb358f5237b862290d",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "7c83737ecf12ef9a6179d8c09fd09555c3c44703247cefbb8aaa1d876b567f2b",
+      "manager_epoch": 0
+    }
+  },
+  {
+    "case": "test_success_independent_verifiers[1]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "5b923069c217bc85dcae5678a9da36654ccc08d8fc9dfbfa197b580c41d785b4",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "2f5e22c94075ca7a8741debac372043c7c829241e8ebbfcec5c55f44d0729b20",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 1
+        }
+      ],
+      "manager_head": "f93e2a3f6d5034b0c4e0f98cc5a1ae94100d0bac94fcee775f32ccfc0c79fb98",
+      "manager_epoch": 0
+    }
+  },
+  {
+    "case": "test_cross_verifier[wrong-audience]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "5b923069c217bc85dcae5678a9da36654ccc08d8fc9dfbfa197b580c41d785b4",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "6a59e8b76c76688eccd4354001ba14166f74f6ff220c81fb358f5237b862290d",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "b2fa736008a867631b3e00ad4e3fea71a709084ac567e07499882f874eb9f99c",
+      "manager_epoch": 0
+    }
+  },
+  {
+    "case": "test_cross_verifier[cross-presentation]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "5b923069c217bc85dcae5678a9da36654ccc08d8fc9dfbfa197b580c41d785b4",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "6a59e8b76c76688eccd4354001ba14166f74f6ff220c81fb358f5237b862290d",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "a755d2081514e6ea10f93c145017a9e36c0d6953383923b260c8c2502c5bee21",
+      "manager_epoch": 0
+    }
+  },
+  {
+    "case": "test_stored_context_mismatch[session]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "5b923069c217bc85dcae5678a9da36654ccc08d8fc9dfbfa197b580c41d785b4",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "6a59e8b76c76688eccd4354001ba14166f74f6ff220c81fb358f5237b862290d",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "817055ca89d4d22bd3bf6fb64ca9a53e6b0325dc68d43c24aeaf9b6bb9863b6c",
+      "manager_epoch": 0
+    }
+  },
+  {
+    "case": "test_stored_context_mismatch[policy]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "5b923069c217bc85dcae5678a9da36654ccc08d8fc9dfbfa197b580c41d785b4",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "6a59e8b76c76688eccd4354001ba14166f74f6ff220c81fb358f5237b862290d",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "6e88cd9a76d4cc7ce4e2e231bc730b1782fb3302bcfc40a1c0c77b65a5f900e9",
+      "manager_epoch": 0
+    }
+  },
+  {
+    "case": "test_stored_context_mismatch[issuer]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "5b923069c217bc85dcae5678a9da36654ccc08d8fc9dfbfa197b580c41d785b4",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "6a59e8b76c76688eccd4354001ba14166f74f6ff220c81fb358f5237b862290d",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "4f2edd7b4148f18611e92598c19686334f640f165914d77ad5b20fc909bee200",
+      "manager_epoch": 0
+    }
+  }
+]

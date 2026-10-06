@@ -1,0 +1,69 @@
+{
+  "kind": "source/evidence arithmetic estimates only, not generated counts or runtime probes",
+  "anchor": "docs/data/s3_mldsa_forward_ntt_stage_pilot_1/pilot-result.json",
+  "entry_checked_mod64_gates": 35892,
+  "entry_checked_mod64_AND": 13331,
+  "new_entry_mask_gates": 66,
+  "new_entry_mask_AND": 65,
+  "canonical_butterfly_anchor_gates": 17405,
+  "canonical_butterfly_anchor_AND": 7064,
+  "entry_nominal_gates": 9205248,
+  "entry_nominal_AND": 3429376,
+  "nodes_nominal_gates": 17822720,
+  "nodes_nominal_AND": 7233536,
+  "final_nominal_gates": 16388,
+  "final_nominal_AND": 16386,
+  "complete_nominal_gates": 27044356,
+  "complete_nominal_AND": 10679298,
+  "entry_partition_nominal_gates": 287664,
+  "node_partition_nominal_gates": 278480,
+  "entry_partition_retained_trace_nominal_bytes": 4890410,
+  "node_partition_retained_trace_nominal_bytes": 4734282,
+  "final_partition_retained_trace_nominal_bytes": 278718,
+  "per_partition_stop_retained_trace_bytes": 7650122,
+  "trace_formula": "17*gate_count +56 header +33 footer +33 CPython bytes overhead; temporary serialisation copies additional",
+  "uncertainty": "255 twiddle-specific counts not measured. Nominal anchors are not uniform exact costs; preserve measured per-partition XOR/AND/NOT, private-wire classification and total counter.",
+  "seconds_estimates": {
+    "generation": [
+      30,
+      38
+    ],
+    "evaluation_and_independent_observation_six_cases": [
+      49,
+      65
+    ],
+    "reference_Horner_and_four_refusal_cases": [
+      1,
+      3
+    ],
+    "state_alias_and_evidence_processing": [
+      1,
+      3
+    ],
+    "thirteen_guard_batch_startups": [
+      2,
+      3
+    ],
+    "preflight_lint_format_audit_and_closure": [
+      8,
+      10
+    ],
+    "cleanup_reserve": [
+      10,
+      10
+    ],
+    "aggregate_range": [
+      101,
+      132
+    ],
+    "proposed_package_cap": 135
+  },
+  "rate_basis": "stage evidence roughly1.1..1.4 microseconds/gate generation and0.30..0.40 microseconds/gate for evaluation plus independent trace observation; new full-state boundaries have unmeasured overhead",
+  "memory_estimate_MiB": [
+    60,
+    96
+  ],
+  "storage_estimate": "one trace in memory; bounded live alias metadata and six checkpoint states below256KiB temporary target; compact per-partition evidence below1.2MiB package target, each file below1MiB; no whole trace on disk",
+  "confidence": "engineering estimate, neither measurement nor guaranteed upper bound; abort on any applicable actual limit",
+  "current_implementation_balance_untouched": 61.264731091912836
+}

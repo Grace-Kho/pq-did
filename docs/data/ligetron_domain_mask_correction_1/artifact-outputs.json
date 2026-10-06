@@ -1,0 +1,8 @@
+{
+  "paths": {
+    "experiments/ligetron_domain_mask_correction_1/references/2022-1608.pdf": "reference-pdf",
+    "experiments/ligetron_domain_mask_correction_1/build/attempt-2/cases.o": "build-artifact",
+    "experiments/ligetron_domain_mask_correction_1/build/attempt-2/bn254.o": "build-artifact",
+    "experiments/ligetron_domain_mask_correction_1/build/attempt-2/rng_cases": "build-artifact"
+  }
+}

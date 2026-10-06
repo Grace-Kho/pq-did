@@ -1,0 +1,11 @@
+{
+  "package": "R0-SUCCINCT-FEASIBILITY-1",
+  "phase": "execution-only differential comparison",
+  "case": "cred-alpha-42",
+  "reason": "Session limit exceeded: 4194304 >= 4194304",
+  "limit_session_cycles": 4194304,
+  "guest_results": "evidence/guest_comparisons.json",
+  "resource_record": "evidence/guest-reference-comparison.json",
+  "proof_attempts_launched": 0,
+  "action": "No further execution or proving in this package. No cap increase or unchanged retry. Documentation and finite data/format checks only."
+}

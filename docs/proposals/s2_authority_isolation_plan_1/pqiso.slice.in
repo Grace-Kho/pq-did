@@ -1,0 +1,11 @@
+# PROPOSAL ONLY; never installed by this planning package.
+[Unit]
+Description=PQ-DID bounded actual-identity isolation pilot aggregate
+[Slice]
+MemoryAccounting=yes
+MemoryMax=268435456
+MemorySwapMax=0
+CPUQuota=200%
+AllowedCPUs=0-1
+TasksAccounting=yes
+TasksMax=128

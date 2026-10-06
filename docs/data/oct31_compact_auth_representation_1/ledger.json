@@ -1,0 +1,841 @@
+{
+  "jobs": [
+    {
+      "name": "preflight",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/compact_auth_representation_1/dispatch.py",
+        "preflight"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-compact-auth-1-preflight",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 66134,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26057784,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 3738079232,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.5683175579179078,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12894208",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "32870400",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.08093934692442417,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 38195200,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "whole-workload",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/compact_auth_representation_1/dispatch.py",
+        "Q-01"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-compact-auth-1-whole-workload",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 75599,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26067249,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4074532864,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.3826609399402514,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10317824",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "19288064",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.04080291499849409,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 38084608,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "source-quality",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/compact_auth_representation_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-compact-auth-1-source-quality",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 95308,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26086958,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4071755776,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.42176452896092087,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10051584",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "25448448",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.08180943108163774,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 32608256,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "source-quality-2",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/compact_auth_representation_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-compact-auth-1-source-quality-2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 107321,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26098971,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4060471296,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.6419230790343136,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12845056",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "27967488",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.08145790104754269,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 32550912,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "affine-fixtures",
+      "phase": "python",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/compact_auth_representation_1/dispatch.py",
+        "C-01",
+        "C-02",
+        "C-03",
+        "C-04",
+        "C-05",
+        "C-06",
+        "C-07",
+        "C-08",
+        "C-09",
+        "C-10",
+        "C-11",
+        "C-12",
+        "C-13",
+        "C-14",
+        "C-15",
+        "C-16",
+        "C-17",
+        "C-18",
+        "C-19",
+        "C-20",
+        "C-21",
+        "C-22",
+        "C-23",
+        "C-24"
+      ],
+      "limit_seconds": 120,
+      "child_seconds": 119,
+      "status": "pass",
+      "unit": "pqdid-compact-auth-1-affine-fixtures",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 112410,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26104060,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4052877312,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.7790072780335322,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10317824",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "23564288",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.4443467679666355,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 42479616,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "native-fixtures",
+      "phase": "native",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/compact_auth_representation_1/dispatch.py",
+        "N-01",
+        "N-02",
+        "N-03",
+        "N-04"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-compact-auth-1-native-fixtures",
+      "memory_limit_bytes": 1073741824,
+      "opening_storage": {
+        "new_evidence_bytes": 151816,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26143466,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4047044608,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.42709445708896965,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "10268672",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "1073741824",
+          "memory.swap.max": "0",
+          "memory.peak": "23875584",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.08100949600338936,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 38187008,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "source-quality-final",
+      "phase": "tool",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/compact_auth_representation_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-compact-auth-1-source-quality-final",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 235659,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26227309,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4062511104,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.581978845060803,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12836864",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "28131328",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.08125644898973405,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 37474304,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "prepare",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/compact_auth_representation_1/preservation.py",
+        "prepare"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-compact-auth-1-prepare",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 240722,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26232372,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4059197440,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.973188963951543,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10366976",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "52486144",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.6044741700170562,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 58802176,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "full-audit",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/compact_auth_representation_1/preservation.py",
+        "full-audit"
+      ],
+      "limit_seconds": 60,
+      "child_seconds": 59,
+      "status": "pass",
+      "unit": "pqdid-compact-auth-1-full-audit",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 270281,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26261931,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4068847616,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 4.400144165963866,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10375168",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "46227456",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 4.061071393080056,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 62783488,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "final-readback",
+      "phase": "audit",
+      "argv": [
+        ".venv/bin/python",
+        "-I",
+        "-B",
+        "experiments/compact_auth_representation_1/preservation.py",
+        "readback"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-compact-auth-1-final-readback",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 316060,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 26307710,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4073074688,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.8525130499619991,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10289152",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "41226240",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.5049026559572667,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 58769408,
+      "artifact_observed_peak_bytes": 58966547
+    }
+  ],
+  "invocations": [
+    {
+      "invocation_id": "CAR1-0001",
+      "case_id": "Q-01",
+      "work_event_reservation": 50000000,
+      "ordinal": 1,
+      "cumulative_invocations": 943,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "CAR1-0002",
+      "case_id": "C-01",
+      "work_event_reservation": 50000000,
+      "ordinal": 2,
+      "cumulative_invocations": 944,
+      "status": "pass",
+      "work_events": 21
+    },
+    {
+      "invocation_id": "CAR1-0003",
+      "case_id": "C-02",
+      "work_event_reservation": 50000000,
+      "ordinal": 3,
+      "cumulative_invocations": 945,
+      "status": "pass",
+      "work_events": 36
+    },
+    {
+      "invocation_id": "CAR1-0004",
+      "case_id": "C-03",
+      "work_event_reservation": 50000000,
+      "ordinal": 4,
+      "cumulative_invocations": 946,
+      "status": "pass",
+      "work_events": 21
+    },
+    {
+      "invocation_id": "CAR1-0005",
+      "case_id": "C-04",
+      "work_event_reservation": 50000000,
+      "ordinal": 5,
+      "cumulative_invocations": 947,
+      "status": "pass",
+      "work_events": 21
+    },
+    {
+      "invocation_id": "CAR1-0006",
+      "case_id": "C-05",
+      "work_event_reservation": 50000000,
+      "ordinal": 6,
+      "cumulative_invocations": 948,
+      "status": "pass",
+      "work_events": 21
+    },
+    {
+      "invocation_id": "CAR1-0007",
+      "case_id": "C-06",
+      "work_event_reservation": 50000000,
+      "ordinal": 7,
+      "cumulative_invocations": 949,
+      "status": "pass",
+      "work_events": 16
+    },
+    {
+      "invocation_id": "CAR1-0008",
+      "case_id": "C-07",
+      "work_event_reservation": 50000000,
+      "ordinal": 8,
+      "cumulative_invocations": 950,
+      "status": "pass",
+      "work_events": 1
+    },
+    {
+      "invocation_id": "CAR1-0009",
+      "case_id": "C-08",
+      "work_event_reservation": 50000000,
+      "ordinal": 9,
+      "cumulative_invocations": 951,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "CAR1-0010",
+      "case_id": "C-09",
+      "work_event_reservation": 50000000,
+      "ordinal": 10,
+      "cumulative_invocations": 952,
+      "status": "pass",
+      "work_events": 1
+    },
+    {
+      "invocation_id": "CAR1-0011",
+      "case_id": "C-10",
+      "work_event_reservation": 50000000,
+      "ordinal": 11,
+      "cumulative_invocations": 953,
+      "status": "pass",
+      "work_events": 1
+    },
+    {
+      "invocation_id": "CAR1-0012",
+      "case_id": "C-11",
+      "work_event_reservation": 50000000,
+      "ordinal": 12,
+      "cumulative_invocations": 954,
+      "status": "pass",
+      "work_events": 264
+    },
+    {
+      "invocation_id": "CAR1-0013",
+      "case_id": "C-12",
+      "work_event_reservation": 50000000,
+      "ordinal": 13,
+      "cumulative_invocations": 955,
+      "status": "pass",
+      "work_events": 21
+    },
+    {
+      "invocation_id": "CAR1-0014",
+      "case_id": "C-13",
+      "work_event_reservation": 50000000,
+      "ordinal": 14,
+      "cumulative_invocations": 956,
+      "status": "pass",
+      "work_events": 10
+    },
+    {
+      "invocation_id": "CAR1-0015",
+      "case_id": "C-14",
+      "work_event_reservation": 50000000,
+      "ordinal": 15,
+      "cumulative_invocations": 957,
+      "status": "pass",
+      "work_events": 2
+    },
+    {
+      "invocation_id": "CAR1-0016",
+      "case_id": "C-15",
+      "work_event_reservation": 50000000,
+      "ordinal": 16,
+      "cumulative_invocations": 958,
+      "status": "pass",
+      "work_events": 2
+    },
+    {
+      "invocation_id": "CAR1-0017",
+      "case_id": "C-16",
+      "work_event_reservation": 50000000,
+      "ordinal": 17,
+      "cumulative_invocations": 959,
+      "status": "pass",
+      "work_events": 3
+    },
+    {
+      "invocation_id": "CAR1-0018",
+      "case_id": "C-17",
+      "work_event_reservation": 50000000,
+      "ordinal": 18,
+      "cumulative_invocations": 960,
+      "status": "pass",
+      "work_events": 16
+    },
+    {
+      "invocation_id": "CAR1-0019",
+      "case_id": "C-18",
+      "work_event_reservation": 50000000,
+      "ordinal": 19,
+      "cumulative_invocations": 961,
+      "status": "pass",
+      "work_events": 18
+    },
+    {
+      "invocation_id": "CAR1-0020",
+      "case_id": "C-19",
+      "work_event_reservation": 50000000,
+      "ordinal": 20,
+      "cumulative_invocations": 962,
+      "status": "pass",
+      "work_events": 16
+    },
+    {
+      "invocation_id": "CAR1-0021",
+      "case_id": "C-20",
+      "work_event_reservation": 50000000,
+      "ordinal": 21,
+      "cumulative_invocations": 963,
+      "status": "pass",
+      "work_events": 1
+    },
+    {
+      "invocation_id": "CAR1-0022",
+      "case_id": "C-21",
+      "work_event_reservation": 50000000,
+      "ordinal": 22,
+      "cumulative_invocations": 964,
+      "status": "pass",
+      "work_events": 103814
+    },
+    {
+      "invocation_id": "CAR1-0023",
+      "case_id": "C-22",
+      "work_event_reservation": 50000000,
+      "ordinal": 23,
+      "cumulative_invocations": 965,
+      "status": "pass",
+      "work_events": 103814
+    },
+    {
+      "invocation_id": "CAR1-0024",
+      "case_id": "C-23",
+      "work_event_reservation": 50000000,
+      "ordinal": 24,
+      "cumulative_invocations": 966,
+      "status": "pass",
+      "work_events": 2542
+    },
+    {
+      "invocation_id": "CAR1-0025",
+      "case_id": "C-24",
+      "work_event_reservation": 50000000,
+      "ordinal": 25,
+      "cumulative_invocations": 967,
+      "status": "pass",
+      "work_events": 2542
+    },
+    {
+      "invocation_id": "CAR1-0026",
+      "case_id": "N-01",
+      "work_event_reservation": 50000000,
+      "ordinal": 26,
+      "cumulative_invocations": 968,
+      "status": "pass",
+      "work_events": 31
+    },
+    {
+      "invocation_id": "CAR1-0027",
+      "case_id": "N-02",
+      "work_event_reservation": 50000000,
+      "ordinal": 27,
+      "cumulative_invocations": 969,
+      "status": "pass",
+      "work_events": 31
+    },
+    {
+      "invocation_id": "CAR1-0028",
+      "case_id": "N-03",
+      "work_event_reservation": 50000000,
+      "ordinal": 28,
+      "cumulative_invocations": 970,
+      "status": "pass",
+      "work_events": 31
+    },
+    {
+      "invocation_id": "CAR1-0029",
+      "case_id": "N-04",
+      "work_event_reservation": 50000000,
+      "ordinal": 29,
+      "cumulative_invocations": 971,
+      "status": "pass",
+      "work_events": 468
+    }
+  ],
+  "builds": [],
+  "bookkeeping": [
+    {
+      "purpose": "Opening ledger reconciliation, contract/source review and two delegated source owners; conservative operator charge",
+      "seconds": 60
+    },
+    {
+      "purpose": "Independent source review, native bridge, complete workload/report and preservation preparation; conservative operator charge beyond opening",
+      "seconds": 40
+    },
+    {
+      "purpose": "Measured exact-unit shutdown and complete slice/descendant verification",
+      "seconds": 0.18294383795000613
+    },
+    {
+      "purpose": "Final resource closure, inventory and seal readback; conservative completion charge checked below",
+      "seconds": 6
+    }
+  ],
+  "work_events": 27593603,
+  "work_events_reserved": 0
+}

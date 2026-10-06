@@ -1,0 +1,52 @@
+{
+  "event": "automatic approval review rejected TR1-16 admission without launch",
+  "stated_reason": "earlier 24 native invocation ceiling applied; N1-24 already consumed",
+  "current_authorisation": {
+    "milestone": "OCT31-KYC-NATIVE-MILESTONE-1",
+    "approved": true,
+    "attachment_sha256": "a6062eec50d3b90fb83bb8c0f70651780cddffbc0fe2ddfd88dc7b577f3922ab",
+    "plan_sha256": "cbb310bee67ed9c237b0e1055b3e68d81652fffd96ccad611dc2f1c6a4fc0b27",
+    "manifest_sha256": "158539d9c54fd5a33ae49b794b9f9716f620911a61e78bd973536e0aa3a28d8e",
+    "verified_inputs": 34,
+    "retired_subcaps": [
+      "completed native package and provisioning sub-limits (no transfer/refund)",
+      "completed fourth/fifth-build continuation caps",
+      "completed per-package evidence reservations",
+      "inactive separate sumcheck-pilot proposal"
+    ],
+    "historical_consumption_refunded": 0
+  },
+  "new_milestone_allocation": 600,
+  "approved_native_new_cases": 24,
+  "approved_native_exp2_cases": [
+    "TR-01",
+    "TR-02",
+    "TR-03",
+    "TR-04",
+    "TR-05",
+    "TR-06",
+    "TR-07",
+    "TR-08",
+    "TR-09",
+    "TR-10",
+    "TR-11",
+    "TR-12",
+    "TR-13",
+    "TR-14",
+    "TR-15",
+    "TR-16"
+  ],
+  "initial_milestone_invocations": 392,
+  "historical_consumed": 448,
+  "current_milestone_consumed": 42,
+  "cumulative_consumed": 490,
+  "transcript_invocations_launched": 0,
+  "historical_cap_retired": true,
+  "retired_subcaps": [
+    "completed native package and provisioning sub-limits (no transfer/refund)",
+    "completed fourth/fifth-build continuation caps",
+    "completed per-package evidence reservations",
+    "inactive separate sumcheck-pilot proposal"
+  ],
+  "retry_basis": "Same approved guarded command; latest explicit milestone approval supersedes old native subcap. No workaround, changed command, counter reset or budget increase."
+}

@@ -1,0 +1,1367 @@
+{
+  "scope": "Only exact units recorded in this milestone ledger and its named ephemeral slice",
+  "units": [
+    "pqdid-oct31-m1-coordinator-quality.service",
+    "pqdid-oct31-m1-coordinator-format.service",
+    "pqdid-oct31-m1-coordinator-quality-2.service",
+    "pqdid-oct31-m1-h-quality.service",
+    "pqdid-oct31-m1-harness-cases.service",
+    "pqdid-oct31-m1-b-quality.service",
+    "pqdid-oct31-m1-b-quality-2.service",
+    "pqdid-oct31-m1-native-build-1.service",
+    "pqdid-oct31-m1-b-quality-3.service",
+    "pqdid-oct31-m1-quality-4.service",
+    "pqdid-oct31-m1-baseline-cases-01.service",
+    "pqdid-oct31-m1-native-build-2.service",
+    "pqdid-oct31-m1-quality-5.service",
+    "pqdid-oct31-m1-native-cases-01.service",
+    "pqdid-oct31-m1-baseline-cases-02.service",
+    "pqdid-oct31-m1-baseline-cases-03.service",
+    "pqdid-oct31-m1-quality-6.service",
+    "pqdid-oct31-m1-baseline-cases-04.service",
+    "pqdid-oct31-m1-quality-7.service",
+    "pqdid-oct31-m1-integration-cases-01.service",
+    "pqdid-oct31-m1-integration-cases-02.service",
+    "pqdid-oct31-m1-native-build-3.service",
+    "pqdid-oct31-m1-quality-8.service",
+    "pqdid-oct31-m1-quality-9.service",
+    "pqdid-oct31-m1-bench-issue-s1.service",
+    "pqdid-oct31-m1-bench-issue-s2.service",
+    "pqdid-oct31-m1-bench-issue-s3.service",
+    "pqdid-oct31-m1-bench-present-a-s1.service",
+    "pqdid-oct31-m1-bench-present-a-s2.service",
+    "pqdid-oct31-m1-bench-present-a-s3.service",
+    "pqdid-oct31-m1-bench-present-b-s1.service",
+    "pqdid-oct31-m1-bench-present-b-s2.service",
+    "pqdid-oct31-m1-bench-present-b-s3.service",
+    "pqdid-oct31-m1-bench-revoke-update-s1.service",
+    "pqdid-oct31-m1-bench-revoke-update-s2.service",
+    "pqdid-oct31-m1-bench-revoke-update-s3.service",
+    "pqdid-oct31-m1-benchmark-summary.service",
+    "pqdid-oct31-m1-classification-revalidation.service",
+    "pqdid-oct31-m1-quality-final.service",
+    "pqdid-oct31-m1-prepare.service",
+    "pqdid-oct31-m1-preservation-quality.service",
+    "pqdid-oct31-m1-prepare-2.service",
+    "pqdid-oct31-m1-full-audit.service",
+    "pqdid-oct31-m1-final-readback.service",
+    "pqdid-oct31-m1.slice"
+  ],
+  "complete": true,
+  "commands": [
+    {
+      "argv": [
+        "systemctl",
+        "--user",
+        "show",
+        "--property=Id,LoadState,ActiveState,SubState,MainPID,ControlGroup",
+        "pqdid-oct31-m1-coordinator-quality.service",
+        "pqdid-oct31-m1-coordinator-format.service",
+        "pqdid-oct31-m1-coordinator-quality-2.service",
+        "pqdid-oct31-m1-h-quality.service",
+        "pqdid-oct31-m1-harness-cases.service",
+        "pqdid-oct31-m1-b-quality.service",
+        "pqdid-oct31-m1-b-quality-2.service",
+        "pqdid-oct31-m1-native-build-1.service",
+        "pqdid-oct31-m1-b-quality-3.service",
+        "pqdid-oct31-m1-quality-4.service",
+        "pqdid-oct31-m1-baseline-cases-01.service",
+        "pqdid-oct31-m1-native-build-2.service",
+        "pqdid-oct31-m1-quality-5.service",
+        "pqdid-oct31-m1-native-cases-01.service",
+        "pqdid-oct31-m1-baseline-cases-02.service",
+        "pqdid-oct31-m1-baseline-cases-03.service",
+        "pqdid-oct31-m1-quality-6.service",
+        "pqdid-oct31-m1-baseline-cases-04.service",
+        "pqdid-oct31-m1-quality-7.service",
+        "pqdid-oct31-m1-integration-cases-01.service",
+        "pqdid-oct31-m1-integration-cases-02.service",
+        "pqdid-oct31-m1-native-build-3.service",
+        "pqdid-oct31-m1-quality-8.service",
+        "pqdid-oct31-m1-quality-9.service",
+        "pqdid-oct31-m1-bench-issue-s1.service",
+        "pqdid-oct31-m1-bench-issue-s2.service",
+        "pqdid-oct31-m1-bench-issue-s3.service",
+        "pqdid-oct31-m1-bench-present-a-s1.service",
+        "pqdid-oct31-m1-bench-present-a-s2.service",
+        "pqdid-oct31-m1-bench-present-a-s3.service",
+        "pqdid-oct31-m1-bench-present-b-s1.service",
+        "pqdid-oct31-m1-bench-present-b-s2.service",
+        "pqdid-oct31-m1-bench-present-b-s3.service",
+        "pqdid-oct31-m1-bench-revoke-update-s1.service",
+        "pqdid-oct31-m1-bench-revoke-update-s2.service",
+        "pqdid-oct31-m1-bench-revoke-update-s3.service",
+        "pqdid-oct31-m1-benchmark-summary.service",
+        "pqdid-oct31-m1-classification-revalidation.service",
+        "pqdid-oct31-m1-quality-final.service",
+        "pqdid-oct31-m1-prepare.service",
+        "pqdid-oct31-m1-preservation-quality.service",
+        "pqdid-oct31-m1-prepare-2.service",
+        "pqdid-oct31-m1-full-audit.service",
+        "pqdid-oct31-m1-final-readback.service",
+        "pqdid-oct31-m1.slice"
+      ],
+      "exit_code": 0,
+      "stdout": "Id=pqdid-oct31-m1-coordinator-quality.service\nLoadState=loaded\nActiveState=failed\nSubState=failed\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-coordinator-format.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-coordinator-quality-2.service\nLoadState=loaded\nActiveState=failed\nSubState=failed\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-h-quality.service\nLoadState=loaded\nActiveState=failed\nSubState=failed\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-harness-cases.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-b-quality.service\nLoadState=loaded\nActiveState=failed\nSubState=failed\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-b-quality-2.service\nLoadState=loaded\nActiveState=failed\nSubState=failed\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-build-1.service\nLoadState=loaded\nActiveState=failed\nSubState=failed\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-b-quality-3.service\nLoadState=loaded\nActiveState=failed\nSubState=failed\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-4.service\nLoadState=loaded\nActiveState=failed\nSubState=failed\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-baseline-cases-01.service\nLoadState=loaded\nActiveState=failed\nSubState=failed\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-build-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-5.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-cases-01.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-baseline-cases-02.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-baseline-cases-03.service\nLoadState=loaded\nActiveState=failed\nSubState=failed\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-6.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-baseline-cases-04.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-7.service\nLoadState=loaded\nActiveState=failed\nSubState=failed\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-integration-cases-01.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-integration-cases-02.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-build-3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-8.service\nLoadState=loaded\nActiveState=failed\nSubState=failed\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-9.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-issue-s1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-issue-s2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-issue-s3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-a-s1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-a-s2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-a-s3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-b-s1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-b-s2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-b-s3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-revoke-update-s1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-revoke-update-s2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-revoke-update-s3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-benchmark-summary.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-classification-revalidation.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-final.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-prepare.service\nLoadState=loaded\nActiveState=failed\nSubState=failed\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-preservation-quality.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-prepare-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-full-audit.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-final-readback.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1.slice\nLoadState=loaded\nActiveState=active\nSubState=active\nControlGroup=/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-oct31.slice/pqdid-oct31-m1.slice\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "systemctl",
+        "--user",
+        "stop",
+        "pqdid-oct31-m1-coordinator-quality.service",
+        "pqdid-oct31-m1-coordinator-quality-2.service",
+        "pqdid-oct31-m1-h-quality.service",
+        "pqdid-oct31-m1-b-quality.service",
+        "pqdid-oct31-m1-b-quality-2.service",
+        "pqdid-oct31-m1-native-build-1.service",
+        "pqdid-oct31-m1-b-quality-3.service",
+        "pqdid-oct31-m1-quality-4.service",
+        "pqdid-oct31-m1-baseline-cases-01.service",
+        "pqdid-oct31-m1-baseline-cases-03.service",
+        "pqdid-oct31-m1-quality-7.service",
+        "pqdid-oct31-m1-quality-8.service",
+        "pqdid-oct31-m1-prepare.service",
+        "pqdid-oct31-m1.slice"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "systemctl",
+        "--user",
+        "reset-failed",
+        "pqdid-oct31-m1-coordinator-quality.service",
+        "pqdid-oct31-m1-coordinator-quality-2.service",
+        "pqdid-oct31-m1-h-quality.service",
+        "pqdid-oct31-m1-b-quality.service",
+        "pqdid-oct31-m1-b-quality-2.service",
+        "pqdid-oct31-m1-native-build-1.service",
+        "pqdid-oct31-m1-b-quality-3.service",
+        "pqdid-oct31-m1-quality-4.service",
+        "pqdid-oct31-m1-baseline-cases-01.service",
+        "pqdid-oct31-m1-baseline-cases-03.service",
+        "pqdid-oct31-m1-quality-7.service",
+        "pqdid-oct31-m1-quality-8.service",
+        "pqdid-oct31-m1-prepare.service"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "systemctl",
+        "--user",
+        "show",
+        "--property=Id,LoadState,ActiveState,SubState,MainPID,ControlGroup",
+        "pqdid-oct31-m1-coordinator-quality.service",
+        "pqdid-oct31-m1-coordinator-format.service",
+        "pqdid-oct31-m1-coordinator-quality-2.service",
+        "pqdid-oct31-m1-h-quality.service",
+        "pqdid-oct31-m1-harness-cases.service",
+        "pqdid-oct31-m1-b-quality.service",
+        "pqdid-oct31-m1-b-quality-2.service",
+        "pqdid-oct31-m1-native-build-1.service",
+        "pqdid-oct31-m1-b-quality-3.service",
+        "pqdid-oct31-m1-quality-4.service",
+        "pqdid-oct31-m1-baseline-cases-01.service",
+        "pqdid-oct31-m1-native-build-2.service",
+        "pqdid-oct31-m1-quality-5.service",
+        "pqdid-oct31-m1-native-cases-01.service",
+        "pqdid-oct31-m1-baseline-cases-02.service",
+        "pqdid-oct31-m1-baseline-cases-03.service",
+        "pqdid-oct31-m1-quality-6.service",
+        "pqdid-oct31-m1-baseline-cases-04.service",
+        "pqdid-oct31-m1-quality-7.service",
+        "pqdid-oct31-m1-integration-cases-01.service",
+        "pqdid-oct31-m1-integration-cases-02.service",
+        "pqdid-oct31-m1-native-build-3.service",
+        "pqdid-oct31-m1-quality-8.service",
+        "pqdid-oct31-m1-quality-9.service",
+        "pqdid-oct31-m1-bench-issue-s1.service",
+        "pqdid-oct31-m1-bench-issue-s2.service",
+        "pqdid-oct31-m1-bench-issue-s3.service",
+        "pqdid-oct31-m1-bench-present-a-s1.service",
+        "pqdid-oct31-m1-bench-present-a-s2.service",
+        "pqdid-oct31-m1-bench-present-a-s3.service",
+        "pqdid-oct31-m1-bench-present-b-s1.service",
+        "pqdid-oct31-m1-bench-present-b-s2.service",
+        "pqdid-oct31-m1-bench-present-b-s3.service",
+        "pqdid-oct31-m1-bench-revoke-update-s1.service",
+        "pqdid-oct31-m1-bench-revoke-update-s2.service",
+        "pqdid-oct31-m1-bench-revoke-update-s3.service",
+        "pqdid-oct31-m1-benchmark-summary.service",
+        "pqdid-oct31-m1-classification-revalidation.service",
+        "pqdid-oct31-m1-quality-final.service",
+        "pqdid-oct31-m1-prepare.service",
+        "pqdid-oct31-m1-preservation-quality.service",
+        "pqdid-oct31-m1-prepare-2.service",
+        "pqdid-oct31-m1-full-audit.service",
+        "pqdid-oct31-m1-final-readback.service",
+        "pqdid-oct31-m1.slice"
+      ],
+      "exit_code": 0,
+      "stdout": "Id=pqdid-oct31-m1-coordinator-quality.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-coordinator-format.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-coordinator-quality-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-h-quality.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-harness-cases.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-b-quality.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-b-quality-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-build-1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-b-quality-3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-4.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-baseline-cases-01.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-build-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-5.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-cases-01.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-baseline-cases-02.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-baseline-cases-03.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-6.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-baseline-cases-04.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-7.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-integration-cases-01.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-integration-cases-02.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-build-3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-8.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-9.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-issue-s1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-issue-s2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-issue-s3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-a-s1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-a-s2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-a-s3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-b-s1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-b-s2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-b-s3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-revoke-update-s1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-revoke-update-s2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-revoke-update-s3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-benchmark-summary.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-classification-revalidation.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-final.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-prepare.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-preservation-quality.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-prepare-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-full-audit.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-final-readback.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1.slice\nLoadState=loaded\nActiveState=inactive\nSubState=dead\nControlGroup=\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "systemctl",
+        "--user",
+        "revert",
+        "pqdid-oct31-m1.slice"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Removed '/run/user/1000/systemd/user.control/pqdid-oct31-m1.slice.d/50-TasksMax.conf'.\nRemoved '/run/user/1000/systemd/user.control/pqdid-oct31-m1.slice.d/50-CPUQuota.conf'.\nRemoved '/run/user/1000/systemd/user.control/pqdid-oct31-m1.slice.d/50-MemorySwapMax.conf'.\nRemoved '/run/user/1000/systemd/user.control/pqdid-oct31-m1.slice.d/50-MemoryMax.conf'.\nRemoved '/run/user/1000/systemd/user.control/pqdid-oct31-m1.slice.d'.\n"
+    },
+    {
+      "argv": [
+        "systemctl",
+        "--user",
+        "show",
+        "--property=Id,LoadState,ActiveState,SubState,MainPID,ControlGroup",
+        "pqdid-oct31-m1-coordinator-quality.service",
+        "pqdid-oct31-m1-coordinator-format.service",
+        "pqdid-oct31-m1-coordinator-quality-2.service",
+        "pqdid-oct31-m1-h-quality.service",
+        "pqdid-oct31-m1-harness-cases.service",
+        "pqdid-oct31-m1-b-quality.service",
+        "pqdid-oct31-m1-b-quality-2.service",
+        "pqdid-oct31-m1-native-build-1.service",
+        "pqdid-oct31-m1-b-quality-3.service",
+        "pqdid-oct31-m1-quality-4.service",
+        "pqdid-oct31-m1-baseline-cases-01.service",
+        "pqdid-oct31-m1-native-build-2.service",
+        "pqdid-oct31-m1-quality-5.service",
+        "pqdid-oct31-m1-native-cases-01.service",
+        "pqdid-oct31-m1-baseline-cases-02.service",
+        "pqdid-oct31-m1-baseline-cases-03.service",
+        "pqdid-oct31-m1-quality-6.service",
+        "pqdid-oct31-m1-baseline-cases-04.service",
+        "pqdid-oct31-m1-quality-7.service",
+        "pqdid-oct31-m1-integration-cases-01.service",
+        "pqdid-oct31-m1-integration-cases-02.service",
+        "pqdid-oct31-m1-native-build-3.service",
+        "pqdid-oct31-m1-quality-8.service",
+        "pqdid-oct31-m1-quality-9.service",
+        "pqdid-oct31-m1-bench-issue-s1.service",
+        "pqdid-oct31-m1-bench-issue-s2.service",
+        "pqdid-oct31-m1-bench-issue-s3.service",
+        "pqdid-oct31-m1-bench-present-a-s1.service",
+        "pqdid-oct31-m1-bench-present-a-s2.service",
+        "pqdid-oct31-m1-bench-present-a-s3.service",
+        "pqdid-oct31-m1-bench-present-b-s1.service",
+        "pqdid-oct31-m1-bench-present-b-s2.service",
+        "pqdid-oct31-m1-bench-present-b-s3.service",
+        "pqdid-oct31-m1-bench-revoke-update-s1.service",
+        "pqdid-oct31-m1-bench-revoke-update-s2.service",
+        "pqdid-oct31-m1-bench-revoke-update-s3.service",
+        "pqdid-oct31-m1-benchmark-summary.service",
+        "pqdid-oct31-m1-classification-revalidation.service",
+        "pqdid-oct31-m1-quality-final.service",
+        "pqdid-oct31-m1-prepare.service",
+        "pqdid-oct31-m1-preservation-quality.service",
+        "pqdid-oct31-m1-prepare-2.service",
+        "pqdid-oct31-m1-full-audit.service",
+        "pqdid-oct31-m1-final-readback.service",
+        "pqdid-oct31-m1.slice"
+      ],
+      "exit_code": 0,
+      "stdout": "Id=pqdid-oct31-m1-coordinator-quality.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-coordinator-format.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-coordinator-quality-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-h-quality.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-harness-cases.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-b-quality.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-b-quality-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-build-1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-b-quality-3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-4.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-baseline-cases-01.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-build-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-5.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-cases-01.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-baseline-cases-02.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-baseline-cases-03.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-6.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-baseline-cases-04.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-7.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-integration-cases-01.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-integration-cases-02.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-build-3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-8.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-9.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-issue-s1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-issue-s2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-issue-s3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-a-s1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-a-s2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-a-s3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-b-s1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-b-s2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-present-b-s3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-revoke-update-s1.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-revoke-update-s2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-bench-revoke-update-s3.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-benchmark-summary.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-classification-revalidation.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-quality-final.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-prepare.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-preservation-quality.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-prepare-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-full-audit.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-final-readback.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1.slice\nLoadState=loaded\nActiveState=inactive\nSubState=dead\nControlGroup=\n",
+      "stderr": ""
+    }
+  ],
+  "before": {
+    "pqdid-oct31-m1-coordinator-quality.service": {
+      "Id": "pqdid-oct31-m1-coordinator-quality.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-coordinator-format.service": {
+      "Id": "pqdid-oct31-m1-coordinator-format.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-coordinator-quality-2.service": {
+      "Id": "pqdid-oct31-m1-coordinator-quality-2.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-h-quality.service": {
+      "Id": "pqdid-oct31-m1-h-quality.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-harness-cases.service": {
+      "Id": "pqdid-oct31-m1-harness-cases.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-b-quality.service": {
+      "Id": "pqdid-oct31-m1-b-quality.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-b-quality-2.service": {
+      "Id": "pqdid-oct31-m1-b-quality-2.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-build-1.service": {
+      "Id": "pqdid-oct31-m1-native-build-1.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-b-quality-3.service": {
+      "Id": "pqdid-oct31-m1-b-quality-3.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-quality-4.service": {
+      "Id": "pqdid-oct31-m1-quality-4.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-baseline-cases-01.service": {
+      "Id": "pqdid-oct31-m1-baseline-cases-01.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-build-2.service": {
+      "Id": "pqdid-oct31-m1-native-build-2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-quality-5.service": {
+      "Id": "pqdid-oct31-m1-quality-5.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-cases-01.service": {
+      "Id": "pqdid-oct31-m1-native-cases-01.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-baseline-cases-02.service": {
+      "Id": "pqdid-oct31-m1-baseline-cases-02.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-baseline-cases-03.service": {
+      "Id": "pqdid-oct31-m1-baseline-cases-03.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-quality-6.service": {
+      "Id": "pqdid-oct31-m1-quality-6.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-baseline-cases-04.service": {
+      "Id": "pqdid-oct31-m1-baseline-cases-04.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-quality-7.service": {
+      "Id": "pqdid-oct31-m1-quality-7.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-integration-cases-01.service": {
+      "Id": "pqdid-oct31-m1-integration-cases-01.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-integration-cases-02.service": {
+      "Id": "pqdid-oct31-m1-integration-cases-02.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-build-3.service": {
+      "Id": "pqdid-oct31-m1-native-build-3.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-quality-8.service": {
+      "Id": "pqdid-oct31-m1-quality-8.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-quality-9.service": {
+      "Id": "pqdid-oct31-m1-quality-9.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-issue-s1.service": {
+      "Id": "pqdid-oct31-m1-bench-issue-s1.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-issue-s2.service": {
+      "Id": "pqdid-oct31-m1-bench-issue-s2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-issue-s3.service": {
+      "Id": "pqdid-oct31-m1-bench-issue-s3.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-present-a-s1.service": {
+      "Id": "pqdid-oct31-m1-bench-present-a-s1.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-present-a-s2.service": {
+      "Id": "pqdid-oct31-m1-bench-present-a-s2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-present-a-s3.service": {
+      "Id": "pqdid-oct31-m1-bench-present-a-s3.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-present-b-s1.service": {
+      "Id": "pqdid-oct31-m1-bench-present-b-s1.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-present-b-s2.service": {
+      "Id": "pqdid-oct31-m1-bench-present-b-s2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-present-b-s3.service": {
+      "Id": "pqdid-oct31-m1-bench-present-b-s3.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-revoke-update-s1.service": {
+      "Id": "pqdid-oct31-m1-bench-revoke-update-s1.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-revoke-update-s2.service": {
+      "Id": "pqdid-oct31-m1-bench-revoke-update-s2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-revoke-update-s3.service": {
+      "Id": "pqdid-oct31-m1-bench-revoke-update-s3.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-benchmark-summary.service": {
+      "Id": "pqdid-oct31-m1-benchmark-summary.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-classification-revalidation.service": {
+      "Id": "pqdid-oct31-m1-classification-revalidation.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-quality-final.service": {
+      "Id": "pqdid-oct31-m1-quality-final.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-prepare.service": {
+      "Id": "pqdid-oct31-m1-prepare.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-preservation-quality.service": {
+      "Id": "pqdid-oct31-m1-preservation-quality.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-prepare-2.service": {
+      "Id": "pqdid-oct31-m1-prepare-2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-full-audit.service": {
+      "Id": "pqdid-oct31-m1-full-audit.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-final-readback.service": {
+      "Id": "pqdid-oct31-m1-final-readback.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1.slice": {
+      "Id": "pqdid-oct31-m1.slice",
+      "LoadState": "loaded",
+      "ActiveState": "active",
+      "SubState": "active",
+      "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-oct31.slice/pqdid-oct31-m1.slice"
+    }
+  },
+  "terminated_before_revert": {
+    "pqdid-oct31-m1-coordinator-quality.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-coordinator-format.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-coordinator-quality-2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-h-quality.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-harness-cases.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-b-quality.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-b-quality-2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-build-1.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-b-quality-3.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-quality-4.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-baseline-cases-01.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-build-2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-quality-5.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-cases-01.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-baseline-cases-02.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-baseline-cases-03.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-quality-6.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-baseline-cases-04.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-quality-7.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-integration-cases-01.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-integration-cases-02.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-build-3.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-quality-8.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-quality-9.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-issue-s1.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-issue-s2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-issue-s3.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-present-a-s1.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-present-a-s2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-present-a-s3.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-present-b-s1.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-present-b-s2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-present-b-s3.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-revoke-update-s1.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-revoke-update-s2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-revoke-update-s3.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-benchmark-summary.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-classification-revalidation.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-quality-final.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-prepare.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-preservation-quality.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-prepare-2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-full-audit.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-final-readback.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1.slice": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    }
+  },
+  "after": {
+    "pqdid-oct31-m1-coordinator-quality.service": {
+      "Id": "pqdid-oct31-m1-coordinator-quality.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-coordinator-format.service": {
+      "Id": "pqdid-oct31-m1-coordinator-format.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-coordinator-quality-2.service": {
+      "Id": "pqdid-oct31-m1-coordinator-quality-2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-h-quality.service": {
+      "Id": "pqdid-oct31-m1-h-quality.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-harness-cases.service": {
+      "Id": "pqdid-oct31-m1-harness-cases.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-b-quality.service": {
+      "Id": "pqdid-oct31-m1-b-quality.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-b-quality-2.service": {
+      "Id": "pqdid-oct31-m1-b-quality-2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-build-1.service": {
+      "Id": "pqdid-oct31-m1-native-build-1.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-b-quality-3.service": {
+      "Id": "pqdid-oct31-m1-b-quality-3.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-quality-4.service": {
+      "Id": "pqdid-oct31-m1-quality-4.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-baseline-cases-01.service": {
+      "Id": "pqdid-oct31-m1-baseline-cases-01.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-build-2.service": {
+      "Id": "pqdid-oct31-m1-native-build-2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-quality-5.service": {
+      "Id": "pqdid-oct31-m1-quality-5.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-cases-01.service": {
+      "Id": "pqdid-oct31-m1-native-cases-01.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-baseline-cases-02.service": {
+      "Id": "pqdid-oct31-m1-baseline-cases-02.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-baseline-cases-03.service": {
+      "Id": "pqdid-oct31-m1-baseline-cases-03.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-quality-6.service": {
+      "Id": "pqdid-oct31-m1-quality-6.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-baseline-cases-04.service": {
+      "Id": "pqdid-oct31-m1-baseline-cases-04.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-quality-7.service": {
+      "Id": "pqdid-oct31-m1-quality-7.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-integration-cases-01.service": {
+      "Id": "pqdid-oct31-m1-integration-cases-01.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-integration-cases-02.service": {
+      "Id": "pqdid-oct31-m1-integration-cases-02.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-build-3.service": {
+      "Id": "pqdid-oct31-m1-native-build-3.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-quality-8.service": {
+      "Id": "pqdid-oct31-m1-quality-8.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-quality-9.service": {
+      "Id": "pqdid-oct31-m1-quality-9.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-issue-s1.service": {
+      "Id": "pqdid-oct31-m1-bench-issue-s1.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-issue-s2.service": {
+      "Id": "pqdid-oct31-m1-bench-issue-s2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-issue-s3.service": {
+      "Id": "pqdid-oct31-m1-bench-issue-s3.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-present-a-s1.service": {
+      "Id": "pqdid-oct31-m1-bench-present-a-s1.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-present-a-s2.service": {
+      "Id": "pqdid-oct31-m1-bench-present-a-s2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-present-a-s3.service": {
+      "Id": "pqdid-oct31-m1-bench-present-a-s3.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-present-b-s1.service": {
+      "Id": "pqdid-oct31-m1-bench-present-b-s1.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-present-b-s2.service": {
+      "Id": "pqdid-oct31-m1-bench-present-b-s2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-present-b-s3.service": {
+      "Id": "pqdid-oct31-m1-bench-present-b-s3.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-revoke-update-s1.service": {
+      "Id": "pqdid-oct31-m1-bench-revoke-update-s1.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-revoke-update-s2.service": {
+      "Id": "pqdid-oct31-m1-bench-revoke-update-s2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-bench-revoke-update-s3.service": {
+      "Id": "pqdid-oct31-m1-bench-revoke-update-s3.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-benchmark-summary.service": {
+      "Id": "pqdid-oct31-m1-benchmark-summary.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-classification-revalidation.service": {
+      "Id": "pqdid-oct31-m1-classification-revalidation.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-quality-final.service": {
+      "Id": "pqdid-oct31-m1-quality-final.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-prepare.service": {
+      "Id": "pqdid-oct31-m1-prepare.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-preservation-quality.service": {
+      "Id": "pqdid-oct31-m1-preservation-quality.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-prepare-2.service": {
+      "Id": "pqdid-oct31-m1-prepare-2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-full-audit.service": {
+      "Id": "pqdid-oct31-m1-full-audit.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-final-readback.service": {
+      "Id": "pqdid-oct31-m1-final-readback.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1.slice": {
+      "Id": "pqdid-oct31-m1.slice",
+      "LoadState": "loaded",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    }
+  },
+  "terminated_final": {
+    "pqdid-oct31-m1-coordinator-quality.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-coordinator-format.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-coordinator-quality-2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-h-quality.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-harness-cases.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-b-quality.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-b-quality-2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-build-1.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-b-quality-3.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-quality-4.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-baseline-cases-01.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-build-2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-quality-5.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-cases-01.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-baseline-cases-02.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-baseline-cases-03.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-quality-6.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-baseline-cases-04.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-quality-7.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-integration-cases-01.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-integration-cases-02.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-build-3.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-quality-8.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-quality-9.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-issue-s1.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-issue-s2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-issue-s3.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-present-a-s1.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-present-a-s2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-present-a-s3.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-present-b-s1.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-present-b-s2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-present-b-s3.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-revoke-update-s1.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-revoke-update-s2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-bench-revoke-update-s3.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-benchmark-summary.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-classification-revalidation.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-quality-final.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-prepare.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-preservation-quality.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-prepare-2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-full-audit.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-final-readback.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1.slice": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    }
+  },
+  "no_surviving_workload": true,
+  "seconds": 0.2682075180346146
+}

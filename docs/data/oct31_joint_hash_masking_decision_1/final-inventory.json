@@ -1,0 +1,172 @@
+{
+  "passed": true,
+  "count": 11249,
+  "unexpected": [],
+  "missing": [],
+  "partitions": [
+    {
+      "root": "src",
+      "passed": true,
+      "count": 83,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 83
+    },
+    {
+      "root": "tests",
+      "passed": true,
+      "count": 154,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 154
+    },
+    {
+      "root": "scripts",
+      "passed": true,
+      "count": 51,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 51
+    },
+    {
+      "root": "configs",
+      "passed": true,
+      "count": 3,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 3
+    },
+    {
+      "root": "docs",
+      "passed": true,
+      "count": 4989,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 4963
+    },
+    {
+      "root": "analysis",
+      "passed": true,
+      "count": 2,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 2
+    },
+    {
+      "root": "experiments/private_hint_lowering_1",
+      "passed": true,
+      "count": 2,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 2
+    },
+    {
+      "root": "experiments/mldsa_modmul_lowering_1",
+      "passed": true,
+      "count": 2,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 2
+    },
+    {
+      "root": "experiments/mldsa_butterfly_composition_1",
+      "passed": true,
+      "count": 2,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 2
+    },
+    {
+      "root": "experiments/mldsa_forward_ntt_stage_1",
+      "passed": true,
+      "count": 2,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 2
+    },
+    {
+      "root": "experiments/mldsa_full_forward_ntt_1",
+      "passed": true,
+      "count": 3,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 3
+    },
+    {
+      "root": "experiments/aurora_transcript_regression_1",
+      "passed": true,
+      "count": 4,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 4
+    },
+    {
+      "root": "experiments/aurora_native_transcript_pilot_1",
+      "passed": true,
+      "count": 4884,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 4884
+    },
+    {
+      "root": "experiments/kyc_milestone_1",
+      "passed": true,
+      "count": 15,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 15
+    },
+    {
+      "root": "experiments/aurora_masking_milestone_1",
+      "passed": true,
+      "count": 975,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 975
+    },
+    {
+      "root": "benchmarks",
+      "passed": true,
+      "count": 11,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 11
+    },
+    {
+      "root": "experiments/auth_relation_integration_1",
+      "passed": true,
+      "count": 43,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 43
+    },
+    {
+      "root": "experiments/compact_auth_representation_1",
+      "passed": true,
+      "count": 10,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 10
+    },
+    {
+      "root": "experiments/arithmetic_r1cs_feasibility_1",
+      "passed": true,
+      "count": 7,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 7
+    },
+    {
+      "root": "experiments/joint_hash_masking_decision_1",
+      "passed": true,
+      "count": 7,
+      "unexpected": [],
+      "missing": [],
+      "expected_count": 7
+    }
+  ],
+  "expected_union_count": 11223,
+  "expected_total_count": 11223,
+  "partition_overlap": 0,
+  "entry_ceiling_per_partition_unchanged": 10000
+}

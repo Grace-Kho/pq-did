@@ -1,0 +1,20 @@
+{
+  "failure": "quality",
+  "cause": "Two E501 diagnostics in unchanged evidence labels (101/103 characters).",
+  "change": "Adjacent Python literals preserve exact string values. No test semantic change, proved by AST equality in full audit; no test rerun.",
+  "evidence": {
+    "quality.log": "0d7eae96dc6e02b380b6eaf58b2b1b4639f974011dca2b6598265e54ef90ee9e",
+    "quality.json": "35919ea8bb462e04a90c2da3af533fda4103e386c91e57eca0461bd1eb92828f",
+    "test-before-lint-correction.txt": "58425917df768e2149eb3cc6adf6c3d7b896ae5c2bfa55a557b0506fcc872c9d",
+    "guard-before-lint-correction.txt": "d90569d34d50a92f9f43c39e17435d3b66d9d53f0553f58001bdd8d9458763a3"
+  },
+  "permitted_followups": [
+    "quality-final",
+    "format",
+    "prepare",
+    "full-audit"
+  ],
+  "additional_test_invocations": 0,
+  "automatic_retry": false,
+  "resource_limits_changed": false
+}

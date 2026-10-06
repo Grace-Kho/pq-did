@@ -1,0 +1,9 @@
+{
+  "authorisation": "One build-only correction, second and final native build attempt",
+  "failure": "GCC15 rejected private bigint_repr access in unused BLS12-381 source",
+  "change": "CMake ff source target narrowed to all pinned binary fields and common support. No library source/EXP2 semantics changed.",
+  "before_cmake_sha256": "24f4ae5a0fba323204099cb5e699d02c704f4dee877d8037511df1c583dbc2b8",
+  "after_cmake_sha256": "fb72c9eb78bb7103f8968214e3d116f1744d6a57b54c12186cdf2cc5a7e21c3f",
+  "preserved_failed_build": "build-1.json",
+  "native_invocations": 0
+}

@@ -1,0 +1,1977 @@
+{
+  "package": "R0-ENROL-PO17-1",
+  "created_utc": "2026-09-19T04:33:06Z",
+  "previous_manifest_sha256": "c159a15f05bf84e68c05b6115e2f373ce86a69371f3489f5b194bb8af05df159",
+  "previous_results": {
+    "package": "R0-SUCCINCT-PROOF-1",
+    "attempts": [
+      {
+        "attempt": 1,
+        "fixture": "enrol-alpha-42",
+        "outcome": "timed_out",
+        "last_observed_phase": "lift_start",
+        "phase_event_counts": {
+          "execution_complete": 1,
+          "segment_preflight_start": 10,
+          "segment_proof_start": 10,
+          "lift_start": 6,
+          "lift_complete": 5,
+          "join_start": 4,
+          "join_complete": 4
+        },
+        "phase_event_times": {
+          "execution_complete": {
+            "count": 1,
+            "first_seconds": 0.11307054199278355,
+            "last_seconds": 0.11307054199278355
+          },
+          "segment_preflight_start": {
+            "count": 10,
+            "first_seconds": 0.11332680998020805,
+            "last_seconds": 194.12588126197807
+          },
+          "segment_proof_start": {
+            "count": 10,
+            "first_seconds": 0.1345487009966746,
+            "last_seconds": 194.13212545297574
+          },
+          "lift_start": {
+            "count": 6,
+            "first_seconds": 204.7442771359929,
+            "last_seconds": 593.6848586519773
+          },
+          "lift_complete": {
+            "count": 5,
+            "first_seconds": 248.52959121199092,
+            "last_seconds": 550.1940534389869
+          },
+          "join_start": {
+            "count": 4,
+            "first_seconds": 291.74934893500176,
+            "last_seconds": 550.2043145769858
+          },
+          "join_complete": {
+            "count": 4,
+            "first_seconds": 335.7662672129809,
+            "last_seconds": 593.6719022629841
+          }
+        },
+        "execution_from_log": {
+          "exit_code": "Halted(0)",
+          "segments": 10,
+          "journal_bytes": 15380,
+          "journal_sha256": "aebac85219e0df161bda4e9d6661e4a7eccc619812eb45bb106ee46180cfa41c",
+          "journal_matches_expected": true,
+          "source": "retained SDK prove_session log; not a receipt or returned ProveInfo.stats"
+        },
+        "prior_execution_workload": {
+          "user_cycles": 196311,
+          "segment_count": 10,
+          "po2_histogram": {
+            "16": 9,
+            "15": 1
+          },
+          "padded_capacity": 622592,
+          "segment_proofs": 10,
+          "lifts": 10,
+          "joins": 9
+        },
+        "completed_segment_proofs": 10,
+        "complete_pipeline_wall_seconds": 600.1284312639909,
+        "SDK_complete_combined_seconds": null,
+        "actual_returned_session_stats": null,
+        "seal_bytes": null,
+        "receipt_journal_bytes": null,
+        "serialized_receipt_bytes": null,
+        "fresh_verification": null,
+        "tamper_verification": null,
+        "resources": {
+          "phase": "prove",
+          "slot": 1,
+          "mem_available_at_admission": 4947980288,
+          "name": "attempt1",
+          "command": [
+            "/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/target/release/pqdid-r0-host",
+            "prove",
+            "enrol-alpha-42",
+            "receipts/attempt1.bin"
+          ],
+          "limit_seconds": 600,
+          "memory_max": 2147483648,
+          "network": false,
+          "start_time_UTC": "2026-09-19T04:07:37Z",
+          "status": "failed",
+          "systemd_command": [
+            "systemd-run",
+            "--user",
+            "--wait",
+            "--pipe",
+            "--unit=pqdid-r0proof1-attempt1",
+            "--working-directory=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1",
+            "-p",
+            "MemoryMax=2147483648",
+            "-p",
+            "ReadOnlyPaths=/home/grace/projects/pq-did/experiments/r0_succinct_feasibility_1 /home/grace/projects/pq-did/experiments/r0_credvalid_cycle_1 /home/grace/projects/pq-did/experiments/r0_credvalid_exec24_1",
+            "-p",
+            "MemorySwapMax=0",
+            "-p",
+            "CPUQuota=200%",
+            "-p",
+            "TasksMax=128",
+            "-p",
+            "RuntimeMaxSec=600",
+            "-p",
+            "TimeoutStopSec=2",
+            "-p",
+            "KillMode=control-group",
+            "-p",
+            "OOMPolicy=kill",
+            "-p",
+            "NoNewPrivileges=yes",
+            "-p",
+            "PrivateDevices=yes",
+            "-p",
+            "UMask=0077",
+            "-p",
+            "LimitCORE=0",
+            "-p",
+            "LimitFSIZE=2147483648",
+            "-p",
+            "PrivateNetwork=yes",
+            "--setenv=CARGO_HOME=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/tooling/cargo",
+            "--setenv=RUSTUP_HOME=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/tooling/rustup",
+            "--setenv=RUSTC=/home/grace/projects/pq-did/experiments/r0_succinct_feasibility_1/tooling/guest-r0.1.97.0/bin/rustc",
+            "--setenv=RZUP_HOME=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/tooling/rzup",
+            "--setenv=RISC0_HOME=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/tooling/risc0",
+            "--setenv=XDG_CACHE_HOME=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/tooling/cache",
+            "--setenv=CARGO_TARGET_DIR=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/target",
+            "--setenv=TMPDIR=/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/tmp",
+            "--setenv=CARGO_BUILD_JOBS=1",
+            "--setenv=CMAKE_BUILD_PARALLEL_LEVEL=1",
+            "--setenv=MAKEFLAGS=-j1",
+            "--setenv=RAYON_NUM_THREADS=2",
+            "--setenv=OMP_NUM_THREADS=2",
+            "--setenv=RISC0_DEV_MODE=0",
+            "--setenv=RISC0_PROVER=local",
+            "--setenv=RISC0_EXECUTOR=local",
+            "--setenv=R0_PROOF_SLOT=1",
+            "--setenv=CUDA_VISIBLE_DEVICES=",
+            "--setenv=RUST_LOG=warn,risc0_zkvm::host::server::prove::prover_impl=debug,risc0_zkvm::host::recursion=debug",
+            "--setenv=PATH=/home/grace/projects/pq-did/experiments/r0_succinct_feasibility_1/tooling/guest-r0.1.97.0/bin:/usr/local/bin:/usr/bin:/bin",
+            "-p",
+            "UnsetEnvironment=BONSAI_API_KEY BONSAI_API_URL RISC0_CUDA RISC0_DEV_MODE_FORCE RISC0_PPROF_OUT",
+            "/usr/bin/python3",
+            "/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/scripts/service_entry.py",
+            "attempt1",
+            "2147483648",
+            "/home/grace/projects/pq-did/experiments/r0_succinct_proof_1/target/release/pqdid-r0-host",
+            "prove",
+            "enrol-alpha-42",
+            "receipts/attempt1.bin"
+          ],
+          "wall_seconds": 600.1284312639909,
+          "exit_code": 1,
+          "stop_reason": null,
+          "effective_cgroup": {
+            "memory.max": "2147483648",
+            "memory.swap.max": "0",
+            "cpu.max": "200000 100000",
+            "pids.max": "128"
+          },
+          "sampled_process_tree_RSS_peak": 1557245952,
+          "sampled_cgroup_charge_peak": 1521070080,
+          "sampled_swap_peak": 0,
+          "sampled_cgroup_kernel_peak": 1521070080,
+          "last_sampled_memory_events": {
+            "low": 0,
+            "high": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_kill": 0,
+            "oom_group_kill": 0
+          },
+          "sampled_temporary_bytes_peak": 436542,
+          "sampled_experiment_disk_peak": 6419555718,
+          "systemd_final_properties": "Result=timeout\nExecMainCode=2\nExecMainStatus=15\nControlGroup=\nMemoryPeak=1521070080\nMemorySwapPeak=0\nCPUUsageNSec=1187724723000\n",
+          "log": "evidence/attempt1.log",
+          "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~20 ms excluding metadata/disk polling can double-count shared pages and miss peaks; inspect cgroup memory.peak independently."
+        },
+        "timing_note": "Observed log boundaries; incomplete total costs stay unmeasured",
+        "observed_segment_phase_seconds": 204.63095032601268,
+        "observed_recursion_before_return_or_stop_seconds": 395.38415412799804,
+        "kernel_memory_peak_bytes": 1521070080,
+        "stopping_phase": "Sixth ordinary recursion lift, after all 10 segment proofs, five completed lifts and four completed joins",
+        "unfinished_recursion_operations": {
+          "lift_in_progress": 1,
+          "lifts_not_started": 4,
+          "joins_not_started": 5
+        }
+      }
+    ],
+    "proof_attempts_used": 1,
+    "proof_attempts_unused": 2,
+    "actual_succinct_receipts": [],
+    "setup_build_service_seconds": 160.1174990219879,
+    "complete_cold_subprocess_seconds": 760.9571075279382,
+    "cold_cost_definition": "Service sum; excludes authoring and reused installation",
+    "not_run": [
+      "CredValid and optional repeat: prerequisite enrolment failed"
+    ]
+  },
+  "previous_baseline": {
+    "package": "R0-SUCCINCT-PROOF-1",
+    "frozen_at_utc": "2026-09-19T03:58:54Z",
+    "original_manifest": {
+      "package": "R0-SUCCINCT-FEASIBILITY-1",
+      "source_revision_kind": "SHA-256 source/manifest inventory; workspace has no Git repository",
+      "source_revision": "cbd6c003b70589460c95213e23704f10bcd9ceda17460e573eb5380c518616a9",
+      "SDK_release_commit": "1cc70cf05033a79ebc90f07c679cb4bd1cd301b9",
+      "compiler": "rustc 1.97.0-dev (e638c6cfe 2026-07-15)\nbinary: rustc\ncommit-hash: e638c6cfea1eff5fbbb24a27e60538e3760d21b8\ncommit-date: 2026-07-15\nhost: x86_64-unknown-linux-gnu\nrelease: 1.97.0-dev\nLLVM version: 22.1.6",
+      "cargo": "cargo 1.97.0-dev (c980f4866 2026-06-30)",
+      "prover": "risc0-r0vm 3.0.6",
+      "cargo_risczero": "cargo-risczero 3.0.6",
+      "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+      "machine": "x86_64",
+      "rustc_target": "riscv32im-risc0-zkvm-elf",
+      "guest_RUSTFLAGS": "-C passes=lower-atomic -C link-arg=-Ttext=0x00200800 -C link-arg=--fatal-warnings -C panic=abort --cfg getrandom_backend=\"custom\"",
+      "profiles": {
+        "optimisation": 3,
+        "lto": "thin",
+        "overflow_checks": true,
+        "codegen_units": 1
+      },
+      "registry": [
+        {
+          "operation": "enrol",
+          "image": [
+            3771262054,
+            2934794436,
+            1441774498,
+            2869905324,
+            1497161362,
+            1391706344,
+            1955224464,
+            202812443
+          ],
+          "elf": "target/enrol.bin",
+          "elf_sha256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+          "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+          "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+        },
+        {
+          "operation": "cred-valid",
+          "image": [
+            3261973099,
+            2387775128,
+            3397734421,
+            2270497942,
+            482271879,
+            2162741275,
+            3976158240,
+            1905019297
+          ],
+          "elf": "target/cred_valid.bin",
+          "elf_sha256": "153cf7a5758a8097d3b192fd590301546c64fde7582dde2cfc2db3aa3261c3d3",
+          "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+          "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+        }
+      ],
+      "assets": {
+        "Cargo.toml": {
+          "SHA256": "b4f225a5eb98e2ee8cbf18c32ee1432766d323f8619acc12f5b8c8fdbfa7c0dc",
+          "bytes": 211
+        },
+        "Cargo.lock": {
+          "SHA256": "86e6f8da9f984bb1d8c4494d6841a79a89f7a370bd7ee703e6dbbb88b1d6ce37",
+          "bytes": 67846
+        },
+        "methods/guest/Cargo.lock": {
+          "SHA256": "6110756e650b8ffced46825ff3633eb4997e9def020fdef1435419ed0b1459f8",
+          "bytes": 36895
+        },
+        "rust-toolchain.toml": {
+          "SHA256": "ffec6b8c305f66f55fd84bf37537f74e4409bd56e232b0130d4a3a4fccd77d36",
+          "bytes": 30
+        },
+        "scripts/build.sh": {
+          "SHA256": "e41a129a555a9086bfc1a6cf12896166d48407cbb45db9109c0927a9f5e33cee",
+          "bytes": 771
+        },
+        "target/release/pqdid-r0-host": {
+          "SHA256": "795039c3e49e7e8d757dcddf464ecc56ef905406498e91eaedc858dfaca7426e",
+          "bytes": 5440720
+        },
+        "target/enrol.bin": {
+          "SHA256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+          "bytes": 306948
+        },
+        "target/cred_valid.bin": {
+          "SHA256": "153cf7a5758a8097d3b192fd590301546c64fde7582dde2cfc2db3aa3261c3d3",
+          "bytes": 306960
+        },
+        "tooling/sdk-3.0.6/r0vm": {
+          "SHA256": "751b9b188d341e8bec5e02060086b7b1dc3f7289e90f726c38589bb6735dd6d7",
+          "bytes": 108165720
+        },
+        "relation/src/mldsa.rs": {
+          "SHA256": "ed3b8beb935923a545a7b81c9f01765ed05b0a545a5ae1a5a50f9d7c61c9a225",
+          "bytes": 9947
+        },
+        "relation/src/lib.rs": {
+          "SHA256": "0d76b90442512512a07037f16d5a0386cd51c26ef37445f14a8cae15ac8ddfe2",
+          "bytes": 8240
+        },
+        "relation/Cargo.toml": {
+          "SHA256": "ed6910bd204fe48a5992f4fde0e8bb568004be3b22fd1e14d1c91e83bf0be916",
+          "bytes": 128
+        },
+        "host/src/main.rs": {
+          "SHA256": "b0a8b53ed005ab11a773ce33467ff2b9dca5d45418a04904385f605ea3d98832",
+          "bytes": 17817
+        },
+        "host/Cargo.toml": {
+          "SHA256": "669dc54c6c057e6b334053422132124b557f204a65f6431c46696535d70fe76b",
+          "bytes": 448
+        },
+        "methods/guest/src/lib.rs": {
+          "SHA256": "a25ce6c2ab26b8392490caa2aaec5d852e34c2ddaf6996213af0855e88df8487",
+          "bytes": 621
+        },
+        "methods/guest/src/bin/enrol.rs": {
+          "SHA256": "20a8f229ce536405686705e8d303145649c2cd6c30089012027bd0a6a3a979b3",
+          "bytes": 95
+        },
+        "methods/guest/src/bin/cred_valid.rs": {
+          "SHA256": "93f9b963e7ce6e0d9ece9fa3e21535f30caea298088d5cc6daeb892529f68d38",
+          "bytes": 100
+        },
+        "methods/guest/Cargo.toml": {
+          "SHA256": "8a997971a5e56b9186eab32f75d56893d74f00ae926635bb2a25469af603724f",
+          "bytes": 596
+        },
+        "target/guest/riscv32im-risc0-zkvm-elf/release/enrol": {
+          "SHA256": "9fbacd2f38ec5d9177cbf5dbd050261af1bd86a9cd1978407056afbab7f26449",
+          "bytes": 274524
+        },
+        "target/guest/riscv32im-risc0-zkvm-elf/release/cred_valid": {
+          "SHA256": "ed892a4aa0325dec09eb505f9cdb4e65e747bbc654c9b87c43fbdf28d577f0cb",
+          "bytes": 274536
+        },
+        "pinned_kernel_v1compat.elf": {
+          "SHA256": "7ffd942e4e8babd771094f549ad080cfea8ecb2c05c986e275c011f41979d921",
+          "bytes": 32392
+        }
+      },
+      "circuit_versions": {
+        "Cargo.lock": {
+          "risc0-binfmt": "3.0.5",
+          "risc0-build": "3.0.6",
+          "risc0-circuit-keccak": "4.0.6",
+          "risc0-circuit-recursion": "4.0.5",
+          "risc0-circuit-rv32im": "4.0.5",
+          "risc0-core": "3.0.2",
+          "risc0-groth16": "3.0.5",
+          "risc0-zkos-v1compat": "2.2.3",
+          "risc0-zkp": "3.0.5",
+          "risc0-zkvm": "3.0.6",
+          "risc0-zkvm-platform": "2.2.3"
+        },
+        "methods/guest/Cargo.lock": {
+          "risc0-binfmt": "3.0.5",
+          "risc0-circuit-keccak": "4.0.6",
+          "risc0-circuit-recursion": "4.0.5",
+          "risc0-circuit-rv32im": "4.0.5",
+          "risc0-core": "3.0.2",
+          "risc0-groth16": "3.0.5",
+          "risc0-zkos-v1compat": "2.2.3",
+          "risc0-zkp": "3.0.5",
+          "risc0-zkvm": "3.0.6",
+          "risc0-zkvm-platform": "2.2.3"
+        }
+      },
+      "proof_attempts": 0,
+      "setup_seconds": 231.0998520469875,
+      "build_seconds": 257.98127402899263,
+      "execute_seconds": 0.3101004050113261,
+      "proof_receipts": [],
+      "global_tool_homes_absent": {
+        "/home/grace/.cargo": true,
+        "/home/grace/.rustup": true,
+        "/home/grace/.risc0": true,
+        "/home/grace/.rzup": true
+      },
+      "temporary_storage_bytes_at_stop": 0
+    },
+    "corrected_registration": {
+      "label": "corrected-plain",
+      "image": "a7b77747d5ebff0e520d17fc188afef06dfb91690062cb96f6b3cff78e93ae94",
+      "program": "artifacts/corrected-plain.bin",
+      "program_sha256": "668dd886b66772593aea42e53d967d61f2e1a8c1e750add482acc0ed09963a09",
+      "elf": "artifacts/corrected-plain.elf",
+      "elf_sha256": "d5ef3682a8956ba03b710cdee14f02dbf967ec05e935c3d73fcc582aac19aaf2",
+      "features": "none",
+      "source_sha256": {
+        "Cargo.lock": "f75302dce44982f4b14a93a32533c2bfd5884743ec457d7f452a76a2855cb117",
+        "methods/guest/Cargo.lock": "eb0f82cd18d41519e335b53b97525fd78c57edfffb6be08e3d108afdfcceb950",
+        "methods/guest/Cargo.toml": "5daf738cf53bec5d9614e3ab98631e0e6227f9c251aa38404450d7c7132e04c8",
+        "methods/guest/src/lib.rs": "6df9aeaa7a1676a33b831861d35211bd5d37fa9c2be1f8ec3c801c62f9376d98",
+        "relation/Cargo.toml": "e5b877e87aa3d65b75d49e7fc0a4242beb652d15eba4a60549a1e1c4b58ddae6",
+        "relation/src/diagnostic.rs": "d5dc6b65b3a30d616ad33952fc4fb8e1c2bdfd93fc7086dd6701cd299493f230",
+        "relation/src/lib.rs": "7cf5300cd02db4cd95accabb2bbbbe3e34c803ba968930654b43ff9cedef229b",
+        "relation/src/mldsa.rs": "7d066f5d0eff97e363b8c8fbdd7bb31b0f85681cca32c9359dedacc6499a2731"
+      }
+    },
+    "exec24_baseline": {
+      "package": "R0-CREDVALID-EXEC24-1",
+      "source_package_identity": "fd5e917d158f2bf74e0825b0e5415f910e466d8cd8acd95ee5e4257da6144084",
+      "guest_registration": {
+        "label": "corrected-plain",
+        "image": "a7b77747d5ebff0e520d17fc188afef06dfb91690062cb96f6b3cff78e93ae94",
+        "program": "artifacts/corrected-plain.bin",
+        "program_sha256": "668dd886b66772593aea42e53d967d61f2e1a8c1e750add482acc0ed09963a09",
+        "elf": "artifacts/corrected-plain.elf",
+        "elf_sha256": "d5ef3682a8956ba03b710cdee14f02dbf967ec05e935c3d73fcc582aac19aaf2",
+        "features": "none",
+        "source_sha256": {
+          "Cargo.lock": "f75302dce44982f4b14a93a32533c2bfd5884743ec457d7f452a76a2855cb117",
+          "methods/guest/Cargo.lock": "eb0f82cd18d41519e335b53b97525fd78c57edfffb6be08e3d108afdfcceb950",
+          "methods/guest/Cargo.toml": "5daf738cf53bec5d9614e3ab98631e0e6227f9c251aa38404450d7c7132e04c8",
+          "methods/guest/src/lib.rs": "6df9aeaa7a1676a33b831861d35211bd5d37fa9c2be1f8ec3c801c62f9376d98",
+          "relation/Cargo.toml": "e5b877e87aa3d65b75d49e7fc0a4242beb652d15eba4a60549a1e1c4b58ddae6",
+          "relation/src/diagnostic.rs": "d5dc6b65b3a30d616ad33952fc4fb8e1c2bdfd93fc7086dd6701cd299493f230",
+          "relation/src/lib.rs": "7cf5300cd02db4cd95accabb2bbbbe3e34c803ba968930654b43ff9cedef229b",
+          "relation/src/mldsa.rs": "7d066f5d0eff97e363b8c8fbdd7bb31b0f85681cca32c9359dedacc6499a2731"
+        }
+      },
+      "guest_source_snapshot": "../r0_credvalid_cycle_1/snapshots/builds/corrected-plain",
+      "original_build": {
+        "package": "R0-SUCCINCT-FEASIBILITY-1",
+        "source_revision_kind": "SHA-256 source/manifest inventory; workspace has no Git repository",
+        "source_revision": "cbd6c003b70589460c95213e23704f10bcd9ceda17460e573eb5380c518616a9",
+        "SDK_release_commit": "1cc70cf05033a79ebc90f07c679cb4bd1cd301b9",
+        "compiler": "rustc 1.97.0-dev (e638c6cfe 2026-07-15)\nbinary: rustc\ncommit-hash: e638c6cfea1eff5fbbb24a27e60538e3760d21b8\ncommit-date: 2026-07-15\nhost: x86_64-unknown-linux-gnu\nrelease: 1.97.0-dev\nLLVM version: 22.1.6",
+        "cargo": "cargo 1.97.0-dev (c980f4866 2026-06-30)",
+        "prover": "risc0-r0vm 3.0.6",
+        "cargo_risczero": "cargo-risczero 3.0.6",
+        "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+        "machine": "x86_64",
+        "rustc_target": "riscv32im-risc0-zkvm-elf",
+        "guest_RUSTFLAGS": "-C passes=lower-atomic -C link-arg=-Ttext=0x00200800 -C link-arg=--fatal-warnings -C panic=abort --cfg getrandom_backend=\"custom\"",
+        "profiles": {
+          "optimisation": 3,
+          "lto": "thin",
+          "overflow_checks": true,
+          "codegen_units": 1
+        },
+        "registry": [
+          {
+            "operation": "enrol",
+            "image": [
+              3771262054,
+              2934794436,
+              1441774498,
+              2869905324,
+              1497161362,
+              1391706344,
+              1955224464,
+              202812443
+            ],
+            "elf": "target/enrol.bin",
+            "elf_sha256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+            "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+            "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+          },
+          {
+            "operation": "cred-valid",
+            "image": [
+              3261973099,
+              2387775128,
+              3397734421,
+              2270497942,
+              482271879,
+              2162741275,
+              3976158240,
+              1905019297
+            ],
+            "elf": "target/cred_valid.bin",
+            "elf_sha256": "153cf7a5758a8097d3b192fd590301546c64fde7582dde2cfc2db3aa3261c3d3",
+            "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+            "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+          }
+        ],
+        "assets": {
+          "Cargo.toml": {
+            "SHA256": "b4f225a5eb98e2ee8cbf18c32ee1432766d323f8619acc12f5b8c8fdbfa7c0dc",
+            "bytes": 211
+          },
+          "Cargo.lock": {
+            "SHA256": "86e6f8da9f984bb1d8c4494d6841a79a89f7a370bd7ee703e6dbbb88b1d6ce37",
+            "bytes": 67846
+          },
+          "methods/guest/Cargo.lock": {
+            "SHA256": "6110756e650b8ffced46825ff3633eb4997e9def020fdef1435419ed0b1459f8",
+            "bytes": 36895
+          },
+          "rust-toolchain.toml": {
+            "SHA256": "ffec6b8c305f66f55fd84bf37537f74e4409bd56e232b0130d4a3a4fccd77d36",
+            "bytes": 30
+          },
+          "scripts/build.sh": {
+            "SHA256": "e41a129a555a9086bfc1a6cf12896166d48407cbb45db9109c0927a9f5e33cee",
+            "bytes": 771
+          },
+          "target/release/pqdid-r0-host": {
+            "SHA256": "795039c3e49e7e8d757dcddf464ecc56ef905406498e91eaedc858dfaca7426e",
+            "bytes": 5440720
+          },
+          "target/enrol.bin": {
+            "SHA256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+            "bytes": 306948
+          },
+          "target/cred_valid.bin": {
+            "SHA256": "153cf7a5758a8097d3b192fd590301546c64fde7582dde2cfc2db3aa3261c3d3",
+            "bytes": 306960
+          },
+          "tooling/sdk-3.0.6/r0vm": {
+            "SHA256": "751b9b188d341e8bec5e02060086b7b1dc3f7289e90f726c38589bb6735dd6d7",
+            "bytes": 108165720
+          },
+          "relation/src/mldsa.rs": {
+            "SHA256": "ed3b8beb935923a545a7b81c9f01765ed05b0a545a5ae1a5a50f9d7c61c9a225",
+            "bytes": 9947
+          },
+          "relation/src/lib.rs": {
+            "SHA256": "0d76b90442512512a07037f16d5a0386cd51c26ef37445f14a8cae15ac8ddfe2",
+            "bytes": 8240
+          },
+          "relation/Cargo.toml": {
+            "SHA256": "ed6910bd204fe48a5992f4fde0e8bb568004be3b22fd1e14d1c91e83bf0be916",
+            "bytes": 128
+          },
+          "host/src/main.rs": {
+            "SHA256": "b0a8b53ed005ab11a773ce33467ff2b9dca5d45418a04904385f605ea3d98832",
+            "bytes": 17817
+          },
+          "host/Cargo.toml": {
+            "SHA256": "669dc54c6c057e6b334053422132124b557f204a65f6431c46696535d70fe76b",
+            "bytes": 448
+          },
+          "methods/guest/src/lib.rs": {
+            "SHA256": "a25ce6c2ab26b8392490caa2aaec5d852e34c2ddaf6996213af0855e88df8487",
+            "bytes": 621
+          },
+          "methods/guest/src/bin/enrol.rs": {
+            "SHA256": "20a8f229ce536405686705e8d303145649c2cd6c30089012027bd0a6a3a979b3",
+            "bytes": 95
+          },
+          "methods/guest/src/bin/cred_valid.rs": {
+            "SHA256": "93f9b963e7ce6e0d9ece9fa3e21535f30caea298088d5cc6daeb892529f68d38",
+            "bytes": 100
+          },
+          "methods/guest/Cargo.toml": {
+            "SHA256": "8a997971a5e56b9186eab32f75d56893d74f00ae926635bb2a25469af603724f",
+            "bytes": 596
+          },
+          "target/guest/riscv32im-risc0-zkvm-elf/release/enrol": {
+            "SHA256": "9fbacd2f38ec5d9177cbf5dbd050261af1bd86a9cd1978407056afbab7f26449",
+            "bytes": 274524
+          },
+          "target/guest/riscv32im-risc0-zkvm-elf/release/cred_valid": {
+            "SHA256": "ed892a4aa0325dec09eb505f9cdb4e65e747bbc654c9b87c43fbdf28d577f0cb",
+            "bytes": 274536
+          },
+          "pinned_kernel_v1compat.elf": {
+            "SHA256": "7ffd942e4e8babd771094f549ad080cfea8ecb2c05c986e275c011f41979d921",
+            "bytes": 32392
+          }
+        },
+        "circuit_versions": {
+          "Cargo.lock": {
+            "risc0-binfmt": "3.0.5",
+            "risc0-build": "3.0.6",
+            "risc0-circuit-keccak": "4.0.6",
+            "risc0-circuit-recursion": "4.0.5",
+            "risc0-circuit-rv32im": "4.0.5",
+            "risc0-core": "3.0.2",
+            "risc0-groth16": "3.0.5",
+            "risc0-zkos-v1compat": "2.2.3",
+            "risc0-zkp": "3.0.5",
+            "risc0-zkvm": "3.0.6",
+            "risc0-zkvm-platform": "2.2.3"
+          },
+          "methods/guest/Cargo.lock": {
+            "risc0-binfmt": "3.0.5",
+            "risc0-circuit-keccak": "4.0.6",
+            "risc0-circuit-recursion": "4.0.5",
+            "risc0-circuit-rv32im": "4.0.5",
+            "risc0-core": "3.0.2",
+            "risc0-groth16": "3.0.5",
+            "risc0-zkos-v1compat": "2.2.3",
+            "risc0-zkp": "3.0.5",
+            "risc0-zkvm": "3.0.6",
+            "risc0-zkvm-platform": "2.2.3"
+          }
+        },
+        "proof_attempts": 0,
+        "setup_seconds": 231.0998520469875,
+        "build_seconds": 257.98127402899263,
+        "execute_seconds": 0.3101004050113261,
+        "proof_receipts": [],
+        "global_tool_homes_absent": {
+          "/home/grace/.cargo": true,
+          "/home/grace/.rustup": true,
+          "/home/grace/.risc0": true,
+          "/home/grace/.rzup": true
+        },
+        "temporary_storage_bytes_at_stop": 0
+      },
+      "native_validation_reused": {
+        "tests": 6,
+        "comparisons": 35,
+        "code_and_inputs_unchanged": true
+      },
+      "fixture": {
+        "name": "cred-alpha-42",
+        "operation": "cred-valid",
+        "public": "fixtures/public/cred-alpha-42.bin",
+        "private": "fixtures/private/cred-alpha-42.bin",
+        "reference_expected": true,
+        "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+        "private_fixture_SHA256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+        "synthetic_only": true
+      },
+      "previous_corrected_result": {
+        "completed_segment_metadata": [
+          {
+            "index": 0,
+            "po2": 16,
+            "user_cycles": 11398
+          },
+          {
+            "index": 1,
+            "po2": 16,
+            "user_cycles": 20805
+          },
+          {
+            "index": 2,
+            "po2": 16,
+            "user_cycles": 29546
+          },
+          {
+            "index": 3,
+            "po2": 16,
+            "user_cycles": 29211
+          },
+          {
+            "index": 4,
+            "po2": 16,
+            "user_cycles": 27367
+          },
+          {
+            "index": 5,
+            "po2": 16,
+            "user_cycles": 14413
+          },
+          {
+            "index": 6,
+            "po2": 16,
+            "user_cycles": 25607
+          },
+          {
+            "index": 7,
+            "po2": 16,
+            "user_cycles": 26570
+          },
+          {
+            "index": 8,
+            "po2": 16,
+            "user_cycles": 25913
+          },
+          {
+            "index": 9,
+            "po2": 16,
+            "user_cycles": 26196
+          },
+          {
+            "index": 10,
+            "po2": 16,
+            "user_cycles": 26248
+          },
+          {
+            "index": 11,
+            "po2": 16,
+            "user_cycles": 25900
+          },
+          {
+            "index": 12,
+            "po2": 16,
+            "user_cycles": 18517
+          },
+          {
+            "index": 13,
+            "po2": 16,
+            "user_cycles": 31494
+          },
+          {
+            "index": 14,
+            "po2": 16,
+            "user_cycles": 23695
+          },
+          {
+            "index": 15,
+            "po2": 16,
+            "user_cycles": 31658
+          },
+          {
+            "index": 16,
+            "po2": 16,
+            "user_cycles": 23721
+          },
+          {
+            "index": 17,
+            "po2": 16,
+            "user_cycles": 29985
+          },
+          {
+            "index": 18,
+            "po2": 16,
+            "user_cycles": 23695
+          },
+          {
+            "index": 19,
+            "po2": 16,
+            "user_cycles": 29469
+          },
+          {
+            "index": 20,
+            "po2": 16,
+            "user_cycles": 24095
+          },
+          {
+            "index": 21,
+            "po2": 16,
+            "user_cycles": 29148
+          },
+          {
+            "index": 22,
+            "po2": 16,
+            "user_cycles": 13535
+          },
+          {
+            "index": 23,
+            "po2": 16,
+            "user_cycles": 14705
+          },
+          {
+            "index": 24,
+            "po2": 16,
+            "user_cycles": 16058
+          },
+          {
+            "index": 25,
+            "po2": 16,
+            "user_cycles": 15540
+          },
+          {
+            "index": 26,
+            "po2": 16,
+            "user_cycles": 19503
+          },
+          {
+            "index": 27,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 28,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 29,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 30,
+            "po2": 16,
+            "user_cycles": 17237
+          },
+          {
+            "index": 31,
+            "po2": 16,
+            "user_cycles": 24417
+          },
+          {
+            "index": 32,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 33,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 34,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 35,
+            "po2": 16,
+            "user_cycles": 16075
+          },
+          {
+            "index": 36,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 37,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 38,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 39,
+            "po2": 16,
+            "user_cycles": 24029
+          },
+          {
+            "index": 40,
+            "po2": 16,
+            "user_cycles": 19232
+          },
+          {
+            "index": 41,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 42,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 43,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 44,
+            "po2": 16,
+            "user_cycles": 17441
+          },
+          {
+            "index": 45,
+            "po2": 16,
+            "user_cycles": 24030
+          },
+          {
+            "index": 46,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 47,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 48,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 49,
+            "po2": 16,
+            "user_cycles": 15971
+          },
+          {
+            "index": 50,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 51,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 52,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 53,
+            "po2": 16,
+            "user_cycles": 24352
+          },
+          {
+            "index": 54,
+            "po2": 16,
+            "user_cycles": 19365
+          },
+          {
+            "index": 55,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 56,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 57,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 58,
+            "po2": 16,
+            "user_cycles": 17389
+          },
+          {
+            "index": 59,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 60,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 61,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 62,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 63,
+            "po2": 16,
+            "user_cycles": 16049
+          },
+          {
+            "index": 64,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 65,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 66,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 67,
+            "po2": 16,
+            "user_cycles": 24650
+          },
+          {
+            "index": 68,
+            "po2": 16,
+            "user_cycles": 19373
+          },
+          {
+            "index": 69,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 70,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 71,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 72,
+            "po2": 16,
+            "user_cycles": 17457
+          },
+          {
+            "index": 73,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 74,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 75,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 76,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 77,
+            "po2": 16,
+            "user_cycles": 16023
+          },
+          {
+            "index": 78,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 79,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 80,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 81,
+            "po2": 16,
+            "user_cycles": 24777
+          },
+          {
+            "index": 82,
+            "po2": 16,
+            "user_cycles": 19425
+          },
+          {
+            "index": 83,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 84,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 85,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 86,
+            "po2": 16,
+            "user_cycles": 17370
+          },
+          {
+            "index": 87,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 88,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 89,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 90,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 91,
+            "po2": 16,
+            "user_cycles": 16049
+          },
+          {
+            "index": 92,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 93,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 94,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 95,
+            "po2": 16,
+            "user_cycles": 24750
+          },
+          {
+            "index": 96,
+            "po2": 16,
+            "user_cycles": 19399
+          },
+          {
+            "index": 97,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 98,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 99,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 100,
+            "po2": 16,
+            "user_cycles": 17432
+          },
+          {
+            "index": 101,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 102,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 103,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 104,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 105,
+            "po2": 16,
+            "user_cycles": 15997
+          },
+          {
+            "index": 106,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 107,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 108,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 109,
+            "po2": 16,
+            "user_cycles": 24802
+          },
+          {
+            "index": 110,
+            "po2": 16,
+            "user_cycles": 19425
+          },
+          {
+            "index": 111,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 112,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 113,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 114,
+            "po2": 16,
+            "user_cycles": 17394
+          },
+          {
+            "index": 115,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 116,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 117,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 118,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 119,
+            "po2": 16,
+            "user_cycles": 16049
+          },
+          {
+            "index": 120,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 121,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 122,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 123,
+            "po2": 16,
+            "user_cycles": 24786
+          },
+          {
+            "index": 124,
+            "po2": 16,
+            "user_cycles": 19347
+          },
+          {
+            "index": 125,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 126,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 127,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 128,
+            "po2": 16,
+            "user_cycles": 17448
+          },
+          {
+            "index": 129,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 130,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 131,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 132,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 133,
+            "po2": 16,
+            "user_cycles": 16049
+          },
+          {
+            "index": 134,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 135,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 136,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 137,
+            "po2": 16,
+            "user_cycles": 24774
+          },
+          {
+            "index": 138,
+            "po2": 16,
+            "user_cycles": 19451
+          },
+          {
+            "index": 139,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 140,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 141,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 142,
+            "po2": 16,
+            "user_cycles": 17389
+          },
+          {
+            "index": 143,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 144,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 145,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 146,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 147,
+            "po2": 16,
+            "user_cycles": 16075
+          },
+          {
+            "index": 148,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 149,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 150,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 151,
+            "po2": 16,
+            "user_cycles": 24691
+          },
+          {
+            "index": 152,
+            "po2": 16,
+            "user_cycles": 19425
+          },
+          {
+            "index": 153,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 154,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 155,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 156,
+            "po2": 16,
+            "user_cycles": 17441
+          },
+          {
+            "index": 157,
+            "po2": 16,
+            "user_cycles": 23630
+          },
+          {
+            "index": 158,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 159,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 160,
+            "po2": 16,
+            "user_cycles": 26788
+          },
+          {
+            "index": 161,
+            "po2": 16,
+            "user_cycles": 16049
+          },
+          {
+            "index": 162,
+            "po2": 16,
+            "user_cycles": 25822
+          },
+          {
+            "index": 163,
+            "po2": 16,
+            "user_cycles": 26814
+          },
+          {
+            "index": 164,
+            "po2": 16,
+            "user_cycles": 27458
+          },
+          {
+            "index": 165,
+            "po2": 16,
+            "user_cycles": 24679
+          },
+          {
+            "index": 166,
+            "po2": 16,
+            "user_cycles": 22173
+          },
+          {
+            "index": 167,
+            "po2": 16,
+            "user_cycles": 29380
+          },
+          {
+            "index": 168,
+            "po2": 16,
+            "user_cycles": 29380
+          },
+          {
+            "index": 169,
+            "po2": 16,
+            "user_cycles": 29045
+          },
+          {
+            "index": 170,
+            "po2": 16,
+            "user_cycles": 29380
+          }
+        ],
+        "error": "Session limit exceeded: 4194304 >= 4194304",
+        "fixture": "cred-alpha-42",
+        "image": "a7b77747d5ebff0e520d17fc188afef06dfb91690062cb96f6b3cff78e93ae94",
+        "label": "corrected-plain",
+        "paging_cycles": "not separately exposed by Execute IPC",
+        "proof_attempts": 0,
+        "seconds": 0.24455283,
+        "segment_limit_po2": 16,
+        "session_limit_user_cycles": 4194304,
+        "slot": 6,
+        "status": "cycle_limit"
+      },
+      "manuscript_sha256": "d17ca0a20b319b88e959467cae92d91d619973f84384710ecbf960a3b850aeca"
+    },
+    "exec24_valid": {
+      "accepted": true,
+      "actual_public_journal_bytes": 5147,
+      "actual_public_journal_sha256": "f9fa7cce56b47699ff3ec198b2a2b1e2aa46b36f5a5f9d4d9839f4622d8579c2",
+      "completed_segment_user_cycles": 16313474,
+      "completed_segments": 582,
+      "config": {
+        "diagnostic_limit_bytes": 67108864,
+        "diagnostic_stop_bytes": 62914560,
+        "diagnostic_stream_bytes": 65536,
+        "disk_limit_bytes": 10737418240,
+        "disk_stop_bytes": 9663676416,
+        "execution_aggregate_seconds": 300,
+        "execution_wall_seconds": 60,
+        "max_executions": 2,
+        "memory_bytes": 2147483648,
+        "package": "R0-CREDVALID-EXEC24-1",
+        "proof_attempts": 0,
+        "retained_segment_records": 256,
+        "segment_limit_po2": 16,
+        "session_limit_user_cycles": 16777216,
+        "swap_bytes": 0,
+        "threads": 2,
+        "workers": 1
+      },
+      "counter_note": "SDK user cycles; separate paging/system/reserved counts unavailable through Execute IPC",
+      "elf_sha256": "d5ef3682a8956ba03b710cdee14f02dbf967ec05e935c3d73fcc582aac19aaf2",
+      "execution_seconds": 0.577716649,
+      "exit_code": "Halted(0)",
+      "expected_acceptance": true,
+      "expected_public_journal_bytes": 5147,
+      "expected_public_journal_sha256": "f9fa7cce56b47699ff3ec198b2a2b1e2aa46b36f5a5f9d4d9839f4622d8579c2",
+      "fixture": "cred-alpha-42",
+      "image": "a7b77747d5ebff0e520d17fc188afef06dfb91690062cb96f6b3cff78e93ae94",
+      "journal_matches_expected": true,
+      "margin_below_cap": 463742,
+      "other_segment_capacity": 21795710,
+      "package": "R0-CREDVALID-EXEC24-1",
+      "padded_segment_capacity": 38109184,
+      "program_sha256": "668dd886b66772593aea42e53d967d61f2e1a8c1e750add482acc0ed09963a09",
+      "proof_attempts": 0,
+      "receipt_generated": false,
+      "returned_session": true,
+      "segment_po2_histogram": {
+        "15": 1,
+        "16": 581
+      },
+      "slot": 1,
+      "status": "completed",
+      "user_cycles": 16313474
+    },
+    "fixtures": [
+      {
+        "name": "enrol-alpha-42",
+        "operation": "enrol",
+        "public": "fixtures/public/enrol-alpha-42.bin",
+        "private": "fixtures/private/enrol-alpha-42.bin",
+        "reference_expected": true,
+        "public_SHA256": "e6e505a433aed207ee2cfbb8e9cb72ab01b426739ed731e7b3e598f71cf939c8",
+        "private_fixture_SHA256": "e2bf2101764d9ed2728649b05512f6c97059f84a2d190b31677fd55435d15c7b",
+        "synthetic_only": true,
+        "public_sha256": "e6e505a433aed207ee2cfbb8e9cb72ab01b426739ed731e7b3e598f71cf939c8",
+        "private_sha256": "e2bf2101764d9ed2728649b05512f6c97059f84a2d190b31677fd55435d15c7b",
+        "expected_journal": "fixtures/public/enrol-alpha-42.journal.bin",
+        "journal_sha256": "aebac85219e0df161bda4e9d6661e4a7eccc619812eb45bb106ee46180cfa41c",
+        "journal_bytes": 15380
+      },
+      {
+        "name": "cred-alpha-42",
+        "operation": "cred-valid",
+        "public": "fixtures/public/cred-alpha-42.bin",
+        "private": "fixtures/private/cred-alpha-42.bin",
+        "reference_expected": true,
+        "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+        "private_fixture_SHA256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+        "synthetic_only": true,
+        "public_sha256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+        "private_sha256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+        "expected_journal": "fixtures/public/cred-alpha-42.journal.bin",
+        "journal_sha256": "f9fa7cce56b47699ff3ec198b2a2b1e2aa46b36f5a5f9d4d9839f4622d8579c2",
+        "journal_bytes": 5147
+      }
+    ],
+    "registry": [
+      {
+        "operation": "enrol",
+        "image": [
+          3771262054,
+          2934794436,
+          1441774498,
+          2869905324,
+          1497161362,
+          1391706344,
+          1955224464,
+          202812443
+        ],
+        "elf": "artifacts/enrol.bin",
+        "elf_sha256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+        "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+        "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+      },
+      {
+        "operation": "cred-valid",
+        "image": [
+          1199028135,
+          251653077,
+          4229369170,
+          4043213336,
+          1771174765,
+          2529911296,
+          4157584374,
+          2494469006
+        ],
+        "elf": "artifacts/cred_valid.bin",
+        "elf_sha256": "668dd886b66772593aea42e53d967d61f2e1a8c1e750add482acc0ed09963a09",
+        "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+        "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+      }
+    ],
+    "native_validation_reused": [
+      "six corrected native tests",
+      "35 native comparisons"
+    ],
+    "assets": {
+      "artifacts/cred_valid.elf": "d5ef3682a8956ba03b710cdee14f02dbf967ec05e935c3d73fcc582aac19aaf2",
+      "artifacts/enrol.elf": "9fbacd2f38ec5d9177cbf5dbd050261af1bd86a9cd1978407056afbab7f26449",
+      "artifacts/cred_valid.bin": "668dd886b66772593aea42e53d967d61f2e1a8c1e750add482acc0ed09963a09",
+      "artifacts/enrol.bin": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c"
+    }
+  },
+  "previous_config": {
+    "package": "R0-SUCCINCT-PROOF-1",
+    "sdk": "3.0.6",
+    "receipt_kind": "Succinct",
+    "hashfn": "poseidon2",
+    "dev_mode": false,
+    "prover": "local CPU",
+    "gpu": false,
+    "remote": false,
+    "groth16": false,
+    "max_proof_attempts": 3,
+    "sequence": [
+      "enrol-alpha-42",
+      "cred-alpha-42",
+      "cred-alpha-42 (optional identical repeat)"
+    ],
+    "session_limit_user_cycles": {
+      "enrol": 4194304,
+      "cred-valid": 16777216
+    },
+    "segment_limit_po2": 16,
+    "memory_bytes": 2147483648,
+    "swap_bytes": 0,
+    "workers": 1,
+    "threads": 2,
+    "proof_pipeline_wall_seconds": 600,
+    "execution_proving_aggregate_seconds": 1800,
+    "setup_build_aggregate_seconds": 1200,
+    "verify_seconds": 10,
+    "verify_memory_bytes": 1073741824,
+    "adversarial_seconds": 60,
+    "adversarial_max_cases": 100,
+    "check_aggregate_seconds": 300,
+    "disk_limit_bytes": 10737418240,
+    "disk_stop_bytes": 9663676416,
+    "output_limit_bytes": 268435456,
+    "output_stop_bytes": 251658240,
+    "diagnostic_limit_bytes": 67108864,
+    "diagnostic_stop_bytes": 62914560,
+    "diagnostic_stream_bytes": 65536,
+    "receipt_max_bytes": 10485760,
+    "presentation_max_bytes": 12582912,
+    "headroom_reserve_bytes": 2147483648,
+    "retry": false,
+    "guest_rebuild": false
+  },
+  "previous_host_fingerprints": [
+    {
+      "rustc": 3998333243054706977,
+      "features": "[]",
+      "declared_features": "[]",
+      "target": 18082660742810029427,
+      "profile": 2154336957897440151,
+      "path": 11325990362339547646,
+      "deps": [
+        [
+          65234016722529558,
+          "bincode",
+          false,
+          861597275375189730
+        ],
+        [
+          4076764238121008316,
+          "risc0_binfmt",
+          false,
+          14619334975888727336
+        ],
+        [
+          6213337740264322350,
+          "risc0_zkvm",
+          false,
+          8679810097376467708
+        ],
+        [
+          6311694053450212830,
+          "risc0_zkos_v1compat",
+          false,
+          9680753771460785697
+        ],
+        [
+          9857275760291862238,
+          "sha2",
+          false,
+          9284513895136652673
+        ],
+        [
+          10364619138950789809,
+          "anyhow",
+          false,
+          2765160367974706871
+        ],
+        [
+          12832915883349295919,
+          "serde_json",
+          false,
+          8059348468475114606
+        ],
+        [
+          13548984313718623784,
+          "serde",
+          false,
+          14233552065813955625
+        ],
+        [
+          14164674875177029701,
+          "pqdid_r0_relation",
+          false,
+          6047093584050312384
+        ]
+      ],
+      "local": [
+        {
+          "CheckDepInfo": {
+            "dep_info": "release/.fingerprint/pqdid-r0-host-cdc54429c0cee1c7/dep-bin-pqdid-r0-host",
+            "checksum": false
+          }
+        }
+      ],
+      "rustflags": [],
+      "config": 9396254390672932401,
+      "compile_kind": 0
+    }
+  ],
+  "fixture": {
+    "name": "enrol-alpha-42",
+    "operation": "enrol",
+    "public": "fixtures/public/enrol-alpha-42.bin",
+    "private": "fixtures/private/enrol-alpha-42.bin",
+    "reference_expected": true,
+    "public_SHA256": "e6e505a433aed207ee2cfbb8e9cb72ab01b426739ed731e7b3e598f71cf939c8",
+    "private_fixture_SHA256": "e2bf2101764d9ed2728649b05512f6c97059f84a2d190b31677fd55435d15c7b",
+    "synthetic_only": true,
+    "public_sha256": "e6e505a433aed207ee2cfbb8e9cb72ab01b426739ed731e7b3e598f71cf939c8",
+    "private_sha256": "e2bf2101764d9ed2728649b05512f6c97059f84a2d190b31677fd55435d15c7b",
+    "expected_journal": "fixtures/public/enrol-alpha-42.journal.bin",
+    "journal_sha256": "aebac85219e0df161bda4e9d6661e4a7eccc619812eb45bb106ee46180cfa41c",
+    "journal_bytes": 15380
+  },
+  "registry": [
+    {
+      "operation": "enrol",
+      "image": [
+        3771262054,
+        2934794436,
+        1441774498,
+        2869905324,
+        1497161362,
+        1391706344,
+        1955224464,
+        202812443
+      ],
+      "elf": "artifacts/enrol.bin",
+      "elf_sha256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+      "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+      "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+    }
+  ],
+  "recursion_artifacts": {
+    "prover_path": "/home/grace/projects/pq-did/experiments/r0_succinct_feasibility_1/tooling/sdk-3.0.6/r0vm",
+    "prover_sha256": "751b9b188d341e8bec5e02060086b7b1dc3f7289e90f726c38589bb6735dd6d7",
+    "source": "recursion 4.0.5 build.rs pin and include_bytes in src/prove/zkr.rs",
+    "archive_sha256": "744b999f0a35b3c86753311c7efb2a0054be21727095cf105af6ee7d3f4d8849",
+    "archive_bytes": 59768781,
+    "embedded_offset": 8945197,
+    "upstream_url": "https://risc0-artifacts.s3.us-west-2.amazonaws.com/zkr/744b999f0a35b3c86753311c7efb2a0054be21727095cf105af6ee7d3f4d8849.zip",
+    "downloaded_bytes": 0,
+    "preparation": "extracted exact embedded ZIP for provenance; runtime uses the unchanged built-in bytes",
+    "entries": [
+      {
+        "name": "identity.zkr",
+        "compressed_bytes": 1387760,
+        "uncompressed_bytes": 11942428
+      },
+      {
+        "name": "join.zkr",
+        "compressed_bytes": 2767696,
+        "uncompressed_bytes": 23884304
+      },
+      {
+        "name": "join_povw.zkr",
+        "compressed_bytes": 2776377,
+        "uncompressed_bytes": 24022304
+      },
+      {
+        "name": "join_unwrap_povw.zkr",
+        "compressed_bytes": 2773860,
+        "uncompressed_bytes": 23982560
+      },
+      {
+        "name": "lift_rv32im_v2_14.zkr",
+        "compressed_bytes": 1241133,
+        "uncompressed_bytes": 10313844
+      },
+      {
+        "name": "lift_rv32im_v2_15.zkr",
+        "compressed_bytes": 1348899,
+        "uncompressed_bytes": 11171192
+      },
+      {
+        "name": "lift_rv32im_v2_16.zkr",
+        "compressed_bytes": 1507966,
+        "uncompressed_bytes": 12343088
+      },
+      {
+        "name": "lift_rv32im_v2_17.zkr",
+        "compressed_bytes": 1480099,
+        "uncompressed_bytes": 12582012
+      },
+      {
+        "name": "lift_rv32im_v2_18.zkr",
+        "compressed_bytes": 1570417,
+        "uncompressed_bytes": 13383240
+      },
+      {
+        "name": "lift_rv32im_v2_19.zkr",
+        "compressed_bytes": 1689106,
+        "uncompressed_bytes": 14341880
+      },
+      {
+        "name": "lift_rv32im_v2_20.zkr",
+        "compressed_bytes": 1856035,
+        "uncompressed_bytes": 15615068
+      },
+      {
+        "name": "lift_rv32im_v2_21.zkr",
+        "compressed_bytes": 1836738,
+        "uncompressed_bytes": 15955008
+      },
+      {
+        "name": "lift_rv32im_v2_22.zkr",
+        "compressed_bytes": 1940890,
+        "uncompressed_bytes": 16857436
+      },
+      {
+        "name": "lift_rv32im_v2_23.zkr",
+        "compressed_bytes": 2067078,
+        "uncompressed_bytes": 17917460
+      },
+      {
+        "name": "lift_rv32im_v2_24.zkr",
+        "compressed_bytes": 2244572,
+        "uncompressed_bytes": 19291664
+      },
+      {
+        "name": "lift_rv32im_v2_povw_14.zkr",
+        "compressed_bytes": 1243825,
+        "uncompressed_bytes": 10354324
+      },
+      {
+        "name": "lift_rv32im_v2_povw_15.zkr",
+        "compressed_bytes": 1351463,
+        "uncompressed_bytes": 11211672
+      },
+      {
+        "name": "lift_rv32im_v2_povw_16.zkr",
+        "compressed_bytes": 1510364,
+        "uncompressed_bytes": 12383568
+      },
+      {
+        "name": "lift_rv32im_v2_povw_17.zkr",
+        "compressed_bytes": 1482840,
+        "uncompressed_bytes": 12622492
+      },
+      {
+        "name": "lift_rv32im_v2_povw_18.zkr",
+        "compressed_bytes": 1573045,
+        "uncompressed_bytes": 13423720
+      },
+      {
+        "name": "lift_rv32im_v2_povw_19.zkr",
+        "compressed_bytes": 1691709,
+        "uncompressed_bytes": 14382360
+      },
+      {
+        "name": "lift_rv32im_v2_povw_20.zkr",
+        "compressed_bytes": 1858763,
+        "uncompressed_bytes": 15655548
+      },
+      {
+        "name": "lift_rv32im_v2_povw_21.zkr",
+        "compressed_bytes": 1839460,
+        "uncompressed_bytes": 15995488
+      },
+      {
+        "name": "lift_rv32im_v2_povw_22.zkr",
+        "compressed_bytes": 1943628,
+        "uncompressed_bytes": 16897916
+      },
+      {
+        "name": "lift_rv32im_v2_povw_23.zkr",
+        "compressed_bytes": 2069693,
+        "uncompressed_bytes": 17957940
+      },
+      {
+        "name": "lift_rv32im_v2_povw_24.zkr",
+        "compressed_bytes": 2247162,
+        "uncompressed_bytes": 19332144
+      },
+      {
+        "name": "resolve.zkr",
+        "compressed_bytes": 2767983,
+        "uncompressed_bytes": 23889456
+      },
+      {
+        "name": "resolve_povw.zkr",
+        "compressed_bytes": 2771033,
+        "uncompressed_bytes": 23950452
+      },
+      {
+        "name": "resolve_unwrap_povw.zkr",
+        "compressed_bytes": 2770263,
+        "uncompressed_bytes": 23936468
+      },
+      {
+        "name": "test_recursion_circuit.zkr",
+        "compressed_bytes": 1872,
+        "uncompressed_bytes": 19412
+      },
+      {
+        "name": "union.zkr",
+        "compressed_bytes": 2762299,
+        "uncompressed_bytes": 23802976
+      },
+      {
+        "name": "unwrap_povw.zkr",
+        "compressed_bytes": 1390959,
+        "uncompressed_bytes": 11989532
+      }
+    ],
+    "cuda_driver_string_present": false,
+    "cpu_hal_string_present": true
+  }
+}

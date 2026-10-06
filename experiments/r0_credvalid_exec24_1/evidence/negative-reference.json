@@ -1,0 +1,10 @@
+{
+  "fixture": "cred-rid-changed",
+  "expected_acceptance": false,
+  "structurally_valid": true,
+  "mutation": "canonical revocation identifier changed; original signature retained",
+  "cryptographic_verifier_called": true,
+  "bounded_verifier_calls": 1,
+  "native_reference": "unchanged pqdid.credentials.cred_valid and bounded_verify_mldsa65",
+  "expected_successful_journal": null
+}

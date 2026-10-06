@@ -1,0 +1,52 @@
+{
+  "individual_outcomes": [
+    {
+      "invocation_id": "ARF1-0001",
+      "case_id": "Q-01",
+      "work_event_reservation": 50000000,
+      "ordinal": 1,
+      "cumulative_invocations": 972,
+      "status": "incomplete",
+      "work_events_charged_upper_bound": 50000000
+    },
+    {
+      "invocation_id": "ARF1-0002",
+      "case_id": "Q-01-R1",
+      "work_event_reservation": 50000000,
+      "ordinal": 2,
+      "cumulative_invocations": 973,
+      "status": "pass",
+      "work_events": 0
+    }
+  ],
+  "completed_calculations": 1,
+  "incomplete_reporting_attempts": 1,
+  "historical_tests_reused": true,
+  "new_arithmetic_or_hash_generation": false,
+  "new_native_executions": 0,
+  "new_builds": 0,
+  "all_prior_full_relation_checks_unrun": [
+    "M-01",
+    "M-02",
+    "M-03",
+    "J-01",
+    "J-02",
+    "J-03",
+    "J-04",
+    "J-05",
+    "J-06",
+    "J-07",
+    "J-08",
+    "J-09",
+    "J-10",
+    "J-11",
+    "J-12",
+    "J-13",
+    "J-14",
+    "J-15",
+    "J-16",
+    "Q-02",
+    "Q-03"
+  ],
+  "benchmark_measurements_unchanged": 276
+}

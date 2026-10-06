@@ -1,0 +1,10 @@
+[
+  {
+    "name": "game-interface-classification-and-documentation-consistency",
+    "passed": true,
+    "games": 6,
+    "transitions": 7,
+    "open_obligations": 5,
+    "mathematical_proof_or_numeric_validation": false
+  }
+]

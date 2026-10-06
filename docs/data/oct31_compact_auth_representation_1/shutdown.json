@@ -1,0 +1,172 @@
+{
+  "passed": true,
+  "before": {
+    "pqdid-compact-auth-1-preflight.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-whole-workload.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-source-quality.service": {
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-source-quality-2.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-affine-fixtures.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-native-fixtures.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-source-quality-final.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-prepare.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-full-audit.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-final-readback.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    }
+  },
+  "slice_before": {
+    "LoadState": "loaded",
+    "ActiveState": "active",
+    "SubState": "active",
+    "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-compact.slice/pqdid-compact-auth.slice/pqdid-compact-auth-1.slice"
+  },
+  "after": {
+    "pqdid-compact-auth-1-preflight.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-whole-workload.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-source-quality.service": {
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-source-quality-2.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-affine-fixtures.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-native-fixtures.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-source-quality-final.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-prepare.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-full-audit.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1-final-readback.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-compact-auth-1.slice": {
+      "LoadState": "loaded",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    }
+  },
+  "cgroups": {
+    "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-compact.slice/pqdid-compact-auth.slice/pqdid-compact-auth-1.slice": {
+      "absent_after_successful_stop": true
+    }
+  },
+  "manager_cgroup": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service",
+  "no_live_workload": true,
+  "retained_failed_unit_states": [
+    "pqdid-compact-auth-1-source-quality.service"
+  ],
+  "resource_properties_reverted": true,
+  "scope": "only current compact milestone user units/slice; unrelated services and isolation untouched",
+  "seconds": 0.182492769905366
+}

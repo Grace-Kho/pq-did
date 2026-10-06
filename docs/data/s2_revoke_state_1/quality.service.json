@@ -1,0 +1,36 @@
+{
+  "command": [
+    ".venv/bin/ruff",
+    "check",
+    "--no-cache",
+    "src/pqdid/revocation_state.py",
+    "tests/unit/revocation_state_cases.py",
+    "tests/unit/test_revocation_state.py",
+    "/home/grace/projects/pq-did/docs/data/s2_revoke_state_1/run_checks.py",
+    "/home/grace/projects/pq-did/docs/data/s2_revoke_state_1/audit.py"
+  ],
+  "before": {
+    "memory.max": "268435456",
+    "memory.swap.max": "0",
+    "memory.peak": "7221248",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "available": 4855345152,
+  "allowed_cpus": [
+    0,
+    1
+  ],
+  "network": "private-no-routes",
+  "after": {
+    "memory.max": "268435456",
+    "memory.swap.max": "0",
+    "memory.peak": "10993664",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "seconds": 0.020544408995192498,
+  "exit_code": 0
+}

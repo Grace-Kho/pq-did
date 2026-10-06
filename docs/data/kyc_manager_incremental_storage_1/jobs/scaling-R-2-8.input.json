@@ -1,0 +1,27 @@
+{
+  "name": "scaling-R-2-8",
+  "phase": "python",
+  "argv": [
+    "/home/grace/projects/pq-did/.venv/bin/python",
+    "-I",
+    "-B",
+    "/home/grace/projects/pq-did/experiments/kyc_manager_incremental_storage_1/dispatch.py",
+    "measure",
+    "R-2-8"
+  ],
+  "limit_seconds": 150,
+  "child_seconds": 149,
+  "status": "launched",
+  "unit": "pqdid-kyc-manager-1-scaling-R-2-8",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 616988,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 31863090,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4007800832,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

@@ -1,0 +1,321 @@
+{
+  "package": "KYC-ISSUER-INCREMENTAL-STORAGE-1",
+  "cases": [
+    {
+      "id": "S-01",
+      "description": "sealed v1 four-record aggregate rejection",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-02",
+      "description": "sealed failure copy migrates and accepts bounded fourth record",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-03",
+      "description": "empty migration",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-04",
+      "description": "simulated migration before commit",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-05",
+      "description": "simulated lost migration response",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-06",
+      "description": "actual migration exit before commit",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-07",
+      "description": "actual migration exit after commit",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-08",
+      "description": "stale migration plan",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-09",
+      "description": "repeat recovery without mutation",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-10",
+      "description": "v1 writer rejected after migration",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-11",
+      "description": "fencing rejects old writer",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-12",
+      "description": "simulated commit failure before commit",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-13",
+      "description": "simulated lost commit response",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-14",
+      "description": "actual process exit before commit",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-15",
+      "description": "actual process exit after commit",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-16",
+      "description": "prepared result fenced at commit",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-17",
+      "description": "competing prepared writers",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-18",
+      "description": "tampered auxiliary prepared plan",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-19",
+      "description": "missing session",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-20",
+      "description": "duplicate primary key",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-21",
+      "description": "malformed row",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-22",
+      "description": "missing event",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-23",
+      "description": "inconsistent event root",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-24",
+      "description": "inconsistent head",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-25",
+      "description": "missing legacy head",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-26",
+      "description": "duplicate nonce",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-27",
+      "description": "bounded page coverage",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-28",
+      "description": "head change between pages",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-29",
+      "description": "five sessions exceed old aggregate limit",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-30",
+      "description": "invalid phase and removal",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-31",
+      "description": "stale ticket and wrong instance",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-32",
+      "description": "oversized record unchanged cap",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "I-01",
+      "description": "real populated migration exact recipient redelivery without signing",
+      "max_seconds": 30,
+      "admitted": true
+    },
+    {
+      "id": "I-02",
+      "description": "verifier A acceptance and replay",
+      "max_seconds": 30,
+      "admitted": true
+    },
+    {
+      "id": "I-03",
+      "description": "independent verifier B acceptance and replay",
+      "max_seconds": 30,
+      "admitted": true
+    },
+    {
+      "id": "I-04",
+      "description": "failed certification commit blocks release",
+      "max_seconds": 30,
+      "admitted": true
+    },
+    {
+      "id": "I-05",
+      "description": "committed certification lost response exact redelivery",
+      "max_seconds": 30,
+      "admitted": true
+    },
+    {
+      "id": "I-06",
+      "description": "signing failure preserves reservation and consumes nonce",
+      "max_seconds": 30,
+      "admitted": true
+    },
+    {
+      "id": "I-07",
+      "description": "fencing after real signature blocks certification",
+      "max_seconds": 30,
+      "admitted": true
+    },
+    {
+      "id": "I-08",
+      "description": "old certified nonce cannot certify again",
+      "max_seconds": 30,
+      "admitted": true
+    },
+    {
+      "id": "R-1-4",
+      "description": "Affected regression",
+      "max_seconds": 90,
+      "admitted": true,
+      "reason": "Admitted at unchanged caps; stop and retain unexpected failures"
+    },
+    {
+      "id": "R-1-8",
+      "description": "Previously unrun scaling case",
+      "max_seconds": 90,
+      "admitted": false,
+      "reason": "Manager history checkpoint lower bound 89,296 > 65,536 bytes"
+    },
+    {
+      "id": "R-2-1",
+      "description": "Previously unrun scaling case",
+      "max_seconds": 90,
+      "admitted": true,
+      "reason": "Admitted at unchanged caps; stop and retain unexpected failures"
+    },
+    {
+      "id": "R-2-4",
+      "description": "Previously unrun scaling case",
+      "max_seconds": 90,
+      "admitted": true,
+      "reason": "Admitted at unchanged caps; stop and retain unexpected failures"
+    },
+    {
+      "id": "R-2-8",
+      "description": "Previously unrun scaling case",
+      "max_seconds": 90,
+      "admitted": false,
+      "reason": "Manager history checkpoint lower bound 89,296 > 65,536 bytes"
+    },
+    {
+      "id": "S-33",
+      "description": "Bounded authenticated event history pages with exact coverage",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-34",
+      "description": "Duplicate permanently reserved identifier rejected",
+      "max_seconds": 15,
+      "admitted": true
+    },
+    {
+      "id": "S-35",
+      "description": "Unexpected stored schema rejected",
+      "max_seconds": 15,
+      "admitted": true
+    }
+  ],
+  "planned_admitted_invocations": 46,
+  "conditional_unrun": 2,
+  "unused_invocations_at_open": 101,
+  "targeted_corrections": "Explicit ledger entry before a justified rerun; no automatic retries; total <=101",
+  "estimated_execution_seconds": 600,
+  "completion_reserve_seconds": 300,
+  "estimated_evidence_bytes": 1800000,
+  "ownership": {
+    "isolated_code": "experiments/kyc_issuer_incremental_storage_1",
+    "evidence": "docs/data/kyc_issuer_incremental_storage_1",
+    "append_only": [
+      "docs/status.md",
+      "docs/traceability.md",
+      "docs/spec_issues.md",
+      "docs/kyc_testbed_completion.md"
+    ],
+    "report": "docs/kyc_issuer_incremental_storage.md"
+  },
+  "storage_contract": "v2 per-session PQL1 plus digest/event/head in one SQLite transaction; 64 sessions; 512 new events; local page <=4; no wire cap change; externally retained migration/prepared tickets",
+  "migration_scope": "Only sealed failure copy and registered synthetic stores; no v1 rewriting",
+  "preservation": "One inherited complete 10,901-comparison audit plus final inventory/readback at end",
+  "manager_boundary": "No separate-store ACID claim; manager reservation permanent before issuer certify; manager checkpoint format unchanged",
+  "plan_addendum": "Three remaining storage API boundary checks before final validation; unchanged 101-invocation allocation; no old regression reruns."
+}

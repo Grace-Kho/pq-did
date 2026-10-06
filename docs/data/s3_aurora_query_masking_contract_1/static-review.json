@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "commands": [
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "check",
+      "--select",
+      "I",
+      "--fix",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_query_masking_contract_1/run.py",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_query_masking_contract_1/checks.py"
+    ],
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "format",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_query_masking_contract_1/run.py",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_query_masking_contract_1/checks.py"
+    ],
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "check",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_query_masking_contract_1/run.py",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_query_masking_contract_1/checks.py"
+    ],
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "format",
+      "--check",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_query_masking_contract_1/run.py",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_query_masking_contract_1/checks.py"
+    ]
+  ],
+  "native_evidence_reused": true,
+  "new_functional_invocations": 0,
+  "builds": 0,
+  "cumulative_invocations_unchanged": 448,
+  "native_continuation_closed": true,
+  "unused_evidence_reservation_released_bytes": 2320000,
+  "consumption_refunded": 0,
+  "output_admission_passed": true
+}

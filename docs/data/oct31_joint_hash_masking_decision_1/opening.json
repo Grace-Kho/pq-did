@@ -1,0 +1,55 @@
+{
+  "prior_closure": "docs/data/oct31_arithmetic_r1cs_feasibility_1/validation-closure.json",
+  "prior_closure_sha256": "3ed1359714b8b080541c50aef33a73ed38d7a9699ec50a9e5f8bab6d203431c9",
+  "prior_manifest_sha256": "c060c5c44e9c9248a99e53f3eab11aa01ad5df5d8cab2cd27395aec68389c8fb",
+  "resource_record": {
+    "package": "OCT31-ARITHMETIC-R1CS-FEASIBILITY-1",
+    "implementation_opening_seconds": 2995.1980095516446,
+    "package_charged_seconds": 156.69032485585194,
+    "guarded_job_seconds": 10.539532981812954,
+    "bookkeeping_seconds": 146.150791874039,
+    "implementation_aggregate_charged_seconds": 1435.4923153042073,
+    "implementation_remaining_seconds": 2838.5076846957927,
+    "analysis_remaining_seconds_unchanged": 80.91750274339225,
+    "isolation_allowance_unchanged": true,
+    "new_invocations": 2,
+    "completed_invocations": 1,
+    "incomplete_invocations": 1,
+    "cumulative_invocations": 973,
+    "remaining_invocations": 77,
+    "cumulative_builds": 10,
+    "remaining_builds": 3,
+    "new_builds": 0,
+    "cumulative_work_events": 77593603,
+    "new_work_events_charged_upper_bound": 50000000,
+    "new_actual_emitted_or_evaluated_events": 0,
+    "work_event_ceiling": 4294967296,
+    "phase_cgroup_memory_peaks_bytes": {
+      "tool": 27947008,
+      "python": 29126656,
+      "audit": 52256768
+    },
+    "failed_static_launch_systemd_peak_bytes": 10891264,
+    "metric": "cgroup-v2 worker memory.peak includes descendants and charged cache/kernel; failed static launch also retains systemd MemoryPeak",
+    "actual_resource_breaches": 0,
+    "arithmetic_or_hash_gadgets_generated": false,
+    "proofs": 0,
+    "zkvm_executions": 0,
+    "installations": 0,
+    "activation": false,
+    "completion_reserve_preserved_inside_balances": true,
+    "preserved_failures": [
+      "workload-decision: missing cases output directory, incomplete invocation",
+      "source-quality-final: misplaced coordinator option, no child launch"
+    ],
+    "storage": {
+      "new_evidence_bytes": 227485,
+      "new_artifact_bytes": 0,
+      "evidence_bytes": 26554061,
+      "artifact_bytes": 58966547,
+      "temporary_bytes": 0
+    },
+    "cumulative_evidence_remaining_bytes": 7000371,
+    "shared_evidence_remaining_bytes": 4978828
+  }
+}

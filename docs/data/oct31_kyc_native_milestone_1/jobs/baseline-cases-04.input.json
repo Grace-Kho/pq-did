@@ -1,0 +1,29 @@
+{
+  "name": "baseline-cases-04",
+  "phase": "python",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/kyc_milestone_1/tasks.py",
+    "cases",
+    "B",
+    "20",
+    "48"
+  ],
+  "limit_seconds": 120,
+  "child_seconds": 119,
+  "status": "launched",
+  "unit": "pqdid-oct31-m1-baseline-cases-04",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 900645,
+    "new_artifact_bytes": 18727125,
+    "evidence_bytes": 17565743,
+    "artifact_bytes": 46567040,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4280393728,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

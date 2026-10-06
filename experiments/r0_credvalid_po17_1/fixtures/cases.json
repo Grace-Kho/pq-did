@@ -1,0 +1,19 @@
+{
+  "cases": [
+    {
+      "name": "cred-alpha-42",
+      "operation": "cred-valid",
+      "public": "fixtures/public/cred-alpha-42.bin",
+      "private": "fixtures/private/cred-alpha-42.bin",
+      "reference_expected": true,
+      "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_fixture_SHA256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+      "synthetic_only": true,
+      "public_sha256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+      "private_sha256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+      "expected_journal": "fixtures/public/cred-alpha-42.journal.bin",
+      "journal_sha256": "f9fa7cce56b47699ff3ec198b2a2b1e2aa46b36f5a5f9d4d9839f4622d8579c2",
+      "journal_bytes": 5147
+    }
+  ]
+}

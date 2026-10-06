@@ -1,0 +1,9 @@
+{
+  "kind": "Additive preservation of four previously unsealed activation-session records; no original baseline regeneration",
+  "sha256": {
+    "docs/data/s2_authority_isolation_pilot_1/activation-v2-session/documentation-check.json": "cad784345aca65221ba48eb2a738c22c340ef97145aee8100bd2cb77a7745668",
+    "docs/data/s2_authority_isolation_pilot_1/activation-v2-session/report-prefixes.json": "52c375d08fecde95b7b4e9f06a1b9c7a779838b5afb878ccffcbbcb06d55146d",
+    "docs/data/s2_authority_isolation_pilot_1/activation-v2-session/seal-preflight.json": "b07c52b348383cbf99a8f9701ca2b53d6ff5786fa0784ef2c41d9ae18ce15682",
+    "docs/data/s2_authority_isolation_pilot_1/activation-v2-session/session.json": "db704934cd5a9ef1d59b4c208ffea2a36febb863c7dd621024bba825421f36b0"
+  }
+}

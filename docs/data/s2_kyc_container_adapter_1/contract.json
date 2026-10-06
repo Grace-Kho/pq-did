@@ -1,0 +1,43 @@
+{
+  "package": "S2-KYC-CONTAINER-ADAPTER-1",
+  "new_test_invocations": 24,
+  "existing_source_changed": [],
+  "new_source": [
+    "src/pqdid/containers.py",
+    "tests/unit/test_containers.py"
+  ],
+  "profile": "pqdid-application-container-1",
+  "fixture_profile": "pqdid-application-container-draft-1",
+  "normal_input_status": "unverified-input",
+  "synthetic_normal_admission": false,
+  "fixture_output": "ExamplePreview only; no proof object or verdict",
+  "supported": "instance, issuance-request, enrolment-challenge, issuance-delivery, private-holder, presentation-request, revocation-state, updates-request, updates-response",
+  "unsupported_normal": [
+    "presentation-submission",
+    "enrolment-submission",
+    "did-resolution",
+    "verification-result",
+    "W3C VC/VP"
+  ],
+  "boundaries": "No keys, roles, contexts, backend selection or service calls from metadata. Independent receiver/pp/context/query/nonce binding.",
+  "preallocation": "Byte length and lexical depth/collection/member limits precede JSON parsing. Input is already caller-allocated bytes; string decoding and bounded object allocations still occur. No stream reader or total-runtime memory guarantee.",
+  "counts": "5 positive cases plus19 individually parameterised negatives. No lifecycle execution, native ABI rerun, hidden mutation loops or retries.",
+  "preserved_budgets": {
+    "prior_tests": 198,
+    "amended_ceiling": 223,
+    "prior_seconds": 187.31629112013616,
+    "analysis_seconds": 270.1814811680233,
+    "isolation_seconds": 250.22
+  },
+  "open": [
+    "KYC-INT-001",
+    "KYC-INT-002",
+    "KYC-INT-003",
+    "KYC-INT-004",
+    "durable holder",
+    "production security",
+    "Delta_tail",
+    "complete proof knowledge/privacy"
+  ],
+  "next_package": "S3-AUTH-PROOF-FEASIBILITY-PLAN-1"
+}

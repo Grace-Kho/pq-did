@@ -1,0 +1,11 @@
+{
+  "failed_guard_sha256": "e9ec3d7a4d514a516579b47bc75762a29c673c796a537d9b3fbc19332f983298",
+  "failed_log_sha256": "b2d69119aa2db11eae7c1af2e6a0ba7ce7bd239406222a5721b4f7b1f81511bb",
+  "stop_sha256": "830a6e2884029ef0e583378497bbbe0c75d8e7f3bb44a7d0d5701e1a2166de7e",
+  "before_sha256": "1665b8e740c8e6c15a2149b4e5053d5fc9d08500d61509b1d397270cf36baeb6",
+  "after_sha256": "7defdb60f75f616596f2f547d5d76da466b67eb9b9e9def20b7b40e8c5c00166",
+  "ast_unchanged": true,
+  "runtime_string_unchanged": true,
+  "reason": "E501 only; authorised routine in-scope correction",
+  "functional_invocations": 0
+}

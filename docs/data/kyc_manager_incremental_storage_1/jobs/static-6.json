@@ -1,0 +1,52 @@
+{
+  "name": "static-6",
+  "phase": "tool",
+  "argv": [
+    "/home/grace/projects/pq-did/.venv/bin/python",
+    "-I",
+    "-B",
+    "/home/grace/projects/pq-did/experiments/kyc_manager_incremental_storage_1/tooling.py"
+  ],
+  "limit_seconds": 20,
+  "child_seconds": 19,
+  "status": "pass",
+  "unit": "pqdid-kyc-manager-1-static-6",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 1388408,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 32634510,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 1009254
+  },
+  "available_memory": 4058476544,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false,
+  "seconds": 0.4648978060577065,
+  "exit_code": 0,
+  "stop": null,
+  "worker": {
+    "before": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "10338304",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "after": {
+      "memory.max": "268435456",
+      "memory.swap.max": "0",
+      "memory.peak": "22347776",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "child_exit_code": 0,
+    "child_seconds": 0.08137668599374592,
+    "resource_breach": false,
+    "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+  },
+  "sampled_tree_rss_peak": 37875712,
+  "artifact_observed_peak_bytes": 58966547
+}

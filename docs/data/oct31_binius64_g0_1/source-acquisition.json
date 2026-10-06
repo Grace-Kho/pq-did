@@ -1,0 +1,47 @@
+{
+  "seconds": 1.5518484991043806,
+  "sources": [
+    {
+      "path": "crates--iop-prover--src--fri--encode.rs",
+      "upstream_path": "crates/iop-prover/src/fri/encode.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/iop-prover/src/fri/encode.rs",
+      "bytes": 8382,
+      "git_blob": "d9c3b0e266e44df960619e7e78db33d62e1b95c0",
+      "sha256": "00a4e651aacaf7b69b9b3a3f310666629c7fe1239af753c8d4b57069e1d00c61"
+    },
+    {
+      "path": "crates--iop-prover--src--fri--query.rs",
+      "upstream_path": "crates/iop-prover/src/fri/query.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/iop-prover/src/fri/query.rs",
+      "bytes": 7878,
+      "git_blob": "70f1dbde21eae32b5741518587869735b6e18221",
+      "sha256": "d2ad17008dfe1c468aebdb976bab599ec764c5c33ebea8040023f60f00392f19"
+    },
+    {
+      "path": "crates--spartan-verifier--src--wrapper--zk_wrapped_channel.rs",
+      "upstream_path": "crates/spartan-verifier/src/wrapper/zk_wrapped_channel.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/spartan-verifier/src/wrapper/zk_wrapped_channel.rs",
+      "bytes": 14718,
+      "git_blob": "989b1c176c6e733cbb02a22278b8cc90726d9419",
+      "sha256": "d07cbe1812ee69fcf5cd4573c9a11c1ef2e418034de565bcc4997f3e5f1744b1"
+    },
+    {
+      "path": "crates--math--src--reed_solomon.rs",
+      "upstream_path": "crates/math/src/reed_solomon.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/math/src/reed_solomon.rs",
+      "bytes": 10538,
+      "git_blob": "5229ebd90708abc3c52d0bd8b5c504306712a21d",
+      "sha256": "4145e4737b83ec1c84d31c1f39d9809d7d64d13de559c4898ea286ce48706552"
+    },
+    {
+      "path": "crates--iop--src--basefold--channel.rs",
+      "upstream_path": "crates/iop/src/basefold/channel.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/iop/src/basefold/channel.rs",
+      "bytes": 15712,
+      "git_blob": "72bdff1f9522fad14b6850c371b318b0503a262d",
+      "sha256": "7146dd7549899b12cee9bdd27526d1a3d49253795b3d2c6b3d7a06eb98ab176b"
+    }
+  ],
+  "code_executed": false,
+  "memory_limit": "256MiB RLIMIT_AS, one process; no cgroup peak measured"
+}

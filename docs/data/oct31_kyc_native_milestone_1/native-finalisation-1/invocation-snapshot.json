@@ -1,0 +1,296 @@
+{
+  "scope": "Post-case snapshot; live accounting remains in the shared E ledger",
+  "source": "docs/data/oct31_kyc_native_milestone_1/ledger.json",
+  "snapshot_sha256": "67270ca3acdb124b81779c5d935e6164e42a59ee458028035257456c40c2fbfa",
+  "prior_invocations": 378,
+  "completed_invocations": 419,
+  "new_invocations": [
+    {
+      "invocation_id": "M1-0379",
+      "case_id": "N-01",
+      "ordinal": 379,
+      "cumulative_invocations": 827,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0380",
+      "case_id": "N-02",
+      "ordinal": 380,
+      "cumulative_invocations": 828,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0381",
+      "case_id": "N-03",
+      "ordinal": 381,
+      "cumulative_invocations": 829,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0382",
+      "case_id": "N-04",
+      "ordinal": 382,
+      "cumulative_invocations": 830,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0383",
+      "case_id": "N-05",
+      "ordinal": 383,
+      "cumulative_invocations": 831,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0384",
+      "case_id": "N-06",
+      "ordinal": 384,
+      "cumulative_invocations": 832,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0385",
+      "case_id": "N-07",
+      "ordinal": 385,
+      "cumulative_invocations": 833,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0386",
+      "case_id": "N-08",
+      "ordinal": 386,
+      "cumulative_invocations": 834,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0387",
+      "case_id": "N-09",
+      "ordinal": 387,
+      "cumulative_invocations": 835,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0388",
+      "case_id": "N-10",
+      "ordinal": 388,
+      "cumulative_invocations": 836,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0389",
+      "case_id": "N-11",
+      "ordinal": 389,
+      "cumulative_invocations": 837,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0390",
+      "case_id": "N-12",
+      "ordinal": 390,
+      "cumulative_invocations": 838,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0391",
+      "case_id": "N-13",
+      "ordinal": 391,
+      "cumulative_invocations": 839,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0392",
+      "case_id": "N-14",
+      "ordinal": 392,
+      "cumulative_invocations": 840,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0393",
+      "case_id": "N-15",
+      "ordinal": 393,
+      "cumulative_invocations": 841,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0394",
+      "case_id": "N-16",
+      "ordinal": 394,
+      "cumulative_invocations": 842,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0395",
+      "case_id": "N-17",
+      "ordinal": 395,
+      "cumulative_invocations": 843,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0396",
+      "case_id": "N-18",
+      "ordinal": 396,
+      "cumulative_invocations": 844,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0397",
+      "case_id": "N-19",
+      "ordinal": 397,
+      "cumulative_invocations": 845,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0398",
+      "case_id": "N-20",
+      "ordinal": 398,
+      "cumulative_invocations": 846,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0399",
+      "case_id": "N-21",
+      "ordinal": 399,
+      "cumulative_invocations": 847,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0400",
+      "case_id": "N-22",
+      "ordinal": 400,
+      "cumulative_invocations": 848,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0401",
+      "case_id": "N-23",
+      "ordinal": 401,
+      "cumulative_invocations": 849,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0402",
+      "case_id": "N-24",
+      "ordinal": 402,
+      "cumulative_invocations": 850,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0403",
+      "case_id": "TR-01",
+      "ordinal": 403,
+      "cumulative_invocations": 851,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0404",
+      "case_id": "TR-02",
+      "ordinal": 404,
+      "cumulative_invocations": 852,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0405",
+      "case_id": "TR-03",
+      "ordinal": 405,
+      "cumulative_invocations": 853,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0406",
+      "case_id": "TR-04",
+      "ordinal": 406,
+      "cumulative_invocations": 854,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0407",
+      "case_id": "TR-05",
+      "ordinal": 407,
+      "cumulative_invocations": 855,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0408",
+      "case_id": "TR-06",
+      "ordinal": 408,
+      "cumulative_invocations": 856,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0409",
+      "case_id": "TR-07",
+      "ordinal": 409,
+      "cumulative_invocations": 857,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0410",
+      "case_id": "TR-08",
+      "ordinal": 410,
+      "cumulative_invocations": 858,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0411",
+      "case_id": "TR-09",
+      "ordinal": 411,
+      "cumulative_invocations": 859,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0412",
+      "case_id": "TR-10",
+      "ordinal": 412,
+      "cumulative_invocations": 860,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0413",
+      "case_id": "TR-11",
+      "ordinal": 413,
+      "cumulative_invocations": 861,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0414",
+      "case_id": "TR-12",
+      "ordinal": 414,
+      "cumulative_invocations": 862,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0415",
+      "case_id": "TR-13",
+      "ordinal": 415,
+      "cumulative_invocations": 863,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0416",
+      "case_id": "TR-14",
+      "ordinal": 416,
+      "cumulative_invocations": 864,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0417",
+      "case_id": "TR-15",
+      "ordinal": 417,
+      "cumulative_invocations": 865,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0418",
+      "case_id": "TR-16",
+      "ordinal": 418,
+      "cumulative_invocations": 866,
+      "status": "pass"
+    },
+    {
+      "invocation_id": "M1-0419",
+      "case_id": "C-09",
+      "ordinal": 419,
+      "cumulative_invocations": 867,
+      "status": "pass"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "UTC": "2026-09-19T03:45:19Z",
+  "filesystems": {
+    "/home/grace/projects/pq-did": {
+      "total_bytes": 1081101176832,
+      "available_bytes": 1016096063488
+    },
+    "/mnt/c": {
+      "total_bytes": 510554796032,
+      "available_bytes": 399117324288
+    }
+  }
+}

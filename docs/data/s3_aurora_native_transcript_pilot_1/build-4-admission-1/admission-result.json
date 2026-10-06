@@ -1,0 +1,191 @@
+{
+  "approval_inputs_verified": true,
+  "build_admitted": false,
+  "reason": "Existing configured build exceeds approved evidence reservation/headroom",
+  "classification_source": "docs/data/s3_aurora_native_transcript_pilot_1/resource-guard-repair-1/policy.py",
+  "classification_source_sha256": "fe66f1f3fb2d8d5bb434aa2db12d20893ebf2a257b8d4871fdca42c5d1efced2",
+  "runbook_sha256": "b5f87b733a8e5ab25187feafe2f409d1a5d5e0a1557522c1b83f93af33fc4255",
+  "request_sha256": "943bef8e8ca8a4f8c5cc96b18d650527bd3d91768ca8567199538d772bca2064",
+  "retained_build_evidence": [
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/.ninja_deps",
+      "bytes": 29552,
+      "sha256": "5d8183ccc2eaad73c9ab5bfc4de2841ed8eb3b1b7dd0ef7ff3b2d7e632f2428f",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/.ninja_lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/.ninja_log",
+      "bytes": 796,
+      "sha256": "eedf235123d8fc79e0325ebc0b4c72b419dec713bf72735dd4f5ee5c3a49d037",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeCache.txt",
+      "bytes": 18377,
+      "sha256": "06870060f352b6d279d378d1ba48ef07654124742864f8b12ecdbf297e734229",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CMakeCCompiler.cmake",
+      "bytes": 2964,
+      "sha256": "64f1690b76656aa75879677cd7073220913c7e248ac522445b16959ba186ab78",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake",
+      "bytes": 6639,
+      "sha256": "920cd5ff22679fb7812d239d52781a53b04f86100d499ba9c4b98cc5ad2546ad",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CMakeDetermineCompilerABI_C.bin",
+      "bytes": 16008,
+      "sha256": "c6ec47bb5780897f83030c91b1021d847bd78d9369a48bd9c85bd199a96358fb",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CMakeDetermineCompilerABI_CXX.bin",
+      "bytes": 16040,
+      "sha256": "7aad0854c05cc22f6a87cc4dd4c9ec4e191a436349fc8e3b2c7f279091f2b51f",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CMakeSystem.cmake",
+      "bytes": 466,
+      "sha256": "8f122adbf9bbe045f330399a4409313ec5d6756895a8cebeeaacd7a723e60ea0",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CompilerIdC/CMakeCCompilerId.c",
+      "bytes": 28668,
+      "sha256": "fdf6ba6324e3b29e4268e3ab04f9eb181809b98fe6a52f48fbd526b331e66e02",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CompilerIdC/a.out",
+      "bytes": 16080,
+      "sha256": "7a1142938e504e0bbbc03cf866984964b6b583384428b7b88b16c7da025e57a9",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+      "bytes": 29480,
+      "sha256": "15597e769f9705997844403bbbf0c2fa65eb5b46a8ad4e6db684547644239fae",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/4.2.3/CompilerIdCXX/a.out",
+      "bytes": 16088,
+      "sha256": "a761a1ebb40e916e08c764ec7d7de0be111271fce6b08d596c7e8e16b2baf0b6",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/CMakeConfigureLog.yaml",
+      "bytes": 83071,
+      "sha256": "efe543b3aa910ff991b957169868f1633bc081888ee521fb132905848e342568",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/InstallScripts.json",
+      "bytes": 507,
+      "sha256": "102f4f23e59a9c52654c76c9110750dc46f26abae0ffb37eae27842f08542e62",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/TargetDirectories.txt",
+      "bytes": 3398,
+      "sha256": "5a2cd00e8590a83e6d1eb0dc42aa13f30618b8518742948cf6335967d2cbb570",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/cmake.check_cache",
+      "bytes": 85,
+      "sha256": "a26189e394421da57f45706a07713c5720acd200a41711b0c0c590c3c63371c4",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/CMakeFiles/rules.ninja",
+      "bytes": 4238,
+      "sha256": "c545fa95afc797fe505d7389a6c77a6d23732cd7c4035cf799348bfeb35f4ce5",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/build.ninja",
+      "bytes": 64224,
+      "sha256": "6565d612839c5ded481f647e39555547b778f05daf698205d9ea22f7d0d20de8",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/cmake_install.cmake",
+      "bytes": 2618,
+      "sha256": "f718b238ab9bfb15b8b10b34111177118d71a41190c55e1ff6c6b04af724c9d4",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/libff-build/CTestTestfile.cmake",
+      "bytes": 479,
+      "sha256": "1a30423521386adebcd58237e85c8b575a217c14301a2c9824d9f2461eb02a55",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/libff-build/cmake_install.cmake",
+      "bytes": 1964,
+      "sha256": "572a3adefe1d45cd40ef689e854e0cddbbb65f4fafc7bcfbc8372be5c599068d",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/libff-build/libff/CTestTestfile.cmake",
+      "bytes": 474,
+      "sha256": "fcdbc87fcca69e3ae05334569f4ad2d7b3612b38acc6d1b7db35baa93d7d256a",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    },
+    {
+      "path": "experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/compatibility-v1/build/libff-build/libff/cmake_install.cmake",
+      "bytes": 2755,
+      "sha256": "0ac7952494939d369ce7c50c93d33f851faa2911534e0dd0782f95677247fa10",
+      "role": "evidence",
+      "per_file_ceiling": 1048576
+    }
+  ],
+  "retained_build_evidence_bytes": 344971,
+  "reservation": 200000,
+  "headroom": 267653,
+  "reservation_shortfall_before_completion": 144971,
+  "headroom_shortfall_before_completion": 77318,
+  "new_measurements": "Filesystem sizes/hashes of historical artifacts only",
+  "estimate_limit": "A fresh build may differ; no defensible fit established",
+  "no_new_artifact_directory": true,
+  "build_attempts_consumed_now": 0,
+  "builds_used": 3,
+  "build_ceiling": 4,
+  "new_native_invocations": 0
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "storage": {
+    "new_evidence_bytes": 729720,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 38347503,
+    "artifact_bytes": 77419639,
+    "temporary_bytes": 0
+  },
+  "source_checks": true,
+  "CPU_include_link_closure": "complete; compatibility awaits counted build",
+  "GPU_correspondence": "source-only; uncompiled/unrun",
+  "cases": 32,
+  "builds_remaining": 2
+}

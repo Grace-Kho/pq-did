@@ -1,0 +1,33 @@
+{
+  "command": [
+    "/usr/bin/systemctl",
+    "--no-pager",
+    "show",
+    "--all",
+    "--property=Id,LoadState,ActiveState,SubState,ControlGroup,MainPID,ControlPID,Job",
+    "pqiso-owner@m.service",
+    "pqiso-guard-provision.service",
+    "pqiso.slice"
+  ],
+  "exit_code": 0,
+  "stderr": "",
+  "service_not_found_properties": {
+    "Id": "pqiso-owner@m.service",
+    "LoadState": "not-found",
+    "ActiveState": "inactive",
+    "SubState": "dead",
+    "Job": "",
+    "MainPID": "0",
+    "ControlPID": "0",
+    "ControlGroup": ""
+  },
+  "implicit_slice_properties": {
+    "Id": "pqiso.slice",
+    "LoadState": "loaded",
+    "ActiveState": "inactive",
+    "SubState": "dead",
+    "Job": "",
+    "ControlGroup": ""
+  },
+  "kind": "read-only installed systemd 259 interface observation; no start/stop/install"
+}

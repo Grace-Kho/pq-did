@@ -1,0 +1,194 @@
+--- experiments/r0_credvalid_cycle_1/snapshots/component_before/relation/src/mldsa.rs	2026-09-19 02:59:33.692901992 +0800
++++ experiments/r0_credvalid_cycle_1/relation/src/mldsa.rs	2026-09-19 03:04:05.088875584 +0800
+@@ -31,13 +31,49 @@
+ }
+ // Shared by full CredValid and the isolated runtime-input component diagnostic.
+ fn matrix_poly(seed: &[u8], sampler_marker: u32) -> Result<Poly> {
+-    let bytes = shake(128, seed, 1026);
++    let mut h = Shake128::default();
++    h.update(seed);
++    let mut stream = MatrixXof::new(h.finalize_xof());
+     mark(sampler_marker);
+-    rej_ntt(&mut Stream {
+-        bytes: &bytes,
+-        consumed: 0,
+-        limit: 1026,
+-    })
++    rej_ntt(&mut stream)
++}
++// The sole experimental correction: demand-driven matrix XOF output. Rejection
++// still consumes exactly three bytes and cannot read beyond the 1026-byte budget.
++// Rate-sized fills avoid producing two unused SHAKE blocks in ordinary samples.
++trait Triples {
++    fn triple(&mut self) -> Result<&[u8]>;
++}
++struct MatrixXof<R> {
++    reader: R,
++    bytes: [u8; 1026],
++    generated: usize,
++    consumed: usize,
++}
++impl<R: XofReader> MatrixXof<R> {
++    fn new(reader: R) -> Self {
++        Self {
++            reader,
++            bytes: [0; 1026],
++            generated: 0,
++            consumed: 0,
++        }
++    }
++}
++impl<R: XofReader> Triples for MatrixXof<R> {
++    fn triple(&mut self) -> Result<&[u8]> {
++        let end = self.consumed.checked_add(3).ok_or("budget overflow")?;
++        if end > self.bytes.len() {
++            return Err("sampler exhausted");
++        }
++        if end > self.generated {
++            let next = (self.generated + 168).min(self.bytes.len());
++            self.reader.read(&mut self.bytes[self.generated..next]);
++            self.generated = next;
++        }
++        let start = self.consumed;
++        self.consumed = end;
++        Ok(&self.bytes[start..end])
++    }
+ }
+ #[cfg(feature = "components")]
+ pub fn component_matrix(input: &[u8]) -> Result<()> {
+@@ -61,6 +97,29 @@
+     consumed: usize,
+     limit: usize,
+ }
++#[cfg(feature = "components")]
++pub fn component_ntt(input: &[u8]) -> Result<()> {
++    let f = crate::record(input, b"r0-component-ntt", Some(2))?;
++    if f.iter().any(|b| b.len() != 2048) {
++        return Err("component input");
++    }
++    let mut values = [0; N];
++    for (v, raw) in values.iter_mut().zip(f[0].chunks_exact(8)) {
++        *v = i64::from_le_bytes(raw.try_into().unwrap());
++    }
++    mark(3010);
++    let z = zetas();
++    mark(3011);
++    let actual = ntt(&values, &z);
++    mark(3012);
++    for (a, expected) in actual.iter().zip(f[1].chunks_exact(8)) {
++        if *a != i64::from_le_bytes(expected.try_into().unwrap()) {
++            return Err("independent component comparison");
++        }
++    }
++    mark(3013);
++    Ok(())
++}
+ impl<'a> Stream<'a> {
+     fn take(&mut self, n: usize) -> Result<&'a [u8]> {
+         if self.consumed.checked_add(n).ok_or("budget overflow")? > self.limit {
+@@ -75,11 +134,16 @@
+         Ok(b)
+     }
+ }
+-fn rej_ntt(s: &mut Stream<'_>) -> Result<Poly> {
++impl Triples for Stream<'_> {
++    fn triple(&mut self) -> Result<&[u8]> {
++        self.take(3)
++    }
++}
++fn rej_ntt(s: &mut impl Triples) -> Result<Poly> {
+     let mut out = [0; N];
+     let mut i = 0;
+     while i < N {
+-        let b = s.take(3)?;
++        let b = s.triple()?;
+         let v = i64::from(b[0]) + (i64::from(b[1]) << 8) + ((i64::from(b[2]) & 127) << 16);
+         if v < Q {
+             out[i] = v;
+@@ -309,6 +373,86 @@
+ #[cfg(test)]
+ mod tests {
+     use super::*;
++    struct FixtureReader {
++        bytes: Vec<u8>,
++        read: usize,
++    }
++    impl XofReader for FixtureReader {
++        fn read(&mut self, out: &mut [u8]) {
++            let end = self.read + out.len();
++            out.copy_from_slice(&self.bytes[self.read..end]);
++            self.read = end;
++        }
++    }
++    #[test]
++    fn matrix_refill_boundaries_exact_cap_and_exhaustion() {
++        // Cross rate boundaries, exercise the final 18-byte fill, and consume
++        // rejected candidates up to the exact limit; never fetch a 1027th byte.
++        for rejected in [0, 1, 23, 24, 25, 79, 80, 81, 85, 86, 87, 342] {
++            let mut bytes = vec![255; rejected * 3];
++            bytes.resize(1026, 0);
++            let mut original = Stream {
++                bytes: &bytes,
++                consumed: 0,
++                limit: 1026,
++            };
++            let expected = rej_ntt(&mut original);
++            let mut lazy = MatrixXof::new(FixtureReader {
++                bytes: bytes.clone(),
++                read: 0,
++            });
++            assert_eq!(rej_ntt(&mut lazy), expected, "rejected={rejected}");
++            assert_eq!(lazy.consumed, original.consumed);
++            assert_eq!(lazy.reader.read, lazy.generated);
++            assert!(lazy.generated <= 1026 && lazy.generated >= lazy.consumed);
++            assert_eq!(
++                lazy.generated,
++                ((lazy.consumed + 167) / 168 * 168).min(1026)
++            );
++            if rejected > 86 {
++                assert_eq!(expected, Err("sampler exhausted"));
++            }
++            if rejected == 86 {
++                assert_eq!(lazy.consumed, 1026);
++            }
++            if rejected == 0 {
++                assert_eq!((lazy.consumed, lazy.generated), (768, 840));
++            }
++        }
++    }
++    #[test]
++    fn matrix_candidate_mask_and_q_boundary() {
++        let values: [u32; 6] = [0, 8380416, 8380417, 0x7fffff, 0x800001, 0xffffff];
++        let mut bytes = vec![0; 1026];
++        for (dst, value) in bytes.chunks_exact_mut(3).zip(values) {
++            dst.copy_from_slice(&value.to_le_bytes()[..3]);
++        }
++        let mut lazy = MatrixXof::new(FixtureReader { bytes, read: 0 });
++        let actual = rej_ntt(&mut lazy).unwrap();
++        assert_eq!(&actual[..4], &[0, Q - 1, 1, 0]);
++        assert_eq!(lazy.consumed, (256 + 3) * 3);
++    }
++    #[test]
++    fn matrix_shake_prefix_equivalence() {
++        // Runtime test seeds include all matrix coordinates for four distinct rho
++        // values. This checks the streaming byte schedule against the frozen
++        // eager SHAKE prefix path; independent full-relation comparisons follow.
++        for rho in [0, 1, 127, 255] {
++            for row in 0..K {
++                for column in 0..L {
++                    let mut seed = vec![rho; 32];
++                    seed.extend_from_slice(&[column as u8, row as u8]);
++                    let bytes = shake(128, &seed, 1026);
++                    let expected = rej_ntt(&mut Stream {
++                        bytes: &bytes,
++                        consumed: 0,
++                        limit: 1026,
++                    });
++                    assert_eq!(matrix_poly(&seed, 3001), expected);
++                }
++            }
++        }
++    }
+     #[test]
+     fn ntt_exact_cap_and_exhaustion() {
+         // 86 rejected triples, then 256 accepted triples: exactly 1026 bytes.

@@ -1,0 +1,19 @@
+{
+  "inspection": "online 2026-10-03, full PDF text accessible through browser; optional local download returned HTTP403, preserved in source job",
+  "versions": [
+    {
+      "url": "https://eprint.iacr.org/2022/1608.pdf",
+      "title": "Ligero: Lightweight Sublinear Arguments Without a Trusted Setup",
+      "pages": 47,
+      "locations": "4.6.1-4.6.3, 4.7, Lemma4.15, Theorem4.7, B.3-B.5, Section5",
+      "version_identity": "exact online response on inspection date; extended CCS2017 paper; no local PDF hash available"
+    },
+    {
+      "url": "https://eprint.iacr.org/2024/2010.pdf",
+      "title": "Anonymous Credentials from ECDSA",
+      "pages": 44,
+      "locations": "Theorem4, printed pp8-9",
+      "version_identity": "exact online response on inspection date; no local PDF hash available"
+    }
+  ]
+}

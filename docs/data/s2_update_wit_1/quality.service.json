@@ -1,0 +1,35 @@
+{
+  "command": [
+    ".venv/bin/ruff",
+    "check",
+    "--no-cache",
+    "src/pqdid/witness_updates.py",
+    "tests/unit/witness_update_cases.py",
+    "tests/unit/test_witness_updates.py",
+    "/home/grace/projects/pq-did/docs/data/s2_update_wit_1/run_checks.py"
+  ],
+  "before": {
+    "memory.max": "268435456",
+    "memory.swap.max": "0",
+    "memory.peak": "7245824",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "available": 4840181760,
+  "allowed_cpus": [
+    0,
+    1
+  ],
+  "network": "private-no-routes",
+  "after": {
+    "memory.max": "268435456",
+    "memory.swap.max": "0",
+    "memory.peak": "10719232",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "seconds": 0.020788836001884192,
+  "exit_code": 0
+}

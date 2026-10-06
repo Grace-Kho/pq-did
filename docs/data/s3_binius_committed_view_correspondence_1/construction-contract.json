@@ -1,0 +1,98 @@
+{
+  "package": "S3-BINIUS-COMMITTED-VIEW-CORRESPONDENCE-1",
+  "status": "proposed mathematical contract, not adopted or implemented",
+  "field": "GF(2^128), native low-bit GHASH polynomial convention",
+  "oracle_order": [
+    {
+      "id": "O0",
+      "kind": "outer_precommit",
+      "logical": "K: existing precommitted OTP keys and authorised dummy segment",
+      "commit": "wrapper construction, before encrypted inner messages",
+      "binding": "same decoded K used by outer decryption and wiring relation"
+    },
+    {
+      "id": "O1",
+      "kind": "inner_trace",
+      "logical": "Pi: canonical packed non-public words",
+      "commit": "after inner inout-word observation, before inner reductions",
+      "binding": "same Pi for ring-switch operand and authentication trace"
+    },
+    {
+      "id": "O2",
+      "kind": "IntMul_Y",
+      "presence": "only when the public CS has IntMul; one power table in current caller",
+      "logical": "Y=sum eta^i (I_i)_*eq_r_i; 16 logical variables",
+      "commit": "after eta and before logup denominator/GKR challenges",
+      "binding": "same O2 handle for equality and table operands"
+    },
+    {
+      "id": "OZ",
+      "kind": "outer_private",
+      "logical": "z: decrypted inner verification, fixed private terminal slots, existing dummy values",
+      "commit": "after inner transcript, before outer mulcheck messages/challenges",
+      "binding": "same decoded z used by outer constraint system and all selectors"
+    },
+    {
+      "id": "OL",
+      "kind": "outer_Libra",
+      "logical": "L: outer degree-two multiplication-check mask",
+      "commit": "immediately after OZ, before outer mulcheck",
+      "binding": "same L for mulcheck and Libra opening"
+    }
+  ],
+  "terminal_calls": [
+    {
+      "call": 0,
+      "when": "IntMul present",
+      "oracle": "O2",
+      "operand": "eq_{returned pushforward_eval_point}",
+      "point": "node_point[len(node_point)-table.n_vars..]; explicit output point",
+      "slot": "layout.private_terminal[0]"
+    },
+    {
+      "call": 1,
+      "when": "IntMul present",
+      "oracle": "O2",
+      "operand": "canonical transparent power-table MLE",
+      "slot": "layout.private_terminal[1]"
+    },
+    {
+      "call": "2 if IntMul else 0",
+      "oracle": "O1",
+      "operand": "ring_switch.rs_eq_ind",
+      "slot": "layout.private_terminal[2 if IntMul else 0]"
+    }
+  ],
+  "physical_slot": "2*s+1 after decoder transport; s fixed by compiled layout, not proof supplied",
+  "terminal_relation": "<P_i,D_i^T t_j> + <P_Z,D_Z^T e_sj> = 0",
+  "outer_relations": [
+    "<P0,D0^T U_pre>=b_pre",
+    "<PZ,DZ^T U_priv>=b_priv",
+    "<PL,DL^T U_libra>=b_libra"
+  ],
+  "relation_order": "terminal-call order, then outer precommit/private/Libra",
+  "challenge_names": {
+    "eta": "existing logup looker batching",
+    "mu": "existing outer wiring batching",
+    "lambda_J": "proposed fresh global joint relation batching",
+    "gamma": "proposed single aggregate companion blend",
+    "theta": "later joint-opening/folding challenges"
+  },
+  "frozen_before_lambda_J": [
+    "public statement and relation/layout identifiers",
+    "ordered roots, field/domain and dimensions",
+    "oracle handles and fixed selectors",
+    "public operands and public targets",
+    "complete preceding transcript"
+  ],
+  "no_individual_hidden_targets_or_companion_claims": true,
+  "global_batching": "U_i=sum_j lambda_J^j*u_ji; B=sum_j lambda_J^j*b_j",
+  "aggregate_claim": "Sigma=sum_i <Omega_i,U_i>; sent before gamma",
+  "blend": "V_i=(1-gamma)P_i+gamma Omega_i",
+  "joint_target": "S=(1-gamma)B+gamma Sigma",
+  "lifting": "semantic zero extension; product terminal has squared high-zero selector, not unchecked native lift/repeat substitution",
+  "actual_native_view": "ordered roots, encrypted/public inner messages, outer messages, per-oracle sigmas/alphas, joint folded/final codeword and authenticated original/companion/coset openings; no established entire V_i disclosure",
+  "retained_results_reused": "EC-01..EC-25, Python models only",
+  "new_functional_executions": 0,
+  "native_prototype_admitted": false
+}

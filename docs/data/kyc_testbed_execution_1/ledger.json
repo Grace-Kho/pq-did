@@ -1,0 +1,2056 @@
+{
+  "jobs": [
+    {
+      "name": "source-quality",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-kyc-execution-1-source-quality",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 94014,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30316412,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4132753408,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.42640317417681217,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10362880",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "25620480",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.08094694302417338,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 35147776,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "source-quality-corrected",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-source-quality-corrected",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 104019,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30326417,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4145987584,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.3840208270121366,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10334208",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "22085632",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.06096652313135564,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 39026688,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "preflight",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py",
+        "preflight"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-preflight",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 109301,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30331699,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4136472576,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.41889667697250843,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10358784",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "23539712",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.10146832698956132,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 42774528,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "wallet-cases",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py",
+        "W"
+      ],
+      "limit_seconds": 150,
+      "child_seconds": 149,
+      "status": "failed",
+      "unit": "pqdid-kyc-execution-1-wallet-cases",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 114962,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30337360,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4136382464,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.5095308001618832,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10366976",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "31100928",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.1615181788802147,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 46911488,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "quality-wallet-fix",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-quality-wallet-fix",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 122904,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30345302,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4135710720,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.37790239113382995,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10338304",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "22388736",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.061091422801837325,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 38989824,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "wallet-cases-corrected",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py",
+        "W"
+      ],
+      "limit_seconds": 150,
+      "child_seconds": 149,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-wallet-cases-corrected",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 128116,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30350514,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4126412800,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 4.057027409086004,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10330112",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "36720640",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 3.7321923528797925,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 83980288,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "connected-flows",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py",
+        "F"
+      ],
+      "limit_seconds": 150,
+      "child_seconds": 149,
+      "status": "failed",
+      "unit": "pqdid-kyc-execution-1-connected-flows",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 152901,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30375299,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4116250624,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.7414299019146711,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10637312",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "29282304",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.3839749558828771,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 49893376,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "quality-flow-fix",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-quality-flow-fix",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 160731,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30383129,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4098396160,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.5858493130654097,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10362880",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "26136576",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.08139875414781272,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 47493120,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "connected-flows-corrected",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py",
+        "F"
+      ],
+      "limit_seconds": 150,
+      "child_seconds": 149,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-connected-flows-corrected",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 165990,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30388388,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4107780096,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 6.500707536935806,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10330112",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "40517632",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 6.131849066121504,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 59027456,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "local-mapping-cases",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py",
+        "M"
+      ],
+      "limit_seconds": 100,
+      "child_seconds": 99,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-local-mapping-cases",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 191102,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30413500,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4105609216,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.4753195599187165,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "16957440",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "44634112",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 1.0485152460169047,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 53399552,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "quality-measurement-admission",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-quality-measurement-admission",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 204988,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30427386,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4109496320,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 1.5762060009874403,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10838016",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "26521600",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.08151182089932263,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 41529344,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "throughput-session-1",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py",
+        "T",
+        "1"
+      ],
+      "limit_seconds": 90,
+      "child_seconds": 89,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-throughput-session-1",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 210272,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30432670,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4097757184,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 4.641884824959561,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10375168",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "31776768",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 4.296771052991971,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 53043200,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "throughput-session-2",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py",
+        "T",
+        "2"
+      ],
+      "limit_seconds": 90,
+      "child_seconds": 89,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-throughput-session-2",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 238060,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30460458,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4103000064,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 5.8558056419715285,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "13144064",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "40255488",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 4.233124491991475,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 53186560,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "throughput-session-3",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py",
+        "T",
+        "3"
+      ],
+      "limit_seconds": 90,
+      "child_seconds": 89,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-throughput-session-3",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 265847,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30488245,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4097146880,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 4.536946788895875,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10362880",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "31543296",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 4.1957158299628645,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 53030912,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "revocation-scaling-1",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py",
+        "R",
+        "1"
+      ],
+      "limit_seconds": 100,
+      "child_seconds": 99,
+      "status": "failed",
+      "unit": "pqdid-kyc-execution-1-revocation-scaling-1",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 293688,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30516086,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4100288512,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 4.580819491064176,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10641408",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "33079296",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 4.195830231066793,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 54755328,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "retain-scaling-failure",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/retain_failure.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-retain-scaling-failure",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 878476,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 31100874,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 553757
+      },
+      "available_memory": 4086554624,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.8546098498627543,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "12574720",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "27992064",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.06371417408809066,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 41828352,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "quality-final-code",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-kyc-execution-1-quality-final-code",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 393616,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30616014,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4102643712,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.4221096329856664,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10362880",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "25812992",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.08138443506322801,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 50937856,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "quality-final-code-corrected",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-quality-final-code-corrected",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 401455,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30623853,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4093841408,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.41382363298907876,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10366976",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "22315008",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.060910629108548164,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 32763904,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "promoted-wallet-check",
+      "phase": "python",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py",
+        "promoted"
+      ],
+      "limit_seconds": 40,
+      "child_seconds": 39,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-promoted-wallet-check",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 406787,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30629185,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4093231104,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.8705123639665544,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10358784",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "35287040",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.5058527640067041,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 51818496,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "derive-results",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/reporting.py"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-derive-results",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 421821,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30644219,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4102094848,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.46771264309063554,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10104832",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "26034176",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.121386633021757,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 46997504,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "quality-reporting",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "failed",
+      "unit": "pqdid-kyc-execution-1-quality-reporting",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 454608,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30677006,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4101120000,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.41441907710395753,
+      "exit_code": 1,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10358784",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "22142976",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 1,
+        "child_seconds": 0.08290713792666793,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 33452032,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "quality-reporting-corrected",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/tooling.py"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-quality-reporting-corrected",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 473191,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30695589,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4103819264,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.46857281285338104,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10604544",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "22835200",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.08313527796417475,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 32612352,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "derive-final-metadata",
+      "phase": "tool",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/reporting.py"
+      ],
+      "limit_seconds": 30,
+      "child_seconds": 29,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-derive-final-metadata",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 503062,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30725460,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4091768832,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.4729085259605199,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10358784",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "26025984",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.10147476103156805,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 44445696,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "prepare",
+      "phase": "audit",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/preservation.py",
+        "prepare"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-prepare",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 508622,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30731020,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4077858816,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.9889072140213102,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10358784",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "48414720",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.6056344599928707,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 60448768,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "full-audit",
+      "phase": "audit",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/preservation.py",
+        "full-audit"
+      ],
+      "limit_seconds": 60,
+      "child_seconds": 59,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-full-audit",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 562115,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30784513,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4087058432,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 4.750348061090335,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10358784",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "48279552",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 4.40488783409819,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 64061440,
+      "artifact_observed_peak_bytes": 58966547
+    },
+    {
+      "name": "final-readback",
+      "phase": "audit",
+      "argv": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/preservation.py",
+        "readback"
+      ],
+      "limit_seconds": 20,
+      "child_seconds": 19,
+      "status": "pass",
+      "unit": "pqdid-kyc-execution-1-final-readback",
+      "memory_limit_bytes": 268435456,
+      "opening_storage": {
+        "new_evidence_bytes": 626008,
+        "new_artifact_bytes": 0,
+        "evidence_bytes": 30848406,
+        "artifact_bytes": 58966547,
+        "temporary_bytes": 0
+      },
+      "available_memory": 4087549952,
+      "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+      "build": false,
+      "seconds": 0.8978195609524846,
+      "exit_code": 0,
+      "stop": null,
+      "worker": {
+        "before": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "10584064",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "after": {
+          "memory.max": "268435456",
+          "memory.swap.max": "0",
+          "memory.peak": "43118592",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.max": "200000 100000",
+          "pids.max": "128"
+        },
+        "child_exit_code": 0,
+        "child_seconds": 0.564665256999433,
+        "resource_breach": false,
+        "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+      },
+      "sampled_tree_rss_peak": 60190720,
+      "artifact_observed_peak_bytes": 58966547
+    }
+  ],
+  "invocations": [
+    {
+      "invocation_id": "KYCE1-0001",
+      "case_id": "W-01",
+      "work_event_reservation": 0,
+      "ordinal": 1,
+      "cumulative_invocations": 975,
+      "status": "failed",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0002",
+      "case_id": "W-01",
+      "work_event_reservation": 0,
+      "ordinal": 2,
+      "cumulative_invocations": 976,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0003",
+      "case_id": "W-02",
+      "work_event_reservation": 0,
+      "ordinal": 3,
+      "cumulative_invocations": 977,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0004",
+      "case_id": "W-03",
+      "work_event_reservation": 0,
+      "ordinal": 4,
+      "cumulative_invocations": 978,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0005",
+      "case_id": "W-04",
+      "work_event_reservation": 0,
+      "ordinal": 5,
+      "cumulative_invocations": 979,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0006",
+      "case_id": "W-05",
+      "work_event_reservation": 0,
+      "ordinal": 6,
+      "cumulative_invocations": 980,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0007",
+      "case_id": "W-06",
+      "work_event_reservation": 0,
+      "ordinal": 7,
+      "cumulative_invocations": 981,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0008",
+      "case_id": "W-07",
+      "work_event_reservation": 0,
+      "ordinal": 8,
+      "cumulative_invocations": 982,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0009",
+      "case_id": "W-08",
+      "work_event_reservation": 0,
+      "ordinal": 9,
+      "cumulative_invocations": 983,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0010",
+      "case_id": "W-09",
+      "work_event_reservation": 0,
+      "ordinal": 10,
+      "cumulative_invocations": 984,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0011",
+      "case_id": "W-10",
+      "work_event_reservation": 0,
+      "ordinal": 11,
+      "cumulative_invocations": 985,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0012",
+      "case_id": "W-11",
+      "work_event_reservation": 0,
+      "ordinal": 12,
+      "cumulative_invocations": 986,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0013",
+      "case_id": "W-12",
+      "work_event_reservation": 0,
+      "ordinal": 13,
+      "cumulative_invocations": 987,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0014",
+      "case_id": "W-13",
+      "work_event_reservation": 0,
+      "ordinal": 14,
+      "cumulative_invocations": 988,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0015",
+      "case_id": "W-14",
+      "work_event_reservation": 0,
+      "ordinal": 15,
+      "cumulative_invocations": 989,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0016",
+      "case_id": "W-15",
+      "work_event_reservation": 0,
+      "ordinal": 16,
+      "cumulative_invocations": 990,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0017",
+      "case_id": "W-16",
+      "work_event_reservation": 0,
+      "ordinal": 17,
+      "cumulative_invocations": 991,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0018",
+      "case_id": "W-17",
+      "work_event_reservation": 0,
+      "ordinal": 18,
+      "cumulative_invocations": 992,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0019",
+      "case_id": "W-18",
+      "work_event_reservation": 0,
+      "ordinal": 19,
+      "cumulative_invocations": 993,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0020",
+      "case_id": "W-19",
+      "work_event_reservation": 0,
+      "ordinal": 20,
+      "cumulative_invocations": 994,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0021",
+      "case_id": "W-20",
+      "work_event_reservation": 0,
+      "ordinal": 21,
+      "cumulative_invocations": 995,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0022",
+      "case_id": "W-21",
+      "work_event_reservation": 0,
+      "ordinal": 22,
+      "cumulative_invocations": 996,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0023",
+      "case_id": "W-22",
+      "work_event_reservation": 0,
+      "ordinal": 23,
+      "cumulative_invocations": 997,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0024",
+      "case_id": "W-23",
+      "work_event_reservation": 0,
+      "ordinal": 24,
+      "cumulative_invocations": 998,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0025",
+      "case_id": "W-24",
+      "work_event_reservation": 0,
+      "ordinal": 25,
+      "cumulative_invocations": 999,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0026",
+      "case_id": "F-01",
+      "work_event_reservation": 0,
+      "ordinal": 26,
+      "cumulative_invocations": 1000,
+      "status": "failed",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0027",
+      "case_id": "F-01",
+      "work_event_reservation": 0,
+      "ordinal": 27,
+      "cumulative_invocations": 1001,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0028",
+      "case_id": "F-02",
+      "work_event_reservation": 0,
+      "ordinal": 28,
+      "cumulative_invocations": 1002,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0029",
+      "case_id": "F-03",
+      "work_event_reservation": 0,
+      "ordinal": 29,
+      "cumulative_invocations": 1003,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0030",
+      "case_id": "F-04",
+      "work_event_reservation": 0,
+      "ordinal": 30,
+      "cumulative_invocations": 1004,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0031",
+      "case_id": "F-05",
+      "work_event_reservation": 0,
+      "ordinal": 31,
+      "cumulative_invocations": 1005,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0032",
+      "case_id": "F-06",
+      "work_event_reservation": 0,
+      "ordinal": 32,
+      "cumulative_invocations": 1006,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0033",
+      "case_id": "F-07",
+      "work_event_reservation": 0,
+      "ordinal": 33,
+      "cumulative_invocations": 1007,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0034",
+      "case_id": "F-08",
+      "work_event_reservation": 0,
+      "ordinal": 34,
+      "cumulative_invocations": 1008,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0035",
+      "case_id": "F-09",
+      "work_event_reservation": 0,
+      "ordinal": 35,
+      "cumulative_invocations": 1009,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0036",
+      "case_id": "F-10",
+      "work_event_reservation": 0,
+      "ordinal": 36,
+      "cumulative_invocations": 1010,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0037",
+      "case_id": "F-11",
+      "work_event_reservation": 0,
+      "ordinal": 37,
+      "cumulative_invocations": 1011,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0038",
+      "case_id": "F-12",
+      "work_event_reservation": 0,
+      "ordinal": 38,
+      "cumulative_invocations": 1012,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0039",
+      "case_id": "F-13",
+      "work_event_reservation": 0,
+      "ordinal": 39,
+      "cumulative_invocations": 1013,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0040",
+      "case_id": "F-14",
+      "work_event_reservation": 0,
+      "ordinal": 40,
+      "cumulative_invocations": 1014,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0041",
+      "case_id": "M-01",
+      "work_event_reservation": 0,
+      "ordinal": 41,
+      "cumulative_invocations": 1015,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0042",
+      "case_id": "M-02",
+      "work_event_reservation": 0,
+      "ordinal": 42,
+      "cumulative_invocations": 1016,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0043",
+      "case_id": "M-03",
+      "work_event_reservation": 0,
+      "ordinal": 43,
+      "cumulative_invocations": 1017,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0044",
+      "case_id": "M-04",
+      "work_event_reservation": 0,
+      "ordinal": 44,
+      "cumulative_invocations": 1018,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0045",
+      "case_id": "M-05",
+      "work_event_reservation": 0,
+      "ordinal": 45,
+      "cumulative_invocations": 1019,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0046",
+      "case_id": "M-06",
+      "work_event_reservation": 0,
+      "ordinal": 46,
+      "cumulative_invocations": 1020,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0047",
+      "case_id": "M-07",
+      "work_event_reservation": 0,
+      "ordinal": 47,
+      "cumulative_invocations": 1021,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0048",
+      "case_id": "M-08",
+      "work_event_reservation": 0,
+      "ordinal": 48,
+      "cumulative_invocations": 1022,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0049",
+      "case_id": "M-09",
+      "work_event_reservation": 0,
+      "ordinal": 49,
+      "cumulative_invocations": 1023,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0050",
+      "case_id": "M-10",
+      "work_event_reservation": 0,
+      "ordinal": 50,
+      "cumulative_invocations": 1024,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0051",
+      "case_id": "T-1-A-1",
+      "work_event_reservation": 0,
+      "ordinal": 51,
+      "cumulative_invocations": 1025,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0052",
+      "case_id": "T-1-A-2",
+      "work_event_reservation": 0,
+      "ordinal": 52,
+      "cumulative_invocations": 1026,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0053",
+      "case_id": "T-1-A-3",
+      "work_event_reservation": 0,
+      "ordinal": 53,
+      "cumulative_invocations": 1027,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0054",
+      "case_id": "T-1-B-1",
+      "work_event_reservation": 0,
+      "ordinal": 54,
+      "cumulative_invocations": 1028,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0055",
+      "case_id": "T-1-B-2",
+      "work_event_reservation": 0,
+      "ordinal": 55,
+      "cumulative_invocations": 1029,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0056",
+      "case_id": "T-1-B-3",
+      "work_event_reservation": 0,
+      "ordinal": 56,
+      "cumulative_invocations": 1030,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0057",
+      "case_id": "T-2-A-1",
+      "work_event_reservation": 0,
+      "ordinal": 57,
+      "cumulative_invocations": 1031,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0058",
+      "case_id": "T-2-A-2",
+      "work_event_reservation": 0,
+      "ordinal": 58,
+      "cumulative_invocations": 1032,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0059",
+      "case_id": "T-2-A-3",
+      "work_event_reservation": 0,
+      "ordinal": 59,
+      "cumulative_invocations": 1033,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0060",
+      "case_id": "T-2-B-1",
+      "work_event_reservation": 0,
+      "ordinal": 60,
+      "cumulative_invocations": 1034,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0061",
+      "case_id": "T-2-B-2",
+      "work_event_reservation": 0,
+      "ordinal": 61,
+      "cumulative_invocations": 1035,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0062",
+      "case_id": "T-2-B-3",
+      "work_event_reservation": 0,
+      "ordinal": 62,
+      "cumulative_invocations": 1036,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0063",
+      "case_id": "T-3-A-1",
+      "work_event_reservation": 0,
+      "ordinal": 63,
+      "cumulative_invocations": 1037,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0064",
+      "case_id": "T-3-A-2",
+      "work_event_reservation": 0,
+      "ordinal": 64,
+      "cumulative_invocations": 1038,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0065",
+      "case_id": "T-3-A-3",
+      "work_event_reservation": 0,
+      "ordinal": 65,
+      "cumulative_invocations": 1039,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0066",
+      "case_id": "T-3-B-1",
+      "work_event_reservation": 0,
+      "ordinal": 66,
+      "cumulative_invocations": 1040,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0067",
+      "case_id": "T-3-B-2",
+      "work_event_reservation": 0,
+      "ordinal": 67,
+      "cumulative_invocations": 1041,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0068",
+      "case_id": "T-3-B-3",
+      "work_event_reservation": 0,
+      "ordinal": 68,
+      "cumulative_invocations": 1042,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0069",
+      "case_id": "R-1-1",
+      "work_event_reservation": 0,
+      "ordinal": 69,
+      "cumulative_invocations": 1043,
+      "status": "pass",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0070",
+      "case_id": "R-1-4",
+      "work_event_reservation": 0,
+      "ordinal": 70,
+      "cumulative_invocations": 1044,
+      "status": "failed",
+      "work_events": 0
+    },
+    {
+      "invocation_id": "KYCE1-0071",
+      "case_id": "W-02",
+      "work_event_reservation": 0,
+      "ordinal": 71,
+      "cumulative_invocations": 1045,
+      "status": "pass",
+      "work_events": 0
+    }
+  ],
+  "builds": [],
+  "bookkeeping": [
+    {
+      "purpose": "Reconciliation, retained-source review and prospective continuation setup; conservative manual charge",
+      "seconds": 95
+    },
+    {
+      "purpose": "Wallet fixture, connected application, mapping and dispatcher implementation/source review; conservative manual charge",
+      "seconds": 250
+    },
+    {
+      "purpose": "Sandbox admission failure and formatting-only diagnosis",
+      "seconds": 8.171
+    },
+    {
+      "purpose": "Diagnosed two call-site failures, affected revalidation, scaling checkpoint admission review and coordination; conservative charge",
+      "seconds": 85
+    },
+    {
+      "purpose": "Measurement boundary diagnosis, lossless failure retention, module promotion and affected validation, derived reporting and static corrections; conservative manual charge",
+      "seconds": 160
+    },
+    {
+      "purpose": "Current report, requirement traceability, explicit local mappings and scaling blocker documentation; conservative manual finalisation charge",
+      "seconds": 115
+    },
+    {
+      "purpose": "Preservation coordination, audit review, report/manifest and resource closure preparation; conservative completion charge",
+      "seconds": 35
+    },
+    {
+      "purpose": "Measured exact guard-slice shutdown and descendant verification",
+      "seconds": 0.11512971902266145
+    },
+    {
+      "purpose": "Final inventory, resource fixed-point accounting, full seal readback and closing records; conservative completion charge",
+      "seconds": 15
+    }
+  ],
+  "work_events": 77593603,
+  "work_events_reserved": 0
+}

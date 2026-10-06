@@ -1,0 +1,13 @@
+{
+  "invocation_id": "KYCM1-0044",
+  "case_id": "H-17",
+  "work_event_reservation": 0,
+  "ordinal": 44,
+  "cumulative_invocations": 1135,
+  "status": "failed",
+  "error": "NameError",
+  "diagnostic": "Traceback (most recent call last):\n  File \"/home/grace/projects/pq-did/experiments/kyc_manager_incremental_storage_1/dispatch.py\", line 34, in execute\n    result[\"details\"] = operation()\n                        ~~~~~~~~~^^\n  File \"/home/grace/projects/pq-did/experiments/kyc_manager_incremental_storage_1/dispatch.py\", line 77, in operation\n    else history_cases.run(i, child, cache[\"app\"], cache)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/grace/projects/pq-did/experiments/kyc_manager_incremental_storage_1/history_cases.py\", line 133, in run\n    alternate = signed(holder.checkpoint.state)\n  File \"/home/grace/projects/pq-did/experiments/kyc_manager_incremental_storage_1/history_cases.py\", line 130, in signed\n    sig = signer.state(s.pp, replace(state, signature=bytes(3309)))\n                             ^^^^^^^\nNameError: name 'replace' is not defined\n",
+  "seconds": 12.609184753149748,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

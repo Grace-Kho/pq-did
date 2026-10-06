@@ -1,0 +1,11 @@
+{
+  "kind": "Manual documentation helper correction; no automatic retry",
+  "cause": "Nonexistent src/pqdid/context.py in new review inventory; Context is in already included src/pqdid/statements.py. Previous seal and budgets passed before inventory failure.",
+  "old_contract_sha256": "0a8da27a949b10085bab8ad38dbb2c8caf1a227dee1ac2ea9600e81c453ca65e",
+  "new_contract_sha256": "f9bd4b04a757506b86f413868f94814b911d84f3a5941ebd0af7e530e89dc1df",
+  "failed_command_retained": "preflight.json",
+  "failed_log_sha256": "c442046db10a3e0e52ae885656d601d7b71f194dc2ae6c0451514a07cc57a694",
+  "stop_sha256": "0c1fa074bfe5e206993622d40eafcc47124f5d126ccb026c948f0ac217babe2a",
+  "explicit_recheck": "preflight-corrected",
+  "charged_to": "same analysis allowance; zero experimental invocations; no full audit attempted"
+}

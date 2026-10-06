@@ -1,0 +1,18 @@
+{
+  "invocation_id": "KYCI1-0015",
+  "case_id": "S-15",
+  "work_event_reservation": 0,
+  "ordinal": 15,
+  "cumulative_invocations": 1060,
+  "status": "pass",
+  "details": {
+    "interruption": "commit-after-commit",
+    "actual_process_exit": true,
+    "committed": true,
+    "rows": 2,
+    "prepared_ticket_retained_before_commit": true
+  },
+  "seconds": 0.021670350106433034,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

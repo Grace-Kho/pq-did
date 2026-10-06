@@ -1,0 +1,29 @@
+{
+  "package": "R0-SUCCINCT-PROOF-1",
+  "checked_utc": "2026-09-19T04:21:10Z",
+  "preserved_files": 8394,
+  "allowed_changed_files": [
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "frozen_launch_files_unchanged": 32,
+  "proof_attempts": 1,
+  "proof_attempts_unused": 2,
+  "receipts": [],
+  "proof_service_wall_seconds": 600.1284312639909,
+  "setup_build_wall_seconds": 160.1174990219879,
+  "completed_check_service_seconds": 0.7111772419593763,
+  "experiment_logical_bytes": 6419639627,
+  "output_bytes": 3215106,
+  "diagnostic_bytes": 3215106,
+  "temporary_bytes_at_audit": 436542,
+  "checks": [
+    "frozen source/binary/input hashes",
+    "historical preservation",
+    "attempt sequence and prior verification gates",
+    "receipt accounting/bounds",
+    "JSON/TOML/Python syntax",
+    "new documentation links",
+    "bounded stream logs"
+  ]
+}

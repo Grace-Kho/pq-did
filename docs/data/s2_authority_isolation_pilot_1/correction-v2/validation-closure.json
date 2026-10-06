@@ -1,0 +1,25 @@
+{
+  "package": "S2-AUTHORITY-ISOLATION-PILOT-1",
+  "version": 2,
+  "corrected_validation_complete": true,
+  "no_activation": true,
+  "candidate_sha256": "0fb7d99444a47eb28cfdbe4c1338468eb9d0328df1af6c05791f9d47210a67df",
+  "result_sha256": "03ee1467042492cd2126edecfbb76eb4ddbd816ca2cd4d69eb23cad8db6739f0",
+  "guard_record_sha256": "b0928afac08fe259e8bb906ed4b1725c2ca97a7535bc99210be9b5f3e5b3ce2b",
+  "complete_ledger_sha256": "ff71ade340b5e4f0d76feb0cb3b56954673258e4607967e2120548cb8cff8e50",
+  "invocation_log_sha256": "137da5ab12411af7db9712241ef38a175af7d32c9c3f7a43568020f2e1beb768",
+  "total_charged_seconds": 44.77540110703558,
+  "remaining_aggregate_seconds": 255.22459889296442,
+  "additional_focused_invocations": 24,
+  "additional_focused_remaining": 0,
+  "cumulative_executed": 100,
+  "pending_identity_cases": 22,
+  "ceiling": 124,
+  "ledger_capacity": {
+    "existing_records": 38,
+    "remaining_records": 26,
+    "projected_bytes": 722338,
+    "maximum_bytes": 1048576
+  },
+  "previous_source_manifest_sha256": "7fd9f0e1bcedf7ed7756b4f25bdde6458e06650cdece62841100c0f636e09086"
+}

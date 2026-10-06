@@ -1,0 +1,23 @@
+{
+  "package": "S3-OUTER-ORACLE-COMPOSITION-1",
+  "passed": true,
+  "previous_manifest_sha256": "28a2f7384dffeb0e4a89cdd0c8c7f164773c08455e1dd0e1930d726caeccc290",
+  "sealed_paths_verified": 56,
+  "source_inventory_sha256": "b2d0b57afe4b10c1ee6f41fc32ac031da96e332f79a98c6040aaebe1fd07c3a3",
+  "source_files_verified": 53,
+  "manuscript_sha256": "d17ca0a20b319b88e959467cae92d91d619973f84384710ecbf960a3b850aeca",
+  "authority": "Only manuscript II-VIII, agreed clarifications and current specification",
+  "task_sha256": "e1c0dd475a88ed034904106a1cf6c59e39b4a4773eb6d64d373eb91a1cd1cb2b",
+  "calculations_reused": "All preceding bounds and query mapping; no new numeric claims",
+  "prior_analysis_seconds": 21.956706719007343,
+  "remaining_analysis_seconds_at_start": 278.04329328099266,
+  "isolation_state": "safe-stopped-unactivated; sealed evidence reused",
+  "isolation_invocations": 100,
+  "isolation_identity_cases_pending": 22,
+  "isolation_remaining_seconds": 250.22,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1,
+  "new_proofs": 0,
+  "new_zkvm_executions": 0,
+  "activation": false
+}

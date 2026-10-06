@@ -1,0 +1,10 @@
+{
+  "authorisation": "User permits routine in-scope corrections and required documentation checks; no functional-test rerun",
+  "cause": "E501 only; missing adjacent-string split in new audit adapter",
+  "runtime_string_unchanged": true,
+  "failed_guard_sha256": "f4043cd03d2366918bbc8ebfd677e7e2c366a26e07fdec8166accc0f25212107",
+  "stop_sha256": "2973cf50de76919f60b82073cf89d02eefb9575ef1f9ea9b567019739f39e03c",
+  "before_checked_source_sha256": "cd6504d112a871767e39cb044eb690bd9e1cdb85ad1aef9186e610fd2a038507",
+  "historical_failure_remains": "quality.json and STOP.json unchanged",
+  "targeted_repeat": "quality-2; no functional invocation"
+}

@@ -1,0 +1,391 @@
+{
+  "scope": "Exact ten recorded native-finalisation transient user units and their milestone slice only",
+  "units": [
+    "pqdid-oct31-m1-native-final-preflight.service",
+    "pqdid-oct31-m1-native-final-cases.service",
+    "pqdid-oct31-m1-native-final-transcripts.service",
+    "pqdid-oct31-m1-native-final-c09.service",
+    "pqdid-oct31-m1-native-final-quality.service",
+    "pqdid-oct31-m1-native-final-prepare.service",
+    "pqdid-oct31-m1-native-final-quality-2.service",
+    "pqdid-oct31-m1-native-final-prepare-2.service",
+    "pqdid-oct31-m1-native-final-full-audit.service",
+    "pqdid-oct31-m1-native-final-readback.service",
+    "pqdid-oct31-m1.slice"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "systemctl",
+        "--user",
+        "show",
+        "--property=Id,LoadState,ActiveState,SubState,MainPID,ControlGroup",
+        "pqdid-oct31-m1-native-final-preflight.service",
+        "pqdid-oct31-m1-native-final-cases.service",
+        "pqdid-oct31-m1-native-final-transcripts.service",
+        "pqdid-oct31-m1-native-final-c09.service",
+        "pqdid-oct31-m1-native-final-quality.service",
+        "pqdid-oct31-m1-native-final-prepare.service",
+        "pqdid-oct31-m1-native-final-quality-2.service",
+        "pqdid-oct31-m1-native-final-prepare-2.service",
+        "pqdid-oct31-m1-native-final-full-audit.service",
+        "pqdid-oct31-m1-native-final-readback.service",
+        "pqdid-oct31-m1.slice"
+      ],
+      "exit_code": 0,
+      "stdout": "Id=pqdid-oct31-m1-native-final-preflight.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-cases.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-transcripts.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-c09.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-quality.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-prepare.service\nLoadState=loaded\nActiveState=failed\nSubState=failed\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-quality-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-prepare-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-full-audit.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-readback.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1.slice\nLoadState=loaded\nActiveState=active\nSubState=active\nControlGroup=/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-oct31.slice/pqdid-oct31-m1.slice\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "systemctl",
+        "--user",
+        "stop",
+        "pqdid-oct31-m1-native-final-prepare.service",
+        "pqdid-oct31-m1.slice"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "systemctl",
+        "--user",
+        "reset-failed",
+        "pqdid-oct31-m1-native-final-prepare.service"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "systemctl",
+        "--user",
+        "show",
+        "--property=Id,LoadState,ActiveState,SubState,MainPID,ControlGroup",
+        "pqdid-oct31-m1-native-final-preflight.service",
+        "pqdid-oct31-m1-native-final-cases.service",
+        "pqdid-oct31-m1-native-final-transcripts.service",
+        "pqdid-oct31-m1-native-final-c09.service",
+        "pqdid-oct31-m1-native-final-quality.service",
+        "pqdid-oct31-m1-native-final-prepare.service",
+        "pqdid-oct31-m1-native-final-quality-2.service",
+        "pqdid-oct31-m1-native-final-prepare-2.service",
+        "pqdid-oct31-m1-native-final-full-audit.service",
+        "pqdid-oct31-m1-native-final-readback.service",
+        "pqdid-oct31-m1.slice"
+      ],
+      "exit_code": 0,
+      "stdout": "Id=pqdid-oct31-m1-native-final-preflight.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-cases.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-transcripts.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-c09.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-quality.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-prepare.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-quality-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-prepare-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-full-audit.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-readback.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1.slice\nLoadState=loaded\nActiveState=inactive\nSubState=dead\nControlGroup=\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "systemctl",
+        "--user",
+        "revert",
+        "pqdid-oct31-m1.slice"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Removed '/run/user/1000/systemd/user.control/pqdid-oct31-m1.slice.d/50-TasksMax.conf'.\nRemoved '/run/user/1000/systemd/user.control/pqdid-oct31-m1.slice.d/50-CPUQuota.conf'.\nRemoved '/run/user/1000/systemd/user.control/pqdid-oct31-m1.slice.d/50-MemorySwapMax.conf'.\nRemoved '/run/user/1000/systemd/user.control/pqdid-oct31-m1.slice.d/50-MemoryMax.conf'.\nRemoved '/run/user/1000/systemd/user.control/pqdid-oct31-m1.slice.d'.\n"
+    },
+    {
+      "argv": [
+        "systemctl",
+        "--user",
+        "show",
+        "--property=Id,LoadState,ActiveState,SubState,MainPID,ControlGroup",
+        "pqdid-oct31-m1-native-final-preflight.service",
+        "pqdid-oct31-m1-native-final-cases.service",
+        "pqdid-oct31-m1-native-final-transcripts.service",
+        "pqdid-oct31-m1-native-final-c09.service",
+        "pqdid-oct31-m1-native-final-quality.service",
+        "pqdid-oct31-m1-native-final-prepare.service",
+        "pqdid-oct31-m1-native-final-quality-2.service",
+        "pqdid-oct31-m1-native-final-prepare-2.service",
+        "pqdid-oct31-m1-native-final-full-audit.service",
+        "pqdid-oct31-m1-native-final-readback.service",
+        "pqdid-oct31-m1.slice"
+      ],
+      "exit_code": 0,
+      "stdout": "Id=pqdid-oct31-m1-native-final-preflight.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-cases.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-transcripts.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-c09.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-quality.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-prepare.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-quality-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-prepare-2.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-full-audit.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1-native-final-readback.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n\nId=pqdid-oct31-m1.slice\nLoadState=loaded\nActiveState=inactive\nSubState=dead\nControlGroup=\n",
+      "stderr": ""
+    }
+  ],
+  "complete": true,
+  "before": {
+    "pqdid-oct31-m1-native-final-preflight.service": {
+      "Id": "pqdid-oct31-m1-native-final-preflight.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-cases.service": {
+      "Id": "pqdid-oct31-m1-native-final-cases.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-transcripts.service": {
+      "Id": "pqdid-oct31-m1-native-final-transcripts.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-c09.service": {
+      "Id": "pqdid-oct31-m1-native-final-c09.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-quality.service": {
+      "Id": "pqdid-oct31-m1-native-final-quality.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-prepare.service": {
+      "Id": "pqdid-oct31-m1-native-final-prepare.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-quality-2.service": {
+      "Id": "pqdid-oct31-m1-native-final-quality-2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-prepare-2.service": {
+      "Id": "pqdid-oct31-m1-native-final-prepare-2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-full-audit.service": {
+      "Id": "pqdid-oct31-m1-native-final-full-audit.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-readback.service": {
+      "Id": "pqdid-oct31-m1-native-final-readback.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1.slice": {
+      "Id": "pqdid-oct31-m1.slice",
+      "LoadState": "loaded",
+      "ActiveState": "active",
+      "SubState": "active",
+      "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-oct31.slice/pqdid-oct31-m1.slice"
+    }
+  },
+  "terminated_before_revert": {
+    "pqdid-oct31-m1-native-final-preflight.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-cases.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-transcripts.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-c09.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-quality.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-prepare.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-quality-2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-prepare-2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-full-audit.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-readback.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1.slice": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    }
+  },
+  "after": {
+    "pqdid-oct31-m1-native-final-preflight.service": {
+      "Id": "pqdid-oct31-m1-native-final-preflight.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-cases.service": {
+      "Id": "pqdid-oct31-m1-native-final-cases.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-transcripts.service": {
+      "Id": "pqdid-oct31-m1-native-final-transcripts.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-c09.service": {
+      "Id": "pqdid-oct31-m1-native-final-c09.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-quality.service": {
+      "Id": "pqdid-oct31-m1-native-final-quality.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-prepare.service": {
+      "Id": "pqdid-oct31-m1-native-final-prepare.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-quality-2.service": {
+      "Id": "pqdid-oct31-m1-native-final-quality-2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-prepare-2.service": {
+      "Id": "pqdid-oct31-m1-native-final-prepare-2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-full-audit.service": {
+      "Id": "pqdid-oct31-m1-native-final-full-audit.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1-native-final-readback.service": {
+      "Id": "pqdid-oct31-m1-native-final-readback.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "MainPID": "0",
+      "ControlGroup": ""
+    },
+    "pqdid-oct31-m1.slice": {
+      "Id": "pqdid-oct31-m1.slice",
+      "LoadState": "loaded",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    }
+  },
+  "terminated_final": {
+    "pqdid-oct31-m1-native-final-preflight.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-cases.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-transcripts.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-c09.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-quality.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-prepare.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-quality-2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-prepare-2.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-full-audit.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1-native-final-readback.service": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    },
+    "pqdid-oct31-m1.slice": {
+      "inactive_or_not_found": true,
+      "control_group_empty": true
+    }
+  },
+  "no_surviving_workload": true,
+  "seconds": 0.17733090789988637
+}

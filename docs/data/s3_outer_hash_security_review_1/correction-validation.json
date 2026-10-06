@@ -1,0 +1,18 @@
+{
+  "failure": "validate",
+  "kind": "reviewed new-analysis harness correction; no resource failure",
+  "cause": "ast.literal_eval applied to entire _ARITIES dictionary encounters unrelated did-chain 1<<16 BinOp",
+  "failed_source_sha256": "f2e50657bfa3d11fa5f79000cb842de5ab6dabbb5c16e8284ec383211416d190",
+  "failed_source_copy": "validate-initial.py",
+  "failed_run_record_sha256": "b7cf1953d1b37f2b5b8ebb51247919b89a8cfb9b690e3567caa257fb62173d1b",
+  "correction": "Select only literal view/challenge AST entries before literal_eval; neither execute source nor alter production code",
+  "next_command": "validate-corrected",
+  "old_attempt_and_STOP_preserved": true,
+  "automatic_retries": 0,
+  "completed_groups_in_failed_run": 0,
+  "aborted_group_invocations": 1,
+  "completed_groups_planned": 4,
+  "limit_changes": false,
+  "remaining_groups_reused": false,
+  "identity_cases_added": 0
+}

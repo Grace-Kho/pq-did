@@ -1,0 +1,188 @@
+{
+  "invocation_id": "KYCM1-0046",
+  "case_id": "R-v2-1",
+  "work_event_reservation": 0,
+  "ordinal": 46,
+  "cumulative_invocations": 1137,
+  "status": "pass",
+  "details": {
+    "workload": "public-history-pages-verify-atomic-wallet-catch-up",
+    "history_length": 1,
+    "issuer_sessions": 2,
+    "setup_ns": 1536244560,
+    "operation_ns": 82515447,
+    "page_bytes": [
+      21540
+    ],
+    "page_count": 1,
+    "record_bytes": 11162,
+    "storage": [
+      {
+        "path": "manager/authority.sqlite3",
+        "bytes": 122880,
+        "secret_material": false
+      },
+      {
+        "path": "verifier-A/authority.sqlite3",
+        "bytes": 57344,
+        "secret_material": false
+      },
+      {
+        "path": "verifier-B/authority.sqlite3",
+        "bytes": 57344,
+        "secret_material": false
+      },
+      {
+        "path": "issuer/issuer.sqlite3",
+        "bytes": 77824,
+        "secret_material": false
+      },
+      {
+        "path": "holder/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      },
+      {
+        "path": "holder-other-0/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder-other-0/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      }
+    ],
+    "storage_growth": [
+      {
+        "revocations": 0,
+        "storage": [
+          {
+            "path": "manager/authority.sqlite3",
+            "bytes": 81920,
+            "secret_material": false
+          },
+          {
+            "path": "verifier-A/authority.sqlite3",
+            "bytes": 57344,
+            "secret_material": false
+          },
+          {
+            "path": "verifier-B/authority.sqlite3",
+            "bytes": 57344,
+            "secret_material": false
+          },
+          {
+            "path": "issuer/issuer.sqlite3",
+            "bytes": 53248,
+            "secret_material": false
+          },
+          {
+            "path": "holder/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          }
+        ]
+      },
+      {
+        "revocations": 1,
+        "storage": [
+          {
+            "path": "manager/authority.sqlite3",
+            "bytes": 122880,
+            "secret_material": false
+          },
+          {
+            "path": "verifier-A/authority.sqlite3",
+            "bytes": 57344,
+            "secret_material": false
+          },
+          {
+            "path": "verifier-B/authority.sqlite3",
+            "bytes": 57344,
+            "secret_material": false
+          },
+          {
+            "path": "issuer/issuer.sqlite3",
+            "bytes": 77824,
+            "secret_material": false
+          },
+          {
+            "path": "holder/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          },
+          {
+            "path": "holder-other-0/wallet.bin",
+            "bytes": 15432,
+            "secret_material": false
+          },
+          {
+            "path": "holder-other-0/holder.key",
+            "bytes": 6031,
+            "secret_material": true
+          }
+        ]
+      }
+    ],
+    "messages": {
+      "credential": {
+        "canonical": 11012,
+        "transport": 11012
+      },
+      "enrolment_body": {
+        "canonical": 7720,
+        "transport": 7720
+      },
+      "initial_witness_path": {
+        "canonical": 960,
+        "transport": 960
+      },
+      "initial_state": {
+        "canonical": 3427,
+        "transport": 3427
+      },
+      "enrolment_signature": {
+        "canonical": 3309,
+        "transport": 3309
+      },
+      "revocation_request_body": {
+        "canonical": 581,
+        "transport": 581
+      },
+      "revocation_request_signature": {
+        "canonical": 3309,
+        "transport": 3309
+      },
+      "published_revocation_state": {
+        "canonical": 3427,
+        "transport": 3427
+      }
+    },
+    "fixture_sha256": "a2a7e77838ade8ed21be01de64d073d36add0c127a546e6a1e82d7ad985a2c75",
+    "issuer_storage_version": 2,
+    "manager_storage_version": 2,
+    "privacy": "fully disclosed genuine ML-DSA baseline; no private proof",
+    "concurrency": 1,
+    "timestamp_model": "synthetic epoch plus monotonic elapsed",
+    "wallet_commits": 1
+  },
+  "seconds": 1.6490732291713357,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

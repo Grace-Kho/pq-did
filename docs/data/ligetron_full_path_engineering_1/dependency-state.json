@@ -1,0 +1,11 @@
+{
+  "acquisition": "not admitted under approved runbook headroom gate",
+  "installed_or_extracted_new_dependencies": false,
+  "compiled_targets": [],
+  "adapter": "not queried with Dawn; no adapter selected",
+  "generated_shader": null,
+  "loaded_shader": null,
+  "shader_execution": "unrun",
+  "source_lock_reference": "docs/data/ligetron_dependency_hardware_preflight_1/dependency-lock.proposed.json",
+  "new_paths": "only independent source subset and completion tools; no prefix/download/build artifacts"
+}

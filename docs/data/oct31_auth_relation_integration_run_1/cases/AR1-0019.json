@@ -1,0 +1,13 @@
+{
+  "case_id": "P-02",
+  "invocation_id": "AR1-0019",
+  "status": "pass",
+  "details": {
+    "coverage": "complete public boundary, not private constraints",
+    "expected": false,
+    "actual": false,
+    "preprocessing_sha256": null
+  },
+  "seconds": 0.0016905399970710278,
+  "work_events": 0
+}

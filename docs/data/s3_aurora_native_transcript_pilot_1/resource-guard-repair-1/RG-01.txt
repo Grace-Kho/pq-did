@@ -1,0 +1,1 @@
+{"id": "RG-01", "passed": true, "synthetic": true, "outcome": {"phase": "compatibility/preflight", "authorised_memory_bytes": 1073741824, "passed": true}}

@@ -1,0 +1,38 @@
+{
+  "case_id": "M-13",
+  "invocation_id": "AR1-0051",
+  "status": "pass",
+  "details": {
+    "coverage": "complete named component only",
+    "expected": true,
+    "actual": true,
+    "descriptor": {
+      "complete": true,
+      "inputs": 64,
+      "gates": 110703,
+      "rows": 110769,
+      "variables": 110768,
+      "primary": 1,
+      "output_wire": 110768,
+      "nonzero_terms": [
+        175825,
+        108865,
+        110705
+      ],
+      "matrix_sha256": "5a2b80b40ec210d56ad3a785e03df6941f3b98aafd209c33441214dcffe9bd82",
+      "public_identity": "06eadd7b3222b59e029d6adc6545943d4dab6a007b31e0091b4c11ead6e692d3",
+      "gate_counts": [
+        68275,
+        41049,
+        1379
+      ],
+      "free_input_booleanity_rows": 64,
+      "output_rows": 2,
+      "assignment_storage_bytes": 110768,
+      "memory_model": "bounded retained byte assignment; no last-use claim"
+    },
+    "generation_and_stream_check_seconds": 0.5538287759991363
+  },
+  "seconds": 0.5538881350075826,
+  "work_events": 442944
+}

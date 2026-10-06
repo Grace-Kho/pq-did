@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_native",
+    "3",
+    "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/nonce-mutated.bin"
+  ],
+  "exit_code": 0,
+  "expected_provenance": "docs/data/s3_aurora_transcript_regression_1/TR-03.json",
+  "expected_sha256": "1220eb5d5c42edccbc4ac76c7954547c9ed9cb1ceafe8abf5fa7808743ec489d",
+  "outcome": {
+    "exact_states_blocks_lengths_frames_mapped_outputs_counters": true,
+    "native_public_record_replay_equal": true,
+    "finish": [
+      "01acb80966c15282fb4f0f8aad9d9293fc7f399cf147f31e0e19053fe649a38c599ea2efdd490d9f7a1736894c8f0a744e67370247ed323db97b9afec434d41b",
+      4
+    ]
+  }
+}

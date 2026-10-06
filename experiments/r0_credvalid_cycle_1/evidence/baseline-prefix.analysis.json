@@ -1,0 +1,1160 @@
+{
+  "name": "baseline-prefix",
+  "status": "cycle_limit",
+  "marker_count": 95,
+  "markers": [
+    {
+      "phase": "calibration_0",
+      "id": 0,
+      "user_cycle": 298
+    },
+    {
+      "phase": "calibration_1",
+      "id": 1,
+      "user_cycle": 451
+    },
+    {
+      "phase": "calibration_2",
+      "id": 2,
+      "user_cycle": 604
+    },
+    {
+      "phase": "input_start",
+      "id": 10,
+      "user_cycle": 757
+    },
+    {
+      "phase": "input_done",
+      "id": 20,
+      "user_cycle": 2414
+    },
+    {
+      "phase": "envelope_start",
+      "id": 30,
+      "user_cycle": 2597
+    },
+    {
+      "phase": "parameters_start",
+      "id": 31,
+      "user_cycle": 3343
+    },
+    {
+      "phase": "parameters_done",
+      "id": 32,
+      "user_cycle": 11083
+    },
+    {
+      "phase": "credential_structure_start",
+      "id": 33,
+      "user_cycle": 14522
+    },
+    {
+      "phase": "credential_structure_done",
+      "id": 34,
+      "user_cycle": 26619
+    },
+    {
+      "phase": "opening_start",
+      "id": 35,
+      "user_cycle": 26772
+    },
+    {
+      "phase": "holder_hash_start",
+      "id": 36,
+      "user_cycle": 30992
+    },
+    {
+      "phase": "holder_hash_done",
+      "id": 37,
+      "user_cycle": 117015
+    },
+    {
+      "phase": "opening_done",
+      "id": 38,
+      "user_cycle": 124714
+    },
+    {
+      "phase": "mcred_start",
+      "id": 39,
+      "user_cycle": 124867
+    },
+    {
+      "phase": "mcred_done",
+      "id": 40,
+      "user_cycle": 129548
+    },
+    {
+      "phase": "signature_format_start",
+      "id": 50,
+      "user_cycle": 129737
+    },
+    {
+      "phase": "public_key_decode_start",
+      "id": 51,
+      "user_cycle": 132657
+    },
+    {
+      "phase": "response_decode_start",
+      "id": 52,
+      "user_cycle": 296369
+    },
+    {
+      "phase": "hints_decode_start",
+      "id": 53,
+      "user_cycle": 564337
+    },
+    {
+      "phase": "hints_decode_done",
+      "id": 54,
+      "user_cycle": 569329
+    },
+    {
+      "phase": "matrix_start",
+      "id": 60,
+      "user_cycle": 569482
+    },
+    {
+      "phase": "matrix_00_xof_start",
+      "id": 1000,
+      "user_cycle": 619521
+    },
+    {
+      "phase": "matrix_00_sampler_start",
+      "id": 1001,
+      "user_cycle": 754353
+    },
+    {
+      "phase": "matrix_00_sampler_done",
+      "id": 1002,
+      "user_cycle": 763525
+    },
+    {
+      "phase": "matrix_01_xof_start",
+      "id": 1004,
+      "user_cycle": 763685
+    },
+    {
+      "phase": "matrix_01_sampler_start",
+      "id": 1005,
+      "user_cycle": 898521
+    },
+    {
+      "phase": "matrix_01_sampler_done",
+      "id": 1006,
+      "user_cycle": 907693
+    },
+    {
+      "phase": "matrix_02_xof_start",
+      "id": 1008,
+      "user_cycle": 907853
+    },
+    {
+      "phase": "matrix_02_sampler_start",
+      "id": 1009,
+      "user_cycle": 1042689
+    },
+    {
+      "phase": "matrix_02_sampler_done",
+      "id": 1010,
+      "user_cycle": 1051861
+    },
+    {
+      "phase": "matrix_03_xof_start",
+      "id": 1012,
+      "user_cycle": 1052021
+    },
+    {
+      "phase": "matrix_03_sampler_start",
+      "id": 1013,
+      "user_cycle": 1186857
+    },
+    {
+      "phase": "matrix_03_sampler_done",
+      "id": 1014,
+      "user_cycle": 1196029
+    },
+    {
+      "phase": "matrix_04_xof_start",
+      "id": 1016,
+      "user_cycle": 1196189
+    },
+    {
+      "phase": "matrix_04_sampler_start",
+      "id": 1017,
+      "user_cycle": 1331025
+    },
+    {
+      "phase": "matrix_04_sampler_done",
+      "id": 1018,
+      "user_cycle": 1340197
+    },
+    {
+      "phase": "matrix_05_xof_start",
+      "id": 1020,
+      "user_cycle": 1340373
+    },
+    {
+      "phase": "matrix_05_sampler_start",
+      "id": 1021,
+      "user_cycle": 1475209
+    },
+    {
+      "phase": "matrix_05_sampler_done",
+      "id": 1022,
+      "user_cycle": 1484381
+    },
+    {
+      "phase": "matrix_06_xof_start",
+      "id": 1024,
+      "user_cycle": 1484541
+    },
+    {
+      "phase": "matrix_06_sampler_start",
+      "id": 1025,
+      "user_cycle": 1619377
+    },
+    {
+      "phase": "matrix_06_sampler_done",
+      "id": 1026,
+      "user_cycle": 1628563
+    },
+    {
+      "phase": "matrix_07_xof_start",
+      "id": 1028,
+      "user_cycle": 1628723
+    },
+    {
+      "phase": "matrix_07_sampler_start",
+      "id": 1029,
+      "user_cycle": 1763559
+    },
+    {
+      "phase": "matrix_07_sampler_done",
+      "id": 1030,
+      "user_cycle": 1772731
+    },
+    {
+      "phase": "matrix_08_xof_start",
+      "id": 1032,
+      "user_cycle": 1772891
+    },
+    {
+      "phase": "matrix_08_sampler_start",
+      "id": 1033,
+      "user_cycle": 1907727
+    },
+    {
+      "phase": "matrix_08_sampler_done",
+      "id": 1034,
+      "user_cycle": 1916913
+    },
+    {
+      "phase": "matrix_09_xof_start",
+      "id": 1036,
+      "user_cycle": 1917073
+    },
+    {
+      "phase": "matrix_09_sampler_start",
+      "id": 1037,
+      "user_cycle": 2051909
+    },
+    {
+      "phase": "matrix_09_sampler_done",
+      "id": 1038,
+      "user_cycle": 2061095
+    },
+    {
+      "phase": "matrix_10_xof_start",
+      "id": 1040,
+      "user_cycle": 2061271
+    },
+    {
+      "phase": "matrix_10_sampler_start",
+      "id": 1041,
+      "user_cycle": 2196107
+    },
+    {
+      "phase": "matrix_10_sampler_done",
+      "id": 1042,
+      "user_cycle": 2205279
+    },
+    {
+      "phase": "matrix_11_xof_start",
+      "id": 1044,
+      "user_cycle": 2205439
+    },
+    {
+      "phase": "matrix_11_sampler_start",
+      "id": 1045,
+      "user_cycle": 2340275
+    },
+    {
+      "phase": "matrix_11_sampler_done",
+      "id": 1046,
+      "user_cycle": 2349447
+    },
+    {
+      "phase": "matrix_12_xof_start",
+      "id": 1048,
+      "user_cycle": 2349607
+    },
+    {
+      "phase": "matrix_12_sampler_start",
+      "id": 1049,
+      "user_cycle": 2484443
+    },
+    {
+      "phase": "matrix_12_sampler_done",
+      "id": 1050,
+      "user_cycle": 2493615
+    },
+    {
+      "phase": "matrix_13_xof_start",
+      "id": 1052,
+      "user_cycle": 2493775
+    },
+    {
+      "phase": "matrix_13_sampler_start",
+      "id": 1053,
+      "user_cycle": 2628611
+    },
+    {
+      "phase": "matrix_13_sampler_done",
+      "id": 1054,
+      "user_cycle": 2637783
+    },
+    {
+      "phase": "matrix_14_xof_start",
+      "id": 1056,
+      "user_cycle": 2637943
+    },
+    {
+      "phase": "matrix_14_sampler_start",
+      "id": 1057,
+      "user_cycle": 2772779
+    },
+    {
+      "phase": "matrix_14_sampler_done",
+      "id": 1058,
+      "user_cycle": 2781951
+    },
+    {
+      "phase": "matrix_15_xof_start",
+      "id": 1060,
+      "user_cycle": 2782127
+    },
+    {
+      "phase": "matrix_15_sampler_start",
+      "id": 1061,
+      "user_cycle": 2916963
+    },
+    {
+      "phase": "matrix_15_sampler_done",
+      "id": 1062,
+      "user_cycle": 2926149
+    },
+    {
+      "phase": "matrix_16_xof_start",
+      "id": 1064,
+      "user_cycle": 2926309
+    },
+    {
+      "phase": "matrix_16_sampler_start",
+      "id": 1065,
+      "user_cycle": 3061145
+    },
+    {
+      "phase": "matrix_16_sampler_done",
+      "id": 1066,
+      "user_cycle": 3070317
+    },
+    {
+      "phase": "matrix_17_xof_start",
+      "id": 1068,
+      "user_cycle": 3070477
+    },
+    {
+      "phase": "matrix_17_sampler_start",
+      "id": 1069,
+      "user_cycle": 3205313
+    },
+    {
+      "phase": "matrix_17_sampler_done",
+      "id": 1070,
+      "user_cycle": 3214485
+    },
+    {
+      "phase": "matrix_18_xof_start",
+      "id": 1072,
+      "user_cycle": 3214645
+    },
+    {
+      "phase": "matrix_18_sampler_start",
+      "id": 1073,
+      "user_cycle": 3349481
+    },
+    {
+      "phase": "matrix_18_sampler_done",
+      "id": 1074,
+      "user_cycle": 3358667
+    },
+    {
+      "phase": "matrix_19_xof_start",
+      "id": 1076,
+      "user_cycle": 3358827
+    },
+    {
+      "phase": "matrix_19_sampler_start",
+      "id": 1077,
+      "user_cycle": 3493663
+    },
+    {
+      "phase": "matrix_19_sampler_done",
+      "id": 1078,
+      "user_cycle": 3502835
+    },
+    {
+      "phase": "matrix_20_xof_start",
+      "id": 1080,
+      "user_cycle": 3503011
+    },
+    {
+      "phase": "matrix_20_sampler_start",
+      "id": 1081,
+      "user_cycle": 3637847
+    },
+    {
+      "phase": "matrix_20_sampler_done",
+      "id": 1082,
+      "user_cycle": 3647033
+    },
+    {
+      "phase": "matrix_21_xof_start",
+      "id": 1084,
+      "user_cycle": 3647193
+    },
+    {
+      "phase": "matrix_21_sampler_start",
+      "id": 1085,
+      "user_cycle": 3782029
+    },
+    {
+      "phase": "matrix_21_sampler_done",
+      "id": 1086,
+      "user_cycle": 3791201
+    },
+    {
+      "phase": "matrix_22_xof_start",
+      "id": 1088,
+      "user_cycle": 3791361
+    },
+    {
+      "phase": "matrix_22_sampler_start",
+      "id": 1089,
+      "user_cycle": 3926197
+    },
+    {
+      "phase": "matrix_22_sampler_done",
+      "id": 1090,
+      "user_cycle": 3935383
+    },
+    {
+      "phase": "matrix_23_xof_start",
+      "id": 1092,
+      "user_cycle": 3935543
+    },
+    {
+      "phase": "matrix_23_sampler_start",
+      "id": 1093,
+      "user_cycle": 4070379
+    },
+    {
+      "phase": "matrix_23_sampler_done",
+      "id": 1094,
+      "user_cycle": 4079551
+    },
+    {
+      "phase": "matrix_24_xof_start",
+      "id": 1096,
+      "user_cycle": 4079711
+    }
+  ],
+  "intervals": [
+    {
+      "start": "calibration_0",
+      "end": "calibration_1",
+      "start_cycle": 298,
+      "end_cycle": 451,
+      "raw_user_cycles": 153
+    },
+    {
+      "start": "calibration_1",
+      "end": "calibration_2",
+      "start_cycle": 451,
+      "end_cycle": 604,
+      "raw_user_cycles": 153
+    },
+    {
+      "start": "calibration_2",
+      "end": "input_start",
+      "start_cycle": 604,
+      "end_cycle": 757,
+      "raw_user_cycles": 153
+    },
+    {
+      "start": "input_start",
+      "end": "input_done",
+      "start_cycle": 757,
+      "end_cycle": 2414,
+      "raw_user_cycles": 1657
+    },
+    {
+      "start": "input_done",
+      "end": "envelope_start",
+      "start_cycle": 2414,
+      "end_cycle": 2597,
+      "raw_user_cycles": 183
+    },
+    {
+      "start": "envelope_start",
+      "end": "parameters_start",
+      "start_cycle": 2597,
+      "end_cycle": 3343,
+      "raw_user_cycles": 746
+    },
+    {
+      "start": "parameters_start",
+      "end": "parameters_done",
+      "start_cycle": 3343,
+      "end_cycle": 11083,
+      "raw_user_cycles": 7740
+    },
+    {
+      "start": "parameters_done",
+      "end": "credential_structure_start",
+      "start_cycle": 11083,
+      "end_cycle": 14522,
+      "raw_user_cycles": 3439
+    },
+    {
+      "start": "credential_structure_start",
+      "end": "credential_structure_done",
+      "start_cycle": 14522,
+      "end_cycle": 26619,
+      "raw_user_cycles": 12097
+    },
+    {
+      "start": "credential_structure_done",
+      "end": "opening_start",
+      "start_cycle": 26619,
+      "end_cycle": 26772,
+      "raw_user_cycles": 153
+    },
+    {
+      "start": "opening_start",
+      "end": "holder_hash_start",
+      "start_cycle": 26772,
+      "end_cycle": 30992,
+      "raw_user_cycles": 4220
+    },
+    {
+      "start": "holder_hash_start",
+      "end": "holder_hash_done",
+      "start_cycle": 30992,
+      "end_cycle": 117015,
+      "raw_user_cycles": 86023
+    },
+    {
+      "start": "holder_hash_done",
+      "end": "opening_done",
+      "start_cycle": 117015,
+      "end_cycle": 124714,
+      "raw_user_cycles": 7699
+    },
+    {
+      "start": "opening_done",
+      "end": "mcred_start",
+      "start_cycle": 124714,
+      "end_cycle": 124867,
+      "raw_user_cycles": 153
+    },
+    {
+      "start": "mcred_start",
+      "end": "mcred_done",
+      "start_cycle": 124867,
+      "end_cycle": 129548,
+      "raw_user_cycles": 4681
+    },
+    {
+      "start": "mcred_done",
+      "end": "signature_format_start",
+      "start_cycle": 129548,
+      "end_cycle": 129737,
+      "raw_user_cycles": 189
+    },
+    {
+      "start": "signature_format_start",
+      "end": "public_key_decode_start",
+      "start_cycle": 129737,
+      "end_cycle": 132657,
+      "raw_user_cycles": 2920
+    },
+    {
+      "start": "public_key_decode_start",
+      "end": "response_decode_start",
+      "start_cycle": 132657,
+      "end_cycle": 296369,
+      "raw_user_cycles": 163712
+    },
+    {
+      "start": "response_decode_start",
+      "end": "hints_decode_start",
+      "start_cycle": 296369,
+      "end_cycle": 564337,
+      "raw_user_cycles": 267968
+    },
+    {
+      "start": "hints_decode_start",
+      "end": "hints_decode_done",
+      "start_cycle": 564337,
+      "end_cycle": 569329,
+      "raw_user_cycles": 4992
+    },
+    {
+      "start": "hints_decode_done",
+      "end": "matrix_start",
+      "start_cycle": 569329,
+      "end_cycle": 569482,
+      "raw_user_cycles": 153
+    },
+    {
+      "start": "matrix_start",
+      "end": "matrix_00_xof_start",
+      "start_cycle": 569482,
+      "end_cycle": 619521,
+      "raw_user_cycles": 50039
+    },
+    {
+      "start": "matrix_00_xof_start",
+      "end": "matrix_00_sampler_start",
+      "start_cycle": 619521,
+      "end_cycle": 754353,
+      "raw_user_cycles": 134832
+    },
+    {
+      "start": "matrix_00_sampler_start",
+      "end": "matrix_00_sampler_done",
+      "start_cycle": 754353,
+      "end_cycle": 763525,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_00_sampler_done",
+      "end": "matrix_01_xof_start",
+      "start_cycle": 763525,
+      "end_cycle": 763685,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_01_xof_start",
+      "end": "matrix_01_sampler_start",
+      "start_cycle": 763685,
+      "end_cycle": 898521,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_01_sampler_start",
+      "end": "matrix_01_sampler_done",
+      "start_cycle": 898521,
+      "end_cycle": 907693,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_01_sampler_done",
+      "end": "matrix_02_xof_start",
+      "start_cycle": 907693,
+      "end_cycle": 907853,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_02_xof_start",
+      "end": "matrix_02_sampler_start",
+      "start_cycle": 907853,
+      "end_cycle": 1042689,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_02_sampler_start",
+      "end": "matrix_02_sampler_done",
+      "start_cycle": 1042689,
+      "end_cycle": 1051861,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_02_sampler_done",
+      "end": "matrix_03_xof_start",
+      "start_cycle": 1051861,
+      "end_cycle": 1052021,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_03_xof_start",
+      "end": "matrix_03_sampler_start",
+      "start_cycle": 1052021,
+      "end_cycle": 1186857,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_03_sampler_start",
+      "end": "matrix_03_sampler_done",
+      "start_cycle": 1186857,
+      "end_cycle": 1196029,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_03_sampler_done",
+      "end": "matrix_04_xof_start",
+      "start_cycle": 1196029,
+      "end_cycle": 1196189,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_04_xof_start",
+      "end": "matrix_04_sampler_start",
+      "start_cycle": 1196189,
+      "end_cycle": 1331025,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_04_sampler_start",
+      "end": "matrix_04_sampler_done",
+      "start_cycle": 1331025,
+      "end_cycle": 1340197,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_04_sampler_done",
+      "end": "matrix_05_xof_start",
+      "start_cycle": 1340197,
+      "end_cycle": 1340373,
+      "raw_user_cycles": 176
+    },
+    {
+      "start": "matrix_05_xof_start",
+      "end": "matrix_05_sampler_start",
+      "start_cycle": 1340373,
+      "end_cycle": 1475209,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_05_sampler_start",
+      "end": "matrix_05_sampler_done",
+      "start_cycle": 1475209,
+      "end_cycle": 1484381,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_05_sampler_done",
+      "end": "matrix_06_xof_start",
+      "start_cycle": 1484381,
+      "end_cycle": 1484541,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_06_xof_start",
+      "end": "matrix_06_sampler_start",
+      "start_cycle": 1484541,
+      "end_cycle": 1619377,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_06_sampler_start",
+      "end": "matrix_06_sampler_done",
+      "start_cycle": 1619377,
+      "end_cycle": 1628563,
+      "raw_user_cycles": 9186
+    },
+    {
+      "start": "matrix_06_sampler_done",
+      "end": "matrix_07_xof_start",
+      "start_cycle": 1628563,
+      "end_cycle": 1628723,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_07_xof_start",
+      "end": "matrix_07_sampler_start",
+      "start_cycle": 1628723,
+      "end_cycle": 1763559,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_07_sampler_start",
+      "end": "matrix_07_sampler_done",
+      "start_cycle": 1763559,
+      "end_cycle": 1772731,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_07_sampler_done",
+      "end": "matrix_08_xof_start",
+      "start_cycle": 1772731,
+      "end_cycle": 1772891,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_08_xof_start",
+      "end": "matrix_08_sampler_start",
+      "start_cycle": 1772891,
+      "end_cycle": 1907727,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_08_sampler_start",
+      "end": "matrix_08_sampler_done",
+      "start_cycle": 1907727,
+      "end_cycle": 1916913,
+      "raw_user_cycles": 9186
+    },
+    {
+      "start": "matrix_08_sampler_done",
+      "end": "matrix_09_xof_start",
+      "start_cycle": 1916913,
+      "end_cycle": 1917073,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_09_xof_start",
+      "end": "matrix_09_sampler_start",
+      "start_cycle": 1917073,
+      "end_cycle": 2051909,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_09_sampler_start",
+      "end": "matrix_09_sampler_done",
+      "start_cycle": 2051909,
+      "end_cycle": 2061095,
+      "raw_user_cycles": 9186
+    },
+    {
+      "start": "matrix_09_sampler_done",
+      "end": "matrix_10_xof_start",
+      "start_cycle": 2061095,
+      "end_cycle": 2061271,
+      "raw_user_cycles": 176
+    },
+    {
+      "start": "matrix_10_xof_start",
+      "end": "matrix_10_sampler_start",
+      "start_cycle": 2061271,
+      "end_cycle": 2196107,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_10_sampler_start",
+      "end": "matrix_10_sampler_done",
+      "start_cycle": 2196107,
+      "end_cycle": 2205279,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_10_sampler_done",
+      "end": "matrix_11_xof_start",
+      "start_cycle": 2205279,
+      "end_cycle": 2205439,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_11_xof_start",
+      "end": "matrix_11_sampler_start",
+      "start_cycle": 2205439,
+      "end_cycle": 2340275,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_11_sampler_start",
+      "end": "matrix_11_sampler_done",
+      "start_cycle": 2340275,
+      "end_cycle": 2349447,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_11_sampler_done",
+      "end": "matrix_12_xof_start",
+      "start_cycle": 2349447,
+      "end_cycle": 2349607,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_12_xof_start",
+      "end": "matrix_12_sampler_start",
+      "start_cycle": 2349607,
+      "end_cycle": 2484443,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_12_sampler_start",
+      "end": "matrix_12_sampler_done",
+      "start_cycle": 2484443,
+      "end_cycle": 2493615,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_12_sampler_done",
+      "end": "matrix_13_xof_start",
+      "start_cycle": 2493615,
+      "end_cycle": 2493775,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_13_xof_start",
+      "end": "matrix_13_sampler_start",
+      "start_cycle": 2493775,
+      "end_cycle": 2628611,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_13_sampler_start",
+      "end": "matrix_13_sampler_done",
+      "start_cycle": 2628611,
+      "end_cycle": 2637783,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_13_sampler_done",
+      "end": "matrix_14_xof_start",
+      "start_cycle": 2637783,
+      "end_cycle": 2637943,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_14_xof_start",
+      "end": "matrix_14_sampler_start",
+      "start_cycle": 2637943,
+      "end_cycle": 2772779,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_14_sampler_start",
+      "end": "matrix_14_sampler_done",
+      "start_cycle": 2772779,
+      "end_cycle": 2781951,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_14_sampler_done",
+      "end": "matrix_15_xof_start",
+      "start_cycle": 2781951,
+      "end_cycle": 2782127,
+      "raw_user_cycles": 176
+    },
+    {
+      "start": "matrix_15_xof_start",
+      "end": "matrix_15_sampler_start",
+      "start_cycle": 2782127,
+      "end_cycle": 2916963,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_15_sampler_start",
+      "end": "matrix_15_sampler_done",
+      "start_cycle": 2916963,
+      "end_cycle": 2926149,
+      "raw_user_cycles": 9186
+    },
+    {
+      "start": "matrix_15_sampler_done",
+      "end": "matrix_16_xof_start",
+      "start_cycle": 2926149,
+      "end_cycle": 2926309,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_16_xof_start",
+      "end": "matrix_16_sampler_start",
+      "start_cycle": 2926309,
+      "end_cycle": 3061145,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_16_sampler_start",
+      "end": "matrix_16_sampler_done",
+      "start_cycle": 3061145,
+      "end_cycle": 3070317,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_16_sampler_done",
+      "end": "matrix_17_xof_start",
+      "start_cycle": 3070317,
+      "end_cycle": 3070477,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_17_xof_start",
+      "end": "matrix_17_sampler_start",
+      "start_cycle": 3070477,
+      "end_cycle": 3205313,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_17_sampler_start",
+      "end": "matrix_17_sampler_done",
+      "start_cycle": 3205313,
+      "end_cycle": 3214485,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_17_sampler_done",
+      "end": "matrix_18_xof_start",
+      "start_cycle": 3214485,
+      "end_cycle": 3214645,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_18_xof_start",
+      "end": "matrix_18_sampler_start",
+      "start_cycle": 3214645,
+      "end_cycle": 3349481,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_18_sampler_start",
+      "end": "matrix_18_sampler_done",
+      "start_cycle": 3349481,
+      "end_cycle": 3358667,
+      "raw_user_cycles": 9186
+    },
+    {
+      "start": "matrix_18_sampler_done",
+      "end": "matrix_19_xof_start",
+      "start_cycle": 3358667,
+      "end_cycle": 3358827,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_19_xof_start",
+      "end": "matrix_19_sampler_start",
+      "start_cycle": 3358827,
+      "end_cycle": 3493663,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_19_sampler_start",
+      "end": "matrix_19_sampler_done",
+      "start_cycle": 3493663,
+      "end_cycle": 3502835,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_19_sampler_done",
+      "end": "matrix_20_xof_start",
+      "start_cycle": 3502835,
+      "end_cycle": 3503011,
+      "raw_user_cycles": 176
+    },
+    {
+      "start": "matrix_20_xof_start",
+      "end": "matrix_20_sampler_start",
+      "start_cycle": 3503011,
+      "end_cycle": 3637847,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_20_sampler_start",
+      "end": "matrix_20_sampler_done",
+      "start_cycle": 3637847,
+      "end_cycle": 3647033,
+      "raw_user_cycles": 9186
+    },
+    {
+      "start": "matrix_20_sampler_done",
+      "end": "matrix_21_xof_start",
+      "start_cycle": 3647033,
+      "end_cycle": 3647193,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_21_xof_start",
+      "end": "matrix_21_sampler_start",
+      "start_cycle": 3647193,
+      "end_cycle": 3782029,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_21_sampler_start",
+      "end": "matrix_21_sampler_done",
+      "start_cycle": 3782029,
+      "end_cycle": 3791201,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_21_sampler_done",
+      "end": "matrix_22_xof_start",
+      "start_cycle": 3791201,
+      "end_cycle": 3791361,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_22_xof_start",
+      "end": "matrix_22_sampler_start",
+      "start_cycle": 3791361,
+      "end_cycle": 3926197,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_22_sampler_start",
+      "end": "matrix_22_sampler_done",
+      "start_cycle": 3926197,
+      "end_cycle": 3935383,
+      "raw_user_cycles": 9186
+    },
+    {
+      "start": "matrix_22_sampler_done",
+      "end": "matrix_23_xof_start",
+      "start_cycle": 3935383,
+      "end_cycle": 3935543,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_23_xof_start",
+      "end": "matrix_23_sampler_start",
+      "start_cycle": 3935543,
+      "end_cycle": 4070379,
+      "raw_user_cycles": 134836
+    },
+    {
+      "start": "matrix_23_sampler_start",
+      "end": "matrix_23_sampler_done",
+      "start_cycle": 4070379,
+      "end_cycle": 4079551,
+      "raw_user_cycles": 9172
+    },
+    {
+      "start": "matrix_23_sampler_done",
+      "end": "matrix_24_xof_start",
+      "start_cycle": 4079551,
+      "end_cycle": 4079711,
+      "raw_user_cycles": 160
+    },
+    {
+      "start": "matrix_24_xof_start",
+      "end": "hard_cap",
+      "start_cycle": 4079711,
+      "end_cycle": 4194304,
+      "raw_user_cycles": 114593,
+      "partial": true
+    }
+  ],
+  "empty_marker_intervals": [
+    153,
+    153
+  ],
+  "completed_segment_count": 168,
+  "completed_segment_user_cycles": 4170359,
+  "completed_segment_padded_capacity": 11010048,
+  "completed_segment_other_capacity": 6839689,
+  "active_phase_at_cap": "matrix_24_xof_start",
+  "measurement_note": "Raw intervals include one marker and any intervening glue. Paging/reserved/padding are not individually exposed by Execute IPC. Capped prefix and isolated components are not full relation totals."
+}

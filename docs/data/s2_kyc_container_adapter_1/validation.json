@@ -1,0 +1,61 @@
+{
+  "package": "S2-KYC-CONTAINER-ADAPTER-1",
+  "passed": true,
+  "comparison_complete": true,
+  "resource_guard_status": "pending-outer-finalisation",
+  "protected_files": 8759,
+  "unchanged_protected_files": 8756,
+  "allowed_changed_files": [
+    "docs/spec_issues.md",
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "changed_files": [],
+  "missing_files": [],
+  "bytes_hashed": 293831479,
+  "coverage_sha256": "73df29e985aad1544583a3700a7cdbf83f2c3bfbfcde6c43720fb8a2d7c772fc",
+  "supplementary_comparison": {
+    "protected_files": 1341,
+    "unchanged_protected_files": 1341,
+    "allowed_changed_files": [],
+    "changed_files": [],
+    "missing_files": [],
+    "bytes_hashed": 11497731,
+    "coverage_sha256": "c118451691c779f21b80313f690e836047cdd7f21d4ceb64cf518c0e2a15bd1f"
+  },
+  "content_partition_union": 10100,
+  "content_partition_overlap": 0,
+  "identity_inclusive_unique_paths": 10122,
+  "name_inventory": {
+    "passed": true,
+    "count": 1758,
+    "unexpected": [],
+    "missing": []
+  },
+  "only_existing_changes": [
+    "docs/status.md",
+    "docs/traceability.md",
+    "docs/spec_issues.md"
+  ],
+  "existing_report_prefixes_preserved": true,
+  "baseline_regenerated": false,
+  "test_invocations": {
+    "focused": 24
+  },
+  "unique_new_tests": 24,
+  "total_test_invocations_including_prior_package": 222,
+  "new_numerical_calculations": 0,
+  "scoped_existing_verifier_regressions": 0,
+  "analysis_allowance_remaining_unchanged": 270.1814811680233,
+  "isolation_allowance_remaining_unchanged": 250.22,
+  "local_links_checked": 449,
+  "package_bytes_before_report": 305876,
+  "temporary_storage_bytes": 0,
+  "charged_seconds_including_inflight_audit_reservation": 253.43747948808596,
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "estimator_runs": 0,
+  "activation": false,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1
+}

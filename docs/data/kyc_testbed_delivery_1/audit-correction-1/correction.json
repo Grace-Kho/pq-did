@@ -1,0 +1,20 @@
+{
+  "correction": "Exact benchmark README documentation permission omitted in inherited primary comparison",
+  "historical_prefix_bytes": 211,
+  "historical_prefix_sha256": "2d926b72011d15ad08b377cd7039e8641bc519a06961a6b98453f1cce478abf6",
+  "historical_prefix_verified_against_retained_seal": true,
+  "before_sha256": {
+    "experiments/kyc_testbed_delivery_1/preservation.py": "e7b547f15c16ea2cc7f2850a383522fe5a1a274608250fa5c6352020f3d5f357",
+    "docs/data/kyc_testbed_delivery_1/new-inventory.json": "b07e9f9df3687f4910d00be7b6ee18179d1c8986c527d5b5e0cb5b0c22fb9fc5",
+    "docs/data/kyc_testbed_delivery_1/preparation.json": "95c87a366b5be2945114dc976f07f2a0e312b0b932f0a01cc7635b9d0d45bb89",
+    "docs/data/kyc_testbed_delivery_1/phases.json": "6cc239f9dbde0c9bed01e775588a0816403590f1d243a738a3b38239fe764e09"
+  },
+  "allowed_changes": [
+    "benchmarks/README.md: package appendix only; protected prefix retained"
+  ],
+  "historical_baselines_changed": false,
+  "functional_inputs_changed": false,
+  "functional_reruns": 0,
+  "earlier_audit_still_failed": true,
+  "authorisation": "Routine in-scope correction and affected revalidation in the consolidated completion checkpoint"
+}

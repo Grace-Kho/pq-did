@@ -1,0 +1,103 @@
+{
+  "cases": [
+    {
+      "id": "SEM-01",
+      "status": "not-run"
+    },
+    {
+      "id": "SEM-02",
+      "status": "not-run"
+    },
+    {
+      "id": "SEM-03",
+      "status": "not-run"
+    },
+    {
+      "id": "SEM-04",
+      "status": "not-run"
+    },
+    {
+      "id": "SEM-05",
+      "status": "not-run"
+    },
+    {
+      "id": "SEM-06",
+      "status": "not-run"
+    },
+    {
+      "id": "SEM-07",
+      "status": "not-run"
+    },
+    {
+      "id": "SEM-08",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-01",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-02",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-03",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-04",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-05",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-06",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-07",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-08",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-09",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-10",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-11",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-12",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-13",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-14",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-15",
+      "status": "not-run"
+    },
+    {
+      "id": "TR-16",
+      "status": "not-run"
+    }
+  ],
+  "new_invocations": 0,
+  "cumulative_invocations": 411,
+  "ceiling": 438
+}

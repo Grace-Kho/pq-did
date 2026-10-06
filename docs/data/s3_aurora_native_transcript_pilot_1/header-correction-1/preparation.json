@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "status": "not-admitted",
+  "reason": "Existing classifier omits actual CMake target-local harness object path; 1387120 bytes exceed its unchanged ordinary/evidence per-file limit 1048576. Outer monitor raised ValueError before recording a complete build guard result. No further native execution.",
+  "new_complete_content_comparisons": 0
+}

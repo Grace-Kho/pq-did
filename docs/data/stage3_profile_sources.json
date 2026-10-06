@@ -1,0 +1,474 @@
+{
+  "record_kind": "read_only_primary_source_and_host_review",
+  "date": "2026-09-19",
+  "status": "proposal_only_not_adopted",
+  "scope": "Source text and repository metadata inspection; no candidate installation, builds or proofs. Partial code review, not a security audit.",
+  "repository_sources": [
+    {
+      "repo": "isec-tugraz/gzkbpp",
+      "requested_ref": "master",
+      "commit": "3d7739fb2e17cea60d2187a169c5e652cba34448",
+      "commit_date": "2019-05-28T17:23:11Z",
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2019-05-28T17:23:12Z",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/isec-tugraz/gzkbpp/3d7739fb2e17cea60d2187a169c5e652cba34448/README.md",
+          "sha256": "d25bddcaca82e00ea6053fc6d5812762e03fee7b7d4e6eddc873fb447c432071"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/isec-tugraz/gzkbpp/3d7739fb2e17cea60d2187a169c5e652cba34448/LICENSE",
+          "sha256": "2a085548c81dc836f75700c437c18955d43e8b6bec09b2f22654a9b70d0bad6e"
+        },
+        {
+          "path": "code/ZKBPP.h",
+          "url": "https://raw.githubusercontent.com/isec-tugraz/gzkbpp/3d7739fb2e17cea60d2187a169c5e652cba34448/code/ZKBPP.h",
+          "sha256": "98e612195357fb067a447c93b23174aabc3397f14474e4ef1c8da7fb099f2a6f"
+        },
+        {
+          "path": "code/ZKBPP.cpp",
+          "url": "https://raw.githubusercontent.com/isec-tugraz/gzkbpp/3d7739fb2e17cea60d2187a169c5e652cba34448/code/ZKBPP.cpp",
+          "sha256": "10201362f338cb4549db27867108b9f158db2773dadeb0735dc089e8fe783621"
+        },
+        {
+          "path": "code/common.h",
+          "url": "https://raw.githubusercontent.com/isec-tugraz/gzkbpp/3d7739fb2e17cea60d2187a169c5e652cba34448/code/common.h",
+          "sha256": "bb366f0cb729bc4a1a1b2d6e02827ff40665f6a4e79dd8a9e7251c293a9aa457"
+        },
+        {
+          "path": "code/main.cpp",
+          "url": "https://raw.githubusercontent.com/isec-tugraz/gzkbpp/3d7739fb2e17cea60d2187a169c5e652cba34448/code/main.cpp",
+          "sha256": "abe39ad50fdfd7807bb10406d9f060398841f923390ac3c33000f9ee7b53e3d6"
+        }
+      ],
+      "candidate": "gzkbpp",
+      "metadata_url": "https://api.github.com/repos/isec-tugraz/gzkbpp",
+      "commit_url": "https://api.github.com/repos/isec-tugraz/gzkbpp/commits/3d7739fb2e17cea60d2187a169c5e652cba34448",
+      "licence_note": "MIT; transitive dependency licences not audited"
+    },
+    {
+      "repo": "risc0/risc0",
+      "requested_ref": "v3.0.6",
+      "commit": "1cc70cf05033a79ebc90f07c679cb4bd1cd301b9",
+      "commit_date": "2026-07-17T22:27:38Z",
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-08-28T05:30:55Z",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/README.md",
+          "sha256": "7584934c0497d38d79503c7f90f81cd6d977ecaa0a5d640627e05d572411119e"
+        },
+        {
+          "path": "Cargo.toml",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/Cargo.toml",
+          "sha256": "e27e5acafbabf1ed2682b38251e89b8394f45830ddf32ac5a7a039180e631932"
+        },
+        {
+          "path": "rust-toolchain.toml",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/rust-toolchain.toml",
+          "sha256": "df6277591e1d865205dc39205069b841a2287a522cff3522222efa8ccdea6214"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/LICENSE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+        },
+        {
+          "path": "SECURITY.md",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/SECURITY.md",
+          "sha256": "97e9066bc8e04c6eb67e373fdf05f4033507c9ba1cdae9a00848b8bea38519a2"
+        },
+        {
+          "path": "risc0/zkvm/src/host/client/prove/opts.rs",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/src/host/client/prove/opts.rs",
+          "sha256": "3638f721c91a7fd40aff6f6ddd10170070f14523f7bcc0a9db35e560cf9a3f80"
+        },
+        {
+          "path": "risc0/zkvm/src/receipt.rs",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/src/receipt.rs",
+          "sha256": "ec445670befb0fad19bfe46eede73e551de03d9f91fa1fb81c9149dc04912fed"
+        },
+        {
+          "path": "risc0/zkvm/src/receipt/succinct.rs",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/src/receipt/succinct.rs",
+          "sha256": "8e0165b3210e30e77074763d71d85fd0595e4190b96725182f33665b7df90d60"
+        },
+        {
+          "path": "risc0/zkvm/src/host/client/env.rs",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/src/host/client/env.rs",
+          "sha256": "7e0678028670089ba3ef8d34956cf1f58a42f8ba7635bb5a0bc7f13a843bf2c6"
+        },
+        {
+          "path": "risc0/zkvm/Cargo.toml",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/Cargo.toml",
+          "sha256": "fee7a620a49be5a5664f6a59fe6e0ee7c2cf5a273b75a6cec8ec89a70b31a4ed"
+        },
+        {
+          "path": "risc0/zkp/src/core/hash/poseidon2/mod.rs",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkp/src/core/hash/poseidon2/mod.rs",
+          "sha256": "a2993a2e29fa33345a6a9ce0b4f192efe7412746b92b172b0eed8ce78ee8471f"
+        },
+        {
+          "path": "risc0/zkp/src/core/mod.rs",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkp/src/core/mod.rs",
+          "sha256": "903bd9e2186713f44aa9ed817fbddda9d317cf1973d4606936cbde44c65deb1d"
+        },
+        {
+          "path": "risc0/zkvm/src/host/recursion/prove/mod.rs",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/src/host/recursion/prove/mod.rs",
+          "sha256": "41e2b6b92349ed28d2d4669e371d2ad1b5617d97b2ad4551d101c10a7560a520"
+        },
+        {
+          "path": "risc0/zkvm/src/receipt/merkle.rs",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/src/receipt/merkle.rs",
+          "sha256": "b3eeb7cc62bba1dfa9ba32a75b905510b4777b9f61004891163d8f43ee8072d6"
+        },
+        {
+          "path": "risc0/zkp/src/lib.rs",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkp/src/lib.rs",
+          "sha256": "107521d2426442fbc9358b7b9ae5650be92d670ea85e9a34aec7b9e9cc27dc6d"
+        },
+        {
+          "path": "risc0/zkp/src/core/hash/poseidon2/consts.rs",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkp/src/core/hash/poseidon2/consts.rs",
+          "sha256": "5ee51bce046bce1306181a43136aa0731dcf976ab10e2e8d82db88711efdcc41"
+        },
+        {
+          "path": "risc0/zkvm/src/host/server/prove/prover_impl.rs",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/src/host/server/prove/prover_impl.rs",
+          "sha256": "2b3e6e61cfaf07d78cb935d5db6a7c0053c3581cfdf1347705b39844e15209a5"
+        },
+        {
+          "path": "risc0/zkvm/src/host/client/prove/mod.rs",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/src/host/client/prove/mod.rs",
+          "sha256": "3d52b1fa00f501b7f203c02e718c03b6a5b90994cdecc57294faf6b8977cbf48"
+        },
+        {
+          "path": "website/api/security-model.md",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/website/api/security-model.md",
+          "sha256": "e4d7a8196b84c8fad0b41b95732d43924cbb16d778f68f597b4562169ad1576d"
+        },
+        {
+          "path": "risc0/core/src/field/baby_bear.rs",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/core/src/field/baby_bear.rs",
+          "sha256": "df3e77d606dd74d78fb6b6f3dbbe72455c5ed5b091f7a74de8c049e85b857ff3"
+        },
+        {
+          "path": "risc0/zkvm/src/host/server/prove/mod.rs",
+          "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/src/host/server/prove/mod.rs",
+          "sha256": "a3e5fdccbd4719820274c8b466fe7c211941b3fa24979f6eeddf5d1da4a347c9"
+        }
+      ],
+      "candidate": "risc0",
+      "metadata_url": "https://api.github.com/repos/risc0/risc0",
+      "commit_url": "https://api.github.com/repos/risc0/risc0/commits/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9",
+      "licence_note": "Apache-2.0 OR MIT (project README); API metadata lists Apache-2.0"
+    },
+    {
+      "repo": "facebook/winterfell",
+      "requested_ref": "main",
+      "commit": "2f78ee9bf667a561bdfcdfa68668d0f9b18b8315",
+      "commit_date": "2025-07-19T21:14:51Z",
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2025-07-19T21:21:16Z",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/facebook/winterfell/2f78ee9bf667a561bdfcdfa68668d0f9b18b8315/README.md",
+          "sha256": "4f8b3731440cb8a2320be2cec458f1b44230a20fa9eaba106260be16a0f875e4"
+        },
+        {
+          "path": "Cargo.toml",
+          "url": "https://raw.githubusercontent.com/facebook/winterfell/2f78ee9bf667a561bdfcdfa68668d0f9b18b8315/Cargo.toml",
+          "sha256": "3557be3b23b043eb5e1c7859dc2d62076be0c5aa6afa197e63e319637473d01a"
+        },
+        {
+          "path": "rust-toolchain.toml",
+          "url": "https://raw.githubusercontent.com/facebook/winterfell/2f78ee9bf667a561bdfcdfa68668d0f9b18b8315/rust-toolchain.toml",
+          "sha256": "85cf55af9bb61fdfe7fa74d77cb90b181536d602dfa131fb534880333c241098"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/facebook/winterfell/2f78ee9bf667a561bdfcdfa68668d0f9b18b8315/LICENSE",
+          "sha256": "a80c79b8f80e824c8ea0612b7abadb9c92c48673cf0adc20b2a7f43e2b19faa0"
+        },
+        {
+          "path": "air/src/options.rs",
+          "url": "https://raw.githubusercontent.com/facebook/winterfell/2f78ee9bf667a561bdfcdfa68668d0f9b18b8315/air/src/options.rs",
+          "sha256": "cf04a4ff0ad39a0d93906a7f8ffacbcfa7252807d78e22fb3098351df8a28a4c"
+        },
+        {
+          "path": "winterfell/Cargo.toml",
+          "url": "https://raw.githubusercontent.com/facebook/winterfell/2f78ee9bf667a561bdfcdfa68668d0f9b18b8315/winterfell/Cargo.toml",
+          "sha256": "56c92c1d9c218d474c259864369672bf6f9cad64c5a32efc5572ecec191c8f3a"
+        }
+      ],
+      "candidate": "winterfell",
+      "metadata_url": "https://api.github.com/repos/facebook/winterfell",
+      "commit_url": "https://api.github.com/repos/facebook/winterfell/commits/2f78ee9bf667a561bdfcdfa68668d0f9b18b8315",
+      "licence_note": "MIT; transitive dependency licences not audited"
+    },
+    {
+      "repo": "guruvamsi-policharla/zkdilithium",
+      "requested_ref": "master",
+      "commit": "a9dfe21bf967fbc4319ae18b74e6e9cdb0a7482a",
+      "commit_date": "2024-12-18T12:40:31Z",
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2024-12-18T12:40:31Z",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/guruvamsi-policharla/zkdilithium/a9dfe21bf967fbc4319ae18b74e6e9cdb0a7482a/README.md",
+          "sha256": "ac2815ea0d6aef0a73e5ac9a661ae0fb9ad2d45b62950c38eb14b32c6cf605ba"
+        },
+        {
+          "path": "Cargo.toml",
+          "url": "https://raw.githubusercontent.com/guruvamsi-policharla/zkdilithium/a9dfe21bf967fbc4319ae18b74e6e9cdb0a7482a/Cargo.toml",
+          "sha256": "3978d086a630a72f182280621fc215ed3445a974059839b6e21cec78cacfd1c3"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/guruvamsi-policharla/zkdilithium/a9dfe21bf967fbc4319ae18b74e6e9cdb0a7482a/LICENSE",
+          "sha256": "88a2a837188fc75ef8ff06364603fd7768154a727b426e199b2c38f18a4f3493"
+        }
+      ],
+      "candidate": "zkdilithium",
+      "metadata_url": "https://api.github.com/repos/guruvamsi-policharla/zkdilithium",
+      "commit_url": "https://api.github.com/repos/guruvamsi-policharla/zkdilithium/commits/a9dfe21bf967fbc4319ae18b74e6e9cdb0a7482a",
+      "licence_note": "MIT; transitive dependency licences not audited"
+    },
+    {
+      "repo": "lazer-crypto/lazer",
+      "requested_ref": "main",
+      "commit": "fc455c3b48bfe9e4b1e0607c74ae676c04020923",
+      "commit_date": "2026-09-17T12:52:50Z",
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-09-17T13:51:21Z",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/lazer-crypto/lazer/fc455c3b48bfe9e4b1e0607c74ae676c04020923/README.md",
+          "sha256": "163930617ff02cf593f0a382cc46fc7945011378b9f777bd6a59f5e1c7bbe137"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/lazer-crypto/lazer/fc455c3b48bfe9e4b1e0607c74ae676c04020923/LICENSE",
+          "sha256": "673927de3d620ffe6b446584fb1f8ce6ec520c5c4664bd1bc5168fcbafa04165"
+        },
+        {
+          "path": "Makefile",
+          "url": "https://raw.githubusercontent.com/lazer-crypto/lazer/fc455c3b48bfe9e4b1e0607c74ae676c04020923/Makefile",
+          "sha256": "5d58bba1304fba27dedb94fd771b916eaeb451bd69f164a26dcc4de1efa8a021"
+        },
+        {
+          "path": "docs/source/anoncred.rst",
+          "url": "https://raw.githubusercontent.com/lazer-crypto/lazer/fc455c3b48bfe9e4b1e0607c74ae676c04020923/docs/source/anoncred.rst",
+          "sha256": "512f3f325a502c33d3d8f9e9d4f0b0d6606137b5e609ba9637ecb75a9d550ee9"
+        },
+        {
+          "path": "python/anon_cred/anon_cred.py",
+          "url": "https://raw.githubusercontent.com/lazer-crypto/lazer/fc455c3b48bfe9e4b1e0607c74ae676c04020923/python/anon_cred/anon_cred.py",
+          "sha256": "57cb1d1f17fefa4a5856eba08a261b5fec4c20c59dc9089765f22716c3b7ca78"
+        },
+        {
+          "path": "python/anon_cred/anon_cred_p2_params.py",
+          "url": "https://raw.githubusercontent.com/lazer-crypto/lazer/fc455c3b48bfe9e4b1e0607c74ae676c04020923/python/anon_cred/anon_cred_p2_params.py",
+          "sha256": "adea568a7f85e2f4130963ae027f7fb4df202f6414c8c89ed15680a97b411aa0"
+        }
+      ],
+      "candidate": "lazer",
+      "metadata_url": "https://api.github.com/repos/lazer-crypto/lazer",
+      "commit_url": "https://api.github.com/repos/lazer-crypto/lazer/commits/fc455c3b48bfe9e4b1e0607c74ae676c04020923",
+      "licence_note": "MIT; transitive dependency licences not audited"
+    }
+  ],
+  "other_primary_sources": [
+    {
+      "url": "https://eprint.iacr.org/2017/279.pdf",
+      "description": "ZKB++/Picnic paper; ROM vs QROM transform and LowMC performance, not PQ-DID",
+      "accessed": "2026-09-19"
+    },
+    {
+      "url": "https://dev.risczero.com/api/security-model",
+      "description": "Official version 3.0 security/privacy qualifications; same relevant text also inspected at pinned website/api/security-model.md",
+      "accessed": "2026-09-19"
+    },
+    {
+      "url": "https://github.com/risc0/risc0/releases/tag/v3.0.6",
+      "description": "Stable release identity; latest-release API read on review date",
+      "accessed": "2026-09-19"
+    },
+    {
+      "url": "https://dev.risczero.com/datasheet.pdf",
+      "description": "April 2023 performance datasheet, commit cd1a37e, generic loop; not v3.0.6 or PQ-DID",
+      "accessed": "2026-09-19"
+    },
+    {
+      "url": "https://dev.risczero.com/proof-system-in-detail.pdf",
+      "description": "Official proof-system technical paper consulted; does not establish project-specific extraction/simulation",
+      "accessed": "2026-09-19"
+    },
+    {
+      "url": "https://eprint.iacr.org/2023/414.pdf",
+      "description": "Post-Quantum Privacy Pass via Post-Quantum Anonymous Credentials; modified Dilithium, paper acknowledges implementation lacks ZK",
+      "accessed": "2026-09-19"
+    },
+    {
+      "url": "https://eprint.iacr.org/2024/1846.pdf",
+      "description": "LaZer library paper; lattice relation/credential examples differ from PQ-DID",
+      "accessed": "2026-09-19"
+    }
+  ],
+  "host_snapshot": {
+    "kernel": "6.18.33.2-microsoft-standard-WSL2",
+    "logical_cpus": 24,
+    "model": "Intel(R) Core(TM) i7-14650HX",
+    "relevant_cpu_flags": {
+      "avx": true,
+      "avx2": true,
+      "avx512f": false,
+      "avx512bw": false,
+      "avx512vl": false,
+      "aes": true,
+      "bmi2": true,
+      "adx": true,
+      "sha_ni": true
+    },
+    "memory_bytes": {
+      "MemTotal": 8126111744,
+      "MemFree": 4468625408,
+      "MemAvailable": 5170896896,
+      "Buffers": 32264192,
+      "Cached": 787517440,
+      "SwapCached": 0,
+      "Active": 224530432,
+      "Inactive": 2702254080,
+      "Active(anon)": 2818048,
+      "Inactive(anon)": 2182258688,
+      "Active(file)": 221712384,
+      "Inactive(file)": 519995392,
+      "Unevictable": 0,
+      "Mlocked": 0,
+      "SwapTotal": 2147483648,
+      "SwapFree": 2147483648,
+      "Dirty": 753664,
+      "Writeback": 0,
+      "AnonPages": 2107342848,
+      "Mapped": 480538624,
+      "Shmem": 77619200,
+      "KReclaimable": 161275904,
+      "Slab": 297164800,
+      "SReclaimable": 161275904,
+      "SUnreclaim": 135888896,
+      "KernelStack": 10256384,
+      "PageTables": 46362624,
+      "SecPageTables": 0,
+      "NFS_Unstable": 0,
+      "Bounce": 0,
+      "WritebackTmp": 0,
+      "CommitLimit": 6210539520,
+      "Committed_AS": 5135601664,
+      "VmallocTotal": 35184372087808,
+      "VmallocUsed": 40062976,
+      "VmallocChunk": 0,
+      "Percpu": 12484608,
+      "HardwareCorrupted": 0,
+      "AnonHugePages": 0,
+      "ShmemHugePages": 0,
+      "ShmemPmdMapped": 0,
+      "FileHugePages": 0,
+      "FilePmdMapped": 0,
+      "Unaccepted": 0,
+      "Balloon": 0,
+      "Hugepagesize": 2097152,
+      "Hugetlb": 0,
+      "DirectMap4k": 45088768,
+      "DirectMap2M": 6197084160,
+      "DirectMap1G": 10737418240
+    },
+    "disk_bytes": {
+      "total": 1081101176832,
+      "used": 4529553408,
+      "free": 1021579268096
+    }
+  },
+  "host_caveats": [
+    "MemAvailable is a point-in-time observation, not a future allocation guarantee.",
+    "WSL virtual free disk space is not verified physical Windows free space.",
+    "No usable GPU verified; proposed candidate experiment is local CPU-only.",
+    "AVX512F/BW/VL absent; current documented LaZer build prerequisites not met."
+  ],
+  "proposed_candidate": {
+    "name": "RISC Zero v3.0.6 Succinct STARK",
+    "profile_id": "PQDID-R0S-EXP1",
+    "candidate_active": false,
+    "hash_suite": "poseidon2",
+    "prohibited_receipt_kinds": [
+      "Fake",
+      "Composite",
+      "Groth16"
+    ],
+    "security_gaps": [
+      "Qualified, not mathematically established complete zero-knowledge in inspected documentation.",
+      "Terminal control metadata requires witness-independent schedule validation.",
+      "Published 96/99 component estimates and source 97-bit comment/README 98-bit headline are not a 128-bit quantum guarantee.",
+      "Project-specific full-witness, fresh-target, actual-history quantum extraction and online complete-view simulation are not established."
+    ],
+    "zkp_constants": {
+      "queries": 50,
+      "expansion_factor": 4,
+      "fri_folding_factor": 16,
+      "terminal_degree": 256,
+      "zk_cycles": 1024,
+      "min_segment_po2": 13,
+      "max_segment_po2": 24,
+      "baby_bear_prime": 2013265921,
+      "extension_degree": 4
+    },
+    "registry_guest_images": null,
+    "next_work_package": "R0-SUCCINCT-FEASIBILITY-1"
+  }
+}

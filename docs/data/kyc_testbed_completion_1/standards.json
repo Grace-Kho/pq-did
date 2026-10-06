@@ -1,0 +1,42 @@
+{
+  "checked": "2026-09-29",
+  "method": "Read-only official W3C pages through browser; no remote contexts loaded by parser",
+  "sources": [
+    {
+      "name": "VC Data Model 2.0",
+      "publication": "2025-05-15",
+      "url": "https://www.w3.org/TR/2025/REC-vc-data-model-2.0-20250515/",
+      "sections": [
+        "4.7 issuer",
+        "4.8 credentialSubject",
+        "4.9 validity",
+        "4.10 status",
+        "4.12 securing mechanisms",
+        "5.13 securing-mechanism specifications"
+      ]
+    },
+    {
+      "name": "DID Core 1.0",
+      "publication": "2022-07-19",
+      "url": "https://www.w3.org/TR/2022/REC-did-core-20220719/",
+      "sections": [
+        "5.1 document",
+        "5.2 verification methods",
+        "5.3 relationships",
+        "7.1 resolution"
+      ]
+    },
+    {
+      "name": "Data Integrity 1.0",
+      "publication": "2025-05-15",
+      "url": "https://www.w3.org/TR/2025/REC-vc-data-integrity-20250515/",
+      "sections": [
+        "2.1 proof model",
+        "3 cryptosuite algorithms"
+      ]
+    }
+  ],
+  "mapping_conventions": "proposed only",
+  "standard_suite_invented": false,
+  "external_conformance_tests_run": false
+}

@@ -1,0 +1,18 @@
+{
+  "docs/status.md": {
+    "bytes": 204059,
+    "sha256": "58df07e1d3c9cdc93e3fa1c5f72941ff1fbdd5b14fc986ca25b71e15fa7ca077"
+  },
+  "docs/traceability.md": {
+    "bytes": 261854,
+    "sha256": "c4c36bcaacdd1b0de0a2a83c11215e4121e2ae56229dbce4a137fbd33cd6f76f"
+  },
+  "docs/spec_issues.md": {
+    "bytes": 224885,
+    "sha256": "2f5e34eee55f88e5f2709f9edfd27c2e17844dcc1ad1433db95ccd25484c7c9b"
+  },
+  "benchmarks/README.md": {
+    "bytes": 211,
+    "sha256": "2d926b72011d15ad08b377cd7039e8641bc519a06961a6b98453f1cce478abf6"
+  }
+}

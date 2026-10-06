@@ -1,0 +1,35 @@
+{
+  "invocation_id": "M1-0412",
+  "case_id": "TR-10",
+  "ordinal": 412,
+  "cumulative_invocations": 860,
+  "status": "pass",
+  "result": {
+    "id": "TR-10",
+    "command": [
+      "/home/grace/projects/pq-did/experiments/aurora_masking_milestone_1/build/exp2_native",
+      "10",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/overlay/canonical.bin"
+    ],
+    "exit_code": 0,
+    "seconds": 0.001269449945539236,
+    "stdout": "\nBCS parameters\n* digest_len (bytes) = 64\n* digest_len (bits) = 512\n* hash_type = blake2b\nX b36c3c1629263b3e4e8b8619e8a7f771cb27e8220cd6957f1905bdde04e5a30d07ce5187ca643cd8d568ff115c8cdb597d51b918b33f75f3a0580c1f369a423f 0 3\n",
+    "stderr": "",
+    "binary_sha256": "65c24a731b68a58ba903abf0de9e64b576087e0df056cfcc354028407e1b4af2",
+    "expected_path": "docs/data/s3_aurora_transcript_regression_1/TR-10.json",
+    "expected_sha256": "a705127b85fcc444da9ad46daa711e6ad619ea67463f699d3d00baf5f686e3fb",
+    "private_witness": false,
+    "proof_attempt": false,
+    "comparison": {
+      "rejected": true,
+      "atomic_state_retained": true,
+      "sticky_failure": true
+    },
+    "actual_calls": [
+      "bcs_protocol::EXP2 public common caller",
+      "blake2b_hashchain::EXP2"
+    ],
+    "status": "pass"
+  },
+  "seconds": 0.002133687026798725
+}

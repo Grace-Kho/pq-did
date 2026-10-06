@@ -1,0 +1,53 @@
+{
+  "name": "native-build-3",
+  "phase": "native",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/kyc_milestone_1/native_build.py",
+    "native-build-3"
+  ],
+  "limit_seconds": 120,
+  "child_seconds": 119,
+  "status": "pass",
+  "unit": "pqdid-oct31-m1-native-build-3",
+  "memory_limit_bytes": 1073741824,
+  "opening_storage": {
+    "new_evidence_bytes": 1011217,
+    "new_artifact_bytes": 30272424,
+    "evidence_bytes": 17676315,
+    "artifact_bytes": 58112339,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4116135936,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": true,
+  "seconds": 4.109400455956347,
+  "exit_code": 0,
+  "stop": null,
+  "worker": {
+    "before": {
+      "memory.max": "1073741824",
+      "memory.swap.max": "0",
+      "memory.peak": "10698752",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "after": {
+      "memory.max": "1073741824",
+      "memory.swap.max": "0",
+      "memory.peak": "511365120",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.max": "200000 100000",
+      "pids.max": "128"
+    },
+    "child_exit_code": 0,
+    "child_seconds": 3.5668595660245046,
+    "resource_breach": false,
+    "metric": "cgroup-v2 memory.peak including worker and descendants, charged cache/kernel"
+  },
+  "sampled_tree_rss_peak": 479907840,
+  "artifact_observed_peak_bytes": 67021139
+}

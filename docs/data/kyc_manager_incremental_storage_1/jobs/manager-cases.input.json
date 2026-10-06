@@ -1,0 +1,29 @@
+{
+  "name": "manager-cases",
+  "phase": "python",
+  "argv": [
+    "/home/grace/projects/pq-did/.venv/bin/python",
+    "-I",
+    "-B",
+    "/home/grace/projects/pq-did/experiments/kyc_manager_incremental_storage_1/dispatch.py",
+    "focused",
+    "S",
+    "1",
+    "24"
+  ],
+  "limit_seconds": 240,
+  "child_seconds": 239,
+  "status": "launched",
+  "unit": "pqdid-kyc-manager-1-manager-cases",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 109261,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 31355363,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4063436800,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

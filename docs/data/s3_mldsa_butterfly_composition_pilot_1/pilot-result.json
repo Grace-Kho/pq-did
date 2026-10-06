@@ -1,0 +1,1613 @@
+{
+  "profile": "experimental-forward-butterfly-q-v1",
+  "passed": true,
+  "invocations": [
+    {
+      "case": "G1-single-butterfly",
+      "kind": "generation-probe",
+      "status": "pass",
+      "workload": "single forward butterfly",
+      "twiddles": [
+        4808194
+      ],
+      "components": [
+        {
+          "name": "baseline",
+          "private_input_bits": 130,
+          "complete": true,
+          "counts": {
+            "xor": 92642,
+            "and_": 61450,
+            "not_": 1310
+          },
+          "total_gates": 155402,
+          "first_gate_offset": 0,
+          "end_gate_offset": 155402,
+          "generation_and_counting_seconds": 0.18251605902332813,
+          "phases_global_gate_offsets": [
+            {
+              "phase": "original_checked_butterfly",
+              "gates": 155270,
+              "and_gates": 61320
+            },
+            {
+              "phase": "full64_output_masks_and_validity",
+              "gates": 155402,
+              "and_gates": 61450
+            }
+          ],
+          "output_words_by_node": [
+            [
+              [
+                155404,
+                155405,
+                155406,
+                155407,
+                155408,
+                155409,
+                155410,
+                155411,
+                155412,
+                155413,
+                155414,
+                155415,
+                155416,
+                155417,
+                155418,
+                155419,
+                155420,
+                155421,
+                155422,
+                155423,
+                155424,
+                155425,
+                155426,
+                155427,
+                155428,
+                155429,
+                155430,
+                155431,
+                155432,
+                155433,
+                155434,
+                155435,
+                155436,
+                155437,
+                155438,
+                155439,
+                155440,
+                155441,
+                155442,
+                155443,
+                155444,
+                155445,
+                155446,
+                155447,
+                155448,
+                155449,
+                155450,
+                155451,
+                155452,
+                155453,
+                155454,
+                155455,
+                155456,
+                155457,
+                155458,
+                155459,
+                155460,
+                155461,
+                155462,
+                155463,
+                155464,
+                155465,
+                155466,
+                155467
+              ],
+              [
+                155468,
+                155469,
+                155470,
+                155471,
+                155472,
+                155473,
+                155474,
+                155475,
+                155476,
+                155477,
+                155478,
+                155479,
+                155480,
+                155481,
+                155482,
+                155483,
+                155484,
+                155485,
+                155486,
+                155487,
+                155488,
+                155489,
+                155490,
+                155491,
+                155492,
+                155493,
+                155494,
+                155495,
+                155496,
+                155497,
+                155498,
+                155499,
+                155500,
+                155501,
+                155502,
+                155503,
+                155504,
+                155505,
+                155506,
+                155507,
+                155508,
+                155509,
+                155510,
+                155511,
+                155512,
+                155513,
+                155514,
+                155515,
+                155516,
+                155517,
+                155518,
+                155519,
+                155520,
+                155521,
+                155522,
+                155523,
+                155524,
+                155525,
+                155526,
+                155527,
+                155528,
+                155529,
+                155530,
+                155531
+              ]
+            ]
+          ],
+          "validity_wires": [
+            155533
+          ],
+          "python_process_high_water_RSS_bytes": 23642112,
+          "cgroup_memory_peak_so_far_bytes": 19808256,
+          "gate_segment_sha256": "e1229f1290f78f8839867324cf327c712ed07e0bc0a143b8c12fdb9b8d727c5f"
+        },
+        {
+          "name": "candidate",
+          "private_input_bits": 130,
+          "complete": true,
+          "counts": {
+            "xor": 54556,
+            "and_": 33726,
+            "not_": 907
+          },
+          "total_gates": 89189,
+          "first_gate_offset": 155402,
+          "end_gate_offset": 244591,
+          "generation_and_counting_seconds": 0.10492967092432082,
+          "phases_global_gate_offsets": [
+            {
+              "phase": "exact_original_product_overflow_condition",
+              "gates": 156125,
+              "and_gates": 61713
+            },
+            {
+              "phase": "two_complete_signed64_to_canonical_conversions",
+              "gates": 227909,
+              "and_gates": 88375
+            },
+            {
+              "phase": "guarded_scalar_modmul_including_its_output_boundary",
+              "gates": 243067,
+              "and_gates": 94536
+            },
+            {
+              "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+              "gates": 243809,
+              "and_gates": 94792
+            },
+            {
+              "phase": "checked_raw_addition_and_canonical_q_correction",
+              "gates": 244459,
+              "and_gates": 95046
+            },
+            {
+              "phase": "full64_output_masks_and_validity",
+              "gates": 244591,
+              "and_gates": 95176
+            }
+          ],
+          "output_words_by_node": [
+            [
+              [
+                244593,
+                244594,
+                244595,
+                244596,
+                244597,
+                244598,
+                244599,
+                244600,
+                244601,
+                244602,
+                244603,
+                244604,
+                244605,
+                244606,
+                244607,
+                244608,
+                244609,
+                244610,
+                244611,
+                244612,
+                244613,
+                244614,
+                244615,
+                244616,
+                244617,
+                244618,
+                244619,
+                244620,
+                244621,
+                244622,
+                244623,
+                244624,
+                244625,
+                244626,
+                244627,
+                244628,
+                244629,
+                244630,
+                244631,
+                244632,
+                244633,
+                244634,
+                244635,
+                244636,
+                244637,
+                244638,
+                244639,
+                244640,
+                244641,
+                244642,
+                244643,
+                244644,
+                244645,
+                244646,
+                244647,
+                244648,
+                244649,
+                244650,
+                244651,
+                244652,
+                244653,
+                244654,
+                244655,
+                244656
+              ],
+              [
+                244657,
+                244658,
+                244659,
+                244660,
+                244661,
+                244662,
+                244663,
+                244664,
+                244665,
+                244666,
+                244667,
+                244668,
+                244669,
+                244670,
+                244671,
+                244672,
+                244673,
+                244674,
+                244675,
+                244676,
+                244677,
+                244678,
+                244679,
+                244680,
+                244681,
+                244682,
+                244683,
+                244684,
+                244685,
+                244686,
+                244687,
+                244688,
+                244689,
+                244690,
+                244691,
+                244692,
+                244693,
+                244694,
+                244695,
+                244696,
+                244697,
+                244698,
+                244699,
+                244700,
+                244701,
+                244702,
+                244703,
+                244704,
+                244705,
+                244706,
+                244707,
+                244708,
+                244709,
+                244710,
+                244711,
+                244712,
+                244713,
+                244714,
+                244715,
+                244716,
+                244717,
+                244718,
+                244719,
+                244720
+              ]
+            ]
+          ],
+          "validity_wires": [
+            244722
+          ],
+          "python_process_high_water_RSS_bytes": 25214976,
+          "cgroup_memory_peak_so_far_bytes": 21114880,
+          "gate_segment_sha256": "e6b5090694ff671d3345eb1ea37b270f454ef459e22d44018cee961dfd15999d"
+        }
+      ],
+      "complete": true,
+      "seconds": 0.2924176420783624,
+      "counts": {
+        "xor": 147198,
+        "and_": 95177,
+        "not_": 2217,
+        "inputs": 130
+      },
+      "total_gates": 244592,
+      "fingerprint": "d5ba93677e3ae68b056c0d63110c8f522aab56ade1438c58de62d4d124aca4ed",
+      "generation_seconds": 0.2905552058946341,
+      "trace_bytes": 4158153,
+      "extra_harness_gates": 1,
+      "extra_harness_ANDs": 1,
+      "test_equality_gates": 0,
+      "aggregate_retained_trace_bytes": 4158186,
+      "python_process_high_water_RSS_bytes": 29343744,
+      "cgroup_memory_peak_so_far_bytes": 25300992
+    },
+    {
+      "case": "D1-zero",
+      "kind": "differential-case",
+      "status": "pass",
+      "input_signed64": [
+        0,
+        0
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected_words": [
+        0,
+        0
+      ],
+      "expected_validity_by_node": [
+        1
+      ],
+      "baseline_words": [
+        0,
+        0
+      ],
+      "candidate_words": [
+        0,
+        0
+      ],
+      "baseline_validity": [
+        1
+      ],
+      "candidate_validity": [
+        1
+      ],
+      "expected_valid": true,
+      "usable": true,
+      "all_intermediate_and_final_outputs_canonical": true,
+      "seconds": 0.07335808302741498,
+      "evaluator_seconds": 0.05876208399422467,
+      "python_process_high_water_RSS_bytes": 29343744,
+      "cgroup_memory_peak_so_far_bytes": 25300992
+    },
+    {
+      "case": "D2-canonical-upper-wrap",
+      "kind": "differential-case",
+      "status": "pass",
+      "input_signed64": [
+        8380416,
+        8380416
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected_words": [
+        3572222,
+        4808193
+      ],
+      "expected_validity_by_node": [
+        1
+      ],
+      "baseline_words": [
+        3572222,
+        4808193
+      ],
+      "candidate_words": [
+        3572222,
+        4808193
+      ],
+      "baseline_validity": [
+        1
+      ],
+      "candidate_validity": [
+        1
+      ],
+      "expected_valid": true,
+      "usable": true,
+      "all_intermediate_and_final_outputs_canonical": true,
+      "seconds": 0.07262274099048227,
+      "evaluator_seconds": 0.057618086924776435,
+      "python_process_high_water_RSS_bytes": 29343744,
+      "cgroup_memory_peak_so_far_bytes": 25300992
+    },
+    {
+      "case": "D3-negative-subtraction",
+      "kind": "differential-case",
+      "status": "pass",
+      "input_signed64": [
+        0,
+        1
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected_words": [
+        4808194,
+        3572223
+      ],
+      "expected_validity_by_node": [
+        1
+      ],
+      "baseline_words": [
+        4808194,
+        3572223
+      ],
+      "candidate_words": [
+        4808194,
+        3572223
+      ],
+      "baseline_validity": [
+        1
+      ],
+      "candidate_validity": [
+        1
+      ],
+      "expected_valid": true,
+      "usable": true,
+      "all_intermediate_and_final_outputs_canonical": true,
+      "seconds": 0.07309866801369935,
+      "evaluator_seconds": 0.05802429106552154,
+      "python_process_high_water_RSS_bytes": 29343744,
+      "cgroup_memory_peak_so_far_bytes": 25300992
+    },
+    {
+      "case": "D4-signed-negative-representatives",
+      "kind": "differential-case",
+      "status": "pass",
+      "input_signed64": [
+        -1,
+        -1
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected_words": [
+        3572222,
+        4808193
+      ],
+      "expected_validity_by_node": [
+        1
+      ],
+      "baseline_words": [
+        3572222,
+        4808193
+      ],
+      "candidate_words": [
+        3572222,
+        4808193
+      ],
+      "baseline_validity": [
+        1
+      ],
+      "candidate_validity": [
+        1
+      ],
+      "expected_valid": true,
+      "usable": true,
+      "all_intermediate_and_final_outputs_canonical": true,
+      "seconds": 0.07168656692374498,
+      "evaluator_seconds": 0.05722593399696052,
+      "python_process_high_water_RSS_bytes": 29343744,
+      "cgroup_memory_peak_so_far_bytes": 25300992
+    },
+    {
+      "case": "D5-noncanonical-q-normalisation",
+      "kind": "differential-case",
+      "status": "pass",
+      "input_signed64": [
+        8380417,
+        8380417
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected_words": [
+        0,
+        0
+      ],
+      "expected_validity_by_node": [
+        1
+      ],
+      "baseline_words": [
+        0,
+        0
+      ],
+      "candidate_words": [
+        0,
+        0
+      ],
+      "baseline_validity": [
+        1
+      ],
+      "candidate_validity": [
+        1
+      ],
+      "expected_valid": true,
+      "usable": true,
+      "all_intermediate_and_final_outputs_canonical": true,
+      "seconds": 0.07245951099321246,
+      "evaluator_seconds": 0.05784080701414496,
+      "python_process_high_water_RSS_bytes": 29343744,
+      "cgroup_memory_peak_so_far_bytes": 25300992
+    },
+    {
+      "case": "D6-signed-minimum-left",
+      "kind": "differential-case",
+      "status": "pass",
+      "input_signed64": [
+        -9223372036854775808,
+        0
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected_words": [
+        3007233,
+        3007233
+      ],
+      "expected_validity_by_node": [
+        1
+      ],
+      "baseline_words": [
+        3007233,
+        3007233
+      ],
+      "candidate_words": [
+        3007233,
+        3007233
+      ],
+      "baseline_validity": [
+        1
+      ],
+      "candidate_validity": [
+        1
+      ],
+      "expected_valid": true,
+      "usable": true,
+      "all_intermediate_and_final_outputs_canonical": true,
+      "seconds": 0.07229553896468133,
+      "evaluator_seconds": 0.056506756925955415,
+      "python_process_high_water_RSS_bytes": 29343744,
+      "cgroup_memory_peak_so_far_bytes": 25300992
+    },
+    {
+      "case": "D7-product-upper-boundary",
+      "kind": "differential-case",
+      "status": "pass",
+      "input_signed64": [
+        0,
+        1918261209272
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected_words": [
+        4972144,
+        3408273
+      ],
+      "expected_validity_by_node": [
+        1
+      ],
+      "baseline_words": [
+        4972144,
+        3408273
+      ],
+      "candidate_words": [
+        4972144,
+        3408273
+      ],
+      "baseline_validity": [
+        1
+      ],
+      "candidate_validity": [
+        1
+      ],
+      "expected_valid": true,
+      "usable": true,
+      "all_intermediate_and_final_outputs_canonical": true,
+      "seconds": 0.07389418105594814,
+      "evaluator_seconds": 0.057995122973807156,
+      "python_process_high_water_RSS_bytes": 29343744,
+      "cgroup_memory_peak_so_far_bytes": 25300992
+    },
+    {
+      "case": "D8-product-overflow",
+      "kind": "differential-case",
+      "status": "pass",
+      "input_signed64": [
+        0,
+        1918261209273
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected_words": [
+        0,
+        0
+      ],
+      "expected_validity_by_node": [
+        0
+      ],
+      "baseline_words": [
+        0,
+        0
+      ],
+      "candidate_words": [
+        0,
+        0
+      ],
+      "baseline_validity": [
+        0
+      ],
+      "candidate_validity": [
+        0
+      ],
+      "expected_valid": false,
+      "usable": false,
+      "all_intermediate_and_final_outputs_canonical": true,
+      "seconds": 0.07303629408124834,
+      "evaluator_seconds": 0.05846636102069169,
+      "python_process_high_water_RSS_bytes": 29343744,
+      "cgroup_memory_peak_so_far_bytes": 25300992
+    },
+    {
+      "case": "D9-raw-addition-overflow",
+      "kind": "differential-case",
+      "status": "pass",
+      "input_signed64": [
+        9223372036854775807,
+        1
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected_words": [
+        0,
+        0
+      ],
+      "expected_validity_by_node": [
+        0
+      ],
+      "baseline_words": [
+        0,
+        0
+      ],
+      "candidate_words": [
+        0,
+        0
+      ],
+      "baseline_validity": [
+        0
+      ],
+      "candidate_validity": [
+        0
+      ],
+      "expected_valid": false,
+      "usable": false,
+      "all_intermediate_and_final_outputs_canonical": true,
+      "seconds": 0.07175651006400585,
+      "evaluator_seconds": 0.05637973500415683,
+      "python_process_high_water_RSS_bytes": 29343744,
+      "cgroup_memory_peak_so_far_bytes": 25300992
+    },
+    {
+      "case": "D10-inactive-invalid",
+      "kind": "differential-case",
+      "status": "pass",
+      "input_signed64": [
+        0,
+        1918261209273
+      ],
+      "active": 0,
+      "prior_rejected": 0,
+      "expected_words": [
+        0,
+        0
+      ],
+      "expected_validity_by_node": [
+        1
+      ],
+      "baseline_words": [
+        0,
+        0
+      ],
+      "candidate_words": [
+        0,
+        0
+      ],
+      "baseline_validity": [
+        1
+      ],
+      "candidate_validity": [
+        1
+      ],
+      "expected_valid": true,
+      "usable": false,
+      "all_intermediate_and_final_outputs_canonical": true,
+      "seconds": 0.07148001599125564,
+      "evaluator_seconds": 0.05658032500650734,
+      "python_process_high_water_RSS_bytes": 29343744,
+      "cgroup_memory_peak_so_far_bytes": 25300992
+    },
+    {
+      "case": "C1-negative-twiddle",
+      "kind": "invalid-constant-case",
+      "status": "pass",
+      "refusals": [
+        "twiddle must be a public canonical integer modulo q",
+        "twiddle must be a public canonical integer modulo q"
+      ],
+      "gates_emitted": 0,
+      "seconds": 3.234099131077528e-05
+    },
+    {
+      "case": "C2-noncanonical-twiddle",
+      "kind": "invalid-constant-case",
+      "status": "pass",
+      "refusals": [
+        "twiddle must be a public canonical integer modulo q",
+        "twiddle must be a public canonical integer modulo q"
+      ],
+      "gates_emitted": 0,
+      "seconds": 1.5805009752511978e-05
+    },
+    {
+      "case": "G2-two-node-fragment",
+      "kind": "generation-probe",
+      "status": "pass",
+      "workload": "two-node schedule fragment",
+      "twiddles": [
+        4808194,
+        3765607
+      ],
+      "components": [
+        {
+          "name": "baseline",
+          "private_input_bits": 194,
+          "complete": true,
+          "counts": {
+            "xor": 185284,
+            "and_": 122900,
+            "not_": 2620
+          },
+          "total_gates": 310804,
+          "first_gate_offset": 0,
+          "end_gate_offset": 310804,
+          "generation_and_counting_seconds": 0.3632808499969542,
+          "phases_global_gate_offsets": [
+            {
+              "phase": "original_checked_butterfly",
+              "gates": 155270,
+              "and_gates": 61320
+            },
+            {
+              "phase": "full64_output_masks_and_validity",
+              "gates": 155402,
+              "and_gates": 61450
+            },
+            {
+              "phase": "original_checked_butterfly",
+              "gates": 310672,
+              "and_gates": 122770
+            },
+            {
+              "phase": "full64_output_masks_and_validity",
+              "gates": 310804,
+              "and_gates": 122900
+            }
+          ],
+          "output_words_by_node": [
+            [
+              [
+                155468,
+                155469,
+                155470,
+                155471,
+                155472,
+                155473,
+                155474,
+                155475,
+                155476,
+                155477,
+                155478,
+                155479,
+                155480,
+                155481,
+                155482,
+                155483,
+                155484,
+                155485,
+                155486,
+                155487,
+                155488,
+                155489,
+                155490,
+                155491,
+                155492,
+                155493,
+                155494,
+                155495,
+                155496,
+                155497,
+                155498,
+                155499,
+                155500,
+                155501,
+                155502,
+                155503,
+                155504,
+                155505,
+                155506,
+                155507,
+                155508,
+                155509,
+                155510,
+                155511,
+                155512,
+                155513,
+                155514,
+                155515,
+                155516,
+                155517,
+                155518,
+                155519,
+                155520,
+                155521,
+                155522,
+                155523,
+                155524,
+                155525,
+                155526,
+                155527,
+                155528,
+                155529,
+                155530,
+                155531
+              ],
+              [
+                155532,
+                155533,
+                155534,
+                155535,
+                155536,
+                155537,
+                155538,
+                155539,
+                155540,
+                155541,
+                155542,
+                155543,
+                155544,
+                155545,
+                155546,
+                155547,
+                155548,
+                155549,
+                155550,
+                155551,
+                155552,
+                155553,
+                155554,
+                155555,
+                155556,
+                155557,
+                155558,
+                155559,
+                155560,
+                155561,
+                155562,
+                155563,
+                155564,
+                155565,
+                155566,
+                155567,
+                155568,
+                155569,
+                155570,
+                155571,
+                155572,
+                155573,
+                155574,
+                155575,
+                155576,
+                155577,
+                155578,
+                155579,
+                155580,
+                155581,
+                155582,
+                155583,
+                155584,
+                155585,
+                155586,
+                155587,
+                155588,
+                155589,
+                155590,
+                155591,
+                155592,
+                155593,
+                155594,
+                155595
+              ]
+            ],
+            [
+              [
+                310870,
+                310871,
+                310872,
+                310873,
+                310874,
+                310875,
+                310876,
+                310877,
+                310878,
+                310879,
+                310880,
+                310881,
+                310882,
+                310883,
+                310884,
+                310885,
+                310886,
+                310887,
+                310888,
+                310889,
+                310890,
+                310891,
+                310892,
+                310893,
+                310894,
+                310895,
+                310896,
+                310897,
+                310898,
+                310899,
+                310900,
+                310901,
+                310902,
+                310903,
+                310904,
+                310905,
+                310906,
+                310907,
+                310908,
+                310909,
+                310910,
+                310911,
+                310912,
+                310913,
+                310914,
+                310915,
+                310916,
+                310917,
+                310918,
+                310919,
+                310920,
+                310921,
+                310922,
+                310923,
+                310924,
+                310925,
+                310926,
+                310927,
+                310928,
+                310929,
+                310930,
+                310931,
+                310932,
+                310933
+              ],
+              [
+                310934,
+                310935,
+                310936,
+                310937,
+                310938,
+                310939,
+                310940,
+                310941,
+                310942,
+                310943,
+                310944,
+                310945,
+                310946,
+                310947,
+                310948,
+                310949,
+                310950,
+                310951,
+                310952,
+                310953,
+                310954,
+                310955,
+                310956,
+                310957,
+                310958,
+                310959,
+                310960,
+                310961,
+                310962,
+                310963,
+                310964,
+                310965,
+                310966,
+                310967,
+                310968,
+                310969,
+                310970,
+                310971,
+                310972,
+                310973,
+                310974,
+                310975,
+                310976,
+                310977,
+                310978,
+                310979,
+                310980,
+                310981,
+                310982,
+                310983,
+                310984,
+                310985,
+                310986,
+                310987,
+                310988,
+                310989,
+                310990,
+                310991,
+                310992,
+                310993,
+                310994,
+                310995,
+                310996,
+                310997
+              ]
+            ]
+          ],
+          "validity_wires": [
+            155597,
+            310999
+          ],
+          "python_process_high_water_RSS_bytes": 29343744,
+          "cgroup_memory_peak_so_far_bytes": 25300992,
+          "gate_segment_sha256": "35e82d3ac1254684b6f57d8ffde12a4893c44dc048b05ee8d76a5d6c4b270a2c"
+        },
+        {
+          "name": "candidate",
+          "private_input_bits": 194,
+          "complete": true,
+          "counts": {
+            "xor": 109112,
+            "and_": 67452,
+            "not_": 1814
+          },
+          "total_gates": 178378,
+          "first_gate_offset": 310804,
+          "end_gate_offset": 489182,
+          "generation_and_counting_seconds": 0.213800102006644,
+          "phases_global_gate_offsets": [
+            {
+              "phase": "exact_original_product_overflow_condition",
+              "gates": 311527,
+              "and_gates": 123163
+            },
+            {
+              "phase": "two_complete_signed64_to_canonical_conversions",
+              "gates": 383311,
+              "and_gates": 149825
+            },
+            {
+              "phase": "guarded_scalar_modmul_including_its_output_boundary",
+              "gates": 398469,
+              "and_gates": 155986
+            },
+            {
+              "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+              "gates": 399211,
+              "and_gates": 156242
+            },
+            {
+              "phase": "checked_raw_addition_and_canonical_q_correction",
+              "gates": 399861,
+              "and_gates": 156496
+            },
+            {
+              "phase": "full64_output_masks_and_validity",
+              "gates": 399993,
+              "and_gates": 156626
+            },
+            {
+              "phase": "exact_original_product_overflow_condition",
+              "gates": 400716,
+              "and_gates": 156889
+            },
+            {
+              "phase": "two_complete_signed64_to_canonical_conversions",
+              "gates": 472500,
+              "and_gates": 183551
+            },
+            {
+              "phase": "guarded_scalar_modmul_including_its_output_boundary",
+              "gates": 487658,
+              "and_gates": 189712
+            },
+            {
+              "phase": "checked_raw_subtraction_and_canonical_negative_correction",
+              "gates": 488400,
+              "and_gates": 189968
+            },
+            {
+              "phase": "checked_raw_addition_and_canonical_q_correction",
+              "gates": 489050,
+              "and_gates": 190222
+            },
+            {
+              "phase": "full64_output_masks_and_validity",
+              "gates": 489182,
+              "and_gates": 190352
+            }
+          ],
+          "output_words_by_node": [
+            [
+              [
+                400059,
+                400060,
+                400061,
+                400062,
+                400063,
+                400064,
+                400065,
+                400066,
+                400067,
+                400068,
+                400069,
+                400070,
+                400071,
+                400072,
+                400073,
+                400074,
+                400075,
+                400076,
+                400077,
+                400078,
+                400079,
+                400080,
+                400081,
+                400082,
+                400083,
+                400084,
+                400085,
+                400086,
+                400087,
+                400088,
+                400089,
+                400090,
+                400091,
+                400092,
+                400093,
+                400094,
+                400095,
+                400096,
+                400097,
+                400098,
+                400099,
+                400100,
+                400101,
+                400102,
+                400103,
+                400104,
+                400105,
+                400106,
+                400107,
+                400108,
+                400109,
+                400110,
+                400111,
+                400112,
+                400113,
+                400114,
+                400115,
+                400116,
+                400117,
+                400118,
+                400119,
+                400120,
+                400121,
+                400122
+              ],
+              [
+                400123,
+                400124,
+                400125,
+                400126,
+                400127,
+                400128,
+                400129,
+                400130,
+                400131,
+                400132,
+                400133,
+                400134,
+                400135,
+                400136,
+                400137,
+                400138,
+                400139,
+                400140,
+                400141,
+                400142,
+                400143,
+                400144,
+                400145,
+                400146,
+                400147,
+                400148,
+                400149,
+                400150,
+                400151,
+                400152,
+                400153,
+                400154,
+                400155,
+                400156,
+                400157,
+                400158,
+                400159,
+                400160,
+                400161,
+                400162,
+                400163,
+                400164,
+                400165,
+                400166,
+                400167,
+                400168,
+                400169,
+                400170,
+                400171,
+                400172,
+                400173,
+                400174,
+                400175,
+                400176,
+                400177,
+                400178,
+                400179,
+                400180,
+                400181,
+                400182,
+                400183,
+                400184,
+                400185,
+                400186
+              ]
+            ],
+            [
+              [
+                489248,
+                489249,
+                489250,
+                489251,
+                489252,
+                489253,
+                489254,
+                489255,
+                489256,
+                489257,
+                489258,
+                489259,
+                489260,
+                489261,
+                489262,
+                489263,
+                489264,
+                489265,
+                489266,
+                489267,
+                489268,
+                489269,
+                489270,
+                489271,
+                489272,
+                489273,
+                489274,
+                489275,
+                489276,
+                489277,
+                489278,
+                489279,
+                489280,
+                489281,
+                489282,
+                489283,
+                489284,
+                489285,
+                489286,
+                489287,
+                489288,
+                489289,
+                489290,
+                489291,
+                489292,
+                489293,
+                489294,
+                489295,
+                489296,
+                489297,
+                489298,
+                489299,
+                489300,
+                489301,
+                489302,
+                489303,
+                489304,
+                489305,
+                489306,
+                489307,
+                489308,
+                489309,
+                489310,
+                489311
+              ],
+              [
+                489312,
+                489313,
+                489314,
+                489315,
+                489316,
+                489317,
+                489318,
+                489319,
+                489320,
+                489321,
+                489322,
+                489323,
+                489324,
+                489325,
+                489326,
+                489327,
+                489328,
+                489329,
+                489330,
+                489331,
+                489332,
+                489333,
+                489334,
+                489335,
+                489336,
+                489337,
+                489338,
+                489339,
+                489340,
+                489341,
+                489342,
+                489343,
+                489344,
+                489345,
+                489346,
+                489347,
+                489348,
+                489349,
+                489350,
+                489351,
+                489352,
+                489353,
+                489354,
+                489355,
+                489356,
+                489357,
+                489358,
+                489359,
+                489360,
+                489361,
+                489362,
+                489363,
+                489364,
+                489365,
+                489366,
+                489367,
+                489368,
+                489369,
+                489370,
+                489371,
+                489372,
+                489373,
+                489374,
+                489375
+              ]
+            ]
+          ],
+          "validity_wires": [
+            400188,
+            489377
+          ],
+          "python_process_high_water_RSS_bytes": 36749312,
+          "cgroup_memory_peak_so_far_bytes": 32514048,
+          "gate_segment_sha256": "0ead98bf94f4da702b2239424726e83eabc1298692fbd07466bb6be91e790f14"
+        }
+      ],
+      "complete": true,
+      "seconds": 0.5876279079820961,
+      "counts": {
+        "xor": 294396,
+        "and_": 190353,
+        "not_": 4434,
+        "inputs": 194
+      },
+      "total_gates": 489183,
+      "fingerprint": "a6766fd788767f02f91a9d7adff947f10b2e67273c5994a7d9c19ba4ba980061",
+      "generation_seconds": 0.584116939920932,
+      "trace_bytes": 8316200,
+      "extra_harness_gates": 1,
+      "extra_harness_ANDs": 1,
+      "test_equality_gates": 0,
+      "aggregate_retained_trace_bytes": 8316233,
+      "python_process_high_water_RSS_bytes": 45006848,
+      "cgroup_memory_peak_so_far_bytes": 40873984
+    },
+    {
+      "case": "D11-legal-schedule-composition",
+      "kind": "differential-case",
+      "status": "pass",
+      "input_signed64": [
+        8380416,
+        1,
+        4808195
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected_words": [
+        4808193,
+        3572222,
+        3954896,
+        5661490
+      ],
+      "expected_validity_by_node": [
+        1,
+        1
+      ],
+      "baseline_words": [
+        4808193,
+        3572222,
+        3954896,
+        5661490
+      ],
+      "candidate_words": [
+        4808193,
+        3572222,
+        3954896,
+        5661490
+      ],
+      "baseline_validity": [
+        1,
+        1
+      ],
+      "candidate_validity": [
+        1,
+        1
+      ],
+      "expected_valid": true,
+      "usable": true,
+      "all_intermediate_and_final_outputs_canonical": true,
+      "seconds": 0.14591745904181153,
+      "evaluator_seconds": 0.11550000600982457,
+      "python_process_high_water_RSS_bytes": 45006848,
+      "cgroup_memory_peak_so_far_bytes": 40873984
+    },
+    {
+      "case": "D12-invalidity-propagates-to-next-stage",
+      "kind": "differential-case",
+      "status": "pass",
+      "input_signed64": [
+        0,
+        1918261209273,
+        4808195
+      ],
+      "active": 1,
+      "prior_rejected": 0,
+      "expected_words": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_validity_by_node": [
+        0,
+        0
+      ],
+      "baseline_words": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidate_words": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseline_validity": [
+        0,
+        0
+      ],
+      "candidate_validity": [
+        0,
+        0
+      ],
+      "expected_valid": false,
+      "usable": false,
+      "all_intermediate_and_final_outputs_canonical": true,
+      "seconds": 0.1467106129275635,
+      "evaluator_seconds": 0.11541956104338169,
+      "python_process_high_water_RSS_bytes": 45006848,
+      "cgroup_memory_peak_so_far_bytes": 40873984
+    }
+  ],
+  "decision": "supports-bounded-transform-experiment",
+  "total_invocations": 16,
+  "generation_probes": 2,
+  "differential_cases": 12,
+  "invalid_constant_cases": 2,
+  "circuit_generations": 2,
+  "peak_retained_trace_bytes": 8316233,
+  "traces_released_between_probes": true,
+  "total_seconds": 1.9209466679021716,
+  "trace_retained_on_disk": false,
+  "available_cpus": [
+    0,
+    1
+  ],
+  "python_process_high_water_RSS_bytes": 45006848,
+  "cgroup_memory_peak_so_far_bytes": 40873984
+}

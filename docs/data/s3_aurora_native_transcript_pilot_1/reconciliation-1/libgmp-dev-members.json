@@ -1,0 +1,166 @@
+{
+  "archive_sha256": "b43e38f2d5ae4aa38471e1b3f90ed63e96c2ce614ffe496cdcd72f9944e87a4a",
+  "members": [
+    {
+      "path": ".",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/include",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/include/gmpxx.h",
+      "size": 129502,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/include/x86_64-linux-gnu",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/include/x86_64-linux-gnu/gmp.h",
+      "size": 84576,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/lib",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgmp.a",
+      "size": 1331882,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgmpxx.a",
+      "size": 45754,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/pkgconfig",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/pkgconfig/gmp.pc",
+      "size": 252,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/pkgconfig/gmpxx.pc",
+      "size": 287,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/share",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/share/doc",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/share/doc/libgmp-dev",
+      "size": 0,
+      "type": "5",
+      "mode": 493,
+      "link": ""
+    },
+    {
+      "path": "usr/share/doc/libgmp-dev/AUTHORS.gz",
+      "size": 1664,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/share/doc/libgmp-dev/NEWS.gz",
+      "size": 13713,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/share/doc/libgmp-dev/README",
+      "size": 4051,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/share/doc/libgmp-dev/copyright",
+      "size": 4153,
+      "type": "0",
+      "mode": 420,
+      "link": ""
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgmp.so",
+      "size": 0,
+      "type": "2",
+      "mode": 511,
+      "link": "libgmp.so.10.5.0"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgmpxx.so",
+      "size": 0,
+      "type": "2",
+      "mode": 511,
+      "link": "libgmpxx.so.4.7.0"
+    },
+    {
+      "path": "usr/share/doc/libgmp-dev/changelog.Debian.gz",
+      "size": 0,
+      "type": "2",
+      "mode": 511,
+      "link": "../libgmp10/changelog.Debian.gz"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "commands": [
+    [
+      "cmake",
+      "-S",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/overlay",
+      "-B",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/build",
+      "-G",
+      "Ninja",
+      "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_CXX_FLAGS_RELEASE=-O0 -g0",
+      "-DCMAKE_C_FLAGS_RELEASE=-O0 -g0",
+      "-DPQ_SOURCE=/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/work",
+      "-DPQ_PREFIX=/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/prefix",
+      "-DPQ_HARNESS=/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/overlay/exp2_native.cpp",
+      "-DPQ_SEMANTICS=/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/overlay/semantic_cases.cpp"
+    ],
+    [
+      "cmake",
+      "--build",
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v1/build",
+      "--target",
+      "exp2_native",
+      "exp2_semantics",
+      "--parallel",
+      "1"
+    ]
+  ],
+  "environment": {
+    "unset": [
+      "CMAKE_PREFIX_PATH",
+      "PKG_CONFIG_PATH",
+      "LD_LIBRARY_PATH"
+    ],
+    "CCACHE_DISABLE": "1",
+    "TMPDIR": "fixed scratch path above"
+  }
+}

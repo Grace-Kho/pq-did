@@ -1,0 +1,11 @@
+{
+  "package": "OCT31-COMPACT-AUTH-REPRESENTATION-1",
+  "approved": true,
+  "instruction_sha256": "dc2d2489a81578f1c1ee7c37014314a3d8ccfa63743b5a3b069f57d99ca32e39",
+  "reallocated_implementation_seconds": 3114.4095462555088,
+  "reallocated_invocations": 108,
+  "reallocated_builds": 3,
+  "proof_attempts": 0,
+  "storage_amendments": false,
+  "analysis_isolation_transfer": false
+}

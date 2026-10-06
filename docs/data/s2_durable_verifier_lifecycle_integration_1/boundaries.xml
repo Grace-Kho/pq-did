@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="6" time="6.275" timestamp="2026-09-26T00:06:04.223525+08:00" hostname="DTC-4CE630BQSC"><testcase classname="tests.integration.test_durable_verification" name="test_boundary_current_state[unauthenticated]" time="0.969" /><testcase classname="tests.integration.test_durable_verification" name="test_boundary_current_state[inconsistent-state]" time="0.839" /><testcase classname="tests.integration.test_durable_verification" name="test_boundary_current_state[before-read]" time="1.155" /><testcase classname="tests.integration.test_durable_verification" name="test_boundary_current_state[after-read]" time="1.116" /><testcase classname="tests.integration.test_durable_verification" name="test_boundary_restart_replay" time="1.098" /><testcase classname="tests.integration.test_durable_verification" name="test_boundary_concurrent_submissions" time="0.968"><failure message="AssertionError: assert ['challenge-a...del-accepted'] == ['provider-or...del-accepted']&#10;  &#10;  At index 0 diff: 'challenge-already-consumed-or-replaced' != 'provider-or-adapter-failure'&#10;  Use -v to get more diff">rig = &lt;durable_verification_cases.Rig object at 0x7084b6bcf9b0&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7084b6bf9150&gt;
+
+    def test_boundary_concurrent_submissions(rig, monkeypatch):
+        first = rig.verifiers[0]
+        second = BoundedDurableVerifier(
+            rig.stores[0], rig.permits[0], first.ticket, signing_key=rig.keys[2]
+        )
+        barrier, serial = Barrier(2, timeout=3), Lock()
+        monkeypatch.setattr(rig.proofs[0], "before_verdict", barrier.wait)
+        current = rig.providers[0].current
+    
+        def ordered(*args):
+            with serial:
+                return current(*args)
+    
+        monkeypatch.setattr(rig.providers[0], "current", ordered)
+        presentation, results, errors = rig.presentation(), [], []
+    
+        def submit(owner):
+            try:
+                results.append(
+                    owner.verify(
+                        session=b"session", context=rig.requests[0].context, presentation=presentation
+                    )
+                )
+            except Exception as error:
+                errors.append(type(error).__name__)
+    
+        threads = [Thread(target=submit, args=(owner,)) for owner in (first, second)]
+        for thread in threads:
+            thread.start()
+        for thread in threads:
+            thread.join(5)
+        assert all(not thread.is_alive() for thread in threads) and not errors
+&gt;       assert sorted(r.value for r in results) == sorted(
+            [Decision.ACCEPTED.value, Decision.FAILURE.value]
+        )
+E       AssertionError: assert ['challenge-a...del-accepted'] == ['provider-or...del-accepted']
+E         
+E         At index 0 diff: 'challenge-already-consumed-or-replaced' != 'provider-or-adapter-failure'
+E         Use -v to get more diff
+
+tests/integration/test_durable_verification.py:202: AssertionError</failure></testcase></testsuite></testsuites>

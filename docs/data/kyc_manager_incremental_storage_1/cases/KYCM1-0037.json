@@ -1,0 +1,18 @@
+{
+  "invocation_id": "KYCM1-0037",
+  "case_id": "H-13",
+  "work_event_reservation": 0,
+  "ordinal": 37,
+  "cumulative_invocations": 1128,
+  "status": "pass",
+  "details": {
+    "private_reference_wallet": true,
+    "records": 1,
+    "transport": "synthetic bounded public response with genuine signed fixture",
+    "proof": "unavailable",
+    "all_or_nothing": true
+  },
+  "seconds": 0.23234311188571155,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

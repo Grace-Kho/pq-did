@@ -1,0 +1,28 @@
+{
+  "kind": "supplementary identity of the completed preflight, not replacement baseline",
+  "sha256": {
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/activation-preflight-format.json": "bbac418208dbdad0f7eac9a2c7ce343dc8bf2987b51aa9b33f5bb6a81b42d2ae",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/activation-preflight-format.log": "3a7157bcdc002d8ea8e2cc825a8b249cd74429fded7dfe629508ef190d73b6c0",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/activation-preflight-format.service.json": "ec8cb7c2b20a60416488740ffbc9c0f3df720721bb4972272ec91aaf5af98953",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/activation-preflight-lint.json": "58c7832c413eacaf3a19e8ded15745ae2730d346fa5e2507f2c175774fe06d83",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/activation-preflight-lint.log": "8ac870b75429244df90fbd02135bf908b7fec9462ea1a7f6cda429de14bce2ec",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/activation-preflight-lint.service.json": "4b117fb0f8e117628bca33e5243de9b9f294fd604d5fbd1f5f486c506035b6da",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/activation-preflight.json": "612860fdbac1597df7baf900dd25d4c31aee8621dbc0ab85bdd214a5e23cae3c",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/activation-preflight.log": "1eb0743a6b1a953c41216b9d4d2305713919432629991f3d4ef5d73d232e753d",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/activation-preflight.service.json": "915a6e3b8aa0f7add4c9255e49cb17c8963bc2ae8af6b2da59db8d05534528d9",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/host-observations.json": "ceabc5a2ea8128b86773eb12011aac49900744d7b9969419de1c4f35aeb4cc1b",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/host_observer.py": "800ef89b205b33392a042d7e76d445021729dff3b241abe8c6f39eca6a9aec63",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/inspection.json": "818c8d592d205f159991423a544f83c88d16b897bb9b5be3c7a33b2e86d34630",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/installed-systemd-inspection.json": "9b8bc08c289eea622fb2b75754ec3ae3afdb8f511a12a518692053c93c0c44b1",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/operator-probes.json": "b7d8e8bc8559a3937577c7f589c58e9a5f31ccb02baee0220ce81415f4d071c8",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/result.json": "8da00a14cde22ac41e845e7e9075a7c63ecae8873571e791d631abee6d9a94ab",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/review.py": "12425e0805d2545f5873f7a93255e11a6427796141607e3380f539a47ddafd03",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/run-ledger.json": "381173ffe5a3318776672d7d045290638d16131d02d9d16eb1a845ad7c921f2f",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/run_review.py": "3a1592d3128747137dce74d45104f41a6c8d120e0cd2ab1f6b698fdbdcf6db39",
+    "docs/data/s2_authority_isolation_pilot_1/activation-preflight/changes.json": "a99300a6df0a04a79a40d9306938f48d3648201afd9c06143cdcf5ec7e2d55a2",
+    "docs/stage2_authority_isolation_pilot.md": "ac02bb69eebcf013595e919dcb0587a202cc8a51e8bb86ad900f6f5c900d7f9a",
+    "docs/status.md": "848e6ecdaa1b1023f99b7d1f94ac23839bf434b1a48c70f6ce022950c8342cad",
+    "docs/traceability.md": "f86e224ff9c84e8613e156fe3172a444a04911a4995bc3e4534d3f5ff11cad29",
+    "docs/spec_issues.md": "a25b817dd718d0c741c9a81da917c280511910d1a986b02e532668e72d172700"
+  }
+}

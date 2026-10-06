@@ -1,0 +1,388 @@
+{
+  "package": "S2-AUTHORITY-ISOLATION-PILOT-1",
+  "continuation": "conditional-activation-preflight",
+  "user_approval": "received-subject-to-preflight-and-stop-on-changed-privileged-effects",
+  "activation_preflight_passed": false,
+  "outcome": "stopped-before-privileged-mutation",
+  "source_manifest_sha256": "7fd9f0e1bcedf7ed7756b4f25bdde6458e06650cdece62841100c0f636e09086",
+  "preceding_package_manifest_sha256": "daf88fd67840b059fe0e27da351a073a1a67bb037871c399fee2082f6ac1cc17",
+  "source_paths_verified": 96,
+  "synthetic_inputs_verified": 8,
+  "source_and_fixture_inventories_exact": true,
+  "historical_package_paths_verified_before_doc_append": 126,
+  "historical_full_preservation_audit_repeated": false,
+  "prior_functional_test_evidence_reused": true,
+  "test_suites_repeated": 0,
+  "seal_regenerated": false,
+  "privileged_source_modified": false,
+  "runbook_modified": false,
+  "blocking_findings": [
+    {
+      "id": "PREFLIGHT-LEDGER",
+      "source": "scripts/isolation_pilot/activation_guard.py:132",
+      "observed_bytes": 155989,
+      "reader_limit_bytes": 65536,
+      "diagnostic": {
+        "exception": "PilotError",
+        "label": "input-size"
+      },
+      "required_correction": "Bounded complete ledger accounting before any mutation; preserve IPC size ceiling, history, elapsed-time accounting and resource limits."
+    },
+    {
+      "id": "PREFLIGHT-PARENT",
+      "source": "scripts/isolation_pilot/provision.py:94",
+      "path": "/etc/sysusers.d",
+      "observation": "absent (ENOENT)",
+      "required_correction": "Specify/review exact parent-creation and retention effects; current installer requires the parent to exist."
+    },
+    {
+      "id": "PREFLIGHT-STOP",
+      "sources": [
+        "scripts/isolation_pilot/activation_guard.py:173",
+        "scripts/isolation_pilot/activation_guard.py:236",
+        "scripts/isolation_pilot/control.py:64",
+        "scripts/isolation_pilot/cases.py:412"
+      ],
+      "required_correction": "Cover separately guarded provisioning and common-slice descendants; validate kill/stop/query results, bounded quiescence and failure reporting."
+    }
+  ],
+  "rollback_source_review": {
+    "fixed_configuration_paths": 7,
+    "checks_recorded_file_digests_before_removal": true,
+    "marker_check": "owner/mode, not creation-ledger digest",
+    "retains_accounts_runtime_credentials_stores_history_evidence": true,
+    "operational_shutdown_confirmed": false,
+    "installed_entry_point_available_before_release_copy": false
+  },
+  "emergency_review": {
+    "installed_version": "systemd 259.5-0ubuntu3.4",
+    "local_implementation_evidence": "installed-systemd-inspection.json",
+    "slice_recursive_kill": "supported by static implementation inference; no live signal test",
+    "provisioning_in_slice": false,
+    "slice_command_covers_complete_pilot_at_all_phases": false,
+    "live_stop_verification": false
+  },
+  "host_observations": "host-observations.json",
+  "operator_probe_failures": "operator-probes.json",
+  "host_manager_queries_confirmed": false,
+  "guarded_checks": [
+    {
+      "name": "activation-preflight",
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_pilot_1/activation-preflight/review.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.1330949730181601,
+      "cgroup_memory_peak_bytes": 21561344,
+      "sampled_tree_RSS_peak_bytes": 43057152,
+      "temporary_peak_bytes": 0,
+      "resource_guard_passed": true,
+      "guard_record": "activation-preflight.json"
+    },
+    {
+      "name": "activation-preflight-lint",
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/ruff",
+        "check",
+        "--no-cache",
+        "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_pilot_1/activation-preflight/review.py",
+        "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_pilot_1/activation-preflight/run_review.py",
+        "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_pilot_1/activation-preflight/host_observer.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.11145375299383886,
+      "cgroup_memory_peak_bytes": 11350016,
+      "sampled_tree_RSS_peak_bytes": 19763200,
+      "temporary_peak_bytes": 0,
+      "resource_guard_passed": true,
+      "guard_record": "activation-preflight-lint.json"
+    },
+    {
+      "name": "activation-preflight-format",
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/ruff",
+        "format",
+        "--check",
+        "--no-cache",
+        "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_pilot_1/activation-preflight/review.py",
+        "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_pilot_1/activation-preflight/run_review.py",
+        "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_pilot_1/activation-preflight/host_observer.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.09070851700380445,
+      "cgroup_memory_peak_bytes": 11378688,
+      "sampled_tree_RSS_peak_bytes": 19775488,
+      "temporary_peak_bytes": 0,
+      "resource_guard_passed": true,
+      "guard_record": "activation-preflight-format.json"
+    }
+  ],
+  "memory_metric": "cgroup-v2 memory.peak; entire diagnostic worker subtree and charged anonymous/file-cache/kernel memory, external monitor excluded; not actual-pilot containment evidence",
+  "resource_configuration": {
+    "path": "../config.json",
+    "sha256": "77b30778349659be447283e7494a90ef02f2cbb8e3fa53ada0a101180e4cdf89",
+    "unchanged": true
+  },
+  "guarded_elapsed_seconds_prior": 35.44347673098673,
+  "guarded_elapsed_seconds_new": 0.3352572430158034,
+  "guarded_elapsed_seconds_total": 35.778733974002535,
+  "additional_operator_observations": "Outside measured worker; not included in guarded elapsed total; future admission must account for this continuation, not only the old ledger.",
+  "activation_stages": {
+    "provision": "not-run-preflight-blocked",
+    "verify": "not-run-preflight-blocked",
+    "shutdown": "not-run-preflight-blocked",
+    "rollback": "not-run-preflight-blocked"
+  },
+  "cases": [
+    {
+      "id": "ISO-RUNTIME",
+      "assertion": "Actual service identities load only the pinned protected interpreter, source and native paths; no writable import/library search paths.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-ROLE-m",
+      "assertion": "m owner and distinct writer authenticate; permitted operations work; writer store read/write/unlink and parent/config/socket replacement fail; admin and observer permissions stay bounded.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-ROLE-i",
+      "assertion": "i owner and distinct writer authenticate; permitted operations work; writer store read/write/unlink and parent/config/socket replacement fail; admin and observer permissions stay bounded.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-ROLE-va",
+      "assertion": "va owner and distinct writer authenticate; permitted operations work; writer store read/write/unlink and parent/config/socket replacement fail; admin and observer permissions stay bounded.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-ROLE-vb",
+      "assertion": "vb owner and distinct writer authenticate; permitted operations work; writer store read/write/unlink and parent/config/socket replacement fail; admin and observer permissions stay bounded.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-CROSS-va",
+      "assertion": "va owner/writer cannot read or modify vb private store or use its capability/scope.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-CROSS-vb",
+      "assertion": "vb owner/writer cannot read or modify va private store or use its capability/scope.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-RECIPIENT",
+      "assertion": "Recipient B cannot retrieve A, including substituted fields; A exact redelivery after lost reply.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-DAC-DENIED",
+      "assertion": "Account without transport membership cannot connect or replace endpoint.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-ACL-DENIED",
+      "assertion": "Account with transport membership but invalid capability cannot perform protected/admin operations; stolen synthetic token with wrong actual UID also fails.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-FENCING",
+      "assertion": "Second admitted owner process of same trusted owner UID replaces writer; old live owner and already connected valid client remain fenced.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-ROTATION",
+      "assertion": "Stopped owner/client credential rotation rejects old capability and old connected clients; new mapping can recover exact retained recipient outcome without re-signing.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-HOLDER",
+      "assertion": "Recipient A cannot access B private fixture wallet; neither verifier gets holder-private files or a persistent holder authentication identity.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-FD",
+      "assertion": "Client inherits no owner database, credential, socket-listener or log descriptors; SCM_RIGHTS is refused; cross-UID /proc/fd access fails.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-MISCONFIG-peer-identity",
+      "assertion": "peer-identity misconfiguration aborts before serving; no chmod fallback, default grant or empty-store recovery.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-MISCONFIG-socket-mode",
+      "assertion": "socket-mode misconfiguration aborts before serving; no chmod fallback, default grant or empty-store recovery.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-MISCONFIG-writable-parent",
+      "assertion": "writable-parent misconfiguration aborts before serving; no chmod fallback, default grant or empty-store recovery.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-MISCONFIG-mutable-runtime",
+      "assertion": "mutable-runtime misconfiguration aborts before serving; no chmod fallback, default grant or empty-store recovery.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-RESTART-m",
+      "assertion": "m restart preserves actual identity/ownership/permissions and starts inactive; exact existing head/admin admission required; no auto-bootstrap, reset or second acceptance.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-RESTART-i",
+      "assertion": "i restart preserves actual identity/ownership/permissions and starts inactive; exact existing head/admin admission required; no auto-bootstrap, reset or second acceptance.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-RESTART-va",
+      "assertion": "va restart preserves actual identity/ownership/permissions and starts inactive; exact existing head/admin admission required; no auto-bootstrap, reset or second acceptance.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-RESTART-vb",
+      "assertion": "vb restart preserves actual identity/ownership/permissions and starts inactive; exact existing head/admin admission required; no auto-bootstrap, reset or second acceptance.",
+      "status": "not-run-preflight-blocked",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    }
+  ],
+  "actual_identity_executions": 0,
+  "new_host_resources": {
+    "accounts": [],
+    "groups": [],
+    "paths": [],
+    "units": [],
+    "stores": [],
+    "credentials": [],
+    "root_activation_evidence": []
+  },
+  "shutdown_or_rollback_needed": false,
+  "existing_file_changes": {
+    "docs/stage2_authority_isolation_pilot.md": {
+      "previous_package_sha256": "bbb411c374079d23ff844fe61cec539d762210dbebadd41f4cf8dcddb7e5d1e6",
+      "current_sha256": "ac02bb69eebcf013595e919dcb0587a202cc8a51e8bb86ad900f6f5c900d7f9a",
+      "authorisation": "Requested implementation report/status/traceability/issues update only"
+    },
+    "docs/status.md": {
+      "previous_package_sha256": "c32e0d460b73d2bcf195e53c22b15254d4616dd2b49f51d2f6c5e523166b611d",
+      "current_sha256": "848e6ecdaa1b1023f99b7d1f94ac23839bf434b1a48c70f6ce022950c8342cad",
+      "authorisation": "Requested implementation report/status/traceability/issues update only"
+    },
+    "docs/traceability.md": {
+      "previous_package_sha256": "810b13c2e089299651a28e132a31d09d49e1c65872f0644e51140b2ae623beed",
+      "current_sha256": "f86e224ff9c84e8613e156fe3172a444a04911a4995bc3e4534d3f5ff11cad29",
+      "authorisation": "Requested implementation report/status/traceability/issues update only"
+    },
+    "docs/spec_issues.md": {
+      "previous_package_sha256": "7b32e2b0f4be24a0e1fa67a5831ff50daca2e74fbe964caaf93a689d9dec5431",
+      "current_sha256": "a25b817dd718d0c741c9a81da917c280511910d1a986b02e532668e72d172700",
+      "authorisation": "Requested implementation report/status/traceability/issues update only"
+    }
+  },
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "CPU_proving_paused": true,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1,
+  "stage2_complete": false,
+  "stage3_complete": false,
+  "next_step": "Concrete correction/review of launcher, missing prerequisite and stop/rollback discrepancies within unchanged budgets. No silent reseal or activation.",
+  "conditional_followup": "Bounded full lifecycle integration only after all 22 actual-identity cases and outer guards pass.",
+  "open_obligations": [
+    "production bounded signing",
+    "complete private-proof feasibility",
+    "full lifecycle integration",
+    "privacy/security review"
+  ],
+  "new_host_resources_scope": "Privileged pilot resources; excludes the completed transient unprivileged diagnostic guard services recorded in guarded_checks."
+}

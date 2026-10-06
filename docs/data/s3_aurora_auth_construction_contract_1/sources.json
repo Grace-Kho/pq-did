@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-26",
+  "kind": "Primary source browsing and local source review only",
+  "sources": [
+    {
+      "id": "Aurora",
+      "url": "https://eprint.iacr.org/2018/828.pdf",
+      "version": "8 May 2019; 64 pages",
+      "locators": [
+        "Theorem 9.2",
+        "Figures 4-5",
+        "Section 10.2"
+      ]
+    },
+    {
+      "id": "BCS",
+      "url": "https://eprint.iacr.org/2016/116.pdf",
+      "version": "10 February 2016; 48 pages",
+      "locators": [
+        "Sections 3,6",
+        "Theorem 7.1"
+      ]
+    },
+    {
+      "id": "CMS",
+      "url": "https://www.iacr.org/archive/tcc2019/11891143/11891143.pdf",
+      "version": "TCC 2019 proceedings; 29 pages",
+      "locators": [
+        "Theorem 3 informal",
+        "Section 2.9"
+      ],
+      "limitation": "January 14 2020 full-version metadata verified; PDF robots denied; no unseen formal constants claimed"
+    },
+    {
+      "id": "RFC7693",
+      "url": "https://datatracker.ietf.org/doc/html/rfc7693",
+      "version": "November 2015",
+      "locators": [
+        "Sections 2-3"
+      ]
+    },
+    {
+      "id": "libff",
+      "url": "https://github.com/scipr-lab/libff/tree/master/libff/algebra/fields/binary",
+      "version": "branch description, unpinned",
+      "use": "lexicographic polynomial convention; no numeric certificate generated"
+    },
+    {
+      "id": "libiop-commit",
+      "url": "https://github.com/scipr-lab/libiop/tree/a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "use": "root readable; immutable files and submodule tree unavailable"
+    },
+    {
+      "id": "libiop-branch",
+      "base": "https://raw.githubusercontent.com/scipr-lab/libiop/master/",
+      "files": [
+        ".gitmodules",
+        "libiop/protocols/aurora_iop.tcc",
+        "libiop/protocols/ldt/fri/fri_ldt.hpp",
+        "libiop/bcs/common_bcs_parameters.tcc",
+        "libiop/bcs/bcs_common.tcc",
+        "libiop/bcs/merkle_tree.tcc",
+        "libiop/bcs/hashing/blake2b.hpp"
+      ],
+      "limitation": "Cannot certify byte identity to target commit; must resolve before build"
+    }
+  ],
+  "full_text_copied": false,
+  "sources_executed": false,
+  "new_dependency_files": false,
+  "read_only_fetch_failures": "Pinned raw/blob and submodule URLs returned cache misses; CMS full PDF robots denied; gf192 numeric source unavailable. Retained as source-access limitations, not computational failures."
+}

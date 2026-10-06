@@ -1,0 +1,27 @@
+--- experiments/auth_relation_integration_1/native/relation_adapter.cpp
++++ experiments/auth_relation_integration_1/native/relation_adapter.cpp
+@@ -52,8 +52,8 @@
+ static LC linear(std::istream &in, std::uint32_t variables, std::size_t &total) {
+     const auto count = u32(in);
+     require(count <= 4096 && total + count <= 65536, "term-bound");
+-    std::vector<libiop::linear_term<F>> terms;
+-    terms.reserve(count);
++    LC result;
++    result.terms.reserve(count);
+     std::uint32_t previous = 0;
+     for (std::uint32_t i = 0; i < count; ++i) {
+         const auto column = u32(in);
+@@ -61,11 +61,11 @@
+         require(column <= variables, "column-range");
+         require(i == 0 || column > previous, "column-order-or-duplicate");
+         require(!coefficient.is_zero(), "zero-coefficient");
+-        terms.emplace_back(libiop::variable<F>(column), coefficient);
++        result.add_term(libiop::variable<F>(column), coefficient);
+         previous = column;
+     }
+     total += count;
+-    return LC(terms); // empty terms intentionally denote the zero polynomial
++    return result; // canonical validated terms; empty sum is the zero polynomial
+ }
+ static void array(const std::vector<F> &values) {
+     std::cout << '[';

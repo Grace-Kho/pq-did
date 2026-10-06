@@ -1,0 +1,123 @@
+[
+  {
+    "case": "test_boundary_concurrent_submissions",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "05daf2f93c23994f68d46dc49188a7d85e20a00130a1a091e7e6974a4c1cb702",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 1
+        },
+        {
+          "audience": "audience-B",
+          "head": "238ea00f9a3a30c077479702d4ce0122b8f8a2128fca41e865faba1f38c556f1",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "25096e19726f5b65d4a0636dd03f332316044bf6f8e3742cef1a7ae6ba25892a",
+      "manager_epoch": 0
+    },
+    "concurrent_results": [
+      "reference-model-accepted",
+      "challenge-already-consumed-or-replaced"
+    ]
+  },
+  {
+    "case": "test_boundary_consumption_interruption[rows-before-commit]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "0d7fc3ae9609b715a0cef7dc1d636933568f3e9f587716f634d124c159b1f153",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "238ea00f9a3a30c077479702d4ce0122b8f8a2128fca41e865faba1f38c556f1",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "e42fe8ad6cf9fe96feb059cab4e7661d5373ed8ead69270559198ba83d152518",
+      "manager_epoch": 0
+    },
+    "fault_model": "injected exception rows-before-commit; not a process crash"
+  },
+  {
+    "case": "test_boundary_consumption_interruption[commit-before-ack]",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "05daf2f93c23994f68d46dc49188a7d85e20a00130a1a091e7e6974a4c1cb702",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 1
+        },
+        {
+          "audience": "audience-B",
+          "head": "238ea00f9a3a30c077479702d4ce0122b8f8a2128fca41e865faba1f38c556f1",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "eac7f741dfa4c5b496aabb2f04a5a74e1851ae481f5546f515e00dc1f6f91acd",
+      "manager_epoch": 0
+    },
+    "fault_model": "injected exception commit-before-ack; not a process crash"
+  },
+  {
+    "case": "test_boundary_writer_replaced_during_proof",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "dc3bd2c3e818b1940c4613ac972a519b7a3b1f134d4bddbd7005971838363c0a",
+          "generation": 2,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "238ea00f9a3a30c077479702d4ce0122b8f8a2128fca41e865faba1f38c556f1",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "7709b252598d28290269970a7dddf4d98c68d0f4e629e0166af6156481e967da",
+      "manager_epoch": 0
+    }
+  },
+  {
+    "case": "test_boundary_inconsistent_recovery",
+    "durable_after": {
+      "verifiers": [
+        {
+          "audience": "audience-A",
+          "head": "0d7fc3ae9609b715a0cef7dc1d636933568f3e9f587716f634d124c159b1f153",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        },
+        {
+          "audience": "audience-B",
+          "head": "238ea00f9a3a30c077479702d4ce0122b8f8a2128fca41e865faba1f38c556f1",
+          "generation": 1,
+          "challenges": 1,
+          "consumed": 0
+        }
+      ],
+      "manager_head": "7a8998a17587986f7e900b414d6f7705c13bd5cba70a3aebeac30b1876a56706",
+      "manager_epoch": 0
+    }
+  }
+]

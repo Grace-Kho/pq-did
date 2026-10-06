@@ -1,0 +1,11 @@
+{
+  "case_id": "W-08",
+  "invocation_id": "AR1-0037",
+  "status": "pass",
+  "details": {
+    "coverage": "exact assignment/witness boundary",
+    "rejected": true
+  },
+  "seconds": 0.0014064840506762266,
+  "work_events": 0
+}

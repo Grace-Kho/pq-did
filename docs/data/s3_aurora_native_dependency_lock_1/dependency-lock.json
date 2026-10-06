@@ -1,0 +1,322 @@
+{
+  "schema": "pqdid-proposed-dependency-lock-v1",
+  "package": "S3-AURORA-NATIVE-DEPENDENCY-LOCK-1",
+  "status": "ready-for-specified-project-local-provisioning-approval",
+  "provisioning_authorised": false,
+  "artifact_verification_complete": false,
+  "native_build_admitted": false,
+  "installation_performed": false,
+  "dependency_selection": "Real libiop BCS/hashchain callers, GF(2^192), upstream libff ff target with BN128-only dependency disabled; libfqfft headers only; isolated eight-source iop library target, no top-level benchmark/test configuration",
+  "nodes": [
+    {
+      "id": "libiop",
+      "origin": "https://github.com/scipr-lab/libiop.git",
+      "commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "tree_git_sha1": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+      "tree_records": 287,
+      "blob_count": 246,
+      "blob_bytes": 1622845,
+      "source_pin_status": "GitHub pinned tree metadata verified; local full checkout verification pending",
+      "local_checkout": "src/libiop",
+      "required": true,
+      "depends_on": [
+        "libff",
+        "libfqfft",
+        "libsodium-dev",
+        "cxx-toolchain"
+      ],
+      "artifact_sha256": null,
+      "artifact_sha256_reason": "Git checkout proposed; verify Git commit/tree/blob IDs and retained snapshot SHA256, then record acquired-file SHA256 inventory"
+    },
+    {
+      "id": "libff",
+      "origin": "https://github.com/scipr-lab/libff.git",
+      "commit": "9769030a06b7ab933d6c064db120019decd359f1",
+      "tree_git_sha1": "9769030a06b7ab933d6c064db120019decd359f1",
+      "tree_records": 195,
+      "blob_count": 167,
+      "blob_bytes": 941858,
+      "source_pin_status": "GitHub pinned tree metadata verified; local full checkout verification pending",
+      "local_checkout": "src/libff",
+      "required": true,
+      "depends_on": [
+        "libgmp-dev",
+        "libsodium-dev",
+        "cxx-toolchain"
+      ],
+      "artifact_sha256": null,
+      "artifact_sha256_reason": "Git checkout proposed; verify Git commit/tree/blob IDs and retained snapshot SHA256, then record acquired-file SHA256 inventory"
+    },
+    {
+      "id": "libfqfft",
+      "origin": "https://github.com/scipr-lab/libfqfft.git",
+      "commit": "7d460caa27b87574fe0e8144e6a3a66b7bcfe770",
+      "tree_git_sha1": "7d460caa27b87574fe0e8144e6a3a66b7bcfe770",
+      "tree_records": 554,
+      "blob_count": 505,
+      "blob_bytes": 588716,
+      "source_pin_status": "GitHub pinned tree metadata verified; local full checkout verification pending",
+      "local_checkout": "src/libfqfft",
+      "required": true,
+      "depends_on": [
+        "libff",
+        "libgmp-dev"
+      ],
+      "artifact_sha256": null,
+      "artifact_sha256_reason": "Git checkout proposed; verify Git commit/tree/blob IDs and retained snapshot SHA256, then record acquired-file SHA256 inventory"
+    }
+  ],
+  "recorded_gitlinks": [
+    {
+      "parent": "libiop",
+      "path": "depends/ate-pairing",
+      "origin": "https://github.com/herumi/ate-pairing.git",
+      "commit": "e69890125746cdaf25b5b51227d96678f76479fe",
+      "selected": false,
+      "reason": "Not initialised: parent build disabled or unrelated benchmark/test/pairing feature"
+    },
+    {
+      "parent": "libiop",
+      "path": "depends/benchmark",
+      "origin": "https://github.com/google/benchmark.git",
+      "commit": "a9beffda0b89a6995372100456a4ad894d29b93b",
+      "selected": false,
+      "reason": "Not initialised: parent build disabled or unrelated benchmark/test/pairing feature"
+    },
+    {
+      "parent": "libiop",
+      "path": "depends/gtest",
+      "origin": "https://github.com/google/googletest.git",
+      "commit": "a325ad2db5deb623eab740527e559b81c0f39d65",
+      "selected": false,
+      "reason": "Not initialised: parent build disabled or unrelated benchmark/test/pairing feature"
+    },
+    {
+      "parent": "libiop",
+      "path": "depends/libff",
+      "origin": "https://github.com/scipr-lab/libff.git",
+      "commit": "9769030a06b7ab933d6c064db120019decd359f1",
+      "selected": true,
+      "reason": "Top-level selected revision"
+    },
+    {
+      "parent": "libiop",
+      "path": "depends/libfqfft",
+      "origin": "https://github.com/scipr-lab/libfqfft.git",
+      "commit": "7d460caa27b87574fe0e8144e6a3a66b7bcfe770",
+      "selected": true,
+      "reason": "Top-level selected revision"
+    },
+    {
+      "parent": "libiop",
+      "path": "depends/xbyak",
+      "origin": "https://github.com/herumi/xbyak.git",
+      "commit": "811f4959ee0dd36a3ccedd2d4d7460472dd19a14",
+      "selected": false,
+      "reason": "Not initialised: parent build disabled or unrelated benchmark/test/pairing feature"
+    },
+    {
+      "parent": "libff",
+      "path": "depends/ate-pairing",
+      "origin": "https://github.com/herumi/ate-pairing.git",
+      "commit": "e69890125746cdaf25b5b51227d96678f76479fe",
+      "selected": false,
+      "reason": "Not initialised: parent build disabled or unrelated benchmark/test/pairing feature"
+    },
+    {
+      "parent": "libff",
+      "path": "depends/gtest",
+      "origin": "https://github.com/google/googletest.git",
+      "commit": "a325ad2db5deb623eab740527e559b81c0f39d65",
+      "selected": false,
+      "reason": "Not initialised: parent build disabled or unrelated benchmark/test/pairing feature"
+    },
+    {
+      "parent": "libff",
+      "path": "depends/xbyak",
+      "origin": "https://github.com/herumi/xbyak.git",
+      "commit": "f0a8f7faa27121f28186c2a7f4222a9fc66c283d",
+      "selected": false,
+      "reason": "Not initialised: parent build disabled or unrelated benchmark/test/pairing feature"
+    },
+    {
+      "parent": "libfqfft",
+      "path": "depends/ate-pairing",
+      "origin": "https://github.com/herumi/ate-pairing.git",
+      "commit": "e69890125746cdaf25b5b51227d96678f76479fe",
+      "selected": false,
+      "reason": "Not initialised: parent build disabled or unrelated benchmark/test/pairing feature"
+    },
+    {
+      "parent": "libfqfft",
+      "path": "depends/gtest",
+      "origin": "https://github.com/google/googletest.git",
+      "commit": "3a4cf1a02ef4adc28fccb7eef2b573b14cd59009",
+      "selected": false,
+      "reason": "Not initialised: parent build disabled or unrelated benchmark/test/pairing feature"
+    },
+    {
+      "parent": "libfqfft",
+      "path": "depends/libff",
+      "origin": "https://github.com/scipr-lab/libff.git",
+      "commit": "accdf9e761979ac8c95dced219cac0b4ad4a4799",
+      "selected": false,
+      "reason": "Not initialised: parent build disabled or unrelated benchmark/test/pairing feature"
+    },
+    {
+      "parent": "libfqfft",
+      "path": "depends/xbyak",
+      "origin": "https://github.com/herumi/xbyak.git",
+      "commit": "f0a8f7faa27121f28186c2a7f4222a9fc66c283d",
+      "selected": false,
+      "reason": "Not initialised: parent build disabled or unrelated benchmark/test/pairing feature"
+    },
+    {
+      "parent": "libfqfft/depends/libff@accdf9e761979ac8c95dced219cac0b4ad4a4799",
+      "path": "depends/ate-pairing",
+      "origin": "https://github.com/herumi/ate-pairing.git",
+      "commit": "e69890125746cdaf25b5b51227d96678f76479fe",
+      "selected": false,
+      "reason": "Unselected nested libff; recorded without substituting top-level pin"
+    },
+    {
+      "parent": "libfqfft/depends/libff@accdf9e761979ac8c95dced219cac0b4ad4a4799",
+      "path": "depends/gtest",
+      "origin": "https://github.com/google/googletest.git",
+      "commit": "a325ad2db5deb623eab740527e559b81c0f39d65",
+      "selected": false,
+      "reason": "Unselected nested libff; recorded without substituting top-level pin"
+    },
+    {
+      "parent": "libfqfft/depends/libff@accdf9e761979ac8c95dced219cac0b4ad4a4799",
+      "path": "depends/xbyak",
+      "origin": "https://github.com/herumi/xbyak.git",
+      "commit": "f0a8f7faa27121f28186c2a7f4222a9fc66c283d",
+      "selected": false,
+      "reason": "Unselected nested libff; recorded without substituting top-level pin"
+    }
+  ],
+  "packages": [
+    {
+      "id": "libsodium-dev",
+      "origin": "Ubuntu archive; cached apt metadata, not newly authenticated Release metadata",
+      "homepage": "https://www.libsodium.org/",
+      "version": "1.0.18-2",
+      "architecture": "amd64",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium-dev_1.0.18-2_amd64.deb",
+      "bytes": 187214,
+      "sha256": "34e8337b30160458f44bada750c9e94ec18ec5ac087e2428043ddb04625226cc",
+      "package_dependencies": "libsodium23 (= 1.0.18-2)",
+      "use": "Extract development archive privately; link explicit static C archive. No dpkg installation or maintainer scripts. Packaged shared-library symlinks and unused C++ GMP binding are not used.",
+      "runtime_dependency_handling": "Installed matching libsodium23/libgmp10 recorded; libgmpxx4ldbl not selected by static C-only link; libc/libstdc++/libgcc from unchanged toolchain. Package-manager dependency installation is not proposed.",
+      "contents_status": "Distribution file-list metadata checked; exact acquired archive members/version/architecture/hash remain mandatory before extraction/use",
+      "expected_headers": [
+        "usr/include/sodium.h",
+        "usr/include/sodium/crypto_generichash_blake2b.h",
+        "usr/include/sodium/randombytes.h"
+      ],
+      "expected_libraries": [
+        "usr/lib/x86_64-linux-gnu/libsodium.a"
+      ],
+      "prefix": "prefix/usr",
+      "artifact_verified": false
+    },
+    {
+      "id": "libgmp-dev",
+      "origin": "Ubuntu archive; cached apt metadata, not newly authenticated Release metadata",
+      "homepage": "https://gmplib.org/",
+      "version": "2:6.3.0+dfsg-5ubuntu2",
+      "architecture": "amd64",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/g/gmp/libgmp-dev_6.3.0+dfsg-5ubuntu2_amd64.deb",
+      "bytes": 341530,
+      "sha256": "b43e38f2d5ae4aa38471e1b3f90ed63e96c2ce614ffe496cdcd72f9944e87a4a",
+      "package_dependencies": "libgmp10 (= 2:6.3.0+dfsg-5ubuntu2), libgmpxx4ldbl (= 2:6.3.0+dfsg-5ubuntu2)",
+      "use": "Extract development archive privately; link explicit static C archive. No dpkg installation or maintainer scripts. Packaged shared-library symlinks and unused C++ GMP binding are not used.",
+      "runtime_dependency_handling": "Installed matching libsodium23/libgmp10 recorded; libgmpxx4ldbl not selected by static C-only link; libc/libstdc++/libgcc from unchanged toolchain. Package-manager dependency installation is not proposed.",
+      "contents_status": "Distribution file-list metadata checked; exact acquired archive members/version/architecture/hash remain mandatory before extraction/use",
+      "expected_headers": [
+        "usr/include/x86_64-linux-gnu/gmp.h"
+      ],
+      "expected_libraries": [
+        "usr/lib/x86_64-linux-gnu/libgmp.a"
+      ],
+      "prefix": "prefix/usr",
+      "artifact_verified": false
+    }
+  ],
+  "unchanged_installed_packages": {
+    "argv": [
+      "dpkg-query",
+      "-W",
+      "-f=${Package} ${Version} ${Status}\n",
+      "libgmp-dev",
+      "libgmp10",
+      "libsodium23",
+      "libsodium-dev",
+      "libstdc++6",
+      "libc6",
+      "libgcc-s1",
+      "g++",
+      "cmake",
+      "ninja-build",
+      "pkg-config",
+      "git"
+    ],
+    "exit_code": 1,
+    "stdout": "cmake 4.2.3-2ubuntu2 install ok installed\ng++ 4:15.2.0-5ubuntu1 install ok installed\ngit 1:2.53.0-1ubuntu1 install ok installed\nlibc6 2.43-2ubuntu2.4 install ok installed\nlibgcc-s1 16-20260322-1ubuntu1 install ok installed\nlibgmp10 2:6.3.0+dfsg-5ubuntu2 install ok installed\nlibsodium23 1.0.18-2 install ok installed\nlibstdc++6 16-20260322-1ubuntu1 install ok installed\nninja-build 1.13.2-1 install ok installed\npkg-config 2.5.1-4 install ok installed\n",
+    "stderr": "dpkg-query: no packages found matching libgmp-dev\ndpkg-query: no packages found matching libsodium-dev\n"
+  },
+  "build_options": {
+    "CMAKE_CXX_STANDARD": 14,
+    "CMAKE_POLICY_VERSION_MINIMUM": "3.5",
+    "CMAKE_BUILD_TYPE": "Release",
+    "CMAKE_CXX_FLAGS_RELEASE": "-O0 -g0",
+    "CURVE": "ALT_BN128 (libff support selection only; transcript FieldT remains gf192)",
+    "IS_LIBFF_PARENT": false,
+    "IS_LIBFQFFT_PARENT": false,
+    "MULTICORE": false,
+    "WITH_PROCPS": false,
+    "USE_ASM": false,
+    "PERFORMANCE": false,
+    "parallel_jobs": 1,
+    "tests_and_benchmarks": "No upstream top-level add_subdirectory; none selected",
+    "link": "Explicit project-local libsodium.a and libgmp.a; no pkg-config fallback"
+  },
+  "metadata_sources": [
+    "docs/data/s3_aurora_native_dependency_lock_1/metadata-1-results.json",
+    "docs/data/s3_aurora_native_dependency_lock_1/metadata-2-results.json",
+    "docs/data/s3_aurora_native_dependency_lock_1/metadata-3-results.json",
+    "docs/data/s3_aurora_native_dependency_lock_1/metadata-4-results.json",
+    "docs/data/s3_aurora_native_dependency_lock_1/continuation-1/metadata-resume-results.json"
+  ],
+  "unresolved_required_revision_pins": [],
+  "pending_artifact_checks": [
+    "Acquired Git commits/trees/blobs against recorded complete trees; all 21 retained snapshot files identical before patch",
+    "Exact two .deb SHA256, architecture/version, member names, types, safe paths and expected headers/static libraries",
+    "C/C++ toolchain ABI and header/library agreement; native compilation within ceilings; no build admission from metadata alone",
+    "Select and implement actual EXP2 caller patch; original cases/expectations unchanged; record functions actually executed"
+  ],
+  "not_asserted": [
+    "Full recursive optional checkout",
+    "Modern compiler compatibility",
+    "Measured build costs",
+    "Native EXP2 correspondence",
+    "Proof knowledge/privacy or profile adoption"
+  ],
+  "proposed_resource_approval": {
+    "acquisition_seconds_max": 60,
+    "charge_to_existing_native_and_implementation_balances_only_if_approved": true,
+    "artifacts_combined_bytes": 134217728,
+    "acquisition_subreservation_bytes": 33554432,
+    "binary_archive_object_executable_gitpack_per_file_bytes": 33554432,
+    "source_and_metadata_per_file_bytes": 1048576,
+    "new_logs_reports_evidence_bytes": 2097152,
+    "memory_bytes": 1073741824,
+    "audit_memory_bytes": 268435456,
+    "build_attempts_including_dependency_compilation": 2,
+    "native_invocations": 24,
+    "workers": 1,
+    "cpu_threads": 2,
+    "no_new_overall_time_or_invocations": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "scope": "handover preparation only; no project preservation audit",
+  "patch_applicability": "git apply --check exit 0 against included snapshot",
+  "source_hash_readback": "19 files match recorded lengths and SHA-256",
+  "candidate_hash_readback": "5 changed files match recorded candidate SHA-256",
+  "native_builds": 0,
+  "functional_tests": 0,
+  "native_cases": 0,
+  "proofs": 0,
+  "security_admission": "NOT_ESTABLISHED",
+  "wsL_project_files_and_ledgers": "not accessed or modified"
+}

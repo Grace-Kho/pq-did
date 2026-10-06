@@ -1,0 +1,25 @@
+{
+  "package": "S2-BOUNDED-MANAGER-DURABLE-RELEASE-1",
+  "authority": "Only manuscript II-VIII, agreed clarifications; R-030/R-033 and existing authority contracts",
+  "existing_source_changed": [],
+  "transaction": "One existing SQLite database: ManagerRecord checkpoint, signed state/update history, revoked set, consumed revocation nonces, operations outcome, chained head, service tip. Allocation/base state/entries preserved.",
+  "signing": "Existing ManagerSigningAdapter with fixed key, role, service/instance and expected public identity; write policy and exact ticket before/after signing; no caller overrides.",
+  "commit": "Privately sign outside transaction. BEGIN IMMEDIATE revalidates policy, expected ticket, generation/writer, previous checkpoint, operation absence and complete candidate recovery admission. Existing _write performs one COMMIT.",
+  "publication": "Redacted commit ack. Public epoch-range pages derive only from admitted checkpoint. Committed REVOKED/CURRENT result enqueue under same database writer/fencing lock, no recipient binding or signing.",
+  "recovery": "External expected HeadTicket mandatory; no automatic refresh/admission. Repeated mutation requires separate retrieval. Current reply cannot be re-enqueued after state changes. Historical updates remain public.",
+  "fault_model": "22 integration cases including simulated faults; two real SIGKILL application-barrier cases. No power-loss, SQLite-internal-crash, malicious-owner or coordinated rollback protection claim.",
+  "prior_implementation_seconds": 30.539082388975658,
+  "prior_test_invocations": 97,
+  "budget_amendment": {
+    "prior_ceiling": 100,
+    "additional_authorised": 24,
+    "ceiling": 124
+  },
+  "new_test_invocations": 24,
+  "expected_total_invocations": 121,
+  "native_ABI_runs": 0,
+  "new_proofs": 0,
+  "zkvm_executions": 0,
+  "activation": false,
+  "next_package": "S2-DURABLE-ISSUER-MANAGER-INTEGRATION-1"
+}

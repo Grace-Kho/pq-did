@@ -1,0 +1,30 @@
+{
+  "authority": "Explicit KYC-ISSUER-INCREMENTAL-STORAGE-1 approval",
+  "applied_once": true,
+  "implementation_ceiling_before": 4274,
+  "implementation_ceiling_after": 6074,
+  "implementation_historical_seconds": 3233.659502439785,
+  "implementation_remaining_seconds": 2840.340497560215,
+  "workstream_ceiling_before": 1700,
+  "workstream_ceiling_after": 3500,
+  "workstream_historical_seconds": 1026.8871163599233,
+  "workstream_remaining_seconds": 2473.1128836400767,
+  "invocations_before": 1045,
+  "invocation_ceiling_before": 1050,
+  "invocation_ceiling_after": 1146,
+  "unused_invocations": 101,
+  "cumulative_evidence_before": 33554432,
+  "cumulative_evidence_after": 41943040,
+  "historical_evidence_bytes": 30866472,
+  "shared_remaining_before": 2239281,
+  "shared_increase_bytes": 8388608,
+  "shared_remaining_after": 10627889,
+  "unallocated_headroom_unchanged": 448679,
+  "evidence_completion_reserve": 2097152,
+  "time_completion_reserve": 300,
+  "builds_unchanged": 10,
+  "proofs_unchanged": {
+    "used": 2,
+    "unused": 1
+  }
+}

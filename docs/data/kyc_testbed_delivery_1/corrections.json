@@ -1,0 +1,12 @@
+{
+  "static-only": [
+    {
+      "failed": "jobs/static.json",
+      "diagnostics": "jobs/static.log",
+      "correction": "String wrapping and explicit loop-variable binding; no changed cryptographic expectation",
+      "passed": "jobs/static-2.json",
+      "functional_invocations": 0
+    }
+  ],
+  "functional": []
+}

@@ -1,0 +1,31 @@
+{
+  "seconds": 0.8659174779895693,
+  "sources": [
+    {
+      "path": "crates--prover--src--ring_switch.rs",
+      "upstream_path": "crates/prover/src/ring_switch.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/prover/src/ring_switch.rs",
+      "bytes": 23413,
+      "git_blob": "a30d3bc491671a1720cc2ef43fcc694d821905a9",
+      "sha256": "4710f6766d481ec914067aaa6e5f61cbf1ca4c66315689569826b40e06b0ff7c"
+    },
+    {
+      "path": "crates--verifier--src--ring_switch.rs",
+      "upstream_path": "crates/verifier/src/ring_switch.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/verifier/src/ring_switch.rs",
+      "bytes": 4170,
+      "git_blob": "0f27fe1a6e13f27963a5788d1e186d132cbf303c",
+      "sha256": "8554ed97cab8f4d3c0c9cfde5152b92ebc983c010b6dd7152f5bc22491f7c973"
+    },
+    {
+      "path": "crates--spartan-verifier--src--wrapper--builder_channel.rs",
+      "upstream_path": "crates/spartan-verifier/src/wrapper/builder_channel.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/spartan-verifier/src/wrapper/builder_channel.rs",
+      "bytes": 6144,
+      "git_blob": "f3bef3a20a7875a22c57fe59b958988d535f46a4",
+      "sha256": "2bdaab7acf5d68d9b8a018b9bd500723b39eec018a84c287a9e70e286822c77a"
+    }
+  ],
+  "code_executed": false,
+  "memory_limit": "256MiB RLIMIT_AS; source-only process; no cgroup peak measured"
+}

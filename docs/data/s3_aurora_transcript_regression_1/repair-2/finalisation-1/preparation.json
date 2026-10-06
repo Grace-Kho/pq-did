@@ -1,0 +1,14 @@
+{
+  "inventory": {
+    "passed": true,
+    "count": 2639,
+    "unexpected": [],
+    "missing": []
+  },
+  "inherited_scope": "repair-1/scope.json.gz",
+  "inherited_scope_sha256": "358aca1225588cb8de3f5a919d5bcc1059651b10cf31bb6041a54d90bc9bcc9e",
+  "scope_sha256": "73e7bc1a5867a072f30d8806c3784356be3b0fe3a067d1700542af101658cb7e",
+  "input_root": "/home/grace/projects/pq-did/docs/data/s3_aurora_transcript_regression_1",
+  "output_root": "/home/grace/projects/pq-did/docs/data/s3_aurora_transcript_regression_1/repair-2/finalisation-1",
+  "baseline_regenerated": false
+}

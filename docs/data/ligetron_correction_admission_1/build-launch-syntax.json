@@ -1,0 +1,9 @@
+{
+  "status": "rejected-before-admission",
+  "error": "unauthorised phase/deadline",
+  "cause": "argparse REMAINDER consumed --build after positional seconds; build flag remained false",
+  "correction": "place --build immediately after job subcommand",
+  "compiler_launched": false,
+  "build_slots_consumed": 0,
+  "charge": "included in conservative operator charge"
+}

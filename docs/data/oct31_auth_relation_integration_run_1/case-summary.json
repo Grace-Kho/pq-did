@@ -1,0 +1,880 @@
+{
+  "package": "OCT31-AUTH-RELATION-INTEGRATION-1",
+  "case_outcomes": [
+    {
+      "id": "P-01",
+      "planned_scope": "canonical X/public policy pass",
+      "status": "pass",
+      "actual_scope": "complete public boundary, not private constraints",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0018.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "P-02",
+      "planned_scope": "wrong expected parameter instance",
+      "status": "pass",
+      "actual_scope": "complete public boundary, not private constraints",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0019.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "P-03",
+      "planned_scope": "wrong issuer key reference",
+      "status": "pass",
+      "actual_scope": "complete public boundary, not private constraints",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0020.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "P-04",
+      "planned_scope": "wrong revocation state key/signature",
+      "status": "pass",
+      "actual_scope": "complete public boundary, not private constraints",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0021.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "P-05",
+      "planned_scope": "context state reference mismatch",
+      "status": "pass",
+      "actual_scope": "complete public boundary, not private constraints",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0022.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "P-06",
+      "planned_scope": "context issuer reference mismatch",
+      "status": "pass",
+      "actual_scope": "complete public boundary, not private constraints",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0023.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "P-07",
+      "planned_scope": "wrong schema reference",
+      "status": "pass",
+      "actual_scope": "complete public boundary, not private constraints",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0024.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "P-08",
+      "planned_scope": "noncanonical/duplicate disclosure indices",
+      "status": "pass",
+      "actual_scope": "complete public boundary, not private constraints",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0025.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "P-09",
+      "planned_scope": "disclosed values contradict public policy",
+      "status": "pass",
+      "actual_scope": "complete public boundary, not private constraints",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0026.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "P-10",
+      "planned_scope": "wrong suite/namespace repetition",
+      "status": "pass",
+      "actual_scope": "complete public boundary, not private constraints",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0027.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "P-11",
+      "planned_scope": "malformed public state framing",
+      "status": "pass",
+      "actual_scope": "complete public boundary, not private constraints",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0028.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "P-12",
+      "planned_scope": "oversized public transport refused as capacity",
+      "status": "pass",
+      "actual_scope": "public transport admission",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0029.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "W-01",
+      "planned_scope": "canonical 5329-byte private layout",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0030.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "W-02",
+      "planned_scope": "MSB-byte to LSB-word/FIPS rewiring",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0031.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "W-03",
+      "planned_scope": "BYTES capacity/zero padding",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0032.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "W-04",
+      "planned_scope": "BOOLEAN malformed value",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0033.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "W-05",
+      "planned_scope": "UINT64 malformed width",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0034.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "W-06",
+      "planned_scope": "nonzero final attribute padding",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0035.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "W-07",
+      "planned_scope": "rid high bits rejected",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0036.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "W-08",
+      "planned_scope": "short private witness",
+      "status": "pass",
+      "actual_scope": "exact assignment/witness boundary",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0037.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "W-09",
+      "planned_scope": "trailing private witness bytes",
+      "status": "pass",
+      "actual_scope": "exact assignment/witness boundary",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0038.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "W-10",
+      "planned_scope": "holder binding matches independent SHA3 preimage",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0039.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "W-11",
+      "planned_scope": "exact certified body and credential role context",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0040.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "W-12",
+      "planned_scope": "caller-supplied Y/B/mu cannot replace derived values",
+      "status": "pass",
+      "actual_scope": "trusted preprocessing and no Y/B/mu override",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0041.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-01",
+      "planned_scope": "SampleInBall valid fixed synthetic stream",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full fixed private sampler is not validated within this component route; source inspection only.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-02",
+      "planned_scope": "SampleInBall consumed-byte exhaustion",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full fixed private sampler is not validated within this component route; source inspection only.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-03",
+      "planned_scope": "SampleInBall rejected-index consumption",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full fixed private sampler is not validated within this component route; source inspection only.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-04",
+      "planned_scope": "backwards hint endpoints",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0042.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-05",
+      "planned_scope": "hint endpoint greater than55",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0043.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-06",
+      "planned_scope": "duplicate hint index",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0044.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-07",
+      "planned_scope": "nonzero unused hint padding",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0045.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-08",
+      "planned_scope": "z strict norm boundary",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0046.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-09",
+      "planned_scope": "forward transform boundary polynomial",
+      "status": "pass",
+      "actual_scope": "single actual forward butterfly with full entry normalisation; complete transform unexecuted",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0047.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-10",
+      "planned_scope": "inverse transform signed/twiddle/factor boundary",
+      "status": "pass",
+      "actual_scope": "single actual inverse butterfly and final factor; complete inverse transform unexecuted",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0048.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-11",
+      "planned_scope": "matrix vector multiply and accumulation boundary",
+      "status": "pass",
+      "actual_scope": "one complete coefficient update, not six polynomial rows",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0049.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-12",
+      "planned_scope": "challenge/t1 subtraction representative",
+      "status": "pass",
+      "actual_scope": "one complete coefficient update, not six polynomial rows",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0050.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-13",
+      "planned_scope": "decomposition boundary",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0051.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-14",
+      "planned_scope": "UseHint wraparound",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0052.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-15",
+      "planned_scope": "w1 encoding byte order",
+      "status": "pass",
+      "actual_scope": "complete named component only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0053.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "M-16",
+      "planned_scope": "challenge rehash equality against bounded verifier",
+      "status": "pass",
+      "actual_scope": "complete final challenge SHAKE/equality only; mu/w1 obtained from independent reference",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0054.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-01",
+      "planned_scope": "complete valid credential A",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-02",
+      "planned_scope": "complete valid credential B",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-03",
+      "planned_scope": "new presentation context changes statement identity only",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-04",
+      "planned_scope": "valid alternate disclosure/policy",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-05",
+      "planned_scope": "wrong holder secret",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-06",
+      "planned_scope": "changed certified attributes",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-07",
+      "planned_scope": "changed issuer signature",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-08",
+      "planned_scope": "changed certified rid",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-09",
+      "planned_scope": "credential B signature spliced into A",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-10",
+      "planned_scope": "B revocation path spliced into A",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-11",
+      "planned_scope": "changed path sibling",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-12",
+      "planned_scope": "path level ordering error",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-13",
+      "planned_scope": "authenticated but mismatched root",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-14",
+      "planned_scope": "revoked-leaf witness",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-15",
+      "planned_scope": "mD inconsistent with same certified m",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "J-16",
+      "planned_scope": "malformed private hint propagated to final false",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "Full constrained comparison not admitted after capacity no-go; unchanged host reference evidence reused.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-01",
+      "planned_scope": "nonzero A/B/C satisfaction with primary1",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0002.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-02",
+      "planned_scope": "nonzero row unsatisfied independent oracle",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0003.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-03",
+      "planned_scope": "non-Boolean free field input",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0004.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-04",
+      "planned_scope": "tampered derived wire",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0005.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-05",
+      "planned_scope": "acceptance variable0",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0006.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-06",
+      "planned_scope": "wrong primary length",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0007.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-07",
+      "planned_scope": "wrong auxiliary length",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0008.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-08",
+      "planned_scope": "last legal variable index accepted",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0009.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-09",
+      "planned_scope": "out of range variable index",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0010.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-10",
+      "planned_scope": "duplicate loaded columns rejected",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0011.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-11",
+      "planned_scope": "unsorted loaded columns rejected",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0012.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-12",
+      "planned_scope": "zero noncanonical coefficient rejected",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0013.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-13",
+      "planned_scope": "empty sum treated as zero without unsafe is_valid",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0014.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-14",
+      "planned_scope": "truncated matrix stream rejected",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0015.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-15",
+      "planned_scope": "cross-partition wire splice rejected",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0016.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "N-16",
+      "planned_scope": "matrix/public-X identity mismatch",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0017.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "B-01",
+      "planned_scope": "bounded canonical inactive envelope parsed but not accepted",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0055.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "B-02",
+      "planned_scope": "wrong magic/version/flags",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0056.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "B-03",
+      "planned_scope": "wrong configured PID",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0057.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "B-04",
+      "planned_scope": "wrong RID for current X",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0058.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "B-05",
+      "planned_scope": "wrong Xtag",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0059.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "B-06",
+      "planned_scope": "declared body overflow/oversize without allocation",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0060.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "B-07",
+      "planned_scope": "noncanonical field encoding",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0061.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "B-08",
+      "planned_scope": "duplicate opening conflict",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0062.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "B-09",
+      "planned_scope": "missing required terminal/direct message",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0063.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "B-10",
+      "planned_scope": "trailing bytes",
+      "status": "pass",
+      "actual_scope": null,
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0064.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "B-11",
+      "planned_scope": "synthetic proof placeholder leaves challenge unconsumed",
+      "status": "pass",
+      "actual_scope": "unsupported-proof-backend",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0065.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "B-12",
+      "planned_scope": "freshness/replay checks retained with unsupported proof adapter",
+      "status": "pass",
+      "actual_scope": "expired",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0066.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "G-01",
+      "planned_scope": "disjoint row/variable coverage accepted",
+      "status": "pass",
+      "actual_scope": "small isolated resource/stream metadata fixture",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0067.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "G-02",
+      "planned_scope": "missing partition boundary rejected",
+      "status": "pass",
+      "actual_scope": "small isolated resource/stream metadata fixture",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0068.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "G-03",
+      "planned_scope": "duplicate partition rejected",
+      "status": "pass",
+      "actual_scope": "small isolated resource/stream metadata fixture",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0069.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "G-04",
+      "planned_scope": "absent completion footer cannot complete",
+      "status": "pass",
+      "actual_scope": "small isolated resource/stream metadata fixture",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0070.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "G-05",
+      "planned_scope": "synthetic count cap returns incomplete",
+      "status": "pass",
+      "actual_scope": "small isolated resource/stream metadata fixture",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0071.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "G-06",
+      "planned_scope": "synthetic frontier cap returns incomplete",
+      "status": "pass",
+      "actual_scope": "small isolated resource/stream metadata fixture",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0072.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "G-07",
+      "planned_scope": "evidence and registered artifact roles charged separately",
+      "status": "pass",
+      "actual_scope": "small isolated resource/stream metadata fixture",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0073.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "G-08",
+      "planned_scope": "interrupted assignment cannot report satisfaction",
+      "status": "pass",
+      "actual_scope": "small isolated resource/stream metadata fixture",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0074.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "Q-01",
+      "planned_scope": "streamed complete public-shape count or labelled prefix",
+      "status": "pass",
+      "actual_scope": "labelled-prefix-only",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0075.json",
+      "full_authentication_validated": false
+    },
+    {
+      "id": "Q-02",
+      "planned_scope": "complete descriptor count/row digest readback",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "No completed joint descriptor/frontier exists; bounded prefix cannot substitute.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "Q-03",
+      "planned_scope": "maximum frontier and assignment-storage accounting",
+      "status": "not-run",
+      "actual_scope": null,
+      "reason_not_run": "No completed joint descriptor/frontier exists; bounded prefix cannot substitute.",
+      "evidence": null,
+      "full_authentication_validated": false
+    },
+    {
+      "id": "Q-04",
+      "planned_scope": "native allocation admission from actual descriptor or explicit no-go",
+      "status": "pass",
+      "actual_scope": "NO-GO-direct-resident-Aurora",
+      "reason_not_run": null,
+      "evidence": "cases/AR1-0001.json",
+      "full_authentication_validated": false
+    }
+  ],
+  "invocations": 75,
+  "cumulative_invocations": 942,
+  "new_builds": 2,
+  "cumulative_builds": 10,
+  "work_events": 27379838,
+  "complete_relation": false,
+  "private_route_admitted": false,
+  "profile_adopted": false,
+  "proof_attempts": 0,
+  "baseline_reused": true,
+  "benchmark_trials_reused": 276
+}

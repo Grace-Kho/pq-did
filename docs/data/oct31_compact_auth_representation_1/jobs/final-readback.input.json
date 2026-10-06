@@ -1,0 +1,26 @@
+{
+  "name": "final-readback",
+  "phase": "audit",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/compact_auth_representation_1/preservation.py",
+    "readback"
+  ],
+  "limit_seconds": 30,
+  "child_seconds": 29,
+  "status": "launched",
+  "unit": "pqdid-compact-auth-1-final-readback",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 316060,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 26307710,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4073074688,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

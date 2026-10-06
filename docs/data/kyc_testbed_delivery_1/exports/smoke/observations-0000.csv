@@ -1,0 +1,5 @@
+dataset,id,scenario,category,phase,duration_ns,setup_ns,source,source_sha256,locator,issuer_version,manager_version
+delivery-v2-smoke,KYCD1-0015,ISSUE,disclosed-baseline,smoke,230999578,626364234,docs/data/kyc_testbed_delivery_1/cases/KYCD1-0015.json,fde64bd19da028133d643637caaeed78ef25d1670f7a34e7e2311727ab6d776e,details,2,2
+delivery-v2-smoke,KYCD1-0016,PRESENT-A,disclosed-baseline,smoke,505801387,735569859,docs/data/kyc_testbed_delivery_1/cases/KYCD1-0016.json,b91ed249d0156266a6ffd5395e785db15d5a73b9ba163edc44197192b9628ce9,details,2,2
+delivery-v2-smoke,KYCD1-0017,PRESENT-B,disclosed-baseline,smoke,451941393,1005716327,docs/data/kyc_testbed_delivery_1/cases/KYCD1-0017.json,d1b2adeffc44b5b6231f695cc1359552c131a61d92f5b73491b4fc7226cf9ad9,details,2,2
+delivery-v2-smoke,KYCD1-0018,REVOKE-UPDATE,disclosed-baseline,smoke,458865543,1297806941,docs/data/kyc_testbed_delivery_1/cases/KYCD1-0018.json,b59d35b6d7b23624163acf4582a542fca229256e9c132a58658c5a0039224814,details,2,2

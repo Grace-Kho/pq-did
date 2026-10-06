@@ -1,0 +1,14 @@
+{
+  "case_id": "C-10",
+  "invocation_id": "CAR1-0011",
+  "status": "pass",
+  "details": {
+    "case": "C-10",
+    "purpose": "incorrect footer counts rejected",
+    "full_relation": false,
+    "rejection": "invalid completion footer",
+    "state": "incomplete"
+  },
+  "seconds": 2.7540023438632488e-05,
+  "work_events": 1
+}

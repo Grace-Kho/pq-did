@@ -1,0 +1,6 @@
+{
+  "command": "run.py job source-quality tool 20",
+  "outcome": "sandbox user-bus access unavailable; no worker or case launched",
+  "seconds": 0.171,
+  "next_action": "same command submitted with normal escalation; permitted"
+}

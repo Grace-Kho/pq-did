@@ -1,0 +1,49 @@
+{
+  "meaning": "Operational validation controls, not cryptographic suite parameters or routine defaults",
+  "hash_enrolment_extended_v1": {
+    "authority": "User approval, 17 September 2026",
+    "max_gates": 2000000,
+    "max_output_bytes": 41943040,
+    "max_inputs": 65536,
+    "generation_seconds": 10.0,
+    "evaluation_seconds": 5.0,
+    "workers": 1,
+    "address_space_bytes": 268435456,
+    "rss_ceiling_bytes": 134217728,
+    "rss_poll_seconds": 0.01,
+    "case_wall_seconds": 30.0,
+    "case_log_bytes": 2097152,
+    "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+  },
+  "signature_count_preflight_v1": {
+    "authority": "User approval, 18 September 2026; counting only, no larger evaluation or proofs",
+    "mode": "count",
+    "max_gates": 32000000,
+    "max_logical_trace_bytes": 1073741824,
+    "max_diagnostic_bytes": 10485760,
+    "max_inputs": 65536,
+    "generation_seconds": 300.0,
+    "case_wall_seconds": 300.0,
+    "workers": 1,
+    "address_space_bytes": 268435456,
+    "rss_ceiling_bytes": 134217728,
+    "rss_poll_seconds": 0.01,
+    "case_log_bytes": 2097152,
+    "memory_note": "Retain stricter existing 256 MiB AS and sampled 128 MiB RSS; authorised upper RSS ceiling is 1 GiB. No materialised trace or wire-value array."
+  },
+  "message_preparation_pilot_v1": {
+    "authority": "User approval, 18 September 2026; message-preparation functional pilot only",
+    "max_gates": 2100000,
+    "max_output_bytes": 41943040,
+    "max_inputs": 65536,
+    "generation_seconds": 10.0,
+    "evaluation_seconds": 5.0,
+    "workers": 1,
+    "address_space_bytes": 268435456,
+    "rss_ceiling_bytes": 201326592,
+    "rss_poll_seconds": 0.01,
+    "case_wall_seconds": 30.0,
+    "case_log_bytes": 2097152,
+    "memory_note": "Separate kernel RLIMIT_AS and sampled RSS watchdog; no general evaluation increase."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "profile": "pqdid-application-container-draft-1",
+  "kind": "did-resolution",
+  "synthetic": true,
+  "exposure": "public-method-result",
+  "evidenceStatus": "NON-VERIFYING: exact document shape only; authenticated method chain absent",
+  "body": {
+    "did": "did:pqdid:1111111111111111111111111111111111111111111111111111111111111111:222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222",
+    "selector": "AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "document": "eyJpZCI6ImRpZDpwcWRpZDoxMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExOjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMiJ9",
+    "version": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "contentType": "application/did+json",
+    "registryReply": null,
+    "registrySignature": null
+  }
+}

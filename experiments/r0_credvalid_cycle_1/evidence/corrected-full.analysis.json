@@ -1,0 +1,14 @@
+{
+  "name": "corrected-full",
+  "status": "cycle_limit",
+  "marker_count": 0,
+  "markers": [],
+  "intervals": [],
+  "empty_marker_intervals": [],
+  "completed_segment_count": 171,
+  "completed_segment_user_cycles": 4171733,
+  "completed_segment_padded_capacity": 11206656,
+  "completed_segment_other_capacity": 7034923,
+  "active_phase_at_cap": null,
+  "measurement_note": "Raw intervals include one marker and any intervening glue. Paging/reserved/padding are not individually exposed by Execute IPC. Capped prefix and isolated components are not full relation totals."
+}

@@ -1,0 +1,127 @@
+{
+  "recorded_at_utc": "2026-09-18T13:26:28.628035+00:00",
+  "protected_files": 7811,
+  "unchanged_protected_files": 7804,
+  "missing": [],
+  "changed_existing": {
+    "README.md": {
+      "before": "9392d51e32018179012deffbc729ac6476fcc42e0d9b8a912b6ed8c292ef88a4",
+      "after": "f1191f37452c0b12115b03ec181625c04f47ac3a91d10f827bb4bc03822b370e"
+    },
+    "configs/suite.json": {
+      "before": "52260cd7b02b89027ca941f537349610eff829f263d6e3fee76fff83e3013311",
+      "after": "f0ffeb88005bfe46a83701f3c906a2cba004afafbfd1b93d3ed7ac6c78d8e942"
+    },
+    "configs/validation_profiles.json": {
+      "before": "8609ae6cf594030319df04435a5bd264f3a99ec7d2925fbb1f1d9f89a0913f41",
+      "after": "6935af3715d8e28e47a0acaceabb82248cd9f27d1d60797faf5008037cfd917f"
+    },
+    "docs/status.md": {
+      "before": "4ada5fb6810c69f5ddd574bc5066497670e02011cb062f101e9140d0a51897bc",
+      "after": "cf56ca44bd33b01b6bbb0d76202d8534c9f578bddec5be2ca6eddad4ece2a796"
+    },
+    "docs/traceability.md": {
+      "before": "821e47d5caabdf1c922e4c3437552b1fa1bc839f21d60569f42fd0fc9a2f524b",
+      "after": "b099da380fb5461d6ea2413a52efaabab23e40b83a2bba3ef7f1cf450423f97d"
+    },
+    "docs/spec_issues.md": {
+      "before": "b584540f75c49981eba9feb8f5e7e6959302ecd2cfe89786c899211c495496d5",
+      "after": "d9ab1e4b84ee488ab599853c4340d954c3dd962686a765ed18581410758532d2"
+    },
+    "scripts/preflight_signature_inputs.py": {
+      "before": "f9ec634fcd977be1fc92d400920b5be09fbc6b121c303db241f43f5454fe8117",
+      "after": "2e1f31b9c0ecd581230bab095bc2f7020e85bea8642ad0296caecf043e7124cb"
+    }
+  },
+  "new_files_sha256": {
+    "docs/data/stage3_feasibility_accounting.json": "24561e2b8ffaac398adb02e1d378ef3583c665e39d274018d062dd71940cd8da",
+    "docs/data/stage3_feasibility_focused.json": "4cd018ecf35d7e20527c3f2c92cc2d32a8d3c5130886654611a7fddfdcd6cf3b",
+    "docs/data/stage3_feasibility_regression.json": "6cd0fbd89cccd9cb53f0c0d5f91d74ecd381c286cfae356893bc981c80adb55a",
+    "docs/data/stage3_hint_prefix_audit.json": "2031f1d7b3a47dd0d22c4cd573efd9022bccbe6af43f2b117ff846b865f56a00",
+    "docs/data/stage3_message_preparation_pilot.json": "8bf2699e4d09c72868a2e030914a6bf292111019a11d0aaa5ce43e1696d98aaf",
+    "docs/stage3_feasibility_review.md": "d31510c2e17a66506ea4d9f98f6202d5bdd4a212f3676b43bfdadfe7594c2a40",
+    "scripts/review_feasibility.py": "f3359ffe233df89827df21d5d79017ad2ddc5d70d315654a1ef15909ebb6a659",
+    "tests/reference/preparation_oracle.py": "d05fa6b9f47fcaec5b90a261a4a28b90265e43523acfd4fbeb26eaeb7f556fb4",
+    "tests/unit/test_feasibility_review.py": "610b6607f45b19b8b1cb4d504e34f4095486e411cb07ba04d0a775fc0ecd44eb"
+  },
+  "all_production_sources_preserved": true,
+  "original_vectors_and_historical_raw_evidence_preserved": true,
+  "SPEC001_002_003_004_and_all_prior_manifest_fields_preserved": true,
+  "ordinary_and_counting_profiles_unchanged": true,
+  "new_profile_only": "message_preparation_pilot_v1, explicitly user-authorised",
+  "message_fingerprints_counts_and_folds_match_previous_count": true,
+  "pilot_outcomes": {
+    "passed": 9
+  },
+  "observed_output_deltas": {
+    "valid": [],
+    "attribute-length": [
+      "binding",
+      "mcred",
+      "formatted_message",
+      "representative_preimage",
+      "fips_representative"
+    ],
+    "attribute-padding": [
+      "binding",
+      "mcred",
+      "formatted_message",
+      "representative_preimage",
+      "fips_representative"
+    ],
+    "identifier-range": [
+      "mcred",
+      "formatted_message",
+      "representative_preimage",
+      "fips_representative"
+    ],
+    "disclosure-mismatch": [
+      "binding",
+      "mcred",
+      "formatted_message",
+      "representative_preimage",
+      "fips_representative"
+    ],
+    "holder-mutation": [
+      "holder_preimage",
+      "holder_value",
+      "binding",
+      "mcred",
+      "formatted_message",
+      "representative_preimage",
+      "fips_representative"
+    ],
+    "hidden-attribute-mutation": [
+      "binding",
+      "mcred",
+      "formatted_message",
+      "representative_preimage",
+      "fips_representative"
+    ],
+    "identifier-mutation": [
+      "mcred",
+      "formatted_message",
+      "representative_preimage",
+      "fips_representative"
+    ],
+    "signature-mutation": []
+  },
+  "hint_prefix_counts_reproduced": true,
+  "hint_breakdown_sums_exactly": true,
+  "hint_audit_limit": "32M gate cap; not full completion or correctness failure",
+  "proof_accounting_status": "conditional projection; exact full-authentication inclusion unverified",
+  "focused_regression_outcomes": {
+    "stage3_feasibility_focused": {
+      "passed": 119
+    },
+    "stage3_feasibility_regression": {
+      "passed": 1432
+    }
+  },
+  "all_current_evidence_source_hashes_match": true,
+  "lint": "passed",
+  "format": "123 files already formatted",
+  "missing_local_links": [],
+  "environment": "No installations or rebuilds; protected native/editor/lock files unchanged; .venv not rehashed.",
+  "scope": "Bounded message pilot and feasibility review only. No larger count/evaluation, proof, sampler/NTT integration or replacement construction. Remaining obligations stay open."
+}

@@ -1,0 +1,1420 @@
+{
+  "recorded_at_utc": "2026-09-17T14:56:57.400244+00:00",
+  "host_snapshot": {
+    "recorded_at_utc": "2026-09-17T14:42:51.789429+00:00",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "memory_bytes": {
+      "MemTotal": 8126111744,
+      "MemAvailable": 5335273472,
+      "SwapTotal": 2147483648,
+      "SwapFree": 2147483648
+    },
+    "storage": {
+      "/home/grace/projects/pq-did": {
+        "available_bytes": 1021605662720
+      },
+      "/tmp": {
+        "available_bytes": 3994902528
+      }
+    },
+    "cgroups": {
+      "/proc/self/cgroup": "0::/init.scope\n",
+      "/sys/fs/cgroup/init.scope/memory.max": "max\n",
+      "/sys/fs/cgroup/init.scope/memory.current": "2648850432\n"
+    },
+    "rlimit_as": [
+      -1,
+      -1
+    ]
+  },
+  "launch_mem_available_bytes": 5002989568,
+  "profile": {
+    "authority": "User approval, 17 September 2026",
+    "max_gates": 2000000,
+    "max_output_bytes": 41943040,
+    "max_inputs": 65536,
+    "generation_seconds": 10.0,
+    "evaluation_seconds": 5.0,
+    "workers": 1,
+    "address_space_bytes": 268435456,
+    "rss_ceiling_bytes": 134217728,
+    "rss_poll_seconds": 0.01,
+    "case_wall_seconds": 30.0,
+    "case_log_bytes": 2097152,
+    "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+  },
+  "workers": 1,
+  "results": [
+    {
+      "case": "pytest",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "outcome": "passed",
+      "pytest_returncode": 0,
+      "reports": [
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_existing_fixture_parsing_reference_and_fixed_input_count[alpha-42-empty-0000]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.16465792300004978
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_existing_fixture_parsing_reference_and_fixed_input_count[alpha-42-old-002c]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.15893498699733755
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_existing_fixture_parsing_reference_and_fixed_input_count[alpha-42-old-0034]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.15908199499972397
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_existing_fixture_parsing_reference_and_fixed_input_count[alpha-42-updated-003f]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.1660396609986492
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_existing_fixture_parsing_reference_and_fixed_input_count[alpha-43-empty-0000]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.1585465429998294
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_existing_fixture_parsing_reference_and_fixed_input_count[alpha-43-old-002c]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.15530013500028872
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_existing_fixture_parsing_reference_and_fixed_input_count[alpha-43-old-0034]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.15555014799974742
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_existing_fixture_parsing_reference_and_fixed_input_count[alpha-43-updated-003f]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.17133867799930158
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_existing_fixture_parsing_reference_and_fixed_input_count[beta-42-empty-0000]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.15513131599800545
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_existing_fixture_parsing_reference_and_fixed_input_count[beta-42-old-002c]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.15673293900181307
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_existing_fixture_parsing_reference_and_fixed_input_count[beta-42-old-0034]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.157874812000955
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_existing_fixture_parsing_reference_and_fixed_input_count[beta-42-updated-003f]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.1667016009996587
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_raw_wire_slices_keep_same_secret_attributes_signature_identifier_and_path",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.1306164470006479
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_private_attribute_malformations_do_not_change_construction",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.6592810140027723
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_identifier_endpoints_remain_private_checks[0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.024199253999540815
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_identifier_endpoints_remain_private_checks[1048575]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.024233647000073688
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_identifier_endpoints_remain_private_checks[1048576]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.023856145002355333
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_identifier_endpoints_remain_private_checks[4294967295]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.02570637499957229
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_validly_encoded_changes_pass_parsing_but_not_full_private_relation[secret]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.029755421997833764
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_validly_encoded_changes_pass_parsing_but_not_full_private_relation[signature]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.029894381001213333
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_validly_encoded_changes_pass_parsing_but_not_full_private_relation[path]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.030552927000826458
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_validly_encoded_changes_pass_parsing_but_not_full_private_relation[hidden_attribute]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.029389831001026323
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_validly_encoded_changes_pass_parsing_but_not_full_private_relation[rid]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.030146839999360964
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_disclosed_fields_compare_complete_certified_bytes",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.07261471599849756
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_public_disclosure_mutation_and_bad_mask_are_separate_boundaries",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.15662784000232932
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_public_state_and_policy_not_moved_into_parser",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.15858002199820476
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_empty_disclosure_and_uint64_max_are_supported",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.14871047700216877
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_fixed_witness_length_and_inactive_parser_faults",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.15973969100014074
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_schema_extreme_capacity_zero_capacity_and_padding",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.6313050290009414
+        },
+        {
+          "nodeid": "tests/unit/test_auth_parsing_circuit.py::test_parser_modes_budget_stability_and_resource_noncompletion",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.4352388970000902
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_independent_fixture_provenance_and_coverage",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.002963257000374142
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_real_signed64_division_vectors_and_identity[1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.20236562399804825
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_real_signed64_division_vectors_and_identity[2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.20215422199908062
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_real_signed64_division_vectors_and_identity[16]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.20381231400097022
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_real_signed64_division_vectors_and_identity[523776]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.20374127900140593
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_real_signed64_division_vectors_and_identity[8380417]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.20228553500055568
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_real_signed64_division_vectors_and_identity[9223372036854775807]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.20234796899967478
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_exhaustive_small_division[2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0005863699989276938
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_exhaustive_small_division[3]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0029282709983817767
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_exhaustive_small_division[4]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.01632880399847636
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_exhaustive_small_division[5]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.07861237399993115
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_centred_endpoints_real_width[1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.1581549719994655
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_centred_endpoints_real_width[2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.15448608299993793
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_centred_endpoints_real_width[16]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.15598232699994696
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_centred_endpoints_real_width[523776]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.16278309799963608
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_centred_endpoints_real_width[8380417]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.15615277499819058
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_zero_divisor_rejection_survives_tautological_comparison[div64]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.08132812599797035
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_zero_divisor_rejection_survives_tautological_comparison[mod64]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.07946606499899644
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_zero_divisor_rejection_survives_tautological_comparison[centred64]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.08221821999904932
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_non_profile_divisors_are_not_silently_given_other_semantics[-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.00015216599786072038
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_non_profile_divisors_are_not_silently_given_other_semantics[-9223372036854775808]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 8.200400043278933e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_non_profile_divisors_are_not_silently_given_other_semantics[9223372036854775808]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 7.194399950094521e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_non_profile_divisors_are_not_silently_given_other_semantics[True]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 7.519000064348802e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_non_profile_divisors_are_not_silently_given_other_semantics[1.5]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 7.14169982529711e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_non_profile_divisors_are_not_silently_given_other_semantics[bad5]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 8.728600005269982e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_private_divisor_and_wrong_width_are_not_supported",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 8.464400161756203e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_entirely_public_division_folds_without_changing_math[-17-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010988967998855514
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_entirely_public_division_folds_without_changing_math[-17-2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.011635210998065304
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_entirely_public_division_folds_without_changing_math[-17-8380417]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.011723937001079321
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_entirely_public_division_folds_without_changing_math[0-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.011350286997185322
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_entirely_public_division_folds_without_changing_math[0-2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.01190206299725105
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_entirely_public_division_folds_without_changing_math[0-8380417]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.011370402000466129
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_entirely_public_division_folds_without_changing_math[17-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.011442079001426464
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_entirely_public_division_folds_without_changing_math[17-2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.011523915996804135
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_entirely_public_division_folds_without_changing_math[17-8380417]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.011564570999325952
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_division.py::test_proposed_two_bit_restoring_step_literal_trace",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0003349580001668073
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add-0-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010250381001242204
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add-0-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010795080997922923
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add-1-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010361165997892385
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add-8380416-8380416]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010108860002219444
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add-8380417-2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.00994904300023336
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add--1-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010313454000424827
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add--8380416-8380416]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010397486999863759
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add--9223372036854775808-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010475498998857802
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add--9223372036854775808--1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.008237080997787416
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add-9223372036854775807-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.007837940000172239
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add-9223372036854775807-2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.007932644002721645
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add--9223372036854775808--9223372036854775808]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.007640060000994708
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add-9223372036854775807-9223372036854775807]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.00788294800076983
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add--9223372036854775808-9223372036854775807]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010322759997507092
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add-3037000499-3037000499]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010345462000259431
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[add-3037000500-3037000500]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010073998000734719
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract-0-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010076538997964235
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract-0-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.009833588999754284
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract-1-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010453483002493158
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract-8380416-8380416]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010416524000902427
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract-8380417-2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.009920570002577733
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract--1-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010557548997894628
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract--8380416-8380416]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010563881001871778
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract--9223372036854775808-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.008113972002320224
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract--9223372036854775808--1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010454711999045685
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract-9223372036854775807-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.011189214998012176
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract-9223372036854775807-2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.009927112001605565
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract--9223372036854775808--9223372036854775808]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.00986557400028687
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract-9223372036854775807-9223372036854775807]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010159248999116244
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract--9223372036854775808-9223372036854775807]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.007759731000987813
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract-3037000499-3037000499]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010669912000594195
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[subtract-3037000500-3037000500]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.009952619999239687
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply-0-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.023645193003176246
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply-0-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.023032223001791863
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply-1-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.023629399998753797
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply-8380416-8380416]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.024453784000797896
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply-8380417-2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.02355146699846955
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply--1-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.02324181899894029
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply--8380416-8380416]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.024112585000693798
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply--9223372036854775808-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.023228517999086762
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply--9223372036854775808--1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.018932364997453988
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply-9223372036854775807-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.023939557999256067
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply-9223372036854775807-2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.018418588002532488
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply--9223372036854775808--9223372036854775808]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.018710506999923382
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply-9223372036854775807-9223372036854775807]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.018426168997393688
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply--9223372036854775808-9223372036854775807]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.01891025599979912
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply-3037000499-3037000499]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.023049331997754052
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_private_ring_full_width_and_sticky_overflow[multiply-3037000500-3037000500]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.018492320999939693
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_public_operands_and_original_extended_mode_identity[add]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.22246601399820065
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_public_operands_and_original_extended_mode_identity[subtract]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.21899501400184818
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_private_public_operands_and_original_extended_mode_identity[multiply]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.48639065400129766
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_reduction_and_tautological_equality_cannot_repair_overflow",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.16532505700160982
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[-9223372036854775808]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03135356500206399
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[-8380417]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.030777269003010588
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03055952599970624
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03171560600094381
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.031697649999841815
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[261887]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03097628499745042
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[261888]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.030797916999290464
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[261889]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.031235709000611678
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[785663]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.031052477002958767
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[785664]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.030726981000043452
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[785665]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03175553699838929
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[3928319]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.031900989000860136
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[3928320]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.030170801001077052
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[3928321]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.030632502002845285
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[7594751]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03128374600055395
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[7594752]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03058174200123176
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[7594753]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.031500596000114456
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[8118527]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.030461330999969505
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[8118528]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.030801601998973638
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[8118529]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.030155194999679225
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[8380415]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.031386979000672
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[8380416]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03153780299908249
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[8380417]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03148987599706743
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[8380418]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.030597056000260636
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_decompose_exceptional_endpoint_and_reference[9223372036854775807]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03120292700259597
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0--9223372036854775808]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05190569499973208
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0--8380417]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.051752927000052296
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0--1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.051032556999416556
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05083737599852611
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05133628499970655
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-261887]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0508309430006193
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-261888]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05095224999968195
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-261889]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05254006500035757
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-785663]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.052608051999413874
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-785664]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0507174379999924
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-785665]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.052440054998442065
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-3928319]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.050745091000862885
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-3928320]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05318335400079377
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-3928321]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05051788299897453
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-7594751]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.050959857002453646
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-7594752]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05145563900077832
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-7594753]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05117392299871426
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-8118527]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05050452499926905
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-8118528]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.051293689000885934
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-8118529]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05159509800068918
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-8380415]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05429561799974181
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-8380416]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05519414599984884
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-8380417]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.052884568001900334
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-8380418]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05254185500234598
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[0-9223372036854775807]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05274584099970525
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1--9223372036854775808]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.051653898000949994
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1--8380417]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05352115599816898
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1--1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05361535199699574
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.052609651000238955
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05234798500168836
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-261887]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.053619539001374505
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-261888]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05252601800020784
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-261889]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.052196022999851266
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-785663]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05269727199993213
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-785664]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05280653099907795
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-785665]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05196094799975981
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-3928319]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05237986700012698
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-3928320]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05613679100133595
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-3928321]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.053560394000669476
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-7594751]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05199765300130821
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-7594752]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05268434699974023
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-7594753]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05220449999978882
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-8118527]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.052972594003222184
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-8118528]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0524190889991587
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-8118529]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05214473700107192
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-8380415]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05278410699975211
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-8380416]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05280722699899343
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-8380417]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05223116499837488
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-8380418]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.05211499100187211
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_hint_boolean_private_input_and_reference[1-9223372036854775807]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.052544991001923336
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_high_and_low_bits_helpers_preserve_decompose[high_bits-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.25517455600129324
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_high_and_low_bits_helpers_preserve_decompose[low_bits-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.2518111460012733
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_strict_norm_scalar_and_checked_abs_min[-9223372036854775808]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0015883230007602833
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_strict_norm_scalar_and_checked_abs_min[9223372036854775807]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.001452253000024939
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_strict_norm_scalar_and_checked_abs_min[-524093]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.001392619000398554
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_strict_norm_scalar_and_checked_abs_min[-524092]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0013850520008418243
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_strict_norm_scalar_and_checked_abs_min[-524091]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0014141339997877367
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_strict_norm_scalar_and_checked_abs_min[-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0014062919981370214
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_strict_norm_scalar_and_checked_abs_min[0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.001376789001369616
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_strict_norm_scalar_and_checked_abs_min[1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.001374617000692524
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_strict_norm_scalar_and_checked_abs_min[524091]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0013695719972020015
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_strict_norm_scalar_and_checked_abs_min[524092]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0015647090003767516
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_strict_norm_scalar_and_checked_abs_min[524093]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0014062449990888126
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_prescribed_single_ntt_butterfly_against_independent_and_reference[0-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.21747086699906504
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_prescribed_single_ntt_butterfly_against_independent_and_reference[1-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.2142704279976897
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_prescribed_single_ntt_butterfly_against_independent_and_reference[8380416-8380415]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.21550140399995144
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_prescribed_single_ntt_butterfly_against_independent_and_reference[-1-2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.21492142700299155
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_butterfly_source_order_is_product_then_right_then_left",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.1714742029980698
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_domain_mix_and_coefficientwise_polynomial_claims_rejected",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.00032768300297902897
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_reduce_scalar_keeps_domain_annotation[Domain.COEFFICIENT]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.08963858700008132
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_reduce_scalar_keeps_domain_annotation[Domain.NTT]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.08941923300153576
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_public_hint_preserves_same_mathematical_helper[0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.3569797589989321
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_public_hint_preserves_same_mathematical_helper[1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.36059669999667676
+        },
+        {
+          "nodeid": "tests/unit/test_scalar_ring_circuit.py::test_wide_multiply_and_active_vs_inactive_overflow",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.1111289639993629
+        }
+      ],
+      "exceptions": [],
+      "child_seconds": 15.846889190001093,
+      "peak_rss_bytes": 68722688,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 69095424,
+        "supervised_seconds": 15.901023266000266,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 341
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_auth_arithmetic.py",
+        "--child",
+        "--case",
+        "pytest",
+        "--effective-profile",
+        "/tmp/pqdid-arithmetic-joeik6vd/profile.json",
+        "--output",
+        "/tmp/pqdid-arithmetic-joeik6vd/0.json",
+        "--heartbeat",
+        "/tmp/pqdid-arithmetic-joeik6vd/0.beat",
+        "--tests",
+        "tests/unit/test_auth_parsing_circuit.py",
+        "tests/unit/test_bc1_division.py",
+        "tests/unit/test_scalar_ring_circuit.py"
+      ],
+      "log": "........................................................................ [ 33%]\n........................................................................ [ 66%]\n........................................................................ [ 99%]\n.                                                                        [100%]\n217 passed in 15.69s\n"
+    }
+  ],
+  "source_sha256": {
+    "src/pqdid/circuits/__init__.py": "9098a9c19787bcd155bac6d7d724d3c354c4c404fc99565cd5a72ae26a4c8d8f",
+    "src/pqdid/circuits/accounting.py": "23610bf5a75ba435f582d7e80a1d1e2118f07caabe6659b96a4ae4380b3c0690",
+    "src/pqdid/circuits/auth_parsing.py": "15bb95af9c2cb70eab3c4de8406b50cd25f67cf823163875372668989c26be2b",
+    "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+    "src/pqdid/circuits/division.py": "c530930c04f91bcdf4bceaf5d052f940cc935e87cca6562baf119ad41b8574a8",
+    "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+    "src/pqdid/circuits/enrolment.py": "d8b5134bdcb7fd9c1bd70cffc6214e96d971e3fe01bc595e5437718cd603e2f5",
+    "src/pqdid/circuits/enrolment_accounting.py": "8e479c7d3f221d86450135cf356f54b310e95794884026eeb9663985d78c4b3b",
+    "src/pqdid/circuits/keccak.py": "05dbfe9e5d8aea37471c325b7a9565b6f9f1742af5e2efca54029758b1b840a6",
+    "src/pqdid/circuits/parsing.py": "2f4b3d24d056eb9b26424ee185b1b5df9847f50fdc1db326c8d313685236cef9",
+    "src/pqdid/circuits/scalar_ring.py": "f2012a9d1202686368eb2693495bccd00af8be73ce8a00535a8ced9a190adf45",
+    "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec",
+    "scripts/validate_auth_arithmetic.py": "bcac16289cc39eff319bc62576873875f44e8be2202c82a7bfd62618b708ad85",
+    "scripts/measure_auth_parsing_arithmetic.py": "e2c2a906d29b145874578eda19a3956599b40a038dd0642c7f4bd2c90f82e33a",
+    "configs/validation_profiles.json": "ac67e0b3fe89c8a91a55c13f8f2e75323c02c9773bfe2007771a61f8c3b623b9"
+  },
+  "scope": "parsing/scalars; SPEC-004 provisional; no full authentication proof/count"
+}

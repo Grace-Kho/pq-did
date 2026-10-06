@@ -1,0 +1,16 @@
+{
+  "name": "build-5",
+  "status": "incomplete-outer-guard",
+  "outer_exit_code": 1,
+  "compiler_exit_code": 0,
+  "compiler_record": "build-attempt.json",
+  "worker_record": "build-5.service.json",
+  "outer_monitor_wall_seconds": null,
+  "sampled_tree_RSS_peak": null,
+  "resource_guard_complete": false,
+  "reason": "ValueError: ordinary per-file limit from package_size before the monitor could persist its final record",
+  "run_ledger_entry_preserved": "status launched, without seconds",
+  "elapsed_charge_policy": "Existing guard fallback charges an uncompleted run 60 seconds; measured worker/body times remain separate",
+  "conservative_charged_seconds": 60,
+  "native_cases": 0
+}

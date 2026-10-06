@@ -1,0 +1,299 @@
+{
+  "package": "S2-RECOVERY-AUTHORITY-DESIGN-1",
+  "status": "design-only",
+  "implemented": false,
+  "architecture": "role-owned authority broker; separate SQLite file per role/service instance; private state, head, journal and outcomes co-committed",
+  "recommended_sqlite": {
+    "journal_mode": "DELETE",
+    "synchronous": "EXTRA",
+    "locking_mode": "NORMAL",
+    "foreign_keys": true,
+    "busy_timeout_ms": 0,
+    "autocommit": true,
+    "begin": "BEGIN IMMEDIATE",
+    "commit": "explicit SQL COMMIT",
+    "automatic_retries": 0,
+    "shared_cache": false,
+    "read_uncommitted": false,
+    "wal_selected": false,
+    "mmap_size": 0,
+    "temp_store": "MEMORY",
+    "cache_size_kib": 2048
+  },
+  "roles": [
+    {
+      "role": "manager",
+      "authoriser": "revocation/allocation operator",
+      "durable_facts": "reservations, count, revocations, request nonces and update history",
+      "private_scope": "issuer identities, operation correlations; no holder secret or attributes",
+      "unavailable": "affected role unavailable; no fallback empty state"
+    },
+    {
+      "role": "issuer",
+      "authoriser": "issuer operator",
+      "durable_facts": "approved sessions, reservation outcomes, signing-attempt markers, certifications and release records",
+      "private_scope": "attributes, evidence, controller binding, confidential result and channel identity",
+      "unavailable": "affected role unavailable; no fallback empty state"
+    },
+    {
+      "role": "verifier",
+      "authoriser": "audience-specific operator; separate A/B principals and stores",
+      "durable_facts": "every challenge reservation and consumed decision",
+      "private_scope": "audience/session policy and consumption; public statement/proof only",
+      "unavailable": "affected role unavailable; no fallback empty state"
+    },
+    {
+      "role": "registry",
+      "authoriser": "DID registry operator",
+      "durable_facts": "ordered full chains, append outcomes and publication state",
+      "private_scope": "operator key access; no holder secret",
+      "unavailable": "affected role unavailable; no fallback empty state"
+    },
+    {
+      "role": "resolver",
+      "authoriser": "resolver owner within its trust domain",
+      "durable_facts": "all reserved read nonces, configuration and recovery generation",
+      "private_scope": "query history/nonce associations; no hidden-DID verifier lookup",
+      "unavailable": "affected role unavailable; no fallback empty state"
+    },
+    {
+      "role": "controller",
+      "authoriser": "holder controller owner",
+      "durable_facts": "confirmed references, exact pending records and private key-handle associations",
+      "private_scope": "salt, key handles and holder-local publication intents",
+      "unavailable": "affected role unavailable; no fallback empty state"
+    },
+    {
+      "role": "holder",
+      "authoriser": "holder wallet owner",
+      "durable_facts": "approved intent, acceptance and current witness/state association",
+      "private_scope": "xH, private credential, rid/path and intent",
+      "unavailable": "affected role unavailable; no fallback empty state"
+    }
+  ],
+  "failure_model": [
+    {
+      "id": "F01",
+      "failure": "process termination",
+      "coverage": "targeted by next pilot",
+      "rule": "Durable role store survives; one complete transaction or none; fresh process reconciles unknown response."
+    },
+    {
+      "id": "F02",
+      "failure": "host or WSL restart",
+      "coverage": "conditional design only, not tested",
+      "rule": "Same non-rolled-back ext4 authority files and hot journals; truthful flush/VHD storage required."
+    },
+    {
+      "id": "F03",
+      "failure": "storage loss/corruption/IO error",
+      "coverage": "fail closed when detected",
+      "rule": "No empty bootstrap or old backup admission; unavailable head/blob/outcome quarantines."
+    },
+    {
+      "id": "F04",
+      "failure": "stale service checkpoint, authority intact",
+      "coverage": "targeted by next pilot",
+      "rule": "Exact authority head/ticket comparison rejects cache rollback."
+    },
+    {
+      "id": "F05",
+      "failure": "simultaneous service and authority rollback",
+      "coverage": "outside guarantee",
+      "rule": "A consistent older DB cannot detect its own rollback; external independent anchor needed."
+    },
+    {
+      "id": "F06",
+      "failure": "superseded or competing writer",
+      "coverage": "targeted by next pilot",
+      "rule": "Generation plus prior head/operation checks at every protected boundary."
+    },
+    {
+      "id": "F07",
+      "failure": "power loss or faulty host flush",
+      "coverage": "outside pilot evidence",
+      "rule": "SQLite configuration is a prerequisite, not a verified WSL hardware guarantee."
+    },
+    {
+      "id": "F08",
+      "failure": "malicious owner/root or raw DB bypass",
+      "coverage": "outside guarantee",
+      "rule": "Owner can bypass SQLite/application checks; OS isolation and trusted broker required."
+    }
+  ],
+  "fencing": {
+    "counter_bits": 63,
+    "counter_max": 9223372036854775807,
+    "zero_reserved": true,
+    "per_commit": true,
+    "per_publication": true,
+    "expected_prior_head": true,
+    "operation_identity_and_contents": true,
+    "start_only_check_sufficient": false,
+    "old_connections_keep_no_authority": true,
+    "automatic_retries": 0
+  },
+  "atomicity": {
+    "unit": "one role database transaction",
+    "includes": [
+      "checkpoint bytes",
+      "state indexes",
+      "authority head",
+      "operation outcome",
+      "required outbox entries"
+    ],
+    "cross_role_transaction": false,
+    "missing_checkpoint": "quarantine, never fall back to older head"
+  },
+  "issuer_reconciliation": {
+    "signing_without_committed_certificate": "retire after authoritative check; no automatic signing retry",
+    "committed_certificate": "original exact bytes only, separately authenticated redelivery; ordinary finish remains REPLAY",
+    "reservation_rebind": false,
+    "cross_role": "durable issuer intent then idempotent manager reservation then issuer attachment; no rollback of orphan rid"
+  },
+  "next_package": "S2-DURABLE-AUTHORITY-PILOT-1",
+  "next_pilot_scope": [
+    "bounded SQLite core and recovery bridge",
+    "manager permanent reservation",
+    "verifier register/consume for A and B",
+    "issuer private journal/reconciliation and exact-result retrieval"
+  ],
+  "other_roles_live_admission_in_pilot": false,
+  "future_tests": [
+    {
+      "id": "T01",
+      "label": "new-process",
+      "criterion": "Kill before and after BEGIN/row writes/COMMIT; reopen from a distinct process; admit exactly old or complete new head.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T02",
+      "label": "new-process",
+      "criterion": "Kill after successful COMMIT before response; retrieve exact durable outcome without duplicate transition.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T03",
+      "label": "rollback-cache",
+      "criterion": "Restore an old service checkpoint with intact authority; reject even when signed root is identical.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T04",
+      "label": "concurrent-processes",
+      "criterion": "Two processes compete for replacement from the same expected generation and, separately, different mutations from one expected head; at most one grant/first-head commit, bounded BUSY/conflict for the other.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T05",
+      "label": "fencing",
+      "criterion": "Pause old writer, replace it, resume; allocation, consume, certification and signed publication fail old generation.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T06",
+      "label": "idempotency",
+      "criterion": "Same operation ID/same complete contents recovers existing outcome; changed contents reject; verify never yields a second acceptance.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T07",
+      "label": "issuer-coordination",
+      "criterion": "Kill around issuer intent, manager reserve and issuer attachment; resolve immutable operation mapping; never reuse or rebind rid.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T08",
+      "label": "issuer-signing",
+      "criterion": "Interrupt SIGNING or deliver delayed signature after replacement; retire/quarantine without another signing call.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T09",
+      "label": "issuer-certification",
+      "criterion": "Kill before/after certification commit and release; only committed exact result may be retrieved by the original authorised recipient.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T10",
+      "label": "unavailable-incomplete",
+      "criterion": "Missing database/head/blob/outcome, digest disagreement, IO/FULL/BUSY and unavailable authority fail closed; no auto-empty or retry.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T11",
+      "label": "original-controls",
+      "criterion": "Retain both original unsafe controls; recovered manager/verifier interfaces block the corresponding stale images.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T12",
+      "label": "clock-private-scope",
+      "criterion": "Fresh clock at atomic consume rejects expiry; separate verifier stores and all role checkpoint contents remain isolated.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T13",
+      "label": "resources",
+      "criterion": "512 KiB file/page budget, 64 KiB pilot checkpoint, bounded SQL steps/waits; exhaustion does not advance head.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T14",
+      "label": "local-overflow",
+      "criterion": "Generation/sequence at signed-63-bit maximum rejects replacement/commit without wrap.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T15",
+      "label": "publication",
+      "criterion": "Delay signing then replace/advance state; publication owner rechecks generation and head before releasing bytes.",
+      "run_in_design_package": false
+    },
+    {
+      "id": "T16",
+      "label": "lease-exit",
+      "criterion": "Fail activation COMMIT/context exit or return suppressed exception; facade cannot serve; durable unused grant may remain safely consumed.",
+      "run_in_design_package": false
+    }
+  ],
+  "pilot_limits": {
+    "whole_tree_memory_bytes": 268435456,
+    "swap_bytes": 0,
+    "workers": 1,
+    "cpu_threads": 2,
+    "child_processes_at_once": 4,
+    "command_seconds": 60,
+    "child_deadline_seconds": 55,
+    "aggregate_seconds": 300,
+    "synthetic_case_limit": 100,
+    "per_file_limit_bytes": 1048576,
+    "sqlite_file_bytes": 524288,
+    "sqlite_page_size": 4096,
+    "sqlite_max_pages": 128,
+    "checkpoint_bytes": 65536,
+    "temporary_storage_bytes": 8388608,
+    "new_output_bytes": 10485760,
+    "operation_rows": 128,
+    "SQL_VM_steps": 100000,
+    "automatic_retries": 0
+  },
+  "unresolved": [
+    "Independent anchor for whole-store rollback",
+    "OS principal/key broker isolation and authorisation provisioning",
+    "WSL host/VHD flush guarantees and power-loss validation",
+    "Production delivery-recipient reauthentication policy",
+    "Bounded signing/keygen",
+    "Durable integration for remaining roles",
+    "Proof and privacy/security review"
+  ],
+  "new_functional_tests": 0,
+  "process_crash_tests_run": 0,
+  "sql_persistence_experiments_run": 0,
+  "new_proofs": 0,
+  "new_zkvm_executions": 0,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1,
+  "production_restart_approved": false,
+  "stages_2_3_complete": false
+}

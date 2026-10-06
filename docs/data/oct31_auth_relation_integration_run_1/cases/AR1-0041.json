@@ -1,0 +1,11 @@
+{
+  "case_id": "W-12",
+  "invocation_id": "AR1-0041",
+  "status": "pass",
+  "details": {
+    "coverage": "trusted preprocessing and no Y/B/mu override",
+    "rejected": true
+  },
+  "seconds": 0.02069347503129393,
+  "work_events": 0
+}

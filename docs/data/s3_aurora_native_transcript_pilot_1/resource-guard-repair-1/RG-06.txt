@@ -1,0 +1,1 @@
+{"id": "RG-06", "passed": true, "synthetic": true, "outcome": "artifact per-file limit"}

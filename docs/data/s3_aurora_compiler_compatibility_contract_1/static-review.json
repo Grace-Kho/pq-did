@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "patch_applicability_commands": [
+    {
+      "argv": [
+        "git",
+        "--no-replace-objects",
+        "-C",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/src/libiop",
+        "apply",
+        "--check",
+        "/home/grace/projects/pq-did/docs/data/s3_aurora_compiler_compatibility_contract_1/variable-members.patch"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-replace-objects",
+        "-C",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/work/libiop",
+        "apply",
+        "--check",
+        "/home/grace/projects/pq-did/docs/data/s3_aurora_compiler_compatibility_contract_1/variable-members.patch"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-replace-objects",
+        "-C",
+        "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/overlay",
+        "apply",
+        "--check",
+        "/home/grace/projects/pq-did/docs/data/s3_aurora_compiler_compatibility_contract_1/semantic-target.patch"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "source_mutations": 0,
+  "compilations": 0,
+  "native_invocations": 0,
+  "expected_postimage_sha256": "74ae2e8f6c7caed735be225dc63f25a84bb5b790579f0afe124aafcb0d7bc3bd",
+  "patch_sha256": "8a28d44432c4dfd2ff41a07bb4affd1a154b52ae781289210410586b43e4c357",
+  "future_allowance_inactive": true
+}

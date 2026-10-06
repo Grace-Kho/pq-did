@@ -1,0 +1,70 @@
+{
+  "case_id": "C-02",
+  "invocation_id": "CAR1-0003",
+  "status": "pass",
+  "details": {
+    "case": "C-02",
+    "purpose": "same-record compressed/uncompressed agreement",
+    "full_relation": false,
+    "compact": {
+      "complete": true,
+      "inputs": 2,
+      "gates": 3,
+      "rows": 5,
+      "variables": 4,
+      "primary": 1,
+      "output_wire": 6,
+      "nonzero_terms": [
+        7,
+        7,
+        3
+      ],
+      "matrix_sha256": "29f98290db35bb53a449b785290eccb3f26049e1353195d99efb96360bede656",
+      "public_identity": "747482f1417df71a6516222c3063a4d17f1d774cda22fda591f4305a3d9a09d2",
+      "gate_counts": [
+        1,
+        1,
+        1
+      ],
+      "free_input_booleanity_rows": 2,
+      "and_rows": 1,
+      "spill_rows": 0,
+      "output_rows": 2,
+      "retained_wire_forms": 7,
+      "retained_term_entries": 9,
+      "maximum_stored_support": 3,
+      "assignment_storage_bytes": 4,
+      "representation": "GF192-exact-affine-XOR-NOT-elimination-v1"
+    },
+    "uncompressed": {
+      "complete": true,
+      "inputs": 2,
+      "gates": 3,
+      "rows": 7,
+      "variables": 6,
+      "primary": 1,
+      "output_wire": 6,
+      "nonzero_terms": [
+        9,
+        9,
+        5
+      ],
+      "matrix_sha256": "8648a7ce0c3b81c40d647f1c5f67fc8552ab133ec462a8b270a88bffa37aea2f",
+      "public_identity": "747482f1417df71a6516222c3063a4d17f1d774cda22fda591f4305a3d9a09d2",
+      "gate_counts": [
+        1,
+        1,
+        1
+      ],
+      "free_input_booleanity_rows": 2,
+      "output_rows": 2,
+      "assignment_storage_bytes": 6,
+      "memory_model": "bounded retained byte assignment; no last-use claim"
+    },
+    "same_source_fingerprint": "2bd80a45e3623a17e79045616a1cf78f68e6c29dd6c95f4cd65913a1c8958e88",
+    "retained_source_trace_bytes": 0,
+    "work_accounting": "each of both lowering traversals charged separately"
+  },
+  "seconds": 0.00021388905588537455,
+  "work_events": 36
+}

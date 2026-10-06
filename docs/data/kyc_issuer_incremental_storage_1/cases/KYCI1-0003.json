@@ -1,0 +1,16 @@
+{
+  "invocation_id": "KYCI1-0003",
+  "case_id": "S-03",
+  "work_event_reservation": 0,
+  "ordinal": 3,
+  "cumulative_invocations": 1048,
+  "status": "pass",
+  "details": {
+    "check": 3,
+    "rows": 0,
+    "expected_state_asserted": true
+  },
+  "seconds": 0.009773463010787964,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

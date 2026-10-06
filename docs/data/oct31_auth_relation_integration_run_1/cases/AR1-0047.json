@@ -1,0 +1,38 @@
+{
+  "case_id": "M-09",
+  "invocation_id": "AR1-0047",
+  "status": "pass",
+  "details": {
+    "coverage": "single actual forward butterfly with full entry normalisation; complete transform unexecuted",
+    "expected": true,
+    "actual": true,
+    "descriptor": {
+      "complete": true,
+      "inputs": 128,
+      "gates": 89585,
+      "rows": 89715,
+      "variables": 89714,
+      "primary": 1,
+      "output_wire": 89714,
+      "nonzero_terms": [
+        140520,
+        87223,
+        89587
+      ],
+      "matrix_sha256": "20da5881dedf209cfc502d9ef8a769c10047c53b3a5358e4569992e542b660b5",
+      "public_identity": "287c4872dce013ace0742012697a9df1c57a8597aef9f239c195bad637149179",
+      "gate_counts": [
+        54688,
+        33859,
+        1038
+      ],
+      "free_input_booleanity_rows": 128,
+      "output_rows": 2,
+      "assignment_storage_bytes": 89714,
+      "memory_model": "bounded retained byte assignment; no last-use claim"
+    },
+    "generation_and_stream_check_seconds": 0.44714064709842205
+  },
+  "seconds": 0.44718950300011784,
+  "work_events": 358600
+}

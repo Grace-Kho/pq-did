@@ -1,0 +1,70 @@
+{
+  "files": {
+    "holder/holder.key": {
+      "bytes": 6031,
+      "sha256": "8fedd9000aebb23c4aac9fba901bb497848c19dbe20bf3b840a6c6bdd27c281d",
+      "mode": 384
+    },
+    "holder/wallet.bin": {
+      "bytes": 15432,
+      "sha256": "f533c0135a32464ae8829b07a17d7e5386818d0bea481121588f290df8e7d0d1",
+      "mode": 384
+    },
+    "holder-other-0/holder.key": {
+      "bytes": 6031,
+      "sha256": "43b7ea2a0742789ec6b5589ee752f297f4216dacfa62378c7159d18575d3fb06",
+      "mode": 384
+    },
+    "holder-other-0/wallet.bin": {
+      "bytes": 15432,
+      "sha256": "7512601a6b0053c8fd2636e0aab75d24dbc9b9f7900c2604f8f2640702992489",
+      "mode": 384
+    },
+    "holder-other-1/holder.key": {
+      "bytes": 6031,
+      "sha256": "43b7ea2a0742789ec6b5589ee752f297f4216dacfa62378c7159d18575d3fb06",
+      "mode": 384
+    },
+    "holder-other-1/wallet.bin": {
+      "bytes": 15432,
+      "sha256": "bb1909327ed3a830e0027a01c3bd2e4634ca5c11877a1f1920e31f4ab2386b5a",
+      "mode": 384
+    },
+    "holder-other-2/holder.key": {
+      "bytes": 6031,
+      "sha256": "43b7ea2a0742789ec6b5589ee752f297f4216dacfa62378c7159d18575d3fb06",
+      "mode": 384
+    },
+    "holder-other-2/wallet.bin": {
+      "bytes": 9,
+      "sha256": "bb8bf90cf605182735f270cc06ae6903b6eff2c11f164e3398a71fdadeff9afb",
+      "mode": 384
+    },
+    "issuer/issuer.sqlite3": {
+      "bytes": 90112,
+      "sha256": "f9af9887654974e39f9780da015e4081b2a27f0649c2358873c65a6e77f0d5b3",
+      "mode": 384
+    },
+    "manager/authority.sqlite3": {
+      "bytes": 278528,
+      "sha256": "b70a35c888a44779208aeeb9e9f7c337b461e69595877b4f48c9f02a3b08cbcf",
+      "mode": 384
+    },
+    "verifier-A/authority.sqlite3": {
+      "bytes": 57344,
+      "sha256": "310b4f8eda3aa1c6e7d78fd2f4be4bf62a3f52eb3543501ca07af7879f7fa87a",
+      "mode": 384
+    },
+    "verifier-B/authority.sqlite3": {
+      "bytes": 57344,
+      "sha256": "5f806731f1f01dd07ea4066e8eb29610744bd3fdadba8994ad295ac9fac30e10",
+      "mode": 384
+    }
+  },
+  "raw_bytes": 553757,
+  "archive_bytes": 61304,
+  "archive_sha256": "9428963121f0fc9d12c0b2b9ffc33f11e89345e57ac757ccd438b933e51674d3",
+  "readback_complete": true,
+  "action": "Exact new disposable fixture archived losslessly before cleanup; no historical evidence moved/deleted",
+  "classification": "evidence including synthetic private material; no reclassification"
+}

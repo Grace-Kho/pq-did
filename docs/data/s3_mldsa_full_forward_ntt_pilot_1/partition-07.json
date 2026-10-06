@@ -1,0 +1,193 @@
+{
+  "ordinal": 7,
+  "complete": true,
+  "counts": {
+    "xor": 177872,
+    "and_": 107168,
+    "not_": 2624
+  },
+  "gates": 287664,
+  "generation_seconds": 0.33361196191981435,
+  "fingerprint": "bba3055230d58ac234768f0fbd7cd6cd705c68f59076aa1f9374c3128a7ea321",
+  "private_inputs": 16386,
+  "gate_offset": 2013648,
+  "work": [
+    [
+      56
+    ],
+    [
+      57
+    ],
+    [
+      58
+    ],
+    [
+      59
+    ],
+    [
+      60
+    ],
+    [
+      61
+    ],
+    [
+      62
+    ],
+    [
+      63
+    ]
+  ],
+  "entry_costs": [
+    [
+      35892,
+      13331,
+      66,
+      65
+    ],
+    [
+      35892,
+      13331,
+      66,
+      65
+    ],
+    [
+      35892,
+      13331,
+      66,
+      65
+    ],
+    [
+      35892,
+      13331,
+      66,
+      65
+    ],
+    [
+      35892,
+      13331,
+      66,
+      65
+    ],
+    [
+      35892,
+      13331,
+      66,
+      65
+    ],
+    [
+      35892,
+      13331,
+      66,
+      65
+    ],
+    [
+      35892,
+      13331,
+      66,
+      65
+    ]
+  ],
+  "changed_output_runs": [
+    [
+      56,
+      52282
+    ],
+    [
+      57,
+      88240
+    ],
+    [
+      58,
+      124198
+    ],
+    [
+      59,
+      160156
+    ],
+    [
+      60,
+      196114
+    ],
+    [
+      61,
+      232072
+    ],
+    [
+      62,
+      268030
+    ],
+    [
+      63,
+      303988
+    ]
+  ],
+  "raw_R_local_wire": 303985,
+  "trace_output_local_wire": 303985,
+  "input_alias_sha256": "6e7ff483d0b58785f00e8aaffcc587248eec85b8cf41761d5e90552f313b2ac7",
+  "output_alias_sha256": "9e064a6d6aa17e9971b077ba6af594878c29ccefc82d56298c6f7fcb9b8ff2a8",
+  "retained_trace_bytes": 4890410,
+  "observations": [
+    {
+      "id": "V0",
+      "invariants": true,
+      "R": 0,
+      "output_bit": 0,
+      "frontier_sha256": "2d673de942048a8b5ede075bd8fc7c56c7d9cce7335d5be36ef4b87dbb16cb82",
+      "evaluation_seconds": 0.06914668495301157,
+      "observer_seconds": 0.018772292067296803
+    },
+    {
+      "id": "V1",
+      "invariants": true,
+      "R": 0,
+      "output_bit": 0,
+      "frontier_sha256": "5f7d04fd4106913b1c39d2593f9043dd18db45aa839a9a8d597b2947b33905d1",
+      "evaluation_seconds": 0.07189413602463901,
+      "observer_seconds": 0.019628817099146545
+    },
+    {
+      "id": "V2",
+      "invariants": true,
+      "R": 0,
+      "output_bit": 0,
+      "frontier_sha256": "01e7edec6cff9db0bd58558d2b27d44f5801bc2e7753d00587e1105043c69413",
+      "evaluation_seconds": 0.07252190401777625,
+      "observer_seconds": 0.018620699062012136
+    },
+    {
+      "id": "V3",
+      "invariants": true,
+      "R": 0,
+      "output_bit": 0,
+      "frontier_sha256": "5aaa06bb7944982e9e25d8d6d7e4f89e750c94559bbc699b170403f45757ad55",
+      "evaluation_seconds": 0.06887786893639714,
+      "observer_seconds": 0.019150406937114894
+    },
+    {
+      "id": "V4",
+      "invariants": true,
+      "R": 0,
+      "output_bit": 0,
+      "frontier_sha256": "46279007bbf5265bae64a40d23c0aedc195f26700d8455979d4c249a15dec87f",
+      "evaluation_seconds": 0.06806478893849999,
+      "observer_seconds": 0.018478351063095033
+    },
+    {
+      "id": "V5",
+      "invariants": true,
+      "R": 1,
+      "output_bit": 1,
+      "frontier_sha256": "46279007bbf5265bae64a40d23c0aedc195f26700d8455979d4c249a15dec87f",
+      "evaluation_seconds": 0.06788207800127566,
+      "observer_seconds": 0.01898204500321299
+    }
+  ],
+  "memory_after_generation": {
+    "python_high_water_RSS_bytes": 35753984,
+    "cgroup_memory_peak_bytes": 31645696
+  },
+  "memory_after_evaluations": {
+    "python_high_water_RSS_bytes": 35753984,
+    "cgroup_memory_peak_bytes": 31645696
+  }
+}

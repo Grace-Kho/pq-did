@@ -1,0 +1,303 @@
+[
+  {
+    "case": "test_revocation_restart_public_history_exact_redelivery",
+    "durable_after": {
+      "sequence": 3,
+      "head": "74d3ac7a6f8b399b14eb88ec6f140890e8e4483d15ff21ff22303e2865fd9467",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 1,
+      "history": 1,
+      "revoked": [
+        0
+      ],
+      "consumed_nonces": 1,
+      "entries": 0
+    },
+    "redelivery_signatures": 0
+  },
+  {
+    "case": "test_current_restart_exact_redelivery",
+    "durable_after": {
+      "sequence": 3,
+      "head": "b58219cbe302a16f37d43c0dc20bbef1d7cc0b2fe0d82b6c92abfbb2c35a8e75",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 0
+    }
+  },
+  {
+    "case": "test_rows_before_commit_failure_is_absent",
+    "durable_after": {
+      "sequence": 2,
+      "head": "b301780484ec61d2b3226fec25e8f65c564b8e0c89b019a3cd59f7aa819d5909",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 0
+    },
+    "fault_model": "simulated exception after all rows, before COMMIT"
+  },
+  {
+    "case": "test_after_commit_unobserved_response_requires_explicit_head",
+    "durable_after": {
+      "sequence": 3,
+      "head": "14a6a8caba6e2c33a6f1329023c6ff4888559b7d7f76c353f14da587a1534899",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 1,
+      "history": 1,
+      "revoked": [
+        0
+      ],
+      "consumed_nonces": 1,
+      "entries": 0
+    },
+    "fault_model": "simulated lost ack; trusted test coordinator retains committed head"
+  },
+  {
+    "case": "test_stale_head_rejected_before_signing",
+    "durable_after": {
+      "sequence": 3,
+      "head": "076c5035b40c796ebf191e4a4a96ce6aafaa48fb979993ec91328224974f55a4",
+      "generation": 1,
+      "allocated": 3,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 1
+    }
+  },
+  {
+    "case": "test_fencing_during_signing_discards_material",
+    "durable_after": {
+      "sequence": 3,
+      "head": "eb1f9e363861d68971e77443483b222850fce6b8d1286d36e5a5eb8dd0fc6d77",
+      "generation": 2,
+      "allocated": 2,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 0
+    }
+  },
+  {
+    "case": "test_revalidate_at_commit[allocation]",
+    "durable_after": {
+      "sequence": 3,
+      "head": "dfb9482d53739ff00b544152ccbd87b984a09d7e9a7895909c04df6a88e9fec4",
+      "generation": 1,
+      "allocated": 3,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 1
+    }
+  },
+  {
+    "case": "test_revalidate_at_commit[replacement]",
+    "durable_after": {
+      "sequence": 3,
+      "head": "fbcf10f2914d2814b5a11bb7a4f3bc30d6a4cc7a57403def84ee7a8988b10857",
+      "generation": 2,
+      "allocated": 2,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 0
+    }
+  },
+  {
+    "case": "test_invalid_issuer_signature_never_signs",
+    "durable_after": {
+      "sequence": 2,
+      "head": "3b8998420ccc7d3ce27ab2d8f013aef2af927d2316eedfd1731bc353327258a2",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 0
+    }
+  },
+  {
+    "case": "test_withdrawn_write_authority_never_signs_or_publishes",
+    "durable_after": {
+      "sequence": 2,
+      "head": "6c8ef6c29f639dccd57a99cc107ca016e102678b187419c9741a40497a080762",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 0
+    }
+  },
+  {
+    "case": "test_manager_signing_failure_has_no_durable_outcome[state-Failure.ENTROPY_FAILURE-signing-failed]",
+    "durable_after": {
+      "sequence": 2,
+      "head": "cc4a17ed31497fed1cbd89f0395f6b54567781225ea00e65a27168a0cbb50cf3",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 0
+    },
+    "fault_model": "test-only core error boundary; primitive paths reused from prior package"
+  },
+  {
+    "case": "test_manager_signing_failure_has_no_durable_outcome[update-Failure.ATTEMPTS_EXHAUSTED-resource-exhausted]",
+    "durable_after": {
+      "sequence": 2,
+      "head": "a7f4e77ba0d9c69394a143051df106d947f1aace6d911ef52c7dcbd7c6a6a5f4",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 0
+    },
+    "fault_model": "test-only core error boundary; primitive paths reused from prior package"
+  },
+  {
+    "case": "test_manager_signing_failure_has_no_durable_outcome[current-Failure.RELEASE_REJECTED-signing-failed]",
+    "durable_after": {
+      "sequence": 2,
+      "head": "2847a38dd605c321b74374ffb190f15c95b835ab0525b2f7862b6f0803bbb465",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 0
+    },
+    "fault_model": "test-only core error boundary; primitive paths reused from prior package"
+  },
+  {
+    "case": "test_manager_configuration_cannot_cross_authority[service]",
+    "durable_after": {
+      "sequence": 2,
+      "head": "099f16b87b4cf9b90e0dcaa385f8008d85ab994c18a2d8dc3d69bf6aa5a79679",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 0
+    }
+  },
+  {
+    "case": "test_manager_configuration_cannot_cross_authority[role]",
+    "durable_after": {
+      "sequence": 2,
+      "head": "0c2bdba1ea9520052ae784a9461dd2698356647ac001ca653e1e35d57e9fd136",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 0
+    }
+  },
+  {
+    "case": "test_manager_configuration_cannot_cross_authority[instance]",
+    "durable_after": {
+      "sequence": 2,
+      "head": "4d7f37a7d3075be7a714540eff46cac3e08c75c5fe008f22694dc3bea2355128",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 0
+    }
+  },
+  {
+    "case": "test_semantically_incomplete_recovery_denied[history]",
+    "durable_after": {
+      "admission_unavailable": "checkpoint-admission"
+    },
+    "fault_model": "synthetic semantic corruption with rehashed bad head; not rollback protection"
+  },
+  {
+    "case": "test_semantically_incomplete_recovery_denied[consumed_nonces]",
+    "durable_after": {
+      "admission_unavailable": "checkpoint-admission"
+    },
+    "fault_model": "synthetic semantic corruption with rehashed bad head; not rollback protection"
+  },
+  {
+    "case": "test_missing_checkpoint_recovery_denied",
+    "durable_after": {
+      "admission_unavailable": "missing-reference"
+    },
+    "fault_model": "isolated missing checkpoint row; no protected project file changed"
+  },
+  {
+    "case": "test_obsolete_publication_denied[superseded-current]",
+    "durable_after": {
+      "sequence": 4,
+      "head": "1412610f1756820b70bbcb070b630aa2140abdef678a6fea0e74c08b4b091e7f",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 1,
+      "history": 1,
+      "revoked": [
+        0
+      ],
+      "consumed_nonces": 1,
+      "entries": 0
+    }
+  },
+  {
+    "case": "test_obsolete_publication_denied[fenced-writer]",
+    "durable_after": {
+      "sequence": 4,
+      "head": "4dd7667b1e39053e2a25dbd2c473a42be1e1cc541dbbdb4078561ad26311dcad",
+      "generation": 2,
+      "allocated": 2,
+      "epoch": 0,
+      "history": 0,
+      "revoked": [],
+      "consumed_nonces": 0,
+      "entries": 0
+    }
+  },
+  {
+    "case": "test_repeated_mutation_requires_retrieval_without_resigning",
+    "durable_after": {
+      "sequence": 3,
+      "head": "6f1a574a03d506be9705d9077ae220dbbeb08363eee69ec5dc1da6b18b3561a3",
+      "generation": 1,
+      "allocated": 2,
+      "epoch": 1,
+      "history": 1,
+      "revoked": [
+        0
+      ],
+      "consumed_nonces": 1,
+      "entries": 0
+    }
+  }
+]

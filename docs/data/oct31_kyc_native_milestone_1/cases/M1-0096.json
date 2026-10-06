@@ -1,0 +1,16 @@
+{
+  "invocation_id": "M1-0096",
+  "case_id": "C-06",
+  "ordinal": 96,
+  "cumulative_invocations": 544,
+  "status": "pass",
+  "result": {
+    "case_id": "C-06",
+    "passed": true,
+    "category": "reference_lifecycle",
+    "details": {
+      "fault_model": "injected pre-commit failures; no power-loss guarantee"
+    }
+  },
+  "seconds": 1.1817973220022395
+}

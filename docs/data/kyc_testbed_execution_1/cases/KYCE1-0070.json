@@ -1,0 +1,13 @@
+{
+  "invocation_id": "KYCE1-0070",
+  "case_id": "R-1-4",
+  "work_event_reservation": 0,
+  "ordinal": 70,
+  "cumulative_invocations": 1044,
+  "status": "failed",
+  "error": "Unavailable",
+  "diagnostic": "Traceback (most recent call last):\n  File \"/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py\", line 37, in execute\n    row[\"details\"] = operation()\n                     ~~~~~~~~~^^\n  File \"/home/grace/projects/pq-did/experiments/kyc_testbed_execution_1/dispatch.py\", line 154, in operation\n    holder = s.add_holder()\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/scenario.py\", line 315, in add_holder\n    self.issue(holder)\n    ~~~~~~~~~~^^^^^^^^\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/scenario.py\", line 278, in issue\n    operation = self._time(\n        \"certification\", lambda: self.issuer.complete(challenge.session, signature)\n    )\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/scenario.py\", line 264, in _time\n    return operation()\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/scenario.py\", line 279, in <lambda>\n    \"certification\", lambda: self.issuer.complete(challenge.session, signature)\n                             ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/issuance.py\", line 132, in complete\n    self.journal.transition(\"certification\", certify)\n    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/storage.py\", line 238, in transition\n    encode((self.identity, seq, generation, ticket[2], records))\n    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npqdid.persistence.codec.Unavailable: payload-cap\n",
+  "seconds": 2.6411381240468472,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions or evaluations. Host setup included in time and resource guard."
+}

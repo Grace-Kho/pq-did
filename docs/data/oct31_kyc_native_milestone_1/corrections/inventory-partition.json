@@ -1,0 +1,10 @@
+{
+  "failed_job": "prepare",
+  "cause": "10,000-entry auditor admission, not overlapping roots",
+  "unchanged_entry_limit_per_partition": 10000,
+  "correction": "One original-root partition at a time; reject overlapping roots, preserve exact expected/optional sets; require complete expected-path union",
+  "retained_sources": {
+    "docs/data/oct31_kyc_native_milestone_1/corrections/preservation-before-partition.py": "0f730d8ee4377f2a053ce9e20e181561536c54c01a1728ebb2811fbf3a82a7db",
+    "docs/data/oct31_kyc_native_milestone_1/corrections/first-preparation-inventory.json": "5acf91770d3dde3ee15edb8ff56b7a0b7153d5d23458fc4ce1ee4ef227a864bc"
+  }
+}

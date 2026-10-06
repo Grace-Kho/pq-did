@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "programme_complete": false,
+  "packaging_only": true,
+  "archive": {
+    "passed": true,
+    "path": "docs/data/private_proof_handover_1/binius64-g0-handover-v1.tar.xz",
+    "absolute_path": "/home/grace/projects/pq-did/docs/data/private_proof_handover_1/binius64-g0-handover-v1.tar.xz",
+    "bytes": 1065684,
+    "sha256": "17a0ac8fd32038e6530254e4cd27610c8a76e76aba53f446986e435845262f8e",
+    "members": 112,
+    "reused_v1": true,
+    "historical_v1_failure_unchanged": true,
+    "complete_payload_readback": true,
+    "source_inputs_unchanged": true,
+    "classification": "evidence",
+    "per_file_limit": 2097152
+  }
+}

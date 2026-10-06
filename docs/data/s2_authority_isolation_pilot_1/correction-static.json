@@ -1,0 +1,5 @@
+{
+  "failure": "static",
+  "cause": "The staged units target the system manager, but the new checker requested --user. The first helper discarded parser stderr, so the precise diagnostic from that run is unavailable.",
+  "correction": "Use system-mode non-mutating verify --man=no as in the preceding package; retain bounded parser stderr on subsequent validation. This is a harness correction, not activation or a resource-limit change."
+}

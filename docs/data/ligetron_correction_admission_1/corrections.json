@@ -1,0 +1,21 @@
+[
+  {
+    "id": "DEP-READBACK-01",
+    "finding": "Historical package member index has names/sizes, not per-member hashes; initial lookup failed with KeyError after successful download/extraction.",
+    "correction": "Compare retained GMP files with exact payloads from the historically pinned and SHA256-verified retained .deb. No source seal changed. Resume link/readback only; no repeated downloads or extraction.",
+    "failed_job": "dependency-admission",
+    "functional_invocations": 0
+  },
+  {
+    "id": "STATIC-01",
+    "finding": "Initial E501 and immediate callback closure lint diagnostics",
+    "correction": "String splitting, import formatting and explicit default captures; runtime string values unchanged",
+    "functional_rerun_required": false
+  },
+  {
+    "id": "STATIC-02",
+    "finding": "Final B023 on synchronous ledger callback in cases.py",
+    "correction": "Capture current receipt/record in default arguments. Callback is invoked synchronously before next loop iteration; candidate and expected values unchanged.",
+    "functional_rerun_required": false
+  }
+]

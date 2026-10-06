@@ -1,0 +1,81 @@
+{
+  "package": "KYC-ISSUER-INCREMENTAL-STORAGE-1",
+  "complete": true,
+  "completion_scope": "Issuer v2 implementation and admitted validation/preservation checkpoint; two manager-limited scaling cases explicitly unrun",
+  "workstream_complete": false,
+  "implementation_and_preservation_checkpoint_complete": true,
+  "storage_cases_passed": 35,
+  "affected_genuine_MLDSA_cases_passed": 8,
+  "new_baseline_observations": 3,
+  "passing_invocations": 46,
+  "failed_functional_invocations": 0,
+  "retained_static_failures": [
+    "static-1: E501/UP034; static-2 corrected; final static-3 passed"
+  ],
+  "cumulative_invocations": 1091,
+  "unrun": [
+    "R-1-8",
+    "R-2-8"
+  ],
+  "v1_observations_unchanged": 276,
+  "previous_observations_unchanged": 19,
+  "full_relation_checks_unrun": 21,
+  "preservation_complete": true,
+  "full_audit_attempts": 1,
+  "full_audit_exit_status": 0,
+  "historical_content_comparisons": 10901,
+  "historical_identity_inclusive_paths": 10936,
+  "audit_guard_seconds": 4.839973921887577,
+  "audit_worker_seconds": 4.485232612118125,
+  "audit_cgroup_memory_peak_bytes": 48730112,
+  "audit_memory_ceiling_bytes": 268435456,
+  "final_inventory_complete": true,
+  "final_inventory_count": 11848,
+  "report_readback_complete": true,
+  "outer_guard_passed": true,
+  "workload_terminated": true,
+  "historical_evidence_preserved": true,
+  "manifest_sha256": "f6d439649a6954e8f80afb2e029b67e4d209e5fa32c23fdd1e87fec0690e83c4",
+  "original_programme_complete": false,
+  "scope_reduction_approved": false,
+  "stages_2_3_open": true,
+  "Binius64": "G0 NO-GO; paused; G1-G3 not admitted",
+  "Aurora": "Assessed route closed; not overall PQ-DID impossibility",
+  "private_proof_acceptance": "fail-closed",
+  "isolation_stopped_unactivated": true,
+  "cpu_proving_paused": true,
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1
+  },
+  "remaining_requirements": [
+    "Incremental manager history/checkpoint/outcome storage before eight-record measurements",
+    "Standards-level securing/key/private-status mechanisms",
+    "Complete private authentication and original security obligations"
+  ],
+  "resource_summary": {
+    "implementation_remaining_seconds": 2069.980908544383,
+    "workstream_remaining_seconds": 1702.7532946242445,
+    "cumulative_invocations": 1091,
+    "remaining_invocations": 55,
+    "storage": {
+      "new_evidence_bytes": 379630,
+      "new_artifact_bytes": 0,
+      "evidence_bytes": 31246102,
+      "artifact_bytes": 58966547,
+      "temporary_bytes": 0
+    }
+  },
+  "finalisation_sha256": {
+    "docs/data/kyc_issuer_incremental_storage_1/ledger.json": "397d6dae2ece65b333b70c2a8aa21b3102f0b3d0d408daabd936ed20d4b19ab6",
+    "docs/data/kyc_issuer_incremental_storage_1/ledger.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/data/kyc_issuer_incremental_storage_1/execution.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/data/kyc_issuer_incremental_storage_1/resource-closure.json": "55f3eb8d59eeed36b16ed56c068a3a1a3c5305774eae3f9f01ecc0b00422c81b",
+    "docs/data/kyc_issuer_incremental_storage_1/final-inventory.json": "35c7c061515d38114ba47e43d81c465888803ce4d634563b90dcfb7b55ab7be8",
+    "docs/data/kyc_issuer_incremental_storage_1/shutdown.json": "bb6caa3d7a0ffce0272bfee40607d4339874e4d1b690f610ed2fb134eb036ab2",
+    "docs/data/kyc_issuer_incremental_storage_1/jobs/final-readback.json": "2c38c46f2d13a70ebd950cd5a41b62e6c44acc9e59bceee9aed42180536b5b75",
+    "docs/data/kyc_issuer_incremental_storage_1/jobs/final-readback.input.json": "1586bb97d81355ffb7810166d8716f9ba19bca0e6c409b2a9d346208408eb314",
+    "docs/data/kyc_issuer_incremental_storage_1/jobs/final-readback.worker.json": "0d8245525bdac01e32d6196d2be690d16be229b2180cd39aad287ab0eef5c641",
+    "docs/data/kyc_issuer_incremental_storage_1/jobs/final-readback.log": "2ae2c4ed4ada4c2084187bcf0be536f285329a18b0bff3b98930fea330cd61d9"
+  }
+}

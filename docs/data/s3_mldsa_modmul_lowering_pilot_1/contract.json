@@ -1,0 +1,30 @@
+{
+  "package": "S3-MLDSA-MODMUL-LOWERING-PILOT-1",
+  "existing_source_changed": [],
+  "expected_invocations": 16,
+  "reviewed_local_inputs": [
+    "docs/stage3_mldsa_arithmetic_lowering_review.md",
+    "docs/implementation_spec.md",
+    "src/pqdid/bounded_mldsa.py",
+    "src/pqdid/circuits/scalar_ring.py",
+    "src/pqdid/circuits/words.py",
+    "src/pqdid/circuits/division.py",
+    "src/pqdid/circuits/control.py",
+    "src/pqdid/circuits/emitter.py",
+    "tests/reference/scalar_oracle.py",
+    "tests/reference/signature_oracle.py",
+    "configs/suite.json"
+  ],
+  "constants": [
+    4808194,
+    8347681
+  ],
+  "circuit_limit": 2,
+  "comparison": "Two paired traces, one per public factor; separate fully guarded core gate segments and one separately recorded conjunction gate. Each differential input/factor/control combination is one individually counted case.",
+  "generation_probes": 2,
+  "differential_cases": 10,
+  "invalid_constant_cases": 4,
+  "active_profile_changed": false,
+  "new_proofs": 0,
+  "new_zkvm_executions": 0
+}

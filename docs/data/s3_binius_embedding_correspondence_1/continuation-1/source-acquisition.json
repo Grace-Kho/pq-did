@@ -1,0 +1,17 @@
+{
+  "commit": "441fbf51ff0bcb0bcd28f3f1b73f4954029e8577",
+  "sources": [
+    {
+      "upstream_path": "crates/field/src/binary_field.rs",
+      "retained_path": "docs/data/s3_binius_embedding_correspondence_1/continuation-1/sources/crates--field--src--binary_field.rs",
+      "url": "https://raw.githubusercontent.com/binius-zk/binius64/441fbf51ff0bcb0bcd28f3f1b73f4954029e8577/crates/field/src/binary_field.rs",
+      "bytes": 24075,
+      "git_blob": "d073d856abf2d1a2ad58b9a0dbe6b7a49460f1df",
+      "sha256": "4907b827c90b585f110186524cdb5442e37e6b5f0ded79544a1c5f343c189390"
+    }
+  ],
+  "passed": true,
+  "downloaded_code_executed": false,
+  "memory_scope": "256 MiB cgroup established before interpreter; measured in acquire.service.json",
+  "seconds": 0.32988182501867414
+}

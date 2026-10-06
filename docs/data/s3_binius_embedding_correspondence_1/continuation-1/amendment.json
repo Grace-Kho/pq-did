@@ -1,0 +1,30 @@
+{
+  "approved": true,
+  "package": "S3-BINIUS-EMBEDDING-CORRESPONDENCE-1",
+  "prior_manifest_sha256": "1b1012be56752cafa863bb8acc2431d9f28a268408b944e98dc12e8bcb8771fc",
+  "prior_closure_sha256": "425332981e671a79b3111fe860c1a824dac67d09d3c5f9514aa0ee36bc3e8639",
+  "prior_resource_sha256": "5841a59d33345714ed149d0674d376c08cf0ba083c0316ce51ab28041945b161",
+  "original_plan_sha256": "717d157e456a13b467978c44b0e84c2e87f674b21205fca1c05b8aea3286f64c",
+  "original_allowlist_sha256": "2f497e6e98b57dc04f96dde42e2f5ffb94efaa94c48f5b45a84e0117ba8829f5",
+  "additional_source": {
+    "path": "crates/field/src/binary_field.rs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d073d856abf2d1a2ad58b9a0dbe6b7a49460f1df",
+    "size": 24075,
+    "url": "https://api.github.com/repos/binius-zk/binius64/git/blobs/d073d856abf2d1a2ad58b9a0dbe6b7a49460f1df"
+  },
+  "commit": "441fbf51ff0bcb0bcd28f3f1b73f4954029e8577",
+  "source_files_total": 16,
+  "source_bytes_total": 200854,
+  "prior_package_charge": 61.68825586186722,
+  "package_remaining": 138.31174413813278,
+  "prior_package_evidence_bytes": 467121,
+  "evidence_remaining": 581455,
+  "prior_implementation_remaining": 748.9297137003141,
+  "KYC_unchanged": 443.3903556420428,
+  "allowed_new_invocations": 28,
+  "old_files_redownloaded": false,
+  "operator_charge_seconds": 45,
+  "phase_redistribution": "Retain 30 completion seconds. Continuation caps: 20 admission, 45 implementation, 30 validation, 13.31174413813278 correction, 30 completion; all charged within remaining 138.31174413813278, not a reset."
+}

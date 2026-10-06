@@ -1,0 +1,19 @@
+{
+  "package": "OCT31-BINIUS64-REPLACEMENT-DECISION-1",
+  "decision": "NO-GO for the pinned implementation as a private-authentication replacement",
+  "engineering_value": "Native word-level relation work is plausible, but no private-proof milestone is admitted on present evidence",
+  "blockers": [
+    "B64-ZK-001: terminal private-oracle claim is sent unmasked, contrary to Blueprint 7.3",
+    "B64-ZK-002: inspected inner witness packing has zero padding, no demonstrated q+2 randomisable support/query hiding",
+    "B64-PARAM-001: SECURITY_BITS=96, GF(2^128), SHA-256 defaults; full target and QROM composition not established",
+    "B64-LOCK-001: Cargo.lock absent; exact transitive artefacts not resolved",
+    "B64-RESOURCE-001: complete new word constraint/witness/working-buffer dimensions unmeasured; no sufficient resource envelope established"
+  ],
+  "approved_profile_change": false,
+  "proofs_authorised": 0,
+  "new_invocations": 0,
+  "full_relation_checks_unrun": 21,
+  "benchmark_results_reused": 276,
+  "programme_complete": false,
+  "target": "31 October unchanged; evidence does not support a full completion commitment"
+}

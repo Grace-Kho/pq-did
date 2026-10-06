@@ -1,0 +1,7 @@
+{
+  "package": "R0-CREDVALID-PO17-1",
+  "reason": "Result=exit-code\nExecMainCode=1\nExecMainStatus=1\nControlGroup=\nMemoryPeak=20381696\nMemorySwapPeak=0\nCPUUsageNSec=82053000\n",
+  "failed_run": "host-build",
+  "proof_attempts": 0,
+  "further_proving_authorised": false
+}

@@ -1,0 +1,20 @@
+{
+  "memory_bytes": {
+    "MemTotal": 8126111744,
+    "MemAvailable": 4153139200,
+    "SwapTotal": 2147483648
+  },
+  "cpu_features": {
+    "avx2": true,
+    "pclmulqdq": true,
+    "aes": true,
+    "avx512f": false,
+    "avx512bw": false,
+    "avx512vl": false,
+    "sha_ni": true
+  },
+  "affinity_count": 24,
+  "disk_free_bytes": 1011212025856,
+  "physical_host_GB_user_reported": 16,
+  "no_host_mutation": true
+}

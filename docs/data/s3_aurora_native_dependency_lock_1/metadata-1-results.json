@@ -1,0 +1,63 @@
+[
+  {
+    "id": "libiop-tree",
+    "url": "https://api.github.com/repos/scipr-lab/libiop/git/trees/a2ed2ec2f3e85f29b6035951553b02cb737c817a?recursive=1",
+    "display": false,
+    "status": 200,
+    "final_url": "https://api.github.com/repos/scipr-lab/libiop/git/trees/a2ed2ec2f3e85f29b6035951553b02cb737c817a?recursive=1",
+    "bytes": 69346,
+    "sha256": "c4ec64d3ac73c0ae6e963c39790da9e89ec83bf3a3cb56811cc3bae43cd05a99",
+    "retained": "docs/data/s3_aurora_native_dependency_lock_1/metadata/libiop-tree.gz",
+    "seconds": 0.35968838492408395
+  },
+  {
+    "id": "libiop-modules",
+    "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/.gitmodules",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/.gitmodules",
+    "bytes": 608,
+    "sha256": "c455f6dfb5e4f8aec90b4938ad5a642185fd444e2e580a0c42589545b0f42a5e",
+    "retained": "docs/data/s3_aurora_native_dependency_lock_1/metadata/libiop-modules.gz",
+    "seconds": 0.32231679488904774
+  },
+  {
+    "id": "libiop-cmake",
+    "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/CMakeLists.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/CMakeLists.txt",
+    "bytes": 4316,
+    "sha256": "15c09458d0d7c4ab57860522eaebb1c3b608c22e5c3ceb2ad6cf5328d9e64181",
+    "retained": "docs/data/s3_aurora_native_dependency_lock_1/metadata/libiop-cmake.gz",
+    "seconds": 0.30028868198860437
+  },
+  {
+    "id": "libiop-depends",
+    "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/depends/CMakeLists.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/depends/CMakeLists.txt",
+    "bytes": 434,
+    "sha256": "afed13bf2de5dded99520e11a918b12e51f651434703f6ce543f4a757b8a7279",
+    "retained": "docs/data/s3_aurora_native_dependency_lock_1/metadata/libiop-depends.gz",
+    "seconds": 0.29113559902179986
+  },
+  {
+    "id": "libiop-library",
+    "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/CMakeLists.txt",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/libiop/CMakeLists.txt",
+    "bytes": 11676,
+    "sha256": "f00e0df3c2ae9dd3b418fa9056c61b66584d76314300fb86a0ebebc6abaa8b8e",
+    "retained": "docs/data/s3_aurora_native_dependency_lock_1/metadata/libiop-library.gz",
+    "seconds": 0.2859168240102008
+  },
+  {
+    "id": "libiop-readme",
+    "url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/README.md",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/scipr-lab/libiop/a2ed2ec2f3e85f29b6035951553b02cb737c817a/README.md",
+    "bytes": 9108,
+    "sha256": "db83da29096eb3b096ea054470515b4ab68453915a6ec311fa52a28694f718d1",
+    "retained": "docs/data/s3_aurora_native_dependency_lock_1/metadata/libiop-readme.gz",
+    "seconds": 0.28919688798487186
+  }
+]

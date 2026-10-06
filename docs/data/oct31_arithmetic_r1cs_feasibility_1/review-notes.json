@@ -1,0 +1,9 @@
+{
+  "scope": "Source reads only before admission",
+  "retained_source_read_diagnostics": [
+    "Two rg reads named nonexistent guessed circuit paths; corrected to actual files without execution",
+    "git status reported this workspace is not a Git repository; content seals govern preservation"
+  ],
+  "not_tests_or_builds": true,
+  "prior_affine_candidate": "Closed unsuccessful for complete resource admission; retained unchanged"
+}

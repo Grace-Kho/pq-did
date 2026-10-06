@@ -1,0 +1,12 @@
+{
+  "case_id": "P-12",
+  "invocation_id": "AR1-0029",
+  "status": "pass",
+  "details": {
+    "coverage": "public transport admission",
+    "outcome": "capacity",
+    "complete": true
+  },
+  "seconds": 0.0012702670646831393,
+  "work_events": 0
+}

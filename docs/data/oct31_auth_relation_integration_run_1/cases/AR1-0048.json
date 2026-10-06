@@ -1,0 +1,38 @@
+{
+  "case_id": "M-10",
+  "invocation_id": "AR1-0048",
+  "status": "pass",
+  "details": {
+    "coverage": "single actual inverse butterfly and final factor; complete inverse transform unexecuted",
+    "expected": true,
+    "actual": true,
+    "descriptor": {
+      "complete": true,
+      "inputs": 128,
+      "gates": 238618,
+      "rows": 238748,
+      "variables": 238747,
+      "primary": 1,
+      "output_wire": 238747,
+      "nonzero_terms": [
+        362666,
+        224511,
+        238620
+      ],
+      "matrix_sha256": "28b5d2e7aa34f754751d9314c10285e387a6e9a8923188169488170979f80506",
+      "public_identity": "5b9ebf78567b9c0749996ae202f54ad426b09fb70e76840f449a87eb10ab8b27",
+      "gate_counts": [
+        140618,
+        95911,
+        2089
+      ],
+      "free_input_booleanity_rows": 128,
+      "output_rows": 2,
+      "assignment_storage_bytes": 238747,
+      "memory_model": "bounded retained byte assignment; no last-use claim"
+    },
+    "generation_and_stream_check_seconds": 1.191342071047984
+  },
+  "seconds": 1.1914110679645091,
+  "work_events": 954732
+}

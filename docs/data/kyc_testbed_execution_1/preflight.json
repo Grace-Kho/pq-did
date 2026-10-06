@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "programme_complete": false,
+  "prior_seals_checked": 46,
+  "storage": {
+    "new_evidence_bytes": 110940,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 30333338,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "ordinary_execution_admitted": true,
+  "completion_reserve_bytes": 2097152,
+  "planned_case_limit": 72,
+  "affected_reruns_max": 4,
+  "assumptions": "Serial Python reference flows; no build, proof, native probe or circuit work. Scoped ephemeral user guard, not host isolation activation."
+}

@@ -1,0 +1,668 @@
+--- a/work/libiop/libiop/protocols/aurora_iop.hpp
++++ b/work/libiop/libiop/protocols/aurora_iop.hpp
+@@ -28,6 +28,7 @@
+     size_t pow_bits_;
+     size_t RS_extra_dimensions_;
+     bool make_zk_;
++    bool paper_masking_ = false;
+     field_subset_type domain_type_;
+ 
+     size_t extra_systematic_dims_;
+@@ -45,7 +46,8 @@
+                           const bool make_zk,
+                           const libiop::field_subset_type domain_type,
+                           const size_t num_constraints,
+-                          const size_t num_variables);
++                          const size_t num_variables,
++                          const bool paper_masking = false);
+ 
+     void set_ldt_parameters(size_t localization_parameter,
+                             FRI_soundness_type fri_soundness_type,
+@@ -56,6 +58,7 @@
+ 
+     size_t RS_extra_dimensions() const;
+     bool make_zk() const;
++    bool paper_masking() const { return this->paper_masking_; }
+     field_subset_type domain_type() const;
+     size_t constraint_domain_dim() const;
+     size_t variable_domain_dim() const;
+--- a/work/libiop/libiop/protocols/aurora_iop.tcc
++++ b/work/libiop/libiop/protocols/aurora_iop.tcc
+@@ -7,13 +7,17 @@
+                                                      const bool make_zk,
+                                                      const field_subset_type domain_type,
+                                                      const size_t num_constraints,
+-                                                     const size_t num_variables) :
++                                                     const size_t num_variables,
++                                                     const bool paper_masking) :
+     security_parameter_(security_parameter),
+     pow_bits_(pow_bits),
+     RS_extra_dimensions_(RS_extra_dimensions),
+     make_zk_(make_zk),
++    paper_masking_(paper_masking),
+     domain_type_(domain_type)
+ {
++    if (paper_masking && (!make_zk || domain_type != affine_subspace_type || pow_bits != 0))
++        throw std::invalid_argument("paper masking requires additive ZK without PoW");
+     if (!libff::is_power_of_2(num_constraints))
+     {
+         char err_msg [1000];
+@@ -91,7 +95,7 @@
+             this->query_bound_,
+             this->make_zk_,
+             holographic,
+-            this->domain_type_);
++            this->domain_type_, this->paper_masking_);
+         const size_t max_tested_degree_bound =
+             this->encoded_aurora_params_.max_tested_degree_bound();
+         const size_t max_constraint_degree_bound =
+@@ -102,7 +106,7 @@
+             this->codeword_domain_dim_,
+             max_tested_degree_bound,
+             max_constraint_degree_bound,
+-            this->make_zk_);
++            this->make_zk_, this->paper_masking_);
+         this->FRI_params_ = FRI_protocol_parameters<FieldT>(
+             interactive_soundness_error_bits,
+             query_soundness_error_bits,
+@@ -136,7 +140,7 @@
+                 query_bound,
+                 this->make_zk_,
+                 holographic,
+-                this->domain_type_);
++                this->domain_type_, this->paper_masking_);
+             const size_t max_tested_degree_bound = this->encoded_aurora_params_.max_tested_degree_bound();
+             const size_t max_constraint_degree_bound = this->encoded_aurora_params_.max_constraint_degree_bound();
+             /** Round max tested degree bound to something FRI can test.
+@@ -168,7 +172,7 @@
+                 this->codeword_domain_dim_,
+                 max_LDT_tested_degree_bound,
+                 max_constraint_degree_bound,
+-                this->make_zk_);
++                this->make_zk_, this->paper_masking_);
+             this->FRI_params_ = FRI_protocol_parameters<FieldT>(
+                 interactive_soundness_error_bits,
+                 query_soundness_error_bits,
+@@ -183,6 +187,7 @@
+         }
+         this->query_bound_ = estimated_num_queries + 1;
+     }
++    if (this->paper_masking_) this->FRI_params_.enable_paper_masking();
+ }
+ 
+ template<typename FieldT>
+--- a/work/libiop/libiop/protocols/encoded/lincheck/basic_lincheck.hpp
++++ b/work/libiop/libiop/protocols/encoded/lincheck/basic_lincheck.hpp
+@@ -31,6 +31,7 @@
+     size_t interactive_security_parameter_;
+     size_t constraint_domain_dim_;
+     bool make_zk_;
++    bool paper_masking_ = false;
+     field_subset_type domain_type_;
+ 
+     /** TODO: Eventually parameterize number of separate sumcheck instances separately. */
+@@ -41,7 +42,8 @@
+     basic_lincheck_parameters(const size_t interactive_security_parameter,
+                               const size_t constraint_domain_dim_,
+                               const bool make_zk,
+-                              const field_subset_type domain_type);
++                              const field_subset_type domain_type,
++                              const bool paper_masking = false);
+ 
+     /** UNSAFE!
+      *  This is intended to allow experimentation with multi lincheck parameterizations. */
+@@ -49,6 +51,7 @@
+ 
+     size_t multi_lincheck_repetitions() const;
+     bool make_zk() const;
++    bool paper_masking() const { return this->paper_masking_; }
+     field_subset_type domain_type() const;
+ 
+     size_t locality() const;
+--- a/work/libiop/libiop/protocols/encoded/lincheck/basic_lincheck.tcc
++++ b/work/libiop/libiop/protocols/encoded/lincheck/basic_lincheck.tcc
+@@ -5,10 +5,12 @@
+     const size_t interactive_security_parameter,
+     const size_t constraint_domain_dim,
+     const bool make_zk,
+-    const field_subset_type domain_type) :
++    const field_subset_type domain_type,
++    const bool paper_masking) :
+     interactive_security_parameter_(interactive_security_parameter),
+     constraint_domain_dim_(constraint_domain_dim),
+     make_zk_(make_zk),
++    paper_masking_(paper_masking),
+     domain_type_(domain_type)
+ {
+     /** Lincheck's soundness error in the Aurora paper is shown to be less than:
+@@ -185,7 +187,7 @@
+             this->codeword_domain_handle_,
+             this->lincheck_degree_,
+             this->params_.make_zk(),
+-            this->params_.domain_type());
++            this->params_.domain_type(), this->params_.paper_masking());
+ 
+         if (this->params_.make_zk()) {
+             this->sumchecks_[i]->register_masking_polynomial();
+--- a/work/libiop/libiop/protocols/encoded/r1cs_rs_iop/r1cs_rs_iop.hpp
++++ b/work/libiop/libiop/protocols/encoded/r1cs_rs_iop/r1cs_rs_iop.hpp
+@@ -12,7 +12,7 @@
+ #include <functional>
+ #include <memory>
+ #include <vector>
+-#include "gtest/gtest_prod.h"
++#include <stdexcept> // standalone declaration; no test framework dependency
+ 
+ #include "libiop/iop/iop.hpp"
+ #include "libiop/protocols/encoded/lincheck/basic_lincheck.hpp"
+@@ -66,7 +66,8 @@
+                               const size_t query_bound,
+                               const bool make_zk,
+                               const bool holographic,
+-                              const field_subset_type type);
++                              const field_subset_type type,
++                              const bool paper_masking = false);
+ 
+     size_t max_tested_degree_bound() const;
+     size_t max_constraint_degree_bound() const;
+@@ -124,8 +125,8 @@
+     void compute_fprime_ABCz_over_codeword_domain(
+         std::vector<FieldT> &Az, std::vector<FieldT> &Bz, std::vector<FieldT> &Cz);
+     void register_witness_oracles();
+-    FRIEND_TEST(TestAdditiveR1CSComponents, R1CSTest);
+-    FRIEND_TEST(TestMultiplicativeR1CSComponents, R1CSTest);
++    friend class TestAdditiveR1CSComponents_R1CSTest_Test;
++    friend class TestMultiplicativeR1CSComponents_R1CSTest_Test;
+ 
+ public:
+     /* Initialization and registration */
+--- a/work/libiop/libiop/protocols/encoded/r1cs_rs_iop/r1cs_rs_iop.tcc
++++ b/work/libiop/libiop/protocols/encoded/r1cs_rs_iop/r1cs_rs_iop.tcc
+@@ -20,7 +20,8 @@
+     const size_t query_bound,
+     const bool make_zk,
+     const bool holographic,
+-    const field_subset_type domain_type) :
++    const field_subset_type domain_type,
++    const bool paper_masking) :
+     interactive_security_parameter_(interactive_security_parameter),
+     codeword_domain_dim_(codeword_domain_dim),
+     constraint_domain_dim_(constraint_domain_dim),
+@@ -30,6 +31,8 @@
+     holographic_(holographic),
+     domain_type_(domain_type)
+ {
++    if (paper_masking && (!make_zk || holographic || domain_type != affine_subspace_type))
++        throw std::invalid_argument("paper masking requires non-holographic additive ZK");
+     /** Force the non-zk query bound to be 0. */
+     if (!this->make_zk_)
+     {
+@@ -49,7 +52,7 @@
+             this->interactive_security_parameter_,
+             this->constraint_domain_dim_,
+             this->make_zk_,
+-            this->domain_type_);
++            this->domain_type_, paper_masking);
+     }
+ }
+ 
+--- a/work/libiop/libiop/protocols/encoded/sumcheck/sumcheck.hpp
++++ b/work/libiop/libiop/protocols/encoded/sumcheck/sumcheck.hpp
+@@ -58,6 +58,13 @@
+     std::size_t h_degree_; /* Equal to degree of input polynomial - |H| */
+ 
+     const bool make_zk_;
++    const bool paper_masking_;
++    prover_message_handle paper_beta_handle_;
++    FieldT paper_beta_ = FieldT::zero();
++    bool paper_mask_submitted_ = false;
++#ifdef PQ_MASKING_PUBLIC_FIXTURES
++    std::vector<FieldT> fixture_mask_g_, fixture_mask_h_;
++#endif
+     const field_subset_type field_subset_type_;
+ 
+     std::map<size_t, size_t> oracle_uid_to_registration_index_;
+@@ -76,13 +83,20 @@
+                             const domain_handle &codeword_domain,
+                             const std::size_t degree_bound,
+                             const bool make_zk,
+-                            const field_subset_type domain_type);
++                            const field_subset_type domain_type,
++                            const bool paper_masking = false);
+     void register_masking_polynomial();
+     void register_challenge();
+     void attach_oracle_for_summing(const oracle_handle_ptr &handle,
+                                    const FieldT claimed_sum = FieldT::zero());
+     void register_proof();
+ 
++#ifdef PQ_MASKING_PUBLIC_FIXTURES
++    // Public synthetic harness only; absent from ordinary compilation/interfaces.
++    void public_fixture_mask(const std::vector<FieldT> &g, const std::vector<FieldT> &h) {
++        this->fixture_mask_g_ = g; this->fixture_mask_h_ = h;
++    }
++#endif
+     /* For use when the prover sends the oracle's sum during the protocol */
+     void set_oracle_claimed_sum(const oracle_handle_ptr &handle,
+                                 const FieldT claimed_sum);
+--- a/work/libiop/libiop/protocols/encoded/sumcheck/sumcheck.tcc
++++ b/work/libiop/libiop/protocols/encoded/sumcheck/sumcheck.tcc
+@@ -170,12 +170,14 @@
+     const domain_handle &codeword_domain_handle,
+     const std::size_t degree_bound,
+     const bool make_zk,
+-    const field_subset_type domain_type) :
++    const field_subset_type domain_type,
++    const bool paper_masking) :
+     IOP_(IOP),
+     summation_domain_handle_(summation_domain_handle),
+     codeword_domain_handle_(codeword_domain_handle),
+     degree_bound_(degree_bound),
+     make_zk_(make_zk),
++    paper_masking_(paper_masking),
+     field_subset_type_(domain_type)
+ {
+     this->summation_domain_ = this->IOP_.get_domain(this->summation_domain_handle_);
+@@ -183,6 +185,21 @@
+ 
+     this->summation_domain_size_ = this->summation_domain_.num_elements();
+ 
++    if (this->paper_masking_) {
++        if (!make_zk || domain_type != affine_subspace_type ||
++            this->summation_domain_.type() != affine_subspace_type ||
++            this->codeword_domain_.type() != affine_subspace_type ||
++            this->summation_domain_.shift() != FieldT::zero() ||
++            this->summation_domain_size_ < 2 || degree_bound <= this->summation_domain_size_ ||
++            degree_bound > this->codeword_domain_.num_elements()) {
++            throw std::invalid_argument("paper masking: unsupported sumcheck domain/bound/mode");
++        }
++        const vanishing_polynomial<FieldT> z(this->summation_domain_);
++        for (const FieldT &u : this->codeword_domain_.all_elements()) {
++            if (z.evaluation_at_point(u) == FieldT::zero())
++                throw std::invalid_argument("paper masking: intersecting evaluation domain");
++        }
++    }
+     this->g_degree_ = this->summation_domain_size_ - 1;
+     this->h_degree_ = this->degree_bound_ - this->summation_domain_size_;
+ }
+@@ -191,11 +208,17 @@
+ void batch_sumcheck_protocol<FieldT>::register_masking_polynomial()
+ {
+     this->masking_poly_handle_ = this->IOP_.register_oracle("sumcheck_mask", this->codeword_domain_handle_, this->degree_bound_, this->make_zk_);
++    if (this->paper_masking_) this->paper_beta_handle_ = this->IOP_.register_prover_message(1);
+ }
+ 
+ template<typename FieldT>
+ void batch_sumcheck_protocol<FieldT>::register_challenge()
+ {
++    if (this->paper_masking_) {
++        if (this->oracle_handles_.size() != 1 || this->claimed_sums_[0] != FieldT::zero())
++            throw std::invalid_argument("paper masking requires one zero claim");
++        return;
++    }
+     /** If there are n sumcheck instances, n - 1 random points are required.
+      *  In the zk case, an additional point of verifier randomness is required. */
+     int64_t num_oracles = this->oracle_handles_.size() + (this->make_zk_ ? 1 : 0);
+@@ -206,6 +229,8 @@
+ void batch_sumcheck_protocol<FieldT>::attach_oracle_for_summing(const oracle_handle_ptr &handle,
+                                                                 const FieldT claimed_sum)
+ {
++    if (this->paper_masking_ && (claimed_sum != FieldT::zero() || !this->oracle_handles_.empty()))
++        throw std::invalid_argument("paper masking requires one zero claim");
+     if (this->combined_f_oracle_)
+     {
+         throw std::logic_error("Called attach_oracle_for_summing after register_proof.");
+@@ -220,6 +245,8 @@
+ void batch_sumcheck_protocol<FieldT>::set_oracle_claimed_sum(const oracle_handle_ptr &handle,
+                                                              const FieldT claimed_sum)
+ {
++    if (this->paper_masking_ && claimed_sum != FieldT::zero())
++        throw std::invalid_argument("paper masking requires a zero attached claim");
+     if (this->oracle_uid_to_registration_index_.count(handle->uid()) == 0)
+     {
+         throw std::invalid_argument("Sumcheck: set_oracle_claimed_sum"
+@@ -232,6 +259,8 @@
+ template<typename FieldT>
+ void batch_sumcheck_protocol<FieldT>::register_proof()
+ {
++    if (this->paper_masking_ && (this->oracle_handles_.size() != 1 || this->claimed_sums_[0] != FieldT::zero()))
++        throw std::invalid_argument("paper masking requires one zero claim");
+     /* h does not have to be in a zk commitment, as zk-sumcheck operates on a uniform codeword of the given rate. */
+     const bool make_h_oracle_zk = false;
+     this->h_handle_ = this->IOP_.register_oracle("sumcheck h", this->codeword_domain_handle_, this->h_degree_, make_h_oracle_zk);
+@@ -299,13 +328,24 @@
+      *  4) convert m to the codeword domain and submit it */
+     libff::enter_block("Sumcheck: sample masking polynomial components");
+     polynomial<FieldT> masking_g_poly = polynomial<FieldT>::random_polynomial(this->summation_domain_size_);
+-    const polynomial<FieldT> masking_h_poly = polynomial<FieldT>::random_polynomial(this->h_degree_);
++    polynomial<FieldT> masking_h_poly = polynomial<FieldT>::random_polynomial(this->h_degree_);
++#ifdef PQ_MASKING_PUBLIC_FIXTURES
++    if (!this->fixture_mask_g_.empty() || !this->fixture_mask_h_.empty()) {
++        if (!this->paper_masking_ || this->fixture_mask_g_.size() != this->summation_domain_size_ ||
++            this->fixture_mask_h_.size() != this->h_degree_)
++            throw std::invalid_argument("public mask fixture dimensions");
++        masking_g_poly = polynomial<FieldT>(this->fixture_mask_g_);
++        masking_h_poly = polynomial<FieldT>(this->fixture_mask_h_);
++    }
++#endif
+     libff::leave_block("Sumcheck: sample masking polynomial components");
+ 
+     libff::enter_block("Sumcheck: compute masking polynomial codeword");
+     const vanishing_polynomial<FieldT> summation_vp(this->summation_domain_);
+ 
+-    if (this->field_subset_type_ == multiplicative_coset_type) {
++    if (this->paper_masking_) {
++        this->paper_beta_ = summation_vp.get_linearized_polynomial().coefficients()[1] * masking_g_poly[this->summation_domain_size_-1];
++    } else if (this->field_subset_type_ == multiplicative_coset_type) {
+         /** When H is a multiplicative group, Σ_{a in H} g(a) = g(0) * |H|,
+          *  thus it sums to 0 if and only if g(0) = 0 */
+         masking_g_poly[0] = FieldT::zero();
+@@ -322,11 +362,16 @@
+         this->masking_poly_handle_,
+         oracle<FieldT>(FFT_over_field_subset<FieldT>(
+             this->masking_poly_.coefficients(), this->codeword_domain_)));
++    if (this->paper_masking_) {
++        this->IOP_.submit_prover_message(this->paper_beta_handle_, {this->paper_beta_});
++        this->paper_mask_submitted_ = true;
++    }
+     libff::leave_block("Sumcheck: compute masking polynomial codeword");
+ }
+ 
+ template<typename FieldT>
+ FieldT batch_sumcheck_protocol<FieldT>::get_combined_claimed_sum(std::vector<FieldT> challenge) {
++    if (this->paper_masking_) return this->paper_beta_;
+     FieldT combined_f_oracle_sum = FieldT::zero();
+     std::size_t start_challenge = 0;
+     if (this->make_zk_) {
+@@ -343,7 +388,10 @@
+ template<typename FieldT>
+ void batch_sumcheck_protocol<FieldT>::calculate_and_submit_proof()
+ {
+-    const std::vector<FieldT> challenge =
++    if (this->paper_masking_ && !this->paper_mask_submitted_)
++        throw std::logic_error("paper mask/beta must precede proof computation");
++    const std::vector<FieldT> challenge = this->paper_masking_ ?
++        std::vector<FieldT>{FieldT::one(), FieldT::one()} :
+         this->IOP_.obtain_verifier_random_message(this->challenge_handle_);
+     this->combined_f_oracle_->set_random_coefficients(challenge);
+ 
+@@ -371,6 +419,7 @@
+         /* The second component is actually g + sum * x^{H_size-1}, but
+             we immediately remove its highest degree term */
+         actual_sum = g[this->summation_domain_size_-1];
++        if (this->paper_masking_) actual_sum *= vanishing_polynomial.get_linearized_polynomial().coefficients()[1];
+         g.set_degree(this->summation_domain_size_-2, true);
+     } else if (this->field_subset_type_ == multiplicative_coset_type) {
+         /* The second component is actually x*g + sum, but
+@@ -391,7 +440,13 @@
+ template<typename FieldT>
+ void batch_sumcheck_protocol<FieldT>::construct_verifier_state()
+ {
+-    std::vector<FieldT> challenge =
++    if (this->paper_masking_) {
++        const std::vector<FieldT> beta = this->IOP_.receive_prover_message(this->paper_beta_handle_);
++        if (beta.size() != 1) throw std::invalid_argument("paper beta must contain exactly one field");
++        this->paper_beta_ = beta[0];
++    }
++    std::vector<FieldT> challenge = this->paper_masking_ ?
++        std::vector<FieldT>{FieldT::one(), FieldT::one()} :
+         this->IOP_.obtain_verifier_random_message(this->challenge_handle_);
+     this->combined_f_oracle_->set_random_coefficients(challenge);
+     // In the code, the masking polynomial sum is always 0.
+--- a/work/libiop/libiop/protocols/ldt/fri/fri_ldt.hpp
++++ b/work/libiop/libiop/protocols/ldt/fri/fri_ldt.hpp
+@@ -71,8 +71,22 @@
+     /* Number of times to repeat the query phase, for low query soundness error */
+     size_t num_query_repetitions_;
+     bool override_security_parameter_ = false;
++    bool paper_masking_ = false;
+ 
+     public:
++    bool paper_masking() const { return this->paper_masking_; }
++    void enable_paper_masking() {
++        if (this->localization_parameters_.empty()) throw std::invalid_argument("empty paper FRI folds");
++        std::size_t total = 0;
++        for (const auto eta : this->localization_parameters_) {
++            if (eta != 1) throw std::invalid_argument("paper FRI supports binary folds only");
++            total += eta;
++        }
++        if (total >= sizeof(std::size_t)*8 || total > this->codeword_domain_dim_ ||
++            this->poly_degree_bound_ == 0 || this->poly_degree_bound_ % (std::size_t(1) << total))
++            throw std::invalid_argument("paper FRI degree/localisation mismatch");
++        this->paper_masking_ = true;
++    }
+     // Needed to allow the LDT to be uninitialized in FRI_protocol
+     FRI_protocol_parameters() {};
+ 
+--- a/work/libiop/libiop/protocols/ldt/fri/fri_ldt.tcc
++++ b/work/libiop/libiop/protocols/ldt/fri/fri_ldt.tcc
+@@ -360,7 +360,7 @@
+     for (std::size_t i = 1; i < this->num_reductions_; ++i)
+     {
+         std::size_t current_localization_parameter = this->params_.get_localization_parameters()[i];
+-        total_localizations += current_localization_parameter;
++        if (!this->params_.paper_masking()) total_localizations += current_localization_parameter;
+ 
+         const std::size_t degree_bound = this->poly_degree_bound_ >> total_localizations;
+         const domain_handle L_i = this->IOP_.register_domain(this->domains_[i]);
+@@ -386,6 +386,7 @@
+         this->domain_handles_[i] = L_i;
+         this->oracle_handles_[i] = multi_f_i_for_all_interactions;
+         this->verifier_challenge_handles_[i] = x_i_for_all_interactions;
++        if (this->params_.paper_masking()) total_localizations += current_localization_parameter;
+     }
+ 
+     this->final_polynomial_degree_bound_ = this->poly_degree_bound_ >> total_localizations;
+--- a/work/libiop/libiop/protocols/ldt/ldt_reducer.hpp
++++ b/work/libiop/libiop/protocols/ldt/ldt_reducer.hpp
+@@ -38,6 +38,7 @@
+     size_t max_tested_degree_bound_;
+     size_t max_constraint_degree_bound_;
+     bool make_zk_;
++    bool paper_masking_ = false;
+ 
+     size_t num_output_LDT_instances_;
+     size_t absolute_proximity_parameter_;
+@@ -59,7 +60,8 @@
+                                 const size_t codeword_domain_dim,
+                                 const size_t max_tested_degree_bound,
+                                 const size_t max_constraint_degree_bound,
+-                                const bool make_zk);
++                                const bool make_zk,
++                                const bool paper_masking = false);
+ 
+     /** UNSAFE!
+      *  This is intended to allow experimentation with LDT reducer parameterizations. */
+@@ -68,6 +70,7 @@
+     size_t max_tested_degree_bound() const;
+     size_t RS_extra_dimensions() const;
+     bool make_zk() const;
++    bool paper_masking() const { return this->paper_masking_; }
+     size_t absolute_proximity_parameter() const;
+     size_t num_output_LDT_instances() const;
+ 
+@@ -94,6 +97,9 @@
+     std::vector<std::shared_ptr<combined_LDT_virtual_oracle<FieldT> > > combined_oracles_;
+     std::vector<virtual_oracle_handle> combined_oracle_handles_;
+ 
++#ifdef PQ_MASKING_PUBLIC_FIXTURES
++    std::vector<std::vector<FieldT>> fixture_masks_;
++#endif
+     std::shared_ptr<multi_LDT_type> multi_LDT_;
+     std::shared_ptr<multi_LDT_parameter_base<FieldT>> multi_LDT_params_;
+ public:
+--- a/work/libiop/libiop/protocols/ldt/ldt_reducer.tcc
++++ b/work/libiop/libiop/protocols/ldt/ldt_reducer.tcc
+@@ -10,15 +10,22 @@
+     const size_t codeword_domain_dim,
+     const size_t max_tested_degree_bound,
+     const size_t max_constraint_degree_bound,
+-    const bool make_zk) :
++    const bool make_zk,
++    const bool paper_masking) :
+     interactive_soundness_bits_(interactive_soundness_bits),
+     soundness_type_(soundness_type),
+     codeword_domain_dim_(codeword_domain_dim),
+     max_tested_degree_bound_(max_tested_degree_bound),
+     max_constraint_degree_bound_(max_constraint_degree_bound),
+-    make_zk_(make_zk)
+-{
++    make_zk_(make_zk),
++    paper_masking_(paper_masking)
++{
++    if (paper_masking && (!make_zk || codeword_domain_dim >= sizeof(size_t)*8 ||
++        max_tested_degree_bound == 0 || max_constraint_degree_bound == 0))
++        throw std::invalid_argument("paper reducer invalid mode/dimension");
+     const size_t codeword_domain_size = 1ull << this->codeword_domain_dim_;
++    if (paper_masking && std::max(max_tested_degree_bound, max_constraint_degree_bound) > codeword_domain_size/8)
++        throw std::invalid_argument("paper reducer requires rate at most one eighth");
+     if (this->soundness_type_ == LDT_reducer_soundness_type::proven)
+     {
+         /** Per the RS-encoded IOP to standard IOP compiler's soundness,
+@@ -163,6 +170,9 @@
+ template<typename FieldT, typename multi_LDT_type>
+ void LDT_instance_reducer<FieldT, multi_LDT_type>::register_interactions(const std::vector<oracle_handle_ptr> &oracle_handles)
+ {
++    if (this->reducer_params_.paper_masking() && (!this->reducer_params_.make_zk() ||
++        this->codeword_domain_.type() != affine_subspace_type || oracle_handles.empty()))
++        throw std::invalid_argument("paper reducer requires nonempty additive ZK inputs");
+     this->input_oracle_handles_ = oracle_handles;
+     const size_t num_input_oracles = this->input_oracle_handles_.size();
+     this->input_oracle_degrees_.resize(num_input_oracles);
+@@ -192,7 +202,8 @@
+        submaximal degree. We could sample exactly the number of coefficients needed for
+        submaximal oracles, we don't do this for simplicity as it is inexpensive.
+        An additional coefficient is added in the zk case, since a blinding polynomial is used. */
+-    this->num_random_coefficients_ = 2 * num_input_oracles + (this->reducer_params_.make_zk() ? 2 : 0);
++    this->num_random_coefficients_ = 2 * num_input_oracles +
++        (this->reducer_params_.make_zk() && !this->reducer_params_.paper_masking() ? 2 : 0);
+ 
+     /* Each round of interaction has a single LDT with the same parameters (but they will have
+        different random coefficients set later). */
+@@ -211,7 +222,7 @@
+         }
+         this->combined_oracles_[i] = std::make_shared<combined_LDT_virtual_oracle<FieldT> >(
+             this->codeword_domain_,
+-            this->input_oracle_degrees_);
++            this->input_oracle_degrees_, this->reducer_params_.paper_masking());
+         this->combined_oracle_handles_[i] = this->IOP_.register_virtual_oracle(
+             this->codeword_domain_handle_,
+             this->reducer_params_.max_tested_degree_bound(),
+@@ -247,6 +258,15 @@
+         for (size_t i = 0; i < this->reducer_params_.num_output_LDT_instances(); ++i)
+         {
+             polynomial<FieldT> random_poly = polynomial<FieldT>::random_polynomial(this->reducer_params_.max_tested_degree_bound());
++#ifdef PQ_MASKING_PUBLIC_FIXTURES
++            if (!this->fixture_masks_.empty()) {
++                if (!this->reducer_params_.paper_masking() ||
++                    this->fixture_masks_.size() != this->reducer_params_.num_output_LDT_instances() ||
++                    this->fixture_masks_[i].size() != this->reducer_params_.max_tested_degree_bound())
++                    throw std::invalid_argument("public reducer fixture dimensions");
++                random_poly = polynomial<FieldT>(this->fixture_masks_[i]);
++            }
++#endif
+             std::vector<FieldT> blinding_evaluations =
+                 FFT_over_field_subset<FieldT>(random_poly.coefficients(), this->codeword_domain_);
+             oracle<FieldT> blinding_oracle(std::move(blinding_evaluations));
+--- a/work/libiop/libiop/protocols/ldt/ldt_reducer_aux.hpp
++++ b/work/libiop/libiop/protocols/ldt/ldt_reducer_aux.hpp
+@@ -30,6 +30,7 @@
+     std::vector<std::size_t> input_oracle_degrees_;
+     std::vector<FieldT> coefficients_;
+ 
++    const bool paper_masking_;
+     std::size_t num_input_oracles_;
+     std::size_t num_random_coefficients_;
+     std::size_t max_degree_;
+@@ -38,7 +39,8 @@
+     std::vector<std::size_t> maximal_oracle_indices_;
+ public:
+     combined_LDT_virtual_oracle(const field_subset<FieldT> &codeword_domain,
+-                                const std::vector<std::size_t>& input_oracle_degrees);
++                                const std::vector<std::size_t>& input_oracle_degrees,
++                                const bool paper_masking = false);
+ 
+     void set_random_coefficients(const std::vector<FieldT>& random_coefficients);
+ 
+--- a/work/libiop/libiop/protocols/ldt/ldt_reducer_aux.tcc
++++ b/work/libiop/libiop/protocols/ldt/ldt_reducer_aux.tcc
+@@ -3,13 +3,22 @@
+ template<typename FieldT>
+ combined_LDT_virtual_oracle<FieldT>::combined_LDT_virtual_oracle(
+     const field_subset<FieldT> &codeword_domain,
+-    const std::vector<std::size_t>& input_oracle_degrees) :
++    const std::vector<std::size_t>& input_oracle_degrees,
++    const bool paper_masking) :
+     codeword_domain_(codeword_domain),
+-    input_oracle_degrees_(input_oracle_degrees)
+-{
++    input_oracle_degrees_(input_oracle_degrees),
++    paper_masking_(paper_masking)
++{
++    if (input_oracle_degrees.empty() || (paper_masking &&
++        (input_oracle_degrees.size() < 2 || codeword_domain.type() != affine_subspace_type)))
++        throw std::invalid_argument("paper reducer missing constituents/pad");
+     this->num_input_oracles_ = this->input_oracle_degrees_.size();
+-    this->num_random_coefficients_ = 2 * this->num_input_oracles_;
++    this->num_random_coefficients_ = 2 * (this->num_input_oracles_ - (paper_masking ? 1 : 0));
+     this->max_degree_ = *std::max_element(this->input_oracle_degrees_.begin(), this->input_oracle_degrees_.end());
++    if (paper_masking && (input_oracle_degrees.back() != this->max_degree_ ||
++        this->max_degree_ == 0 || this->max_degree_ > codeword_domain.num_elements() ||
++        std::find(input_oracle_degrees.begin(), input_oracle_degrees.end(), 0) != input_oracle_degrees.end()))
++        throw std::invalid_argument("paper reducer invalid degree/pad bound");
+     for (std::size_t i = 0; i < this->num_input_oracles_; ++i)
+     {
+         if (this->input_oracle_degrees_[i] < this->max_degree_)
+@@ -32,6 +41,10 @@
+         throw std::invalid_argument("Expected the nunmber of random coefficients to be twice the number of oracles.");
+     }
+ 
++    if (this->paper_masking_) {
++        this->coefficients_ = random_coefficients;
++        return;
++    }
+     this->coefficients_ = { FieldT::one() };
+     this->coefficients_.insert(this->coefficients_.end(), random_coefficients.begin(), random_coefficients.end());
+ }
+@@ -43,6 +56,24 @@
+     if (constituent_oracle_evaluations.size() != this->num_input_oracles_)
+     {
+         throw std::invalid_argument("Expected same number of evaluations as in registration.");
++    }
++
++    if (this->paper_masking_) {
++        if (this->coefficients_.size() != this->num_random_coefficients_)
++            throw std::logic_error("paper reducer challenge unavailable");
++        for (const auto &v : constituent_oracle_evaluations)
++            if (!v || v->size() != this->codeword_domain_.num_elements())
++                throw std::invalid_argument("paper reducer vector dimensions");
++        auto result = std::make_shared<std::vector<FieldT>>(*constituent_oracle_evaluations.back());
++        const std::size_t J = this->num_input_oracles_ - 1;
++        for (std::size_t k = 0; k < result->size(); ++k) {
++            const FieldT x = this->codeword_domain_.element_by_index(k);
++            for (std::size_t j = 0; j < J; ++j)
++                (*result)[k] += (this->coefficients_[j] + this->coefficients_[J+j] *
++                    libff::power(x, this->max_degree_ - this->input_oracle_degrees_[j])) *
++                    (*constituent_oracle_evaluations[j])[k];
++        }
++        return result;
+     }
+ 
+     std::shared_ptr<std::vector<FieldT>> result = std::make_shared<std::vector<FieldT>>
+@@ -141,6 +172,17 @@
+         throw std::invalid_argument("Expected same number of evaluations as in registration.");
+     }
+ 
++    if (this->paper_masking_) {
++        if (this->coefficients_.size() != this->num_random_coefficients_)
++            throw std::logic_error("paper reducer challenge unavailable");
++        FieldT result = constituent_oracle_evaluations.back();
++        const std::size_t J = this->num_input_oracles_ - 1;
++        for (std::size_t j = 0; j < J; ++j)
++            result += (this->coefficients_[j] + this->coefficients_[J+j] *
++                libff::power(evaluation_point, this->max_degree_ - this->input_oracle_degrees_[j])) *
++                constituent_oracle_evaluations[j];
++        return result;
++    }
+     FieldT result = FieldT::zero();
+ 
+     for (std::size_t i = 0; i < constituent_oracle_evaluations.size(); ++i)

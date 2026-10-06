@@ -1,0 +1,27 @@
+{
+  "package": "S3-PRIVATE-HINT-LOWERING-PILOT-1",
+  "existing_source_changed": [],
+  "expected_invocations": 9,
+  "counting": "One circuit-generation probe and eight distinct differential inputs; no hidden batches/repeats",
+  "construction": "experimental-private-hints-v1; proposed lowering/profile change, not BC-1 conformance",
+  "case_ids": [
+    "original-valid",
+    "all-zero-valid",
+    "decreasing-endpoints",
+    "endpoint-over-55",
+    "duplicate-within-row",
+    "descending-within-row",
+    "nonzero-unused-padding",
+    "capacity55-position255-cross-row-repeat"
+  ],
+  "max_circuits": 1,
+  "max_gates": 2000000,
+  "max_stored_trace_bytes": 8388608,
+  "trace_disk_output": false,
+  "comparison": "Retained original32M-gate prefix versus complete candidate; no matched full-baseline or full-auth percentage",
+  "input_visibility": "42632 private input positions;61 hint bytes at4308:4369; no witness data during construction",
+  "outputs": "6x256 signed64 words, zero-extension of constrained bits; final sticky validity; rejected outputs unusable",
+  "original_baseline_repeated": false,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "upstream": "risc0/zkvm/src/host/client/prove/external.rs",
+    "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/src/host/client/prove/external.rs",
+    "file": "sources/risc0_zkvm_src_host_client_prove_external.rs",
+    "sha256": "a5959f2d1737e20dc65b985a1ff2cfec58caccbc5aa7034f3d7e8d9c3f1036e0"
+  },
+  {
+    "upstream": "risc0/zkvm/src/host/client/prove/default.rs",
+    "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/src/host/client/prove/default.rs",
+    "file": "sources/risc0_zkvm_src_host_client_prove_default.rs",
+    "sha256": "8536578a3c20a1018e425814d81cb92197c04b2caa05908bfda32d477d8b51f1"
+  },
+  {
+    "upstream": "risc0/zkvm/src/host/client/prove/mod.rs",
+    "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/src/host/client/prove/mod.rs",
+    "file": "sources/risc0_zkvm_src_host_client_prove_mod.rs",
+    "sha256": "3d52b1fa00f501b7f203c02e718c03b6a5b90994cdecc57294faf6b8977cbf48"
+  },
+  {
+    "upstream": "risc0/zkvm/src/host/prove_info.rs",
+    "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/src/host/prove_info.rs",
+    "file": "sources/risc0_zkvm_src_host_prove_info.rs",
+    "sha256": "85f0f8e3fe1e2c3cfe44caead7ba1c42b94e8dac3e10100b41883cecb3bbea31"
+  },
+  {
+    "upstream": "risc0/build/src/lib.rs",
+    "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/build/src/lib.rs",
+    "file": "sources/risc0_build_src_lib.rs",
+    "sha256": "30a523d2474299139a0616de729a0b034527bf018aaf3b490e72d900b79b88ea"
+  },
+  {
+    "upstream": "risc0/zkvm/src/lib.rs",
+    "url": "https://raw.githubusercontent.com/risc0/risc0/1cc70cf05033a79ebc90f07c679cb4bd1cd301b9/risc0/zkvm/src/lib.rs",
+    "file": "sources/risc0_zkvm_src_lib.rs",
+    "sha256": "09a9610d5ecb2d27086c0d7fd55b908a5b4ad62459db53ae61f12d936c024c17"
+  }
+]

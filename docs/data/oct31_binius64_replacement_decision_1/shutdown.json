@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "before": {
+    "pqdid-binius-decision-1-source-quality.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    "pqdid-binius-decision-1-preflight.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    "pqdid-binius-decision-1-prepare.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    "pqdid-binius-decision-1-full-audit.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    "pqdid-binius-decision-1-final-readback.service": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    }
+  },
+  "slice_before": {
+    "LoadState": "loaded",
+    "ActiveState": "active",
+    "SubState": "active",
+    "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-binius.slice/pqdid-binius-decision.slice/pqdid-binius-decision-1.slice"
+  },
+  "slice_after": {
+    "LoadState": "loaded",
+    "ActiveState": "inactive",
+    "SubState": "dead",
+    "ControlGroup": ""
+  },
+  "exact_cgroup_paths_checked": [
+    "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-binius.slice/pqdid-binius-decision.slice/pqdid-binius-decision-1.slice"
+  ],
+  "descendants_terminated": true,
+  "failed_unit_states_preserved": true,
+  "other_units_untouched": true,
+  "seconds": 0.1767102120211348
+}

@@ -1,0 +1,22 @@
+// Explicit standard-header closure for the upstream component headers.
+#pragma once
+#include <algorithm>
+#include <array>
+#include <bit>
+#include <cassert>
+#include <concepts>
+#include <cstddef>
+#include <cstdint>
+#include <cstring>
+#include <iostream>
+#include <iterator>
+#include <limits>
+#include <memory>
+#include <numeric>
+#include <random>
+#include <span>
+#include <stdexcept>
+#include <string>
+#include <tuple>
+#include <type_traits>
+#include <vector>

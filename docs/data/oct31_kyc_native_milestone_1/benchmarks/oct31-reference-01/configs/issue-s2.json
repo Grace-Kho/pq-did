@@ -1,0 +1,21 @@
+{
+  "run_id": "oct31-reference-01",
+  "scenario": "ISSUE",
+  "session": 2,
+  "output": "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/sessions/issue-s2",
+  "store_root": "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/stores/oct31-reference-01-issue-s2",
+  "claims_root": "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/benchmarks/oct31-reference-01/claims",
+  "lock_path": "/home/grace/projects/pq-did/docs/data/oct31_kyc_native_milestone_1/measurement.lock",
+  "epoch_base": 1800000000,
+  "deadline_seconds": 120,
+  "dispose_trial_stores": true,
+  "guard": {
+    "phase": "python",
+    "memory_limit_bytes": 268435456,
+    "job_record": "docs/data/oct31_kyc_native_milestone_1/jobs/bench-issue-s2.json",
+    "aggregate_memory_limit_bytes": 2147483648,
+    "swap_bytes": 0,
+    "exclusive_measurement": true,
+    "post_exit_peak_in_job_record": true
+  }
+}

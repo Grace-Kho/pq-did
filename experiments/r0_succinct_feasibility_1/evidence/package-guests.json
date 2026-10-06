@@ -1,0 +1,29 @@
+{
+  "phase": "build",
+  "name": "package-guests",
+  "command": [
+    "/bin/bash",
+    "scripts/build.sh"
+  ],
+  "limit_seconds": 600,
+  "memory_max": 2147483648,
+  "network": false,
+  "start_time_UTC": "2026-09-18T18:15:20Z",
+  "status": "pass",
+  "wall_seconds": 34.25338486400142,
+  "exit_code": 0,
+  "stop_reason": null,
+  "effective_cgroup": {
+    "memory.max": "2147483648",
+    "memory.swap.max": "0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "sampled_process_tree_RSS_peak": 510664704,
+  "sampled_cgroup_charge_peak": 298217472,
+  "sampled_swap_peak": 0,
+  "sampled_experiment_disk_peak": 3976253201,
+  "systemd_final_properties": "Result=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nMemoryPeak=[not set]\nMemorySwapPeak=[not set]\nCPUUsageNSec=[not set]\n",
+  "log": "evidence/package-guests.log",
+  "resource_note": "Kernel MemoryMax includes descendants and cache; summed RSS sampled at ~50 ms may double-count shared pages and miss peaks; inspect systemd MemoryPeak independently."
+}

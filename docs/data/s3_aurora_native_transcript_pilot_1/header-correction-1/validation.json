@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "comparison_complete": false,
+  "audit_worker_launched": false,
+  "complete_baseline_comparisons_this_continuation": 0,
+  "prior_10901_comparisons": "Historical evidence only, not substituted for this blocked audit",
+  "protected_file_scope_unchanged": true
+}

@@ -1,0 +1,20 @@
+{
+  "package": "S2-AUTHORITY-OWNER-BOUNDARY-1",
+  "completed": true,
+  "scope": "Post-guard documentation and new-evidence finalisation only; no repeated historical scan",
+  "full_audit_result": "result.json",
+  "full_audit_passed": true,
+  "documentation_files": [
+    "docs/stage2_authority_owner_boundary.md",
+    "docs/status.md",
+    "docs/traceability.md",
+    "docs/spec_issues.md"
+  ],
+  "local_links_checked": 320,
+  "new_package_paths_individually_authorised": true,
+  "temporary_bytes": 0,
+  "code_changed_after_final_checks": false,
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "stages_2_3_complete": false
+}

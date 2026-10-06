@@ -1,0 +1,25 @@
+{
+  "package": "S3-BINIUS-EMBEDDING-CORRESPONDENCE-1",
+  "passed": true,
+  "status": "comparison-and-outer-guard-complete",
+  "audit_launcher_attempts": 2,
+  "complete_comparison_auditor_invocations": 1,
+  "guard_record": "full-audit-2.json",
+  "guard_exit_code": 0,
+  "content_record": "validation.json",
+  "phase_record": "phases.json",
+  "content_comparison_passed": true,
+  "report_generation_completed": true,
+  "resource_guard_passed": true,
+  "wall_seconds": 4.7413699249736965,
+  "memory_metric": "cgroup-v2 memory.peak: complete worker cgroup and descendants including charged cache/kernel memory; monitor external",
+  "cgroup_memory_peak_bytes": 49397760,
+  "sampled_tree_RSS_peak_bytes": 63913984,
+  "retained_prior_failed_result": {
+    "path": "audit-failure.json",
+    "sha256": "47740db641554958f3f136319f746e86a566ef190d1a4c1e1d0dc5b57338dce8",
+    "original_guard": "full-audit.json"
+  },
+  "prior_failed_result_reclassified": false,
+  "final_inventory_and_seal_readback": "pending"
+}

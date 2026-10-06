@@ -1,0 +1,11 @@
+{
+  "temporary_directory_empty": true,
+  "scratch_bytes": 0,
+  "worker_guard_records": [
+    "fixtures",
+    "preflight",
+    "build-4",
+    "quality"
+  ],
+  "no_further_native_launch": true
+}

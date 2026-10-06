@@ -1,0 +1,11 @@
+{
+  "command": ".venv/bin/python -I -B docs/data/s3_auth_proof_feasibility_plan_1/run_checks.py final-correction-format",
+  "exit_code": 1,
+  "output": "stopped: no automatic retry",
+  "service_launched": false,
+  "tests": 0,
+  "cause": "The reviewed continuation-name set still contained the first correction names after formatter expansion; command dispatch correctly refused the new name.",
+  "correction": "Replace only those two names with final-correction-format and quality-final; retain all two-failure hashes, resource checks and stop rules.",
+  "accounting": "Prelaunch bookkeeping included in the existing five-second operator charge. No service wall time or implementation test invocation.",
+  "resource_limits_changed": false
+}

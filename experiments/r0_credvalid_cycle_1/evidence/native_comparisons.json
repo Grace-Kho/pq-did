@@ -1,0 +1,142 @@
+[
+  {
+    "matched": true,
+    "name": "enrol-alpha-42"
+  },
+  {
+    "matched": true,
+    "name": "cred-alpha-42"
+  },
+  {
+    "matched": true,
+    "name": "enrol-alpha-43"
+  },
+  {
+    "matched": true,
+    "name": "cred-alpha-43"
+  },
+  {
+    "matched": true,
+    "name": "enrol-beta-42"
+  },
+  {
+    "matched": true,
+    "name": "cred-beta-42"
+  },
+  {
+    "matched": true,
+    "name": "cred-wrong-secret"
+  },
+  {
+    "matched": true,
+    "name": "cred-trailing"
+  },
+  {
+    "matched": true,
+    "name": "cred-truncated"
+  },
+  {
+    "matched": true,
+    "name": "cred-wrong-instance"
+  },
+  {
+    "matched": true,
+    "name": "cred-wrong-operation"
+  },
+  {
+    "matched": true,
+    "name": "cred-context-width"
+  },
+  {
+    "matched": true,
+    "name": "cred-changed-context-valid"
+  },
+  {
+    "matched": true,
+    "name": "cred-rid-changed"
+  },
+  {
+    "matched": true,
+    "name": "cred-rid-overflow"
+  },
+  {
+    "matched": true,
+    "name": "cred-auxiliary"
+  },
+  {
+    "matched": true,
+    "name": "cred-metadata"
+  },
+  {
+    "matched": true,
+    "name": "cred-attribute-tail"
+  },
+  {
+    "matched": true,
+    "name": "cred-binding"
+  },
+  {
+    "matched": true,
+    "name": "cred-signature"
+  },
+  {
+    "matched": true,
+    "name": "cred-signature-length"
+  },
+  {
+    "matched": true,
+    "name": "cred-coherent-changed-attributes"
+  },
+  {
+    "matched": true,
+    "name": "enrol-wrong-secret"
+  },
+  {
+    "matched": true,
+    "name": "enrol-wrong-instance"
+  },
+  {
+    "matched": true,
+    "name": "enrol-trailing"
+  },
+  {
+    "matched": true,
+    "name": "enrol-changed-approved"
+  },
+  {
+    "matched": true,
+    "name": "enrol-invalid-state-signature-outside-relation"
+  },
+  {
+    "matched": true,
+    "name": "cred-proper-signing-context"
+  },
+  {
+    "matched": true,
+    "name": "cred-wrong-signing-context"
+  },
+  {
+    "matched": true,
+    "name": "native-0-valid"
+  },
+  {
+    "matched": true,
+    "name": "native-0-wrong-context"
+  },
+  {
+    "matched": true,
+    "name": "native-1-valid"
+  },
+  {
+    "matched": true,
+    "name": "native-1-wrong-context"
+  },
+  {
+    "matched": true,
+    "name": "native-2-valid"
+  },
+  {
+    "matched": true,
+    "name": "native-2-wrong-context"
+  }
+]

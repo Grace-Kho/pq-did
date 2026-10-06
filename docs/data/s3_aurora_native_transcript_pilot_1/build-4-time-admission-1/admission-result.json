@@ -1,0 +1,51 @@
+{
+  "status": "blocked-before-preflight",
+  "reason": "Preflight compares authorised append-only reports to old full hashes",
+  "preflight_source": "docs/data/s3_aurora_native_transcript_pilot_1/build-4-resumption-1/work.py",
+  "preflight_source_sha256": "0c9efcb9982762aef05b2b15cc172bd6ffe5c48f5b2a560da3aa0715cdf2a6a4",
+  "launcher_source_sha256": "62af14287a13602eadcb61083636d1fe74e00b908262106f2b86c952244013fb",
+  "mismatches": [
+    {
+      "path": "docs/spec_issues.md",
+      "expected_by_preflight": "c41af39052d84010637fa4c081b8d6b52a72228d81c2628bac1f97bd4168d989",
+      "current_sha256": "17a9c41536aa8d734c9f1493a98e651375a8ccad149197266ab3ab639a626164",
+      "latest_seal_matches": true,
+      "historical_prefix_preserved": true
+    },
+    {
+      "path": "docs/stage3_aurora_compiler_compatibility_contract.md",
+      "expected_by_preflight": "40b7c04e3cadcf12302959d8dbd3b83e8859ee42bb79dce908ad2372424363fe",
+      "current_sha256": "6b8ff7edb25f3a149cc6994e0e8bb52d5652ed14da957c95f8fc4cf6a9b77d8f",
+      "latest_seal_matches": true,
+      "historical_prefix_preserved": true
+    },
+    {
+      "path": "docs/stage3_aurora_native_transcript_pilot.md",
+      "expected_by_preflight": "19df89d424878c96764f589785b98ec1127459ec5ff2f85e41863c10bf65aec1",
+      "current_sha256": "837ca00538d10f2d6b5bc73f9780bb11ceb7dda649966f4150b0211383821378",
+      "latest_seal_matches": true,
+      "historical_prefix_preserved": true
+    },
+    {
+      "path": "docs/status.md",
+      "expected_by_preflight": "4ec1d7592844cf242af675f49239378b6db22c44ff4bb4e2efe2e99bde0b1723",
+      "current_sha256": "c609262d7259250c9a977b724cd9cf8bdd6c8a6665196b3beb07e63c02c5695b",
+      "latest_seal_matches": true,
+      "historical_prefix_preserved": true
+    },
+    {
+      "path": "docs/traceability.md",
+      "expected_by_preflight": "a2d4546438c37004f03f12100be644cfb3f391af65755355464aaded14bf9c3b",
+      "current_sha256": "b7a9c573a06039bf334d4433f92d9b9e0eb206bca3cb1a808c0acfd870c95c5b",
+      "latest_seal_matches": true,
+      "historical_prefix_preserved": true
+    }
+  ],
+  "new_preflight_attempts": 0,
+  "new_builds": 0,
+  "guard_policy_changed": false,
+  "original_launcher_and_work_unchanged": true,
+  "required_correction": "Verify historic prefixes and latest sealed appendices",
+  "formatting_only_correction": false,
+  "time_amendment_recorded_total": 120
+}

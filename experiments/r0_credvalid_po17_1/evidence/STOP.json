@@ -1,0 +1,9 @@
+{
+  "package": "R0-CREDVALID-PO17-1",
+  "reason": "Forecast exceeds whole-pipeline deadline; preserve final attempt. Memory upper bound also unresolved.",
+  "execution_runs": 1,
+  "proof_attempts_this_package": 0,
+  "cumulative_attempts_used": 2,
+  "remaining": 1,
+  "package_closed": true
+}

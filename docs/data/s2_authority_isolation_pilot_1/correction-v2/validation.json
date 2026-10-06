@@ -1,0 +1,59 @@
+{
+  "package": "S2-AUTHORITY-ISOLATION-PILOT-1",
+  "version": 2,
+  "passed": true,
+  "comparison_complete": true,
+  "resource_guard_status": "pending-outer-finalisation",
+  "protected_files": 8759,
+  "unchanged_protected_files": 8756,
+  "allowed_changed_files": [
+    "docs/spec_issues.md",
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "changed_files": [],
+  "missing_files": [],
+  "bytes_hashed": 293713767,
+  "coverage_sha256": "73df29e985aad1544583a3700a7cdbf83f2c3bfbfcde6c43720fb8a2d7c772fc",
+  "supplementary_comparison": {
+    "protected_files": 632,
+    "unchanged_protected_files": 631,
+    "allowed_changed_files": [
+      "docs/stage2_authority_isolation_pilot.md"
+    ],
+    "changed_files": [],
+    "missing_files": [],
+    "bytes_hashed": 6102945,
+    "coverage_sha256": "6b5191592c000b4b4ff1163c7fce2560951606c70df8664fabb6aa59315fda23"
+  },
+  "content_partition_union": 9391,
+  "content_partition_overlap": 0,
+  "identity_inclusive_unique_paths": 9403,
+  "name_inventory": {
+    "passed": true,
+    "count": 1084,
+    "unexpected": [],
+    "missing": []
+  },
+  "candidate_sha256": "0fb7d99444a47eb28cfdbe4c1338468eb9d0328df1af6c05791f9d47210a67df",
+  "focused_invocations": 24,
+  "historical_invocations": 76,
+  "cumulative_invocations": 100,
+  "pending_identity_cases": 22,
+  "actual_identity_tests_run": 0,
+  "charged_seconds_including_inflight_audit_reservation": 102.56925714304089,
+  "only_existing_changes": [
+    "docs/spec_issues.md",
+    "docs/status.md",
+    "docs/traceability.md",
+    "docs/stage2_authority_isolation_pilot.md"
+  ],
+  "local_links_checked": 369,
+  "package_bytes_before_report": 1403586,
+  "temporary_storage_bytes": 0,
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1,
+  "activation": false
+}

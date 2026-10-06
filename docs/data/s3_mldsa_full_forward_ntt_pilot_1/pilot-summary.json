@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "host_partitioned_evaluation": true,
+  "composition_accounted": true,
+  "monolithic_circuit_materialised": false,
+  "canonical_BC1": false,
+  "proof": false,
+  "completed_partitions": 97,
+  "entry_lane_count": 256,
+  "butterfly_count": 1024,
+  "final_boundaries": 1,
+  "stage_counts": {
+    "0": {
+      "gates": 2227840,
+      "and_": 904192,
+      "butterflies": 128
+    },
+    "1": {
+      "gates": 2227840,
+      "and_": 904192,
+      "butterflies": 128
+    },
+    "2": {
+      "gates": 2227840,
+      "and_": 904192,
+      "butterflies": 128
+    },
+    "3": {
+      "gates": 2227840,
+      "and_": 904192,
+      "butterflies": 128
+    },
+    "4": {
+      "gates": 2227840,
+      "and_": 904192,
+      "butterflies": 128
+    },
+    "5": {
+      "gates": 2227840,
+      "and_": 904192,
+      "butterflies": 128
+    },
+    "6": {
+      "gates": 2227840,
+      "and_": 904192,
+      "butterflies": 128
+    },
+    "7": {
+      "gates": 2227840,
+      "and_": 904192,
+      "butterflies": 128
+    }
+  },
+  "aggregate_emitted_gates_or_charged_bound": 27044356,
+  "unresolved_prefix_reserved_gates": 0,
+  "counts": {
+    "xor": 16022016,
+    "and_": 10679298,
+    "not_": 343042
+  },
+  "new_invocations": 107,
+  "total_invocations": 386,
+  "conditional_raw_view_auth_bytes": 2568395104,
+  "projection_assumption": "Unchanged480-round raw-view encoding, d_auth42632, this private-wire subgraph embeds unchanged; T_auth>=measured T_NTT. No claim for changed input classification, sharing or a compact proof profile.",
+  "retained_synthetic_checkpoints": [
+    "retained-frontier.bin",
+    "retained-state.json"
+  ],
+  "failure": null,
+  "outer_work_guards_pass": true,
+  "decision": "Component composition/counting validated; NO-GO for integration with the unchanged raw-view proof encoding",
+  "next_recommendation": "S3-COMPACT-AUTH-PROOF-PROFILE-REVIEW-1: a bounded source-only review of compact transcript candidates, exact relation/security obligations and KYC resource admission, before more circuit integration."
+}

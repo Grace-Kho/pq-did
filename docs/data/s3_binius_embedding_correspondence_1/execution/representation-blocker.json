@@ -1,0 +1,18 @@
+{
+  "id": "B64-EMBED-REP-001",
+  "status": "blocked-before-component-implementation",
+  "missing_file": {
+    "path": "crates/field/src/binary_field.rs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d073d856abf2d1a2ad58b9a0dbe6b7a49460f1df",
+    "size": 24075,
+    "url": "https://api.github.com/repos/binius-zk/binius64/git/blobs/d073d856abf2d1a2ad58b9a0dbe6b7a49460f1df"
+  },
+  "commit": "441fbf51ff0bcb0bcd28f3f1b73f4954029e8577",
+  "source_not_acquired": true,
+  "reason": "The imported binary_field! macro supplies Ghash128b Field/BinaryField implementations. Its definition is not in the fifteen approved files or retained snapshots. The exact binding of macro arguments to MULTIPLICATIVE_GENERATOR and TRACE_ONE_ELEMENT cannot be inspected. Native domain construction reads TRACE_ONE_ELEMENT; IntMul table operand reads MULTIPLICATIVE_GENERATOR. Do not infer this association or invent a fallback generator.",
+  "established": "Portable multiplication POLY=0x87, polynomial low-bit mapping, scalar raw u128 construction, declared macro arguments and unexecuted source test expectations.",
+  "not_established": "Full macro-generated scalar/associated-constant correspondence, compiled SIMD mapping, native encoder execution.",
+  "required_next_evidence": "Inspect the exact pinned macro definition; follow only demonstrated relevant references. No additional acquisition authorised or attempted."
+}

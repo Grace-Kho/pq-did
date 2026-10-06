@@ -1,0 +1,29 @@
+{
+  "existing_complete_index": "docs/data/implementation_consolidation_1/coverage.json",
+  "new_requirements_satisfied": [],
+  "new_application_tests": 0,
+  "categories": {
+    "working_baseline": "Existing genuine disclosed ML-DSA baseline retained; new connected DID work unrun",
+    "local_pqdid_reference": "Existing complete local relation evidence reused; durable wallet candidate unvalidated",
+    "synthetic_proof_scenarios": "Retained historical fixtures only; not used to claim baseline private proof",
+    "genuine_private_authentication": "Unavailable, ordinary verification fail-closed"
+  },
+  "planned_requirement_updates": {
+    "R-012..R-022": "Connected local baseline and DID flow validation pending",
+    "R-028": "Independent verifier replay/consume tests pending; no business-effect atomicity claim",
+    "R-029..R-031": "Durable private holder snapshot/recovery candidate unvalidated",
+    "R-052": "Local trusted projection proposal pending; standard key/securing/private status work unresolved"
+  },
+  "unavailable_private_measurements": {
+    "proof_latency": null,
+    "verification_latency": null,
+    "proof_bytes": null,
+    "private_presentation_bytes": null,
+    "prover_memory": null,
+    "verifier_memory": null,
+    "throughput": null,
+    "PQ_DAA_or_privacy_overhead": null
+  },
+  "v1_observations_unchanged": 276,
+  "historical_full_relation_checks_unrun": 21
+}

@@ -1,0 +1,204 @@
+{
+  "case_id": "Q-01-R1",
+  "invocation_id": "ARF1-0002",
+  "status": "pass",
+  "details": {
+    "passed": true,
+    "decision": "NO-GO-before-arithmetic-gadget-implementation",
+    "candidate": "INT-R1CS-FR254-1",
+    "field_prime": "21888242871839275222246405745257275088548364400416034343698204186575808495617",
+    "field_bit_length": 254,
+    "field_two_adicity_from_retained_source": 28,
+    "field_definition_reused_not_native_instantiated": true,
+    "hash_mapping": "Odd-prime XOR: (2x)y=x+y-z; AND: xy=z; NOT: affine 1-x",
+    "reused_component": "M-16, public mu/private w1; no rerun or GF192 XOR transfer",
+    "joint_mu_remains_private": true,
+    "final_hash_input_bytes": 832,
+    "final_hash_output_bytes": 48,
+    "permutations": 7,
+    "chi_rows_lower": 268800,
+    "complete_prime_field_constraint_count": null,
+    "whole_workload": [
+      {
+        "component": "private parsing/disclosure/final sticky scope",
+        "cardinality": "one canonical witness, 42632 bits",
+        "category": "parsing/disclosure/policy",
+        "integer_arithmetic_candidate_changes": false,
+        "full_prime_field_constraint_count": null,
+        "source_coverage_only_unless_measured_separately": true
+      },
+      {
+        "component": "holder SHA3-384",
+        "cardinality": "1 hash; canonical framed private secret",
+        "category": "holder binding/hash",
+        "integer_arithmetic_candidate_changes": false,
+        "full_prime_field_constraint_count": null,
+        "source_coverage_only_unless_measured_separately": true
+      },
+      {
+        "component": "signature response decode/norm",
+        "cardinality": "5*256 coefficients; strict abs(z)<524092",
+        "category": "arithmetic/norm",
+        "integer_arithmetic_candidate_changes": true,
+        "full_prime_field_constraint_count": null,
+        "source_coverage_only_unless_measured_separately": true
+      },
+      {
+        "component": "hints",
+        "cardinality": "61 bytes; 6*256 outputs; <=55 ordered nonzero indices",
+        "category": "parsing/hints",
+        "integer_arithmetic_candidate_changes": false,
+        "full_prime_field_constraint_count": null,
+        "source_coverage_only_unless_measured_separately": true
+      },
+      {
+        "component": "mu SHAKE256",
+        "cardinality": "one hash of tr||formatted_message, output64",
+        "category": "hashing",
+        "integer_arithmetic_candidate_changes": false,
+        "full_prime_field_constraint_count": null,
+        "source_coverage_only_unless_measured_separately": true
+      },
+      {
+        "component": "challenge sampling",
+        "cardinality": "SHAKE256(48B,256B),2 permutations; 248 private candidate iterations",
+        "category": "hashing/bounded sampling",
+        "integer_arithmetic_candidate_changes": false,
+        "full_prime_field_constraint_count": null,
+        "source_coverage_only_unless_measured_separately": true
+      },
+      {
+        "component": "forward transforms",
+        "cardinality": "6*(256 entry conversions+1024 butterflies+output masks)",
+        "category": "arithmetic",
+        "integer_arithmetic_candidate_changes": true,
+        "full_prime_field_constraint_count": null,
+        "source_coverage_only_unless_measured_separately": true
+      },
+      {
+        "component": "A*z",
+        "cardinality": "7680 public-constant products plus accumulation",
+        "category": "arithmetic",
+        "integer_arithmetic_candidate_changes": true,
+        "full_prime_field_constraint_count": null,
+        "source_coverage_only_unless_measured_separately": true
+      },
+      {
+        "component": "challenge*t1 subtraction",
+        "cardinality": "1536 public-constant products plus subtraction",
+        "category": "arithmetic",
+        "integer_arithmetic_candidate_changes": true,
+        "full_prime_field_constraint_count": null,
+        "source_coverage_only_unless_measured_separately": true
+      },
+      {
+        "component": "inverse transforms",
+        "cardinality": "6*(256 entry conversions+1024 inverse butterflies+256 factor products)",
+        "category": "arithmetic",
+        "integer_arithmetic_candidate_changes": true,
+        "full_prime_field_constraint_count": null,
+        "source_coverage_only_unless_measured_separately": true
+      },
+      {
+        "component": "decomposition/UseHint/w1",
+        "cardinality": "1536 coefficients,768-byte output",
+        "category": "arithmetic/decomposition",
+        "integer_arithmetic_candidate_changes": false,
+        "full_prime_field_constraint_count": null,
+        "source_coverage_only_unless_measured_separately": true
+      },
+      {
+        "component": "challenge equality",
+        "cardinality": "SHAKE256(mu64||w1[768],48),7 permutations and exact equality",
+        "category": "hashing/challenge equality",
+        "integer_arithmetic_candidate_changes": false,
+        "full_prime_field_constraint_count": null,
+        "source_coverage_only_unless_measured_separately": true
+      },
+      {
+        "component": "same certified identifier non-revocation",
+        "cardinality": "20 SHA3-384 nodes,private siblings,direction/level/root checks",
+        "category": "Merkle/hash/same identifier",
+        "integer_arithmetic_candidate_changes": false,
+        "full_prime_field_constraint_count": null,
+        "source_coverage_only_unless_measured_separately": true
+      },
+      {
+        "component": "public preprocessing and lifecycle",
+        "cardinality": "trusted PubOK/Ppub, A public sampler30*1026B, t1/tr, canonical X; separate freshness/consumption",
+        "category": "public admission/lifecycle",
+        "integer_arithmetic_candidate_changes": false,
+        "full_prime_field_constraint_count": null,
+        "source_coverage_only_unless_measured_separately": true
+      }
+    ],
+    "padded_rows_lower": 524288,
+    "padded_variables_lower": 524288,
+    "minimum_b_for_lower_bound_not_protocol_setting": 1,
+    "constraint_degree_lower": 1048577,
+    "codeword_elements_lower": 16777216,
+    "field_element_payload_lower_bytes": 32,
+    "single_codeword_payload_lower_bytes": 536870912,
+    "four_codewords_payload_lower_bytes": 2147483648,
+    "unpadded_chi_auxiliary_values_lower_bytes": 8601600,
+    "padded_assignment_payload_lower_bytes": 16777216,
+    "three_Az_Bz_Cz_payload_lower_bytes": 50331648,
+    "chi_matrix_coefficient_payload_lower_bytes": 25804800,
+    "native_worker_limit_bytes": 1073741824,
+    "aggregate_limit_bytes": 2147483648,
+    "artifact_limit_bytes": 134217728,
+    "native_actual_memory_measurement_for_prime_profile": null,
+    "additional_memory_not_in_codeword_subtotal": [
+      "input bits, arithmetic and control witnesses",
+      "matrix indices, row/vector/map overhead, copies",
+      "mask polynomials and degree/repetition expansion",
+      "interpolation/FFT scratch",
+      "Merkle commitments, salts/openings and retained oracles"
+    ],
+    "degree_envelope_conditional_on_compatible_masking_port": true,
+    "current_native_masking_rejects_multiplicative_domain": true,
+    "masking_or_security_settings_reduced": false,
+    "resource_admitted": false,
+    "codewords_allocated": 0,
+    "new_arithmetic_gadgets_implemented": false,
+    "new_hash_generation_or_evaluation": false,
+    "outstanding_full_relation_checks": [
+      "M-01",
+      "M-02",
+      "M-03",
+      "J-01",
+      "J-02",
+      "J-03",
+      "J-04",
+      "J-05",
+      "J-06",
+      "J-07",
+      "J-08",
+      "J-09",
+      "J-10",
+      "J-11",
+      "J-12",
+      "J-13",
+      "J-14",
+      "J-15",
+      "J-16",
+      "Q-02",
+      "Q-03"
+    ],
+    "provenance_sha256": {
+      "docs/data/oct31_auth_relation_integration_run_1/cases/AR1-0054.json": "bbfe74fea00aa7dd3b1ef32ecd76c91f93b1fa905070c92b4e7240384831166a",
+      "experiments/aurora_masking_milestone_1/work/libff/libff/algebra/curves/alt_bn128/alt_bn128_fields.cpp": "5caff89f507780b81ce3fa656116ad0eb95f587d969106ceb10c9ae2f94b1c9a",
+      "experiments/aurora_masking_milestone_1/work/libiop/libiop/protocols/encoded/r1cs_rs_iop/r1cs_rs_iop.tcc": "8de792f3f3e8b68d08728b8dedd0f137a9e41ac28d263efe38ac7b8a1a142351",
+      "src/pqdid/circuits/keccak.py": "05dbfe9e5d8aea37471c325b7a9565b6f9f1742af5e2efca54029758b1b840a6",
+      "experiments/auth_relation_integration_1/mldsa_verify.py": "fce610802e3401f7ac941e093f838f6e915b70717c2473eae46fcd34a27acba7",
+      "experiments/auth_relation_integration_1/merkle.py": "d21e76c39abf3007d01b3d17b2c76644fa9b0ac1a35e0bf596ede51dd4c6933d",
+      "experiments/auth_relation_integration_1/private_relation.py": "ac86670c8d1a9a5d087712510f4236b0b290c6ed26ad31132a43d505c44cf62d",
+      "experiments/auth_relation_integration_1/relation_cases.py": "aedb2e9b2463b3665aaac994fef88b31ac4f9d8f685298dc51bb369ee450e986",
+      "src/pqdid/circuits/scalar_ring.py": "f2012a9d1202686368eb2693495bccd00af8be73ce8a00535a8ced9a190adf45",
+      "docs/data/oct31_arithmetic_r1cs_feasibility_1/contract.md": "95dab38dedb2faf0a99e703871c7d81f45f9b5be120e89a29f8aa4d070a7c1c1"
+    },
+    "work_accounting": "Source/calculation only: zero emitted gates/rows/terms/evaluations"
+  },
+  "seconds": 0.0007935520261526108,
+  "work_events": 0
+}

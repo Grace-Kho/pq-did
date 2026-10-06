@@ -1,0 +1,46 @@
+{
+  "baseline": {
+    "complete": true,
+    "distinct_cases": 48,
+    "invocations": 50
+  },
+  "harness": {
+    "distinct_cases_passed": 16
+  },
+  "integration": {
+    "distinct_passed": 11,
+    "invocations": 12,
+    "pending": [
+      "C-09"
+    ]
+  },
+  "benchmarks": {
+    "trials": 276,
+    "passed": 276
+  },
+  "native": {
+    "builds": 3,
+    "compiled": true,
+    "cases_passed_build2": 24,
+    "current_binary_revalidation_pending": true,
+    "transcript_cases": 0,
+    "approval_review_blocked": true
+  },
+  "overall_complete": false,
+  "failed_job_names_preserved": [
+    "coordinator-quality",
+    "coordinator-quality-2",
+    "h-quality",
+    "b-quality",
+    "b-quality-2",
+    "native-build-1",
+    "b-quality-3",
+    "quality-4",
+    "baseline-cases-01",
+    "baseline-cases-03",
+    "quality-7",
+    "quality-8"
+  ],
+  "cumulative_invocations": 826,
+  "builds_used": 8
+}

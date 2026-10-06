@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-03T08:24:55.524207+00:00",
+  "command": [
+    "/mnt/c/windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+    "-NoProfile",
+    "-NonInteractive",
+    "-Command",
+    "Get-CimInstance Win32_OperatingSystem | Select-Object TotalVisibleMemorySize,FreePhysicalMemory | ConvertTo-Json -Compress"
+  ],
+  "exit_code": 0,
+  "stdout": "{\"TotalVisibleMemorySize\":16389632,\"FreePhysicalMemory\":2359232}\n",
+  "stderr": "",
+  "WSL_available_bytes": 3896512512,
+  "Windows_free_bytes": 2415853568,
+  "required_each_bytes": 4294967296,
+  "passed": false,
+  "reads_this_continuation": 1,
+  "WSL_memory_bytes": {
+    "MemTotal": 8126111744,
+    "MemFree": 2991611904,
+    "MemAvailable": 3896512512,
+    "Buffers": 47095808,
+    "Cached": 635506688,
+    "SReclaimable": 427200512,
+    "Shmem": 4313088,
+    "SwapTotal": 2147483648,
+    "SwapFree": 2147483648
+  },
+  "elapsed_seconds": 0.6773259141482413,
+  "self_peak_RSS_bytes": 13406208,
+  "metric_limit": "diagnostic Python worker RSS, not Windows process-tree memory"
+}

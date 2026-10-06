@@ -1,0 +1,79 @@
+{
+  "package": "S2-AUTHORITY-ISOLATION-PILOT-1",
+  "passed": true,
+  "comparison_complete": true,
+  "resource_guard_status": "pending-outer-worker-finalisation",
+  "acceptance_rule": "Require result.json AND completed clean full-audit.json",
+  "protected_files": 8759,
+  "unchanged_protected_files": 8756,
+  "allowed_changed_files": [
+    "docs/spec_issues.md",
+    "docs/status.md",
+    "docs/traceability.md"
+  ],
+  "changed_files": [],
+  "missing_files": [],
+  "bytes_hashed": 293699354,
+  "coverage_sha256": "73df29e985aad1544583a3700a7cdbf83f2c3bfbfcde6c43720fb8a2d7c772fc",
+  "supplementary_comparison": {
+    "protected_files": 492,
+    "unchanged_protected_files": 490,
+    "allowed_changed_files": [
+      "src/pqdid/persistence/owner_ipc.py",
+      "src/pqdid/persistence/owner_service.py"
+    ],
+    "changed_files": [],
+    "missing_files": [],
+    "bytes_hashed": 4897435,
+    "coverage_sha256": "354780e1b0cf5d41abea1af2495bc4755ae8a9f82a11eaea9de05ed412954601"
+  },
+  "content_partition_union": 9251,
+  "content_partition_overlap": 0,
+  "identity_inclusive_unique_paths": 9261,
+  "baseline_identities": {
+    "docs/data/s2_revoke_state_1/preservation-before.json": "ca7230bf0529444da2da75d10b7925baac5dd98f5b33b2170cdff0c4a38f8a31",
+    "docs/data/s2_revoke_state_1/manifest.json": "518a614ad09c26c61f197f284385d570aa1d68c1e7339deae310014c71e272fc",
+    "docs/data/s2_revoke_audit_1/manifest.json": "873c961b6e1ff07e051c63347248dbe52e4afb1d77dea6dcfffa765176b93aa6",
+    "docs/data/s2_issue_enrol_1/manifest.json": "0f59f195ddac4bc038349fe22888e77023cd01274fc13224a54869d6224c54e1",
+    "docs/data/s2_did_state_1/manifest.json": "67448e5e8da06fa11bea117879931edd3e6504c6a0ec316bdc36ff4a05c54bdb",
+    "docs/data/s2_lifecycle_review_1/manifest.json": "8c32fb285d3a0a9ce457095a1a4687fadb9bb0a346f6c41a54d8ecbbdd4455a9",
+    "docs/data/s2_recovery_admission_1/manifest.json": "0a091c0169e679b19ef6c4a5230967730e5891943b49ce33201474605ce9e9ec",
+    "docs/data/s2_recovery_authority_design_1/manifest.json": "a3ded38ddd88d995c237e27089800398d72d33dfb2e702b34c68e98040552f5e",
+    "docs/data/s2_durable_authority_pilot_1/manifest.json": "49d48388f76939ef8b0a74e14eefef2f434a217a2cbbe0630190284d420cfe56",
+    "docs/data/s2_authority_owner_boundary_1/manifest.json": "310f61101ea3c4b8ccf221ece071de7f23d2796e62f910152d3de72e07650abb",
+    "docs/data/s2_authority_isolation_plan_1/manifest.json": "c81853d60f250593ce08986347a181b81517da9eb336901e6151b39228582481"
+  },
+  "name_inventory": {
+    "passed": true,
+    "count": 974,
+    "unexpected": [],
+    "missing": []
+  },
+  "only_authorised_pre_existing_source_changes": [
+    "src/pqdid/persistence/owner_ipc.py",
+    "src/pqdid/persistence/owner_service.py"
+  ],
+  "manuscript_historical_evidence_and_ledger_preserved": true,
+  "unique_focused_prerequisite_cases": 28,
+  "focused_test_invocations": 48,
+  "existing_owner_regressions_rerun": 28,
+  "actual_identity_tests_run": 0,
+  "same_UID_owner_regressions_passed": 28,
+  "reused_lifecycle_regressions": 28,
+  "reused_durable_focused_cases": 38,
+  "reused_durable_SIGKILL_cases": 18,
+  "static_validation_passed": true,
+  "deployment_activated": false,
+  "local_links_checked": 340,
+  "JSON_files_parsed": 58,
+  "preceding_checks_seconds": 33.279958697996335,
+  "package_bytes_before_report": 907547,
+  "temporary_storage_bytes_at_completion": 0,
+  "new_proofs": 0,
+  "new_zkvm_executions": 0,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1,
+  "CPU_proving_paused": true,
+  "production_restart_approved": false,
+  "scope": "Implemented/staged pilot; unprivileged validation only; actual identities pending approval"
+}

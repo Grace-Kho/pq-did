@@ -1,0 +1,1160 @@
+{
+  "recorded_at_utc": "2026-09-18T13:19:20.656915+00:00",
+  "host_snapshot": {
+    "memory_bytes": {
+      "MemTotal": 8126111744,
+      "MemFree": 4199821312,
+      "MemAvailable": 5004357632,
+      "Buffers": 68370432,
+      "Cached": 851460096,
+      "SwapCached": 0,
+      "Active": 354304000,
+      "Inactive": 2865287168,
+      "Active(anon)": 4358144,
+      "Inactive(anon)": 2371567616,
+      "Active(file)": 349945856,
+      "Inactive(file)": 493719552,
+      "Unevictable": 0,
+      "Mlocked": 0,
+      "SwapTotal": 2147483648,
+      "SwapFree": 2147483648,
+      "Dirty": 618496,
+      "Writeback": 0,
+      "AnonPages": 2300108800,
+      "Mapped": 491630592,
+      "Shmem": 76120064,
+      "KReclaimable": 161583104,
+      "Slab": 297861120,
+      "SReclaimable": 161583104,
+      "SUnreclaim": 136278016,
+      "KernelStack": 10485760,
+      "PageTables": 52760576,
+      "SecPageTables": 0,
+      "NFS_Unstable": 0,
+      "Bounce": 0,
+      "WritebackTmp": 0,
+      "CommitLimit": 6210539520,
+      "Committed_AS": 5510533120,
+      "VmallocTotal": 35184372087808,
+      "VmallocUsed": 40304640,
+      "VmallocChunk": 0,
+      "Percpu": 12484608,
+      "HardwareCorrupted": 0,
+      "AnonHugePages": 0,
+      "ShmemHugePages": 0,
+      "ShmemPmdMapped": 0,
+      "FileHugePages": 10485760,
+      "FilePmdMapped": 0,
+      "Unaccepted": 0,
+      "Balloon": 0,
+      "Hugepagesize": 2097152,
+      "Hugetlb": 0,
+      "DirectMap4k": 45088768,
+      "DirectMap2M": 6197084160,
+      "DirectMap1G": 10737418240
+    },
+    "disk_bytes": {
+      "total": 1081101176832,
+      "used": 4526067712,
+      "free": 1021582753792
+    },
+    "wsl_kernel": "6.18.33.2-microsoft-standard-WSL2"
+  },
+  "launch_mem_available_bytes": 5203152896,
+  "profile": {
+    "authority": "User approval, 17 September 2026",
+    "max_gates": 2000000,
+    "max_output_bytes": 41943040,
+    "max_inputs": 65536,
+    "generation_seconds": 10.0,
+    "evaluation_seconds": 5.0,
+    "workers": 1,
+    "address_space_bytes": 268435456,
+    "rss_ceiling_bytes": 134217728,
+    "rss_poll_seconds": 0.01,
+    "case_wall_seconds": 30.0,
+    "case_log_bytes": 2097152,
+    "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+  },
+  "workers": 1,
+  "sequential_process_isolation": true,
+  "results": [
+    {
+      "case": "pytest:tests/unit/test_feasibility_review.py",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "outcome": "passed",
+      "pytest_returncode": 0,
+      "reports": [
+        {
+          "nodeid": "tests/unit/test_feasibility_review.py::test_pilot_mutations_and_independent_framing[valid]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.001956873995368369
+        },
+        {
+          "nodeid": "tests/unit/test_feasibility_review.py::test_pilot_mutations_and_independent_framing[attribute-length]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0014900480018695816
+        },
+        {
+          "nodeid": "tests/unit/test_feasibility_review.py::test_pilot_mutations_and_independent_framing[attribute-padding]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0015347979933721945
+        },
+        {
+          "nodeid": "tests/unit/test_feasibility_review.py::test_pilot_mutations_and_independent_framing[identifier-range]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0014734849974047393
+        },
+        {
+          "nodeid": "tests/unit/test_feasibility_review.py::test_pilot_mutations_and_independent_framing[disclosure-mismatch]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0020527579908957705
+        },
+        {
+          "nodeid": "tests/unit/test_feasibility_review.py::test_pilot_mutations_and_independent_framing[holder-mutation]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.001973222999367863
+        },
+        {
+          "nodeid": "tests/unit/test_feasibility_review.py::test_pilot_mutations_and_independent_framing[hidden-attribute-mutation]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.00184121000347659
+        },
+        {
+          "nodeid": "tests/unit/test_feasibility_review.py::test_pilot_mutations_and_independent_framing[identifier-mutation]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0017799619963625446
+        },
+        {
+          "nodeid": "tests/unit/test_feasibility_review.py::test_pilot_mutations_and_independent_framing[signature-mutation]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0017496020009275526
+        },
+        {
+          "nodeid": "tests/unit/test_feasibility_review.py::test_attribution_preserves_trace_and_counts_every_gate_once",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.6394661480007926
+        },
+        {
+          "nodeid": "tests/unit/test_feasibility_review.py::test_private_upstream_rejection_does_not_make_hint_step_inputs_public",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.45612233800056856
+        }
+      ],
+      "exceptions": [],
+      "child_seconds": 1.229459077003412,
+      "peak_rss_bytes": 54554624,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 51703808,
+        "supervised_seconds": 1.28636888199253,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 99
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "pytest",
+        "--effective-profile",
+        "/tmp/pqdid-signature-r5tpvb92/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-r5tpvb92/0.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-r5tpvb92/0.beat",
+        "--tests",
+        "tests/unit/test_feasibility_review.py"
+      ],
+      "log": "...........                                                              [100%]\n11 passed in 1.15s\n"
+    },
+    {
+      "case": "pytest:tests/unit/test_signature_inputs.py",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "outcome": "passed",
+      "pytest_returncode": 0,
+      "reports": [
+        {
+          "nodeid": "tests/unit/test_signature_inputs.py::test_public_key_decode_uses_expected_instance_and_public_bits[alpha]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010997265999321826
+        },
+        {
+          "nodeid": "tests/unit/test_signature_inputs.py::test_public_key_decode_uses_expected_instance_and_public_bits[beta]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.009671167994383723
+        },
+        {
+          "nodeid": "tests/unit/test_signature_inputs.py::test_public_key_full_shake_gadget_folds_to_reference_hash",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.8484186970017618
+        },
+        {
+          "nodeid": "tests/unit/test_signature_inputs.py::test_exact_certified_bytes_and_hash_fragment_chain",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 3.4542122059938265
+        },
+        {
+          "nodeid": "tests/unit/test_signature_inputs.py::test_message_dependency_and_context_separation[holder]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.6834373610035982
+        },
+        {
+          "nodeid": "tests/unit/test_signature_inputs.py::test_message_dependency_and_context_separation[hidden_attributes]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.6850937069975771
+        },
+        {
+          "nodeid": "tests/unit/test_signature_inputs.py::test_message_dependency_and_context_separation[identifier]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.6804345760028809
+        },
+        {
+          "nodeid": "tests/unit/test_signature_inputs.py::test_message_dependency_and_context_separation[presentation]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 1.20115716199507
+        },
+        {
+          "nodeid": "tests/unit/test_signature_inputs.py::test_composed_parser_response_boundary_message_failure_is_sticky",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 1.6476934469974367
+        },
+        {
+          "nodeid": "tests/unit/test_signature_inputs.py::test_message_modes_and_identity_do_not_depend_on_private_values",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 1.8529960290034069
+        },
+        {
+          "nodeid": "tests/unit/test_signature_inputs.py::test_full_compositions_are_resource_failures_not_prepared_results[message]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 3.4158563389937626
+        },
+        {
+          "nodeid": "tests/unit/test_signature_inputs.py::test_full_compositions_are_resource_failures_not_prepared_results[full-preparation]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 2.6854315730015514
+        },
+        {
+          "nodeid": "tests/unit/test_signature_inputs.py::test_composition_routes_exact_signature_to_decoder",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.5648996670061024
+        },
+        {
+          "nodeid": "tests/unit/test_signature_inputs.py::test_public_mismatch_rejects_before_full_construction",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.001675804000115022
+        }
+      ],
+      "exceptions": [],
+      "child_seconds": 17.882927109996672,
+      "peak_rss_bytes": 113180672,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 102428672,
+        "supervised_seconds": 17.935859280987643,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 100
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "pytest",
+        "--effective-profile",
+        "/tmp/pqdid-signature-r5tpvb92/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-r5tpvb92/1.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-r5tpvb92/1.beat",
+        "--tests",
+        "tests/unit/test_signature_inputs.py"
+      ],
+      "log": "..............                                                           [100%]\n14 passed in 17.78s\n"
+    },
+    {
+      "case": "pytest:tests/unit/test_signature_circuit.py",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "outcome": "passed",
+      "pytest_returncode": 0,
+      "reports": [
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_genuine_relation_responses_and_fixed_witness[alpha-42-old-002c]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.74529342999449
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_genuine_relation_responses_and_fixed_witness[alpha-43-new-0034]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.7443596079974668
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_genuine_relation_responses_and_fixed_witness[beta-42-new-002c]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.7402474009868456
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.5937924549944
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.5883023890055483
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.5888755369960563
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-3]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.5876292769971769
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-4]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.5803599339997163
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-5]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.5849165029940195
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-6]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.5964907550078351
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-7]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.5814593279937981
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[native-8]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.5916977320011938
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[alpha-42]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.5879165399965132
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[alpha-43]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.5785917219909607
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_existing_native_signature_response_decode[beta-42]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.5800316759996349
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_all_encoding_endpoints_and_cross_byte_packing_are_not_norm_rejections",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.5874585350102279
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_strict_norm_is_separate_from_decode[0-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 2.3472812330001034
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_strict_norm_is_separate_from_decode[524091-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 2.365550043003168
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_strict_norm_is_separate_from_decode[-524091-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 2.3099831650033593
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_strict_norm_is_separate_from_decode[524092-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 2.321206018998055
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_strict_norm_is_separate_from_decode[-524092-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 2.3178064529929543
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_strict_norm_is_separate_from_decode[524288-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 2.312400411989074
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_strict_norm_is_separate_from_decode[-524287-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 2.3195063560124254
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_decodable_challenge_mutation_is_not_signature_verification",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.9281872360006673
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_hint_boundaries_all_rows_and_capacity[ends0-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.005227015004493296
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_hint_boundaries_all_rows_and_capacity[ends1-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.004902539003523998
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_hint_boundaries_all_rows_and_capacity[ends2-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.005256579999695532
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_hint_boundaries_all_rows_and_capacity[ends3-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.004860597997321747
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_hint_boundaries_all_rows_and_capacity[ends4-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.004581910994602367
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_hint_boundaries_all_rows_and_capacity[ends5-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.005089687998406589
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_hint_boundaries_all_rows_and_capacity[ends6-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.004665130007197149
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_encoding_semantics_via_independently_executed_steps[alpha-42-old-002c]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 1.2416153420053888
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_encoding_semantics_via_independently_executed_steps[beta-42-old-002c]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 1.8653405660006683
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_encoding_semantics_via_independently_executed_steps[rows2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.22286454000277445
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_encoding_semantics_via_independently_executed_steps[rows3]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.3302400120010134
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_encoding_semantics_via_independently_executed_steps[rows4]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 2.2303909660113277
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_encoding_semantics_via_independently_executed_steps[rows5]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 2.2498874989978503
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions0-1-0-2-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03704837900295388
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions1-1-0-2-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.035633305000374094
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions2-1-0-2-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03751382100745104
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions3-1-1-2-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.035340656992048025
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions4-0-0-1-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03664266099804081
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions5-0-0-1-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.037130188997252844
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions6-1-0-1-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03717310000502039
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions7-61-61-62-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.036723469995195046
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_ordering_first_position_inactive_and_invalid_reads[positions8--1--1-1-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.03657115100941155
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[0-None-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 1.0769267739960924
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[55-None-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 1.082072605000576
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[1-0-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 1.0832691100076772
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[55-54-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 1.081857441997272
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[0-0-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 1.08279191100155
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[0-54-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 1.0785312430089107
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[1-1-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 1.0814927379979054
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_unused_byte_check_uses_private_counter[54-54-0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 1.0841445950063644
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_first_step_true_branch_order_and_private_scans",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.10064688899728935
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_complete_decoders_stop_at_authorised_gate_limit[decode_hints-61]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 2.4487062499974854
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_complete_decoders_stop_at_authorised_gate_limit[decode_signature-3309]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 2.5249730320065282
+        },
+        {
+          "nodeid": "tests/unit/test_signature_circuit.py::test_byte_width_and_foreign_wire_errors_are_api_errors",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0002659390011103824
+        }
+      ],
+      "exceptions": [],
+      "child_seconds": 49.61790931799624,
+      "peak_rss_bytes": 120811520,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 115736576,
+        "supervised_seconds": 49.67507347300125,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 100
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "pytest",
+        "--effective-profile",
+        "/tmp/pqdid-signature-r5tpvb92/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-r5tpvb92/2.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-r5tpvb92/2.beat",
+        "--tests",
+        "tests/unit/test_signature_circuit.py"
+      ],
+      "log": "..........................................................               [100%]\n58 passed in 49.52s\n"
+    },
+    {
+      "case": "pytest:tests/unit/test_bc1_control.py",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "outcome": "passed",
+      "pytest_returncode": 0,
+      "reports": [
+        {
+          "nodeid": "tests/unit/test_bc1_control.py::test_scanned_access_boundaries_and_inactive_faults[False]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0036601390020223334
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_control.py::test_scanned_access_boundaries_and_inactive_faults[True]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0034650710003916174
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_control.py::test_snapshot_writes_and_sequential_assignments",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.00428422300319653
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_control.py::test_both_branches_true_first_and_only_active_overflow_rejects",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.002477234011166729
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_control.py::test_public_inactive_branch_is_still_constructed_with_private_operations",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.00010520601063035429
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_control.py::test_fixed_iteration_mask_and_sticky_rejection",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0007911260036053136
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_control.py::test_branch_merge_orientation",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.00020169198978692293
+        }
+      ],
+      "exceptions": [],
+      "child_seconds": 0.1103621919901343,
+      "peak_rss_bytes": 43114496,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 42532864,
+        "supervised_seconds": 0.1650704119965667,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 98
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "pytest",
+        "--effective-profile",
+        "/tmp/pqdid-signature-r5tpvb92/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-r5tpvb92/3.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-r5tpvb92/3.beat",
+        "--tests",
+        "tests/unit/test_bc1_control.py"
+      ],
+      "log": ".......                                                                  [100%]\n7 passed in 0.03s\n"
+    },
+    {
+      "case": "pytest:tests/unit/test_bc1_accounting.py",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "outcome": "passed",
+      "pytest_returncode": 0,
+      "reports": [
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_equivalent_frozen_formulas_without_float_or_buffer[0]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 5.3854004363529384e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_equivalent_frozen_formulas_without_float_or_buffer[1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 4.378100857138634e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_equivalent_frozen_formulas_without_float_or_buffer[2]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 3.598000330384821e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_equivalent_frozen_formulas_without_float_or_buffer[3]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 4.946000990457833e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_equivalent_frozen_formulas_without_float_or_buffer[4]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 3.657699562609196e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_equivalent_frozen_formulas_without_float_or_buffer[5]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 3.4810000215657055e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_equivalent_frozen_formulas_without_float_or_buffer[7]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 3.5756995202973485e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_equivalent_frozen_formulas_without_float_or_buffer[8]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 3.3760006772354245e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_equivalent_frozen_formulas_without_float_or_buffer[9]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 4.224599979352206e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_equivalent_frozen_formulas_without_float_or_buffer[1000000]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 3.463600296527147e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_equivalent_frozen_formulas_without_float_or_buffer[1000000000000000000000000000000]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 4.82660107081756e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_equivalent_frozen_formulas_without_float_or_buffer[10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 3.724500129465014e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_preserved_authentication_arithmetic_vectors",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.00026617900584824383
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_encoding_admission_is_not_resource_feasibility",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 3.780800034292042e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_invalid_counts[-1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 5.189499643165618e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_invalid_counts[True]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 4.309799987822771e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_invalid_counts[1.5]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 4.1894003516063094e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_invalid_counts[1]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 4.12239896832034e-05
+        },
+        {
+          "nodeid": "tests/unit/test_bc1_accounting.py::test_invalid_counts[None]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 3.829899651464075e-05
+        }
+      ],
+      "exceptions": [],
+      "child_seconds": 0.09801448900543619,
+      "peak_rss_bytes": 42721280,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 42422272,
+        "supervised_seconds": 0.15458147799654398,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 99
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "pytest",
+        "--effective-profile",
+        "/tmp/pqdid-signature-r5tpvb92/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-r5tpvb92/4.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-r5tpvb92/4.beat",
+        "--tests",
+        "tests/unit/test_bc1_accounting.py"
+      ],
+      "log": "...................                                                      [100%]\n19 passed in 0.02s\n"
+    },
+    {
+      "case": "pytest:tests/unit/test_count_preflight.py",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "outcome": "passed",
+      "pytest_returncode": 0,
+      "reports": [
+        {
+          "nodeid": "tests/unit/test_count_preflight.py::test_count_identity_no_full_trace_or_graph",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.002542768997955136
+        },
+        {
+          "nodeid": "tests/unit/test_count_preflight.py::test_logical_header_gate_footer_limit_is_enforced_without_storage[55]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.000142920995131135
+        },
+        {
+          "nodeid": "tests/unit/test_count_preflight.py::test_logical_header_gate_footer_limit_is_enforced_without_storage[72]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.00011379701027181
+        },
+        {
+          "nodeid": "tests/unit/test_count_preflight.py::test_logical_header_gate_footer_limit_is_enforced_without_storage[105]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 8.053200144786388e-05
+        },
+        {
+          "nodeid": "tests/unit/test_count_preflight.py::test_exact_logical_limit_and_gate_limit",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.00012104200141038746
+        },
+        {
+          "nodeid": "tests/unit/test_count_preflight.py::test_count_profile_retains_stricter_memory_and_ordinary_limits",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.00031011800456326455
+        }
+      ],
+      "exceptions": [],
+      "child_seconds": 0.10369385799276643,
+      "peak_rss_bytes": 42991616,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 42704896,
+        "supervised_seconds": 0.1647834920004243,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 98
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "pytest",
+        "--effective-profile",
+        "/tmp/pqdid-signature-r5tpvb92/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-r5tpvb92/5.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-r5tpvb92/5.beat",
+        "--tests",
+        "tests/unit/test_count_preflight.py"
+      ],
+      "log": "......                                                                   [100%]\n6 passed in 0.02s\n"
+    },
+    {
+      "case": "pytest:tests/unit/test_validation_support.py",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "outcome": "passed",
+      "pytest_returncode": 0,
+      "reports": [
+        {
+          "nodeid": "tests/unit/test_validation_support.py::test_supervisor_stops_child_and_reports_limit[rss]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.0029611670033773407
+        },
+        {
+          "nodeid": "tests/unit/test_validation_support.py::test_supervisor_stops_child_and_reports_limit[time]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.02285345399286598
+        },
+        {
+          "nodeid": "tests/unit/test_validation_support.py::test_supervisor_stops_child_and_reports_limit[log]",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.009825611996348016
+        },
+        {
+          "nodeid": "tests/unit/test_validation_support.py::test_supervisor_preserves_successful_exit",
+          "phase": "call",
+          "outcome": "passed",
+          "seconds": 0.010675854005967267
+        }
+      ],
+      "exceptions": [],
+      "child_seconds": 0.1433700360066723,
+      "peak_rss_bytes": 42774528,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 42590208,
+        "supervised_seconds": 0.2059344430017518,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 98
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "pytest",
+        "--effective-profile",
+        "/tmp/pqdid-signature-r5tpvb92/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-r5tpvb92/6.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-r5tpvb92/6.beat",
+        "--tests",
+        "tests/unit/test_validation_support.py"
+      ],
+      "log": "....                                                                     [100%]\n4 passed in 0.06s\n"
+    }
+  ],
+  "source_sha256": {
+    "src/pqdid/circuits/__init__.py": "9098a9c19787bcd155bac6d7d724d3c354c4c404fc99565cd5a72ae26a4c8d8f",
+    "src/pqdid/circuits/accounting.py": "23610bf5a75ba435f582d7e80a1d1e2118f07caabe6659b96a4ae4380b3c0690",
+    "src/pqdid/circuits/auth_parsing.py": "15bb95af9c2cb70eab3c4de8406b50cd25f67cf823163875372668989c26be2b",
+    "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+    "src/pqdid/circuits/division.py": "03c3c7abcaaa267450930707b9a2c9534143cc95c470635367cc4a9c66dba8ba",
+    "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+    "src/pqdid/circuits/enrolment.py": "d8b5134bdcb7fd9c1bd70cffc6214e96d971e3fe01bc595e5437718cd603e2f5",
+    "src/pqdid/circuits/enrolment_accounting.py": "8e479c7d3f221d86450135cf356f54b310e95794884026eeb9663985d78c4b3b",
+    "src/pqdid/circuits/keccak.py": "05dbfe9e5d8aea37471c325b7a9565b6f9f1742af5e2efca54029758b1b840a6",
+    "src/pqdid/circuits/parsing.py": "2f4b3d24d056eb9b26424ee185b1b5df9847f50fdc1db326c8d313685236cef9",
+    "src/pqdid/circuits/scalar_ring.py": "f2012a9d1202686368eb2693495bccd00af8be73ce8a00535a8ced9a190adf45",
+    "src/pqdid/circuits/signature.py": "5fb391650765018230c4f9bc54370ddf28c1c2ce7fd92b9bef93113aeb9c6133",
+    "src/pqdid/circuits/signature_inputs.py": "67f3d3ace81385a93ef9c113c6b4cbd58a00d028fb53cebfaed145055d612762",
+    "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec",
+    "scripts/validate_signature_inputs.py": "76115b7124d1704567c75b30b9d038ac4292af9b299648167d854944804730e9",
+    "scripts/measure_signature_inputs.py": "8e14eec948e7742e33b0e876bbaac9a7c558f23b096c81aac1c75c6225704469",
+    "configs/validation_profiles.json": "6935af3715d8e28e47a0acaceabb82248cd9f27d1d60797faf5008037cfd917f"
+  },
+  "scope": "signature inputs; SPEC-004 agreed; full BC-1 unverified; no auth proof/count"
+}

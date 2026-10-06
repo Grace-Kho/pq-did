@@ -1,0 +1,257 @@
+{
+  "record_format": "pqdid-analysis-only-security-profile",
+  "version": 1,
+  "package": "S2-CONCRETE-SECURITY-ASSESSMENT-1",
+  "assessment_date": "2026-09-24",
+  "active_configuration_changed": false,
+  "authority": {
+    "task": "PQ_DID_Security_Assessment_Codex_Task.md",
+    "task_sha256": "ffc641501306a2e05d80b287baa199b8826c9c5401da697fe5c5f9d75295364a",
+    "manuscript": "docs/manuscript/PQ_DID__Implementation.pdf",
+    "manuscript_sha256": "d17ca0a20b319b88e959467cae92d91d619973f84384710ecbf960a3b850aeca",
+    "sections": [
+      "II",
+      "III",
+      "IV",
+      "V",
+      "VI",
+      "VII",
+      "VIII"
+    ],
+    "clarifications": [
+      "SPEC-001",
+      "SPEC-002",
+      "SPEC-003",
+      "SPEC-004"
+    ],
+    "suite_manifest": "configs/suite.json",
+    "content_source_revision": "b2d0b57afe4b10c1ee6f41fc32ac031da96e332f79a98c6040aaebe1fd07c3a3",
+    "source_inventory": "docs/data/s2_concrete_security_assessment_1/source-revision.json",
+    "git_revision": null
+  },
+  "manuscript_construction": {
+    "suite": "PQ-DID-MITH-1",
+    "lambda": 128,
+    "lambda_is_overall_security_claim": false,
+    "signature": {
+      "name": "ML-DSA-65",
+      "standard": "FIPS 204, August 2024",
+      "nist_category": 3,
+      "ring": "Z_8380417[X]/(X^256+1)",
+      "n": 256,
+      "k": 6,
+      "l": 5,
+      "q": 8380417,
+      "eta": 4,
+      "d": 13,
+      "tau": 49,
+      "beta": 196,
+      "gamma1": 524288,
+      "gamma2": 261888,
+      "omega": 55,
+      "z_infinity_norm_strict_upper": 524092,
+      "public_key_bytes": 1952,
+      "expanded_secret_key_bytes": 4032,
+      "signature_bytes": 3309,
+      "challenge_seed_bytes": 48,
+      "key_seed_bytes": 32,
+      "hedging_randomness_bytes": 32,
+      "tr_bytes": 64,
+      "mu_bytes": 64,
+      "secret_distribution": "s1 in R^5 and s2 in R^6; ideal independent uniform coefficients in [-4,4], rejection-sampled from SHAKE256",
+      "matrix_distribution": "6 by 5 polynomials, ideal uniform coefficients mod q in NTT form, expanded from rho with SHAKE128",
+      "mask_distribution": "5 polynomials with coefficients in [-gamma1+1,gamma1], via ExpandMask",
+      "challenge_distribution": "49 nonzero +/-1 coefficients, 207 zero coefficients, SampleInBall from 48-byte c-tilde",
+      "roles": {
+        "credential": "PQ-DID/credential/v1",
+        "state": "PQ-DID/state/v1",
+        "update": "PQ-DID/update/v1",
+        "did_record": "PQ-DID/did-record/v1",
+        "did_read": "PQ-DID/did-read/v1",
+        "control": "PQ-DID/control/v1",
+        "request": "PQ-DID/request/v1",
+        "current": "PQ-DID/current/v1",
+        "revreq": "PQ-DID/revreq/v1"
+      },
+      "source": "src/pqdid/bounded_mldsa.py; native pinned ML-DSA-65 params.h; implementation_spec R-009/032/033"
+    },
+    "hashes": {
+      "binding_tree_record": {
+        "name": "SHA3-384",
+        "output_bits": 384,
+        "rate_bits": 832,
+        "capacity_bits": 768,
+        "rounds": 24
+      },
+      "outer_proof": {
+        "name": "SHAKE256",
+        "output_bits": 1024,
+        "rate_bits": 1088,
+        "capacity_bits": 512,
+        "rounds": 24,
+        "ideal_QROM_output_bits": 1024,
+        "quantitative_instantiation_gap": "unresolved"
+      },
+      "source": "src/pqdid/binding.py; merkle.py; circuits/keccak.py; implementation_spec R-010"
+    },
+    "holder_secret_bits": 256,
+    "did_salt_bits": 256,
+    "namespace_bits": 256,
+    "read_and_request_nonce_bits": 256,
+    "merkle": {
+      "depth": 20,
+      "identifier_capacity": 1048576,
+      "identifier_encoding_bytes": 4,
+      "path_bytes": 960,
+      "leaf_has_identifier": false,
+      "node_level_and_order_domain_separated": true
+    },
+    "encoding": {
+      "attribute_vector_bytes": 1024,
+      "length_prefix_bytes": 4,
+      "canonical": true,
+      "integer_order": "big-endian",
+      "certificate_message": "enc_cred(suite,E(meta),E(binding),I2OSP(rid,4))",
+      "binding": "(SHA3-384(enc_holder(suite,E(meta),xH)),E_schema(m))"
+    },
+    "proof": {
+      "name": "BC-1 raw-view Boolean MPC-in-the-head",
+      "parties": 3,
+      "repetitions": 480,
+      "commitments": 1440,
+      "opened_views": 960,
+      "view_salt_bits": 512,
+      "nonce_bits": 512,
+      "challenge": "OS2IP(SHAKE256_1024(enc_challenge(...))) mod 3^480; base-3 digits",
+      "tapes": "independent raw uniform g bits per party/repetition",
+      "enrol_witness_bits": 256,
+      "auth_witness_bits": 42632,
+      "circuit_identity": "independent CGen(kind,X), BC-1 with SPEC-003/004; complete equivalence unverified",
+      "encoding": "nonce || A || Z; 64+480*(515+2*ceil((d+2g)/8)) bytes"
+    },
+    "caps": {
+      "RejNTTPoly_bytes": 1026,
+      "RejBoundedPoly_bytes": 512,
+      "SampleInBall_total_bytes": 256,
+      "signing_attempts": 1024,
+      "pre_release": "bounded verify every role signature; no retry after exhaustion"
+    }
+  },
+  "implemented": {
+    "ordinary_backend": "liboqs 0.16.0 and liboqs-python 0.16.0, pinned mldsa-native; reference fixture/primitive adapter",
+    "native_commit": "5a1a854b0dc9f2141bdc771c555ee60c37950183",
+    "native_signing_attempt_cap": 13106,
+    "bounded_verification": "Implemented separately in Python; all 30 matrix samplers and SampleInBall obey byte caps; no fallback",
+    "bounded_keygen": "not implemented",
+    "bounded_production_signing": "not implemented; service interfaces default unsupported",
+    "pre_release_checks": "Reference manager/issuer/DID/verifier service paths use bounded verification before commit/release; full production signer integration unimplemented",
+    "holder_secret_generation": "binding API validates supplied 32-byte secret; length alone does not establish entropy or secure generation",
+    "nonces": "SystemNonces uses secrets.token_bytes(32); injected deterministic sources are test-only; process RNG/VM cloning and erasure assumptions remain",
+    "BC1_proofs": "not implemented end to end; foundations and partial signature/message circuitry are evidence only",
+    "auth_relation": "relations.auth_private reconstructs one credential and reuses its attributes/rid across CredValid, non-revocation and disclosure; auth adds PubOK and Ppub",
+    "service_proof_adapter": "Unsupported by default; test token/reference evaluators are explicitly not cryptographic receipts",
+    "deployment_isolation": "safely stopped unactivated; original 22 identity cases pending; authorisation and 250.22-second allowance preserved"
+  },
+  "illustrative_workload_only": {
+    "T_A_max": "2^80; elementary-cost unit not fixed by manuscript",
+    "Q_outer_quantum_query_rows": [
+      "2^64",
+      "2^80"
+    ],
+    "N_proofs_max": "2^32",
+    "system_keys_plus_certificate_reduction_max": "2^20",
+    "read_nonce_count_max": "2^32",
+    "sum_C_across_distinct_reduction_simulations_max": "2^64",
+    "nK": null,
+    "nS": null,
+    "nV": null,
+    "nA": null,
+    "per_key_signing_query_budgets": null,
+    "classical_protocol_query_budgets": null,
+    "classical_memory_and_depth": null,
+    "quantum_memory_and_depth": null,
+    "deployed_lifetime_workload": null,
+    "benchmark_counts_are_lifetime_counts": false
+  },
+  "target": {
+    "agreed_precise_overall_target": null,
+    "proposed_not_adopted": "A property-specific resource/advantage contract (property, adversary and corruption model, lifetime workload, classical/quantum gate count, depth, memory/QRAM, target count, oracle/signing budgets, maximum advantage). For known attacks report cost at success >=1/2 in that same model. Numerical thresholds require a separate target decision; no universal floor or overall quantum level is adopted.",
+    "overall_classical_bits_supported": null,
+    "overall_quantum_bits_supported": null
+  },
+  "symbolic_terms": [
+    "Adv_qEUF-CMA_ML-DSA-65(B_k) at actual reduction time/signing budgets",
+    "Adv_qCR_SHA3-384(B_bind/B_tree/B_record)",
+    "Delta_tail for actual adaptive capped execution",
+    "outer SHAKE256 quantitative instantiation loss",
+    "complete BC-1 implementation/equivalence and oracle-history composition obligations",
+    "service ordering/time/atomicity assumptions",
+    "alternative backend quantum knowledge/privacy composition"
+  ],
+  "experimental_backend": {
+    "profile": "RISC Zero diagnostic enrolment, separate from PQ-DID-MITH-1",
+    "sdk": "3.0.6",
+    "sdk_commit": "1cc70cf05033a79ebc90f07c679cb4bd1cd301b9",
+    "zkp_crate": "3.0.5",
+    "rv32im_circuit": "4.0.5",
+    "recursion_circuit": "4.0.5",
+    "mode": "Succinct STARK, Poseidon2; 3 segment proofs, 3 lifts, 2 joins; no Groth16 wrapper",
+    "image_id": "66e4c8e0c468edaea2bbef55ac470fab92de3c59e8c0f352905b8a741bac160c",
+    "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+    "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56",
+    "final_join_control_id": "7a8f24092c34ed3eb81b3d0a0b796c588c615d3488ef9e61c21dbd1e4b83ea6e",
+    "receipt_sha256": "2c711beaa6144968aac66421eba10dff1f883133f4d5ec3e1256e3b68e529cc5",
+    "journal_bytes": 15380,
+    "journal_scope": "diagnostic r0-result, experimental profile/operation/full public enrolment statement; reveals approved attributes, binding and rid to enrolment participants",
+    "hash_parameters": {
+      "field": 2013265921,
+      "extension_degree": 4,
+      "poseidon2_width": 24,
+      "rate_cells": 16,
+      "capacity_cells": 8,
+      "digest_cells": 8,
+      "full_rounds": 8,
+      "partial_rounds": 21,
+      "sbox_exponent": 7,
+      "FRI_queries": 50,
+      "inverse_rate": 4,
+      "FRI_fold": 16,
+      "FRI_min_degree": 256
+    },
+    "classification": "unresolved for complete PQ-DID quantum knowledge and privacy; historical receipt establishes only the pinned experimental verification result"
+  },
+  "future_checkpoints": [
+    {
+      "trigger": "Current Stage 2-3",
+      "work": "Initial profile, sources, conditional calculations and gaps; this assessment"
+    },
+    {
+      "trigger": "Stage 2 bounded keygen/signing/release",
+      "work": "Randomness, all caps, exhaustion, pre-release checks, workload totals and Delta_tail; DEP-001/002"
+    },
+    {
+      "trigger": "Stage 3 before proof-profile adoption/freeze",
+      "work": "Exact identity, proof/recursion mode, soundness/knowledge/ZK/quantum assumptions and revised calculations"
+    },
+    {
+      "trigger": "Stages 4-5 complete PQ-DAA/KYC integration",
+      "work": "Joint credential witness, disclosures/rid, public leakage, freshness/replay/revocation, side channels and deployment"
+    },
+    {
+      "trigger": "Stages 6-8 comparisons/benchmarks",
+      "work": "Comparator profiles and workloads, multi-key/target and lifetime nonce/cap aggregation; refresh changed assumptions"
+    },
+    {
+      "trigger": "Stage 9 reproduction/manuscript claims",
+      "work": "Final revision/workload/current primary evidence reconciliation; omit unsupported overall levels"
+    }
+  ],
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1,
+    "CPU_proving_paused": true
+  },
+  "new_proofs": 0,
+  "new_zkvm_executions": 0,
+  "new_estimator_runs": 0
+}

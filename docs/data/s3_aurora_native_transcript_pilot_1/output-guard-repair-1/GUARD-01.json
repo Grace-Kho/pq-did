@@ -1,0 +1,11 @@
+{
+  "outcome": {
+    "evidence": 0,
+    "artifacts": 1387120,
+    "scratch": 0,
+    "roles": {
+      "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/CMakeFiles/exp2_native.dir/exp2_native.cpp.o": "compiled-binary"
+    }
+  },
+  "expected_failure_fixture": false
+}

@@ -1,0 +1,8 @@
+{
+  "package": "OCT31-JOINT-HASH-MASKING-DECISION-1",
+  "authority": "Direct user authorisation in this conversation, 29 September 2026",
+  "scope": "Source/literature analysis, bounded calculations, documentation and necessary checks; one construction decision",
+  "no_builds_circuits_installs_activation_proofs": true,
+  "accounting": "Charge existing implementation balance as in preceding decision package; no analysis/isolation transfer or reset",
+  "anticipated_invocations": 1
+}

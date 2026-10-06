@@ -1,0 +1,24 @@
+{
+  "case": "R-1-4",
+  "phase": "setup; issuer certification transaction before complete head encoding and before replacement SQL writes",
+  "expected": false,
+  "exception": "Unavailable: payload-cap",
+  "source": "experiments/kyc_milestone_1/baseline/storage.py:IssuerJournal.transition",
+  "storage_image_analysis_only": true,
+  "retained_issuer_phases": {
+    "CERTIFIED": 3,
+    "SIGNING": 1
+  },
+  "retained_session_payload_lengths": [
+    18517,
+    18517,
+    7498,
+    18517
+  ],
+  "retained_sequence": 16,
+  "retained_generation": 1,
+  "meaning": "Failed credential remains SIGNING, not CERTIFIED/retrievable. Permanent manager allocation is retained. No successful catch-up timing was measured.",
+  "worker_memory_or_disk_guard_breach": false,
+  "bounded_application_storage_rejection": true,
+  "future_decision": "If larger durable histories are required, authorise separately versioned incremental authenticated issuer/manager storage with unchanged per-message cap and fresh recovery/fencing/atomicity validation; preserve v1. Raising only the nominal session limit cannot fix the complete-encoding cap."
+}

@@ -1,0 +1,4 @@
+{
+  "sha256": "f4d44a3e76ae05be7b0a5b655be6a242c461e0824a4878181222109ed12be2a7",
+  "provenance": "Direct host-integer polynomial/Vandermonde oracle; OpenSSL CLI shares AES primitive only; frozen before candidate execution"
+}

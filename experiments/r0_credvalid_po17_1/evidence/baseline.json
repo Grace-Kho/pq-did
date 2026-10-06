@@ -1,0 +1,62 @@
+{
+  "package": "R0-CREDVALID-PO17-1",
+  "corrected_guest": {
+    "label": "corrected-plain",
+    "image": "a7b77747d5ebff0e520d17fc188afef06dfb91690062cb96f6b3cff78e93ae94",
+    "program": "artifacts/corrected-plain.bin",
+    "program_sha256": "668dd886b66772593aea42e53d967d61f2e1a8c1e750add482acc0ed09963a09",
+    "elf": "artifacts/corrected-plain.elf",
+    "elf_sha256": "d5ef3682a8956ba03b710cdee14f02dbf967ec05e935c3d73fcc582aac19aaf2",
+    "features": "none",
+    "source_sha256": {
+      "Cargo.lock": "f75302dce44982f4b14a93a32533c2bfd5884743ec457d7f452a76a2855cb117",
+      "methods/guest/Cargo.lock": "eb0f82cd18d41519e335b53b97525fd78c57edfffb6be08e3d108afdfcceb950",
+      "methods/guest/Cargo.toml": "5daf738cf53bec5d9614e3ab98631e0e6227f9c251aa38404450d7c7132e04c8",
+      "methods/guest/src/lib.rs": "6df9aeaa7a1676a33b831861d35211bd5d37fa9c2be1f8ec3c801c62f9376d98",
+      "relation/Cargo.toml": "e5b877e87aa3d65b75d49e7fc0a4242beb652d15eba4a60549a1e1c4b58ddae6",
+      "relation/src/diagnostic.rs": "d5dc6b65b3a30d616ad33952fc4fb8e1c2bdfd93fc7086dd6701cd299493f230",
+      "relation/src/lib.rs": "7cf5300cd02db4cd95accabb2bbbbe3e34c803ba968930654b43ff9cedef229b",
+      "relation/src/mldsa.rs": "7d066f5d0eff97e363b8c8fbdd7bb31b0f85681cca32c9359dedacc6499a2731"
+    }
+  },
+  "source_inventory_revision": "fd5e917d158f2bf74e0825b0e5415f910e466d8cd8acd95ee5e4257da6144084",
+  "EXEC24_baseline_reference": "../r0_credvalid_exec24_1/evidence/baseline.json",
+  "EXEC24_baseline_sha256": "1aae38ca46224dd89594f3a2b4b0ce3089a8a03aafe215ea58e4147fef156475",
+  "enrolment_baseline_reference": "../r0_enrol_po17_1/evidence/baseline.json",
+  "enrolment_baseline_sha256": "367fab105e04a3a76dc9a1fb92773613390c54108ac3d3ed39bf2fc58d6cde5b",
+  "native_validation_reused": {
+    "tests": 6,
+    "comparisons": 35,
+    "code_and_inputs_unchanged": true
+  },
+  "fixture": {
+    "name": "cred-alpha-42",
+    "operation": "cred-valid",
+    "public": "fixtures/public/cred-alpha-42.bin",
+    "private": "fixtures/private/cred-alpha-42.bin",
+    "reference_expected": true,
+    "public_SHA256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+    "private_fixture_SHA256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+    "synthetic_only": true,
+    "public_sha256": "63e0cbdedab8ba7a9e56ee7e3295cf6f1fbc2b31be1e35dcfd84db9554679231",
+    "private_sha256": "8d670ab5ae1339ba162a0b124d4657a67043d567eb1d3bf5bafe7a7f8f4b8ead",
+    "expected_journal": "fixtures/public/cred-alpha-42.journal.bin",
+    "journal_sha256": "f9fa7cce56b47699ff3ec198b2a2b1e2aa46b36f5a5f9d4d9839f4622d8579c2",
+    "journal_bytes": 5147
+  },
+  "prior_enrolment": {
+    "verified_succinct": true,
+    "tamper_rejections": 8,
+    "segments_previous": 10,
+    "segments_po17": 3,
+    "pipeline_seconds": 343.898929933,
+    "cgroup_memory_peak_bytes": 1535385600,
+    "receipt_bytes": 238485,
+    "receipt_sha256": "2c711beaa6144968aac66421eba10dff1f883133f4d5ec3e1256e3b68e529cc5"
+  },
+  "proof_budget": {
+    "used": 2,
+    "remaining": 1
+  },
+  "manuscript_sha256": "d17ca0a20b319b88e959467cae92d91d619973f84384710ecbf960a3b850aeca"
+}

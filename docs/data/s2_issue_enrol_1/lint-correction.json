@@ -1,0 +1,25 @@
+{
+  "package": "S2-ISSUE-ENROL-1",
+  "failure": "Ruff E501: long audit JSON result key",
+  "retained_records": [
+    "final_checks/quality.json",
+    "final_checks/quality.log",
+    "final_checks/quality.service.json",
+    "final_checks/STOP.json"
+  ],
+  "correction": "Shorten the new result key to original_content_preserved_except_authorised_changes; no comparison or acceptance change.",
+  "successful_tests_reused": {
+    "focused": 64,
+    "regression": 30
+  },
+  "resource_limit_hit": false,
+  "fresh_namespace": "release_checks",
+  "operations": [
+    "quality",
+    "format",
+    "full-audit"
+  ],
+  "shared_budgets": "All three ledgers count toward 300 s; whole package shares 10 MiB and the root worker lock; identical memory/CPU/time/storage/network enforcement.",
+  "full_audits_before_correction": 0,
+  "no_failed_record_overwritten": true
+}

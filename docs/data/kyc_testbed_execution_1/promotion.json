@@ -1,0 +1,8 @@
+{
+  "source": "experiments/kyc_testbed_execution_1/wallet.py",
+  "destination": "src/pqdid/holder_wallet.py",
+  "sha256": "7871bf8040adfe27d08e246db664104c6b2498b00de0eec7b39721279eef4eb8",
+  "method": "Exact byte-for-byte promotion after W-01..W-24 passed; existing source modules unchanged",
+  "affected_check": "W-02 through promoted module, counted additional invocation",
+  "boundary": "Reference-only local holder storage; no activation/production custody claim"
+}

@@ -1,0 +1,28 @@
+{
+  "phase": "final-readback formatting correction",
+  "failed_job": "final-readback",
+  "corrected_job": "final-readback-final",
+  "reason": "Existing qualification split by newline; required literal added in report appendix",
+  "behaviour_changed": false,
+  "full_audit_repeated": false,
+  "prior_manifest_sha256": "30d14edfdbbed5ab6a7c3e2872203d8552199a51b8da26fcd7bd7676db346ef8",
+  "prior_inventory_sha256": "69da730f1b9f2e3f8277c1df7b4e29a21299208b3b3fc25aa169f7dd37ed90ac",
+  "exact_new_output_paths": [
+    "docs/data/kyc_manager_incremental_storage_1/readback-correction/before-manifest.json",
+    "docs/data/kyc_manager_incremental_storage_1/readback-correction/before-new-inventory.json",
+    "docs/data/kyc_manager_incremental_storage_1/jobs/final-readback-corrected.json",
+    "docs/data/kyc_manager_incremental_storage_1/jobs/final-readback-corrected.input.json",
+    "docs/data/kyc_manager_incremental_storage_1/jobs/final-readback-corrected.worker.json",
+    "docs/data/kyc_manager_incremental_storage_1/jobs/final-readback-corrected.log"
+  ],
+  "second_readback_failure": "Dependent new-inventory seal was not updated after exact output-path amendment",
+  "second_exact_new_output_paths": [
+    "docs/data/kyc_manager_incremental_storage_1/readback-correction/before-second-manifest.json",
+    "docs/data/kyc_manager_incremental_storage_1/readback-correction/before-second-new-inventory.json",
+    "docs/data/kyc_manager_incremental_storage_1/readback-correction/before-second-result.json",
+    "docs/data/kyc_manager_incremental_storage_1/jobs/final-readback-final.json",
+    "docs/data/kyc_manager_incremental_storage_1/jobs/final-readback-final.input.json",
+    "docs/data/kyc_manager_incremental_storage_1/jobs/final-readback-final.worker.json",
+    "docs/data/kyc_manager_incremental_storage_1/jobs/final-readback-final.log"
+  ]
+}

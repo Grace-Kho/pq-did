@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "only_slice": "pqdid-kyc-incremental-1.slice",
+  "before": "LoadState=loaded\nActiveState=active\nControlGroup=/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-kyc.slice/pqdid-kyc-incremental.slice/pqdid-kyc-incremental-1.slice\n",
+  "after": "LoadState=loaded\nActiveState=inactive\nControlGroup=\n",
+  "units": {
+    "static-1": {
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "ControlGroup": ""
+    },
+    "static-2": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "preflight": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "storage-cases": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "integration-cases": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "static-3": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "history-cases": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "scaling-R-1-4": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "scaling-R-2-1": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "scaling-R-2-4": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "prepare": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "full-audit": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    },
+    "final-readback": {
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "ControlGroup": ""
+    }
+  },
+  "surviving_descendants": [],
+  "temporary_files": 0,
+  "pilot_activation": false
+}

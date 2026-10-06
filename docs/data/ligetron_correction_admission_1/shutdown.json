@@ -1,0 +1,105 @@
+{
+  "all_workloads_terminated": true,
+  "query_exit_code": 0,
+  "units": [
+    {
+      "Id": "pqdid-ligetron-correction-1-source-admission.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    {
+      "Id": "pqdid-ligetron-correction-1-dependency-admission.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "ControlGroup": ""
+    },
+    {
+      "Id": "pqdid-ligetron-correction-1-dependency-readback.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    {
+      "Id": "pqdid-ligetron-correction-1-static.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "ControlGroup": ""
+    },
+    {
+      "Id": "pqdid-ligetron-correction-1-static-2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    {
+      "Id": "pqdid-ligetron-correction-1-expectations.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    {
+      "Id": "pqdid-ligetron-correction-1-preflight.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    {
+      "Id": "pqdid-ligetron-correction-1-build-1.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    {
+      "Id": "pqdid-ligetron-correction-1-native-cases.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    {
+      "Id": "pqdid-ligetron-correction-1-static-final.service",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "ControlGroup": ""
+    },
+    {
+      "Id": "pqdid-ligetron-correction-1-static-final-2.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    {
+      "Id": "pqdid-ligetron-correction-1-prepare.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    {
+      "Id": "pqdid-ligetron-correction-1-full-audit.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    },
+    {
+      "Id": "pqdid-ligetron-correction-1-readback.service",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "ControlGroup": ""
+    }
+  ],
+  "scope": "Only package transient user units; no unrelated service action"
+}

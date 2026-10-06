@@ -1,0 +1,14 @@
+{
+  "status": "retained source subset copied for independent source-only work; no new checkout or dependency acquisition",
+  "prior_manifest_sha256": "b96f32fc49bd45ef28b713e4b36c5e349075e31250cc2fbd66834eab80fc1806",
+  "prior_closure_sha256": "fb762d6cdb6b6031b8d392bf5e14e5792b87c973c46bb17f6149d46af632c785",
+  "base": {
+    "commit": "4b1cdef1bfdf4497fb3e38170db4541fba3f6c12",
+    "root_tree": "95984ef209bf37a53624d27a36905e41886dacfc"
+  },
+  "overlay_order": [
+    "043ee96fbae51b9416b3435be7e7ad27cfc076ddb7790e14f14be6ea09c0dc3c",
+    "31f1515e498182664f51e92d91925416c0063d5b117494948e4a52dc6fcc5723"
+  ],
+  "original_files_unchanged": true
+}

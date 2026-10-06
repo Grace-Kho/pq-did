@@ -1,0 +1,4265 @@
+{
+  "recorded_at_utc": "2026-09-18T03:39:45.900321+00:00",
+  "host_snapshot": {
+    "memory_bytes": {
+      "MemTotal": 8126111744,
+      "MemFree": 4046757888,
+      "MemAvailable": 5022986240,
+      "Buffers": 38440960,
+      "Cached": 1049501696,
+      "SwapCached": 0,
+      "Active": 251133952,
+      "Inactive": 3121197056,
+      "Active(anon)": 2998272,
+      "Inactive(anon)": 2354597888,
+      "Active(file)": 248135680,
+      "Inactive(file)": 766599168,
+      "Unevictable": 0,
+      "Mlocked": 0,
+      "SwapTotal": 2147483648,
+      "SwapFree": 2147483648,
+      "Dirty": 921600,
+      "Writeback": 0,
+      "AnonPages": 2284539904,
+      "Mapped": 491364352,
+      "Shmem": 73261056,
+      "KReclaimable": 162205696,
+      "Slab": 298778624,
+      "SReclaimable": 162205696,
+      "SUnreclaim": 136572928,
+      "KernelStack": 10452992,
+      "PageTables": 52453376,
+      "SecPageTables": 0,
+      "NFS_Unstable": 0,
+      "Bounce": 0,
+      "WritebackTmp": 0,
+      "CommitLimit": 6210539520,
+      "Committed_AS": 5454446592,
+      "VmallocTotal": 35184372087808,
+      "VmallocUsed": 40353792,
+      "VmallocChunk": 0,
+      "Percpu": 12484608,
+      "HardwareCorrupted": 0,
+      "AnonHugePages": 0,
+      "ShmemHugePages": 0,
+      "ShmemPmdMapped": 0,
+      "FileHugePages": 132120576,
+      "FilePmdMapped": 0,
+      "Unaccepted": 0,
+      "Balloon": 0,
+      "Hugepagesize": 2097152,
+      "Hugetlb": 0,
+      "DirectMap4k": 45088768,
+      "DirectMap2M": 6197084160,
+      "DirectMap1G": 10737418240
+    },
+    "disk_bytes": {
+      "total": 1081101176832,
+      "used": 4520067072,
+      "free": 1021588754432
+    }
+  },
+  "launch_mem_available_bytes": 5032435712,
+  "profile": {
+    "authority": "User approval, 17 September 2026",
+    "max_gates": 2000000,
+    "max_output_bytes": 41943040,
+    "max_inputs": 65536,
+    "generation_seconds": 10.0,
+    "evaluation_seconds": 5.0,
+    "workers": 1,
+    "address_space_bytes": 268435456,
+    "rss_ceiling_bytes": 134217728,
+    "rss_poll_seconds": 0.01,
+    "case_wall_seconds": 30.0,
+    "case_log_bytes": 2097152,
+    "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+  },
+  "workers": 1,
+  "sequential_process_isolation": false,
+  "results": [
+    {
+      "case": "responses/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "responses",
+      "mode": "materialised",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {
+        "through_responses": {
+          "xor": 195840,
+          "and_": 112640,
+          "not_": 28161,
+          "inputs": 42632,
+          "gates": 336641,
+          "wires": 379275
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 195840,
+        "and_": 112641,
+        "not_": 28162,
+        "inputs": 42632
+      },
+      "gates": 336643,
+      "serialised_bytes": 5723020,
+      "stored_trace_bytes": 5723020,
+      "fingerprint": "3321d63f80a9c6004695d6918f9e331fdb470a32a2d019bedc6379ac0d68dcb8",
+      "generation_seconds": 0.5070627399982186,
+      "folded_operations": [
+        57600,
+        57600,
+        57600
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.08113848000357393,
+        "wire_storage_bytes": 379334
+      },
+      "observed_output_counts": {
+        "words": 1280,
+        "byte_strings": 1,
+        "flags": 1
+      },
+      "observation_seconds": 0.026589671993860975,
+      "probe_seconds": 0.6198903059994336,
+      "preparation_and_reporting_seconds": 0.005099414003780112,
+      "child_seconds": 0.6423105220019352,
+      "peak_rss_bytes": 50880512,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 49852416,
+        "supervised_seconds": 0.6900115149910562,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "responses/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/0.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/0.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "responses/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "responses",
+      "mode": "count",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {
+        "through_responses": {
+          "xor": 195840,
+          "and_": 112640,
+          "not_": 28161,
+          "inputs": 42632,
+          "gates": 336641,
+          "wires": 379275
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 195840,
+        "and_": 112641,
+        "not_": 28162,
+        "inputs": 42632
+      },
+      "gates": 336643,
+      "serialised_bytes": 5723020,
+      "stored_trace_bytes": 0,
+      "fingerprint": "3321d63f80a9c6004695d6918f9e331fdb470a32a2d019bedc6379ac0d68dcb8",
+      "generation_seconds": 0.4766503120044945,
+      "folded_operations": [
+        57600,
+        57600,
+        57600
+      ],
+      "probe_seconds": 0.48104067199165,
+      "preparation_and_reporting_seconds": 0.004390359987155534,
+      "child_seconds": 0.5018666739924811,
+      "peak_rss_bytes": 38928384,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 39026688,
+        "supervised_seconds": 0.545462777998182,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "responses/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/1.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/1.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "responses/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "responses",
+      "mode": "stream",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {
+        "through_responses": {
+          "xor": 195840,
+          "and_": 112640,
+          "not_": 28161,
+          "inputs": 42632,
+          "gates": 336641,
+          "wires": 379275
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 195840,
+        "and_": 112641,
+        "not_": 28162,
+        "inputs": 42632
+      },
+      "gates": 336643,
+      "serialised_bytes": 5723020,
+      "stored_trace_bytes": 5723020,
+      "fingerprint": "3321d63f80a9c6004695d6918f9e331fdb470a32a2d019bedc6379ac0d68dcb8",
+      "generation_seconds": 0.5072708249936113,
+      "folded_operations": [
+        57600,
+        57600,
+        57600
+      ],
+      "probe_seconds": 0.5151598890079185,
+      "preparation_and_reporting_seconds": 0.007889064014307223,
+      "child_seconds": 0.537175120000029,
+      "peak_rss_bytes": 39075840,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 39104512,
+        "supervised_seconds": 0.5758101499959594,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "responses/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/2.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/2.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "hint-boundaries/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "hint-boundaries",
+      "mode": "materialised",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 1692,
+        "and_": 906,
+        "not_": 106,
+        "inputs": 42632
+      },
+      "gates": 2704,
+      "serialised_bytes": 46057,
+      "stored_trace_bytes": 46057,
+      "fingerprint": "df95c283c2e35fe55777b88ef671326fe6887977aa7e0a05a7019aed99e56542",
+      "generation_seconds": 0.013918728989665397,
+      "folded_operations": [
+        684,
+        685,
+        693
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.004792695996002294,
+        "wire_storage_bytes": 45395
+      },
+      "observed_output_counts": {
+        "words": 1,
+        "byte_strings": 0,
+        "flags": 0
+      },
+      "observation_seconds": 0.0021867960022063926,
+      "probe_seconds": 0.025390506998519413,
+      "preparation_and_reporting_seconds": 0.00449228601064533,
+      "child_seconds": 0.04503462399588898,
+      "peak_rss_bytes": 30195712,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 29585408,
+        "supervised_seconds": 0.08255562098929659,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "hint-boundaries/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/3.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/3.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "hint-boundaries/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "hint-boundaries",
+      "mode": "count",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 1692,
+        "and_": 906,
+        "not_": 106,
+        "inputs": 42632
+      },
+      "gates": 2704,
+      "serialised_bytes": 46057,
+      "stored_trace_bytes": 0,
+      "fingerprint": "df95c283c2e35fe55777b88ef671326fe6887977aa7e0a05a7019aed99e56542",
+      "generation_seconds": 0.014148718997603282,
+      "folded_operations": [
+        684,
+        685,
+        693
+      ],
+      "probe_seconds": 0.01904347700474318,
+      "preparation_and_reporting_seconds": 0.004894758007139899,
+      "child_seconds": 0.03888824199384544,
+      "peak_rss_bytes": 30060544,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 29110272,
+        "supervised_seconds": 0.08239202901313547,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "hint-boundaries/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/4.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/4.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "hint-boundaries/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "hint-boundaries",
+      "mode": "stream",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 1692,
+        "and_": 906,
+        "not_": 106,
+        "inputs": 42632
+      },
+      "gates": 2704,
+      "serialised_bytes": 46057,
+      "stored_trace_bytes": 46057,
+      "fingerprint": "df95c283c2e35fe55777b88ef671326fe6887977aa7e0a05a7019aed99e56542",
+      "generation_seconds": 0.013767764990916476,
+      "folded_operations": [
+        684,
+        685,
+        693
+      ],
+      "probe_seconds": 0.017830053009674884,
+      "preparation_and_reporting_seconds": 0.004062288018758409,
+      "child_seconds": 0.03576374499243684,
+      "peak_rss_bytes": 30113792,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 30248960,
+        "supervised_seconds": 0.0720962429913925,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "hint-boundaries/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/5.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/5.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "hint-two-steps/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "hint-two-steps",
+      "mode": "materialised",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 73936,
+        "and_": 82941,
+        "not_": 15949,
+        "inputs": 42632
+      },
+      "gates": 172826,
+      "serialised_bytes": 2938131,
+      "stored_trace_bytes": 2938131,
+      "fingerprint": "780a081afe104cf25bafc88125d2f30e6e39505127f0019c00c5553425b8dda0",
+      "generation_seconds": 0.2622488839988364,
+      "folded_operations": [
+        58182,
+        12573,
+        41049
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.04248423299577553,
+        "wire_storage_bytes": 215517
+      },
+      "observed_output_counts": {
+        "words": 257,
+        "byte_strings": 0,
+        "flags": 0
+      },
+      "observation_seconds": 0.012880160007625818,
+      "probe_seconds": 0.3221939129871316,
+      "preparation_and_reporting_seconds": 0.004580635984893888,
+      "child_seconds": 0.3418177499988815,
+      "peak_rss_bytes": 39915520,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 37056512,
+        "supervised_seconds": 0.38087485000141896,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "hint-two-steps/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/6.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/6.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "hint-two-steps/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "hint-two-steps",
+      "mode": "count",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 73936,
+        "and_": 82941,
+        "not_": 15949,
+        "inputs": 42632
+      },
+      "gates": 172826,
+      "serialised_bytes": 2938131,
+      "stored_trace_bytes": 0,
+      "fingerprint": "780a081afe104cf25bafc88125d2f30e6e39505127f0019c00c5553425b8dda0",
+      "generation_seconds": 0.24748969900247175,
+      "folded_operations": [
+        58182,
+        12573,
+        41049
+      ],
+      "probe_seconds": 0.2522108900011517,
+      "preparation_and_reporting_seconds": 0.004721190998679958,
+      "child_seconds": 0.2702447240008041,
+      "peak_rss_bytes": 33312768,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 33447936,
+        "supervised_seconds": 0.3087429540028097,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "hint-two-steps/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/7.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/7.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "hint-two-steps/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "hint-two-steps",
+      "mode": "stream",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 73936,
+        "and_": 82941,
+        "not_": 15949,
+        "inputs": 42632
+      },
+      "gates": 172826,
+      "serialised_bytes": 2938131,
+      "stored_trace_bytes": 2938131,
+      "fingerprint": "780a081afe104cf25bafc88125d2f30e6e39505127f0019c00c5553425b8dda0",
+      "generation_seconds": 0.2611171199969249,
+      "folded_operations": [
+        58182,
+        12573,
+        41049
+      ],
+      "probe_seconds": 0.2670973700005561,
+      "preparation_and_reporting_seconds": 0.005980250003631227,
+      "child_seconds": 0.28517398399708327,
+      "peak_rss_bytes": 33546240,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 33693696,
+        "supervised_seconds": 0.32831567399261985,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "hint-two-steps/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/8.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/8.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "hint-padding/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "hint-padding",
+      "mode": "materialised",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 301115,
+        "and_": 267076,
+        "not_": 212074,
+        "inputs": 42632
+      },
+      "gates": 780265,
+      "serialised_bytes": 13264594,
+      "stored_trace_bytes": 13264594,
+      "fingerprint": "c1b94b458f7246b96720589254cd82d36d73e67cb5fadfab49f7bff5e53e8b3f",
+      "generation_seconds": 0.9313223850040231,
+      "folded_operations": [
+        3530,
+        115,
+        6992
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.17852866600151174,
+        "wire_storage_bytes": 822956
+      },
+      "observed_output_counts": {
+        "words": 0,
+        "byte_strings": 0,
+        "flags": 0
+      },
+      "observation_seconds": 0.04778545699082315,
+      "probe_seconds": 1.1623352269962197,
+      "preparation_and_reporting_seconds": 0.00469871899986174,
+      "child_seconds": 1.1821658020053292,
+      "peak_rss_bytes": 57663488,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 44584960,
+        "supervised_seconds": 1.219626182995853,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "hint-padding/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/9.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/9.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "hint-padding/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "hint-padding",
+      "mode": "count",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 301115,
+        "and_": 267076,
+        "not_": 212074,
+        "inputs": 42632
+      },
+      "gates": 780265,
+      "serialised_bytes": 13264594,
+      "stored_trace_bytes": 0,
+      "fingerprint": "c1b94b458f7246b96720589254cd82d36d73e67cb5fadfab49f7bff5e53e8b3f",
+      "generation_seconds": 0.8528129740006989,
+      "folded_operations": [
+        3530,
+        115,
+        6992
+      ],
+      "probe_seconds": 0.8569062610040419,
+      "preparation_and_reporting_seconds": 0.0040932870033429936,
+      "child_seconds": 0.8745589350000955,
+      "peak_rss_bytes": 30081024,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 30298112,
+        "supervised_seconds": 0.9121437029971275,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "hint-padding/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/10.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/10.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "hint-padding/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "hint-padding",
+      "mode": "stream",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 301115,
+        "and_": 267076,
+        "not_": 212074,
+        "inputs": 42632
+      },
+      "gates": 780265,
+      "serialised_bytes": 13264594,
+      "stored_trace_bytes": 13264594,
+      "fingerprint": "c1b94b458f7246b96720589254cd82d36d73e67cb5fadfab49f7bff5e53e8b3f",
+      "generation_seconds": 0.9340000639931532,
+      "folded_operations": [
+        3530,
+        115,
+        6992
+      ],
+      "probe_seconds": 0.9452337279944913,
+      "preparation_and_reporting_seconds": 0.011233664001338184,
+      "child_seconds": 0.9629722489917185,
+      "peak_rss_bytes": 30183424,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 30359552,
+        "supervised_seconds": 1.0061313939950196,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "hint-padding/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/11.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/11.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "response-norm/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "response-norm",
+      "mode": "materialised",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {
+        "through_responses": {
+          "xor": 195840,
+          "and_": 112640,
+          "not_": 28161,
+          "inputs": 42632,
+          "gates": 336641,
+          "wires": 379275
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 867842,
+        "and_": 537603,
+        "not_": 115204,
+        "inputs": 42632
+      },
+      "gates": 1520649,
+      "serialised_bytes": 25851122,
+      "stored_trace_bytes": 25851122,
+      "fingerprint": "7b303cf1484bdb453955894fae987aa2f32690e1e92ae1480e59aed409773aff",
+      "generation_seconds": 1.916612636006903,
+      "folded_operations": [
+        57600,
+        57600,
+        140800
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.3380062009964604,
+        "wire_storage_bytes": 1563340
+      },
+      "observed_output_counts": {
+        "words": 1280,
+        "byte_strings": 1,
+        "flags": 3
+      },
+      "observation_seconds": 0.09870893599872943,
+      "probe_seconds": 2.358411774999695,
+      "preparation_and_reporting_seconds": 0.005084001997602172,
+      "child_seconds": 2.37989278799796,
+      "peak_rss_bytes": 91295744,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 79282176,
+        "supervised_seconds": 2.4232756099954713,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "response-norm/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/12.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/12.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "response-norm/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "response-norm",
+      "mode": "count",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {
+        "through_responses": {
+          "xor": 195840,
+          "and_": 112640,
+          "not_": 28161,
+          "inputs": 42632,
+          "gates": 336641,
+          "wires": 379275
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 867842,
+        "and_": 537603,
+        "not_": 115204,
+        "inputs": 42632
+      },
+      "gates": 1520649,
+      "serialised_bytes": 25851122,
+      "stored_trace_bytes": 0,
+      "fingerprint": "7b303cf1484bdb453955894fae987aa2f32690e1e92ae1480e59aed409773aff",
+      "generation_seconds": 1.7760609999968437,
+      "folded_operations": [
+        57600,
+        57600,
+        140800
+      ],
+      "probe_seconds": 1.7807385259948205,
+      "preparation_and_reporting_seconds": 0.0046775259979767725,
+      "child_seconds": 1.8011454380030045,
+      "peak_rss_bytes": 39022592,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 39112704,
+        "supervised_seconds": 1.8470178979914635,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "response-norm/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/13.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/13.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "response-norm/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "response-norm",
+      "mode": "stream",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {
+        "through_responses": {
+          "xor": 195840,
+          "and_": 112640,
+          "not_": 28161,
+          "inputs": 42632,
+          "gates": 336641,
+          "wires": 379275
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 867842,
+        "and_": 537603,
+        "not_": 115204,
+        "inputs": 42632
+      },
+      "gates": 1520649,
+      "serialised_bytes": 25851122,
+      "stored_trace_bytes": 25851122,
+      "fingerprint": "7b303cf1484bdb453955894fae987aa2f32690e1e92ae1480e59aed409773aff",
+      "generation_seconds": 1.9477829590032343,
+      "folded_operations": [
+        57600,
+        57600,
+        140800
+      ],
+      "probe_seconds": 1.9676754139945842,
+      "preparation_and_reporting_seconds": 0.01989245499134995,
+      "child_seconds": 1.9869698239926947,
+      "peak_rss_bytes": 38973440,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 39223296,
+        "supervised_seconds": 2.0320806380041176,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "response-norm/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/14.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/14.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "public-key/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "public-key",
+      "mode": "materialised",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "entirely public expected-pp issuer key",
+      "counts": {
+        "xor": 0,
+        "and_": 0,
+        "not_": 0,
+        "inputs": 0
+      },
+      "gates": 0,
+      "serialised_bytes": 89,
+      "stored_trace_bytes": 89,
+      "fingerprint": "59f9a484723b6f689d1387a58b54e271796c0e4600464f21d2344b67191bb571",
+      "generation_seconds": 0.006165846993098967,
+      "folded_operations": [
+        0,
+        1,
+        1
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 1.4304008800536394e-05,
+        "wire_storage_bytes": 59
+      },
+      "observed_output_counts": {
+        "words": 1536,
+        "byte_strings": 1,
+        "flags": 1
+      },
+      "observation_seconds": 0.004222306000883691,
+      "probe_seconds": 0.013959408010123298,
+      "preparation_and_reporting_seconds": 0.0035569510073401034,
+      "child_seconds": 0.031686579997767694,
+      "peak_rss_bytes": 27090944,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 27312128,
+        "supervised_seconds": 0.0724807249935111,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "public-key/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/15.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/15.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "public-key/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "public-key",
+      "mode": "count",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "entirely public expected-pp issuer key",
+      "counts": {
+        "xor": 0,
+        "and_": 0,
+        "not_": 0,
+        "inputs": 0
+      },
+      "gates": 0,
+      "serialised_bytes": 89,
+      "stored_trace_bytes": 0,
+      "fingerprint": "59f9a484723b6f689d1387a58b54e271796c0e4600464f21d2344b67191bb571",
+      "generation_seconds": 0.005425323004601523,
+      "folded_operations": [
+        0,
+        1,
+        1
+      ],
+      "probe_seconds": 0.009168240008875728,
+      "preparation_and_reporting_seconds": 0.0037429170042742044,
+      "child_seconds": 0.027857327004312538,
+      "peak_rss_bytes": 26263552,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 26587136,
+        "supervised_seconds": 0.07254399100202136,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "public-key/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/16.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/16.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "public-key/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "public-key",
+      "mode": "stream",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "entirely public expected-pp issuer key",
+      "counts": {
+        "xor": 0,
+        "and_": 0,
+        "not_": 0,
+        "inputs": 0
+      },
+      "gates": 0,
+      "serialised_bytes": 89,
+      "stored_trace_bytes": 89,
+      "fingerprint": "59f9a484723b6f689d1387a58b54e271796c0e4600464f21d2344b67191bb571",
+      "generation_seconds": 0.005283688005874865,
+      "folded_operations": [
+        0,
+        1,
+        1
+      ],
+      "probe_seconds": 0.008919129992136732,
+      "preparation_and_reporting_seconds": 0.003635441986261867,
+      "child_seconds": 0.026864724000915885,
+      "peak_rss_bytes": 26734592,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 26996736,
+        "supervised_seconds": 0.07210974699410144,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "public-key/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/17.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/17.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "public-key-hash/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "public-key-hash",
+      "mode": "materialised",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "entirely public expected-pp issuer key",
+      "counts": {
+        "xor": 0,
+        "and_": 0,
+        "not_": 0,
+        "inputs": 0
+      },
+      "gates": 0,
+      "serialised_bytes": 89,
+      "stored_trace_bytes": 89,
+      "fingerprint": "59f9a484723b6f689d1387a58b54e271796c0e4600464f21d2344b67191bb571",
+      "generation_seconds": 0.8416291699977592,
+      "folded_operations": [
+        2351040,
+        576001,
+        1
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 1.5187004464678466e-05,
+        "wire_storage_bytes": 59
+      },
+      "observed_output_counts": {
+        "words": 0,
+        "byte_strings": 1,
+        "flags": 0
+      },
+      "observation_seconds": 8.750600682105869e-05,
+      "probe_seconds": 0.8454216710088076,
+      "preparation_and_reporting_seconds": 0.0036898079997627065,
+      "child_seconds": 0.8632955240027513,
+      "peak_rss_bytes": 25800704,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 25948160,
+        "supervised_seconds": 0.9018086599971866,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "public-key-hash/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/18.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/18.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "public-key-hash/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "public-key-hash",
+      "mode": "count",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "entirely public expected-pp issuer key",
+      "counts": {
+        "xor": 0,
+        "and_": 0,
+        "not_": 0,
+        "inputs": 0
+      },
+      "gates": 0,
+      "serialised_bytes": 89,
+      "stored_trace_bytes": 0,
+      "fingerprint": "59f9a484723b6f689d1387a58b54e271796c0e4600464f21d2344b67191bb571",
+      "generation_seconds": 0.8430666680069407,
+      "folded_operations": [
+        2351040,
+        576001,
+        1
+      ],
+      "probe_seconds": 0.8472230549959932,
+      "preparation_and_reporting_seconds": 0.0041563869890524074,
+      "child_seconds": 0.86541141399357,
+      "peak_rss_bytes": 25759744,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 25899008,
+        "supervised_seconds": 0.9026302819984267,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "public-key-hash/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/19.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/19.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "public-key-hash/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "public-key-hash",
+      "mode": "stream",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "entirely public expected-pp issuer key",
+      "counts": {
+        "xor": 0,
+        "and_": 0,
+        "not_": 0,
+        "inputs": 0
+      },
+      "gates": 0,
+      "serialised_bytes": 89,
+      "stored_trace_bytes": 89,
+      "fingerprint": "59f9a484723b6f689d1387a58b54e271796c0e4600464f21d2344b67191bb571",
+      "generation_seconds": 0.8580177769908914,
+      "folded_operations": [
+        2351040,
+        576001,
+        1
+      ],
+      "probe_seconds": 0.8619318159908289,
+      "preparation_and_reporting_seconds": 0.003914038999937475,
+      "child_seconds": 0.8799448979989393,
+      "peak_rss_bytes": 25944064,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 25911296,
+        "supervised_seconds": 0.9233738210023148,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "public-key-hash/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/20.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/20.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "certified-message/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "certified-message",
+      "mode": "materialised",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {
+        "parsing_and_disclosure": {
+          "xor": 45920,
+          "and_": 29708,
+          "not_": 12584,
+          "inputs": 42632,
+          "gates": 88212,
+          "wires": 130846
+        },
+        "through_certified_message": {
+          "xor": 201056,
+          "and_": 68108,
+          "not_": 12585,
+          "inputs": 42632,
+          "gates": 281749,
+          "wires": 324383
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 201056,
+        "and_": 68109,
+        "not_": 12586,
+        "inputs": 42632
+      },
+      "gates": 281751,
+      "serialised_bytes": 4789856,
+      "stored_trace_bytes": 4789856,
+      "fingerprint": "3c607d53cc47801760be7a0ab88a52806d68c7c983c6f6e7f80c7cb09fe2c1e1",
+      "generation_seconds": 0.5830242950032698,
+      "folded_operations": [
+        641066,
+        165834,
+        12602
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.06696236100106034,
+        "wire_storage_bytes": 324442
+      },
+      "observed_output_counts": {
+        "words": 0,
+        "byte_strings": 5,
+        "flags": 0
+      },
+      "observation_seconds": 0.02232901299430523,
+      "probe_seconds": 0.6768294109933777,
+      "preparation_and_reporting_seconds": 0.004513741994742304,
+      "child_seconds": 0.6951193540007807,
+      "peak_rss_bytes": 41025536,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 36458496,
+        "supervised_seconds": 0.7395167960057734,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "certified-message/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/21.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/21.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "certified-message/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "certified-message",
+      "mode": "count",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {
+        "parsing_and_disclosure": {
+          "xor": 45920,
+          "and_": 29708,
+          "not_": 12584,
+          "inputs": 42632,
+          "gates": 88212,
+          "wires": 130846
+        },
+        "through_certified_message": {
+          "xor": 201056,
+          "and_": 68108,
+          "not_": 12585,
+          "inputs": 42632,
+          "gates": 281749,
+          "wires": 324383
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 201056,
+        "and_": 68109,
+        "not_": 12586,
+        "inputs": 42632
+      },
+      "gates": 281751,
+      "serialised_bytes": 4789856,
+      "stored_trace_bytes": 0,
+      "fingerprint": "3c607d53cc47801760be7a0ab88a52806d68c7c983c6f6e7f80c7cb09fe2c1e1",
+      "generation_seconds": 0.5554711219883757,
+      "folded_operations": [
+        641066,
+        165834,
+        12602
+      ],
+      "probe_seconds": 0.560126708005555,
+      "preparation_and_reporting_seconds": 0.004655586017179303,
+      "child_seconds": 0.5784454169915989,
+      "peak_rss_bytes": 31227904,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 31121408,
+        "supervised_seconds": 0.6163059909886215,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "certified-message/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/22.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/22.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "certified-message/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "certified-message",
+      "mode": "stream",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {
+        "parsing_and_disclosure": {
+          "xor": 45920,
+          "and_": 29708,
+          "not_": 12584,
+          "inputs": 42632,
+          "gates": 88212,
+          "wires": 130846
+        },
+        "through_certified_message": {
+          "xor": 201056,
+          "and_": 68108,
+          "not_": 12585,
+          "inputs": 42632,
+          "gates": 281749,
+          "wires": 324383
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "public pp/key/schema/X; existing raw witness wires private; no advice",
+      "counts": {
+        "xor": 201056,
+        "and_": 68109,
+        "not_": 12586,
+        "inputs": 42632
+      },
+      "gates": 281751,
+      "serialised_bytes": 4789856,
+      "stored_trace_bytes": 4789856,
+      "fingerprint": "3c607d53cc47801760be7a0ab88a52806d68c7c983c6f6e7f80c7cb09fe2c1e1",
+      "generation_seconds": 0.5899447040137602,
+      "folded_operations": [
+        641066,
+        165834,
+        12602
+      ],
+      "probe_seconds": 0.5978215729992371,
+      "preparation_and_reporting_seconds": 0.007876868985476904,
+      "child_seconds": 0.6169366399990395,
+      "peak_rss_bytes": 31268864,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 31174656,
+        "supervised_seconds": 0.6575898440059973,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "certified-message/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/23.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/23.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "representative-hash-kernel/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "representative-hash-kernel",
+      "mode": "materialised",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "test-only 1084-byte private hash suffix; public tr/context/header; not an authentication witness or production preparation interface",
+      "counts": {
+        "xor": 1407424,
+        "and_": 345600,
+        "not_": 0,
+        "inputs": 8672
+      },
+      "gates": 1753024,
+      "serialised_bytes": 29801497,
+      "stored_trace_bytes": 29801497,
+      "fingerprint": "0e34f3b9066aeff9960a36e1a5558b29429e16614d83b23fcda0a50ad11090b4",
+      "generation_seconds": 2.239080985003966,
+      "folded_operations": [
+        473408,
+        115200,
+        0
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.3861794430122245,
+        "wire_storage_bytes": 1761755
+      },
+      "observed_output_counts": {
+        "words": 0,
+        "byte_strings": 1,
+        "flags": 0
+      },
+      "observation_seconds": 0.10458362000645138,
+      "probe_seconds": 2.733682559002773,
+      "preparation_and_reporting_seconds": 0.0038385109801311046,
+      "child_seconds": 2.7534240719978698,
+      "peak_rss_bytes": 87441408,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 85770240,
+        "supervised_seconds": 2.791518989004544,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "representative-hash-kernel/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/24.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/24.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "representative-hash-kernel/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "representative-hash-kernel",
+      "mode": "count",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "test-only 1084-byte private hash suffix; public tr/context/header; not an authentication witness or production preparation interface",
+      "counts": {
+        "xor": 1407424,
+        "and_": 345600,
+        "not_": 0,
+        "inputs": 8672
+      },
+      "gates": 1753024,
+      "serialised_bytes": 29801497,
+      "stored_trace_bytes": 0,
+      "fingerprint": "0e34f3b9066aeff9960a36e1a5558b29429e16614d83b23fcda0a50ad11090b4",
+      "generation_seconds": 2.0503898599999957,
+      "folded_operations": [
+        473408,
+        115200,
+        0
+      ],
+      "probe_seconds": 2.0535220759920776,
+      "preparation_and_reporting_seconds": 0.0031322159920819104,
+      "child_seconds": 2.0721457629988436,
+      "peak_rss_bytes": 27516928,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 27553792,
+        "supervised_seconds": 2.1123991220083553,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "representative-hash-kernel/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/25.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/25.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "representative-hash-kernel/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "representative-hash-kernel",
+      "mode": "stream",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "test-only 1084-byte private hash suffix; public tr/context/header; not an authentication witness or production preparation interface",
+      "counts": {
+        "xor": 1407424,
+        "and_": 345600,
+        "not_": 0,
+        "inputs": 8672
+      },
+      "gates": 1753024,
+      "serialised_bytes": 29801497,
+      "stored_trace_bytes": 29801497,
+      "fingerprint": "0e34f3b9066aeff9960a36e1a5558b29429e16614d83b23fcda0a50ad11090b4",
+      "generation_seconds": 2.2079620480071753,
+      "folded_operations": [
+        473408,
+        115200,
+        0
+      ],
+      "probe_seconds": 2.227443330004462,
+      "preparation_and_reporting_seconds": 0.019481281997286715,
+      "child_seconds": 2.245789088992751,
+      "peak_rss_bytes": 27275264,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 27533312,
+        "supervised_seconds": 2.287502030012547,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "representative-hash-kernel/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/26.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/26.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "message-preparation/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "message-preparation",
+      "mode": "materialised",
+      "outcome": "resource_limit",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": false,
+      "phases_cumulative": {
+        "parsing_and_disclosure": {
+          "xor": 45920,
+          "and_": 29708,
+          "not_": 12584,
+          "inputs": 42632,
+          "gates": 88212,
+          "wires": 130846
+        },
+        "through_certified_message": {
+          "xor": 201056,
+          "and_": 68108,
+          "not_": 12585,
+          "inputs": 42632,
+          "gates": 281749,
+          "wires": 324383
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 2000000,
+        "wires": 2042634,
+        "serialised_bytes_so_far": 34000056,
+        "stored_bytes": 34000056,
+        "complete": false
+      },
+      "probe_seconds": 3.624533964000875,
+      "child_seconds": 3.642602938998607,
+      "peak_rss_bytes": 65724416,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 65781760,
+        "supervised_seconds": 3.68372483899293,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "message-preparation/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/27.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/27.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "message-preparation/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "message-preparation",
+      "mode": "count",
+      "outcome": "resource_limit",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": false,
+      "phases_cumulative": {
+        "parsing_and_disclosure": {
+          "xor": 45920,
+          "and_": 29708,
+          "not_": 12584,
+          "inputs": 42632,
+          "gates": 88212,
+          "wires": 130846
+        },
+        "through_certified_message": {
+          "xor": 201056,
+          "and_": 68108,
+          "not_": 12585,
+          "inputs": 42632,
+          "gates": 281749,
+          "wires": 324383
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 2000000,
+        "wires": 2042634,
+        "serialised_bytes_so_far": 34000056,
+        "stored_bytes": 0,
+        "complete": false
+      },
+      "probe_seconds": 3.4533437110076193,
+      "child_seconds": 3.4720423910039244,
+      "peak_rss_bytes": 31346688,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 31854592,
+        "supervised_seconds": 3.5105118439969374,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "message-preparation/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/28.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/28.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "message-preparation/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "message-preparation",
+      "mode": "stream",
+      "outcome": "resource_limit",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": false,
+      "phases_cumulative": {
+        "parsing_and_disclosure": {
+          "xor": 45920,
+          "and_": 29708,
+          "not_": 12584,
+          "inputs": 42632,
+          "gates": 88212,
+          "wires": 130846
+        },
+        "through_certified_message": {
+          "xor": 201056,
+          "and_": 68108,
+          "not_": 12585,
+          "inputs": 42632,
+          "gates": 281749,
+          "wires": 324383
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 2000000,
+        "wires": 2042634,
+        "serialised_bytes_so_far": 34000056,
+        "stored_bytes": 34000056,
+        "complete": false
+      },
+      "probe_seconds": 3.655704311997397,
+      "child_seconds": 3.674987994003459,
+      "peak_rss_bytes": 31764480,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 31952896,
+        "supervised_seconds": 3.7218668059940683,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "message-preparation/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/29.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/29.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "legacy-ring-multiply/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "legacy-ring-multiply",
+      "mode": "materialised",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "historical_predicate_counts": {
+        "xor": 48167,
+        "and_": 34653,
+        "not_": 715,
+        "inputs": 128
+      },
+      "historical_predicate_gates": 83535,
+      "historical_predicate_fingerprint": "7b5549ee576df8085acce7bb84cdabfc26501135f25e949024574adad294d9bb",
+      "extra_test_predicate": {
+        "xor": 64,
+        "and_": 65,
+        "not_": 64,
+        "gates": 193
+      },
+      "classification": "two private signed64 words; butterfly twiddle 25847 public",
+      "counts": {
+        "xor": 48103,
+        "and_": 34588,
+        "not_": 651,
+        "inputs": 128
+      },
+      "gates": 83342,
+      "serialised_bytes": 1416903,
+      "stored_trace_bytes": 1416903,
+      "fingerprint": "cc692d4eb5b483a65e7cc1552f7f01d8e69bae5ecd1138bf15fbb9e5b5f58b18",
+      "generation_seconds": 0.10056479599734303,
+      "folded_operations": [
+        129,
+        129,
+        4226
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.019028111011721194,
+        "wire_storage_bytes": 83529
+      },
+      "observed_output_counts": {
+        "words": 1,
+        "byte_strings": 0,
+        "flags": 0
+      },
+      "observation_seconds": 0.005161997003597207,
+      "probe_seconds": 0.21959286299534142,
+      "preparation_and_reporting_seconds": 0.09483795898267999,
+      "child_seconds": 0.23799465400225017,
+      "peak_rss_bytes": 29306880,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 28352512,
+        "supervised_seconds": 0.2777020729990909,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "legacy-ring-multiply/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/30.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/30.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "legacy-ring-multiply/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "legacy-ring-multiply",
+      "mode": "count",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "historical_predicate_counts": {
+        "xor": 48167,
+        "and_": 34653,
+        "not_": 715,
+        "inputs": 128
+      },
+      "historical_predicate_gates": 83535,
+      "historical_predicate_fingerprint": "7b5549ee576df8085acce7bb84cdabfc26501135f25e949024574adad294d9bb",
+      "extra_test_predicate": {
+        "xor": 64,
+        "and_": 65,
+        "not_": 64,
+        "gates": 193
+      },
+      "classification": "two private signed64 words; butterfly twiddle 25847 public",
+      "counts": {
+        "xor": 48103,
+        "and_": 34588,
+        "not_": 651,
+        "inputs": 128
+      },
+      "gates": 83342,
+      "serialised_bytes": 1416903,
+      "stored_trace_bytes": 0,
+      "fingerprint": "cc692d4eb5b483a65e7cc1552f7f01d8e69bae5ecd1138bf15fbb9e5b5f58b18",
+      "generation_seconds": 0.0881091710034525,
+      "folded_operations": [
+        129,
+        129,
+        4226
+      ],
+      "probe_seconds": 0.17987633201119024,
+      "preparation_and_reporting_seconds": 0.09176716100773774,
+      "child_seconds": 0.19887971799471416,
+      "peak_rss_bytes": 26431488,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 26226688,
+        "supervised_seconds": 0.24646987799496856,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "legacy-ring-multiply/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/31.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/31.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "legacy-ring-multiply/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "legacy-ring-multiply",
+      "mode": "stream",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "historical_predicate_counts": {
+        "xor": 48167,
+        "and_": 34653,
+        "not_": 715,
+        "inputs": 128
+      },
+      "historical_predicate_gates": 83535,
+      "historical_predicate_fingerprint": "7b5549ee576df8085acce7bb84cdabfc26501135f25e949024574adad294d9bb",
+      "extra_test_predicate": {
+        "xor": 64,
+        "and_": 65,
+        "not_": 64,
+        "gates": 193
+      },
+      "classification": "two private signed64 words; butterfly twiddle 25847 public",
+      "counts": {
+        "xor": 48103,
+        "and_": 34588,
+        "not_": 651,
+        "inputs": 128
+      },
+      "gates": 83342,
+      "serialised_bytes": 1416903,
+      "stored_trace_bytes": 1416903,
+      "fingerprint": "cc692d4eb5b483a65e7cc1552f7f01d8e69bae5ecd1138bf15fbb9e5b5f58b18",
+      "generation_seconds": 0.09441077799419872,
+      "folded_operations": [
+        129,
+        129,
+        4226
+      ],
+      "probe_seconds": 0.1841693289898103,
+      "preparation_and_reporting_seconds": 0.08975855099561159,
+      "child_seconds": 0.20226032899518032,
+      "peak_rss_bytes": 26288128,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 26157056,
+        "supervised_seconds": 0.24597370499395765,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "legacy-ring-multiply/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/32.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/32.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "legacy-ring-public-multiply/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "legacy-ring-public-multiply",
+      "mode": "materialised",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "historical_predicate_counts": {
+        "xor": 47842,
+        "and_": 34458,
+        "not_": 650,
+        "inputs": 64
+      },
+      "historical_predicate_gates": 82950,
+      "historical_predicate_fingerprint": "4889d9aee8ffc7d0de59eb02cbfeae61baeab86c94d63bf64ca0e70ae9689ec0",
+      "extra_test_predicate": {
+        "xor": 64,
+        "and_": 65,
+        "not_": 64,
+        "gates": 193
+      },
+      "classification": "public 25847 left / private signed64 right",
+      "counts": {
+        "xor": 47778,
+        "and_": 34393,
+        "not_": 586,
+        "inputs": 64
+      },
+      "gates": 82757,
+      "serialised_bytes": 1406958,
+      "stored_trace_bytes": 1406958,
+      "fingerprint": "2168b78eac68c5bd8bf910e37e73937587da4cb38f4ccd440e53efc12f8d9b87",
+      "generation_seconds": 0.09909450101258699,
+      "folded_operations": [
+        454,
+        324,
+        4291
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.018092483005602844,
+        "wire_storage_bytes": 82880
+      },
+      "observed_output_counts": {
+        "words": 1,
+        "byte_strings": 0,
+        "flags": 0
+      },
+      "observation_seconds": 0.004923895001411438,
+      "probe_seconds": 0.20989134001138154,
+      "preparation_and_reporting_seconds": 0.08778046099178027,
+      "child_seconds": 0.2283888130041305,
+      "peak_rss_bytes": 28696576,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 27648000,
+        "supervised_seconds": 0.2672622800018871,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "legacy-ring-public-multiply/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/33.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/33.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "legacy-ring-public-multiply/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "legacy-ring-public-multiply",
+      "mode": "count",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "historical_predicate_counts": {
+        "xor": 47842,
+        "and_": 34458,
+        "not_": 650,
+        "inputs": 64
+      },
+      "historical_predicate_gates": 82950,
+      "historical_predicate_fingerprint": "4889d9aee8ffc7d0de59eb02cbfeae61baeab86c94d63bf64ca0e70ae9689ec0",
+      "extra_test_predicate": {
+        "xor": 64,
+        "and_": 65,
+        "not_": 64,
+        "gates": 193
+      },
+      "classification": "public 25847 left / private signed64 right",
+      "counts": {
+        "xor": 47778,
+        "and_": 34393,
+        "not_": 586,
+        "inputs": 64
+      },
+      "gates": 82757,
+      "serialised_bytes": 1406958,
+      "stored_trace_bytes": 0,
+      "fingerprint": "2168b78eac68c5bd8bf910e37e73937587da4cb38f4ccd440e53efc12f8d9b87",
+      "generation_seconds": 0.08720431200345047,
+      "folded_operations": [
+        454,
+        324,
+        4291
+      ],
+      "probe_seconds": 0.1773361960076727,
+      "preparation_and_reporting_seconds": 0.09013188400422223,
+      "child_seconds": 0.19567863500560634,
+      "peak_rss_bytes": 26284032,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 25923584,
+        "supervised_seconds": 0.23630277399206534,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "legacy-ring-public-multiply/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/34.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/34.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "legacy-ring-public-multiply/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "legacy-ring-public-multiply",
+      "mode": "stream",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "historical_predicate_counts": {
+        "xor": 47842,
+        "and_": 34458,
+        "not_": 650,
+        "inputs": 64
+      },
+      "historical_predicate_gates": 82950,
+      "historical_predicate_fingerprint": "4889d9aee8ffc7d0de59eb02cbfeae61baeab86c94d63bf64ca0e70ae9689ec0",
+      "extra_test_predicate": {
+        "xor": 64,
+        "and_": 65,
+        "not_": 64,
+        "gates": 193
+      },
+      "classification": "public 25847 left / private signed64 right",
+      "counts": {
+        "xor": 47778,
+        "and_": 34393,
+        "not_": 586,
+        "inputs": 64
+      },
+      "gates": 82757,
+      "serialised_bytes": 1406958,
+      "stored_trace_bytes": 1406958,
+      "fingerprint": "2168b78eac68c5bd8bf910e37e73937587da4cb38f4ccd440e53efc12f8d9b87",
+      "generation_seconds": 0.09752344399748836,
+      "folded_operations": [
+        454,
+        324,
+        4291
+      ],
+      "probe_seconds": 0.18831278299330734,
+      "preparation_and_reporting_seconds": 0.09078933899581898,
+      "child_seconds": 0.20659587701084092,
+      "peak_rss_bytes": 26431488,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 26238976,
+        "supervised_seconds": 0.2464448539976729,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "legacy-ring-public-multiply/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/35.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/35.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "legacy-ntt-butterfly/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "legacy-ntt-butterfly",
+      "mode": "materialised",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "historical_predicate_counts": {
+        "xor": 92770,
+        "and_": 61451,
+        "not_": 1437,
+        "inputs": 128
+      },
+      "historical_predicate_gates": 155658,
+      "historical_predicate_fingerprint": "af463499641d6f70adef5ed8cb1b55d844d22fb60a3fe7d54c68e2a0580f7fea",
+      "extra_test_predicate": {
+        "xor": 128,
+        "and_": 130,
+        "not_": 128,
+        "gates": 386
+      },
+      "classification": "two private signed64 words; butterfly twiddle 25847 public",
+      "counts": {
+        "xor": 92642,
+        "and_": 61321,
+        "not_": 1309,
+        "inputs": 128
+      },
+      "gates": 155272,
+      "serialised_bytes": 2639713,
+      "stored_trace_bytes": 2639713,
+      "fingerprint": "4d2021df326c0800b145787e4e827120c6a7496cf2fa0ed476f56795214d5c47",
+      "generation_seconds": 0.1791044029960176,
+      "folded_operations": [
+        584,
+        454,
+        12743
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.034943887003464624,
+        "wire_storage_bytes": 155459
+      },
+      "observed_output_counts": {
+        "words": 2,
+        "byte_strings": 0,
+        "flags": 0
+      },
+      "observation_seconds": 0.00950804800959304,
+      "probe_seconds": 0.3915105709893396,
+      "preparation_and_reporting_seconds": 0.16795423298026435,
+      "child_seconds": 0.41092519600351807,
+      "peak_rss_bytes": 31920128,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 29691904,
+        "supervised_seconds": 0.4511033010057872,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "legacy-ntt-butterfly/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/36.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/36.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "legacy-ntt-butterfly/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "legacy-ntt-butterfly",
+      "mode": "count",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "historical_predicate_counts": {
+        "xor": 92770,
+        "and_": 61451,
+        "not_": 1437,
+        "inputs": 128
+      },
+      "historical_predicate_gates": 155658,
+      "historical_predicate_fingerprint": "af463499641d6f70adef5ed8cb1b55d844d22fb60a3fe7d54c68e2a0580f7fea",
+      "extra_test_predicate": {
+        "xor": 128,
+        "and_": 130,
+        "not_": 128,
+        "gates": 386
+      },
+      "classification": "two private signed64 words; butterfly twiddle 25847 public",
+      "counts": {
+        "xor": 92642,
+        "and_": 61321,
+        "not_": 1309,
+        "inputs": 128
+      },
+      "gates": 155272,
+      "serialised_bytes": 2639713,
+      "stored_trace_bytes": 0,
+      "fingerprint": "4d2021df326c0800b145787e4e827120c6a7496cf2fa0ed476f56795214d5c47",
+      "generation_seconds": 0.169066656002542,
+      "folded_operations": [
+        584,
+        454,
+        12743
+      ],
+      "probe_seconds": 0.33687015699979383,
+      "preparation_and_reporting_seconds": 0.16780350099725183,
+      "child_seconds": 0.3555732620006893,
+      "peak_rss_bytes": 26468352,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 25952256,
+        "supervised_seconds": 0.4012692770047579,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "legacy-ntt-butterfly/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/37.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/37.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "legacy-ntt-butterfly/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "legacy-ntt-butterfly",
+      "mode": "stream",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "historical_predicate_counts": {
+        "xor": 92770,
+        "and_": 61451,
+        "not_": 1437,
+        "inputs": 128
+      },
+      "historical_predicate_gates": 155658,
+      "historical_predicate_fingerprint": "af463499641d6f70adef5ed8cb1b55d844d22fb60a3fe7d54c68e2a0580f7fea",
+      "extra_test_predicate": {
+        "xor": 128,
+        "and_": 130,
+        "not_": 128,
+        "gates": 386
+      },
+      "classification": "two private signed64 words; butterfly twiddle 25847 public",
+      "counts": {
+        "xor": 92642,
+        "and_": 61321,
+        "not_": 1309,
+        "inputs": 128
+      },
+      "gates": 155272,
+      "serialised_bytes": 2639713,
+      "stored_trace_bytes": 2639713,
+      "fingerprint": "4d2021df326c0800b145787e4e827120c6a7496cf2fa0ed476f56795214d5c47",
+      "generation_seconds": 0.1834932649944676,
+      "folded_operations": [
+        584,
+        454,
+        12743
+      ],
+      "probe_seconds": 0.35238962100993376,
+      "preparation_and_reporting_seconds": 0.16889635601546615,
+      "child_seconds": 0.37098513399541844,
+      "peak_rss_bytes": 26406912,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 26247168,
+        "supervised_seconds": 0.41032958299911115,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "legacy-ntt-butterfly/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/38.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/38.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "division-alternative/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "division-alternative",
+      "mode": "materialised",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {
+        "alternative_core": {
+          "counts": {
+            "xor": 34650,
+            "and_": 21588,
+            "not_": 328,
+            "inputs": 64
+          },
+          "gates": 56566,
+          "fingerprint": "0c8260c58f2fbae445e72caf3f0e2ca388dc71e886f8b050788d864e3a7581b9"
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "private signed64 dividend; public divisor q",
+      "counts": {
+        "xor": 22234,
+        "and_": 13332,
+        "not_": 328,
+        "inputs": 64
+      },
+      "gates": 35894,
+      "serialised_bytes": 610287,
+      "stored_trace_bytes": 610287,
+      "fingerprint": "80516bc150b5d84f8be2fe624f5db819dca2d83e105c1e815a4bb16aa4bdeff2",
+      "generation_seconds": 0.041079539005295373,
+      "folded_operations": [
+        65,
+        65,
+        4226
+      ],
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.007790753006702289,
+        "wire_storage_bytes": 36017
+      },
+      "observed_output_counts": {
+        "words": 2,
+        "byte_strings": 0,
+        "flags": 0
+      },
+      "observation_seconds": 0.0022325790050672367,
+      "probe_seconds": 0.11953791198902763,
+      "preparation_and_reporting_seconds": 0.06843504097196274,
+      "child_seconds": 0.1378745279944269,
+      "peak_rss_bytes": 27574272,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 27648000,
+        "supervised_seconds": 0.17560045899881516,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "division-alternative/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/39.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/39.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "division-alternative/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "division-alternative",
+      "mode": "count",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {
+        "alternative_core": {
+          "counts": {
+            "xor": 34650,
+            "and_": 21588,
+            "not_": 328,
+            "inputs": 64
+          },
+          "gates": 56566,
+          "fingerprint": "0c8260c58f2fbae445e72caf3f0e2ca388dc71e886f8b050788d864e3a7581b9"
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "private signed64 dividend; public divisor q",
+      "counts": {
+        "xor": 22234,
+        "and_": 13332,
+        "not_": 328,
+        "inputs": 64
+      },
+      "gates": 35894,
+      "serialised_bytes": 610287,
+      "stored_trace_bytes": 0,
+      "fingerprint": "80516bc150b5d84f8be2fe624f5db819dca2d83e105c1e815a4bb16aa4bdeff2",
+      "generation_seconds": 0.03732870800013188,
+      "folded_operations": [
+        65,
+        65,
+        4226
+      ],
+      "probe_seconds": 0.1012449249974452,
+      "preparation_and_reporting_seconds": 0.06391621699731331,
+      "child_seconds": 0.11960936400282662,
+      "peak_rss_bytes": 25882624,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 25759744,
+        "supervised_seconds": 0.16475994800566696,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "division-alternative/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/40.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/40.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "division-alternative/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "division-alternative",
+      "mode": "stream",
+      "outcome": "passed",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": true,
+      "phases_cumulative": {
+        "alternative_core": {
+          "counts": {
+            "xor": 34650,
+            "and_": 21588,
+            "not_": 328,
+            "inputs": 64
+          },
+          "gates": 56566,
+          "fingerprint": "0c8260c58f2fbae445e72caf3f0e2ca388dc71e886f8b050788d864e3a7581b9"
+        }
+      },
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "classification": "private signed64 dividend; public divisor q",
+      "counts": {
+        "xor": 22234,
+        "and_": 13332,
+        "not_": 328,
+        "inputs": 64
+      },
+      "gates": 35894,
+      "serialised_bytes": 610287,
+      "stored_trace_bytes": 610287,
+      "fingerprint": "80516bc150b5d84f8be2fe624f5db819dca2d83e105c1e815a4bb16aa4bdeff2",
+      "generation_seconds": 0.04153281799517572,
+      "folded_operations": [
+        65,
+        65,
+        4226
+      ],
+      "probe_seconds": 0.1045047549996525,
+      "preparation_and_reporting_seconds": 0.06297193700447679,
+      "child_seconds": 0.12247580899565946,
+      "peak_rss_bytes": 26050560,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 26021888,
+        "supervised_seconds": 0.16436652599077206,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "division-alternative/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/41.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/41.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "hints-complete/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "hints-complete",
+      "mode": "materialised",
+      "outcome": "resource_limit",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": false,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 2000000,
+        "wires": 2042634,
+        "serialised_bytes_so_far": 34000056,
+        "stored_bytes": 34000056,
+        "complete": false
+      },
+      "probe_seconds": 2.637338770000497,
+      "child_seconds": 2.6561305060022278,
+      "peak_rss_bytes": 69283840,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 69259264,
+        "supervised_seconds": 2.69745277200127,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "hints-complete/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/42.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/42.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "hints-complete/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "hints-complete",
+      "mode": "count",
+      "outcome": "resource_limit",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": false,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 2000000,
+        "wires": 2042634,
+        "serialised_bytes_so_far": 34000056,
+        "stored_bytes": 0,
+        "complete": false
+      },
+      "probe_seconds": 2.448075994005194,
+      "child_seconds": 2.4675136229925556,
+      "peak_rss_bytes": 34676736,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 34820096,
+        "supervised_seconds": 2.5133891659934307,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "hints-complete/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/43.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/43.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "hints-complete/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "hints-complete",
+      "mode": "stream",
+      "outcome": "resource_limit",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": false,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 2000000,
+        "wires": 2042634,
+        "serialised_bytes_so_far": 34000056,
+        "stored_bytes": 34000056,
+        "complete": false
+      },
+      "probe_seconds": 2.640743033000035,
+      "child_seconds": 2.659735749999527,
+      "peak_rss_bytes": 34541568,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 34705408,
+        "supervised_seconds": 2.697460231007426,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "hints-complete/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/44.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/44.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "signature-complete/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "signature-complete",
+      "mode": "materialised",
+      "outcome": "resource_limit",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": false,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 2000000,
+        "wires": 2042634,
+        "serialised_bytes_so_far": 34000056,
+        "stored_bytes": 34000056,
+        "complete": false
+      },
+      "probe_seconds": 2.6566795840044506,
+      "child_seconds": 2.6762451990070986,
+      "peak_rss_bytes": 77762560,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 77811712,
+        "supervised_seconds": 2.715111005003564,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "signature-complete/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/45.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/45.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "signature-complete/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "signature-complete",
+      "mode": "count",
+      "outcome": "resource_limit",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": false,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 2000000,
+        "wires": 2042634,
+        "serialised_bytes_so_far": 34000056,
+        "stored_bytes": 0,
+        "complete": false
+      },
+      "probe_seconds": 2.480536763003329,
+      "child_seconds": 2.4991810750070726,
+      "peak_rss_bytes": 43671552,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 43773952,
+        "supervised_seconds": 2.5463518560136436,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "signature-complete/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/46.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/46.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "signature-complete/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "signature-complete",
+      "mode": "stream",
+      "outcome": "resource_limit",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": false,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 2000000,
+        "wires": 2042634,
+        "serialised_bytes_so_far": 34000056,
+        "stored_bytes": 34000056,
+        "complete": false
+      },
+      "probe_seconds": 2.7035745109897107,
+      "child_seconds": 2.7216197249945253,
+      "peak_rss_bytes": 43962368,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 43999232,
+        "supervised_seconds": 2.76867247899645,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "signature-complete/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/47.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/47.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "preparation-complete/materialised",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "preparation-complete",
+      "mode": "materialised",
+      "outcome": "resource_limit",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": false,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 2000000,
+        "wires": 2042634,
+        "serialised_bytes_so_far": 34000056,
+        "stored_bytes": 34000056,
+        "complete": false
+      },
+      "probe_seconds": 2.899198882994824,
+      "child_seconds": 2.9179296270012856,
+      "peak_rss_bytes": 79319040,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 79446016,
+        "supervised_seconds": 2.965528445012751,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "preparation-complete/materialised",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/48.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/48.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "preparation-complete/count",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "preparation-complete",
+      "mode": "count",
+      "outcome": "resource_limit",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": false,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 2000000,
+        "wires": 2042634,
+        "serialised_bytes_so_far": 34000056,
+        "stored_bytes": 0,
+        "complete": false
+      },
+      "probe_seconds": 2.7135862309951335,
+      "child_seconds": 2.731947879001382,
+      "peak_rss_bytes": 44982272,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 45203456,
+        "supervised_seconds": 2.7792464760132134,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "preparation-complete/count",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/49.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/49.beat"
+      ],
+      "log": ""
+    },
+    {
+      "case": "preparation-complete/stream",
+      "profile": {
+        "authority": "User approval, 17 September 2026",
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_inputs": 65536,
+        "generation_seconds": 10.0,
+        "evaluation_seconds": 5.0,
+        "workers": 1,
+        "address_space_bytes": 268435456,
+        "rss_ceiling_bytes": 134217728,
+        "rss_poll_seconds": 0.01,
+        "case_wall_seconds": 30.0,
+        "case_log_bytes": 2097152,
+        "memory_note": "Retain existing Linux RLIMIT_AS; RSS watchdog is sampled, not a kernel RSS hard limit. Reduce before launch if memory headroom requires it."
+      },
+      "component": "preparation-complete",
+      "mode": "stream",
+      "outcome": "resource_limit",
+      "limits": {
+        "max_gates": 2000000,
+        "max_output_bytes": 41943040,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "generation_complete": false,
+      "phases_cumulative": {},
+      "tracemalloc": false,
+      "additional_comparison_gates": 0,
+      "instrumentation": "external trace observation + supervisor RSS sampling; no circuit instrumentation",
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 2000000,
+        "wires": 2042634,
+        "serialised_bytes_so_far": 34000056,
+        "stored_bytes": 34000056,
+        "complete": false
+      },
+      "probe_seconds": 2.952004537000903,
+      "child_seconds": 2.9696643140050583,
+      "peak_rss_bytes": 45129728,
+      "supervision": {
+        "returncode": 0,
+        "reason": null,
+        "sampled_peak_rss_bytes": 45342720,
+        "supervised_seconds": 3.0159810909972293,
+        "rss_poll_seconds": 0.01,
+        "log_bytes": 0
+      },
+      "command": [
+        "/home/grace/projects/pq-did/.venv/bin/python",
+        "/home/grace/projects/pq-did/scripts/validate_signature_inputs.py",
+        "--child",
+        "--case",
+        "preparation-complete/stream",
+        "--effective-profile",
+        "/tmp/pqdid-signature-rg3hn9k5/profile.json",
+        "--output",
+        "/tmp/pqdid-signature-rg3hn9k5/50.json",
+        "--heartbeat",
+        "/tmp/pqdid-signature-rg3hn9k5/50.beat"
+      ],
+      "log": ""
+    }
+  ],
+  "source_sha256": {
+    "src/pqdid/circuits/__init__.py": "9098a9c19787bcd155bac6d7d724d3c354c4c404fc99565cd5a72ae26a4c8d8f",
+    "src/pqdid/circuits/accounting.py": "23610bf5a75ba435f582d7e80a1d1e2118f07caabe6659b96a4ae4380b3c0690",
+    "src/pqdid/circuits/auth_parsing.py": "15bb95af9c2cb70eab3c4de8406b50cd25f67cf823163875372668989c26be2b",
+    "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+    "src/pqdid/circuits/division.py": "c530930c04f91bcdf4bceaf5d052f940cc935e87cca6562baf119ad41b8574a8",
+    "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+    "src/pqdid/circuits/enrolment.py": "d8b5134bdcb7fd9c1bd70cffc6214e96d971e3fe01bc595e5437718cd603e2f5",
+    "src/pqdid/circuits/enrolment_accounting.py": "8e479c7d3f221d86450135cf356f54b310e95794884026eeb9663985d78c4b3b",
+    "src/pqdid/circuits/keccak.py": "05dbfe9e5d8aea37471c325b7a9565b6f9f1742af5e2efca54029758b1b840a6",
+    "src/pqdid/circuits/parsing.py": "2f4b3d24d056eb9b26424ee185b1b5df9847f50fdc1db326c8d313685236cef9",
+    "src/pqdid/circuits/scalar_ring.py": "f2012a9d1202686368eb2693495bccd00af8be73ce8a00535a8ced9a190adf45",
+    "src/pqdid/circuits/signature.py": "5fb391650765018230c4f9bc54370ddf28c1c2ce7fd92b9bef93113aeb9c6133",
+    "src/pqdid/circuits/signature_inputs.py": "67f3d3ace81385a93ef9c113c6b4cbd58a00d028fb53cebfaed145055d612762",
+    "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec",
+    "scripts/validate_signature_inputs.py": "15a56e36c9647b03f91933a89ebbce17e883a3e946c27361599306e7d3a3e49b",
+    "scripts/measure_signature_inputs.py": "8e14eec948e7742e33b0e876bbaac9a7c558f23b096c81aac1c75c6225704469",
+    "configs/validation_profiles.json": "ac67e0b3fe89c8a91a55c13f8f2e75323c02c9773bfe2007771a61f8c3b623b9"
+  },
+  "scope": "signature inputs only; SPEC-004 pending; no full authentication proof/count"
+}

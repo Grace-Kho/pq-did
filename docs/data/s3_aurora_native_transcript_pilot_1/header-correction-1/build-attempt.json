@@ -1,0 +1,9 @@
+{
+  "attempt": 5,
+  "status": "pass",
+  "seconds": 6.052475381991826,
+  "binary_sha256": {
+    "exp2_native": "255a0f9f9cc91aaf6c18f0962eae75f668f1572456d2fdbebc2f809ad9598d63",
+    "exp2_semantics": "9520f962ac0551877e72eacf57d19803a02d86606e025a46c2ca1249cc2c02b4"
+  }
+}

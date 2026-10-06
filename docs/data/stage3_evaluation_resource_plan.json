@@ -1,0 +1,167 @@
+{
+  "status": "recommendation only; no enlarged evaluation profile activated",
+  "measured_sources": [
+    "src/pqdid/circuits/emitter.py",
+    "docs/data/stage3_signature_count_preflight.json",
+    "docs/data/stage3_signature_inputs_measurements.json"
+  ],
+  "model": {
+    "baseline_live_python_fixture_allowance_bytes": 100663296,
+    "generation_trace_multiplier_allowance": 2.25,
+    "materialised_formula": "max(B+ceil(2.25*T), B+T+W+57)",
+    "streaming_formula": "B+W+57+1MiB; generation baseline checked against counting RSS",
+    "measured_bytearray_overhead_bytes": 57,
+    "note": "B and spare-capacity multiplier are conservative planning allowances, not measured constants or proven peak bounds. Predictions include process overhead, not trace bytes alone."
+  },
+  "existing_streaming_evaluation": false,
+  "streaming_implementation_needed": [
+    "Validated fixed-record file reader with incremental fingerprint, header/footer/count and operand checks, bounded I/O",
+    "Byte-per-wire value storage; no assumption of last-use reclamation or bit packing",
+    "Streaming output-observation oracle/tests that do not load complete trace or retain a second wire array",
+    "Separate generation/evaluation workers and sequential oracle observation; preserve full gate sequence"
+  ],
+  "calibration": [
+    {
+      "component": "responses",
+      "source": "docs/data/stage3_signature_inputs_measurements.json",
+      "gates": 336643,
+      "trace_bytes": 5723020,
+      "exact_evaluator_wire_bytes": 379334,
+      "measured_peak_rss_bytes": 50880512,
+      "estimated_materialised_peak_bytes": 113540091,
+      "measured_evaluation_seconds": 0.08113848000357393
+    },
+    {
+      "component": "response-norm",
+      "source": "docs/data/stage3_signature_inputs_measurements.json",
+      "gates": 1520649,
+      "trace_bytes": 25851122,
+      "exact_evaluator_wire_bytes": 1563340,
+      "measured_peak_rss_bytes": 91295744,
+      "estimated_materialised_peak_bytes": 158828321,
+      "measured_evaluation_seconds": 0.3380062009964604
+    },
+    {
+      "component": "certified-message",
+      "source": "docs/data/stage3_signature_inputs_measurements.json",
+      "gates": 281751,
+      "trace_bytes": 4789856,
+      "exact_evaluator_wire_bytes": 324442,
+      "measured_peak_rss_bytes": 41025536,
+      "estimated_materialised_peak_bytes": 111440472,
+      "measured_evaluation_seconds": 0.06696236100106034
+    },
+    {
+      "component": "representative-hash-kernel",
+      "source": "docs/data/stage3_signature_inputs_measurements.json",
+      "gates": 1753024,
+      "trace_bytes": 29801497,
+      "exact_evaluator_wire_bytes": 1761755,
+      "measured_peak_rss_bytes": 87441408,
+      "estimated_materialised_peak_bytes": 167716665,
+      "measured_evaluation_seconds": 0.3861794430122245
+    }
+  ],
+  "targets": [
+    {
+      "target": "message-preparation",
+      "complete_count_available": true,
+      "measured_gates": 2034776,
+      "measured_counting_peak_rss_bytes": 32157696,
+      "exact_wire_value_storage_bytes": 2077467,
+      "exact_trace_bytes": 34591281,
+      "estimated_peak_materialised_bytes": 178493679,
+      "estimated_evaluation_seconds": 0.4482475210462846,
+      "recommended_evaluation_limits": {
+        "max_gates": 2100000,
+        "max_trace_bytes": 41943040,
+        "rss_ceiling_bytes": 201326592,
+        "address_space_bytes": 268435456,
+        "generation_seconds": 10,
+        "evaluation_seconds_per_witness": 5,
+        "wall_seconds_per_case": 30,
+        "workers": 1
+      },
+      "readiness": "Ready for separately authorised materialised functional pilot; no new evaluator needed. These limits have NOT been activated."
+    },
+    {
+      "target": "hints-complete",
+      "complete_count_available": false,
+      "measured_prefix_gates": 32000000,
+      "measured_counting_peak_rss_bytes": 43585536,
+      "prefix_wire_storage_lower_bound_bytes": 32042691,
+      "prefix_trace_lower_bound_bytes": 544000056,
+      "estimated_materialised_peak_for_prefix_only_bytes": 1324663422,
+      "conditional_evaluation_envelope": {
+        "prerequisite": "Feasibility review, a separately authorised complete count <=64M gates, and tested file-streaming evaluator/oracle; otherwise do not launch. 64M is a proposed ceiling, NOT a full-count estimate.",
+        "max_gates": 64000000,
+        "max_trace_storage_bytes": 2147483648,
+        "rss_ceiling_bytes": 268435456,
+        "address_space_bytes": 536870912,
+        "generation_seconds": 300,
+        "evaluation_seconds_per_witness": 120,
+        "wall_seconds_per_case": 600,
+        "workers": 1
+      },
+      "conditional_cap_wire_bytes": 64042691,
+      "conditional_cap_trace_bytes": 1088000089,
+      "estimated_streaming_peak_at_conditional_cap_bytes": 165754563,
+      "readiness": "Feasibility review required; no completed full count or evaluation. No budget escalation has been performed.",
+      "conditional_cap_generation_seconds_at_observed_count_rate": 109.6961612419982,
+      "conditional_cap_evaluation_seconds_at_historical_materialised_rate": 14.098771239174345
+    },
+    {
+      "target": "signature-with-norm",
+      "complete_count_available": false,
+      "measured_prefix_gates": 32000000,
+      "measured_counting_peak_rss_bytes": 52260864,
+      "prefix_wire_storage_lower_bound_bytes": 32042691,
+      "prefix_trace_lower_bound_bytes": 544000056,
+      "estimated_materialised_peak_for_prefix_only_bytes": 1324663422,
+      "conditional_evaluation_envelope": {
+        "prerequisite": "Feasibility review, a separately authorised complete count <=64M gates, and tested file-streaming evaluator/oracle; otherwise do not launch. 64M is a proposed ceiling, NOT a full-count estimate.",
+        "max_gates": 64000000,
+        "max_trace_storage_bytes": 2147483648,
+        "rss_ceiling_bytes": 268435456,
+        "address_space_bytes": 536870912,
+        "generation_seconds": 300,
+        "evaluation_seconds_per_witness": 120,
+        "wall_seconds_per_case": 600,
+        "workers": 1
+      },
+      "conditional_cap_wire_bytes": 64042691,
+      "conditional_cap_trace_bytes": 1088000089,
+      "estimated_streaming_peak_at_conditional_cap_bytes": 165754563,
+      "readiness": "Feasibility review required; no completed full count or evaluation. No budget escalation has been performed.",
+      "conditional_cap_generation_seconds_at_observed_count_rate": 111.68379396601813,
+      "conditional_cap_evaluation_seconds_at_historical_materialised_rate": 14.098771239174345
+    },
+    {
+      "target": "preparation-with-decode-and-norm",
+      "complete_count_available": false,
+      "measured_prefix_gates": 32000000,
+      "measured_counting_peak_rss_bytes": 53080064,
+      "prefix_wire_storage_lower_bound_bytes": 32042691,
+      "prefix_trace_lower_bound_bytes": 544000056,
+      "estimated_materialised_peak_for_prefix_only_bytes": 1324663422,
+      "conditional_evaluation_envelope": {
+        "prerequisite": "Feasibility review, a separately authorised complete count <=64M gates, and tested file-streaming evaluator/oracle; otherwise do not launch. 64M is a proposed ceiling, NOT a full-count estimate.",
+        "max_gates": 64000000,
+        "max_trace_storage_bytes": 2147483648,
+        "rss_ceiling_bytes": 268435456,
+        "address_space_bytes": 536870912,
+        "generation_seconds": 300,
+        "evaluation_seconds_per_witness": 120,
+        "wall_seconds_per_case": 600,
+        "workers": 1
+      },
+      "conditional_cap_wire_bytes": 64042691,
+      "conditional_cap_trace_bytes": 1088000089,
+      "estimated_streaming_peak_at_conditional_cap_bytes": 165754563,
+      "readiness": "Feasibility review required; no completed full count or evaluation. No budget escalation has been performed.",
+      "conditional_cap_generation_seconds_at_observed_count_rate": 110.53568948799511,
+      "conditional_cap_evaluation_seconds_at_historical_materialised_rate": 14.098771239174345
+    }
+  ],
+  "capped_target_next_evidence": "Review source-order 6*55 hint scan lowering and measure complete counts under a separately approved count-only ceiling, potentially 64M gates/2GiB logical/300s with existing 128MiB RSS/256MiB AS. Do not infer completion from the observed prefix or change capacity/parameters."
+}

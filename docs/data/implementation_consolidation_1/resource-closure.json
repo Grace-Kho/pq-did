@@ -1,0 +1,43 @@
+{
+  "package": "IMPLEMENTATION-CONSOLIDATION-1",
+  "implementation_opening_seconds": 2676.6609291199384,
+  "package_charged_seconds": 89.7231029617833,
+  "guarded_job_seconds": 8.586937389802188,
+  "bookkeeping_seconds": 81.13616557198111,
+  "implementation_aggregate_charged_seconds": 1687.062173841845,
+  "implementation_remaining_seconds": 2586.937826158155,
+  "analysis_remaining_seconds_unchanged": 80.91750274339225,
+  "isolation_allowance_unchanged": true,
+  "new_invocations": 0,
+  "cumulative_invocations": 974,
+  "remaining_invocations": 76,
+  "new_builds": 0,
+  "cumulative_builds": 10,
+  "remaining_builds": 3,
+  "current_task_builds_authorised": 0,
+  "cumulative_work_events": 77593603,
+  "new_work_events": 0,
+  "work_event_ceiling": 4294967296,
+  "phase_cgroup_memory_peaks_bytes": {
+    "tool": 27742208,
+    "audit": 52903936
+  },
+  "metric": "cgroup-v2 worker memory.peak includes descendants and charged cache/kernel; unchanged 256 MiB tooling/audit cap",
+  "actual_resource_breaches": 0,
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "new_circuits": 0,
+  "installations": 0,
+  "activation": false,
+  "completion_reserve_preserved_inside_balances": true,
+  "finalisation_charge_seconds": 6,
+  "storage": {
+    "new_evidence_bytes": 193047,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 26967955,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "cumulative_evidence_remaining_bytes": 6586477,
+  "shared_evidence_remaining_bytes": 4564934
+}

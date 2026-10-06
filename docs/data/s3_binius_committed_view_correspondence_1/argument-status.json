@@ -1,0 +1,33 @@
+{
+  "outcome": "unresolved lemma; construction attempt closed without native admission",
+  "established_elementary_results": [
+    "decoder-transposed relation identity",
+    "restricted online aggregate-coset simulator",
+    "conditional affine observation image criterion",
+    "conditional leaf entropy rank increment",
+    "two-stage fixed-residual polynomial-root facts"
+  ],
+  "conditional_assumptions_not_established": [
+    "joint outer-prefix simulator with committed OTP/dummy/Libra correlations",
+    "early-root equivocation consistent with all native leaf/internal-node/transcript hash access",
+    "residual leaf entropy for every admissible actual transcript prefix",
+    "joint codeword/lift relation extraction to the same outer private oracle",
+    "FS/QROM transfer and concrete hash/PRG replacement"
+  ],
+  "simulation_attempts": [
+    {
+      "id": "SIM-A",
+      "method": "commit actual arbitrary dummy vectors, adapt later",
+      "failure": "real deterministic commitments cannot be changed to constraint-compatible hidden objects without binding failure; no efficient witnessless compatible sampling result"
+    },
+    {
+      "id": "SIM-B",
+      "method": "program roots first in ideal hash model; sample aggregate view and open lazily",
+      "failure": "requires quantified fresh-programming/conditional-entropy event and prior outer-prefix simulation; unproved for actual prefix and concrete hash suite"
+    }
+  ],
+  "new_refinement": "An original/companion leaf pair has at most one field-symbol of residual entropy conditional on complete V, not two; rank depends on the whole observation matrix, not only q. This is a conditional algebraic fact, not a bit-security guarantee.",
+  "smallest_named_obligation": "CV-ONLINE-SAME-OBJECT-1",
+  "native_and_proof_execution": false,
+  "prior_acquisition_memory_observation_unresolved": true
+}

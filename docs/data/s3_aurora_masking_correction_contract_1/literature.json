@@ -1,0 +1,23 @@
+{
+  "Aurora": {
+    "url": "https://eprint.iacr.org/2018/828.pdf",
+    "version": "8 May 2019,64 pages",
+    "full_text_inspected": [
+      "Protocol5.8/Theorem5.7",
+      "Theorem7.4 and proof",
+      "Theorem8.5/Protocol8.6 and proof",
+      "Figure5/Theorem9.2"
+    ],
+    "reuse": [
+      "Aurora4.6/4.7 common-position convention",
+      "BCS/CMS limits from completed query/masking review"
+    ],
+    "new_local_downloads": 0,
+    "screenshots_verified": false,
+    "hypotheses": "Perfect classical ideal algebraic view only; no BCS/QROM/concrete-hash composition claimed"
+  },
+  "directly_timed_lookup_seconds": 5.392,
+  "first_grouped_lookup_conservative_charge_seconds": 3,
+  "total_lookup_charge_seconds": 8.392,
+  "interpretation": "Contract chooses general8.6 all-column degree equalisation, not optimised Figure5 finite constants"
+}

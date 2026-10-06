@@ -1,0 +1,14 @@
+{
+  "case_id": "C-07",
+  "invocation_id": "CAR1-0008",
+  "status": "pass",
+  "details": {
+    "case": "C-07",
+    "purpose": "forward/missing producer rejected",
+    "full_relation": false,
+    "rejection": "missing producer or invalid opcode",
+    "state": "incomplete"
+  },
+  "seconds": 3.2686046324670315e-05,
+  "work_events": 1
+}

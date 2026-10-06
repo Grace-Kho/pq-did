@@ -1,0 +1,11 @@
+{
+  "failed_job": "source-quality",
+  "effect": "Only unused imports/noqa and adjacent literal wrapping; runtime strings unchanged",
+  "changed": [
+    "admission.py",
+    "dispatch.py",
+    "relation_cases.py",
+    "run.py"
+  ],
+  "historical_failure_preserved": true
+}

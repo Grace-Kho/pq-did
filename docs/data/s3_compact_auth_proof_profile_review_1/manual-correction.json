@@ -1,0 +1,13 @@
+{
+  "kind": "Explicit source-reviewed lint correction, not an automatic retry",
+  "diagnosis": "Two E501 line-length violations in new audit.py/close.py string literals",
+  "correction": "Split the two literals; preserve original failed guard/log/ledger. Corrected lint has a distinct run name and is charged; no test/circuit invocation.",
+  "failure_sha256": {
+    "quality.log": "d6c992168c156e09c9e10d3848789222a43d8704d34179d6c337a6a767e6c239",
+    "quality.json": "c3621424a9539ac7d3b8c295331b3775944f2578ff1569081e4b911ba2663a18",
+    "quality.service.json": "81ab8e25a8286da282a273891c603c44a11cf48713d57fabb0f7d3ce74f604dc",
+    "STOP-quality.json": "2973cf50de76919f60b82073cf89d02eefb9575ef1f9ea9b567019739f39e03c"
+  },
+  "limits_changed": false,
+  "full_audits_already_run": 0
+}

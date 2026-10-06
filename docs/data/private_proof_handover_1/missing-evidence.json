@@ -1,0 +1,22 @@
+{
+  "cargo_lock": "Absent from retained pinned tree; no resolved transitive lock or crate archives",
+  "native_snapshot": "Selected text files only; no complete checkout, compiled backend or runtime dependencies",
+  "native_not_included": 686,
+  "full_native_inventory": "missing-native-files.tsv",
+  "omitted_retained_metadata": [
+    {
+      "path": "docs/data/oct31_binius64_replacement_decision_1/sources/fix-ancestry.json",
+      "sha256": "f889b218368becc842d3373542c7e8b06956f97c95292a78a9f75469eec0b169",
+      "reason": "Large ancestry response omitted; pin, correction record and prior findings included"
+    }
+  ],
+  "missing_construction": [
+    "No justified source overlay or cross-commitment terminal-key equality proof",
+    "No native-basis support/rank certificate or joint-view simulator",
+    "No completed IntMul auxiliary-oracle privacy correspondence",
+    "No standalone executed minimal privacy example; algebra is in complete G0 report"
+  ],
+  "blueprint": "Retained PDF and extracted text included; reproducible PDF-to-website-source build not established",
+  "dependency_reference": "repo/docs/data/oct31_binius64_replacement_decision_1/dependency-requirements.json",
+  "permission": "Packaging only. Missing files were not acquired; copied tests must not be interpreted as executed."
+}

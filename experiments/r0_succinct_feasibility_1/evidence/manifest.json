@@ -1,0 +1,181 @@
+{
+  "package": "R0-SUCCINCT-FEASIBILITY-1",
+  "source_revision_kind": "SHA-256 source/manifest inventory; workspace has no Git repository",
+  "source_revision": "cbd6c003b70589460c95213e23704f10bcd9ceda17460e573eb5380c518616a9",
+  "SDK_release_commit": "1cc70cf05033a79ebc90f07c679cb4bd1cd301b9",
+  "compiler": "rustc 1.97.0-dev (e638c6cfe 2026-07-15)\nbinary: rustc\ncommit-hash: e638c6cfea1eff5fbbb24a27e60538e3760d21b8\ncommit-date: 2026-07-15\nhost: x86_64-unknown-linux-gnu\nrelease: 1.97.0-dev\nLLVM version: 22.1.6",
+  "cargo": "cargo 1.97.0-dev (c980f4866 2026-06-30)",
+  "prover": "risc0-r0vm 3.0.6",
+  "cargo_risczero": "cargo-risczero 3.0.6",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "machine": "x86_64",
+  "rustc_target": "riscv32im-risc0-zkvm-elf",
+  "guest_RUSTFLAGS": "-C passes=lower-atomic -C link-arg=-Ttext=0x00200800 -C link-arg=--fatal-warnings -C panic=abort --cfg getrandom_backend=\"custom\"",
+  "profiles": {
+    "optimisation": 3,
+    "lto": "thin",
+    "overflow_checks": true,
+    "codegen_units": 1
+  },
+  "registry": [
+    {
+      "operation": "enrol",
+      "image": [
+        3771262054,
+        2934794436,
+        1441774498,
+        2869905324,
+        1497161362,
+        1391706344,
+        1955224464,
+        202812443
+      ],
+      "elf": "target/enrol.bin",
+      "elf_sha256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+      "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+      "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+    },
+    {
+      "operation": "cred-valid",
+      "image": [
+        3261973099,
+        2387775128,
+        3397734421,
+        2270497942,
+        482271879,
+        2162741275,
+        3976158240,
+        1905019297
+      ],
+      "elf": "target/cred_valid.bin",
+      "elf_sha256": "153cf7a5758a8097d3b192fd590301546c64fde7582dde2cfc2db3aa3261c3d3",
+      "verifier_parameters": "ece5e9b8ae2cd6ea6b1827b464ff0348f9a7f4decd269c0087fdfd75098da013",
+      "control_root": "a54dc85ac99f851c92d7c96d7318af41dbe7c0194edfcc37eb4d422a998c1f56"
+    }
+  ],
+  "assets": {
+    "Cargo.toml": {
+      "SHA256": "b4f225a5eb98e2ee8cbf18c32ee1432766d323f8619acc12f5b8c8fdbfa7c0dc",
+      "bytes": 211
+    },
+    "Cargo.lock": {
+      "SHA256": "86e6f8da9f984bb1d8c4494d6841a79a89f7a370bd7ee703e6dbbb88b1d6ce37",
+      "bytes": 67846
+    },
+    "methods/guest/Cargo.lock": {
+      "SHA256": "6110756e650b8ffced46825ff3633eb4997e9def020fdef1435419ed0b1459f8",
+      "bytes": 36895
+    },
+    "rust-toolchain.toml": {
+      "SHA256": "ffec6b8c305f66f55fd84bf37537f74e4409bd56e232b0130d4a3a4fccd77d36",
+      "bytes": 30
+    },
+    "scripts/build.sh": {
+      "SHA256": "e41a129a555a9086bfc1a6cf12896166d48407cbb45db9109c0927a9f5e33cee",
+      "bytes": 771
+    },
+    "target/release/pqdid-r0-host": {
+      "SHA256": "795039c3e49e7e8d757dcddf464ecc56ef905406498e91eaedc858dfaca7426e",
+      "bytes": 5440720
+    },
+    "target/enrol.bin": {
+      "SHA256": "4db93d3c9463e13db2a172923fdbc917558eabea867b3fd3d0124b6b9f54dc1c",
+      "bytes": 306948
+    },
+    "target/cred_valid.bin": {
+      "SHA256": "153cf7a5758a8097d3b192fd590301546c64fde7582dde2cfc2db3aa3261c3d3",
+      "bytes": 306960
+    },
+    "tooling/sdk-3.0.6/r0vm": {
+      "SHA256": "751b9b188d341e8bec5e02060086b7b1dc3f7289e90f726c38589bb6735dd6d7",
+      "bytes": 108165720
+    },
+    "relation/src/mldsa.rs": {
+      "SHA256": "ed3b8beb935923a545a7b81c9f01765ed05b0a545a5ae1a5a50f9d7c61c9a225",
+      "bytes": 9947
+    },
+    "relation/src/lib.rs": {
+      "SHA256": "0d76b90442512512a07037f16d5a0386cd51c26ef37445f14a8cae15ac8ddfe2",
+      "bytes": 8240
+    },
+    "relation/Cargo.toml": {
+      "SHA256": "ed6910bd204fe48a5992f4fde0e8bb568004be3b22fd1e14d1c91e83bf0be916",
+      "bytes": 128
+    },
+    "host/src/main.rs": {
+      "SHA256": "b0a8b53ed005ab11a773ce33467ff2b9dca5d45418a04904385f605ea3d98832",
+      "bytes": 17817
+    },
+    "host/Cargo.toml": {
+      "SHA256": "669dc54c6c057e6b334053422132124b557f204a65f6431c46696535d70fe76b",
+      "bytes": 448
+    },
+    "methods/guest/src/lib.rs": {
+      "SHA256": "a25ce6c2ab26b8392490caa2aaec5d852e34c2ddaf6996213af0855e88df8487",
+      "bytes": 621
+    },
+    "methods/guest/src/bin/enrol.rs": {
+      "SHA256": "20a8f229ce536405686705e8d303145649c2cd6c30089012027bd0a6a3a979b3",
+      "bytes": 95
+    },
+    "methods/guest/src/bin/cred_valid.rs": {
+      "SHA256": "93f9b963e7ce6e0d9ece9fa3e21535f30caea298088d5cc6daeb892529f68d38",
+      "bytes": 100
+    },
+    "methods/guest/Cargo.toml": {
+      "SHA256": "8a997971a5e56b9186eab32f75d56893d74f00ae926635bb2a25469af603724f",
+      "bytes": 596
+    },
+    "target/guest/riscv32im-risc0-zkvm-elf/release/enrol": {
+      "SHA256": "9fbacd2f38ec5d9177cbf5dbd050261af1bd86a9cd1978407056afbab7f26449",
+      "bytes": 274524
+    },
+    "target/guest/riscv32im-risc0-zkvm-elf/release/cred_valid": {
+      "SHA256": "ed892a4aa0325dec09eb505f9cdb4e65e747bbc654c9b87c43fbdf28d577f0cb",
+      "bytes": 274536
+    },
+    "pinned_kernel_v1compat.elf": {
+      "SHA256": "7ffd942e4e8babd771094f549ad080cfea8ecb2c05c986e275c011f41979d921",
+      "bytes": 32392
+    }
+  },
+  "circuit_versions": {
+    "Cargo.lock": {
+      "risc0-binfmt": "3.0.5",
+      "risc0-build": "3.0.6",
+      "risc0-circuit-keccak": "4.0.6",
+      "risc0-circuit-recursion": "4.0.5",
+      "risc0-circuit-rv32im": "4.0.5",
+      "risc0-core": "3.0.2",
+      "risc0-groth16": "3.0.5",
+      "risc0-zkos-v1compat": "2.2.3",
+      "risc0-zkp": "3.0.5",
+      "risc0-zkvm": "3.0.6",
+      "risc0-zkvm-platform": "2.2.3"
+    },
+    "methods/guest/Cargo.lock": {
+      "risc0-binfmt": "3.0.5",
+      "risc0-circuit-keccak": "4.0.6",
+      "risc0-circuit-recursion": "4.0.5",
+      "risc0-circuit-rv32im": "4.0.5",
+      "risc0-core": "3.0.2",
+      "risc0-groth16": "3.0.5",
+      "risc0-zkos-v1compat": "2.2.3",
+      "risc0-zkp": "3.0.5",
+      "risc0-zkvm": "3.0.6",
+      "risc0-zkvm-platform": "2.2.3"
+    }
+  },
+  "proof_attempts": 0,
+  "setup_seconds": 231.0998520469875,
+  "build_seconds": 257.98127402899263,
+  "execute_seconds": 0.3101004050113261,
+  "proof_receipts": [],
+  "global_tool_homes_absent": {
+    "/home/grace/.cargo": true,
+    "/home/grace/.rustup": true,
+    "/home/grace/.risc0": true,
+    "/home/grace/.rzup": true
+  },
+  "temporary_storage_bytes_at_stop": 0
+}

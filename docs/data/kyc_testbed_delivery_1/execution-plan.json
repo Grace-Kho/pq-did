@@ -1,0 +1,118 @@
+{
+  "package": "KYC-TESTBED-DELIVERY-1",
+  "cases": [
+    {
+      "id": "D-01",
+      "purpose": "issue and durable acceptance",
+      "max_seconds": 10
+    },
+    {
+      "id": "D-02",
+      "purpose": "v2 recovery and exact redelivery",
+      "max_seconds": 10
+    },
+    {
+      "id": "D-03",
+      "purpose": "verifier A acceptance",
+      "max_seconds": 10
+    },
+    {
+      "id": "D-04",
+      "purpose": "independent verifier B acceptance",
+      "max_seconds": 10
+    },
+    {
+      "id": "D-05",
+      "purpose": "replay rejection",
+      "max_seconds": 10
+    },
+    {
+      "id": "D-06",
+      "purpose": "cross-audience rejection",
+      "max_seconds": 10
+    },
+    {
+      "id": "D-07",
+      "purpose": "missing second page leaves wallet unchanged",
+      "max_seconds": 35
+    },
+    {
+      "id": "D-08",
+      "purpose": "complete two-page atomic catch-up",
+      "max_seconds": 10
+    },
+    {
+      "id": "D-09",
+      "purpose": "revoked holder rejection",
+      "max_seconds": 10
+    },
+    {
+      "id": "D-10",
+      "purpose": "private backend fail-closed",
+      "max_seconds": 10
+    },
+    {
+      "id": "E-01",
+      "purpose": "export roundtrip/provenance",
+      "max_seconds": 5
+    },
+    {
+      "id": "E-02",
+      "purpose": "duplicate identity rejection",
+      "max_seconds": 5
+    },
+    {
+      "id": "E-03",
+      "purpose": "category promotion rejection",
+      "max_seconds": 5
+    },
+    {
+      "id": "E-04",
+      "purpose": "existing output refused",
+      "max_seconds": 5
+    },
+    {
+      "id": "B-01",
+      "purpose": "ISSUE",
+      "max_seconds": 12
+    },
+    {
+      "id": "B-02",
+      "purpose": "PRESENT-A",
+      "max_seconds": 12
+    },
+    {
+      "id": "B-03",
+      "purpose": "PRESENT-B",
+      "max_seconds": 12
+    },
+    {
+      "id": "B-04",
+      "purpose": "REVOKE-UPDATE",
+      "max_seconds": 12
+    }
+  ],
+  "fixed_cases": 18,
+  "targeted_corrective_reruns_max": 4,
+  "preservation_checkpoints": 1,
+  "evidence_admission": {
+    "cap": 2097152,
+    "simultaneous_synthetic_stores_and_SQLite_journals": 1150000,
+    "source_case_export_logs_before_finalisation": 380000,
+    "reserved_completion": 524288,
+    "planned_peak_total": 2054288,
+    "historical_evidence_removed": false
+  },
+  "operator_seconds": 100,
+  "command_proposals": {
+    "static": 5,
+    "preflight": 8,
+    "demo": 40,
+    "export": 8,
+    "benchmark": 30,
+    "prepare": 4,
+    "full-audit": 10,
+    "readback": 4
+  },
+  "no_builds_or_private_proofs": true
+}

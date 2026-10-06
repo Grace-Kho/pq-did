@@ -1,0 +1,297 @@
+{
+  "previous_complete_index": "docs/data/implementation_consolidation_1/coverage.json",
+  "requirements": {
+    "R-001": {
+      "title": "Instance and trust [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-002": {
+      "title": "Owner separation and visibility [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-003": {
+      "title": "Service assumptions [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-004": {
+      "title": "Parameters and persistent state [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-005": {
+      "title": "Canonical codec [M/E/A].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-006": {
+      "title": "Schema and attribute vector [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-007": {
+      "title": "Disclosure and policy [M/E].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-008": {
+      "title": "Complete challenge context [M/A].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-009": {
+      "title": "Signatures and contexts [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-010": {
+      "title": "Hashes and randomness [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-011": {
+      "title": "Setup [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-012": {
+      "title": "DID.KeyGen [M].",
+      "new_evidence": "F-07 authenticated DID/controller key bound before disclosed-baseline enrolment",
+      "original_scope_closed": false
+    },
+    "R-013": {
+      "title": "DID.Publish [M].",
+      "new_evidence": "F-07/F-08/F-09 genuine bounded record signatures; local reference registry",
+      "original_scope_closed": false
+    },
+    "R-014": {
+      "title": "Publication recovery [M].",
+      "new_evidence": "Existing DID recovery evidence reused; no new durable registry claim",
+      "original_scope_closed": false
+    },
+    "R-015": {
+      "title": "DID.Resolve [M].",
+      "new_evidence": "F-07 and M-05/M-06 trusted resolver metadata; not W3C key-suite conformance",
+      "original_scope_closed": false
+    },
+    "R-016": {
+      "title": "Request creation/approval [M].",
+      "new_evidence": "F-01/F-02/F-13 context/policy/time binding; genuine baseline",
+      "original_scope_closed": false
+    },
+    "R-017": {
+      "title": "CurrentState and logical epoch [M].",
+      "new_evidence": "F-11 authenticated revocation state and catch-up, separate current reads",
+      "original_scope_closed": false
+    },
+    "R-018": {
+      "title": "Allocation and issuer challenge [M].",
+      "new_evidence": "F-01/F-05/F-06 existing permanent allocation and recipient delivery",
+      "original_scope_closed": false
+    },
+    "R-019": {
+      "title": "Issue inputs and external validation [M].",
+      "new_evidence": "Trusted local issuer/DID mapping and approved attributes; real-world KYC not implemented",
+      "original_scope_closed": false
+    },
+    "R-020": {
+      "title": "Enrolment and input separation [M].",
+      "new_evidence": "Genuine baseline holder ML-DSA possession; private PQ-DID enrolment proof unavailable",
+      "original_scope_closed": false
+    },
+    "R-021": {
+      "title": "Certification and release [M].",
+      "new_evidence": "F-05/F-06 exact certification/redelivery; R-1-4 retained SIGNING failure",
+      "original_scope_closed": false
+    },
+    "R-022": {
+      "title": "Issuance abort semantics [M].",
+      "new_evidence": "Existing abort evidence reused; no new abort test",
+      "original_scope_closed": false
+    },
+    "R-023": {
+      "title": "Credential binding interfaces [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-024": {
+      "title": "Joint authentication relation [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-025": {
+      "title": "Private, public and lifecycle checks [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-026": {
+      "title": "Present/AuthDAA [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-027": {
+      "title": "VerifyDAA [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-028": {
+      "title": "Stateful Verify/atomic acceptance [M/A].",
+      "new_evidence": "F-01..F-04 two independent verifier stores, exactly-once acceptance/replay denial",
+      "original_scope_closed": false
+    },
+    "R-029": {
+      "title": "Tree and PathRoot [M].",
+      "new_evidence": "W-04 exact updated path checked against independent sparse-tree fixture",
+      "original_scope_closed": false
+    },
+    "R-030": {
+      "title": "Revoke [M/A].",
+      "new_evidence": "F-11 genuine revocation; R-1-4 exposes bounded issuer setup scalability gap",
+      "original_scope_closed": false
+    },
+    "R-031": {
+      "title": "UpdateWit [M].",
+      "new_evidence": "W-01..W-24 durable private snapshot/recovery/fencing; 1-record baseline timing only",
+      "original_scope_closed": false
+    },
+    "R-032": {
+      "title": "Exact bounded computation [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-033": {
+      "title": "Caps and release policy [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-034": {
+      "title": "BC-1 arithmetic [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-035": {
+      "title": "BC-1 gates and ordering [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-036": {
+      "title": "BC-1 control flow, rejection and optimisation [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-037": {
+      "title": "Circuit identity and admission [M/E].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-038": {
+      "title": "Shares and tapes [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-039": {
+      "title": "Views and commitments [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-040": {
+      "title": "Fiat\u2013Shamir challenge [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-041": {
+      "title": "Proof serialisation and size [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-042": {
+      "title": "Proof checking [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-043": {
+      "title": "Fresh randomness and erasure [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-044": {
+      "title": "Certification, binding and non-membership [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-045": {
+      "title": "Complete-witness knowledge [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-046": {
+      "title": "Adaptive presentation privacy [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-047": {
+      "title": "Historical privacy and exclusions [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-048": {
+      "title": "Correctness scope [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-049": {
+      "title": "Cap-loss and runtime accounting [M; validation pending].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-050": {
+      "title": "Conditional QROM terms [M; not independently proved here].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-051": {
+      "title": "Lifecycle security composition [M].",
+      "new_evidence": "Unchanged evidence/obligations; see retained complete index",
+      "original_scope_closed": false
+    },
+    "R-052": {
+      "title": "W3C architectural mapping [M/E].",
+      "new_evidence": "M-01..M-10 approved local mappings only; standard key/securing/private status unresolved",
+      "original_scope_closed": false
+    }
+  },
+  "categories": {
+    "working_baseline": "Connected genuine disclosed ML-DSA baseline; local trusted coordinator, fresh synthetic keys",
+    "local_pqdid_reference": "Validated durable holder credential/witness/state storage; existing executable relations reused",
+    "synthetic_proof_scenarios": "Historical labelled fixtures only; none on new baseline acceptance path",
+    "genuine_private_authentication": "Unavailable, normal private-proof verification fail-closed"
+  },
+  "original_programme_complete": false,
+  "stages_2_3_open": true,
+  "unchanged_private_relation_cases": [
+    "M-01",
+    "M-02",
+    "M-03",
+    "J-01",
+    "J-02",
+    "J-03",
+    "J-04",
+    "J-05",
+    "J-06",
+    "J-07",
+    "J-08",
+    "J-09",
+    "J-10",
+    "J-11",
+    "J-12",
+    "J-13",
+    "J-14",
+    "J-15",
+    "J-16",
+    "Q-02",
+    "Q-03"
+  ],
+  "private_proof_measurements": null
+}

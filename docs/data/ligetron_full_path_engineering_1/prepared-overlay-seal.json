@@ -1,0 +1,35 @@
+{
+  "status": "source-only partial engineering overlay; no compilation or native validation; not admitted to proof generation",
+  "base_commit": "4b1cdef1bfdf4497fb3e38170db4541fba3f6c12",
+  "preceding_overlays": [
+    "043ee96fbae51b9416b3435be7e7ad27cfc076ddb7790e14f14be6ea09c0dc3c",
+    "31f1515e498182664f51e92d91925416c0063d5b117494948e4a52dc6fcc5723"
+  ],
+  "patch_sha256": "59f3c8e415e2899730e4d4792a980b4c0a9914036d1201d759e4c3f15b2d7654",
+  "base_sha256": {
+    "CMakeLists.txt": "054204a3489c9034236e071813c095cca3b2da5d2c396ed574fb2870049962a8",
+    "src/webgpu_prover.cpp": "95e7c6a0fe0b12eb3608e2373ea165a1c3b820e6b7f82c1282fb52dc87d4229e",
+    "src/webgpu_verifier.cpp": "8e2d5eb60b24b8d8c9ea891a2b51a77aa7f36155cde6e4866e2707d1f720745f"
+  },
+  "sha256": {
+    "experiments/ligetron_full_path_engineering_1/overlay/CMakeLists.txt": "264fcf2d39395332880b3faae03c483a7f2c75b74748d119d9b6fb6e41236151",
+    "experiments/ligetron_full_path_engineering_1/overlay/include/zkp/pqdid_bounded_io_exp1.hpp": "5647705025f50ff654bc1d101d4aa371f12aefb457e88f4b7029a2ce5102f2d1",
+    "experiments/ligetron_full_path_engineering_1/overlay/src/webgpu_prover.cpp": "c138fa278ee5e0d18e87d8ec5d9ad66a2908232998eda4d43bb37bc5d5cd1d46",
+    "experiments/ligetron_full_path_engineering_1/overlay/src/webgpu_verifier.cpp": "191181b0d53c4b6e0579cbec3531fd0fbf0469cc51a1cbfb2e27a7b4df545f06"
+  },
+  "implemented_source_only": [
+    "bounded configuration/program reads",
+    "explicit instance digest initialisation",
+    "single-member gzip with streaming decompression cap and trailing-data rejection",
+    "proof file output byte caps",
+    "offline JSON CMake wiring and optional unrelated test builds"
+  ],
+  "not_implemented_or_validated": [
+    "complete canonical statement/entry/ABI/layout/context binding",
+    "strict JSON/protobuf wire and metadata validation",
+    "native harness and independent expectations",
+    "actual shader/callback/VM execution",
+    "full buffer/work schedule",
+    "synthetic proof generation and independent verification"
+  ]
+}

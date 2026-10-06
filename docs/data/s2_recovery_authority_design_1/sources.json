@@ -1,0 +1,57 @@
+{
+  "retrieved_date": "2026-09-19",
+  "primary_sources_only": true,
+  "sources": [
+    {
+      "id": "SQLITE-WAL",
+      "url": "https://www.sqlite.org/wal.html",
+      "used_for": "WAL-reset affected/fixed upstream versions; WAL commit distinct from checkpoint; no cross-file ATTACH atomicity in WAL."
+    },
+    {
+      "id": "SQLITE-PRAGMA",
+      "url": "https://www.sqlite.org/pragma.html#pragma_synchronous",
+      "used_for": "EXTRA adds directory sync for DELETE commit; FULL rollback durability depends on filesystem."
+    },
+    {
+      "id": "SQLITE-ATOMIC",
+      "url": "https://www.sqlite.org/atomiccommit.html",
+      "used_for": "Atomic rollback-journal transactions depend on locking and truthful flush/storage assumptions."
+    },
+    {
+      "id": "SQLITE-TX",
+      "url": "https://www.sqlite.org/lang_transaction.html",
+      "used_for": "BEGIN IMMEDIATE, single writer, BUSY/COMMIT/error handling."
+    },
+    {
+      "id": "SQLITE-ISOLATION",
+      "url": "https://www.sqlite.org/isolation.html",
+      "used_for": "Separate connection isolation, serialised writes, avoid shared-cache/read-uncommitted."
+    },
+    {
+      "id": "SQLITE-CORRUPTION",
+      "url": "https://www.sqlite.org/howtocorrupt.html",
+      "used_for": "Preserve hot journals; raw copying, filesystem and sync failures are outside simple process-crash claims."
+    },
+    {
+      "id": "SQLITE-LIMITS",
+      "url": "https://www.sqlite.org/limits.html",
+      "used_for": "Connection and page-count limits can be lowered for untrusted input/resource admission."
+    },
+    {
+      "id": "PYTHON-SQLITE",
+      "url": "https://docs.python.org/3.14/library/sqlite3.html",
+      "used_for": "Explicit SQL transactions under autocommit=True; connection methods commit/rollback have no effect in that mode."
+    }
+  ],
+  "wal_fix": {
+    "first_fixed_mainline": "3.51.3",
+    "listed_backports": [
+      "3.44.6",
+      "3.50.7"
+    ],
+    "affected_upstream_first": "3.7.0",
+    "affected_upstream_last": "3.51.2"
+  },
+  "installed_version": "3.46.1",
+  "distribution_fix_verified": false
+}

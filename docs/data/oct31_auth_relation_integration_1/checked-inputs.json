@@ -1,0 +1,20 @@
+{
+  "sha256": {
+    "docs/data/oct31_auth_relation_integration_1/backend-security-notes.md": "a705167a1c983e7032a938ce3761279714feda619ba45d3e93bc95b092897315",
+    "docs/data/oct31_auth_relation_integration_1/cases.json": "007b2c038daefb9b1d15351d00da9864261dfa8dae9fc93da7a733623f3ad433",
+    "docs/data/oct31_auth_relation_integration_1/checks.py": "1f0435c1c6ad3e2690b3ae431e9673c180cf80f3038bf1482fab09ad6de0e466",
+    "docs/data/oct31_auth_relation_integration_1/comparison-point.json": "d65fda5f2c8c67da2e6120a7d202a6786999c5c64f7f74d81260cecffa885383",
+    "docs/data/oct31_auth_relation_integration_1/config.json": "b1f67a74bfde228a3f746e2aee8562765729de8c9d5b1da1b23d11cbf294cc51",
+    "docs/data/oct31_auth_relation_integration_1/execution-plan.json": "23cb25c423a8a5575549de6ec0a15f0567c6a37ed72a9c59a19596bb82923cae",
+    "docs/data/oct31_auth_relation_integration_1/ledger.json": "93b982eec7f7de811442484799f95b89e83f2d67252df5af43550fe58df8f4ce",
+    "docs/data/oct31_auth_relation_integration_1/opening-ledger.json": "a5a0f8d4561724c67ec8c41c9c29ff082da8a4401372ce9410eb5ab1b65ae15b",
+    "docs/data/oct31_auth_relation_integration_1/prefixes.json": "30320321158176765a579a599a0ce523bb74c9cc9ca104d0683cb848081fbe4b",
+    "docs/data/oct31_auth_relation_integration_1/quality.json": "38983bae40e5167df082d2dccf8edc09a87df798c84745f20590820412304f90",
+    "docs/data/oct31_auth_relation_integration_1/quality.log": "18397266abb62affc22b47124ca4bfcd337922d568f06e1a339395bb12586de5",
+    "docs/data/oct31_auth_relation_integration_1/quality.service.json": "f3034a0f646805941104f8a66b7e6359d1aa52e9dc25662c052b3c3ab81a43e4",
+    "docs/data/oct31_auth_relation_integration_1/relation-notes.md": "7c0b344b70df75a62ab52a4cba4f772fde765101e0a2d5f4329751f2356360c8",
+    "docs/data/oct31_auth_relation_integration_1/run.py": "784629077fbfcbc89f56ffdd2d6c87bb6b46889a0adb71ffcbab7ebc44586e97",
+    "docs/data/oct31_auth_relation_integration_1/static-review.json": "4a5ce0763937a8868b8d80f28ad312734315ac6d18dabe98bb2d7747dabcabac"
+  },
+  "scope": "Explicit proposal inputs only; no historical seal regeneration"
+}

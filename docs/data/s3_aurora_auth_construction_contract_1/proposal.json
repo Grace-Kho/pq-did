@@ -1,0 +1,25 @@
+{
+  "package": "S3-AURORA-TRANSCRIPT-BRIDGE-1",
+  "authorised": false,
+  "scope": "Targeted pinned transcript/query/masking and BCS correspondence; source/mathematical only",
+  "analysis_seconds_proposed": 20,
+  "cleanup_evidence_reserve_seconds": 10,
+  "implementation_seconds": 0,
+  "test_invocations": 0,
+  "prior_consumed_invocations": 386,
+  "builds": 0,
+  "installations": 0,
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "stop": "Exact finite manifest and transformation correspondence or precise no-go; no broad survey",
+  "later_smallest_experiment": {
+    "authorised": false,
+    "kind": "Synthetic private R1CS/IOP transcript adapter",
+    "shapes": [
+      "Boolean/hash-like",
+      "carry/range-like"
+    ],
+    "max_rows_per_shape": 1024,
+    "admission": "After AURORA-BRIDGE-001; separately price build/dependencies, tests and time; no allowances activated"
+  }
+}

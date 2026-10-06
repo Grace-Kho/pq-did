@@ -1,0 +1,22 @@
+{
+  "cause": "New helper replacement accidentally changed expected analysis balance270.1814811680233 to0.1814811680233. Baseline checks completed before this assertion; no tests executed.",
+  "change": "Restore exact unchanged analysis balance; one named source-reviewed preflight follow-up, no test retry.",
+  "permitted_followups": [
+    "preflight-corrected",
+    "examples",
+    "imports",
+    "source-format",
+    "quality",
+    "format",
+    "focused",
+    "prepare",
+    "full-audit"
+  ],
+  "evidence": {
+    "preflight-before-correction.txt": "06ca66354c49cc18c702bb6c467a34cbe63b01bcac601950919ba55d10fb3e9a",
+    "preflight.log": "2f003bffc614465d3e64f71c02d0d50da73e1fff7639abc394887400f9f12263",
+    "preflight.json": "15fd7548368edd4d4bdae47dc373977416d3b31d9117684abff45a9ca964883f",
+    "preflight.service.json": "cf158f725f31bc688df8550d663136ce317750cf136a83c8b96ee63593fc5696",
+    "STOP.json": "0c1fa074bfe5e206993622d40eafcc47124f5d126ccb026c948f0ac217babe2a"
+  }
+}

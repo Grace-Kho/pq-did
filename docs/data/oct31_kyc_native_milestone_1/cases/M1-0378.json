@@ -1,0 +1,17 @@
+{
+  "invocation_id": "M1-0378",
+  "case_id": "C-11",
+  "ordinal": 378,
+  "cumulative_invocations": 826,
+  "status": "pass",
+  "result": {
+    "case_id": "C-11",
+    "passed": true,
+    "category": "reference_lifecycle",
+    "details": {
+      "accounting_sha256": "dde4ef350fc1ef3a18bda9ea3888b11c0000fef7c25e7025afaaf9aac925109b",
+      "checked_completed_jobs": 37
+    }
+  },
+  "seconds": 0.030933452886529267
+}

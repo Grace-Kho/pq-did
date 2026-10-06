@@ -1,0 +1,31 @@
+{
+  "status": "component algebra admitted; complete-proof admission denied",
+  "field": "pinned BN254 scalar prime",
+  "k": 8192,
+  "ell": 7936,
+  "padding_count": 256,
+  "query_count": 192,
+  "n": 32768,
+  "delta": 7,
+  "domain": "H_k interpolation; delta H_n code domain; verify delta^n != 1 and exact root orders",
+  "row_degree_exclusive": 8192,
+  "linear_degree_exclusive": 16383,
+  "quadratic_degree_exclusive": 16383,
+  "linear_degree_reason": "Native public coefficient rows interpolate k zero-padded values, so their degree is <k, not the paper degree <ell. Products have degree <=2k-2. Do not claim verbatim Theorem 4.7 correspondence.",
+  "code_mask": "Uniform k independent field draws; image under injective row encoder is uniform codeword.",
+  "linear_mask": "Draw D=2k-1 coefficients, highest coefficient zero; evaluate H_2k; subtract mean of first ell even evaluations. Surjective constant projection gives uniform degree<D sum-zero subspace.",
+  "quadratic_mask": "On H_2k set first ell even positions to zero. Draw all other evaluations except last odd position; solve that position so sum_i v_i*omega_2k^i=0. This exactly forces highest inverse-NTT coefficient zero. Uniform bijective parametrisation of degree<2k-1 vanishing subspace.",
+  "row_padding_rank": "f=fixed interpolation + Z_message*r, degree(r)<k-ell. At <=192 distinct disjoint code nodes, diagonal nonzero Z_message times Vandermonde has full row rank; 256 padding coordinates suffice for this local projection. Not a claim about commitments/adaptive joint views.",
+  "transforms": "Inverse interpolation transform; multiply coefficient j by delta^j; forward code transform. Decode inverse code transform; multiply by delta^-j BEFORE fold a_j+a_(j+k) and evaluate H_k. Masks use H_2k input, same code coset.",
+  "private_randomness": "Same private seed/role and fixed draw schedule replayed across stages. Conditional uniformity assumes ideal independent successful draws; prior capped-sampler/PRG terms remain open.",
+  "batch": "Replace every use of sample_size for padding with k-ell; retain sample_size=192 in query loops and sample buffers.",
+  "profile": "Experimental fixed k,ell,n,t,delta,degree bounds and source profile tag enter Stage1 AND complete Stage1 digest enters Stage2. Reject mismatching dimensions; no accepted metadata override.",
+  "theorems": {
+    "2022/1608": "47-page extended version, \u00a74.6.1 and Fig9/Theorem B.3 full-code affine blinder; \u00a74.6.2/B.4 sum-constrained linear blinding; \u00a74.6.3/B.5 zero-constrained quadratic blinding; Lemma4.15 assumes exact protocol and k>ell+t; \u00a75 compiler separate. Native coefficient-degree extension is explicit local algebra, not theorem certification.",
+    "2024/2010": "44 pages, Theorem4 printed pp8-9: BCS-compiled ZKIPCP premises, classical/quantum adaptive knowledge bounds, \u0398 constants and statistical ZK; not automatically a theorem about this native release."
+  },
+  "admission_scope": "CPU native field/RNG/witness-manager plus explicitly labelled CPU transform model; WGSL/engine overlay source-only. No GPU, VM or full proof run.",
+  "complete_private_proof_admission": "DENIED: joint committed view, compiler, public expansion, same-assignment extraction, QROM/finite losses unresolved",
+  "stop_gate": "If these linear-algebra contracts or the native include/link closure cannot be established, stop before build; no replacement construction.",
+  "component_mapping": "Affine blinding and interpolation rank are elementary component arguments. Native public coefficients have degree<k; use linear degree<2k-1 and record the difference from paper degree<k+ell-1. No exact full-protocol theorem claim."
+}

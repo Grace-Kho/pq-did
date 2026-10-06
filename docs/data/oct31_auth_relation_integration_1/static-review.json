@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "commands": [
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "check",
+      "--select",
+      "I",
+      "--fix",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/oct31_auth_relation_integration_1/run.py",
+      "/home/grace/projects/pq-did/docs/data/oct31_auth_relation_integration_1/checks.py"
+    ],
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "format",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/oct31_auth_relation_integration_1/run.py",
+      "/home/grace/projects/pq-did/docs/data/oct31_auth_relation_integration_1/checks.py"
+    ],
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "check",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/oct31_auth_relation_integration_1/run.py",
+      "/home/grace/projects/pq-did/docs/data/oct31_auth_relation_integration_1/checks.py"
+    ],
+    [
+      "/home/grace/projects/pq-did/.venv/bin/ruff",
+      "format",
+      "--check",
+      "--no-cache",
+      "/home/grace/projects/pq-did/docs/data/oct31_auth_relation_integration_1/run.py",
+      "/home/grace/projects/pq-did/docs/data/oct31_auth_relation_integration_1/checks.py"
+    ]
+  ],
+  "sealed_v1_paths_verified": 2455,
+  "new_tests": 0,
+  "builds": 0,
+  "relations_executed": 0,
+  "cumulative_invocations_unchanged": 867,
+  "proposal_authorised": false,
+  "baseline_reused": true,
+  "storage_admission_passed": true
+}

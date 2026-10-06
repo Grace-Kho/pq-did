@@ -1,0 +1,10 @@
+{
+  "original_preparation_sha256": "92d7039c99d34f2148d540f0f9e15f7eba56db0edbac480007cbe218089982e5",
+  "cause": "directory-only partitioner missed required root files",
+  "explicit_file_partitions": [
+    "PQ_DID_Ligetron_Correction_Handover.zip",
+    "PQ_DID_Ligetron_Domain_Mask_Followup.zip"
+  ],
+  "content_rule": "Existing frozen full-file hashes verified; no baseline/expected comparison removed",
+  "corrected_output": "preparation-corrected.json"
+}

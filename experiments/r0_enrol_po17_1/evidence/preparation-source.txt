@@ -1,0 +1,24 @@
+import hashlib,json,shutil,time
+from pathlib import Path
+P=Path('/home/grace/projects/pq-did');R=P/'experiments/r0_enrol_po17_1';A=R.parent/'r0_succinct_proof_1'
+def sha(p):return hashlib.file_digest(p.open('rb'),'sha256').hexdigest()
+def save(p,v):p.write_text(json.dumps(v,indent=2)+'\n')
+old=json.loads((A/'evidence/protected_before.json').read_text());before={k:sha(P/k) for k in old}
+for p in A.rglob('*'):
+ if p.is_file() and not any(x in p.relative_to(A).parts for x in ['tooling','target','__pycache__']):before[str(p.relative_to(P))]=sha(p)
+for p in [A/'target/release/pqdid-r0-host',P/'docs/stage3_r0_succinct_proof_1.md']:before[str(p.relative_to(P))]=sha(p)
+save(R/'evidence/protected_before.json',before)
+assert sha(P/'docs/manuscript/PQ_DID__Implementation.pdf')=='d17ca0a20b319b88e959467cae92d91d619973f84384710ecbf960a3b850aeca'
+for name in ['Cargo.toml','Cargo.lock','host/Cargo.toml','host/src/main.rs']:shutil.copyfile(A/name,R/name)
+shutil.copytree(A/'relation',R/'relation')
+for name in ['run_limited.py','service_entry.py','build_host.sh','capture.py','isolation_probe.py']:shutil.copyfile(A/'scripts'/name,R/'scripts'/name)
+for name in ['enrol.elf','enrol.bin']:shutil.copyfile(A/'artifacts'/name,R/'artifacts'/name)
+case=next(c for c in json.loads((A/'fixtures/cases.json').read_text())['cases'] if c['name']=='enrol-alpha-42')
+for key in ['public','private','expected_journal']:shutil.copyfile(A/case[key],R/case[key])
+save(R/'fixtures/cases.json',{'cases':[case]})
+reg=[r for r in json.loads((A/'fixtures/public/registry.json').read_text()) if r['operation']=='enrol'];save(R/'fixtures/public/registry.json',reg)
+config=json.loads((A/'config.json').read_text());config.update(package='R0-ENROL-PO17-1',segment_limit_po2=17,session_limit_user_cycles={'enrol':2**22},max_proof_attempts=1,prior_proof_attempts=1,max_execution_only_runs=1,execution_wall_seconds=60,execution_aggregate_seconds=300,sequence=['enrol-alpha-42 execution','conditional enrol-alpha-42 proof, cumulative attempt 2'])
+save(R/'config.json',config)
+save(R/'evidence/baseline.json',{'package':'R0-ENROL-PO17-1','created_utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'previous_manifest_sha256':sha(A/'evidence/manifest.json'),'previous_results':json.loads((A/'evidence/results.json').read_text()),'previous_baseline':json.loads((A/'evidence/baseline.json').read_text()),'previous_config':json.loads((A/'config.json').read_text()),'previous_host_fingerprints':[json.loads(p.read_text()) for p in (A/'target/release/.fingerprint').glob('pqdid-r0-host-*/bin-pqdid-r0-host.json')],'fixture':case,'registry':reg,'recursion_artifacts':json.loads((A/'evidence/recursion-artifacts.json').read_text())})
+save(R/'evidence/cumulative_attempt_ledger.json',{'total_budget':3,'attempts_used':1,'remaining':2,'previous_ledger':'../r0_succinct_proof_1/evidence/run_ledger.json','previous_ledger_sha256':sha(A/'evidence/run_ledger.json'),'attempts':[{'number':1,'package':'R0-SUCCINCT-PROOF-1','outcome':'timeout_during_sixth_lift','final_receipt':False}],'this_package_max_additional_attempts':1})
+print('Isolated package initialised; protected files',len(before))

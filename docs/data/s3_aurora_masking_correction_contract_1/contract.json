@@ -1,0 +1,61 @@
+{
+  "package": "S3-AURORA-MASKING-CORRECTION-CONTRACT-1",
+  "decision": "Supported exact algebraic correction for the explicitly admissible ideal IOP family; implementation correspondence unestablished",
+  "profile_adopted": false,
+  "native_patch_applied": false,
+  "proposed_edits": [
+    "SC-1 unrestricted mask and one disclosed sum",
+    "SC-2 unit pad; remove obsolete pair only in new branch",
+    "SC-3 opt-in non-holographic binary one-claim integration",
+    "SC-4 remainder/sum and shifted-vector correspondence",
+    "LD-1 2J challenges excluding pad",
+    "LD-2 complete unit-pad equalised combination",
+    "FR-1 fold-degree registration index",
+    "IO-1 early sum-message registration and full transcript binding"
+  ],
+  "counts": {
+    "tested_handles": "J=3a+5",
+    "real_openings": "(4+2a+P)u0+IP*sum(uj,j=1..r-1)",
+    "direct_fields": "a+IP*Df",
+    "RS_projected_positions": "B_RS=|S0|<=b",
+    "initial_verifier_fields": "4a",
+    "reducer_verifier_fields": "2JP",
+    "fold_verifier_fields": "Ir"
+  },
+  "simulation": {
+    "model": "straight-line classical ideal polynomial-oracle view",
+    "witness_access": false,
+    "claimed_correspondence": "perfect distribution equality for admissible family",
+    "adaptive_queries": true,
+    "complete_view_includes": [
+      "base columns",
+      "sumcheck masks",
+      "beta direct messages",
+      "quotients and virtual columns",
+      "LDT masks",
+      "all folded openings",
+      "all terminal coefficient vectors"
+    ],
+    "not_established": [
+      "native source refinement",
+      "field certificate/entropy",
+      "packed commitment simulator",
+      "Fiat-Shamir restoration/knowledge",
+      "quantum extraction",
+      "concrete hash",
+      "complete authentication"
+    ]
+  },
+  "next_package": "S3-AURORA-SUMCHECK-MASK-CORRESPONDENCE-PILOT-1",
+  "next_package_authorised": false,
+  "new_functional_tests": 0,
+  "new_builds": 0,
+  "new_native_executions": 0,
+  "new_proofs": 0,
+  "stages_2_3_open": true,
+  "bridge_open": true,
+  "proof_attempts": [
+    2,
+    1
+  ]
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "RG-01",
+    "invocation": 403,
+    "status": "pass",
+    "rerun": false,
+    "seconds": 0.030144692049361765,
+    "command": [
+      "/home/grace/projects/pq-did/.venv/bin/python",
+      "-I",
+      "-B",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_native_transcript_pilot_1/resource-guard-repair-1/fixtures.py",
+      "1"
+    ]
+  },
+  {
+    "id": "RG-02",
+    "invocation": 404,
+    "status": "pass",
+    "rerun": false,
+    "seconds": 0.025358819984830916,
+    "command": [
+      "/home/grace/projects/pq-did/.venv/bin/python",
+      "-I",
+      "-B",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_native_transcript_pilot_1/resource-guard-repair-1/fixtures.py",
+      "2"
+    ]
+  },
+  {
+    "id": "RG-03",
+    "invocation": 405,
+    "status": "pass",
+    "rerun": false,
+    "seconds": 0.027375444071367383,
+    "command": [
+      "/home/grace/projects/pq-did/.venv/bin/python",
+      "-I",
+      "-B",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_native_transcript_pilot_1/resource-guard-repair-1/fixtures.py",
+      "3"
+    ]
+  },
+  {
+    "id": "RG-04",
+    "invocation": 406,
+    "status": "pass",
+    "rerun": false,
+    "seconds": 0.026483461959287524,
+    "command": [
+      "/home/grace/projects/pq-did/.venv/bin/python",
+      "-I",
+      "-B",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_native_transcript_pilot_1/resource-guard-repair-1/fixtures.py",
+      "4"
+    ]
+  },
+  {
+    "id": "RG-05",
+    "invocation": 407,
+    "status": "pass",
+    "rerun": false,
+    "seconds": 0.031195660936646163,
+    "command": [
+      "/home/grace/projects/pq-did/.venv/bin/python",
+      "-I",
+      "-B",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_native_transcript_pilot_1/resource-guard-repair-1/fixtures.py",
+      "5"
+    ]
+  },
+  {
+    "id": "RG-06",
+    "invocation": 408,
+    "status": "pass",
+    "rerun": false,
+    "seconds": 0.032336072996258736,
+    "command": [
+      "/home/grace/projects/pq-did/.venv/bin/python",
+      "-I",
+      "-B",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_native_transcript_pilot_1/resource-guard-repair-1/fixtures.py",
+      "6"
+    ]
+  },
+  {
+    "id": "RG-07",
+    "invocation": 409,
+    "status": "pass",
+    "rerun": false,
+    "seconds": 0.02692717406898737,
+    "command": [
+      "/home/grace/projects/pq-did/.venv/bin/python",
+      "-I",
+      "-B",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_native_transcript_pilot_1/resource-guard-repair-1/fixtures.py",
+      "7"
+    ]
+  },
+  {
+    "id": "RG-08",
+    "invocation": 410,
+    "status": "pass",
+    "rerun": false,
+    "seconds": 0.02581543696578592,
+    "command": [
+      "/home/grace/projects/pq-did/.venv/bin/python",
+      "-I",
+      "-B",
+      "/home/grace/projects/pq-did/docs/data/s3_aurora_native_transcript_pilot_1/resource-guard-repair-1/fixtures.py",
+      "8"
+    ]
+  }
+]

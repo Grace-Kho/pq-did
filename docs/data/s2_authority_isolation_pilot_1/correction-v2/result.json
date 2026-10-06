@@ -1,0 +1,275 @@
+{
+  "package": "S2-AUTHORITY-ISOLATION-PILOT-1",
+  "version": 2,
+  "passed": true,
+  "status": "complete-correction-validation-no-activation",
+  "content_comparison_passed": true,
+  "report_generation_completed": true,
+  "resource_guard_passed": true,
+  "full_audit_attempts_this_correction": 1,
+  "prior_complete_audit_preserved": true,
+  "guard_exit_code": 0,
+  "guard_record": "v2-audit.json",
+  "content_record": "validation.json",
+  "phase_record": "phases.json",
+  "wall_seconds": 2.206143963994691,
+  "cgroup_memory_peak_bytes": 33054720,
+  "sampled_tree_RSS_peak_bytes": 46301184,
+  "memory_metric": "cgroup-v2 charged memory.peak for complete worker subtree including descendants/file cache/kernel; small monitor excluded, sampled RSS supplementary",
+  "historical_identity_paths": 9403,
+  "content_paths": 9391,
+  "inventory_entries": 1084,
+  "comparison_partition_overlap": 0,
+  "historical_test_invocations": 76,
+  "additional_focused_invocations": 24,
+  "additional_focused_passes": 24,
+  "additional_focused_remaining": 0,
+  "cumulative_executed_invocations": 100,
+  "pending_original_identity_cases": 22,
+  "cumulative_invocation_ceiling": 124,
+  "unallocated_slots_after_original_cases": 2,
+  "guarded_seconds_prior": 35.778733974002535,
+  "guarded_seconds_new": 3.9966671330330428,
+  "guarded_seconds_total": 39.77540110703558,
+  "operator_reserve_charged_seconds": 5,
+  "total_charged_seconds": 44.77540110703558,
+  "remaining_aggregate_seconds": 255.22459889296442,
+  "emergency_reserve_seconds": 10,
+  "remaining_excluding_emergency_reserve_seconds": 245.22459889296442,
+  "max_correction_cgroup_memory_peak_bytes": 39866368,
+  "max_correction_sampled_tree_RSS_bytes": 64286720,
+  "temporary_peak_bytes": 478128,
+  "temporary_retained_bytes": 0,
+  "failed_commands_retained": [
+    "v2-lint-fix",
+    "v2-lint-fix-validation",
+    "v2-lint-final"
+  ],
+  "refused_pre_admission_commands_retained": "admission-refusals.json",
+  "resource_ceiling_failures": 0,
+  "remaining_ledger_capacity": {
+    "existing_records": 38,
+    "remaining_records": 26,
+    "projected_bytes": 722338,
+    "maximum_bytes": 1048576
+  },
+  "privileged_mutations": [],
+  "actual_identity_cases_executed": 0,
+  "cases": [
+    {
+      "id": "ISO-RUNTIME",
+      "assertion": "Actual service identities load only the pinned protected interpreter, source and native paths; no writable import/library search paths.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-ROLE-m",
+      "assertion": "m owner and distinct writer authenticate; permitted operations work; writer store read/write/unlink and parent/config/socket replacement fail; admin and observer permissions stay bounded.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-ROLE-i",
+      "assertion": "i owner and distinct writer authenticate; permitted operations work; writer store read/write/unlink and parent/config/socket replacement fail; admin and observer permissions stay bounded.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-ROLE-va",
+      "assertion": "va owner and distinct writer authenticate; permitted operations work; writer store read/write/unlink and parent/config/socket replacement fail; admin and observer permissions stay bounded.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-ROLE-vb",
+      "assertion": "vb owner and distinct writer authenticate; permitted operations work; writer store read/write/unlink and parent/config/socket replacement fail; admin and observer permissions stay bounded.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-CROSS-va",
+      "assertion": "va owner/writer cannot read or modify vb private store or use its capability/scope.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-CROSS-vb",
+      "assertion": "vb owner/writer cannot read or modify va private store or use its capability/scope.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-RECIPIENT",
+      "assertion": "Recipient B cannot retrieve A, including substituted fields; A exact redelivery after lost reply.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-DAC-DENIED",
+      "assertion": "Account without transport membership cannot connect or replace endpoint.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-ACL-DENIED",
+      "assertion": "Account with transport membership but invalid capability cannot perform protected/admin operations; stolen synthetic token with wrong actual UID also fails.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-FENCING",
+      "assertion": "Second admitted owner process of same trusted owner UID replaces writer; old live owner and already connected valid client remain fenced.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-ROTATION",
+      "assertion": "Stopped owner/client credential rotation rejects old capability and old connected clients; new mapping can recover exact retained recipient outcome without re-signing.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-HOLDER",
+      "assertion": "Recipient A cannot access B private fixture wallet; neither verifier gets holder-private files or a persistent holder authentication identity.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-FD",
+      "assertion": "Client inherits no owner database, credential, socket-listener or log descriptors; SCM_RIGHTS is refused; cross-UID /proc/fd access fails.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-MISCONFIG-peer-identity",
+      "assertion": "peer-identity misconfiguration aborts before serving; no chmod fallback, default grant or empty-store recovery.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-MISCONFIG-socket-mode",
+      "assertion": "socket-mode misconfiguration aborts before serving; no chmod fallback, default grant or empty-store recovery.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-MISCONFIG-writable-parent",
+      "assertion": "writable-parent misconfiguration aborts before serving; no chmod fallback, default grant or empty-store recovery.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-MISCONFIG-mutable-runtime",
+      "assertion": "mutable-runtime misconfiguration aborts before serving; no chmod fallback, default grant or empty-store recovery.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-RESTART-m",
+      "assertion": "m restart preserves actual identity/ownership/permissions and starts inactive; exact existing head/admin admission required; no auto-bootstrap, reset or second acceptance.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-RESTART-i",
+      "assertion": "i restart preserves actual identity/ownership/permissions and starts inactive; exact existing head/admin admission required; no auto-bootstrap, reset or second acceptance.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-RESTART-va",
+      "assertion": "va restart preserves actual identity/ownership/permissions and starts inactive; exact existing head/admin admission required; no auto-bootstrap, reset or second acceptance.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    },
+    {
+      "id": "ISO-RESTART-vb",
+      "assertion": "vb restart preserves actual identity/ownership/permissions and starts inactive; exact existing head/admin admission required; no auto-bootstrap, reset or second acceptance.",
+      "status": "pending-approval-of-version-2-delta",
+      "actual_uid": null,
+      "actual_gid": null,
+      "actual_groups": null,
+      "executions": 0
+    }
+  ],
+  "original_scope_approval_retained": true,
+  "changed_host_actions_approved": false,
+  "new_proofs": 0,
+  "new_zkvm_executions": 0,
+  "CPU_proving_paused": true,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1,
+  "stages_2_3_complete": false,
+  "remaining_implementation_blocker": null,
+  "remaining_obligations": [
+    "approval of concrete changed host actions",
+    "original 22 actual-ID cases and outer guards",
+    "bounded full lifecycle integration after isolation passes",
+    "production bounded signing",
+    "complete private-proof feasibility",
+    "privacy/security review"
+  ]
+}

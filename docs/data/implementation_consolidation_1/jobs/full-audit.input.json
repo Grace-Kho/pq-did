@@ -1,0 +1,26 @@
+{
+  "name": "full-audit",
+  "phase": "audit",
+  "argv": [
+    ".venv/bin/python",
+    "-I",
+    "-B",
+    "experiments/implementation_consolidation_1/preservation.py",
+    "full-audit"
+  ],
+  "limit_seconds": 60,
+  "child_seconds": 59,
+  "status": "launched",
+  "unit": "pqdid-consolidation-1-full-audit",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 138357,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 26913265,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4121767936,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

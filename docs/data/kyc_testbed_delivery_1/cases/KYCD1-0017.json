@@ -1,0 +1,183 @@
+{
+  "invocation_id": "KYCD1-0017",
+  "case_id": "B-03",
+  "work_event_reservation": 0,
+  "ordinal": 17,
+  "cumulative_invocations": 1182,
+  "status": "pass",
+  "details": {
+    "scenario": "PRESENT-B",
+    "operation_ns": 451941393,
+    "start_ns": 1135345033952317,
+    "end_ns": 1135345485893710,
+    "setup_ns": 1005716327,
+    "outcome": "accepted",
+    "messages": {
+      "credential": {
+        "canonical": 11012,
+        "transport": 11012
+      },
+      "enrolment_body": {
+        "canonical": 7720,
+        "transport": 7720
+      },
+      "initial_witness_path": {
+        "canonical": 960,
+        "transport": 960
+      },
+      "initial_state": {
+        "canonical": 3427,
+        "transport": 3427
+      },
+      "enrolment_signature": {
+        "canonical": 3309,
+        "transport": 3309
+      },
+      "current_nonce_1": {
+        "canonical": 32,
+        "transport": 32
+      },
+      "current_reply_1": {
+        "canonical": 6792,
+        "transport": 6792
+      },
+      "request": {
+        "canonical": 7554,
+        "transport": 7554
+      },
+      "presentation": {
+        "canonical": 22948,
+        "transport": 22948
+      },
+      "current_nonce_2": {
+        "canonical": 32,
+        "transport": 32
+      },
+      "current_reply_2": {
+        "canonical": 6792,
+        "transport": 6792
+      }
+    },
+    "page_bytes": [],
+    "storage": [
+      {
+        "path": "manager/authority.sqlite3",
+        "bytes": 94208,
+        "secret_material": false
+      },
+      {
+        "path": "verifier-A/authority.sqlite3",
+        "bytes": 57344,
+        "secret_material": false
+      },
+      {
+        "path": "verifier-B/authority.sqlite3",
+        "bytes": 86016,
+        "secret_material": false
+      },
+      {
+        "path": "issuer/issuer.sqlite3",
+        "bytes": 53248,
+        "secret_material": false
+      },
+      {
+        "path": "holder/wallet.bin",
+        "bytes": 15432,
+        "secret_material": false
+      },
+      {
+        "path": "holder/holder.key",
+        "bytes": 6031,
+        "secret_material": true
+      }
+    ],
+    "issuer_storage_version": 2,
+    "manager_storage_version": 2,
+    "fixture_sha256": "274c690c2c0ea1041cf103f6f496fa7abe01172569cda13c1315259bdbcb84fc",
+    "environment": {
+      "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+      "python_executable": "/home/grace/projects/pq-did/.venv/bin/python",
+      "python_executable_sha256": "52e0a13e60a981d8c4b6478be2ba5176f69da07948a056bf49cf6f077e30cb41",
+      "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+      "kernel": "6.18.33.2-microsoft-standard-WSL2",
+      "os_release": "PRETTY_NAME=\"Ubuntu 26.04.1 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"26.04\"\nVERSION=\"26.04.1 LTS (Resolute Raccoon)\"\nVERSION_CODENAME=resolute\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=resolute\nLOGO=ubuntu-logo",
+      "wsl": true,
+      "cpu_model": "Intel(R) Core(TM) i7-14650HX",
+      "cpu_count": 24,
+      "affinity": [
+        0,
+        1
+      ],
+      "threads": 1,
+      "available_memory_bytes": 3712815104,
+      "liboqs_python": "0.16.0",
+      "compiler_identity": {
+        "recorded_setup": "GCC/G++ 15.2.0; docs/environment.md",
+        "binary_sha256": "e6718f7e0c7d057c3ff77b550c603da9bc4030e3ede3c053705acce1293dbe4d",
+        "version_probe_rerun": false
+      },
+      "guard": {
+        "implementation_ceiling_seconds": 6074,
+        "historical_seconds": 5504.215297920748,
+        "completion_reserve_seconds": 30,
+        "evidence_ceiling_bytes": 41943040,
+        "historical_evidence_bytes": 35553865,
+        "evidence_completion_reserve_bytes": 524288,
+        "historical_artifact_bytes": 58966547,
+        "artifact_cap_bytes": 134217728,
+        "artifact_file_bytes": 33554432,
+        "ordinary_file_bytes": 1048576,
+        "temporary_bytes": 8388608,
+        "diagnostic_bytes": 61440,
+        "invocation_ceiling": 1190,
+        "historical_invocations": 1165,
+        "milestone_invocations": 22,
+        "build_ceiling": 13,
+        "historical_builds": 10,
+        "phase_memory": {
+          "python": 268435456,
+          "tool": 268435456,
+          "audit": 268435456
+        },
+        "aggregate_memory_bytes": 2147483648,
+        "worker_concurrency": 1,
+        "concurrency_note": "One serial delivery worker; no builds or circuits",
+        "headroom_bytes": 2147483648,
+        "disk_stop_bytes": 9663676416,
+        "command_seconds": 300,
+        "child_seconds": 295,
+        "retained_artifact_classification_charge_bytes": 0,
+        "milestone_builds": 0,
+        "milestone_seconds": 220,
+        "new_evidence_cap_bytes": 2097152,
+        "new_artifact_cap_bytes": 1,
+        "work_event_ceiling": 4294967296,
+        "historical_work_events": 77593603,
+        "shared_completion_reserve_bytes": 2097152,
+        "shared_headroom_bytes": 5940496,
+        "KYC_protected_seconds": 300,
+        "KYC_after_transfer": 523.3903556420428
+      },
+      "network": "local only; no WAN measurement"
+    },
+    "resources": {
+      "rss_peak_bytes": 43520000,
+      "rss_scope": "process lifetime high-water mark; not a per-operation delta",
+      "cgroup_path": "/user.slice/user-1000.slice/user@1000.service/pqdid.slice/pqdid-kyc.slice/pqdid-kyc-delivery.slice/pqdid-kyc-delivery-1.slice/pqdid-kyc-delivery-1-benchmark.service",
+      "cgroup": {
+        "memory.current": "42291200",
+        "memory.peak": "42291200",
+        "memory.max": "268435456",
+        "memory.swap.max": "0",
+        "cpu.max": "200000 100000"
+      },
+      "cgroup_scope": "current guarded job and descendants; peak includes setup"
+    },
+    "meaning": "runner smoke; fresh synthetic material; setup excluded from operation and included in resources; no population claim",
+    "private_proof_metrics": null,
+    "private_reason": "complete private authentication unavailable",
+    "disclosure": "full disclosed ML-DSA baseline; not anonymous"
+  },
+  "seconds": 1.463649900862947,
+  "work_events": 0
+}

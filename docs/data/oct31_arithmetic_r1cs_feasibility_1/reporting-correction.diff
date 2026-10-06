@@ -1,0 +1,79 @@
+--- experiments/arithmetic_r1cs_feasibility_1/dispatch.py:before
++++ experiments/arithmetic_r1cs_feasibility_1/dispatch.py:after
+@@ -13,19 +13,20 @@
+ 
+ 
+ def execute(case_id):
+-    permitted = {"Q-01"}
++    permitted = {"Q-01", "Q-01-R1"}
+     if case_id not in permitted:
+         raise ValueError("outside explicit compact case matrix")
+     ledger = guard.read(guard.D / "ledger.json")
+     if any(r["case_id"] == case_id for r in ledger["invocations"]):
+         raise RuntimeError("no automatic repeats")
+     reservation = min(50000000, guard.POLICY["work_event_ceiling"] - ledger["work_events"])
++    (guard.D / "cases").mkdir(exist_ok=True)
+     receipt = guard.reserve_case(case_id, reservation)
+     meter = EventMeter(reservation)
+     started = time.monotonic()
+     result = {"case_id": case_id, "invocation_id": receipt["invocation_id"], "status": "failed"}
+     try:
+-        detail = admission.workload(meter)
++        detail = admission.workload(meter, rerun=case_id == "Q-01-R1")
+         result.update(status="pass", details=detail)
+     except BaseException as error:
+         result.update(error=type(error).__name__, message=str(error)[:3000])
+--- experiments/arithmetic_r1cs_feasibility_1/admission.py:before
++++ experiments/arithmetic_r1cs_feasibility_1/admission.py:after
+@@ -56,7 +56,7 @@
+     )
+ 
+ 
+-def workload(meter):
++def workload(meter, *, rerun=False):
+     """One counted calculation; reuse measured hash data, emit no new circuit."""
+     p = 21888242871839275222246405745257275088548364400416034343698204186575808495617
+     measured_path = P / "docs/data/oct31_auth_relation_integration_run_1/cases/AR1-0054.json"
+@@ -187,5 +187,6 @@
+         "work_accounting": "Source/calculation only: zero emitted gates/rows/terms/evaluations",
+     }
+     meter(0)
+-    guard.write(D / "whole-workload-model.json", result)
++    output = "whole-workload-model-r1.json" if rerun else "whole-workload-model.json"
++    guard.write(D / output, result)
+     return result
+--- experiments/arithmetic_r1cs_feasibility_1/preservation.py:before
++++ experiments/arithmetic_r1cs_feasibility_1/preservation.py:after
+@@ -141,8 +141,17 @@
+     for ordinal, case in enumerate(ledger["invocations"], 1):
+         assert case["ordinal"] == ordinal and case["cumulative_invocations"] == 971 + ordinal
+         assert case["status"] in {"pass", "failed", "incomplete"}
+-        record = guard.read(D / "cases" / (case["invocation_id"] + ".json"))
+-        assert record["case_id"] == case["case_id"] and record["status"] == case["status"]
++        if case["invocation_id"] == "ARF1-0001":
++            assert case["status"] == "incomplete"
++            assert case["work_events_charged_upper_bound"] == 50000000
++            assert not (D / "cases/ARF1-0001.json").exists()
++            failure = guard.read(D / "reporting-correction.json")
++            for path, expected in failure["preserved_sha256"].items():
++                assert audit.digest_file(P / path) == expected
++            assert "FileNotFoundError" in (D / "jobs/workload-decision.log").read_text()
++        else:
++            record = guard.read(D / "cases" / (case["invocation_id"] + ".json"))
++            assert record["case_id"] == case["case_id"] and record["status"] == case["status"]
+     for row in ledger["jobs"]:
+         authorised = policy["phase_memory"][row["phase"]]
+         assert row["memory_limit_bytes"] == authorised
+@@ -161,7 +170,11 @@
+     assert guard.read(D / "preparation.json")["passed"]
+     assert guard.read(D / "whole-workload-model.json")["codewords_allocated"] == 0
+     assert ledger["work_events"] == 27593603 + sum(
+-        row["work_events"] for row in ledger["invocations"]
++        row.get("work_events", row.get("work_events_charged_upper_bound", 0))
++        for row in ledger["invocations"]
++    )
++    assert guard.read(D / "whole-workload-model.json") == guard.read(
++        D / "whole-workload-model-r1.json"
+     )
+     return charged
+ 

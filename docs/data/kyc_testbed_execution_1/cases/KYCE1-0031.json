@@ -1,0 +1,39 @@
+{
+  "invocation_id": "KYCE1-0031",
+  "case_id": "F-05",
+  "work_event_reservation": 0,
+  "ordinal": 31,
+  "cumulative_invocations": 1005,
+  "status": "pass",
+  "details": {
+    "state": {
+      "manager_epoch": 0,
+      "allocated_count": 1,
+      "issuer_phases": [
+        "CERTIFIED"
+      ],
+      "verifiers": {
+        "A": {
+          "audience": "baseline-audience-A",
+          "challenges": 1,
+          "consumed": 1,
+          "head": "5c849605f8374bf744c929c4a07a99351054d55a71a1b3cb0be023ed970a4171",
+          "generation": 1
+        },
+        "B": {
+          "audience": "baseline-audience-B",
+          "challenges": 1,
+          "consumed": 1,
+          "head": "d1f4b1360b8f6bbef8b89bcbde4f802b63c69e52fd463b5da9c3e7e7b4d599fb",
+          "generation": 1
+        }
+      },
+      "holder_epoch": 0
+    },
+    "proof_backend": "unavailable",
+    "signatures": "genuine bounded ML-DSA-65"
+  },
+  "seconds": 0.11016544885933399,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions or evaluations. Host setup included in time and resource guard."
+}

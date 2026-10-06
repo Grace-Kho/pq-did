@@ -1,0 +1,52 @@
+{
+  "prior_closure_sha256": "ac3072d8525ef62c00a2c20a26afb902c27c3733b7814bd290874017c2793f77",
+  "prior_manifest_sha256": "a2aa0711c04c980c254266e153547956ead5d684274ad86e7be54b6389512494",
+  "resources": {
+    "package": "OCT31-JOINT-HASH-MASKING-DECISION-1",
+    "implementation_opening_seconds": 2838.5076846957927,
+    "package_charged_seconds": 161.84675557585433,
+    "guarded_job_seconds": 10.701341726933606,
+    "bookkeeping_seconds": 151.14541384892073,
+    "implementation_aggregate_charged_seconds": 1597.3390708800616,
+    "implementation_remaining_seconds": 2676.6609291199384,
+    "analysis_remaining_seconds_unchanged": 80.91750274339225,
+    "isolation_allowance_unchanged": true,
+    "new_invocations": 1,
+    "completed_calculations": 1,
+    "cumulative_invocations": 974,
+    "remaining_invocations": 76,
+    "new_builds": 0,
+    "cumulative_builds": 10,
+    "remaining_builds": 3,
+    "current_task_builds_authorised": 0,
+    "cumulative_work_events": 77593603,
+    "new_actual_emitted_or_evaluated_events": 0,
+    "work_event_ceiling": 4294967296,
+    "phase_cgroup_memory_peaks_bytes": {
+      "tool": 25047040,
+      "python": 28712960,
+      "audit": 49881088
+    },
+    "memory_metric": "cgroup-v2 memory.peak including worker/descendants and charged cache/kernel; audit capped at 256 MiB",
+    "actual_resource_breaches": 0,
+    "proofs": 0,
+    "zkvm_executions": 0,
+    "installations": 0,
+    "activation": false,
+    "new_circuits": 0,
+    "completion_reserve_preserved_inside_balances": true,
+    "preserved_failures": [
+      "source-quality: three E501 diagnostics; scoped correction and rerun passed"
+    ],
+    "finalisation_charge_seconds": 6,
+    "storage": {
+      "new_evidence_bytes": 220847,
+      "new_artifact_bytes": 0,
+      "evidence_bytes": 26774908,
+      "artifact_bytes": 58966547,
+      "temporary_bytes": 0
+    },
+    "cumulative_evidence_remaining_bytes": 6779524,
+    "shared_evidence_remaining_bytes": 4757981
+  }
+}

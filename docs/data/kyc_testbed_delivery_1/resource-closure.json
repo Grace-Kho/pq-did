@@ -1,0 +1,139 @@
+{
+  "package": "KYC-TESTBED-DELIVERY-1",
+  "status": "baseline-delivery-complete",
+  "conservative_preparation_seconds_charged_once_outside_KYC": 20,
+  "transfer_existing_outside_KYC_to_KYC_seconds": 80,
+  "transfer_increases_overall_allowance": false,
+  "operator_implementation_documentation_bookkeeping_seconds": 100,
+  "operator_charge_is_conservative_not_measured_wall_time": true,
+  "measured_guarded_seconds": 39.681912418454885,
+  "package_charged_seconds": 139.68191241845489,
+  "package_ceiling_seconds": 220,
+  "package_unused_seconds": 80.31808758154511,
+  "implementation_aggregate_charged_seconds": 5643.8972103392025,
+  "implementation_remaining_seconds": 430.1027896607975,
+  "KYC_remaining_seconds": 383.7084432235879,
+  "KYC_protected_reserve_seconds": 300,
+  "KYC_unprotected_remaining_seconds": 83.70844322358789,
+  "general_implementation_outside_KYC_remaining_seconds": 46.39434643720955,
+  "analysis_remaining_seconds_unchanged": 11.510943178986167,
+  "isolation_remaining_seconds_unchanged": 250.22,
+  "completion_reserve_seconds": 30,
+  "completion_reserve_inside_package": true,
+  "functional_invocations": 18,
+  "functional_reruns": 0,
+  "cumulative_invocations": 1183,
+  "invocation_ceiling": 1190,
+  "unused_delivery_corrective_slots": 4,
+  "reserved_embedding_only_slots": 3,
+  "builds_unchanged": 10,
+  "build_ceiling_unchanged": 13,
+  "new_builds": 0,
+  "new_acquisitions": 0,
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1
+  },
+  "job_outcomes": [
+    {
+      "name": "static",
+      "status": "failed",
+      "seconds": 0.9830536290537566,
+      "exit_code": 1
+    },
+    {
+      "name": "static-2",
+      "status": "pass",
+      "seconds": 0.5035348790697753,
+      "exit_code": 0
+    },
+    {
+      "name": "preflight",
+      "status": "pass",
+      "seconds": 2.014200714882463,
+      "exit_code": 0
+    },
+    {
+      "name": "demo",
+      "status": "pass",
+      "seconds": 15.187826463021338,
+      "exit_code": 0
+    },
+    {
+      "name": "export",
+      "status": "pass",
+      "seconds": 2.2189629280474037,
+      "exit_code": 0
+    },
+    {
+      "name": "benchmark",
+      "status": "pass",
+      "seconds": 5.831072899047285,
+      "exit_code": 0
+    },
+    {
+      "name": "prepare",
+      "status": "pass",
+      "seconds": 2.3800535032059997,
+      "exit_code": 0
+    },
+    {
+      "name": "full-audit",
+      "status": "failed",
+      "seconds": 2.749120496911928,
+      "exit_code": 1
+    },
+    {
+      "name": "static-audit-fix",
+      "status": "pass",
+      "seconds": 0.5287928290199488,
+      "exit_code": 0
+    },
+    {
+      "name": "prepare-2",
+      "status": "pass",
+      "seconds": 1.0127179510891438,
+      "exit_code": 0
+    },
+    {
+      "name": "full-audit-2",
+      "status": "pass",
+      "seconds": 5.262419339036569,
+      "exit_code": 0
+    },
+    {
+      "name": "readback",
+      "status": "pass",
+      "seconds": 1.010156786069274,
+      "exit_code": 0
+    }
+  ],
+  "full_audit_attempts": 2,
+  "successful_complete_audits": 1,
+  "failed_audit_seconds": 2.749120496911928,
+  "audit_seconds": 5.262419339036569,
+  "audit_cgroup_peak_bytes": 50864128,
+  "worker_cgroup_peak_bytes": 61751296,
+  "sampled_tree_RSS_peak_bytes": 68427776,
+  "memory_limit_bytes": 268435456,
+  "worker_memory_metric": "cgroup-v2 memory.peak: worker/descendants/cache/kernel; outer monitor RSS recorded separately",
+  "temporary_bytes": 0,
+  "exact_transient_SQLite_journal_peak_retained": false,
+  "all_completion_units_terminated": true,
+  "closure_bookkeeping_seconds_included_in_operator_charge": 0.6579753160476685,
+  "prior_acquisition_memory_observation_unresolved": true,
+  "storage": {
+    "new_evidence_bytes": 588420,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 36142285,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0,
+    "package_cap_bytes": 2097152,
+    "package_headroom_bytes": 1508732,
+    "cumulative_ceiling_bytes": 41943040,
+    "cumulative_headroom_bytes": 5800755,
+    "shared_headroom_bytes": 5352076,
+    "shared_completion_reserve_bytes": 2097152,
+    "shared_ordinary_headroom_bytes": 3254924
+  }
+}

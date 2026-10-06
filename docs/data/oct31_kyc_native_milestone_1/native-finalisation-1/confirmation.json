@@ -1,0 +1,13 @@
+{
+  "source": "User direct chat confirmation, 2026-09-29",
+  "authorised": [
+    "Revalidate the strengthened final native binary",
+    "Run the 16 pending transcript cases",
+    "Complete C-09 as defined in the approved execution plan",
+    "Complete required milestone preservation and reporting"
+  ],
+  "explicit_limit_clarification": "The retired 24-case native-pilot limit does not govern this milestone. 600 milestone invocations within cumulative 1050 ceiling. Confirmation of existing scope, no increase/reset.",
+  "plan_sha256": "cbb310bee67ed9c237b0e1055b3e68d81652fffd96ccad611dc2f1c6a4fc0b27",
+  "approval_process": "Normal review; on another rejection stop affected command, preserve exact reason and do not resubmit/work around.",
+  "reuse": "No unaffected baseline/harness/276 measurements rerun."
+}

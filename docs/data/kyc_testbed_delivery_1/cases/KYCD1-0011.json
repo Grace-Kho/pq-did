@@ -1,0 +1,20 @@
+{
+  "invocation_id": "KYCD1-0011",
+  "case_id": "E-01",
+  "work_event_reservation": 0,
+  "ordinal": 11,
+  "cumulative_invocations": 1176,
+  "status": "pass",
+  "details": {
+    "counts": {
+      "baseline-v1": 276,
+      "testbed-v1": 19,
+      "issuer-v2": 3,
+      "manager-v2": 4
+    },
+    "failures_indexed": 7,
+    "private_metrics_null": true
+  },
+  "seconds": 0.005738269072026014,
+  "work_events": 0
+}

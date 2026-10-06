@@ -1,0 +1,14 @@
+{
+  "invocation_id": "M1-0005",
+  "case_id": "H-05",
+  "ordinal": 5,
+  "cumulative_invocations": 453,
+  "status": "pass",
+  "result": {
+    "case_id": "H-05",
+    "passed": true,
+    "category": "reference_lifecycle",
+    "measurement_origin": "synthetic-validation"
+  },
+  "seconds": 0.0014899959787726402
+}

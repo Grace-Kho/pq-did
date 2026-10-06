@@ -1,0 +1,33 @@
+{
+  "package": "S3-AURORA-TRANSCRIPT-CORRECTION-CONTRACT-1",
+  "status": "proposed-not-implemented",
+  "implemented": false,
+  "validated_correction": false,
+  "issue": "AURORA-BRIDGE-001",
+  "issue_closed": false,
+  "base_commit": "a2ed2ec2f3e85f29b6035951553b02cb737c817a",
+  "base_bridge_seal": "ddfbc1f1b5fc3953eec5ead4e317f692efafea2b05c4d7e9e876a8cd66b906ce",
+  "variant": "PQDID-AURORA-TRANSCRIPT-EXP2",
+  "transcript_version": 2,
+  "primitive": "unkeyed sequential BLAKE2b-512;64B output;fanout=depth=1;zero salt/personalisation parameters",
+  "statement_encoder": "pqdid.statements.encode_auth_statement(expected_pp, typed_X)",
+  "pseudocode": "transcript-pseudocode.txt",
+  "edit_list": "proposed-edits.diff.txt",
+  "binding_finding": "No explicit full primary-input/relation binding in selected fresh BLAKE2b hash chain. Algebraic primary-input checks exist and remain necessary; no whole-protocol statement-independence claim.",
+  "minimal_span_repair": "Hash hash_input.size() bytes, retain output digest width, atomic state publication",
+  "construction_changes": [
+    "explicit typed-public-statement initialisation with trusted descriptor identities",
+    "versioned framing, round/message boundaries and canonical fixed-width encodings",
+    "labelled unkeyed challenge expansion with scheduled kinds and explicit counters"
+  ],
+  "future_security_obligations": [
+    "BCS oracle-port/framing/expansion refinement and direct-message correspondence",
+    "complete joint query/mask simulation and commitment transformation",
+    "restricted state-restoration and round-by-round extraction/privacy",
+    "adaptive composition, concrete hash, Delta_tail and component reduction budgets"
+  ],
+  "no_new_cryptographic_evaluations": true,
+  "new_test_invocations": 0,
+  "normal_proof_verification": "unchanged fail-closed",
+  "private_prototype_admitted": false
+}

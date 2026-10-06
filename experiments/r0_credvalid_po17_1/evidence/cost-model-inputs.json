@@ -1,0 +1,271 @@
+{
+  "source_log": "experiments/r0_enrol_po17_1/evidence/attempt2.log",
+  "source_log_sha256": "237623ec9bef4f006731569276e5d4f492eb828df9d938d19d37f1b9c52f71c7",
+  "source_log_complete": true,
+  "events": {
+    "execution_complete": [
+      {
+        "UTC": "2026-09-19T04:41:31.358875Z",
+        "line": 2
+      }
+    ],
+    "preflight": [
+      {
+        "UTC": "2026-09-19T04:41:31.359076Z",
+        "line": 3
+      },
+      {
+        "UTC": "2026-09-19T04:42:12.104101Z",
+        "line": 5
+      },
+      {
+        "UTC": "2026-09-19T04:42:53.427589Z",
+        "line": 7
+      }
+    ],
+    "core": [
+      {
+        "UTC": "2026-09-19T04:41:31.392423Z",
+        "line": 4
+      },
+      {
+        "UTC": "2026-09-19T04:42:12.119691Z",
+        "line": 6
+      },
+      {
+        "UTC": "2026-09-19T04:42:53.451309Z",
+        "line": 8
+      }
+    ],
+    "lift_start": [
+      {
+        "UTC": "2026-09-19T04:43:35.001975Z",
+        "line": 9
+      },
+      {
+        "UTC": "2026-09-19T04:44:18.475393Z",
+        "line": 56
+      },
+      {
+        "UTC": "2026-09-19T04:45:47.155555Z",
+        "line": 200
+      }
+    ],
+    "lift_end": [
+      {
+        "UTC": "2026-09-19T04:44:18.465059Z",
+        "line": 33
+      },
+      {
+        "UTC": "2026-09-19T04:45:02.790680Z",
+        "line": 80
+      },
+      {
+        "UTC": "2026-09-19T04:46:30.350999Z",
+        "line": 236
+      }
+    ],
+    "join_start": [
+      {
+        "UTC": "2026-09-19T04:45:02.801294Z",
+        "line": 103
+      },
+      {
+        "UTC": "2026-09-19T04:46:30.361800Z",
+        "line": 261
+      }
+    ],
+    "join_end": [
+      {
+        "UTC": "2026-09-19T04:45:47.144380Z",
+        "line": 177
+      },
+      {
+        "UTC": "2026-09-19T04:47:15.099010Z",
+        "line": 347
+      }
+    ]
+  },
+  "base_segments": [
+    {
+      "segment": 0,
+      "po2": 17,
+      "start": {
+        "UTC": "2026-09-19T04:41:31.359076Z",
+        "line": 3
+      },
+      "core_start": {
+        "UTC": "2026-09-19T04:41:31.392423Z",
+        "line": 4
+      },
+      "end": {
+        "UTC": "2026-09-19T04:42:12.104101Z",
+        "line": 5
+      },
+      "preflight_observed_seconds": 0.033347,
+      "core_through_next_boundary_seconds": 40.711678,
+      "combined_seconds": 40.745025
+    },
+    {
+      "segment": 1,
+      "po2": 17,
+      "start": {
+        "UTC": "2026-09-19T04:42:12.104101Z",
+        "line": 5
+      },
+      "core_start": {
+        "UTC": "2026-09-19T04:42:12.119691Z",
+        "line": 6
+      },
+      "end": {
+        "UTC": "2026-09-19T04:42:53.427589Z",
+        "line": 7
+      },
+      "preflight_observed_seconds": 0.01559,
+      "core_through_next_boundary_seconds": 41.307898,
+      "combined_seconds": 41.323488
+    },
+    {
+      "segment": 2,
+      "po2": 17,
+      "start": {
+        "UTC": "2026-09-19T04:42:53.427589Z",
+        "line": 7
+      },
+      "core_start": {
+        "UTC": "2026-09-19T04:42:53.451309Z",
+        "line": 8
+      },
+      "end": {
+        "UTC": "2026-09-19T04:43:35.001975Z",
+        "line": 9
+      },
+      "preflight_observed_seconds": 0.02372,
+      "core_through_next_boundary_seconds": 41.550666,
+      "combined_seconds": 41.574386
+    }
+  ],
+  "recursion_operations": [
+    {
+      "kind": "lift",
+      "ordinal": 1,
+      "input_segment_po2": 17,
+      "start": {
+        "UTC": "2026-09-19T04:43:35.001975Z",
+        "line": 9
+      },
+      "end": {
+        "UTC": "2026-09-19T04:44:18.465059Z",
+        "line": 33
+      },
+      "seconds": 43.463084
+    },
+    {
+      "kind": "lift",
+      "ordinal": 2,
+      "input_segment_po2": 17,
+      "start": {
+        "UTC": "2026-09-19T04:44:18.475393Z",
+        "line": 56
+      },
+      "end": {
+        "UTC": "2026-09-19T04:45:02.790680Z",
+        "line": 80
+      },
+      "seconds": 44.315287
+    },
+    {
+      "kind": "join",
+      "ordinal": 1,
+      "input_segment_po2": null,
+      "start": {
+        "UTC": "2026-09-19T04:45:02.801294Z",
+        "line": 103
+      },
+      "end": {
+        "UTC": "2026-09-19T04:45:47.144380Z",
+        "line": 177
+      },
+      "seconds": 44.343086
+    },
+    {
+      "kind": "lift",
+      "ordinal": 3,
+      "input_segment_po2": 17,
+      "start": {
+        "UTC": "2026-09-19T04:45:47.155555Z",
+        "line": 200
+      },
+      "end": {
+        "UTC": "2026-09-19T04:46:30.350999Z",
+        "line": 236
+      },
+      "seconds": 43.195444
+    },
+    {
+      "kind": "join",
+      "ordinal": 2,
+      "input_segment_po2": null,
+      "start": {
+        "UTC": "2026-09-19T04:46:30.361800Z",
+        "line": 261
+      },
+      "end": {
+        "UTC": "2026-09-19T04:47:15.099010Z",
+        "line": 347
+      },
+      "seconds": 44.73721
+    }
+  ],
+  "recursion_handoff_seconds": [
+    0.010334,
+    0.010614,
+    0.011175,
+    0.010801
+  ],
+  "observed_segment_block_seconds": 123.642899,
+  "observed_recursion_block_seconds": 220.097035,
+  "guarded_pipeline_seconds": 343.8989299329987,
+  "SDK_combined_seconds": 343.792883226,
+  "host_self_verify_seconds": 0.011631573,
+  "fresh_verifier_seconds": 0.011627595,
+  "combined_unattributed_guarded_residual_seconds": 0.15899593299872095,
+  "scope_notes": [
+    "Initialisation/loading plus guest execution occurs before first preflight; individual durations unavailable.",
+    "Preflight/core boundaries measured, but core-to-next-boundary includes verification, I/O, hooks and on last segment Composite verification.",
+    "Lift/join begin-to-finished includes their internal work; subsequent integrity checks and bookkeeping occupy handoff gaps.",
+    "Final receipt construction/IPC/save/teardown not individually instrumented. Residual jointly covers work outside observed segment+recursion block, including self-verification. Do not split it into invented timings.",
+    "UTC log intervals and monotonic guarded duration have minor capture/clock differences; residual is descriptive, not an exact pure phase timer.",
+    "One successful enrolment sample; no statistical confidence interval, percentile or throughput inference."
+  ],
+  "source_review": {
+    "experiments/r0_credvalid_cycle_1/tooling/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/risc0-zkvm-3.0.6/src/host/server/exec/executor.rs": {
+      "sha256": "505b831c3a3a17b33290b732ee150b3b48a25c1876320f7e9e91743045b30794",
+      "finding": "run: default temporary FileSegmentRef for every segment; retained by Session until pipeline returns"
+    },
+    "experiments/r0_credvalid_cycle_1/tooling/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/risc0-zkvm-3.0.6/src/host/server/session.rs": {
+      "sha256": "95b8bdff08e3ddeca3e2eee9c7288d045c0d7a55bfd270247f67c3de7bc177f2",
+      "finding": "FileSegmentRef::resolve: file contents plus deserialised Segment temporarily coexist; full segment files retained, not all decoded traces resident"
+    },
+    "experiments/r0_credvalid_cycle_1/tooling/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/risc0-zkvm-3.0.6/src/host/server/prove/prover_impl.rs": {
+      "sha256": "2b3e6e61cfaf07d78cb935d5db6a7c0053c3581cfdf1347705b39844e15209a5",
+      "finding": "Sequential segment preflight/core/verify; all SegmentReceipts retained in Composite; Composite verification before recursion; default no PoVW; final Succinct verification and Session stats"
+    },
+    "experiments/r0_credvalid_cycle_1/tooling/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/risc0-zkvm-3.0.6/src/host/server/prove/mod.rs": {
+      "sha256": "a3e5fdccbd4719820274c8b466fe7c211941b3fa24979f6eeddf5d1da4a347c9",
+      "finding": "composite_to_succinct: S lifts and S-1 sequential joins, then only assumption resolution if assumptions exist"
+    },
+    "experiments/r0_credvalid_cycle_1/tooling/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/risc0-zkvm-3.0.6/src/host/recursion/prove/mod.rs": {
+      "sha256": "41e2b6b92349ed28d2d4669e371d2ad1b5617d97b2ad4551d101c10a7560a520",
+      "finding": "Distinct po2-selected lift and ordinary join programmes; left accumulator, right lift and join output/scratch overlap; no identity/Groth16/PoVW requested"
+    },
+    "experiments/r0_credvalid_cycle_1/tooling/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/risc0-circuit-rv32im-4.0.5/src/prove/hal/mod.rs": {
+      "sha256": "0774d48229e450417b03afd757c381c1fb292f11916786596e6a7bce175b4dbd",
+      "finding": "Per-segment HAL, preflight, witness and proof polynomial buffers; rows/cols allocations"
+    },
+    "experiments/r0_credvalid_cycle_1/tooling/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/risc0-circuit-recursion-4.0.5/src/prove/witgen.rs": {
+      "sha256": "88d480d025c4f2e685a205647cc07b73407d83ed6844a5c341be213b86cf0d8c",
+      "finding": "Concurrent ctrl/data/accum/global arrays sized by recursion programme rows, plus raw preflight and proof buffers; not only VM segment size"
+    }
+  }
+}

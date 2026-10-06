@@ -1,0 +1,20 @@
+{
+  "proposal_seal_verified": "e83682e08a9bdd8ca0b2fc542621ee87e4e8eca492ce0e2801111a2b6055ec36",
+  "lock_verified": "9f95bcb9f82d4cb5f8caaf2ca41e9e22b17ea39e8146474ca055e1d67eae617f",
+  "current_cumulative_evidence_bytes": 10689507,
+  "cumulative_cap": 12386485,
+  "work_reservation_bytes": 1048576,
+  "completion_reservation_bytes": 524288,
+  "artifact_cap": 134217728,
+  "acquisition_reservation": 33554432,
+  "binary_per_file": 33554432,
+  "ordinary_per_file": 1048576,
+  "provisioning_deadline": 55,
+  "provisioning_subcap_with_bookkeeping": 60,
+  "native_opening_seconds": 291.7509900990408,
+  "implementation_opening_seconds": 296.30836975807324,
+  "analysis_unchanged": 179.79552399821114,
+  "conditional_native_build": true,
+  "host_mutations": false,
+  "installed_tools_present": true
+}

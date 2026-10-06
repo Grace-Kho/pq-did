@@ -1,0 +1,14 @@
+{
+  "case_id": "C-09",
+  "invocation_id": "CAR1-0010",
+  "status": "pass",
+  "details": {
+    "case": "C-09",
+    "purpose": "missing footer cannot complete",
+    "full_relation": false,
+    "rejection": "incomplete representation cannot yield a relation",
+    "state": "open"
+  },
+  "seconds": 3.943301271647215e-05,
+  "work_events": 1
+}

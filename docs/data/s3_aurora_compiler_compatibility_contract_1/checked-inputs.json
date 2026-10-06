@@ -1,0 +1,18 @@
+{
+  "sha256": {
+    "docs/data/s3_aurora_compiler_compatibility_contract_1/config.json": "aa34f0f2e6fc6939ceef6cff3a57de35d8e03bc012399e346ad8c2257fc07eba",
+    "docs/data/s3_aurora_compiler_compatibility_contract_1/semantic-target.patch": "4265f6f00595b393845b1975b748aed190c42d83c0bab54ae69611847a7e320a",
+    "docs/data/s3_aurora_compiler_compatibility_contract_1/static-review.json": "04be981101b1c903bb2887d446362e892602b70765484fcb7badaeed7c3d63df",
+    "docs/data/s3_aurora_compiler_compatibility_contract_1/variable-members.patch": "8a28d44432c4dfd2ff41a07bb4affd1a154b52ae781289210410586b43e4c357",
+    "docs/data/s3_aurora_compiler_compatibility_contract_1/proposal.json": "744e8ba02d270bb87dc1ac6dc2dc240d4e39df5ae23ce1ece652691cf4d59984",
+    "docs/data/s3_aurora_compiler_compatibility_contract_1/semantic_cases.cpp": "254b69be501294f504f575113e6f0ae43796730a1f178e62a14943ccf75d9ff0",
+    "docs/data/s3_aurora_compiler_compatibility_contract_1/runbook.md": "5bc93c216aace87ae48f05e5289f3105df6dabdf64d1e8e6fb474d002b8c03d4",
+    "docs/data/s3_aurora_compiler_compatibility_contract_1/run.py": "6bdb254027849532e58dfdd731c66424ae524a294ce230dab25ca3474cdc589e",
+    "docs/data/s3_aurora_compiler_compatibility_contract_1/checks.py": "58a1e51fd017d3c1e1d85041b4e0e4d8a56360068e363576faa1bb47556343d8",
+    "docs/data/s3_aurora_compiler_compatibility_contract_1/reviewed-inputs.json": "fac00b8c466daa9a9358343b2da3c65f71d2be943dcc762e4686b20c0580e12d",
+    "docs/data/s3_aurora_compiler_compatibility_contract_1/opening-ledger.json": "5481950a6e3c393a218c9b822b3981b9e931acee7f66a1afdab3f91d32091e07",
+    "docs/data/s3_aurora_compiler_compatibility_contract_1/prefixes.json": "30a3f0303ef425b907e9b739eef6d898d00bf9e5afe6c721ae18ba4d91365a2f"
+  },
+  "native_builds_unchanged": 2,
+  "cumulative_invocations_unchanged": 402
+}

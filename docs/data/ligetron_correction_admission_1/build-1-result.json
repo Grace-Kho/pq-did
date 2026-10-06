@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "binary": "experiments/ligetron_correction_admission_1/build/attempt-1/rng_cases",
+  "bytes": 441176,
+  "sha256": "7f28431909d2d570d6e722abb6364f6e4b7797175d64c1ee825776557ba2fa63",
+  "full_prover_compiled": false,
+  "full_verifier_compiled": false
+}

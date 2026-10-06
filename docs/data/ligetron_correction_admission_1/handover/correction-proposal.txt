@@ -1,0 +1,237 @@
+PQ-DID — Concrete Ligetron correction proposal
+Candidate identifier: PQDID-Ligetron-RNG-EXP1
+Base public commit: 4b1cdef1bfdf4497fb3e38170db4541fba3f6c12
+Repository: https://github.com/ligeroinc/ligero-prover
+Upstream version: v1.7.0
+Status: proposed, unbuilt, untested, not admitted for private authentication.
+
+1. Decision and boundaries
+
+Prepare one isolated correction-and-correspondence milestone. It should either
+establish that a small overlay can implement a specified existing protocol with
+the required arguments, or identify a precise remaining obstruction. Do not
+launch a succession of general backend reviews or invent a new ZK wrapper.
+
+There are two separate questions:
+  A. Does the implementation generate the intended random values and transcript?
+  B. Does that intended protocol, with these parameters and this VM, satisfy
+     the privacy, knowledge and quantum-security requirements of PQ-DID?
+
+The supplied patch addresses parts of A. It cannot establish B. A native RNG
+harness can be useful without proving any private credential, but the existing
+execution and resource restrictions still require a prospective allocation.
+
+The application relation remains unchanged: bounded standard ML-DSA-65
+credential verification, exact Mcred and trusted issuer-key binding, holder
+secret, disclosure/policy checks, the same certified identifier's Merkle path,
+and public instance/verifier/session binding. Existing ML-DSA sampler caps and
+SPEC-001 through SPEC-004 are not changed by this backend sampler proposal.
+
+2. Findings and proposed edits
+
+F-01 — Private encoding seed
+Source: src/webgpu_prover.cpp, original lines 239–245.
+The 32-byte key is generated through std::mt19937 seeded with one rd() result.
+The Mersenne-Twister construction has at most a 32-bit seed space here, despite
+the later 32-byte output. Non-cryptographic expansion cannot create entropy.
+Active path: main -> init_encoding_random -> witness_manager encoding engine
+-> Field::generate_random -> row padding and proof masks.
+
+Candidate: obtain all 32 bytes through RAND_priv_bytes and abort before stage 1
+if its return value is not 1. No deterministic fallback, retry using weaker
+randomness, seed logging or test-mode switch in production entry points.
+An isolated harness may inject deterministic bytes or an entropy failure.
+This is not a claim of production entropy assurance or reliable erasure.
+
+F-02 — Query generator first block and replay semantics
+Source: include/zkp/random.hpp::hash_random_engine, original lines 88–145;
+src/webgpu_prover.cpp and src/webgpu_verifier.cpp -> portable_sample.
+The old constructor stores the seed, but the first operator() call hashes the
+counter before absorbing it. The first digest block therefore omits the seed.
+Later blocks are seeded. Do not report that every query or the entire stream
+is seed-independent.
+
+Candidate byte contract:
+  block_i = SHA256(ASCII("PQDID-Ligetron-RNG-EXP1/query") || seed || BE64(i))
+  i starts at zero; the ASCII label excludes a terminating NUL;
+  seed is exactly the Hasher digest bytes; blocks are emitted in byte order;
+  seed(d) resets both counter and buffered position;
+  discard(n) is equivalent to n calls; counter exhaustion throws.
+
+The patch uses a fresh hash object for each block and explicit big-endian
+counter bytes, avoiding host-endian integer hashing for this generator.
+This does not canonicalise all upstream transcript encodings. The byte-order
+change and seeded first block require new independent known-answer vectors.
+Old expected transcripts cannot be treated as expectations for this overlay.
+
+F-03 — Field-element sampling
+Source: include/zkp/finite_field_gmp.hpp::bn254_gmp::generate_random,
+original lines 66–78; called by witness_manager for masks and challenges.
+The existing construction takes 254 bits and conditionally subtracts q.
+For 2^253 < q < 2^254, some residues have two preimages and others one.
+This is not uniform sampling, even if the underlying byte stream were uniform.
+
+Candidate: take a 254-bit candidate, accept exactly when candidate < q,
+otherwise consume a fresh candidate. The proposed backend-only cap is 256
+candidate draws per call; exhaustion throws without changing the caller's
+output and without returning a field value. This is a new proposed profile
+choice, not an existing authorised limit.
+
+Under independent uniform candidate draws, success is uniform over F_q.
+Let r = (2^254-q)/2^254. Per-call exhaustion probability is r^256 and a
+union bound for at most N such calls is N*r^256. This is a conditional
+ideal-draw calculation, not a complete adaptive or quantum security bound.
+The implementation still uses AES-CTR expansion and real entropy; replacement
+and multi-query/adaptive losses must be accounted for separately. The maximum
+N must come from a complete admitted workload, not a guessed component count.
+
+F-04 — Repeated challenge streams
+Source: include/zkp/nonbatch_context.hpp::init_witness_random, original
+lines 105–111; both callers pass the same seed and params::any_iv.
+Code, linear and quadratic generators are separate objects initialised to
+the same AES key and IV. Their corresponding stream positions coincide.
+
+Candidate: retain the existing generator but use params::ivc, params::ivl
+and params::ivq for the respective domains. The patch removes the caller's
+common-IV argument; both retained callers are changed.
+The source constants put 1, 2 and 3 in the most-significant byte of an AES-CTR
+counter. The admitted workload must not cross those counter-domain intervals
+(strictly fewer than 2^120 AES blocks per stream), or a different specified
+derivation is required. This separation removes identical streams; it does not
+prove that public-seed AES expansion has the ideal independent-challenge law.
+
+Important model distinction: for public challenges the seed is transcript-
+derived and public. A theorem for a secret-key PRG is not automatically a
+justification for replacing independent public random-oracle challenges.
+Either give the applicable public-seed expansion argument or specify a
+theorem-compatible domain-separated hash expansion. Do not mark this closed
+because three test outputs differ.
+
+F-05 — Parameter correspondence remains open
+Source: include/params.hpp; packing override in both entry points.
+The direct mapping is k=8192, ell=8000, t=192, n=32768; hence k=ell+t.
+The cited extended Ligero privacy lemma requires the strict condition
+k>ell+t. This blocks direct application of that statement under this mapping;
+it is not by itself an attack or a proof that equality can never be safe.
+
+No parameter edit is included. It is not enough to subtract one from ell:
+  - identify the actual interpolation and query domains and their disjointness;
+  - count every disclosed value and masking constraint in the actual protocol;
+  - match all code/linear/quadratic blinders and their degrees to the theorem;
+  - check all batch paths that currently use sample_size for random padding;
+  - distinguish query count t from random-padding count k-ell;
+  - ensure custom packing, metadata, prover and verifier use the same layout;
+  - select any additional entropy needed by the commitment/FS compiler.
+Reducing t to make the inequality hold would require fresh soundness accounting.
+Adding one field element is not, on its own, a complete finite-security argument.
+
+F-06 — Versioning and full transcript scope
+The patch changes both stage labels to the experimental profile name. It does
+not implement a new proof-container version or authenticated profile manifest.
+Any later accepting adapter must bind and check the exact program, field,
+layout, parameters, public inputs and private-input positions, transcript
+version, receipt encoding and hash domains. Reject unknown/legacy profiles;
+never try several profiles until one accepts.
+
+The existing source computes program_hash for prover metadata; the retained
+stage-1 hash inputs are root and instance_hash. This observation alone is not
+a demonstrated substitution attack. Establish how the circuit/program and
+layout enter the complete verifier and the applicable adaptive theorem.
+The retained stage-2 hash does not explicitly include the complete previous
+prefix. Decide whether an applicable correspondence justifies this or whether
+the experimental transcript must be amended before adoption.
+
+3. Why this does not yet certify the backend
+
+The active code contains row padding and separate test-mask generation in
+witness_manager::process_masks and the mask callbacks. This is useful source
+evidence. It is not a complete joint-view simulation proof.
+
+The minimum security mapping must identify:
+  - exact oracle contents, test responses, blinders, degrees and query budget;
+  - the full committed/opened view, including leaf encoding, roots and paths;
+  - the hiding commitment/BCS compiler actually instantiated, including salts
+    or any justified alternative; ordinary Merkle binding does not imply hiding;
+  - knowledge extraction of one complete assignment for the entire application;
+  - adaptive statement choice and Fiat-Shamir transcript binding;
+  - quantum soundness/knowledge, and separately the quantum privacy scope;
+  - concrete hashes/PRGs, finite parameters, query budgets and failure losses;
+  - the WASM instruction/host-call constraints and secret/public semantics.
+
+Use named conventional assumptions where justified; do not demand a proof
+that a concrete hash literally is a random oracle. Conversely, do not convert
+a classical theorem or a published quantum bound into a claim about this
+implementation without checking its premises.
+
+The 2024 Ligetron paper section 3.2 requires oblivious control flow and memory
+access. A later ML-DSA port must convert witness-dependent rejection scans,
+hint indexing and early returns into correctly constrained bounded behaviour.
+No issuer signature check, hidden-message hash, range/decoding check or
+non-revocation check may be moved outside the proved relation as a shortcut.
+
+If correspondence requires a new masking, simulation, commitment or extraction
+construction, stop this candidate after stating the exact missing result.
+Do not reopen the Binius wrapper or launch another repair cascade automatically.
+
+4. Minimal validation after one prospective allocation
+
+native-validation-plan.json contains 20 proposed fixed harness cases. They are
+all unrun. At most four targeted corrective reruns may be requested in the
+consolidated proposal; they are not approved by this document.
+
+Start with the CPU-side randomness components. Do not install WebGPU or build
+the entire prover just to check seed handling, sampling or stream separation.
+Reuse the repository's available OpenSSL/GMP/compiler tooling after checking
+its identity. The full source closure and compiler compatibility are unverified.
+
+Known-answer expectations must come from an independent implementation of the
+explicit byte contract. Retain old negative controls. Statistical tests cannot
+establish cryptographic entropy, zero knowledge or independence.
+
+Proposed completion outcomes:
+  (a) findings refuted with exact active-path evidence;
+  (b) experimental component corrections validated, security admission open;
+  (c) applicable complete protocol correspondence established and a separate
+      bounded ML-DSA feasibility pilot ready for resource admission; or
+  (d) substantive construction obstruction: stop and state it precisely.
+
+Do not confuse outcome (b) with (c). No outcome permits an automatic proof run.
+
+5. Resource and authorisation handling in the WSL project
+
+Read the current AGENTS.md, status, issue register and live ledger once.
+The historical Binius approvals and unused corrective slots are not allocations
+for this work. Do not reset any consumed time, count or failed outcome.
+
+Before any build/test, prepare one prospective amendment containing the complete
+scope, exact source closure, maximum builds/cases/reruns, serial/parallel policy,
+command limits, memory, artifact/evidence storage and a sufficient completion
+reserve. Reuse existing balances only where they are actually transferable.
+Distinguish audit memory, compiler memory, runtime memory, binary/scratch
+artifacts and retained evidence. This document deliberately invents no live
+budget and changes none of the project's ceilings.
+
+Once that entire milestone is approved, ordinary in-scope fixes and affected
+revalidation should proceed continuously to one completion checkpoint. Stop
+for actual resource/integrity failures or substantive construction changes,
+not for each completed subtask. No historical suite or benchmark rerun is needed.
+
+6. References and version limitations
+
+Public source: the exact URLs and hashes are in source-manifest.json.
+Ligetron: Lightweight Scalable End-to-End Zero-Knowledge Proofs, IEEE S&P 2024,
+DOI 10.1109/SP54263.2024.00086, supplied 17-page PDF, especially sections 3.1,
+3.2 and 4. It describes a different implementation generation from v1.7.0.
+The supplied 18-page Ligero attachment is the CCS 2017 version.
+Extended Ligero: https://eprint.iacr.org/2022/1608.pdf, sections 4.7 and 5;
+Lemma 4.15 gives the strict masking/query condition. Do not substitute its
+numbering for a different version of the 2023 journal paper.
+Frigo–shelat: https://eprint.iacr.org/2024/2010.pdf, Theorem 4 explicitly states
+quantum adaptive soundness and knowledge results for BCS-compiled Ligero under
+its conditions. That is not a theorem about every Ligetron release. Its exact
+underlying version/compiler chain remains part of the correspondence task.
+OpenSSL: https://docs.openssl.org/3.0/man3/RAND_bytes/ documents private random
+bytes and the requirement to handle entropy/provider failure.
+
+No complete post-quantum security number, complete private-authentication
+performance result, W3C conformance or October completion guarantee is claimed.

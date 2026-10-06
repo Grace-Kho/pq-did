@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/home/grace/projects/pq-did/experiments/aurora_native_transcript_pilot_1/dependency-prefix-v1/guarded-build-v2/build/exp2_semantics",
+    "4"
+  ],
+  "exit_code": 0,
+  "expected_provenance": "docs/data/s3_aurora_compiler_compatibility_contract_1/semantic_cases.cpp",
+  "expected_sha256": "254b69be501294f504f575113e6f0ae43796730a1f178e62a14943ccf75d9ff0",
+  "outcome": {
+    "literal_independent_expected_assertions_passed": true
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "before": {
+    "memory.max": "1073741824",
+    "memory.swap.max": "0",
+    "memory.peak": "6750208",
+    "memory.current": "6725632",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "available_before_target": 4865875968,
+  "external_routes": 0,
+  "target_started": true,
+  "command": [
+    "/home/grace/projects/pq-did/experiments/r0_enrol_po17_1/target/release/pqdid-r0-host",
+    "adversarial",
+    "enrol",
+    "fixtures/public/enrol-alpha-42.bin",
+    "receipts/attempt2.bin"
+  ],
+  "after": {
+    "memory.max": "1073741824",
+    "memory.swap.max": "0",
+    "memory.peak": "8790016",
+    "memory.current": "6430720",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+    "cpu.max": "200000 100000",
+    "pids.max": "128"
+  },
+  "exit_code": 0,
+  "largest_child_ru_maxrss_bytes": 13230080,
+  "ru_maxrss_note": "largest child high-water RSS, not aggregate tree RSS",
+  "temporary_bytes_at_exit": null
+}

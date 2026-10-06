@@ -1,0 +1,18 @@
+{
+  "authority": "Latest explicit user approval; existing KYC workstream continuation",
+  "cumulative_ceiling_bytes": 33554432,
+  "retained_usage_bytes": 30222398,
+  "cumulative_headroom_bytes": 3332034,
+  "prior_shared_headroom_bytes": 1310491,
+  "unallocated_before_bytes": 2021543,
+  "transfer_bytes": 1572864,
+  "shared_after_bytes": 2883355,
+  "unallocated_after_bytes": 448679,
+  "completion_reserve_bytes": 2097152,
+  "ordinary_headroom_before_new_work_bytes": 786203,
+  "mappings_approved": true,
+  "original_workstream_seconds": 1700,
+  "already_consumed_seconds": 214.91049292776734,
+  "remaining_seconds": 1485.0895070722327,
+  "historical_counts_unchanged": true
+}

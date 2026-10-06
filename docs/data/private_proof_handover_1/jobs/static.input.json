@@ -1,0 +1,26 @@
+{
+  "name": "static",
+  "phase": "tool",
+  "argv": [
+    "/home/grace/projects/pq-did/.venv/bin/python",
+    "-I",
+    "-B",
+    "-c",
+    "import subprocess; subprocess.run([\".venv/bin/ruff\",\"check\",\"docs/data/private_proof_handover_1/tools\"],check=True); subprocess.run([\".venv/bin/ruff\",\"format\",\"--check\",\"docs/data/private_proof_handover_1/tools\"],check=True)"
+  ],
+  "limit_seconds": 15,
+  "child_seconds": 14,
+  "status": "launched",
+  "unit": "pqdid-proof-handover-1-static",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 55562,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 32324830,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  },
+  "available_memory": 4100984832,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

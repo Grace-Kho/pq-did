@@ -1,0 +1,26 @@
+{
+  "name": "retain-H-17",
+  "phase": "tool",
+  "argv": [
+    "/home/grace/projects/pq-did/.venv/bin/python",
+    "-I",
+    "-B",
+    "/home/grace/projects/pq-did/experiments/kyc_manager_incremental_storage_1/retain_failure.py",
+    "H-17"
+  ],
+  "limit_seconds": 30,
+  "child_seconds": 29,
+  "status": "launched",
+  "unit": "pqdid-kyc-manager-1-retain-H-17",
+  "memory_limit_bytes": 268435456,
+  "opening_storage": {
+    "new_evidence_bytes": 1393583,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 32639685,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 1009254
+  },
+  "available_memory": 4054388736,
+  "parent_limits": "CPUQuotaPerSecUSec=2s\nMemoryMax=2147483648\nMemorySwapMax=0\nTasksMax=128\n",
+  "build": false
+}

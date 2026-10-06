@@ -1,0 +1,44 @@
+{
+  "historical_counts": {
+    "baseline-v1": 276,
+    "testbed-v1": 19,
+    "issuer-v2": 3,
+    "manager-v2": 4
+  },
+  "historical_total": 302,
+  "smoke_counts": {
+    "delivery-v2-smoke": 4
+  },
+  "total_rows": 306,
+  "exports": [
+    "exports/retained",
+    "exports/smoke"
+  ],
+  "component_results": "Retained reference/component catalogue; not mixed with baseline rows",
+  "private_proof_metrics": {
+    "prove_seconds": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "verify_seconds": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "proof_bytes": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "peak_memory": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "throughput": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    },
+    "privacy_overhead": {
+      "value": null,
+      "reason": "complete private authentication unavailable"
+    }
+  }
+}

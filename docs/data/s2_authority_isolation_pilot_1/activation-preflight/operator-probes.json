@@ -1,0 +1,93 @@
+{
+  "measurements_scope": "Operator metadata outside the separately guarded review worker; memory unmeasured. Failures retained, not recategorised as passes. No actual pilot workload.",
+  "probes": [
+    {
+      "id": "operator-metadata-composite",
+      "kind": "read-only-host-inspection-not-pilot-case",
+      "command": [
+        "/usr/bin/timeout",
+        "--signal=KILL",
+        "55",
+        "/usr/bin/python3.14",
+        "-I",
+        "-B",
+        "-"
+      ],
+      "inline_subcommands": [
+        [
+          "/usr/bin/python3.14",
+          "-I",
+          "-B",
+          "-c",
+          "import sys, venv, sqlite3, socket; print(sys.version); print(venv.__file__); print(sqlite3.sqlite_version)"
+        ],
+        [
+          "/usr/bin/systemctl",
+          "--version"
+        ],
+        [
+          "/usr/bin/systemctl",
+          "list-units",
+          "--all",
+          "--no-legend",
+          "--plain",
+          "pqiso*"
+        ],
+        [
+          "/usr/bin/systemctl",
+          "list-unit-files",
+          "--no-legend",
+          "pqiso*"
+        ],
+        [
+          "/usr/bin/systemctl",
+          "--user",
+          "show",
+          "--property=Version"
+        ]
+      ],
+      "subcommand_timeout_seconds": 5,
+      "exit_code": 1,
+      "tool_wall_seconds": 0.053417051,
+      "stderr": "Traceback (most recent call last):\n  File \"<stdin>\", line 28, in <module>\nAssertionError\n",
+      "failure": "Composite all(returncode == 0) assertion before writing the record.",
+      "limitation": "Individual captured outputs were not retained; cannot assign the failure to a specific facility or claim manager-query verification.",
+      "complete_command_retried": false,
+      "privileged_actions": []
+    },
+    {
+      "id": "operator-path-detail",
+      "kind": "read-only-host-inspection-not-pilot-case",
+      "command": [
+        "/usr/bin/python3.14",
+        "-I",
+        "-B",
+        "-"
+      ],
+      "operation": "Public NSS/collision metadata followed by lstat of /etc, /opt, /var/lib, /run, /etc/systemd/system, /etc/sysusers.d, /etc/tmpfiles.d and project directories.",
+      "exit_code": 1,
+      "tool_wall_seconds": 3.242e-06,
+      "stderr": "Traceback (most recent call last):\n  File \"<stdin>\", line 14, in <module>\n  File \"/usr/lib/python3.14/pathlib/__init__.py\", line 662, in lstat\n    return os.lstat(self)\nFileNotFoundError: [Errno 2] No such file or directory: '/etc/sysusers.d'\n",
+      "record_not_written": true,
+      "complete_command_retried": false,
+      "privileged_actions": []
+    },
+    {
+      "id": "operator-error-aware-observer",
+      "kind": "remaining-read-only-host-observations-not-a-case-retry",
+      "command": [
+        "/usr/bin/timeout",
+        "--signal=KILL",
+        "55",
+        "/usr/bin/python3.14",
+        "-I",
+        "-B",
+        "/home/grace/projects/pq-did/docs/data/s2_authority_isolation_pilot_1/activation-preflight/host_observer.py"
+      ],
+      "exit_code": 0,
+      "record": "host-observations.json",
+      "subprocesses_launched_by_observer": 0,
+      "privileged_actions": []
+    }
+  ]
+}

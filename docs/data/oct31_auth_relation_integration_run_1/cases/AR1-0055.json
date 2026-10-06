@@ -1,0 +1,19 @@
+{
+  "case_id": "B-01",
+  "invocation_id": "AR1-0055",
+  "status": "pass",
+  "details": {
+    "case_id": "B-01",
+    "passed": true,
+    "parsed": {
+      "parsed": true,
+      "verified": false,
+      "direct_fields": 1,
+      "opening_slots": 2,
+      "bytes": 744
+    },
+    "accepted": false
+  },
+  "seconds": 0.02095945389010012,
+  "work_events": 0
+}

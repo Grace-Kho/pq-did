@@ -1,0 +1,13 @@
+{
+  "invocation_id": "KYCM1-0039",
+  "case_id": "H-15",
+  "work_event_reservation": 0,
+  "ordinal": 39,
+  "cumulative_invocations": 1130,
+  "status": "failed",
+  "error": "Unavailable",
+  "diagnostic": "Traceback (most recent call last):\n  File \"/home/grace/projects/pq-did/experiments/kyc_manager_incremental_storage_1/dispatch.py\", line 34, in execute\n    result[\"details\"] = operation()\n                        ~~~~~~~~~^^\n  File \"/home/grace/projects/pq-did/experiments/kyc_manager_incremental_storage_1/dispatch.py\", line 77, in operation\n    else history_cases.run(i, child, cache[\"app\"], cache)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/grace/projects/pq-did/experiments/kyc_manager_incremental_storage_1/history_cases.py\", line 140, in run\n    request = s.request(audience)\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/scenario.py\", line 333, in request\n    request = self.verifiers[audience].request(\n        policy, b\"session-\" + self._counter.to_bytes(8, \"big\"), expires\n    )\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/verifier.py\", line 84, in request\n    state = current_state(self.pp, self.provider)\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/verifier.py\", line 50, in current_state\n    reply = provider.current(pp, nonce)\n  File \"/home/grace/projects/pq-did/experiments/kyc_milestone_1/baseline/scenario.py\", line 100, in current\n    reply = super().current(expected, nonce)\n  File \"/home/grace/projects/pq-did/src/pqdid/durable_verification.py\", line 44, in current\n    self._manager.read_current(operation, nonce)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\npqdid.persistence.codec.Unavailable: schema\n",
+  "seconds": 0.6327876669820398,
+  "work_events": 0,
+  "work_accounting": "No gate/row emissions; full host setup and validation charged to guarded time."
+}

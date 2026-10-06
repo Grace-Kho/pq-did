@@ -1,0 +1,2803 @@
+{
+  "rustsec_commit": "2b34578f89884736e0fcbd42f7ba8d6b10b4a0ce",
+  "cached_crates_verified": 279,
+  "matches": [
+    {
+      "id": "RUSTSEC-2021-0139",
+      "package": "ansi_term",
+      "locked_versions": [
+        "0.12.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0404",
+      "package": "anstream",
+      "locked_versions": [
+        "0.6.20"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.6.8"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0190",
+      "package": "anyhow",
+      "locked_versions": [
+        "1.0.104",
+        "1.0.99"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.0.103"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0091",
+      "package": "arc-swap",
+      "locked_versions": [
+        "1.9.2"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.4.8, < 1.0.0-0",
+          ">= 1.1.0"
+        ],
+        "unaffected": [
+          "< 0.4.2"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0075",
+      "package": "ark-r1cs-std",
+      "locked_versions": [
+        "0.5.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.3.1"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0052",
+      "package": "async-std",
+      "locked_versions": [
+        "1.13.2"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0089",
+      "package": "atomic-polyfill",
+      "locked_versions": [
+        "1.0.3"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0145",
+      "package": "atty",
+      "locked_versions": [
+        "0.2.14"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0375",
+      "package": "atty",
+      "locked_versions": [
+        "0.2.14"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0044",
+      "package": "aws-lc-sys",
+      "locked_versions": [
+        "0.42.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.39.0"
+        ],
+        "unaffected": [
+          "< 0.32.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0045",
+      "package": "aws-lc-sys",
+      "locked_versions": [
+        "0.42.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.38.0"
+        ],
+        "unaffected": [
+          "< 0.14.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0046",
+      "package": "aws-lc-sys",
+      "locked_versions": [
+        "0.42.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.38.0"
+        ],
+        "unaffected": [
+          "< 0.24.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0047",
+      "package": "aws-lc-sys",
+      "locked_versions": [
+        "0.42.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.38.0"
+        ],
+        "unaffected": [
+          "< 0.24.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0048",
+      "package": "aws-lc-sys",
+      "locked_versions": [
+        "0.42.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.39.0"
+        ],
+        "unaffected": [
+          "< 0.15.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0125",
+      "package": "aws-sigv4",
+      "locked_versions": [
+        "1.3.4"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.55.1",
+          "0.54.2",
+          "0.53.2",
+          "0.52.1",
+          "0.51.1",
+          "0.50.1",
+          "0.49.1",
+          "0.48.1",
+          "0.47.1",
+          "0.46.1",
+          "0.15.1",
+          "0.14.1",
+          "0.13.1",
+          "0.12.1",
+          "0.11.1",
+          "0.10.2",
+          "0.9.1",
+          "0.8.1",
+          "0.7.1",
+          "0.6.1",
+          "0.5.3",
+          "0.3.1",
+          "0.2.1"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2022-0055",
+      "package": "axum-core",
+      "locked_versions": [
+        "0.5.2"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.2.8, < 0.3.0-rc.1",
+          ">= 0.3.0-rc.2"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2017-0004",
+      "package": "base64",
+      "locked_versions": [
+        "0.13.1",
+        "0.21.7",
+        "0.22.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.5.2"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0141",
+      "package": "bincode",
+      "locked_versions": [
+        "1.3.3"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0007",
+      "package": "bitvec",
+      "locked_versions": [
+        "1.0.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.17.4"
+        ],
+        "unaffected": [
+          "< 0.11.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2019-0019",
+      "package": "blake2",
+      "locked_versions": [
+        "0.10.6"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.8.1"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0033",
+      "package": "borsh",
+      "locked_versions": [
+        "1.5.7",
+        "1.8.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.0.0-alpha.1",
+          "^0.10.4"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0006",
+      "package": "bumpalo",
+      "locked_versions": [
+        "3.19.0",
+        "3.20.3"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 3.2.1"
+        ],
+        "unaffected": [
+          "< 3.0.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2022-0078",
+      "package": "bumpalo",
+      "locked_versions": [
+        "3.19.0",
+        "3.20.3"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 3.11.1"
+        ],
+        "unaffected": [
+          "< 1.1.0"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0007",
+      "package": "bytes",
+      "locked_versions": [
+        "1.10.1",
+        "1.12.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.11.1"
+        ],
+        "unaffected": [
+          "< 1.2.1"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0159",
+      "package": "chrono",
+      "locked_versions": [
+        "0.4.41",
+        "0.4.45"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">=0.4.20"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0052",
+      "package": "crossbeam-channel",
+      "locked_versions": [
+        "0.5.15"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.4.4"
+        ],
+        "unaffected": [
+          "< 0.4.3"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2022-0019",
+      "package": "crossbeam-channel",
+      "locked_versions": [
+        "0.5.15"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.4.3"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0024",
+      "package": "crossbeam-channel",
+      "locked_versions": [
+        "0.5.15"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.5.15"
+        ],
+        "unaffected": [
+          "<= 0.5.11"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0093",
+      "package": "crossbeam-deque",
+      "locked_versions": [
+        "0.8.6"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.7.4, < 0.8.0",
+          ">= 0.8.1"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0204",
+      "package": "crossbeam-epoch",
+      "locked_versions": [
+        "0.9.18"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.9.20"
+        ],
+        "unaffected": [
+          "< 0.9.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2022-0041",
+      "package": "crossbeam-utils",
+      "locked_versions": [
+        "0.8.21"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.8.7"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0388",
+      "package": "derivative",
+      "locked_versions": [
+        "2.2.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0054",
+      "package": "directories",
+      "locked_versions": [
+        "6.0.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": "2021-04-19"
+    },
+    {
+      "id": "RUSTSEC-2020-0053",
+      "package": "dirs",
+      "locked_versions": [
+        "6.0.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": "2021-04-19"
+    },
+    {
+      "id": "RUSTSEC-2022-0010",
+      "package": "enum-map",
+      "locked_versions": [
+        "2.7.3"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 2.0.2"
+        ],
+        "unaffected": [
+          "< 2.0.0-2"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0218",
+      "package": "enum-map",
+      "locked_versions": [
+        "2.7.3"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 3.1.0"
+        ],
+        "unaffected": [
+          "< 3.0.0-0.gat.0"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0221",
+      "package": "event-listener",
+      "locked_versions": [
+        "2.5.3",
+        "5.4.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 5.4.2"
+        ],
+        "unaffected": [
+          "< 5.1.0"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0060",
+      "package": "futures-task",
+      "locked_versions": [
+        "0.3.31",
+        "0.3.34"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.3.6"
+        ],
+        "unaffected": [
+          "<= 0.2.1"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0061",
+      "package": "futures-task",
+      "locked_versions": [
+        "0.3.31",
+        "0.3.34"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.3.5"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0059",
+      "package": "futures-util",
+      "locked_versions": [
+        "0.3.31",
+        "0.3.34"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.3.7"
+        ],
+        "unaffected": [
+          "< 0.3.2"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0062",
+      "package": "futures-util",
+      "locked_versions": [
+        "0.3.31",
+        "0.3.34"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.3.2"
+        ],
+        "unaffected": [
+          "< 0.3.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0146",
+      "package": "generic-array",
+      "locked_versions": [
+        "0.14.7"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.8.4, < 0.9.0",
+          ">= 0.9.1, < 0.10.0",
+          ">= 0.10.1, < 0.11.0",
+          ">= 0.11.2, < 0.12.0",
+          ">= 0.12.4, < 0.13.0",
+          ">= 0.13.3"
+        ],
+        "unaffected": [
+          "< 0.8.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0140",
+      "package": "gix-date",
+      "locked_versions": [
+        "0.13.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.12.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0021",
+      "package": "gix-features",
+      "locked_versions": [
+        "0.46.2"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.41.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0350",
+      "package": "gix-fs",
+      "locked_versions": [
+        "0.19.2"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.11.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0348",
+      "package": "gix-index",
+      "locked_versions": [
+        "0.46.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.33.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0352",
+      "package": "gix-index",
+      "locked_versions": [
+        "0.46.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.33.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0355",
+      "package": "gix-path",
+      "locked_versions": [
+        "0.11.3"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.9"
+        ],
+        "unaffected": [
+          "< 0.10.8"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0367",
+      "package": "gix-path",
+      "locked_versions": [
+        "0.11.3"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.10"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0371",
+      "package": "gix-path",
+      "locked_versions": [
+        "0.11.3"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.11"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0351",
+      "package": "gix-ref",
+      "locked_versions": [
+        "0.58.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.44.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0064",
+      "package": "gix-transport",
+      "locked_versions": [
+        "0.53.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.36.1"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0335",
+      "package": "gix-transport",
+      "locked_versions": [
+        "0.53.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.42.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0034",
+      "package": "h2",
+      "locked_versions": [
+        "0.3.27",
+        "0.4.12"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.3.17"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0003",
+      "package": "h2",
+      "locked_versions": [
+        "0.3.27",
+        "0.4.12"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          "^0.3.24",
+          ">= 0.4.2"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0332",
+      "package": "h2",
+      "locked_versions": [
+        "0.3.27",
+        "0.4.12"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          "^0.3.26",
+          ">= 0.4.4"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0258",
+      "package": "h2",
+      "locked_versions": [
+        "0.3.27",
+        "0.4.12"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.4.16"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0402",
+      "package": "hashbrown",
+      "locked_versions": [
+        "0.12.3",
+        "0.14.5",
+        "0.15.5",
+        "0.16.1",
+        "0.17.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.15.1"
+        ],
+        "unaffected": [
+          "< 0.15.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0145",
+      "package": "heapless",
+      "locked_versions": [
+        "0.7.17",
+        "0.8.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.6.1"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2019-0033",
+      "package": "http",
+      "locked_versions": [
+        "0.2.12",
+        "1.3.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.1.20"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2019-0034",
+      "package": "http",
+      "locked_versions": [
+        "0.2.12",
+        "1.3.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.1.20"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2016-0002",
+      "package": "hyper",
+      "locked_versions": [
+        "0.14.32",
+        "1.7.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.9.4"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2017-0002",
+      "package": "hyper",
+      "locked_versions": [
+        "0.14.32",
+        "1.7.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.2",
+          "< 0.10.0, >= 0.9.18"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0008",
+      "package": "hyper",
+      "locked_versions": [
+        "0.14.32",
+        "1.7.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.12.34"
+        ],
+        "unaffected": [
+          "< 0.11.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0020",
+      "package": "hyper",
+      "locked_versions": [
+        "0.14.32",
+        "1.7.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.14.3",
+          "0.13.10",
+          "0.12.36"
+        ],
+        "unaffected": [
+          "< 0.12.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0078",
+      "package": "hyper",
+      "locked_versions": [
+        "0.14.32",
+        "1.7.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.14.10"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0079",
+      "package": "hyper",
+      "locked_versions": [
+        "0.14.32",
+        "1.7.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.14.10"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2022-0022",
+      "package": "hyper",
+      "locked_versions": [
+        "0.14.32",
+        "1.7.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.14.12"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2022-0049",
+      "package": "iana-time-zone",
+      "locked_versions": [
+        "0.1.63",
+        "0.1.65"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.1.45"
+        ],
+        "unaffected": [
+          "< 0.1.43"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0421",
+      "package": "idna",
+      "locked_versions": [
+        "1.1.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.0.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0057",
+      "package": "inventory",
+      "locked_versions": [
+        "0.3.21"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.2.0"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0058",
+      "package": "inventory",
+      "locked_versions": [
+        "0.3.21"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.2.0"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0012",
+      "package": "keccak",
+      "locked_versions": [
+        "0.1.5",
+        "0.1.6"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.1.6"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2022-0063",
+      "package": "linked_list_allocator",
+      "locked_versions": [
+        "0.10.5"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.2"
+        ],
+        "unaffected": []
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0070",
+      "package": "lock_api",
+      "locked_versions": [
+        "0.4.13"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.4.2"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0041",
+      "package": "lz4_flex",
+      "locked_versions": [
+        "0.11.5"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.11.6, < 0.12.0",
+          ">= 0.12.1"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0186",
+      "package": "memmap2",
+      "locked_versions": [
+        "0.9.8"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.9.11"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0081",
+      "package": "mio",
+      "locked_versions": [
+        "1.0.4"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.7.6"
+        ],
+        "unaffected": [
+          "< 0.7.0"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0019",
+      "package": "mio",
+      "locked_versions": [
+        "1.0.4"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.8.11"
+        ],
+        "unaffected": [
+          "< 0.7.2"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0119",
+      "package": "number_prefix",
+      "locked_versions": [
+        "0.4.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2019-0017",
+      "package": "once_cell",
+      "locked_versions": [
+        "1.21.3",
+        "1.21.4"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.0.1"
+        ],
+        "unaffected": [
+          "< 0.2.5"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2016-0001",
+      "package": "openssl",
+      "locked_versions": [
+        "0.10.73"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.9.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2018-0010",
+      "package": "openssl",
+      "locked_versions": [
+        "0.10.73"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.9"
+        ],
+        "unaffected": [
+          "< 0.10.8"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0022",
+      "package": "openssl",
+      "locked_versions": [
+        "0.10.73"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.48"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0023",
+      "package": "openssl",
+      "locked_versions": [
+        "0.10.73"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.48"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0024",
+      "package": "openssl",
+      "locked_versions": [
+        "0.10.73"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.48"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0044",
+      "package": "openssl",
+      "locked_versions": [
+        "0.10.73"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.55"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0072",
+      "package": "openssl",
+      "locked_versions": [
+        "0.10.73"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.60"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0357",
+      "package": "openssl",
+      "locked_versions": [
+        "0.10.73"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.66"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0004",
+      "package": "openssl",
+      "locked_versions": [
+        "0.10.73"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.70"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0022",
+      "package": "openssl",
+      "locked_versions": [
+        "0.10.73"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.72"
+        ],
+        "unaffected": [
+          "< 0.10.39"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0082",
+      "package": "ordered-float",
+      "locked_versions": [
+        "2.10.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          "^1.1.1",
+          ">= 2.0.1"
+        ],
+        "unaffected": [
+          "< 0.2.2"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0436",
+      "package": "paste",
+      "locked_versions": [
+        "1.0.15"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0370",
+      "package": "proc-macro-error",
+      "locked_versions": [
+        "1.0.4"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0173",
+      "package": "proc-macro-error2",
+      "locked_versions": [
+        "2.0.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0073",
+      "package": "prost-types",
+      "locked_versions": [
+        "0.13.5",
+        "0.14.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.8.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0002",
+      "package": "prost",
+      "locked_versions": [
+        "0.13.5",
+        "0.14.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.6.1"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0194",
+      "package": "quick-xml",
+      "locked_versions": [
+        "0.38.3"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.41.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0195",
+      "package": "quick-xml",
+      "locked_versions": [
+        "0.38.3"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.41.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0063",
+      "package": "quinn-proto",
+      "locked_versions": [
+        "0.11.13"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          "^0.9.5",
+          ">= 0.10.5"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0373",
+      "package": "quinn-proto",
+      "locked_versions": [
+        "0.11.13"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.11.7"
+        ],
+        "unaffected": [
+          "< 0.11.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0037",
+      "package": "quinn-proto",
+      "locked_versions": [
+        "0.11.13"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.11.14"
+        ],
+        "unaffected": [
+          "< 0.5.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0185",
+      "package": "quinn-proto",
+      "locked_versions": [
+        "0.11.13"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.11.15"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0035",
+      "package": "quinn",
+      "locked_versions": [
+        "0.11.9"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          "^0.5.4",
+          "^0.6.2",
+          ">= 0.7.0"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0097",
+      "package": "rand",
+      "locked_versions": [
+        "0.8.5",
+        "0.8.8",
+        "0.9.2",
+        "0.9.5"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.1",
+          "< 0.10.0, >= 0.9.3",
+          "< 0.9.0, >= 0.8.6"
+        ],
+        "unaffected": [
+          "< 0.7.0"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2019-0035",
+      "package": "rand_core",
+      "locked_versions": [
+        "0.6.4",
+        "0.9.3",
+        "0.9.5"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          "^ 0.3.1",
+          ">= 0.4.2"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0023",
+      "package": "rand_core",
+      "locked_versions": [
+        "0.6.4",
+        "0.9.3",
+        "0.9.5"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.6.2"
+        ],
+        "unaffected": [
+          "< 0.6.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2022-0013",
+      "package": "regex",
+      "locked_versions": [
+        "1.11.2",
+        "1.13.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.5.5"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0007",
+      "package": "ring",
+      "locked_versions": [
+        "0.17.14"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [],
+        "unaffected": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": "2025-02-22"
+    },
+    {
+      "id": "RUSTSEC-2025-0009",
+      "package": "ring",
+      "locked_versions": [
+        "0.17.14"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.17.12"
+        ],
+        "unaffected": []
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0010",
+      "package": "ring",
+      "locked_versions": [
+        "0.17.14"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [],
+        "unaffected": [
+          ">= 0.17"
+        ]
+      },
+      "informational": "unmaintained",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2022-0092",
+      "package": "rmp-serde",
+      "locked_versions": [
+        "1.3.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.1.1"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0071",
+      "package": "rsa",
+      "locked_versions": [
+        "0.9.10",
+        "0.9.8"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0137",
+      "package": "ruint",
+      "locked_versions": [
+        "1.16.0",
+        "1.20.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.17.1"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0220",
+      "package": "ruint",
+      "locked_versions": [
+        "1.16.0",
+        "1.20.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.20.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0134",
+      "package": "rustls-pemfile",
+      "locked_versions": [
+        "1.0.4"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0053",
+      "package": "rustls-webpki",
+      "locked_versions": [
+        "0.101.7",
+        "0.103.13"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.100.2, < 0.101.0",
+          ">= 0.101.4"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0049",
+      "package": "rustls-webpki",
+      "locked_versions": [
+        "0.101.7",
+        "0.103.13"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.103.10"
+        ],
+        "unaffected": [
+          "< 0.102.0-alpha.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0098",
+      "package": "rustls-webpki",
+      "locked_versions": [
+        "0.101.7",
+        "0.103.13"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.103.12, < 0.104.0-alpha.1",
+          ">= 0.104.0-alpha.6"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0099",
+      "package": "rustls-webpki",
+      "locked_versions": [
+        "0.101.7",
+        "0.103.13"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.103.12, < 0.104.0-alpha.1",
+          ">= 0.104.0-alpha.6"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0104",
+      "package": "rustls-webpki",
+      "locked_versions": [
+        "0.101.7",
+        "0.103.13"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.103.13, < 0.104.0-alpha.1",
+          ">= 0.104.0-alpha.7"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0336",
+      "package": "rustls",
+      "locked_versions": [
+        "0.21.12",
+        "0.23.42"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.23.5",
+          ">= 0.22.4, < 0.23.0",
+          ">= 0.21.11, < 0.22.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0399",
+      "package": "rustls",
+      "locked_versions": [
+        "0.21.12",
+        "0.23.42"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.23.18"
+        ],
+        "unaffected": [
+          ">= 0.23, < 0.23.13",
+          "< 0.23"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0285",
+      "package": "rustls",
+      "locked_versions": [
+        "0.21.12",
+        "0.23.42"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.23.45"
+        ],
+        "unaffected": [
+          "< 0.23.13"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0400",
+      "package": "ruzstd",
+      "locked_versions": [
+        "0.7.3"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.7.3"
+        ],
+        "unaffected": [
+          "< 0.7.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2017-0003",
+      "package": "security-framework",
+      "locked_versions": [
+        "2.11.1",
+        "3.7.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.1.12"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0100",
+      "package": "sha2",
+      "locked_versions": [
+        "0.10.9"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.9.8"
+        ],
+        "unaffected": [
+          "< 0.9.7"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0006",
+      "package": "shlex",
+      "locked_versions": [
+        "1.3.0",
+        "2.0.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.3.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0047",
+      "package": "slab",
+      "locked_versions": [
+        "0.4.11",
+        "0.4.12"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.4.11"
+        ],
+        "unaffected": [
+          "< 0.4.10"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2018-0003",
+      "package": "smallvec",
+      "locked_versions": [
+        "1.15.1",
+        "1.16.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.6.3",
+          "^0.3.4",
+          "^0.4.5",
+          "^0.5.1"
+        ],
+        "unaffected": [
+          "< 0.3.2"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2018-0018",
+      "package": "smallvec",
+      "locked_versions": [
+        "1.15.1",
+        "1.16.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.6.13"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2019-0009",
+      "package": "smallvec",
+      "locked_versions": [
+        "1.15.1",
+        "1.16.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.6.10"
+        ],
+        "unaffected": [
+          "< 0.6.5"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2019-0012",
+      "package": "smallvec",
+      "locked_versions": [
+        "1.15.1",
+        "1.16.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.6.10"
+        ],
+        "unaffected": [
+          "< 0.6.3"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0003",
+      "package": "smallvec",
+      "locked_versions": [
+        "1.15.1",
+        "1.16.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.6.14, < 1.0.0",
+          ">= 1.6.1"
+        ],
+        "unaffected": [
+          "< 0.6.3"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0079",
+      "package": "socket2",
+      "locked_versions": [
+        "0.5.10",
+        "0.6.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.3.16"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2019-0013",
+      "package": "spin",
+      "locked_versions": [
+        "0.9.8",
+        "0.9.9"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.5.2"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2019-0031",
+      "package": "spin",
+      "locked_versions": [
+        "0.9.8",
+        "0.9.9"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [],
+        "unaffected": [
+          ">= 0"
+        ]
+      },
+      "informational": "unmaintained",
+      "withdrawn": "2020-10-08"
+    },
+    {
+      "id": "RUSTSEC-2023-0031",
+      "package": "spin",
+      "locked_versions": [
+        "0.9.8",
+        "0.9.9"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.9.8"
+        ],
+        "unaffected": [
+          "< 0.9.3"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2022-0104",
+      "package": "structopt",
+      "locked_versions": [
+        "0.3.26"
+      ],
+      "title": null,
+      "versions": {
+        "patched": []
+      },
+      "informational": "unmaintained",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2018-0002",
+      "package": "tar",
+      "locked_versions": [
+        "0.4.44"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.4.16"
+        ],
+        "unaffected": []
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0080",
+      "package": "tar",
+      "locked_versions": [
+        "0.4.44"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.4.36"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0067",
+      "package": "tar",
+      "locked_versions": [
+        "0.4.44"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.4.45"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0068",
+      "package": "tar",
+      "locked_versions": [
+        "0.4.44"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.4.45"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2018-0015",
+      "package": "term",
+      "locked_versions": [
+        "0.7.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [],
+        "unaffected": [
+          "> 0.6.1"
+        ]
+      },
+      "informational": "unmaintained",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2022-0006",
+      "package": "thread_local",
+      "locked_versions": [
+        "1.1.9"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.1.4"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0071",
+      "package": "time",
+      "locked_versions": [
+        "0.3.41",
+        "0.3.55"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.2.23"
+        ],
+        "unaffected": [
+          "=0.2.0",
+          "=0.2.1",
+          "=0.2.2",
+          "=0.2.3",
+          "=0.2.4",
+          "=0.2.5",
+          "=0.2.6"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2026-0009",
+      "package": "time",
+      "locked_versions": [
+        "0.3.41",
+        "0.3.55"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.3.47"
+        ],
+        "unaffected": [
+          "< 0.3.6"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2020-0019",
+      "package": "tokio-rustls",
+      "locked_versions": [
+        "0.24.1",
+        "0.26.2"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.12.3, < 0.13.0",
+          ">= 0.13.1"
+        ],
+        "unaffected": [
+          "< 0.12"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0072",
+      "package": "tokio",
+      "locked_versions": [
+        "1.50.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.5.1, < 1.6.0",
+          ">= 1.6.3, < 1.7.0",
+          ">= 1.7.2, < 1.8.0",
+          ">= 1.8.1"
+        ],
+        "unaffected": [
+          "< 0.3.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0124",
+      "package": "tokio",
+      "locked_versions": [
+        "1.50.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.8.4, < 1.9.0",
+          ">= 1.13.1"
+        ],
+        "unaffected": [
+          "< 0.1.14"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0001",
+      "package": "tokio",
+      "locked_versions": [
+        "1.50.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.18.4, < 1.19.0",
+          ">= 1.20.3, < 1.21.0",
+          ">= 1.23.1"
+        ],
+        "unaffected": [
+          "< 1.7.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0005",
+      "package": "tokio",
+      "locked_versions": [
+        "1.50.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.18.5, < 1.19.0",
+          ">= 1.20.4, < 1.21.0",
+          ">= 1.24.2"
+        ],
+        "unaffected": [
+          "< 0.2.0"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0023",
+      "package": "tokio",
+      "locked_versions": [
+        "1.50.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.38.2, < 1.39.0",
+          ">= 1.42.1, < 1.43.0",
+          ">= 1.43.1, < 1.44.0",
+          ">= 1.44.2"
+        ],
+        "unaffected": [
+          "< 0.2.5"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0376",
+      "package": "tonic",
+      "locked_versions": [
+        "0.13.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.12.3"
+        ],
+        "unaffected": [
+          "< 0.12.2"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0135",
+      "package": "tower-http",
+      "locked_versions": [
+        "0.6.11"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.2.1",
+          ">= 0.1.3, < 0.2.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": "2022-08-14"
+    },
+    {
+      "id": "RUSTSEC-2022-0043",
+      "package": "tower-http",
+      "locked_versions": [
+        "0.6.11"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.2.1",
+          ">= 0.1.3, < 0.2.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0055",
+      "package": "tracing-subscriber",
+      "locked_versions": [
+        "0.2.25",
+        "0.3.19"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">=0.3.20"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0078",
+      "package": "tracing",
+      "locked_versions": [
+        "0.1.41",
+        "0.1.44"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.1.40"
+        ],
+        "unaffected": [
+          "<= 0.1.37"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2018-0001",
+      "package": "untrusted",
+      "locked_versions": [
+        "0.9.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.6.2"
+        ],
+        "unaffected": []
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2022-0008",
+      "package": "windows",
+      "locked_versions": [
+        "0.57.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.32.0"
+        ],
+        "unaffected": [
+          "< 0.1.2"
+        ]
+      },
+      "informational": "unsound",
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2023-0074",
+      "package": "zerocopy",
+      "locked_versions": [
+        "0.8.26",
+        "0.8.57"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.2.9, < 0.3.0",
+          ">= 0.3.2, < 0.4.0",
+          ">= 0.4.1, < 0.5.0",
+          ">= 0.5.2, < 0.6.0",
+          ">= 0.6.6, < 0.7.0",
+          ">= 0.7.31"
+        ],
+        "unaffected": [
+          "< 0.2.2"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2021-0115",
+      "package": "zeroize_derive",
+      "locked_versions": [
+        "1.4.2",
+        "1.5.0"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 1.1.1"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0346",
+      "package": "zerovec-derive",
+      "locked_versions": [
+        "0.11.1"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.3",
+          ">= 0.9.7, <0.10.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0347",
+      "package": "zerovec",
+      "locked_versions": [
+        "0.11.4"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.10.4",
+          ">= 0.9.7, <0.10.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2025-0168",
+      "package": "zip",
+      "locked_versions": [
+        "2.4.2"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 2.3.0"
+        ],
+        "unaffected": [
+          "< 1.3.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    },
+    {
+      "id": "RUSTSEC-2024-0401",
+      "package": "zlib-rs",
+      "locked_versions": [
+        "0.6.6"
+      ],
+      "title": null,
+      "versions": {
+        "patched": [
+          ">= 0.4.0"
+        ]
+      },
+      "informational": null,
+      "withdrawn": ""
+    }
+  ]
+}

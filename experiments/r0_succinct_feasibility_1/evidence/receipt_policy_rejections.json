@@ -1,0 +1,10 @@
+{
+  "actual_proofs_used": 0,
+  "malformed_containers": 6,
+  "note": "synthetic invalid input fixtures, no development proving",
+  "rejected_variants": [
+    "Fake",
+    "Composite",
+    "Groth16"
+  ]
+}

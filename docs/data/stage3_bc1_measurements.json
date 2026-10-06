@@ -1,0 +1,694 @@
+{
+  "recorded_at_utc": "2026-09-17T11:46:27.335273+00:00",
+  "workers": 1,
+  "child_wall_timeout_seconds": 30,
+  "host_before_budget_selection": {
+    "recorded_at_utc": "2026-09-17T11:28:09.330022+00:00",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.14.4",
+    "memory_bytes": {
+      "MemTotal": 8126111744,
+      "MemAvailable": 5478871040,
+      "SwapTotal": 2147483648,
+      "SwapFree": 2147483648
+    },
+    "storage": {
+      "/home/grace/projects/pq-did": {
+        "available_bytes": 1021614362624,
+        "total_bytes": 1081101176832
+      },
+      "/tmp": {
+        "available_bytes": 4003999744,
+        "total_bytes": 4063055872
+      }
+    },
+    "cgroup_membership": "0::/init.scope\n",
+    "/sys/fs/cgroup/memory.max": "not exposed at this path",
+    "/sys/fs/cgroup/memory/memory.limit_in_bytes": "not exposed at this path",
+    "/sys/fs/cgroup/memory/memory.usage_in_bytes": "not exposed at this path"
+  },
+  "host_at_measurement": {
+    "recorded_at_utc": "2026-09-17T11:46:27.335396+00:00",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.14.4",
+    "memory_bytes": {
+      "MemTotal": 8126111744,
+      "MemAvailable": 5222182912,
+      "SwapTotal": 2147483648,
+      "SwapFree": 2147483648
+    },
+    "storage": {
+      "/home/grace/projects/pq-did": {
+        "available_bytes": 1021609656320,
+        "total_bytes": 1081101176832
+      },
+      "/tmp": {
+        "available_bytes": 4003995648,
+        "total_bytes": 4063055872
+      }
+    }
+  },
+  "source_sha256": {
+    "src/pqdid/circuits/__init__.py": "9098a9c19787bcd155bac6d7d724d3c354c4c404fc99565cd5a72ae26a4c8d8f",
+    "src/pqdid/circuits/accounting.py": "23610bf5a75ba435f582d7e80a1d1e2118f07caabe6659b96a4ae4380b3c0690",
+    "src/pqdid/circuits/control.py": "ff32f6bf2d0a0c1ce51bf465fbc98bd856516890059e43fde2fccd4f4edfe81c",
+    "src/pqdid/circuits/emitter.py": "2f579cb3b545c251b56a767d494247c3cafc4b336404aa174fb48627a44395b2",
+    "src/pqdid/circuits/words.py": "22aac15a2350b6a7483897728566ebba011e3d11b86631753e34e1941b9976ec",
+    "scripts/measure_bc1_foundation.py": "b67b94a69d85f164522db1704eeff0b186af2269c6c19b60c2c4432160caf9c4"
+  },
+  "runs": [
+    {
+      "component": "add64",
+      "mode": "materialised",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": true,
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "generation_seconds": 0.0016248489991994575,
+      "counts": {
+        "xor": 262,
+        "and_": 199,
+        "not_": 67,
+        "inputs": 128
+      },
+      "gates": 528,
+      "wires": 658,
+      "fingerprint": "bd221c885a16683fb31a851439d86d999cc9e5eb5176f5a3681c432012f02cbc",
+      "folded_operations": [
+        0,
+        0,
+        0
+      ],
+      "serialised_bytes": 9065,
+      "stored_trace_bytes": 9065,
+      "retained_trace_bytes": 9098,
+      "retained_input_handles_bytes": 8240,
+      "generation_traced_retained_bytes": 18612,
+      "generation_traced_peak_bytes": 34878,
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.0006468290011980571,
+        "wire_storage_bytes": 715
+      },
+      "probe_seconds": 0.0023562580026919022,
+      "probe_traced_peak_bytes": 34878,
+      "peak_rss_bytes": 24346624
+    },
+    {
+      "component": "add64",
+      "mode": "count",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": true,
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "generation_seconds": 0.0016308580015902407,
+      "counts": {
+        "xor": 262,
+        "and_": 199,
+        "not_": 67,
+        "inputs": 128
+      },
+      "gates": 528,
+      "wires": 658,
+      "fingerprint": "bd221c885a16683fb31a851439d86d999cc9e5eb5176f5a3681c432012f02cbc",
+      "folded_operations": [
+        0,
+        0,
+        0
+      ],
+      "serialised_bytes": 9065,
+      "stored_trace_bytes": 0,
+      "retained_trace_bytes": 0,
+      "retained_input_handles_bytes": 8240,
+      "generation_traced_retained_bytes": 9514,
+      "generation_traced_peak_bytes": 16641,
+      "evaluation": null,
+      "probe_seconds": 0.0016914490006456617,
+      "probe_traced_peak_bytes": 16641,
+      "peak_rss_bytes": 24174592
+    },
+    {
+      "component": "add64",
+      "mode": "stream",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": true,
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "generation_seconds": 0.001544219001516467,
+      "counts": {
+        "xor": 262,
+        "and_": 199,
+        "not_": 67,
+        "inputs": 128
+      },
+      "gates": 528,
+      "wires": 658,
+      "fingerprint": "bd221c885a16683fb31a851439d86d999cc9e5eb5176f5a3681c432012f02cbc",
+      "folded_operations": [
+        0,
+        0,
+        0
+      ],
+      "serialised_bytes": 9065,
+      "stored_trace_bytes": 9065,
+      "retained_trace_bytes": 0,
+      "retained_input_handles_bytes": 8240,
+      "generation_traced_retained_bytes": 9514,
+      "generation_traced_peak_bytes": 16641,
+      "evaluation": null,
+      "stream_file_bytes": 9065,
+      "probe_seconds": 0.0017294419994868804,
+      "probe_traced_peak_bytes": 273227,
+      "peak_rss_bytes": 24629248
+    },
+    {
+      "component": "sub64",
+      "mode": "materialised",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": true,
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "generation_seconds": 0.002015808000578545,
+      "counts": {
+        "xor": 262,
+        "and_": 199,
+        "not_": 132,
+        "inputs": 128
+      },
+      "gates": 593,
+      "wires": 723,
+      "fingerprint": "a42deb63d352bc5ebdb78d7e021d55bcdc30c3b3f268b3ec28139e49b4bf3490",
+      "folded_operations": [
+        0,
+        0,
+        0
+      ],
+      "serialised_bytes": 10170,
+      "stored_trace_bytes": 10170,
+      "retained_trace_bytes": 10203,
+      "retained_input_handles_bytes": 8240,
+      "generation_traced_retained_bytes": 19717,
+      "generation_traced_peak_bytes": 37207,
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.0007279679994098842,
+        "wire_storage_bytes": 780
+      },
+      "probe_seconds": 0.0028668510021816473,
+      "probe_traced_peak_bytes": 37207,
+      "peak_rss_bytes": 24420352
+    },
+    {
+      "component": "sub64",
+      "mode": "count",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": true,
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "generation_seconds": 0.001650449001317611,
+      "counts": {
+        "xor": 262,
+        "and_": 199,
+        "not_": 132,
+        "inputs": 128
+      },
+      "gates": 593,
+      "wires": 723,
+      "fingerprint": "a42deb63d352bc5ebdb78d7e021d55bcdc30c3b3f268b3ec28139e49b4bf3490",
+      "folded_operations": [
+        0,
+        0,
+        0
+      ],
+      "serialised_bytes": 10170,
+      "stored_trace_bytes": 0,
+      "retained_trace_bytes": 0,
+      "retained_input_handles_bytes": 8240,
+      "generation_traced_retained_bytes": 9514,
+      "generation_traced_peak_bytes": 20889,
+      "evaluation": null,
+      "probe_seconds": 0.0016986970003927127,
+      "probe_traced_peak_bytes": 20889,
+      "peak_rss_bytes": 24444928
+    },
+    {
+      "component": "sub64",
+      "mode": "stream",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": true,
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "generation_seconds": 0.001813339000364067,
+      "counts": {
+        "xor": 262,
+        "and_": 199,
+        "not_": 132,
+        "inputs": 128
+      },
+      "gates": 593,
+      "wires": 723,
+      "fingerprint": "a42deb63d352bc5ebdb78d7e021d55bcdc30c3b3f268b3ec28139e49b4bf3490",
+      "folded_operations": [
+        0,
+        0,
+        0
+      ],
+      "serialised_bytes": 10170,
+      "stored_trace_bytes": 10170,
+      "retained_trace_bytes": 0,
+      "retained_input_handles_bytes": 8240,
+      "generation_traced_retained_bytes": 9514,
+      "generation_traced_peak_bytes": 20889,
+      "evaluation": null,
+      "stream_file_bytes": 10170,
+      "probe_seconds": 0.0020135820013820194,
+      "probe_traced_peak_bytes": 273227,
+      "peak_rss_bytes": 24477696
+    },
+    {
+      "component": "mul64",
+      "mode": "materialised",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": true,
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "generation_seconds": 0.16554053100117017,
+      "counts": {
+        "xor": 25933,
+        "and_": 21322,
+        "not_": 388,
+        "inputs": 128
+      },
+      "gates": 47643,
+      "wires": 47773,
+      "fingerprint": "88d78f60c37cc7223662e64f2a6bd8cb9e257125dd0377412e4f3faeb3afd19b",
+      "folded_operations": [
+        64,
+        64,
+        0
+      ],
+      "serialised_bytes": 810020,
+      "stored_trace_bytes": 810020,
+      "retained_trace_bytes": 810053,
+      "retained_input_handles_bytes": 8240,
+      "generation_traced_retained_bytes": 821303,
+      "generation_traced_peak_bytes": 1694332,
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.1689494430029299,
+        "wire_storage_bytes": 47830
+      },
+      "probe_seconds": 0.3346776010002941,
+      "probe_traced_peak_bytes": 1694332,
+      "peak_rss_bytes": 25862144
+    },
+    {
+      "component": "mul64",
+      "mode": "count",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": true,
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "generation_seconds": 0.14708416699795634,
+      "counts": {
+        "xor": 25933,
+        "and_": 21322,
+        "not_": 388,
+        "inputs": 128
+      },
+      "gates": 47643,
+      "wires": 47773,
+      "fingerprint": "88d78f60c37cc7223662e64f2a6bd8cb9e257125dd0377412e4f3faeb3afd19b",
+      "folded_operations": [
+        64,
+        64,
+        0
+      ],
+      "serialised_bytes": 810020,
+      "stored_trace_bytes": 0,
+      "retained_trace_bytes": 0,
+      "retained_input_handles_bytes": 8240,
+      "generation_traced_retained_bytes": 11250,
+      "generation_traced_peak_bytes": 67841,
+      "evaluation": null,
+      "probe_seconds": 0.14716754899927764,
+      "probe_traced_peak_bytes": 67841,
+      "peak_rss_bytes": 24395776
+    },
+    {
+      "component": "mul64",
+      "mode": "stream",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": true,
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "generation_seconds": 0.16133745499973884,
+      "counts": {
+        "xor": 25933,
+        "and_": 21322,
+        "not_": 388,
+        "inputs": 128
+      },
+      "gates": 47643,
+      "wires": 47773,
+      "fingerprint": "88d78f60c37cc7223662e64f2a6bd8cb9e257125dd0377412e4f3faeb3afd19b",
+      "folded_operations": [
+        64,
+        64,
+        0
+      ],
+      "serialised_bytes": 810020,
+      "stored_trace_bytes": 810020,
+      "retained_trace_bytes": 0,
+      "retained_input_handles_bytes": 8240,
+      "generation_traced_retained_bytes": 11250,
+      "generation_traced_peak_bytes": 67937,
+      "evaluation": null,
+      "stream_file_bytes": 810020,
+      "probe_seconds": 0.16202479200001108,
+      "probe_traced_peak_bytes": 274963,
+      "peak_rss_bytes": 24592384
+    },
+    {
+      "component": "select4",
+      "mode": "materialised",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": true,
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "generation_seconds": 0.002624212000227999,
+      "counts": {
+        "xor": 338,
+        "and_": 308,
+        "not_": 266,
+        "inputs": 96
+      },
+      "gates": 912,
+      "wires": 1010,
+      "fingerprint": "6d02619ddde0bc388692c039f9f3e1cce8af60f86eeab6e2d983e625de7e8d52",
+      "folded_operations": [
+        0,
+        0,
+        0
+      ],
+      "serialised_bytes": 15593,
+      "stored_trace_bytes": 15593,
+      "retained_trace_bytes": 15626,
+      "retained_input_handles_bytes": 6192,
+      "generation_traced_retained_bytes": 23652,
+      "generation_traced_peak_bytes": 41011,
+      "evaluation": {
+        "output": 1,
+        "seconds": 0.0012329249984759372,
+        "wire_storage_bytes": 1067
+      },
+      "probe_seconds": 0.0039352499989036005,
+      "probe_traced_peak_bytes": 41011,
+      "peak_rss_bytes": 24367104
+    },
+    {
+      "component": "select4",
+      "mode": "count",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": true,
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "generation_seconds": 0.0026043340003525373,
+      "counts": {
+        "xor": 338,
+        "and_": 308,
+        "not_": 266,
+        "inputs": 96
+      },
+      "gates": 912,
+      "wires": 1010,
+      "fingerprint": "6d02619ddde0bc388692c039f9f3e1cce8af60f86eeab6e2d983e625de7e8d52",
+      "folded_operations": [
+        0,
+        0,
+        0
+      ],
+      "serialised_bytes": 15593,
+      "stored_trace_bytes": 0,
+      "retained_trace_bytes": 0,
+      "retained_input_handles_bytes": 6192,
+      "generation_traced_retained_bytes": 8026,
+      "generation_traced_peak_bytes": 10347,
+      "evaluation": null,
+      "probe_seconds": 0.0026557220007816795,
+      "probe_traced_peak_bytes": 10347,
+      "peak_rss_bytes": 24416256
+    },
+    {
+      "component": "select4",
+      "mode": "stream",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": true,
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "generation_complete": true,
+      "generation_seconds": 0.0027280299982521683,
+      "counts": {
+        "xor": 338,
+        "and_": 308,
+        "not_": 266,
+        "inputs": 96
+      },
+      "gates": 912,
+      "wires": 1010,
+      "fingerprint": "6d02619ddde0bc388692c039f9f3e1cce8af60f86eeab6e2d983e625de7e8d52",
+      "folded_operations": [
+        0,
+        0,
+        0
+      ],
+      "serialised_bytes": 15593,
+      "stored_trace_bytes": 15593,
+      "retained_trace_bytes": 0,
+      "retained_input_handles_bytes": 6192,
+      "generation_traced_retained_bytes": 8026,
+      "generation_traced_peak_bytes": 10347,
+      "evaluation": null,
+      "stream_file_bytes": 15593,
+      "probe_seconds": 0.0029048219985270407,
+      "probe_traced_peak_bytes": 271739,
+      "peak_rss_bytes": 24625152
+    }
+  ],
+  "limit_probes": [
+    {
+      "component": "add64",
+      "mode": "materialised",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": false,
+      "limits": {
+        "max_gates": 3,
+        "max_output_bytes": 8388608,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "reason": "gate-count limit",
+      "progress": {
+        "gates": 3,
+        "wires": 133,
+        "serialised_bytes_so_far": 107,
+        "stored_bytes": 107,
+        "complete": false
+      },
+      "probe_seconds": 0.00024696199761820026,
+      "probe_traced_peak_bytes": 15349,
+      "peak_rss_bytes": 24141824
+    },
+    {
+      "component": "add64",
+      "mode": "materialised",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": false,
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 60,
+        "max_seconds": 10.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "reason": "output-storage limit",
+      "progress": {
+        "gates": 0,
+        "wires": 130,
+        "serialised_bytes_so_far": 56,
+        "stored_bytes": 56,
+        "complete": false
+      },
+      "probe_seconds": 0.00020484400010900572,
+      "probe_traced_peak_bytes": 15484,
+      "peak_rss_bytes": 24158208
+    },
+    {
+      "component": "add64",
+      "mode": "materialised",
+      "scope": "component predicate only; neither full authentication nor its lower bound",
+      "complete": false,
+      "limits": {
+        "max_gates": 200000,
+        "max_output_bytes": 8388608,
+        "max_seconds": 0.0,
+        "max_inputs": 65536
+      },
+      "evaluation_max_seconds": 5.0,
+      "evaluation_max_wires": 300000,
+      "address_space_limit_bytes": 268435456,
+      "tracemalloc_enabled": true,
+      "reason": "generation-time limit",
+      "progress": {
+        "gates": 0,
+        "wires": 130,
+        "serialised_bytes_so_far": 0,
+        "stored_bytes": 0,
+        "complete": false
+      },
+      "probe_seconds": 6.943100015632808e-05,
+      "probe_traced_peak_bytes": 3287,
+      "peak_rss_bytes": 24358912
+    }
+  ],
+  "authentication_size_projections": [
+    {
+      "assumed_full_auth_and_gates": 0,
+      "projected_proof_bytes": 5363104,
+      "label": "projection from an assumed full authentication AND count; not measured"
+    },
+    {
+      "assumed_full_auth_and_gates": 1000000,
+      "projected_proof_bytes": 245363104,
+      "label": "projection from an assumed full authentication AND count; not measured"
+    },
+    {
+      "assumed_full_auth_and_gates": 10000000,
+      "projected_proof_bytes": 2405363104,
+      "label": "projection from an assumed full authentication AND count; not measured"
+    }
+  ],
+  "limitations": [
+    "One instrumented run per component/mode; timings include tracemalloc overhead.",
+    "Peak RSS is Linux process high-water RSS, includes imports and allocator state.",
+    "Traced memory excludes interpreter/native allocations before tracing; retained trace and inputs are subsets.",
+    "Count mode emits no output bytes; serialised_bytes is the logical trace length.",
+    "Streaming bounds gate records, not caller live words, inputs or future compiler data.",
+    "Clocks are cooperative checks; timeout and RLIMIT_AS also bound probe processes.",
+    "No full relation/proof/feasibility result; SPEC-003 recipe identity remains open."
+  ]
+}

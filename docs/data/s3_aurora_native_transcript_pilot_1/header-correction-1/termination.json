@@ -1,0 +1,28 @@
+{
+  "query_command": [
+    "/usr/bin/systemctl",
+    "--user",
+    "show",
+    "pqdid-auroranative-resume5-build-5.service",
+    "-p",
+    "LoadState",
+    "-p",
+    "ActiveState",
+    "-p",
+    "SubState",
+    "-p",
+    "MainPID",
+    "-p",
+    "ControlGroup"
+  ],
+  "query_exit": 0,
+  "stdout": "LoadState=not-found\nActiveState=inactive\nSubState=dead\nMainPID=0\nControlGroup=\n",
+  "stderr": "",
+  "required_properties_complete": true,
+  "exact_named_cgroups_remaining": [],
+  "workload_terminated": true,
+  "interpretation": "Successful installed-systemd query reports not-found/inactive/dead and the exact cgroup is absent. Not inferred from MainPID alone. Earlier kill/stop requests reported unit not loaded; no claim that they killed an active worker.",
+  "scratch_bytes": 0,
+  "temporary_bytes": 0,
+  "isolation_pilot_untouched": true
+}

@@ -1,0 +1,13 @@
+{
+  "parent_ledger": "/home/grace/projects/pq-did/docs/data/ligetron_full_path_engineering_1/continuation-1/ledger.json",
+  "parent_resource_sha256": "323707d20e7e39581d83f7e6d134c4e069c373fe1d14759647cb07fb54790854",
+  "measured_diagnostic_seconds": 1.4269298719999597,
+  "conservative_completion_bookkeeping_seconds": 20,
+  "basis": "Selected-file preservation, diagnostic interpretation, archive/accounting preparation, packaging and reporting. Conservative charge is not measured runtime.",
+  "charge_seconds": 21.42692987199996,
+  "charged_to": "same package and overall outside-KYC capacity, once",
+  "invocations": [],
+  "builds": [],
+  "proofs": [],
+  "memory_repolls": 0
+}

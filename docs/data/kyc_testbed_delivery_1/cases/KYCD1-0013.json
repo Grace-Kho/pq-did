@@ -1,0 +1,13 @@
+{
+  "invocation_id": "KYCD1-0013",
+  "case_id": "E-03",
+  "work_event_reservation": 0,
+  "ordinal": 13,
+  "cumulative_invocations": 1178,
+  "status": "pass",
+  "details": {
+    "expected_rejection": "category or fields"
+  },
+  "seconds": 1.1211028322577477e-05,
+  "work_events": 0
+}

@@ -1,0 +1,64 @@
+I approve **LIGETRON-CORRECTION-AND-ADMISSION-1** within the CPU-only scope of your proposal, with the clarifications below.
+
+The starting handover is:
+
+`/home/grace/projects/pq-did/PQ_DID_Ligetron_Correction_Handover.zip`
+
+SHA-256:
+
+`e116904d8f39c017b1a0807b4b1d891afc79bb50a98eff2279e6e45a48747fb8`
+
+Use upstream public commit:
+
+`4b1cdef1bfdf4497fb3e38170db4541fba3f6c12`
+
+**Approved implementation scope**
+
+* Prepare the isolated overlay and shared `include/zkp/pqdid_rng_exp1.hpp` helper. The harness and relevant patched call sites must use the same implementations.
+* Implement and validate checked private entropy, corrected query generation, bounded field rejection sampling and separated challenge streams.
+* Approve the proposed **256-candidate backend sampler cap** for this experiment only. Preserve all frozen ML-DSA caps.
+* Retain the D-04 refinement: test the last aligned candidate before cache refill and the first afterwards.
+* Declare the experiment amd64/little-endian. Preserve the specified stage-label and query-label byte conventions; do not claim portable transcript canonicalisation.
+* Keep packing, masking construction, commitments, active PQ-DID parameters and manuscript unchanged.
+
+**Approved resources**
+
+* Record the **30-second conservative preparation debit once**, clearly distinguished from measured execution time.
+* Add **600 implementation seconds**, raising the cumulative ceiling **6,074 → 6,674**. Allocate a 600-second execution package outside KYC.
+* Preserve the KYC allocation and its protected 300-second reserve.
+* Retain **60 seconds for finalisation** inside the package. Permit redistribution among the other phases within the unchanged package total and individual command limits.
+* Add **39 invocation slots**, raising the ceiling **1,190 → 1,229**: 35 fixed cases and at most four targeted corrective reruns. Preserve all seven earlier reserved slots.
+* Allocate **two existing build slots**, keeping the build ceiling at 13.
+* Retain serial execution, 1-GiB compilation and 256-MiB component/tooling/audit limits.
+* Allocate **2 MiB evidence** and **64 MiB artifacts** within existing cumulative ceilings. Preserve all protected storage reserves.
+* Extend the 32-MiB per-file artifact exception only to explicitly registered package archives, objects and binaries. Preserve the ordinary 1-MiB limit and 8-MiB temporary-storage cap.
+
+Use exact live balances. Before acquisition or compilation, confirm that the reservations fit without consuming protected headroom. Classify paths in advance; do not evade limits through reclassification.
+
+**Provenance and dependencies**
+
+Verify upstream commit-to-tree-to-blob membership before compilation. Internal archive checksums alone are insufficient.
+
+Authorise the proposed pinned `src/bn254.cpp` and necessary local include closure within the **1-MiB additional source/metadata cap**. Authorise the two exact development-package archives listed in your proposal, subject to their stated versions, sizes and SHA-256 checks.
+
+Extract only required files into the isolated prefix. Verify compatibility with the actual installed `libcrypto.so.3` and retained GMP headers/libraries. Do not assume matching filenames establish compatibility.
+
+No system installation, maintainer scripts, global environment changes, WebGPU dependencies or top-level prover build are authorised.
+
+Resolve the CPU target’s include/link closure before spending the first build attempt. Do not silently select another revision or additional dependency.
+
+**Execution and completion**
+
+Proceed continuously through preparation, the permitted builds, all 35 fixed cases, justified corrections and affected revalidation, then one consolidated preservation/reporting checkpoint.
+
+Freeze independent expectations before candidate execution. Preserve negative controls, individual failures and all charges. Distinguish shared cryptographic primitives from independent specification of transcript bytes and consumption.
+
+Stop affected work for an integrity failure, actual resource breach, insufficient completion headroom or substantive construction change. Do not stop merely because an internal subtask has finished.
+
+Keep parameter/masking correspondence, public-seed expansion, commitment simulation, extraction and quantum-security arguments separate. Passing these component cases does not close them. If a new cryptographic construction is required, state the exact missing result and stop that security branch.
+
+Preserve the genuine ML-DSA KYC baseline, its 302 historical observations, four smoke observations and all earlier evidence. Only manuscript Sections II–VIII and agreed clarifications remain authoritative.
+
+Finish with individual outcomes, patch/source identities, measured resources, final accounting and an explicit private-proof admission decision. Do not launch another package automatically.
+
+Private verification remains fail-closed. Binius, private proving and isolation remain paused. **No proof attempts are authorised; the proof ledger remains two used, one unused.**

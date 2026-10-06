@@ -1,0 +1,30 @@
+{
+  "package": "OCT31-BINIUS64-AUTH-INTEGRATION-1/G0",
+  "decision": "NO-GO at G0",
+  "overlay_produced": false,
+  "reason": "No established committed terminal-key equality and rank-sufficient, semantically inert support with a joint compiled-view simulator for the actual oracle shapes",
+  "B64-ZK-001": "Confirmed clear packed-witness terminal functional; not a demonstrated PQ-DID key recovery or forgery",
+  "B64-ZK-002": "Confirmed unchanged inner message row; independent companion mask is insufficient for query hiding",
+  "construction_obligations": [
+    "support-annihilation and encoder-specific rank/image condition",
+    "cross-commitment equality of terminal pad",
+    "joint simulator including adaptive queries, sigma, folded and terminal data, commitments",
+    "affine-gamma exceptional challenges and composition transfer",
+    "additional IntMul oracle shapes"
+  ],
+  "native_checks": "unrun",
+  "functional_cases_run": 0,
+  "full_relation_checks_unrun": 21,
+  "builds": 0,
+  "proofs": 0,
+  "zkvm_executions": 0,
+  "G1_G3_active": false,
+  "production_changed": false,
+  "programme_complete": false,
+  "stages_2_3_open": true,
+  "proof_ledger": {
+    "used": 2,
+    "unused": 1
+  },
+  "completion_only_due_to_evidence_reserve": true
+}

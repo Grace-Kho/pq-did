@@ -1,0 +1,66 @@
+{
+  "package": "S3-OUTER-ORACLE-COMPOSITION-1",
+  "kind": "Documentation contract; not an executable cryptographic game or theorem checker",
+  "authority": "Manuscript II-VIII, SPEC-001--004 and current implementation specification",
+  "disposition": "review-complete-with-precisely-stated-missing-lemmas",
+  "active_profile_changed": false,
+  "concrete_security_number": null,
+  "game_ids": ["G-K", "G-M", "G-P", "G-S", "G-SEP-P", "G-SEP-S"],
+  "games": [
+    {"id": "G-K", "outer": "H_K", "primitive": "fixed-public-K-code", "relation": "fixed-BC1-K-circuit", "full_implementation": false},
+    {"id": "G-M", "outer": "F0", "primitive": "fixed-public-K-code", "relation": "fixed-BC1-K-circuit", "model": "manuscript hybrid idealisation"},
+    {"id": "G-P", "outer": "H_P", "primitive": "shared-random-permutation-P-and-inverse", "relation": "oracle-relative-R^P; complete BC1 protocol missing", "requires": ["OC-REL"]},
+    {"id": "G-S", "outer": "F0", "primitive": "one-stateful-S_perm^F-and-inverse-port", "relation": "oracle-relative-to-stateful-simulated-primitive", "requires": ["OC-REL", "OC-EXT", "OC-PRIV", "OC-BUDGET"]},
+    {"id": "G-SEP-P", "outer": "H_P", "primitive": "P-independent-of-fixed-inner-K", "relation": "fixed-BC1-K-circuit", "adopted": false},
+    {"id": "G-SEP-S", "outer": "F0", "primitive": "S_perm^F-with-fixed-inner-K", "relation": "fixed-BC1-K-circuit", "adopted": false}
+  ],
+  "actors": {
+    "A": {"protocol_queries": "classical-sequential", "outer_queries": "quantum", "permutation_queries": "game-dependent forward/inverse", "programming": false, "shared_oracle_state_read": false},
+    "honest": {"protocol_queries": "classical-sequential", "outer_queries": "classical", "permutation_queries": "game-dependent internal hashes", "programming": false, "shared_oracle_state_read": false},
+    "E_DFMS": {"outer_queries": "simulates all using owned compressed database", "programming": false, "shared_oracle_state_read": "own simulated F database after final verification; not externally supplied state", "external_service_rewind": false},
+    "Sim_proof": {"input": "public statement/kind/authorised leakage only", "programming": "ideal outer points in the privacy hybrids", "witness_or_selected_index": false, "future_revocation_data": false},
+    "S_perm": {"outer_queries": "ordinary quantum F queries", "programming": false, "shared_oracle_state_read": false, "own_private_databases": true, "reset_at_cutoff": false}
+  },
+  "transitions": [
+    {"id": "T-K", "from": "G-K", "to": "idealised-model", "status": "conditional", "source": "A-K-MODEL", "covers": "explicit concrete modelling assumption only", "budget": "no numerical loss supplied", "requires": ["A-K-MODEL"]},
+    {"id": "T-BIT", "from": "G-P", "to": "G-S", "status": "supported", "source": "ACMT-3.9-7.22", "covers": "ordinary finite wrapper final-bit comparison only", "budget": "q_W,ell_W,T_W; all legal ports and final test", "full_protocol_claim": false, "requires": ["OC-REL", "OC-BUDGET"]},
+    {"id": "T-SEP", "from": "G-SEP-P", "to": "G-SEP-S", "status": "supported", "source": "ACMT-3.9-7.22", "covers": "explicitly separated diagnostic ordinary game", "budget": "q_W,ell_W,T_W; inner K is local code", "full_protocol_claim": false, "requires": ["OC-BUDGET"]},
+    {"id": "T-EX", "from": "G-M", "to": "fixed-relation-extraction-emulation", "status": "supported", "source": "DFMS-3.1-3.5-4.2", "covers": "ideal fixed-relation terminal extraction with target/history restriction", "budget": "Q,B_bits,T_hon,T_gen,|f_X| and O(Q^2)poly(n,B_bits)", "full_protocol_claim": false, "premises": "canonical S-sound* protocol, actual honest witnesses, weighted challenge mapping, consistent witness projection"},
+    {"id": "T-PRIV", "from": "G-M", "to": "fixed-relation-public-proof-simulation", "status": "supported", "source": "GHM-1-and-manuscript-VIII-D", "covers": "ideal raw-view simulation with all Section VI restrictions", "budget": "N,Q,conditional pmax and full continuation", "full_protocol_claim": false, "premises": "fixed correct Boolean circuit; fresh salts/nonce, erasure, no hidden-view reopening"},
+    {"id": "T-S-EX", "from": "G-S", "to": "shared-relation-extraction-emulation", "status": "unresolved", "source": "missing-lemma", "covers": "intended shared-permutation knowledge", "budget": "unknown enlarged query/time and legal extractor access", "requires": ["OC-REL", "OC-EXT", "OC-BUDGET"]},
+    {"id": "T-S-PRIV", "from": "G-S", "to": "b-independent-joint-view", "status": "unresolved", "source": "missing-lemma", "covers": "intended shared-permutation privacy", "budget": "unknown joint simulator/programming/continuation budget", "requires": ["OC-REL", "OC-PRIV", "OC-BUDGET"]}
+  ],
+  "obligations": [
+    {"id": "OC-REL", "previous": "Gap_jointGame", "missing": "stable efficient relation, private oracle-gate construction, S-sound* extraction and two-view simulation or justified fixed-relation translation"},
+    {"id": "OC-EXT", "previous": "Gap_knowledgeExtractor", "missing": "legal shared-oracle sequential emulator for every adaptive adversary/terminal predicate, preserving history and witness projection with explicit errors/runtime"},
+    {"id": "OC-PRIV", "previous": "Gap_privacySimulation", "missing": "public-only joint proof/sponge simulation including internal shared hashes, programming/removal, ongoing state and complete Section VI continuation"},
+    {"id": "OC-BUDGET", "previous": "SEC-001/SEC-002 quantitative mapping", "missing": "finite prefix/full-output adapter, q/ell/time/memory/advice budgets and constants for any numerical instantiation claim"},
+    {"id": "A-K-MODEL", "previous": "Gap_KeccakModel", "missing": "explicit fixed-public-Keccak modelling assumption or property-specific concrete replacement argument"}
+  ],
+  "reused_numeric_evidence": [
+    "docs/data/s2_concrete_security_assessment_1/bounds.json",
+    "docs/data/s3_outer_hash_security_review_1/query-mapping.json"
+  ],
+  "new_numerical_calculations": 0,
+  "ordinary_ports_do_not_include": ["program-outer", "read-outer-database", "reset-simulator", "rewind-external-service"],
+  "unresolved_terms_are_additive_bounds": false,
+  "unknowns": {
+    "full_auth_AND_gates": null,
+    "full_auth_circuit_size": null,
+    "q_W": null,
+    "ell_W": null,
+    "Q_F": null,
+    "T_Sperm": null,
+    "simulator_full_output_adapter_cost": null,
+    "concrete_instantiation_advantage": null,
+    "shared_knowledge_error": null,
+    "shared_privacy_error": null,
+    "Delta_tail": null,
+    "component_advantages_at_reduction_budgets": null
+  },
+  "next_package": "S2-BOUNDED-MLDSA-KEYGEN-SIGN-1",
+  "next_package_started": false,
+  "stages_2_3_complete": false,
+  "proof_attempts_used": 2,
+  "proof_attempts_unused": 1
+}

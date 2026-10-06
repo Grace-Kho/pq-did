@@ -1,0 +1,20 @@
+{
+  "package": "R0-CREDVALID-CYCLE-1",
+  "status": "completed_execution_only_package",
+  "execution_runs": 5,
+  "used_slots": [
+    1,
+    2,
+    3,
+    4,
+    6
+  ],
+  "unused_slots": [
+    5
+  ],
+  "full_corrected_outcome": "cycle_limit",
+  "proof_attempts": 0,
+  "unused_prior_proof_attempts": 3,
+  "receipts": 0,
+  "reason": "Bounded package complete. No more build/execution/proving authorised here."
+}

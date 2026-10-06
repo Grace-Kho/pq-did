@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "programme_complete": false,
+  "scope_reduction_approved": false,
+  "target": "31 October; full completion commitment unsupported",
+  "historical_seals_verified": 57,
+  "requirements_indexed_once": 52,
+  "dataset_files_verified": 362,
+  "baseline_source_binary_files_verified": 21,
+  "benchmark_trials_reused": 276,
+  "documentary_command_records": 24,
+  "new_functional_executions": 0,
+  "storage": {
+    "new_evidence_bytes": 108133,
+    "new_artifact_bytes": 0,
+    "evidence_bytes": 26883041,
+    "artifact_bytes": 58966547,
+    "temporary_bytes": 0
+  }
+}

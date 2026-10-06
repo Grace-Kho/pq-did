@@ -1,0 +1,13 @@
+{
+  "package": "LIGETRON-CORRECTION-AND-ADMISSION-1",
+  "passed": true,
+  "scope": "CPU randomness component validation and explicit security non-admission",
+  "fixed_cases_passed": 35,
+  "functional_reruns": 0,
+  "builds_used": 1,
+  "audit_exit_status": 0,
+  "historical_content_comparisons": 10901,
+  "identity_inclusive_paths": 10936,
+  "private_proof_admitted": false,
+  "full_WebGPU_callers": "UNRUN"
+}

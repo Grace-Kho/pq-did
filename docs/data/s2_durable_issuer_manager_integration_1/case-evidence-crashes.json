@@ -1,0 +1,79 @@
+[
+  {
+    "case": "test_real_process_crash[reservation]",
+    "durable_after": {
+      "manager_head": "6cf0bdf16985cdb38dfe8d9b3e322a16296803b789a9e7e70efd3f19a6847693",
+      "issuer_head": "1de75d4a3fb105673bb46e162f890c0efca4d67bdb12e6863b9d2653274df0b6",
+      "allocated": 2,
+      "epoch": 0,
+      "reservations": 1,
+      "phase": "RETIRED",
+      "issuer_floor": 2,
+      "certifications": 0,
+      "nonces": 0,
+      "issuer_generation": 1
+    },
+    "crash": {
+      "mode": "reservation",
+      "pid": 2409881,
+      "exit": -9,
+      "barrier": {
+        "barrier": "reservation",
+        "heads": {
+          "manager": [
+            3,
+            "6cf0bdf16985cdb38dfe8d9b3e322a16296803b789a9e7e70efd3f19a6847693",
+            "d8945d53d36afa217257015aa49c00946e3db741599a98ca6e59d7d95b58012c",
+            1
+          ],
+          "issuer": [
+            3,
+            "9a8e8dc75dc87d084a80a558c9d8a02d4875130b9056e6812af8795a72c13ca9",
+            "89b789caa2fcbb45e1c48f2200ccd590f87e3f1480a8a70853508bf0a8bcca4b",
+            1
+          ]
+        }
+      },
+      "child_ru_maxrss_bytes": 53174272
+    }
+  },
+  {
+    "case": "test_real_process_crash[certification]",
+    "durable_after": {
+      "manager_head": "9c45534460fa121a99faa9c2a43cc9de936b295c5795e55b9525da36af6b200f",
+      "issuer_head": "e41f10ab1590aff0450b162fd30b0c3ef760f85430333c59b5237e7e8a605428",
+      "allocated": 2,
+      "epoch": 0,
+      "reservations": 1,
+      "phase": "CERTIFIED",
+      "issuer_floor": 2,
+      "certifications": 1,
+      "nonces": 1,
+      "issuer_generation": 1
+    },
+    "crash": {
+      "mode": "certification",
+      "pid": 2409888,
+      "exit": -9,
+      "barrier": {
+        "barrier": "certification",
+        "heads": {
+          "manager": [
+            3,
+            "9c45534460fa121a99faa9c2a43cc9de936b295c5795e55b9525da36af6b200f",
+            "b444aca9db66494394f1ac32956e6c88da966f236c7e47edde92457c282cda49",
+            1
+          ],
+          "issuer": [
+            7,
+            "b22d7d58d40aaecabcc7c34b8154999b66e4ed12194afc2da9d589944b7a868c",
+            "ed53f473f9ee45b6cb603c55df4dc11a2a1bfe75b950be40149955caa6ad72aa",
+            1
+          ]
+        },
+        "response_sha256": "544706eb28c2920c5f3d5e45a69a669b63a71d163462b21751082c3078949d54"
+      },
+      "child_ru_maxrss_bytes": 53370880
+    }
+  }
+]
